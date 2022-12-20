@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "xpReward": 6.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "CUSTOM:Greendemon"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:Cookedgreendemon"
+    },
+    "name": "greendemon_smoke",
+    "namespace": "mod"
+  }
+}

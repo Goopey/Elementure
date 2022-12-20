@@ -1,0 +1,44 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGH",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "playertime.png",
+          "use1Xscale": true,
+          "name": "playertime.png",
+          "x": 384,
+          "y": 206
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:time_NE_essence>",
+          "color": {
+            "value": -3355648,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:time_NE_essence>",
+          "x": 393,
+          "y": 197
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "TimeNEelementaloverlayCondition"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/shimmering_ore",
+    "up": "elementure:blocks/shimmering_ore",
+    "north": "elementure:blocks/shimmering_ore",
+    "east": "elementure:blocks/shimmering_ore",
+    "south": "elementure:blocks/shimmering_ore",
+    "west": "elementure:blocks/shimmering_ore",
+    "particle": "elementure:blocks/shimmering_ore"
+  }
+}

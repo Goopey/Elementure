@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:noobiumingot"
+    },
+    "1": {
+      "item": "elementure:noobiumingot"
+    },
+    "2": {
+      "item": "elementure:noobiumingot"
+    },
+    "3": {
+      "item": "elementure:noobiumingot"
+    },
+    "5": {
+      "item": "elementure:noobiumingot"
+    },
+    "6": {
+      "item": "elementure:noobiumingot"
+    },
+    "8": {
+      "item": "elementure:noobiumingot"
+    }
+  },
+  "result": {
+    "item": "elementure:noobium_leggings",
+    "count": 1
+  }
+}

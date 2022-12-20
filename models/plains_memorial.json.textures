@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "plains_memorial"
+      },
+      "name": "default"
+    }
+  }
+}

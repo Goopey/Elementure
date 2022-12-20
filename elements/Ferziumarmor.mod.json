@@ -1,0 +1,61 @@
+{
+  "_fv": 34,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "ferziumhelmet",
+    "enableBody": true,
+    "textureBody": "ferziumchestplate",
+    "enableLeggings": true,
+    "textureLeggings": "ferziumlegs",
+    "enableBoots": true,
+    "textureBoots": "ferziumboots",
+    "onBodyTick": {
+      "name": "FerziumarmorFullArmorEffect"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedarmor"
+    },
+    "armorTextureFile": "ferzium_",
+    "helmetName": "Ferzium Helmet",
+    "bodyName": "Ferzium Body",
+    "leggingsName": "Ferzium Leggings",
+    "bootsName": "Ferzium Boots",
+    "helmetSpecialInfo": [
+      "Full armor effect : When using fire essence, you emanate an aura of fire which lights your enemies on fire"
+    ],
+    "bodySpecialInfo": [
+      "Full armor effect : When using fire essence, you emanate an aura of fire which lights your enemies on fire"
+    ],
+    "leggingsSpecialInfo": [
+      "Full armor effect : When using fire essence, you emanate an aura of fire which lights your enemies on fire"
+    ],
+    "bootsSpecialInfo": [
+      "Full armor effect : When using fire essence, you emanate an aura of fire which lights your enemies on fire"
+    ],
+    "helmetModelName": "Default",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 18,
+    "damageValueHelmet": 2,
+    "damageValueBody": 7,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 3,
+    "enchantability": 6,
+    "toughness": 0.9,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

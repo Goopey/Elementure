@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:dazzlingblock"
+    },
+    {
+      "item": "elementure:silverblock"
+    },
+    {
+      "item": "minecraft:lapis_block"
+    },
+    {
+      "item": "elementure:memoryshard"
+    },
+    {
+      "item": "elementure:masterkey"
+    }
+  ],
+  "result": {
+    "item": "elementure:bluekey",
+    "count": 1
+  }
+}

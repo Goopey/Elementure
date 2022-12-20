@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:hay_block"
+    },
+    {
+      "item": "elementure:memoryfragment"
+    },
+    {
+      "item": "elementure:memoryfragment"
+    },
+    {
+      "item": "elementure:rarememoryfragment"
+    }
+  ],
+  "result": {
+    "item": "elementure:rarememorybread",
+    "count": 1
+  }
+}

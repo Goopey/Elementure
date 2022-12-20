@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/bluethorn_leaves",
+    "up": "elementure:blocks/bluethorn_leaves",
+    "north": "elementure:blocks/bluethorn_leaves",
+    "east": "elementure:blocks/bluethorn_leaves",
+    "south": "elementure:blocks/bluethorn_leaves",
+    "west": "elementure:blocks/bluethorn_leaves",
+    "particle": "elementure:blocks/bluethorn_leaves"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.FLOWING_LAVA"
+      },
+      {
+        "value": "Blocks.LAVA"
+      },
+      {
+        "value": "Blocks.FLOWING_WATER"
+      },
+      {
+        "value": "Blocks.WATER"
+      },
+      {
+        "value": "CUSTOM:Dungeonwater"
+      },
+      {
+        "value": "CUSTOM:Netherumfluid"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "fishingblocks",
+    "namespace": "mod"
+  }
+}

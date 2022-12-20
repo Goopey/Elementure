@@ -1,0 +1,42 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "aurum_axe",
+    "customModelName": "Normal",
+    "name": "Aurum axe [Dark]",
+    "specialInfo": [
+      "Steals the light from around you."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 3,
+    "efficiency": 12.0,
+    "attackSpeed": 0.9,
+    "enchantability": 3,
+    "damageVsEntity": 12.0,
+    "usageCount": 1500,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "AurumHeldGlow"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Aurumingot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "AurumaxeGather"
+    },
+    "onItemInUseTick": {
+      "name": "AurumaxeTrueDark"
+    }
+  }
+}

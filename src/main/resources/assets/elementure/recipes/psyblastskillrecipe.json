@@ -1,0 +1,28 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_worlds:skillholder"
+    },
+    {
+      "item": "minecraft:redstone_block"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "minecraft_worlds:lightsoul"
+    },
+    {
+      "item": "minecraft_worlds:unknown_element"
+    },
+    {
+      "item": "minecraft_worlds:lightningsoul"
+    }
+  ],
+  "result": {
+    "item": "minecraft_worlds:psyblastskill",
+    "count": 1
+  }
+}

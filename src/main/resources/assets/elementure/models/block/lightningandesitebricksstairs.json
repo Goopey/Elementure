@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "elementure:blocks/lightning_andesite_brick",
+    "top": "elementure:blocks/lightning_andesite_brick",
+    "side": "elementure:blocks/lightning_andesite_brick"
+  }
+}

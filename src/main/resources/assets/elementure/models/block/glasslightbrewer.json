@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/glasslightbrewer",
+  "textures": {
+    "all": "elementure:blocks/glasslightbrewer",
+    "particle": "elementure:blocks/glasslightbrewer",
+    "0": "elementure:blocks/glasslightbrewer"
+  }
+}

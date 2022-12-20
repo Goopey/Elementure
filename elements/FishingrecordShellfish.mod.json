@@ -1,0 +1,507 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 171,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "book_fishing.png",
+          "use1Xscale": false,
+          "name": "book_fishing.png",
+          "x": 92,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 102,
+          "y": 45
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 102,
+          "y": 67
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 102,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 102,
+          "y": 111
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 102,
+          "y": 133
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 102,
+          "y": 155
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 102,
+          "y": 177
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "green_checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "GrapplercrabConfirm"
+          },
+          "name": "green_checkmark.png",
+          "x": 105,
+          "y": 48
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "grappler_crab.png",
+          "use1Xscale": false,
+          "name": "grappler_crab.png",
+          "x": 121,
+          "y": 46
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "green_checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "SpikercrabConfirm"
+          },
+          "name": "green_checkmark.png",
+          "x": 105,
+          "y": 70
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "spiking_crab.png",
+          "use1Xscale": false,
+          "name": "spiking_crab.png",
+          "x": 121,
+          "y": 68
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "green_checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "SpikercrabConfirm"
+          },
+          "name": "green_checkmark.png",
+          "x": 105,
+          "y": 92
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "shrimp.png",
+          "use1Xscale": false,
+          "name": "shrimp.png",
+          "x": 121,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "green_checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "BubblecrabConfirm"
+          },
+          "name": "green_checkmark.png",
+          "x": 105,
+          "y": 114
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "bubble_crab.png",
+          "use1Xscale": false,
+          "name": "bubble_crab.png",
+          "x": 121,
+          "y": 112
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "green_checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "PeriwinkleConfirm"
+          },
+          "name": "green_checkmark.png",
+          "x": 105,
+          "y": 136
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "periwinkle.png",
+          "use1Xscale": false,
+          "name": "periwinkle.png",
+          "x": 121,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "green_checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "RarewinkleConfirm"
+          },
+          "name": "green_checkmark.png",
+          "x": 105,
+          "y": 158
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rarewinkle.png",
+          "use1Xscale": false,
+          "name": "rarewinkle.png",
+          "x": 121,
+          "y": 156
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 154,
+          "y": 45
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 154,
+          "y": 67
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 154,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 154,
+          "y": 111
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 154,
+          "y": 133
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 154,
+          "y": 155
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 154,
+          "y": 177
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 210,
+          "y": 45
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 210,
+          "y": 67
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 210,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 210,
+          "y": 111
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 210,
+          "y": 133
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 210,
+          "y": 155
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 263,
+          "y": 45
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 263,
+          "y": 67
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 263,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 263,
+          "y": 111
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 263,
+          "y": 133
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "name": "inventory_slot_texture.png",
+          "x": 263,
+          "y": 155
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next Page",
+          "onClick": {
+            "name": "Openregularfish2"
+          },
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "width": 70,
+          "height": 20,
+          "name": "Next Page",
+          "x": 253,
+          "y": 175
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 2,
+      "sy": 2,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

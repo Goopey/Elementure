@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/pinkbarrier"
+    },
+    "facing=east": {
+      "model": "elementure:block/pinkbarrier",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/pinkbarrier",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/pinkbarrier",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "elementure:block/pinkbarrier",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "elementure:block/pinkbarrier",
+      "x": 90
+    }
+  }
+}

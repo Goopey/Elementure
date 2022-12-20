@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "basalt_delta_memorial"
+      },
+      "name": "default"
+    }
+  }
+}

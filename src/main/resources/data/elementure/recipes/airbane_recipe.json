@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:elementalsharpener"
+    },
+    {
+      "item": "elementure:noobiumingot"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "result": {
+    "item": "elementure:airbane",
+    "count": 1
+  }
+}

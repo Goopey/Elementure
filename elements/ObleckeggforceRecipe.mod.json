@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Obleckslime"
+      },
+      {
+        "value": "CUSTOM:Obleckslime"
+      },
+      {
+        "value": "CUSTOM:Obleckslime"
+      },
+      {
+        "value": "Items.SLIME_BALL"
+      },
+      {
+        "value": "CUSTOM:Forceobleckslime"
+      },
+      {
+        "value": "Items.SLIME_BALL"
+      },
+      {
+        "value": "CUSTOM:Obleckslime"
+      },
+      {
+        "value": "CUSTOM:Obleckslime"
+      },
+      {
+        "value": "CUSTOM:Obleckslime"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Obleckegg"
+    },
+    "name": "obleckeggforce_recipe",
+    "namespace": "mod"
+  }
+}

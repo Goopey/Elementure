@@ -1,0 +1,36 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "skyjade_pickaxe",
+    "customModelName": "Normal",
+    "name": "Skyjade pickaxe",
+    "specialInfo": [
+      "Proficient at mining high in the air."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 2,
+    "efficiency": 14.0,
+    "attackSpeed": 1.2000000000000002,
+    "enchantability": 4,
+    "damageVsEntity": 1.0,
+    "usageCount": 459,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Skyjadebar"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "SkyjadepickaxeMining"
+    }
+  }
+}

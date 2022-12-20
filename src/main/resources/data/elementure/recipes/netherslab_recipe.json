@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:netherplanks"
+    },
+    "1": {
+      "item": "elementure:netherplanks"
+    },
+    "2": {
+      "item": "elementure:netherplanks"
+    }
+  },
+  "result": {
+    "item": "elementure:netherslab",
+    "count": 6
+  }
+}

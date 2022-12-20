@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:neondust"
+    },
+    "1": {
+      "item": "elementure:neondust"
+    },
+    "2": {
+      "item": "elementure:neondust"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "elementure:neonpickaxe",
+    "count": 1
+  }
+}

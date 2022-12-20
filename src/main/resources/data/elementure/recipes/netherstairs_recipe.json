@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:netherplanks"
+    },
+    "3": {
+      "item": "elementure:netherplanks"
+    },
+    "4": {
+      "item": "elementure:netherplanks"
+    },
+    "6": {
+      "item": "elementure:netherplanks"
+    },
+    "7": {
+      "item": "elementure:netherplanks"
+    },
+    "8": {
+      "item": "elementure:netherplanks"
+    }
+  },
+  "result": {
+    "item": "elementure:netherstairs",
+    "count": 4
+  }
+}

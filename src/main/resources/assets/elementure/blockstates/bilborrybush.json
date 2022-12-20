@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/bilborrybush"
+    },
+    "facing=east": {
+      "model": "elementure:block/bilborrybush",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/bilborrybush",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/bilborrybush",
+      "y": 270
+    }
+  }
+}

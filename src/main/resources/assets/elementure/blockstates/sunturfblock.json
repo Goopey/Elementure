@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/sunturfblock"
+    },
+    "facing=east": {
+      "model": "elementure:block/sunturfblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/sunturfblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/sunturfblock",
+      "y": 270
+    }
+  }
+}

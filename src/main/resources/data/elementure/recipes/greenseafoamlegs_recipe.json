@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:seafoamarmor_leggings"
+    },
+    {
+      "item": "elementure:greenjelly"
+    },
+    {
+      "item": "elementure:greenjelly"
+    },
+    {
+      "item": "elementure:greenjelly"
+    }
+  ],
+  "result": {
+    "item": "elementure:greenseafoamarmor_leggings",
+    "count": 1
+  }
+}

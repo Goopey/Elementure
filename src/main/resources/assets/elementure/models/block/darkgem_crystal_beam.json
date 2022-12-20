@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/darkgemcrystalbeam",
+    "up": "elementure:blocks/darkgemcrystalbeam",
+    "north": "elementure:blocks/darkgemcrystalbeam",
+    "east": "elementure:blocks/darkgemcrystalbeam",
+    "south": "elementure:blocks/darkgemcrystalbeam",
+    "west": "elementure:blocks/darkgemcrystalbeam",
+    "particle": "elementure:blocks/darkgemcrystalbeam"
+  }
+}

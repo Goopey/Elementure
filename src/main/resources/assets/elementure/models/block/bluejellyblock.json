@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/blue_jelly_liquid",
+    "up": "elementure:blocks/blue_jelly_liquid",
+    "north": "elementure:blocks/blue_jelly_liquid",
+    "east": "elementure:blocks/blue_jelly_liquid",
+    "south": "elementure:blocks/blue_jelly_liquid",
+    "west": "elementure:blocks/blue_jelly_liquid",
+    "particle": "elementure:blocks/blue_jelly_liquid"
+  }
+}

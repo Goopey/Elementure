@@ -1,0 +1,16 @@
+{
+  "group": "elementure",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:mycenansporesbottle"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    }
+  ],
+  "result": {
+    "item": "elementure:mycenansporessplash",
+    "count": 1
+  }
+}

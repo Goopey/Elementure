@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/crystal_palace_sky",
+    "up": "elementure:blocks/crystal_palace_sky",
+    "north": "elementure:blocks/crystal_palace_sky",
+    "east": "elementure:blocks/crystal_palace_sky",
+    "south": "elementure:blocks/crystal_palace_sky",
+    "west": "elementure:blocks/crystal_palace_sky",
+    "particle": "elementure:blocks/crystal_palace_sky"
+  }
+}

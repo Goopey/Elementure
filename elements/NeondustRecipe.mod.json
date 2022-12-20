@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 9,
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Neoningotblock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Neondust"
+    },
+    "smeltingInputStack": {
+      "value": "CUSTOM:Neonblock"
+    },
+    "smeltingReturnStack": {
+      "value": "CUSTOM:Neondust"
+    },
+    "name": "neondustrecipe",
+    "namespace": "mod"
+  }
+}

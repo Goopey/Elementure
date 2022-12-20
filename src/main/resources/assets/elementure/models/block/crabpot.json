@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/crabpot",
+  "textures": {
+    "all": "elementure:blocks/crab_pot_texturemap",
+    "particle": "elementure:blocks/crab_pot_texturemap",
+    "0": "elementure:blocks/crab_pot_texturemap"
+  }
+}

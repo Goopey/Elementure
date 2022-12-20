@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "snowy_memorial"
+      },
+      "name": "default"
+    }
+  }
+}

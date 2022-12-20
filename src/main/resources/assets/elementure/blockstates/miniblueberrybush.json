@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/miniblueberrybush"
+    },
+    "facing=east": {
+      "model": "elementure:block/miniblueberrybush",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/miniblueberrybush",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/miniblueberrybush",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "flutaniteaxe",
+    "customModelName": "Normal",
+    "name": "Flutanite axe [Air]",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 2,
+    "efficiency": 4.0,
+    "attackSpeed": 0.9,
+    "enchantability": 4,
+    "damageVsEntity": 9.0,
+    "usageCount": 287,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Flutaniteingot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "FlutaniteaxeGatherAir"
+    },
+    "onItemInInventoryTick": {
+      "name": "FlutaniteaxeTrueAir"
+    }
+  }
+}

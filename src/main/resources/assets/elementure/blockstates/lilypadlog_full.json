@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/lilypadlog_full"
+    },
+    "facing=east": {
+      "model": "elementure:block/lilypadlog_full",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/lilypadlog_full",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/lilypadlog_full",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "elementure:block/lilypadlog_full",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "elementure:block/lilypadlog_full",
+      "x": 90
+    }
+  }
+}

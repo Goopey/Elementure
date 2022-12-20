@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/magentarimevine",
+  "textures": {
+    "all": "elementure:blocks/magenta_rimevine",
+    "particle": "elementure:blocks/magenta_rimevine",
+    "0": "elementure:blocks/magenta_rimevine"
+  }
+}

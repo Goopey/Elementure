@@ -1,0 +1,7 @@
+{
+  "parent": "elementure:custom/archkassem_staff",
+  "textures": {
+    "0": "elementure:blocks/archkassem_staff_texturemap",
+    "particle": "elementure:items/archkassem_staff_texturemap"
+  }
+}

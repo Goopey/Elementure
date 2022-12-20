@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:mycenatruffloonchitinscale"
+    },
+    {
+      "item": "elementure:mycenatruffloonchitinscale"
+    },
+    {
+      "item": "minecraft:enchanted_book"
+    },
+    {
+      "item": "minecraft:writable_book"
+    }
+  ],
+  "result": {
+    "item": "elementure:mycenantranslationbook",
+    "count": 1
+  }
+}

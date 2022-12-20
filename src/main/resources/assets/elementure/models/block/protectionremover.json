@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/protectionremover",
+    "up": "elementure:blocks/protectionremover",
+    "north": "elementure:blocks/protectionremover",
+    "east": "elementure:blocks/protectionremover",
+    "south": "elementure:blocks/protectionremover",
+    "west": "elementure:blocks/protectionremover",
+    "particle": "elementure:blocks/protectionremover"
+  }
+}

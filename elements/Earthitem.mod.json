@@ -1,0 +1,43 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Earthblade"
+      },
+      {
+        "value": "CUSTOM:Noobiumsword"
+      },
+      {
+        "value": "CUSTOM:Noobiumaxe"
+      },
+      {
+        "value": "CUSTOM:Earthblastskill"
+      },
+      {
+        "value": "CUSTOM:Mycenanaxe"
+      },
+      {
+        "value": "CUSTOM:Mycenanmace"
+      },
+      {
+        "value": "CUSTOM:Mycenankatana"
+      },
+      {
+        "value": "CUSTOM:Noobiumchanneler"
+      },
+      {
+        "value": "CUSTOM:Mycenansuperchanneler"
+      },
+      {
+        "value": "CUSTOM:Mycenanchanneler"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "earthitem",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Flutanitesword"
+      },
+      {
+        "value": "CUSTOM:Airsword"
+      },
+      {
+        "value": "CUSTOM:Airblastskill"
+      },
+      {
+        "value": "CUSTOM:Iceblade"
+      },
+      {
+        "value": "CUSTOM:Flutaniteaxe"
+      },
+      {
+        "value": "CUSTOM:Flutanitechanneler"
+      },
+      {
+        "value": "CUSTOM:Skyjadeaxe"
+      },
+      {
+        "value": "CUSTOM:Skyjadedagger"
+      },
+      {
+        "value": "CUSTOM:Ivoryaxe"
+      },
+      {
+        "value": "CUSTOM:Ivorydagger"
+      },
+      {
+        "value": "CUSTOM:Diversalloyaxe"
+      },
+      {
+        "value": "CUSTOM:Diversalloysword"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "airitem",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "localisedvacuity",
+    "customModelName": "Normal",
+    "name": "Localised vacuity skill [Void]",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": ""
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "LocalisedvacuityskillConsume"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 8.0,
+    "bulletKnockback": 2,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Voidsoul"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "localisedvacuityskillprojectile-texturemap.png"
+  }
+}

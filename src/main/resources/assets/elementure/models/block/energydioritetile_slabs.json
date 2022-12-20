@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "elementure:blocks/energy_diorite_tile",
+    "top": "elementure:blocks/energy_diorite_tile",
+    "side": "elementure:blocks/energy_diorite_tile"
+  }
+}

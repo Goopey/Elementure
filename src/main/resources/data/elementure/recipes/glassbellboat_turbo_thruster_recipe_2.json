@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:diversalloy"
+    },
+    "1": {
+      "item": "elementure:diversalloy"
+    },
+    "2": {
+      "item": "elementure:diversalloy"
+    },
+    "3": {
+      "item": "elementure:darkgem"
+    },
+    "4": {
+      "item": "minecraft:magma_block"
+    },
+    "5": {
+      "item": "elementure:rarepurplerimeshine"
+    },
+    "6": {
+      "item": "elementure:diversalloy"
+    },
+    "7": {
+      "item": "elementure:diversalloy"
+    },
+    "8": {
+      "item": "elementure:diversalloy"
+    }
+  },
+  "result": {
+    "item": "elementure:glassbellboat_turbo_thruster",
+    "count": 1
+  }
+}

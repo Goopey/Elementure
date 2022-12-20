@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/oldbed",
+  "textures": {
+    "all": "elementure:blocks/old_bed",
+    "particle": "elementure:blocks/old_bed",
+    "0": "elementure:blocks/old_bed"
+  }
+}

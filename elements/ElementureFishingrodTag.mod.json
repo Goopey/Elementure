@@ -1,0 +1,23 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Reinforcedfishingrod"
+      },
+      {
+        "value": "CUSTOM:Harpoon"
+      },
+      {
+        "value": "CUSTOM:HarpoonUsed"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "elementure_fishingrod_tag",
+    "namespace": "mod"
+  }
+}

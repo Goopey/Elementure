@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "elementure:starryroots"
+    },
+    {
+      "item": "elementure:starryroots"
+    }
+  ],
+  "result": {
+    "item": "elementure:starrysoup",
+    "count": 1
+  }
+}

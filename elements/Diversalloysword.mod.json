@@ -1,0 +1,40 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "divers_alloy_blade",
+    "customModelName": "Normal",
+    "name": "Diver's alloy sword [Air]",
+    "specialInfo": [
+      "Slices through water very well.",
+      "Deals increased damage versus water creatures and aquatic mobs and extracts more air essence when attacking them."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 2,
+    "efficiency": 8.0,
+    "attackSpeed": 1.5999999999999999,
+    "enchantability": 4,
+    "damageVsEntity": 4.0,
+    "usageCount": 459,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Diversalloy"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "DiversalloyswordHarvest"
+    },
+    "onItemInUseTick": {
+      "name": "DiversalloyswordTrueAir"
+    }
+  }
+}

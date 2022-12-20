@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "  8"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:quartz"
+    },
+    "2": {
+      "item": "minecraft:quartz"
+    },
+    "3": {
+      "item": "minecraft:quartz"
+    },
+    "4": {
+      "item": "elementure:bluemass"
+    },
+    "5": {
+      "item": "elementure:shardedobsidian"
+    },
+    "8": {
+      "item": "elementure:shardedobsidian"
+    }
+  },
+  "result": {
+    "item": "elementure:bluesickle",
+    "count": 1
+  }
+}

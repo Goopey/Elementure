@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/demonstar",
+  "textures": {
+    "all": "elementure:blocks/speedstar",
+    "particle": "elementure:blocks/speedstar",
+    "0": "elementure:blocks/speedstar"
+  }
+}

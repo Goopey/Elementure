@@ -1,0 +1,32 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "cruel_blade",
+    "customModelName": "Normal",
+    "name": "Cruel blade [N-E]",
+    "specialInfo": [
+      "A bloody and cruel blade. Enormous strength resides in it, but it thirsts for blood."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.6,
+    "enchantability": 0,
+    "damageVsEntity": 4.5,
+    "usageCount": 980,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "CruelbladeEffect"
+    }
+  }
+}

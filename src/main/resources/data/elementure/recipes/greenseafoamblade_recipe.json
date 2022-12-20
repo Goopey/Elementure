@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:seafoamblade"
+    },
+    {
+      "item": "elementure:greenjelly"
+    },
+    {
+      "item": "elementure:greenjelly"
+    },
+    {
+      "item": "elementure:greenjelly"
+    }
+  ],
+  "result": {
+    "item": "elementure:greenseafoamblade",
+    "count": 1
+  }
+}

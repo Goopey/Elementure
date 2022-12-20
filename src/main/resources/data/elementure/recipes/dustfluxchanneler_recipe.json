@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "elementure:dustfluxingot"
+    },
+    "2": {
+      "item": "elementure:dustfluxsword"
+    },
+    "3": {
+      "item": "elementure:dustfluxingot"
+    },
+    "4": {
+      "item": "elementure:dustfluxingot"
+    },
+    "5": {
+      "item": "elementure:dustfluxingot"
+    },
+    "6": {
+      "item": "elementure:dustfluxblock"
+    },
+    "7": {
+      "item": "elementure:dustfluxingot"
+    }
+  },
+  "result": {
+    "item": "elementure:dustfluxchanneler",
+    "count": 1
+  }
+}

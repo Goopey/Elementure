@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:prismaticsalts"
+    },
+    {
+      "item": "elementure:prismaticsalts"
+    },
+    {
+      "item": "elementure:prismaticsalts"
+    },
+    {
+      "item": "elementure:prismiteshard"
+    }
+  ],
+  "result": {
+    "item": "elementure:prismaticcrystalblock",
+    "count": 4
+  }
+}

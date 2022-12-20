@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/magentarimebush",
+  "textures": {
+    "all": "elementure:blocks/magenta_rimebush",
+    "particle": "elementure:blocks/magenta_rimebush",
+    "0": "elementure:blocks/magenta_rimebush"
+  }
+}

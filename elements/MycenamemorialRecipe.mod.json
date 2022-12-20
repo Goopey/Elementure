@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Myceniummoss"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Mycenasprouts"
+      },
+      {
+        "value": "CUSTOM:Bigglowingmushroom"
+      },
+      {
+        "value": "CUSTOM:Mycenasprouts"
+      },
+      {
+        "value": "CUSTOM:Mycenium"
+      },
+      {
+        "value": "CUSTOM:Mycenamossygrass"
+      },
+      {
+        "value": "CUSTOM:Mycenium"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Mycenamemorial"
+    },
+    "name": "mycenamemorial_recipe",
+    "namespace": "mod"
+  }
+}

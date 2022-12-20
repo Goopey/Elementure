@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/cursedlogtop",
+    "up": "elementure:blocks/cursedlogtop",
+    "north": "elementure:blocks/cursedlog",
+    "east": "elementure:blocks/cursedlog",
+    "south": "elementure:blocks/cursedlog",
+    "west": "elementure:blocks/cursedlog",
+    "particle": "elementure:blocks/cursedlogtop"
+  }
+}

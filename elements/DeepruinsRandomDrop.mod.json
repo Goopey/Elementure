@@ -1,0 +1,68 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Deeplens"
+      },
+      {
+        "value": "CUSTOM:Dazzlingingot"
+      },
+      {
+        "value": "CUSTOM:Silvernugget"
+      },
+      {
+        "value": "CUSTOM:Ligniteingot"
+      },
+      {
+        "value": "CUSTOM:Neondust"
+      },
+      {
+        "value": "CUSTOM:Dustfluxingot"
+      },
+      {
+        "value": "CUSTOM:Vamiteingot"
+      },
+      {
+        "value": "CUSTOM:Brontium"
+      },
+      {
+        "value": "CUSTOM:Memorycrystalshell"
+      },
+      {
+        "value": "Items.SLIME_BALL"
+      },
+      {
+        "value": "Items.NAUTILUS_SHELL"
+      },
+      {
+        "value": "Items.SCUTE"
+      },
+      {
+        "value": "Items.GOLDEN_APPLE#0"
+      },
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
+        "value": "CUSTOM:Pumpkinjelly"
+      },
+      {
+        "value": "CUSTOM:Hiddenrunestome"
+      },
+      {
+        "value": "CUSTOM:Claydoll"
+      },
+      {
+        "value": "CUSTOM:Slimeslice"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "deepruins_random_drop",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "neon_channeler",
+    "customModelName": "Normal",
+    "name": "Neon channeler [Energy]",
+    "specialInfo": [
+      "Allows you to drain and steal your enemies energy"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 21,
+    "actionSound": {
+      "value": "CUSTOM:vengefulspiritskillsound"
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "NeonchannelerCanUse"
+    },
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "NeonchannelerConsume"
+    },
+    "useCondition": {
+      "name": "NeonchannelerCanUse"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 2.4,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelempty",
+    "customBulletModelTexture": "empty_texturemap.png",
+    "onBulletHitsEntity": {
+      "name": "NeonchannelerEffect"
+    }
+  }
+}

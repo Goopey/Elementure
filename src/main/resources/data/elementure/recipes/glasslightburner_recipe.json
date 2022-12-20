@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    " 4 ",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "elementure:rimeessence"
+    },
+    "4": {
+      "item": "elementure:glasslight"
+    },
+    "6": {
+      "item": "minecraft:bricks"
+    },
+    "7": {
+      "item": "elementure:deepdiversstone"
+    },
+    "8": {
+      "item": "minecraft:bricks"
+    }
+  },
+  "result": {
+    "item": "elementure:glasslightburner",
+    "count": 1
+  }
+}

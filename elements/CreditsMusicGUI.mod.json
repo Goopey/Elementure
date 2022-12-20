@@ -1,0 +1,189 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 248,
+    "height": 176,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "credits.png",
+          "use1Xscale": true,
+          "name": "credits.png",
+          "x": 89,
+          "y": 34
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Thanks for the music and art :",
+          "color": {
+            "value": -35328,
+            "falpha": 0.0
+          },
+          "name": "Thanks for the music and art :",
+          "x": 93,
+          "y": 69
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Mudeth - Super chill guy. Cool music",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Mudeth - Super chill guy. Cool music",
+          "x": 96,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "C418 - For being based",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "C418 - For being based",
+          "x": 96,
+          "y": 88
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Mattia Cupelli - Nice dark choir",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Mattia Cupelli - Nice dark choir",
+          "x": 96,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Cryosyncopy - Has Pog stuff",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Cryosyncopy - Has Pog stuff",
+          "x": 96,
+          "y": 108
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Red&Green - Purple and Yellow",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Red&Green - Purple and Yellow",
+          "x": 96,
+          "y": 119
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Search them up! They're all really cool people.",
+          "color": {
+            "value": -35328,
+            "falpha": 0.0
+          },
+          "name": "Search them up! They're all really cool people.",
+          "x": 91,
+          "y": 194
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Lena Raine - Great soundtracks all around",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Lena Raine - Great soundtracks all around",
+          "x": 96,
+          "y": 130
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Repulsive - The scary stuff is amazing",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Repulsive - The scary stuff is amazing",
+          "x": 96,
+          "y": 141
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Lui37 - Bumpin' soundtrack",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Lui37 - Bumpin' soundtrack",
+          "x": 96,
+          "y": 152
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Fred#4322 - For sharing a few great textures",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Fred#4322 - For sharing a few great textures",
+          "x": 96,
+          "y": 163
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next Page",
+          "onClick": {
+            "name": "Credits2open"
+          },
+          "width": 72,
+          "height": 20,
+          "name": "Next Page",
+          "x": 259,
+          "y": 173
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 4,
+      "sy": 4,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

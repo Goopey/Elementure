@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/demonstar",
+  "textures": {
+    "all": "elementure:blocks/absorptionstar",
+    "particle": "elementure:blocks/absorptionstar",
+    "0": "elementure:blocks/absorptionstar"
+  }
+}

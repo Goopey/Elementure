@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:diversberry"
+    },
+    {
+      "item": "elementure:diversberry"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "elementure:obleckslime"
+    }
+  ],
+  "result": {
+    "item": "elementure:rimeessence",
+    "count": 1
+  }
+}

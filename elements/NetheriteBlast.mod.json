@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:Netheriteore"
+    },
+    "blastingReturnStack": {
+      "value": "Items.NETHERITE_INGOT"
+    },
+    "name": "netherite_blast",
+    "namespace": "mod"
+  }
+}

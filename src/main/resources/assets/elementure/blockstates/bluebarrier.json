@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/bluebarrier"
+    },
+    "facing=east": {
+      "model": "elementure:block/bluebarrier",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/bluebarrier",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/bluebarrier",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "elementure:block/bluebarrier",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "elementure:block/bluebarrier",
+      "x": 90
+    }
+  }
+}

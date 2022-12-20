@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/cyanbarrier"
+    },
+    "facing=east": {
+      "model": "elementure:block/cyanbarrier",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/cyanbarrier",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/cyanbarrier",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "elementure:block/cyanbarrier",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "elementure:block/cyanbarrier",
+      "x": 90
+    }
+  }
+}

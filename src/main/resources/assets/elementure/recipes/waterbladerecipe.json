@@ -1,0 +1,42 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_worlds:watersoul"
+    },
+    "1": {
+      "item": "minecraft_worlds:elementalweb"
+    },
+    "2": {
+      "item": "minecraft_worlds:watersoul"
+    },
+    "3": {
+      "item": "minecraft_worlds:watersoul"
+    },
+    "4": {
+      "item": "minecraft_worlds:silversword"
+    },
+    "5": {
+      "item": "minecraft_worlds:watersoul"
+    },
+    "6": {
+      "item": "minecraft_worlds:watersoul"
+    },
+    "7": {
+      "item": "minecraft_worlds:elementalweb"
+    },
+    "8": {
+      "item": "minecraft_worlds:watersoul"
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:waterblade",
+    "count": 1
+  }
+}

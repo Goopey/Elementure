@@ -1,0 +1,31 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_worlds:abyssalemblemtr"
+    },
+    {
+      "item": "minecraft_worlds:abyssalemblemtl"
+    },
+    {
+      "item": "minecraft_worlds:abyssalemblembr"
+    },
+    {
+      "item": "minecraft_worlds:abyssalemblembl"
+    },
+    {
+      "item": "minecraft_worlds:abyssalemblemmid"
+    },
+    {
+      "item": "minecraft_worlds:abyssaldust"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "item": "minecraft_worlds:abyssalemblem",
+    "count": 1
+  }
+}

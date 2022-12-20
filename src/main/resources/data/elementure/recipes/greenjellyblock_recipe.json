@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:greenjelly"
+    },
+    {
+      "item": "elementure:greenjelly"
+    },
+    {
+      "item": "elementure:greenjelly"
+    },
+    {
+      "item": "elementure:greenjelly"
+    }
+  ],
+  "result": {
+    "item": "elementure:greenjellyblock",
+    "count": 1
+  }
+}

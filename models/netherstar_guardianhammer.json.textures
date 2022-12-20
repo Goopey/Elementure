@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "netherstar_guardian_hammer"
+      },
+      "name": "default"
+    }
+  }
+}

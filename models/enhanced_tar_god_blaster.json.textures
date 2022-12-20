@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "enhanced_tar_avatar_blaster"
+      },
+      "name": "default"
+    }
+  }
+}

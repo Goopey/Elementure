@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/snowy_memorial",
+  "textures": {
+    "all": "elementure:blocks/snowy_memorial",
+    "particle": "elementure:blocks/snowy_memorial",
+    "0": "elementure:blocks/snowy_memorial"
+  }
+}

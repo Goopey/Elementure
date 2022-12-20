@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "elementure:shardedobsidian"
+  },
+  "result": "elementure:shardedglass"
+}

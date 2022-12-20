@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "aurum_pickaxe",
+    "customModelName": "Normal",
+    "name": "Aurum pickaxe",
+    "specialInfo": [
+      "Steals the light from around you."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 4,
+    "efficiency": 8.5,
+    "attackSpeed": 1.2,
+    "enchantability": 6,
+    "damageVsEntity": 6.0,
+    "usageCount": 1500,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "AurumHeldGlow"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Aurumingot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "AurumheldParticles"
+    }
+  }
+}

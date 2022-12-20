@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Campfire cooking",
+    "xpReward": 0.0,
+    "cookingTime": 500,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "campfireCookingInputStack": {
+      "value": "CUSTOM:Dirtyglasslightbottle"
+    },
+    "campfireCookingReturnStack": {
+      "value": "CUSTOM:Glasslightbottle"
+    },
+    "name": "dirtyglasslight_clean_3",
+    "namespace": "mod"
+  }
+}

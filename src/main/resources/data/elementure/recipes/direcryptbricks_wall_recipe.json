@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:direcryptbricks"
+    },
+    "1": {
+      "item": "elementure:direcryptbricks"
+    },
+    "2": {
+      "item": "elementure:direcryptbricks"
+    },
+    "3": {
+      "item": "elementure:direcryptbricks"
+    },
+    "4": {
+      "item": "elementure:direcryptbricks"
+    },
+    "5": {
+      "item": "elementure:direcryptbricks"
+    }
+  },
+  "result": {
+    "item": "elementure:direcryptbricks_wall",
+    "count": 6
+  }
+}

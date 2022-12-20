@@ -1,0 +1,7 @@
+{
+  "parent": "elementure:custom/graniteheavyaxe",
+  "textures": {
+    "0": "elementure:blocks/graniteheavyaxe",
+    "particle": "elementure:items/graniteheavyaxe"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/receiving_protection_rune",
+    "up": "elementure:blocks/receiving_protection_rune",
+    "north": "elementure:blocks/receiving_protection_rune",
+    "east": "elementure:blocks/receiving_protection_rune",
+    "south": "elementure:blocks/receiving_protection_rune",
+    "west": "elementure:blocks/receiving_protection_rune",
+    "particle": "elementure:blocks/receiving_protection_rune"
+  }
+}

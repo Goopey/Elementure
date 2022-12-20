@@ -1,0 +1,41 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "LOW",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "fishing_background_void.png",
+          "use1Xscale": false,
+          "name": "fishing_background_void.png",
+          "x": 142,
+          "y": 12
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "memory_fish.png",
+          "use1Xscale": false,
+          "name": "memory_fish.png",
+          "x": 156,
+          "y": 188
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "MemoryfishDisplay"
+    },
+    "gridSettings": {
+      "sx": 4,
+      "sy": 4,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

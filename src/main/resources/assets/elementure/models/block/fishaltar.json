@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/fish_altar",
+  "textures": {
+    "all": "elementure:blocks/fish_altar",
+    "particle": "elementure:blocks/fish_altar",
+    "0": "elementure:blocks/fish_altar"
+  }
+}

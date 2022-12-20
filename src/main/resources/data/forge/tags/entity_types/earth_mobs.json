@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:biggranitelemental",
+    "elementure:weakdioriteelemental",
+    "elementure:coalpuck",
+    "elementure:graniteelemental",
+    "silverfish",
+    "elementure:weakandesiteelemental",
+    "iron_golem",
+    "elementure:blackstone_grimace",
+    "elementure:andesiteelemental",
+    "elementure:statueprotector",
+    "elementure:smallgraniteelemental",
+    "elementure:statuewraith",
+    "elementure:netherquartzcharger",
+    "elementure:dioriteelemental",
+    "elementure:bigandesiteelemental",
+    "elementure:bigdioriteelemental",
+    "elementure:armoredturtle"
+  ]
+}

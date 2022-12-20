@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:vamiteingot"
+    },
+    "1": {
+      "item": "elementure:vamiteingot"
+    },
+    "2": {
+      "item": "minecraft:honey_block"
+    }
+  },
+  "result": {
+    "item": "elementure:brontium",
+    "count": 2
+  }
+}

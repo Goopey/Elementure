@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/mycena_spore_cloud",
+    "up": "elementure:blocks/mycena_spore_cloud",
+    "north": "elementure:blocks/mycena_spore_cloud",
+    "east": "elementure:blocks/mycena_spore_cloud",
+    "south": "elementure:blocks/mycena_spore_cloud",
+    "west": "elementure:blocks/mycena_spore_cloud",
+    "particle": "elementure:blocks/mycena_spore_cloud"
+  }
+}

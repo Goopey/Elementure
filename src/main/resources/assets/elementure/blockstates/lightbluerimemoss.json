@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/lightbluerimemoss"
+    },
+    "facing=east": {
+      "model": "elementure:block/lightbluerimemoss",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/lightbluerimemoss",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/lightbluerimemoss",
+      "y": 270
+    }
+  }
+}

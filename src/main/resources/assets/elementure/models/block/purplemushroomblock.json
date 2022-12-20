@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/purple_mushroom_block",
+    "up": "elementure:blocks/purple_mushroom_block",
+    "north": "elementure:blocks/purple_mushroom_block",
+    "east": "elementure:blocks/purple_mushroom_block",
+    "south": "elementure:blocks/purple_mushroom_block",
+    "west": "elementure:blocks/purple_mushroom_block",
+    "particle": "elementure:blocks/purple_mushroom_block"
+  }
+}

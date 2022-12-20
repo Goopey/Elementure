@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/waterelementharvested",
+  "textures": {
+    "all": "elementure:blocks/w_elementalaltar",
+    "particle": "elementure:blocks/w_elementalaltar",
+    "0": "elementure:blocks/w_elementalaltar"
+  }
+}

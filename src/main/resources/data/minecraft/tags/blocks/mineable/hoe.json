@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:ministrawberrybush",
+    "elementure:strawberrybush",
+    "elementure:beestingberrybush",
+    "elementure:minibeestingberrybush",
+    "elementure:perryberrybush",
+    "elementure:miniperryberrybush",
+    "elementure:blueberrybush",
+    "elementure:miniblueberrybush",
+    "elementure:coldberrybush",
+    "elementure:minicoldberrybush",
+    "elementure:sunberrybush",
+    "elementure:minisunberrybush",
+    "elementure:minigobberrybush",
+    "elementure:gobberrybush",
+    "elementure:bilborrybush",
+    "elementure:minibilborrybush",
+    "elementure:netherleaves",
+    "elementure:scrapleaves",
+    "elementure:purplemushroomblock",
+    "elementure:jellyfloattendril",
+    "elementure:glasslight",
+    "elementure:rareglasslight",
+    "elementure:rimesap",
+    "elementure:cormunculusblock",
+    "elementure:lilypadsapling"
+  ]
+}

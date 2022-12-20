@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:neondust"
+    },
+    "2": {
+      "item": "elementure:neondust"
+    },
+    "3": {
+      "item": "elementure:neondust"
+    },
+    "5": {
+      "item": "elementure:neondust"
+    }
+  },
+  "result": {
+    "item": "elementure:neonarmor_boots",
+    "count": 1
+  }
+}

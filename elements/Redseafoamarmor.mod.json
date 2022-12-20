@@ -1,0 +1,73 @@
+{
+  "_fv": 34,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "red_seafoamhelmet",
+    "enableBody": true,
+    "textureBody": "red_seafoamchestplate",
+    "enableLeggings": true,
+    "textureLeggings": "red_seafoamlegs",
+    "enableBoots": true,
+    "textureBoots": "red_seafoamboots",
+    "onBodyTick": {
+      "name": "RedseafoamarmorFullarmorBonus"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedarmor"
+    },
+    "armorTextureFile": "redseafoamarmor_",
+    "helmetName": "Red Seafoam Helmet",
+    "bodyName": "Red Seafoam Body",
+    "leggingsName": "Red Seafoam Leggings",
+    "bootsName": "Red Seafoam Boots",
+    "helmetSpecialInfo": [
+      "Full armor effect : gives strength"
+    ],
+    "bodySpecialInfo": [
+      "Full armor effect : gives strength"
+    ],
+    "leggingsSpecialInfo": [
+      "Full armor effect : gives strength"
+    ],
+    "bootsSpecialInfo": [
+      "Full armor effect : gives strength"
+    ],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 21,
+    "damageValueHelmet": 2,
+    "damageValueBody": 4,
+    "damageValueLeggings": 3,
+    "damageValueBoots": 2,
+    "enchantability": 11,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_turtle"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:SeafoamIngot"
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "experience": 0,
+  "cookingtime": 400,
+  "ingredient": {
+    "item": "elementure:seafoampearl"
+  },
+  "result": "elementure:dryseafoamfragment"
+}

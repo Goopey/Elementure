@@ -1,0 +1,73 @@
+{
+  "_fv": 34,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "dragonite_scalemail_helmet_item",
+    "enableBody": true,
+    "textureBody": "dragonite_scalemail_chestplate_item",
+    "enableLeggings": true,
+    "textureLeggings": "dragonite_scalemail_leggings_item",
+    "enableBoots": true,
+    "textureBoots": "dragonite_scalemail_boots_item",
+    "onBodyTick": {
+      "name": "DragonitescalemailFullarmorEffect"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedarmor"
+    },
+    "armorTextureFile": "empty_",
+    "helmetName": "Dragonewt Scalemail Helmet",
+    "bodyName": "Dragonewt Scalemail Body",
+    "leggingsName": "Dragonewt Scalemail Leggings",
+    "bootsName": "Dragonewt Scalemail Boots",
+    "helmetSpecialInfo": [
+      "Full armor effect : gives fire resistance and resistance to the nether star's burning effect"
+    ],
+    "bodySpecialInfo": [
+      "Full armor effect : gives fire resistance and resistance to the nether star's burning effect"
+    ],
+    "leggingsSpecialInfo": [
+      "Full armor effect : gives fire resistance and resistance to the nether star's burning effect"
+    ],
+    "bootsSpecialInfo": [
+      "Full armor effect : gives fire resistance and resistance to the nether star's burning effect"
+    ],
+    "helmetModelName": "Modeldragonite_helmet_scalemail",
+    "helmetModelPart": "head",
+    "helmetModelTexture": "dragonite_helmet_scalemail_texturemap.png",
+    "bodyModelName": "Modeldragonite_chest_scalemail",
+    "bodyModelPart": "body",
+    "armsModelPartL": "left_arm",
+    "armsModelPartR": "right_arm",
+    "bodyModelTexture": "dragonite_chest_scalemail_texturemap.png",
+    "leggingsModelName": "Modeldragonite_leggings_scalemail",
+    "leggingsModelPartL": "l_leg",
+    "leggingsModelPartR": "r_leg",
+    "leggingsModelTexture": "dragonite_leggings_scalemail_texturemap.png",
+    "bootsModelName": "Modeldragonite_boots_scalemail",
+    "bootsModelPartL": "l_foot",
+    "bootsModelPartR": "r_foot",
+    "bootsModelTexture": "dragonite_boots_scalemail_texturemap.png",
+    "helmetImmuneToFire": true,
+    "bodyImmuneToFire": true,
+    "leggingsImmuneToFire": true,
+    "bootsImmuneToFire": true,
+    "maxDamage": 17,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.5,
+    "knockbackResistance": 0.05,
+    "equipSound": {
+      "value": "item.armor.equip_chain"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:DragonewtScales"
+      }
+    ]
+  }
+}

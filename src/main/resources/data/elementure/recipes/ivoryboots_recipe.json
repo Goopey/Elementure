@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:ivoryshard"
+    },
+    "2": {
+      "item": "elementure:ivoryshard"
+    },
+    "3": {
+      "item": "elementure:ivoryshard"
+    },
+    "5": {
+      "item": "elementure:ivoryshard"
+    }
+  },
+  "result": {
+    "item": "elementure:ivoryarmor_boots",
+    "count": 1
+  }
+}

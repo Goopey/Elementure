@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:silveringot"
+    },
+    "1": {
+      "item": "elementure:flutaniteingot"
+    },
+    "2": {
+      "item": "elementure:silveringot"
+    },
+    "3": {
+      "item": "elementure:ligniteingot"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "elementure:ferziumingot"
+    },
+    "6": {
+      "item": "elementure:noobiumingot"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    },
+    "8": {
+      "item": "elementure:merthiumingot"
+    }
+  },
+  "result": {
+    "item": "elementure:masterstaff",
+    "count": 1
+  }
+}

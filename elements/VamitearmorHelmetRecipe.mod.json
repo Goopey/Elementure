@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Vamiteingot"
+      },
+      {
+        "value": "CUSTOM:Vamiteingot"
+      },
+      {
+        "value": "CUSTOM:Vamiteingot"
+      },
+      {
+        "value": "CUSTOM:Vamiteingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Vamiteingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Vamitearmor.helmet"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "vamitearmorhelmetrecipe",
+    "namespace": "mod"
+  }
+}

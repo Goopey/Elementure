@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/glasslightbrewer"
+    },
+    "facing=east": {
+      "model": "elementure:block/glasslightbrewer",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/glasslightbrewer",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/glasslightbrewer",
+      "y": 270
+    }
+  }
+}

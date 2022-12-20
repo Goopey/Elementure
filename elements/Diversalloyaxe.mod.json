@@ -1,0 +1,41 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "divers_alloy_axe",
+    "customModelName": "Normal",
+    "name": "Diver's alloy axe [Air]",
+    "specialInfo": [
+      "Mines faster underwater.",
+      "Slices through water very well.",
+      "Deals increased damage versus water creatures and aquatic mobs and extracts more air essence when attacking them."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 2,
+    "efficiency": 83.0,
+    "attackSpeed": 0.9,
+    "enchantability": 4,
+    "damageVsEntity": 9.0,
+    "usageCount": 459,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Diversalloy"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "DiversalloyaxeGather"
+    },
+    "onItemInUseTick": {
+      "name": "DiversalloyaxeTrueAir"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/gray_barrier",
+  "textures": {
+    "all": "elementure:blocks/gray_barrier",
+    "particle": "elementure:blocks/gray_barrier",
+    "0": "elementure:blocks/gray_barrier"
+  }
+}

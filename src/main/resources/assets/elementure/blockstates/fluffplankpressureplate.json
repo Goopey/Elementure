@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "elementure:block/fluffplankpressureplate"
+    },
+    "powered=true": {
+      "model": "elementure:block/fluffplankpressureplate_down"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "EntitySlime"
+      },
+      {
+        "value": "CUSTOM:Mindobleck"
+      },
+      {
+        "value": "CUSTOM:Obleck"
+      },
+      {
+        "value": "CUSTOM:Obleckcleric"
+      },
+      {
+        "value": "CUSTOM:Oblecklord"
+      },
+      {
+        "value": "CUSTOM:Obleckturret"
+      },
+      {
+        "value": "EntityMagmaCube"
+      },
+      {
+        "value": "CUSTOM:Forceobleck"
+      },
+      {
+        "value": "CUSTOM:Soulobleck"
+      },
+      {
+        "value": "CUSTOM:Pumpkinmimic"
+      }
+    ],
+    "name": "slimes",
+    "namespace": "forge"
+  }
+}

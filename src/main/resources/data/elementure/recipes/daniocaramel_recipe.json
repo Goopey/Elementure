@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 1.1,
+  "cookingtime": 600,
+  "ingredient": {
+    "item": "elementure:stripeddanio"
+  },
+  "result": "elementure:daniocaramel"
+}

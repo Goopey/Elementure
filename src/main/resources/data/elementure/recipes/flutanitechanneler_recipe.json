@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "elementure:flutaniteingot"
+    },
+    "2": {
+      "item": "elementure:flutanitesword"
+    },
+    "3": {
+      "item": "elementure:flutaniteingot"
+    },
+    "4": {
+      "item": "elementure:flutaniteingot"
+    },
+    "5": {
+      "item": "elementure:flutaniteingot"
+    },
+    "6": {
+      "item": "elementure:flutaniteblock"
+    },
+    "7": {
+      "item": "elementure:flutaniteingot"
+    }
+  },
+  "result": {
+    "item": "elementure:flutanitechanneler",
+    "count": 1
+  }
+}

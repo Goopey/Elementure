@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "aurum_shovel",
+    "customModelName": "Normal",
+    "name": "Aurum shovel",
+    "specialInfo": [
+      "Steals the light from around you."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 3,
+    "efficiency": 11.0,
+    "attackSpeed": 1.0,
+    "enchantability": 4,
+    "damageVsEntity": 6.0,
+    "usageCount": 1500,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "AurumHeldGlow"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Aurumingot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "AurumheldParticles"
+    }
+  }
+}

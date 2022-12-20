@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:silveringot"
+    },
+    "1": {
+      "item": "minecraft:glass_pane"
+    },
+    "2": {
+      "item": "elementure:silveringot"
+    },
+    "3": {
+      "item": "elementure:silveringot"
+    },
+    "4": {
+      "item": "elementure:elementalweb"
+    },
+    "5": {
+      "item": "elementure:silveringot"
+    },
+    "6": {
+      "item": "elementure:silveringot"
+    },
+    "7": {
+      "item": "minecraft:glass_pane"
+    },
+    "8": {
+      "item": "elementure:silveringot"
+    }
+  },
+  "result": {
+    "item": "elementure:skillholder",
+    "count": 2
+  }
+}

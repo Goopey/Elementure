@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/gravel",
+    "up": "elementure:blocks/blue_slime_turf",
+    "north": "elementure:blocks/blue_slime_turf_side",
+    "east": "elementure:blocks/blue_slime_turf_side",
+    "south": "elementure:blocks/blue_slime_turf_side",
+    "west": "elementure:blocks/blue_slime_turf_side",
+    "particle": "elementure:blocks/gravel"
+  }
+}

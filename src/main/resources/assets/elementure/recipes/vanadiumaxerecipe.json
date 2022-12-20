@@ -1,0 +1,30 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_worlds:vanadiumingot"
+    },
+    "1": {
+      "item": "minecraft_worlds:vanadiumingot"
+    },
+    "2": {
+      "item": "minecraft_worlds:vanadiumingot"
+    },
+    "3": {
+      "item": "minecraft:obsidian"
+    },
+    "5": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:vanadiumaxe",
+    "count": 1
+  }
+}

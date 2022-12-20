@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "experience": 0,
+  "cookingtime": 90,
+  "ingredient": {
+    "item": "elementure:mycenashroomblock"
+  },
+  "result": "elementure:mycenashroomitem"
+}

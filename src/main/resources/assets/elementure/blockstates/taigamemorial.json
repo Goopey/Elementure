@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/taigamemorial"
+    },
+    "facing=east": {
+      "model": "elementure:block/taigamemorial",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/taigamemorial",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/taigamemorial",
+      "y": 270
+    }
+  }
+}

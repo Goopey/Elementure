@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:silveringot"
+    },
+    "2": {
+      "item": "elementure:silveringot"
+    },
+    "3": {
+      "item": "elementure:silveringot"
+    },
+    "5": {
+      "item": "elementure:silveringot"
+    }
+  },
+  "result": {
+    "item": "elementure:silverarmor_boots",
+    "count": 1
+  }
+}

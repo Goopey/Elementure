@@ -1,0 +1,288 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -13369600,
+            "falpha": 0.0
+          },
+          "id": 0,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #0",
+          "x": 132,
+          "y": 44
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "Mycenavillagertrade2"
+          },
+          "onStackTransfer": {
+            "name": "Mycenavillagertrade2"
+          },
+          "name": "Slot #1",
+          "x": 150,
+          "y": 44
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "trade_arrow.png",
+          "use1Xscale": false,
+          "name": "trade_arrow.png",
+          "x": 168,
+          "y": 48
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "Mycenavillagertransaction1"
+          },
+          "onStackTransfer": {
+            "name": "Mycenavillagertransaction1"
+          },
+          "name": "Slot #2",
+          "x": 204,
+          "y": 44
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -13369600,
+            "falpha": 0.0
+          },
+          "id": 4,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #4",
+          "x": 132,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "Mycenavillagertrade2"
+          },
+          "onStackTransfer": {
+            "name": "Mycenavillagertrade2"
+          },
+          "name": "Slot #5",
+          "x": 150,
+          "y": 71
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "Mycenavillagertransaction2"
+          },
+          "onStackTransfer": {
+            "name": "Mycenavillagertransaction2"
+          },
+          "name": "Slot #6",
+          "x": 204,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "id": 7,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #7",
+          "x": 222,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -13369600,
+            "falpha": 0.0
+          },
+          "id": 8,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #8",
+          "x": 132,
+          "y": 98
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 9,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "Mycenavillagertrade2"
+          },
+          "onStackTransfer": {
+            "name": "Mycenavillagertrade2"
+          },
+          "name": "Slot #9",
+          "x": 150,
+          "y": 98
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "trade_arrow_3.png",
+          "use1Xscale": false,
+          "name": "trade_arrow_3.png",
+          "x": 168,
+          "y": 93
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 10,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "onTakenFromSlot": {
+            "name": "Mycenavillagertransaction3"
+          },
+          "onStackTransfer": {
+            "name": "Mycenavillagertransaction3"
+          },
+          "name": "Slot #10",
+          "x": 204,
+          "y": 98
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "id": 11,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #11",
+          "x": 222,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "Mycenavillagerguinext"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "Next",
+          "x": 249,
+          "y": 70
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "trade_arrow_2.png",
+          "use1Xscale": false,
+          "name": "trade_arrow_2.png",
+          "x": 168,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "color": {
+            "value": -16724992,
+            "falpha": 0.0
+          },
+          "id": 3,
+          "disableStackInteraction": true,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #3",
+          "x": 222,
+          "y": 44
+        }
+      }
+    ],
+    "onTick": {
+      "name": "Mycenavillagertrade1"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

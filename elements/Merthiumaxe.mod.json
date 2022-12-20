@@ -1,0 +1,37 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "merthiumaxe",
+    "customModelName": "Normal",
+    "name": "Merthium axe [Water]",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 2,
+    "efficiency": 4.0,
+    "attackSpeed": 0.9,
+    "enchantability": 5,
+    "damageVsEntity": 9.0,
+    "usageCount": 278,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Merthiumingot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "MerthiumaxeGather"
+    },
+    "onItemInInventoryTick": {
+      "name": "MerthiumaxeTrueWater"
+    }
+  }
+}

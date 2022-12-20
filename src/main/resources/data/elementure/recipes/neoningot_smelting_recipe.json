@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 1.2,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "elementure:neonblock"
+  },
+  "result": "elementure:neondust"
+}

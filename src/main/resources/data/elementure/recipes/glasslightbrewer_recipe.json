@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:bricks"
+    },
+    "3": {
+      "item": "elementure:rimeessence"
+    },
+    "4": {
+      "item": "elementure:rareglasslight"
+    },
+    "5": {
+      "item": "elementure:rimeessence"
+    },
+    "6": {
+      "item": "minecraft:bricks"
+    },
+    "7": {
+      "item": "elementure:deepdiversstone"
+    },
+    "8": {
+      "item": "minecraft:bricks"
+    }
+  },
+  "result": {
+    "item": "elementure:glasslightbrewer",
+    "count": 1
+  }
+}

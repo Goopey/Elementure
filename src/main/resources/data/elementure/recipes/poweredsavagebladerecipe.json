@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:ores/quartz"
+    },
+    "1": {
+      "tag": "forge:ores/quartz"
+    },
+    "2": {
+      "tag": "forge:ores/quartz"
+    },
+    "3": {
+      "item": "elementure:unpoweredsavageblade"
+    },
+    "4": {
+      "item": "minecraft:redstone_block"
+    },
+    "5": {
+      "item": "elementure:unpoweredsavageblade"
+    },
+    "6": {
+      "item": "minecraft:redstone_block"
+    },
+    "7": {
+      "item": "minecraft:diamond_sword"
+    },
+    "8": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "elementure:poweredsavageblade",
+    "count": 1
+  }
+}

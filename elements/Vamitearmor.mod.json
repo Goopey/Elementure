@@ -1,0 +1,65 @@
+{
+  "_fv": 34,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "vamitehelmet",
+    "enableBody": true,
+    "textureBody": "vamitechestplate",
+    "enableLeggings": true,
+    "textureLeggings": "vamitelegs",
+    "enableBoots": true,
+    "textureBoots": "vamiteboots",
+    "onBodyTick": {
+      "name": "VamitearmorFullarmorbonus"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedarmor"
+    },
+    "armorTextureFile": "vamite_armor_",
+    "helmetName": "Vamite Helmet",
+    "bodyName": "Vamite Body",
+    "leggingsName": "Vamite Leggings",
+    "bootsName": "Vamite Boots",
+    "helmetSpecialInfo": [
+      "Full armor effect : 15% increased speed, increased attack speed when using time essence"
+    ],
+    "bodySpecialInfo": [
+      "Full armor effect : 15% increased speed, increased attack speed when using time essence"
+    ],
+    "leggingsSpecialInfo": [
+      "Full armor effect : 15% increased speed, increased attack speed when using time essence"
+    ],
+    "bootsSpecialInfo": [
+      "Full armor effect : 15% increased speed, increased attack speed when using time essence"
+    ],
+    "helmetModelName": "Default",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 25,
+    "damageValueHelmet": 2,
+    "damageValueBody": 5,
+    "damageValueLeggings": 3,
+    "damageValueBoots": 2,
+    "enchantability": 13,
+    "toughness": 1.2000000000000002,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Vamiteingot"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:vamiteblock"
+    }
+  ],
+  "result": {
+    "item": "elementure:vamiteingot",
+    "count": 9
+  }
+}

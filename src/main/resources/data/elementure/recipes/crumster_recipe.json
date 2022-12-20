@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:crum"
+    },
+    "1": {
+      "item": "elementure:crum"
+    },
+    "2": {
+      "item": "elementure:crum"
+    },
+    "3": {
+      "item": "elementure:crum"
+    },
+    "4": {
+      "item": "elementure:crum"
+    },
+    "5": {
+      "item": "elementure:crum"
+    },
+    "6": {
+      "item": "elementure:crum"
+    },
+    "7": {
+      "item": "elementure:crum"
+    },
+    "8": {
+      "item": "elementure:crum"
+    }
+  },
+  "result": {
+    "item": "elementure:crumster",
+    "count": 1
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Jellyfloatlight"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Jellyfloatlimb"
+      },
+      {
+        "value": "CUSTOM:Jellyfloat"
+      },
+      {
+        "value": "CUSTOM:Jellyfloatlimb"
+      },
+      {
+        "value": "Blocks.GRAVEL"
+      },
+      {
+        "value": "Blocks.GRAVEL"
+      },
+      {
+        "value": "Blocks.GRAVEL"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Jellypoolsmemorial"
+    },
+    "name": "jellypoolsmemorial_recipe",
+    "namespace": "mod"
+  }
+}

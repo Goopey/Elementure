@@ -1,0 +1,7 @@
+{
+  "parent": "elementure:custom/unholyshield",
+  "textures": {
+    "0": "elementure:blocks/unholyshield",
+    "particle": "elementure:items/unholyshield"
+  }
+}

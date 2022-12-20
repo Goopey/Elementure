@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:abyssalmedalion"
+    },
+    {
+      "item": "elementure:abyssaltrophy"
+    }
+  ],
+  "result": {
+    "item": "elementure:abyssalsigil",
+    "count": 1
+  }
+}

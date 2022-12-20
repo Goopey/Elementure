@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:ligniteblock"
+    }
+  ],
+  "result": {
+    "item": "elementure:ligniteingot",
+    "count": 9
+  }
+}

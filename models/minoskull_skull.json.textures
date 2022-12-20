@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "minoskull_skull"
+      },
+      "name": "default"
+    }
+  }
+}

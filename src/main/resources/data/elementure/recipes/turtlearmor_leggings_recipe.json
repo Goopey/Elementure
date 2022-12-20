@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:scute"
+    },
+    "1": {
+      "item": "minecraft:scute"
+    },
+    "2": {
+      "item": "minecraft:scute"
+    },
+    "3": {
+      "item": "minecraft:scute"
+    },
+    "5": {
+      "item": "minecraft:scute"
+    },
+    "6": {
+      "item": "minecraft:scute"
+    },
+    "8": {
+      "item": "minecraft:scute"
+    }
+  },
+  "result": {
+    "item": "elementure:turtlearmor_leggings",
+    "count": 1
+  }
+}

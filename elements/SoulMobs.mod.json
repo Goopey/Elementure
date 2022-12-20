@@ -1,0 +1,47 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Darkspirit"
+      },
+      {
+        "value": "CUSTOM:Halloweenspirit"
+      },
+      {
+        "value": "EntityGhast"
+      },
+      {
+        "value": "EntityVex"
+      },
+      {
+        "value": "EntityPhantom"
+      },
+      {
+        "value": "EntityEvoker"
+      },
+      {
+        "value": "CUSTOM:Ghostwarrior"
+      },
+      {
+        "value": "CUSTOM:CandleKnight"
+      },
+      {
+        "value": "CUSTOM:Spectreknight"
+      },
+      {
+        "value": "CUSTOM:Soulobleck"
+      },
+      {
+        "value": "CUSTOM:Oblecklord"
+      }
+    ],
+    "name": "soul_mobs",
+    "namespace": "forge"
+  }
+}

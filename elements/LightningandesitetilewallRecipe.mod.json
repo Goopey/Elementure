@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 6,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Lightningandesitetile"
+      },
+      {
+        "value": "CUSTOM:Lightningandesitetile"
+      },
+      {
+        "value": "CUSTOM:Lightningandesitetile"
+      },
+      {
+        "value": "CUSTOM:Lightningandesitetile"
+      },
+      {
+        "value": "CUSTOM:Lightningandesitetile"
+      },
+      {
+        "value": "CUSTOM:Lightningandesitetile"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Lightningandesitetileswalls"
+    },
+    "name": "lightningandesitetilewall_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "LOW",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "fishing_background_netherstar.png",
+          "use1Xscale": false,
+          "name": "fishing_background_netherstar.png",
+          "x": 142,
+          "y": 12
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "crumster.png",
+          "use1Xscale": false,
+          "name": "crumster.png",
+          "x": 156,
+          "y": 188
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "CrumsterDisplay"
+    },
+    "gridSettings": {
+      "sx": 4,
+      "sy": 4,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

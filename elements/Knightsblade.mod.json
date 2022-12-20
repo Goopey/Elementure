@@ -1,0 +1,27 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "knightsblade",
+    "customModelName": "Normal",
+    "name": "Knights blade",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.6,
+    "enchantability": 3,
+    "damageVsEntity": 6.0,
+    "usageCount": 957,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

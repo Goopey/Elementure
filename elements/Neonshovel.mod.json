@@ -1,0 +1,26 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "neonshovel",
+    "customModelName": "Normal",
+    "name": "Neon shovel",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 1,
+    "efficiency": 7.0,
+    "attackSpeed": 2.8,
+    "enchantability": 6,
+    "damageVsEntity": 2.0,
+    "usageCount": 328,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

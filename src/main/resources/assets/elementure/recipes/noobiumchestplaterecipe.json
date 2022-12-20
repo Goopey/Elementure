@@ -1,0 +1,39 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_worlds:noobiumingot"
+    },
+    "2": {
+      "item": "minecraft_worlds:noobiumingot"
+    },
+    "3": {
+      "item": "minecraft_worlds:noobiumingot"
+    },
+    "4": {
+      "item": "minecraft_worlds:noobiumingot"
+    },
+    "5": {
+      "item": "minecraft_worlds:noobiumingot"
+    },
+    "6": {
+      "item": "minecraft_worlds:noobiumingot"
+    },
+    "7": {
+      "item": "minecraft_worlds:noobiumingot"
+    },
+    "8": {
+      "item": "minecraft_worlds:noobiumingot"
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:noobiumbody",
+    "count": 1
+  }
+}

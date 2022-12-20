@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:mycenamossbrick"
+    },
+    {
+      "item": "elementure:mycenamossbrick"
+    },
+    {
+      "item": "elementure:mycenamossbrick"
+    },
+    {
+      "item": "elementure:mycenasprouts"
+    },
+    {
+      "item": "elementure:mycenasprouts"
+    },
+    {
+      "item": "elementure:mycenasprouts"
+    },
+    {
+      "item": "elementure:mycenatruffloonchitinscale"
+    },
+    {
+      "item": "elementure:mycenatruffloonchitinscale"
+    }
+  ],
+  "result": {
+    "item": "elementure:mycenanalloy",
+    "count": 2
+  }
+}

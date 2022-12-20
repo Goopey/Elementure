@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:enhancedtarbomb"
+    },
+    "1": {
+      "item": "elementure:enhancedtarbomb"
+    },
+    "2": {
+      "item": "elementure:enhancedtarbomb"
+    },
+    "4": {
+      "item": "elementure:dazzlingingot"
+    },
+    "7": {
+      "item": "elementure:enhancedtarbomb"
+    }
+  },
+  "result": {
+    "item": "elementure:enhancedtarspiritstaff",
+    "count": 1
+  }
+}

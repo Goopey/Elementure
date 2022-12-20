@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:rimesap"
+    },
+    {
+      "item": "elementure:deepdiversstone"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    }
+  ],
+  "result": {
+    "item": "elementure:diversalloy",
+    "count": 1
+  }
+}

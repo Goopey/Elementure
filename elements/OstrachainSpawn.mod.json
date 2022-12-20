@@ -1,0 +1,7 @@
+{
+  "_fv": 34,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><variables><variable id=\"lengthChain\" type=\"Number\">lengthChain</variable><variable id=\"num\" type=\"Number\">num</variable></variables><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"entity_set_rotation\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value><value name=\"yaw\"><block type=\"math_number\"><field name=\"NUM\">11</field></block></value><value name=\"pitch\"><block type=\"math_number\"><field name=\"NUM\">0</field></block></value><next><block type=\"wait\"><value name=\"ticks\"><block type=\"math_number\"><field name=\"NUM\">2</field></block></value><statement name=\"do\"><block type=\"call_procedure\"><field name=\"procedure\">OstrachainSpawn2</field></block></statement></block></next></block></next></block></xml>"
+  }
+}

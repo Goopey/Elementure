@@ -1,0 +1,282 @@
+{
+  "mod.entity.nether_dragon_adult_roar_test.sound": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "elementure:nether_dragon_roar_test_1",
+        "stream": false
+      }
+    ]
+  },
+  "murk_mummy_breath": {
+    "category": "ambient",
+    "sounds": [
+      {
+        "name": "elementure:murk_mummy_ambient",
+        "stream": false
+      }
+    ]
+  },
+  "dungeon_breath": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "elementure:dungeon_breath",
+        "stream": false
+      }
+    ]
+  },
+  "murky_corpse_hurt": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "elementure:murk_mummy_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "dungeon_sound": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "elementure:dungeon_sound",
+        "stream": false
+      }
+    ]
+  },
+  "negative_dungeon_step_sound": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "elementure:negative_dungeon_block_ambient",
+        "stream": false
+      }
+    ]
+  },
+  "murky_mummy_death": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "elementure:murk_mummy_death",
+        "stream": false
+      }
+    ]
+  },
+  "nether_dragon_summon": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "elementure:nether_dragon_summon",
+        "stream": false
+      }
+    ]
+  },
+  "vengefulspiritskillsound": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "elementure:vengefulspiritskillsound",
+        "stream": false
+      }
+    ]
+  },
+  "cryosyncopy_chthonic_slumber_abyss_music": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "elementure:cryosyncopy_-_chthonic_slumber",
+        "stream": true
+      }
+    ]
+  },
+  "mattia_cupelli_dark_choir_background_music_pitlands_theme": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "elementure:mattia_cupelli-mix-dark_choir_background_music",
+        "stream": true
+      }
+    ]
+  },
+  "loot_chest_opening": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "elementure:ta-ta-tarata-ta-taaaaaaa",
+        "stream": false
+      }
+    ]
+  },
+  "memory_teleport_startup": {
+    "category": "master",
+    "subtitle": "subtitles.memory_teleport_startup",
+    "sounds": [
+      {
+        "name": "elementure:memory_teleport_startup_sfx",
+        "stream": false
+      }
+    ]
+  },
+  "memory_teleport": {
+    "category": "master",
+    "subtitle": "subtitles.memory_teleport",
+    "sounds": [
+      {
+        "name": "elementure:memory_teleport",
+        "stream": false
+      }
+    ]
+  },
+  "intro_theme": {
+    "category": "music",
+    "subtitle": "subtitles.intro_theme",
+    "sounds": [
+      {
+        "name": "elementure:c418_-_intro_minecraft_volume_beta",
+        "stream": true
+      }
+    ]
+  },
+  "cucuiganon": {
+    "category": "music",
+    "subtitle": "subtitles.cucuiganon",
+    "sounds": [
+      {
+        "name": "elementure:cucui_ganon_short",
+        "stream": true
+      }
+    ]
+  },
+  "corallabyrinth": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "elementure:smw_custom_music_-_coral_labyrinth_spc_echoes_2",
+        "stream": true
+      }
+    ]
+  },
+  "marbleforest_music": {
+    "category": "music",
+    "subtitle": "subtitles.marbleforest_music",
+    "sounds": [
+      {
+        "name": "elementure:marble_forest_catacombs",
+        "stream": true
+      }
+    ]
+  },
+  "repulsive_forgotten": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "elementure:repulsive_-_forgotten_copyright_free_horror_music",
+        "stream": true
+      }
+    ]
+  },
+  "redsun_swing": {
+    "category": "player",
+    "subtitle": "subtitles.redsun_swing",
+    "sounds": [
+      {
+        "name": "elementure:redsun_swoosh",
+        "stream": false
+      }
+    ]
+  },
+  "redsun_super_swing": {
+    "category": "player",
+    "subtitle": "subtitles.redsun_super_swing",
+    "sounds": [
+      {
+        "name": "elementure:redsun_super_swoosh",
+        "stream": false
+      }
+    ]
+  },
+  "one_more_day": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "elementure:one_more_day",
+        "stream": true
+      }
+    ]
+  },
+  "stand_tall": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "elementure:stand_tall",
+        "stream": true
+      }
+    ]
+  },
+  "hydrothermal_hollow": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "elementure:lui37-_hydrothermal_hollow",
+        "stream": true
+      }
+    ]
+  },
+  "rebel_base_1": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "elementure:crusader_-_no_remorse_music_-_rebel_base_i",
+        "stream": true
+      }
+    ]
+  },
+  "black_iron_pact": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "elementure:battle_brothers_ost_-_06_-_the_black_iron_pact_orcs",
+        "stream": true
+      }
+    ]
+  },
+  "stand_at_mithrill_hall": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "elementure:forgotten_realms_demon_stone_soundtrack_-_stand_at_mithril_hall",
+        "stream": true
+      }
+    ]
+  },
+  "lebigma": {
+    "category": "master",
+    "subtitle": "subtitles.lebigma",
+    "sounds": [
+      {
+        "name": "elementure:lebigmaigre_ma",
+        "stream": false
+      }
+    ]
+  },
+  "kassem_hurt": {
+    "category": "hostile",
+    "subtitle": "subtitles.kassem_hurt",
+    "sounds": [
+      {
+        "name": "elementure:kassem_hurt",
+        "stream": false
+      }
+    ]
+  },
+  "kassem_death": {
+    "category": "hostile",
+    "subtitle": "subtitles.kassem_death",
+    "sounds": [
+      {
+        "name": "elementure:kassem_death",
+        "stream": false
+      }
+    ]
+  }
+}

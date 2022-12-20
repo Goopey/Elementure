@@ -1,0 +1,113 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 144,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "memory_matrix_gui_background.png",
+          "use1Xscale": false,
+          "name": "memory_matrix_gui_background.png",
+          "x": 180,
+          "y": 112
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "memory_matrix_gui_deco.png",
+          "use1Xscale": false,
+          "name": "memory_matrix_gui_deco.png",
+          "x": 180,
+          "y": 112
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": ">",
+          "onClick": {
+            "name": "MemorymatrixGUINext"
+          },
+          "width": 30,
+          "height": 20,
+          "name": ">",
+          "x": 251,
+          "y": 78
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<",
+          "onClick": {
+            "name": "MemorymatrixGUIBack"
+          },
+          "width": 30,
+          "height": 20,
+          "name": "<",
+          "x": 145,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:text:memorial_type_name_>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:text:memorial_type_name_>",
+          "x": 182,
+          "y": 60
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Go",
+          "onClick": {
+            "name": "MemorymatrixGUIGo"
+          },
+          "width": 35,
+          "height": 20,
+          "name": "Go",
+          "x": 196,
+          "y": 78
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<BNBT:integer:teleport_num>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<BNBT:integer:teleport_num>",
+          "x": 169,
+          "y": 60
+        }
+      }
+    ],
+    "onClosed": {
+      "name": "MemorymatrixGuiReset"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

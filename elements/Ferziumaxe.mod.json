@@ -1,0 +1,37 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "ferziumaxe",
+    "customModelName": "Normal",
+    "name": "Ferzium axe [Fire]",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 2,
+    "efficiency": 5.0,
+    "attackSpeed": 0.9,
+    "enchantability": 4,
+    "damageVsEntity": 9.0,
+    "usageCount": 214,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ferziumingot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "FerziumaxeGather"
+    },
+    "onItemInInventoryTick": {
+      "name": "FerziumaxeTrueFire"
+    }
+  }
+}

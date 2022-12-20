@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:darkgem"
+    },
+    "1": {
+      "item": "elementure:darkgem"
+    },
+    "2": {
+      "item": "elementure:darkgem"
+    },
+    "3": {
+      "item": "elementure:cormunculusblock"
+    },
+    "4": {
+      "item": "elementure:dazzlingingot"
+    },
+    "5": {
+      "item": "elementure:cormunculusblock"
+    },
+    "7": {
+      "item": "elementure:cormunculusblock"
+    }
+  },
+  "result": {
+    "item": "elementure:cormunculus_cleansingtorch",
+    "count": 1
+  }
+}

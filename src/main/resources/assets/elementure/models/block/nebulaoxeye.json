@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "elementure:blocks/nebulaoxeye",
+    "particle": "elementure:blocks/nebulaoxeye"
+  }
+}

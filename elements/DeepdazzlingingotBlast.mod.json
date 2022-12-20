@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "xpReward": 2.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:Deepshimmeringore"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:Dazzlingingot"
+    },
+    "name": "deepdazzlingingot_blast",
+    "namespace": "mod"
+  }
+}

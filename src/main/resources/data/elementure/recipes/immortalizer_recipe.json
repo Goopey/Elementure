@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:forgottenfragment"
+    },
+    {
+      "item": "elementure:corememoryfragment"
+    }
+  ],
+  "result": {
+    "item": "elementure:immortalizer",
+    "count": 1
+  }
+}

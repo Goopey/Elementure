@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:watersoul"
+    },
+    "1": {
+      "item": "elementure:elementalweb"
+    },
+    "2": {
+      "item": "elementure:watersoul"
+    },
+    "3": {
+      "item": "elementure:watersoul"
+    },
+    "4": {
+      "item": "elementure:silversword"
+    },
+    "5": {
+      "item": "elementure:watersoul"
+    },
+    "6": {
+      "item": "elementure:watersoul"
+    },
+    "7": {
+      "item": "elementure:elementalweb"
+    },
+    "8": {
+      "item": "elementure:watersoul"
+    }
+  },
+  "result": {
+    "item": "elementure:waterblade",
+    "count": 1
+  }
+}

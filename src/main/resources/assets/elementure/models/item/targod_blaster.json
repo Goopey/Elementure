@@ -1,0 +1,7 @@
+{
+  "parent": "elementure:custom/tar_god_blaster",
+  "textures": {
+    "0": "elementure:blocks/tar_avatar_blaster",
+    "particle": "elementure:items/tar_avatar_blaster"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft_worlds:custom/waterelementharvested",
+  "textures": {
+    "all": "minecraft_worlds:blocks/w_elementalaltar",
+    "particle": "minecraft_worlds:blocks/w_elementalaltar",
+    "0": "minecraft_worlds:blocks/w_elementalaltar"
+  }
+}

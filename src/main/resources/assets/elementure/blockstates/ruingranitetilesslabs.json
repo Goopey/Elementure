@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/ruingranitetilesslabs"
+    },
+    "type=top": {
+      "model": "elementure:block/ruingranitetilesslabs_top"
+    },
+    "type=double": {
+      "model": "elementure:block/ruingranitetilesslabs_full"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/homegateside",
+    "up": "elementure:blocks/homegatetops",
+    "north": "elementure:blocks/homegatesides",
+    "east": "elementure:blocks/homegatesides",
+    "south": "elementure:blocks/homegatesides",
+    "west": "elementure:blocks/homegatesides",
+    "particle": "elementure:blocks/homegateside"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/yellowbarrierclosing"
+    },
+    "facing=east": {
+      "model": "elementure:block/yellowbarrierclosing",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/yellowbarrierclosing",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/yellowbarrierclosing",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "elementure:block/yellowbarrierclosing",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "elementure:block/yellowbarrierclosing",
+      "x": 90
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "dustfluxshovel",
+    "customModelName": "Normal",
+    "name": "Dustflux shovel",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 2,
+    "efficiency": 11.0,
+    "attackSpeed": 2.8,
+    "enchantability": 4,
+    "damageVsEntity": 2.0,
+    "usageCount": 358,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

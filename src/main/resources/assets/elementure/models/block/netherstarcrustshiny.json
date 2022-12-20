@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/netherstarcrustshiny",
+    "up": "elementure:blocks/netherstarcrustshiny",
+    "north": "elementure:blocks/netherstarcrustshiny",
+    "east": "elementure:blocks/netherstarcrustshiny",
+    "south": "elementure:blocks/netherstarcrustshiny",
+    "west": "elementure:blocks/netherstarcrustshiny",
+    "particle": "elementure:blocks/netherstarcrustshiny"
+  }
+}

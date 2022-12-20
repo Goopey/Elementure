@@ -1,0 +1,77 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_3.png",
+          "use1Xscale": false,
+          "name": "music_box_popup_3.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_dot.png",
+          "use1Xscale": false,
+          "name": "music_dot.png",
+          "x": 1,
+          "y": 5
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_wheel.png",
+          "use1Xscale": false,
+          "name": "music_wheel.png",
+          "x": 145,
+          "y": 5
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "The Black Iron Pact",
+          "color": {
+            "value": -203,
+            "falpha": 0.0
+          },
+          "name": "The Black Iron Pact",
+          "x": 15,
+          "y": 4
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "From:Battle Brothers",
+          "color": {
+            "value": -203,
+            "falpha": 0.0
+          },
+          "name": "From:Battle Brothers",
+          "x": 15,
+          "y": 12
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "UmbrasylConfirm"
+    },
+    "gridSettings": {
+      "sx": 9,
+      "sy": 2,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

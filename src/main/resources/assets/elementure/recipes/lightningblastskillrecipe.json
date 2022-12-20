@@ -1,0 +1,25 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_worlds:skillholder"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "minecraft_worlds:lightningsoul"
+    },
+    {
+      "item": "minecraft_worlds:lightningsoul"
+    },
+    {
+      "item": "minecraft_worlds:lightningsoul"
+    }
+  ],
+  "result": {
+    "item": "minecraft_worlds:lightningblastskill",
+    "count": 1
+  }
+}

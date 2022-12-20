@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:flutaniteingot"
+    },
+    "1": {
+      "item": "elementure:flutaniteingot"
+    },
+    "2": {
+      "item": "elementure:flutaniteingot"
+    },
+    "3": {
+      "item": "elementure:flutaniteingot"
+    },
+    "5": {
+      "item": "elementure:flutaniteingot"
+    }
+  },
+  "result": {
+    "item": "elementure:flutanitearmor_helmet",
+    "count": 1
+  }
+}

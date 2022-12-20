@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:seagrass",
+    "minecraft:kelp",
+    "minecraft:water",
+    "minecraft:tall_seagrass",
+    "elementure:nanoshrimppot",
+    "minecraft:sea_pickle",
+    "minecraft:kelp_plant",
+    "elementure:crabpot"
+  ]
+}

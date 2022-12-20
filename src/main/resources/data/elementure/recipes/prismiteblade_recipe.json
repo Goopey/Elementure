@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:prismiteshard"
+    },
+    "1": {
+      "item": "elementure:prismiteshard"
+    },
+    "2": {
+      "item": "elementure:shardedobsidian"
+    }
+  },
+  "result": {
+    "item": "elementure:prismiteblade",
+    "count": 1
+  }
+}

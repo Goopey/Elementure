@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:brontium"
+    },
+    "2": {
+      "item": "elementure:brontium"
+    },
+    "3": {
+      "item": "elementure:brontium"
+    },
+    "4": {
+      "item": "elementure:brontium"
+    },
+    "5": {
+      "item": "elementure:brontium"
+    },
+    "6": {
+      "item": "elementure:brontium"
+    },
+    "7": {
+      "item": "elementure:brontium"
+    },
+    "8": {
+      "item": "elementure:brontium"
+    }
+  },
+  "result": {
+    "item": "elementure:brontiumarmor_chestplate",
+    "count": 1
+  }
+}

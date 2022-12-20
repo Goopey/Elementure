@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:netherplanks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "elementure:netherplanks"
+    },
+    "3": {
+      "item": "elementure:netherplanks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "elementure:netherplanks"
+    }
+  },
+  "result": {
+    "item": "elementure:nethergate",
+    "count": 1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "elementure:blocks/lilypad_plank",
+    "top": "elementure:blocks/lilypad_plank",
+    "side": "elementure:blocks/lilypad_plank"
+  }
+}

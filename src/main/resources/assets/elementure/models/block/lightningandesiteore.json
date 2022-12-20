@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/lightning_andesite_ore",
+    "up": "elementure:blocks/lightning_andesite_ore",
+    "north": "elementure:blocks/lightning_andesite_ore",
+    "east": "elementure:blocks/lightning_andesite_ore",
+    "south": "elementure:blocks/lightning_andesite_ore",
+    "west": "elementure:blocks/lightning_andesite_ore",
+    "particle": "elementure:blocks/lightning_andesite_ore"
+  }
+}

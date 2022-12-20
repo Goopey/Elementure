@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/annimatedstatueblock"
+    },
+    "facing=east": {
+      "model": "elementure:block/annimatedstatueblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/annimatedstatueblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/annimatedstatueblock",
+      "y": 270
+    }
+  }
+}

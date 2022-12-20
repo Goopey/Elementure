@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/minigobberrybush"
+    },
+    "facing=east": {
+      "model": "elementure:block/minigobberrybush",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/minigobberrybush",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/minigobberrybush",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "elementure:blocks/mycena_moss_bricks",
+    "particle": "elementure:blocks/mycena_moss_bricks"
+  }
+}

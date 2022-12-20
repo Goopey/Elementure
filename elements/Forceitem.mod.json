@@ -1,0 +1,23 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Powerstrikeskill"
+      },
+      {
+        "value": "CUSTOM:Ultibreakerblade"
+      },
+      {
+        "value": "CUSTOM:Forcingblade"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "forceitem",
+    "namespace": "forge"
+  }
+}

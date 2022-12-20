@@ -1,0 +1,74 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Dankblade"
+      },
+      {
+        "value": "CUSTOM:Darkblade"
+      },
+      {
+        "value": "CUSTOM:Cursedblade"
+      },
+      {
+        "value": "CUSTOM:Darkenskill"
+      },
+      {
+        "value": "CUSTOM:Unholysword"
+      },
+      {
+        "value": "CUSTOM:Unholyaxe"
+      },
+      {
+        "value": "CUSTOM:Phaseblade"
+      },
+      {
+        "value": "CUSTOM:Aurummace"
+      },
+      {
+        "value": "CUSTOM:Aurumaxe"
+      },
+      {
+        "value": "CUSTOM:TwistedBlade"
+      },
+      {
+        "value": "CUSTOM:Othersideblade"
+      },
+      {
+        "value": "CUSTOM:Darkgemsword"
+      },
+      {
+        "value": "CUSTOM:Darkgemaxe"
+      },
+      {
+        "value": "CUSTOM:Darkgemshovel"
+      },
+      {
+        "value": "CUSTOM:Targodpiercer"
+      },
+      {
+        "value": "CUSTOM:Enhancedtargodpiercer"
+      },
+      {
+        "value": "CUSTOM:Tarspiritstaff"
+      },
+      {
+        "value": "CUSTOM:Enhancedtarspiritstaff"
+      },
+      {
+        "value": "CUSTOM:DarkcormunculusChanneler"
+      },
+      {
+        "value": "CUSTOM:Kassemstaff"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "darkitem",
+    "namespace": "forge"
+  }
+}

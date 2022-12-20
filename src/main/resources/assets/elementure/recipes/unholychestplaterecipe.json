@@ -1,0 +1,42 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_worlds:unholydust"
+    },
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "2": {
+      "item": "minecraft_worlds:unholydust"
+    },
+    "3": {
+      "item": "minecraft_worlds:unholydust"
+    },
+    "4": {
+      "item": "minecraft:iron_chestplate"
+    },
+    "5": {
+      "item": "minecraft_worlds:unholydust"
+    },
+    "6": {
+      "item": "minecraft_worlds:unholydust"
+    },
+    "7": {
+      "item": "minecraft:iron_ingot"
+    },
+    "8": {
+      "item": "minecraft_worlds:unholydust"
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:unholyarmorbody",
+    "count": 1
+  }
+}

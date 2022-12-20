@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/limerimefan"
+    },
+    "facing=east": {
+      "model": "elementure:block/limerimefan",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/limerimefan",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/limerimefan",
+      "y": 270
+    }
+  }
+}

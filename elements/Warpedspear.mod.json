@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "warped_spear",
+    "customModelName": "Normal",
+    "name": "Warped spear [Void]",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 521,
+    "actionSound": {
+      "value": "item.trident.return"
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "WarpedspearGlow"
+    },
+    "animation": "spear",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 10.5,
+    "onRangedItemUsed": {
+      "name": "WarpedspearShootSalvo"
+    },
+    "useCondition": {
+      "name": "WarpedspearGlow"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 4.0,
+    "bulletKnockback": 3,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modeltwistedspearrings",
+    "customBulletModelTexture": "twistedspearrings_texturemap.png"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:dark",
+    "elementure:mushyslimeglue",
+    "elementure:corruptgrass",
+    "elementure:murk",
+    "elementure:icyslime",
+    "elementure:abyssalfire",
+    "elementure:mycenium",
+    "elementure:mycenamossygrass",
+    "elementure:myceniummoss",
+    "elementure:sunturfblock",
+    "elementure:greenslimeturf",
+    "elementure:blueslimeturf",
+    "elementure:pinkslimeturf",
+    "elementure:cloudsand",
+    "elementure:mycenasporecloud_block"
+  ]
+}

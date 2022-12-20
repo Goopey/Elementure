@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:ruingranitebricks"
+    },
+    "3": {
+      "item": "elementure:ruingranitebricks"
+    },
+    "4": {
+      "item": "elementure:ruingranitebricks"
+    },
+    "6": {
+      "item": "elementure:ruingranitebricks"
+    },
+    "7": {
+      "item": "elementure:ruingranitebricks"
+    },
+    "8": {
+      "item": "elementure:ruingranitebricks"
+    }
+  },
+  "result": {
+    "item": "elementure:ruingranitebricksstairs",
+    "count": 4
+  }
+}

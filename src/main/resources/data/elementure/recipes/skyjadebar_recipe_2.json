@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:skyjadeblock"
+    }
+  ],
+  "result": {
+    "item": "elementure:skyjadebar",
+    "count": 9
+  }
+}

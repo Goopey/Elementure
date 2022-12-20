@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:skillholder"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "elementure:airsoul"
+    },
+    {
+      "item": "elementure:airsoul"
+    },
+    {
+      "item": "elementure:airsoul"
+    }
+  ],
+  "result": {
+    "item": "elementure:airblastskill",
+    "count": 1
+  }
+}

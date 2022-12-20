@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:fluffplanks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "elementure:fluffplanks"
+    },
+    "3": {
+      "item": "elementure:fluffplanks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "elementure:fluffplanks"
+    }
+  },
+  "result": {
+    "item": "elementure:fluffplankfence",
+    "count": 3
+  }
+}

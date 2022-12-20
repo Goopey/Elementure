@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "elementure:memoryfishrare"
+    },
+    {
+      "item": "elementure:memoryfish"
+    },
+    {
+      "item": "elementure:memoryfragment"
+    },
+    {
+      "item": "elementure:rarememoryfragment"
+    },
+    {
+      "item": "elementure:memoryfragment"
+    }
+  ],
+  "result": {
+    "item": "elementure:memorysoup",
+    "count": 1
+  }
+}

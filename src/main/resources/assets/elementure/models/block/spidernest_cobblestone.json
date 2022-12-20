@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/spider_infested_cobblestone",
+    "up": "elementure:blocks/spider_infested_cobblestone",
+    "north": "elementure:blocks/spider_infested_cobblestone",
+    "east": "elementure:blocks/spider_infested_cobblestone",
+    "south": "elementure:blocks/spider_infested_cobblestone",
+    "west": "elementure:blocks/spider_infested_cobblestone",
+    "particle": "elementure:blocks/spider_infested_cobblestone"
+  }
+}

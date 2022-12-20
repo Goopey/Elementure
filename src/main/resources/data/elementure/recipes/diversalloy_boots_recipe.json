@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:diversalloy"
+    },
+    "2": {
+      "item": "elementure:diversalloy"
+    },
+    "3": {
+      "item": "elementure:diversalloy"
+    },
+    "5": {
+      "item": "elementure:diversalloy"
+    }
+  },
+  "result": {
+    "item": "elementure:diversalloy_armor_boots",
+    "count": 1
+  }
+}

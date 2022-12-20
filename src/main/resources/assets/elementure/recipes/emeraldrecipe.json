@@ -1,0 +1,42 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_worlds:unknown_element"
+    },
+    "1": {
+      "item": "minecraft_worlds:unknown_element"
+    },
+    "2": {
+      "item": "minecraft_worlds:unknown_element"
+    },
+    "3": {
+      "item": "minecraft_worlds:unknown_element"
+    },
+    "4": {
+      "item": "minecraft_worlds:unknown_element"
+    },
+    "5": {
+      "item": "minecraft_worlds:unknown_element"
+    },
+    "6": {
+      "item": "minecraft_worlds:unknown_element"
+    },
+    "7": {
+      "item": "minecraft_worlds:unknown_element"
+    },
+    "8": {
+      "item": "minecraft_worlds:unknown_element"
+    }
+  },
+  "result": {
+    "item": "minecraft:emerald",
+    "count": 1
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "_fv": 34,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "silverhelmet",
+    "enableBody": true,
+    "textureBody": "silverchestplate",
+    "enableLeggings": true,
+    "textureLeggings": "silverlegs",
+    "enableBoots": true,
+    "textureBoots": "silverboots",
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedarmor"
+    },
+    "armorTextureFile": "silver_armor_",
+    "helmetName": "Silver Helmet",
+    "bodyName": "Silver Body",
+    "leggingsName": "Silver Leggings",
+    "bootsName": "Silver Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 30,
+    "damageValueHelmet": 2,
+    "damageValueBody": 5,
+    "damageValueLeggings": 7,
+    "damageValueBoots": 3,
+    "enchantability": 9,
+    "toughness": 1.1,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

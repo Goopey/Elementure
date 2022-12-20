@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:dazzlingingot"
+    },
+    {
+      "item": "elementure:cormunculusblock"
+    },
+    {
+      "item": "elementure:cormunculusblock"
+    }
+  ],
+  "result": {
+    "item": "elementure:cormunculus_swimmingcharm",
+    "count": 1
+  }
+}

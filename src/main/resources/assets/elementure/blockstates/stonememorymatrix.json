@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/stonememorymatrix"
+    },
+    "facing=east": {
+      "model": "elementure:block/stonememorymatrix",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/stonememorymatrix",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/stonememorymatrix",
+      "y": 270
+    }
+  }
+}

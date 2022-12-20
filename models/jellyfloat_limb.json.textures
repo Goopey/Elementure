@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "main": "jellyfloat_limb_texture"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "elementure:custom/lignitelongspear",
+  "textures": {
+    "0": "elementure:blocks/lignitelongspear",
+    "particle": "elementure:items/lignitelongspear"
+  }
+}

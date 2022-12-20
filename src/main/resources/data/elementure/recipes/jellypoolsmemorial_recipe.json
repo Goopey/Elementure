@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:jellyfloatlight"
+    },
+    {
+      "item": "elementure:jellyfloatlimb"
+    },
+    {
+      "item": "elementure:jellyfloat"
+    },
+    {
+      "item": "elementure:jellyfloatlimb"
+    },
+    {
+      "item": "minecraft:gravel"
+    },
+    {
+      "item": "minecraft:gravel"
+    },
+    {
+      "item": "minecraft:gravel"
+    }
+  ],
+  "result": {
+    "item": "elementure:jellypoolsmemorial",
+    "count": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:fluffplanks"
+    },
+    "1": {
+      "item": "elementure:fluffplanks"
+    },
+    "2": {
+      "item": "elementure:fluffplanks"
+    }
+  },
+  "result": {
+    "item": "elementure:fluffslabplanks",
+    "count": 6
+  }
+}

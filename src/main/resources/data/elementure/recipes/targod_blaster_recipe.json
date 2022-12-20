@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:tarbomb"
+    },
+    "1": {
+      "item": "elementure:tarbomb"
+    },
+    "2": {
+      "item": "elementure:tarbomb"
+    },
+    "3": {
+      "item": "elementure:tarbomb"
+    },
+    "4": {
+      "item": "elementure:burningtarblock"
+    },
+    "5": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "elementure:targod_blaster",
+    "count": 1
+  }
+}

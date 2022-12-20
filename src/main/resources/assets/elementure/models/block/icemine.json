@@ -1,0 +1,9 @@
+{
+  "parent": "elementure:custom/mine",
+  "textures": {
+    "all": "elementure:blocks/iceblock_layer1",
+    "particle": "elementure:blocks/iceblock_layer1",
+    "0": "elementure:blocks/iceblock",
+    "1": "elementure:blocks/iceblock_layer1"
+  }
+}

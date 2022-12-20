@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/netherrack",
+    "up": "elementure:blocks/netherrack",
+    "north": "elementure:blocks/netherrack",
+    "east": "elementure:blocks/netherrack",
+    "south": "elementure:blocks/netherrack",
+    "west": "elementure:blocks/netherrack",
+    "particle": "elementure:blocks/netherrack"
+  }
+}

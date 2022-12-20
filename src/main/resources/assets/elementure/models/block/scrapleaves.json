@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/scrap_leaves",
+    "up": "elementure:blocks/scrap_leaves",
+    "north": "elementure:blocks/scrap_leaves",
+    "east": "elementure:blocks/scrap_leaves",
+    "south": "elementure:blocks/scrap_leaves",
+    "west": "elementure:blocks/scrap_leaves",
+    "particle": "elementure:blocks/scrap_leaves"
+  }
+}

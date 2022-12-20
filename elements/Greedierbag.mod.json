@@ -1,0 +1,50 @@
+{
+  "_fv": 34,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "greedier_pouch",
+    "customModelName": "Normal",
+    "name": "Greedier's bag",
+    "rarity": "RARE",
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddeditems"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "\"Greed is what I am",
+      "'Cause no one can",
+      "Hide from their sins",
+      "There's no escape",
+      "Even if you try to run away you still must pay\"",
+      "-Greed Jan 31",
+      "2021"
+    ],
+    "hasGlow": true,
+    "guiBoundTo": "PouchGUI",
+    "inventorySize": 5,
+    "inventoryStackSize": 64,
+    "isFood": false,
+    "nutritionalValue": 0,
+    "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "eat"
+  }
+}

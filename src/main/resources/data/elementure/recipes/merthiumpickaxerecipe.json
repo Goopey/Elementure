@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:merthiumingot"
+    },
+    "1": {
+      "item": "elementure:merthiumingot"
+    },
+    "2": {
+      "item": "elementure:merthiumingot"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "elementure:merthiumpickaxe",
+    "count": 1
+  }
+}

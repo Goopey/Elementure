@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:memorybobber_entity",
+    "elementure:obsidianbobber_ent",
+    "elementure:custombobber",
+    "elementure:harpoonbullet"
+  ]
+}

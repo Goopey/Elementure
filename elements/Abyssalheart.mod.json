@@ -1,0 +1,53 @@
+{
+  "_fv": 34,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "abyssalheart",
+    "customModelName": "Normal",
+    "name": "Abyssal heart",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "The heart of the abyss. As long as you have it, you are it's rather ultimate bearer and carry all of it's dark energy and corruption inside of you...",
+      "How to use :",
+      "When you sneak",
+      "you extinguish yourself if you are on fire due to the corruption being slightly freed and devouring it all each time you sneak and you are unable to take fall damage due to dark energy swirling around you...",
+      "When you're sprinting",
+      "it allows you to fly through the air by propulsing you using powerful dark energy and softens your fall using that same energy...",
+      "All the dark energy and the corruption also provide you other nice effects since they'd protect you as their new ruler... Also!",
+      "it allows you to control the abyssal corruption by right-clicking since... you are it's new ruler..."
+    ],
+    "hasGlow": true,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "AbyssalheartToggleabyss"
+    },
+    "onRightClickedOnBlock": {
+      "name": "AbyssalheartToggleabyss"
+    },
+    "onItemInInventoryTick": {
+      "name": "AbyssalheartEffect"
+    },
+    "isFood": false,
+    "nutritionalValue": 0,
+    "saturation": 0.30000001192092896,
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "eat"
+  }
+}

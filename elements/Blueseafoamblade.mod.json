@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "blue_seafoam_blade",
+    "customModelName": "Normal",
+    "name": "Blue seafoam blade [Water]",
+    "specialInfo": [
+      "The blue jelly infused gives it enhanced speed."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 2.0,
+    "enchantability": 2,
+    "damageVsEntity": 3.5,
+    "usageCount": 321,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:SeafoamIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "BlueseabladeGather"
+    },
+    "onItemInUseTick": {
+      "name": "BlueseafoambladeTrueWater"
+    }
+  }
+}

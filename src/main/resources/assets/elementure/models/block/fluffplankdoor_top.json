@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top",
+  "textures": {
+    "bottom": "elementure:blocks/fluff_door_bottom",
+    "top": "elementure:blocks/fluff_door_top"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:neondust"
+    },
+    "2": {
+      "item": "elementure:neondust"
+    },
+    "3": {
+      "item": "elementure:neondust"
+    },
+    "4": {
+      "item": "elementure:neondust"
+    },
+    "5": {
+      "item": "elementure:neondust"
+    },
+    "6": {
+      "item": "elementure:neondust"
+    },
+    "7": {
+      "item": "elementure:neondust"
+    },
+    "8": {
+      "item": "elementure:neondust"
+    }
+  },
+  "result": {
+    "item": "elementure:neonarmor_chestplate",
+    "count": 1
+  }
+}

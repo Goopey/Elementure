@@ -1,0 +1,23 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Aurumbricks"
+      },
+      {
+        "value": "CUSTOM:Aurumtiles"
+      },
+      {
+        "value": "CUSTOM:Aurumblock"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "aurummat_block",
+    "namespace": "mod"
+  }
+}

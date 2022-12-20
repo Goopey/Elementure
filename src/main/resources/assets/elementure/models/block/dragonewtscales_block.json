@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/dragonewt_scales_block",
+    "up": "elementure:blocks/dragonewt_scales_block",
+    "north": "elementure:blocks/dragonewt_scales_block",
+    "east": "elementure:blocks/dragonewt_scales_block",
+    "south": "elementure:blocks/dragonewt_scales_block",
+    "west": "elementure:blocks/dragonewt_scales_block",
+    "particle": "elementure:blocks/dragonewt_scales_block"
+  }
+}

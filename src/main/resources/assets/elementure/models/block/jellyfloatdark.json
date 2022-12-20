@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/jellyfloat_slime_dark",
+    "up": "elementure:blocks/jellyfloat_slime_dark",
+    "north": "elementure:blocks/jellyfloat_slime_dark",
+    "east": "elementure:blocks/jellyfloat_slime_dark",
+    "south": "elementure:blocks/jellyfloat_slime_dark",
+    "west": "elementure:blocks/jellyfloat_slime_dark",
+    "particle": "elementure:blocks/jellyfloat_slime_dark"
+  }
+}

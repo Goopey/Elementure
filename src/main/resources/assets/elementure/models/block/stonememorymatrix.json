@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/stone_memory_matrix",
+  "textures": {
+    "all": "elementure:blocks/stone_memory_matrix",
+    "particle": "elementure:blocks/stone_memory_matrix",
+    "main": "elementure:blocks/stone_memory_matrix"
+  }
+}

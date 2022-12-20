@@ -1,0 +1,47 @@
+{
+  "_fv": 34,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "aged_rosary",
+    "customModelName": "Normal",
+    "name": "Aged rosary",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Artifact : An aged rosary. Its strength may be diminished and its purity soiled, but it still vibrates with holy power."
+    ],
+    "hasGlow": true,
+    "guiBoundTo": "AgedrosaryGUI",
+    "inventorySize": 3,
+    "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "AgedrosaryUpdate"
+    },
+    "onItemInUseTick": {
+      "name": "AgedrosaryCommunicateAcceptance"
+    },
+    "isFood": false,
+    "nutritionalValue": 0,
+    "saturation": 0.30000001192092896,
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "eat"
+  }
+}

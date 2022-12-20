@@ -1,0 +1,61 @@
+{
+  "_fv": 34,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "neonhelmet",
+    "enableBody": true,
+    "textureBody": "neonchestplate",
+    "enableLeggings": true,
+    "textureLeggings": "neonlegs",
+    "enableBoots": true,
+    "textureBoots": "neonboots",
+    "onBodyTick": {
+      "name": "NeonarmorFullArmorBonus"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedarmor"
+    },
+    "armorTextureFile": "neon_",
+    "helmetName": "Neon Helmet",
+    "bodyName": "Neon Body",
+    "leggingsName": "Neon Leggings",
+    "bootsName": "Neon Boots",
+    "helmetSpecialInfo": [
+      "Full armor effect : When using energy essence, heal 2.5 hearts and gain a haste effect which gets stronger the more essence you use for 5 seconds"
+    ],
+    "bodySpecialInfo": [
+      "Full armor effect : When using energy essence, heal 2.5 hearts and gain a haste effect which gets stronger the more essence you use for 5 seconds"
+    ],
+    "leggingsSpecialInfo": [
+      "Full armor effect : When using energy essence, heal 2.5 hearts and gain a haste effect which gets stronger the more essence you use for 5 seconds"
+    ],
+    "bootsSpecialInfo": [
+      "Full armor effect : When using energy essence, heal 2.5 hearts and gain a haste effect which gets stronger the more essence you use for 5 seconds"
+    ],
+    "helmetModelName": "Default",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 24,
+    "damageValueHelmet": 4,
+    "damageValueBody": 6,
+    "damageValueLeggings": 8,
+    "damageValueBoots": 3,
+    "enchantability": 2,
+    "toughness": 2.2,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

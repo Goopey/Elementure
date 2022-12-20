@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:rimeessence"
+    },
+    {
+      "item": "elementure:glasslight"
+    }
+  ],
+  "result": {
+    "item": "elementure:glasslightbottle",
+    "count": 1
+  }
+}

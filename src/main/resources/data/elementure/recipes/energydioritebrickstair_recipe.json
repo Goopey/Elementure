@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:energydioritebricks"
+    },
+    {
+      "item": "elementure:energydioritebricks"
+    },
+    {
+      "item": "elementure:energydioritebricks"
+    },
+    {
+      "item": "elementure:energydioritebricks"
+    },
+    {
+      "item": "elementure:energydioritebricks"
+    },
+    {
+      "item": "elementure:energydioritebricks"
+    }
+  ],
+  "result": {
+    "item": "elementure:energydioritebricks_stairs",
+    "count": 4
+  }
+}

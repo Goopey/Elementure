@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "elementure:blocks/bluethorn_sapling",
+    "particle": "elementure:blocks/bluethorn_sapling"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:pumpkinjelly"
+    },
+    {
+      "item": "minecraft:jack_o_lantern"
+    }
+  ],
+  "result": {
+    "item": "elementure:pumpkingrenade",
+    "count": 1
+  }
+}

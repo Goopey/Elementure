@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "elementure:block/netherpressureplate"
+    },
+    "powered=true": {
+      "model": "elementure:block/netherpressureplate_down"
+    }
+  }
+}

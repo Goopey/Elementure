@@ -1,0 +1,41 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "siren_fist",
+    "customModelName": "Normal",
+    "name": "Siren queen fist [Water]",
+    "specialInfo": [
+      "Has the ability to suck in your foes."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 0,
+    "efficiency": 0.0,
+    "attackSpeed": 1.2000000000000002,
+    "enchantability": 2,
+    "damageVsEntity": 6.5,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "SirenqueenGlow"
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "SirenqueenfistSuck"
+    },
+    "onEntityHitWith": {
+      "name": "SirenqueenfistGather"
+    },
+    "onItemInUseTick": {
+      "name": "SirenqueenfistTrueWater"
+    }
+  }
+}

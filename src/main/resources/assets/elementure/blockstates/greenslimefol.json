@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/greenslimefol"
+    },
+    "facing=east": {
+      "model": "elementure:block/greenslimefol",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/greenslimefol",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/greenslimefol",
+      "y": 270
+    }
+  }
+}

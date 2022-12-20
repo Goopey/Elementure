@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/dirtblock",
+    "up": "elementure:blocks/mycena_mossy_grass",
+    "north": "elementure:blocks/mycena_mossy_grass_side",
+    "east": "elementure:blocks/mycena_mossy_grass_side",
+    "south": "elementure:blocks/mycena_mossy_grass_side",
+    "west": "elementure:blocks/mycena_mossy_grass_side",
+    "particle": "elementure:blocks/dirtblock"
+  }
+}

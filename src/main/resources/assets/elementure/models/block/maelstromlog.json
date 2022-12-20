@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/maelstromlogtop",
+    "up": "elementure:blocks/maelstromlogtop",
+    "north": "elementure:blocks/newmaelstromlog",
+    "east": "elementure:blocks/newmaelstromlog",
+    "south": "elementure:blocks/newmaelstromlog",
+    "west": "elementure:blocks/newmaelstromlog",
+    "particle": "elementure:blocks/maelstromlogtop"
+  }
+}

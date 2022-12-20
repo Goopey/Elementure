@@ -1,0 +1,11 @@
+{
+  "_fv": 34,
+  "_type": "tab",
+  "definition": {
+    "name": "Skill tab",
+    "icon": {
+      "value": "CUSTOM:RimecormunculusChanneler"
+    },
+    "showSearch": false
+  }
+}

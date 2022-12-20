@@ -1,0 +1,37 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "png program files/item texture/netherstar_guardian_hammer",
+		"particle": "png program files/item texture/netherstar_guardian_hammer"
+	},
+	"elements": [
+		{
+			"name": "Handle",
+			"from": [7, -2, 7],
+			"to": [9, 15, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 16], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [1, 0, 3, 16], "texture": "#0"},
+				"south": {"uv": [2, 0, 4, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 2, 16], "texture": "#0"},
+				"up": {"uv": [5, 1, 7, 3], "texture": "#0"},
+				"down": {"uv": [7, 10, 9, 12], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Head",
+			"from": [6.5, 15, 5.5],
+			"to": [9.5, 18, 10.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [7, 0, 10, 3], "texture": "#0"},
+				"east": {"uv": [7, 3, 10, 8], "texture": "#0"},
+				"south": {"uv": [10, 0, 13, 3], "texture": "#0"},
+				"west": {"uv": [4, 3, 7, 8], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [10, 3, 13, 8], "texture": "#0"},
+				"down": {"uv": [13, 3, 16, 8], "texture": "#0"}
+			}
+		}
+	]
+}

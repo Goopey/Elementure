@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "elementure:greenjack"
+    },
+    "title": {
+      "translate": "advancements.greenjackobtained.title"
+    },
+    "description": {
+      "translate": "advancements.greenjackobtained.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "greenjackobtained": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elementure:greenjack"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 80
+  },
+  "parent": "elementure:elementure_fishingadvancement"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:arachneelfang"
+    },
+    {
+      "item": "elementure:arachneelfang"
+    },
+    {
+      "item": "elementure:arachneelfang"
+    },
+    {
+      "item": "elementure:arachneelfang"
+    },
+    {
+      "item": "minecraft:bow"
+    }
+  ],
+  "result": {
+    "item": "elementure:arachneelbow",
+    "count": 1
+  }
+}

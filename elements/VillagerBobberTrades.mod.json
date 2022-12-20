@@ -1,0 +1,94 @@
+{
+  "_fv": 34,
+  "_type": "villagertrade",
+  "definition": {
+    "tradeEntries": [
+      {
+        "villagerProfession": {
+          "value": "TOOLSMITH"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 16,
+            "price2": {
+              "value": "Blocks.OBSIDIAN"
+            },
+            "countPrice2": 4,
+            "offer": {
+              "value": "CUSTOM:Obsidianbobber"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 1,
+            "xp": 20,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 8,
+            "price2": {
+              "value": "Items.IRON_INGOT"
+            },
+            "countPrice2": 4,
+            "offer": {
+              "value": "CUSTOM:Ironbobber"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 2,
+            "xp": 12,
+            "priceMultiplier": 0.05
+          }
+        ]
+      },
+      {
+        "villagerProfession": {
+          "value": "FISHERMAN"
+        },
+        "entries": [
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 16,
+            "price2": {
+              "value": "Blocks.OBSIDIAN"
+            },
+            "countPrice2": 4,
+            "offer": {
+              "value": "CUSTOM:Obsidianbobber"
+            },
+            "countOffer": 1,
+            "level": 5,
+            "maxTrades": 1,
+            "xp": 5,
+            "priceMultiplier": 0.05
+          },
+          {
+            "price1": {
+              "value": "Items.EMERALD"
+            },
+            "countPrice1": 8,
+            "price2": {
+              "value": "CUSTOM:Pip"
+            },
+            "countPrice2": 4,
+            "offer": {
+              "value": "CUSTOM:Crabbobber"
+            },
+            "countOffer": 1,
+            "level": 3,
+            "maxTrades": 2,
+            "xp": 12,
+            "priceMultiplier": 0.05
+          }
+        ]
+      }
+    ]
+  }
+}

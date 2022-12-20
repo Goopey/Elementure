@@ -1,0 +1,32 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "Items.SLIME_BALL"
+      },
+      {
+        "value": "CUSTOM:Obleckslime"
+      },
+      {
+        "value": "CUSTOM:Mindobleckslime"
+      },
+      {
+        "value": "CUSTOM:Forceobleckslime"
+      },
+      {
+        "value": "CUSTOM:Soulobleckslime"
+      },
+      {
+        "value": "Items.HONEY_BOTTLE"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "slimeballs",
+    "namespace": "forge"
+  }
+}

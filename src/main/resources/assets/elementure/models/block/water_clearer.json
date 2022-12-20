@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/omegansides",
+    "up": "elementure:blocks/omegansides",
+    "north": "elementure:blocks/omegansides",
+    "east": "elementure:blocks/omegansides",
+    "south": "elementure:blocks/omegansides",
+    "west": "elementure:blocks/omegansides",
+    "particle": "elementure:blocks/omegansides"
+  }
+}

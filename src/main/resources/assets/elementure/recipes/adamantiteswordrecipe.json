@@ -1,0 +1,24 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_worlds:adamantite"
+    },
+    "1": {
+      "item": "minecraft_worlds:adamantite"
+    },
+    "2": {
+      "item": "minecraft:blaze_rod"
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:adamantitesword",
+    "count": 1
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_worlds:ferziumingot"
+    },
+    "1": {
+      "item": "minecraft_worlds:ferziumingot"
+    },
+    "2": {
+      "item": "minecraft_worlds:ferziumingot"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:ferziumpickaxe",
+    "count": 1
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "3 5",
+    " 78"
+  ],
+  "key": {
+    "1": {
+      "item": "elementure:dazzlingingot"
+    },
+    "2": {
+      "item": "minecraft:string"
+    },
+    "3": {
+      "item": "elementure:dazzlingingot"
+    },
+    "5": {
+      "item": "minecraft:string"
+    },
+    "7": {
+      "item": "elementure:dazzlingingot"
+    },
+    "8": {
+      "item": "minecraft:string"
+    }
+  },
+  "result": {
+    "item": "elementure:dazzlingbow",
+    "count": 1
+  }
+}

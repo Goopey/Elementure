@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:ferziumingot"
+    },
+    "2": {
+      "item": "elementure:ferziumingot"
+    },
+    "3": {
+      "item": "elementure:ferziumingot"
+    },
+    "4": {
+      "item": "elementure:ferziumingot"
+    },
+    "5": {
+      "item": "elementure:ferziumingot"
+    },
+    "6": {
+      "item": "elementure:ferziumingot"
+    },
+    "7": {
+      "item": "elementure:ferziumingot"
+    },
+    "8": {
+      "item": "elementure:ferziumingot"
+    }
+  },
+  "result": {
+    "item": "elementure:ferziumarmor_chestplate",
+    "count": 1
+  }
+}

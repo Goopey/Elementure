@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Mycenamossbrick"
+      },
+      {
+        "value": "CUSTOM:Mycenamossbrick"
+      },
+      {
+        "value": "CUSTOM:Mycenamossbrick"
+      },
+      {
+        "value": "CUSTOM:Mycenasprouts"
+      },
+      {
+        "value": "CUSTOM:Mycenasprouts"
+      },
+      {
+        "value": "CUSTOM:Mycenasprouts"
+      },
+      {
+        "value": "CUSTOM:Mycenatruffloonchitinscale"
+      },
+      {
+        "value": "CUSTOM:Mycenatruffloonchitinscale"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Mycenanalloy"
+    },
+    "name": "mycenaalloy_recipe",
+    "namespace": "mod"
+  }
+}

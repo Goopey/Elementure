@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "elementure:blocks/lilypad_plank",
+    "particle": "elementure:blocks/lilypad_plank"
+  }
+}

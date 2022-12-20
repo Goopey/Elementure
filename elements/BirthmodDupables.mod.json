@@ -1,0 +1,122 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Neondust"
+      },
+      {
+        "value": "CUSTOM:Vamiteingot"
+      },
+      {
+        "value": "CUSTOM:Brontium"
+      },
+      {
+        "value": "CUSTOM:Flutaniteingot"
+      },
+      {
+        "value": "CUSTOM:Ferziumingot"
+      },
+      {
+        "value": "CUSTOM:Merthiumingot"
+      },
+      {
+        "value": "CUSTOM:Dustfluxingot"
+      },
+      {
+        "value": "CUSTOM:Ligniteingot"
+      },
+      {
+        "value": "CUSTOM:Noobiumingot"
+      },
+      {
+        "value": "CUSTOM:Mycenanalloy"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "Items.GOLD_INGOT"
+      },
+      {
+        "value": "Items.EMERALD"
+      },
+      {
+        "value": "Items.SCUTE"
+      },
+      {
+        "value": "Items.GHAST_TEAR"
+      },
+      {
+        "value": "Items.EXPERIENCE_BOTTLE"
+      },
+      {
+        "value": "CUSTOM:Mindobleckslime"
+      },
+      {
+        "value": "CUSTOM:Starryroots"
+      },
+      {
+        "value": "CUSTOM:Bluemass"
+      },
+      {
+        "value": "CUSTOM:Prismaticscrubber"
+      },
+      {
+        "value": "CUSTOM:Dizmitejelly"
+      },
+      {
+        "value": "CUSTOM:Rainbowingot"
+      },
+      {
+        "value": "CUSTOM:Dryseafoamfragment"
+      },
+      {
+        "value": "CUSTOM:Prismiteshard"
+      },
+      {
+        "value": "CUSTOM:Shardedobsidian"
+      },
+      {
+        "value": "CUSTOM:SeafoamIngot"
+      },
+      {
+        "value": "CUSTOM:Bluejelly"
+      },
+      {
+        "value": "CUSTOM:Redjelly"
+      },
+      {
+        "value": "CUSTOM:Greenjelly"
+      },
+      {
+        "value": "CUSTOM:Skyjadebar"
+      },
+      {
+        "value": "CUSTOM:Ivoryshard"
+      },
+      {
+        "value": "CUSTOM:Forceobleckslime"
+      },
+      {
+        "value": "CUSTOM:Soulobleckslime"
+      },
+      {
+        "value": "Items.NAUTILUS_SHELL"
+      },
+      {
+        "value": "CUSTOM:DarkgemCrystal"
+      },
+      {
+        "value": "CUSTOM:Glasslight"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "birthmod_dupables",
+    "namespace": "mod"
+  }
+}

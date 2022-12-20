@@ -1,0 +1,23 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Brewing",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "brewingInputStack": {
+      "value": "CUSTOM:Dirtyglasslightbottle"
+    },
+    "brewingIngredientStack": {
+      "value": "CUSTOM:Diversberry"
+    },
+    "brewingReturnStack": {
+      "value": "CUSTOM:Glasslightbottle"
+    },
+    "name": "dirtyglasslight_clean_4",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "blue_seafoam_axe",
+    "customModelName": "Normal",
+    "name": "Blue seafoam axe [Water]",
+    "specialInfo": [
+      "The blue jelly infused gives it enhanced speed."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 1,
+    "efficiency": 6.5,
+    "attackSpeed": 1.1,
+    "enchantability": 2,
+    "damageVsEntity": 7.0,
+    "usageCount": 256,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:SeafoamIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "BlueseafoamaxeGather"
+    },
+    "onItemInUseTick": {
+      "name": "BlueseafoamaxeTrueWater"
+    }
+  }
+}

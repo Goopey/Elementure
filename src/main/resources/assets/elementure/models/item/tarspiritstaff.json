@@ -1,0 +1,7 @@
+{
+  "parent": "elementure:custom/tarspirit_staff",
+  "textures": {
+    "0": "elementure:blocks/tarspirit_staff",
+    "particle": "elementure:items/tarspirit_staff"
+  }
+}

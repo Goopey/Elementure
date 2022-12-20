@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "elementure:blocks/dire_crypt_tiles",
+    "particle": "elementure:blocks/dire_crypt_tiles"
+  }
+}

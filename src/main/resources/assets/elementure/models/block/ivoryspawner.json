@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/ivoryspawner",
+  "textures": {
+    "all": "elementure:blocks/ivory_spawner",
+    "particle": "elementure:blocks/ivory_spawner",
+    "0": "elementure:blocks/ivory_spawner"
+  }
+}

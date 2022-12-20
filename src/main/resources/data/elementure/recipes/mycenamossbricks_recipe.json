@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:mycenamossbrick"
+    },
+    "1": {
+      "item": "elementure:mycenamossbrick"
+    },
+    "2": {
+      "item": "elementure:mycenamossbrick"
+    },
+    "3": {
+      "item": "elementure:mycenamossbrick"
+    }
+  },
+  "result": {
+    "item": "elementure:mycenamossbricks",
+    "count": 1
+  }
+}

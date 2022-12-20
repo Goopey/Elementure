@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/fireruneblock",
+    "up": "elementure:blocks/fireruneblock",
+    "north": "elementure:blocks/fireruneblock",
+    "east": "elementure:blocks/fireruneblock",
+    "south": "elementure:blocks/fireruneblock",
+    "west": "elementure:blocks/fireruneblock",
+    "particle": "elementure:blocks/fireruneblock"
+  }
+}

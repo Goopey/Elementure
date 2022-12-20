@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/endermemorial"
+    },
+    "facing=east": {
+      "model": "elementure:block/endermemorial",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/endermemorial",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/endermemorial",
+      "y": 270
+    }
+  }
+}

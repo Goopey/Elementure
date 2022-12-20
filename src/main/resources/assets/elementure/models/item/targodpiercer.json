@@ -1,0 +1,110 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "elementure:items/tar_god_piercer"
+  },
+  "display": {
+    "ground": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        3,
+        0
+      ],
+      "scale": [
+        2,
+        2,
+        2
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        2,
+        2,
+        2
+      ]
+    },
+    "thirdperson_righthand": {
+      "rotation": [
+        80,
+        80,
+        -40
+      ],
+      "translation": [
+        0,
+        15,
+        2
+      ],
+      "scale": [
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [
+        0,
+        -80,
+        -40
+      ],
+      "translation": [
+        0,
+        15,
+        2
+      ],
+      "scale": [
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    "firstperson_righthand": {
+      "rotation": [
+        0,
+        90,
+        40
+      ],
+      "translation": [
+        0,
+        15,
+        2
+      ],
+      "scale": [
+        2.0,
+        2.0,
+        2.0
+      ]
+    },
+    "firstperson_lefthand": {
+      "rotation": [
+        0,
+        -90,
+        -40
+      ],
+      "translation": [
+        0,
+        15,
+        2
+      ],
+      "scale": [
+        2.0,
+        2.0,
+        2.0
+      ]
+    }
+  }
+}

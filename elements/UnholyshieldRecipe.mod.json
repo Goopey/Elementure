@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Unholydust"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:Unholydust"
+      },
+      {
+        "value": "CUSTOM:Unholydust"
+      },
+      {
+        "value": "Items.SHIELD"
+      },
+      {
+        "value": "CUSTOM:Unholydust"
+      },
+      {
+        "value": "CUSTOM:Unholydust"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      },
+      {
+        "value": "CUSTOM:Unholydust"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Unholyshield"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "unholyshieldrecipe",
+    "namespace": "mod"
+  }
+}

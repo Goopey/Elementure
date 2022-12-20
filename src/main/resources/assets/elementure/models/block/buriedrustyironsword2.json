@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft_worlds:custom/buriedrustyironsword2",
+  "textures": {
+    "all": "minecraft_worlds:blocks/buriedrustysword2",
+    "particle": "minecraft_worlds:blocks/buriedrustysword2",
+    "0": "minecraft_worlds:blocks/buriedrustysword2"
+  }
+}

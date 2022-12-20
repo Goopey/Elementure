@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Skillholder"
+      },
+      {
+        "value": "CUSTOM:Vamiteingot"
+      },
+      {
+        "value": "Items.CLOCK"
+      },
+      {
+        "value": "CUSTOM:Energysoul"
+      },
+      {
+        "value": "CUSTOM:Energysoul"
+      },
+      {
+        "value": "CUSTOM:Energysoul"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Vamitefastenskill"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "vamitefastenskillrecipe",
+    "namespace": "mod"
+  }
+}

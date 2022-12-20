@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Diversalloy"
+      },
+      {
+        "value": "CUSTOM:Diversalloy"
+      },
+      {
+        "value": "CUSTOM:Diversalloy"
+      },
+      {
+        "value": "CUSTOM:Darkgem"
+      },
+      {
+        "value": "Blocks.MAGMA"
+      },
+      {
+        "value": "CUSTOM:Rarepurplerimeshine"
+      },
+      {
+        "value": "CUSTOM:Diversalloy"
+      },
+      {
+        "value": "CUSTOM:Diversalloy"
+      },
+      {
+        "value": "CUSTOM:Diversalloy"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GlassbellboatTurboThruster"
+    },
+    "name": "glassbellboat_turbo_thruster_recipe_2",
+    "namespace": "mod"
+  }
+}

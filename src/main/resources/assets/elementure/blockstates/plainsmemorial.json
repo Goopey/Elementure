@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/plainsmemorial"
+    },
+    "facing=east": {
+      "model": "elementure:block/plainsmemorial",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/plainsmemorial",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/plainsmemorial",
+      "y": 270
+    }
+  }
+}

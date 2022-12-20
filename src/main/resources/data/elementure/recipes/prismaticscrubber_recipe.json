@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:prismaticsalts"
+    },
+    {
+      "item": "elementure:prismaticsalts"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    }
+  ],
+  "result": {
+    "item": "elementure:prismaticscrubber",
+    "count": 3
+  }
+}

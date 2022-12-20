@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:beestingberry"
+    },
+    {
+      "item": "elementure:beestingberry"
+    },
+    {
+      "item": "elementure:beestingberry"
+    },
+    {
+      "item": "elementure:beestingberry"
+    }
+  ],
+  "result": {
+    "item": "elementure:minibeestingberrybush",
+    "count": 1
+  }
+}

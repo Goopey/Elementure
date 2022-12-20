@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:ivoryshard"
+    },
+    {
+      "item": "elementure:ivoryshard"
+    },
+    {
+      "item": "elementure:ivoryshard"
+    },
+    {
+      "item": "elementure:ivoryshard"
+    },
+    {
+      "item": "elementure:ivoryshard"
+    },
+    {
+      "item": "elementure:ivoryshard"
+    },
+    {
+      "item": "elementure:ivoryshard"
+    },
+    {
+      "item": "elementure:ivoryshard"
+    },
+    {
+      "item": "elementure:ivoryshard"
+    }
+  ],
+  "result": {
+    "item": "elementure:ivoryblock",
+    "count": 3
+  }
+}

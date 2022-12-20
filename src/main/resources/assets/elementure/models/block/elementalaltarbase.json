@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/elementalaltarbase",
+  "textures": {
+    "all": "elementure:blocks/elementalaltarbase",
+    "particle": "elementure:blocks/elementalaltarbase",
+    "main": "elementure:blocks/elementalaltarbase"
+  }
+}

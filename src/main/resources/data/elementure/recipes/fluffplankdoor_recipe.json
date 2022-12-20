@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23",
+    "45"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:fluffplanks"
+    },
+    "1": {
+      "item": "elementure:fluffplanks"
+    },
+    "2": {
+      "item": "elementure:fluffplanks"
+    },
+    "3": {
+      "item": "elementure:fluffplanks"
+    },
+    "4": {
+      "item": "elementure:fluffplanks"
+    },
+    "5": {
+      "item": "elementure:fluffplanks"
+    }
+  },
+  "result": {
+    "item": "elementure:fluffplankdoor",
+    "count": 3
+  }
+}

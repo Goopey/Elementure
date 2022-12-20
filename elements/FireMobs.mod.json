@@ -1,0 +1,41 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Dragonewt"
+      },
+      {
+        "value": "CUSTOM:Heatseeker"
+      },
+      {
+        "value": "CUSTOM:Netherstarvillagerdusty"
+      },
+      {
+        "value": "EntityBlaze"
+      },
+      {
+        "value": "EntityMagmaCube"
+      },
+      {
+        "value": "CUSTOM:CandleKnight"
+      },
+      {
+        "value": "CUSTOM:Octolank"
+      },
+      {
+        "value": "CUSTOM:Blueblaze"
+      },
+      {
+        "value": "CUSTOM:Tarumbra"
+      }
+    ],
+    "name": "fire_mobs",
+    "namespace": "forge"
+  }
+}

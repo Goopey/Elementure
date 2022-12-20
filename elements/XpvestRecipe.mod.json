@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Skipsnake"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Skipsnake"
+      },
+      {
+        "value": "CUSTOM:Skipsnake"
+      },
+      {
+        "value": "Items.LEATHER"
+      },
+      {
+        "value": "CUSTOM:Skipsnake"
+      },
+      {
+        "value": "CUSTOM:Skipsnake"
+      },
+      {
+        "value": "Items.LEATHER"
+      },
+      {
+        "value": "CUSTOM:Skipsnake"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Xpvest.body"
+    },
+    "name": "xpvest_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/oldbrickslabs"
+    },
+    "type=top": {
+      "model": "elementure:block/oldbrickslabs_top"
+    },
+    "type=double": {
+      "model": "elementure:block/oldbrickslabs_full"
+    }
+  }
+}

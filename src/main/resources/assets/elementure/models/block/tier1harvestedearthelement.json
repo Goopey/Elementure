@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft_worlds:custom/earthelementharvested",
+  "textures": {
+    "all": "minecraft_worlds:blocks/e_elementalaltar",
+    "particle": "minecraft_worlds:blocks/e_elementalaltar",
+    "0": "minecraft_worlds:blocks/e_elementalaltar"
+  }
+}

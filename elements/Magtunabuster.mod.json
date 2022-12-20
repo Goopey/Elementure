@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "magtunabuster",
+    "customModelName": "Normal",
+    "name": "Magtuna buster",
+    "specialInfo": [
+      "A fire cannon and a fish. Uses blaze powder for ammo."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "Items.BLAZE_POWDER"
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.blaze.shoot"
+    },
+    "hasGlow": false,
+    "animation": "crossbow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 0.6,
+    "bulletDamage": 3.6,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "Items.BLAZE_POWDER"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:seafoampearl"
+    },
+    {
+      "item": "elementure:seafoampearl"
+    },
+    {
+      "item": "elementure:seafoampearl"
+    },
+    {
+      "item": "elementure:seafoampearl"
+    }
+  ],
+  "result": {
+    "item": "minecraft:slime_ball",
+    "count": 1
+  }
+}

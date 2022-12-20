@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:seafoamarmor_helmet"
+    },
+    {
+      "item": "elementure:greenjelly"
+    },
+    {
+      "item": "elementure:greenjelly"
+    },
+    {
+      "item": "elementure:greenjelly"
+    }
+  ],
+  "result": {
+    "item": "elementure:greenseafoamarmor_helmet",
+    "count": 1
+  }
+}

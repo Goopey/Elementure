@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/gleamingobsidian",
+    "up": "elementure:blocks/gleamingobsidian",
+    "north": "elementure:blocks/gleamingobsidian",
+    "east": "elementure:blocks/gleamingobsidian",
+    "south": "elementure:blocks/gleamingobsidian",
+    "west": "elementure:blocks/gleamingobsidian",
+    "particle": "elementure:blocks/gleamingobsidian"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:packed_ice"
+    },
+    {
+      "item": "elementure:prismiteshard"
+    }
+  ],
+  "result": {
+    "item": "minecraft:blue_ice",
+    "count": 2
+  }
+}

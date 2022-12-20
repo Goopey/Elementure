@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/old_plank",
+    "up": "elementure:blocks/old_plank",
+    "north": "elementure:blocks/old_plank",
+    "east": "elementure:blocks/old_plank",
+    "south": "elementure:blocks/old_plank",
+    "west": "elementure:blocks/old_plank",
+    "particle": "elementure:blocks/old_plank"
+  }
+}

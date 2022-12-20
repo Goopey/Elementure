@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "tar_avatar_blaster",
+    "customModelName": "tar_god_blaster:default",
+    "name": "Tar god's Blaster",
+    "specialInfo": [
+      "Blasts powerful burning lumps of tar"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 600,
+    "actionSound": {
+      "value": "block.honey_block.slide"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.2000000000000002,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Tarbomb"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

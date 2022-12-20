@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:weakdioriteelemental",
+    "elementure:dioriteelemental",
+    "elementure:bigdioriteelemental"
+  ]
+}

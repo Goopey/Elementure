@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "elementure:blocks/nether_sapling",
+    "particle": "elementure:blocks/nether_sapling"
+  }
+}

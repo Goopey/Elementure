@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/seafoambubble"
+    },
+    "facing=east": {
+      "model": "elementure:block/seafoambubble",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/seafoambubble",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/seafoambubble",
+      "y": 270
+    }
+  }
+}

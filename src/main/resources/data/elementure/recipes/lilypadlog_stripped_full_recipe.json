@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:strippedlilypadlog"
+    },
+    {
+      "item": "elementure:strippedlilypadlog"
+    },
+    {
+      "item": "elementure:strippedlilypadlog"
+    },
+    {
+      "item": "elementure:strippedlilypadlog"
+    }
+  ],
+  "result": {
+    "item": "elementure:strippedlilypadlog_full",
+    "count": 3
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Obleck"
+      },
+      {
+        "value": "EntityCod"
+      },
+      {
+        "value": "EntityDolphin"
+      },
+      {
+        "value": "EntityDrowned"
+      },
+      {
+        "value": "EntityElderGuardian"
+      },
+      {
+        "value": "EntityGuardian"
+      },
+      {
+        "value": "EntitySalmon"
+      },
+      {
+        "value": "EntitySlime"
+      },
+      {
+        "value": "EntitySnowman"
+      },
+      {
+        "value": "EntitySquid"
+      },
+      {
+        "value": "EntityTropicalFish"
+      },
+      {
+        "value": "EntityTurtle"
+      },
+      {
+        "value": "EntityWaterMob"
+      },
+      {
+        "value": "CUSTOM:Causticknight"
+      },
+      {
+        "value": "CUSTOM:Bluejellyfloat"
+      },
+      {
+        "value": "CUSTOM:Greenjellyfloat"
+      },
+      {
+        "value": "CUSTOM:Jelly"
+      },
+      {
+        "value": "CUSTOM:Redjellyfloat"
+      },
+      {
+        "value": "CUSTOM:Foamfish"
+      },
+      {
+        "value": "CUSTOM:BubbleOBlue"
+      },
+      {
+        "value": "CUSTOM:Ostrachain"
+      },
+      {
+        "value": "CUSTOM:OstrachainLink"
+      },
+      {
+        "value": "CUSTOM:Rimeboid"
+      },
+      {
+        "value": "CUSTOM:Sirenling"
+      },
+      {
+        "value": "CUSTOM:Sirenqueen"
+      }
+    ],
+    "name": "water_mobs",
+    "namespace": "forge"
+  }
+}

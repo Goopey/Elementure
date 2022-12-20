@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Seafoampearl"
+      },
+      {
+        "value": "CUSTOM:Seafoampearl"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Seafoampearl"
+      },
+      {
+        "value": "CUSTOM:Seafoampearl"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "Items.SLIME_BALL"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "slimeballrecipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_worlds:oldnail"
+    },
+    {
+      "item": "minecraft_worlds:hollowknightpaleore"
+    },
+    {
+      "item": "minecraft:iron_block"
+    },
+    {
+      "item": "minecraft:iron_block"
+    },
+    {
+      "item": "minecraft:quartz_block",
+      "data": 32767
+    }
+  ],
+  "result": {
+    "item": "minecraft_worlds:nailfixed",
+    "count": 1
+  }
+}

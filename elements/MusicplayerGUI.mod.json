@@ -1,0 +1,134 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 206,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Credits",
+          "onClick": {
+            "name": "Creditsopen"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Credits",
+          "x": 184,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "Musicplayer2Open"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Next",
+          "x": 268,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Marble Forest - Mudeth",
+          "onClick": {
+            "name": "MarbleforestPlay"
+          },
+          "width": 135,
+          "height": 20,
+          "name": "Marble Forest - Mudeth",
+          "x": 116,
+          "y": 64
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Coral Labyrinth - Red&Green",
+          "onClick": {
+            "name": "CorallabyrinthPlay"
+          },
+          "width": 160,
+          "height": 20,
+          "name": "Coral Labyrinth - Red&Green",
+          "x": 116,
+          "y": 86
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Intro - C418",
+          "onClick": {
+            "name": "IntroPlay"
+          },
+          "width": 85,
+          "height": 20,
+          "name": "Intro - C418",
+          "x": 116,
+          "y": 108
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Dark Choir - Mattia Cupelli",
+          "onClick": {
+            "name": "DarkchoirPlay"
+          },
+          "width": 160,
+          "height": 20,
+          "name": "Dark Choir - Mattia Cupelli",
+          "x": 116,
+          "y": 130
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "STOP MUSIC",
+          "onClick": {
+            "name": "MusicStopMusic"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "STOP MUSIC",
+          "x": 175,
+          "y": 40
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Forgotten - REPULSIVE",
+          "onClick": {
+            "name": "RepulsiveForgottenPlay"
+          },
+          "width": 134,
+          "height": 20,
+          "name": "Forgotten - REPULSIVE",
+          "x": 116,
+          "y": 152
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 4,
+      "sy": 4,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

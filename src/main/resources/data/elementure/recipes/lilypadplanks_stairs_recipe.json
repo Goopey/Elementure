@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:lilypadplanks"
+    },
+    "3": {
+      "item": "elementure:lilypadplanks"
+    },
+    "4": {
+      "item": "elementure:lilypadplanks"
+    },
+    "6": {
+      "item": "elementure:lilypadplanks"
+    },
+    "7": {
+      "item": "elementure:lilypadplanks"
+    },
+    "8": {
+      "item": "elementure:lilypadplanks"
+    }
+  },
+  "result": {
+    "item": "elementure:lilypadplank_stairs",
+    "count": 4
+  }
+}

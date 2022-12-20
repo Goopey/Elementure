@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Rainbowingot"
+      },
+      {
+        "value": "CUSTOM:Starryroots"
+      },
+      {
+        "value": "CUSTOM:Rainbowingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Starryroots"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Rainbowingot"
+      },
+      {
+        "value": "CUSTOM:Starryroots"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Gamerbow"
+    },
+    "name": "gamerbowrecipe",
+    "namespace": "mod"
+  }
+}

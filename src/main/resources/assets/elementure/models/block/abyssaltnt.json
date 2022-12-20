@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/abyssaltntbottom",
+    "up": "elementure:blocks/abyssaltnttop",
+    "north": "elementure:blocks/abyssaltntside",
+    "east": "elementure:blocks/abyssaltntside",
+    "south": "elementure:blocks/abyssaltntside",
+    "west": "elementure:blocks/abyssaltntside",
+    "particle": "elementure:blocks/abyssaltntbottom"
+  }
+}

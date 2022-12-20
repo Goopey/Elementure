@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "light_blue_barrier"
+      },
+      "name": "default"
+    }
+  }
+}

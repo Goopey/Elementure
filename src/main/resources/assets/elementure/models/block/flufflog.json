@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/flufflog_top",
+    "up": "elementure:blocks/flufflog_top",
+    "north": "elementure:blocks/flufflog_side",
+    "east": "elementure:blocks/flufflog_side",
+    "south": "elementure:blocks/flufflog_side",
+    "west": "elementure:blocks/flufflog_side",
+    "particle": "elementure:blocks/flufflog_top"
+  }
+}

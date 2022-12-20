@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:dazzlingingot"
+    },
+    "1": {
+      "item": "elementure:dazzlingingot"
+    },
+    "2": {
+      "item": "elementure:dazzlingingot"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "elementure:dazzlingpickaxe",
+    "count": 1
+  }
+}

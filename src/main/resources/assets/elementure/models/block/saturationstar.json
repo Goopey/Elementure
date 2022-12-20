@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/demonstar",
+  "textures": {
+    "all": "elementure:blocks/saturationstar",
+    "particle": "elementure:blocks/saturationstar",
+    "0": "elementure:blocks/saturationstar"
+  }
+}

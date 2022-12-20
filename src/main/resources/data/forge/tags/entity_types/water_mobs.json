@@ -1,0 +1,30 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:redjellyfloat",
+    "elementure:bluejellyfloat",
+    "zombie",
+    "dolphin",
+    "elementure:jelly",
+    "elementure:ostrachain_link",
+    "elementure:causticknight",
+    "elementure:greenjellyfloat",
+    "squid",
+    "tropical_fish",
+    "cod",
+    "guardian",
+    "elementure:foamfish",
+    "elementure:sirenling",
+    "turtle",
+    "salmon",
+    "elementure:rimeboid",
+    "elder_guardian",
+    "slime",
+    "drowned",
+    "elementure:sirenqueen",
+    "elementure:ostrachain",
+    "snow_golem",
+    "elementure:bubble_o_blue",
+    "elementure:obleck"
+  ]
+}

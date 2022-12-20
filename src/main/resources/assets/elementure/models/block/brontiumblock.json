@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/brontium_block",
+    "up": "elementure:blocks/brontium_block",
+    "north": "elementure:blocks/brontium_block",
+    "east": "elementure:blocks/brontium_block",
+    "south": "elementure:blocks/brontium_block",
+    "west": "elementure:blocks/brontium_block",
+    "particle": "elementure:blocks/brontium_block"
+  }
+}

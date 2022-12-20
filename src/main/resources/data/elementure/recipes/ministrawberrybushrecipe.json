@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:strawberry"
+    },
+    {
+      "item": "elementure:strawberry"
+    },
+    {
+      "item": "elementure:strawberry"
+    },
+    {
+      "item": "elementure:strawberry"
+    }
+  ],
+  "result": {
+    "item": "elementure:ministrawberrybush",
+    "count": 1
+  }
+}

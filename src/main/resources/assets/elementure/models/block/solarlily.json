@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/solarlily",
+  "textures": {
+    "all": "elementure:blocks/solar_lily",
+    "particle": "elementure:blocks/solar_lily",
+    "0": "elementure:blocks/solar_lily"
+  }
+}

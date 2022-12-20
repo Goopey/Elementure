@@ -1,0 +1,27 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "rainbow_hoe",
+    "customModelName": "Normal",
+    "name": "Rainbow hoe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Hoe",
+    "harvestLevel": 4,
+    "efficiency": 4.0,
+    "attackSpeed": 2.8,
+    "enchantability": 2,
+    "damageVsEntity": 5.0,
+    "usageCount": 876,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/minoskull_skull",
+  "textures": {
+    "all": "elementure:blocks/minoskull_skull",
+    "particle": "elementure:blocks/minoskull_skull",
+    "0": "elementure:blocks/minoskull_skull"
+  }
+}

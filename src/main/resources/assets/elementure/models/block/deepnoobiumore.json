@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/deep_noobiumore",
+    "up": "elementure:blocks/deep_noobiumore",
+    "north": "elementure:blocks/deep_noobiumore",
+    "east": "elementure:blocks/deep_noobiumore",
+    "south": "elementure:blocks/deep_noobiumore",
+    "west": "elementure:blocks/deep_noobiumore",
+    "particle": "elementure:blocks/deep_noobiumore"
+  }
+}

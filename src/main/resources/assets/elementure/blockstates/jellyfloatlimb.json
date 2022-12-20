@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/jellyfloatlimb"
+    },
+    "facing=east": {
+      "model": "elementure:block/jellyfloatlimb",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/jellyfloatlimb",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/jellyfloatlimb",
+      "y": 270
+    }
+  }
+}

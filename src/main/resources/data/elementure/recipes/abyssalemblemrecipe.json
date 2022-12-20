@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:abyssalemblem_tr"
+    },
+    {
+      "item": "elementure:abyssalemblem_tl"
+    },
+    {
+      "item": "elementure:abyssalemblem_br"
+    },
+    {
+      "item": "elementure:abyssalemblem_bl"
+    },
+    {
+      "item": "elementure:abyssalemblem_mid"
+    },
+    {
+      "item": "elementure:abyssaldust"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "item": "elementure:abyssalemblem",
+    "count": 1
+  }
+}

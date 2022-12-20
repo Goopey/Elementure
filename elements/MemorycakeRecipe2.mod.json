@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "Items.MILK_BUCKET"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Corememoryfragment"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Rarememoryfragment"
+      },
+      {
+        "value": "CUSTOM:Rarememoryfragment"
+      },
+      {
+        "value": "CUSTOM:Memoryfragment"
+      },
+      {
+        "value": "CUSTOM:Memoryfragment"
+      },
+      {
+        "value": "CUSTOM:Memoryfragment"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Memorycake"
+    },
+    "name": "memorycake_recipe_2",
+    "namespace": "mod"
+  }
+}

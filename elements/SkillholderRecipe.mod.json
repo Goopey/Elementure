@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Silveringot"
+      },
+      {
+        "value": "Blocks.GLASS_PANE"
+      },
+      {
+        "value": "CUSTOM:Silveringot"
+      },
+      {
+        "value": "CUSTOM:Silveringot"
+      },
+      {
+        "value": "CUSTOM:Elementalweb"
+      },
+      {
+        "value": "CUSTOM:Silveringot"
+      },
+      {
+        "value": "CUSTOM:Silveringot"
+      },
+      {
+        "value": "Blocks.GLASS_PANE"
+      },
+      {
+        "value": "CUSTOM:Silveringot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Skillholder"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "skillholderrecipe",
+    "namespace": "mod"
+  }
+}

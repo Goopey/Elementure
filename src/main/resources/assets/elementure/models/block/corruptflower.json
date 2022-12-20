@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "elementure:blocks/corruptflower",
+    "particle": "elementure:blocks/corruptflower"
+  }
+}

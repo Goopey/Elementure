@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:ruingranitebricks"
+    },
+    "1": {
+      "item": "elementure:ruingranitebricks"
+    },
+    "2": {
+      "item": "elementure:ruingranitebricks"
+    }
+  },
+  "result": {
+    "item": "elementure:ruingranitebricksslabs",
+    "count": 6
+  }
+}

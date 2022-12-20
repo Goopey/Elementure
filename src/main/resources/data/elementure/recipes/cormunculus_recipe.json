@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:cormunculusblock"
+    },
+    "1": {
+      "item": "elementure:silvernugget"
+    },
+    "2": {
+      "item": "elementure:cormunculusblock"
+    },
+    "3": {
+      "item": "elementure:cormunculusblock"
+    },
+    "4": {
+      "item": "elementure:silveringot"
+    },
+    "5": {
+      "item": "elementure:cormunculusblock"
+    },
+    "6": {
+      "item": "elementure:cormunculusblock"
+    },
+    "7": {
+      "item": "elementure:silvernugget"
+    },
+    "8": {
+      "item": "elementure:cormunculusblock"
+    }
+  },
+  "result": {
+    "item": "elementure:cormunculustuner",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "elementure:prismaticsalts"
+  },
+  "addition": {
+    "item": "elementure:prismiteshard"
+  },
+  "result": {
+    "item": "elementure:sparklingstars"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/fluff_plank",
+    "up": "elementure:blocks/fluff_plank",
+    "north": "elementure:blocks/fluff_plank",
+    "east": "elementure:blocks/fluff_plank",
+    "south": "elementure:blocks/fluff_plank",
+    "west": "elementure:blocks/fluff_plank",
+    "particle": "elementure:blocks/fluff_plank"
+  }
+}

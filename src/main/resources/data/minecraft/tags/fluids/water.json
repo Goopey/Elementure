@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:darkwater",
+    "elementure:flowing_darkwater",
+    "elementure:regensubstance",
+    "elementure:flowing_regensubstance",
+    "elementure:fireliquid",
+    "elementure:flowing_fireliquid",
+    "elementure:earthelementliquid",
+    "elementure:flowing_earthelementliquid",
+    "elementure:airelementliquid",
+    "elementure:flowing_airelementliquid",
+    "elementure:waterelementliquid",
+    "elementure:flowing_waterelementliquid",
+    "elementure:lightningelementliquid",
+    "elementure:flowing_lightningelementliquid",
+    "elementure:springwater",
+    "elementure:flowing_springwater",
+    "elementure:dungeonwater",
+    "elementure:flowing_dungeonwater"
+  ]
+}

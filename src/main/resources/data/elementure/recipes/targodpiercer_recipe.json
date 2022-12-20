@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:tarbomb"
+    },
+    {
+      "item": "elementure:tarbomb"
+    },
+    {
+      "item": "elementure:tarblock"
+    },
+    {
+      "item": "elementure:tarbomb"
+    },
+    {
+      "item": "elementure:tarblock"
+    }
+  ],
+  "result": {
+    "item": "elementure:targodpiercer",
+    "count": 1
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "haunted_statue_texture"
+      },
+      "name": "default"
+    }
+  }
+}

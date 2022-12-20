@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:vamiteingot"
+    },
+    "2": {
+      "item": "elementure:vamiteingot"
+    },
+    "3": {
+      "item": "elementure:vamiteingot"
+    },
+    "5": {
+      "item": "elementure:vamiteingot"
+    }
+  },
+  "result": {
+    "item": "elementure:vamitearmor_boots",
+    "count": 1
+  }
+}

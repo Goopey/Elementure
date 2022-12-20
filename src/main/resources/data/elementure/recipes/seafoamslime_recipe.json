@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "experience": 1,
+  "cookingtime": 300,
+  "ingredient": {
+    "item": "elementure:seafoampearl"
+  },
+  "result": "minecraft:slime_ball"
+}

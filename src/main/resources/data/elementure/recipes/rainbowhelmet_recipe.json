@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:rainbowingot"
+    },
+    "1": {
+      "item": "elementure:rainbowingot"
+    },
+    "2": {
+      "item": "elementure:rainbowingot"
+    },
+    "3": {
+      "item": "elementure:rainbowingot"
+    },
+    "5": {
+      "item": "elementure:rainbowingot"
+    }
+  },
+  "result": {
+    "item": "elementure:rainbowarmor_helmet",
+    "count": 1
+  }
+}

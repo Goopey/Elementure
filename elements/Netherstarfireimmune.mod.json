@@ -1,0 +1,77 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Dragonewt"
+      },
+      {
+        "value": "CUSTOM:Dragonite"
+      },
+      {
+        "value": "CUSTOM:Ascendedaspid"
+      },
+      {
+        "value": "CUSTOM:Netherstarvillagerdusty"
+      },
+      {
+        "value": "CUSTOM:Heatseeker"
+      },
+      {
+        "value": "CUSTOM:Crystalcreeper"
+      },
+      {
+        "value": "CUSTOM:Blueblaze"
+      },
+      {
+        "value": "CUSTOM:Crystalhopper"
+      },
+      {
+        "value": "CUSTOM:Largecrystalhopper"
+      },
+      {
+        "value": "CUSTOM:Sny"
+      },
+      {
+        "value": "CUSTOM:Octolank"
+      },
+      {
+        "value": "CUSTOM:Netherquartzcharger"
+      },
+      {
+        "value": "CUSTOM:Shatteredobsidiancharger"
+      },
+      {
+        "value": "CUSTOM:NetherumTitan"
+      },
+      {
+        "value": "CUSTOM:Netherumleaper"
+      },
+      {
+        "value": "CUSTOM:Scrapguardian"
+      },
+      {
+        "value": "CUSTOM:Scrapguardiansmall"
+      },
+      {
+        "value": "CUSTOM:Deadscrapguardian"
+      },
+      {
+        "value": "CUSTOM:Netherstarflare"
+      },
+      {
+        "value": "CUSTOM:Netherstarflare2"
+      },
+      {
+        "value": "CUSTOM:EchoBerry"
+      }
+    ],
+    "name": "netherstarfireimmune",
+    "namespace": "forge"
+  }
+}

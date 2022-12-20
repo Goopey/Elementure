@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:armageddonupperrightpiece"
+    },
+    "1": {
+      "item": "elementure:armageddonmiddleupperpiece"
+    },
+    "2": {
+      "item": "elementure:armageddonupperleftpiece"
+    },
+    "3": {
+      "item": "elementure:armaggedonmiddlerightpiece"
+    },
+    "4": {
+      "item": "elementure:armageddonmiddlepiece"
+    },
+    "5": {
+      "item": "elementure:armageddonmiddleleftpiece"
+    },
+    "6": {
+      "item": "elementure:armageddonbottomrightpiece"
+    },
+    "7": {
+      "item": "elementure:armageddonmiddlebottompiece"
+    },
+    "8": {
+      "item": "elementure:armageddonbottomleftpiece"
+    }
+  },
+  "result": {
+    "item": "elementure:armageddon",
+    "count": 1
+  }
+}

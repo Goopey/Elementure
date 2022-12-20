@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "mycenan_katana",
+    "customModelName": "Normal",
+    "name": "Mycenan katana [Earth]",
+    "specialInfo": [
+      "A special blade from an equally special material."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.8,
+    "enchantability": 2,
+    "damageVsEntity": 6.0,
+    "usageCount": 321,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Mycenanalloy"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "MycenankatanaAttack"
+    },
+    "onItemInInventoryTick": {
+      "name": "MycenankatanaTrueEarth"
+    }
+  }
+}

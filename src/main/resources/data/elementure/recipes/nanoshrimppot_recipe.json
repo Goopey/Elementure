@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "elementure:crabpot"
+    },
+    {
+      "item": "elementure:nanoshrimp"
+    }
+  ],
+  "result": {
+    "item": "elementure:nanoshrimppot",
+    "count": 1
+  }
+}

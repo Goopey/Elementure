@@ -1,0 +1,28 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_worlds:skillholder"
+    },
+    {
+      "item": "minecraft:tnt"
+    },
+    {
+      "item": "minecraft:arrow"
+    },
+    {
+      "item": "minecraft_worlds:voidsoul"
+    },
+    {
+      "item": "minecraft_worlds:voidsoul"
+    },
+    {
+      "item": "minecraft_worlds:energysoul"
+    }
+  ],
+  "result": {
+    "item": "minecraft_worlds:powerstrikeskill",
+    "count": 1
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "insanitybar.png",
+          "use1Xscale": false,
+          "name": "insanitybar.png",
+          "x": 141,
+          "y": 5
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "full_insanitybar.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InsanityBarCondition"
+          },
+          "name": "full_insanitybar.png",
+          "x": 141,
+          "y": 5
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "insanity_nug_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InsanityNug7Condition"
+          },
+          "name": "insanity_nug_1.png",
+          "x": 142,
+          "y": 6
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "insanity_nug_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InsanityNug6Condition"
+          },
+          "name": "insanity_nug_2.png",
+          "x": 163,
+          "y": 6
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "insanity_nug_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InsanityNug5Condition"
+          },
+          "name": "insanity_nug_2.png",
+          "x": 183,
+          "y": 6
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "insanity_nug_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InsanityNug4Condition"
+          },
+          "name": "insanity_nug_2.png",
+          "x": 203,
+          "y": 6
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "insanity_nug_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InsanityNug3Condition"
+          },
+          "name": "insanity_nug_2.png",
+          "x": 223,
+          "y": 6
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "insanity_nug_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InsanityNug2Condition"
+          },
+          "name": "insanity_nug_2.png",
+          "x": 243,
+          "y": 6
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "insanity_nug_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "InsanityNug1Condition"
+          },
+          "name": "insanity_nug_3.png",
+          "x": 263,
+          "y": 6
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "InsanityIsInDimension"
+    },
+    "gridSettings": {
+      "sx": 1,
+      "sy": 1,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

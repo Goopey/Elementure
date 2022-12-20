@@ -1,0 +1,32 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Energyblade"
+      },
+      {
+        "value": "CUSTOM:Energyblastskill"
+      },
+      {
+        "value": "CUSTOM:Neonsword"
+      },
+      {
+        "value": "CUSTOM:Neonaxe"
+      },
+      {
+        "value": "CUSTOM:Neonchanneler"
+      },
+      {
+        "value": "CUSTOM:Neonscepter"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "energyitem",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "_fv": 34,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Dark Flames",
+    "icon": "darkflame.png",
+    "color": {
+      "value": -13434880,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "DarkflameEffect"
+    },
+    "onExpired": {
+      "name": "DarkflameLingerBurn"
+    }
+  }
+}

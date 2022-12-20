@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/badlandsmemorial"
+    },
+    "facing=east": {
+      "model": "elementure:block/badlandsmemorial",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/badlandsmemorial",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/badlandsmemorial",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/lightningandesitebricksslabs"
+    },
+    "type=top": {
+      "model": "elementure:block/lightningandesitebricksslabs_top"
+    },
+    "type=double": {
+      "model": "elementure:block/lightningandesitebricksslabs_full"
+    }
+  }
+}

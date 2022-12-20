@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/brownrimevine",
+  "textures": {
+    "all": "elementure:blocks/brown_rimevine",
+    "particle": "elementure:blocks/brown_rimevine",
+    "0": "elementure:blocks/brown_rimevine"
+  }
+}

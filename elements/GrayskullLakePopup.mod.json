@@ -1,0 +1,34 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Grayskull Lake",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Grayskull Lake",
+          "x": 178,
+          "y": 28
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "GrayskullLakepopupDisplay"
+    },
+    "gridSettings": {
+      "sx": 8,
+      "sy": 8,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

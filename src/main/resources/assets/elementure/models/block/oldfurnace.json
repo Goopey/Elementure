@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/old_furnace_top",
+    "up": "elementure:blocks/old_furnace_top",
+    "north": "elementure:blocks/old_furnace_front",
+    "east": "elementure:blocks/old_furnace_side",
+    "south": "elementure:blocks/old_furnace_side",
+    "west": "elementure:blocks/old_furnace_side",
+    "particle": "elementure:blocks/old_furnace_top"
+  }
+}

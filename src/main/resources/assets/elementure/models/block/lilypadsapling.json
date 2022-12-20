@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "elementure:blocks/lilypad_tree_sapling",
+    "particle": "elementure:blocks/lilypad_tree_sapling"
+  }
+}

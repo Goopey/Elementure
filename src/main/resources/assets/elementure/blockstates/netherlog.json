@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "elementure:block/netherlog",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "elementure:block/netherlog"
+    },
+    "axis=z": {
+      "model": "elementure:block/netherlog",
+      "x": 90
+    }
+  }
+}

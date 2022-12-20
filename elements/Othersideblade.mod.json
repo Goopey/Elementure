@@ -1,0 +1,42 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "othersideblade",
+    "customModelName": "Normal",
+    "name": "Otherside blade [Dark - Soul]",
+    "specialInfo": [
+      "An old blade the likes of you've never seen before.",
+      "\"This thing... is not from our world.\""
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 0.9,
+    "enchantability": 2,
+    "damageVsEntity": 5.5,
+    "usageCount": 702,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "OthersidebladeGlow"
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "OthersidebladeEnhance"
+    },
+    "onEntityHitWith": {
+      "name": "OthersidebladeGatherEssence"
+    },
+    "onItemInUseTick": {
+      "name": "OthersidebladeDarkSoulTrue"
+    }
+  }
+}

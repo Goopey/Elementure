@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "elementure:merthiumingot"
+    },
+    "2": {
+      "item": "elementure:merthiumblade"
+    },
+    "3": {
+      "item": "elementure:merthiumingot"
+    },
+    "4": {
+      "item": "elementure:merthiumingot"
+    },
+    "5": {
+      "item": "elementure:merthiumingot"
+    },
+    "6": {
+      "item": "elementure:merthiumblock"
+    },
+    "7": {
+      "item": "elementure:merthiumingot"
+    }
+  },
+  "result": {
+    "item": "elementure:merthiumchanneler",
+    "count": 1
+  }
+}

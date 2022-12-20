@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "elementure:blabbermouth"
+    },
+    "title": {
+      "translate": "advancements.blabbermouthcaught.title"
+    },
+    "description": {
+      "translate": "advancements.blabbermouthcaught.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "blabbermouthcaught": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elementure:blabbermouth"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 40
+  },
+  "parent": "elementure:elementure_fishingadvancement"
+}

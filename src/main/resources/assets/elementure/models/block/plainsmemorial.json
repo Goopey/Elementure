@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/plains_memorial",
+  "textures": {
+    "all": "elementure:blocks/plains_memorial",
+    "particle": "elementure:blocks/plains_memorial",
+    "0": "elementure:blocks/plains_memorial"
+  }
+}

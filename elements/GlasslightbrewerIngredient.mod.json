@@ -1,0 +1,206 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Greenrimevine"
+      },
+      {
+        "value": "CUSTOM:Greenrimebush"
+      },
+      {
+        "value": "CUSTOM:Greenrimefan"
+      },
+      {
+        "value": "CUSTOM:Cyanrimebush"
+      },
+      {
+        "value": "CUSTOM:Cyanrimevine"
+      },
+      {
+        "value": "CUSTOM:Cyanrimefan"
+      },
+      {
+        "value": "CUSTOM:Bluerimebush"
+      },
+      {
+        "value": "CUSTOM:Bluerimevine"
+      },
+      {
+        "value": "CUSTOM:Bluerimefan"
+      },
+      {
+        "value": "CUSTOM:Lightbluerimebush"
+      },
+      {
+        "value": "CUSTOM:Lightbluerimefan"
+      },
+      {
+        "value": "CUSTOM:Lightbluerimevine"
+      },
+      {
+        "value": "CUSTOM:Purplerimevine"
+      },
+      {
+        "value": "CUSTOM:Purplerimefan"
+      },
+      {
+        "value": "CUSTOM:Purplerimebush"
+      },
+      {
+        "value": "CUSTOM:Greenrimemoss"
+      },
+      {
+        "value": "CUSTOM:Cyanrimemoss"
+      },
+      {
+        "value": "CUSTOM:Bluerimemoss"
+      },
+      {
+        "value": "CUSTOM:Lightbluerimemoss"
+      },
+      {
+        "value": "CUSTOM:Purplerimemoss"
+      },
+      {
+        "value": "CUSTOM:Magentarimemoss"
+      },
+      {
+        "value": "CUSTOM:Magentarimevine"
+      },
+      {
+        "value": "CUSTOM:Magentarimefan"
+      },
+      {
+        "value": "CUSTOM:Magentarimebush"
+      },
+      {
+        "value": "CUSTOM:Pinkrimemoss"
+      },
+      {
+        "value": "CUSTOM:Pinkrimevine"
+      },
+      {
+        "value": "CUSTOM:Pinkrimefan"
+      },
+      {
+        "value": "CUSTOM:Pinkrimebush"
+      },
+      {
+        "value": "CUSTOM:Brownrimemoss"
+      },
+      {
+        "value": "CUSTOM:Brownrimevine"
+      },
+      {
+        "value": "CUSTOM:Brownrimefan"
+      },
+      {
+        "value": "CUSTOM:Brownrimebush"
+      },
+      {
+        "value": "CUSTOM:Lightgrayrimemoss"
+      },
+      {
+        "value": "CUSTOM:Lightgrayrimevine"
+      },
+      {
+        "value": "CUSTOM:Lightgrayrimefan"
+      },
+      {
+        "value": "CUSTOM:Lightgrayrimebush"
+      },
+      {
+        "value": "CUSTOM:Orangerimemoss"
+      },
+      {
+        "value": "CUSTOM:Orangerimevine"
+      },
+      {
+        "value": "CUSTOM:Orangerimefan"
+      },
+      {
+        "value": "CUSTOM:Orangerimebush"
+      },
+      {
+        "value": "CUSTOM:Blackrimemoss"
+      },
+      {
+        "value": "CUSTOM:Blackrimevine"
+      },
+      {
+        "value": "CUSTOM:Blackrimefan"
+      },
+      {
+        "value": "CUSTOM:Blackrimebush"
+      },
+      {
+        "value": "CUSTOM:Grayrimemoss"
+      },
+      {
+        "value": "CUSTOM:Grayrimevine"
+      },
+      {
+        "value": "CUSTOM:Grayrimefan"
+      },
+      {
+        "value": "CUSTOM:Grayrimebush"
+      },
+      {
+        "value": "CUSTOM:Limerimemoss"
+      },
+      {
+        "value": "CUSTOM:Limerimevine"
+      },
+      {
+        "value": "CUSTOM:Limerimefan"
+      },
+      {
+        "value": "CUSTOM:Limerimebush"
+      },
+      {
+        "value": "CUSTOM:Yellowrimemoss"
+      },
+      {
+        "value": "CUSTOM:Yellowrimevine"
+      },
+      {
+        "value": "CUSTOM:Yellowrimefan"
+      },
+      {
+        "value": "CUSTOM:Yellowrimebush"
+      },
+      {
+        "value": "CUSTOM:Redrimemoss"
+      },
+      {
+        "value": "CUSTOM:Redrimevine"
+      },
+      {
+        "value": "CUSTOM:Redrimefan"
+      },
+      {
+        "value": "CUSTOM:Redrimebush"
+      },
+      {
+        "value": "CUSTOM:Whiterimemoss"
+      },
+      {
+        "value": "CUSTOM:Whiterimevine"
+      },
+      {
+        "value": "CUSTOM:Whiterimefan"
+      },
+      {
+        "value": "CUSTOM:Whiterimebush"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "glasslightbrewer_ingredient",
+    "namespace": "mod"
+  }
+}

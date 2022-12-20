@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/pervaded_bedrock",
+    "up": "elementure:blocks/pervaded_bedrock",
+    "north": "elementure:blocks/pervaded_bedrock",
+    "east": "elementure:blocks/pervaded_bedrock",
+    "south": "elementure:blocks/pervaded_bedrock",
+    "west": "elementure:blocks/pervaded_bedrock",
+    "particle": "elementure:blocks/pervaded_bedrock"
+  }
+}

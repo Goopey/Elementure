@@ -1,0 +1,38 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Biggranitelemental"
+      },
+      {
+        "value": "CUSTOM:Graniteelemental"
+      },
+      {
+        "value": "CUSTOM:Smallgraniteelemental"
+      },
+      {
+        "value": "EntityDragon"
+      },
+      {
+        "value": "EntityEnderman"
+      },
+      {
+        "value": "EntityEndermite"
+      },
+      {
+        "value": "EntityShulker"
+      },
+      {
+        "value": "CUSTOM:Shatteredobsidiancharger"
+      }
+    ],
+    "name": "void_mobs",
+    "namespace": "forge"
+  }
+}

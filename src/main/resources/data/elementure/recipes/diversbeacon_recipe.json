@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:rareglasslight"
+    },
+    "1": {
+      "item": "elementure:rareglasslight"
+    },
+    "2": {
+      "item": "elementure:rareglasslight"
+    },
+    "3": {
+      "item": "elementure:diversalloy"
+    },
+    "4": {
+      "item": "minecraft:conduit"
+    },
+    "5": {
+      "item": "elementure:diversalloy"
+    },
+    "6": {
+      "item": "elementure:cormunculusblock"
+    },
+    "7": {
+      "item": "elementure:cormunculusblock"
+    },
+    "8": {
+      "item": "elementure:cormunculusblock"
+    }
+  },
+  "result": {
+    "item": "elementure:diversbeacon",
+    "count": 1
+  }
+}

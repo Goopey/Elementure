@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.PRISMARINE_SHARD"
+      },
+      {
+        "value": "Items.PRISMARINE_SHARD"
+      },
+      {
+        "value": "Items.PRISMARINE_SHARD"
+      },
+      {
+        "value": "Items.SCUTE"
+      },
+      {
+        "value": "Blocks.CONDUIT"
+      },
+      {
+        "value": "Items.SCUTE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.TRIDENT"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Oceangrace"
+    },
+    "name": "oceangracerecipe",
+    "namespace": "mod"
+  }
+}

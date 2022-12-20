@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "elementure:blocks/akyberrybush",
+    "particle": "elementure:blocks/akyberrybush"
+  }
+}

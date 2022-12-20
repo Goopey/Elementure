@@ -1,0 +1,7 @@
+{
+  "_fv": 34,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables/><block deletable=\"false\" id=\"Q~DLL%@EtE1!J`|1R4W$\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block id=\"nZhh@0.M??:;r-(%WI%G\" type=\"entity_add_potion\"><field name=\"potion\">SLOWNESS</field><value name=\"level\"><block id=\"/Owu#{-(CX9[JEJ8V/.]\" type=\"math_number\"><field name=\"NUM\">0</field></block></value><value name=\"duration\"><block id=\"T[{rWKP9W_Ng#$px=2.%\" type=\"math_number\"><field name=\"NUM\">200</field></block></value><next><block id=\"0hofus+;.`skPG7lS14i\" type=\"entity_add_potion\"><field name=\"potion\">MINING_FATIGUE</field><value name=\"level\"><block id=\"MA!Xka/%jA,a*TRW(]5V\" type=\"math_number\"><field name=\"NUM\">0</field></block></value><value name=\"duration\"><block id=\"}QTZ7V1fVqHqT*MYHR?0\" type=\"math_number\"><field name=\"NUM\">200</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></next><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></next></block></xml>"
+  }
+}

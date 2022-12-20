@@ -1,0 +1,26 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "ferziumpickaxe",
+    "customModelName": "Normal",
+    "name": "Ferzium pickaxe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 2,
+    "efficiency": 5.0,
+    "attackSpeed": 2.8,
+    "enchantability": 3,
+    "damageVsEntity": 3.0,
+    "usageCount": 216,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

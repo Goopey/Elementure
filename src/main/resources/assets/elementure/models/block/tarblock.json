@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/tarstone",
+    "up": "elementure:blocks/tarstone",
+    "north": "elementure:blocks/tarstone",
+    "east": "elementure:blocks/tarstone",
+    "south": "elementure:blocks/tarstone",
+    "west": "elementure:blocks/tarstone",
+    "particle": "elementure:blocks/tarstone"
+  }
+}

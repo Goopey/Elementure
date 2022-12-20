@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "elementure:blocks/pool_tiles",
+    "particle": "elementure:blocks/pool_tiles"
+  }
+}

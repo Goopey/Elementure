@@ -1,0 +1,35 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Oldnail"
+      },
+      {
+        "value": "CUSTOM:Nailfixed"
+      },
+      {
+        "value": "CUSTOM:Truenail"
+      },
+      {
+        "value": "CUSTOM:Oldnailhealcharm"
+      },
+      {
+        "value": "CUSTOM:Vengefulspiritskill"
+      },
+      {
+        "value": "CUSTOM:Othersideblade"
+      },
+      {
+        "value": "CUSTOM:Calmingblade"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "soulitem",
+    "namespace": "forge"
+  }
+}

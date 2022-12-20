@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "elementure:block/stripped_flufflog",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "elementure:block/stripped_flufflog"
+    },
+    "axis=z": {
+      "model": "elementure:block/stripped_flufflog",
+      "x": 90
+    }
+  }
+}

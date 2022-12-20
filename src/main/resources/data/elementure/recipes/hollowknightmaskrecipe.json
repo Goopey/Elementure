@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:maskshard"
+    },
+    {
+      "item": "elementure:maskshard"
+    },
+    {
+      "item": "elementure:maskshard"
+    },
+    {
+      "item": "elementure:maskshard"
+    },
+    {
+      "item": "minecraft:string"
+    }
+  ],
+  "result": {
+    "item": "elementure:hollowknightmask_helmet",
+    "count": 1
+  }
+}

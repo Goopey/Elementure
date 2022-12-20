@@ -1,0 +1,36 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_worlds:infestedcreeperdust"
+    },
+    "1": {
+      "item": "minecraft_worlds:infestedcreeperdust"
+    },
+    "2": {
+      "item": "minecraft_worlds:infestedcreeperdust"
+    },
+    "3": {
+      "item": "minecraft_worlds:infestedcreeperdust"
+    },
+    "5": {
+      "item": "minecraft_worlds:infestedcreeperdust"
+    },
+    "6": {
+      "item": "minecraft_worlds:infestedcreeperdust"
+    },
+    "8": {
+      "item": "minecraft_worlds:infestedcreeperdust"
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:creeperarmorlegs",
+    "count": 1
+  }
+}

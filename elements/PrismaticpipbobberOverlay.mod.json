@@ -1,0 +1,31 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "prismatic_pip.png",
+          "use1Xscale": false,
+          "name": "prismatic_pip.png",
+          "x": 226,
+          "y": 115
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "PrismaticpipbobberDisplay"
+    },
+    "gridSettings": {
+      "sx": 4,
+      "sy": 4,
+      "ox": 11,
+      "oy": 17,
+      "snapOnGrid": true
+    }
+  }
+}

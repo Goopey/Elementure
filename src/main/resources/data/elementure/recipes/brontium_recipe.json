@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:vamiteingot"
+    },
+    {
+      "item": "elementure:vamiteingot"
+    },
+    {
+      "item": "minecraft:slime_block"
+    }
+  ],
+  "result": {
+    "item": "elementure:brontium",
+    "count": 2
+  }
+}

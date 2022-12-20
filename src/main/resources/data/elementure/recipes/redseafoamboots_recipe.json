@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:seafoamarmor_boots"
+    },
+    {
+      "item": "elementure:redjelly"
+    },
+    {
+      "item": "elementure:redjelly"
+    },
+    {
+      "item": "elementure:redjelly"
+    }
+  ],
+  "result": {
+    "item": "elementure:redseafoamarmor_boots",
+    "count": 1
+  }
+}

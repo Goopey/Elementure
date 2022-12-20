@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:skyjadebar"
+    },
+    "1": {
+      "item": "elementure:skyjadebar"
+    },
+    "2": {
+      "item": "elementure:skyjadebar"
+    },
+    "3": {
+      "item": "elementure:skyjadebar"
+    },
+    "5": {
+      "item": "elementure:skyjadebar"
+    }
+  },
+  "result": {
+    "item": "elementure:skyjadearmor_helmet",
+    "count": 1
+  }
+}

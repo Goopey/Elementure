@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom_rh",
+  "textures": {
+    "bottom": "elementure:blocks/old_door_1",
+    "top": "elementure:blocks/old_door_2"
+  }
+}

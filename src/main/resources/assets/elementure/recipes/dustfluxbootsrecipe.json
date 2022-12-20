@@ -1,0 +1,26 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_worlds:dustfluxingot"
+    },
+    "2": {
+      "item": "minecraft_worlds:dustfluxingot"
+    },
+    "3": {
+      "item": "minecraft_worlds:dustfluxingot"
+    },
+    "5": {
+      "item": "minecraft_worlds:dustfluxingot"
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:dustfluxarmorboots",
+    "count": 1
+  }
+}

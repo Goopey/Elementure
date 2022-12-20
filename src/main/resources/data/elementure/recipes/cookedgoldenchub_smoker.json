@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "experience": 8,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "elementure:goldenchub"
+  },
+  "result": "elementure:cooked_goldenchub"
+}

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:rainbowingot"
+    },
+    "2": {
+      "item": "elementure:rainbowingot"
+    },
+    "3": {
+      "item": "elementure:rainbowingot"
+    },
+    "4": {
+      "item": "elementure:rainbowingot"
+    },
+    "5": {
+      "item": "elementure:rainbowingot"
+    },
+    "6": {
+      "item": "elementure:rainbowingot"
+    },
+    "7": {
+      "item": "elementure:rainbowingot"
+    },
+    "8": {
+      "item": "elementure:rainbowingot"
+    }
+  },
+  "result": {
+    "item": "elementure:rainbowarmor_chestplate",
+    "count": 1
+  }
+}

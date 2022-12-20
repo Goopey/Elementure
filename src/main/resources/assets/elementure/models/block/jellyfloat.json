@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/jellyfloat_slime_trunk",
+    "up": "elementure:blocks/jellyfloat_slime_trunk",
+    "north": "elementure:blocks/jellyfloat_slime_trunk",
+    "east": "elementure:blocks/jellyfloat_slime_trunk",
+    "south": "elementure:blocks/jellyfloat_slime_trunk",
+    "west": "elementure:blocks/jellyfloat_slime_trunk",
+    "particle": "elementure:blocks/jellyfloat_slime_trunk"
+  }
+}

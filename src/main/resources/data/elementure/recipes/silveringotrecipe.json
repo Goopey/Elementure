@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:silverblock"
+    }
+  ],
+  "result": {
+    "item": "elementure:silveringot",
+    "count": 9
+  }
+}

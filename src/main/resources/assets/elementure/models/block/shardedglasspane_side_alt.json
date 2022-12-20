@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_glass_pane_side_alt",
+  "textures": {
+    "edge": "elementure:blocks/sharded_glass",
+    "pane": "elementure:blocks/sharded_glass"
+  }
+}

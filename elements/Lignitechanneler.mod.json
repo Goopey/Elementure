@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "lignite_channeler",
+    "customModelName": "Normal",
+    "name": "Lignite channeler [Lightning]",
+    "specialInfo": [
+      "Allows you to cast a skill which electrocutes your ennemies and zaps randomly around"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 21,
+    "actionSound": {
+      "value": "block.fire.ambient"
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "LignitechannelerCanUse"
+    },
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "LignitechannelerConsume"
+    },
+    "useCondition": {
+      "name": "LignitechannelerCanUse"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 2.1,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelempty",
+    "customBulletModelTexture": "empty_texturemap.png",
+    "onBulletFlyingTick": {
+      "name": "LignitechannelerElectricParticles"
+    }
+  }
+}

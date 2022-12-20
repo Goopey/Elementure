@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/merthiumblock",
+    "up": "elementure:blocks/merthiumblock",
+    "north": "elementure:blocks/merthiumblock",
+    "east": "elementure:blocks/merthiumblock",
+    "south": "elementure:blocks/merthiumblock",
+    "west": "elementure:blocks/merthiumblock",
+    "particle": "elementure:blocks/merthiumblock"
+  }
+}

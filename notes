@@ -1,0 +1,14 @@
+`git show` works with binary
+
+___
+
+https://stackoverflow.com/questions/427207/can-git-hook-scripts-be-managed-along-with-the-repository#37861972
+
+I did this
+`git config core.hooksPath hooks`
+
+___
+
+https://stackoverflow.com/questions/5153199/git-show-content-of-file-as-it-will-look-like-after-committing/#5153379
+Use the : prefix to access objects in the current index (staged but not yet commited).
+`git show :file`

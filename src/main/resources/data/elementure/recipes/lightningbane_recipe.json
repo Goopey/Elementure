@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:elementalsharpener"
+    },
+    {
+      "item": "minecraft:glass"
+    },
+    {
+      "item": "elementure:flutaniteingot"
+    }
+  ],
+  "result": {
+    "item": "elementure:lightningbane",
+    "count": 1
+  }
+}

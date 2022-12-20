@@ -1,0 +1,41 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "newzone_popup_10.png",
+          "use1Xscale": true,
+          "name": "newzone_popup_10.png",
+          "x": 163,
+          "y": 3
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "newzone_popup_top_10.png",
+          "use1Xscale": true,
+          "name": "newzone_popup_top_10.png",
+          "x": 192,
+          "y": 39
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "Newzonepopup11Display"
+    },
+    "gridSettings": {
+      "sx": 8,
+      "sy": 8,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

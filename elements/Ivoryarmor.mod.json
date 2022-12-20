@@ -1,0 +1,73 @@
+{
+  "_fv": 34,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "ivory_helmet",
+    "enableBody": true,
+    "textureBody": "ivory_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "ivory_legs",
+    "enableBoots": true,
+    "textureBoots": "ivory_boots",
+    "onBodyTick": {
+      "name": "IvoryarmorFullarmorBonus"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedarmor"
+    },
+    "armorTextureFile": "ivory_",
+    "helmetName": "Ivory Helmet",
+    "bodyName": "Ivory Body",
+    "leggingsName": "Ivory Leggings",
+    "bootsName": "Ivory Boots",
+    "helmetSpecialInfo": [
+      "Full armor effect : randomly deals damage to creatures around you"
+    ],
+    "bodySpecialInfo": [
+      "Full armor effect : randomly deals damage to creatures around you"
+    ],
+    "leggingsSpecialInfo": [
+      "Full armor effect : randomly deals damage to creatures around you"
+    ],
+    "bootsSpecialInfo": [
+      "Full armor effect : randomly deals damage to creatures around you"
+    ],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 16,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 0.5,
+    "knockbackResistance": 0.19999999999999998,
+    "equipSound": {
+      "value": "item.armor.equip_leather"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ivoryshard"
+      }
+    ]
+  }
+}

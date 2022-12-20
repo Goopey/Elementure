@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:seagrass",
+    "minecraft:red_sand",
+    "minecraft:rooted_dirt",
+    "minecraft:water",
+    "minecraft:coarse_dirt",
+    "minecraft:kelp",
+    "minecraft:sand",
+    "minecraft:tall_seagrass",
+    "minecraft:sea_pickle",
+    "minecraft:hopper",
+    "minecraft:gravel",
+    "minecraft:kelp_plant",
+    "minecraft:dirt",
+    "minecraft:podzol"
+  ]
+}

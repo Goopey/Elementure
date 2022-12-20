@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/wortash_roots",
+    "up": "elementure:blocks/wortash_roots",
+    "north": "elementure:blocks/wortash_roots",
+    "east": "elementure:blocks/wortash_roots",
+    "south": "elementure:blocks/wortash_roots",
+    "west": "elementure:blocks/wortash_roots",
+    "particle": "elementure:blocks/wortash_roots"
+  }
+}

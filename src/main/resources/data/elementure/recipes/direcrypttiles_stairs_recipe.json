@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:direcrypttiles"
+    },
+    "3": {
+      "item": "elementure:direcrypttiles"
+    },
+    "4": {
+      "item": "elementure:direcrypttiles"
+    },
+    "6": {
+      "item": "elementure:direcrypttiles"
+    },
+    "7": {
+      "item": "elementure:direcrypttiles"
+    },
+    "8": {
+      "item": "elementure:direcrypttiles"
+    }
+  },
+  "result": {
+    "item": "elementure:direcrypttiles_stairs",
+    "count": 4
+  }
+}

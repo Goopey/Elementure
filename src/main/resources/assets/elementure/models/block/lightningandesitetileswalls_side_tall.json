@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "elementure:blocks/lightning_andesite_tile",
+    "particle": "elementure:blocks/lightning_andesite_tile"
+  }
+}

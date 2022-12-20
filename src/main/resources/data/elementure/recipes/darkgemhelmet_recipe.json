@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:darkgem"
+    },
+    "1": {
+      "item": "elementure:darkgem"
+    },
+    "2": {
+      "item": "elementure:darkgem"
+    },
+    "3": {
+      "item": "elementure:darkgem"
+    },
+    "5": {
+      "item": "elementure:darkgem"
+    }
+  },
+  "result": {
+    "item": "elementure:darkgemarmor_helmet",
+    "count": 1
+  }
+}

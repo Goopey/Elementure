@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:desecratedshard"
+    },
+    {
+      "item": "elementure:desecratedshard"
+    },
+    {
+      "item": "minecraft:emerald"
+    }
+  ],
+  "result": {
+    "item": "elementure:desecratedrelic",
+    "count": 1
+  }
+}

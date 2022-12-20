@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/deep_vamiteore",
+    "up": "elementure:blocks/deep_vamiteore",
+    "north": "elementure:blocks/deep_vamiteore",
+    "east": "elementure:blocks/deep_vamiteore",
+    "south": "elementure:blocks/deep_vamiteore",
+    "west": "elementure:blocks/deep_vamiteore",
+    "particle": "elementure:blocks/deep_vamiteore"
+  }
+}

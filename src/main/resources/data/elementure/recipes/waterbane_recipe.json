@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:elementalsharpener"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "elementure:ligniteingot"
+    }
+  ],
+  "result": {
+    "item": "elementure:waterbane",
+    "count": 1
+  }
+}

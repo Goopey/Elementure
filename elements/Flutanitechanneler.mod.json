@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "flutanite_channeler",
+    "customModelName": "Normal",
+    "name": "Flutanite channeler [Air]",
+    "specialInfo": [
+      "Allows you to cast a wind-blast skill which greatly pushes back your ennemies"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 21,
+    "actionSound": {
+      "value": "block.dispenser.launch"
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "FlutanitechannelerCanUse"
+    },
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "FlutanitechannelerConsume"
+    },
+    "useCondition": {
+      "name": "FlutanitechannelerCanUse"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 1.4000000000000001,
+    "bulletKnockback": 3,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelempty",
+    "customBulletModelTexture": "empty_texturemap.png",
+    "onBulletHitsEntity": {
+      "name": "FlutanitechannelerEffect"
+    }
+  }
+}

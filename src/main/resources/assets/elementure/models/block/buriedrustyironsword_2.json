@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/buriedrustyironsword2",
+  "textures": {
+    "all": "elementure:blocks/buriedrustysword2",
+    "particle": "elementure:blocks/buriedrustysword2",
+    "0": "elementure:blocks/buriedrustysword2"
+  }
+}

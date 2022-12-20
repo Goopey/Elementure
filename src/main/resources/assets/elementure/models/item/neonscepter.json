@@ -1,0 +1,7 @@
+{
+  "parent": "elementure:custom/neonscepter",
+  "textures": {
+    "0": "elementure:blocks/neonheavyscepter",
+    "particle": "elementure:items/neonheavyscepter"
+  }
+}

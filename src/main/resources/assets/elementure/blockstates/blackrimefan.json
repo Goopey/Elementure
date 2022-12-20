@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/blackrimefan"
+    },
+    "facing=east": {
+      "model": "elementure:block/blackrimefan",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/blackrimefan",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/blackrimefan",
+      "y": 270
+    }
+  }
+}

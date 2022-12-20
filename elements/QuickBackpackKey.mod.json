@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "MINUS",
+    "keyBindingName": "Quick Backpack Key",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "SuitcaseOpenGUI"
+    }
+  }
+}

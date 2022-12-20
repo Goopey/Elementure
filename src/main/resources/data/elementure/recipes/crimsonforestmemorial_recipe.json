@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:nether_wart_block"
+    },
+    "3": {
+      "item": "minecraft:crimson_fungus"
+    },
+    "4": {
+      "item": "minecraft:shroomlight"
+    },
+    "5": {
+      "item": "minecraft:crimson_fungus"
+    },
+    "6": {
+      "item": "minecraft:crimson_nylium"
+    },
+    "7": {
+      "item": "minecraft:crimson_nylium"
+    },
+    "8": {
+      "item": "minecraft:crimson_nylium"
+    }
+  },
+  "result": {
+    "item": "elementure:crimsonforestmemorial",
+    "count": 1
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Custombobber"
+      },
+      {
+        "value": "EntityAreaEffectCloud"
+      },
+      {
+        "value": "EntityArmorStand"
+      },
+      {
+        "value": "EntityArrow"
+      },
+      {
+        "value": "EntityBoat"
+      },
+      {
+        "value": "EntityDragonFireball"
+      },
+      {
+        "value": "EntityEnderCrystal"
+      },
+      {
+        "value": "EntityEnderPearl"
+      },
+      {
+        "value": "EntityEvokerFangs"
+      },
+      {
+        "value": "EntityExpBottle"
+      },
+      {
+        "value": "EntityXPOrb"
+      },
+      {
+        "value": "EntityEnderEye"
+      },
+      {
+        "value": "EntityFallingBlock"
+      },
+      {
+        "value": "EntityFireball"
+      },
+      {
+        "value": "EntityFireworkRocket"
+      },
+      {
+        "value": "EntityFishHook"
+      },
+      {
+        "value": "EntityEgg"
+      },
+      {
+        "value": "EntityGolem"
+      },
+      {
+        "value": "EntityHanging"
+      },
+      {
+        "value": "EntityItem"
+      },
+      {
+        "value": "EntityItemFrame"
+      },
+      {
+        "value": "EntityLeashKnot"
+      },
+      {
+        "value": "EntityLightningBolt"
+      },
+      {
+        "value": "EntityMinecart"
+      },
+      {
+        "value": "EntityMinecartChest"
+      },
+      {
+        "value": "EntityMinecartCommandBlock"
+      },
+      {
+        "value": "EntityMinecartContainer"
+      },
+      {
+        "value": "EntityMinecartFurnace"
+      },
+      {
+        "value": "EntityMinecartHopper"
+      },
+      {
+        "value": "EntityMinecartMobSpawner"
+      },
+      {
+        "value": "EntityMinecartTNT"
+      },
+      {
+        "value": "EntityPainting"
+      },
+      {
+        "value": "EntityPotion"
+      },
+      {
+        "value": "EntityShulkerBullet"
+      },
+      {
+        "value": "EntitySmallFireball"
+      },
+      {
+        "value": "EntitySnowball"
+      },
+      {
+        "value": "EntitySpectralArrow"
+      },
+      {
+        "value": "EntityThrowable"
+      },
+      {
+        "value": "EntityTNTPrimed"
+      },
+      {
+        "value": "EntityTrident"
+      },
+      {
+        "value": "EntityWitherSkull"
+      },
+      {
+        "value": "CUSTOM:ChromaticwheelBullet"
+      },
+      {
+        "value": "CUSTOM:CausticvialLiquid"
+      },
+      {
+        "value": "CUSTOM:Mycenasporeslingeringcloud"
+      },
+      {
+        "value": "CUSTOM:MemorybobberEntity"
+      },
+      {
+        "value": "CUSTOM:ObsidianbobberEnt"
+      },
+      {
+        "value": "CUSTOM:MemorybobberEntity"
+      },
+      {
+        "value": "CUSTOM:EchoBerry"
+      },
+      {
+        "value": "CUSTOM:Motherorb"
+      },
+      {
+        "value": "CUSTOM:Redsunpillar"
+      }
+    ],
+    "name": "protectedentities",
+    "namespace": "forge"
+  }
+}

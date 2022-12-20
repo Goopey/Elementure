@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/demonstar",
+  "textures": {
+    "all": "elementure:blocks/firestar",
+    "particle": "elementure:blocks/firestar",
+    "0": "elementure:blocks/firestar"
+  }
+}

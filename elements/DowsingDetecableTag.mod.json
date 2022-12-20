@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Forgottenwatcher1"
+      },
+      {
+        "value": "CUSTOM:Forgottenwatcher2"
+      }
+    ],
+    "name": "dowsing_detectable",
+    "namespace": "mod"
+  }
+}

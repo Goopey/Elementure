@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/crystalinecore",
+    "up": "elementure:blocks/crystalinecore",
+    "north": "elementure:blocks/crystalinecore",
+    "east": "elementure:blocks/crystalinecore",
+    "south": "elementure:blocks/crystalinecore",
+    "west": "elementure:blocks/crystalinecore",
+    "particle": "elementure:blocks/crystalinecore"
+  }
+}

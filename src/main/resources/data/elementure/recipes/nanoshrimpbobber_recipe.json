@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:crabbobber"
+    },
+    {
+      "item": "elementure:nanoshrimp"
+    }
+  ],
+  "result": {
+    "item": "elementure:nanoshrimpbobber",
+    "count": 1
+  }
+}

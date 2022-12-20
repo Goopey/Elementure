@@ -1,0 +1,35 @@
+{
+  "_fv": 34,
+  "_type": "item",
+  "definition": {
+    "renderType": 1,
+    "texture": "unholyshield",
+    "customModelName": "unholyshield:default",
+    "name": "Unholy shield",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "stackSize": 1,
+    "enchantability": 1,
+    "useDuration": 156,
+    "toolType": 1.0,
+    "damageCount": 0,
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [],
+    "hasGlow": false,
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
+    "isFood": false,
+    "nutritionalValue": 0,
+    "saturation": 0.30000001192092896,
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "eat"
+  }
+}

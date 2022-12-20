@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/corruptleaves",
+    "up": "elementure:blocks/corruptleaves",
+    "north": "elementure:blocks/corruptleaves",
+    "east": "elementure:blocks/corruptleaves",
+    "south": "elementure:blocks/corruptleaves",
+    "west": "elementure:blocks/corruptleaves",
+    "particle": "elementure:blocks/corruptleaves"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Darklurker"
+      },
+      {
+        "value": "CUSTOM:Darkspirit"
+      },
+      {
+        "value": "CUSTOM:Halloweenspirit"
+      },
+      {
+        "value": "CUSTOM:Shadowcandle"
+      },
+      {
+        "value": "CUSTOM:Minoskull"
+      },
+      {
+        "value": "EntityCaveSpider"
+      },
+      {
+        "value": "EntityZombie"
+      },
+      {
+        "value": "CUSTOM:Twistedknight"
+      },
+      {
+        "value": "CUSTOM:Cruelknight"
+      },
+      {
+        "value": "CUSTOM:Spectreknight"
+      },
+      {
+        "value": "CUSTOM:Tarumbra"
+      },
+      {
+        "value": "CUSTOM:Tarworm"
+      },
+      {
+        "value": "CUSTOM:TarwormLink"
+      },
+      {
+        "value": "CUSTOM:Umbrasyl"
+      },
+      {
+        "value": "CUSTOM:UmbrasylSegment"
+      }
+    ],
+    "name": "dark_mobs",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "_fv": 34,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Mycenan spores",
+    "splashName": "Splash Mycenan spores",
+    "lingeringName": "Lingering Mycenan spores",
+    "arrowName": "Arrow of Mycenan spores",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Mycenanspores"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/junglememorial"
+    },
+    "facing=east": {
+      "model": "elementure:block/junglememorial",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/junglememorial",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/junglememorial",
+      "y": 270
+    }
+  }
+}

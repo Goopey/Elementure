@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "elementure:blocks/green_slime_sprout",
+    "particle": "elementure:blocks/green_slime_sprout"
+  }
+}

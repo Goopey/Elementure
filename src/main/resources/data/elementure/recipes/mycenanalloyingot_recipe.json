@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:mycenanalloynugget"
+    },
+    "1": {
+      "item": "elementure:mycenanalloynugget"
+    },
+    "2": {
+      "item": "elementure:mycenanalloynugget"
+    },
+    "3": {
+      "item": "elementure:mycenanalloynugget"
+    },
+    "4": {
+      "item": "elementure:mycenanalloynugget"
+    },
+    "5": {
+      "item": "elementure:mycenanalloynugget"
+    },
+    "6": {
+      "item": "elementure:mycenanalloynugget"
+    },
+    "7": {
+      "item": "elementure:mycenanalloynugget"
+    },
+    "8": {
+      "item": "elementure:mycenanalloynugget"
+    }
+  },
+  "result": {
+    "item": "elementure:mycenanalloy",
+    "count": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:quartz_block",
+      "data": 32767
+    },
+    "1": {
+      "item": "minecraft:quartz_block",
+      "data": 32767
+    },
+    "2": {
+      "item": "minecraft:quartz_block",
+      "data": 0
+    },
+    "3": {
+      "item": "minecraft_worlds:unpoweredsavageblade"
+    },
+    "4": {
+      "item": "minecraft:redstone_block"
+    },
+    "5": {
+      "item": "minecraft_worlds:unpoweredsavageblade"
+    },
+    "6": {
+      "item": "minecraft:redstone_block"
+    },
+    "7": {
+      "item": "minecraft:diamond_sword"
+    },
+    "8": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:poweredsavageblade",
+    "count": 1
+  }
+}

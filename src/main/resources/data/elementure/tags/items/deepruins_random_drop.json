@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:vamiteingot",
+    "elementure:memorycrystalshell",
+    "minecraft:golden_apple",
+    "elementure:brontium",
+    "minecraft:slime_ball",
+    "elementure:neondust",
+    "elementure:pumpkinjelly",
+    "elementure:hiddenrunestome",
+    "elementure:ligniteingot",
+    "elementure:deeplens",
+    "elementure:dazzlingingot",
+    "minecraft:scute",
+    "elementure:dustfluxingot",
+    "minecraft:ender_pearl",
+    "elementure:claydoll",
+    "minecraft:nautilus_shell",
+    "elementure:silvernugget",
+    "elementure:slimeslice"
+  ]
+}

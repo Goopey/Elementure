@@ -1,0 +1,42 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "green_seafoam_axe",
+    "customModelName": "Normal",
+    "name": "Green seafoam axe [Water]",
+    "specialInfo": [
+      "The green jelly infused makes it enhance healing. It also leaches life from your enemies."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 1,
+    "efficiency": 6.5,
+    "attackSpeed": 0.9,
+    "enchantability": 2,
+    "damageVsEntity": 8.0,
+    "usageCount": 305,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:SeafoamIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "GreenseafoamaxeGather"
+    },
+    "onItemInInventoryTick": {
+      "name": "GreenseafoambladeHealing"
+    },
+    "onItemInUseTick": {
+      "name": "GreenseafoamaxeTrueWater"
+    }
+  }
+}

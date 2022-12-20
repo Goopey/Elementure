@@ -1,0 +1,294 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm1"
+          },
+          "name": "music_box_popup_anim_1.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm2"
+          },
+          "name": "music_box_popup_anim_2.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm3"
+          },
+          "name": "music_box_popup_anim_3.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm4"
+          },
+          "name": "music_box_popup_anim_4.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm5"
+          },
+          "name": "music_box_popup_anim_5.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm6"
+          },
+          "name": "music_box_popup_anim_6.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm7"
+          },
+          "name": "music_box_popup_anim_7.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm8"
+          },
+          "name": "music_box_popup_anim_8.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_9.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm9"
+          },
+          "name": "music_box_popup_anim_9.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm10"
+          },
+          "name": "music_box_popup_anim_10.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_11.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm11"
+          },
+          "name": "music_box_popup_anim_11.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_12.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm12"
+          },
+          "name": "music_box_popup_anim_12.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_13.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm13"
+          },
+          "name": "music_box_popup_anim_13.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_14.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm14"
+          },
+          "name": "music_box_popup_anim_14.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_15.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm15"
+          },
+          "name": "music_box_popup_anim_15.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_16.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm16"
+          },
+          "name": "music_box_popup_anim_16.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_17.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm17"
+          },
+          "name": "music_box_popup_anim_17.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_18.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm18"
+          },
+          "name": "music_box_popup_anim_18.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_19.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm19"
+          },
+          "name": "music_box_popup_anim_19.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_20.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm20"
+          },
+          "name": "music_box_popup_anim_20.png",
+          "x": 1,
+          "y": 1
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "music_box_popup_anim_20.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "MusicpopupanimConfirm21"
+          },
+          "name": "music_box_popup_anim_20.png",
+          "x": 1,
+          "y": 1
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "MusicpopupanimConfirm"
+    },
+    "gridSettings": {
+      "sx": 9,
+      "sy": 2,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

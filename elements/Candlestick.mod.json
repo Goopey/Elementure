@@ -1,0 +1,41 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "candle_stick",
+    "customModelName": "Normal",
+    "name": "Candlestick [Fire]",
+    "specialInfo": [
+      "Sprays a fire cloud when enough fire essence has been collected. Consumes all your essence, but casts a bigger cloud whenever sneaking."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.6,
+    "enchantability": 2,
+    "damageVsEntity": 3.5,
+    "usageCount": 360,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "CandlestickGlow"
+    },
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "CandlestickCastFireball"
+    },
+    "onEntityHitWith": {
+      "name": "CandlestickGatherEssence"
+    },
+    "onItemInUseTick": {
+      "name": "CandlestickTrueFire"
+    }
+  }
+}

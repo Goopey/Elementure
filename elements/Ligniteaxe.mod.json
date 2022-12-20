@@ -1,0 +1,37 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "ligniteaxe",
+    "customModelName": "Normal",
+    "name": "Lignite axe [Lightning]",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 1,
+    "efficiency": 7.0,
+    "attackSpeed": 0.9,
+    "enchantability": 2,
+    "damageVsEntity": 9.0,
+    "usageCount": 381,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ligniteingot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "LigniteaxeGather"
+    },
+    "onItemInInventoryTick": {
+      "name": "LigniteaxeTrueLightning"
+    }
+  }
+}

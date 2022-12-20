@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "elementure:maxtrahira"
+    },
+    "title": {
+      "translate": "advancements.to_the_four_corners.title"
+    },
+    "description": {
+      "translate": "advancements.to_the_four_corners.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "to_the_four_corners": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "parent": "elementure:elementure_fishingadvancement"
+}

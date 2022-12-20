@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:tarbomb"
+    },
+    "1": {
+      "item": "elementure:tarbomb"
+    },
+    "2": {
+      "item": "elementure:tarbomb"
+    },
+    "4": {
+      "item": "elementure:darkgem"
+    },
+    "7": {
+      "item": "elementure:tarbomb"
+    }
+  },
+  "result": {
+    "item": "elementure:tarspiritstaff",
+    "count": 1
+  }
+}

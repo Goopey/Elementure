@@ -1,0 +1,37 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "cobaltbow",
+    "customModelName": "Normal",
+    "name": "Dazzling bow",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "Items.SPECTRAL_ARROW"
+    },
+    "shootConstantly": false,
+    "usageCount": 732,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.2,
+    "bulletDamage": 4.0,
+    "bulletKnockback": 2,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Items.DYE#18"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

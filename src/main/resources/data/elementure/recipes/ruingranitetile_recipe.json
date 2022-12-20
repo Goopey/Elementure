@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:ruingranite"
+    },
+    {
+      "item": "elementure:ruingranite"
+    },
+    {
+      "item": "elementure:ruingranite"
+    },
+    {
+      "item": "elementure:ruingranite"
+    }
+  ],
+  "result": {
+    "item": "elementure:ruingranitetiles",
+    "count": 4
+  }
+}

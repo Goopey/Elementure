@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:forceobleckslime"
+    },
+    "1": {
+      "item": "minecraft:iron_block"
+    },
+    "2": {
+      "item": "elementure:forceobleckslime"
+    },
+    "3": {
+      "item": "elementure:forceobleckslime"
+    },
+    "4": {
+      "item": "minecraft:iron_block"
+    },
+    "5": {
+      "item": "elementure:forceobleckslime"
+    },
+    "7": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "elementure:forcingblade",
+    "count": 1
+  }
+}

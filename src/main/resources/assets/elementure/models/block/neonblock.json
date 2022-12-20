@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/neonore",
+    "up": "elementure:blocks/neonore",
+    "north": "elementure:blocks/neonore",
+    "east": "elementure:blocks/neonore",
+    "south": "elementure:blocks/neonore",
+    "west": "elementure:blocks/neonore",
+    "particle": "elementure:blocks/neonore"
+  }
+}

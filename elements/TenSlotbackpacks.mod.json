@@ -1,0 +1,19 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Suitcase"
+      },
+      {
+        "value": "CUSTOM:Mycenapouch"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "ten_slot_backpacks",
+    "namespace": "forge"
+  }
+}

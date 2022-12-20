@@ -1,0 +1,54 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "caustic_dagger",
+    "customModelName": "Normal",
+    "name": "Caustic blade [Water]",
+    "specialInfo": [
+      "Hit your enemies, brew acid vials!"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 291,
+    "actionSound": {
+      "value": ""
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "CausticbladeGlow"
+    },
+    "animation": "drink",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 7.0,
+    "onRangedItemUsed": {
+      "name": "CausticbladeConsume"
+    },
+    "useCondition": {
+      "name": "CausticbladeGlow"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 1.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelcaustic_vial",
+    "customBulletModelTexture": "caustic_knight_texturemap.png",
+    "onBulletHitsBlock": {
+      "name": "CausticbladesummonCausticvial"
+    },
+    "onBulletHitsEntity": {
+      "name": "CausticbladesummonCausticvial"
+    }
+  }
+}

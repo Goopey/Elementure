@@ -1,0 +1,32 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Mycenatruffloon"
+      },
+      {
+        "value": "CUSTOM:Mycenatruffling"
+      },
+      {
+        "value": "EntityPhantom"
+      },
+      {
+        "value": "CUSTOM:Fluffwhale"
+      },
+      {
+        "value": "CUSTOM:WindyshoresCloud"
+      },
+      {
+        "value": "CUSTOM:Ivoryshade"
+      }
+    ],
+    "name": "air_mobs",
+    "namespace": "forge"
+  }
+}

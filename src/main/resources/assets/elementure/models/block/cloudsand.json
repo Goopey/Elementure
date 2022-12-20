@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/cloudsand",
+    "up": "elementure:blocks/cloudsand",
+    "north": "elementure:blocks/cloudsand",
+    "east": "elementure:blocks/cloudsand",
+    "south": "elementure:blocks/cloudsand",
+    "west": "elementure:blocks/cloudsand",
+    "particle": "elementure:blocks/cloudsand"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/swampmemorial"
+    },
+    "facing=east": {
+      "model": "elementure:block/swampmemorial",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/swampmemorial",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/swampmemorial",
+      "y": 270
+    }
+  }
+}

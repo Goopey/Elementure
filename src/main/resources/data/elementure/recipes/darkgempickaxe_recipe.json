@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:darkgem"
+    },
+    "1": {
+      "item": "elementure:darkgem"
+    },
+    "2": {
+      "item": "elementure:darkgem"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "elementure:darkgempickaxe",
+    "count": 1
+  }
+}

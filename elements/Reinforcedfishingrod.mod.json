@@ -1,0 +1,47 @@
+{
+  "_fv": 34,
+  "_type": "item",
+  "definition": {
+    "renderType": 0,
+    "texture": "reinforced_fishing_rod",
+    "customModelName": "Normal",
+    "name": "Reinforced fishing rod",
+    "rarity": "COMMON",
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "stackSize": 1,
+    "enchantability": 0,
+    "useDuration": 0,
+    "toolType": 1.0,
+    "damageCount": 301,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "specialInfo": [
+      "Allows you to fish trickier fish to catch."
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "CustomfishingrodInventory",
+    "inventorySize": 3,
+    "inventoryStackSize": 64,
+    "onRightClickedInAir": {
+      "name": "ReinforcedfishingrodSendBobber"
+    },
+    "onItemInInventoryTick": {
+      "name": "ReinforcedfishingrodResetLine"
+    },
+    "isFood": false,
+    "nutritionalValue": 0,
+    "saturation": 0.30000001192092896,
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "eat"
+  }
+}

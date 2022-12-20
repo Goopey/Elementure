@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Campfire cooking",
+    "xpReward": 1.0,
+    "cookingTime": 60,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "campfireCookingInputStack": {
+      "value": "CUSTOM:Bluejelly"
+    },
+    "campfireCookingReturnStack": {
+      "value": "Items.SLIME_BALL"
+    },
+    "name": "bluejelly_slimerecipe",
+    "namespace": "mod"
+  }
+}

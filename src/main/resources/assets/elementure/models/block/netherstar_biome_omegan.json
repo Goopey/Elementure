@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/soulsand",
+    "up": "elementure:blocks/soulsand",
+    "north": "elementure:blocks/soulsand",
+    "east": "elementure:blocks/soulsand",
+    "south": "elementure:blocks/soulsand",
+    "west": "elementure:blocks/soulsand",
+    "particle": "elementure:blocks/soulsand"
+  }
+}

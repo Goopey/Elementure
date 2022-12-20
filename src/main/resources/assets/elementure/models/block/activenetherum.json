@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/active_netherum",
+    "up": "elementure:blocks/active_netherum",
+    "north": "elementure:blocks/active_netherum",
+    "east": "elementure:blocks/active_netherum",
+    "south": "elementure:blocks/active_netherum",
+    "west": "elementure:blocks/active_netherum",
+    "particle": "elementure:blocks/active_netherum"
+  }
+}

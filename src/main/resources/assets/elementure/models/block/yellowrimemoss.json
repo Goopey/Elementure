@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/yellow_rimemoss",
+    "up": "elementure:blocks/yellow_rimemoss",
+    "north": "elementure:blocks/yellow_rimemoss",
+    "east": "elementure:blocks/yellow_rimemoss",
+    "south": "elementure:blocks/yellow_rimemoss",
+    "west": "elementure:blocks/yellow_rimemoss",
+    "particle": "elementure:blocks/yellow_rimemoss"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "LOW",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "fishing_background_lava.png",
+          "use1Xscale": false,
+          "name": "fishing_background_lava.png",
+          "x": 142,
+          "y": 12
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "high_trahira.png",
+          "use1Xscale": false,
+          "name": "high_trahira.png",
+          "x": 156,
+          "y": 184
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "HightrahiraDisplay"
+    },
+    "gridSettings": {
+      "sx": 4,
+      "sy": 4,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

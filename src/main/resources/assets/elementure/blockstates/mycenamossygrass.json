@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/mycenamossygrass"
+    },
+    "facing=east": {
+      "model": "elementure:block/mycenamossygrass",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/mycenamossygrass",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/mycenamossygrass",
+      "y": 270
+    }
+  }
+}

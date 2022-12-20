@@ -1,0 +1,36 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "skull_flail",
+    "customModelName": "Normal",
+    "name": "Minoskull flail",
+    "specialInfo": [
+      "Right-click to throw a damaging ball."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 0,
+    "efficiency": 0.0,
+    "attackSpeed": 0.9,
+    "enchantability": 0,
+    "damageVsEntity": 6.0,
+    "usageCount": 384,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Blocks.BONE_BLOCK"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "MinoskullflailSendFlail"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 206,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Credits",
+          "onClick": {
+            "name": "Creditsopen"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Credits",
+          "x": 184,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Next",
+          "x": 268,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Back",
+          "onClick": {
+            "name": "Musicplayer2Open"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Back",
+          "x": 113,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "STOP MUSIC",
+          "onClick": {
+            "name": "MusicStopMusic"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "STOP MUSIC",
+          "x": 175,
+          "y": 40
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Stand At Mithrill Hall - Demon Stone",
+          "onClick": {
+            "name": "StandatmithrillhallPlay"
+          },
+          "width": 202,
+          "height": 20,
+          "name": "Stand At Mithrill Hall - Demon Stone",
+          "x": 112,
+          "y": 64
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 4,
+      "sy": 4,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

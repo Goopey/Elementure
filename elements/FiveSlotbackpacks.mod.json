@@ -1,0 +1,23 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Pouch"
+      },
+      {
+        "value": "CUSTOM:Greedsbag"
+      },
+      {
+        "value": "CUSTOM:Greedierbag"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "five_slot_backpacks",
+    "namespace": "forge"
+  }
+}

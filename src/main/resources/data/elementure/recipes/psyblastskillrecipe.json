@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:skillholder"
+    },
+    {
+      "item": "minecraft:redstone_block"
+    },
+    {
+      "item": "minecraft:spider_eye"
+    },
+    {
+      "item": "elementure:lightsoul"
+    },
+    {
+      "item": "elementure:darksoul"
+    },
+    {
+      "item": "elementure:lightningsoul"
+    }
+  ],
+  "result": {
+    "item": "elementure:psyblastskill",
+    "count": 1
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "elementure:ligniteingot"
+    },
+    "2": {
+      "item": "elementure:lignitesword"
+    },
+    "3": {
+      "item": "elementure:ligniteingot"
+    },
+    "4": {
+      "item": "elementure:ligniteingot"
+    },
+    "5": {
+      "item": "elementure:ligniteingot"
+    },
+    "6": {
+      "item": "elementure:ligniteblock"
+    },
+    "7": {
+      "item": "elementure:ligniteingot"
+    }
+  },
+  "result": {
+    "item": "elementure:lignitechanneler",
+    "count": 1
+  }
+}

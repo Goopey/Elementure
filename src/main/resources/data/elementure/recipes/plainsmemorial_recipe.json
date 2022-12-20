@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:grass_block"
+    },
+    "3": {
+      "item": "minecraft:grass"
+    },
+    "4": {
+      "item": "minecraft:emerald_block"
+    },
+    "5": {
+      "item": "minecraft:grass"
+    },
+    "6": {
+      "item": "minecraft:grass_block"
+    },
+    "7": {
+      "item": "minecraft:dirt"
+    },
+    "8": {
+      "item": "minecraft:grass_block"
+    }
+  },
+  "result": {
+    "item": "elementure:plainsmemorial",
+    "count": 1
+  }
+}

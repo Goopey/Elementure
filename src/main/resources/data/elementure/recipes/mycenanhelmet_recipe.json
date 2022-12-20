@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:mycenanalloy"
+    },
+    "1": {
+      "item": "elementure:mycenanalloy"
+    },
+    "2": {
+      "item": "elementure:mycenanalloy"
+    },
+    "3": {
+      "item": "elementure:mycenanalloy"
+    },
+    "5": {
+      "item": "elementure:mycenanalloy"
+    }
+  },
+  "result": {
+    "item": "elementure:mycenanarmor_helmet",
+    "count": 1
+  }
+}

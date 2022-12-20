@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:ruingranite"
+    }
+  ],
+  "result": {
+    "item": "elementure:polishedruingranite",
+    "count": 1
+  }
+}

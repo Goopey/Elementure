@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "red_seafoam_blade",
+    "customModelName": "Normal",
+    "name": "Red seafoam blade [Water]",
+    "specialInfo": [
+      "The red jelly infused gives it enhanced power."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.4000000000000001,
+    "enchantability": 2,
+    "damageVsEntity": 6.0,
+    "usageCount": 241,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:SeafoamIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "RedseafoambladeGather"
+    },
+    "onItemInUseTick": {
+      "name": "RedseafoambladeTrueWater"
+    }
+  }
+}

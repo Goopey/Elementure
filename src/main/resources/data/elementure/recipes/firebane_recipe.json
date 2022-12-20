@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:elementalsharpener"
+    },
+    {
+      "item": "elementure:merthiumingot"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "result": {
+    "item": "elementure:firebane",
+    "count": 1
+  }
+}

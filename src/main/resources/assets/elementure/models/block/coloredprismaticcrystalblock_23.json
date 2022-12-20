@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/prismatic_crystal_23",
+    "up": "elementure:blocks/prismatic_crystal_23",
+    "north": "elementure:blocks/prismatic_crystal_23",
+    "east": "elementure:blocks/prismatic_crystal_23",
+    "south": "elementure:blocks/prismatic_crystal_23",
+    "west": "elementure:blocks/prismatic_crystal_23",
+    "particle": "elementure:blocks/prismatic_crystal_23"
+  }
+}

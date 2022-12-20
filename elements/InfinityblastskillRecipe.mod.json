@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Skillholder"
+      },
+      {
+        "value": "CUSTOM:Pitstone"
+      },
+      {
+        "value": "CUSTOM:Voidsoul"
+      },
+      {
+        "value": "CUSTOM:Lightsoul"
+      },
+      {
+        "value": "CUSTOM:Darksoull"
+      },
+      {
+        "value": "Items.DYE"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Infinityblastskill"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "infinityblastskillrecipe",
+    "namespace": "mod"
+  }
+}

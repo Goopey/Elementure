@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:obleckslime"
+    },
+    {
+      "item": "elementure:obleckslime"
+    },
+    {
+      "item": "elementure:obleckslime"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "elementure:forceobleckslime"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "elementure:obleckslime"
+    },
+    {
+      "item": "elementure:obleckslime"
+    },
+    {
+      "item": "elementure:obleckslime"
+    }
+  ],
+  "result": {
+    "item": "elementure:obleckegg",
+    "count": 1
+  }
+}

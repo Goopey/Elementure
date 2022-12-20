@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/diverscrown_memorial"
+    },
+    "facing=east": {
+      "model": "elementure:block/diverscrown_memorial",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/diverscrown_memorial",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/diverscrown_memorial",
+      "y": 270
+    }
+  }
+}

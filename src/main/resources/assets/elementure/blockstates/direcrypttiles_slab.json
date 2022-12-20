@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/direcrypttiles_slab"
+    },
+    "type=top": {
+      "model": "elementure:block/direcrypttiles_slab_top"
+    },
+    "type=double": {
+      "model": "elementure:block/direcrypttiles_slab_full"
+    }
+  }
+}

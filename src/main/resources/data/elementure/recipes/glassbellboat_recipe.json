@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:glass"
+    },
+    "1": {
+      "item": "elementure:darkgem"
+    },
+    "2": {
+      "item": "minecraft:glass"
+    },
+    "3": {
+      "item": "elementure:diversalloy"
+    },
+    "4": {
+      "item": "elementure:deepdiversstone"
+    },
+    "5": {
+      "item": "elementure:diversalloy"
+    },
+    "6": {
+      "item": "elementure:diversalloy"
+    },
+    "7": {
+      "item": "elementure:glasslight"
+    },
+    "8": {
+      "item": "elementure:diversalloy"
+    }
+  },
+  "result": {
+    "item": "elementure:glassbellboat",
+    "count": 1
+  }
+}

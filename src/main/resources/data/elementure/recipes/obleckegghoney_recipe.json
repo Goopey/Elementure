@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:obleckslime"
+    },
+    {
+      "item": "elementure:obleckslime"
+    },
+    {
+      "item": "elementure:obleckslime"
+    },
+    {
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "item": "elementure:mindobleckslime"
+    },
+    {
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "item": "elementure:obleckslime"
+    },
+    {
+      "item": "elementure:obleckslime"
+    },
+    {
+      "item": "elementure:obleckslime"
+    }
+  ],
+  "result": {
+    "item": "elementure:obleckegg",
+    "count": 1
+  }
+}

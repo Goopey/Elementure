@@ -1,0 +1,13 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_worlds:vamiteblock"
+    }
+  ],
+  "result": {
+    "item": "minecraft_worlds:vamiteingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/lightningandesitetilesslabs"
+    },
+    "type=top": {
+      "model": "elementure:block/lightningandesitetilesslabs_top"
+    },
+    "type=double": {
+      "model": "elementure:block/lightningandesitetilesslabs_full"
+    }
+  }
+}

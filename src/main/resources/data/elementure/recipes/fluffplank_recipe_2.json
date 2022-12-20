@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:stripped_flufflog"
+    }
+  ],
+  "result": {
+    "item": "elementure:fluffplanks",
+    "count": 4
+  }
+}

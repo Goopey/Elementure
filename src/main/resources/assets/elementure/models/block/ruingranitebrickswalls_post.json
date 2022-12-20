@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_post",
+  "textures": {
+    "wall": "elementure:blocks/ruin_granite_bricks",
+    "particle": "elementure:blocks/ruin_granite_bricks"
+  }
+}

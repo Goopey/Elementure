@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "elementure:corememoryfragment"
+    },
+    {
+      "item": "elementure:rarememoryfragment"
+    },
+    {
+      "item": "elementure:rarememoryfragment"
+    },
+    {
+      "item": "elementure:memoryfragment"
+    },
+    {
+      "item": "elementure:memoryfragment"
+    },
+    {
+      "item": "elementure:memoryfragment"
+    }
+  ],
+  "result": {
+    "item": "elementure:memorycake",
+    "count": 1
+  }
+}

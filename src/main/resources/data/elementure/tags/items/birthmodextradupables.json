@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:silveringot",
+    "elementure:dazzlingingot",
+    "minecraft:honey_bottle",
+    "minecraft:ender_pearl",
+    "minecraft:diamond",
+    "elementure:rareglasslight",
+    "elementure:thunderpole",
+    "elementure:clearpole",
+    "minecraft:blaze_rod",
+    "elementure:rainpole",
+    "minecraft:ender_eye"
+  ]
+}

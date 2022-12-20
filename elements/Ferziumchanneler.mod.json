@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "ferzium_channeler",
+    "customModelName": "Normal",
+    "name": "Ferzium channeler [Fire]",
+    "specialInfo": [
+      "Allows you to cast a small bolt of fire on your enemies"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 21,
+    "actionSound": {
+      "value": ""
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "FerziumchannelerCanUse"
+    },
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "FerziumchannelerConsume"
+    },
+    "useCondition": {
+      "name": "FerziumchannelerCanUse"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 6.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelfirebolt",
+    "customBulletModelTexture": "firebolt_texturemap.png",
+    "onBulletHitsEntity": {
+      "name": "FerziumchannelerExplode"
+    }
+  }
+}

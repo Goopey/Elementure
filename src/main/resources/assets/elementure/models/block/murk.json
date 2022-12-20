@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/murk",
+    "up": "elementure:blocks/murk",
+    "north": "elementure:blocks/murk",
+    "east": "elementure:blocks/murk",
+    "south": "elementure:blocks/murk",
+    "west": "elementure:blocks/murk",
+    "particle": "elementure:blocks/murk"
+  }
+}

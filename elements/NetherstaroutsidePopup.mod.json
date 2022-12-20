@@ -1,0 +1,34 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Nether Star Perimeter",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Nether Star Perimeter",
+          "x": 159,
+          "y": 28
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "NetherstaroutsidepopupDisplay"
+    },
+    "gridSettings": {
+      "sx": 6,
+      "sy": 4,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

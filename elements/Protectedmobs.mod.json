@@ -1,0 +1,47 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Oblecklord"
+      },
+      {
+        "value": "CUSTOM:Oblecklord"
+      },
+      {
+        "value": "CUSTOM:Oblecklordeldritch"
+      },
+      {
+        "value": "CUSTOM:Obleckturret"
+      },
+      {
+        "value": "CUSTOM:Mycenashroomlord"
+      },
+      {
+        "value": "CUSTOM:Mycenafumoonspore"
+      },
+      {
+        "value": "EntityPlayer"
+      },
+      {
+        "value": "EntityPlayerMP"
+      },
+      {
+        "value": "CUSTOM:Minoskullflaibullet"
+      },
+      {
+        "value": "CUSTOM:Mycenasporeslingeringcloud"
+      },
+      {
+        "value": "CUSTOM:Harpoonbullet"
+      }
+    ],
+    "name": "protectedmobs_elementure",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:mycenanalloy"
+    },
+    "1": {
+      "item": "elementure:mycenanalloy"
+    },
+    "2": {
+      "item": "elementure:mycenanalloy"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "elementure:mycenanpickaxe",
+    "count": 1
+  }
+}

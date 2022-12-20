@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:ligniteingot"
+    },
+    "2": {
+      "item": "elementure:ligniteingot"
+    },
+    "3": {
+      "item": "elementure:ligniteingot"
+    },
+    "5": {
+      "item": "elementure:ligniteingot"
+    }
+  },
+  "result": {
+    "item": "elementure:lignitearmor_boots",
+    "count": 1
+  }
+}

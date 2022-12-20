@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Armageddonupperrightpiece"
+      },
+      {
+        "value": "CUSTOM:Armageddonmiddleupperpiece"
+      },
+      {
+        "value": "CUSTOM:Armageddonupperleftpiece"
+      },
+      {
+        "value": "CUSTOM:Armaggedonmiddlerightpiece"
+      },
+      {
+        "value": "CUSTOM:Armageddonmiddlepiece"
+      },
+      {
+        "value": "CUSTOM:Armageddonmiddleleftpiece"
+      },
+      {
+        "value": "CUSTOM:Armageddonbottomrightpiece"
+      },
+      {
+        "value": "CUSTOM:Armageddonmiddlebottompiece"
+      },
+      {
+        "value": "CUSTOM:Armageddonbottomleftpiece"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Armageddon"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "armageddonrecipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:darkgem"
+    },
+    "2": {
+      "item": "elementure:darkgem"
+    },
+    "3": {
+      "item": "elementure:darkgem"
+    },
+    "4": {
+      "item": "elementure:darkgem"
+    },
+    "5": {
+      "item": "elementure:darkgem"
+    },
+    "6": {
+      "item": "elementure:darkgem"
+    },
+    "7": {
+      "item": "elementure:darkgem"
+    },
+    "8": {
+      "item": "elementure:darkgem"
+    }
+  },
+  "result": {
+    "item": "elementure:darkgemarmor_chestplate",
+    "count": 1
+  }
+}

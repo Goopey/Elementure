@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "pooltile_summoner_texture"
+      },
+      "name": "default"
+    }
+  }
+}

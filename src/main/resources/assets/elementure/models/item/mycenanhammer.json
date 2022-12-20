@@ -1,0 +1,7 @@
+{
+  "parent": "elementure:custom/mycenahammer",
+  "textures": {
+    "0": "elementure:blocks/mycena_blacksmith_hammer",
+    "particle": "elementure:items/mycenan_hammer"
+  }
+}

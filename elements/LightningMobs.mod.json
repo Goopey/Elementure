@@ -1,0 +1,26 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Andesiteelemental"
+      },
+      {
+        "value": "CUSTOM:Bigandesiteelemental"
+      },
+      {
+        "value": "CUSTOM:Weakandesiteelemental"
+      },
+      {
+        "value": "CUSTOM:Staticsprite"
+      }
+    ],
+    "name": "lightning_mobs",
+    "namespace": "forge"
+  }
+}

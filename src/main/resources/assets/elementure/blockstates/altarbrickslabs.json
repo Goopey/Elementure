@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/altarbrickslabs"
+    },
+    "type=top": {
+      "model": "elementure:block/altarbrickslabs_top"
+    },
+    "type=double": {
+      "model": "elementure:block/altarbrickslabs_full"
+    }
+  }
+}

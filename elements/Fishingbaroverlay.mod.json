@@ -1,0 +1,273 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "backg_fishingminigame.png",
+          "use1Xscale": false,
+          "name": "backg_fishingminigame.png",
+          "x": 136,
+          "y": 6
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fishing_progress_bar.png",
+          "use1Xscale": false,
+          "name": "fishing_progress_bar.png",
+          "x": 190,
+          "y": 10
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fishing_progress_bar_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Reelingtimer1"
+          },
+          "name": "fishing_progress_bar_1.png",
+          "x": 192,
+          "y": 187
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fishing_progress_bar_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Reelingtimer2"
+          },
+          "name": "fishing_progress_bar_2.png",
+          "x": 192,
+          "y": 162
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fishing_progress_bar_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Reelingtimer3"
+          },
+          "name": "fishing_progress_bar_3.png",
+          "x": 192,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fishing_progress_bar_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Reelingtimer4"
+          },
+          "name": "fishing_progress_bar_4.png",
+          "x": 192,
+          "y": 112
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fishing_progress_bar_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Reelingtimer5"
+          },
+          "name": "fishing_progress_bar_5.png",
+          "x": 192,
+          "y": 87
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fishing_progress_bar_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Reelingtimer6"
+          },
+          "name": "fishing_progress_bar_6.png",
+          "x": 192,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fishing_progress_bar_8.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Reelingtimer7"
+          },
+          "name": "fishing_progress_bar_8.png",
+          "x": 192,
+          "y": 37
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fishing_progress_bar_10.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Reelingtimer8"
+          },
+          "name": "fishing_progress_bar_10.png",
+          "x": 192,
+          "y": 12
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "backg_fishingitems.png",
+          "use1Xscale": false,
+          "name": "backg_fishingitems.png",
+          "x": 222,
+          "y": 56
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 228,
+          "y": 109
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 228,
+          "y": 64
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 228,
+          "y": 154
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fishing_stun_progress_bar.png",
+          "use1Xscale": false,
+          "name": "fishing_stun_progress_bar.png",
+          "x": 258,
+          "y": 62
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stun_bar_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Stuntimer1"
+          },
+          "name": "stun_bar_1.png",
+          "x": 260,
+          "y": 154
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stun_bar_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Stuntimer2"
+          },
+          "name": "stun_bar_2.png",
+          "x": 260,
+          "y": 136
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stun_bar_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Stuntimer3"
+          },
+          "name": "stun_bar_3.png",
+          "x": 260,
+          "y": 118
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stun_bar_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Stuntimer4"
+          },
+          "name": "stun_bar_4.png",
+          "x": 260,
+          "y": 100
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stun_bar_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Stuntimer5"
+          },
+          "name": "stun_bar_5.png",
+          "x": 260,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "stun_bar_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "Stuntimer6"
+          },
+          "name": "stun_bar_6.png",
+          "x": 260,
+          "y": 64
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "FishingbaroverlayDisplay"
+    },
+    "gridSettings": {
+      "sx": 2,
+      "sy": 2,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

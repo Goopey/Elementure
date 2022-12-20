@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:skillholder"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "elementure:voidsoul"
+    },
+    {
+      "item": "elementure:voidsoul"
+    },
+    {
+      "item": "elementure:voidsoul"
+    }
+  ],
+  "result": {
+    "item": "elementure:localisedvacuityskill",
+    "count": 1
+  }
+}

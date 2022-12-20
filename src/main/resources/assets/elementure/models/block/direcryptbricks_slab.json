@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "elementure:blocks/dire_crypt_bricks",
+    "top": "elementure:blocks/dire_crypt_bricks",
+    "side": "elementure:blocks/dire_crypt_bricks"
+  }
+}

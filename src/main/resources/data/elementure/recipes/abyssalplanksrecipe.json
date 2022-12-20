@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:corruptlog"
+    }
+  ],
+  "result": {
+    "item": "elementure:abyssalplanks",
+    "count": 4
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/darkbumredapple"
+    },
+    "facing=east": {
+      "model": "elementure:block/darkbumredapple",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/darkbumredapple",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/darkbumredapple",
+      "y": 270
+    }
+  }
+}

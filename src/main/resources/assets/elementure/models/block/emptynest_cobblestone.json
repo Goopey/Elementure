@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/empty_cobblestone_nest",
+    "up": "elementure:blocks/empty_cobblestone_nest",
+    "north": "elementure:blocks/empty_cobblestone_nest",
+    "east": "elementure:blocks/empty_cobblestone_nest",
+    "south": "elementure:blocks/empty_cobblestone_nest",
+    "west": "elementure:blocks/empty_cobblestone_nest",
+    "particle": "elementure:blocks/empty_cobblestone_nest"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "noobiumhoe",
+    "customModelName": "Normal",
+    "name": "Noobium hoe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Hoe",
+    "harvestLevel": 2,
+    "efficiency": 4.0,
+    "attackSpeed": 2.8000000000000003,
+    "enchantability": 6,
+    "damageVsEntity": 2.0,
+    "usageCount": 1048,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

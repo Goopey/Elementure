@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:dragonewt_scales"
+    },
+    "1": {
+      "item": "elementure:dragonewt_scales"
+    },
+    "2": {
+      "item": "elementure:dragonewt_scales"
+    },
+    "3": {
+      "item": "elementure:dragonewt_scales"
+    },
+    "4": {
+      "item": "elementure:dragonewt_scales"
+    },
+    "5": {
+      "item": "elementure:dragonewt_scales"
+    },
+    "6": {
+      "item": "elementure:dragonewt_scales"
+    },
+    "7": {
+      "item": "elementure:dragonewt_scales"
+    },
+    "8": {
+      "item": "elementure:dragonewt_scales"
+    }
+  },
+  "result": {
+    "item": "elementure:dragonewtscales_block",
+    "count": 1
+  }
+}

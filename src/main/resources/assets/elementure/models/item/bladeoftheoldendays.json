@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "elementure:items/blade_of_the_olden_days"
+  }
+}

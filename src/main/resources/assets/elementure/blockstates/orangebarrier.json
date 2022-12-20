@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/orangebarrier"
+    },
+    "facing=east": {
+      "model": "elementure:block/orangebarrier",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/orangebarrier",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/orangebarrier",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "elementure:block/orangebarrier",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "elementure:block/orangebarrier",
+      "x": 90
+    }
+  }
+}

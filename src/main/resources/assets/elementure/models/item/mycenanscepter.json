@@ -1,0 +1,7 @@
+{
+  "parent": "elementure:custom/mycenanpriestscepter",
+  "textures": {
+    "0": "elementure:blocks/mycena_priest_scepter",
+    "particle": "elementure:items/mycenan_scepter"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/emptied_bedrock",
+    "up": "elementure:blocks/emptied_bedrock",
+    "north": "elementure:blocks/emptied_bedrock",
+    "east": "elementure:blocks/emptied_bedrock",
+    "south": "elementure:blocks/emptied_bedrock",
+    "west": "elementure:blocks/emptied_bedrock",
+    "particle": "elementure:blocks/emptied_bedrock"
+  }
+}

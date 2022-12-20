@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/rimefan",
+  "textures": {
+    "all": "elementure:blocks/green_rimefan",
+    "particle": "elementure:blocks/green_rimefan",
+    "0": "elementure:blocks/green_rimefan"
+  }
+}

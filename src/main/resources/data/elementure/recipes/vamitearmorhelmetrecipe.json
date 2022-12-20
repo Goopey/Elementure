@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:vamiteingot"
+    },
+    "1": {
+      "item": "elementure:vamiteingot"
+    },
+    "2": {
+      "item": "elementure:vamiteingot"
+    },
+    "3": {
+      "item": "elementure:vamiteingot"
+    },
+    "5": {
+      "item": "elementure:vamiteingot"
+    }
+  },
+  "result": {
+    "item": "elementure:vamitearmor_helmet",
+    "count": 1
+  }
+}

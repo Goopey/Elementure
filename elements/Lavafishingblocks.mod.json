@@ -1,0 +1,23 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "Blocks.FLOWING_LAVA"
+      },
+      {
+        "value": "Blocks.LAVA"
+      },
+      {
+        "value": "CUSTOM:Netherumfluid"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "lavafishingblocks",
+    "namespace": "forge"
+  }
+}

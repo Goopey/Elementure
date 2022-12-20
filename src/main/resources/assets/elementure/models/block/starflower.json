@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/starflower",
+  "textures": {
+    "all": "elementure:blocks/starflower",
+    "particle": "elementure:blocks/starflower",
+    "0": "elementure:blocks/starflower"
+  }
+}

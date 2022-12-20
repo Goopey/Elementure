@@ -1,0 +1,26 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Psyblastskill"
+      },
+      {
+        "value": "CUSTOM:Cursersword"
+      },
+      {
+        "value": "CUSTOM:Curseraxe"
+      },
+      {
+        "value": "CUSTOM:Meldingblade"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "minditem",
+    "namespace": "forge"
+  }
+}

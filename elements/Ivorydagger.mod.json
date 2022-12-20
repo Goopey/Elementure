@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "ivory_dagger",
+    "customModelName": "Normal",
+    "name": "Ivory dagger [Air]",
+    "specialInfo": [
+      "Suffocates your enemies passively."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.5999999999999999,
+    "enchantability": 2,
+    "damageVsEntity": 4.5,
+    "usageCount": 205,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Ivoryshard"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "IvorydaggerHarvest"
+    },
+    "onItemInUseTick": {
+      "name": "IvorydaggerTrueAir"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft_worlds:custom/fireelementharvested",
+  "textures": {
+    "all": "minecraft_worlds:blocks/f_elementalaltar",
+    "particle": "minecraft_worlds:blocks/f_elementalaltar",
+    "0": "minecraft_worlds:blocks/f_elementalaltar"
+  }
+}

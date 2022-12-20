@@ -1,0 +1,29 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Tarblock"
+      },
+      {
+        "value": "CUSTOM:Tar"
+      },
+      {
+        "value": "CUSTOM:Burningtarblock"
+      },
+      {
+        "value": "CUSTOM:DarkgemCrystal"
+      },
+      {
+        "value": "CUSTOM:Deepbrine"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "bedofchaos_spawningblocks",
+    "namespace": "mod"
+  }
+}

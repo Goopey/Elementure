@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/rottendemonheart",
+  "textures": {
+    "all": "elementure:blocks/rottendemonheart",
+    "particle": "elementure:blocks/rottendemonheart",
+    "main": "elementure:blocks/rottendemonheart"
+  }
+}

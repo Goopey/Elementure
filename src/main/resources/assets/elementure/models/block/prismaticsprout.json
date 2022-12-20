@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "elementure:blocks/prismatic_sprouts",
+    "particle": "elementure:blocks/prismatic_sprouts"
+  }
+}

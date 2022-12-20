@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Direcryptbricks2"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Direcryptbricks2"
+      },
+      {
+        "value": "CUSTOM:Direcryptbricks2"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Direcryptbricks2"
+      },
+      {
+        "value": "CUSTOM:Direcryptbricks2"
+      },
+      {
+        "value": "CUSTOM:Direcryptbricks2"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Direcryptbricks2Stairs"
+    },
+    "name": "direcryptbricks_2_stairs_recipe",
+    "namespace": "mod"
+  }
+}

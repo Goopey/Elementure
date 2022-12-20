@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:perryberry"
+    },
+    {
+      "item": "elementure:perryberry"
+    },
+    {
+      "item": "elementure:perryberry"
+    },
+    {
+      "item": "elementure:perryberry"
+    }
+  ],
+  "result": {
+    "item": "elementure:miniperryberrybush",
+    "count": 1
+  }
+}

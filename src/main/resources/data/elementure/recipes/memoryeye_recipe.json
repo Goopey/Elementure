@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:metaleye"
+    },
+    {
+      "item": "minecraft:ender_eye"
+    },
+    {
+      "item": "elementure:immortalizer"
+    }
+  ],
+  "result": {
+    "item": "elementure:memory_eye",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/magenta_rimemoss",
+    "up": "elementure:blocks/magenta_rimemoss",
+    "north": "elementure:blocks/magenta_rimemoss",
+    "east": "elementure:blocks/magenta_rimemoss",
+    "south": "elementure:blocks/magenta_rimemoss",
+    "west": "elementure:blocks/magenta_rimemoss",
+    "particle": "elementure:blocks/magenta_rimemoss"
+  }
+}

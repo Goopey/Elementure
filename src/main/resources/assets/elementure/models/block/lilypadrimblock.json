@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/lilypadrim_block",
+    "up": "elementure:blocks/lilypadrim_block",
+    "north": "elementure:blocks/lilypadrim_block",
+    "east": "elementure:blocks/lilypadrim_block",
+    "south": "elementure:blocks/lilypadrim_block",
+    "west": "elementure:blocks/lilypadrim_block",
+    "particle": "elementure:blocks/lilypadrim_block"
+  }
+}

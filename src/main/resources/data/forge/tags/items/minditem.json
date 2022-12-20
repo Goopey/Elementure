@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:psyblastskill",
+    "elementure:meldingblade",
+    "elementure:cursersword",
+    "elementure:curseraxe"
+  ]
+}

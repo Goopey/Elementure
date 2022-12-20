@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:warped_wart_block"
+    },
+    "3": {
+      "item": "minecraft:warped_fungus"
+    },
+    "4": {
+      "item": "minecraft:shroomlight"
+    },
+    "5": {
+      "item": "minecraft:warped_fungus"
+    },
+    "6": {
+      "item": "minecraft:warped_nylium"
+    },
+    "7": {
+      "item": "minecraft:warped_nylium"
+    },
+    "8": {
+      "item": "minecraft:warped_nylium"
+    }
+  },
+  "result": {
+    "item": "elementure:warpedforestmemorial",
+    "count": 1
+  }
+}

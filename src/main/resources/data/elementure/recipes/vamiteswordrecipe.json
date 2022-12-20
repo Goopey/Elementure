@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:vamiteingot"
+    },
+    "1": {
+      "item": "elementure:vamiteingot"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "elementure:vamitesword",
+    "count": 1
+  }
+}

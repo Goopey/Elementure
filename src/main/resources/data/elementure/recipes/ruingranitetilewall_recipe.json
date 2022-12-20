@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:ruingranitetiles"
+    },
+    "1": {
+      "item": "elementure:ruingranitetiles"
+    },
+    "2": {
+      "item": "elementure:ruingranitetiles"
+    },
+    "3": {
+      "item": "elementure:ruingranitetiles"
+    },
+    "4": {
+      "item": "elementure:ruingranitetiles"
+    },
+    "5": {
+      "item": "elementure:ruingranitetiles"
+    }
+  },
+  "result": {
+    "item": "elementure:ruingranitetileswalls",
+    "count": 6
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Silvernugget"
+      },
+      {
+        "value": "CUSTOM:Warpedfish"
+      },
+      {
+        "value": "CUSTOM:Silvernugget"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.WARPED_STEM"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.WARPED_STEM"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Warpedspear"
+    },
+    "name": "warpedspear_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "netherite_sickle",
+    "customModelName": "Normal",
+    "name": "Netherite sickle",
+    "specialInfo": [
+      "Use the edge to harvest special materials from nether plants."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 9.0,
+    "attackSpeed": 1.0,
+    "enchantability": 0,
+    "damageVsEntity": 3.0,
+    "usageCount": 450,
+    "blocksAffected": [
+      {
+        "value": "CUSTOM:Prismaticsprout"
+      },
+      {
+        "value": "CUSTOM:Starryroots"
+      },
+      {
+        "value": "CUSTOM:Netherleaves"
+      },
+      {
+        "value": "CUSTOM:Scrapleaves"
+      },
+      {
+        "value": "Blocks.WARPED_FUNGUS"
+      },
+      {
+        "value": "Blocks.CRIMSON_FUNGUS"
+      },
+      {
+        "value": "Blocks.WITHER_ROSE"
+      },
+      {
+        "value": "Blocks.SHROOMLIGHT"
+      },
+      {
+        "value": "CUSTOM:Starflower"
+      }
+    ],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onBlockDestroyedWithTool": {
+      "name": "NetheritesickleHarvest"
+    }
+  }
+}

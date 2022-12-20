@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "elementure:noobiumingot"
+    },
+    "2": {
+      "item": "elementure:noobiumsword"
+    },
+    "3": {
+      "item": "elementure:noobiumingot"
+    },
+    "4": {
+      "item": "elementure:noobiumingot"
+    },
+    "5": {
+      "item": "elementure:noobiumingot"
+    },
+    "6": {
+      "item": "elementure:noobiumblock"
+    },
+    "7": {
+      "item": "elementure:noobiumingot"
+    }
+  },
+  "result": {
+    "item": "elementure:noobiumchanneler",
+    "count": 1
+  }
+}

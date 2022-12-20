@@ -1,0 +1,13 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_worlds:silverblock"
+    }
+  ],
+  "result": {
+    "item": "minecraft_worlds:silveringot",
+    "count": 9
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/lilypadplankslabs"
+    },
+    "type=top": {
+      "model": "elementure:block/lilypadplankslabs_top"
+    },
+    "type=double": {
+      "model": "elementure:block/lilypadplankslabs_full"
+    }
+  }
+}

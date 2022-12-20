@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "elementure:blocks/memory_heart_plant_2",
+    "particle": "elementure:blocks/memory_heart_plant_2"
+  }
+}

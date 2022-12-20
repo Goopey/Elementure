@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:silvernugget"
+    },
+    "1": {
+      "item": "elementure:silvernugget"
+    },
+    "2": {
+      "item": "elementure:silvernugget"
+    },
+    "3": {
+      "item": "elementure:silvernugget"
+    },
+    "4": {
+      "item": "elementure:silvernugget"
+    },
+    "5": {
+      "item": "elementure:silvernugget"
+    },
+    "6": {
+      "item": "elementure:silvernugget"
+    },
+    "7": {
+      "item": "elementure:silvernugget"
+    },
+    "8": {
+      "item": "elementure:silvernugget"
+    }
+  },
+  "result": {
+    "item": "elementure:silveringot",
+    "count": 1
+  }
+}

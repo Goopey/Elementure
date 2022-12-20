@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "3 5",
+    "  8"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "2": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "3": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "5": {
+      "item": "elementure:shardedobsidian"
+    },
+    "8": {
+      "item": "elementure:shardedobsidian"
+    }
+  },
+  "result": {
+    "item": "elementure:netheritesickle",
+    "count": 1
+  }
+}

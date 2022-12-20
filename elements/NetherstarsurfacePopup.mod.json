@@ -1,0 +1,34 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Nether Surface",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Nether Surface",
+          "x": 178,
+          "y": 26
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "NetherstarsurfacepopupDisplay"
+    },
+    "gridSettings": {
+      "sx": 8,
+      "sy": 4,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

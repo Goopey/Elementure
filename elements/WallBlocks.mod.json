@@ -1,0 +1,65 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Netherfence"
+      },
+      {
+        "value": "CUSTOM:Fluffplankfence"
+      },
+      {
+        "value": "CUSTOM:LilypadplanksFence"
+      },
+      {
+        "value": "CUSTOM:Mycenamossbrickwall"
+      },
+      {
+        "value": "CUSTOM:DirecrypttilesWall"
+      },
+      {
+        "value": "CUSTOM:DirecryptbricksWall"
+      },
+      {
+        "value": "CUSTOM:Direcrypttiles2Wall"
+      },
+      {
+        "value": "CUSTOM:Direcryptbricks2Wall"
+      },
+      {
+        "value": "CUSTOM:Oldbrickwalls"
+      },
+      {
+        "value": "CUSTOM:Ruingranitetileswalls"
+      },
+      {
+        "value": "CUSTOM:Ruingranitebrickswalls"
+      },
+      {
+        "value": "CUSTOM:EnergydioritetileWalls"
+      },
+      {
+        "value": "CUSTOM:EnergydioritebricksWalls"
+      },
+      {
+        "value": "CUSTOM:Lightningandesitetileswalls"
+      },
+      {
+        "value": "CUSTOM:Lightningandesitebrickswalls"
+      },
+      {
+        "value": "CUSTOM:PooltileWalls"
+      },
+      {
+        "value": "CUSTOM:Altarbrickwalls"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "walls",
+    "namespace": "minecraft"
+  }
+}

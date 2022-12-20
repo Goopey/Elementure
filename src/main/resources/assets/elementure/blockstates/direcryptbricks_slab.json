@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/direcryptbricks_slab"
+    },
+    "type=top": {
+      "model": "elementure:block/direcryptbricks_slab_top"
+    },
+    "type=double": {
+      "model": "elementure:block/direcryptbricks_slab_full"
+    }
+  }
+}

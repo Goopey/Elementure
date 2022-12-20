@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:enchanted_book"
+    },
+    "1": {
+      "item": "minecraft:enchanted_book"
+    },
+    "2": {
+      "item": "minecraft:enchanted_book"
+    },
+    "3": {
+      "item": "minecraft:enchanted_book"
+    },
+    "4": {
+      "item": "elementure:dazzlingingot"
+    },
+    "5": {
+      "item": "minecraft:enchanted_book"
+    },
+    "6": {
+      "item": "minecraft:enchanted_book"
+    },
+    "7": {
+      "item": "minecraft:enchanted_book"
+    },
+    "8": {
+      "item": "minecraft:enchanted_book"
+    }
+  },
+  "result": {
+    "item": "elementure:hiddenrunestome",
+    "count": 1
+  }
+}

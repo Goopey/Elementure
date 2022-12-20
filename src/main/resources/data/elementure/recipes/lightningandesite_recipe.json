@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:chiseledlightningandesite"
+    }
+  ],
+  "result": {
+    "item": "elementure:lightningandesite",
+    "count": 1
+  }
+}

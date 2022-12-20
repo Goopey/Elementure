@@ -1,0 +1,42 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_worlds:earthsoul"
+    },
+    "1": {
+      "item": "minecraft_worlds:elementalweb"
+    },
+    "2": {
+      "item": "minecraft_worlds:earthsoul"
+    },
+    "3": {
+      "item": "minecraft_worlds:earthsoul"
+    },
+    "4": {
+      "item": "minecraft_worlds:silversword"
+    },
+    "5": {
+      "item": "minecraft_worlds:earthsoul"
+    },
+    "6": {
+      "item": "minecraft_worlds:earthsoul"
+    },
+    "7": {
+      "item": "minecraft_worlds:elementalweb"
+    },
+    "8": {
+      "item": "minecraft_worlds:earthsoul"
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:earthblade",
+    "count": 1
+  }
+}

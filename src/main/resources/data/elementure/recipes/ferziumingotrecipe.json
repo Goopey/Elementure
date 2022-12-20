@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:ferziumblock"
+    }
+  ],
+  "result": {
+    "item": "elementure:ferziumingot",
+    "count": 9
+  }
+}

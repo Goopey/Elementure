@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/tar",
+    "up": "elementure:blocks/tar",
+    "north": "elementure:blocks/tar",
+    "east": "elementure:blocks/tar",
+    "south": "elementure:blocks/tar",
+    "west": "elementure:blocks/tar",
+    "particle": "elementure:blocks/tar"
+  }
+}

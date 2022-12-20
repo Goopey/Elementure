@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:unholydust"
+    },
+    "1": {
+      "item": "minecraft:iron_ingot"
+    },
+    "2": {
+      "item": "elementure:unholydust"
+    },
+    "3": {
+      "item": "elementure:unholydust"
+    },
+    "4": {
+      "item": "minecraft:iron_shovel"
+    },
+    "5": {
+      "item": "elementure:unholydust"
+    },
+    "6": {
+      "item": "elementure:unholydust"
+    },
+    "7": {
+      "item": "minecraft:iron_ingot"
+    },
+    "8": {
+      "item": "elementure:unholydust"
+    }
+  },
+  "result": {
+    "item": "elementure:unholyshovel",
+    "count": 1
+  }
+}

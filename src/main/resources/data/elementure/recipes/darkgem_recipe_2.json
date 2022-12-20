@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:darkgemblock"
+    }
+  ],
+  "result": {
+    "item": "elementure:darkgem",
+    "count": 9
+  }
+}

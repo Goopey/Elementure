@@ -1,0 +1,7 @@
+{
+  "parent": "elementure:custom/netherstar_hammer",
+  "textures": {
+    "0": "elementure:blocks/netherstar_blacksmith_hammer",
+    "particle": "elementure:items/netherstar_hammer"
+  }
+}

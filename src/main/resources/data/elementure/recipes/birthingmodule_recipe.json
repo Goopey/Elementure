@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:potentjelly"
+    },
+    "1": {
+      "item": "elementure:potentjelly"
+    },
+    "2": {
+      "item": "elementure:potentjelly"
+    },
+    "3": {
+      "item": "minecraft:glass"
+    },
+    "4": {
+      "item": "minecraft:slime_block"
+    },
+    "5": {
+      "item": "minecraft:glass"
+    },
+    "6": {
+      "item": "minecraft:quartz_block"
+    },
+    "7": {
+      "item": "minecraft:quartz_block"
+    },
+    "8": {
+      "item": "minecraft:quartz_block"
+    }
+  },
+  "result": {
+    "item": "elementure:birthingmodule",
+    "count": 1
+  }
+}

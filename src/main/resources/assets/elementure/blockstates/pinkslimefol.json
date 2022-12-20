@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/pinkslimefol"
+    },
+    "facing=east": {
+      "model": "elementure:block/pinkslimefol",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/pinkslimefol",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/pinkslimefol",
+      "y": 270
+    }
+  }
+}

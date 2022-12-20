@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_orientable_trapdoor_open",
+  "textures": {
+    "texture": "elementure:blocks/lilypad_trapdoor",
+    "particle": "elementure:blocks/lilypad_trapdoor"
+  }
+}

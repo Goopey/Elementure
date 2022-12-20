@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "Items.BOWL"
+      },
+      {
+        "value": "CUSTOM:Memoryfishrare"
+      },
+      {
+        "value": "CUSTOM:Memoryfish"
+      },
+      {
+        "value": "CUSTOM:Memoryfragment"
+      },
+      {
+        "value": "CUSTOM:Rarememoryfragment"
+      },
+      {
+        "value": "CUSTOM:Memoryfragment"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Memorysoup"
+    },
+    "name": "memorysoup_recipe",
+    "namespace": "mod"
+  }
+}

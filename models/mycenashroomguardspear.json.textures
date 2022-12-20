@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "mycena_blue_cap",
+        "1": "mushroom_block_side"
+      },
+      "name": "default"
+    }
+  }
+}

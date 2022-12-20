@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:aurum"
+    },
+    "1": {
+      "item": "elementure:aurum"
+    },
+    "2": {
+      "item": "elementure:aurum"
+    },
+    "3": {
+      "item": "elementure:aurum"
+    },
+    "4": {
+      "item": "elementure:aurum"
+    },
+    "5": {
+      "item": "elementure:aurum"
+    },
+    "6": {
+      "item": "elementure:aurum"
+    },
+    "7": {
+      "item": "elementure:aurum"
+    },
+    "8": {
+      "item": "elementure:aurum"
+    }
+  },
+  "result": {
+    "item": "elementure:aurumingot",
+    "count": 1
+  }
+}

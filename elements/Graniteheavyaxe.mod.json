@@ -1,0 +1,33 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "graniteheavyaxe",
+    "customModelName": "graniteheavyaxe:default",
+    "name": "Granite heavyaxe [Void]",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 1,
+    "efficiency": 3.0,
+    "attackSpeed": 0.7000000000000001,
+    "enchantability": 2,
+    "damageVsEntity": 14.5,
+    "usageCount": 158,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "GraniteheavyaxeGather"
+    },
+    "onItemInInventoryTick": {
+      "name": "GraniteheavyaxeTrueVoid"
+    }
+  }
+}

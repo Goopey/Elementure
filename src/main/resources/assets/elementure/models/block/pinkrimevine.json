@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/pinkrimevine",
+  "textures": {
+    "all": "elementure:blocks/pink_rimevine",
+    "particle": "elementure:blocks/pink_rimevine",
+    "0": "elementure:blocks/pink_rimevine"
+  }
+}

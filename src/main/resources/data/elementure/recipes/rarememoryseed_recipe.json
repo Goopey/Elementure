@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:memoryseeds"
+    },
+    {
+      "item": "elementure:memorycrystal"
+    },
+    {
+      "item": "elementure:memorycrystal"
+    }
+  ],
+  "result": {
+    "item": "elementure:rarememoryseeds",
+    "count": 1
+  }
+}

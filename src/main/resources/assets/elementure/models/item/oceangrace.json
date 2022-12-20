@@ -1,0 +1,7 @@
+{
+  "parent": "elementure:custom/oceansgrace",
+  "textures": {
+    "0": "elementure:blocks/oceansgracetexture",
+    "particle": "elementure:items/oceansgracetexture"
+  }
+}

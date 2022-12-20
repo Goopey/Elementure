@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "iceblock",
+        "1": "iceblock_layer1"
+      },
+      "name": "default"
+    }
+  }
+}

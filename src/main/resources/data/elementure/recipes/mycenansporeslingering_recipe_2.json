@@ -1,0 +1,16 @@
+{
+  "group": "elementure",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:mycenansporessplash"
+    },
+    {
+      "item": "minecraft:dragon_breath"
+    }
+  ],
+  "result": {
+    "item": "elementure:mycenansporeslingering",
+    "count": 1
+  }
+}

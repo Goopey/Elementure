@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:lilypadplanks"
+    },
+    "1": {
+      "item": "elementure:lilypadplanks"
+    },
+    "2": {
+      "item": "elementure:lilypadplanks"
+    }
+  },
+  "result": {
+    "item": "elementure:lilypadplankslabs",
+    "count": 6
+  }
+}

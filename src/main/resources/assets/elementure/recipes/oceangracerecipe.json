@@ -1,0 +1,36 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "1": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "2": {
+      "item": "minecraft:prismarine_shard"
+    },
+    "3": {
+      "item": "minecraft:air"
+    },
+    "4": {
+      "item": "minecraft:air"
+    },
+    "5": {
+      "item": "minecraft:air"
+    },
+    "7": {
+      "item": "minecraft:air"
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:oceangrace",
+    "count": 1
+  }
+}

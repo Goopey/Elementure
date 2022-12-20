@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/cormunculus_mushroom",
+    "up": "elementure:blocks/cormunculus_mushroom",
+    "north": "elementure:blocks/cormunculus_mushroom",
+    "east": "elementure:blocks/cormunculus_mushroom",
+    "south": "elementure:blocks/cormunculus_mushroom",
+    "west": "elementure:blocks/cormunculus_mushroom",
+    "particle": "elementure:blocks/cormunculus_mushroom"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "mycenium_moss",
+        "1": "mycenium_moss_side",
+        "missing": "mycenium_moss"
+      },
+      "name": "default"
+    }
+  }
+}

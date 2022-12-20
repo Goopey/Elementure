@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "3 5",
+    " 78"
+  ],
+  "key": {
+    "1": {
+      "item": "elementure:rainbowingot"
+    },
+    "2": {
+      "item": "elementure:starryroots"
+    },
+    "3": {
+      "item": "elementure:rainbowingot"
+    },
+    "5": {
+      "item": "elementure:starryroots"
+    },
+    "7": {
+      "item": "elementure:rainbowingot"
+    },
+    "8": {
+      "item": "elementure:starryroots"
+    }
+  },
+  "result": {
+    "item": "elementure:gamerbow",
+    "count": 1
+  }
+}

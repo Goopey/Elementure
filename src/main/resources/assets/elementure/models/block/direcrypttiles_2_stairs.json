@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "elementure:blocks/dire_crypt_tiles_2",
+    "top": "elementure:blocks/dire_crypt_tiles_2",
+    "side": "elementure:blocks/dire_crypt_tiles_2"
+  }
+}

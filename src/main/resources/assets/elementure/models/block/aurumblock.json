@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/aurum_block",
+    "up": "elementure:blocks/aurum_block",
+    "north": "elementure:blocks/aurum_block",
+    "east": "elementure:blocks/aurum_block",
+    "south": "elementure:blocks/aurum_block",
+    "west": "elementure:blocks/aurum_block",
+    "particle": "elementure:blocks/aurum_block"
+  }
+}

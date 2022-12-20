@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:AbyssalemblemTR"
+      },
+      {
+        "value": "CUSTOM:AbyssalemblemTL"
+      },
+      {
+        "value": "CUSTOM:AbyssalemblemBR"
+      },
+      {
+        "value": "CUSTOM:AbyssalemblemBL"
+      },
+      {
+        "value": "CUSTOM:AbyssalemblemMID"
+      },
+      {
+        "value": "CUSTOM:Abyssaldust"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Abyssalemblem"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "abyssalemblemrecipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "elementure:rustysword"
+  },
+  "addition": {
+    "item": "elementure:rustysword"
+  },
+  "result": {
+    "item": "elementure:rust_shard"
+  }
+}

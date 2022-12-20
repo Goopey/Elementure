@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:brown_mushroom"
+    },
+    "3": {
+      "item": "minecraft:red_mushroom"
+    },
+    "4": {
+      "item": "minecraft:mycelium"
+    },
+    "5": {
+      "item": "minecraft:red_mushroom"
+    },
+    "6": {
+      "item": "minecraft:mycelium"
+    },
+    "7": {
+      "item": "minecraft:mycelium"
+    },
+    "8": {
+      "item": "minecraft:mycelium"
+    }
+  },
+  "result": {
+    "item": "elementure:mushroommemorial",
+    "count": 1
+  }
+}

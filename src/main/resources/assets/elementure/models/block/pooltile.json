@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/pool_tiles",
+    "up": "elementure:blocks/pool_tiles",
+    "north": "elementure:blocks/pool_tiles",
+    "east": "elementure:blocks/pool_tiles",
+    "south": "elementure:blocks/pool_tiles",
+    "west": "elementure:blocks/pool_tiles",
+    "particle": "elementure:blocks/pool_tiles"
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 206,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Credits",
+          "onClick": {
+            "name": "Creditsopen"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Credits",
+          "x": 184,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "Musicplayer3Open"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Next",
+          "x": 268,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Back",
+          "onClick": {
+            "name": "MusicplayerOpen"
+          },
+          "width": 45,
+          "height": 20,
+          "name": "Back",
+          "x": 113,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "STOP MUSIC",
+          "onClick": {
+            "name": "MusicStopMusic"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "STOP MUSIC",
+          "x": 175,
+          "y": 40
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "One More Day - Lena Raine",
+          "onClick": {
+            "name": "OnemoredayPlay"
+          },
+          "width": 155,
+          "height": 20,
+          "name": "One More Day - Lena Raine",
+          "x": 116,
+          "y": 64
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Stand Tall - Lena Raine",
+          "onClick": {
+            "name": "StandtallPlay"
+          },
+          "width": 144,
+          "height": 20,
+          "name": "Stand Tall - Lena Raine",
+          "x": 116,
+          "y": 86
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Hydrothermal Hollow - Lui37",
+          "onClick": {
+            "name": "HydrothermalhollowPlay"
+          },
+          "width": 166,
+          "height": 20,
+          "name": "Hydrothermal Hollow - Lui37",
+          "x": 116,
+          "y": 108
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Rebel Base 1 - Crusaders",
+          "onClick": {
+            "name": "NetherstarPlay"
+          },
+          "width": 150,
+          "height": 20,
+          "name": "Rebel Base 1 - Crusaders",
+          "x": 116,
+          "y": 130
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Black Iron Pact - Battle Bros",
+          "onClick": {
+            "name": "BlackironpactPlay"
+          },
+          "width": 176,
+          "height": 20,
+          "name": "Black Iron Pact - Battle Bros",
+          "x": 116,
+          "y": 152
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 4,
+      "sy": 4,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

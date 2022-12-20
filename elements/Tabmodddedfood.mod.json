@@ -1,0 +1,11 @@
+{
+  "_fv": 34,
+  "_type": "tab",
+  "definition": {
+    "name": "Modded food",
+    "icon": {
+      "value": "CUSTOM:Honeyberryjam"
+    },
+    "showSearch": false
+  }
+}

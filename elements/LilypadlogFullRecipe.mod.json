@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 3,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Lilypadlog"
+      },
+      {
+        "value": "CUSTOM:Lilypadlog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Lilypadlog"
+      },
+      {
+        "value": "CUSTOM:Lilypadlog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:LilypadlogFull"
+    },
+    "name": "lilypadlog_full_recipe",
+    "namespace": "mod"
+  }
+}

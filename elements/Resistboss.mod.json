@@ -1,0 +1,65 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Largejelly"
+      },
+      {
+        "value": "CUSTOM:CandleKnight"
+      },
+      {
+        "value": "CUSTOM:Causticknight"
+      },
+      {
+        "value": "CUSTOM:Cruelknight"
+      },
+      {
+        "value": "CUSTOM:Greedyknight"
+      },
+      {
+        "value": "CUSTOM:Ironknight"
+      },
+      {
+        "value": "CUSTOM:Kingsknight"
+      },
+      {
+        "value": "CUSTOM:Spectreknight"
+      },
+      {
+        "value": "CUSTOM:Twistedknight"
+      },
+      {
+        "value": "CUSTOM:Deathswitness"
+      },
+      {
+        "value": "CUSTOM:Mycenafumoonshroomlord"
+      },
+      {
+        "value": "CUSTOM:Mycenashroomlord"
+      },
+      {
+        "value": "CUSTOM:Oblecklord"
+      },
+      {
+        "value": "CUSTOM:Oblecklordeldritch"
+      },
+      {
+        "value": "CUSTOM:Statueprotector"
+      },
+      {
+        "value": "EntityWither"
+      },
+      {
+        "value": "EntityDragon"
+      }
+    ],
+    "name": "resistboss",
+    "namespace": "mod"
+  }
+}

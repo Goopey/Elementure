@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/earthelementharvested",
+  "textures": {
+    "all": "elementure:blocks/e_elementalaltar",
+    "particle": "elementure:blocks/e_elementalaltar",
+    "0": "elementure:blocks/e_elementalaltar"
+  }
+}

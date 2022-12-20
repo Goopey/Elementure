@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Ruingranite"
+      },
+      {
+        "value": "CUSTOM:Ruingranite"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Ruingranite"
+      },
+      {
+        "value": "CUSTOM:Ruingranite"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Ruingranitetiles"
+    },
+    "name": "ruingranitetile_recipe",
+    "namespace": "mod"
+  }
+}

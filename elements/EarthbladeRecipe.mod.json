@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Earthsoul"
+      },
+      {
+        "value": "CUSTOM:Elementalweb"
+      },
+      {
+        "value": "CUSTOM:Earthsoul"
+      },
+      {
+        "value": "CUSTOM:Earthsoul"
+      },
+      {
+        "value": "CUSTOM:Silversword"
+      },
+      {
+        "value": "CUSTOM:Earthsoul"
+      },
+      {
+        "value": "CUSTOM:Earthsoul"
+      },
+      {
+        "value": "CUSTOM:Elementalweb"
+      },
+      {
+        "value": "CUSTOM:Earthsoul"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Earthblade"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "earthbladerecipe",
+    "namespace": "mod"
+  }
+}

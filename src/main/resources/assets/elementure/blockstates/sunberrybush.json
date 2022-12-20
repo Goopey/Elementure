@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/sunberrybush"
+    },
+    "facing=east": {
+      "model": "elementure:block/sunberrybush",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/sunberrybush",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/sunberrybush",
+      "y": 270
+    }
+  }
+}

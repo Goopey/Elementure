@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/netherslab"
+    },
+    "type=top": {
+      "model": "elementure:block/netherslab_top"
+    },
+    "type=double": {
+      "model": "elementure:block/netherslab_full"
+    }
+  }
+}

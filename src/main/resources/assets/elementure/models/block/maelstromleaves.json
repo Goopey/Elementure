@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/maelstromleaves",
+    "up": "elementure:blocks/maelstromleaves",
+    "north": "elementure:blocks/maelstromleaves",
+    "east": "elementure:blocks/maelstromleaves",
+    "south": "elementure:blocks/maelstromleaves",
+    "west": "elementure:blocks/maelstromleaves",
+    "particle": "elementure:blocks/maelstromleaves"
+  }
+}

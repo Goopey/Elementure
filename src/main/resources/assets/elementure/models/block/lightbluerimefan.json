@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/lightbluerimefan",
+  "textures": {
+    "all": "elementure:blocks/lightblue_rimefan",
+    "particle": "elementure:blocks/lightblue_rimefan",
+    "0": "elementure:blocks/lightblue_rimefan"
+  }
+}

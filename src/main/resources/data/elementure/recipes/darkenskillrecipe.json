@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:skillholder"
+    },
+    {
+      "item": "minecraft:coal_block"
+    },
+    {
+      "item": "elementure:darksoul"
+    },
+    {
+      "item": "elementure:darksoul"
+    },
+    {
+      "item": "elementure:darksoul"
+    }
+  ],
+  "result": {
+    "item": "elementure:darkenskill",
+    "count": 1
+  }
+}

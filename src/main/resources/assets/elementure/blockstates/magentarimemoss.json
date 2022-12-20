@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/magentarimemoss"
+    },
+    "facing=east": {
+      "model": "elementure:block/magentarimemoss",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/magentarimemoss",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/magentarimemoss",
+      "y": 270
+    }
+  }
+}

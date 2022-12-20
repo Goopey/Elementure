@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:hoppercharm"
+    },
+    {
+      "item": "elementure:dazzlingingot"
+    },
+    {
+      "item": "minecraft:gold_block"
+    }
+  ],
+  "result": {
+    "item": "elementure:goldenhoppercharm",
+    "count": 1
+  }
+}

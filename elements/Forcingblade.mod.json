@@ -1,0 +1,36 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "forcing_blade",
+    "customModelName": "Normal",
+    "name": "Forcing blade [Force]",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.6,
+    "enchantability": 5,
+    "damageVsEntity": 5.5,
+    "usageCount": 326,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "ForcingbladeSendProjectile"
+    },
+    "onEntityHitWith": {
+      "name": "ForcingbladeGather"
+    },
+    "onItemInUseTick": {
+      "name": "ForcingbladeTrueForce"
+    }
+  }
+}

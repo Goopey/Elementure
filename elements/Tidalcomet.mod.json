@@ -1,0 +1,52 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "tidalcomet",
+    "customModelName": "Normal",
+    "name": "Tidal comet [Light]",
+    "specialInfo": [
+      "A bright fragment from an aquatic comet.",
+      "Can shoot comets every fourth swipe."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 560,
+    "actionSound": {
+      "value": ""
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "TidalcometGlow"
+    },
+    "animation": "none",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 8.5,
+    "onEntitySwing": {
+      "name": "TidalcometSwing"
+    },
+    "useCondition": {
+      "name": "DeactivateSlot"
+    },
+    "bulletPower": 0.7000000000000001,
+    "bulletDamage": 3.9999999999999996,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelempty",
+    "customBulletModelTexture": "empty_texturemap.png",
+    "onBulletFlyingTick": {
+      "name": "TidalcometTrail"
+    }
+  }
+}

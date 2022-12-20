@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/pinkrimebush",
+  "textures": {
+    "all": "elementure:blocks/pink_rimebush",
+    "particle": "elementure:blocks/pink_rimebush",
+    "0": "elementure:blocks/pink_rimebush"
+  }
+}

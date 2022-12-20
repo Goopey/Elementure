@@ -1,0 +1,47 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Unpoweredsavageblade"
+      },
+      {
+        "value": "CUSTOM:Poweredsavageblade"
+      },
+      {
+        "value": "CUSTOM:Ferziumblade"
+      },
+      {
+        "value": "CUSTOM:Firesword"
+      },
+      {
+        "value": "CUSTOM:Fireblastskill"
+      },
+      {
+        "value": "CUSTOM:Ferziumaxe"
+      },
+      {
+        "value": "CUSTOM:Ferziumchanneler"
+      },
+      {
+        "value": "CUSTOM:Blabbermouth"
+      },
+      {
+        "value": "CUSTOM:Candlestick"
+      },
+      {
+        "value": "CUSTOM:RedSun"
+      },
+      {
+        "value": "CUSTOM:ArchkassemStaff"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "fireitem",
+    "namespace": "forge"
+  }
+}

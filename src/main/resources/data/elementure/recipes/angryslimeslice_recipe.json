@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:slimeslice"
+    },
+    {
+      "item": "elementure:dazzlingingot"
+    },
+    {
+      "item": "elementure:obleckslime"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    }
+  ],
+  "result": {
+    "item": "elementure:angryslimeslice",
+    "count": 1
+  }
+}

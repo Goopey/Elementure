@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:andesiteelemental",
+    "elementure:bigandesiteelemental",
+    "elementure:weakandesiteelemental",
+    "elementure:staticsprite"
+  ]
+}

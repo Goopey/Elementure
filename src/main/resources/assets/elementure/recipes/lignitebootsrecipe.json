@@ -1,0 +1,26 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_worlds:ligniteingot"
+    },
+    "2": {
+      "item": "minecraft_worlds:ligniteingot"
+    },
+    "3": {
+      "item": "minecraft_worlds:ligniteingot"
+    },
+    "5": {
+      "item": "minecraft_worlds:ligniteingot"
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:lignitearmorboots",
+    "count": 1
+  }
+}

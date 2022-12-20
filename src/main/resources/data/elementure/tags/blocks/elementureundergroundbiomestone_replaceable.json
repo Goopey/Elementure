@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:diorite",
+    "minecraft:deepslate",
+    "minecraft:tuff",
+    "minecraft:stone",
+    "minecraft:granite",
+    "minecraft:andesite",
+    "minecraft:dripstone_block",
+    "minecraft:gravel",
+    "minecraft:dirt"
+  ]
+}

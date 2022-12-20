@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/corruptlogtop",
+    "up": "elementure:blocks/corruptlogtop",
+    "north": "elementure:blocks/corruptlog",
+    "east": "elementure:blocks/corruptlog",
+    "south": "elementure:blocks/corruptlog",
+    "west": "elementure:blocks/corruptlog",
+    "particle": "elementure:blocks/corruptlogtop"
+  }
+}

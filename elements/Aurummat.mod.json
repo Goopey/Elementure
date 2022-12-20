@@ -1,0 +1,59 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Aurum"
+      },
+      {
+        "value": "CUSTOM:Aurumingot"
+      },
+      {
+        "value": "CUSTOM:Aurummace"
+      },
+      {
+        "value": "CUSTOM:Aurumarmor.helmet"
+      },
+      {
+        "value": "CUSTOM:Aurumarmor.body"
+      },
+      {
+        "value": "CUSTOM:Aurumarmor.legs"
+      },
+      {
+        "value": "CUSTOM:Aurumarmor.boots"
+      },
+      {
+        "value": "CUSTOM:Aurumaxe"
+      },
+      {
+        "value": "CUSTOM:Aurumpickaxe"
+      },
+      {
+        "value": "CUSTOM:Aurumhoe"
+      },
+      {
+        "value": "CUSTOM:Aurumshovel"
+      },
+      {
+        "value": "CUSTOM:Aurumbricks"
+      },
+      {
+        "value": "CUSTOM:Aurumtiles"
+      },
+      {
+        "value": "CUSTOM:Corruptedsmitering"
+      },
+      {
+        "value": "CUSTOM:Aurumblock"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "aurummat",
+    "namespace": "mod"
+  }
+}

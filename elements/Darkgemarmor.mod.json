@@ -1,0 +1,73 @@
+{
+  "_fv": 34,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "darkgemhelmet",
+    "enableBody": true,
+    "textureBody": "darkgemchestplate",
+    "enableLeggings": true,
+    "textureLeggings": "darkgemlegs",
+    "enableBoots": true,
+    "textureBoots": "darkgem_boots",
+    "onBodyTick": {
+      "name": "DarkgemarmorFullarmorBonus"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedarmor"
+    },
+    "armorTextureFile": "darkgem_",
+    "helmetName": "Dark gem Helmet",
+    "bodyName": "Dark gem Body",
+    "leggingsName": "Dark gem Leggings",
+    "bootsName": "Dark gem Boots",
+    "helmetSpecialInfo": [
+      "Full armor effect : Converts damage taken to Dark"
+    ],
+    "bodySpecialInfo": [
+      "Full armor effect : Converts damage taken to Dark"
+    ],
+    "leggingsSpecialInfo": [
+      "Full armor effect : Converts damage taken to Dark"
+    ],
+    "bootsSpecialInfo": [
+      "Full armor effect : Converts damage taken to Dark"
+    ],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 89,
+    "damageValueHelmet": 3,
+    "damageValueBody": 8,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 3,
+    "enchantability": 12,
+    "toughness": 2.0,
+    "knockbackResistance": 0.1,
+    "equipSound": {
+      "value": "item.armor.equip_diamond"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Darkgem"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smelting",
+    "xpReward": 1.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smeltingInputStack": {
+      "value": "CUSTOM:Diseasedcod"
+    },
+    "smeltingReturnStack": {
+      "value": "Items.COOKED_FISH#0"
+    },
+    "name": "diseasedcod_cook",
+    "namespace": "mod"
+  }
+}

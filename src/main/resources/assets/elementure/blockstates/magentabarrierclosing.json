@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/magentabarrierclosing"
+    },
+    "facing=east": {
+      "model": "elementure:block/magentabarrierclosing",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/magentabarrierclosing",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/magentabarrierclosing",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "elementure:block/magentabarrierclosing",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "elementure:block/magentabarrierclosing",
+      "x": 90
+    }
+  }
+}

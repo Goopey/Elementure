@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/altarbrick",
+    "up": "elementure:blocks/altarbrick",
+    "north": "elementure:blocks/altarbrick",
+    "east": "elementure:blocks/altarbrick",
+    "south": "elementure:blocks/altarbrick",
+    "west": "elementure:blocks/altarbrick",
+    "particle": "elementure:blocks/altarbrick"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:dryseafoamfragment"
+    },
+    {
+      "item": "elementure:dryseafoamfragment"
+    },
+    {
+      "item": "elementure:dryseafoamfragment"
+    },
+    {
+      "item": "elementure:dryseafoamfragment"
+    },
+    {
+      "item": "elementure:dryseafoamfragment"
+    },
+    {
+      "item": "elementure:dryseafoamfragment"
+    },
+    {
+      "item": "elementure:dryseafoamfragment"
+    },
+    {
+      "item": "elementure:dryseafoamfragment"
+    },
+    {
+      "item": "elementure:dryseafoamfragment"
+    }
+  ],
+  "result": {
+    "item": "elementure:dryseafoam",
+    "count": 1
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:oak_leaves"
+    },
+    "3": {
+      "item": "minecraft:oak_leaves"
+    },
+    "4": {
+      "item": "minecraft:oak_log"
+    },
+    "5": {
+      "item": "minecraft:oak_leaves"
+    },
+    "6": {
+      "item": "minecraft:grass_block"
+    },
+    "7": {
+      "item": "minecraft:grass_block"
+    },
+    "8": {
+      "item": "minecraft:grass_block"
+    }
+  },
+  "result": {
+    "item": "elementure:forestmemorial",
+    "count": 1
+  }
+}

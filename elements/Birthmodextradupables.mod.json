@@ -1,0 +1,47 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Dazzlingingot"
+      },
+      {
+        "value": "Items.HONEY_BOTTLE"
+      },
+      {
+        "value": "Items.ENDER_PEARL"
+      },
+      {
+        "value": "Items.ENDER_EYE"
+      },
+      {
+        "value": "Items.DIAMOND"
+      },
+      {
+        "value": "Items.BLAZE_ROD"
+      },
+      {
+        "value": "CUSTOM:Silveringot"
+      },
+      {
+        "value": "CUSTOM:Rareglasslight"
+      },
+      {
+        "value": "CUSTOM:Rainpole"
+      },
+      {
+        "value": "CUSTOM:Thunderpole"
+      },
+      {
+        "value": "CUSTOM:Clearpole"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "birthmodextradupables",
+    "namespace": "mod"
+  }
+}

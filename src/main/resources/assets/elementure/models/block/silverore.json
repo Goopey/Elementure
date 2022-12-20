@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/silverore",
+    "up": "elementure:blocks/silverore",
+    "north": "elementure:blocks/silverore",
+    "east": "elementure:blocks/silverore",
+    "south": "elementure:blocks/silverore",
+    "west": "elementure:blocks/silverore",
+    "particle": "elementure:blocks/silverore"
+  }
+}

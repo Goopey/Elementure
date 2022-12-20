@@ -1,0 +1,11 @@
+{
+  "_fv": 34,
+  "_type": "tab",
+  "definition": {
+    "name": "Modded items",
+    "icon": {
+      "value": "CUSTOM:Diversbeacon"
+    },
+    "showSearch": false
+  }
+}

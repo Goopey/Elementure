@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:targod_blaster"
+    }
+  ],
+  "result": {
+    "item": "elementure:tarbomb",
+    "count": 2
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "mycenan_axe",
+    "customModelName": "Normal",
+    "name": "Mycenan axe [Earth]",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 1,
+    "efficiency": 5.0,
+    "attackSpeed": 0.9,
+    "enchantability": 2,
+    "damageVsEntity": 8.0,
+    "usageCount": 236,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Mycenanalloy"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "MycenanaxeSpores"
+    },
+    "onItemInInventoryTick": {
+      "name": "MycenanaxeTrueEarth"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "elementure:direcrypttiles_2"
+  },
+  "result": "elementure:direcrypttiles_2_wall"
+}

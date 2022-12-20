@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:dazzlingingot"
+    },
+    "1": {
+      "item": "elementure:dazzlingingot"
+    },
+    "2": {
+      "item": "elementure:dazzlingingot"
+    },
+    "3": {
+      "item": "elementure:dazzlingingot"
+    },
+    "5": {
+      "item": "elementure:dazzlingingot"
+    },
+    "6": {
+      "item": "elementure:dazzlingingot"
+    },
+    "8": {
+      "item": "elementure:dazzlingingot"
+    }
+  },
+  "result": {
+    "item": "elementure:dazzlingarmor_leggings",
+    "count": 1
+  }
+}

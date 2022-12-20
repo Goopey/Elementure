@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "experience": 3,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "elementure:fatgrouki"
+  },
+  "result": "elementure:cookedfatgrouki"
+}

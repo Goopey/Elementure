@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:mycenashroomblock"
+    },
+    {
+      "item": "elementure:mycenashroomblock"
+    },
+    {
+      "item": "elementure:mycenashroomblock"
+    }
+  ],
+  "result": {
+    "item": "elementure:mycenasprouts",
+    "count": 1
+  }
+}

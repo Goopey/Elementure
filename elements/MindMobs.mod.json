@@ -1,0 +1,32 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Mindobleck"
+      },
+      {
+        "value": "CUSTOM:Oblecklord"
+      },
+      {
+        "value": "EntityElderGuardian"
+      },
+      {
+        "value": "EntityIllusionIllager"
+      },
+      {
+        "value": "EntityMinecart"
+      },
+      {
+        "value": "EntityWitch"
+      }
+    ],
+    "name": "mind_mobs",
+    "namespace": "forge"
+  }
+}

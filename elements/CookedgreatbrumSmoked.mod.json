@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "xpReward": 2.0,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "CUSTOM:Greatbrum"
+    },
+    "smokingReturnStack": {
+      "value": "CUSTOM:Cookedgreatbrum"
+    },
+    "name": "cookedgreatbrum_smoked",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/skyjadeblock",
+    "up": "elementure:blocks/skyjadeblock",
+    "north": "elementure:blocks/skyjadeblock",
+    "east": "elementure:blocks/skyjadeblock",
+    "south": "elementure:blocks/skyjadeblock",
+    "west": "elementure:blocks/skyjadeblock",
+    "particle": "elementure:blocks/skyjadeblock"
+  }
+}

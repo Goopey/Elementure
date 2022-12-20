@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:diversalloy"
+    },
+    {
+      "item": "elementure:diversalloy"
+    },
+    {
+      "item": "elementure:diversalloy"
+    },
+    {
+      "item": "elementure:diversalloy"
+    },
+    {
+      "item": "elementure:diversalloy"
+    },
+    {
+      "item": "elementure:diversalloy"
+    },
+    {
+      "item": "elementure:diversalloy"
+    },
+    {
+      "item": "elementure:diversalloy"
+    },
+    {
+      "item": "elementure:diversalloy"
+    }
+  ],
+  "result": {
+    "item": "elementure:diversalloy_block",
+    "count": 1
+  }
+}

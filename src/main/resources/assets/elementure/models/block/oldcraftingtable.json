@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/old_plank",
+    "up": "elementure:blocks/old_crafting_table_top",
+    "north": "elementure:blocks/old_crafting_table_side_1",
+    "east": "elementure:blocks/old_crafting_table_side_2",
+    "south": "elementure:blocks/old_crafting_table_side_1",
+    "west": "elementure:blocks/old_crafting_table_side_2",
+    "particle": "elementure:blocks/old_plank"
+  }
+}

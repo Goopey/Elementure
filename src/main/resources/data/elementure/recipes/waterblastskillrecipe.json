@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:skillholder"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "elementure:watersoul"
+    },
+    {
+      "item": "elementure:watersoul"
+    },
+    {
+      "item": "elementure:watersoul"
+    }
+  ],
+  "result": {
+    "item": "elementure:waterblastskill",
+    "count": 1
+  }
+}

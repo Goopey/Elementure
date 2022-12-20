@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:silvernugget"
+    },
+    "1": {
+      "item": "elementure:warpedfish"
+    },
+    "2": {
+      "item": "elementure:silvernugget"
+    },
+    "4": {
+      "item": "minecraft:warped_stem"
+    },
+    "7": {
+      "item": "minecraft:warped_stem"
+    }
+  },
+  "result": {
+    "item": "elementure:warpedspear",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:dazzlingingot"
+    },
+    "2": {
+      "item": "elementure:dazzlingingot"
+    },
+    "3": {
+      "item": "elementure:dazzlingingot"
+    },
+    "5": {
+      "item": "elementure:dazzlingingot"
+    }
+  },
+  "result": {
+    "item": "elementure:dazzlingarmor_boots",
+    "count": 1
+  }
+}

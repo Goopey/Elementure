@@ -1,0 +1,60 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 1,
+    "texture": "archkassem_staff_texturemap",
+    "customModelName": "archkassem_staff:default",
+    "name": "Arch kassem Staff [Fire]",
+    "specialInfo": [
+      "Rats are seeking to purify the world using these as cleansing torches."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 620,
+    "actionSound": {
+      "value": "entity.firework.large_blast_far"
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "ArchkassemstaffGlow"
+    },
+    "animation": "bow",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 1.0,
+    "onRangedItemUsed": {
+      "name": "ArchkassemstaffConsume"
+    },
+    "onEntitySwing": {
+      "name": "ArchkassemstaffSprayFire"
+    },
+    "useCondition": {
+      "name": "ArchkassemstaffGlow"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 3.9999999999999996,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": true,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Fireballprop"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "ArchkassemstaffExplode"
+    },
+    "onBulletHitsEntity": {
+      "name": "ArchkassemstaffWeakExplosion"
+    },
+    "onBulletFlyingTick": {
+      "name": "ArchkassemstaffParticles"
+    }
+  }
+}

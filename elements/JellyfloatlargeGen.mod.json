@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "structure",
+  "definition": {
+    "structure": "jellyfloat_omegan",
+    "randomlyRotateStructure": false,
+    "surfaceDetectionType": "First motion blocking block",
+    "spawnProbability": 2200,
+    "minCountPerChunk": 1,
+    "maxCountPerChunk": 1,
+    "spawnLocation": "Ground",
+    "spawnHeightOffset": 0,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBlocks": [
+      {
+        "value": "Blocks.GRAVEL"
+      }
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "frozen_ocean"
+      },
+      {
+        "value": "deep_frozen_ocean"
+      }
+    ],
+    "ignoreBlocks": "AIR_AND_STRUCTURE_BLOCK",
+    "generateCondition": {
+      "name": "JellyfloatplaceUnderwater"
+    },
+    "onStructureGenerated": {
+      "name": "JellyfloatlargeGenPlace"
+    }
+  }
+}

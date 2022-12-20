@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/blueslimesprout"
+    },
+    "facing=east": {
+      "model": "elementure:block/blueslimesprout",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/blueslimesprout",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/blueslimesprout",
+      "y": 270
+    }
+  }
+}

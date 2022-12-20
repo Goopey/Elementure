@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 2,
+    "group": "",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:Direcrypttiles2"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:Direcrypttiles2Slab"
+    },
+    "name": "direcrypttiles_2_slab_stonecutter",
+    "namespace": "mod"
+  }
+}

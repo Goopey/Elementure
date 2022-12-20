@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Ligniteingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Ligniteingot"
+      },
+      {
+        "value": "CUSTOM:Ligniteingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Ligniteingot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Lignitearmor.boots"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "lignitebootsrecipe",
+    "namespace": "mod"
+  }
+}

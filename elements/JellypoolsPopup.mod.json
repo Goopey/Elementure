@@ -1,0 +1,34 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "HIGHEST",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Jelly Pools",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Jelly Pools",
+          "x": 186,
+          "y": 26
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "JellyfloatpopupDisplay"
+    },
+    "gridSettings": {
+      "sx": 8,
+      "sy": 4,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

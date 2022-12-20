@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:icyslimeball"
+    },
+    "1": {
+      "item": "elementure:icyslimeball"
+    },
+    "2": {
+      "item": "elementure:icyslimeball"
+    },
+    "3": {
+      "item": "elementure:icyslimeball"
+    },
+    "4": {
+      "item": "elementure:icyslimeball"
+    },
+    "5": {
+      "item": "elementure:icyslimeball"
+    },
+    "6": {
+      "item": "elementure:icyslimeball"
+    },
+    "7": {
+      "item": "elementure:icyslimeball"
+    },
+    "8": {
+      "item": "elementure:icyslimeball"
+    }
+  },
+  "result": {
+    "item": "elementure:icyslime",
+    "count": 1
+  }
+}

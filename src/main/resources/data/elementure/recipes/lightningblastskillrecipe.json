@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:skillholder"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "elementure:lightningsoul"
+    },
+    {
+      "item": "elementure:lightningsoul"
+    },
+    {
+      "item": "elementure:lightningsoul"
+    }
+  ],
+  "result": {
+    "item": "elementure:lightningblastskill",
+    "count": 1
+  }
+}

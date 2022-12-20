@@ -1,0 +1,62 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Netherstarcrust"
+      },
+      {
+        "value": "CUSTOM:Netherum"
+      },
+      {
+        "value": "CUSTOM:Activenetherum"
+      },
+      {
+        "value": "CUSTOM:Densenetherum"
+      },
+      {
+        "value": "CUSTOM:Blazingnetherum"
+      },
+      {
+        "value": "CUSTOM:Netherstarcrustpatch"
+      },
+      {
+        "value": "CUSTOM:Starryroots"
+      },
+      {
+        "value": "CUSTOM:Babynetherstarblock"
+      },
+      {
+        "value": "CUSTOM:Netheriteore"
+      },
+      {
+        "value": "CUSTOM:Netherstarcrustshiny"
+      },
+      {
+        "value": "CUSTOM:Netherumshiny"
+      },
+      {
+        "value": "CUSTOM:Activenetherumshiny"
+      },
+      {
+        "value": "CUSTOM:Densenetherumshiny"
+      },
+      {
+        "value": "CUSTOM:Blazingnetherumshiny"
+      },
+      {
+        "value": "CUSTOM:Babynetherstarshiny"
+      },
+      {
+        "value": "CUSTOM:Netherstarcrustpatchshiny"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "netherstarblocks",
+    "namespace": "mod"
+  }
+}

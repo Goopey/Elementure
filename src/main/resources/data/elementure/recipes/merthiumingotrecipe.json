@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:merthiumblock"
+    }
+  ],
+  "result": {
+    "item": "elementure:merthiumingot",
+    "count": 9
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:airsoul"
+    },
+    "1": {
+      "item": "elementure:elementalweb"
+    },
+    "2": {
+      "item": "elementure:airsoul"
+    },
+    "3": {
+      "item": "elementure:airsoul"
+    },
+    "4": {
+      "item": "elementure:silversword"
+    },
+    "5": {
+      "item": "elementure:airsoul"
+    },
+    "6": {
+      "item": "elementure:airsoul"
+    },
+    "7": {
+      "item": "elementure:elementalweb"
+    },
+    "8": {
+      "item": "elementure:airsoul"
+    }
+  },
+  "result": {
+    "item": "elementure:airsword",
+    "count": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "X",
+    "keyBindingName": "Use bobber ability",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "FishingabilityOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "FishingabilityOnKeyReleased"
+    }
+  }
+}

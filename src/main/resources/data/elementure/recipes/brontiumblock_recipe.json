@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:brontium"
+    },
+    "1": {
+      "item": "elementure:brontium"
+    },
+    "2": {
+      "item": "elementure:brontium"
+    },
+    "3": {
+      "item": "elementure:brontium"
+    },
+    "4": {
+      "item": "elementure:brontium"
+    },
+    "5": {
+      "item": "elementure:brontium"
+    },
+    "6": {
+      "item": "elementure:brontium"
+    },
+    "7": {
+      "item": "elementure:brontium"
+    },
+    "8": {
+      "item": "elementure:brontium"
+    }
+  },
+  "result": {
+    "item": "elementure:brontiumblock",
+    "count": 1
+  }
+}

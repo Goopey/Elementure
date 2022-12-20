@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/pink_slime_fol",
+  "textures": {
+    "all": "elementure:blocks/pink_slime_fol_texture",
+    "particle": "elementure:blocks/pink_slime_fol_texture",
+    "main": "elementure:blocks/pink_slime_fol_texture"
+  }
+}

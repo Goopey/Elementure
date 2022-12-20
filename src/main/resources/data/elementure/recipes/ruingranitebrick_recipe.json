@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:ruingranitetiles"
+    },
+    {
+      "item": "elementure:ruingranitetiles"
+    },
+    {
+      "item": "elementure:ruingranitetiles"
+    },
+    {
+      "item": "elementure:ruingranitetiles"
+    }
+  ],
+  "result": {
+    "item": "elementure:ruingranitebricks",
+    "count": 4
+  }
+}

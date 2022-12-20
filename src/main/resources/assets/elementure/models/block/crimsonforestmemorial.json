@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/crimson_forest_memorial",
+  "textures": {
+    "all": "elementure:blocks/crimson_forest_memorial",
+    "particle": "elementure:blocks/crimson_forest_memorial",
+    "0": "elementure:blocks/crimson_forest_memorial"
+  }
+}

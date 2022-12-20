@@ -1,0 +1,28 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_worlds:abyssalemblem"
+    },
+    {
+      "item": "minecraft_worlds:unknown_element"
+    },
+    {
+      "item": "minecraft_worlds:unknown_element"
+    },
+    {
+      "item": "minecraft_worlds:abyssalemblem"
+    },
+    {
+      "item": "minecraft_worlds:abyssaldust"
+    },
+    {
+      "item": "minecraft_worlds:abyssaldust"
+    }
+  ],
+  "result": {
+    "item": "minecraft_worlds:abyssalmedalion",
+    "count": 1
+  }
+}

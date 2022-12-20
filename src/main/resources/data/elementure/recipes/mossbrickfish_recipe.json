@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 3,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "elementure:mossfish"
+  },
+  "result": "elementure:mycenamossbrick"
+}

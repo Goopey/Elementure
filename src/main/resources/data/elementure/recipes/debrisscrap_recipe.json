@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "elementure:debrisscraps"
+  },
+  "addition": {
+    "item": "elementure:debrisscraps"
+  },
+  "result": {
+    "item": "minecraft:netherite_scrap"
+  }
+}

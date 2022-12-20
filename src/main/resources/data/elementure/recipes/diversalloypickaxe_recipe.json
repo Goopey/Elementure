@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:diversalloy"
+    },
+    "1": {
+      "item": "elementure:diversalloy"
+    },
+    "2": {
+      "item": "elementure:diversalloy"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "elementure:diversalloypickaxe",
+    "count": 1
+  }
+}

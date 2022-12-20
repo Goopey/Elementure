@@ -1,0 +1,7 @@
+{
+  "parent": "elementure:custom/bubbleblaster",
+  "textures": {
+    "0": "elementure:blocks/bubbleblaster",
+    "particle": "elementure:items/bubbleblaster"
+  }
+}

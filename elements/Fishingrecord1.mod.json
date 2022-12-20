@@ -1,0 +1,296 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 149,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "book_fishing.png",
+          "use1Xscale": false,
+          "name": "book_fishing.png",
+          "x": 94,
+          "y": 33
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "chub.png",
+          "use1Xscale": false,
+          "name": "chub.png",
+          "x": 104,
+          "y": 45
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Regular Fish",
+          "onClick": {
+            "name": "Openregularfish"
+          },
+          "width": 85,
+          "height": 20,
+          "name": "Regular Fish",
+          "x": 120,
+          "y": 43
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "greenjack_gui.png",
+          "use1Xscale": false,
+          "name": "greenjack_gui.png",
+          "x": 104,
+          "y": 70
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Legendary",
+          "onClick": {
+            "name": "Openlegendaryfish"
+          },
+          "width": 70,
+          "height": 20,
+          "name": "Legendary",
+          "x": 135,
+          "y": 68
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Lava Fish",
+          "onClick": {
+            "name": "Openlavafish1"
+          },
+          "width": 70,
+          "height": 20,
+          "name": "Lava Fish",
+          "x": 135,
+          "y": 93
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "high_trahira.png",
+          "use1Xscale": false,
+          "name": "high_trahira.png",
+          "x": 105,
+          "y": 95
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Void Fish",
+          "onClick": {
+            "name": "Openvoidfish1"
+          },
+          "width": 70,
+          "height": 20,
+          "name": "Void Fish",
+          "x": 135,
+          "y": 118
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "supreme_trahira.png",
+          "use1Xscale": false,
+          "name": "supreme_trahira.png",
+          "x": 105,
+          "y": 120
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Diseased",
+          "onClick": {
+            "name": "Opendiseasedfish1"
+          },
+          "width": 65,
+          "height": 20,
+          "name": "Diseased",
+          "x": 140,
+          "y": 143
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diseased_chub.png",
+          "use1Xscale": false,
+          "name": "diseased_chub.png",
+          "x": 105,
+          "y": 145
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "moss_fish.png",
+          "use1Xscale": false,
+          "name": "moss_fish.png",
+          "x": 104,
+          "y": 170
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Mycena",
+          "onClick": {
+            "name": "Openmycenafish1"
+          },
+          "width": 55,
+          "height": 20,
+          "name": "Mycena",
+          "x": 150,
+          "y": 168
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "crumster.png",
+          "use1Xscale": false,
+          "name": "crumster.png",
+          "x": 212,
+          "y": 45
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Nether Star",
+          "onClick": {
+            "name": "Opennetherstarfish1"
+          },
+          "width": 80,
+          "height": 20,
+          "name": "Nether Star",
+          "x": 243,
+          "y": 43
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "shaub.png",
+          "use1Xscale": false,
+          "name": "shaub.png",
+          "x": 212,
+          "y": 70
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Jelly Pools",
+          "onClick": {
+            "name": "Jellypoolsopen1"
+          },
+          "width": 82,
+          "height": 20,
+          "name": "Jelly Pools",
+          "x": 243,
+          "y": 68
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "grappler_crab.png",
+          "use1Xscale": false,
+          "name": "grappler_crab.png",
+          "x": 212,
+          "y": 95
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Shellfish",
+          "onClick": {
+            "name": "ShellfishOpen"
+          },
+          "width": 72,
+          "height": 20,
+          "name": "Shellfish",
+          "x": 243,
+          "y": 93
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "golden_chub.png",
+          "use1Xscale": false,
+          "name": "golden_chub.png",
+          "x": 211,
+          "y": 120
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Special",
+          "onClick": {
+            "name": "DungeonwaterrecordOpen"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Special",
+          "x": 243,
+          "y": 118
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "skychub.png",
+          "use1Xscale": false,
+          "name": "skychub.png",
+          "x": 212,
+          "y": 145
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Windy Shores",
+          "onClick": {
+            "name": "Openwindyshores"
+          },
+          "width": 77,
+          "height": 20,
+          "name": "Windy Shores",
+          "x": 243,
+          "y": 143
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 2,
+      "sy": 2,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

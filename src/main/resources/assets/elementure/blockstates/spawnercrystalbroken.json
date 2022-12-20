@@ -1,0 +1,32 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/spawnercrystalbroken",
+      "x": 270,
+      "y": 0
+    },
+    "facing=east": {
+      "model": "elementure:block/spawnercrystalbroken",
+      "x": 270,
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/spawnercrystalbroken",
+      "x": 90,
+      "y": 0
+    },
+    "facing=west": {
+      "model": "elementure:block/spawnercrystalbroken",
+      "x": 270,
+      "y": 270
+    },
+    "facing=up": {
+      "model": "elementure:block/spawnercrystalbroken",
+      "x": 180
+    },
+    "facing=down": {
+      "model": "elementure:block/spawnercrystalbroken"
+    }
+  }
+}
+}

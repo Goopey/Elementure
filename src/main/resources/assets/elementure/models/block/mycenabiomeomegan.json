@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_worlds:blocks/new_stone",
+    "up": "minecraft_worlds:blocks/new_stone",
+    "north": "minecraft_worlds:blocks/new_stone",
+    "east": "minecraft_worlds:blocks/new_stone",
+    "south": "minecraft_worlds:blocks/new_stone",
+    "west": "minecraft_worlds:blocks/new_stone",
+    "particle": "minecraft_worlds:blocks/new_stone"
+  }
+}

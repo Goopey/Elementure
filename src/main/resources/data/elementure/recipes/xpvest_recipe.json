@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:skipsnake"
+    },
+    "2": {
+      "item": "elementure:skipsnake"
+    },
+    "3": {
+      "item": "elementure:skipsnake"
+    },
+    "4": {
+      "item": "minecraft:leather"
+    },
+    "5": {
+      "item": "elementure:skipsnake"
+    },
+    "6": {
+      "item": "elementure:skipsnake"
+    },
+    "7": {
+      "item": "minecraft:leather"
+    },
+    "8": {
+      "item": "elementure:skipsnake"
+    }
+  },
+  "result": {
+    "item": "elementure:xpvest_chestplate",
+    "count": 1
+  }
+}

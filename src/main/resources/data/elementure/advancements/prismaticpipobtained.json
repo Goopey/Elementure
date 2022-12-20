@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "elementure:prismaticpip"
+    },
+    "title": {
+      "translate": "advancements.prismaticpipobtained.title"
+    },
+    "description": {
+      "translate": "advancements.prismaticpipobtained.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "prismaticpipobtained": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elementure:prismaticpip"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 80
+  },
+  "parent": "elementure:elementure_fishingadvancement"
+}

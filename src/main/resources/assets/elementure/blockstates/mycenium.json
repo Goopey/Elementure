@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/mycenium"
+    },
+    "facing=east": {
+      "model": "elementure:block/mycenium",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/mycenium",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/mycenium",
+      "y": 270
+    }
+  }
+}

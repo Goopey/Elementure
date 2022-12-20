@@ -1,0 +1,74 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Waterblade"
+      },
+      {
+        "value": "CUSTOM:Merthiumblade"
+      },
+      {
+        "value": "CUSTOM:Iceblade"
+      },
+      {
+        "value": "CUSTOM:Waterblastskill"
+      },
+      {
+        "value": "CUSTOM:Merthiumaxe"
+      },
+      {
+        "value": "CUSTOM:Merthiumchanneler"
+      },
+      {
+        "value": "CUSTOM:Causticblade"
+      },
+      {
+        "value": "CUSTOM:Seafoamblade"
+      },
+      {
+        "value": "CUSTOM:Blueseafoamblade"
+      },
+      {
+        "value": "CUSTOM:Redseafoamblade"
+      },
+      {
+        "value": "CUSTOM:Greenseafoamblade"
+      },
+      {
+        "value": "CUSTOM:Seafoamaxe"
+      },
+      {
+        "value": "CUSTOM:Greenseafoamaxe"
+      },
+      {
+        "value": "CUSTOM:Redseafoamaxe"
+      },
+      {
+        "value": "CUSTOM:Blueseafoamaxe"
+      },
+      {
+        "value": "CUSTOM:Bubbleblaster"
+      },
+      {
+        "value": "CUSTOM:Sirenqueenfist"
+      },
+      {
+        "value": "CUSTOM:CormunculusChanneler"
+      },
+      {
+        "value": "CUSTOM:DarkcormunculusChanneler"
+      },
+      {
+        "value": "CUSTOM:RimecormunculusChanneler"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "wateritem",
+    "namespace": "forge"
+  }
+}

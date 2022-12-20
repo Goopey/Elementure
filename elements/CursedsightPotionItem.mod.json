@@ -1,0 +1,21 @@
+{
+  "_fv": 34,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Cursed sight",
+    "splashName": "Splash Cursed sight",
+    "lingeringName": "Lingering Cursed sight",
+    "arrowName": "Arrow of Cursed sight",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Cursedsight"
+        },
+        "duration": 3600,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

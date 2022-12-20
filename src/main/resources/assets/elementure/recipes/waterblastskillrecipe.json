@@ -1,0 +1,25 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_worlds:skillholder"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "minecraft_worlds:watersoul"
+    },
+    {
+      "item": "minecraft_worlds:watersoul"
+    },
+    {
+      "item": "minecraft_worlds:watersoul"
+    }
+  ],
+  "result": {
+    "item": "minecraft_worlds:waterblastskill",
+    "count": 1
+  }
+}

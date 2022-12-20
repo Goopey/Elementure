@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "darkgem_axe",
+    "customModelName": "Normal",
+    "name": "Dark gem axe [Dark]",
+    "specialInfo": [
+      "Destroys enemy armor, making them take extra damage."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 3,
+    "efficiency": 9.0,
+    "attackSpeed": 1.0,
+    "enchantability": 11,
+    "damageVsEntity": 9.0,
+    "usageCount": 1389,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Darkgem"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "DarkgemaxeGather"
+    },
+    "onItemInUseTick": {
+      "name": "DarkgemaxeTrueDark"
+    }
+  }
+}

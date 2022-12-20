@@ -1,0 +1,7 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "elementure:blocks/energy_diorite_tile",
+    "particle": "elementure:blocks/energy_diorite_tile"
+  }
+}

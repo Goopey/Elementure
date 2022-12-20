@@ -1,0 +1,42 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "tetrachromaticwheel",
+    "customModelName": "Normal",
+    "name": "Chromatic channeler [Light]",
+    "specialInfo": [
+      "Sends discs of light"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "toolType": "MultiTool",
+    "harvestLevel": 1,
+    "efficiency": 0.0,
+    "attackSpeed": 1.0,
+    "enchantability": 0,
+    "damageVsEntity": 2.0,
+    "usageCount": 215,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "ChromaticchannelerCanShoot"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Rainbowingot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "ChromaticchannelerSendDisc"
+    },
+    "onItemInUseTick": {
+      "name": "ChromaticchannelerTrueLight"
+    }
+  }
+}

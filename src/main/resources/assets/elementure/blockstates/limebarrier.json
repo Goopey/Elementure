@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/limebarrier"
+    },
+    "facing=east": {
+      "model": "elementure:block/limebarrier",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/limebarrier",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/limebarrier",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "elementure:block/limebarrier",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "elementure:block/limebarrier",
+      "x": 90
+    }
+  }
+}

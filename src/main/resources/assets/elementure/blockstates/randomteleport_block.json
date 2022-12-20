@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "elementure:block/randomteleport_block"
+    }
+  }
+}

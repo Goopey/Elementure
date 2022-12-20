@@ -1,0 +1,48 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Rainbowsword"
+      },
+      {
+        "value": "CUSTOM:Flashskill"
+      },
+      {
+        "value": "CUSTOM:Lightblade"
+      },
+      {
+        "value": "CUSTOM:Rainbowaxe"
+      },
+      {
+        "value": "CUSTOM:Netherstarblade"
+      },
+      {
+        "value": "CUSTOM:Pumpkinsword"
+      },
+      {
+        "value": "CUSTOM:PumpkinAxe"
+      },
+      {
+        "value": "CUSTOM:Chromaticchanneler"
+      },
+      {
+        "value": "CUSTOM:Royalblade"
+      },
+      {
+        "value": "CUSTOM:RimecormunculusChanneler"
+      },
+      {
+        "value": "CUSTOM:Tidalcomet"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "lightitem",
+    "namespace": "forge"
+  }
+}

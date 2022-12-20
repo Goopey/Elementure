@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:stripped_flufflog"
+    },
+    {
+      "item": "elementure:stripped_flufflog"
+    },
+    {
+      "item": "elementure:stripped_flufflog"
+    },
+    {
+      "item": "elementure:stripped_flufflog"
+    }
+  ],
+  "result": {
+    "item": "elementure:stripped_flufflogfull",
+    "count": 3
+  }
+}

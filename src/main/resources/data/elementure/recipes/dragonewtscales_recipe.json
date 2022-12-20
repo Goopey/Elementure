@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:dragonewtscales_block"
+    }
+  ],
+  "result": {
+    "item": "elementure:dragonewt_scales",
+    "count": 9
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:perryberry"
+    },
+    {
+      "item": "elementure:strawberry"
+    },
+    {
+      "item": "elementure:sunberry"
+    },
+    {
+      "item": "elementure:blueberry"
+    },
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "elementure:gobberry"
+    },
+    {
+      "item": "elementure:beestingberry"
+    },
+    {
+      "item": "elementure:coldberry"
+    },
+    {
+      "item": "elementure:bilborry"
+    }
+  ],
+  "result": {
+    "item": "elementure:overworldberryjam",
+    "count": 1
+  }
+}

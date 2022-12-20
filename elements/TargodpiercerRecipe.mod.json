@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": true,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Tarbomb"
+      },
+      {
+        "value": "CUSTOM:Tarbomb"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Tarblock"
+      },
+      {
+        "value": "CUSTOM:Tarbomb"
+      },
+      {
+        "value": "CUSTOM:Tarblock"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Targodpiercer"
+    },
+    "name": "targodpiercer_recipe",
+    "namespace": "mod"
+  }
+}

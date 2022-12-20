@@ -1,0 +1,35 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Lignitesword"
+      },
+      {
+        "value": "CUSTOM:Ligniteaxe"
+      },
+      {
+        "value": "CUSTOM:Lightningblastskill"
+      },
+      {
+        "value": "CUSTOM:Lightningblade"
+      },
+      {
+        "value": "CUSTOM:Lignitechanneler"
+      },
+      {
+        "value": "CUSTOM:Chargedchanneler"
+      },
+      {
+        "value": "CUSTOM:Lignitespear"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "lightningitem",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:darkgem_crystal"
+    },
+    {
+      "item": "elementure:darkgem_crystal"
+    }
+  ],
+  "result": {
+    "item": "elementure:darkgem",
+    "count": 1
+  }
+}

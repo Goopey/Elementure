@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/fishaltar"
+    },
+    "facing=east": {
+      "model": "elementure:block/fishaltar",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/fishaltar",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/fishaltar",
+      "y": 270
+    }
+  }
+}

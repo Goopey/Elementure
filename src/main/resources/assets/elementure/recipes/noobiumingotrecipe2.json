@@ -1,0 +1,13 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_worlds:noobiumblock"
+    }
+  ],
+  "result": {
+    "item": "minecraft_worlds:noobiumingot",
+    "count": 9
+  }
+}

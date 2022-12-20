@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:wortashsapling"
+    },
+    {
+      "item": "elementure:fluffsapling"
+    },
+    {
+      "item": "elementure:bluethornsapling"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "result": {
+    "item": "elementure:skyjadebar",
+    "count": 1
+  }
+}

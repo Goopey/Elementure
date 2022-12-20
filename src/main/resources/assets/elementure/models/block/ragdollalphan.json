@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/ragdollalphantop",
+    "up": "elementure:blocks/ragdollalphantop",
+    "north": "elementure:blocks/ragdollalphan",
+    "east": "elementure:blocks/ragdollalphan",
+    "south": "elementure:blocks/ragdollalphan",
+    "west": "elementure:blocks/ragdollalphan",
+    "particle": "elementure:blocks/ragdollalphantop"
+  }
+}

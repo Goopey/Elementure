@@ -1,0 +1,37 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "neonsword",
+    "customModelName": "Normal",
+    "name": "Neon sword [Energy]",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 6.0,
+    "attackSpeed": 1.6,
+    "enchantability": 7,
+    "damageVsEntity": 4.5,
+    "usageCount": 356,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Neondust"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "NeonswordGather"
+    },
+    "onItemInInventoryTick": {
+      "name": "NeonswordTrueEnergy"
+    }
+  }
+}

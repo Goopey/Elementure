@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:skyjadebar"
+    },
+    "1": {
+      "item": "elementure:skyjadebar"
+    },
+    "2": {
+      "item": "elementure:skyjadebar"
+    },
+    "3": {
+      "item": "elementure:skyjadebar"
+    },
+    "5": {
+      "item": "elementure:skyjadebar"
+    },
+    "6": {
+      "item": "elementure:skyjadebar"
+    },
+    "8": {
+      "item": "elementure:skyjadebar"
+    }
+  },
+  "result": {
+    "item": "elementure:skyjadearmor_leggings",
+    "count": 1
+  }
+}

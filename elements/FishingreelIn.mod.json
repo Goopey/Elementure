@@ -1,0 +1,15 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "Z",
+    "keyBindingName": "Reel in fish",
+    "keyBindingCategoryKey": "gameplay",
+    "onKeyPressed": {
+      "name": "FishingreelInOnKeyPressed"
+    },
+    "onKeyReleased": {
+      "name": "FishingreelInOnKeyReleased"
+    }
+  }
+}

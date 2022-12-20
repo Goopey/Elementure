@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/lilypad_plank",
+    "up": "elementure:blocks/lilypad_plank",
+    "north": "elementure:blocks/lilypad_plank",
+    "east": "elementure:blocks/lilypad_plank",
+    "south": "elementure:blocks/lilypad_plank",
+    "west": "elementure:blocks/lilypad_plank",
+    "particle": "elementure:blocks/lilypad_plank"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/crackingice1",
+    "up": "elementure:blocks/crackingice1",
+    "north": "elementure:blocks/crackingice1",
+    "east": "elementure:blocks/crackingice1",
+    "south": "elementure:blocks/crackingice1",
+    "west": "elementure:blocks/crackingice1",
+    "particle": "elementure:blocks/crackingice1"
+  }
+}

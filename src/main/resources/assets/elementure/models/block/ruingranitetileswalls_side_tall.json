@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "elementure:blocks/ruin_granite_tiles",
+    "particle": "elementure:blocks/ruin_granite_tiles"
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 248,
+    "height": 176,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "credits.png",
+          "use1Xscale": true,
+          "name": "credits.png",
+          "x": 89,
+          "y": 34
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Thanks for the music and art :",
+          "color": {
+            "value": -35328,
+            "falpha": 0.0
+          },
+          "name": "Thanks for the music and art :",
+          "x": 93,
+          "y": 69
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Search them up! They're all really cool people.",
+          "color": {
+            "value": -35328,
+            "falpha": 0.0
+          },
+          "name": "Search them up! They're all really cool people.",
+          "x": 91,
+          "y": 194
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Battle Brothers - Monkey Bros",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Battle Brothers - Monkey Bros",
+          "x": 96,
+          "y": 78
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next Page",
+          "displayCondition": {
+            "name": "DeactivateSlot"
+          },
+          "width": 72,
+          "height": 20,
+          "name": "Next Page",
+          "x": 259,
+          "y": 173
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Previous Page",
+          "onClick": {
+            "name": "Creditsopen"
+          },
+          "width": 93,
+          "height": 20,
+          "name": "Previous Page",
+          "x": 95,
+          "y": 173
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Demon Stone - *heavenly choir*",
+          "color": {
+            "value": -16777216,
+            "falpha": 0.0
+          },
+          "name": "Demon Stone - *heavenly choir*",
+          "x": 96,
+          "y": 88
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 4,
+      "sy": 4,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

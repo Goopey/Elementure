@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:dustfluxingot"
+    },
+    "1": {
+      "item": "elementure:dustfluxingot"
+    },
+    "2": {
+      "item": "elementure:dustfluxingot"
+    },
+    "3": {
+      "item": "elementure:dustfluxingot"
+    },
+    "5": {
+      "item": "elementure:dustfluxingot"
+    }
+  },
+  "result": {
+    "item": "elementure:dustfluxarmor_helmet",
+    "count": 1
+  }
+}

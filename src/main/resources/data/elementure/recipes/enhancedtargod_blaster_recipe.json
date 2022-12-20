@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:enhancedtarbomb"
+    },
+    "1": {
+      "item": "elementure:enhancedtarbomb"
+    },
+    "2": {
+      "item": "elementure:enhancedtarbomb"
+    },
+    "3": {
+      "item": "elementure:enhancedtarbomb"
+    },
+    "4": {
+      "item": "elementure:dazzlingingot"
+    },
+    "5": {
+      "item": "elementure:silveringot"
+    }
+  },
+  "result": {
+    "item": "elementure:enhancedtargod_blaster",
+    "count": 1
+  }
+}

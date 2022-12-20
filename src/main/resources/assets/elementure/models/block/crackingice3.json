@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "minecraft_worlds:blocks/crackingice3",
+    "up": "minecraft_worlds:blocks/crackingice3",
+    "north": "minecraft_worlds:blocks/crackingice3",
+    "east": "minecraft_worlds:blocks/crackingice3",
+    "south": "minecraft_worlds:blocks/crackingice3",
+    "west": "minecraft_worlds:blocks/crackingice3",
+    "particle": "minecraft_worlds:blocks/crackingice3"
+  }
+}

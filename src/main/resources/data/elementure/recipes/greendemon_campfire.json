@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "experience": 6,
+  "cookingtime": 400,
+  "ingredient": {
+    "item": "elementure:greendemon"
+  },
+  "result": "elementure:cookedgreendemon"
+}

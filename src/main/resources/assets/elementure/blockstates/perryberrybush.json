@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/perryberrybush"
+    },
+    "facing=east": {
+      "model": "elementure:block/perryberrybush",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/perryberrybush",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/perryberrybush",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Airsoul"
+      },
+      {
+        "value": "CUSTOM:Elementalweb"
+      },
+      {
+        "value": "CUSTOM:Airsoul"
+      },
+      {
+        "value": "CUSTOM:Airsoul"
+      },
+      {
+        "value": "CUSTOM:Silversword"
+      },
+      {
+        "value": "CUSTOM:Airsoul"
+      },
+      {
+        "value": "CUSTOM:Airsoul"
+      },
+      {
+        "value": "CUSTOM:Elementalweb"
+      },
+      {
+        "value": "CUSTOM:Airsoul"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Airsword"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "airswordrecipe",
+    "namespace": "mod"
+  }
+}

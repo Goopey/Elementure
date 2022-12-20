@@ -1,0 +1,53 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Corruptlog"
+      },
+      {
+        "value": "CUSTOM:Netherlog"
+      },
+      {
+        "value": "CUSTOM:Shavednetherlog"
+      },
+      {
+        "value": "CUSTOM:Netherlog6"
+      },
+      {
+        "value": "CUSTOM:Shavednetherlog6"
+      },
+      {
+        "value": "CUSTOM:Flufflog"
+      },
+      {
+        "value": "CUSTOM:StrippedFlufflog"
+      },
+      {
+        "value": "CUSTOM:Flufflogfull"
+      },
+      {
+        "value": "CUSTOM:StrippedFlufflogfull"
+      },
+      {
+        "value": "CUSTOM:LilypadlogFull"
+      },
+      {
+        "value": "CUSTOM:StrippedlilypadlogFull"
+      },
+      {
+        "value": "CUSTOM:Strippedlilypadlog"
+      },
+      {
+        "value": "CUSTOM:Lilypadlog"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "logs",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Greenslimeturf"
+      },
+      {
+        "value": "CUSTOM:Blueslimeturf"
+      },
+      {
+        "value": "CUSTOM:Pinkslimeturf"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "jellybiome_slimeturfs",
+    "namespace": "mod"
+  }
+}

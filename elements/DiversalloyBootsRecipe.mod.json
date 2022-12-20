@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Diversalloy"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Diversalloy"
+      },
+      {
+        "value": "CUSTOM:Diversalloy"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Diversalloy"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DiversalloyArmor.boots"
+    },
+    "name": "diversalloy_boots_recipe",
+    "namespace": "mod"
+  }
+}

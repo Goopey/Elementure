@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/rimebush",
+  "textures": {
+    "all": "elementure:blocks/green_rimebush",
+    "particle": "elementure:blocks/green_rimebush",
+    "0": "elementure:blocks/green_rimebush"
+  }
+}

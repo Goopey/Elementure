@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Silvernugget"
+      },
+      {
+        "value": "Blocks.GLOWSTONE"
+      },
+      {
+        "value": "CUSTOM:Silvernugget"
+      },
+      {
+        "value": "Blocks.OBSIDIAN"
+      },
+      {
+        "value": "CUSTOM:Dazzlingblock"
+      },
+      {
+        "value": "Blocks.OBSIDIAN"
+      },
+      {
+        "value": "Items.FISHING_ROD"
+      },
+      {
+        "value": "Items.LEAD"
+      },
+      {
+        "value": "Items.FISHING_ROD"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Recallaltar"
+    },
+    "name": "recall_altar_recipe",
+    "namespace": "mod"
+  }
+}

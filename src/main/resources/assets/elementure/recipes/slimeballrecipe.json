@@ -1,0 +1,22 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_worlds:seafoampearl"
+    },
+    {
+      "item": "minecraft_worlds:seafoampearl"
+    },
+    {
+      "item": "minecraft_worlds:seafoampearl"
+    },
+    {
+      "item": "minecraft_worlds:seafoampearl"
+    }
+  ],
+  "result": {
+    "item": "minecraft:slime_ball",
+    "count": 1
+  }
+}

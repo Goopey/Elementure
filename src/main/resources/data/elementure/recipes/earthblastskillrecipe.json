@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:skillholder"
+    },
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "elementure:earthsoul"
+    },
+    {
+      "item": "elementure:earthsoul"
+    },
+    {
+      "item": "elementure:earthsoul"
+    }
+  ],
+  "result": {
+    "item": "elementure:earthblastskill",
+    "count": 1
+  }
+}

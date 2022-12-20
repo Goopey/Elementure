@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/pinkrimefan",
+  "textures": {
+    "all": "elementure:blocks/pink_rimefan",
+    "particle": "elementure:blocks/pink_rimefan",
+    "0": "elementure:blocks/pink_rimefan"
+  }
+}

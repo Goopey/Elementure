@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smoking",
+    "xpReward": 1.0,
+    "cookingTime": 100,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "smokingInputStack": {
+      "value": "CUSTOM:Diseasedcod"
+    },
+    "smokingReturnStack": {
+      "value": "Items.COOKED_FISH#0"
+    },
+    "name": "diseasedcod_smoke",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "elementure:block/lilypadplanks_pressureplate"
+    },
+    "powered=true": {
+      "model": "elementure:block/lilypadplanks_pressureplate_down"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/energydioritebricks_slabs"
+    },
+    "type=top": {
+      "model": "elementure:block/energydioritebricks_slabs_top"
+    },
+    "type=double": {
+      "model": "elementure:block/energydioritebricks_slabs_full"
+    }
+  }
+}

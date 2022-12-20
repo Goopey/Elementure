@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:silveringot"
+    },
+    "2": {
+      "item": "elementure:silveringot"
+    },
+    "3": {
+      "item": "elementure:silveringot"
+    },
+    "4": {
+      "item": "elementure:silveringot"
+    },
+    "5": {
+      "item": "elementure:silveringot"
+    },
+    "6": {
+      "item": "elementure:silveringot"
+    },
+    "7": {
+      "item": "elementure:silveringot"
+    },
+    "8": {
+      "item": "elementure:silveringot"
+    }
+  },
+  "result": {
+    "item": "elementure:silverarmor_chestplate",
+    "count": 1
+  }
+}

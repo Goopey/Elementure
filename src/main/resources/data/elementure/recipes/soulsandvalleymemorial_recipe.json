@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:bone_block"
+    },
+    "3": {
+      "item": "minecraft:bone_block"
+    },
+    "4": {
+      "item": "minecraft:glowstone"
+    },
+    "5": {
+      "item": "minecraft:bone_block"
+    },
+    "6": {
+      "item": "minecraft:soul_soil"
+    },
+    "7": {
+      "item": "minecraft:soul_soil"
+    },
+    "8": {
+      "item": "minecraft:soul_soil"
+    }
+  },
+  "result": {
+    "item": "elementure:soulsandvalleymemorial",
+    "count": 1
+  }
+}

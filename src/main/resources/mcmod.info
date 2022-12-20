@@ -1,0 +1,20 @@
+[
+  {
+    "modid": "minecraft_worlds",
+    "name": "Minecraft Worlds",
+    "description": "A whole new game... or is it?",
+    "version": "1.3.0",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "logoFile": "",
+    "mcversion": "1.12.2",
+    "url": "https://mcreator.net/modification/37122/nextworld-mod",
+    "updateUrl": "",
+    "authorList": [
+      "mega1134227"
+    ],
+    "dependencies": [],
+    "dependants": [],
+    "requiredMods": [],
+    "useDependencyInformation": "true"
+  }
+]

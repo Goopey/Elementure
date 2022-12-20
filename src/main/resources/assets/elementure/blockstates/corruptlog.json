@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "elementure:block/corruptlog",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "elementure:block/corruptlog"
+    },
+    "axis=z": {
+      "model": "elementure:block/corruptlog",
+      "x": 90
+    }
+  }
+}

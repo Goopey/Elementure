@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/oceanmemorial"
+    },
+    "facing=east": {
+      "model": "elementure:block/oceanmemorial",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/oceanmemorial",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/oceanmemorial",
+      "y": 270
+    }
+  }
+}

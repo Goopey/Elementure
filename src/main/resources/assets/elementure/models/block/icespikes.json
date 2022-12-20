@@ -1,0 +1,9 @@
+{
+  "parent": "elementure:custom/icespikes",
+  "textures": {
+    "all": "elementure:blocks/icespikes",
+    "particle": "elementure:blocks/icespikes",
+    "0": "elementure:blocks/icespikes",
+    "-1": "elementure:blocks/icespikes"
+  }
+}

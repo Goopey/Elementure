@@ -1,0 +1,36 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "skyjade_axe",
+    "customModelName": "Normal",
+    "name": "Skyjade axe [Air]",
+    "specialInfo": [
+      "Proficient at mining high in the air."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 2,
+    "efficiency": 14.0,
+    "attackSpeed": 0.9,
+    "enchantability": 4,
+    "damageVsEntity": 8.0,
+    "usageCount": 459,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Skyjadebar"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "SkyjadeaxeTrueAir"
+    }
+  }
+}

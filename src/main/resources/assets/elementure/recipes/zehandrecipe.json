@@ -1,0 +1,50 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:quartz_block",
+      "data": 32767
+    },
+    "1": {
+      "item": "minecraft:quartz_block",
+      "data": 32767
+    },
+    "2": {
+      "item": "minecraft:quartz_block",
+      "data": 0
+    },
+    "3": {
+      "item": "minecraft:quartz_block",
+      "data": 32767
+    },
+    "4": {
+      "item": "minecraft:nether_star"
+    },
+    "5": {
+      "item": "minecraft:quartz_block",
+      "data": 32767
+    },
+    "6": {
+      "item": "minecraft:quartz_block",
+      "data": 32767
+    },
+    "7": {
+      "item": "minecraft:quartz_block",
+      "data": 32767
+    },
+    "8": {
+      "item": "minecraft:quartz_block",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:unknown_element",
+    "count": 12
+  }
+}

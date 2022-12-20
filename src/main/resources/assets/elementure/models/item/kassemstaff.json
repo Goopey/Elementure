@@ -1,0 +1,7 @@
+{
+  "parent": "elementure:custom/kassemstaff",
+  "textures": {
+    "0": "elementure:blocks/kassemstaff_texturemap",
+    "particle": "elementure:items/kassemstaff_texturemap"
+  }
+}

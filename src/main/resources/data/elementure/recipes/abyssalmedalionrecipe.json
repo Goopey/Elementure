@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:abyssalemblem"
+    },
+    {
+      "item": "elementure:darksoul"
+    },
+    {
+      "item": "elementure:darksoul"
+    },
+    {
+      "item": "elementure:abyssalemblem"
+    },
+    {
+      "item": "elementure:abyssaldust"
+    },
+    {
+      "item": "elementure:abyssaldust"
+    }
+  ],
+  "result": {
+    "item": "elementure:abyssalmedalion",
+    "count": 1
+  }
+}

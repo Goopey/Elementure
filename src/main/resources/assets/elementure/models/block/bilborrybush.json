@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/bilborry_bush",
+  "textures": {
+    "all": "elementure:blocks/smallbilborrybush",
+    "particle": "elementure:blocks/smallbilborrybush",
+    "0": "elementure:blocks/smallbilborrybush"
+  }
+}

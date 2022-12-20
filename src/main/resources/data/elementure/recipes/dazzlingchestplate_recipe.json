@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:dazzlingingot"
+    },
+    "2": {
+      "item": "elementure:dazzlingingot"
+    },
+    "3": {
+      "item": "elementure:dazzlingingot"
+    },
+    "4": {
+      "item": "elementure:dazzlingingot"
+    },
+    "5": {
+      "item": "elementure:dazzlingingot"
+    },
+    "6": {
+      "item": "elementure:dazzlingingot"
+    },
+    "7": {
+      "item": "elementure:dazzlingingot"
+    },
+    "8": {
+      "item": "elementure:dazzlingingot"
+    }
+  },
+  "result": {
+    "item": "elementure:dazzlingarmor_chestplate",
+    "count": 1
+  }
+}

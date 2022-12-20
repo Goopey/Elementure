@@ -1,0 +1,33 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "dustfluxaxe",
+    "customModelName": "Normal",
+    "name": "Dustflux axe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 2,
+    "efficiency": 9.0,
+    "attackSpeed": 0.9,
+    "enchantability": 2,
+    "damageVsEntity": 9.0,
+    "usageCount": 348,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "DustfluxaxeGather"
+    },
+    "onItemInInventoryTick": {
+      "name": "DustfluxaxeTrueVoid"
+    }
+  }
+}

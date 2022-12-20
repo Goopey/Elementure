@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:ferziumingot"
+    },
+    "2": {
+      "item": "elementure:ferziumingot"
+    },
+    "3": {
+      "item": "elementure:ferziumingot"
+    },
+    "5": {
+      "item": "elementure:ferziumingot"
+    }
+  },
+  "result": {
+    "item": "elementure:ferziumarmor_boots",
+    "count": 1
+  }
+}

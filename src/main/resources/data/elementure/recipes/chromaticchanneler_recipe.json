@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:rainbowingot"
+    },
+    "1": {
+      "item": "elementure:rainbowingot"
+    },
+    "2": {
+      "item": "elementure:rainbowingot"
+    },
+    "3": {
+      "item": "elementure:rainbowingot"
+    },
+    "4": {
+      "item": "minecraft:netherite_block"
+    },
+    "5": {
+      "item": "elementure:rainbowingot"
+    },
+    "6": {
+      "item": "elementure:rainbowingot"
+    },
+    "7": {
+      "item": "elementure:rainbowingot"
+    },
+    "8": {
+      "item": "elementure:rainbowingot"
+    }
+  },
+  "result": {
+    "item": "elementure:chromaticchanneler",
+    "count": 1
+  }
+}

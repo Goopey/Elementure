@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "triggered_sirenheart_texture"
+      },
+      "name": "default"
+    }
+  }
+}

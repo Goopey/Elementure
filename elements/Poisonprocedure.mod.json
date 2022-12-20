@@ -1,0 +1,7 @@
+{
+  "_fv": 34,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables/><block deletable=\"false\" id=\"eO),KtrQ;{bBThC@l+l)\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block id=\"T4svqa+vw,md)=#e.0C1\" type=\"entity_add_potion\"><field name=\"potion\">POISON</field><value name=\"level\"><block id=\"Rmes9U/3xPoJ)6O!jqVm\" type=\"math_number\"><field name=\"NUM\">0</field></block></value><value name=\"duration\"><block id=\"+_spkbsNo*Mh5nu;;Ni{\" type=\"math_number\"><field name=\"NUM\">60</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></next></block></xml>"
+  }
+}

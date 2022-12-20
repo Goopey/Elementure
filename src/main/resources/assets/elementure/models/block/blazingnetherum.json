@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/blazing_netherum",
+    "up": "elementure:blocks/blazing_netherum",
+    "north": "elementure:blocks/blazing_netherum",
+    "east": "elementure:blocks/blazing_netherum",
+    "south": "elementure:blocks/blazing_netherum",
+    "west": "elementure:blocks/blazing_netherum",
+    "particle": "elementure:blocks/blazing_netherum"
+  }
+}

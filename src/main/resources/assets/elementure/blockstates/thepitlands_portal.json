@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "elementure:block/thepitlands_portal_ew"
+    },
+    "axis=x": {
+      "model": "elementure:block/thepitlands_portal_ns"
+    }
+  }
+}

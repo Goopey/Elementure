@@ -1,0 +1,54 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "rime_cormunculus_channeler",
+    "customModelName": "Normal",
+    "name": "Cormunculus Channeler [Light - Water]",
+    "specialInfo": [
+      "Casts a bubbling bright Rime Dart."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 201,
+    "actionSound": {
+      "value": ""
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "RimecormunculusChannelerGlow"
+    },
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "RimecormunculuschannelerConsume"
+    },
+    "useCondition": {
+      "name": "RimecormunculusChannelerGlow"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 6.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelempty",
+    "customBulletModelTexture": "empty_texturemap.png",
+    "onBulletHitsEntity": {
+      "name": "RimecormunculusEffect"
+    },
+    "onBulletFlyingTick": {
+      "name": "RimecormunculusChannelerParticles"
+    }
+  }
+}

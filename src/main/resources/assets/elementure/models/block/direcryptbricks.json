@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/dire_crypt_bricks",
+    "up": "elementure:blocks/dire_crypt_bricks",
+    "north": "elementure:blocks/dire_crypt_bricks",
+    "east": "elementure:blocks/dire_crypt_bricks",
+    "south": "elementure:blocks/dire_crypt_bricks",
+    "west": "elementure:blocks/dire_crypt_bricks",
+    "particle": "elementure:blocks/dire_crypt_bricks"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/crimsonforestmemorial"
+    },
+    "facing=east": {
+      "model": "elementure:block/crimsonforestmemorial",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/crimsonforestmemorial",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/crimsonforestmemorial",
+      "y": 270
+    }
+  }
+}

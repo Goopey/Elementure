@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Energysoul"
+      },
+      {
+        "value": "CUSTOM:Elementalweb"
+      },
+      {
+        "value": "CUSTOM:Energysoul"
+      },
+      {
+        "value": "CUSTOM:Energysoul"
+      },
+      {
+        "value": "CUSTOM:Silversword"
+      },
+      {
+        "value": "CUSTOM:Energysoul"
+      },
+      {
+        "value": "CUSTOM:Energysoul"
+      },
+      {
+        "value": "CUSTOM:Elementalweb"
+      },
+      {
+        "value": "CUSTOM:Energysoul"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Energyblade"
+    },
+    "name": "energybladerecipe",
+    "namespace": "mod"
+  }
+}

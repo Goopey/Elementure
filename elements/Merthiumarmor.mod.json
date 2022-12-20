@@ -1,0 +1,64 @@
+{
+  "_fv": 34,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "merthiumhelmet",
+    "enableBody": true,
+    "textureBody": "merthiumchestplate",
+    "enableLeggings": true,
+    "textureLeggings": "merthiumlegs",
+    "enableBoots": true,
+    "textureBoots": "merthiumboots",
+    "onHelmetTick": {
+      "name": "MerthiumarmorBreathe"
+    },
+    "onBodyTick": {
+      "name": "MerthiumarmorMerthiumFullArmorBonus"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedarmor"
+    },
+    "armorTextureFile": "merthium_",
+    "helmetName": "Merthium Helmet",
+    "bodyName": "Merthium Body",
+    "leggingsName": "Merthium Leggings",
+    "bootsName": "Merthium Boots",
+    "helmetSpecialInfo": [
+      "Full armor effect : gives 20 seconds of water breathing and deals drowning damage to enemies near you when using water essence"
+    ],
+    "bodySpecialInfo": [
+      "Full armor effect : gives 20 seconds of water breathing and deals drowning damage to enemies near you when using water essence"
+    ],
+    "leggingsSpecialInfo": [
+      "Full armor effect : gives 20 seconds of water breathing and deals drowning damage to enemies near you when using water essence"
+    ],
+    "bootsSpecialInfo": [
+      "Full armor effect : gives 20 seconds of water breathing and deals drowning damage to enemies near you when using water essence"
+    ],
+    "helmetModelName": "Default",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 23,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 3,
+    "enchantability": 9,
+    "toughness": 1.2000000000000002,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": ""
+    },
+    "repairItems": []
+  }
+}

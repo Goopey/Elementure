@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:scute"
+    },
+    "2": {
+      "item": "minecraft:scute"
+    },
+    "3": {
+      "item": "minecraft:scute"
+    },
+    "4": {
+      "item": "minecraft:scute"
+    },
+    "5": {
+      "item": "minecraft:scute"
+    },
+    "6": {
+      "item": "minecraft:scute"
+    },
+    "7": {
+      "item": "minecraft:scute"
+    },
+    "8": {
+      "item": "minecraft:scute"
+    }
+  },
+  "result": {
+    "item": "elementure:turtlearmor_chestplate",
+    "count": 1
+  }
+}

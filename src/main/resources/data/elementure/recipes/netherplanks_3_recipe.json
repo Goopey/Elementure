@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:netherlog_6"
+    }
+  ],
+  "result": {
+    "item": "elementure:netherplanks",
+    "count": 4
+  }
+}

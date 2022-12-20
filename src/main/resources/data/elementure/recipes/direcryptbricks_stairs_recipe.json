@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:direcryptbricks"
+    },
+    "3": {
+      "item": "elementure:direcryptbricks"
+    },
+    "4": {
+      "item": "elementure:direcryptbricks"
+    },
+    "6": {
+      "item": "elementure:direcryptbricks"
+    },
+    "7": {
+      "item": "elementure:direcryptbricks"
+    },
+    "8": {
+      "item": "elementure:direcryptbricks"
+    }
+  },
+  "result": {
+    "item": "elementure:direcryptbricks_stairs",
+    "count": 4
+  }
+}

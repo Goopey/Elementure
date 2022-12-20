@@ -1,0 +1,29 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_worlds:skillholder"
+    },
+    {
+      "item": "minecraft_worlds:pitstone"
+    },
+    {
+      "item": "minecraft_worlds:voidsoul"
+    },
+    {
+      "item": "minecraft_worlds:lightsoul"
+    },
+    {
+      "item": "minecraft_worlds:unknown_element"
+    },
+    {
+      "item": "minecraft:dye",
+      "data": 32767
+    }
+  ],
+  "result": {
+    "item": "minecraft_worlds:infinityblastskill",
+    "count": 1
+  }
+}

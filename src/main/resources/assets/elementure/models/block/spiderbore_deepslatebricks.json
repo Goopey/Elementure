@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/spider_bore_deepslate_bricks",
+    "up": "elementure:blocks/spider_bore_deepslate_bricks",
+    "north": "elementure:blocks/spider_bore_deepslate_bricks",
+    "east": "elementure:blocks/spider_bore_deepslate_bricks",
+    "south": "elementure:blocks/spider_bore_deepslate_bricks",
+    "west": "elementure:blocks/spider_bore_deepslate_bricks",
+    "particle": "elementure:blocks/spider_bore_deepslate_bricks"
+  }
+}

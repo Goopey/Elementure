@@ -1,0 +1,54 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "merthium_channeler",
+    "customModelName": "Normal",
+    "name": "Merthium channeler [Water]",
+    "specialInfo": [
+      "Casts a skill that allows you to extract water and dry your targets"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 30,
+    "actionSound": {
+      "value": "block.enchantment_table.use"
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "MerthiumchannelerCanUse"
+    },
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "MerthiumchannelerConsume"
+    },
+    "useCondition": {
+      "name": "MerthiumchannelerCanUse"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 0.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelempty_model",
+    "customBulletModelTexture": "empty_texturemap.png",
+    "onBulletHitsBlock": {
+      "name": "MerthiumchannelerDriesBlock"
+    },
+    "onBulletHitsEntity": {
+      "name": "MerthiumchannelerDryEnnemy"
+    }
+  }
+}

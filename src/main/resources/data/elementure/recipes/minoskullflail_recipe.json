@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    " 45",
+    "6 8"
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:weeping_vines"
+    },
+    "4": {
+      "item": "minecraft:weeping_vines"
+    },
+    "5": {
+      "item": "minecraft:weeping_vines"
+    },
+    "6": {
+      "item": "minecraft:iron_ingot"
+    },
+    "8": {
+      "item": "elementure:minoskulltrophy"
+    }
+  },
+  "result": {
+    "item": "elementure:minoskullflail",
+    "count": 1
+  }
+}

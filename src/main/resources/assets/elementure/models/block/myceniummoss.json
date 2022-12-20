@@ -1,0 +1,10 @@
+{
+  "parent": "elementure:custom/mycenium_moss",
+  "textures": {
+    "all": "elementure:blocks/mycenium_moss",
+    "particle": "elementure:blocks/mycenium_moss",
+    "0": "elementure:blocks/mycenium_moss",
+    "1": "elementure:blocks/mycenium_moss_side",
+    "missing": "elementure:blocks/mycenium_moss"
+  }
+}

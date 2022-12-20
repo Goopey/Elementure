@@ -1,0 +1,7 @@
+{
+  "parent": "elementure:custom/maelstromfighterstick",
+  "textures": {
+    "0": "elementure:blocks/maelstromfighterstick",
+    "particle": "elementure:items/maelstromfighterstick"
+  }
+}

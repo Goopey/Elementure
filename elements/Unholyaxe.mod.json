@@ -1,0 +1,33 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "unholyaxe",
+    "customModelName": "Normal",
+    "name": "Unholy axe [Dark]",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 2,
+    "efficiency": 6.0,
+    "attackSpeed": 0.9,
+    "enchantability": 1,
+    "damageVsEntity": 9.5,
+    "usageCount": 465,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "UnholyaxeGather"
+    },
+    "onItemInInventoryTick": {
+      "name": "UnholyaxeTrueDark"
+    }
+  }
+}

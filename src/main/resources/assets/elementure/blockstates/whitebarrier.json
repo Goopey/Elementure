@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/whitebarrier"
+    },
+    "facing=east": {
+      "model": "elementure:block/whitebarrier",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/whitebarrier",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/whitebarrier",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "elementure:block/whitebarrier",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "elementure:block/whitebarrier",
+      "x": 90
+    }
+  }
+}

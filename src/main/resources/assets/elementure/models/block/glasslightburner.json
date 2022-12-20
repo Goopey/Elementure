@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/glasslightburner",
+  "textures": {
+    "all": "elementure:blocks/glasslightburner",
+    "particle": "elementure:blocks/glasslightburner",
+    "0": "elementure:blocks/glasslightburner"
+  }
+}

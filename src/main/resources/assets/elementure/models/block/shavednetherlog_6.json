@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/nether_log_shaved",
+    "up": "elementure:blocks/nether_log_shaved",
+    "north": "elementure:blocks/nether_log_shaved",
+    "east": "elementure:blocks/nether_log_shaved",
+    "south": "elementure:blocks/nether_log_shaved",
+    "west": "elementure:blocks/nether_log_shaved",
+    "particle": "elementure:blocks/nether_log_shaved"
+  }
+}

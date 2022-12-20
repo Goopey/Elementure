@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "experience": 2,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "elementure:cookable_crabs"
+  },
+  "result": "elementure:cookedcrab"
+}

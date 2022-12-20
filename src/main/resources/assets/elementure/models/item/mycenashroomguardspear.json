@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/mycenashroomguardspear",
+  "textures": {
+    "0": "elementure:blocks/mycena_blue_cap",
+    "1": "elementure:blocks/mushroom_block_side",
+    "particle": "elementure:items/mycena_guard_spear"
+  }
+}

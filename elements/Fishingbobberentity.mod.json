@@ -1,0 +1,26 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:ObsidianbobberEnt"
+      },
+      {
+        "value": "CUSTOM:Custombobber"
+      },
+      {
+        "value": "CUSTOM:Harpoonbullet"
+      },
+      {
+        "value": "CUSTOM:MemorybobberEntity"
+      }
+    ],
+    "name": "fishingbobberentity",
+    "namespace": "forge"
+  }
+}

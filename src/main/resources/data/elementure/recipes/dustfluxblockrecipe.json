@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:dustfluxingot"
+    },
+    "1": {
+      "item": "elementure:dustfluxingot"
+    },
+    "2": {
+      "item": "elementure:dustfluxingot"
+    },
+    "3": {
+      "item": "elementure:dustfluxingot"
+    },
+    "4": {
+      "item": "elementure:dustfluxingot"
+    },
+    "5": {
+      "item": "elementure:dustfluxingot"
+    },
+    "6": {
+      "item": "elementure:dustfluxingot"
+    },
+    "7": {
+      "item": "elementure:dustfluxingot"
+    },
+    "8": {
+      "item": "elementure:dustfluxingot"
+    }
+  },
+  "result": {
+    "item": "elementure:dustfluxblock",
+    "count": 1
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:solarmembrane"
+    },
+    "1": {
+      "item": "elementure:shardedobsidian"
+    },
+    "2": {
+      "item": "elementure:solarmembrane"
+    },
+    "3": {
+      "item": "elementure:solarmembrane"
+    },
+    "4": {
+      "item": "elementure:shardedobsidian"
+    },
+    "5": {
+      "item": "elementure:solarmembrane"
+    },
+    "6": {
+      "item": "minecraft:obsidian"
+    },
+    "7": {
+      "item": "minecraft:netherite_block"
+    },
+    "8": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "elementure:echoberryitem",
+    "count": 1
+  }
+}

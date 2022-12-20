@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:ligniteingot"
+    },
+    "1": {
+      "item": "elementure:ligniteingot"
+    },
+    "2": {
+      "item": "elementure:ligniteingot"
+    },
+    "3": {
+      "item": "elementure:ligniteingot"
+    },
+    "4": {
+      "item": "elementure:ligniteingot"
+    },
+    "5": {
+      "item": "elementure:ligniteingot"
+    },
+    "6": {
+      "item": "elementure:ligniteingot"
+    },
+    "7": {
+      "item": "elementure:ligniteingot"
+    },
+    "8": {
+      "item": "elementure:ligniteingot"
+    }
+  },
+  "result": {
+    "item": "elementure:ligniteblock",
+    "count": 1
+  }
+}

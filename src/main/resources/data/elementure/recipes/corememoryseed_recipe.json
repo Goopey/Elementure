@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat_seeds"
+    },
+    {
+      "item": "elementure:rarememoryfragment"
+    },
+    {
+      "item": "elementure:memoryfragment"
+    },
+    {
+      "item": "elementure:memoryshard"
+    }
+  ],
+  "result": {
+    "item": "elementure:corememoryseeds",
+    "count": 1
+  }
+}

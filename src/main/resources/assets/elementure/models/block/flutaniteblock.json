@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/flutaniteblock",
+    "up": "elementure:blocks/flutaniteblock",
+    "north": "elementure:blocks/flutaniteblock",
+    "east": "elementure:blocks/flutaniteblock",
+    "south": "elementure:blocks/flutaniteblock",
+    "west": "elementure:blocks/flutaniteblock",
+    "particle": "elementure:blocks/flutaniteblock"
+  }
+}

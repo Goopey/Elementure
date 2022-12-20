@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:seafoamaxe"
+    },
+    {
+      "item": "elementure:bluejelly"
+    },
+    {
+      "item": "elementure:bluejelly"
+    },
+    {
+      "item": "elementure:bluejelly"
+    }
+  ],
+  "result": {
+    "item": "elementure:blueseafoamaxe",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/solarlily"
+    },
+    "facing=east": {
+      "model": "elementure:block/solarlily",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/solarlily",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/solarlily",
+      "y": 270
+    }
+  }
+}

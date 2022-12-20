@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:earthsoul"
+    },
+    "1": {
+      "item": "elementure:elementalweb"
+    },
+    "2": {
+      "item": "elementure:earthsoul"
+    },
+    "3": {
+      "item": "elementure:earthsoul"
+    },
+    "4": {
+      "item": "elementure:silversword"
+    },
+    "5": {
+      "item": "elementure:earthsoul"
+    },
+    "6": {
+      "item": "elementure:earthsoul"
+    },
+    "7": {
+      "item": "elementure:elementalweb"
+    },
+    "8": {
+      "item": "elementure:earthsoul"
+    }
+  },
+  "result": {
+    "item": "elementure:earthblade",
+    "count": 1
+  }
+}

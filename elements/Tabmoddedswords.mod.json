@@ -1,0 +1,11 @@
+{
+  "_fv": 34,
+  "_type": "tab",
+  "definition": {
+    "name": "Modded weapons",
+    "icon": {
+      "value": "CUSTOM:Darkgemsword"
+    },
+    "showSearch": false
+  }
+}

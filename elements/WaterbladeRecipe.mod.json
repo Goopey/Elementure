@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Watersoul"
+      },
+      {
+        "value": "CUSTOM:Elementalweb"
+      },
+      {
+        "value": "CUSTOM:Watersoul"
+      },
+      {
+        "value": "CUSTOM:Watersoul"
+      },
+      {
+        "value": "CUSTOM:Silversword"
+      },
+      {
+        "value": "CUSTOM:Watersoul"
+      },
+      {
+        "value": "CUSTOM:Watersoul"
+      },
+      {
+        "value": "CUSTOM:Elementalweb"
+      },
+      {
+        "value": "CUSTOM:Watersoul"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Waterblade"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "waterbladerecipe",
+    "namespace": "mod"
+  }
+}

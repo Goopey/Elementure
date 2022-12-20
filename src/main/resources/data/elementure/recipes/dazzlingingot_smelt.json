@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 3,
+  "cookingtime": 400,
+  "ingredient": {
+    "item": "elementure:shimmeringore"
+  },
+  "result": "elementure:dazzlingingot"
+}

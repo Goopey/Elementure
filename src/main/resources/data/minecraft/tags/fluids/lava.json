@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:corruptdew",
+    "elementure:flowing_corruptdew",
+    "elementure:netherumfluid",
+    "elementure:flowing_netherumfluid",
+    "elementure:silvershoresliquid",
+    "elementure:flowing_silvershoresliquid"
+  ]
+}

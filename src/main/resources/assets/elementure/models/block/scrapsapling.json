@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "elementure:blocks/scrap_sapling",
+    "particle": "elementure:blocks/scrap_sapling"
+  }
+}

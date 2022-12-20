@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/burning_darkstone",
+    "up": "elementure:blocks/burning_darkstone",
+    "north": "elementure:blocks/burning_darkstone",
+    "east": "elementure:blocks/burning_darkstone",
+    "south": "elementure:blocks/burning_darkstone",
+    "west": "elementure:blocks/burning_darkstone",
+    "particle": "elementure:blocks/burning_darkstone"
+  }
+}

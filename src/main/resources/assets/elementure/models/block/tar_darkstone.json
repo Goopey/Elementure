@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/tardarkstone",
+    "up": "elementure:blocks/tardarkstone",
+    "north": "elementure:blocks/tardarkstone",
+    "east": "elementure:blocks/tardarkstone",
+    "south": "elementure:blocks/tardarkstone",
+    "west": "elementure:blocks/tardarkstone",
+    "particle": "elementure:blocks/tardarkstone"
+  }
+}

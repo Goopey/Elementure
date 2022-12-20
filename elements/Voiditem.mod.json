@@ -1,0 +1,35 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Dustfluxsword"
+      },
+      {
+        "value": "CUSTOM:Dustfluxaxe"
+      },
+      {
+        "value": "CUSTOM:Voidblade"
+      },
+      {
+        "value": "CUSTOM:Graniteheavyaxe"
+      },
+      {
+        "value": "CUSTOM:Localisedvacuityskill"
+      },
+      {
+        "value": "CUSTOM:Dustfluxchanneler"
+      },
+      {
+        "value": "CUSTOM:Warpedspear"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "voiditem",
+    "namespace": "forge"
+  }
+}

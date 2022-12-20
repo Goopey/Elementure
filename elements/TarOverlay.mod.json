@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "LOWEST",
+    "components": [],
+    "baseTexture": "tar_background.png",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "TarOverlayIsInTar"
+    },
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

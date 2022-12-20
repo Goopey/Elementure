@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/oldplankslab"
+    },
+    "type=top": {
+      "model": "elementure:block/oldplankslab_top"
+    },
+    "type=double": {
+      "model": "elementure:block/oldplankslab_full"
+    }
+  }
+}

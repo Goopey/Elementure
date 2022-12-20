@@ -1,0 +1,29 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Jellyfloatdark"
+      },
+      {
+        "value": "CUSTOM:Jellyfloatlight"
+      },
+      {
+        "value": "CUSTOM:Jellyfloat"
+      },
+      {
+        "value": "CUSTOM:Jellyfloatslime"
+      },
+      {
+        "value": "CUSTOM:Jellyfloattendril"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "jellybiome_jellyfloat",
+    "namespace": "mod"
+  }
+}

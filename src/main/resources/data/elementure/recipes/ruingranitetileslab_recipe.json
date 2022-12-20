@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:ruingranitetiles"
+    },
+    "1": {
+      "item": "elementure:ruingranitetiles"
+    },
+    "2": {
+      "item": "elementure:ruingranitetiles"
+    }
+  },
+  "result": {
+    "item": "elementure:ruingranitetilesslabs",
+    "count": 6
+  }
+}

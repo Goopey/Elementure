@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:silveringot"
+    },
+    "1": {
+      "item": "elementure:dazzlingingot"
+    },
+    "2": {
+      "item": "elementure:silveringot"
+    },
+    "3": {
+      "item": "elementure:dazzlingingot"
+    },
+    "4": {
+      "item": "minecraft:experience_bottle"
+    },
+    "5": {
+      "item": "elementure:dazzlingingot"
+    },
+    "6": {
+      "item": "elementure:silveringot"
+    },
+    "7": {
+      "item": "elementure:dazzlingingot"
+    },
+    "8": {
+      "item": "elementure:silveringot"
+    }
+  },
+  "result": {
+    "item": "elementure:elementalweb",
+    "count": 1
+  }
+}

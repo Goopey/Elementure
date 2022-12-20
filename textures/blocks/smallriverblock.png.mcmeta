@@ -1,0 +1,10 @@
+{
+    "__comment": "We will have a ctm_version to indicate the version that the json is built for. We will most likely not need it, but who knows? -D ",
+    "ctm":{
+        "ctm_version": 1,
+        "type":"CTM",
+        "textures":[
+            "minecraft_worlds:blocks/smallriverblock_ctm" ///Path to our 32x32 texture that has _ctm.png at the end
+        ]
+    }
+}

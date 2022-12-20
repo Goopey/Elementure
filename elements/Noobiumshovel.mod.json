@@ -1,0 +1,27 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "noobiumshovel",
+    "customModelName": "Normal",
+    "name": "Noobium shovel",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Spade",
+    "harvestLevel": 1,
+    "efficiency": 6.0,
+    "attackSpeed": 2.8000000000000003,
+    "enchantability": 6,
+    "damageVsEntity": 3.0,
+    "usageCount": 997,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

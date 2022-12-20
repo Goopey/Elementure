@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/dry_seafoam",
+    "up": "elementure:blocks/dry_seafoam",
+    "north": "elementure:blocks/dry_seafoam",
+    "east": "elementure:blocks/dry_seafoam",
+    "south": "elementure:blocks/dry_seafoam",
+    "west": "elementure:blocks/dry_seafoam",
+    "particle": "elementure:blocks/dry_seafoam"
+  }
+}

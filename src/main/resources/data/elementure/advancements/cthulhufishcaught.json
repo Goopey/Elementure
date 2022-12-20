@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "elementure:cthulhufish"
+    },
+    "title": {
+      "translate": "advancements.cthulhufishcaught.title"
+    },
+    "description": {
+      "translate": "advancements.cthulhufishcaught.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cthulhufishcaught": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "elementure:cthulhufish"
+            ],
+            "count": {
+              "min": 1,
+              "max": 64
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 40
+  },
+  "parent": "elementure:elementure_fishingadvancement"
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "nano_shrimp_pot_texturemap"
+      },
+      "name": "default"
+    }
+  }
+}

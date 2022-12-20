@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/ruin_granite_1",
+    "up": "elementure:blocks/ruin_granite_1",
+    "north": "elementure:blocks/ruin_granite_1",
+    "east": "elementure:blocks/ruin_granite_1",
+    "south": "elementure:blocks/ruin_granite_1",
+    "west": "elementure:blocks/ruin_granite_1",
+    "particle": "elementure:blocks/ruin_granite_1"
+  }
+}

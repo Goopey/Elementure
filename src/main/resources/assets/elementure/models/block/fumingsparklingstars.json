@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/sparkling_stars",
+  "textures": {
+    "all": "elementure:blocks/sparkling_stars_slate",
+    "particle": "elementure:blocks/sparkling_stars_slate",
+    "main": "elementure:blocks/sparkling_stars_slate"
+  }
+}

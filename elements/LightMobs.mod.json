@@ -1,0 +1,41 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Ascendedaspid"
+      },
+      {
+        "value": "CUSTOM:Brightcandle"
+      },
+      {
+        "value": "CUSTOM:Dragonewt"
+      },
+      {
+        "value": "CUSTOM:Dragonite"
+      },
+      {
+        "value": "CUSTOM:Netherstarvillagerdusty"
+      },
+      {
+        "value": "CUSTOM:Pumpkinmimic"
+      },
+      {
+        "value": "CUSTOM:Kingsknight"
+      },
+      {
+        "value": "CUSTOM:Dizmite"
+      },
+      {
+        "value": "CUSTOM:BubbleOBlue"
+      }
+    ],
+    "name": "light_mobs",
+    "namespace": "forge"
+  }
+}

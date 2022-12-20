@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:aurumingot"
+    },
+    "1": {
+      "item": "elementure:aurumingot"
+    },
+    "2": {
+      "item": "elementure:aurumingot"
+    },
+    "3": {
+      "item": "elementure:aurumingot"
+    },
+    "4": {
+      "item": "elementure:aurumingot"
+    },
+    "5": {
+      "item": "elementure:aurumingot"
+    },
+    "6": {
+      "item": "elementure:aurumingot"
+    },
+    "7": {
+      "item": "elementure:aurumingot"
+    },
+    "8": {
+      "item": "elementure:aurumingot"
+    }
+  },
+  "result": {
+    "item": "elementure:aurumblock",
+    "count": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:ferziumingot"
+    },
+    "1": {
+      "item": "elementure:ferziumingot"
+    },
+    "2": {
+      "item": "elementure:ferziumingot"
+    },
+    "3": {
+      "item": "elementure:ferziumingot"
+    },
+    "5": {
+      "item": "elementure:ferziumingot"
+    }
+  },
+  "result": {
+    "item": "elementure:ferziumarmor_helmet",
+    "count": 1
+  }
+}

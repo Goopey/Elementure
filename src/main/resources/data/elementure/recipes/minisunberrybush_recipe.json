@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:sunberry"
+    },
+    {
+      "item": "elementure:sunberry"
+    },
+    {
+      "item": "elementure:sunberry"
+    },
+    {
+      "item": "elementure:sunberry"
+    }
+  ],
+  "result": {
+    "item": "elementure:minisunberrybush",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:dazzlingblock"
+    }
+  ],
+  "result": {
+    "item": "elementure:dazzlingingot",
+    "count": 9
+  }
+}

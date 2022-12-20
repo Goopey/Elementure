@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "archkassem_staff_texturemap"
+      },
+      "name": "default"
+    }
+  }
+}

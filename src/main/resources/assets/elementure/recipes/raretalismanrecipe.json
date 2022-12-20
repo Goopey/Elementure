@@ -1,0 +1,27 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "   ",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_worlds:energysoul"
+    },
+    "2": {
+      "item": "minecraft_worlds:unknown_element"
+    },
+    "6": {
+      "item": "minecraft_worlds:voidsoul"
+    },
+    "8": {
+      "item": "minecraft_worlds:lightsoul"
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:unknown_element",
+    "count": 1
+  }
+}

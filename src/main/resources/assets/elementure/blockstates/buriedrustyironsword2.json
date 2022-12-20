@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "minecraft_worlds:block/buriedrustyironsword2"
+    },
+    "facing=east": {
+      "model": "minecraft_worlds:block/buriedrustyironsword2",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "minecraft_worlds:block/buriedrustyironsword2",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "minecraft_worlds:block/buriedrustyironsword2",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:BlackstoneGrimace"
+      },
+      {
+        "value": "CUSTOM:Minoskull"
+      },
+      {
+        "value": "EntityIronGolem"
+      },
+      {
+        "value": "EntityPiglinBrute"
+      },
+      {
+        "value": "EntityRavager"
+      },
+      {
+        "value": "EntityVindicator"
+      },
+      {
+        "value": "CUSTOM:Forceobleck"
+      },
+      {
+        "value": "CUSTOM:Oblecklord"
+      }
+    ],
+    "name": "force_mobs",
+    "namespace": "forge"
+  }
+}

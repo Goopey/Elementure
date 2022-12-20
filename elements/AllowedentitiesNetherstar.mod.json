@@ -1,0 +1,194 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "EntityAreaEffectCloud"
+      },
+      {
+        "value": "EntityArmorStand"
+      },
+      {
+        "value": "EntityArrow"
+      },
+      {
+        "value": "EntityBoat"
+      },
+      {
+        "value": "EntityDragonFireball"
+      },
+      {
+        "value": "EntityEnderCrystal"
+      },
+      {
+        "value": "EntityEnderPearl"
+      },
+      {
+        "value": "EntityEvokerFangs"
+      },
+      {
+        "value": "EntityExpBottle"
+      },
+      {
+        "value": "EntityXPOrb"
+      },
+      {
+        "value": "EntityEnderEye"
+      },
+      {
+        "value": "EntityFallingBlock"
+      },
+      {
+        "value": "EntityFireball"
+      },
+      {
+        "value": "EntityFireworkRocket"
+      },
+      {
+        "value": "EntityFishHook"
+      },
+      {
+        "value": "EntityEgg"
+      },
+      {
+        "value": "EntityGolem"
+      },
+      {
+        "value": "EntityHanging"
+      },
+      {
+        "value": "EntityItem"
+      },
+      {
+        "value": "EntityItemFrame"
+      },
+      {
+        "value": "EntityLeashKnot"
+      },
+      {
+        "value": "EntityLightningBolt"
+      },
+      {
+        "value": "EntityMinecart"
+      },
+      {
+        "value": "EntityMinecartChest"
+      },
+      {
+        "value": "EntityMinecartCommandBlock"
+      },
+      {
+        "value": "EntityMinecartContainer"
+      },
+      {
+        "value": "EntityMinecartFurnace"
+      },
+      {
+        "value": "EntityMinecartHopper"
+      },
+      {
+        "value": "EntityMinecartMobSpawner"
+      },
+      {
+        "value": "EntityMinecartTNT"
+      },
+      {
+        "value": "EntityPainting"
+      },
+      {
+        "value": "EntityPotion"
+      },
+      {
+        "value": "EntityShulkerBullet"
+      },
+      {
+        "value": "EntitySmallFireball"
+      },
+      {
+        "value": "EntitySnowball"
+      },
+      {
+        "value": "EntitySpectralArrow"
+      },
+      {
+        "value": "EntityThrowable"
+      },
+      {
+        "value": "EntityTNTPrimed"
+      },
+      {
+        "value": "EntityTrident"
+      },
+      {
+        "value": "EntityWitherSkull"
+      },
+      {
+        "value": "CUSTOM:Dragonite"
+      },
+      {
+        "value": "CUSTOM:Ascendedaspid"
+      },
+      {
+        "value": "CUSTOM:Starryvillagergatherer"
+      },
+      {
+        "value": "CUSTOM:Starryvillagerblacksmith"
+      },
+      {
+        "value": "CUSTOM:Starryvillagerguardian"
+      },
+      {
+        "value": "CUSTOM:Heatseeker"
+      },
+      {
+        "value": "CUSTOM:Crystalcreeper"
+      },
+      {
+        "value": "CUSTOM:Blueblaze"
+      },
+      {
+        "value": "CUSTOM:Crystalhopper"
+      },
+      {
+        "value": "CUSTOM:Largecrystalhopper"
+      },
+      {
+        "value": "CUSTOM:Sny"
+      },
+      {
+        "value": "CUSTOM:Octolank"
+      },
+      {
+        "value": "CUSTOM:NetherumTitan"
+      },
+      {
+        "value": "CUSTOM:Netherumleaper"
+      },
+      {
+        "value": "CUSTOM:Deadscrapguardian"
+      },
+      {
+        "value": "CUSTOM:Scrapguardiansmall"
+      },
+      {
+        "value": "CUSTOM:Scrapguardian"
+      },
+      {
+        "value": "CUSTOM:Netherstarflare"
+      },
+      {
+        "value": "CUSTOM:Netherstarflare2"
+      },
+      {
+        "value": "CUSTOM:EchoBerry"
+      }
+    ],
+    "name": "allowedentities_netherstar",
+    "namespace": "forge"
+  }
+}

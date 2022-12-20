@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Dustfluxingot"
+      },
+      {
+        "value": "CUSTOM:Dustfluxingot"
+      },
+      {
+        "value": "CUSTOM:Dustfluxingot"
+      },
+      {
+        "value": "CUSTOM:Dustfluxingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Dustfluxingot"
+      },
+      {
+        "value": "CUSTOM:Dustfluxingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Dustfluxingot"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Dustfluxarmor.legs"
+    },
+    "smeltingInputStack": {
+      "value": ""
+    },
+    "smeltingReturnStack": {
+      "value": ""
+    },
+    "name": "dustfluxlegsrecipe",
+    "namespace": "mod"
+  }
+}

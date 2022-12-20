@@ -1,0 +1,68 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Netherumcarpet"
+      },
+      {
+        "value": "CUSTOM:Netherleaves"
+      },
+      {
+        "value": "CUSTOM:Scrapleaves"
+      },
+      {
+        "value": "CUSTOM:Densenetherum"
+      },
+      {
+        "value": "CUSTOM:Activenetherum"
+      },
+      {
+        "value": "CUSTOM:Netherum"
+      },
+      {
+        "value": "CUSTOM:Netherstarcrust"
+      },
+      {
+        "value": "CUSTOM:Netherstarcrustpatch"
+      },
+      {
+        "value": "CUSTOM:Blazingnetherum"
+      },
+      {
+        "value": "CUSTOM:Debrisscraps"
+      },
+      {
+        "value": "CUSTOM:Netherlog"
+      },
+      {
+        "value": "CUSTOM:Netherstarcrustshiny"
+      },
+      {
+        "value": "CUSTOM:Netherumshiny"
+      },
+      {
+        "value": "CUSTOM:Activenetherumshiny"
+      },
+      {
+        "value": "CUSTOM:Densenetherumshiny"
+      },
+      {
+        "value": "CUSTOM:Blazingnetherumshiny"
+      },
+      {
+        "value": "CUSTOM:Netherumcarpetshiny"
+      },
+      {
+        "value": "CUSTOM:Netherstarcrustpatchshiny"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "denynetherstarspawn_tag",
+    "namespace": "forge"
+  }
+}

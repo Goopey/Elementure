@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/small_berry_bush",
+  "textures": {
+    "all": "elementure:blocks/smallgobberrybush",
+    "particle": "elementure:blocks/smallgobberrybush",
+    "0": "elementure:blocks/smallcoldberrybush"
+  }
+}

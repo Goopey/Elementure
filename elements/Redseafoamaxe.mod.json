@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "red_seafoam_axe",
+    "customModelName": "Normal",
+    "name": "Red seafoam axe [Water]",
+    "specialInfo": [
+      "The red jelly infused gives it enhanced power."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 1,
+    "efficiency": 6.5,
+    "attackSpeed": 0.72,
+    "enchantability": 2,
+    "damageVsEntity": 10.0,
+    "usageCount": 256,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:SeafoamIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "RedseafoamaxeGather"
+    },
+    "onItemInUseTick": {
+      "name": "RedseafoamaxeTrueWater"
+    }
+  }
+}

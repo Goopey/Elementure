@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:ivoryshard"
+    },
+    "1": {
+      "item": "elementure:ivoryshard"
+    },
+    "2": {
+      "item": "elementure:ivoryshard"
+    },
+    "3": {
+      "item": "elementure:ivoryshard"
+    },
+    "5": {
+      "item": "elementure:ivoryshard"
+    }
+  },
+  "result": {
+    "item": "elementure:ivoryarmor_helmet",
+    "count": 1
+  }
+}

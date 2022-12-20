@@ -1,0 +1,40 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "waterblast",
+    "customModelName": "Normal",
+    "name": "Water blast skill",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.generic.splash"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "WaterblastskillConsume"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 2.5,
+    "bulletKnockback": 4,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelwaterblastskillprojectile",
+    "customBulletModelTexture": "waterblastskillprojectile-texturemap.png"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/lightgrayrimebush",
+  "textures": {
+    "all": "elementure:blocks/lightgray_rimebush",
+    "particle": "elementure:blocks/lightgray_rimebush",
+    "0": "elementure:blocks/lightgray_rimebush"
+  }
+}

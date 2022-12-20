@@ -1,0 +1,56 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Butterflybudfamiliar"
+      },
+      {
+        "value": "CUSTOM:Buzybeefamiliar"
+      },
+      {
+        "value": "CUSTOM:Cosmicslimefamiliar"
+      },
+      {
+        "value": "CUSTOM:Hiddenrunesfamiliar"
+      },
+      {
+        "value": "CUSTOM:Lousyswordfamiliar"
+      },
+      {
+        "value": "CUSTOM:Papyscrownfamiliar"
+      },
+      {
+        "value": "CUSTOM:Soulskullfamiliar"
+      },
+      {
+        "value": "CUSTOM:Sunlighteggfamiliar"
+      },
+      {
+        "value": "CUSTOM:Theninefamiliar"
+      },
+      {
+        "value": "CUSTOM:Tinyclaymanfamiliar"
+      },
+      {
+        "value": "EntityShoulderRiding"
+      },
+      {
+        "value": "EntityTameable"
+      },
+      {
+        "value": "CUSTOM:Cthulhupet"
+      },
+      {
+        "value": "CUSTOM:Starguardianstand"
+      }
+    ],
+    "name": "familiarentities",
+    "namespace": "forge"
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 270,
+    "height": 200,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Absorption",
+          "onClick": {
+            "name": "Absorptionstardemon"
+          },
+          "width": 108,
+          "height": 20,
+          "name": "Absorption",
+          "x": 79,
+          "y": 21
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Fire-resistance",
+          "onClick": {
+            "name": "Firestardemon"
+          },
+          "width": 160,
+          "height": 20,
+          "name": "Fire-resistance",
+          "x": 80,
+          "y": 40
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Haste",
+          "onClick": {
+            "name": "Hastestardemon"
+          },
+          "width": 56,
+          "height": 20,
+          "name": "Haste",
+          "x": 80,
+          "y": 61
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Regeneration",
+          "onClick": {
+            "name": "Healthstardemon"
+          },
+          "width": 132,
+          "height": 20,
+          "name": "Regeneration",
+          "x": 80,
+          "y": 81
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Jump-boost",
+          "onClick": {
+            "name": "Jumpstardemon"
+          },
+          "width": 116,
+          "height": 20,
+          "name": "Jump-boost",
+          "x": 79,
+          "y": 100
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Luck UP! Better loot",
+          "onClick": {
+            "name": "Luckystareffect"
+          },
+          "width": 188,
+          "height": 20,
+          "name": "Luck UP! Better loot",
+          "x": 79,
+          "y": 120
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Resistance",
+          "onClick": {
+            "name": "Resistancestardemon"
+          },
+          "width": 108,
+          "height": 20,
+          "name": "Resistance",
+          "x": 79,
+          "y": 140
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Saturation, no more hunger",
+          "onClick": {
+            "name": "Saturationstardemon"
+          },
+          "width": 264,
+          "height": 20,
+          "name": "Saturation, no more hunger",
+          "x": 79,
+          "y": 160
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Speed",
+          "onClick": {
+            "name": "Speedstardemon"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "Speed",
+          "x": 80,
+          "y": 180
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Strength. POWER!",
+          "onClick": {
+            "name": "Strenghtstareffect"
+          },
+          "width": 160,
+          "height": 20,
+          "name": "Strength. POWER!",
+          "x": 79,
+          "y": 199
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Night-vision",
+          "onClick": {
+            "name": "Visionstardemon"
+          },
+          "width": 116,
+          "height": 20,
+          "name": "Night-vision",
+          "x": 232,
+          "y": 81
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Water-breathing",
+          "onClick": {
+            "name": "Waterstardemon"
+          },
+          "width": 164,
+          "height": 20,
+          "name": "Water-breathing",
+          "x": 183,
+          "y": 140
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "",
+          "width": 0,
+          "height": 20,
+          "name": "",
+          "x": 343,
+          "y": 163
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

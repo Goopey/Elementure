@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Campfire cooking",
+    "xpReward": 6.0,
+    "cookingTime": 400,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "campfireCookingInputStack": {
+      "value": "CUSTOM:Greendemon"
+    },
+    "campfireCookingReturnStack": {
+      "value": "CUSTOM:Cookedgreendemon"
+    },
+    "name": "greendemon_campfire",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft_worlds:mycenashroomitem"
+    },
+    {
+      "item": "minecraft_worlds:mycenashroomitem"
+    },
+    {
+      "item": "minecraft_worlds:mycenashroomitem"
+    }
+  ],
+  "result": {
+    "item": "minecraft_worlds:mycenasprouts",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:brontium"
+    },
+    "2": {
+      "item": "elementure:brontium"
+    },
+    "3": {
+      "item": "elementure:brontium"
+    },
+    "5": {
+      "item": "elementure:brontium"
+    }
+  },
+  "result": {
+    "item": "elementure:brontiumarmor_boots",
+    "count": 1
+  }
+}

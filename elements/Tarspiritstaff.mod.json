@@ -1,0 +1,42 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "tarspirit_staff",
+    "customModelName": "tarspirit_staff:default",
+    "name": "Tar spirit staff [Dark]",
+    "specialInfo": [
+      "Uses dark essence to summon tar spirits"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "toolType": "MultiTool",
+    "harvestLevel": 0,
+    "efficiency": 0.0,
+    "attackSpeed": 1.0,
+    "enchantability": 3,
+    "damageVsEntity": 1.0,
+    "usageCount": 325,
+    "blocksAffected": [],
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "TarspiritstaffGlow"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Tarbomb"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "TarspiritstaffSummon"
+    },
+    "onItemInUseTick": {
+      "name": "TarspiritstaffTrueDark"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "elementure:mycenanalloy"
+    },
+    "2": {
+      "item": "elementure:mycenanmace"
+    },
+    "3": {
+      "item": "elementure:mycenanalloy"
+    },
+    "4": {
+      "item": "elementure:mycenanalloy"
+    },
+    "5": {
+      "item": "elementure:mycenanalloy"
+    },
+    "6": {
+      "item": "elementure:mycenanalloyblock"
+    },
+    "7": {
+      "item": "elementure:mycenanalloy"
+    }
+  },
+  "result": {
+    "item": "elementure:mycenanchanneler",
+    "count": 1
+  }
+}

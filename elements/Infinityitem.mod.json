@@ -1,0 +1,19 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Sleepinggateblade"
+      },
+      {
+        "value": "CUSTOM:Infinityblastskill"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "infinityitem",
+    "namespace": "forge"
+  }
+}

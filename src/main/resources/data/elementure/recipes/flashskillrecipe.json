@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:skillholder"
+    },
+    {
+      "item": "minecraft:torch"
+    },
+    {
+      "item": "elementure:lightsoul"
+    },
+    {
+      "item": "elementure:lightsoul"
+    },
+    {
+      "item": "elementure:lightsoul"
+    }
+  ],
+  "result": {
+    "item": "elementure:flashskill",
+    "count": 1
+  }
+}

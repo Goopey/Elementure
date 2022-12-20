@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/gravel",
+    "up": "elementure:blocks/gravel",
+    "north": "elementure:blocks/gravel",
+    "east": "elementure:blocks/gravel",
+    "south": "elementure:blocks/gravel",
+    "west": "elementure:blocks/gravel",
+    "particle": "elementure:blocks/gravel"
+  }
+}

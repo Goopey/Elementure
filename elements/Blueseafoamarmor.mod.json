@@ -1,0 +1,73 @@
+{
+  "_fv": 34,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "blue_seafoamhelmet",
+    "enableBody": true,
+    "textureBody": "blue_seafoamchestplate",
+    "enableLeggings": true,
+    "textureLeggings": "blue_seafoamlegs",
+    "enableBoots": true,
+    "textureBoots": "blue_seafoamboots",
+    "onBodyTick": {
+      "name": "BlueseafoamarmorFullarmorBonus"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedarmor"
+    },
+    "armorTextureFile": "blueseafoamarmor_",
+    "helmetName": "Blue Seafoam Helmet",
+    "bodyName": "Blue Seafoam Body",
+    "leggingsName": "Blue Seafoam Leggings",
+    "bootsName": "Blue Seafoam Boots",
+    "helmetSpecialInfo": [
+      "Full armor bonus : 15% increase to attack speed"
+    ],
+    "bodySpecialInfo": [
+      "Full armor bonus : 15% increase to attack speed"
+    ],
+    "leggingsSpecialInfo": [
+      "Full armor bonus : 15% increase to attack speed"
+    ],
+    "bootsSpecialInfo": [
+      "Full armor bonus : 15% increase to attack speed"
+    ],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 21,
+    "damageValueHelmet": 2,
+    "damageValueBody": 5,
+    "damageValueLeggings": 4,
+    "damageValueBoots": 2,
+    "enchantability": 11,
+    "toughness": 0.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_turtle"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:SeafoamIngot"
+      }
+    ]
+  }
+}

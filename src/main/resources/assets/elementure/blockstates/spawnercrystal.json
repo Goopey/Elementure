@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/spawnercrystal",
+      "x": 270,
+      "y": 0
+    },
+    "facing=east": {
+      "model": "elementure:block/spawnercrystal",
+      "x": 270,
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/spawnercrystal",
+      "x": 90,
+      "y": 0
+    },
+    "facing=west": {
+      "model": "elementure:block/spawnercrystal",
+      "x": 270,
+      "y": 270
+    },
+    "facing=up": {
+      "model": "elementure:block/spawnercrystal",
+      "x": 180
+    },
+    "facing=down": {
+      "model": "elementure:block/spawnercrystal"
+    }
+  }
+}

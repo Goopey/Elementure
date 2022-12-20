@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "mycena_priest_scepter"
+      },
+      "name": "default"
+    }
+  }
+}

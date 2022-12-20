@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_orientable_trapdoor_top",
+  "textures": {
+    "texture": "elementure:blocks/nether_trap_door",
+    "particle": "elementure:blocks/nether_trap_door"
+  }
+}

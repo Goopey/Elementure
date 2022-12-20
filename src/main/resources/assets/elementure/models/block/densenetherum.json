@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/dense_netherum",
+    "up": "elementure:blocks/dense_netherum",
+    "north": "elementure:blocks/dense_netherum",
+    "east": "elementure:blocks/dense_netherum",
+    "south": "elementure:blocks/dense_netherum",
+    "west": "elementure:blocks/dense_netherum",
+    "particle": "elementure:blocks/dense_netherum"
+  }
+}

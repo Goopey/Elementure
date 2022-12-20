@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/lime_barrier",
+  "textures": {
+    "all": "elementure:blocks/lime_barrier",
+    "particle": "elementure:blocks/lime_barrier",
+    "0": "elementure:blocks/lime_barrier"
+  }
+}

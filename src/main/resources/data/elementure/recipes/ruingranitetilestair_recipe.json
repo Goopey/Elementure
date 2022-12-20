@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:ruingranitetiles"
+    },
+    "3": {
+      "item": "elementure:ruingranitetiles"
+    },
+    "4": {
+      "item": "elementure:ruingranitetiles"
+    },
+    "6": {
+      "item": "elementure:ruingranitetiles"
+    },
+    "7": {
+      "item": "elementure:ruingranitetiles"
+    },
+    "8": {
+      "item": "elementure:ruingranitetiles"
+    }
+  },
+  "result": {
+    "item": "elementure:ruingranitetilesstairs",
+    "count": 4
+  }
+}

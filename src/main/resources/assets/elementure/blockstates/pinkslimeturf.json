@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/pinkslimeturf"
+    },
+    "facing=east": {
+      "model": "elementure:block/pinkslimeturf",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/pinkslimeturf",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/pinkslimeturf",
+      "y": 270
+    }
+  }
+}

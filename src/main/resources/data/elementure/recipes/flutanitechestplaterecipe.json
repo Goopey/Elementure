@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:flutaniteingot"
+    },
+    "2": {
+      "item": "elementure:flutaniteingot"
+    },
+    "3": {
+      "item": "elementure:flutaniteingot"
+    },
+    "4": {
+      "item": "elementure:flutaniteingot"
+    },
+    "5": {
+      "item": "elementure:flutaniteingot"
+    },
+    "6": {
+      "item": "elementure:flutaniteingot"
+    },
+    "7": {
+      "item": "elementure:flutaniteingot"
+    },
+    "8": {
+      "item": "elementure:flutaniteingot"
+    }
+  },
+  "result": {
+    "item": "elementure:flutanitearmor_chestplate",
+    "count": 1
+  }
+}

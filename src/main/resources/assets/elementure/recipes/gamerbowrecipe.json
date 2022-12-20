@@ -1,0 +1,30 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:dye",
+      "data": 32767
+    },
+    "2": {
+      "item": "minecraft:bow"
+    },
+    "3": {
+      "item": "minecraft:dye",
+      "data": 32767
+    },
+    "5": {
+      "item": "minecraft:dye",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:gamerbow",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:netherumfluid",
+    "minecraft:lava"
+  ]
+}

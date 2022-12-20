@@ -1,0 +1,41 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "enhanced_tar_god_piercer",
+    "customModelName": "Normal",
+    "name": "Enhanced tar god piercer [Dark]",
+    "specialInfo": [
+      "A special spear with super-reach",
+      "armor piercing and damage that ramps up with attacks.",
+      "Sprays Dark Flames whenever enough damage has been dealt."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.4000000000000001,
+    "enchantability": 4,
+    "damageVsEntity": 6.0,
+    "usageCount": 724,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Enhancedtarbomb"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "EnhancedTargodpiercerGather"
+    },
+    "onItemInUseTick": {
+      "name": "EnhancedtargodpiercerTrueDark"
+    }
+  }
+}

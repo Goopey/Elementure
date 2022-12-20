@@ -1,0 +1,162 @@
+{
+    "__comment": "Model generated using MrCrayfish's Model Creator (http://mrcrayfish.com/modelcreator/)",
+    "textures": {
+        "0": "blocks/ultibreaker"
+    },
+    "elements": [
+        {
+            "name": "Handle",
+            "from": [ 7.0, 1.5, 5.0 ], 
+            "to": [ 9.0, 8.5, 7.0 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 8.0, 0.0, 9.0, 6.0 ] },
+                "east": { "texture": "#0", "uv": [ 15.0, 3.0, 16.0, 8.0 ] },
+                "south": { "texture": "#0", "uv": [ 15.0, 3.0, 16.0, 7.0 ] },
+                "west": { "texture": "#0", "uv": [ 15.0, 0.0, 16.0, 5.0 ] },
+                "up": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 8.0 ] },
+                "down": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 8.0 ] }
+            }
+        },
+        {
+            "name": "HandleHead",
+            "from": [ 6.2, 8.5, 1.5 ], 
+            "to": [ 9.7, 11.5, 10.5 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 8.0 ] },
+                "east": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 8.0 ] },
+                "south": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 8.0 ] },
+                "west": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 8.0 ] },
+                "up": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 8.0 ] },
+                "down": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 8.0 ] }
+            }
+        },
+        {
+            "name": "MainBlade",
+            "from": [ 7.0, 7.0, 2.5 ], 
+            "to": [ 9.0, 28.0, 9.5 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 2.0, 8.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 2.0, 8.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "BladeMainTop",
+            "from": [ 7.0, 28.0, 4.0 ], 
+            "to": [ 9.0, 32.0, 8.0 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 2.0, 8.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 2.0, 8.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "BladeTop",
+            "from": [ 7.0, 28.0, 3.5 ], 
+            "to": [ 9.0, 31.0, 8.5 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 2.0, 8.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 2.0, 8.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "BladeMinorTop",
+            "from": [ 7.0, 28.0, 3.0 ], 
+            "to": [ 9.0, 30.0, 9.0 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 2.0, 8.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 2.0, 8.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "BladeSide",
+            "from": [ 6.5, 7.0, 3.5 ], 
+            "to": [ 9.5, 25.0, 8.5 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 2.0, 8.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 2.0, 8.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "BladeSideMainTop",
+            "from": [ 6.5, 23.0, 4.0 ], 
+            "to": [ 9.5, 27.0, 8.0 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 2.0, 8.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 2.0, 8.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "BladeSideTop",
+            "from": [ 6.5, 25.0, 4.5 ], 
+            "to": [ 9.5, 28.0, 7.5 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 16.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "BladeSideMinorTop",
+            "from": [ 6.5, 25.0, 5.0 ], 
+            "to": [ 9.5, 29.0, 7.0 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "east": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "south": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "west": { "texture": "#0", "uv": [ 0.0, 0.0, 8.0, 16.0 ] },
+                "up": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+                "down": { "texture": "#0", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+            }
+        },
+        {
+            "name": "HandleHeadMinor",
+            "from": [ 6.0, 7.5, 2.0 ], 
+            "to": [ 10.0, 10.5, 10.0 ], 
+            "rotation": { "origin": [ 8.0, 8.0, 8.0 ], "axis": "x", "angle": -22.5 },
+            "faces": {
+                "north": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 8.0 ] },
+                "east": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 8.0 ] },
+                "south": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 8.0 ] },
+                "west": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 8.0 ] },
+                "up": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 8.0 ] },
+                "down": { "texture": "#0", "uv": [ 8.0, 0.0, 16.0, 8.0 ] }
+            }
+        }
+    ]
+}

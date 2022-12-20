@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/runebrickblockchisel",
+    "up": "elementure:blocks/runebrickblockchisel",
+    "north": "elementure:blocks/runebrickblockchisel",
+    "east": "elementure:blocks/runebrickblockchisel",
+    "south": "elementure:blocks/runebrickblockchisel",
+    "west": "elementure:blocks/runebrickblockchisel",
+    "particle": "elementure:blocks/runebrickblockchisel"
+  }
+}

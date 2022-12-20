@@ -1,0 +1,23 @@
+{
+  "_fv": 34,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Fungal burns",
+    "icon": "mycenashroomsprouts.png",
+    "color": {
+      "value": -13382656,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "MycenansporesInitialexplosion"
+    },
+    "onActiveTick": {
+      "name": "Mycenansporeseffect"
+    }
+  }
+}

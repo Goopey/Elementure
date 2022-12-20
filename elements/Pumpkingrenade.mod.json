@@ -1,0 +1,45 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "pumpkin_grenade",
+    "customModelName": "Normal",
+    "name": "Pumpkin grenade",
+    "specialInfo": [
+      "Throw this to create a small, non-destructive explosion."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "stackSize": 16,
+    "ammoItem": {
+      "value": "CUSTOM:Pumpkingrenade"
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": ""
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 0.5,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Pumpkingrenade"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "PumpkingrenadeExplode"
+    },
+    "onBulletHitsEntity": {
+      "name": "PumpkingrenadeExplode"
+    }
+  }
+}

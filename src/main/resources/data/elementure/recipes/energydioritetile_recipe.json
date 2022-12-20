@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:energydiorite"
+    },
+    {
+      "item": "elementure:energydiorite"
+    },
+    {
+      "item": "elementure:energydiorite"
+    },
+    {
+      "item": "elementure:energydiorite"
+    }
+  ],
+  "result": {
+    "item": "elementure:energydioritetile",
+    "count": 4
+  }
+}

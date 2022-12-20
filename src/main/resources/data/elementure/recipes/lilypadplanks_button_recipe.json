@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:lilypadplanks"
+    }
+  ],
+  "result": {
+    "item": "elementure:lilypadplanks_button",
+    "count": 1
+  }
+}

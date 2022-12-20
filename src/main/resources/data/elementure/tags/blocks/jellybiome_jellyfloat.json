@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:jellyfloat",
+    "elementure:jellyfloatlight",
+    "elementure:jellyfloatslime",
+    "elementure:jellyfloattendril",
+    "elementure:jellyfloatdark"
+  ]
+}

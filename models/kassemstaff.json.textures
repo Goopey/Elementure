@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "kassemstaff_texturemap"
+      },
+      "name": "default"
+    }
+  }
+}

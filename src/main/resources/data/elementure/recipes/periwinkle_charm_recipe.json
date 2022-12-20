@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:periwinkle"
+    },
+    {
+      "item": "elementure:periwinkle"
+    },
+    {
+      "item": "elementure:periwinkle"
+    },
+    {
+      "item": "elementure:periwinkle"
+    },
+    {
+      "item": "elementure:rarewinkle"
+    }
+  ],
+  "result": {
+    "item": "elementure:periwinkle_charm",
+    "count": 1
+  }
+}

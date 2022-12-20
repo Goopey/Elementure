@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/lightbluerimevine",
+  "textures": {
+    "all": "elementure:blocks/lightblue_rimevine",
+    "particle": "elementure:blocks/lightblue_rimevine",
+    "0": "elementure:blocks/lightblue_rimevine"
+  }
+}

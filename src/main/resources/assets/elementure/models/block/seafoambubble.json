@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/seafoam_bubble",
+  "textures": {
+    "all": "elementure:blocks/seafoam_bubble",
+    "particle": "elementure:blocks/seafoam_bubble",
+    "0": "elementure:blocks/seafoam_bubble"
+  }
+}

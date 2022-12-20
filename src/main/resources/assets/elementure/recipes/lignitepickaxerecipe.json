@@ -1,0 +1,30 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_worlds:ligniteingot"
+    },
+    "1": {
+      "item": "minecraft_worlds:ligniteingot"
+    },
+    "2": {
+      "item": "minecraft_worlds:ligniteingot"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:lignitepickaxe",
+    "count": 1
+  }
+}

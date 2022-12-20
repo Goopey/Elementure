@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:lightningandesitebricks"
+    },
+    {
+      "item": "elementure:lightningandesitebricks"
+    },
+    {
+      "item": "elementure:lightningandesitebricks"
+    }
+  ],
+  "result": {
+    "item": "elementure:lightningandesitebricksslabs",
+    "count": 6
+  }
+}

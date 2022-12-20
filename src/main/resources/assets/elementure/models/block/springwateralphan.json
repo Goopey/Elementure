@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/springwater_flowing",
+    "up": "elementure:blocks/springwater_flowing",
+    "north": "elementure:blocks/springwater_flowing",
+    "east": "elementure:blocks/springwater_flowing",
+    "south": "elementure:blocks/springwater_flowing",
+    "west": "elementure:blocks/springwater_flowing",
+    "particle": "elementure:blocks/springwater_flowing"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/ruingranitebricksslabs"
+    },
+    "type=top": {
+      "model": "elementure:block/ruingranitebricksslabs_top"
+    },
+    "type=double": {
+      "model": "elementure:block/ruingranitebricksslabs_full"
+    }
+  }
+}

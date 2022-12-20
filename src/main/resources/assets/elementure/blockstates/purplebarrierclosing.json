@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/purplebarrierclosing"
+    },
+    "facing=east": {
+      "model": "elementure:block/purplebarrierclosing",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/purplebarrierclosing",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/purplebarrierclosing",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "elementure:block/purplebarrierclosing",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "elementure:block/purplebarrierclosing",
+      "x": 90
+    }
+  }
+}

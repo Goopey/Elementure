@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/sharded_glass",
+    "up": "elementure:blocks/sharded_glass",
+    "north": "elementure:blocks/sharded_glass",
+    "east": "elementure:blocks/sharded_glass",
+    "south": "elementure:blocks/sharded_glass",
+    "west": "elementure:blocks/sharded_glass",
+    "particle": "elementure:blocks/sharded_glass"
+  }
+}

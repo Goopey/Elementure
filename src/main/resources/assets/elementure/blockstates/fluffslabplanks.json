@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/fluffslabplanks"
+    },
+    "type=top": {
+      "model": "elementure:block/fluffslabplanks_top"
+    },
+    "type=double": {
+      "model": "elementure:block/fluffslabplanks_full"
+    }
+  }
+}

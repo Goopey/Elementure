@@ -1,0 +1,42 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "green_seafoam_blade",
+    "customModelName": "Normal",
+    "name": "Green seafoam blade [Water]",
+    "specialInfo": [
+      "The green jelly infused makes it enhance healing. It also leaches life from your enemies."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.6,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 321,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:SeafoamIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "GreenseafoambladeGather"
+    },
+    "onItemInInventoryTick": {
+      "name": "GreenseafoambladeHealing"
+    },
+    "onItemInUseTick": {
+      "name": "GreenseafoambladeTrueWater"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/abyssalplanks",
+    "up": "elementure:blocks/abyssalplanks",
+    "north": "elementure:blocks/abyssalplanks",
+    "east": "elementure:blocks/abyssalplanks",
+    "south": "elementure:blocks/abyssalplanks",
+    "west": "elementure:blocks/abyssalplanks",
+    "particle": "elementure:blocks/abyssalplanks"
+  }
+}

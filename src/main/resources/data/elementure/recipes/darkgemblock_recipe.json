@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:darkgem"
+    },
+    {
+      "item": "elementure:darkgem"
+    },
+    {
+      "item": "elementure:darkgem"
+    },
+    {
+      "item": "elementure:darkgem"
+    },
+    {
+      "item": "elementure:darkgem"
+    },
+    {
+      "item": "elementure:darkgem"
+    },
+    {
+      "item": "elementure:darkgem"
+    },
+    {
+      "item": "elementure:darkgem"
+    },
+    {
+      "item": "elementure:darkgem"
+    }
+  ],
+  "result": {
+    "item": "elementure:darkgemblock",
+    "count": 1
+  }
+}

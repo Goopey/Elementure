@@ -1,0 +1,65 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Bigandesiteelemental"
+      },
+      {
+        "value": "CUSTOM:Bigdioriteelemental"
+      },
+      {
+        "value": "CUSTOM:Biggranitelemental"
+      },
+      {
+        "value": "CUSTOM:BlackstoneGrimace"
+      },
+      {
+        "value": "CUSTOM:Coalpuck"
+      },
+      {
+        "value": "CUSTOM:Dioriteelemental"
+      },
+      {
+        "value": "CUSTOM:Graniteelemental"
+      },
+      {
+        "value": "CUSTOM:Smallgraniteelemental"
+      },
+      {
+        "value": "CUSTOM:Andesiteelemental"
+      },
+      {
+        "value": "CUSTOM:Statueprotector"
+      },
+      {
+        "value": "CUSTOM:Statuewraith"
+      },
+      {
+        "value": "CUSTOM:Weakandesiteelemental"
+      },
+      {
+        "value": "CUSTOM:Weakdioriteelemental"
+      },
+      {
+        "value": "EntityIronGolem"
+      },
+      {
+        "value": "EntitySilverfish"
+      },
+      {
+        "value": "CUSTOM:Netherquartzcharger"
+      },
+      {
+        "value": "CUSTOM:Armoredturtle"
+      }
+    ],
+    "name": "earth_mobs",
+    "namespace": "forge"
+  }
+}

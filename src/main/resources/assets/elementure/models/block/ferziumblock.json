@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/ferziumblock",
+    "up": "elementure:blocks/ferziumblock",
+    "north": "elementure:blocks/ferziumblock",
+    "east": "elementure:blocks/ferziumblock",
+    "south": "elementure:blocks/ferziumblock",
+    "west": "elementure:blocks/ferziumblock",
+    "particle": "elementure:blocks/ferziumblock"
+  }
+}

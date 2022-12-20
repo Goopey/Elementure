@@ -1,0 +1,54 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "charged_channeler",
+    "customModelName": "Normal",
+    "name": "Charged channeler [Lightning]",
+    "specialInfo": [
+      "Allows you to cast an electrifying lightning bolt on your enemies which electrocutes them and zaps around more."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 51,
+    "actionSound": {
+      "value": "block.enchantment_table.use"
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "ChargedchannelerCanUse"
+    },
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "ChargedchannelerConsume"
+    },
+    "useCondition": {
+      "name": "ChargedchannelerCanUse"
+    },
+    "bulletPower": 1.4000000000000001,
+    "bulletDamage": 3.7,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelempty",
+    "customBulletModelTexture": "empty_texturemap.png",
+    "onBulletHitsEntity": {
+      "name": "ChargedchannelerEffect"
+    },
+    "onBulletFlyingTick": {
+      "name": "ChargedchannelerElectricParticles"
+    }
+  }
+}

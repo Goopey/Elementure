@@ -1,0 +1,48 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:leaves",
+      "data": 32767
+    },
+    "1": {
+      "item": "minecraft_worlds:crystal"
+    },
+    "2": {
+      "item": "minecraft:leaves",
+      "data": 32767
+    },
+    "3": {
+      "item": "minecraft:leaves",
+      "data": 32767
+    },
+    "4": {
+      "item": "minecraft_worlds:crystal"
+    },
+    "5": {
+      "item": "minecraft:leaves",
+      "data": 32767
+    },
+    "6": {
+      "item": "minecraft:leaves",
+      "data": 32767
+    },
+    "7": {
+      "item": "minecraft_worlds:crystal"
+    },
+    "8": {
+      "item": "minecraft:leaves",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:unknown_element",
+    "count": 4
+  }
+}

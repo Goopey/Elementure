@@ -1,0 +1,25 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Ruingranite"
+      },
+      {
+        "value": "CUSTOM:Polishedruingranite"
+      },
+      {
+        "value": "CUSTOM:Chiseledruinedgranite"
+      },
+      {
+        "value": "CUSTOM:Dustfluxore"
+      }
+    ],
+    "functions": [],
+    "name": "ruingranitebiomeblocks",
+    "namespace": "mod"
+  }
+}

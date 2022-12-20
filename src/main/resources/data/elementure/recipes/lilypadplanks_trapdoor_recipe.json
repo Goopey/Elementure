@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:lilypadplanks"
+    },
+    "1": {
+      "item": "elementure:lilypadplanks"
+    },
+    "2": {
+      "item": "elementure:lilypadplanks"
+    },
+    "3": {
+      "item": "elementure:lilypadplanks"
+    },
+    "4": {
+      "item": "elementure:lilypadplanks"
+    },
+    "5": {
+      "item": "elementure:lilypadplanks"
+    }
+  },
+  "result": {
+    "item": "elementure:lilypadplanks_trapdoor",
+    "count": 2
+  }
+}

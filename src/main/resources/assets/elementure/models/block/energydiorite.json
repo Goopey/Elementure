@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/energy_diorite_1",
+    "up": "elementure:blocks/energy_diorite_1",
+    "north": "elementure:blocks/energy_diorite_1",
+    "east": "elementure:blocks/energy_diorite_1",
+    "south": "elementure:blocks/energy_diorite_1",
+    "west": "elementure:blocks/energy_diorite_1",
+    "particle": "elementure:blocks/energy_diorite_1"
+  }
+}

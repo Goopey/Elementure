@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/jellyfloat_tendril",
+  "textures": {
+    "all": "elementure:blocks/jellyfloat_tendril",
+    "particle": "elementure:blocks/jellyfloat_tendril",
+    "0": "elementure:blocks/jellyfloat_tendril"
+  }
+}

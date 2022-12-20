@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "sirenheart_texture"
+      },
+      "name": "default"
+    }
+  }
+}

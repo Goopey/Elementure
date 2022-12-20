@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "elementure:direcryptbricks"
+  },
+  "result": "elementure:direcryptbricks_wall"
+}

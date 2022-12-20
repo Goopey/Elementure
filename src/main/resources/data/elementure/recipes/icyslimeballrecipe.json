@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:icyslime"
+    }
+  ],
+  "result": {
+    "item": "elementure:icyslimeball",
+    "count": 9
+  }
+}

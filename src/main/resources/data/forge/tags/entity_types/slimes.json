@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:obleckcleric",
+    "elementure:oblecklord",
+    "elementure:mindobleck",
+    "elementure:pumpkinmimic",
+    "elementure:soulobleck",
+    "elementure:obleckturret",
+    "slime",
+    "elementure:obleck",
+    "magma_cube",
+    "elementure:forceobleck"
+  ]
+}

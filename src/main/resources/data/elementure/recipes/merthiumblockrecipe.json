@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:merthiumingot"
+    },
+    "1": {
+      "item": "elementure:merthiumingot"
+    },
+    "2": {
+      "item": "elementure:merthiumingot"
+    },
+    "3": {
+      "item": "elementure:merthiumingot"
+    },
+    "4": {
+      "item": "elementure:merthiumingot"
+    },
+    "5": {
+      "item": "elementure:merthiumingot"
+    },
+    "6": {
+      "item": "elementure:merthiumingot"
+    },
+    "7": {
+      "item": "elementure:merthiumingot"
+    },
+    "8": {
+      "item": "elementure:merthiumingot"
+    }
+  },
+  "result": {
+    "item": "elementure:merthiumblock",
+    "count": 1
+  }
+}

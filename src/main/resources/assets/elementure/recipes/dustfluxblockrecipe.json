@@ -1,0 +1,42 @@
+{
+  "group": "minecraft_worlds",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft_worlds:dustfluxingot"
+    },
+    "1": {
+      "item": "minecraft_worlds:dustfluxingot"
+    },
+    "2": {
+      "item": "minecraft_worlds:dustfluxingot"
+    },
+    "3": {
+      "item": "minecraft_worlds:dustfluxingot"
+    },
+    "4": {
+      "item": "minecraft_worlds:dustfluxingot"
+    },
+    "5": {
+      "item": "minecraft_worlds:dustfluxingot"
+    },
+    "6": {
+      "item": "minecraft_worlds:dustfluxingot"
+    },
+    "7": {
+      "item": "minecraft_worlds:dustfluxingot"
+    },
+    "8": {
+      "item": "minecraft_worlds:dustfluxingot"
+    }
+  },
+  "result": {
+    "item": "minecraft_worlds:dustfluxblock",
+    "count": 1
+  }
+}

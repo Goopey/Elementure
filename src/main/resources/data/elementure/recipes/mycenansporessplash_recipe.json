@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "elementure:mycenaroamerscale"
+    },
+    {
+      "item": "elementure:mycenasprouts"
+    },
+    {
+      "item": "elementure:mycenasprouts"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    }
+  ],
+  "result": {
+    "item": "elementure:mycenansporessplash",
+    "count": 1
+  }
+}

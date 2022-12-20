@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:stone"
+    },
+    "3": {
+      "item": "minecraft:stone"
+    },
+    "4": {
+      "item": "elementure:memoryshard"
+    },
+    "5": {
+      "item": "minecraft:stone"
+    },
+    "6": {
+      "item": "minecraft:stone_bricks"
+    },
+    "7": {
+      "item": "minecraft:chiseled_stone_bricks"
+    },
+    "8": {
+      "item": "minecraft:stone_bricks"
+    }
+  },
+  "result": {
+    "item": "elementure:stonememorymatrix",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/abyssalcorruption",
+    "up": "elementure:blocks/corruptgrasstop",
+    "north": "elementure:blocks/corruptgrass",
+    "east": "elementure:blocks/corruptgrass",
+    "south": "elementure:blocks/corruptgrass",
+    "west": "elementure:blocks/corruptgrass",
+    "particle": "elementure:blocks/abyssalcorruption"
+  }
+}

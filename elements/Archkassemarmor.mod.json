@@ -1,0 +1,69 @@
+{
+  "_fv": 34,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "archkassemcrown_item",
+    "enableBody": true,
+    "textureBody": "archkassemcloak_item",
+    "enableLeggings": false,
+    "textureLeggings": "",
+    "enableBoots": false,
+    "textureBoots": "",
+    "onBodyTick": {
+      "name": "ArchkassemcloakHarvestFire"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedarmor"
+    },
+    "armorTextureFile": "empty_",
+    "helmetName": "Archkassem crown",
+    "bodyName": "Archkassem Cloak",
+    "leggingsName": "Archkassemarmor Leggings",
+    "bootsName": "Archkassemarmor Boots",
+    "helmetSpecialInfo": [
+      "The dapperest."
+    ],
+    "bodySpecialInfo": [
+      "Boosts fire collection."
+    ],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Modelarchkassemcrown",
+    "helmetModelPart": "bb_main",
+    "helmetModelTexture": "archkassemcrown.png",
+    "bodyModelName": "Modelarchkassem_cloak",
+    "bodyModelPart": "bb_main",
+    "armsModelPartL": "bone",
+    "armsModelPartR": "bone",
+    "bodyModelTexture": "archkassem_cloak.png",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 35,
+    "damageValueHelmet": 3,
+    "damageValueBody": 5,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 11,
+    "toughness": 1.1,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_leather"
+    },
+    "repairItems": [
+      {
+        "value": "Items.PHANTOM_MEMBRANE"
+      }
+    ]
+  }
+}

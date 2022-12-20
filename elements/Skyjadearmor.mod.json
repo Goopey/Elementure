@@ -1,0 +1,73 @@
+{
+  "_fv": 34,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "skyjade_helmet",
+    "enableBody": true,
+    "textureBody": "skyjade_chestplate",
+    "enableLeggings": true,
+    "textureLeggings": "skyjade_legs",
+    "enableBoots": true,
+    "textureBoots": "skyjade_boots",
+    "onBodyTick": {
+      "name": "SkyjadearmorFullarmorBonus"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedarmor"
+    },
+    "armorTextureFile": "skyjade_",
+    "helmetName": "Skyjade Helmet",
+    "bodyName": "Skyjade Body",
+    "leggingsName": "Skyjade Leggings",
+    "bootsName": "Skyjade Boots",
+    "helmetSpecialInfo": [
+      "Full armor effect : makes you fall slowly and makes regular clouds jump pads"
+    ],
+    "bodySpecialInfo": [
+      "Full armor effect : makes you fall slowly and makes regular clouds jump pads"
+    ],
+    "leggingsSpecialInfo": [
+      "Full armor effect : makes you fall slowly and makes regular clouds jump pads"
+    ],
+    "bootsSpecialInfo": [
+      "Full armor effect : makes you fall slowly and makes regular clouds jump pads"
+    ],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "Arms L",
+    "armsModelPartR": "Arms R",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 34,
+    "damageValueHelmet": 2,
+    "damageValueBody": 6,
+    "damageValueLeggings": 5,
+    "damageValueBoots": 2,
+    "enchantability": 13,
+    "toughness": 1.0,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_diamond"
+    },
+    "repairItems": [
+      {
+        "value": "CUSTOM:Skyjadebar"
+      }
+    ]
+  }
+}

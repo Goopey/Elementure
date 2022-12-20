@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "elementure:blocks/nether_planks",
+    "particle": "elementure:blocks/nether_planks"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:gobberry"
+    },
+    {
+      "item": "elementure:gobberry"
+    },
+    {
+      "item": "elementure:gobberry"
+    },
+    {
+      "item": "elementure:gobberry"
+    }
+  ],
+  "result": {
+    "item": "elementure:minigobberrybush",
+    "count": 1
+  }
+}

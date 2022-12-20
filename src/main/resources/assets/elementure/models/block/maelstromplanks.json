@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/maelstromplanks",
+    "up": "elementure:blocks/maelstromplanks",
+    "north": "elementure:blocks/maelstromplanks",
+    "east": "elementure:blocks/maelstromplanks",
+    "south": "elementure:blocks/maelstromplanks",
+    "west": "elementure:blocks/maelstromplanks",
+    "particle": "elementure:blocks/maelstromplanks"
+  }
+}

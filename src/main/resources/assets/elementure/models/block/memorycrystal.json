@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/hpristal",
+    "up": "elementure:blocks/hpristal",
+    "north": "elementure:blocks/hpristal",
+    "east": "elementure:blocks/hpristal",
+    "south": "elementure:blocks/hpristal",
+    "west": "elementure:blocks/hpristal",
+    "particle": "elementure:blocks/hpristal"
+  }
+}

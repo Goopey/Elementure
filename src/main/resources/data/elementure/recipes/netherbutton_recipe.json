@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:netherplanks"
+    }
+  },
+  "result": {
+    "item": "elementure:netherbutton",
+    "count": 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:fluffplanks"
+    }
+  ],
+  "result": {
+    "item": "elementure:fluffplankbutton",
+    "count": 1
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Lightningsoul"
+      },
+      {
+        "value": "CUSTOM:Elementalweb"
+      },
+      {
+        "value": "CUSTOM:Lightningsoul"
+      },
+      {
+        "value": "CUSTOM:Lightningsoul"
+      },
+      {
+        "value": "CUSTOM:Silversword"
+      },
+      {
+        "value": "CUSTOM:Lightningsoul"
+      },
+      {
+        "value": "CUSTOM:Lightningsoul"
+      },
+      {
+        "value": "CUSTOM:Elementalweb"
+      },
+      {
+        "value": "CUSTOM:Lightningsoul"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Lightningblade"
+    },
+    "name": "lightningbladerecipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:skillholder"
+    },
+    {
+      "item": "minecraft:coal"
+    },
+    {
+      "item": "elementure:energysoul"
+    },
+    {
+      "item": "elementure:energysoul"
+    },
+    {
+      "item": "elementure:energysoul"
+    }
+  ],
+  "result": {
+    "item": "elementure:energyblastskill",
+    "count": 1
+  }
+}

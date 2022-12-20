@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:skyjadebar"
+    },
+    "1": {
+      "item": "elementure:skyjadebar"
+    },
+    "2": {
+      "item": "elementure:skyjadebar"
+    },
+    "3": {
+      "item": "elementure:skyjadebar"
+    },
+    "4": {
+      "item": "elementure:skyjadebar"
+    },
+    "5": {
+      "item": "elementure:skyjadebar"
+    },
+    "6": {
+      "item": "elementure:skyjadebar"
+    },
+    "7": {
+      "item": "elementure:skyjadebar"
+    },
+    "8": {
+      "item": "elementure:skyjadebar"
+    }
+  },
+  "result": {
+    "item": "elementure:skyjadeblock",
+    "count": 1
+  }
+}

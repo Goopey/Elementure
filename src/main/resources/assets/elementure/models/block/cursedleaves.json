@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/cursedleaves",
+    "up": "elementure:blocks/cursedleaves",
+    "north": "elementure:blocks/cursedleaves",
+    "east": "elementure:blocks/cursedleaves",
+    "south": "elementure:blocks/cursedleaves",
+    "west": "elementure:blocks/cursedleaves",
+    "particle": "elementure:blocks/cursedleaves"
+  }
+}

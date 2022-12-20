@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 2,
+  "cookingtime": 200,
+  "ingredient": {
+    "tag": "elementure:cookable_crabs"
+  },
+  "result": "elementure:cookedcrab"
+}

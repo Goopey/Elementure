@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "elementure:blocks/energy_diorite_bricks",
+    "top": "elementure:blocks/energy_diorite_bricks",
+    "side": "elementure:blocks/energy_diorite_bricks"
+  }
+}

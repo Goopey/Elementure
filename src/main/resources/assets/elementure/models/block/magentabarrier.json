@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/magenta_barrier",
+  "textures": {
+    "all": "elementure:blocks/magenta_barrier",
+    "particle": "elementure:blocks/magenta_barrier",
+    "0": "elementure:blocks/magenta_barrier"
+  }
+}

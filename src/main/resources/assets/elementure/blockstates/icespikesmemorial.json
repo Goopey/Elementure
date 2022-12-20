@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/icespikesmemorial"
+    },
+    "facing=east": {
+      "model": "elementure:block/icespikesmemorial",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/icespikesmemorial",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/icespikesmemorial",
+      "y": 270
+    }
+  }
+}

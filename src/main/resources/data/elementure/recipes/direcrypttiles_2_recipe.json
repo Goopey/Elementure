@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:direcryptbricks_2"
+    }
+  ],
+  "result": {
+    "item": "elementure:direcrypttiles_2",
+    "count": 1
+  }
+}

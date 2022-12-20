@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/light_blue_barrier",
+  "textures": {
+    "all": "elementure:blocks/light_blue_barrier",
+    "particle": "elementure:blocks/light_blue_barrier",
+    "0": "elementure:blocks/light_blue_barrier"
+  }
+}

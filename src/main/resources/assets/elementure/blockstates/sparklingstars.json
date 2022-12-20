@@ -1,0 +1,31 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "elementure:block/sparklingstars",
+      "x": 270,
+      "y": 0
+    },
+    "facing=west": {
+      "model": "elementure:block/sparklingstars",
+      "x": 270,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "elementure:block/sparklingstars",
+      "x": 90,
+      "y": 0
+    },
+    "facing=east": {
+      "model": "elementure:block/sparklingstars",
+      "x": 270,
+      "y": 270
+    },
+    "facing=down": {
+      "model": "elementure:block/sparklingstars",
+      "x": 180
+    },
+    "facing=up": {
+      "model": "elementure:block/sparklingstars"
+    }
+  }
+}

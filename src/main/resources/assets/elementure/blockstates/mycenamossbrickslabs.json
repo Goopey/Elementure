@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/mycenamossbrickslabs"
+    },
+    "type=top": {
+      "model": "elementure:block/mycenamossbrickslabs_top"
+    },
+    "type=double": {
+      "model": "elementure:block/mycenamossbrickslabs_full"
+    }
+  }
+}

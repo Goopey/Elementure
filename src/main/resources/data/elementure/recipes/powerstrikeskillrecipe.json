@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:skillholder"
+    },
+    {
+      "item": "minecraft:tnt"
+    },
+    {
+      "item": "minecraft:arrow"
+    },
+    {
+      "item": "elementure:voidsoul"
+    },
+    {
+      "item": "elementure:voidsoul"
+    },
+    {
+      "item": "elementure:energysoul"
+    }
+  ],
+  "result": {
+    "item": "elementure:powerstrikeskill",
+    "count": 1
+  }
+}

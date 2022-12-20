@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:diversalloy"
+    },
+    "1": {
+      "item": "elementure:diversalloy"
+    },
+    "2": {
+      "item": "elementure:diversalloy"
+    },
+    "3": {
+      "item": "elementure:diversalloy"
+    },
+    "5": {
+      "item": "elementure:diversalloy"
+    },
+    "6": {
+      "item": "elementure:diversalloy"
+    },
+    "8": {
+      "item": "elementure:diversalloy"
+    }
+  },
+  "result": {
+    "item": "elementure:diversalloy_armor_leggings",
+    "count": 1
+  }
+}

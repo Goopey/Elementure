@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:ivoryshard"
+    },
+    "2": {
+      "item": "elementure:ivoryshard"
+    },
+    "3": {
+      "item": "elementure:ivoryshard"
+    },
+    "4": {
+      "item": "elementure:ivoryshard"
+    },
+    "5": {
+      "item": "elementure:ivoryshard"
+    },
+    "6": {
+      "item": "elementure:ivoryshard"
+    },
+    "7": {
+      "item": "elementure:ivoryshard"
+    },
+    "8": {
+      "item": "elementure:ivoryshard"
+    }
+  },
+  "result": {
+    "item": "elementure:ivoryarmor_chestplate",
+    "count": 1
+  }
+}

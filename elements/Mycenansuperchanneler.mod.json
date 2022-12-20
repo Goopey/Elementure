@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "mycenan_super_channeler",
+    "customModelName": "Normal",
+    "name": "Mycenan super-channeler [Earth]",
+    "specialInfo": [
+      "Throws a spore bomb that infects affected enemies with spore growths that explode into other spore bombs that also inflict targets with spore growths"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 61,
+    "actionSound": {
+      "value": "CUSTOM:vengefulspiritskillsound"
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "MycenansuperchannelerCanUse"
+    },
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "MycenansuperchannelerConsume"
+    },
+    "useCondition": {
+      "name": "MycenansuperchannelerCanUse"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 2.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Mycenafumoonmushroom"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsEntity": {
+      "name": "MycenansuperchannelerEffect"
+    }
+  }
+}

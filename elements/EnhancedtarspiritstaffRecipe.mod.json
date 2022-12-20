@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Enhancedtarbomb"
+      },
+      {
+        "value": "CUSTOM:Enhancedtarbomb"
+      },
+      {
+        "value": "CUSTOM:Enhancedtarbomb"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Dazzlingingot"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Enhancedtarbomb"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Enhancedtarspiritstaff"
+    },
+    "name": "enhancedtarspiritstaff_recipe",
+    "namespace": "mod"
+  }
+}

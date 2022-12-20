@@ -1,0 +1,261 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 126,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": -20,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 132,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 132,
+          "y": 80
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 186,
+          "y": 62
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 186,
+          "y": 80
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 150,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 168,
+          "y": 71
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #6",
+          "x": 258,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_small_texture.png",
+          "use1Xscale": false,
+          "name": "inventory_slot_small_texture.png",
+          "x": 255,
+          "y": 68
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "jar.png",
+          "use1Xscale": false,
+          "name": "jar.png",
+          "x": 151,
+          "y": 72
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rime_essence_symbol.png",
+          "use1Xscale": false,
+          "name": "rime_essence_symbol.png",
+          "x": 169,
+          "y": 72
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diverscrown_meter_empty.png",
+          "use1Xscale": false,
+          "name": "diverscrown_meter_empty.png",
+          "x": 207,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diverscrown_meter_1.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GlasslightbrewerGUINode1Condition"
+          },
+          "name": "diverscrown_meter_1.png",
+          "x": 207,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diverscrown_meter_2.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GlasslightbrewerGUINode2Conditon"
+          },
+          "name": "diverscrown_meter_2.png",
+          "x": 207,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diverscrown_meter_3.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GlasslightbrewerGUINode3Condition"
+          },
+          "name": "diverscrown_meter_3.png",
+          "x": 207,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diverscrown_meter_4.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GlasslightbrewerGUINode4Condition"
+          },
+          "name": "diverscrown_meter_4.png",
+          "x": 207,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diverscrown_meter_5.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GlasslightbrewerGUINode5Condition"
+          },
+          "name": "diverscrown_meter_5.png",
+          "x": 207,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diverscrown_meter_6.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GlasslightbrewerGUINode6Condition"
+          },
+          "name": "diverscrown_meter_6.png",
+          "x": 207,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diverscrown_meter_7.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GlasslightbrewerGUINode7Condition"
+          },
+          "name": "diverscrown_meter_7.png",
+          "x": 207,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "diverscrown_meter_full.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "GlasslightbrewerGUINode8Condition"
+          },
+          "name": "diverscrown_meter_full.png",
+          "x": 207,
+          "y": 71
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 9,
+      "sy": 9,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

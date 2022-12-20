@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "harpoon",
+    "customModelName": "Normal",
+    "name": "Harpoon",
+    "specialInfo": [
+      "Used to fish and attack."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Axe",
+    "harvestLevel": 0,
+    "efficiency": 0.0,
+    "attackSpeed": 1.6,
+    "enchantability": 3,
+    "damageVsEntity": 7.0,
+    "usageCount": 217,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "HarpoonSend"
+    },
+    "onItemInInventoryTick": {
+      "name": "HarpoonUsedKeepLine"
+    }
+  }
+}

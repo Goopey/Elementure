@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "elementure:blocks/rare_memory_plant_2",
+    "particle": "elementure:blocks/rare_memory_plant_2"
+  }
+}

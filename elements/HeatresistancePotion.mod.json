@@ -1,0 +1,21 @@
+{
+  "_fv": 34,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Potion of Greater Fire Resistance",
+    "splashName": "Splash Potion of Greater Fire Resistance",
+    "lingeringName": "Lingering Potion of Greater Fire Resistance",
+    "arrowName": "Arrow of Greater Fire Resistance",
+    "effects": [
+      {
+        "effect": {
+          "value": "CUSTOM:Heatresistance"
+        },
+        "duration": 1200,
+        "amplifier": 0,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:seafoam_ingot"
+    },
+    "2": {
+      "item": "elementure:seafoam_ingot"
+    },
+    "3": {
+      "item": "elementure:seafoam_ingot"
+    },
+    "5": {
+      "item": "elementure:seafoam_ingot"
+    }
+  },
+  "result": {
+    "item": "elementure:seafoamarmor_boots",
+    "count": 1
+  }
+}

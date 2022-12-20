@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "main": "pink_slime_fol_texture"
+      },
+      "name": "default"
+    }
+  }
+}

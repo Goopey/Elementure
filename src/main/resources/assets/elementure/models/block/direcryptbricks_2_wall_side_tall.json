@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "elementure:blocks/dire_crypt_bricks_2",
+    "particle": "elementure:blocks/dire_crypt_bricks_2"
+  }
+}

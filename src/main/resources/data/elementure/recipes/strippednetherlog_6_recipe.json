@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:shavednetherlog"
+    },
+    {
+      "item": "elementure:shavednetherlog"
+    },
+    {
+      "item": "elementure:shavednetherlog"
+    },
+    {
+      "item": "elementure:shavednetherlog"
+    }
+  ],
+  "result": {
+    "item": "elementure:shavednetherlog_6",
+    "count": 3
+  }
+}

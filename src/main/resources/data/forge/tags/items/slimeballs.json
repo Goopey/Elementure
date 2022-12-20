@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:forceobleckslime",
+    "elementure:mindobleckslime",
+    "minecraft:honey_bottle",
+    "minecraft:slime_ball",
+    "elementure:obleckslime",
+    "elementure:soulobleckslime"
+  ]
+}

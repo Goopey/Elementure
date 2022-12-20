@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:merthiumingot"
+    },
+    "2": {
+      "item": "elementure:merthiumingot"
+    },
+    "3": {
+      "item": "elementure:merthiumingot"
+    },
+    "5": {
+      "item": "elementure:merthiumingot"
+    }
+  },
+  "result": {
+    "item": "elementure:merthiumarmor_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Neonblock"
+      },
+      {
+        "value": "CUSTOM:Energydiorite"
+      },
+      {
+        "value": "CUSTOM:Polishedenergydiorite"
+      },
+      {
+        "value": "CUSTOM:Chiseledenergydiorite"
+      }
+    ],
+    "functions": [],
+    "name": "energydioritebiomeblock",
+    "namespace": "mod"
+  }
+}

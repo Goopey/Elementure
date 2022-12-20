@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:darkgem"
+    }
+  ],
+  "result": {
+    "item": "elementure:darkgemshard",
+    "count": 9
+  }
+}

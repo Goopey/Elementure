@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/mycena_moss_bricks",
+    "up": "elementure:blocks/mycena_moss_bricks",
+    "north": "elementure:blocks/mycena_moss_bricks",
+    "east": "elementure:blocks/mycena_moss_bricks",
+    "south": "elementure:blocks/mycena_moss_bricks",
+    "west": "elementure:blocks/mycena_moss_bricks",
+    "particle": "elementure:blocks/mycena_moss_bricks"
+  }
+}

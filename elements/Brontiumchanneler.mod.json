@@ -1,0 +1,48 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "brontium_channeler",
+    "customModelName": "Normal",
+    "name": "Brontium channeler [N-E - Time]",
+    "specialInfo": [
+      "Allows you to slow down your enemies"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 21,
+    "actionSound": {
+      "value": "block.enchantment_table.use"
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "BrontiumchannelerCanUse"
+    },
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "useCondition": {
+      "name": "BrontiumchannelerCanUse"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 1.5,
+    "bulletKnockback": 2,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelempty",
+    "customBulletModelTexture": "empty_texturemap.png",
+    "onBulletHitsEntity": {
+      "name": "BrontiumchannelerSlow"
+    }
+  }
+}

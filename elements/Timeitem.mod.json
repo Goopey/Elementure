@@ -1,0 +1,37 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Vamitefastenskill"
+      },
+      {
+        "value": "CUSTOM:Brontiumslowtimeskill"
+      },
+      {
+        "value": "CUSTOM:Brontiumsword"
+      },
+      {
+        "value": "CUSTOM:Vamitesword"
+      },
+      {
+        "value": "CUSTOM:Vamiteaxe"
+      },
+      {
+        "value": "CUSTOM:Bladeoftheoldendays"
+      },
+      {
+        "value": "CUSTOM:Vamitechanneler"
+      },
+      {
+        "value": "CUSTOM:Brontiumchanneler"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "name": "timeitem",
+    "namespace": "forge"
+  }
+}

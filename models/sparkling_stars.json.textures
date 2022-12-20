@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "main": "sparkling_stars_slate"
+      },
+      "name": "default"
+    }
+  }
+}

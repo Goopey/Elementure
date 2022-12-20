@@ -1,0 +1,39 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "dark_cross_bolter",
+    "customModelName": "Normal",
+    "name": "Dark gem crossbolter",
+    "specialInfo": [
+      "Uses dark gem bolts as ammo. This weird crossbow shoots automatically and extremely fast."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:Darkgembolt"
+    },
+    "shootConstantly": true,
+    "usageCount": 666,
+    "actionSound": {
+      "value": ""
+    },
+    "hasGlow": false,
+    "animation": "crossbow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 2.1999999999999997,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Darkgemshard"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

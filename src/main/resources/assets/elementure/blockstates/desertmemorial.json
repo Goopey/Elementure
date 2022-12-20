@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/desertmemorial"
+    },
+    "facing=east": {
+      "model": "elementure:block/desertmemorial",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/desertmemorial",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/desertmemorial",
+      "y": 270
+    }
+  }
+}

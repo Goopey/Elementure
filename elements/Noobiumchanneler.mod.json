@@ -1,0 +1,48 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "noobium_channeler",
+    "customModelName": "Normal",
+    "name": "Noobium channeler [Earth]",
+    "specialInfo": [
+      "Allows you to cast a flurry of small stone pellets."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 41,
+    "actionSound": {
+      "value": ""
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "NoobiumchannelerCanUse"
+    },
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "NoobiumchannelerConsume"
+    },
+    "useCondition": {
+      "name": "NoobiumchannelerCanUse"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 1.6,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelstone_pellet",
+    "customBulletModelTexture": "stonepellet_texturemap.png"
+  }
+}

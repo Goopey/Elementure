@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:mindobleckslime"
+    },
+    "1": {
+      "item": "minecraft:iron_block"
+    },
+    "2": {
+      "item": "elementure:mindobleckslime"
+    },
+    "3": {
+      "item": "elementure:mindobleckslime"
+    },
+    "4": {
+      "item": "minecraft:iron_block"
+    },
+    "5": {
+      "item": "elementure:mindobleckslime"
+    },
+    "7": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "result": {
+    "item": "elementure:meldingblade",
+    "count": 1
+  }
+}

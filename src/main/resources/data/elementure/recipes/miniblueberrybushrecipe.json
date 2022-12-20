@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:blueberry"
+    },
+    {
+      "item": "elementure:blueberry"
+    },
+    {
+      "item": "elementure:blueberry"
+    },
+    {
+      "item": "elementure:blueberry"
+    }
+  ],
+  "result": {
+    "item": "elementure:miniblueberrybush",
+    "count": 1
+  }
+}

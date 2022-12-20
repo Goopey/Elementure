@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    " 78"
+  ],
+  "key": {
+    "1": {
+      "item": "elementure:cormunculusblock"
+    },
+    "2": {
+      "item": "elementure:darkgem"
+    },
+    "3": {
+      "item": "elementure:diversalloy"
+    },
+    "4": {
+      "item": "elementure:diversalloy"
+    },
+    "5": {
+      "item": "elementure:burningtarblock"
+    },
+    "7": {
+      "item": "elementure:cormunculusblock"
+    },
+    "8": {
+      "item": "elementure:darkgem"
+    }
+  },
+  "result": {
+    "item": "elementure:glassbellboat_darkflamesprayer",
+    "count": 1
+  }
+}

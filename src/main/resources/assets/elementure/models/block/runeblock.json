@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/runeblock",
+    "up": "elementure:blocks/runeblock",
+    "north": "elementure:blocks/runeblock",
+    "east": "elementure:blocks/runeblock",
+    "south": "elementure:blocks/runeblock",
+    "west": "elementure:blocks/runeblock",
+    "particle": "elementure:blocks/runeblock"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/demonstar",
+  "textures": {
+    "all": "elementure:blocks/jumpstar",
+    "particle": "elementure:blocks/jumpstar",
+    "0": "elementure:blocks/jumpstar"
+  }
+}

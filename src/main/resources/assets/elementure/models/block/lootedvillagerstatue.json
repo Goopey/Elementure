@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/lootedstatue",
+  "textures": {
+    "all": "elementure:blocks/annimatedstatueblock",
+    "particle": "elementure:blocks/annimatedstatueblock",
+    "0": "elementure:blocks/annimatedstatueblock"
+  }
+}

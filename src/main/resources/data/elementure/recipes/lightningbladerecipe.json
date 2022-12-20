@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:lightningsoul"
+    },
+    "1": {
+      "item": "elementure:elementalweb"
+    },
+    "2": {
+      "item": "elementure:lightningsoul"
+    },
+    "3": {
+      "item": "elementure:lightningsoul"
+    },
+    "4": {
+      "item": "elementure:silversword"
+    },
+    "5": {
+      "item": "elementure:lightningsoul"
+    },
+    "6": {
+      "item": "elementure:lightningsoul"
+    },
+    "7": {
+      "item": "elementure:elementalweb"
+    },
+    "8": {
+      "item": "elementure:lightningsoul"
+    }
+  },
+  "result": {
+    "item": "elementure:lightningblade",
+    "count": 1
+  }
+}

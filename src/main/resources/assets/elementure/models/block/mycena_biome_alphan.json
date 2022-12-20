@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/dirtblock",
+    "up": "elementure:blocks/grass_texture",
+    "north": "elementure:blocks/grassblockside",
+    "east": "elementure:blocks/grassblockside",
+    "south": "elementure:blocks/grassblockside",
+    "west": "elementure:blocks/grassblockside",
+    "particle": "elementure:blocks/dirtblock"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:direcrypttiles"
+    },
+    "1": {
+      "item": "elementure:direcrypttiles"
+    },
+    "2": {
+      "item": "elementure:direcrypttiles"
+    },
+    "3": {
+      "item": "elementure:direcrypttiles"
+    },
+    "4": {
+      "item": "elementure:direcrypttiles"
+    },
+    "5": {
+      "item": "elementure:direcrypttiles"
+    }
+  },
+  "result": {
+    "item": "elementure:direcrypttiles_wall",
+    "count": 6
+  }
+}

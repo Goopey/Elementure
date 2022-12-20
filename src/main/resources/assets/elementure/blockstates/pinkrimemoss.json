@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/pinkrimemoss"
+    },
+    "facing=east": {
+      "model": "elementure:block/pinkrimemoss",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/pinkrimemoss",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/pinkrimemoss",
+      "y": 270
+    }
+  }
+}

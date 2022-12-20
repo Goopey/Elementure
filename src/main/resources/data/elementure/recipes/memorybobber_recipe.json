@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:memorycrystalshell"
+    },
+    "2": {
+      "item": "elementure:memorycrystalshell"
+    },
+    "3": {
+      "item": "elementure:memorycrystal"
+    },
+    "4": {
+      "item": "elementure:memoryshard"
+    },
+    "5": {
+      "item": "elementure:memorycrystal"
+    },
+    "7": {
+      "item": "elementure:memorycrystal"
+    }
+  },
+  "result": {
+    "item": "elementure:memorybobber",
+    "count": 1
+  }
+}

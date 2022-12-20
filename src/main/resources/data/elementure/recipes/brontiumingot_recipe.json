@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:brontiumblock"
+    }
+  ],
+  "result": {
+    "item": "elementure:brontium",
+    "count": 9
+  }
+}

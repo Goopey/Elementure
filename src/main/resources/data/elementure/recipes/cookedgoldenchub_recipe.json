@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 8,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "elementure:goldenchub"
+  },
+  "result": "elementure:cooked_goldenchub"
+}

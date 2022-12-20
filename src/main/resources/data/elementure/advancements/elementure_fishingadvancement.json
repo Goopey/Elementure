@@ -1,0 +1,23 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "elementure:reinforcedfishingrod"
+    },
+    "title": {
+      "translate": "advancements.elementure_fishingadvancement.title"
+    },
+    "description": {
+      "translate": "advancements.elementure_fishingadvancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "elementure_fishingadvancement": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "elementure:ferziumingot"
+    },
+    "2": {
+      "item": "elementure:ferziumblade"
+    },
+    "3": {
+      "item": "elementure:ferziumingot"
+    },
+    "4": {
+      "item": "elementure:ferziumingot"
+    },
+    "5": {
+      "item": "elementure:ferziumingot"
+    },
+    "6": {
+      "item": "elementure:ferziumblock"
+    },
+    "7": {
+      "item": "elementure:ferziumingot"
+    }
+  },
+  "result": {
+    "item": "elementure:ferziumchanneler",
+    "count": 1
+  }
+}

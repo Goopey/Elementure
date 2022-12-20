@@ -1,0 +1,8 @@
+{
+  "parent": "elementure:custom/spawnercrystalbroken",
+  "textures": {
+    "all": "elementure:blocks/spawnercrystal",
+    "particle": "elementure:blocks/spawnercrystal",
+    "0": "elementure:blocks/spawnercrystal"
+  }
+}

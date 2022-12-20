@@ -1,0 +1,7 @@
+{
+  "parent": "elementure:custom/ultibreakerblade",
+  "textures": {
+    "0": "elementure:blocks/ultibreaker",
+    "particle": "elementure:items/ultibreaker"
+  }
+}

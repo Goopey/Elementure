@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:bilborry"
+    },
+    {
+      "item": "elementure:bilborry"
+    },
+    {
+      "item": "elementure:bilborry"
+    },
+    {
+      "item": "elementure:bilborry"
+    }
+  ],
+  "result": {
+    "item": "elementure:minibilborrybush",
+    "count": 1
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "mycenafumoonmushroom",
+    "customModelName": "Normal",
+    "name": "Mycena fumoon mushroom",
+    "specialInfo": [
+      "A bloated mycena mushroom that's about to explode."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "stackSize": 16,
+    "ammoItem": {
+      "value": "CUSTOM:Mycenafumoonmushroom"
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": ""
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 1.0,
+    "bulletDamage": 2.7,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:Mycenafumoonmushroom"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "MycenafumoonmushroomExplode"
+    },
+    "onBulletHitsEntity": {
+      "name": "MycenafumoonmushroomExplode"
+    }
+  }
+}

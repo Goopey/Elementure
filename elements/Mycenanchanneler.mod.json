@@ -1,0 +1,54 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "mycenan_channeler",
+    "customModelName": "Normal",
+    "name": "Mycenan channeler [Earth]",
+    "specialInfo": [
+      "Summons a bunch of Mycenan Fumoon Sporelings around where you cast the skill"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 21,
+    "actionSound": {
+      "value": "block.enchantment_table.use"
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "MycenanchannelerCanUse"
+    },
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "MycenanchannelerConsume"
+    },
+    "useCondition": {
+      "name": "MycenanchannelerCanUse"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 0.0,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelempty",
+    "customBulletModelTexture": "empty_texturemap.png",
+    "onBulletHitsBlock": {
+      "name": "MycenanchannelerEffect"
+    },
+    "onBulletHitsEntity": {
+      "name": "MycenanchannelerEffect"
+    }
+  }
+}

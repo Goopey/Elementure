@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/soulforge_tops",
+    "up": "elementure:blocks/soulforge_tops",
+    "north": "elementure:blocks/soulforge",
+    "east": "elementure:blocks/soulforge_side",
+    "south": "elementure:blocks/soulforge_side",
+    "west": "elementure:blocks/soulforge_side",
+    "particle": "elementure:blocks/soulforge_tops"
+  }
+}

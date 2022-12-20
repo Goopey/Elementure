@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Noobiumingot"
+      },
+      {
+        "value": "CUSTOM:Noobiumsword"
+      },
+      {
+        "value": "CUSTOM:Noobiumingot"
+      },
+      {
+        "value": "CUSTOM:Noobiumingot"
+      },
+      {
+        "value": "CUSTOM:Noobiumingot"
+      },
+      {
+        "value": "CUSTOM:Noobiumblock"
+      },
+      {
+        "value": "CUSTOM:Noobiumingot"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Noobiumchanneler"
+    },
+    "name": "noobiumchanneler_recipe",
+    "namespace": "mod"
+  }
+}

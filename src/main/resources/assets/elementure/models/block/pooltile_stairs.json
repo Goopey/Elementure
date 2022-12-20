@@ -1,0 +1,8 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "elementure:blocks/pool_tiles",
+    "top": "elementure:blocks/pool_tiles",
+    "side": "elementure:blocks/pool_tiles"
+  }
+}

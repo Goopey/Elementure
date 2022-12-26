@@ -22,8 +22,8 @@ public class SwordtempleEndRoomSecret2Procedure {
 			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "swordtemple_boss_room"));
 			if (template != null) {
 				template.placeInWorld(_serverworld, new BlockPos(x - 6, y - 6, z - 6), new BlockPos(x - 6, y - 6, z - 6),
-						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
-						3);
+						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false).setKeepLiquids(false),
+						_serverworld.random, 3);
 			}
 		}
 		if (world instanceof ServerLevel _level) {
@@ -33,6 +33,5 @@ public class SwordtempleEndRoomSecret2Procedure {
 				_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 			world.addFreshEntity(entityToSpawn);
 		}
-		WaterclearEasyExecuteProcedure.execute(world, x, (y - 6), z);
 	}
 }

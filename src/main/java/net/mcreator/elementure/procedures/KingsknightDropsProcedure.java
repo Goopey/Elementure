@@ -50,6 +50,8 @@ public class KingsknightDropsProcedure {
 			entityToSpawn.setPickUpDelay(10);
 			_level.addFreshEntity(entityToSpawn);
 		}
-		ProtectionzoneremoverEffectProcedure.execute(world, x, y, z);
+		ProtectionzoneremoverEffectProcedure.execute(world, (entity.getX()), (entity.getY()), (entity.getZ()));
+		if (!entity.level.isClientSide())
+			entity.discard();
 	}
 }

@@ -16,20 +16,19 @@ public class SwordtempleBaseGenProcedure {
 			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "swordtemple_top"));
 			if (template != null) {
 				template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 2, z - 4), new BlockPos(x - 4, y - 2, z - 4),
-						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
-						3);
+						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false).setKeepLiquids(false),
+						_serverworld.random, 3);
 			}
 		}
 		SpawnTombstonesSwordTempleProcedure.execute(world, x, z);
 		locY = 1;
 		while ((y - 2) - locY * 4 > 50) {
-			WaterclearerClearProcedure.execute(world, x, ((y - 2) - locY * 4), z);
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "swordtemple_tunnel"));
 				if (template != null) {
 					template.placeInWorld(_serverworld, new BlockPos(x - 2, (y - 2) - locY * 4, z - 2),
-							new BlockPos(x - 2, (y - 2) - locY * 4, z - 2),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							new BlockPos(x - 2, (y - 2) - locY * 4, z - 2), new StructurePlaceSettings().setRotation(Rotation.NONE)
+									.setMirror(Mirror.NONE).setKeepLiquids(false).setIgnoreEntities(false),
 							_serverworld.random, 3);
 				}
 			}

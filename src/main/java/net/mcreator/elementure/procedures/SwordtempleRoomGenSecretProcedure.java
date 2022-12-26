@@ -21,8 +21,9 @@ public class SwordtempleRoomGenSecretProcedure {
 				StructureTemplate template = _serverworld.getStructureManager()
 						.getOrCreate(new ResourceLocation("elementure", "swordtemple_secretroom_1"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 4, y, z - 4), new BlockPos(x - 4, y, z - 4),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+					template.placeInWorld(
+							_serverworld, new BlockPos(x - 4, y, z - 4), new BlockPos(x - 4, y, z - 4), new StructurePlaceSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false).setKeepLiquids(false),
 							_serverworld.random, 3);
 				}
 			}
@@ -31,8 +32,9 @@ public class SwordtempleRoomGenSecretProcedure {
 				StructureTemplate template = _serverworld.getStructureManager()
 						.getOrCreate(new ResourceLocation("elementure", "swordtemple_secretroom_2"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 4, y, z - 4), new BlockPos(x - 4, y, z - 4),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+					template.placeInWorld(
+							_serverworld, new BlockPos(x - 4, y, z - 4), new BlockPos(x - 4, y, z - 4), new StructurePlaceSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false).setKeepLiquids(false),
 							_serverworld.random, 3);
 				}
 			}
@@ -41,8 +43,9 @@ public class SwordtempleRoomGenSecretProcedure {
 				StructureTemplate template = _serverworld.getStructureManager()
 						.getOrCreate(new ResourceLocation("elementure", "swordtemple_secretroom_3"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 4, y, z - 4), new BlockPos(x - 4, y, z - 4),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+					template.placeInWorld(
+							_serverworld, new BlockPos(x - 4, y, z - 4), new BlockPos(x - 4, y, z - 4), new StructurePlaceSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false).setKeepLiquids(false),
 							_serverworld.random, 3);
 				}
 			}
@@ -51,8 +54,9 @@ public class SwordtempleRoomGenSecretProcedure {
 				StructureTemplate template = _serverworld.getStructureManager()
 						.getOrCreate(new ResourceLocation("elementure", "swordtemple_spawner_veteranwarrior_1"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 4, y, z - 4), new BlockPos(x - 4, y, z - 4),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+					template.placeInWorld(
+							_serverworld, new BlockPos(x - 4, y, z - 4), new BlockPos(x - 4, y, z - 4), new StructurePlaceSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false).setKeepLiquids(false),
 							_serverworld.random, 3);
 				}
 			}
@@ -61,8 +65,9 @@ public class SwordtempleRoomGenSecretProcedure {
 				StructureTemplate template = _serverworld.getStructureManager()
 						.getOrCreate(new ResourceLocation("elementure", "swordtemple_spawner_veteranwarrior_2"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 4, y, z - 4), new BlockPos(x - 4, y, z - 4),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+					template.placeInWorld(
+							_serverworld, new BlockPos(x - 4, y, z - 4), new BlockPos(x - 4, y, z - 4), new StructurePlaceSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false).setKeepLiquids(false),
 							_serverworld.random, 3);
 				}
 			}
@@ -71,8 +76,9 @@ public class SwordtempleRoomGenSecretProcedure {
 				StructureTemplate template = _serverworld.getStructureManager()
 						.getOrCreate(new ResourceLocation("elementure", "swordtemple_spawner_veteranwarrior_3"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 4, y, z - 4), new BlockPos(x - 4, y, z - 4),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+					template.placeInWorld(
+							_serverworld, new BlockPos(x - 4, y, z - 4), new BlockPos(x - 4, y, z - 4), new StructurePlaceSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false).setKeepLiquids(false),
 							_serverworld.random, 3);
 				}
 			}
@@ -81,8 +87,9 @@ public class SwordtempleRoomGenSecretProcedure {
 				StructureTemplate template = _serverworld.getStructureManager()
 						.getOrCreate(new ResourceLocation("elementure", "swordtemple_spawner_veteranwarrior_4"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 4, y, z - 4), new BlockPos(x - 4, y, z - 4),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+					template.placeInWorld(
+							_serverworld, new BlockPos(x - 4, y, z - 4), new BlockPos(x - 4, y, z - 4), new StructurePlaceSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false).setKeepLiquids(false),
 							_serverworld.random, 3);
 				}
 			}
@@ -91,12 +98,12 @@ public class SwordtempleRoomGenSecretProcedure {
 				StructureTemplate template = _serverworld.getStructureManager()
 						.getOrCreate(new ResourceLocation("elementure", "swordtemple_spawner_veteranwarrior_5"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 4, y, z - 4), new BlockPos(x - 4, y, z - 4),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+					template.placeInWorld(
+							_serverworld, new BlockPos(x - 4, y, z - 4), new BlockPos(x - 4, y, z - 4), new StructurePlaceSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false).setKeepLiquids(false),
 							_serverworld.random, 3);
 				}
 			}
 		}
-		WaterclearEasyExecuteProcedure.execute(world, x, y, z);
 	}
 }

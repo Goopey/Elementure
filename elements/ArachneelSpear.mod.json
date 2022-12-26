@@ -1,0 +1,36 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "arachneel_spear",
+    "customModelName": "Normal",
+    "name": "Arachneel Spear",
+    "specialInfo": [
+      "The spear has a slightly hooked end which helps to poison attacked creatures."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedswords"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 0,
+    "efficiency": 5.0,
+    "attackSpeed": 1.2,
+    "enchantability": 7,
+    "damageVsEntity": 6.0,
+    "usageCount": 502,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:Arachneelfang"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "ArachneelSpearPoison"
+    }
+  }
+}

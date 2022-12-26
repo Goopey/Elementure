@@ -1,5 +1,7 @@
 package net.mcreator.elementure.procedures;
 
+import net.minecraft.world.phys.Vec3;
+import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.entity.Mob;
@@ -19,7 +21,8 @@ public class MycenafumoonSpawnSporesProcedure {
 		LocX = Math.random() * 5 - 2;
 		LocZ = Math.random() * 5 - 2;
 		LocY = Math.random() * 3 + 1;
-		if (entity.getPersistentData().getDouble("wait") > 450) {
+		if (entity.getPersistentData().getDouble("wait") > 600
+				&& !(!world.getEntitiesOfClass(MycenafumoonsporeEntity.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty())) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new MycenafumoonsporeEntity(ElementureModEntities.MYCENAFUMOONSPORE.get(), _level);
 				entityToSpawn.moveTo((x + LocX), (y + LocY), (z + LocZ), 0, 0);

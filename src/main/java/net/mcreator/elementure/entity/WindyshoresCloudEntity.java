@@ -134,7 +134,7 @@ public class WindyshoresCloudEntity extends PathfinderMob {
 	@Override
 	public void playerTouch(Player sourceentity) {
 		super.playerTouch(sourceentity);
-		WindyshorescloudFloatProcedure.execute(sourceentity);
+		WindyshorescloudFloatProcedure.execute(this.level, this, sourceentity);
 	}
 
 	@Override

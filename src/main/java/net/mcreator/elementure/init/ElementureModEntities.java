@@ -47,7 +47,9 @@ import net.mcreator.elementure.entity.StarryvillagerguardianEntity;
 import net.mcreator.elementure.entity.StarryvillagergathererEntity;
 import net.mcreator.elementure.entity.StarryvillagerblacksmithEntity;
 import net.mcreator.elementure.entity.StarguardianstandEntity;
+import net.mcreator.elementure.entity.SpidermatriarchEntity;
 import net.mcreator.elementure.entity.SpiderlingEntity;
+import net.mcreator.elementure.entity.SpiderSwarmerEntity;
 import net.mcreator.elementure.entity.SpectreknightEntity;
 import net.mcreator.elementure.entity.SoulskullfamiliarEntity;
 import net.mcreator.elementure.entity.SoulobleckEntity;
@@ -1113,6 +1115,16 @@ public class ElementureModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GoldenSpiderlingEntity::new)
 
 					.sized(0.6f, 0.6f));
+	public static final RegistryObject<EntityType<SpiderSwarmerEntity>> SPIDER_SWARMER = register("spider_swarmer",
+			EntityType.Builder.<SpiderSwarmerEntity>of(SpiderSwarmerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpiderSwarmerEntity::new)
+
+					.sized(0.7000000000000001f, 0.7000000000000001f));
+	public static final RegistryObject<EntityType<SpidermatriarchEntity>> SPIDERMATRIARCH = register("spidermatriarch",
+			EntityType.Builder.<SpidermatriarchEntity>of(SpidermatriarchEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpidermatriarchEntity::new)
+
+					.sized(1.2f, 1.2000000000000002f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -1275,6 +1287,8 @@ public class ElementureModEntities {
 			HeadlessDiscardedSkeletonEntity.init();
 			SpiderlingEntity.init();
 			GoldenSpiderlingEntity.init();
+			SpiderSwarmerEntity.init();
+			SpidermatriarchEntity.init();
 		});
 	}
 
@@ -1434,5 +1448,7 @@ public class ElementureModEntities {
 		event.put(HEADLESS_DISCARDED_SKELETON.get(), HeadlessDiscardedSkeletonEntity.createAttributes().build());
 		event.put(SPIDERLING.get(), SpiderlingEntity.createAttributes().build());
 		event.put(GOLDEN_SPIDERLING.get(), GoldenSpiderlingEntity.createAttributes().build());
+		event.put(SPIDER_SWARMER.get(), SpiderSwarmerEntity.createAttributes().build());
+		event.put(SPIDERMATRIARCH.get(), SpidermatriarchEntity.createAttributes().build());
 	}
 }

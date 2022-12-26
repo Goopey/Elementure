@@ -32,8 +32,8 @@ import java.util.Collections;
 
 public class IvoryspawnerBlock extends Block {
 	public IvoryspawnerBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BONE_BLOCK).strength(90f, 10f).requiresCorrectToolForDrops().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.BONE_BLOCK).strength(-1, 3600000).requiresCorrectToolForDrops()
+				.noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

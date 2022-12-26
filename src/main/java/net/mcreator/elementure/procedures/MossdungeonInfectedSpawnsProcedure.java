@@ -14,7 +14,6 @@ public class MossdungeonInfectedSpawnsProcedure {
 		double locZ = 0;
 		locX = -4;
 		locZ = -4;
-		WaterclearerClearProcedure.execute(world, x, (y + 1), z);
 		for (int index0 = 0; index0 < (int) (81); index0++) {
 			world.setBlock(new BlockPos(x + locX, -64, z + locZ), ElementureModBlocks.PERVADEDBEDROCK.get().defaultBlockState(), 3);
 			if (!world.isClientSide()) {
@@ -36,5 +35,6 @@ public class MossdungeonInfectedSpawnsProcedure {
 				}
 			}
 		}
+		locX = y;
 	}
 }

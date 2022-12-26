@@ -39,7 +39,9 @@ import net.mcreator.elementure.client.renderer.StarryvillagerguardianRenderer;
 import net.mcreator.elementure.client.renderer.StarryvillagergathererRenderer;
 import net.mcreator.elementure.client.renderer.StarryvillagerblacksmithRenderer;
 import net.mcreator.elementure.client.renderer.StarguardianstandRenderer;
+import net.mcreator.elementure.client.renderer.SpidermatriarchRenderer;
 import net.mcreator.elementure.client.renderer.SpiderlingRenderer;
+import net.mcreator.elementure.client.renderer.SpiderSwarmerRenderer;
 import net.mcreator.elementure.client.renderer.SpectreknightRenderer;
 import net.mcreator.elementure.client.renderer.SoulskullfamiliarRenderer;
 import net.mcreator.elementure.client.renderer.SoulobleckRenderer;
@@ -408,5 +410,7 @@ public class ElementureModEntityRenderers {
 		event.registerEntityRenderer(ElementureModEntities.HEADLESS_DISCARDED_SKELETON.get(), HeadlessDiscardedSkeletonRenderer::new);
 		event.registerEntityRenderer(ElementureModEntities.SPIDERLING.get(), SpiderlingRenderer::new);
 		event.registerEntityRenderer(ElementureModEntities.GOLDEN_SPIDERLING.get(), GoldenSpiderlingRenderer::new);
+		event.registerEntityRenderer(ElementureModEntities.SPIDER_SWARMER.get(), SpiderSwarmerRenderer::new);
+		event.registerEntityRenderer(ElementureModEntities.SPIDERMATRIARCH.get(), SpidermatriarchRenderer::new);
 	}
 }

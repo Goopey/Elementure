@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/pumpkin_core",
+    "up": "elementure:blocks/pumpkin_core",
+    "north": "elementure:blocks/pumpkin_core",
+    "east": "elementure:blocks/pumpkin_core",
+    "south": "elementure:blocks/pumpkin_core",
+    "west": "elementure:blocks/pumpkin_core",
+    "particle": "elementure:blocks/pumpkin_core"
+  }
+}

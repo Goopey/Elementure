@@ -25,7 +25,7 @@ public class MycenafumoonsporeExplodeProcedure {
 					.performCommand(
 							new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
 									_level.getServer(), null).withSuppressedOutput(),
-							"/effect give @e[distance=0.1..4] minecraft_worlds:mycenanspores 6 0");
+							"/effect give @e[distance=0.1..4] elementure:mycenanspores 6 0");
 		if (world instanceof Level _level && !_level.isClientSide())
 			_level.explode(null, (x + 0.5), (y + 0.5), (z + 0.5), (float) 0.5, Explosion.BlockInteraction.NONE);
 	}

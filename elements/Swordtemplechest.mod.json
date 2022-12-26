@@ -2,7 +2,7 @@
   "_fv": 34,
   "_type": "loottable",
   "definition": {
-    "type": "Block",
+    "type": "Chest",
     "pools": [
       {
         "minrolls": 1,
@@ -412,7 +412,7 @@
             "item": {
               "value": "CUSTOM:Strongkey"
             },
-            "weight": 6,
+            "weight": 2,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,
@@ -426,7 +426,7 @@
             "item": {
               "value": "CUSTOM:Elementalsharpener"
             },
-            "weight": 1,
+            "weight": 2,
             "minCount": 1,
             "maxCount": 1,
             "minEnchantmentLevel": 0,

@@ -1,5 +1,5 @@
 {
-  "parent": "elementure:block/water_clearer",
+  "parent": "elementure:block/pumpkincore",
   "display": {
     "thirdperson": {
       "rotation": [

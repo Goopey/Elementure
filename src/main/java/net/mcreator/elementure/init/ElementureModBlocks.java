@@ -44,7 +44,6 @@ import net.mcreator.elementure.block.WeaponaltarBlock;
 import net.mcreator.elementure.block.WaterstarBlock;
 import net.mcreator.elementure.block.WaterruneblockBlock;
 import net.mcreator.elementure.block.WaterelementliquidBlock;
-import net.mcreator.elementure.block.WaterClearerBlock;
 import net.mcreator.elementure.block.WarpedforestmemorialBlock;
 import net.mcreator.elementure.block.WallwebBlock;
 import net.mcreator.elementure.block.VoidruneblockBlock;
@@ -148,6 +147,7 @@ import net.mcreator.elementure.block.PurplemushroomsBlock;
 import net.mcreator.elementure.block.PurplemushroomblockBlock;
 import net.mcreator.elementure.block.PurplebarrierclosingBlock;
 import net.mcreator.elementure.block.PurplebarrierBlock;
+import net.mcreator.elementure.block.PumpkincoreBlock;
 import net.mcreator.elementure.block.ProtectionzoneremoverBlock;
 import net.mcreator.elementure.block.ProtectionruneBlock;
 import net.mcreator.elementure.block.ProtectionremoverBlock;
@@ -418,6 +418,7 @@ import net.mcreator.elementure.block.EarthelementliquidBlock;
 import net.mcreator.elementure.block.DustfluxoreBlock;
 import net.mcreator.elementure.block.DustfluxblockBlock;
 import net.mcreator.elementure.block.DungeonwaterBlock;
+import net.mcreator.elementure.block.DungeonlanternBlock;
 import net.mcreator.elementure.block.DryseafoamBlock;
 import net.mcreator.elementure.block.DreadweedBlock;
 import net.mcreator.elementure.block.DragonewtscalesBlockBlock;
@@ -1261,7 +1262,6 @@ public class ElementureModBlocks {
 			() -> new ShieldingprotectionruneSmallBlock());
 	public static final RegistryObject<Block> CRABPOT = REGISTRY.register("crabpot", () -> new CrabpotBlock());
 	public static final RegistryObject<Block> NANOSHRIMPPOT = REGISTRY.register("nanoshrimppot", () -> new NanoshrimppotBlock());
-	public static final RegistryObject<Block> WATER_CLEARER = REGISTRY.register("water_clearer", () -> new WaterClearerBlock());
 	public static final RegistryObject<Block> LILYPADPLANKS = REGISTRY.register("lilypadplanks", () -> new LilypadplanksBlock());
 	public static final RegistryObject<Block> STRIPPEDLILYPADLOG = REGISTRY.register("strippedlilypadlog", () -> new StrippedlilypadlogBlock());
 	public static final RegistryObject<Block> LILYPADLOG = REGISTRY.register("lilypadlog", () -> new LilypadlogBlock());
@@ -1289,6 +1289,8 @@ public class ElementureModBlocks {
 			() -> new SpiderboreDeepslatebricksBlock());
 	public static final RegistryObject<Block> WALLWEB = REGISTRY.register("wallweb", () -> new WallwebBlock());
 	public static final RegistryObject<Block> SMALL_SCRAPPER = REGISTRY.register("small_scrapper", () -> new SmallScrapperBlock());
+	public static final RegistryObject<Block> PUMPKINCORE = REGISTRY.register("pumpkincore", () -> new PumpkincoreBlock());
+	public static final RegistryObject<Block> DUNGEONLANTERN = REGISTRY.register("dungeonlantern", () -> new DungeonlanternBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1587,6 +1589,7 @@ public class ElementureModBlocks {
 			LilypadplanksTrapdoorBlock.registerRenderLayer();
 			WallwebBlock.registerRenderLayer();
 			SmallScrapperBlock.registerRenderLayer();
+			DungeonlanternBlock.registerRenderLayer();
 		}
 	}
 }

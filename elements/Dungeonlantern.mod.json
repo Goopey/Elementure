@@ -2,61 +2,70 @@
   "_fv": 34,
   "_type": "block",
   "definition": {
-    "texture": "omegansides",
-    "textureTop": "omegansides",
-    "textureLeft": "omegansides",
-    "textureFront": "omegansides",
-    "textureRight": "omegansides",
-    "textureBack": "omegansides",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "dungeonlantern",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "dungeonlantern:default",
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "dungeonlantern_item",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": 0.0,
-        "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 16.0,
+        "mx": 5.0,
+        "my": 1.0,
+        "mz": 5.0,
+        "Mx": 11.0,
+        "My": 8.0,
+        "Mz": 11.0,
+        "subtract": false
+      },
+      {
+        "mx": 6.0,
+        "my": 8.0,
+        "mz": 6.0,
+        "Mx": 10.0,
+        "My": 10.0,
+        "Mz": 10.0,
         "subtract": false
       }
     ],
-    "name": "Water Clearer",
+    "name": "Dungeon lantern",
     "specialInfo": [],
-    "hardness": 10000.0,
-    "resistance": 10000.0,
+    "hardness": 1.35,
+    "resistance": 5.0,
     "hasGravity": false,
-    "isWaterloggable": false,
+    "isWaterloggable": true,
     "creativeTab": {
       "value": "CUSTOM:Tabmoddedblocks"
     },
-    "destroyTool": "Not specified",
+    "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "IRON"
     },
-    "tickRate": 4,
+    "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -76,10 +85,10 @@
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": true,
+    "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "LANTERN"
     },
     "breakSound": {
       "value": ""
@@ -96,8 +105,8 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 0,
-    "unbreakable": true,
+    "luminance": 4,
+    "unbreakable": false,
     "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
@@ -123,6 +132,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onDestroyedByPlayer": {
+      "name": "DungeonlanternDropScrap"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

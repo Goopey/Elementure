@@ -20,13 +20,16 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.elementure.procedures.SpidernestSpawnSpiderlingProcedure;
 import net.mcreator.elementure.procedures.SpidernestDamageProcedure;
 import net.mcreator.elementure.init.ElementureModBlocks;
 import net.mcreator.elementure.block.entity.SpidernestCobblestoneBlockEntity;
 
+import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -56,6 +59,23 @@ public class SpidernestCobblestoneBlock extends Block
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(ElementureModBlocks.EMPTYNEST_COBBLESTONE.get()));
+	}
+
+	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 92);
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+		super.tick(blockstate, world, pos, random);
+		int x = pos.getX();
+		int y = pos.getY();
+		int z = pos.getZ();
+
+		SpidernestSpawnSpiderlingProcedure.execute(world, x, y, z);
+		world.scheduleTick(pos, this, 92);
 	}
 
 	@Override

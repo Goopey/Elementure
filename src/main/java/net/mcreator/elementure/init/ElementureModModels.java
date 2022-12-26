@@ -42,6 +42,7 @@ import net.mcreator.elementure.client.model.Modelstarryvillager;
 import net.mcreator.elementure.client.model.Modelstarguardian;
 import net.mcreator.elementure.client.model.Modelspirit;
 import net.mcreator.elementure.client.model.Modelspiderling;
+import net.mcreator.elementure.client.model.ModelspiderMatriarch;
 import net.mcreator.elementure.client.model.Modelspectre_knight;
 import net.mcreator.elementure.client.model.Modelsoul_skull_familiar;
 import net.mcreator.elementure.client.model.Modelsoul_obleck;
@@ -294,6 +295,7 @@ public class ElementureModModels {
 		event.registerLayerDefinition(Modellousy_sword.LAYER_LOCATION, Modellousy_sword::createBodyLayer);
 		event.registerLayerDefinition(Modelmycena_shroom_villager_nitwit.LAYER_LOCATION, Modelmycena_shroom_villager_nitwit::createBodyLayer);
 		event.registerLayerDefinition(Modeljellyfloat.LAYER_LOCATION, Modeljellyfloat::createBodyLayer);
+		event.registerLayerDefinition(ModelspiderMatriarch.LAYER_LOCATION, ModelspiderMatriarch::createBodyLayer);
 		event.registerLayerDefinition(Modelfluff_whale.LAYER_LOCATION, Modelfluff_whale::createBodyLayer);
 		event.registerLayerDefinition(Modelbright_candle.LAYER_LOCATION, Modelbright_candle::createBodyLayer);
 		event.registerLayerDefinition(Modellightningblastskillprojectile.LAYER_LOCATION, Modellightningblastskillprojectile::createBodyLayer);

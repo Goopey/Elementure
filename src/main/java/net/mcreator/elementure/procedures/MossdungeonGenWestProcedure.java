@@ -17,8 +17,9 @@ import net.mcreator.elementure.init.ElementureModBlocks;
 
 public class MossdungeonGenWestProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		double weight = 0;
 		boolean isSide = false;
+		double weight = 0;
+		double rnd = 0;
 		weight = new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -36,7 +37,8 @@ public class MossdungeonGenWestProcedure {
 			}
 		}.getValue(world, new BlockPos(x, y, z), "isSide");
 		world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-		if (Math.random() < 0.5) {
+		rnd = Math.random();
+		if (rnd < 0.2) {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mossdungeon_room_1"));
 				if (template != null) {
@@ -45,7 +47,7 @@ public class MossdungeonGenWestProcedure {
 							_serverworld.random, 3);
 				}
 			}
-		} else if (Math.random() < 0.75) {
+		} else if (rnd < 0.44) {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager()
 						.getOrCreate(new ResourceLocation("elementure", "mossdungeon_spawner_1"));
@@ -55,7 +57,7 @@ public class MossdungeonGenWestProcedure {
 							_serverworld.random, 3);
 				}
 			}
-		} else if (Math.random() < 0.5) {
+		} else if (rnd < 0.64) {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager()
 						.getOrCreate(new ResourceLocation("elementure", "mossdungeon_vegetation_1"));
@@ -65,7 +67,7 @@ public class MossdungeonGenWestProcedure {
 							_serverworld.random, 3);
 				}
 			}
-		} else if (Math.random() < 0.5) {
+		} else if (rnd < 0.88) {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager()
 						.getOrCreate(new ResourceLocation("elementure", "mossdungeon_spawner_2"));

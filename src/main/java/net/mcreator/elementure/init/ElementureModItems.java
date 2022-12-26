@@ -111,6 +111,7 @@ import net.mcreator.elementure.item.SkyjadearmorItem;
 import net.mcreator.elementure.item.SkychubItem;
 import net.mcreator.elementure.item.SkipsnakeItem;
 import net.mcreator.elementure.item.SkillholderItem;
+import net.mcreator.elementure.item.SkeletonShieldItem;
 import net.mcreator.elementure.item.SirenqueenfistItem;
 import net.mcreator.elementure.item.SirenqueenEvilEyeItem;
 import net.mcreator.elementure.item.SilverwatercoreItem;
@@ -167,6 +168,8 @@ import net.mcreator.elementure.item.RedrimeshineItem;
 import net.mcreator.elementure.item.RedjellyItem;
 import net.mcreator.elementure.item.RedbarrierkeyItem;
 import net.mcreator.elementure.item.RedSunItem;
+import net.mcreator.elementure.item.RattailItem;
+import net.mcreator.elementure.item.RatkeyItem;
 import net.mcreator.elementure.item.RareyellowrimeshineItem;
 import net.mcreator.elementure.item.RarewinkleItem;
 import net.mcreator.elementure.item.RarewhiterimeshineItem;
@@ -675,6 +678,7 @@ import net.mcreator.elementure.item.ArchkassemStaffItem;
 import net.mcreator.elementure.item.ArachneelfangItem;
 import net.mcreator.elementure.item.ArachneelbowItem;
 import net.mcreator.elementure.item.ArachneelarrowItem;
+import net.mcreator.elementure.item.ArachneelSpearItem;
 import net.mcreator.elementure.item.AngryslimesliceItem;
 import net.mcreator.elementure.item.AngelpipItem;
 import net.mcreator.elementure.item.AirswordItem;
@@ -2444,7 +2448,6 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> BUBBLE_CRAB = REGISTRY.register("bubble_crab", () -> new BubbleCrabItem());
 	public static final RegistryObject<Item> CLOD = REGISTRY.register("clod", () -> new ClodItem());
 	public static final RegistryObject<Item> ANGELPIP = REGISTRY.register("angelpip", () -> new AngelpipItem());
-	public static final RegistryObject<Item> WATER_CLEARER = block(ElementureModBlocks.WATER_CLEARER, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> LILYPADPLANKS = block(ElementureModBlocks.LILYPADPLANKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> STRIPPEDLILYPADLOG = block(ElementureModBlocks.STRIPPEDLILYPADLOG,
 			ElementureModTabs.TAB_TABMODDEDBLOCKS);
@@ -2532,6 +2535,17 @@ public class ElementureModItems {
 					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> SPIDERLING = REGISTRY.register("spiderling_spawn_egg",
 			() -> new ForgeSpawnEggItem(ElementureModEntities.SPIDERLING, -10066432, -13421824, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SPIDER_SWARMER = REGISTRY.register("spider_swarmer_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SPIDER_SWARMER, -6710887, -103, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SPIDERMATRIARCH = REGISTRY.register("spidermatriarch_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SPIDERMATRIARCH, -13434880, -13424620,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> PUMPKINCORE = block(ElementureModBlocks.PUMPKINCORE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DUNGEONLANTERN = block(ElementureModBlocks.DUNGEONLANTERN, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> RATTAIL = REGISTRY.register("rattail", () -> new RattailItem());
+	public static final RegistryObject<Item> RATKEY = REGISTRY.register("ratkey", () -> new RatkeyItem());
+	public static final RegistryObject<Item> SKELETON_SHIELD = REGISTRY.register("skeleton_shield", () -> new SkeletonShieldItem());
+	public static final RegistryObject<Item> ARACHNEEL_SPEAR = REGISTRY.register("arachneel_spear", () -> new ArachneelSpearItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

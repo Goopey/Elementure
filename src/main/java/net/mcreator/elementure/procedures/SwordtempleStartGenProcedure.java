@@ -21,15 +21,15 @@ import net.mcreator.elementure.entity.CausticknightEntity;
 public class SwordtempleStartGenProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double rnd = 0;
-		WaterclearerClearProcedure.execute(world, x, y, z);
 		rnd = Math.random();
 		if (rnd < 0.25) {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager()
 						.getOrCreate(new ResourceLocation("elementure", "swordtemple_twistedknight_start"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 6, y, z - 6), new BlockPos(x - 6, y, z - 6),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+					template.placeInWorld(
+							_serverworld, new BlockPos(x - 6, y, z - 6), new BlockPos(x - 6, y, z - 6), new StructurePlaceSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false).setKeepLiquids(false),
 							_serverworld.random, 3);
 				}
 			}
@@ -46,8 +46,9 @@ public class SwordtempleStartGenProcedure {
 				StructureTemplate template = _serverworld.getStructureManager()
 						.getOrCreate(new ResourceLocation("elementure", "swordtemple_greedyknight_start"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 6, y, z - 6), new BlockPos(x - 6, y, z - 6),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+					template.placeInWorld(
+							_serverworld, new BlockPos(x - 6, y, z - 6), new BlockPos(x - 6, y, z - 6), new StructurePlaceSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false).setKeepLiquids(false),
 							_serverworld.random, 3);
 				}
 			}
@@ -64,8 +65,9 @@ public class SwordtempleStartGenProcedure {
 				StructureTemplate template = _serverworld.getStructureManager()
 						.getOrCreate(new ResourceLocation("elementure", "swordtemple_cruelknight_start"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 6, y, z - 6), new BlockPos(x - 6, y, z - 6),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+					template.placeInWorld(
+							_serverworld, new BlockPos(x - 6, y, z - 6), new BlockPos(x - 6, y, z - 6), new StructurePlaceSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false).setKeepLiquids(false),
 							_serverworld.random, 3);
 				}
 			}
@@ -82,8 +84,9 @@ public class SwordtempleStartGenProcedure {
 				StructureTemplate template = _serverworld.getStructureManager()
 						.getOrCreate(new ResourceLocation("elementure", "swordtemple_causticknight_start"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 6, y, z - 6), new BlockPos(x - 6, y, z - 6),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+					template.placeInWorld(
+							_serverworld, new BlockPos(x - 6, y, z - 6), new BlockPos(x - 6, y, z - 6), new StructurePlaceSettings()
+									.setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false).setKeepLiquids(false),
 							_serverworld.random, 3);
 				}
 			}

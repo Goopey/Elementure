@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:masterkey"
+    },
+    {
+      "item": "elementure:rattail"
+    },
+    {
+      "item": "elementure:rattail"
+    },
+    {
+      "item": "elementure:rattail"
+    },
+    {
+      "item": "elementure:rattail"
+    }
+  ],
+  "result": {
+    "item": "elementure:ratkey",
+    "count": 1
+  }
+}

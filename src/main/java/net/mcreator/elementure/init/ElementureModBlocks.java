@@ -419,6 +419,8 @@ import net.mcreator.elementure.block.DustfluxoreBlock;
 import net.mcreator.elementure.block.DustfluxblockBlock;
 import net.mcreator.elementure.block.DungeonwaterBlock;
 import net.mcreator.elementure.block.DungeonlanternBlock;
+import net.mcreator.elementure.block.DungeonhatchLockedBlock;
+import net.mcreator.elementure.block.DungeonhatchBlock;
 import net.mcreator.elementure.block.DryseafoamBlock;
 import net.mcreator.elementure.block.DreadweedBlock;
 import net.mcreator.elementure.block.DragonewtscalesBlockBlock;
@@ -1291,6 +1293,8 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> SMALL_SCRAPPER = REGISTRY.register("small_scrapper", () -> new SmallScrapperBlock());
 	public static final RegistryObject<Block> PUMPKINCORE = REGISTRY.register("pumpkincore", () -> new PumpkincoreBlock());
 	public static final RegistryObject<Block> DUNGEONLANTERN = REGISTRY.register("dungeonlantern", () -> new DungeonlanternBlock());
+	public static final RegistryObject<Block> DUNGEONHATCH_LOCKED = REGISTRY.register("dungeonhatch_locked", () -> new DungeonhatchLockedBlock());
+	public static final RegistryObject<Block> DUNGEONHATCH = REGISTRY.register("dungeonhatch", () -> new DungeonhatchBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1590,6 +1594,8 @@ public class ElementureModBlocks {
 			WallwebBlock.registerRenderLayer();
 			SmallScrapperBlock.registerRenderLayer();
 			DungeonlanternBlock.registerRenderLayer();
+			DungeonhatchLockedBlock.registerRenderLayer();
+			DungeonhatchBlock.registerRenderLayer();
 		}
 	}
 }

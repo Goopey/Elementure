@@ -17,6 +17,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
+import net.mcreator.elementure.procedures.CormunculusReturnDamageBonusProcedure;
 import net.mcreator.elementure.init.ElementureModTabs;
 import net.mcreator.elementure.init.ElementureModItems;
 import net.mcreator.elementure.entity.DarkgemcrossbolterEntity;
@@ -69,8 +70,8 @@ public class DarkgemcrossbolterItem extends Item {
 					}
 				}
 				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					DarkgemcrossbolterEntity entityarrow = DarkgemcrossbolterEntity.shoot(world, entity, world.getRandom(), 1f, 2.1999999999999997,
-							0);
+					DarkgemcrossbolterEntity entityarrow = DarkgemcrossbolterEntity.shoot(world, entity, world.getRandom(), 1f,
+							2.1999999999999997 + CormunculusReturnDamageBonusProcedure.execute(entity), 0);
 					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;

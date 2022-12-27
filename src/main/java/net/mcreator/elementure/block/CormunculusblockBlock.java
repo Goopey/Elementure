@@ -41,7 +41,7 @@ public class CormunculusblockBlock extends Block implements SimpleWaterloggedBlo
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public CormunculusblockBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.HONEY_BLOCK).strength(1f, 10f).lightLevel(s -> 10)
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.AMETHYST).strength(1f, 10f).lightLevel(s -> 10)
 				.requiresCorrectToolForDrops().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}

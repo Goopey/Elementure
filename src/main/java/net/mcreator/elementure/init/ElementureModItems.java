@@ -2546,6 +2546,9 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> RATKEY = REGISTRY.register("ratkey", () -> new RatkeyItem());
 	public static final RegistryObject<Item> SKELETON_SHIELD = REGISTRY.register("skeleton_shield", () -> new SkeletonShieldItem());
 	public static final RegistryObject<Item> ARACHNEEL_SPEAR = REGISTRY.register("arachneel_spear", () -> new ArachneelSpearItem());
+	public static final RegistryObject<Item> DUNGEONHATCH_LOCKED = block(ElementureModBlocks.DUNGEONHATCH_LOCKED,
+			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DUNGEONHATCH = block(ElementureModBlocks.DUNGEONHATCH, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

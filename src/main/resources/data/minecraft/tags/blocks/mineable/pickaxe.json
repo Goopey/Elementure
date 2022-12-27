@@ -295,6 +295,8 @@
     "elementure:spiderbore_cobblestone",
     "elementure:spiderbore_deepslatebricks",
     "elementure:small_scrapper",
-    "elementure:dungeonlantern"
+    "elementure:dungeonlantern",
+    "elementure:dungeonhatch_locked",
+    "elementure:dungeonhatch"
   ]
 }

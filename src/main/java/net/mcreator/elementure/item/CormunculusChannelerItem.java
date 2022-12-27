@@ -23,6 +23,7 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.elementure.procedures.CormunculuschannelerGlowProcedure;
 import net.mcreator.elementure.procedures.CormunculuschannelerConsumeProcedure;
+import net.mcreator.elementure.procedures.CormunculusReturnDamageBonusProcedure;
 import net.mcreator.elementure.init.ElementureModTabs;
 import net.mcreator.elementure.entity.CormunculusChannelerEntity;
 
@@ -69,10 +70,10 @@ public class CormunculusChannelerItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (CormunculuschannelerGlowProcedure.execute(entity)) {
-				CormunculusChannelerEntity entityarrow = CormunculusChannelerEntity.shoot(world, entity, world.getRandom(), 1f, 5, 0);
+				CormunculusChannelerEntity entityarrow = CormunculusChannelerEntity.shoot(world, entity, world.getRandom(), 1f,
+						5 + CormunculusReturnDamageBonusProcedure.execute(entity) * 5, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				CormunculuschannelerConsumeProcedure.execute(entity);
 			}
 		}

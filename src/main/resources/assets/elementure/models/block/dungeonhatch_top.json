@@ -1,0 +1,7 @@
+{
+  "parent": "block/template_orientable_trapdoor_top",
+  "textures": {
+    "texture": "elementure:blocks/dungeonhatch",
+    "particle": "elementure:blocks/dungeonhatch"
+  }
+}

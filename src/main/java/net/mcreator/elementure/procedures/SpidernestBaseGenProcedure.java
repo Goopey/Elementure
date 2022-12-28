@@ -16,7 +16,7 @@ public class SpidernestBaseGenProcedure {
 		double locX = 0;
 		double locY = 0;
 		if (world instanceof ServerLevel _serverworld) {
-			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "abandonned_farm"));
+			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "spider_nest_cave"));
 			if (template != null) {
 				template.placeInWorld(_serverworld, new BlockPos(x - 3, y - 3, z - 3), new BlockPos(x - 3, y - 3, z - 3),
 						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
@@ -36,6 +36,16 @@ public class SpidernestBaseGenProcedure {
 			}
 			locY = locY + 1;
 		}
+		if (world instanceof ServerLevel _serverworld) {
+			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "spidernest_start_room"));
+			if (template != null) {
+				template.placeInWorld(_serverworld, new BlockPos(x - 11, ((y - 3) - locY * 8) - 32, z - 11),
+						new BlockPos(x - 11, ((y - 3) - locY * 8) - 32, z - 11),
+						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
+						3);
+			}
+		}
+		SpidernestFloorGenProcedure.execute(world, x, ((y - 3) - locY * 8), z);
 		for (int index1 = 0; index1 < (int) (7); index1++) {
 			if (Math.random() < 0.5) {
 				locX = x + (Math.random() * 8 - 4) * 4;

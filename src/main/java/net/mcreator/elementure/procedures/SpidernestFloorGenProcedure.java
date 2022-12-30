@@ -18,7 +18,7 @@ public class SpidernestFloorGenProcedure {
 	 * recalculated every time so it is very possible to get a small number right
 	 * after a big one
 	 */
-	final static int MAX_FLOOR_SIZE = ((int) Math.random() * 12 + 12);
+	final static int MAX_FLOOR_SIZE = ((int) Math.random() * 16 + 12);
 	final static int MIN_FLOOR_SIZE = (MAX_FLOOR_SIZE / 2 + 1);
 	// main block of code
 	// minimum end room requirement
@@ -125,12 +125,12 @@ public class SpidernestFloorGenProcedure {
 				 * be a key room or bonus room
 				 */
 				if (endRoomCount == 0) {
-					SpidernestEndRoomGenProcedure.execute(world, x + (9 * xPos), y, z + (9 * zPos));
+					SpidernestEndRoomGenProcedure.execute(world, x + (9 * xPos), y - 2, z + (9 * zPos));
 				} else {
-					SpidernestRoomGenProcedure.execute(world, x + (9 * xPos), y, z + (9 * zPos));
+					SpidernestRoomGenProcedure.execute(world, x + (9 * xPos), y - 2, z + (9 * zPos));
 				}
 				endRoomCount++;
-				wallPatcher(floorArray, i);
+				wallPatcher(world, x, y - 2, z, floorArray, i, xPos, zPos);
 			} else if (i != FLOOR_MID && floorArray[i]) {
 				/*
 				 * Generation starts from the center. Normally, the xPos would be 4, but because
@@ -138,8 +138,8 @@ public class SpidernestFloorGenProcedure {
 				 */
 				int xPos = ((i - 1) / 9) - 5;
 				int zPos = ((i - 1) % 9) - 4;
-				SpidernestRoomGenProcedure.execute(world, x + (9 * xPos), y, z + (9 * zPos));
-				wallPatcher(floorArray, i);
+				SpidernestRoomGenProcedure.execute(world, x + (9 * xPos), y - 2, z + (9 * zPos));
+				wallPatcher(world, x, y - 2, z, floorArray, i, xPos, zPos);
 			} else if (i == FLOOR_MID) {
 				/*
 				 * Generation starts from the center. Normally, the xPos would be 4, but because
@@ -147,7 +147,7 @@ public class SpidernestFloorGenProcedure {
 				 */
 				int xPos = ((i - 1) / 9) - 5;
 				int zPos = ((i - 1) % 9) - 4;
-				wallPatcher(floorArray, i);
+				wallPatcher(world, x, y - 2, z, floorArray, i, xPos, zPos);
 			}
 		}
 	}
@@ -179,7 +179,7 @@ public class SpidernestFloorGenProcedure {
 		return neiNum;
 	}
 
-	public static void wallPatcher(boolean[] floorArray, int i) {
+	public static void wallPatcher(LevelAccessor world, double x, double y, double z, boolean[] floorArray, int i, int xPos, int zPos) {
 		/*
 			 * These patchers fill the holes which would be in the dungeons walls to cut
 			 * access

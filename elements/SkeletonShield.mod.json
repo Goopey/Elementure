@@ -25,7 +25,8 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Relic : Offers immunity to attacks from skeletons."
+      "Relic : Offers immunity to attacks from skeletons.",
+      "Effect is reduced against skeleton bosses."
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

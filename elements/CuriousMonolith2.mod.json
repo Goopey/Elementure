@@ -5,7 +5,7 @@
     "structure": "curious_monolith_2",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 675,
+    "spawnProbability": 450,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",

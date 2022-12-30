@@ -22,5 +22,6 @@ public class SkeletonShieldItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(new TextComponent("Relic : Offers immunity to attacks from skeletons."));
+		list.add(new TextComponent("Effect is reduced against skeleton bosses."));
 	}
 }

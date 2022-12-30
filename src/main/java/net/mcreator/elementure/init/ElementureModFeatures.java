@@ -42,6 +42,7 @@ import net.mcreator.elementure.world.features.WindyshoresFeature;
 import net.mcreator.elementure.world.features.VillagerstatueFeature;
 import net.mcreator.elementure.world.features.SwordtempleFeature;
 import net.mcreator.elementure.world.features.SubmergedtempleFeature;
+import net.mcreator.elementure.world.features.SpidernestFeature;
 import net.mcreator.elementure.world.features.RunicwatershrineFeature;
 import net.mcreator.elementure.world.features.RuniclightningshrineFeature;
 import net.mcreator.elementure.world.features.RunicfireshrineFeature;
@@ -256,6 +257,8 @@ public class ElementureModFeatures {
 			GenerationStep.Decoration.SURFACE_STRUCTURES, CuriousCartFeature.GENERATE_BIOMES, CuriousCartFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> CURIOUS_BOAT = register("curious_boat", CuriousBoatFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.SURFACE_STRUCTURES, CuriousBoatFeature.GENERATE_BIOMES, CuriousBoatFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> SPIDERNEST = register("spidernest", SpidernestFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.SURFACE_STRUCTURES, SpidernestFeature.GENERATE_BIOMES, SpidernestFeature::placedFeature));
 
 	private static RegistryObject<Feature<?>> register(String registryname, Supplier<Feature<?>> feature, FeatureRegistration featureRegistration) {
 		FEATURE_REGISTRATIONS.add(featureRegistration);

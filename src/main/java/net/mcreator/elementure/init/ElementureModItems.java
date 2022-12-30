@@ -569,7 +569,10 @@ import net.mcreator.elementure.item.CurserhoeItem;
 import net.mcreator.elementure.item.CurserbowItem;
 import net.mcreator.elementure.item.CurseraxeItem;
 import net.mcreator.elementure.item.CursedpearlItem;
+import net.mcreator.elementure.item.CursedforgottenseedsItem;
+import net.mcreator.elementure.item.CursedforgottenfragmentItem;
 import net.mcreator.elementure.item.CursedbladeItem;
+import net.mcreator.elementure.item.CursedGoopItem;
 import net.mcreator.elementure.item.CthulhufishItem;
 import net.mcreator.elementure.item.CrystalpipItem;
 import net.mcreator.elementure.item.CrumsterItem;
@@ -2549,6 +2552,10 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> DUNGEONHATCH_LOCKED = block(ElementureModBlocks.DUNGEONHATCH_LOCKED,
 			ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> DUNGEONHATCH = block(ElementureModBlocks.DUNGEONHATCH, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CURSED_GOOP = REGISTRY.register("cursed_goop", () -> new CursedGoopItem());
+	public static final RegistryObject<Item> CURSEDFORGOTTENSEEDS = REGISTRY.register("cursedforgottenseeds", () -> new CursedforgottenseedsItem());
+	public static final RegistryObject<Item> CURSEDFORGOTTENFRAGMENT = REGISTRY.register("cursedforgottenfragment",
+			() -> new CursedforgottenfragmentItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -47,8 +47,12 @@ public class SpidernestSpawnSpiderlingProcedure {
 			for (int index0 = 0; index0 < (int) (2); index0++) {
 				if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.AIR) {
 					locY = 1.1;
+					locX = 0.5;
+					locZ = 0.5;
 				} else if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.AIR) {
 					locY = -1.1;
+					locX = 0.5;
+					locZ = 0.5;
 				} else if ((world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == Blocks.AIR) {
 					locX = 1.1;
 				} else if ((world.getBlockState(new BlockPos(x - 1, y, z))).getBlock() == Blocks.AIR) {

@@ -62,7 +62,7 @@ public abstract class AurumarmorItem extends ArmorItem {
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0.7999999999999999f;
+				return 0.4f;
 			}
 		}, slot, properties);
 	}

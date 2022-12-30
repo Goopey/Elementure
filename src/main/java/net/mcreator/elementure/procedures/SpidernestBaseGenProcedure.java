@@ -10,6 +10,8 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.elementure.ElementureMod;
+
 public class SpidernestBaseGenProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double locZ = 0;
@@ -39,17 +41,20 @@ public class SpidernestBaseGenProcedure {
 		if (world instanceof ServerLevel _serverworld) {
 			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "spidernest_start_room"));
 			if (template != null) {
-				template.placeInWorld(_serverworld, new BlockPos(x - 11, ((y - 3) - locY * 8) - 32, z - 11),
-						new BlockPos(x - 11, ((y - 3) - locY * 8) - 32, z - 11),
+				template.placeInWorld(_serverworld, new BlockPos(x - 11, ((y - 3) - locY * 8) - 24, z - 11),
+						new BlockPos(x - 11, ((y - 3) - locY * 8) - 24, z - 11),
 						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
 						3);
 			}
 		}
+		ElementureMod.LOGGER.info((y - 3) - locY * 8);
+		ElementureMod.LOGGER.info(((y - 3) - locY * 8) - 24);
 		SpidernestFloorGenProcedure.execute(world, x, ((y - 3) - locY * 8), z);
+		SpidernestFloorGen2Procedure.execute(world, x, (((y - 3) - locY * 8) - 24), z);
 		for (int index1 = 0; index1 < (int) (7); index1++) {
 			if (Math.random() < 0.5) {
-				locX = x + (Math.random() * 8 - 4) * 4;
-				locZ = z + (Math.random() * 8 - 4) * 4;
+				locX = x + (Math.random() * 8 - 4) * 2;
+				locZ = z + (Math.random() * 8 - 4) * 2;
 				if (world.getBlockState(new BlockPos(locX, world.getHeight(Heightmap.Types.OCEAN_FLOOR, (int) locX, (int) locZ), locZ))
 						.getLightBlock(world, new BlockPos(locX, world.getHeight(Heightmap.Types.OCEAN_FLOOR, (int) locX, (int) locZ), locZ)) >= 15) {
 					BoulderRandomPickProcedure.execute(world, locX, (world.getHeight(Heightmap.Types.OCEAN_FLOOR, (int) locX, (int) locZ)), locZ);

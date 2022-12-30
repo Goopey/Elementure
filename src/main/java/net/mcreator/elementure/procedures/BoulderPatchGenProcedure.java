@@ -35,8 +35,8 @@ public class BoulderPatchGenProcedure {
 		}
 		for (int index0 = 0; index0 < (int) (7); index0++) {
 			if (Math.random() < 0.5) {
-				locX = x + (Math.random() * 8 - 4) * 4;
-				locZ = z + (Math.random() * 8 - 4) * 4;
+				locX = x + (Math.random() * 8 - 4) * 2;
+				locZ = z + (Math.random() * 8 - 4) * 2;
 				if (world.getBlockState(new BlockPos(locX, world.getHeight(Heightmap.Types.OCEAN_FLOOR, (int) locX, (int) locZ), locZ))
 						.getLightBlock(world, new BlockPos(locX, world.getHeight(Heightmap.Types.OCEAN_FLOOR, (int) locX, (int) locZ), locZ)) >= 15) {
 					BoulderRandomPickProcedure.execute(world, locX, (world.getHeight(Heightmap.Types.OCEAN_FLOOR, (int) locX, (int) locZ)), locZ);

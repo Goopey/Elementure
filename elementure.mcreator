@@ -52298,7 +52298,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "cloudsand",
-      "path": "~/ProtoBiomes/Overworld/WindyShores"
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
     },
     {
       "name": "Cloudblock",
@@ -66562,7 +66562,7 @@
       "type": "procedure",
       "sortid": 5010,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "spidernest_base_gen",
       "metadata": {
         "dependencies": [
@@ -69845,6 +69845,441 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "cheaper_sandstone"
+    },
+    {
+      "name": "CheaperRedSandstone",
+      "type": "recipe",
+      "sortid": 5224,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cheaper_red_sandstone"
+    },
+    {
+      "name": "SpidernestCryptWallPatcherX",
+      "type": "procedure",
+      "sortid": 5225,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spidernest_crypt_wall_patcher_x",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dungeons/SpiderNests"
+    },
+    {
+      "name": "SpidernestCryptWallPatcherZ",
+      "type": "procedure",
+      "sortid": 5226,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spidernest_crypt_wall_patcher_z",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dungeons/SpiderNests"
+    },
+    {
+      "name": "CloudSandstone",
+      "type": "block",
+      "sortid": 5227,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_sandstone",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "SmoothCloudSandstone",
+      "type": "block",
+      "sortid": 5228,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_cloud_sandstone",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CutCloudSandstone",
+      "type": "block",
+      "sortid": 5229,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cut_cloud_sandstone",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "ChiseledCloudSandstone",
+      "type": "block",
+      "sortid": 5230,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_cloud_sandstone",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CloudSandstoneRecipe",
+      "type": "recipe",
+      "sortid": 5231,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_sandstone_recipe",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "SmoothCloudSandstoneRecipe",
+      "type": "recipe",
+      "sortid": 5232,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_cloud_sandstone_recipe",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CutCloudSandstoneRecipe",
+      "type": "recipe",
+      "sortid": 5233,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cut_cloud_sandstone_recipe",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CloudSandstoneSlabs",
+      "type": "block",
+      "sortid": 5234,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_sandstone_slabs",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CloudSandstoneStair",
+      "type": "block",
+      "sortid": 5235,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_sandstone_stair",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CloudSandstoneWalls",
+      "type": "block",
+      "sortid": 5236,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_sandstone_walls",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "SmoothCloudSandstoneSlab",
+      "type": "block",
+      "sortid": 5237,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_cloud_sandstone_slab",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "SmoothCloudSandstoneStairs",
+      "type": "block",
+      "sortid": 5238,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_cloud_sandstone_stairs",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "SmoothCloudSandstoneWall",
+      "type": "block",
+      "sortid": 5239,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_cloud_sandstone_wall",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CutCloudSandstoneSlab",
+      "type": "block",
+      "sortid": 5240,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cut_cloud_sandstone_slab",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CutCloudSandstoneStairs",
+      "type": "block",
+      "sortid": 5241,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cut_cloud_sandstone_stairs",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CutCloudSandstoneWall",
+      "type": "block",
+      "sortid": 5242,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cut_cloud_sandstone_wall",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CloudSandGlassRecipe",
+      "type": "recipe",
+      "sortid": 5243,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_sand_glass_recipe",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CutCloudSandstoneRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 5244,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cut_cloud_sandstone_recipe_stonecutter",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "ChiseledCloudSandstoneRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 5245,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_cloud_sandstone_recipe_stonecutter",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CloudSandstoneSlabRecipe",
+      "type": "recipe",
+      "sortid": 5246,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_sandstone_slab_recipe",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CloudSandstoneStairsRecipe",
+      "type": "recipe",
+      "sortid": 5247,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_sandstone_stairs_recipe",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CloudSandstoneWallRecipe",
+      "type": "recipe",
+      "sortid": 5248,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_sandstone_wall_recipe",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "SmoothCloudSandstoneSlabRecipe",
+      "type": "recipe",
+      "sortid": 5249,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_cloud_sandstone_slab_recipe",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "SmoothCloudSandstoneStairsRecipe",
+      "type": "recipe",
+      "sortid": 5250,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_cloud_sandstone_stairs_recipe",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "SmoothCloudSandstoneWallRecipe",
+      "type": "recipe",
+      "sortid": 5251,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_cloud_sandstone_wall_recipe",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CutCloudSandstoneSlabRecipe",
+      "type": "recipe",
+      "sortid": 5252,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cut_cloud_sandstone_slab_recipe",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CutCloudSandstoneStairsRecipe",
+      "type": "recipe",
+      "sortid": 5253,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cut_cloud_sandstone_stairs_recipe",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CutCloudSandstoneWallRecipe",
+      "type": "recipe",
+      "sortid": 5254,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cut_cloud_sandstone_wall_recipe",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "ChiseledCloudSandstoneRecipe",
+      "type": "recipe",
+      "sortid": 5255,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chiseled_cloud_sandstone_recipe",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "SmoothCloudSandstoneSlabRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 5256,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_cloud_sandstone_slab_recipe_stonecutter",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "SmoothCloudSandstoneStairsRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 5257,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_cloud_sandstone_stairs_recipe_stonecutter",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "SmoothCloudSandstoneWallRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 5258,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smooth_cloud_sandstone_wall_recipe_stonecutter",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CloudSandstoneSlabRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 5259,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_sandstone_slab_recipe_stonecutter",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CloudSandstoneStairsRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 5260,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_sandstone_stairs_recipe_stonecutter",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CloudSandstoneWallRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 5261,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cloud_sandstone_wall_recipe_stonecutter",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CutCloudSandstoneSlabRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 5262,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cut_cloud_sandstone_slab_recipe_stonecutter",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CutCloudSandstoneStairsRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 5263,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cut_cloud_sandstone_stairs_recipe_stonecutter",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CutCloudSandstoneWallRecipeStonecutter",
+      "type": "recipe",
+      "sortid": 5264,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cut_cloud_sandstone_wall_recipe_stonecutter",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CutCloudSandstoneSlabRecipeStonecutter2",
+      "type": "recipe",
+      "sortid": 5265,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cut_cloud_sandstone_slab_recipe_stonecutter_2",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CutCloudSandstoneStairsRecipeStonecutter2",
+      "type": "recipe",
+      "sortid": 5266,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cut_cloud_sandstone_stairs_recipe_stonecutter_2",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
+    },
+    {
+      "name": "CutCloudSandstoneWallRecipeStonecutter2",
+      "type": "recipe",
+      "sortid": 5267,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cut_cloud_sandstone_wall_recipe_stonecutter_2",
+      "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresCloudSand"
     }
   ],
   "variable_elements": [
@@ -70925,9 +71360,9 @@
       "item.dragonarmorboots.name": "Dragon Boots",
       "block.minecraft_worlds.redbarrier": "Red barrier",
       "item.elementure.ferziumarmor_leggings": "Ferzium Leggings",
-      "entity.elementure.mycenashroomvillagerblacksmith": "Blacksmith",
-      "item.elementure.staticsprite_spawn_egg": "Static sprite Spawn Egg",
       "item.elementure.delaconcorde": "Dela Concord",
+      "item.elementure.staticsprite_spawn_egg": "Static sprite Spawn Egg",
+      "entity.elementure.mycenashroomvillagerblacksmith": "Blacksmith",
       "entity.enderwolf.name": "Ender wolf",
       "fluid.elementure.regensubstance": "Regensubstance",
       "block.elementure.fluffplanktrapdoor": "Fluff planks",
@@ -71161,6 +71596,7 @@
       "item.minecraft.splash_potion.effect.cursedsight_potion_item": "Splash Cursed sight",
       "block.elementure.obsidiansprouts": "Obsidian sprouts",
       "item.elementure.lousyswordfamiliar_spawn_egg": "Lousy sword Spawn Egg",
+      "block.elementure.cloud_sandstone_walls": "Cloud Sandstone Wall",
       "entity.minecraft_worlds.weakandesiteelemental": "Small andesite elemental",
       "tile.energydioritespawner.name": "Energised diorite spawner",
       "item.bigcoin.name": "Coin",
@@ -71271,6 +71707,8 @@
       "tile.wildstrawberrybush.name": "Wild Salberry bush",
       "entity.elementure.mycenafumoonshroomlord": "Mycena fumoon shroomlord",
       "block.minecraft_worlds.icespikes": "Ice spikes",
+      "block.elementure.cut_cloud_sandstone_slab": "Cut Cloud Sandstone Slab",
+      "block.elementure.chiseled_cloud_sandstone": "Chiseled Cloud Sandstone",
       "key.elementure.openrelicinventorykey": "Openrelicinventorykey",
       "block.elementure.neonblock": "Neon ore",
       "item.minecraft_worlds.noobiumingot": "Noobium ingot",
@@ -71439,6 +71877,7 @@
       "entity.dirtcobblestonepet.name": "Dirt cobblestone pet",
       "item.creeperarmorhead.name": "Creeperfied Helmet",
       "tile.waterelementalaltar.name": "Water elemental altar",
+      "block.elementure.smooth_cloud_sandstone_stairs": "Smooth Cloud Sandstone Stairs",
       "item.elementure.minoskull_spawn_egg": "Minoskull Spawn Egg",
       "item.minecraft_worlds.suspiciouslookingskull": "Suspicious looking skull",
       "tipped_arrow.effect.cursedsight": "Arrow of Cursed sight",
@@ -71838,8 +72277,8 @@
       "item.tinsword.name": "Tin sword",
       "block.minecraft_worlds.abyssalspotter": "Abyssal spotter",
       "entity.dioriteelemental.name": "Energy diorite elemental [Energy]",
-      "item.elementure.silverearthcore": "Silver earth core",
       "fluid.minecraft_worlds.corruptdew": "Corruptdew",
+      "item.elementure.silverearthcore": "Silver earth core",
       "item.elementure.glassbellboat_power_thruster": "Glass bellboat Power Thruster",
       "block.elementure.bluebarrier": "Blue barrier",
       "item.metalitelegs.name": "Metalite Leggings",
@@ -72101,6 +72540,7 @@
       "item.elementure.brokensword": "Broken sword",
       "block.elementure.direcryptbricks_stairs": "Dire crypt bricks",
       "item.minecraft_worlds.suitcasehoney": "Suitcase full of honey",
+      "block.elementure.cut_cloud_sandstone": "Cut Cloud Sandstone",
       "entity.ancientorbiton.name": "Ancient orbiton",
       "tile.adamantiteblock.name": "Adamantite block",
       "block.elementure.fumingsparklingstars": "Sparkling stars",
@@ -72194,6 +72634,7 @@
       "block.elementure.brownbarrierclosing": "Brown barrier closing",
       "item.minecraft_worlds.silverwaterflask": "Silver flask of WATER",
       "block.elementure.lightbluebarrier": "Light blue barrier",
+      "block.elementure.cut_cloud_sandstone_wall": "Cut Cloud Sandstone Wall",
       "block.elementure.protectionremover": "Protection remover",
       "item.elementure.beestingberry": "Aky berry",
       "item.firesoul.name": "Fire soul",
@@ -72324,6 +72765,7 @@
       "item.elementure.cookedraidon": "Cooked Raidon Meat",
       "entity.animatedstatue.name": "Animated villager statue",
       "item.elementure.dragonitescalemail_boots": "Dragonewt Scalemail Boots",
+      "block.elementure.cut_cloud_sandstone_stairs": "Cut Cloud Sandstone Stairs",
       "item.emeraldbow.name": "Emerald bow",
       "item.energyblade.name": "Energy blade",
       "entity.northwind.name": "North wind",
@@ -72339,6 +72781,7 @@
       "item.elementure.neonarmor_helmet": "Neon Helmet",
       "item.silverlegs.name": "Silver Leggings",
       "item.elementure.neonhoe": "Neon hoe",
+      "block.elementure.smooth_cloud_sandstone_slab": "Smooth Cloud Sandstone Slab",
       "entity.elementure.lousyswordfamiliar": "Lousy sword",
       "item.elementure.hollowknightpaleore": "Pure ore",
       "item.silverarmorlegs.name": "Silver Leggings",
@@ -72840,6 +73283,7 @@
       "item.elementure.unholyshovel": "Unholy shovel",
       "item.elementure.kassemarmor_boots": "Kassemarmor Boots",
       "item.elementure.forcingblade": "Forcing blade [Force]",
+      "block.elementure.smooth_cloud_sandstone_wall": "Smooth Cloud Sandstone Wall",
       "tile.cyanbarrierclosing.name": "Cyan barrier closing",
       "item.minecraft_worlds.lightsoul": "Light soul",
       "item.elementure.reinforcedfishingrod": "Reinforced fishing rod",
@@ -73010,6 +73454,7 @@
       "item.minecraft_worlds.merthiumarmor_chestplate": "Merthium Body",
       "item.elementure.glasslightbottle": "Glasslight bottle",
       "tile.graybarrier.name": "Gray barrier",
+      "block.elementure.smooth_cloud_sandstone": "Smooth Cloud Sandstone",
       "item.minecraft_worlds.honeyberryjam": "Honey berry jam",
       "item.elementure.diseasedcod": "Diseased cod",
       "item.elementure.dankblade": "Dank blade [Dark]",
@@ -73067,6 +73512,7 @@
       "block.minecraft_worlds.firestar": "Demon star",
       "tile.blackbarrierclosing.name": "Black barrier closing",
       "tile.voidruneblock.name": "Void rune block",
+      "block.elementure.cloud_sandstone_slabs": "Cloud Sandstone Slab",
       "block.elementure.aurumblock": "Aurum block",
       "item.tinchestplate.name": "Tin Body",
       "item.woodenplate.name": "Wooden plate",
@@ -73535,6 +73981,7 @@
       "item.minecraft.tipped_arrow.effect.coldeffect_potion_item": "Arrow of Coldness",
       "item.elementure.redbarrierkey": "Red barrier key",
       "entity.elementure.tarumbra": "Tar umbra",
+      "block.elementure.cloud_sandstone_stair": "Cloud Sandstone Stairs",
       "block.minecraft_worlds.merthiumblock": "Merthium block",
       "effect.coldeffect_potion_item": "Freezing cold!",
       "tile.silverblock.name": "Silver block",
@@ -74056,6 +74503,7 @@
       "tile.corruptflower.name": "Corrupt flower",
       "item.minecraft.tipped_arrow.effect.coldeffect": "Arrow of Coldness",
       "item.elementure.limebarrierkey": "Lime barrier key",
+      "block.elementure.cloud_sandstone": "Cloud Sandstone",
       "item.elementure.eel": "Eel",
       "block.elementure.dungeonhatch_locked": "Locked dungeon hatch",
       "block.elementure.blazingnetherum": "Blazing netherum",
@@ -74676,6 +75124,10 @@
                   },
                   {
                     "name": "WindyShoresMaterial",
+                    "children": []
+                  },
+                  {
+                    "name": "WindyshoresCloudSand",
                     "children": []
                   }
                 ]

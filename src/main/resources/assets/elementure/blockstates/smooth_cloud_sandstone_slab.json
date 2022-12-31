@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/smooth_cloud_sandstone_slab"
+    },
+    "type=top": {
+      "model": "elementure:block/smooth_cloud_sandstone_slab_top"
+    },
+    "type=double": {
+      "model": "elementure:block/smooth_cloud_sandstone_slab_full"
+    }
+  }
+}

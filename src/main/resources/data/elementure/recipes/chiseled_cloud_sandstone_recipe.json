@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:cloud_sandstone_slabs"
+    },
+    "1": {
+      "item": "elementure:cloud_sandstone_slabs"
+    }
+  },
+  "result": {
+    "item": "elementure:chiseled_cloud_sandstone",
+    "count": 1
+  }
+}

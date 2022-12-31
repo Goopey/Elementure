@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "elementure:cloud_sandstone"
+  },
+  "result": "elementure:cut_cloud_sandstone_wall"
+}

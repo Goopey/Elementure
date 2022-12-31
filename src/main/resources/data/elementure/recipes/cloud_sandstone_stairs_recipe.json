@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:cloud_sandstone"
+    },
+    "3": {
+      "item": "elementure:cloud_sandstone"
+    },
+    "4": {
+      "item": "elementure:cloud_sandstone"
+    },
+    "6": {
+      "item": "elementure:cloud_sandstone"
+    },
+    "7": {
+      "item": "elementure:cloud_sandstone"
+    },
+    "8": {
+      "item": "elementure:cloud_sandstone"
+    }
+  },
+  "result": {
+    "item": "elementure:cloud_sandstone_stair",
+    "count": 4
+  }
+}

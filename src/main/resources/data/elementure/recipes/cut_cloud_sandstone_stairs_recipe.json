@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:cut_cloud_sandstone"
+    },
+    "3": {
+      "item": "elementure:cut_cloud_sandstone"
+    },
+    "4": {
+      "item": "elementure:cut_cloud_sandstone"
+    },
+    "6": {
+      "item": "elementure:cut_cloud_sandstone"
+    },
+    "7": {
+      "item": "elementure:cut_cloud_sandstone"
+    },
+    "8": {
+      "item": "elementure:cut_cloud_sandstone"
+    }
+  },
+  "result": {
+    "item": "elementure:cut_cloud_sandstone_stairs",
+    "count": 4
+  }
+}

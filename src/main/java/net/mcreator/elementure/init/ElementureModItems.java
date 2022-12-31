@@ -2556,6 +2556,31 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> CURSEDFORGOTTENSEEDS = REGISTRY.register("cursedforgottenseeds", () -> new CursedforgottenseedsItem());
 	public static final RegistryObject<Item> CURSEDFORGOTTENFRAGMENT = REGISTRY.register("cursedforgottenfragment",
 			() -> new CursedforgottenfragmentItem());
+	public static final RegistryObject<Item> CLOUD_SANDSTONE = block(ElementureModBlocks.CLOUD_SANDSTONE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SMOOTH_CLOUD_SANDSTONE = block(ElementureModBlocks.SMOOTH_CLOUD_SANDSTONE,
+			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CUT_CLOUD_SANDSTONE = block(ElementureModBlocks.CUT_CLOUD_SANDSTONE,
+			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CHISELED_CLOUD_SANDSTONE = block(ElementureModBlocks.CHISELED_CLOUD_SANDSTONE,
+			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CLOUD_SANDSTONE_SLABS = block(ElementureModBlocks.CLOUD_SANDSTONE_SLABS,
+			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CLOUD_SANDSTONE_STAIR = block(ElementureModBlocks.CLOUD_SANDSTONE_STAIR,
+			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CLOUD_SANDSTONE_WALLS = block(ElementureModBlocks.CLOUD_SANDSTONE_WALLS,
+			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SMOOTH_CLOUD_SANDSTONE_SLAB = block(ElementureModBlocks.SMOOTH_CLOUD_SANDSTONE_SLAB,
+			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SMOOTH_CLOUD_SANDSTONE_STAIRS = block(ElementureModBlocks.SMOOTH_CLOUD_SANDSTONE_STAIRS,
+			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SMOOTH_CLOUD_SANDSTONE_WALL = block(ElementureModBlocks.SMOOTH_CLOUD_SANDSTONE_WALL,
+			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CUT_CLOUD_SANDSTONE_SLAB = block(ElementureModBlocks.CUT_CLOUD_SANDSTONE_SLAB,
+			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CUT_CLOUD_SANDSTONE_STAIRS = block(ElementureModBlocks.CUT_CLOUD_SANDSTONE_STAIRS,
+			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CUT_CLOUD_SANDSTONE_WALL = block(ElementureModBlocks.CUT_CLOUD_SANDSTONE_WALL,
+			ElementureModTabs.TAB_TABMODDEDBLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

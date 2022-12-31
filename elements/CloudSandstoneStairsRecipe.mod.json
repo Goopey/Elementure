@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:CloudSandstone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CloudSandstone"
+      },
+      {
+        "value": "CUSTOM:CloudSandstone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CloudSandstone"
+      },
+      {
+        "value": "CUSTOM:CloudSandstone"
+      },
+      {
+        "value": "CUSTOM:CloudSandstone"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:CloudSandstoneStair"
+    },
+    "name": "cloud_sandstone_stairs_recipe",
+    "namespace": "mod"
+  }
+}

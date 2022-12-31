@@ -1,0 +1,20 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Stone cutting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "stoneCuttingInputStack": {
+      "value": "CUSTOM:CutCloudSandstone"
+    },
+    "stoneCuttingReturnStack": {
+      "value": "CUSTOM:CutCloudSandstoneWall"
+    },
+    "name": "cut_cloud_sandstone_wall_recipe_stonecutter_2",
+    "namespace": "mod"
+  }
+}

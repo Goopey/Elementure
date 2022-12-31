@@ -11,13 +11,14 @@ public class SpidernestFloorGen2Procedure {
 	final static int FLOOR_SIZE = 91;
 	final static int FLOOR_START = 10;
 	final static int FLOOR_MID = 50;
+	final static int DOOR_HEIGHT = 1;
 	/*
 	 * Max floor size is defined here so that every floor size has the same chances
 	 * of occuring Having to put random directly inside the while makes it get
 	 * recalculated every time so it is very possible to get a small number right
 	 * after a big one
 	 */
-	final static int MAX_FLOOR_SIZE = ((int) Math.random() * 4 + 8);
+	final static int MAX_FLOOR_SIZE = ((int) Math.random() * 8 + 17);
 	final static int MIN_FLOOR_SIZE = (MAX_FLOOR_SIZE / 2 + 1);
 	// main block of code
 	// minimum end room requirement
@@ -130,22 +131,7 @@ public class SpidernestFloorGen2Procedure {
 					SwordtempleSetBonusLootProcedure.execute(world, x + (9 * xPos), y + 1, z + (9 * zPos));
 				}
 				endRoomCount++;
-				/*
-				 * These patchers fill the holes which would be in the dungeons walls to cut
-				 * access
-				 */
-				if (i < 82 && !floorArray[i + 9]) {
-					SwordtempleWallPatcherZProcedure.execute(world, x + (9 * xPos) + 4, y + 1, z + (9 * zPos));
-				}
-				if (i > 18 && !floorArray[i - 9]) {
-					SwordtempleWallPatcherZProcedure.execute(world, x + (9 * xPos) - 4, y + 1, z + (9 * zPos));
-				}
-				if (((i - 1) % 9 != 0) && !floorArray[i - 1]) {
-					SwordtempleWallPatcherXProcedure.execute(world, x + (9 * xPos), y + 1, z + (9 * zPos) - 4);
-				}
-				if ((i % 9 != 0) && !floorArray[i + 1]) {
-					SwordtempleWallPatcherXProcedure.execute(world, x + (9 * xPos), y + 1, z + (9 * zPos) + 4);
-				}
+				wallPatcher(world, x, y - 2, z, floorArray, i, xPos, zPos);
 			} else if (i != FLOOR_MID && floorArray[i]) {
 				/*
 				 * Generation starts from the center. Normally, the xPos would be 4, but because
@@ -154,18 +140,7 @@ public class SpidernestFloorGen2Procedure {
 				int xPos = ((i - 1) / 9) - 5;
 				int zPos = ((i - 1) % 9) - 4;
 				SwordtempleRoomGenProcedure.execute(world, x + (9 * xPos), y, z + (9 * zPos));
-				if (i < 82 && !floorArray[i + 9]) {
-					SwordtempleWallPatcherZProcedure.execute(world, x + (9 * xPos) + 4, y + 1, z + (9 * zPos));
-				}
-				if (i > 18 && !floorArray[i - 9]) {
-					SwordtempleWallPatcherZProcedure.execute(world, x + (9 * xPos) - 4, y + 1, z + (9 * zPos));
-				}
-				if (((i - 1) % 9 != 0) && !floorArray[i - 1]) {
-					SwordtempleWallPatcherXProcedure.execute(world, x + (9 * xPos), y + 1, z + (9 * zPos) - 4);
-				}
-				if ((i % 9 != 0) && !floorArray[i + 1]) {
-					SwordtempleWallPatcherXProcedure.execute(world, x + (9 * xPos), y + 1, z + (9 * zPos) + 4);
-				}
+				wallPatcher(world, x, y - 2, z, floorArray, i, xPos, zPos);
 			} else if (i == FLOOR_MID) {
 				/*
 				 * Generation starts from the center. Normally, the xPos would be 4, but because
@@ -173,18 +148,7 @@ public class SpidernestFloorGen2Procedure {
 				 */
 				int xPos = ((i - 1) / 9) - 5;
 				int zPos = ((i - 1) % 9) - 4;
-				if (!floorArray[i + 9]) {
-					SwordtempleWallPatcherZProcedure.execute(world, x + (9 * xPos) + 4, y + 1, z + (9 * zPos));
-				}
-				if (!floorArray[i - 9]) {
-					SwordtempleWallPatcherZProcedure.execute(world, x + (9 * xPos) - 4, y + 1, z + (9 * zPos));
-				}
-				if (!floorArray[i - 1]) {
-					SwordtempleWallPatcherXProcedure.execute(world, x + (9 * xPos), y + 1, z + (9 * zPos) - 4);
-				}
-				if (!floorArray[i + 1]) {
-					SwordtempleWallPatcherXProcedure.execute(world, x + (9 * xPos), y + 1, z + (9 * zPos) + 4);
-				}
+				wallPatcher(world, x, y - 2, z, floorArray, i, xPos, zPos);
 			}
 		}
 	}
@@ -214,6 +178,25 @@ public class SpidernestFloorGen2Procedure {
 			neiNum++;
 		}
 		return neiNum;
+	}
+
+	public static void wallPatcher(LevelAccessor world, double x, double y, double z, boolean[] floorArray, int i, int xPos, int zPos) {
+		/*
+			 * These patchers fill the holes which would be in the dungeons walls to cut
+			 * access
+			 */
+		if (i < 82 && !floorArray[i + 9]) {
+			SpidernestCryptWallPatcherZProcedure.execute(world, x + (9 * xPos) + 4, y + DOOR_HEIGHT, z + (9 * zPos));
+		}
+		if (i > 18 && !floorArray[i - 9]) {
+			SpidernestCryptWallPatcherZProcedure.execute(world, x + (9 * xPos) - 4, y + DOOR_HEIGHT, z + (9 * zPos));
+		}
+		if (((i - 1) % 9 != 0) && !floorArray[i - 1]) {
+			SpidernestCryptWallPatcherXProcedure.execute(world, x + (9 * xPos), y + DOOR_HEIGHT, z + (9 * zPos) - 4);
+		}
+		if ((i % 9 != 0) && !floorArray[i + 1]) {
+			SpidernestCryptWallPatcherXProcedure.execute(world, x + (9 * xPos), y + DOOR_HEIGHT, z + (9 * zPos) + 4);
+		}
 	}
 
 	public static boolean canPlaceRoom(int neighbors, int currentRoom, boolean[] floorArray, boolean[] queueArray) {

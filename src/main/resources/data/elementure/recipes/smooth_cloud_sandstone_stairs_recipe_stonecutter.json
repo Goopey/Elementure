@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "elementure:smooth_cloud_sandstone"
+  },
+  "result": "elementure:smooth_cloud_sandstone_stairs"
+}

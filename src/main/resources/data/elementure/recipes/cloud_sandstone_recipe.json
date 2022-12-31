@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:cloudsand"
+    },
+    "1": {
+      "item": "elementure:cloudsand"
+    },
+    "2": {
+      "item": "elementure:cloudsand"
+    },
+    "3": {
+      "item": "elementure:cloudsand"
+    }
+  },
+  "result": {
+    "item": "elementure:cloud_sandstone",
+    "count": 4
+  }
+}

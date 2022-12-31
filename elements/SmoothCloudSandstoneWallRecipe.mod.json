@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 6,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:SmoothCloudSandstone"
+      },
+      {
+        "value": "CUSTOM:SmoothCloudSandstone"
+      },
+      {
+        "value": "CUSTOM:SmoothCloudSandstone"
+      },
+      {
+        "value": "CUSTOM:SmoothCloudSandstone"
+      },
+      {
+        "value": "CUSTOM:SmoothCloudSandstone"
+      },
+      {
+        "value": "CUSTOM:SmoothCloudSandstone"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:SmoothCloudSandstoneWall"
+    },
+    "name": "smooth_cloud_sandstone_wall_recipe",
+    "namespace": "mod"
+  }
+}

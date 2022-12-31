@@ -1,0 +1,31 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:smooth_cloud_sandstone"
+    },
+    "1": {
+      "item": "elementure:smooth_cloud_sandstone"
+    },
+    "2": {
+      "item": "elementure:smooth_cloud_sandstone"
+    },
+    "3": {
+      "item": "elementure:smooth_cloud_sandstone"
+    },
+    "4": {
+      "item": "elementure:smooth_cloud_sandstone"
+    },
+    "5": {
+      "item": "elementure:smooth_cloud_sandstone"
+    }
+  },
+  "result": {
+    "item": "elementure:smooth_cloud_sandstone_wall",
+    "count": 6
+  }
+}

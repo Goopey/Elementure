@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/cloud_sandstone_bottom",
+    "up": "elementure:blocks/cloud_sandstone_top",
+    "north": "elementure:blocks/cloud_sandstone",
+    "east": "elementure:blocks/cloud_sandstone",
+    "south": "elementure:blocks/cloud_sandstone",
+    "west": "elementure:blocks/cloud_sandstone",
+    "particle": "elementure:blocks/cloud_sandstone_bottom"
+  }
+}

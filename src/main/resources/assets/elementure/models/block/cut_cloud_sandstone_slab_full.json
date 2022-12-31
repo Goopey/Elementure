@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "elementure:blocks/cloud_sandstone_top",
+    "top": "elementure:blocks/cloud_sandstone_top",
+    "side": "elementure:blocks/smooth_cloud_sandstone"
+  }
+}

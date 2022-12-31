@@ -88,6 +88,10 @@ import net.mcreator.elementure.block.SoulsandvalleymemorialBlock;
 import net.mcreator.elementure.block.SoulforgeBlock;
 import net.mcreator.elementure.block.SolarlilyBlock;
 import net.mcreator.elementure.block.SnowymemorialBlock;
+import net.mcreator.elementure.block.SmoothCloudSandstoneWallBlock;
+import net.mcreator.elementure.block.SmoothCloudSandstoneStairsBlock;
+import net.mcreator.elementure.block.SmoothCloudSandstoneSlabBlock;
+import net.mcreator.elementure.block.SmoothCloudSandstoneBlock;
 import net.mcreator.elementure.block.SmallScrapperBlock;
 import net.mcreator.elementure.block.SkyjadeblockBlock;
 import net.mcreator.elementure.block.SirenheartBlock;
@@ -479,6 +483,10 @@ import net.mcreator.elementure.block.CyanrimefanBlock;
 import net.mcreator.elementure.block.CyanrimebushBlock;
 import net.mcreator.elementure.block.CyanbarrierclosingBlock;
 import net.mcreator.elementure.block.CyanbarrierBlock;
+import net.mcreator.elementure.block.CutCloudSandstoneWallBlock;
+import net.mcreator.elementure.block.CutCloudSandstoneStairsBlock;
+import net.mcreator.elementure.block.CutCloudSandstoneSlabBlock;
+import net.mcreator.elementure.block.CutCloudSandstoneBlock;
 import net.mcreator.elementure.block.CursedplanksBlock;
 import net.mcreator.elementure.block.CursedlogBlock;
 import net.mcreator.elementure.block.CursedleavesBlock;
@@ -532,9 +540,14 @@ import net.mcreator.elementure.block.ColdberrybushBlock;
 import net.mcreator.elementure.block.CloudsandBlock;
 import net.mcreator.elementure.block.CloudgeyserblockBlock;
 import net.mcreator.elementure.block.CloudblockBlock;
+import net.mcreator.elementure.block.CloudSandstoneWallsBlock;
+import net.mcreator.elementure.block.CloudSandstoneStairBlock;
+import net.mcreator.elementure.block.CloudSandstoneSlabsBlock;
+import net.mcreator.elementure.block.CloudSandstoneBlock;
 import net.mcreator.elementure.block.ChiseledruinedgraniteBlock;
 import net.mcreator.elementure.block.ChiseledlightningandesiteBlock;
 import net.mcreator.elementure.block.ChiseledenergydioriteBlock;
+import net.mcreator.elementure.block.ChiseledCloudSandstoneBlock;
 import net.mcreator.elementure.block.CheckingblockalphanBlock;
 import net.mcreator.elementure.block.BurningtarblockBlock;
 import net.mcreator.elementure.block.BurningdarkstoneBlock;
@@ -1295,6 +1308,30 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> DUNGEONLANTERN = REGISTRY.register("dungeonlantern", () -> new DungeonlanternBlock());
 	public static final RegistryObject<Block> DUNGEONHATCH_LOCKED = REGISTRY.register("dungeonhatch_locked", () -> new DungeonhatchLockedBlock());
 	public static final RegistryObject<Block> DUNGEONHATCH = REGISTRY.register("dungeonhatch", () -> new DungeonhatchBlock());
+	public static final RegistryObject<Block> CLOUD_SANDSTONE = REGISTRY.register("cloud_sandstone", () -> new CloudSandstoneBlock());
+	public static final RegistryObject<Block> SMOOTH_CLOUD_SANDSTONE = REGISTRY.register("smooth_cloud_sandstone",
+			() -> new SmoothCloudSandstoneBlock());
+	public static final RegistryObject<Block> CUT_CLOUD_SANDSTONE = REGISTRY.register("cut_cloud_sandstone", () -> new CutCloudSandstoneBlock());
+	public static final RegistryObject<Block> CHISELED_CLOUD_SANDSTONE = REGISTRY.register("chiseled_cloud_sandstone",
+			() -> new ChiseledCloudSandstoneBlock());
+	public static final RegistryObject<Block> CLOUD_SANDSTONE_SLABS = REGISTRY.register("cloud_sandstone_slabs",
+			() -> new CloudSandstoneSlabsBlock());
+	public static final RegistryObject<Block> CLOUD_SANDSTONE_STAIR = REGISTRY.register("cloud_sandstone_stair",
+			() -> new CloudSandstoneStairBlock());
+	public static final RegistryObject<Block> CLOUD_SANDSTONE_WALLS = REGISTRY.register("cloud_sandstone_walls",
+			() -> new CloudSandstoneWallsBlock());
+	public static final RegistryObject<Block> SMOOTH_CLOUD_SANDSTONE_SLAB = REGISTRY.register("smooth_cloud_sandstone_slab",
+			() -> new SmoothCloudSandstoneSlabBlock());
+	public static final RegistryObject<Block> SMOOTH_CLOUD_SANDSTONE_STAIRS = REGISTRY.register("smooth_cloud_sandstone_stairs",
+			() -> new SmoothCloudSandstoneStairsBlock());
+	public static final RegistryObject<Block> SMOOTH_CLOUD_SANDSTONE_WALL = REGISTRY.register("smooth_cloud_sandstone_wall",
+			() -> new SmoothCloudSandstoneWallBlock());
+	public static final RegistryObject<Block> CUT_CLOUD_SANDSTONE_SLAB = REGISTRY.register("cut_cloud_sandstone_slab",
+			() -> new CutCloudSandstoneSlabBlock());
+	public static final RegistryObject<Block> CUT_CLOUD_SANDSTONE_STAIRS = REGISTRY.register("cut_cloud_sandstone_stairs",
+			() -> new CutCloudSandstoneStairsBlock());
+	public static final RegistryObject<Block> CUT_CLOUD_SANDSTONE_WALL = REGISTRY.register("cut_cloud_sandstone_wall",
+			() -> new CutCloudSandstoneWallBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

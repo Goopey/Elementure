@@ -40,7 +40,7 @@
     "recipeReturnStack": {
       "value": "Blocks.SANDSTONE#0"
     },
-    "name": "cheaper_sandstone",
-    "namespace": "mod"
+    "name": "sandstone",
+    "namespace": "minecraft"
   }
 }

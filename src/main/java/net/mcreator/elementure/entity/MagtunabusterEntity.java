@@ -7,8 +7,10 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.EntityHitResult;
+import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -18,6 +20,8 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.elementure.procedures.MagtunabusterFireBallProcedure;
+import net.mcreator.elementure.procedures.MagtunabusterExplodeProcedure;
 import net.mcreator.elementure.init.ElementureModEntities;
 
 import java.util.Random;
@@ -48,12 +52,12 @@ public class MagtunabusterEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public ItemStack getItem() {
-		return new ItemStack(Items.BLAZE_POWDER);
+		return new ItemStack(Blocks.AIR);
 	}
 
 	@Override
 	protected ItemStack getPickupItem() {
-		return new ItemStack(Items.BLAZE_POWDER);
+		return ItemStack.EMPTY;
 	}
 
 	@Override
@@ -63,15 +67,28 @@ public class MagtunabusterEntity extends AbstractArrow implements ItemSupplier {
 	}
 
 	@Override
+	public void onHitEntity(EntityHitResult entityHitResult) {
+		super.onHitEntity(entityHitResult);
+		MagtunabusterExplodeProcedure.execute(this.level, this);
+	}
+
+	@Override
+	public void onHitBlock(BlockHitResult blockHitResult) {
+		super.onHitBlock(blockHitResult);
+		MagtunabusterExplodeProcedure.execute(this.level, this);
+	}
+
+	@Override
 	public void tick() {
 		super.tick();
+		MagtunabusterFireBallProcedure.execute(this.level, this);
 		if (this.inGround)
 			this.discard();
 	}
 
 	public static MagtunabusterEntity shoot(Level world, LivingEntity entity, Random random, float power, double damage, int knockback) {
 		MagtunabusterEntity entityarrow = new MagtunabusterEntity(ElementureModEntities.MAGTUNABUSTER.get(), entity, world);
-		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
+		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y * 1.35F, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(false);
 		entityarrow.setBaseDamage(damage);
@@ -89,7 +106,7 @@ public class MagtunabusterEntity extends AbstractArrow implements ItemSupplier {
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 0.6f * 2, 12.0F);
+		entityarrow.shoot(dx, (dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F) * 1.35F, dz, 0.6f * 2, 12.0F);
 		entityarrow.setSilent(true);
 		entityarrow.setBaseDamage(3.6);
 		entityarrow.setKnockback(0);

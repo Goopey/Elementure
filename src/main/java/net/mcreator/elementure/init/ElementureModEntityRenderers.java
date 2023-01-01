@@ -113,6 +113,7 @@ import net.mcreator.elementure.client.renderer.MinoskullflaibulletRenderer;
 import net.mcreator.elementure.client.renderer.MinoskullRenderer;
 import net.mcreator.elementure.client.renderer.MindobleckRenderer;
 import net.mcreator.elementure.client.renderer.MemorybobberEntityRenderer;
+import net.mcreator.elementure.client.renderer.MagtunaBusterFirestormBallRenderer;
 import net.mcreator.elementure.client.renderer.LousyswordfamiliarRenderer;
 import net.mcreator.elementure.client.renderer.LignitechannelerRenderer;
 import net.mcreator.elementure.client.renderer.LightningblastskillRenderer;
@@ -412,5 +413,6 @@ public class ElementureModEntityRenderers {
 		event.registerEntityRenderer(ElementureModEntities.GOLDEN_SPIDERLING.get(), GoldenSpiderlingRenderer::new);
 		event.registerEntityRenderer(ElementureModEntities.SPIDER_SWARMER.get(), SpiderSwarmerRenderer::new);
 		event.registerEntityRenderer(ElementureModEntities.SPIDERMATRIARCH.get(), SpidermatriarchRenderer::new);
+		event.registerEntityRenderer(ElementureModEntities.MAGTUNA_BUSTER_FIRESTORM_BALL.get(), MagtunaBusterFirestormBallRenderer::new);
 	}
 }

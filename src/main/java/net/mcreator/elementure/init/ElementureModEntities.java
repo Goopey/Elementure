@@ -132,6 +132,7 @@ import net.mcreator.elementure.entity.MerthiumchannelerEntity;
 import net.mcreator.elementure.entity.MemorybobberEntityEntity;
 import net.mcreator.elementure.entity.MasterstaffEntity;
 import net.mcreator.elementure.entity.MagtunabusterEntity;
+import net.mcreator.elementure.entity.MagtunaBusterFirestormBallEntity;
 import net.mcreator.elementure.entity.LousyswordfamiliarEntity;
 import net.mcreator.elementure.entity.LocalisedvacuityskillEntity;
 import net.mcreator.elementure.entity.LignitechannelerEntity;
@@ -1125,6 +1126,11 @@ public class ElementureModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpidermatriarchEntity::new)
 
 					.sized(1.2f, 1.2000000000000002f));
+	public static final RegistryObject<EntityType<MagtunaBusterFirestormBallEntity>> MAGTUNA_BUSTER_FIRESTORM_BALL = register(
+			"magtuna_buster_firestorm_ball",
+			EntityType.Builder.<MagtunaBusterFirestormBallEntity>of(MagtunaBusterFirestormBallEntity::new, MobCategory.MONSTER)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(MagtunaBusterFirestormBallEntity::new).fireImmune().sized(0.6f, 0.6f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -1289,6 +1295,7 @@ public class ElementureModEntities {
 			GoldenSpiderlingEntity.init();
 			SpiderSwarmerEntity.init();
 			SpidermatriarchEntity.init();
+			MagtunaBusterFirestormBallEntity.init();
 		});
 	}
 
@@ -1450,5 +1457,6 @@ public class ElementureModEntities {
 		event.put(GOLDEN_SPIDERLING.get(), GoldenSpiderlingEntity.createAttributes().build());
 		event.put(SPIDER_SWARMER.get(), SpiderSwarmerEntity.createAttributes().build());
 		event.put(SPIDERMATRIARCH.get(), SpidermatriarchEntity.createAttributes().build());
+		event.put(MAGTUNA_BUSTER_FIRESTORM_BALL.get(), MagtunaBusterFirestormBallEntity.createAttributes().build());
 	}
 }

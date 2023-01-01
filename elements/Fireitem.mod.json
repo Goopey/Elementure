@@ -36,11 +36,15 @@
       },
       {
         "value": "CUSTOM:ArchkassemStaff"
+      },
+      {
+        "value": "CUSTOM:Magtunabuster"
       }
     ],
     "blocks": [],
     "functions": [],
     "entities": [],
+    "biomes": [],
     "name": "fireitem",
     "namespace": "forge"
   }

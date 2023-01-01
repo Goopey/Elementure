@@ -51,8 +51,45 @@
       },
       {
         "value": "CUSTOM:UmbrasylSegment"
+      },
+      {
+        "value": "CUSTOM:Bigkassem"
+      },
+      {
+        "value": "CUSTOM:Kassem"
+      },
+      {
+        "value": "CUSTOM:Tallkassem"
+      },
+      {
+        "value": "CUSTOM:Arachneel"
+      },
+      {
+        "value": "CUSTOM:SkeletalHeadHost"
+      },
+      {
+        "value": "CUSTOM:SkeletalHost"
+      },
+      {
+        "value": "CUSTOM:HeadHost"
+      },
+      {
+        "value": "CUSTOM:Spiderling"
+      },
+      {
+        "value": "CUSTOM:GoldenSpiderling"
+      },
+      {
+        "value": "CUSTOM:SpiderSwarmer"
+      },
+      {
+        "value": "CUSTOM:Spidermatriarch"
+      },
+      {
+        "value": "EntitySpider"
       }
     ],
+    "biomes": [],
     "name": "dark_mobs",
     "namespace": "forge"
   }

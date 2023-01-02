@@ -48,6 +48,7 @@ public class MagtunaBusterFirestormBallAOEProcedure {
 											.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
 									&& !entityiterator.getType()
 											.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
+								entityiterator.setSecondsOnFire(8);
 								if (Math.random() < 0.7) {
 									entityiterator.hurt(DamageSource.IN_FIRE, 3);
 								} else {

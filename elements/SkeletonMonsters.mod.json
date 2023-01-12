@@ -15,6 +15,9 @@
       },
       {
         "value": "EntitySkeletonHorse"
+      },
+      {
+        "value": "CUSTOM:SlumberingSoldier"
       }
     ],
     "biomes": [],

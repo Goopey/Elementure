@@ -205,6 +205,7 @@ import net.mcreator.elementure.block.OceanmemorialBlock;
 import net.mcreator.elementure.block.ObsidiansproutsBlock;
 import net.mcreator.elementure.block.NoobiumoreBlock;
 import net.mcreator.elementure.block.NoobiumblockBlock;
+import net.mcreator.elementure.block.NightmareShamanBlock;
 import net.mcreator.elementure.block.NetherumshinyBlock;
 import net.mcreator.elementure.block.NetherumfluidBlock;
 import net.mcreator.elementure.block.NetherumdustNebulaturfblockBlock;
@@ -1332,6 +1333,7 @@ public class ElementureModBlocks {
 			() -> new CutCloudSandstoneStairsBlock());
 	public static final RegistryObject<Block> CUT_CLOUD_SANDSTONE_WALL = REGISTRY.register("cut_cloud_sandstone_wall",
 			() -> new CutCloudSandstoneWallBlock());
+	public static final RegistryObject<Block> NIGHTMARE_SHAMAN = REGISTRY.register("nightmare_shaman", () -> new NightmareShamanBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1633,6 +1635,7 @@ public class ElementureModBlocks {
 			DungeonlanternBlock.registerRenderLayer();
 			DungeonhatchLockedBlock.registerRenderLayer();
 			DungeonhatchBlock.registerRenderLayer();
+			NightmareShamanBlock.registerRenderLayer();
 		}
 	}
 }

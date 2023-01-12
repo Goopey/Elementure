@@ -15,7 +15,9 @@ public class ProtectionzoneremoverEffectProcedure {
 		locY = -18;
 		locZ = -18;
 		for (int index0 = 0; index0 < (int) (50653); index0++) {
-			if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.PROTECTIONRUNE.get()
+			if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.DUNGEONWATER.get()) {
+				world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), Blocks.WATER.defaultBlockState(), 3);
+			} else if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.PROTECTIONRUNE.get()
 					|| (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.RECEIVINGPROTECTIONRUNE
 							.get()) {
 				world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), ElementureModBlocks.PROTECTIONREMOVER.get().defaultBlockState(), 3);

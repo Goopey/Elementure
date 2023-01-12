@@ -87,6 +87,9 @@
       },
       {
         "value": "EntitySpider"
+      },
+      {
+        "value": "CUSTOM:SlumberingSoldier"
       }
     ],
     "biomes": [],

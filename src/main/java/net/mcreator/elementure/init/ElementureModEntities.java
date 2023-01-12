@@ -56,6 +56,7 @@ import net.mcreator.elementure.entity.SoulobleckEntity;
 import net.mcreator.elementure.entity.SnyEntity;
 import net.mcreator.elementure.entity.SmallgraniteelementalEntity;
 import net.mcreator.elementure.entity.SmallObleckminionEntity;
+import net.mcreator.elementure.entity.SlumberingSoldierEntity;
 import net.mcreator.elementure.entity.SkeletalHostEntity;
 import net.mcreator.elementure.entity.SkeletalHeadHostEntity;
 import net.mcreator.elementure.entity.SirenqueenEntity;
@@ -89,6 +90,8 @@ import net.mcreator.elementure.entity.OblecklordEntity;
 import net.mcreator.elementure.entity.ObleckclericEntity;
 import net.mcreator.elementure.entity.ObleckEntity;
 import net.mcreator.elementure.entity.NoobiumchannelerEntity;
+import net.mcreator.elementure.entity.NightmareMassEntity;
+import net.mcreator.elementure.entity.NightmareArbalestEntity;
 import net.mcreator.elementure.entity.NetherumleaperEntity;
 import net.mcreator.elementure.entity.NetherumTitanEntity;
 import net.mcreator.elementure.entity.NetherstarvillagerdustyEntity;
@@ -1131,6 +1134,21 @@ public class ElementureModEntities {
 			EntityType.Builder.<MagtunaBusterFirestormBallEntity>of(MagtunaBusterFirestormBallEntity::new, MobCategory.MONSTER)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 					.setCustomClientFactory(MagtunaBusterFirestormBallEntity::new).fireImmune().sized(0.6f, 0.6f));
+	public static final RegistryObject<EntityType<SlumberingSoldierEntity>> SLUMBERING_SOLDIER = register("slumbering_soldier",
+			EntityType.Builder.<SlumberingSoldierEntity>of(SlumberingSoldierEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SlumberingSoldierEntity::new)
+
+					.sized(1f, 1.7f));
+	public static final RegistryObject<EntityType<NightmareArbalestEntity>> NIGHTMARE_ARBALEST = register("nightmare_arbalest",
+			EntityType.Builder.<NightmareArbalestEntity>of(NightmareArbalestEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NightmareArbalestEntity::new)
+
+					.sized(0.6f, 1.7f));
+	public static final RegistryObject<EntityType<NightmareMassEntity>> NIGHTMARE_MASS = register("nightmare_mass",
+			EntityType.Builder.<NightmareMassEntity>of(NightmareMassEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NightmareMassEntity::new)
+
+					.sized(0.6f, 0.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -1296,6 +1314,9 @@ public class ElementureModEntities {
 			SpiderSwarmerEntity.init();
 			SpidermatriarchEntity.init();
 			MagtunaBusterFirestormBallEntity.init();
+			SlumberingSoldierEntity.init();
+			NightmareArbalestEntity.init();
+			NightmareMassEntity.init();
 		});
 	}
 
@@ -1458,5 +1479,8 @@ public class ElementureModEntities {
 		event.put(SPIDER_SWARMER.get(), SpiderSwarmerEntity.createAttributes().build());
 		event.put(SPIDERMATRIARCH.get(), SpidermatriarchEntity.createAttributes().build());
 		event.put(MAGTUNA_BUSTER_FIRESTORM_BALL.get(), MagtunaBusterFirestormBallEntity.createAttributes().build());
+		event.put(SLUMBERING_SOLDIER.get(), SlumberingSoldierEntity.createAttributes().build());
+		event.put(NIGHTMARE_ARBALEST.get(), NightmareArbalestEntity.createAttributes().build());
+		event.put(NIGHTMARE_MASS.get(), NightmareMassEntity.createAttributes().build());
 	}
 }

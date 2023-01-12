@@ -27,6 +27,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.elementure.procedures.SpidermatriarchSpawnSpiderlingsProcedure;
+import net.mcreator.elementure.procedures.SpidermatriarchSpawnGoldenSpiderlingProcedure;
 import net.mcreator.elementure.init.ElementureModItems;
 import net.mcreator.elementure.init.ElementureModEntities;
 
@@ -80,6 +81,12 @@ public class SpidermatriarchEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.spider.death"));
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		SpidermatriarchSpawnGoldenSpiderlingProcedure.execute(this.level, this);
 	}
 
 	@Override

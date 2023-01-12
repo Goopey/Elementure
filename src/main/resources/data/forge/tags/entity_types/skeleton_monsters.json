@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "elementure:slumbering_soldier",
     "skeleton",
     "skeleton_horse",
     "wither_skeleton"

@@ -2581,6 +2581,16 @@ public class ElementureModItems {
 			ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> CUT_CLOUD_SANDSTONE_WALL = block(ElementureModBlocks.CUT_CLOUD_SANDSTONE_WALL,
 			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SLUMBERING_SOLDIER = REGISTRY.register("slumbering_soldier_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SLUMBERING_SOLDIER, -10092442, -13434880,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> NIGHTMARE_ARBALEST = REGISTRY.register("nightmare_arbalest_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.NIGHTMARE_ARBALEST, -16777114, -13434880,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> NIGHTMARE_MASS = REGISTRY.register("nightmare_mass_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.NIGHTMARE_MASS, -16777216, -16777216,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> NIGHTMARE_SHAMAN = block(ElementureModBlocks.NIGHTMARE_SHAMAN, CreativeModeTab.TAB_MISC);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

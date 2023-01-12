@@ -48,6 +48,7 @@ import net.mcreator.elementure.client.renderer.SoulobleckRenderer;
 import net.mcreator.elementure.client.renderer.SnyRenderer;
 import net.mcreator.elementure.client.renderer.SmallgraniteelementalRenderer;
 import net.mcreator.elementure.client.renderer.SmallObleckminionRenderer;
+import net.mcreator.elementure.client.renderer.SlumberingSoldierRenderer;
 import net.mcreator.elementure.client.renderer.SkeletalHostRenderer;
 import net.mcreator.elementure.client.renderer.SkeletalHeadHostRenderer;
 import net.mcreator.elementure.client.renderer.SirenqueenRenderer;
@@ -77,6 +78,8 @@ import net.mcreator.elementure.client.renderer.OblecklordRenderer;
 import net.mcreator.elementure.client.renderer.ObleckclericRenderer;
 import net.mcreator.elementure.client.renderer.ObleckRenderer;
 import net.mcreator.elementure.client.renderer.NoobiumchannelerRenderer;
+import net.mcreator.elementure.client.renderer.NightmareMassRenderer;
+import net.mcreator.elementure.client.renderer.NightmareArbalestRenderer;
 import net.mcreator.elementure.client.renderer.NetherumleaperRenderer;
 import net.mcreator.elementure.client.renderer.NetherumTitanRenderer;
 import net.mcreator.elementure.client.renderer.NetherstarvillagerdustyRenderer;
@@ -414,5 +417,8 @@ public class ElementureModEntityRenderers {
 		event.registerEntityRenderer(ElementureModEntities.SPIDER_SWARMER.get(), SpiderSwarmerRenderer::new);
 		event.registerEntityRenderer(ElementureModEntities.SPIDERMATRIARCH.get(), SpidermatriarchRenderer::new);
 		event.registerEntityRenderer(ElementureModEntities.MAGTUNA_BUSTER_FIRESTORM_BALL.get(), MagtunaBusterFirestormBallRenderer::new);
+		event.registerEntityRenderer(ElementureModEntities.SLUMBERING_SOLDIER.get(), SlumberingSoldierRenderer::new);
+		event.registerEntityRenderer(ElementureModEntities.NIGHTMARE_ARBALEST.get(), NightmareArbalestRenderer::new);
+		event.registerEntityRenderer(ElementureModEntities.NIGHTMARE_MASS.get(), NightmareMassRenderer::new);
 	}
 }

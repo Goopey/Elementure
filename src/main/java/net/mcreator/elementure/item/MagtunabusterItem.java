@@ -69,10 +69,9 @@ public class MagtunabusterItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (MagtunabusterHasFireEssenceProcedure.execute(entity)) {
-				MagtunabusterEntity entityarrow = MagtunabusterEntity.shoot(world, entity, world.getRandom(), 0.6f, 3.6, 0);
+				MagtunabusterEntity entityarrow = MagtunabusterEntity.shoot(world, entity, world.getRandom(), 0.6f, 6.5, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				MagtunabusterApplyCooldownProcedure.execute(entity, itemstack);
 			}
 		}

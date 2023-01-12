@@ -49,6 +49,7 @@ public class CausticbladeItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+		list.add(new TextComponent("\u00A76Boss weapon"));
 		list.add(new TextComponent("Hit your enemies, brew acid vials!"));
 	}
 

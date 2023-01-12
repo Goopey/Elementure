@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/nightmare_shaman"
+    },
+    "facing=east": {
+      "model": "elementure:block/nightmare_shaman",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/nightmare_shaman",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/nightmare_shaman",
+      "y": 270
+    }
+  }
+}

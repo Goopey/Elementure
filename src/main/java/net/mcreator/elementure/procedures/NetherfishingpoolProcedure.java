@@ -49,7 +49,7 @@ public class NetherfishingpoolProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-		} else if (rng < 0.95) {
+		} else if (rng < 0.9) {
 			{
 				String _setval = "greenDemon";
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -57,9 +57,17 @@ public class NetherfishingpoolProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-		} else {
+		} else if (rng < 0.97) {
 			{
 				String _setval = "highTrahira";
+				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.chosenFish = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else {
+			{
+				String _setval = "magtunaBuster";
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.chosenFish = _setval;
 					capability.syncPlayerVariables(entity);

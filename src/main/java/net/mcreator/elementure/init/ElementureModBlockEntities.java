@@ -36,6 +36,7 @@ import net.mcreator.elementure.block.entity.PlainsmemorialBlockEntity;
 import net.mcreator.elementure.block.entity.PervadedbedrockBlockEntity;
 import net.mcreator.elementure.block.entity.OmegancenterBlockEntity;
 import net.mcreator.elementure.block.entity.OceanmemorialBlockEntity;
+import net.mcreator.elementure.block.entity.NightmareShamanBlockEntity;
 import net.mcreator.elementure.block.entity.NetherstarmemorialBlockEntity;
 import net.mcreator.elementure.block.entity.NetherstarBiomeOmeganBlockEntity;
 import net.mcreator.elementure.block.entity.NetherstarBiomeAlphanBlockEntity;
@@ -203,6 +204,8 @@ public class ElementureModBlockEntities {
 			ElementureModBlocks.SPIDERBORE_DEEPSLATEBRICKS, SpiderboreDeepslatebricksBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SMALL_SCRAPPER = register("small_scrapper", ElementureModBlocks.SMALL_SCRAPPER,
 			SmallScrapperBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> NIGHTMARE_SHAMAN = register("nightmare_shaman", ElementureModBlocks.NIGHTMARE_SHAMAN,
+			NightmareShamanBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
 			BlockEntityType.BlockEntitySupplier<?> supplier) {

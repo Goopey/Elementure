@@ -64,6 +64,16 @@ public class LavafishingpoolRewardProcedure {
 			}
 			if (world instanceof Level _level && !_level.isClientSide())
 				_level.addFreshEntity(new ExperienceOrb(_level, (entity.getX()), (entity.getY()), (entity.getZ()), 4));
+		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("magtunaBuster")) {
+			if (world instanceof Level _level && !_level.isClientSide()) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
+						new ItemStack(ElementureModItems.MAGTUNABUSTER.get()));
+				entityToSpawn.setPickUpDelay(4);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (world instanceof Level _level && !_level.isClientSide())
+				_level.addFreshEntity(new ExperienceOrb(_level, (entity.getX()), (entity.getY()), (entity.getZ()), 22));
 		}
 	}
 }

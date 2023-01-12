@@ -1,41 +1,30 @@
 package net.mcreator.elementure.procedures;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
-import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.elementure.network.ElementureModVariables;
 
 public class StructureitemtesterRightClickedOnBlockProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z) {
+	public static void execute(Entity entity) {
+		if (entity == null)
+			return;
 		double LocalX = 0;
 		double LocalZ = 0;
 		ItemStack book = ItemStack.EMPTY;
-		new Object() {
-			private int ticks = 0;
-			private float waitTicks;
-			private LevelAccessor world;
-
-			public void start(LevelAccessor world, int waitTicks) {
-				this.waitTicks = waitTicks;
-				MinecraftForge.EVENT_BUS.register(this);
-				this.world = world;
-			}
-
-			@SubscribeEvent
-			public void tick(TickEvent.ServerTickEvent event) {
-				if (event.phase == TickEvent.Phase.END) {
-					this.ticks += 1;
-					if (this.ticks >= this.waitTicks)
-						run();
-				}
-			}
-
-			private void run() {
-				SpidernestBaseGenProcedure.execute(world, x, y, z);
-				MinecraftForge.EVENT_BUS.unregister(this);
-			}
-		}.start(world, 0);
+		{
+			String _setval = "magtunaBuster";
+			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.chosenFish = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
+		{
+			String _setval = "nether";
+			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.fishBiome = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 	}
 }

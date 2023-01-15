@@ -74,6 +74,7 @@ public class OthersidebladeItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+		list.add(new TextComponent("\u00A76Boss trophy"));
 		list.add(new TextComponent("An old blade the likes of you've never seen before."));
 		list.add(new TextComponent("\"This thing... is not from our world.\""));
 	}

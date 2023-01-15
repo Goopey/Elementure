@@ -2,6 +2,8 @@ package net.mcreator.elementure.procedures;
 
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.elementure.init.ElementureModBlocks;
@@ -17,6 +19,9 @@ public class ProtectionzoneremoverEffectProcedure {
 		for (int index0 = 0; index0 < (int) (50653); index0++) {
 			if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.DUNGEONWATER.get()) {
 				world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), Blocks.WATER.defaultBlockState(), 3);
+			} else if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ)))
+					.is(BlockTags.create(new ResourceLocation("elementure:despawnable_dungeon_spawners")))) {
+				world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), Blocks.AIR.defaultBlockState(), 3);
 			} else if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.PROTECTIONRUNE.get()
 					|| (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.RECEIVINGPROTECTIONRUNE
 							.get()) {

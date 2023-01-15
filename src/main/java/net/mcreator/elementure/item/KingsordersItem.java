@@ -40,6 +40,7 @@ public class KingsordersItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+		list.add(new TextComponent("\u00A7bQuest item"));
 		list.add(new TextComponent("Orders engraved on a sheet of gold. Unfortunately, the message is encrypted."));
 		list.add(new TextComponent("Consume to greatly increase your strength for a short while."));
 	}

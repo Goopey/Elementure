@@ -12,16 +12,17 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
-import net.mcreator.elementure.procedures.CruelbladeEffectProcedure;
+import net.mcreator.elementure.procedures.ArachneelShivPoisonProcedure;
 import net.mcreator.elementure.init.ElementureModTabs;
+import net.mcreator.elementure.init.ElementureModItems;
 
 import java.util.List;
 
-public class CruelbladeItem extends SwordItem {
-	public CruelbladeItem() {
+public class ArachneelShivItem extends SwordItem {
+	public ArachneelShivItem() {
 		super(new Tier() {
 			public int getUses() {
-				return 980;
+				return 201;
 			}
 
 			public float getSpeed() {
@@ -37,26 +38,25 @@ public class CruelbladeItem extends SwordItem {
 			}
 
 			public int getEnchantmentValue() {
-				return 0;
+				return 7;
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.EMPTY;
+				return Ingredient.of(new ItemStack(ElementureModItems.ARACHNEELFANG.get()));
 			}
-		}, 3, -2.4f, new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDSWORDS));
+		}, 3, -2f, new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDSWORDS));
 	}
 
 	@Override
 	public boolean hurtEnemy(ItemStack itemstack, LivingEntity entity, LivingEntity sourceentity) {
 		boolean retval = super.hurtEnemy(itemstack, entity, sourceentity);
-		CruelbladeEffectProcedure.execute(entity, sourceentity);
+		ArachneelShivPoisonProcedure.execute(entity);
 		return retval;
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A76Boss trophy"));
-		list.add(new TextComponent("A bloody and cruel blade. Enormous strength resides in it, but it thirsts for blood."));
+		list.add(new TextComponent("Smaller range, more poisonous."));
 	}
 }

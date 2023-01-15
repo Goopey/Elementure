@@ -3,22 +3,22 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "arachneel_spear",
+    "texture": "arachneel_shiv",
     "customModelName": "Normal",
-    "name": "Arachneel Spear [N-E]",
+    "name": "Arachneel Shiv [N-E]",
     "specialInfo": [
-      "The spear has a slightly hooked end which helps to poison attacked creatures."
+      "Smaller range, more poisonous."
     ],
     "creativeTab": {
       "value": "CUSTOM:Tabmoddedswords"
     },
     "toolType": "Sword",
-    "harvestLevel": 0,
-    "efficiency": 5.0,
-    "attackSpeed": 1.2,
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 2.0,
     "enchantability": 7,
     "damageVsEntity": 4.5,
-    "usageCount": 502,
+    "usageCount": 201,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [
@@ -30,7 +30,7 @@
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "onEntityHitWith": {
-      "name": "ArachneelSpearPoison"
+      "name": "ArachneelShivPoison"
     }
   }
 }

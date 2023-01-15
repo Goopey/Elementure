@@ -25,6 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
+      "§bQuest item",
       "Orders engraved on a sheet of gold. Unfortunately, the message is encrypted.",
       "Consume to greatly increase your strength for a short while."
     ],
@@ -38,6 +39,9 @@
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

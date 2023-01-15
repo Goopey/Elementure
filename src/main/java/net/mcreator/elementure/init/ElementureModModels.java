@@ -74,6 +74,7 @@ import net.mcreator.elementure.client.model.Modelobleck_lord_eldritch;
 import net.mcreator.elementure.client.model.Modelobleck_lord;
 import net.mcreator.elementure.client.model.Modelobleck_cleric;
 import net.mcreator.elementure.client.model.Modelobleck;
+import net.mcreator.elementure.client.model.ModelnightmareSpike;
 import net.mcreator.elementure.client.model.ModelnightmareMass;
 import net.mcreator.elementure.client.model.ModelnightmareArbalest;
 import net.mcreator.elementure.client.model.Modelnetherum_titan;
@@ -246,6 +247,7 @@ public class ElementureModModels {
 		event.registerLayerDefinition(Modelbubble_o_blue.LAYER_LOCATION, Modelbubble_o_blue::createBodyLayer);
 		event.registerLayerDefinition(Modelstoneprojectileearthflask.LAYER_LOCATION, Modelstoneprojectileearthflask::createBodyLayer);
 		event.registerLayerDefinition(Modelmycena_sporeling.LAYER_LOCATION, Modelmycena_sporeling::createBodyLayer);
+		event.registerLayerDefinition(ModelnightmareSpike.LAYER_LOCATION, ModelnightmareSpike::createBodyLayer);
 		event.registerLayerDefinition(Modelearthblast.LAYER_LOCATION, Modelearthblast::createBodyLayer);
 		event.registerLayerDefinition(Modelgreedy_knight.LAYER_LOCATION, Modelgreedy_knight::createBodyLayer);
 		event.registerLayerDefinition(Modelenergyblastskillprojectile.LAYER_LOCATION, Modelenergyblastskillprojectile::createBodyLayer);

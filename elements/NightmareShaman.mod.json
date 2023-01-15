@@ -123,6 +123,12 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onRightClicked": {
+      "name": "NightmareShamanDestroy"
+    },
+    "onTickUpdate": {
+      "name": "NightmareShamanSpawn"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

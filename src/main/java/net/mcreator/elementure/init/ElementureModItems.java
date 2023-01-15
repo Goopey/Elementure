@@ -682,6 +682,7 @@ import net.mcreator.elementure.item.ArachneelfangItem;
 import net.mcreator.elementure.item.ArachneelbowItem;
 import net.mcreator.elementure.item.ArachneelarrowItem;
 import net.mcreator.elementure.item.ArachneelSpearItem;
+import net.mcreator.elementure.item.ArachneelShivItem;
 import net.mcreator.elementure.item.AngryslimesliceItem;
 import net.mcreator.elementure.item.AngelpipItem;
 import net.mcreator.elementure.item.AirswordItem;
@@ -2591,6 +2592,9 @@ public class ElementureModItems {
 			() -> new ForgeSpawnEggItem(ElementureModEntities.NIGHTMARE_MASS, -16777216, -16777216,
 					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> NIGHTMARE_SHAMAN = block(ElementureModBlocks.NIGHTMARE_SHAMAN, CreativeModeTab.TAB_MISC);
+	public static final RegistryObject<Item> NIGHTMARE_SPIKE = REGISTRY.register("nightmare_spike_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.NIGHTMARE_SPIKE, -16777216, -16777216, new Item.Properties().tab(null)));
+	public static final RegistryObject<Item> ARACHNEEL_SHIV = REGISTRY.register("arachneel_shiv", () -> new ArachneelShivItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

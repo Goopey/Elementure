@@ -111,7 +111,8 @@ public abstract class KnightmasterarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("A masterfully made chestplate. All the other knight chestplates are seemingly molded after this one."));
+			list.add(new TextComponent("\u00A76Boss trophy"));
+			list.add(new TextComponent("A masterfully made chestplate. All the other knight chestplates are seemingly modeled after this one."));
 		}
 
 		@Override

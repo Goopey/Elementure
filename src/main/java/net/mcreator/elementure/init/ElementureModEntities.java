@@ -90,6 +90,7 @@ import net.mcreator.elementure.entity.OblecklordEntity;
 import net.mcreator.elementure.entity.ObleckclericEntity;
 import net.mcreator.elementure.entity.ObleckEntity;
 import net.mcreator.elementure.entity.NoobiumchannelerEntity;
+import net.mcreator.elementure.entity.NightmareSpikeEntity;
 import net.mcreator.elementure.entity.NightmareMassEntity;
 import net.mcreator.elementure.entity.NightmareArbalestEntity;
 import net.mcreator.elementure.entity.NetherumleaperEntity;
@@ -1149,6 +1150,9 @@ public class ElementureModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NightmareMassEntity::new)
 
 					.sized(0.6f, 0.8f));
+	public static final RegistryObject<EntityType<NightmareSpikeEntity>> NIGHTMARE_SPIKE = register("nightmare_spike",
+			EntityType.Builder.<NightmareSpikeEntity>of(NightmareSpikeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NightmareSpikeEntity::new).fireImmune().sized(0.6f, 0.6f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -1317,6 +1321,7 @@ public class ElementureModEntities {
 			SlumberingSoldierEntity.init();
 			NightmareArbalestEntity.init();
 			NightmareMassEntity.init();
+			NightmareSpikeEntity.init();
 		});
 	}
 
@@ -1482,5 +1487,6 @@ public class ElementureModEntities {
 		event.put(SLUMBERING_SOLDIER.get(), SlumberingSoldierEntity.createAttributes().build());
 		event.put(NIGHTMARE_ARBALEST.get(), NightmareArbalestEntity.createAttributes().build());
 		event.put(NIGHTMARE_MASS.get(), NightmareMassEntity.createAttributes().build());
+		event.put(NIGHTMARE_SPIKE.get(), NightmareSpikeEntity.createAttributes().build());
 	}
 }

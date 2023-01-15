@@ -13,13 +13,11 @@ public class CausticknightDropsProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (Math.random() < 0.15) {
-			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-						new ItemStack(ElementureModItems.CAUSTICBLADE.get()));
-				entityToSpawn.setPickUpDelay(10);
-				_level.addFreshEntity(entityToSpawn);
-			}
+		if (world instanceof Level _level && !_level.isClientSide()) {
+			ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
+					new ItemStack(ElementureModItems.CAUSTICBLADE.get()));
+			entityToSpawn.setPickUpDelay(10);
+			_level.addFreshEntity(entityToSpawn);
 		}
 		for (int index0 = 0; index0 < (int) (9 + Math.floor(Math.random() * 6)); index0++) {
 			if (world instanceof Level _level && !_level.isClientSide()) {

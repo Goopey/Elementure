@@ -78,6 +78,7 @@ import net.mcreator.elementure.client.renderer.OblecklordRenderer;
 import net.mcreator.elementure.client.renderer.ObleckclericRenderer;
 import net.mcreator.elementure.client.renderer.ObleckRenderer;
 import net.mcreator.elementure.client.renderer.NoobiumchannelerRenderer;
+import net.mcreator.elementure.client.renderer.NightmareSpikeRenderer;
 import net.mcreator.elementure.client.renderer.NightmareMassRenderer;
 import net.mcreator.elementure.client.renderer.NightmareArbalestRenderer;
 import net.mcreator.elementure.client.renderer.NetherumleaperRenderer;
@@ -420,5 +421,6 @@ public class ElementureModEntityRenderers {
 		event.registerEntityRenderer(ElementureModEntities.SLUMBERING_SOLDIER.get(), SlumberingSoldierRenderer::new);
 		event.registerEntityRenderer(ElementureModEntities.NIGHTMARE_ARBALEST.get(), NightmareArbalestRenderer::new);
 		event.registerEntityRenderer(ElementureModEntities.NIGHTMARE_MASS.get(), NightmareMassRenderer::new);
+		event.registerEntityRenderer(ElementureModEntities.NIGHTMARE_SPIKE.get(), NightmareSpikeRenderer::new);
 	}
 }

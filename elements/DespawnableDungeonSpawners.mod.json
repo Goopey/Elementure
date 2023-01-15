@@ -1,0 +1,21 @@
+{
+  "_fv": 34,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:Ivoryspawner"
+      },
+      {
+        "value": "CUSTOM:NightmareShaman"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "despawnable_dungeon_spawners",
+    "namespace": "mod"
+  }
+}

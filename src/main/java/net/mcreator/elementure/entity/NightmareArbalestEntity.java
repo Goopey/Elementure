@@ -29,6 +29,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.elementure.procedures.NightmareFangDropProcedure;
 import net.mcreator.elementure.init.ElementureModEntities;
 
 public class NightmareArbalestEntity extends Monster implements RangedAttackMob {
@@ -61,7 +62,7 @@ public class NightmareArbalestEntity extends Monster implements RangedAttackMob 
 		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 1));
 		this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(6, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
+		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 40, 10) {
 			@Override
 			public boolean canContinueToUse() {
 				return this.canUse();
@@ -96,6 +97,12 @@ public class NightmareArbalestEntity extends Monster implements RangedAttackMob 
 		if (source.getMsgId().equals("witherSkull"))
 			return false;
 		return super.hurt(source, amount);
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		NightmareFangDropProcedure.execute(this.level, this);
 	}
 
 	@Override

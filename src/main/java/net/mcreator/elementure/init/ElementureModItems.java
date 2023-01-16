@@ -50,6 +50,7 @@ import net.mcreator.elementure.item.UnholyhoeItem;
 import net.mcreator.elementure.item.UnholydustItem;
 import net.mcreator.elementure.item.UnholyaxeItem;
 import net.mcreator.elementure.item.UnholyarmorItem;
+import net.mcreator.elementure.item.UndeadDelightItem;
 import net.mcreator.elementure.item.UncookedraidonItem;
 import net.mcreator.elementure.item.UltibreakerbladeItem;
 import net.mcreator.elementure.item.TwistedfishItem;
@@ -251,6 +252,7 @@ import net.mcreator.elementure.item.NoobiumhoeItem;
 import net.mcreator.elementure.item.NoobiumchannelerItem;
 import net.mcreator.elementure.item.NoobiumaxeItem;
 import net.mcreator.elementure.item.NoobiumItem;
+import net.mcreator.elementure.item.NightmareFangItem;
 import net.mcreator.elementure.item.NetherumfluidItem;
 import net.mcreator.elementure.item.NetherstarhammerItem;
 import net.mcreator.elementure.item.NetherstarguardianhammerItem;
@@ -2595,6 +2597,8 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> NIGHTMARE_SPIKE = REGISTRY.register("nightmare_spike_spawn_egg",
 			() -> new ForgeSpawnEggItem(ElementureModEntities.NIGHTMARE_SPIKE, -16777216, -16777216, new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> ARACHNEEL_SHIV = REGISTRY.register("arachneel_shiv", () -> new ArachneelShivItem());
+	public static final RegistryObject<Item> NIGHTMARE_FANG = REGISTRY.register("nightmare_fang", () -> new NightmareFangItem());
+	public static final RegistryObject<Item> UNDEAD_DELIGHT = REGISTRY.register("undead_delight", () -> new UndeadDelightItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

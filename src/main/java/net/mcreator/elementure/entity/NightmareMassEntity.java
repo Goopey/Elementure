@@ -34,6 +34,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
+import net.mcreator.elementure.procedures.NightmareFangDropProcedure;
 import net.mcreator.elementure.init.ElementureModEntities;
 
 @Mod.EventBusSubscriber
@@ -88,6 +89,12 @@ public class NightmareMassEntity extends Monster {
 	@Override
 	public SoundEvent getDeathSound() {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation(""));
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		NightmareFangDropProcedure.execute(this.level, this);
 	}
 
 	public static void init() {

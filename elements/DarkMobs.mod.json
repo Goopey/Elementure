@@ -90,6 +90,12 @@
       },
       {
         "value": "CUSTOM:SlumberingSoldier"
+      },
+      {
+        "value": "CUSTOM:NightmareArbalest"
+      },
+      {
+        "value": "CUSTOM:NightmareMass"
       }
     ],
     "biomes": [],

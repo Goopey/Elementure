@@ -9467,8 +9467,20 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -67160,7 +67172,7 @@
       "type": "livingentity",
       "sortid": 5045,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "arachneel",
       "path": "~/Dungeons/SpiderNests/Creatures"
     },
@@ -70481,7 +70493,7 @@
       "type": "livingentity",
       "sortid": 5280,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "nightmare_arbalest",
       "path": "~/Dungeons/SpiderNests/Creatures"
     },
@@ -70646,6 +70658,212 @@
         ]
       },
       "path": "~/Weapons/Others"
+    },
+    {
+      "name": "NightmareFang",
+      "type": "item",
+      "sortid": 5290,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nightmare_fang",
+      "path": "~/Dungeons/SpiderNests/Creatures"
+    },
+    {
+      "name": "NightmareFangDrop",
+      "type": "procedure",
+      "sortid": 5291,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nightmare_fang_drop",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dungeons/SpiderNests/Creatures"
+    },
+    {
+      "name": "SpidernestcryptRoomGen",
+      "type": "procedure",
+      "sortid": 5292,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spidernestcrypt_room_gen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dungeons/SpiderNests"
+    },
+    {
+      "name": "SpidernestcryptEndRoomGen",
+      "type": "procedure",
+      "sortid": 5293,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spidernestcrypt_end_room_gen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dungeons/SpiderNests"
+    },
+    {
+      "name": "SpidernestcryptEndRoomGen2",
+      "type": "procedure",
+      "sortid": 5294,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "spidernestcrypt_end_room_gen_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dungeons/SpiderNests"
+    },
+    {
+      "name": "SpidernestcryptBossRoomGen",
+      "type": "procedure",
+      "sortid": 5295,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spidernestcrypt_boss_room_gen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dungeons/SpiderNests"
+    },
+    {
+      "name": "UndeadDelight",
+      "type": "tool",
+      "sortid": 5296,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "undead_delight",
+      "path": "~/Weapons/Harvesters"
+    },
+    {
+      "name": "UndeadDelightTrueDark",
+      "type": "procedure",
+      "sortid": 5297,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "undead_delight_true_dark",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons/Harvesters"
+    },
+    {
+      "name": "UndeadDelightHitEffect",
+      "type": "procedure",
+      "sortid": 5298,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "undead_delight_hit_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/Harvesters"
+    },
+    {
+      "name": "UndeadDelightRecipe",
+      "type": "recipe",
+      "sortid": 5299,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "undead_delight_recipe",
+      "path": "~/Weapons/Harvesters"
     }
   ],
   "variable_elements": [
@@ -71937,6 +72155,7 @@
       "block.elementure.aurumbricks": "Aurum bricks",
       "tile.tourmalineore.name": "Tourmaline ore",
       "item.cobaltarmorbody.name": "Cobalt Body",
+      "item.elementure.nightmare_fang": "Nightmare Fang",
       "item.minecraft_worlds.silverairflask": "Silver air flask",
       "key.mcreator.skillactivate": "Skill set",
       "block.elementure.darkgemblock": "Dark gem block",
@@ -72033,6 +72252,7 @@
       "block.elementure.airruneblock": "Air rune block",
       "item.minecraft_worlds.abyssalemblem": "Abyssal emblem",
       "item.minecraft_worlds.blackbarrierkey": "Black barrier key",
+      "item.elementure.undead_delight": "Undead Delight [Dark]",
       "item.elementure.mycenashroomal_spawn_egg": "Mycena shroomal Spawn Egg",
       "item.minecraft_worlds.collecteddeath": "Shard of the Sentience",
       "block.minecraft_worlds.silverblock": "Silver block",

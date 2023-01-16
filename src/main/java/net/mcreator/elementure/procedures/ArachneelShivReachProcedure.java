@@ -37,7 +37,7 @@ public class ArachneelShivReachProcedure {
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null)
 					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"attribute @s forge:reach_distance modifier add 9984b5d3-2c5f-4719-9685-5bad1c4ae6af arachneelShivReach -3 add");
+							"attribute @s forge:reach_distance modifier add 9984b5d3-2c5f-4719-9685-5bad1c4ae6af arachneelShivReach -2 add");
 			}
 		} else {
 			{

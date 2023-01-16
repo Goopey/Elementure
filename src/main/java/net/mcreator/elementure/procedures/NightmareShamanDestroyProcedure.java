@@ -10,9 +10,12 @@ import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.DiggerItem;
 import net.minecraft.world.item.AxeItem;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
+
+import net.mcreator.elementure.init.ElementureModItems;
 
 public class NightmareShamanDestroyProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -29,6 +32,11 @@ public class NightmareShamanDestroyProcedure {
 			}
 		}.getValue(world, new BlockPos(x, y, z), "damageProgress") >= 30) {
 			world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+			if (world instanceof Level _level && !_level.isClientSide()) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ElementureModItems.NIGHTMARE_FANG.get()));
+				entityToSpawn.setPickUpDelay(10);
+				_level.addFreshEntity(entityToSpawn);
+			}
 		} else if (pick.getItem() instanceof AxeItem) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = new BlockPos(x, y, z);

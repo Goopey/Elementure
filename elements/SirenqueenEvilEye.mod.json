@@ -25,6 +25,7 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
+      "§6Boss trophy",
       "Artifact : Applies weakness to the enemies around you targeting you."
     ],
     "hasGlow": false,

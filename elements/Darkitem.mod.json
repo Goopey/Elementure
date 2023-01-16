@@ -63,11 +63,15 @@
       },
       {
         "value": "CUSTOM:Kassemstaff"
+      },
+      {
+        "value": "CUSTOM:UndeadDelight"
       }
     ],
     "blocks": [],
     "functions": [],
     "entities": [],
+    "biomes": [],
     "name": "darkitem",
     "namespace": "forge"
   }

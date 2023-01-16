@@ -1,0 +1,42 @@
+{
+  "_fv": 34,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "undead_delight",
+    "customModelName": "Normal",
+    "name": "Undead Delight [Dark]",
+    "specialInfo": [
+      "A weird pickaxe made of nightmarish stuff. It feeds on undead and the like.",
+      "The pickaxe has a chance of giving you regeneration when attacking an undead.",
+      "The pickaxe also heals you for 3 hearts when killing an undead.",
+      "Deals extra damage to undead."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Tabmoddedtools"
+    },
+    "toolType": "Pickaxe",
+    "harvestLevel": 2,
+    "efficiency": 7.0,
+    "attackSpeed": 1.4000000000000001,
+    "enchantability": 14,
+    "damageVsEntity": 6.0,
+    "usageCount": 420,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:NightmareFang"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onEntityHitWith": {
+      "name": "UndeadDelightHitEffect"
+    },
+    "onItemInUseTick": {
+      "name": "UndeadDelightTrueDark"
+    }
+  }
+}

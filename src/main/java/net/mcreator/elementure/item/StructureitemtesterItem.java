@@ -37,7 +37,8 @@ public class StructureitemtesterItem extends Item {
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		StructureitemtesterRightClickedOnBlockProcedure.execute(context.getPlayer());
+		StructureitemtesterRightClickedOnBlockProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(),
+				context.getClickedPos().getZ());
 		return InteractionResult.SUCCESS;
 	}
 

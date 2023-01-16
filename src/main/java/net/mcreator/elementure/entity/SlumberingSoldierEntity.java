@@ -28,6 +28,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.elementure.procedures.SlumberingSoldierWitherProcedure;
+import net.mcreator.elementure.procedures.NightmareFangDropProcedure;
 import net.mcreator.elementure.init.ElementureModEntities;
 
 public class SlumberingSoldierEntity extends Monster {
@@ -89,6 +90,12 @@ public class SlumberingSoldierEntity extends Monster {
 		if (source.getMsgId().equals("witherSkull"))
 			return false;
 		return super.hurt(source, amount);
+	}
+
+	@Override
+	public void die(DamageSource source) {
+		super.die(source);
+		NightmareFangDropProcedure.execute(this.level, this);
 	}
 
 	@Override

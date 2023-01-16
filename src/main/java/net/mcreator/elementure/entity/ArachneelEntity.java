@@ -66,7 +66,7 @@ public class ArachneelEntity extends Monster implements RangedAttackMob {
 		this.targetSelector.addGoal(7, new NearestAttackableTargetGoal(this, ServerPlayer.class, true, true));
 		this.targetSelector.addGoal(8, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
-		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
+		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 30, 10) {
 			@Override
 			public boolean canContinueToUse() {
 				return this.canUse();

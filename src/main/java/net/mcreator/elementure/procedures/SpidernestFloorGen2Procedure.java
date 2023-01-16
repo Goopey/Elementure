@@ -11,18 +11,18 @@ public class SpidernestFloorGen2Procedure {
 	final static int FLOOR_SIZE = 91;
 	final static int FLOOR_START = 10;
 	final static int FLOOR_MID = 50;
-	final static int DOOR_HEIGHT = 1;
+	final static int DOOR_HEIGHT = 3;
 	/*
 	 * Max floor size is defined here so that every floor size has the same chances
 	 * of occuring Having to put random directly inside the while makes it get
 	 * recalculated every time so it is very possible to get a small number right
 	 * after a big one
 	 */
-	final static int MAX_FLOOR_SIZE = ((int) Math.random() * 8 + 17);
+	final static int MAX_FLOOR_SIZE = ((int) Math.random() * 11 + 17);
 	final static int MIN_FLOOR_SIZE = (MAX_FLOOR_SIZE / 2 + 1);
 	// main block of code
 	// minimum end room requirement
-	final static int ENDROOM_NEED = 1;
+	final static int ENDROOM_NEED = 2;
 
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		boolean[] floorArray = new boolean[FLOOR_SIZE];
@@ -119,16 +119,16 @@ public class SpidernestFloorGen2Procedure {
 				 */
 				int xPos = ((i - 1) / 9) - 5;
 				int zPos = ((i - 1) % 9) - 4;
-				/* This is the actual room */
-				SwordtempleEndRoomProcedure.execute(world, x + (9 * xPos), y, z + (9 * zPos));
 				/*
 				 * This small bit is for generating the "endrooms" or the equivalent which would
 				 * be a key room or bonus room
 				 */
 				if (endRoomCount == 0) {
-					SwordtempleSetBossKeyProcedure.execute(world, x + (9 * xPos), y + 1, z + (9 * zPos));
+					SpidernestcryptBossRoomGenProcedure.execute(world, x + (9 * xPos), y, z + (9 * zPos));
+				} else if (endRoomCount == 1) {
+					SpidernestcryptEndRoomGenProcedure.execute(world, x + (9 * xPos), y, z + (9 * zPos));
 				} else {
-					SwordtempleSetBonusLootProcedure.execute(world, x + (9 * xPos), y + 1, z + (9 * zPos));
+					SpidernestcryptEndRoomGen2Procedure.execute(world, x + (9 * xPos), y, z + (9 * zPos));
 				}
 				endRoomCount++;
 				wallPatcher(world, x, y - 2, z, floorArray, i, xPos, zPos);
@@ -139,7 +139,7 @@ public class SpidernestFloorGen2Procedure {
 				 */
 				int xPos = ((i - 1) / 9) - 5;
 				int zPos = ((i - 1) % 9) - 4;
-				SwordtempleRoomGenProcedure.execute(world, x + (9 * xPos), y, z + (9 * zPos));
+				SpidernestcryptRoomGenProcedure.execute(world, x + (9 * xPos), y, z + (9 * zPos));
 				wallPatcher(world, x, y - 2, z, floorArray, i, xPos, zPos);
 			} else if (i == FLOOR_MID) {
 				/*

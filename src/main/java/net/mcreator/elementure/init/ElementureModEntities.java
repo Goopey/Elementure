@@ -61,6 +61,7 @@ import net.mcreator.elementure.entity.SkeletalHostEntity;
 import net.mcreator.elementure.entity.SkeletalHeadHostEntity;
 import net.mcreator.elementure.entity.SirenqueenEntity;
 import net.mcreator.elementure.entity.SirenlingEntity;
+import net.mcreator.elementure.entity.ShurifangEntity;
 import net.mcreator.elementure.entity.ShatteredobsidianchargerEntity;
 import net.mcreator.elementure.entity.ShadowcandleEntity;
 import net.mcreator.elementure.entity.ScrapguardiansmallEntity;
@@ -1153,6 +1154,9 @@ public class ElementureModEntities {
 	public static final RegistryObject<EntityType<NightmareSpikeEntity>> NIGHTMARE_SPIKE = register("nightmare_spike",
 			EntityType.Builder.<NightmareSpikeEntity>of(NightmareSpikeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NightmareSpikeEntity::new).fireImmune().sized(0.6f, 0.6f));
+	public static final RegistryObject<EntityType<ShurifangEntity>> SHURIFANG = register("projectile_shurifang",
+			EntityType.Builder.<ShurifangEntity>of(ShurifangEntity::new, MobCategory.MISC).setCustomClientFactory(ShurifangEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

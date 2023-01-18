@@ -3,6 +3,7 @@ package net.mcreator.elementure.item;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -12,9 +13,13 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.init.ElementureModTabs;
 import net.mcreator.elementure.entity.EnhancedtargodBlasterEntity;
+
+import java.util.List;
 
 public class EnhancedtargodBlasterItem extends Item {
 	public EnhancedtargodBlasterItem() {
@@ -35,6 +40,13 @@ public class EnhancedtargodBlasterItem extends Item {
 	@Override
 	public int getUseDuration(ItemStack itemstack) {
 		return 72000;
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
+		super.appendHoverText(itemstack, world, list, flag);
+		list.add(new TextComponent("\u00A76Boss trophy"));
+		list.add(new TextComponent("Blasts explosive projectiles towards your enemies."));
 	}
 
 	@Override

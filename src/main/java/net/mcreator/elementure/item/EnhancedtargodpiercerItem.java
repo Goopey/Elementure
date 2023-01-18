@@ -59,6 +59,7 @@ public class EnhancedtargodpiercerItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
+		list.add(new TextComponent("\u00A76Boss trophy"));
 		list.add(new TextComponent("A special spear with super-reach, armor piercing and damage that ramps up with attacks."));
 		list.add(new TextComponent("Sprays Dark Flames whenever enough damage has been dealt."));
 	}

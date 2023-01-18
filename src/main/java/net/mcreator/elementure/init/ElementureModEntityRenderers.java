@@ -53,6 +53,7 @@ import net.mcreator.elementure.client.renderer.SkeletalHostRenderer;
 import net.mcreator.elementure.client.renderer.SkeletalHeadHostRenderer;
 import net.mcreator.elementure.client.renderer.SirenqueenRenderer;
 import net.mcreator.elementure.client.renderer.SirenlingRenderer;
+import net.mcreator.elementure.client.renderer.ShurifangRenderer;
 import net.mcreator.elementure.client.renderer.ShatteredobsidianchargerRenderer;
 import net.mcreator.elementure.client.renderer.ShadowcandleRenderer;
 import net.mcreator.elementure.client.renderer.ScrapguardiansmallRenderer;
@@ -422,5 +423,6 @@ public class ElementureModEntityRenderers {
 		event.registerEntityRenderer(ElementureModEntities.NIGHTMARE_ARBALEST.get(), NightmareArbalestRenderer::new);
 		event.registerEntityRenderer(ElementureModEntities.NIGHTMARE_MASS.get(), NightmareMassRenderer::new);
 		event.registerEntityRenderer(ElementureModEntities.NIGHTMARE_SPIKE.get(), NightmareSpikeRenderer::new);
+		event.registerEntityRenderer(ElementureModEntities.SHURIFANG.get(), ShurifangRenderer::new);
 	}
 }

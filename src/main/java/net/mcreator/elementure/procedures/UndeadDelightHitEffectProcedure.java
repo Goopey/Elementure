@@ -10,7 +10,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.damagesource.DamageSource;
 
 import net.mcreator.elementure.network.ElementureModVariables;
 
@@ -19,11 +18,12 @@ public class UndeadDelightHitEffectProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (entity instanceof LivingEntity _livEnt ? _livEnt.getMobType() == MobType.UNDEAD : false) {
-			entity.hurt(DamageSource.GENERIC, 2);
 			if (Math.random() < 0.5) {
 				if (sourceentity instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 600, 0));
 			}
+			if (entity instanceof LivingEntity _entity)
+				_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) - 2));
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;

@@ -28,11 +28,11 @@ public class UndeadDelightItem extends PickaxeItem {
 			}
 
 			public float getSpeed() {
-				return 7f;
+				return 7.5f;
 			}
 
 			public float getAttackDamageBonus() {
-				return 4f;
+				return 6.5f;
 			}
 
 			public int getLevel() {
@@ -46,7 +46,7 @@ public class UndeadDelightItem extends PickaxeItem {
 			public Ingredient getRepairIngredient() {
 				return Ingredient.of(new ItemStack(ElementureModItems.NIGHTMARE_FANG.get()));
 			}
-		}, 1, -2.5999999999999999f, new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDTOOLS));
+		}, 1, -3f, new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDSWORDS));
 	}
 
 	@Override
@@ -60,9 +60,9 @@ public class UndeadDelightItem extends PickaxeItem {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(new TextComponent("A weird pickaxe made of nightmarish stuff. It feeds on undead and the like."));
-		list.add(new TextComponent("The pickaxe has a chance of giving you regeneration when attacking an undead."));
-		list.add(new TextComponent("The pickaxe also heals you for 3 hearts when killing an undead."));
-		list.add(new TextComponent("Deals extra damage to undead."));
+		list.add(new TextComponent("-The pickaxe has a chance of giving you regeneration when attacking an undead."));
+		list.add(new TextComponent("-The pickaxe also heals you for 3 hearts when killing an undead."));
+		list.add(new TextComponent("-Deals extra damage to undead."));
 	}
 
 	@Override

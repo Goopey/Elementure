@@ -33,7 +33,7 @@ public class StructureitemtesterRightClickedOnBlockProcedure {
 			}
 
 			private void run() {
-				SpidernestBaseGenProcedure.execute(world, x, y, z);
+				SpidernestBaseGenProcedure.execute(world, x, (y - 10), z);
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
 		}.start(world, 10);

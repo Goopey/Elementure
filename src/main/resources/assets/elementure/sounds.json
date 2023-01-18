@@ -278,5 +278,15 @@
         "stream": false
       }
     ]
+  },
+  "shurifang_thrown": {
+    "category": "player",
+    "subtitle": "subtitles.shurifang_thrown",
+    "sounds": [
+      {
+        "name": "elementure:shurifang_sfx",
+        "stream": false
+      }
+    ]
   }
 }

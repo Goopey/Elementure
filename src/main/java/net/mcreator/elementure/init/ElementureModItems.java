@@ -132,6 +132,7 @@ import net.mcreator.elementure.item.SilveraxeItem;
 import net.mcreator.elementure.item.SilverarmorItem;
 import net.mcreator.elementure.item.SilveraircoreItem;
 import net.mcreator.elementure.item.SignofinfectionItem;
+import net.mcreator.elementure.item.ShurifangItem;
 import net.mcreator.elementure.item.ShrimpsoupItem;
 import net.mcreator.elementure.item.ShrimpItem;
 import net.mcreator.elementure.item.ShinypearlItem;
@@ -2599,6 +2600,7 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> ARACHNEEL_SHIV = REGISTRY.register("arachneel_shiv", () -> new ArachneelShivItem());
 	public static final RegistryObject<Item> NIGHTMARE_FANG = REGISTRY.register("nightmare_fang", () -> new NightmareFangItem());
 	public static final RegistryObject<Item> UNDEAD_DELIGHT = REGISTRY.register("undead_delight", () -> new UndeadDelightItem());
+	public static final RegistryObject<Item> SHURIFANG = REGISTRY.register("shurifang", () -> new ShurifangItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

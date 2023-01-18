@@ -70864,6 +70864,79 @@
       "locked_code": false,
       "registry_name": "undead_delight_recipe",
       "path": "~/Weapons/Harvesters"
+    },
+    {
+      "name": "Shurifang",
+      "type": "rangeditem",
+      "sortid": 5300,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shurifang",
+      "path": "~/Weapons/Harvesters"
+    },
+    {
+      "name": "ShurifangGather",
+      "type": "procedure",
+      "sortid": 5301,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shurifang_gather",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons/Harvesters"
+    },
+    {
+      "name": "ShurifangTrueDark",
+      "type": "procedure",
+      "sortid": 5302,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shurifang_true_dark",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Weapons/Harvesters"
+    },
+    {
+      "name": "ShurifangSmoke",
+      "type": "procedure",
+      "sortid": 5303,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shurifang_smoke",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Weapons/Harvesters"
+    },
+    {
+      "name": "ShurifangRecipe",
+      "type": "recipe",
+      "sortid": 5304,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shurifang_recipe",
+      "path": "~/Weapons/Harvesters"
     }
   ],
   "variable_elements": [
@@ -71672,6 +71745,14 @@
       ],
       "category": "hostile",
       "subtitle": "Kassem dies"
+    },
+    {
+      "name": "shurifang_thrown",
+      "files": [
+        "shurifang_sfx"
+      ],
+      "category": "player",
+      "subtitle": "Shurifang thrown"
     }
   ],
   "language_map": {
@@ -71928,6 +72009,7 @@
       "item.aluminiumboots.name": "Aluminium Boots",
       "tile.spawner1.name": "Spawner cage weak",
       "block.elementure.nethersapling": "Nether sapling",
+      "item.elementure.shurifang": "Shurifang [Dark]",
       "item.elementure.taintedpearl": "Tainted pearl",
       "item.petrolbucket.name": "Petrol bucket",
       "item.elementure.darkforestbox": "Dark forest box",
@@ -74066,6 +74148,7 @@
       "item.smallwateressence.name": "Water droplet",
       "block.elementure.oldbrickslabs": "Old brick slabs",
       "subtitles.hydrothermal_hollow": "",
+      "subtitles.shurifang_thrown": "Shurifang thrown",
       "item.oceangrace.name": "Ocean grace",
       "item.highmusclemotor.name": "High muscle motor",
       "block.minecraft_worlds.limebarrierclosing": "Lime barrier closing",

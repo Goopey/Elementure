@@ -53,6 +53,7 @@ import net.mcreator.elementure.client.model.ModelskeletalHost;
 import net.mcreator.elementure.client.model.ModelskeletalHeadHost;
 import net.mcreator.elementure.client.model.Modelsirenqueen;
 import net.mcreator.elementure.client.model.Modelsirenling;
+import net.mcreator.elementure.client.model.Modelshurifang;
 import net.mcreator.elementure.client.model.Modelshattered_obsidian_charger;
 import net.mcreator.elementure.client.model.Modelshadow_candle;
 import net.mcreator.elementure.client.model.Modelscrap_guardian_small;
@@ -272,6 +273,7 @@ public class ElementureModModels {
 		event.registerLayerDefinition(Modelsoul_skull_familiar.LAYER_LOCATION, Modelsoul_skull_familiar::createBodyLayer);
 		event.registerLayerDefinition(Modelsirenqueen.LAYER_LOCATION, Modelsirenqueen::createBodyLayer);
 		event.registerLayerDefinition(Modelnetherum_titan.LAYER_LOCATION, Modelnetherum_titan::createBodyLayer);
+		event.registerLayerDefinition(Modelshurifang.LAYER_LOCATION, Modelshurifang::createBodyLayer);
 		event.registerLayerDefinition(Modelcandle_knight.LAYER_LOCATION, Modelcandle_knight::createBodyLayer);
 		event.registerLayerDefinition(Modelascended_aspid.LAYER_LOCATION, Modelascended_aspid::createBodyLayer);
 		event.registerLayerDefinition(ModelnightmareArbalest.LAYER_LOCATION, ModelnightmareArbalest::createBodyLayer);

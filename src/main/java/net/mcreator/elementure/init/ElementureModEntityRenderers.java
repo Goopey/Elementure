@@ -151,6 +151,8 @@ import net.mcreator.elementure.client.renderer.FlutanitechannelerRenderer;
 import net.mcreator.elementure.client.renderer.FluffwhaleRenderer;
 import net.mcreator.elementure.client.renderer.FireblastskillRenderer;
 import net.mcreator.elementure.client.renderer.FerziumchannelerRenderer;
+import net.mcreator.elementure.client.renderer.FangbombRenderer;
+import net.mcreator.elementure.client.renderer.FangbolaRenderer;
 import net.mcreator.elementure.client.renderer.EnergyblastskillRenderer;
 import net.mcreator.elementure.client.renderer.EchoBerryRenderer;
 import net.mcreator.elementure.client.renderer.EarthblastskillRenderer;
@@ -424,5 +426,7 @@ public class ElementureModEntityRenderers {
 		event.registerEntityRenderer(ElementureModEntities.NIGHTMARE_MASS.get(), NightmareMassRenderer::new);
 		event.registerEntityRenderer(ElementureModEntities.NIGHTMARE_SPIKE.get(), NightmareSpikeRenderer::new);
 		event.registerEntityRenderer(ElementureModEntities.SHURIFANG.get(), ShurifangRenderer::new);
+		event.registerEntityRenderer(ElementureModEntities.FANGBOMB.get(), FangbombRenderer::new);
+		event.registerEntityRenderer(ElementureModEntities.FANGBOLA.get(), FangbolaRenderer::new);
 	}
 }

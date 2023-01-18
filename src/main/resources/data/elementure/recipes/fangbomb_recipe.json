@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "elementure:nightmare_fang"
+    }
+  ],
+  "result": {
+    "item": "elementure:fangbomb",
+    "count": 2
+  }
+}

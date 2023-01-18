@@ -175,6 +175,8 @@ import net.mcreator.elementure.entity.FluffwhaleEntity;
 import net.mcreator.elementure.entity.FlashskillEntity;
 import net.mcreator.elementure.entity.FireblastskillEntity;
 import net.mcreator.elementure.entity.FerziumchannelerEntity;
+import net.mcreator.elementure.entity.FangbombEntity;
+import net.mcreator.elementure.entity.FangbolaEntity;
 import net.mcreator.elementure.entity.EnhancedtargodBlasterEntity;
 import net.mcreator.elementure.entity.EnhancedtarbombEntity;
 import net.mcreator.elementure.entity.EnergyblastskillEntity;
@@ -1156,6 +1158,12 @@ public class ElementureModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NightmareSpikeEntity::new).fireImmune().sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<ShurifangEntity>> SHURIFANG = register("projectile_shurifang",
 			EntityType.Builder.<ShurifangEntity>of(ShurifangEntity::new, MobCategory.MISC).setCustomClientFactory(ShurifangEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FangbombEntity>> FANGBOMB = register("projectile_fangbomb",
+			EntityType.Builder.<FangbombEntity>of(FangbombEntity::new, MobCategory.MISC).setCustomClientFactory(FangbombEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FangbolaEntity>> FANGBOLA = register("projectile_fangbola",
+			EntityType.Builder.<FangbolaEntity>of(FangbolaEntity::new, MobCategory.MISC).setCustomClientFactory(FangbolaEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {

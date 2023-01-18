@@ -138,6 +138,7 @@ import net.mcreator.elementure.client.model.Modelfoamfish;
 import net.mcreator.elementure.client.model.Modelfluff_whale;
 import net.mcreator.elementure.client.model.Modelfirebolt;
 import net.mcreator.elementure.client.model.Modelfireblastskillprojectile;
+import net.mcreator.elementure.client.model.Modelfang_bomb;
 import net.mcreator.elementure.client.model.Modelenergyblastskillprojectile;
 import net.mcreator.elementure.client.model.Modelempty;
 import net.mcreator.elementure.client.model.ModelechoFruit;
@@ -300,6 +301,7 @@ public class ElementureModModels {
 		event.registerLayerDefinition(ModelBaby_Ghast.LAYER_LOCATION, ModelBaby_Ghast::createBodyLayer);
 		event.registerLayerDefinition(Modelobleck_lord.LAYER_LOCATION, Modelobleck_lord::createBodyLayer);
 		event.registerLayerDefinition(Modelshadow_candle.LAYER_LOCATION, Modelshadow_candle::createBodyLayer);
+		event.registerLayerDefinition(Modelfang_bomb.LAYER_LOCATION, Modelfang_bomb::createBodyLayer);
 		event.registerLayerDefinition(Modelscrap_guardian.LAYER_LOCATION, Modelscrap_guardian::createBodyLayer);
 		event.registerLayerDefinition(Modelgnoblin.LAYER_LOCATION, Modelgnoblin::createBodyLayer);
 		event.registerLayerDefinition(Modellousy_sword.LAYER_LOCATION, Modellousy_sword::createBodyLayer);

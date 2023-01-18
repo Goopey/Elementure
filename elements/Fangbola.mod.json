@@ -1,0 +1,51 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "fang_bola",
+    "customModelName": "Normal",
+    "name": "Fang bola [Dark]",
+    "specialInfo": [
+      "It sabotages (Reduces enemy movement speed)"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 64,
+    "ammoItem": {
+      "value": "CUSTOM:Fangbola"
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": ""
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "FangbolaGlow"
+    },
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "FangbolaConsume"
+    },
+    "useCondition": {
+      "name": "FangbolaGlow"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 4.5,
+    "bulletKnockback": 1,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelfang_bomb",
+    "customBulletModelTexture": "fang_bomb_texturemap.png",
+    "onBulletHitsEntity": {
+      "name": "FangbolaEffect"
+    }
+  }
+}

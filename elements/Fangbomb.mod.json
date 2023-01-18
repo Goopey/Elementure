@@ -1,0 +1,54 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "fang_bomb",
+    "customModelName": "Normal",
+    "name": "Fang bomb [Dark]",
+    "specialInfo": [
+      "Stuns a group of enemies. Simple, somewhat easy to use."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 16,
+    "ammoItem": {
+      "value": "CUSTOM:Fangbomb"
+    },
+    "shootConstantly": false,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.tnt.primed"
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "FangbombGlow"
+    },
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "FangbombConsume"
+    },
+    "useCondition": {
+      "name": "FangbombGlow"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 4.5,
+    "bulletKnockback": 0,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": ""
+    },
+    "bulletModel": "Modelfang_bomb",
+    "customBulletModelTexture": "fang_bomb_texturemap.png",
+    "onBulletHitsBlock": {
+      "name": "FangbombEffect"
+    },
+    "onBulletHitsEntity": {
+      "name": "FangbombEffect"
+    }
+  }
+}

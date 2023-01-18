@@ -479,6 +479,8 @@ import net.mcreator.elementure.item.FerziumbladeItem;
 import net.mcreator.elementure.item.FerziumaxeItem;
 import net.mcreator.elementure.item.FerziumarmorItem;
 import net.mcreator.elementure.item.FatgroukiItem;
+import net.mcreator.elementure.item.FangbombItem;
+import net.mcreator.elementure.item.FangbolaItem;
 import net.mcreator.elementure.item.ExtrapotentjellyItem;
 import net.mcreator.elementure.item.EvildonutItem;
 import net.mcreator.elementure.item.EnhancedtarspiritstaffItem;
@@ -2601,6 +2603,8 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> NIGHTMARE_FANG = REGISTRY.register("nightmare_fang", () -> new NightmareFangItem());
 	public static final RegistryObject<Item> UNDEAD_DELIGHT = REGISTRY.register("undead_delight", () -> new UndeadDelightItem());
 	public static final RegistryObject<Item> SHURIFANG = REGISTRY.register("shurifang", () -> new ShurifangItem());
+	public static final RegistryObject<Item> FANGBOMB = REGISTRY.register("fangbomb", () -> new FangbombItem());
+	public static final RegistryObject<Item> FANGBOLA = REGISTRY.register("fangbola", () -> new FangbolaItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

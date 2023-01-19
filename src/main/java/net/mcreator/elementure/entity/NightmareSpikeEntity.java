@@ -29,6 +29,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.elementure.procedures.NightmareSpikeSpikeProcedure;
 import net.mcreator.elementure.init.ElementureModEntities;
+import com.ibm.icu.util.DangiCalendar;
 
 public class NightmareSpikeEntity extends PathfinderMob {
 	public NightmareSpikeEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -97,6 +98,8 @@ public class NightmareSpikeEntity extends PathfinderMob {
 		if (source == DamageSource.DRAGON_BREATH)
 			return false;
 		if (source == DamageSource.WITHER)
+			return false;
+		if (source == DamageSource.IN_WALL)
 			return false;
 		if (source.getMsgId().equals("witherSkull"))
 			return false;

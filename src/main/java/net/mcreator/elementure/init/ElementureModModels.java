@@ -139,6 +139,7 @@ import net.mcreator.elementure.client.model.Modelfluff_whale;
 import net.mcreator.elementure.client.model.Modelfirebolt;
 import net.mcreator.elementure.client.model.Modelfireblastskillprojectile;
 import net.mcreator.elementure.client.model.Modelfang_bomb;
+import net.mcreator.elementure.client.model.Modelfang_bola;
 import net.mcreator.elementure.client.model.Modelenergyblastskillprojectile;
 import net.mcreator.elementure.client.model.Modelempty;
 import net.mcreator.elementure.client.model.ModelechoFruit;
@@ -218,6 +219,7 @@ public class ElementureModModels {
 		event.registerLayerDefinition(Modelmycena_shroom_villager_farmer.LAYER_LOCATION, Modelmycena_shroom_villager_farmer::createBodyLayer);
 		event.registerLayerDefinition(Modelarachneel.LAYER_LOCATION, Modelarachneel::createBodyLayer);
 		event.registerLayerDefinition(Modelweaklightningandesiteelemental.LAYER_LOCATION, Modelweaklightningandesiteelemental::createBodyLayer);
+		event.registerLayerDefinition(Modelfang_bola.LAYER_LOCATION, Modelfang_bola::createBodyLayer);
 		event.registerLayerDefinition(Modelxp_vest.LAYER_LOCATION, Modelxp_vest::createBodyLayer);
 		event.registerLayerDefinition(Modelthe_nine.LAYER_LOCATION, Modelthe_nine::createBodyLayer);
 		event.registerLayerDefinition(ModelslumberingSoldier.LAYER_LOCATION, ModelslumberingSoldier::createBodyLayer);

@@ -1,5 +1,5 @@
-// Made with Blockbench 4.5.2
-// Exported for Minecraft version 1.17 - 1.18 with Mojang mappings
+// Made with Blockbench 4.6.0
+// Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
 public class Modelshurifang<T extends Entity> extends EntityModel<T> {
@@ -17,9 +17,13 @@ public class Modelshurifang<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
-		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main", CubeListBuilder.create().texOffs(-16, 0)
-				.addBox(-8.0F, -7.0F, -8.0F, 16.0F, 0.0F, 16.0F, new CubeDeformation(0.01F)),
+		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main", CubeListBuilder.create(),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
+
+		PartDefinition cube_r1 = bb_main.addOrReplaceChild("cube_r1",
+				CubeListBuilder.create().texOffs(-16, 0).addBox(-8.0F, 0.0F, -8.0F, 16.0F, 0.0F, 16.0F,
+						new CubeDeformation(0.01F)),
+				PartPose.offsetAndRotation(0.0F, -7.0F, 0.0F, -1.5708F, -1.5708F, 0.0F));
 
 		return LayerDefinition.create(meshdefinition, 32, 16);
 	}
@@ -27,7 +31,7 @@ public class Modelshurifang<T extends Entity> extends EntityModel<T> {
 	@Override
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
 			float headPitch) {
-		this.bb_main.yRot = (ageInTicks / 4.f);
+
 	}
 
 	@Override

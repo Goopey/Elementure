@@ -9,19 +9,19 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.MultiBufferSource;
 
 import net.mcreator.elementure.entity.FangbolaEntity;
-import net.mcreator.elementure.client.model.Modelfang_bomb;
+import net.mcreator.elementure.client.model.Modelfang_bola;
 
 import com.mojang.math.Vector3f;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
 public class FangbolaRenderer extends EntityRenderer<FangbolaEntity> {
-	private static final ResourceLocation texture = new ResourceLocation("elementure:textures/entities/fang_bomb_texturemap.png");
-	private final Modelfang_bomb model;
+	private static final ResourceLocation texture = new ResourceLocation("elementure:textures/entities/bola_texturemap.png");
+	private final Modelfang_bola model;
 
 	public FangbolaRenderer(EntityRendererProvider.Context context) {
 		super(context);
-		model = new Modelfang_bomb(context.bakeLayer(Modelfang_bomb.LAYER_LOCATION));
+		model = new Modelfang_bola(context.bakeLayer(Modelfang_bola.LAYER_LOCATION));
 	}
 
 	@Override

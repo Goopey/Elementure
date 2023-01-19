@@ -35,7 +35,7 @@ public class FangbombEffectProcedure {
 			}
 		}
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.SMOKE, (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()),
-					70, 0.8, 0.8, 0.8, 0.01);
+			_level.sendParticles(ParticleTypes.LARGE_SMOKE, (immediatesourceentity.getX()), (immediatesourceentity.getY()),
+					(immediatesourceentity.getZ()), 70, 0.8, 0.8, 0.8, 0.01);
 	}
 }

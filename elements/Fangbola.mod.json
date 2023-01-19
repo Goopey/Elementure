@@ -19,7 +19,7 @@
     "shootConstantly": false,
     "usageCount": 0,
     "actionSound": {
-      "value": ""
+      "value": "CUSTOM:fang_bola_thrown"
     },
     "hasGlow": true,
     "glowCondition": {
@@ -42,8 +42,8 @@
     "bulletItemTexture": {
       "value": ""
     },
-    "bulletModel": "Modelfang_bomb",
-    "customBulletModelTexture": "fang_bomb_texturemap.png",
+    "bulletModel": "Modelfang_bola",
+    "customBulletModelTexture": "bola_texturemap.png",
     "onBulletHitsEntity": {
       "name": "FangbolaEffect"
     }

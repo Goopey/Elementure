@@ -70591,7 +70591,7 @@
       "type": "livingentity",
       "sortid": 5286,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "nightmare_spike",
       "path": "~/Dungeons/SpiderNests/Creatures"
     },
@@ -71931,6 +71931,14 @@
       ],
       "category": "player",
       "subtitle": "Shurifang thrown"
+    },
+    {
+      "name": "fang_bola_thrown",
+      "files": [
+        "fang_bola_sfx"
+      ],
+      "category": "player",
+      "subtitle": "Fang bola gets thrown"
     }
   ],
   "language_map": {
@@ -74525,6 +74533,7 @@
       "item.lightblade.name": "Light blade",
       "block.minecraft_worlds.taigamemorial": "Taiga memorial",
       "item.elementure.magma_carp": "Magma Carp",
+      "subtitles.fang_bola_thrown": "Fang bola gets thrown",
       "entity.curserservant1.name": "Cursed skull",
       "block.elementure.corruptgrass": "Corrupt grass",
       "block.minecraft_worlds.magentabarrier": "Magenta barrier",

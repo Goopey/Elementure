@@ -65,6 +65,7 @@ public class ElementureModSounds {
 		REGISTRY.put(new ResourceLocation("elementure", "kassem_hurt"), new SoundEvent(new ResourceLocation("elementure", "kassem_hurt")));
 		REGISTRY.put(new ResourceLocation("elementure", "kassem_death"), new SoundEvent(new ResourceLocation("elementure", "kassem_death")));
 		REGISTRY.put(new ResourceLocation("elementure", "shurifang_thrown"), new SoundEvent(new ResourceLocation("elementure", "shurifang_thrown")));
+		REGISTRY.put(new ResourceLocation("elementure", "fang_bola_thrown"), new SoundEvent(new ResourceLocation("elementure", "fang_bola_thrown")));
 	}
 
 	@SubscribeEvent

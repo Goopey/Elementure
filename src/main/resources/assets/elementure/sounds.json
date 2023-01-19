@@ -288,5 +288,15 @@
         "stream": false
       }
     ]
+  },
+  "fang_bola_thrown": {
+    "category": "player",
+    "subtitle": "subtitles.fang_bola_thrown",
+    "sounds": [
+      {
+        "name": "elementure:fang_bola_sfx",
+        "stream": false
+      }
+    ]
   }
 }

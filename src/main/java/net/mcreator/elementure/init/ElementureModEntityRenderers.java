@@ -42,6 +42,7 @@ import net.mcreator.elementure.client.renderer.StarguardianstandRenderer;
 import net.mcreator.elementure.client.renderer.SpidermatriarchRenderer;
 import net.mcreator.elementure.client.renderer.SpiderlingRenderer;
 import net.mcreator.elementure.client.renderer.SpiderSwarmerRenderer;
+import net.mcreator.elementure.client.renderer.SpiderQueenRenderer;
 import net.mcreator.elementure.client.renderer.SpectreknightRenderer;
 import net.mcreator.elementure.client.renderer.SoulskullfamiliarRenderer;
 import net.mcreator.elementure.client.renderer.SoulobleckRenderer;
@@ -428,5 +429,6 @@ public class ElementureModEntityRenderers {
 		event.registerEntityRenderer(ElementureModEntities.SHURIFANG.get(), ShurifangRenderer::new);
 		event.registerEntityRenderer(ElementureModEntities.FANGBOMB.get(), FangbombRenderer::new);
 		event.registerEntityRenderer(ElementureModEntities.FANGBOLA.get(), FangbolaRenderer::new);
+		event.registerEntityRenderer(ElementureModEntities.SPIDER_QUEEN.get(), SpiderQueenRenderer::new);
 	}
 }

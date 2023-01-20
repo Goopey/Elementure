@@ -50,6 +50,7 @@ import net.mcreator.elementure.entity.StarguardianstandEntity;
 import net.mcreator.elementure.entity.SpidermatriarchEntity;
 import net.mcreator.elementure.entity.SpiderlingEntity;
 import net.mcreator.elementure.entity.SpiderSwarmerEntity;
+import net.mcreator.elementure.entity.SpiderQueenEntity;
 import net.mcreator.elementure.entity.SpectreknightEntity;
 import net.mcreator.elementure.entity.SoulskullfamiliarEntity;
 import net.mcreator.elementure.entity.SoulobleckEntity;
@@ -1165,6 +1166,11 @@ public class ElementureModEntities {
 	public static final RegistryObject<EntityType<FangbolaEntity>> FANGBOLA = register("projectile_fangbola",
 			EntityType.Builder.<FangbolaEntity>of(FangbolaEntity::new, MobCategory.MISC).setCustomClientFactory(FangbolaEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<SpiderQueenEntity>> SPIDER_QUEEN = register("spider_queen",
+			EntityType.Builder.<SpiderQueenEntity>of(SpiderQueenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpiderQueenEntity::new)
+
+					.sized(1.4f, 1.4000000000000001f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -1334,6 +1340,7 @@ public class ElementureModEntities {
 			NightmareArbalestEntity.init();
 			NightmareMassEntity.init();
 			NightmareSpikeEntity.init();
+			SpiderQueenEntity.init();
 		});
 	}
 
@@ -1500,5 +1507,6 @@ public class ElementureModEntities {
 		event.put(NIGHTMARE_ARBALEST.get(), NightmareArbalestEntity.createAttributes().build());
 		event.put(NIGHTMARE_MASS.get(), NightmareMassEntity.createAttributes().build());
 		event.put(NIGHTMARE_SPIKE.get(), NightmareSpikeEntity.createAttributes().build());
+		event.put(SPIDER_QUEEN.get(), SpiderQueenEntity.createAttributes().build());
 	}
 }

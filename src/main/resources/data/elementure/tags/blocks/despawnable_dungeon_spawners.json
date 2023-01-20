@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "elementure:pumpkincore",
     "elementure:nightmare_shaman",
     "elementure:ivoryspawner"
   ]

@@ -2605,6 +2605,9 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> SHURIFANG = REGISTRY.register("shurifang", () -> new ShurifangItem());
 	public static final RegistryObject<Item> FANGBOMB = REGISTRY.register("fangbomb", () -> new FangbombItem());
 	public static final RegistryObject<Item> FANGBOLA = REGISTRY.register("fangbola", () -> new FangbolaItem());
+	public static final RegistryObject<Item> SPIDER_QUEEN = REGISTRY.register("spider_queen_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SPIDER_QUEEN, -13434880, -6750208,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

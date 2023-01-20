@@ -71115,6 +71115,36 @@
       "locked_code": false,
       "registry_name": "fangbola_recipe",
       "path": "~/Weapons/Casters"
+    },
+    {
+      "name": "SpiderQueen",
+      "type": "livingentity",
+      "sortid": 5317,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spider_queen",
+      "path": "~/Dungeons/SpiderNests/Bosses"
+    },
+    {
+      "name": "SpiderQueenDrops",
+      "type": "procedure",
+      "sortid": 5318,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spider_queen_drops",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dungeons/SpiderNests/Bosses"
     }
   ],
   "variable_elements": [
@@ -72603,6 +72633,7 @@
       "item.elementure.darkcormunculus_channeler": "Cormunculus Channeler [Dark - Water]",
       "item.poweredsavageblade.name": "Savage blade [Fire]",
       "advancements.elementure_fishingadvancement.descr": "You\u0027re catching some odd fish!",
+      "item.elementure.spider_queen_spawn_egg": "Spider Queen Spawn Egg",
       "item.noobiumpickaxe.name": "Noobiumpickaxe",
       "item.osmiumhoe.name": "Osmium hoe",
       "item.minecraft_worlds.mycenafumoonspore_spawn_egg": "Mycena fumoon spore Spawn Egg",
@@ -75665,6 +75696,7 @@
       "item.elementure.greenseafoamblade": "Green seafoam blade [Water]",
       "block.elementure.divingvine_bearing": "Diving vine",
       "block.elementure.abyssportalblock": "Abyss portal",
+      "entity.elementure.spider_queen": "Spider Queen",
       "item.minecraft_worlds.mycenafumoonshroomling": "Fumoon shroomling Spawn Egg",
       "item.elementure.greedsbag": "Greed\u0027s bag",
       "entity.testenvironmentmod.mecanicaleye.name": "Mecanical eye",

@@ -42,6 +42,7 @@ import net.mcreator.elementure.client.model.Modelstarryvillager;
 import net.mcreator.elementure.client.model.Modelstarguardian;
 import net.mcreator.elementure.client.model.Modelspirit;
 import net.mcreator.elementure.client.model.Modelspiderling;
+import net.mcreator.elementure.client.model.ModelspiderQueen;
 import net.mcreator.elementure.client.model.ModelspiderMatriarch;
 import net.mcreator.elementure.client.model.Modelspectre_knight;
 import net.mcreator.elementure.client.model.Modelsoul_skull_familiar;
@@ -277,6 +278,7 @@ public class ElementureModModels {
 		event.registerLayerDefinition(Modelsirenqueen.LAYER_LOCATION, Modelsirenqueen::createBodyLayer);
 		event.registerLayerDefinition(Modelnetherum_titan.LAYER_LOCATION, Modelnetherum_titan::createBodyLayer);
 		event.registerLayerDefinition(Modelshurifang.LAYER_LOCATION, Modelshurifang::createBodyLayer);
+		event.registerLayerDefinition(ModelspiderQueen.LAYER_LOCATION, ModelspiderQueen::createBodyLayer);
 		event.registerLayerDefinition(Modelcandle_knight.LAYER_LOCATION, Modelcandle_knight::createBodyLayer);
 		event.registerLayerDefinition(Modelascended_aspid.LAYER_LOCATION, Modelascended_aspid::createBodyLayer);
 		event.registerLayerDefinition(ModelnightmareArbalest.LAYER_LOCATION, ModelnightmareArbalest::createBodyLayer);

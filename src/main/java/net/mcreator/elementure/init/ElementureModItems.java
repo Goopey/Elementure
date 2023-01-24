@@ -586,6 +586,7 @@ import net.mcreator.elementure.item.CrumItem;
 import net.mcreator.elementure.item.CruelbladeItem;
 import net.mcreator.elementure.item.CrabbobberItem;
 import net.mcreator.elementure.item.CorruptedsmiteringItem;
+import net.mcreator.elementure.item.CorruptedSmiteItem;
 import net.mcreator.elementure.item.CorruptdewItem;
 import net.mcreator.elementure.item.CormunculustunerItem;
 import net.mcreator.elementure.item.CormunculusSwimmingcharmItem;
@@ -2614,6 +2615,7 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> CURSEDMEMORYPLANT_1 = block(ElementureModBlocks.CURSEDMEMORYPLANT_1, null);
 	public static final RegistryObject<Item> CURSEDMEMORYPLANT_2 = block(ElementureModBlocks.CURSEDMEMORYPLANT_2, null);
 	public static final RegistryObject<Item> CURSEDMEMORYPLANT_3 = block(ElementureModBlocks.CURSEDMEMORYPLANT_3, null);
+	public static final RegistryObject<Item> CORRUPTED_SMITE = REGISTRY.register("corrupted_smite", () -> new CorruptedSmiteItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

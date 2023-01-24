@@ -57,8 +57,18 @@
       },
       {
         "value": "EntityDragon"
+      },
+      {
+        "value": "CUSTOM:SpiderQueen"
+      },
+      {
+        "value": "CUSTOM:Umbrasyl"
+      },
+      {
+        "value": "CUSTOM:Sirenqueen"
       }
     ],
+    "biomes": [],
     "name": "resistboss",
     "namespace": "mod"
   }

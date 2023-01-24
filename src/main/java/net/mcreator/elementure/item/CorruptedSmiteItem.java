@@ -13,16 +13,18 @@ import net.mcreator.elementure.init.ElementureModTabs;
 
 import java.util.List;
 
-public class RattailItem extends Item {
-	public RattailItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDITEMS).stacksTo(64).rarity(Rarity.UNCOMMON));
+public class CorruptedSmiteItem extends Item {
+	public CorruptedSmiteItem() {
+		super(new Item.Properties().tab(ElementureModTabs.TAB_SKILLWINDOW).stacksTo(1).rarity(Rarity.EPIC));
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A7cW.I.P"));
 		list.add(new TextComponent(
-				"This item is part of a bigger patch of content which has not been implemented yet. It is useless now, but it will be quite useful in the future."));
+				"Artifact : smites are made to destroy your enemies. This one is made to destroy your enemies under any circumstance. Failure will ot be allowed again."));
+		list.add(new TextComponent("-Stores up damage over a period of time and releases it all at once on your next attack."));
+		list.add(new TextComponent("-More effective against bosses."));
+		list.add(new TextComponent("-Increases damage against boss enemies."));
 	}
 }

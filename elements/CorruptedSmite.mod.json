@@ -3,14 +3,14 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "rat_tail",
+    "texture": "corrupted_smite",
     "customModelName": "Normal",
-    "name": "§cRat tail",
-    "rarity": "UNCOMMON",
+    "name": "§cCorrupted Smite",
+    "rarity": "EPIC",
     "creativeTab": {
-      "value": "CUSTOM:Tabmoddeditems"
+      "value": "CUSTOM:Skillwindow"
     },
-    "stackSize": 64,
+    "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,
     "toolType": 1.0,
@@ -25,8 +25,10 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "§cW.I.P",
-      "This item is part of a bigger patch of content which has not been implemented yet. It is useless now, but it will be quite useful in the future."
+      "Artifact : smites are made to destroy your enemies. This one is made to destroy your enemies under any circumstance. Failure will ot be allowed again.",
+      "-Stores up damage over a period of time and releases it all at once on your next attack.",
+      "-More effective against bosses.",
+      "-Increases damage against boss enemies."
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",

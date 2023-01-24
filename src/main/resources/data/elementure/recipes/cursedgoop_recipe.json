@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "elementure:cursedforgottenfragment"
+    },
+    {
+      "item": "elementure:memoryfragment"
+    },
+    {
+      "tag": "forge/slimeballs"
+    }
+  ],
+  "result": {
+    "item": "elementure:cursed_goop",
+    "count": 1
+  }
+}

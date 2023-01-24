@@ -13,6 +13,8 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.ModelLayerLocation;
 import net.minecraft.client.model.EntityModel;
 
+import net.mcreator.elementure.entity.SpiderQueenEntity;
+
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
@@ -24,6 +26,7 @@ public class ModelspiderQueen<T extends Entity> extends EntityModel<T> {
 	// the entity renderer and passed into this model's constructor
 	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("elementure", "modelspider_queen"), "main");
 	public final ModelPart head;
+	public final ModelPart body;
 	public final ModelPart leg_1;
 	public final ModelPart rotat1;
 	public final ModelPart leg_1_rotat;
@@ -56,51 +59,57 @@ public class ModelspiderQueen<T extends Entity> extends EntityModel<T> {
 	public final ModelPart rotat3;
 	public final ModelPart leg_1_rotat8;
 	public final ModelPart leg_top_8;
-	public final ModelPart bb_main;
 
 	public ModelspiderQueen(ModelPart root) {
-		this.head = root.getChild("head");
-		this.leg_1 = root.getChild("leg_1");
+		this.body = root.getChild("body");
+		this.head = body.getChild("head");
+		this.leg_1 = body.getChild("leg_1");
 		this.rotat1 = leg_1.getChild("rotat1");
 		this.leg_1_rotat = rotat1.getChild("leg_1_rotat");
 		this.leg_top_1 = leg_1_rotat.getChild("leg_top_1");
-		this.leg_4 = root.getChild("leg_4");
+		this.leg_4 = body.getChild("leg_4");
 		this.rotat4 = leg_4.getChild("rotat4");
 		this.leg_1_rotat2 = rotat4.getChild("leg_1_rotat2");
 		this.leg_top_4 = leg_1_rotat2.getChild("leg_top_4");
-		this.leg_5 = root.getChild("leg_5");
+		this.leg_5 = body.getChild("leg_5");
 		this.rotat5 = leg_5.getChild("rotat5");
 		this.leg_1_rotat3 = rotat5.getChild("leg_1_rotat3");
 		this.leg_top_3 = leg_1_rotat3.getChild("leg_top_3");
-		this.leg_6 = root.getChild("leg_6");
+		this.leg_6 = body.getChild("leg_6");
 		this.rotat6 = leg_6.getChild("rotat6");
 		this.leg_1_rotat4 = rotat6.getChild("leg_1_rotat4");
 		this.leg_top_2 = leg_1_rotat4.getChild("leg_top_2");
-		this.leg_2 = root.getChild("leg_2");
+		this.leg_2 = body.getChild("leg_2");
 		this.rotat2 = leg_2.getChild("rotat2");
 		this.leg_1_rotat5 = rotat2.getChild("leg_1_rotat5");
 		this.leg_top_5 = leg_1_rotat5.getChild("leg_top_5");
-		this.leg_8 = root.getChild("leg_8");
+		this.leg_8 = body.getChild("leg_8");
 		this.rotat8 = leg_8.getChild("rotat8");
 		this.leg_1_rotat6 = rotat8.getChild("leg_1_rotat6");
 		this.leg_top_6 = leg_1_rotat6.getChild("leg_top_6");
-		this.leg_7 = root.getChild("leg_7");
+		this.leg_7 = body.getChild("leg_7");
 		this.rotat7 = leg_7.getChild("rotat7");
 		this.leg_1_rotat7 = rotat7.getChild("leg_1_rotat7");
 		this.leg_top_7 = leg_1_rotat7.getChild("leg_top_7");
-		this.leg_3 = root.getChild("leg_3");
+		this.leg_3 = body.getChild("leg_3");
 		this.rotat3 = leg_3.getChild("rotat3");
 		this.leg_1_rotat8 = rotat3.getChild("leg_1_rotat8");
 		this.leg_top_8 = leg_1_rotat8.getChild("leg_top_8");
-		this.bb_main = root.getChild("bb_main");
 	}
 
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition head = partdefinition.addOrReplaceChild("head",
+		PartDefinition body = partdefinition.addOrReplaceChild("body",
+				CubeListBuilder.create().texOffs(88, 0).addBox(-5.0F, 4.0F, -3.0F, 10.0F, 1.0F, 10.0F, new CubeDeformation(0.0F)).texOffs(76, 25)
+						.addBox(-6.0F, 3.0F, -5.0F, 12.0F, 1.0F, 14.0F, new CubeDeformation(0.0F)).texOffs(0, 38)
+						.addBox(-7.5F, -7.0F, -7.0F, 15.0F, 10.0F, 18.0F, new CubeDeformation(0.0F)).texOffs(39, 0)
+						.addBox(-6.5F, -11.0F, -6.0F, 13.0F, 4.0F, 14.0F, new CubeDeformation(0.0F)).texOffs(87, 53)
+						.addBox(-6.0F, -9.0F, 8.0F, 12.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)),
+				PartPose.offset(0.0F, 8.0F, 0.0F));
+		PartDefinition head = body.addOrReplaceChild("head",
 				CubeListBuilder.create().texOffs(0, 12).addBox(-4.0F, -15.5F, -4.0F, 8.0F, 8.0F, 7.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 18.0F, -9.0F));
+				PartPose.offset(0.0F, 10.0F, -9.0F));
 		PartDefinition cube_r1 = head
 				.addOrReplaceChild(
 						"cube_r1", CubeListBuilder.create().texOffs(0, 0).mirror()
@@ -109,7 +118,7 @@ public class ModelspiderQueen<T extends Entity> extends EntityModel<T> {
 		PartDefinition cube_r2 = head.addOrReplaceChild("cube_r2",
 				CubeListBuilder.create().texOffs(0, 0).addBox(-1.5F, -2.0F, -0.6F, 3.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(-2.5F, -7.0F, -4.0F, 0.3054F, 0.48F, 0.0F));
-		PartDefinition leg_1 = partdefinition.addOrReplaceChild("leg_1", CubeListBuilder.create(), PartPose.offset(6.0F, 12.0F, -5.0F));
+		PartDefinition leg_1 = body.addOrReplaceChild("leg_1", CubeListBuilder.create(), PartPose.offset(6.0F, 4.0F, -5.0F));
 		PartDefinition rotat1 = leg_1.addOrReplaceChild("rotat1", CubeListBuilder.create(), PartPose.offset(0.0F, -1.0F, 0.0F));
 		PartDefinition leg_1_rotat = rotat1.addOrReplaceChild(
 				"leg_1_rotat", CubeListBuilder.create().texOffs(0, 119).mirror()
@@ -137,7 +146,7 @@ public class ModelspiderQueen<T extends Entity> extends EntityModel<T> {
 				"cube_r7", CubeListBuilder.create().texOffs(96, 108).mirror()
 						.addBox(-1.0756F, -12.81F, -1.7551F, 4.0F, 16.0F, 4.0F, new CubeDeformation(0.3F)).mirror(false),
 				PartPose.offsetAndRotation(8.0F, 4.0F, 0.0F, 0.0F, 0.0F, -1.0908F));
-		PartDefinition leg_4 = partdefinition.addOrReplaceChild("leg_4", CubeListBuilder.create(), PartPose.offset(6.0F, 11.0F, 9.0F));
+		PartDefinition leg_4 = body.addOrReplaceChild("leg_4", CubeListBuilder.create(), PartPose.offset(6.0F, 3.0F, 9.0F));
 		PartDefinition rotat4 = leg_4.addOrReplaceChild("rotat4", CubeListBuilder.create(),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.4363F, 0.0F));
 		PartDefinition leg_1_rotat2 = rotat4.addOrReplaceChild(
@@ -166,7 +175,7 @@ public class ModelspiderQueen<T extends Entity> extends EntityModel<T> {
 				"cube_r12", CubeListBuilder.create().texOffs(96, 108).mirror()
 						.addBox(-1.0756F, -12.81F, -1.7551F, 4.0F, 16.0F, 4.0F, new CubeDeformation(0.3F)).mirror(false),
 				PartPose.offsetAndRotation(8.0F, 3.0F, 0.0F, 0.0F, 0.0F, -1.0908F));
-		PartDefinition leg_5 = partdefinition.addOrReplaceChild("leg_5", CubeListBuilder.create(), PartPose.offset(6.0F, 12.0F, 4.0F));
+		PartDefinition leg_5 = body.addOrReplaceChild("leg_5", CubeListBuilder.create(), PartPose.offset(6.0F, 4.0F, 4.0F));
 		PartDefinition rotat5 = leg_5.addOrReplaceChild("rotat5", CubeListBuilder.create(), PartPose.offset(0.0F, 0.0F, 0.0F));
 		PartDefinition leg_1_rotat3 = rotat5.addOrReplaceChild(
 				"leg_1_rotat3", CubeListBuilder.create().texOffs(0, 119).mirror()
@@ -194,7 +203,7 @@ public class ModelspiderQueen<T extends Entity> extends EntityModel<T> {
 				"cube_r17", CubeListBuilder.create().texOffs(96, 108).mirror()
 						.addBox(-1.0756F, -12.81F, -1.7551F, 4.0F, 16.0F, 4.0F, new CubeDeformation(0.3F)).mirror(false),
 				PartPose.offsetAndRotation(6.0F, 4.0F, 0.0F, 0.0F, 0.0F, -1.0908F));
-		PartDefinition leg_6 = partdefinition.addOrReplaceChild("leg_6", CubeListBuilder.create(), PartPose.offset(6.0F, 11.0F, 0.0F));
+		PartDefinition leg_6 = body.addOrReplaceChild("leg_6", CubeListBuilder.create(), PartPose.offset(6.0F, 3.0F, 0.0F));
 		PartDefinition rotat6 = leg_6.addOrReplaceChild("rotat6", CubeListBuilder.create(),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.3491F, 0.0F));
 		PartDefinition leg_1_rotat4 = rotat6.addOrReplaceChild(
@@ -223,7 +232,7 @@ public class ModelspiderQueen<T extends Entity> extends EntityModel<T> {
 				"cube_r22", CubeListBuilder.create().texOffs(96, 108).mirror()
 						.addBox(-1.0756F, -12.81F, -1.7551F, 4.0F, 16.0F, 4.0F, new CubeDeformation(0.3F)).mirror(false),
 				PartPose.offsetAndRotation(9.0F, 4.0F, 0.0F, 0.0F, 0.0F, -1.0908F));
-		PartDefinition leg_2 = partdefinition.addOrReplaceChild("leg_2", CubeListBuilder.create(), PartPose.offset(-7.0F, 11.0F, -5.0F));
+		PartDefinition leg_2 = body.addOrReplaceChild("leg_2", CubeListBuilder.create(), PartPose.offset(-6.0F, 3.0F, -5.0F));
 		PartDefinition rotat2 = leg_2.addOrReplaceChild("rotat2", CubeListBuilder.create(),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 3.1416F, 0.0F));
 		PartDefinition leg_1_rotat5 = rotat2.addOrReplaceChild(
@@ -252,7 +261,7 @@ public class ModelspiderQueen<T extends Entity> extends EntityModel<T> {
 				"cube_r27", CubeListBuilder.create().texOffs(96, 108).mirror()
 						.addBox(-1.0756F, -12.81F, -1.7551F, 4.0F, 16.0F, 4.0F, new CubeDeformation(0.3F)).mirror(false),
 				PartPose.offsetAndRotation(8.0F, 4.0F, 0.0F, 0.0F, 0.0F, -1.0908F));
-		PartDefinition leg_8 = partdefinition.addOrReplaceChild("leg_8", CubeListBuilder.create(), PartPose.offset(-7.0F, 11.0F, 1.0F));
+		PartDefinition leg_8 = body.addOrReplaceChild("leg_8", CubeListBuilder.create(), PartPose.offset(-7.0F, 3.0F, 1.0F));
 		PartDefinition rotat8 = leg_8.addOrReplaceChild("rotat8", CubeListBuilder.create(),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -2.7925F, 0.0F));
 		PartDefinition leg_1_rotat6 = rotat8.addOrReplaceChild(
@@ -281,7 +290,7 @@ public class ModelspiderQueen<T extends Entity> extends EntityModel<T> {
 				"cube_r32", CubeListBuilder.create().texOffs(96, 108).mirror()
 						.addBox(-1.0756F, -12.81F, -1.7551F, 4.0F, 16.0F, 4.0F, new CubeDeformation(0.3F)).mirror(false),
 				PartPose.offsetAndRotation(8.0F, 4.0F, 0.0F, 0.0F, 0.0F, -1.0908F));
-		PartDefinition leg_7 = partdefinition.addOrReplaceChild("leg_7", CubeListBuilder.create(), PartPose.offset(-6.0F, 11.0F, 5.0F));
+		PartDefinition leg_7 = body.addOrReplaceChild("leg_7", CubeListBuilder.create(), PartPose.offset(-6.0F, 3.0F, 5.0F));
 		PartDefinition rotat7 = leg_7.addOrReplaceChild("rotat7", CubeListBuilder.create(),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 3.1416F, 0.0F));
 		PartDefinition leg_1_rotat7 = rotat7.addOrReplaceChild(
@@ -310,7 +319,7 @@ public class ModelspiderQueen<T extends Entity> extends EntityModel<T> {
 				"cube_r37", CubeListBuilder.create().texOffs(96, 108).mirror()
 						.addBox(-1.0756F, -12.81F, -1.7551F, 4.0F, 16.0F, 4.0F, new CubeDeformation(0.3F)).mirror(false),
 				PartPose.offsetAndRotation(8.0F, 4.0F, 0.0F, 0.0F, 0.0F, -1.0908F));
-		PartDefinition leg_3 = partdefinition.addOrReplaceChild("leg_3", CubeListBuilder.create(), PartPose.offset(-5.0F, 11.0F, 10.0F));
+		PartDefinition leg_3 = body.addOrReplaceChild("leg_3", CubeListBuilder.create(), PartPose.offset(-5.0F, 3.0F, 10.0F));
 		PartDefinition rotat3 = leg_3.addOrReplaceChild("rotat3", CubeListBuilder.create(),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -2.7053F, 0.0F));
 		PartDefinition leg_1_rotat8 = rotat3.addOrReplaceChild(
@@ -339,50 +348,55 @@ public class ModelspiderQueen<T extends Entity> extends EntityModel<T> {
 				"cube_r42", CubeListBuilder.create().texOffs(96, 108).mirror()
 						.addBox(-1.0756F, -12.81F, -1.7551F, 4.0F, 16.0F, 4.0F, new CubeDeformation(0.3F)).mirror(false),
 				PartPose.offsetAndRotation(8.0F, 4.0F, 0.0F, 0.0F, 0.0F, -1.0908F));
-		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(88, 0).addBox(-5.0F, -12.0F, -3.0F, 10.0F, 1.0F, 10.0F, new CubeDeformation(0.0F)).texOffs(76, 25)
-						.addBox(-6.0F, -13.0F, -5.0F, 12.0F, 1.0F, 14.0F, new CubeDeformation(0.0F)).texOffs(0, 38)
-						.addBox(-7.5F, -23.0F, -7.0F, 15.0F, 10.0F, 18.0F, new CubeDeformation(0.0F)).texOffs(39, 0)
-						.addBox(-6.5F, -27.0F, -6.0F, 13.0F, 4.0F, 14.0F, new CubeDeformation(0.0F)).texOffs(87, 53)
-						.addBox(-6.0F, -25.0F, 8.0F, 12.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 128, 128);
 	}
 
 	@Override
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-		this.leg_2.yRot = Mth.cos(limbSwing * 1.0F) * -0.02F * limbSwingAmount;
-		this.leg_1.yRot = Mth.cos(limbSwing * 1.0F) * 0.02F * limbSwingAmount;
-		this.leg_4.yRot = Mth.cos(limbSwing * 1.0F) * 0.02F * limbSwingAmount;
-		this.leg_3.yRot = Mth.cos(limbSwing * 1.0F) * -0.02F * limbSwingAmount;
-		this.leg_6.yRot = Mth.cos(limbSwing * 1.0F) * 0.02F * limbSwingAmount;
-		this.leg_5.yRot = Mth.cos(limbSwing * 1.0F) * -0.02F * limbSwingAmount;
-		this.leg_8.yRot = Mth.cos(limbSwing * 1.0F) * 0.02F * limbSwingAmount;
-		this.leg_7.yRot = Mth.cos(limbSwing * 1.0F) * -0.02F * limbSwingAmount;
-		this.leg_top_2.yRot = Mth.cos(limbSwing * 1.0F) * -0.25F * limbSwingAmount;
-		this.leg_top_1.yRot = Mth.cos(limbSwing * 1.0F) * 0.25F * limbSwingAmount;
-		this.leg_top_4.yRot = Mth.cos(limbSwing * 1.0F) * 0.25F * limbSwingAmount;
-		this.leg_top_3.yRot = Mth.cos(limbSwing * 1.0F) * -0.25F * limbSwingAmount;
-		this.leg_top_6.yRot = Mth.cos(limbSwing * 1.0F) * 0.25F * limbSwingAmount;
-		this.leg_top_5.yRot = Mth.cos(limbSwing * 1.0F) * -0.25F * limbSwingAmount;
-		this.leg_top_8.yRot = Mth.cos(limbSwing * 1.0F) * 0.25F * limbSwingAmount;
-		this.leg_top_7.yRot = Mth.cos(limbSwing * 1.0F) * -0.25F * limbSwingAmount;
-		this.head.yRot = netHeadYaw / (180F / (float) Math.PI);
-		this.head.xRot = headPitch / (180F / (float) Math.PI);
+		if (((SpiderQueenEntity) entity).isRolling()) {
+			this.body.xRot = ageInTicks * 0.5f;
+			this.leg_1.yRot = -20;
+			this.leg_2.yRot = 20;
+			this.leg_3.yRot = 20;
+			this.leg_4.yRot = -20;
+			this.leg_5.yRot = -20;
+			this.leg_6.yRot = -20;
+			this.leg_7.yRot = 20;
+			this.leg_8.yRot = 20;
+			this.leg_top_1.yRot = 25;
+			this.leg_top_2.yRot = 25;
+			this.leg_top_3.yRot = 25;
+			this.leg_top_4.yRot = 25;
+			this.leg_top_5.yRot = 25;
+			this.leg_top_6.yRot = 25;
+			this.leg_top_7.yRot = 25;
+			this.leg_top_8.yRot = 25;
+		} else {
+			this.body.xRot = 0;
+			this.leg_2.yRot = Mth.cos(limbSwing * 1.0F) * -0.02F * limbSwingAmount;
+			this.leg_1.yRot = Mth.cos(limbSwing * 1.0F) * 0.02F * limbSwingAmount;
+			this.leg_4.yRot = Mth.cos(limbSwing * 1.0F) * 0.02F * limbSwingAmount;
+			this.leg_3.yRot = Mth.cos(limbSwing * 1.0F) * -0.02F * limbSwingAmount;
+			this.leg_6.yRot = Mth.cos(limbSwing * 1.0F) * 0.02F * limbSwingAmount;
+			this.leg_5.yRot = Mth.cos(limbSwing * 1.0F) * -0.02F * limbSwingAmount;
+			this.leg_8.yRot = Mth.cos(limbSwing * 1.0F) * 0.02F * limbSwingAmount;
+			this.leg_7.yRot = Mth.cos(limbSwing * 1.0F) * -0.02F * limbSwingAmount;
+			this.leg_top_2.yRot = Mth.cos(limbSwing * 1.0F) * -0.25F * limbSwingAmount;
+			this.leg_top_1.yRot = Mth.cos(limbSwing * 1.0F) * 0.25F * limbSwingAmount;
+			this.leg_top_4.yRot = Mth.cos(limbSwing * 1.0F) * 0.25F * limbSwingAmount;
+			this.leg_top_3.yRot = Mth.cos(limbSwing * 1.0F) * -0.25F * limbSwingAmount;
+			this.leg_top_6.yRot = Mth.cos(limbSwing * 1.0F) * 0.25F * limbSwingAmount;
+			this.leg_top_5.yRot = Mth.cos(limbSwing * 1.0F) * -0.25F * limbSwingAmount;
+			this.leg_top_8.yRot = Mth.cos(limbSwing * 1.0F) * 0.25F * limbSwingAmount;
+			this.leg_top_7.yRot = Mth.cos(limbSwing * 1.0F) * -0.25F * limbSwingAmount;
+			this.head.yRot = netHeadYaw / (180F / (float) Math.PI);
+			this.head.xRot = headPitch / (180F / (float) Math.PI);
+		}
 	}
 
 	@Override
 	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
 			float blue, float alpha) {
-		head.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		leg_1.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		leg_4.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		leg_5.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		leg_6.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		leg_2.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		leg_8.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		leg_7.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		leg_3.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		bb_main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
+		body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

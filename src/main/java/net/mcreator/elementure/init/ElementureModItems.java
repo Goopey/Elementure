@@ -89,6 +89,7 @@ import net.mcreator.elementure.item.StarrysoupItem;
 import net.mcreator.elementure.item.StarguardianItem;
 import net.mcreator.elementure.item.SpringwaterItem;
 import net.mcreator.elementure.item.SpikercrabItem;
+import net.mcreator.elementure.item.SpiderqueenfangsItem;
 import net.mcreator.elementure.item.SpacegoopItem;
 import net.mcreator.elementure.item.SoulobleckslimeItem;
 import net.mcreator.elementure.item.SoulingotItem;
@@ -2607,7 +2608,12 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> FANGBOLA = REGISTRY.register("fangbola", () -> new FangbolaItem());
 	public static final RegistryObject<Item> SPIDER_QUEEN = REGISTRY.register("spider_queen_spawn_egg",
 			() -> new ForgeSpawnEggItem(ElementureModEntities.SPIDER_QUEEN, -13434880, -6750208,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+					new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
+	public static final RegistryObject<Item> SPIDERQUEENFANGS = REGISTRY.register("spiderqueenfangs", () -> new SpiderqueenfangsItem());
+	public static final RegistryObject<Item> INVISIBLEOMEGAN = block(ElementureModBlocks.INVISIBLEOMEGAN, null);
+	public static final RegistryObject<Item> CURSEDMEMORYPLANT_1 = block(ElementureModBlocks.CURSEDMEMORYPLANT_1, null);
+	public static final RegistryObject<Item> CURSEDMEMORYPLANT_2 = block(ElementureModBlocks.CURSEDMEMORYPLANT_2, null);
+	public static final RegistryObject<Item> CURSEDMEMORYPLANT_3 = block(ElementureModBlocks.CURSEDMEMORYPLANT_3, null);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

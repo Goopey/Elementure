@@ -56,6 +56,7 @@ import net.mcreator.elementure.block.entity.JunglememorialBlockEntity;
 import net.mcreator.elementure.block.entity.JellypoolsmemorialBlockEntity;
 import net.mcreator.elementure.block.entity.JellyfloatOmeganBlockEntity;
 import net.mcreator.elementure.block.entity.JellyfloatAlphanBlockEntity;
+import net.mcreator.elementure.block.entity.InvisibleomeganBlockEntity;
 import net.mcreator.elementure.block.entity.IcespikesmemorialBlockEntity;
 import net.mcreator.elementure.block.entity.GlasslightbrewerBlockEntity;
 import net.mcreator.elementure.block.entity.ForgottenOmeganBlockEntity;
@@ -206,6 +207,8 @@ public class ElementureModBlockEntities {
 			SmallScrapperBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> NIGHTMARE_SHAMAN = register("nightmare_shaman", ElementureModBlocks.NIGHTMARE_SHAMAN,
 			NightmareShamanBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> INVISIBLEOMEGAN = register("invisibleomegan", ElementureModBlocks.INVISIBLEOMEGAN,
+			InvisibleomeganBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block,
 			BlockEntityType.BlockEntitySupplier<?> supplier) {

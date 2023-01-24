@@ -351,6 +351,7 @@ import net.mcreator.elementure.block.JellyfloatBlock;
 import net.mcreator.elementure.block.JellyfloatAlphanBlock;
 import net.mcreator.elementure.block.IvoryspawnerBlock;
 import net.mcreator.elementure.block.IvoryblockBlock;
+import net.mcreator.elementure.block.InvisibleomeganBlock;
 import net.mcreator.elementure.block.IcyslimeBlock;
 import net.mcreator.elementure.block.IcespikesmemorialBlock;
 import net.mcreator.elementure.block.IcespikesBlock;
@@ -489,6 +490,9 @@ import net.mcreator.elementure.block.CutCloudSandstoneStairsBlock;
 import net.mcreator.elementure.block.CutCloudSandstoneSlabBlock;
 import net.mcreator.elementure.block.CutCloudSandstoneBlock;
 import net.mcreator.elementure.block.CursedplanksBlock;
+import net.mcreator.elementure.block.Cursedmemoryplant3Block;
+import net.mcreator.elementure.block.Cursedmemoryplant2Block;
+import net.mcreator.elementure.block.Cursedmemoryplant1Block;
 import net.mcreator.elementure.block.CursedlogBlock;
 import net.mcreator.elementure.block.CursedleavesBlock;
 import net.mcreator.elementure.block.CursedeyelogBlock;
@@ -1334,6 +1338,10 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> CUT_CLOUD_SANDSTONE_WALL = REGISTRY.register("cut_cloud_sandstone_wall",
 			() -> new CutCloudSandstoneWallBlock());
 	public static final RegistryObject<Block> NIGHTMARE_SHAMAN = REGISTRY.register("nightmare_shaman", () -> new NightmareShamanBlock());
+	public static final RegistryObject<Block> INVISIBLEOMEGAN = REGISTRY.register("invisibleomegan", () -> new InvisibleomeganBlock());
+	public static final RegistryObject<Block> CURSEDMEMORYPLANT_1 = REGISTRY.register("cursedmemoryplant_1", () -> new Cursedmemoryplant1Block());
+	public static final RegistryObject<Block> CURSEDMEMORYPLANT_2 = REGISTRY.register("cursedmemoryplant_2", () -> new Cursedmemoryplant2Block());
+	public static final RegistryObject<Block> CURSEDMEMORYPLANT_3 = REGISTRY.register("cursedmemoryplant_3", () -> new Cursedmemoryplant3Block());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
@@ -1636,6 +1644,10 @@ public class ElementureModBlocks {
 			DungeonhatchLockedBlock.registerRenderLayer();
 			DungeonhatchBlock.registerRenderLayer();
 			NightmareShamanBlock.registerRenderLayer();
+			InvisibleomeganBlock.registerRenderLayer();
+			Cursedmemoryplant1Block.registerRenderLayer();
+			Cursedmemoryplant2Block.registerRenderLayer();
+			Cursedmemoryplant3Block.registerRenderLayer();
 		}
 	}
 }

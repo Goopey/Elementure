@@ -16,8 +16,8 @@ import net.minecraft.client.model.EntityModel;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.blaze3d.vertex.PoseStack;
 
-// Made with Blockbench 4.3.1
-// Exported for Minecraft version 1.17 - 1.18 with Mojang mappings
+// Made with Blockbench 4.6.1
+// Exported for Minecraft version 1.17 or later with Mojang mappings
 // Paste this class into your mod and generate all required imports
 public class Modelobleck_lord<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
@@ -32,8 +32,6 @@ public class Modelobleck_lord<T extends Entity> extends EntityModel<T> {
 	public final ModelPart main_head;
 	public final ModelPart right_leg;
 	public final ModelPart left_leg;
-	public final ModelPart r_arm4;
-	public final ModelPart l_arm4;
 	public final ModelPart bb_main;
 
 	public Modelobleck_lord(ModelPart root) {
@@ -46,8 +44,6 @@ public class Modelobleck_lord<T extends Entity> extends EntityModel<T> {
 		this.main_head = root.getChild("main_head");
 		this.right_leg = root.getChild("right_leg");
 		this.left_leg = root.getChild("left_leg");
-		this.r_arm4 = root.getChild("r_arm4");
-		this.l_arm4 = root.getChild("l_arm4");
 		this.bb_main = root.getChild("bb_main");
 	}
 
@@ -173,28 +169,6 @@ public class Modelobleck_lord<T extends Entity> extends EntityModel<T> {
 				PartPose.offset(0.0F, 8.0F, 0.0F));
 		PartDefinition left_leg = partdefinition.addOrReplaceChild("left_leg", CubeListBuilder.create().texOffs(108, 21).mirror()
 				.addBox(0.0F, 0.0F, -2.5F, 5.0F, 16.0F, 5.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 8.0F, 0.0F));
-		PartDefinition r_arm4 = partdefinition.addOrReplaceChild("r_arm4", CubeListBuilder.create(),
-				PartPose.offsetAndRotation(-4.5F, 0.0F, 6.0F, 0.4363F, 0.0F, 1.2217F));
-		PartDefinition arm_bottom_r19_r1 = r_arm4.addOrReplaceChild("arm_bottom_r19_r1",
-				CubeListBuilder.create().texOffs(26, 76).addBox(1.49F, 11.5F, 3.51F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(26, 76)
-						.addBox(0.99F, 11.5F, 7.51F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(26, 76)
-						.addBox(-1.51F, 11.5F, 7.51F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(26, 76)
-						.addBox(-1.01F, 11.5F, 2.99F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(42, 76)
-						.addBox(-2.51F, 3.0F, 5.0F, 2.0F, 11.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(26, 64)
-						.addBox(-2.49F, 6.0F, 3.0F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(50, 70).addBox(-1.5F, -1.0F, 3.5F, 5.0F,
-								12.0F, 5.0F, new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(-2.0F, 1.0F, -6.0F, 0.0F, 0.0F, 0.0436F));
-		PartDefinition l_arm4 = partdefinition.addOrReplaceChild("l_arm4", CubeListBuilder.create(),
-				PartPose.offsetAndRotation(4.5F, 0.0F, 6.0F, 0.4363F, 0.0F, -1.2217F));
-		PartDefinition arm_bottom_l9_r1 = l_arm4.addOrReplaceChild("arm_bottom_l9_r1",
-				CubeListBuilder.create().texOffs(26, 76).addBox(-3.49F, 11.5F, 3.51F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(26, 76)
-						.addBox(-2.99F, 11.5F, 7.51F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(26, 76)
-						.addBox(-0.49F, 11.5F, 7.51F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(26, 76)
-						.addBox(-0.99F, 11.5F, 2.99F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(42, 76)
-						.addBox(0.51F, 3.0F, 5.0F, 2.0F, 11.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(26, 64).mirror()
-						.addBox(-3.51F, 6.0F, 3.0F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)).mirror(false).texOffs(50, 70).mirror()
-						.addBox(-3.5F, -1.0F, 3.5F, 5.0F, 12.0F, 5.0F, new CubeDeformation(0.0F)).mirror(false),
-				PartPose.offsetAndRotation(2.0F, 1.0F, -6.0F, 0.0F, 0.0F, -0.0436F));
 		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
 				CubeListBuilder.create().texOffs(98, 0).addBox(-5.0F, -32.0F, -2.5F, 10.0F, 16.0F, 5.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
@@ -235,14 +209,10 @@ public class Modelobleck_lord<T extends Entity> extends EntityModel<T> {
 		this.r_arm2.zRot = (float) ((Mth.sin(ageInTicks / 6) / 8) + 1.352630);
 		this.r_arm3.xRot = (float) ((Mth.cos(-ageInTicks / 6) / 8) + 0.436332);
 		this.r_arm3.zRot = (float) ((Mth.sin(ageInTicks / 6) / 8) + 1.919862);
-		this.r_arm4.xRot = (float) ((Mth.cos(ageInTicks / 6) / 8) + 0.626332);
-		this.r_arm4.zRot = (float) ((Mth.sin(-ageInTicks / 6) / 8) - 2.229862);
 		this.l_arm2.xRot = (float) ((Mth.cos(-ageInTicks / 6) / 8) + 0.261799);
 		this.l_arm2.zRot = (float) ((Mth.sin(-ageInTicks / 6) / 8) - 1.352630);
 		this.l_arm3.xRot = (float) ((Mth.cos(ageInTicks / 6) / 8) + 0.436332);
 		this.l_arm3.zRot = (float) ((Mth.sin(-ageInTicks / 6) / 8) - 1.919862);
-		this.l_arm4.xRot = (float) ((Mth.cos(ageInTicks / 6) / 8) + 0.626332);
-		this.l_arm4.zRot = (float) ((Mth.sin(-ageInTicks / 6) / 8) - 2.229862);
 		this.right_leg.xRot = (Mth.cos(limbSwing * 1.0F) * 1.0F * limbSwingAmount);
 		this.main_head.yRot = netHeadYaw / (180F / (float) Math.PI);
 		this.main_head.xRot = headPitch / (180F / (float) Math.PI);
@@ -261,8 +231,6 @@ public class Modelobleck_lord<T extends Entity> extends EntityModel<T> {
 		main_head.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		right_leg.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		left_leg.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		r_arm4.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
-		l_arm4.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		bb_main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

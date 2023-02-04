@@ -8,7 +8,7 @@
     "name": "Dark sense",
     "rarity": "RARE",
     "creativeTab": {
-      "value": "CUSTOM:Skillwindow"
+      "value": "CUSTOM:ForgottenspecialitemsTab"
     },
     "stackSize": 1,
     "enchantability": 0,

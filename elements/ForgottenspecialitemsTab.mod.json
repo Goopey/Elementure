@@ -1,0 +1,11 @@
+{
+  "_fv": 34,
+  "_type": "tab",
+  "definition": {
+    "name": "Forgotten special items",
+    "icon": {
+      "value": "CUSTOM:MemoryEye"
+    },
+    "showSearch": false
+  }
+}

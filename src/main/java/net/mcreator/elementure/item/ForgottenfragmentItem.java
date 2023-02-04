@@ -16,7 +16,7 @@ import java.util.List;
 
 public class ForgottenfragmentItem extends Item {
 	public ForgottenfragmentItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDITEMS).stacksTo(4).rarity(Rarity.EPIC));
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FORGOTTEN_ITEMS_TAB).stacksTo(4).rarity(Rarity.EPIC));
 	}
 
 	@Override

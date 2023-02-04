@@ -12,7 +12,11 @@ public class SpiderSwarmerDamageProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (sourceentity instanceof Player) {
-			entity.hurt(DamageSource.GENERIC, 2);
+			if (Math.random() < 0.7) {
+				entity.hurt(DamageSource.GENERIC, 3);
+			} else {
+				entity.hurt(DamageSource.GENERIC, 4);
+			}
 			if (Math.random() < 0.2) {
 				if (sourceentity instanceof LivingEntity _entity)
 					_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 100, 0));

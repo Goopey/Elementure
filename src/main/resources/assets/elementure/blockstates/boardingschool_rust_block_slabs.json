@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/boardingschool_rust_block_slabs"
+    },
+    "type=top": {
+      "model": "elementure:block/boardingschool_rust_block_slabs_top"
+    },
+    "type=double": {
+      "model": "elementure:block/boardingschool_rust_block_slabs_full"
+    }
+  }
+}

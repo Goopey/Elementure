@@ -16,7 +16,7 @@ import java.util.List;
 
 public class DarksenseItem extends Item {
 	public DarksenseItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_SKILLWINDOW).stacksTo(1).rarity(Rarity.RARE));
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FORGOTTENSPECIALITEMS_TAB).stacksTo(1).rarity(Rarity.RARE));
 	}
 
 	@Override

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/boardingschool_roof_1_slabs"
+    },
+    "type=top": {
+      "model": "elementure:block/boardingschool_roof_1_slabs_top"
+    },
+    "type=double": {
+      "model": "elementure:block/boardingschool_roof_1_slabs_full"
+    }
+  }
+}

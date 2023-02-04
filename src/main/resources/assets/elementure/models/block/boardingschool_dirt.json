@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/boardingschool_dirt",
+    "up": "elementure:blocks/boardingschool_dirt",
+    "north": "elementure:blocks/boardingschool_dirt",
+    "east": "elementure:blocks/boardingschool_dirt",
+    "south": "elementure:blocks/boardingschool_dirt",
+    "west": "elementure:blocks/boardingschool_dirt",
+    "particle": "elementure:blocks/boardingschool_dirt"
+  }
+}

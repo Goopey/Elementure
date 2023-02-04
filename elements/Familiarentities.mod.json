@@ -48,8 +48,12 @@
       },
       {
         "value": "CUSTOM:Starguardianstand"
+      },
+      {
+        "value": "CUSTOM:Oceanangel"
       }
     ],
+    "biomes": [],
     "name": "familiarentities",
     "namespace": "forge"
   }

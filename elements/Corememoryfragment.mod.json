@@ -8,7 +8,7 @@
     "name": "Core memory fragment",
     "rarity": "RARE",
     "creativeTab": {
-      "value": "CUSTOM:Tabmoddeditems"
+      "value": "CUSTOM:ForgottenItemsTab"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -34,6 +34,9 @@
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

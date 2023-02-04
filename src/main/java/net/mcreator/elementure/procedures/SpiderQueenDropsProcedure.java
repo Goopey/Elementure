@@ -24,6 +24,14 @@ public class SpiderQueenDropsProcedure {
 			entityToSpawn.setPickUpDelay(10);
 			_level.addFreshEntity(entityToSpawn);
 		}
+		for (int index0 = 0; index0 < (int) (3); index0++) {
+			if (world instanceof Level _level && !_level.isClientSide()) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
+						new ItemStack(ElementureModItems.ARACHNEELFANG.get()));
+				entityToSpawn.setPickUpDelay(10);
+				_level.addFreshEntity(entityToSpawn);
+			}
+		}
 		if (!entity.level.isClientSide())
 			entity.discard();
 	}

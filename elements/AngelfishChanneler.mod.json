@@ -1,0 +1,57 @@
+{
+  "_fv": 34,
+  "_type": "rangeditem",
+  "definition": {
+    "renderType": 0,
+    "texture": "angel_fish_channeler",
+    "customModelName": "Normal",
+    "name": "Angel fish Channeler [Light]",
+    "specialInfo": [
+      "The light of the angel fish can be found inside of this star."
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:Skillwindow"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 540,
+    "actionSound": {
+      "value": ""
+    },
+    "hasGlow": true,
+    "glowCondition": {
+      "name": "AngelfishchannelerGlow"
+    },
+    "animation": "none",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "onRangedItemUsed": {
+      "name": "AngelfishchannelerConsume"
+    },
+    "useCondition": {
+      "name": "AngelfishchannelerGlow"
+    },
+    "bulletPower": 1.0,
+    "bulletDamage": 3.9999999999999996,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "CUSTOM:AngelfishChanneler"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "AngelfishchannelerExplosion"
+    },
+    "onBulletHitsEntity": {
+      "name": "AngelfishchannelerExplosion"
+    },
+    "onBulletFlyingTick": {
+      "name": "AngelfishChannelerTrail"
+    }
+  }
+}

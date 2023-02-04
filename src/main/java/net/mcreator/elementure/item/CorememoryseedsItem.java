@@ -19,7 +19,7 @@ import java.util.List;
 
 public class CorememoryseedsItem extends Item {
 	public CorememoryseedsItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDITEMS).stacksTo(64).rarity(Rarity.EPIC));
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FORGOTTEN_ITEMS_TAB).stacksTo(64).rarity(Rarity.EPIC));
 	}
 
 	@Override

@@ -12,7 +12,7 @@ public class HeadHostPoisonProcedure {
 			return;
 		if (sourceentity instanceof Player) {
 			if (sourceentity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 40, 1));
+				_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 40, 0));
 		}
 	}
 }

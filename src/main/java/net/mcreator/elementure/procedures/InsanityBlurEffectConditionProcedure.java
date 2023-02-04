@@ -6,6 +6,8 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.entity.Entity;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.client.Minecraft;
 
 import net.mcreator.elementure.network.ElementureModVariables;
 
@@ -20,14 +22,38 @@ public class InsanityBlurEffectConditionProcedure {
 		}
 	}
 
-	public static boolean execute(Entity entity) {
-		return execute(null, entity);
+	public static void execute(Entity entity) {
+		execute(null, entity);
 	}
 
-	private static boolean execute(@Nullable Event event, Entity entity) {
+	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
-			return false;
-		return (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).sanity < 200 && InsanityIsInDimensionProcedure.execute(entity);
+			return;
+		if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new ElementureModVariables.PlayerVariables())).sanity < 200 && InsanityIsInDimensionProcedure.execute(entity)) {
+			if (!(entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new ElementureModVariables.PlayerVariables())).isInsane) {
+				Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("shaders/post/desaturate.json"));
+				{
+					boolean _setval = true;
+					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.isInsane = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+		} else {
+			if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new ElementureModVariables.PlayerVariables())).isInsane) {
+				{
+					boolean _setval = false;
+					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.isInsane = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				Minecraft.getInstance().gameRenderer.shutdownEffect();
+			}
+		}
 	}
 }

@@ -84,14 +84,6 @@ public class ElementureModBlockEntities {
 			OmegancenterBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BIGGLOWINGMUSHROOM = register("bigglowingmushroom", ElementureModBlocks.BIGGLOWINGMUSHROOM,
 			BigglowingmushroomBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> MYCENA_BIOME_ALPHAN = register("mycena_biome_alphan",
-			ElementureModBlocks.MYCENA_BIOME_ALPHAN, MycenaBiomeAlphanBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> MYCENA_BIOME_OMEGAN = register("mycena_biome_omegan",
-			ElementureModBlocks.MYCENA_BIOME_OMEGAN, MycenaBiomeOmeganBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> PERVADEDBEDROCK = register("pervadedbedrock", ElementureModBlocks.PERVADEDBEDROCK,
-			PervadedbedrockBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> EMPTIEDBEDROCK = register("emptiedbedrock", ElementureModBlocks.EMPTIEDBEDROCK,
-			EmptiedbedrockBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> MEMORYHEART = register("memoryheart", ElementureModBlocks.MEMORYHEART,
 			MemoryheartBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> ENDERMEMORIAL = register("endermemorial", ElementureModBlocks.ENDERMEMORIAL,
@@ -130,10 +122,6 @@ public class ElementureModBlockEntities {
 			TaigamemorialBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BIRTHINGMODULE = register("birthingmodule", ElementureModBlocks.BIRTHINGMODULE,
 			BirthingmoduleBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> NETHERSTAR_BIOME_ALPHAN = register("netherstar_biome_alphan",
-			ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN, NetherstarBiomeAlphanBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> NETHERSTAR_BIOME_OMEGAN = register("netherstar_biome_omegan",
-			ElementureModBlocks.NETHERSTAR_BIOME_OMEGAN, NetherstarBiomeOmeganBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> NETHERLEAVES = register("netherleaves", ElementureModBlocks.NETHERLEAVES,
 			NetherleavesBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SCRAPLEAVES = register("scrapleaves", ElementureModBlocks.SCRAPLEAVES,
@@ -142,8 +130,6 @@ public class ElementureModBlockEntities {
 			SoulforgeBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> SPAWNERCRYSTAL = register("spawnercrystal", ElementureModBlocks.SPAWNERCRYSTAL,
 			SpawnercrystalBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> JELLYFLOAT_OMEGAN = register("jellyfloat_omegan", ElementureModBlocks.JELLYFLOAT_OMEGAN,
-			JellyfloatOmeganBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> AURUMBRICKS = register("aurumbricks", ElementureModBlocks.AURUMBRICKS,
 			AurumbricksBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CRIMSONFORESTMEMORIAL = register("crimsonforestmemorial",
@@ -156,6 +142,49 @@ public class ElementureModBlockEntities {
 			ElementureModBlocks.BASALTDELTAMEMORIAL, BasaltdeltamemorialBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> NETHERSTARMEMORIAL = register("netherstarmemorial", ElementureModBlocks.NETHERSTARMEMORIAL,
 			NetherstarmemorialBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> WEAPONALTAR = register("weaponaltar", ElementureModBlocks.WEAPONALTAR,
+			WeaponaltarBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> FLUFFLEAVES = register("fluffleaves", ElementureModBlocks.FLUFFLEAVES,
+			FluffleavesBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> JELLYPOOLSMEMORIAL = register("jellypoolsmemorial", ElementureModBlocks.JELLYPOOLSMEMORIAL,
+			JellypoolsmemorialBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> WORTASHLEAVES = register("wortashleaves", ElementureModBlocks.WORTASHLEAVES,
+			WortashleavesBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BLUETHORNLEAVES = register("bluethornleaves", ElementureModBlocks.BLUETHORNLEAVES,
+			BluethornleavesBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> WINDYSHORESMEMORIAL = register("windyshoresmemorial",
+			ElementureModBlocks.WINDYSHORESMEMORIAL, WindyshoresmemorialBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> GLASSLIGHTBREWER = register("glasslightbrewer", ElementureModBlocks.GLASSLIGHTBREWER,
+			GlasslightbrewerBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> DIVERSCROWN_MEMORIAL = register("diverscrown_memorial",
+			ElementureModBlocks.DIVERSCROWN_MEMORIAL, DiverscrownMemorialBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> SPIDERNEST_COBBLESTONE = register("spidernest_cobblestone",
+			ElementureModBlocks.SPIDERNEST_COBBLESTONE, SpidernestCobblestoneBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> SPIDERBORE_COBBLESTONE = register("spiderbore_cobblestone",
+			ElementureModBlocks.SPIDERBORE_COBBLESTONE, SpiderboreCobblestoneBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> SPIDERBORE_DEEPSLATEBRICKS = register("spiderbore_deepslatebricks",
+			ElementureModBlocks.SPIDERBORE_DEEPSLATEBRICKS, SpiderboreDeepslatebricksBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> CRABPOT = register("crabpot", ElementureModBlocks.CRABPOT, CrabpotBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> NANOSHRIMPPOT = register("nanoshrimppot", ElementureModBlocks.NANOSHRIMPPOT,
+			NanoshrimppotBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> SMALL_SCRAPPER = register("small_scrapper", ElementureModBlocks.SMALL_SCRAPPER,
+			SmallScrapperBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> NIGHTMARE_SHAMAN = register("nightmare_shaman", ElementureModBlocks.NIGHTMARE_SHAMAN,
+			NightmareShamanBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> MYCENA_BIOME_ALPHAN = register("mycena_biome_alphan",
+			ElementureModBlocks.MYCENA_BIOME_ALPHAN, MycenaBiomeAlphanBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> MYCENA_BIOME_OMEGAN = register("mycena_biome_omegan",
+			ElementureModBlocks.MYCENA_BIOME_OMEGAN, MycenaBiomeOmeganBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> PERVADEDBEDROCK = register("pervadedbedrock", ElementureModBlocks.PERVADEDBEDROCK,
+			PervadedbedrockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> EMPTIEDBEDROCK = register("emptiedbedrock", ElementureModBlocks.EMPTIEDBEDROCK,
+			EmptiedbedrockBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> NETHERSTAR_BIOME_ALPHAN = register("netherstar_biome_alphan",
+			ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN, NetherstarBiomeAlphanBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> NETHERSTAR_BIOME_OMEGAN = register("netherstar_biome_omegan",
+			ElementureModBlocks.NETHERSTAR_BIOME_OMEGAN, NetherstarBiomeOmeganBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> JELLYFLOAT_OMEGAN = register("jellyfloat_omegan", ElementureModBlocks.JELLYFLOAT_OMEGAN,
+			JellyfloatOmeganBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> MEMORYPLANT_1 = register("memoryplant_1", ElementureModBlocks.MEMORYPLANT_1,
 			Memoryplant1BlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> MEMORYPLANT_2 = register("memoryplant_2", ElementureModBlocks.MEMORYPLANT_2,
@@ -174,39 +203,10 @@ public class ElementureModBlockEntities {
 			JellyfloatAlphanBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> WINDYSHORES_OMEGAN = register("windyshores_omegan", ElementureModBlocks.WINDYSHORES_OMEGAN,
 			WindyshoresOmeganBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> WEAPONALTAR = register("weaponaltar", ElementureModBlocks.WEAPONALTAR,
-			WeaponaltarBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> FLUFFLEAVES = register("fluffleaves", ElementureModBlocks.FLUFFLEAVES,
-			FluffleavesBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> JELLYPOOLSMEMORIAL = register("jellypoolsmemorial", ElementureModBlocks.JELLYPOOLSMEMORIAL,
-			JellypoolsmemorialBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> WORTASHLEAVES = register("wortashleaves", ElementureModBlocks.WORTASHLEAVES,
-			WortashleavesBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> BLUETHORNLEAVES = register("bluethornleaves", ElementureModBlocks.BLUETHORNLEAVES,
-			BluethornleavesBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> WINDYSHORESMEMORIAL = register("windyshoresmemorial",
-			ElementureModBlocks.WINDYSHORESMEMORIAL, WindyshoresmemorialBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> DIVERSCROWN_OMEGAN = register("diverscrown_omegan", ElementureModBlocks.DIVERSCROWN_OMEGAN,
 			DiverscrownOmeganBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> GLASSLIGHTBREWER = register("glasslightbrewer", ElementureModBlocks.GLASSLIGHTBREWER,
-			GlasslightbrewerBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> DARKGEM_CRYSTAL_BEAM = register("darkgem_crystal_beam",
 			ElementureModBlocks.DARKGEM_CRYSTAL_BEAM, DarkgemCrystalBeamBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> DIVERSCROWN_MEMORIAL = register("diverscrown_memorial",
-			ElementureModBlocks.DIVERSCROWN_MEMORIAL, DiverscrownMemorialBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> CRABPOT = register("crabpot", ElementureModBlocks.CRABPOT, CrabpotBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> NANOSHRIMPPOT = register("nanoshrimppot", ElementureModBlocks.NANOSHRIMPPOT,
-			NanoshrimppotBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> SPIDERNEST_COBBLESTONE = register("spidernest_cobblestone",
-			ElementureModBlocks.SPIDERNEST_COBBLESTONE, SpidernestCobblestoneBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> SPIDERBORE_COBBLESTONE = register("spiderbore_cobblestone",
-			ElementureModBlocks.SPIDERBORE_COBBLESTONE, SpiderboreCobblestoneBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> SPIDERBORE_DEEPSLATEBRICKS = register("spiderbore_deepslatebricks",
-			ElementureModBlocks.SPIDERBORE_DEEPSLATEBRICKS, SpiderboreDeepslatebricksBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> SMALL_SCRAPPER = register("small_scrapper", ElementureModBlocks.SMALL_SCRAPPER,
-			SmallScrapperBlockEntity::new);
-	public static final RegistryObject<BlockEntityType<?>> NIGHTMARE_SHAMAN = register("nightmare_shaman", ElementureModBlocks.NIGHTMARE_SHAMAN,
-			NightmareShamanBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> INVISIBLEOMEGAN = register("invisibleomegan", ElementureModBlocks.INVISIBLEOMEGAN,
 			InvisibleomeganBlockEntity::new);
 

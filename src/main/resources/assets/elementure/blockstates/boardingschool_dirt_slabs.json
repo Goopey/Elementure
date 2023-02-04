@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "elementure:block/boardingschool_dirt_slabs"
+    },
+    "type=top": {
+      "model": "elementure:block/boardingschool_dirt_slabs_top"
+    },
+    "type=double": {
+      "model": "elementure:block/boardingschool_dirt_slabs_full"
+    }
+  }
+}

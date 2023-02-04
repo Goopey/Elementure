@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/boardingschool_blueewall",
+    "up": "elementure:blocks/boardingschool_blueewall",
+    "north": "elementure:blocks/boardingschool_blueewall",
+    "east": "elementure:blocks/boardingschool_blueewall",
+    "south": "elementure:blocks/boardingschool_blueewall",
+    "west": "elementure:blocks/boardingschool_blueewall",
+    "particle": "elementure:blocks/boardingschool_blueewall"
+  }
+}

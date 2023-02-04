@@ -30,7 +30,7 @@ public class ArachneelShivItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 2.5f;
+				return 3f;
 			}
 
 			public int getLevel() {

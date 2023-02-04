@@ -15,14 +15,14 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.Minecraft;
 
-import net.mcreator.elementure.procedures.AshenfishDisplayProcedure;
+import net.mcreator.elementure.procedures.DeactivateSlotProcedure;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
 
 @Mod.EventBusSubscriber({Dist.CLIENT})
 public class TestOverlayOverlay {
-	@SubscribeEvent(priority = EventPriority.LOW)
+	@SubscribeEvent(priority = EventPriority.HIGHEST)
 	public static void eventHandler(RenderGameOverlayEvent.Pre event) {
 		if (event.getType() == RenderGameOverlayEvent.ElementType.ALL) {
 			int w = event.getWindow().getGuiScaledWidth();
@@ -51,7 +51,7 @@ public class TestOverlayOverlay {
 			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
 					GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 			RenderSystem.setShaderColor(1, 1, 1, 1);
-			if (AshenfishDisplayProcedure.execute(entity)) {
+			if (DeactivateSlotProcedure.execute()) {
 				RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/fishing_background_lava.png"));
 				Minecraft.getInstance().gui.blit(event.getMatrixStack(), posX + -71, posY + -108, 0, 0, 44, 200, 44, 200);
 

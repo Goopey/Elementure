@@ -19,7 +19,7 @@ import java.util.List;
 
 public class MemoryfragmentItem extends Item {
 	public MemoryfragmentItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDITEMS).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FORGOTTEN_ITEMS_TAB).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override

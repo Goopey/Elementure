@@ -24,6 +24,7 @@ public class AngelpipItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(new TextComponent("The holiest fish."));
+		list.add(new TextComponent("Can be used as infinite bait."));
 	}
 
 	@Override

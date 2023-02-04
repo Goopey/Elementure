@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/boardingschool_pinkwall",
+    "up": "elementure:blocks/boardingschool_pinkwall",
+    "north": "elementure:blocks/boardingschool_pinkwall",
+    "east": "elementure:blocks/boardingschool_pinkwall",
+    "south": "elementure:blocks/boardingschool_pinkwall",
+    "west": "elementure:blocks/boardingschool_pinkwall",
+    "particle": "elementure:blocks/boardingschool_pinkwall"
+  }
+}

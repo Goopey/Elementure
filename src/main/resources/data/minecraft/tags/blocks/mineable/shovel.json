@@ -6,7 +6,6 @@
     "elementure:corruptgrass",
     "elementure:murk",
     "elementure:icyslime",
-    "elementure:abyssalfire",
     "elementure:mycenium",
     "elementure:mycenamossygrass",
     "elementure:myceniummoss",
@@ -15,6 +14,10 @@
     "elementure:blueslimeturf",
     "elementure:pinkslimeturf",
     "elementure:cloudsand",
-    "elementure:mycenasporecloud_block"
+    "elementure:mycenasporecloud_block",
+    "elementure:boardingschool_dirt",
+    "elementure:boardingschool_dirt_stairs",
+    "elementure:boardingschool_dirt_slabs",
+    "elementure:abyssalfire"
   ]
 }

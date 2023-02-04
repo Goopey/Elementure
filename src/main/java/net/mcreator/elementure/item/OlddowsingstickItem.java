@@ -23,7 +23,7 @@ import java.util.List;
 
 public class OlddowsingstickItem extends Item {
 	public OlddowsingstickItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDITEMS).durability(400).rarity(Rarity.COMMON));
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FORGOTTEN_ITEMS_TAB).durability(400).rarity(Rarity.COMMON));
 	}
 
 	@Override

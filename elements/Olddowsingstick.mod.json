@@ -8,7 +8,7 @@
     "name": "Old dowsing stick",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:Tabmoddeditems"
+      "value": "CUSTOM:ForgottenItemsTab"
     },
     "stackSize": 1,
     "enchantability": 0,

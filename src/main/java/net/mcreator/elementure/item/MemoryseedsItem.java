@@ -19,7 +19,7 @@ import java.util.List;
 
 public class MemoryseedsItem extends Item {
 	public MemoryseedsItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDITEMS).stacksTo(64).rarity(Rarity.UNCOMMON));
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FORGOTTEN_ITEMS_TAB).stacksTo(64).rarity(Rarity.UNCOMMON));
 	}
 
 	@Override

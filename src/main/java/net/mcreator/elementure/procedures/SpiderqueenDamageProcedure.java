@@ -63,7 +63,7 @@ public class SpiderqueenDamageProcedure {
 			pitch2 = Math.sin(sourceentity.getXRot() / ((-180) / Math.PI));
 			yaw = Math.sin(sourceentity.getYRot() / ((-180) / Math.PI));
 			yaw2 = Math.cos(sourceentity.getYRot() / ((-180) / Math.PI));
-			sourceentity.setDeltaMovement(new Vec3(((yaw * pitch) / 4), (pitch2 / 4), ((yaw2 * pitch) / 4)));
+			sourceentity.setDeltaMovement(new Vec3((yaw * pitch * (-1)), pitch2, (yaw2 * pitch * (-1))));
 		} else {
 			if (sourceentity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.POISON, 100, 0));

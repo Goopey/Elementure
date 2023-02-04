@@ -1,0 +1,11 @@
+{
+  "_fv": 34,
+  "_type": "tab",
+  "definition": {
+    "name": "Forgotten blocks",
+    "icon": {
+      "value": "CUSTOM:Oldbricks"
+    },
+    "showSearch": false
+  }
+}

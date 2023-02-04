@@ -19,7 +19,7 @@ import java.util.List;
 
 public class BluekeyItem extends Item {
 	public BluekeyItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDITEMS).stacksTo(1).rarity(Rarity.EPIC));
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FORGOTTENSPECIALITEMS_TAB).stacksTo(1).rarity(Rarity.EPIC));
 	}
 
 	@Override

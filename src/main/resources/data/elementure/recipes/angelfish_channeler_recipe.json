@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:angelpip"
+    },
+    "1": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "elementure:angelfish_channeler",
+    "count": 1
+  }
+}

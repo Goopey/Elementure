@@ -107,6 +107,7 @@ public class ElementureModVariables {
 			clone.relic_inventory_relic_6_num = original.relic_inventory_relic_6_num;
 			clone.has_spawned = original.has_spawned;
 			clone.sanity = original.sanity;
+			clone.isInsane = original.isInsane;
 			if (!event.isWasDeath()) {
 				clone.fire_essence = original.fire_essence;
 				clone.water_essence = original.water_essence;
@@ -466,6 +467,7 @@ public class ElementureModVariables {
 		public String zonenamelingering = "";
 		public double newzonetime = 0;
 		public String fishBiome = "\"\"";
+		public boolean isInsane = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -542,6 +544,7 @@ public class ElementureModVariables {
 			nbt.putString("zonenamelingering", zonenamelingering);
 			nbt.putDouble("newzonetime", newzonetime);
 			nbt.putString("fishBiome", fishBiome);
+			nbt.putBoolean("isInsane", isInsane);
 			return nbt;
 		}
 
@@ -615,6 +618,7 @@ public class ElementureModVariables {
 			zonenamelingering = nbt.getString("zonenamelingering");
 			newzonetime = nbt.getDouble("newzonetime");
 			fishBiome = nbt.getString("fishBiome");
+			isInsane = nbt.getBoolean("isInsane");
 		}
 	}
 
@@ -708,6 +712,7 @@ public class ElementureModVariables {
 					variables.zonenamelingering = message.data.zonenamelingering;
 					variables.newzonetime = message.data.newzonetime;
 					variables.fishBiome = message.data.fishBiome;
+					variables.isInsane = message.data.isInsane;
 				}
 			});
 			context.setPacketHandled(true);

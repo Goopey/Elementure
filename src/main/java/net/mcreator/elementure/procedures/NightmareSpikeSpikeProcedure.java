@@ -17,6 +17,8 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.elementure.init.ElementureModParticleTypes;
+import net.mcreator.elementure.entity.SlumberingGeneralEntity;
+import net.mcreator.elementure.entity.SlumberinGeneralOrbEntity;
 import net.mcreator.elementure.entity.NightmareSpikeEntity;
 
 import java.util.stream.Collectors;
@@ -42,7 +44,8 @@ public class NightmareSpikeSpikeProcedure {
 					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true).stream()
 							.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
-						if (!(entityiterator instanceof NightmareSpikeEntity)
+						if (!(entityiterator instanceof NightmareSpikeEntity) && !(entityiterator instanceof SlumberingGeneralEntity)
+								&& !(entityiterator instanceof SlumberinGeneralOrbEntity)
 								&& !entityiterator.getType()
 										.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
 								&& !entityiterator.getType()

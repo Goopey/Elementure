@@ -9,10 +9,6 @@ public class InsanityIsInDimensionProcedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		boolean retValue = false;
-		if ((entity.level.dimension()) == (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("elementure:forgotten_1")))) {
-			retValue = true;
-		}
-		return retValue;
+		return (entity.level.dimension()) == (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("elementure:forgotten_1")));
 	}
 }

@@ -58,4 +58,6 @@ public class ElementureModParticleTypes {
 			() -> new SimpleParticleType(false));
 	public static final RegistryObject<ParticleType<?>> BONE_FRAGMENTS = REGISTRY.register("bone_fragments", () -> new SimpleParticleType(false));
 	public static final RegistryObject<ParticleType<?>> WEB_PARTICLES = REGISTRY.register("web_particles", () -> new SimpleParticleType(true));
+	public static final RegistryObject<ParticleType<?>> ANGELSTARPARTICLE = REGISTRY.register("angelstarparticle",
+			() -> new SimpleParticleType(false));
 }

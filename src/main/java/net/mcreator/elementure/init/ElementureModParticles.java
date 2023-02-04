@@ -44,6 +44,7 @@ import net.mcreator.elementure.client.particle.CloudfluffBigParticle;
 import net.mcreator.elementure.client.particle.Brightparticle2Particle;
 import net.mcreator.elementure.client.particle.Brightparticle1Particle;
 import net.mcreator.elementure.client.particle.BoneFragmentsParticle;
+import net.mcreator.elementure.client.particle.AngelstarparticleParticle;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ElementureModParticles {
@@ -112,5 +113,7 @@ public class ElementureModParticles {
 				BoneFragmentsParticle::provider);
 		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.WEB_PARTICLES.get(),
 				WebParticlesParticle::provider);
+		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.ANGELSTARPARTICLE.get(),
+				AngelstarparticleParticle::provider);
 	}
 }

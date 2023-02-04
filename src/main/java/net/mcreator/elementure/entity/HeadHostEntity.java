@@ -55,7 +55,7 @@ public class HeadHostEntity extends Monster {
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
-				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+				return (double) (1.5 + entity.getBbWidth() * entity.getBbWidth());
 			}
 		});
 		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Player.class, false, false));
@@ -105,7 +105,7 @@ public class HeadHostEntity extends Monster {
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.35);
 		builder = builder.add(Attributes.MAX_HEALTH, 12);
 		builder = builder.add(Attributes.ARMOR, 4);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 4);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 1);
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		return builder;
 	}

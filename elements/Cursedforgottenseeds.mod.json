@@ -8,7 +8,7 @@
     "name": "Cursed forgotten seeds",
     "rarity": "RARE",
     "creativeTab": {
-      "value": "CUSTOM:Tabmoddeditems"
+      "value": "CUSTOM:ForgottenItemsTab"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -29,6 +29,9 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
+    "onRightClickedOnBlock": {
+      "name": "CursedmemoryseedsPlant"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

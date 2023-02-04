@@ -51,11 +51,11 @@ public class ForgottenDimensionInsaneEffectOverlay {
 			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
 					GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 			RenderSystem.setShaderColor(1, 1, 1, 1);
-			if (InsanityBlurEffectConditionProcedure.execute(entity)) {
-				Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("shaders/post/desaturate.json"));
-			} else {
-				Minecraft.getInstance().gameRenderer.shutdownEffect();
-			}
+//			if (InsanityBlurEffectConditionProcedure.execute(entity)) {
+//				Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("shaders/post/desaturate.json"));
+//			} else {
+//				Minecraft.getInstance().gameRenderer.shutdownEffect();
+//			}
 			RenderSystem.depthMask(true);
 			RenderSystem.defaultBlendFunc();
 			RenderSystem.enableDepthTest();

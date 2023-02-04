@@ -8,7 +8,7 @@
     "name": "Memory Eye",
     "rarity": "EPIC",
     "creativeTab": {
-      "value": "CUSTOM:Skillwindow"
+      "value": "CUSTOM:ForgottenspecialitemsTab"
     },
     "stackSize": 1,
     "enchantability": 0,

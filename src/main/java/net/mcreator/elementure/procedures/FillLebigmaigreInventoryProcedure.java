@@ -33,7 +33,7 @@ public class FillLebigmaigreInventoryProcedure {
 			return;
 		ItemStack noPaper = ItemStack.EMPTY;
 		if ((entity.getDisplayName().getString()).equals("Lebigmaigre")) {
-			if (world.dayTime() % 24000 < 12000 && world.dayTime() % 24000 > 11000) {
+			if (world.dayTime() % 24000 < 11750 && world.dayTime() % 24000 > 11500) {
 				noPaper = new ItemStack(Items.SLIME_BALL);
 				(noPaper).setHoverName(new TextComponent("Stacks no Paper"));
 				if (entity instanceof Player _player) {

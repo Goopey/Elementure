@@ -46,7 +46,7 @@ public class SpidernestDamageProcedure {
 			if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.AIR) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new SpidermatriarchEntity(ElementureModEntities.SPIDERMATRIARCH.get(), _level);
-					entityToSpawn.moveTo(x, (y + 1.1), z, world.getRandom().nextFloat() * 360F, 0);
+					entityToSpawn.moveTo((x + 0.5), (y + 1.1), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof Mob _mobToSpawn)
 						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
 								null, null);
@@ -55,7 +55,7 @@ public class SpidernestDamageProcedure {
 			} else if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.AIR) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new SpidermatriarchEntity(ElementureModEntities.SPIDERMATRIARCH.get(), _level);
-					entityToSpawn.moveTo(x, (y - 1.1), z, world.getRandom().nextFloat() * 360F, 0);
+					entityToSpawn.moveTo((x + 0.5), (y - 1.1), (z + 0.5), world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof Mob _mobToSpawn)
 						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
 								null, null);

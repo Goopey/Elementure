@@ -58,6 +58,8 @@ import net.mcreator.elementure.entity.SnyEntity;
 import net.mcreator.elementure.entity.SmallgraniteelementalEntity;
 import net.mcreator.elementure.entity.SmallObleckminionEntity;
 import net.mcreator.elementure.entity.SlumberingSoldierEntity;
+import net.mcreator.elementure.entity.SlumberingGeneralEntity;
+import net.mcreator.elementure.entity.SlumberinGeneralOrbEntity;
 import net.mcreator.elementure.entity.SkeletalHostEntity;
 import net.mcreator.elementure.entity.SkeletalHeadHostEntity;
 import net.mcreator.elementure.entity.SirenqueenEntity;
@@ -84,6 +86,7 @@ import net.mcreator.elementure.entity.OstrachainLinkEntity;
 import net.mcreator.elementure.entity.OstrachainEntity;
 import net.mcreator.elementure.entity.OctolankEntity;
 import net.mcreator.elementure.entity.OceangraceEntity;
+import net.mcreator.elementure.entity.OceanangelEntity;
 import net.mcreator.elementure.entity.ObsidianbobberEntEntity;
 import net.mcreator.elementure.entity.ObleckturretEntityProjectile;
 import net.mcreator.elementure.entity.ObleckturretEntity;
@@ -236,6 +239,7 @@ import net.mcreator.elementure.entity.ArchkassemEntity;
 import net.mcreator.elementure.entity.ArachneelbowEntity;
 import net.mcreator.elementure.entity.ArachneelEntityProjectile;
 import net.mcreator.elementure.entity.ArachneelEntity;
+import net.mcreator.elementure.entity.AngelfishChannelerEntity;
 import net.mcreator.elementure.entity.AndesiteelementalEntity;
 import net.mcreator.elementure.entity.AirblastskillEntity;
 import net.mcreator.elementure.ElementureMod;
@@ -258,6 +262,117 @@ public class ElementureModEntities {
 	public static final RegistryObject<EntityType<OceangraceEntity>> OCEANGRACE = register("projectile_oceangrace",
 			EntityType.Builder.<OceangraceEntity>of(OceangraceEntity::new, MobCategory.MISC).setCustomClientFactory(OceangraceEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<DazzlingbowEntity>> DAZZLINGBOW = register("projectile_dazzlingbow",
+			EntityType.Builder.<DazzlingbowEntity>of(DazzlingbowEntity::new, MobCategory.MISC).setCustomClientFactory(DazzlingbowEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MycenafumoonmushroomEntity>> MYCENAFUMOONMUSHROOM = register("projectile_mycenafumoonmushroom",
+			EntityType.Builder.<MycenafumoonmushroomEntity>of(MycenafumoonmushroomEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(MycenafumoonmushroomEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<PumpkingrenadeEntity>> PUMPKINGRENADE = register("projectile_pumpkingrenade",
+			EntityType.Builder.<PumpkingrenadeEntity>of(PumpkingrenadeEntity::new, MobCategory.MISC).setCustomClientFactory(PumpkingrenadeEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<TwistedBladeEntity>> TWISTED_BLADE = register("projectile_twisted_blade",
+			EntityType.Builder.<TwistedBladeEntity>of(TwistedBladeEntity::new, MobCategory.MISC).setCustomClientFactory(TwistedBladeEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<CausticbladeEntity>> CAUSTICBLADE = register("projectile_causticblade",
+			EntityType.Builder.<CausticbladeEntity>of(CausticbladeEntity::new, MobCategory.MISC).setCustomClientFactory(CausticbladeEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<WarpedspearEntity>> WARPEDSPEAR = register("projectile_warpedspear",
+			EntityType.Builder.<WarpedspearEntity>of(WarpedspearEntity::new, MobCategory.MISC).setCustomClientFactory(WarpedspearEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BubbleblasterEntity>> BUBBLEBLASTER = register("projectile_bubbleblaster",
+			EntityType.Builder.<BubbleblasterEntity>of(BubbleblasterEntity::new, MobCategory.MISC).setCustomClientFactory(BubbleblasterEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MagtunabusterEntity>> MAGTUNABUSTER = register("projectile_magtunabuster",
+			EntityType.Builder.<MagtunabusterEntity>of(MagtunabusterEntity::new, MobCategory.MISC).setCustomClientFactory(MagtunabusterEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<DarkgemcrossbolterEntity>> DARKGEMCROSSBOLTER = register("projectile_darkgemcrossbolter",
+			EntityType.Builder.<DarkgemcrossbolterEntity>of(DarkgemcrossbolterEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(DarkgemcrossbolterEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<TarbombEntity>> TARBOMB = register("projectile_tarbomb",
+			EntityType.Builder.<TarbombEntity>of(TarbombEntity::new, MobCategory.MISC).setCustomClientFactory(TarbombEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<TargodBlasterEntity>> TARGOD_BLASTER = register("projectile_targod_blaster",
+			EntityType.Builder.<TargodBlasterEntity>of(TargodBlasterEntity::new, MobCategory.MISC).setCustomClientFactory(TargodBlasterEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<EnhancedtarbombEntity>> ENHANCEDTARBOMB = register("projectile_enhancedtarbomb",
+			EntityType.Builder.<EnhancedtarbombEntity>of(EnhancedtarbombEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(EnhancedtarbombEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<EnhancedtargodBlasterEntity>> ENHANCEDTARGOD_BLASTER = register("projectile_enhancedtargod_blaster",
+			EntityType.Builder.<EnhancedtargodBlasterEntity>of(EnhancedtargodBlasterEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(EnhancedtargodBlasterEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ArachneelbowEntity>> ARACHNEELBOW = register("projectile_arachneelbow",
+			EntityType.Builder.<ArachneelbowEntity>of(ArachneelbowEntity::new, MobCategory.MISC).setCustomClientFactory(ArachneelbowEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<TidalcometEntity>> TIDALCOMET = register("projectile_tidalcomet",
+			EntityType.Builder.<TidalcometEntity>of(TidalcometEntity::new, MobCategory.MISC).setCustomClientFactory(TidalcometEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ShurifangEntity>> SHURIFANG = register("projectile_shurifang",
+			EntityType.Builder.<ShurifangEntity>of(ShurifangEntity::new, MobCategory.MISC).setCustomClientFactory(ShurifangEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<IronknightEntity>> IRONKNIGHT = register("ironknight",
+			EntityType.Builder.<IronknightEntity>of(IronknightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(IronknightEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<TwistedknightEntity>> TWISTEDKNIGHT = register("twistedknight",
+			EntityType.Builder.<TwistedknightEntity>of(TwistedknightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TwistedknightEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<GreedyknightEntity>> GREEDYKNIGHT = register("greedyknight",
+			EntityType.Builder.<GreedyknightEntity>of(GreedyknightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GreedyknightEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<CausticknightEntity>> CAUSTICKNIGHT = register("causticknight",
+			EntityType.Builder.<CausticknightEntity>of(CausticknightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CausticknightEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<CruelknightEntity>> CRUELKNIGHT = register("cruelknight",
+			EntityType.Builder.<CruelknightEntity>of(CruelknightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CruelknightEntity::new)
+
+					.sized(0.6f, 2f));
+	public static final RegistryObject<EntityType<CandleKnightEntity>> CANDLE_KNIGHT = register("candle_knight",
+			EntityType.Builder.<CandleKnightEntity>of(CandleKnightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CandleKnightEntity::new).fireImmune().sized(0.9f, 1.6f));
+	public static final RegistryObject<EntityType<SpectreknightEntity>> SPECTREKNIGHT = register("spectreknight",
+			EntityType.Builder.<SpectreknightEntity>of(SpectreknightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpectreknightEntity::new).fireImmune().sized(0.6f, 2.2f));
+	public static final RegistryObject<EntityType<KingsknightEntity>> KINGSKNIGHT = register("kingsknight",
+			EntityType.Builder.<KingsknightEntity>of(KingsknightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KingsknightEntity::new).fireImmune().sized(0.6f, 2f));
+	public static final RegistryObject<EntityType<LargejellyEntity>> LARGEJELLY = register("largejelly",
+			EntityType.Builder.<LargejellyEntity>of(LargejellyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LargejellyEntity::new)
+
+					.sized(1.6f, 2.4f));
+	public static final RegistryObject<EntityType<UmbrasylEntity>> UMBRASYL = register("umbrasyl",
+			EntityType.Builder.<UmbrasylEntity>of(UmbrasylEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(512).setUpdateInterval(3).setCustomClientFactory(UmbrasylEntity::new)
+
+					.sized(3.6f, 3.6f));
+	public static final RegistryObject<EntityType<SirenqueenEntity>> SIRENQUEEN = register("sirenqueen",
+			EntityType.Builder.<SirenqueenEntity>of(SirenqueenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(SirenqueenEntity::new)
+
+					.sized(1.6f, 3.2f));
+	public static final RegistryObject<EntityType<SpiderQueenEntity>> SPIDER_QUEEN = register("spider_queen",
+			EntityType.Builder.<SpiderQueenEntity>of(SpiderQueenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpiderQueenEntity::new)
+
+					.sized(1.4f, 1.4000000000000001f));
+	public static final RegistryObject<EntityType<SlumberingGeneralEntity>> SLUMBERING_GENERAL = register("slumbering_general",
+			EntityType.Builder.<SlumberingGeneralEntity>of(SlumberingGeneralEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SlumberingGeneralEntity::new)
+
+					.sized(1.8f, 1.5f));
 	public static final RegistryObject<EntityType<VengefulspiritskillEntity>> VENGEFULSPIRITSKILL = register("projectile_vengefulspiritskill",
 			EntityType.Builder.<VengefulspiritskillEntity>of(VengefulspiritskillEntity::new, MobCategory.MISC)
 					.setCustomClientFactory(VengefulspiritskillEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
@@ -304,6 +419,88 @@ public class ElementureModEntities {
 	public static final RegistryObject<EntityType<LocalisedvacuityskillEntity>> LOCALISEDVACUITYSKILL = register("projectile_localisedvacuityskill",
 			EntityType.Builder.<LocalisedvacuityskillEntity>of(LocalisedvacuityskillEntity::new, MobCategory.MISC)
 					.setCustomClientFactory(LocalisedvacuityskillEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FerziumchannelerEntity>> FERZIUMCHANNELER = register("projectile_ferziumchanneler",
+			EntityType.Builder.<FerziumchannelerEntity>of(FerziumchannelerEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(FerziumchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<NoobiumchannelerEntity>> NOOBIUMCHANNELER = register("projectile_noobiumchanneler",
+			EntityType.Builder.<NoobiumchannelerEntity>of(NoobiumchannelerEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(NoobiumchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MerthiumchannelerEntity>> MERTHIUMCHANNELER = register("projectile_merthiumchanneler",
+			EntityType.Builder.<MerthiumchannelerEntity>of(MerthiumchannelerEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(MerthiumchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<DustfluxchannelerEntity>> DUSTFLUXCHANNELER = register("projectile_dustfluxchanneler",
+			EntityType.Builder.<DustfluxchannelerEntity>of(DustfluxchannelerEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(DustfluxchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FlutanitechannelerEntity>> FLUTANITECHANNELER = register("projectile_flutanitechanneler",
+			EntityType.Builder.<FlutanitechannelerEntity>of(FlutanitechannelerEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(FlutanitechannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<LignitechannelerEntity>> LIGNITECHANNELER = register("projectile_lignitechanneler",
+			EntityType.Builder.<LignitechannelerEntity>of(LignitechannelerEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(LignitechannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<VamitechannelerEntity>> VAMITECHANNELER = register("projectile_vamitechanneler",
+			EntityType.Builder.<VamitechannelerEntity>of(VamitechannelerEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(VamitechannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BrontiumchannelerEntity>> BRONTIUMCHANNELER = register("projectile_brontiumchanneler",
+			EntityType.Builder.<BrontiumchannelerEntity>of(BrontiumchannelerEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(BrontiumchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MycenansuperchannelerEntity>> MYCENANSUPERCHANNELER = register("projectile_mycenansuperchanneler",
+			EntityType.Builder.<MycenansuperchannelerEntity>of(MycenansuperchannelerEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(MycenansuperchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ChargedchannelerEntity>> CHARGEDCHANNELER = register("projectile_chargedchanneler",
+			EntityType.Builder.<ChargedchannelerEntity>of(ChargedchannelerEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(ChargedchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MycenanchannelerEntity>> MYCENANCHANNELER = register("projectile_mycenanchanneler",
+			EntityType.Builder.<MycenanchannelerEntity>of(MycenanchannelerEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(MycenanchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<NeonchannelerEntity>> NEONCHANNELER = register("projectile_neonchanneler",
+			EntityType.Builder.<NeonchannelerEntity>of(NeonchannelerEntity::new, MobCategory.MISC).setCustomClientFactory(NeonchannelerEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<PhaseblinkchannelerEntity>> PHASEBLINKCHANNELER = register("projectile_phaseblinkchanneler",
+			EntityType.Builder.<PhaseblinkchannelerEntity>of(PhaseblinkchannelerEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(PhaseblinkchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<CormunculusChannelerEntity>> CORMUNCULUS_CHANNELER = register("projectile_cormunculus_channeler",
+			EntityType.Builder.<CormunculusChannelerEntity>of(CormunculusChannelerEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(CormunculusChannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<DarkcormunculusChannelerEntity>> DARKCORMUNCULUS_CHANNELER = register(
+			"projectile_darkcormunculus_channeler",
+			EntityType.Builder.<DarkcormunculusChannelerEntity>of(DarkcormunculusChannelerEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(DarkcormunculusChannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<RimecormunculusChannelerEntity>> RIMECORMUNCULUS_CHANNELER = register(
+			"projectile_rimecormunculus_channeler",
+			EntityType.Builder.<RimecormunculusChannelerEntity>of(RimecormunculusChannelerEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(RimecormunculusChannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ArchkassemStaffEntity>> ARCHKASSEM_STAFF = register("projectile_archkassem_staff",
+			EntityType.Builder.<ArchkassemStaffEntity>of(ArchkassemStaffEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(ArchkassemStaffEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<KassemstaffEntity>> KASSEMSTAFF = register("projectile_kassemstaff",
+			EntityType.Builder.<KassemstaffEntity>of(KassemstaffEntity::new, MobCategory.MISC).setCustomClientFactory(KassemstaffEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FangbombEntity>> FANGBOMB = register("projectile_fangbomb",
+			EntityType.Builder.<FangbombEntity>of(FangbombEntity::new, MobCategory.MISC).setCustomClientFactory(FangbombEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<FangbolaEntity>> FANGBOLA = register("projectile_fangbola",
+			EntityType.Builder.<FangbolaEntity>of(FangbolaEntity::new, MobCategory.MISC).setCustomClientFactory(FangbolaEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<AngelfishChannelerEntity>> ANGELFISH_CHANNELER = register("projectile_angelfish_channeler",
+			EntityType.Builder.<AngelfishChannelerEntity>of(AngelfishChannelerEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(AngelfishChannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<MycenashroomvillagerNitwitEntity>> MYCENASHROOMVILLAGER_NITWIT = register(
 			"mycenashroomvillager_nitwit",
@@ -392,20 +589,11 @@ public class ElementureModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MycenaroamerEntity::new)
 
 					.sized(0.9f, 0.9f));
-	public static final RegistryObject<EntityType<MycenansporessplashEntity>> MYCENANSPORESSPLASH = register("projectile_mycenansporessplash",
-			EntityType.Builder.<MycenansporessplashEntity>of(MycenansporessplashEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(MycenansporessplashEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<MycenasporeslingeringcloudEntity>> MYCENASPORESLINGERINGCLOUD = register(
 			"mycenasporeslingeringcloud",
 			EntityType.Builder.<MycenasporeslingeringcloudEntity>of(MycenasporeslingeringcloudEntity::new, MobCategory.MONSTER)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 					.setCustomClientFactory(MycenasporeslingeringcloudEntity::new).fireImmune().sized(0f, 0f));
-	public static final RegistryObject<EntityType<MycenansporeslingeringEntity>> MYCENANSPORESLINGERING = register(
-			"projectile_mycenansporeslingering",
-			EntityType.Builder.<MycenansporeslingeringEntity>of(MycenansporeslingeringEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(MycenansporeslingeringEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<MycenafumoonshroomlingEntity>> MYCENAFUMOONSHROOMLING = register("mycenafumoonshroomling",
 			EntityType.Builder.<MycenafumoonshroomlingEntity>of(MycenafumoonshroomlingEntity::new, MobCategory.MONSTER)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
@@ -434,9 +622,6 @@ public class ElementureModEntities {
 					.setCustomClientFactory(MycenafumoonshroomlordEntity::new)
 
 					.sized(0.9f, 2f));
-	public static final RegistryObject<EntityType<DazzlingbowEntity>> DAZZLINGBOW = register("projectile_dazzlingbow",
-			EntityType.Builder.<DazzlingbowEntity>of(DazzlingbowEntity::new, MobCategory.MISC).setCustomClientFactory(DazzlingbowEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<MycenashroomvillagerfarmerEntity>> MYCENASHROOMVILLAGERFARMER = register(
 			"mycenashroomvillagerfarmer",
 			EntityType.Builder.<MycenashroomvillagerfarmerEntity>of(MycenashroomvillagerfarmerEntity::new, MobCategory.MONSTER)
@@ -444,10 +629,6 @@ public class ElementureModEntities {
 					.setCustomClientFactory(MycenashroomvillagerfarmerEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<ButterflybudfamiliarEntity>> BUTTERFLYBUDFAMILIAR = register("butterflybudfamiliar",
-			EntityType.Builder.<ButterflybudfamiliarEntity>of(ButterflybudfamiliarEntity::new, MobCategory.CREATURE)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(100).setUpdateInterval(3)
-					.setCustomClientFactory(ButterflybudfamiliarEntity::new).fireImmune().sized(0.6f, 1.6f));
 	public static final RegistryObject<EntityType<PapyscrownfamiliarEntity>> PAPYSCROWNFAMILIAR = register("papyscrownfamiliar",
 			EntityType.Builder.<PapyscrownfamiliarEntity>of(PapyscrownfamiliarEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(PapyscrownfamiliarEntity::new).fireImmune().sized(0.6f, 1.8f));
@@ -455,28 +636,10 @@ public class ElementureModEntities {
 			EntityType.Builder.<SunlighteggfamiliarEntity>of(SunlighteggfamiliarEntity::new, MobCategory.CREATURE)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(100).setUpdateInterval(3)
 					.setCustomClientFactory(SunlighteggfamiliarEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<LousyswordfamiliarEntity>> LOUSYSWORDFAMILIAR = register("lousyswordfamiliar",
-			EntityType.Builder.<LousyswordfamiliarEntity>of(LousyswordfamiliarEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(LousyswordfamiliarEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<CosmicslimefamiliarEntity>> COSMICSLIMEFAMILIAR = register("cosmicslimefamiliar",
 			EntityType.Builder.<CosmicslimefamiliarEntity>of(CosmicslimefamiliarEntity::new, MobCategory.CREATURE)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(100).setUpdateInterval(3)
 					.setCustomClientFactory(CosmicslimefamiliarEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<HiddenrunesfamiliarEntity>> HIDDENRUNESFAMILIAR = register("hiddenrunesfamiliar",
-			EntityType.Builder.<HiddenrunesfamiliarEntity>of(HiddenrunesfamiliarEntity::new, MobCategory.MONSTER)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(100).setUpdateInterval(3)
-					.setCustomClientFactory(HiddenrunesfamiliarEntity::new).fireImmune().sized(0.6f, 1.6f));
-	public static final RegistryObject<EntityType<SoulskullfamiliarEntity>> SOULSKULLFAMILIAR = register("soulskullfamiliar",
-			EntityType.Builder.<SoulskullfamiliarEntity>of(SoulskullfamiliarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(SoulskullfamiliarEntity::new).fireImmune().sized(0.6f, 1f));
-	public static final RegistryObject<EntityType<TinyclaymanfamiliarEntity>> TINYCLAYMANFAMILIAR = register("tinyclaymanfamiliar",
-			EntityType.Builder.<TinyclaymanfamiliarEntity>of(TinyclaymanfamiliarEntity::new, MobCategory.MONSTER)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(100).setUpdateInterval(3)
-					.setCustomClientFactory(TinyclaymanfamiliarEntity::new).fireImmune().sized(0.4f, 0.8f));
-	public static final RegistryObject<EntityType<TheninefamiliarEntity>> THENINEFAMILIAR = register("theninefamiliar",
-			EntityType.Builder.<TheninefamiliarEntity>of(TheninefamiliarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(TheninefamiliarEntity::new).fireImmune()
-					.sized(0.7999999999999999f, 1.4000000000000001f));
 	public static final RegistryObject<EntityType<BiggranitelementalEntity>> BIGGRANITELEMENTAL = register("biggranitelemental",
 			EntityType.Builder.<BiggranitelementalEntity>of(BiggranitelementalEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BiggranitelementalEntity::new).fireImmune()
@@ -488,9 +651,6 @@ public class ElementureModEntities {
 			EntityType.Builder.<SmallgraniteelementalEntity>of(SmallgraniteelementalEntity::new, MobCategory.MONSTER)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 					.setCustomClientFactory(SmallgraniteelementalEntity::new).fireImmune().sized(0.4f, 1.5999999999999999f));
-	public static final RegistryObject<EntityType<BuzybeefamiliarEntity>> BUZYBEEFAMILIAR = register("buzybeefamiliar",
-			EntityType.Builder.<BuzybeefamiliarEntity>of(BuzybeefamiliarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(BuzybeefamiliarEntity::new).fireImmune().sized(0.7f, 1f));
 	public static final RegistryObject<EntityType<BigandesiteelementalEntity>> BIGANDESITEELEMENTAL = register("bigandesiteelemental",
 			EntityType.Builder.<BigandesiteelementalEntity>of(BigandesiteelementalEntity::new, MobCategory.MONSTER)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
@@ -520,57 +680,6 @@ public class ElementureModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(ObleckEntity::new)
 
 					.sized(0.6f, 1f));
-	public static final RegistryObject<EntityType<MycenafumoonmushroomEntity>> MYCENAFUMOONMUSHROOM = register("projectile_mycenafumoonmushroom",
-			EntityType.Builder.<MycenafumoonmushroomEntity>of(MycenafumoonmushroomEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(MycenafumoonmushroomEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<FerziumchannelerEntity>> FERZIUMCHANNELER = register("projectile_ferziumchanneler",
-			EntityType.Builder.<FerziumchannelerEntity>of(FerziumchannelerEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(FerziumchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<NoobiumchannelerEntity>> NOOBIUMCHANNELER = register("projectile_noobiumchanneler",
-			EntityType.Builder.<NoobiumchannelerEntity>of(NoobiumchannelerEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(NoobiumchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<MerthiumchannelerEntity>> MERTHIUMCHANNELER = register("projectile_merthiumchanneler",
-			EntityType.Builder.<MerthiumchannelerEntity>of(MerthiumchannelerEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(MerthiumchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<DustfluxchannelerEntity>> DUSTFLUXCHANNELER = register("projectile_dustfluxchanneler",
-			EntityType.Builder.<DustfluxchannelerEntity>of(DustfluxchannelerEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(DustfluxchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<FlutanitechannelerEntity>> FLUTANITECHANNELER = register("projectile_flutanitechanneler",
-			EntityType.Builder.<FlutanitechannelerEntity>of(FlutanitechannelerEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(FlutanitechannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<LignitechannelerEntity>> LIGNITECHANNELER = register("projectile_lignitechanneler",
-			EntityType.Builder.<LignitechannelerEntity>of(LignitechannelerEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(LignitechannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<VamitechannelerEntity>> VAMITECHANNELER = register("projectile_vamitechanneler",
-			EntityType.Builder.<VamitechannelerEntity>of(VamitechannelerEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(VamitechannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<BrontiumchannelerEntity>> BRONTIUMCHANNELER = register("projectile_brontiumchanneler",
-			EntityType.Builder.<BrontiumchannelerEntity>of(BrontiumchannelerEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(BrontiumchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<MycenansuperchannelerEntity>> MYCENANSUPERCHANNELER = register("projectile_mycenansuperchanneler",
-			EntityType.Builder.<MycenansuperchannelerEntity>of(MycenansuperchannelerEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(MycenansuperchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<ChargedchannelerEntity>> CHARGEDCHANNELER = register("projectile_chargedchanneler",
-			EntityType.Builder.<ChargedchannelerEntity>of(ChargedchannelerEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(ChargedchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<MycenanchannelerEntity>> MYCENANCHANNELER = register("projectile_mycenanchanneler",
-			EntityType.Builder.<MycenanchannelerEntity>of(MycenanchannelerEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(MycenanchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<NeonchannelerEntity>> NEONCHANNELER = register("projectile_neonchanneler",
-			EntityType.Builder.<NeonchannelerEntity>of(NeonchannelerEntity::new, MobCategory.MISC).setCustomClientFactory(NeonchannelerEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<StatuewraithEntity>> STATUEWRAITH = register("statuewraith",
 			EntityType.Builder.<StatuewraithEntity>of(StatuewraithEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StatuewraithEntity::new).fireImmune().sized(0.6f, 0.6f));
@@ -582,11 +691,6 @@ public class ElementureModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MindobleckEntity::new)
 
 					.sized(0.6f, 1f));
-	public static final RegistryObject<EntityType<IronknightEntity>> IRONKNIGHT = register("ironknight",
-			EntityType.Builder.<IronknightEntity>of(IronknightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(IronknightEntity::new)
-
-					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<OblecklordEntity>> OBLECKLORD = register("oblecklord",
 			EntityType.Builder.<OblecklordEntity>of(OblecklordEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(OblecklordEntity::new)
@@ -620,12 +724,6 @@ public class ElementureModEntities {
 					.setCustomClientFactory(MycenashroomvillagerFishermanEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<ObsidianbobberEntEntity>> OBSIDIANBOBBER_ENT = register("obsidianbobber_ent",
-			EntityType.Builder.<ObsidianbobberEntEntity>of(ObsidianbobberEntEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(ObsidianbobberEntEntity::new).fireImmune().sized(0.2f, 0.2f));
-	public static final RegistryObject<EntityType<CoalpuckfamiliarEntity>> COALPUCKFAMILIAR = register("coalpuckfamiliar",
-			EntityType.Builder.<CoalpuckfamiliarEntity>of(CoalpuckfamiliarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(CoalpuckfamiliarEntity::new).fireImmune().sized(0.6f, 0.8f));
 	public static final RegistryObject<EntityType<DragonewtEntity>> DRAGONEWT = register("dragonewt",
 			EntityType.Builder.<DragonewtEntity>of(DragonewtEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(DragonewtEntity::new).fireImmune()
@@ -634,12 +732,6 @@ public class ElementureModEntities {
 			EntityType.Builder.<DragoniteEntity>of(DragoniteEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DragoniteEntity::new).fireImmune()
 					.sized(1.2000000000000002f, 1.2f));
-	public static final RegistryObject<EntityType<MinoskullflaibulletEntity>> MINOSKULLFLAIBULLET = register("minoskullflaibullet",
-			EntityType.Builder.<MinoskullflaibulletEntity>of(MinoskullflaibulletEntity::new, MobCategory.CREATURE)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-					.setCustomClientFactory(MinoskullflaibulletEntity::new)
-
-					.sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<MinoskullEntity>> MINOSKULL = register("minoskull",
 			EntityType.Builder.<MinoskullEntity>of(MinoskullEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MinoskullEntity::new)
@@ -650,9 +742,6 @@ public class ElementureModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PumpkinmimicEntity::new)
 
 					.sized(0.6f, 0.6f));
-	public static final RegistryObject<EntityType<PumpkingrenadeEntity>> PUMPKINGRENADE = register("projectile_pumpkingrenade",
-			EntityType.Builder.<PumpkingrenadeEntity>of(PumpkingrenadeEntity::new, MobCategory.MISC).setCustomClientFactory(PumpkingrenadeEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<AscendedaspidEntity>> ASCENDEDASPID = register("ascendedaspid",
 			EntityType.Builder.<AscendedaspidEntity>of(AscendedaspidEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(AscendedaspidEntity::new).fireImmune()
@@ -667,11 +756,6 @@ public class ElementureModEntities {
 	public static final RegistryObject<EntityType<BrightcandleEntity>> BRIGHTCANDLE = register("brightcandle",
 			EntityType.Builder.<BrightcandleEntity>of(BrightcandleEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BrightcandleEntity::new).fireImmune().sized(0.6f, 0.6f));
-	public static final RegistryObject<EntityType<HarpoonbulletEntity>> HARPOONBULLET = register("harpoonbullet",
-			EntityType.Builder.<HarpoonbulletEntity>of(HarpoonbulletEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HarpoonbulletEntity::new)
-
-					.sized(0.2f, 0.2f));
 	public static final RegistryObject<EntityType<DarklurkerEntity>> DARKLURKER = register("darklurker",
 			EntityType.Builder.<DarklurkerEntity>of(DarklurkerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DarklurkerEntity::new)
@@ -708,79 +792,27 @@ public class ElementureModEntities {
 			EntityType.Builder.<NetherstarvillagerdustyEntity>of(NetherstarvillagerdustyEntity::new, MobCategory.MONSTER)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 					.setCustomClientFactory(NetherstarvillagerdustyEntity::new).fireImmune().sized(0.7f, 1.7000000000000002f));
-	public static final RegistryObject<EntityType<PhaseblinkchannelerEntity>> PHASEBLINKCHANNELER = register("projectile_phaseblinkchanneler",
-			EntityType.Builder.<PhaseblinkchannelerEntity>of(PhaseblinkchannelerEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(PhaseblinkchannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<CthulhupetEntity>> CTHULHUPET = register("cthulhupet",
-			EntityType.Builder.<CthulhupetEntity>of(CthulhupetEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CthulhupetEntity::new).fireImmune().sized(0.6f, 0.8f));
 	public static final RegistryObject<EntityType<StarguardianstandEntity>> STARGUARDIANSTAND = register("starguardianstand",
 			EntityType.Builder.<StarguardianstandEntity>of(StarguardianstandEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StarguardianstandEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<HeatseekerEntity>> HEATSEEKER = register("heatseeker",
 			EntityType.Builder.<HeatseekerEntity>of(HeatseekerEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HeatseekerEntity::new).fireImmune().sized(0.6f, 0.6f));
-	public static final RegistryObject<EntityType<ChromaticwheelBulletEntity>> CHROMATICWHEEL_BULLET = register("chromaticwheel_bullet",
-			EntityType.Builder.<ChromaticwheelBulletEntity>of(ChromaticwheelBulletEntity::new, MobCategory.CREATURE)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-					.setCustomClientFactory(ChromaticwheelBulletEntity::new).fireImmune().sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<BlackstoneGrimaceEntity>> BLACKSTONE_GRIMACE = register("blackstone_grimace",
 			EntityType.Builder.<BlackstoneGrimaceEntity>of(BlackstoneGrimaceEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BlackstoneGrimaceEntity::new).fireImmune()
 					.sized(1.3f, 1.2999999999999998f));
-	public static final RegistryObject<EntityType<BabyghastEntity>> BABYGHAST = register("babyghast",
-			EntityType.Builder.<BabyghastEntity>of(BabyghastEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(BabyghastEntity::new).fireImmune().sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<StaticspriteEntity>> STATICSPRITE = register("staticsprite",
 			EntityType.Builder.<StaticspriteEntity>of(StaticspriteEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(StaticspriteEntity::new)
 
 					.sized(0.6f, 0.6f));
-	public static final RegistryObject<EntityType<DeathswitnessEntity>> DEATHSWITNESS = register("deathswitness",
-			EntityType.Builder.<DeathswitnessEntity>of(DeathswitnessEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DeathswitnessEntity::new).fireImmune().sized(2f, 2f));
-	public static final RegistryObject<EntityType<TwistedBladeEntity>> TWISTED_BLADE = register("projectile_twisted_blade",
-			EntityType.Builder.<TwistedBladeEntity>of(TwistedBladeEntity::new, MobCategory.MISC).setCustomClientFactory(TwistedBladeEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<TwistedknightEntity>> TWISTEDKNIGHT = register("twistedknight",
-			EntityType.Builder.<TwistedknightEntity>of(TwistedknightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TwistedknightEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<GreedyknightEntity>> GREEDYKNIGHT = register("greedyknight",
-			EntityType.Builder.<GreedyknightEntity>of(GreedyknightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GreedyknightEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<CausticknightEntity>> CAUSTICKNIGHT = register("causticknight",
-			EntityType.Builder.<CausticknightEntity>of(CausticknightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CausticknightEntity::new)
-
-					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<CausticbladeEntity>> CAUSTICBLADE = register("projectile_causticblade",
-			EntityType.Builder.<CausticbladeEntity>of(CausticbladeEntity::new, MobCategory.MISC).setCustomClientFactory(CausticbladeEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<CausticvialLiquidEntity>> CAUSTICVIAL_LIQUID = register("causticvial_liquid",
 			EntityType.Builder.<CausticvialLiquidEntity>of(CausticvialLiquidEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CausticvialLiquidEntity::new).fireImmune().sized(0f, 0f));
-	public static final RegistryObject<EntityType<CruelknightEntity>> CRUELKNIGHT = register("cruelknight",
-			EntityType.Builder.<CruelknightEntity>of(CruelknightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CruelknightEntity::new)
-
-					.sized(0.6f, 2f));
-	public static final RegistryObject<EntityType<CandleKnightEntity>> CANDLE_KNIGHT = register("candle_knight",
-			EntityType.Builder.<CandleKnightEntity>of(CandleKnightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CandleKnightEntity::new).fireImmune().sized(0.9f, 1.6f));
-	public static final RegistryObject<EntityType<SpectreknightEntity>> SPECTREKNIGHT = register("spectreknight",
-			EntityType.Builder.<SpectreknightEntity>of(SpectreknightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpectreknightEntity::new).fireImmune().sized(0.6f, 2.2f));
 	public static final RegistryObject<EntityType<GhostwarriorEntity>> GHOSTWARRIOR = register("ghostwarrior",
 			EntityType.Builder.<GhostwarriorEntity>of(GhostwarriorEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(GhostwarriorEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<KingsknightEntity>> KINGSKNIGHT = register("kingsknight",
-			EntityType.Builder.<KingsknightEntity>of(KingsknightEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(KingsknightEntity::new).fireImmune().sized(0.6f, 2f));
 	public static final RegistryObject<EntityType<PerinealbotflyEntity>> PERINEALBOTFLY = register("perinealbotfly",
 			EntityType.Builder.<PerinealbotflyEntity>of(PerinealbotflyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PerinealbotflyEntity::new)
@@ -790,15 +822,6 @@ public class ElementureModEntities {
 			EntityType.Builder.<PerinealbotflyminionEntity>of(PerinealbotflyminionEntity::new, MobCategory.MONSTER)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 					.setCustomClientFactory(PerinealbotflyminionEntity::new).fireImmune().sized(0.6f, 0.7999999999999999f));
-	public static final RegistryObject<EntityType<WarpedspearEntity>> WARPEDSPEAR = register("projectile_warpedspear",
-			EntityType.Builder.<WarpedspearEntity>of(WarpedspearEntity::new, MobCategory.MISC).setCustomClientFactory(WarpedspearEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<GreendemonEntity>> GREENDEMON = register("projectile_greendemon",
-			EntityType.Builder.<GreendemonEntity>of(GreendemonEntity::new, MobCategory.MISC).setCustomClientFactory(GreendemonEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<MemorybobberEntityEntity>> MEMORYBOBBER_ENTITY = register("memorybobber_entity",
-			EntityType.Builder.<MemorybobberEntityEntity>of(MemorybobberEntityEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MemorybobberEntityEntity::new).fireImmune().sized(0.3f, 0.3f));
 	public static final RegistryObject<EntityType<CrystalcreeperEntity>> CRYSTALCREEPER = register("crystalcreeper",
 			EntityType.Builder.<CrystalcreeperEntity>of(CrystalcreeperEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CrystalcreeperEntity::new).fireImmune().sized(0.6f, 1.6f));
@@ -865,12 +888,6 @@ public class ElementureModEntities {
 					.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(EchoBerryEntity::new)
 
 					.sized(0.6f, 0.6f));
-	public static final RegistryObject<EntityType<Forgottenwatcher1Entity>> FORGOTTENWATCHER_1 = register("forgottenwatcher_1",
-			EntityType.Builder.<Forgottenwatcher1Entity>of(Forgottenwatcher1Entity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(Forgottenwatcher1Entity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<Forgottenwatcher2Entity>> FORGOTTENWATCHER_2 = register("forgottenwatcher_2",
-			EntityType.Builder.<Forgottenwatcher2Entity>of(Forgottenwatcher2Entity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(Forgottenwatcher2Entity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<RedsunpillarEntity>> REDSUNPILLAR = register("redsunpillar",
 			EntityType.Builder.<RedsunpillarEntity>of(RedsunpillarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(RedsunpillarEntity::new).fireImmune().sized(0f, 0f));
@@ -899,25 +916,9 @@ public class ElementureModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(JellyEntity::new)
 
 					.sized(1.2000000000000002f, 2f));
-	public static final RegistryObject<EntityType<LargejellyEntity>> LARGEJELLY = register("largejelly",
-			EntityType.Builder.<LargejellyEntity>of(LargejellyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(LargejellyEntity::new)
-
-					.sized(1.6f, 2.4f));
-	public static final RegistryObject<EntityType<BubbleblasterEntity>> BUBBLEBLASTER = register("projectile_bubbleblaster",
-			EntityType.Builder.<BubbleblasterEntity>of(BubbleblasterEntity::new, MobCategory.MISC).setCustomClientFactory(BubbleblasterEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<MotherorbEntity>> MOTHERORB = register("motherorb",
 			EntityType.Builder.<MotherorbEntity>of(MotherorbEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(2048).setUpdateInterval(3).setCustomClientFactory(MotherorbEntity::new).fireImmune().sized(3f, 3f));
-	public static final RegistryObject<EntityType<WindyshoreFlare1Entity>> WINDYSHORE_FLARE_1 = register("windyshore_flare_1",
-			EntityType.Builder.<WindyshoreFlare1Entity>of(WindyshoreFlare1Entity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(WindyshoreFlare1Entity::new).fireImmune().sized(0f, 0f));
-	public static final RegistryObject<EntityType<WindyshoresCloudEntity>> WINDYSHORES_CLOUD = register("windyshores_cloud",
-			EntityType.Builder.<WindyshoresCloudEntity>of(WindyshoresCloudEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(192).setUpdateInterval(3).setCustomClientFactory(WindyshoresCloudEntity::new)
-
-					.sized(1.4000000000000001f, 0.8f));
 	public static final RegistryObject<EntityType<IvoryshadeEntity>> IVORYSHADE = register("ivoryshade",
 			EntityType.Builder.<IvoryshadeEntity>of(IvoryshadeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(IvoryshadeEntity::new).fireImmune().sized(0.6f, 2f));
@@ -942,9 +943,6 @@ public class ElementureModEntities {
 					.setCustomClientFactory(GlassbellboatEntityEntity::new)
 
 					.sized(1.6f, 1.5999999999999999f));
-	public static final RegistryObject<EntityType<MagtunabusterEntity>> MAGTUNABUSTER = register("projectile_magtunabuster",
-			EntityType.Builder.<MagtunabusterEntity>of(MagtunabusterEntity::new, MobCategory.MISC).setCustomClientFactory(MagtunabusterEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<ArmoredturtleEntity>> ARMOREDTURTLE = register("armoredturtle",
 			EntityType.Builder.<ArmoredturtleEntity>of(ArmoredturtleEntity::new, MobCategory.WATER_AMBIENT).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ArmoredturtleEntity::new)
@@ -958,11 +956,6 @@ public class ElementureModEntities {
 	public static final RegistryObject<EntityType<OstrachainEntity>> OSTRACHAIN = register("ostrachain",
 			EntityType.Builder.<OstrachainEntity>of(OstrachainEntity::new, MobCategory.WATER_CREATURE).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(OstrachainEntity::new)
-
-					.sized(0.7999999999999999f, 0.7999999999999999f));
-	public static final RegistryObject<EntityType<OstrachainLinkEntity>> OSTRACHAIN_LINK = register("ostrachain_link",
-			EntityType.Builder.<OstrachainLinkEntity>of(OstrachainLinkEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(OstrachainLinkEntity::new)
 
 					.sized(0.7999999999999999f, 0.7999999999999999f));
 	public static final RegistryObject<EntityType<RimeboidEntity>> RIMEBOID = register("rimeboid",
@@ -985,10 +978,6 @@ public class ElementureModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TarwormLinkEntity::new)
 
 					.sized(0.7999999999999999f, 0.8f));
-	public static final RegistryObject<EntityType<DarkgemcrossbolterEntity>> DARKGEMCROSSBOLTER = register("projectile_darkgemcrossbolter",
-			EntityType.Builder.<DarkgemcrossbolterEntity>of(DarkgemcrossbolterEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(DarkgemcrossbolterEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<TarumbraEntity>> TARUMBRA = register("tarumbra",
 			EntityType.Builder.<TarumbraEntity>of(TarumbraEntity::new, MobCategory.WATER_AMBIENT).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TarumbraEntity::new).fireImmune()
@@ -998,47 +987,9 @@ public class ElementureModEntities {
 					.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(UmbrasylSegmentEntity::new)
 
 					.sized(2.6f, 2.6f));
-	public static final RegistryObject<EntityType<UmbrasylEntity>> UMBRASYL = register("umbrasyl",
-			EntityType.Builder.<UmbrasylEntity>of(UmbrasylEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(512).setUpdateInterval(3).setCustomClientFactory(UmbrasylEntity::new)
-
-					.sized(3.6f, 3.6f));
-	public static final RegistryObject<EntityType<TarbombEntity>> TARBOMB = register("projectile_tarbomb",
-			EntityType.Builder.<TarbombEntity>of(TarbombEntity::new, MobCategory.MISC).setCustomClientFactory(TarbombEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<TargodBlasterEntity>> TARGOD_BLASTER = register("projectile_targod_blaster",
-			EntityType.Builder.<TargodBlasterEntity>of(TargodBlasterEntity::new, MobCategory.MISC).setCustomClientFactory(TargodBlasterEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<TarspiritEntity>> TARSPIRIT = register("tarspirit",
 			EntityType.Builder.<TarspiritEntity>of(TarspiritEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TarspiritEntity::new).fireImmune().sized(1f, 1f));
-	public static final RegistryObject<EntityType<EnhancedtarbombEntity>> ENHANCEDTARBOMB = register("projectile_enhancedtarbomb",
-			EntityType.Builder.<EnhancedtarbombEntity>of(EnhancedtarbombEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(EnhancedtarbombEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<EnhancedtargodBlasterEntity>> ENHANCEDTARGOD_BLASTER = register("projectile_enhancedtargod_blaster",
-			EntityType.Builder.<EnhancedtargodBlasterEntity>of(EnhancedtargodBlasterEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(EnhancedtargodBlasterEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<SirenqueenEntity>> SIRENQUEEN = register("sirenqueen",
-			EntityType.Builder.<SirenqueenEntity>of(SirenqueenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(SirenqueenEntity::new)
-
-					.sized(1.6f, 3.2f));
-	public static final RegistryObject<EntityType<CormunculusChannelerEntity>> CORMUNCULUS_CHANNELER = register("projectile_cormunculus_channeler",
-			EntityType.Builder.<CormunculusChannelerEntity>of(CormunculusChannelerEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(CormunculusChannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<DarkcormunculusChannelerEntity>> DARKCORMUNCULUS_CHANNELER = register(
-			"projectile_darkcormunculus_channeler",
-			EntityType.Builder.<DarkcormunculusChannelerEntity>of(DarkcormunculusChannelerEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(DarkcormunculusChannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<RimecormunculusChannelerEntity>> RIMECORMUNCULUS_CHANNELER = register(
-			"projectile_rimecormunculus_channeler",
-			EntityType.Builder.<RimecormunculusChannelerEntity>of(RimecormunculusChannelerEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(RimecormunculusChannelerEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<RocketwormEntity>> ROCKETWORM = register("rocketworm",
 			EntityType.Builder.<RocketwormEntity>of(RocketwormEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(RocketwormEntity::new).fireImmune()
@@ -1066,13 +1017,6 @@ public class ElementureModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ArchkassemEntity::new)
 
 					.sized(0.6f, 1.5f));
-	public static final RegistryObject<EntityType<ArchkassemStaffEntity>> ARCHKASSEM_STAFF = register("projectile_archkassem_staff",
-			EntityType.Builder.<ArchkassemStaffEntity>of(ArchkassemStaffEntity::new, MobCategory.MISC)
-					.setCustomClientFactory(ArchkassemStaffEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
-					.setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<KassemstaffEntity>> KASSEMSTAFF = register("projectile_kassemstaff",
-			EntityType.Builder.<KassemstaffEntity>of(KassemstaffEntity::new, MobCategory.MISC).setCustomClientFactory(KassemstaffEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<ArachneelEntity>> ARACHNEEL = register("arachneel",
 			EntityType.Builder.<ArachneelEntity>of(ArachneelEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ArachneelEntity::new)
@@ -1081,12 +1025,6 @@ public class ElementureModEntities {
 	public static final RegistryObject<EntityType<ArachneelEntityProjectile>> ARACHNEEL_PROJECTILE = register("projectile_arachneel",
 			EntityType.Builder.<ArachneelEntityProjectile>of(ArachneelEntityProjectile::new, MobCategory.MISC).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArachneelEntityProjectile::new).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<ArachneelbowEntity>> ARACHNEELBOW = register("projectile_arachneelbow",
-			EntityType.Builder.<ArachneelbowEntity>of(ArachneelbowEntity::new, MobCategory.MISC).setCustomClientFactory(ArachneelbowEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<TidalcometEntity>> TIDALCOMET = register("projectile_tidalcomet",
-			EntityType.Builder.<TidalcometEntity>of(TidalcometEntity::new, MobCategory.MISC).setCustomClientFactory(TidalcometEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<SkeletalHeadHostEntity>> SKELETAL_HEAD_HOST = register("skeletal_head_host",
 			EntityType.Builder.<SkeletalHeadHostEntity>of(SkeletalHeadHostEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SkeletalHeadHostEntity::new)
@@ -1134,11 +1072,6 @@ public class ElementureModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpidermatriarchEntity::new)
 
 					.sized(1.2f, 1.2000000000000002f));
-	public static final RegistryObject<EntityType<MagtunaBusterFirestormBallEntity>> MAGTUNA_BUSTER_FIRESTORM_BALL = register(
-			"magtuna_buster_firestorm_ball",
-			EntityType.Builder.<MagtunaBusterFirestormBallEntity>of(MagtunaBusterFirestormBallEntity::new, MobCategory.MONSTER)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
-					.setCustomClientFactory(MagtunaBusterFirestormBallEntity::new).fireImmune().sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<SlumberingSoldierEntity>> SLUMBERING_SOLDIER = register("slumbering_soldier",
 			EntityType.Builder.<SlumberingSoldierEntity>of(SlumberingSoldierEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SlumberingSoldierEntity::new)
@@ -1154,23 +1087,112 @@ public class ElementureModEntities {
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NightmareMassEntity::new)
 
 					.sized(0.6f, 0.8f));
+	public static final RegistryObject<EntityType<SlumberinGeneralOrbEntity>> SLUMBERIN_GENERAL_ORB = register("slumberin_general_orb",
+			EntityType.Builder.<SlumberinGeneralOrbEntity>of(SlumberinGeneralOrbEntity::new, MobCategory.MONSTER)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(SlumberinGeneralOrbEntity::new)
+
+					.sized(0.6f, 0.6f));
+	public static final RegistryObject<EntityType<MycenansporessplashEntity>> MYCENANSPORESSPLASH = register("projectile_mycenansporessplash",
+			EntityType.Builder.<MycenansporessplashEntity>of(MycenansporessplashEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(MycenansporessplashEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<MycenansporeslingeringEntity>> MYCENANSPORESLINGERING = register(
+			"projectile_mycenansporeslingering",
+			EntityType.Builder.<MycenansporeslingeringEntity>of(MycenansporeslingeringEntity::new, MobCategory.MISC)
+					.setCustomClientFactory(MycenansporeslingeringEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
+					.setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<GreendemonEntity>> GREENDEMON = register("projectile_greendemon",
+			EntityType.Builder.<GreendemonEntity>of(GreendemonEntity::new, MobCategory.MISC).setCustomClientFactory(GreendemonEntity::new)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<ButterflybudfamiliarEntity>> BUTTERFLYBUDFAMILIAR = register("butterflybudfamiliar",
+			EntityType.Builder.<ButterflybudfamiliarEntity>of(ButterflybudfamiliarEntity::new, MobCategory.CREATURE)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(100).setUpdateInterval(3)
+					.setCustomClientFactory(ButterflybudfamiliarEntity::new).fireImmune().sized(0.6f, 1.6f));
+	public static final RegistryObject<EntityType<LousyswordfamiliarEntity>> LOUSYSWORDFAMILIAR = register("lousyswordfamiliar",
+			EntityType.Builder.<LousyswordfamiliarEntity>of(LousyswordfamiliarEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(LousyswordfamiliarEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HiddenrunesfamiliarEntity>> HIDDENRUNESFAMILIAR = register("hiddenrunesfamiliar",
+			EntityType.Builder.<HiddenrunesfamiliarEntity>of(HiddenrunesfamiliarEntity::new, MobCategory.MONSTER)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(100).setUpdateInterval(3)
+					.setCustomClientFactory(HiddenrunesfamiliarEntity::new).fireImmune().sized(0.6f, 1.6f));
+	public static final RegistryObject<EntityType<SoulskullfamiliarEntity>> SOULSKULLFAMILIAR = register("soulskullfamiliar",
+			EntityType.Builder.<SoulskullfamiliarEntity>of(SoulskullfamiliarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(SoulskullfamiliarEntity::new).fireImmune().sized(0.6f, 1f));
+	public static final RegistryObject<EntityType<TinyclaymanfamiliarEntity>> TINYCLAYMANFAMILIAR = register("tinyclaymanfamiliar",
+			EntityType.Builder.<TinyclaymanfamiliarEntity>of(TinyclaymanfamiliarEntity::new, MobCategory.MONSTER)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(100).setUpdateInterval(3)
+					.setCustomClientFactory(TinyclaymanfamiliarEntity::new).fireImmune().sized(0.4f, 0.8f));
+	public static final RegistryObject<EntityType<TheninefamiliarEntity>> THENINEFAMILIAR = register("theninefamiliar",
+			EntityType.Builder.<TheninefamiliarEntity>of(TheninefamiliarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(TheninefamiliarEntity::new).fireImmune()
+					.sized(0.7999999999999999f, 1.4000000000000001f));
+	public static final RegistryObject<EntityType<BuzybeefamiliarEntity>> BUZYBEEFAMILIAR = register("buzybeefamiliar",
+			EntityType.Builder.<BuzybeefamiliarEntity>of(BuzybeefamiliarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(100).setUpdateInterval(3).setCustomClientFactory(BuzybeefamiliarEntity::new).fireImmune().sized(0.7f, 1f));
+	public static final RegistryObject<EntityType<ObsidianbobberEntEntity>> OBSIDIANBOBBER_ENT = register("obsidianbobber_ent",
+			EntityType.Builder.<ObsidianbobberEntEntity>of(ObsidianbobberEntEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(ObsidianbobberEntEntity::new).fireImmune().sized(0.2f, 0.2f));
+	public static final RegistryObject<EntityType<CoalpuckfamiliarEntity>> COALPUCKFAMILIAR = register("coalpuckfamiliar",
+			EntityType.Builder.<CoalpuckfamiliarEntity>of(CoalpuckfamiliarEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(CoalpuckfamiliarEntity::new).fireImmune().sized(0.6f, 0.8f));
+	public static final RegistryObject<EntityType<MinoskullflaibulletEntity>> MINOSKULLFLAIBULLET = register("minoskullflaibullet",
+			EntityType.Builder.<MinoskullflaibulletEntity>of(MinoskullflaibulletEntity::new, MobCategory.CREATURE)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(MinoskullflaibulletEntity::new)
+
+					.sized(0.6f, 0.6f));
+	public static final RegistryObject<EntityType<HarpoonbulletEntity>> HARPOONBULLET = register("harpoonbullet",
+			EntityType.Builder.<HarpoonbulletEntity>of(HarpoonbulletEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HarpoonbulletEntity::new)
+
+					.sized(0.2f, 0.2f));
+	public static final RegistryObject<EntityType<CthulhupetEntity>> CTHULHUPET = register("cthulhupet",
+			EntityType.Builder.<CthulhupetEntity>of(CthulhupetEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CthulhupetEntity::new).fireImmune().sized(0.6f, 0.8f));
+	public static final RegistryObject<EntityType<ChromaticwheelBulletEntity>> CHROMATICWHEEL_BULLET = register("chromaticwheel_bullet",
+			EntityType.Builder.<ChromaticwheelBulletEntity>of(ChromaticwheelBulletEntity::new, MobCategory.CREATURE)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(ChromaticwheelBulletEntity::new).fireImmune().sized(0.6f, 0.6f));
+	public static final RegistryObject<EntityType<BabyghastEntity>> BABYGHAST = register("babyghast",
+			EntityType.Builder.<BabyghastEntity>of(BabyghastEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(128).setUpdateInterval(3).setCustomClientFactory(BabyghastEntity::new).fireImmune().sized(0.6f, 0.6f));
+	public static final RegistryObject<EntityType<DeathswitnessEntity>> DEATHSWITNESS = register("deathswitness",
+			EntityType.Builder.<DeathswitnessEntity>of(DeathswitnessEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DeathswitnessEntity::new).fireImmune().sized(2f, 2f));
+	public static final RegistryObject<EntityType<MemorybobberEntityEntity>> MEMORYBOBBER_ENTITY = register("memorybobber_entity",
+			EntityType.Builder.<MemorybobberEntityEntity>of(MemorybobberEntityEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(MemorybobberEntityEntity::new).fireImmune().sized(0.3f, 0.3f));
+	public static final RegistryObject<EntityType<Forgottenwatcher1Entity>> FORGOTTENWATCHER_1 = register("forgottenwatcher_1",
+			EntityType.Builder.<Forgottenwatcher1Entity>of(Forgottenwatcher1Entity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(Forgottenwatcher1Entity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<Forgottenwatcher2Entity>> FORGOTTENWATCHER_2 = register("forgottenwatcher_2",
+			EntityType.Builder.<Forgottenwatcher2Entity>of(Forgottenwatcher2Entity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(Forgottenwatcher2Entity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<WindyshoreFlare1Entity>> WINDYSHORE_FLARE_1 = register("windyshore_flare_1",
+			EntityType.Builder.<WindyshoreFlare1Entity>of(WindyshoreFlare1Entity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(256).setUpdateInterval(3).setCustomClientFactory(WindyshoreFlare1Entity::new).fireImmune().sized(0f, 0f));
+	public static final RegistryObject<EntityType<WindyshoresCloudEntity>> WINDYSHORES_CLOUD = register("windyshores_cloud",
+			EntityType.Builder.<WindyshoresCloudEntity>of(WindyshoresCloudEntity::new, MobCategory.AMBIENT).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(192).setUpdateInterval(3).setCustomClientFactory(WindyshoresCloudEntity::new)
+
+					.sized(1.4000000000000001f, 0.8f));
+	public static final RegistryObject<EntityType<OstrachainLinkEntity>> OSTRACHAIN_LINK = register("ostrachain_link",
+			EntityType.Builder.<OstrachainLinkEntity>of(OstrachainLinkEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(OstrachainLinkEntity::new)
+
+					.sized(0.7999999999999999f, 0.7999999999999999f));
+	public static final RegistryObject<EntityType<MagtunaBusterFirestormBallEntity>> MAGTUNA_BUSTER_FIRESTORM_BALL = register(
+			"magtuna_buster_firestorm_ball",
+			EntityType.Builder.<MagtunaBusterFirestormBallEntity>of(MagtunaBusterFirestormBallEntity::new, MobCategory.MONSTER)
+					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+					.setCustomClientFactory(MagtunaBusterFirestormBallEntity::new).fireImmune().sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<NightmareSpikeEntity>> NIGHTMARE_SPIKE = register("nightmare_spike",
 			EntityType.Builder.<NightmareSpikeEntity>of(NightmareSpikeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
 					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NightmareSpikeEntity::new).fireImmune().sized(0.6f, 0.6f));
-	public static final RegistryObject<EntityType<ShurifangEntity>> SHURIFANG = register("projectile_shurifang",
-			EntityType.Builder.<ShurifangEntity>of(ShurifangEntity::new, MobCategory.MISC).setCustomClientFactory(ShurifangEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<FangbombEntity>> FANGBOMB = register("projectile_fangbomb",
-			EntityType.Builder.<FangbombEntity>of(FangbombEntity::new, MobCategory.MISC).setCustomClientFactory(FangbombEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<FangbolaEntity>> FANGBOLA = register("projectile_fangbola",
-			EntityType.Builder.<FangbolaEntity>of(FangbolaEntity::new, MobCategory.MISC).setCustomClientFactory(FangbolaEntity::new)
-					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
-	public static final RegistryObject<EntityType<SpiderQueenEntity>> SPIDER_QUEEN = register("spider_queen",
-			EntityType.Builder.<SpiderQueenEntity>of(SpiderQueenEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(SpiderQueenEntity::new)
-
-					.sized(1.4f, 1.4000000000000001f));
+	public static final RegistryObject<EntityType<OceanangelEntity>> OCEANANGEL = register("oceanangel",
+			EntityType.Builder.<OceanangelEntity>of(OceanangelEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(OceanangelEntity::new).fireImmune().sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -1179,6 +1201,19 @@ public class ElementureModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
+			IronknightEntity.init();
+			TwistedknightEntity.init();
+			GreedyknightEntity.init();
+			CausticknightEntity.init();
+			CruelknightEntity.init();
+			CandleKnightEntity.init();
+			SpectreknightEntity.init();
+			KingsknightEntity.init();
+			LargejellyEntity.init();
+			UmbrasylEntity.init();
+			SirenqueenEntity.init();
+			SpiderQueenEntity.init();
+			SlumberingGeneralEntity.init();
 			MycenashroomvillagerNitwitEntity.init();
 			MycenashroomguardEntity.init();
 			MycenainfectedshroomguardEntity.init();
@@ -1201,19 +1236,12 @@ public class ElementureModEntities {
 			MycenafumoonsporelingEntity.init();
 			MycenafumoonshroomlordEntity.init();
 			MycenashroomvillagerfarmerEntity.init();
-			ButterflybudfamiliarEntity.init();
 			PapyscrownfamiliarEntity.init();
 			SunlighteggfamiliarEntity.init();
-			LousyswordfamiliarEntity.init();
 			CosmicslimefamiliarEntity.init();
-			HiddenrunesfamiliarEntity.init();
-			SoulskullfamiliarEntity.init();
-			TinyclaymanfamiliarEntity.init();
-			TheninefamiliarEntity.init();
 			BiggranitelementalEntity.init();
 			GraniteelementalEntity.init();
 			SmallgraniteelementalEntity.init();
-			BuzybeefamiliarEntity.init();
 			BigandesiteelementalEntity.init();
 			AndesiteelementalEntity.init();
 			WeakandesiteelementalEntity.init();
@@ -1224,24 +1252,19 @@ public class ElementureModEntities {
 			StatuewraithEntity.init();
 			StatueprotectorEntity.init();
 			MindobleckEntity.init();
-			IronknightEntity.init();
 			OblecklordEntity.init();
 			CoalpuckEntity.init();
 			OblecklordeldritchEntity.init();
 			ObleckturretEntity.init();
 			CustombobberEntity.init();
 			MycenashroomvillagerFishermanEntity.init();
-			ObsidianbobberEntEntity.init();
-			CoalpuckfamiliarEntity.init();
 			DragonewtEntity.init();
 			DragoniteEntity.init();
-			MinoskullflaibulletEntity.init();
 			MinoskullEntity.init();
 			PumpkinmimicEntity.init();
 			AscendedaspidEntity.init();
 			ShadowcandleEntity.init();
 			BrightcandleEntity.init();
-			HarpoonbulletEntity.init();
 			DarklurkerEntity.init();
 			GnoblinEntity.init();
 			DarkspiritEntity.init();
@@ -1250,26 +1273,14 @@ public class ElementureModEntities {
 			StarryvillagerblacksmithEntity.init();
 			StarryvillagerguardianEntity.init();
 			NetherstarvillagerdustyEntity.init();
-			CthulhupetEntity.init();
 			StarguardianstandEntity.init();
 			HeatseekerEntity.init();
-			ChromaticwheelBulletEntity.init();
 			BlackstoneGrimaceEntity.init();
-			BabyghastEntity.init();
 			StaticspriteEntity.init();
-			DeathswitnessEntity.init();
-			TwistedknightEntity.init();
-			GreedyknightEntity.init();
-			CausticknightEntity.init();
 			CausticvialLiquidEntity.init();
-			CruelknightEntity.init();
-			CandleKnightEntity.init();
-			SpectreknightEntity.init();
 			GhostwarriorEntity.init();
-			KingsknightEntity.init();
 			PerinealbotflyEntity.init();
 			PerinealbotflyminionEntity.init();
-			MemorybobberEntityEntity.init();
 			CrystalcreeperEntity.init();
 			BlueblazeEntity.init();
 			CrystalhopperEntity.init();
@@ -1289,18 +1300,13 @@ public class ElementureModEntities {
 			NetherstarflareEntity.init();
 			Netherstarflare2Entity.init();
 			EchoBerryEntity.init();
-			Forgottenwatcher1Entity.init();
-			Forgottenwatcher2Entity.init();
 			RedsunpillarEntity.init();
 			FoamfishEntity.init();
 			BluejellyfloatEntity.init();
 			GreenjellyfloatEntity.init();
 			RedjellyfloatEntity.init();
 			JellyEntity.init();
-			LargejellyEntity.init();
 			MotherorbEntity.init();
-			WindyshoreFlare1Entity.init();
-			WindyshoresCloudEntity.init();
 			IvoryshadeEntity.init();
 			FluffwhaleEntity.init();
 			ForceobleckEntity.init();
@@ -1309,16 +1315,13 @@ public class ElementureModEntities {
 			ArmoredturtleEntity.init();
 			SirenlingEntity.init();
 			OstrachainEntity.init();
-			OstrachainLinkEntity.init();
 			RimeboidEntity.init();
 			BubbleOBlueEntity.init();
 			TarwormEntity.init();
 			TarwormLinkEntity.init();
 			TarumbraEntity.init();
 			UmbrasylSegmentEntity.init();
-			UmbrasylEntity.init();
 			TarspiritEntity.init();
-			SirenqueenEntity.init();
 			RocketwormEntity.init();
 			BubbleEntity.init();
 			KassemEntity.init();
@@ -1335,17 +1338,52 @@ public class ElementureModEntities {
 			GoldenSpiderlingEntity.init();
 			SpiderSwarmerEntity.init();
 			SpidermatriarchEntity.init();
-			MagtunaBusterFirestormBallEntity.init();
 			SlumberingSoldierEntity.init();
 			NightmareArbalestEntity.init();
 			NightmareMassEntity.init();
+			SlumberinGeneralOrbEntity.init();
+			ButterflybudfamiliarEntity.init();
+			LousyswordfamiliarEntity.init();
+			HiddenrunesfamiliarEntity.init();
+			SoulskullfamiliarEntity.init();
+			TinyclaymanfamiliarEntity.init();
+			TheninefamiliarEntity.init();
+			BuzybeefamiliarEntity.init();
+			ObsidianbobberEntEntity.init();
+			CoalpuckfamiliarEntity.init();
+			MinoskullflaibulletEntity.init();
+			HarpoonbulletEntity.init();
+			CthulhupetEntity.init();
+			ChromaticwheelBulletEntity.init();
+			BabyghastEntity.init();
+			DeathswitnessEntity.init();
+			MemorybobberEntityEntity.init();
+			Forgottenwatcher1Entity.init();
+			Forgottenwatcher2Entity.init();
+			WindyshoreFlare1Entity.init();
+			WindyshoresCloudEntity.init();
+			OstrachainLinkEntity.init();
+			MagtunaBusterFirestormBallEntity.init();
 			NightmareSpikeEntity.init();
-			SpiderQueenEntity.init();
+			OceanangelEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
+		event.put(IRONKNIGHT.get(), IronknightEntity.createAttributes().build());
+		event.put(TWISTEDKNIGHT.get(), TwistedknightEntity.createAttributes().build());
+		event.put(GREEDYKNIGHT.get(), GreedyknightEntity.createAttributes().build());
+		event.put(CAUSTICKNIGHT.get(), CausticknightEntity.createAttributes().build());
+		event.put(CRUELKNIGHT.get(), CruelknightEntity.createAttributes().build());
+		event.put(CANDLE_KNIGHT.get(), CandleKnightEntity.createAttributes().build());
+		event.put(SPECTREKNIGHT.get(), SpectreknightEntity.createAttributes().build());
+		event.put(KINGSKNIGHT.get(), KingsknightEntity.createAttributes().build());
+		event.put(LARGEJELLY.get(), LargejellyEntity.createAttributes().build());
+		event.put(UMBRASYL.get(), UmbrasylEntity.createAttributes().build());
+		event.put(SIRENQUEEN.get(), SirenqueenEntity.createAttributes().build());
+		event.put(SPIDER_QUEEN.get(), SpiderQueenEntity.createAttributes().build());
+		event.put(SLUMBERING_GENERAL.get(), SlumberingGeneralEntity.createAttributes().build());
 		event.put(MYCENASHROOMVILLAGER_NITWIT.get(), MycenashroomvillagerNitwitEntity.createAttributes().build());
 		event.put(MYCENASHROOMGUARD.get(), MycenashroomguardEntity.createAttributes().build());
 		event.put(MYCENAINFECTEDSHROOMGUARD.get(), MycenainfectedshroomguardEntity.createAttributes().build());
@@ -1368,19 +1406,12 @@ public class ElementureModEntities {
 		event.put(MYCENAFUMOONSPORELING.get(), MycenafumoonsporelingEntity.createAttributes().build());
 		event.put(MYCENAFUMOONSHROOMLORD.get(), MycenafumoonshroomlordEntity.createAttributes().build());
 		event.put(MYCENASHROOMVILLAGERFARMER.get(), MycenashroomvillagerfarmerEntity.createAttributes().build());
-		event.put(BUTTERFLYBUDFAMILIAR.get(), ButterflybudfamiliarEntity.createAttributes().build());
 		event.put(PAPYSCROWNFAMILIAR.get(), PapyscrownfamiliarEntity.createAttributes().build());
 		event.put(SUNLIGHTEGGFAMILIAR.get(), SunlighteggfamiliarEntity.createAttributes().build());
-		event.put(LOUSYSWORDFAMILIAR.get(), LousyswordfamiliarEntity.createAttributes().build());
 		event.put(COSMICSLIMEFAMILIAR.get(), CosmicslimefamiliarEntity.createAttributes().build());
-		event.put(HIDDENRUNESFAMILIAR.get(), HiddenrunesfamiliarEntity.createAttributes().build());
-		event.put(SOULSKULLFAMILIAR.get(), SoulskullfamiliarEntity.createAttributes().build());
-		event.put(TINYCLAYMANFAMILIAR.get(), TinyclaymanfamiliarEntity.createAttributes().build());
-		event.put(THENINEFAMILIAR.get(), TheninefamiliarEntity.createAttributes().build());
 		event.put(BIGGRANITELEMENTAL.get(), BiggranitelementalEntity.createAttributes().build());
 		event.put(GRANITEELEMENTAL.get(), GraniteelementalEntity.createAttributes().build());
 		event.put(SMALLGRANITEELEMENTAL.get(), SmallgraniteelementalEntity.createAttributes().build());
-		event.put(BUZYBEEFAMILIAR.get(), BuzybeefamiliarEntity.createAttributes().build());
 		event.put(BIGANDESITEELEMENTAL.get(), BigandesiteelementalEntity.createAttributes().build());
 		event.put(ANDESITEELEMENTAL.get(), AndesiteelementalEntity.createAttributes().build());
 		event.put(WEAKANDESITEELEMENTAL.get(), WeakandesiteelementalEntity.createAttributes().build());
@@ -1391,24 +1422,19 @@ public class ElementureModEntities {
 		event.put(STATUEWRAITH.get(), StatuewraithEntity.createAttributes().build());
 		event.put(STATUEPROTECTOR.get(), StatueprotectorEntity.createAttributes().build());
 		event.put(MINDOBLECK.get(), MindobleckEntity.createAttributes().build());
-		event.put(IRONKNIGHT.get(), IronknightEntity.createAttributes().build());
 		event.put(OBLECKLORD.get(), OblecklordEntity.createAttributes().build());
 		event.put(COALPUCK.get(), CoalpuckEntity.createAttributes().build());
 		event.put(OBLECKLORDELDRITCH.get(), OblecklordeldritchEntity.createAttributes().build());
 		event.put(OBLECKTURRET.get(), ObleckturretEntity.createAttributes().build());
 		event.put(CUSTOMBOBBER.get(), CustombobberEntity.createAttributes().build());
 		event.put(MYCENASHROOMVILLAGER_FISHERMAN.get(), MycenashroomvillagerFishermanEntity.createAttributes().build());
-		event.put(OBSIDIANBOBBER_ENT.get(), ObsidianbobberEntEntity.createAttributes().build());
-		event.put(COALPUCKFAMILIAR.get(), CoalpuckfamiliarEntity.createAttributes().build());
 		event.put(DRAGONEWT.get(), DragonewtEntity.createAttributes().build());
 		event.put(DRAGONITE.get(), DragoniteEntity.createAttributes().build());
-		event.put(MINOSKULLFLAIBULLET.get(), MinoskullflaibulletEntity.createAttributes().build());
 		event.put(MINOSKULL.get(), MinoskullEntity.createAttributes().build());
 		event.put(PUMPKINMIMIC.get(), PumpkinmimicEntity.createAttributes().build());
 		event.put(ASCENDEDASPID.get(), AscendedaspidEntity.createAttributes().build());
 		event.put(SHADOWCANDLE.get(), ShadowcandleEntity.createAttributes().build());
 		event.put(BRIGHTCANDLE.get(), BrightcandleEntity.createAttributes().build());
-		event.put(HARPOONBULLET.get(), HarpoonbulletEntity.createAttributes().build());
 		event.put(DARKLURKER.get(), DarklurkerEntity.createAttributes().build());
 		event.put(GNOBLIN.get(), GnoblinEntity.createAttributes().build());
 		event.put(DARKSPIRIT.get(), DarkspiritEntity.createAttributes().build());
@@ -1417,26 +1443,14 @@ public class ElementureModEntities {
 		event.put(STARRYVILLAGERBLACKSMITH.get(), StarryvillagerblacksmithEntity.createAttributes().build());
 		event.put(STARRYVILLAGERGUARDIAN.get(), StarryvillagerguardianEntity.createAttributes().build());
 		event.put(NETHERSTARVILLAGERDUSTY.get(), NetherstarvillagerdustyEntity.createAttributes().build());
-		event.put(CTHULHUPET.get(), CthulhupetEntity.createAttributes().build());
 		event.put(STARGUARDIANSTAND.get(), StarguardianstandEntity.createAttributes().build());
 		event.put(HEATSEEKER.get(), HeatseekerEntity.createAttributes().build());
-		event.put(CHROMATICWHEEL_BULLET.get(), ChromaticwheelBulletEntity.createAttributes().build());
 		event.put(BLACKSTONE_GRIMACE.get(), BlackstoneGrimaceEntity.createAttributes().build());
-		event.put(BABYGHAST.get(), BabyghastEntity.createAttributes().build());
 		event.put(STATICSPRITE.get(), StaticspriteEntity.createAttributes().build());
-		event.put(DEATHSWITNESS.get(), DeathswitnessEntity.createAttributes().build());
-		event.put(TWISTEDKNIGHT.get(), TwistedknightEntity.createAttributes().build());
-		event.put(GREEDYKNIGHT.get(), GreedyknightEntity.createAttributes().build());
-		event.put(CAUSTICKNIGHT.get(), CausticknightEntity.createAttributes().build());
 		event.put(CAUSTICVIAL_LIQUID.get(), CausticvialLiquidEntity.createAttributes().build());
-		event.put(CRUELKNIGHT.get(), CruelknightEntity.createAttributes().build());
-		event.put(CANDLE_KNIGHT.get(), CandleKnightEntity.createAttributes().build());
-		event.put(SPECTREKNIGHT.get(), SpectreknightEntity.createAttributes().build());
 		event.put(GHOSTWARRIOR.get(), GhostwarriorEntity.createAttributes().build());
-		event.put(KINGSKNIGHT.get(), KingsknightEntity.createAttributes().build());
 		event.put(PERINEALBOTFLY.get(), PerinealbotflyEntity.createAttributes().build());
 		event.put(PERINEALBOTFLYMINION.get(), PerinealbotflyminionEntity.createAttributes().build());
-		event.put(MEMORYBOBBER_ENTITY.get(), MemorybobberEntityEntity.createAttributes().build());
 		event.put(CRYSTALCREEPER.get(), CrystalcreeperEntity.createAttributes().build());
 		event.put(BLUEBLAZE.get(), BlueblazeEntity.createAttributes().build());
 		event.put(CRYSTALHOPPER.get(), CrystalhopperEntity.createAttributes().build());
@@ -1456,18 +1470,13 @@ public class ElementureModEntities {
 		event.put(NETHERSTARFLARE.get(), NetherstarflareEntity.createAttributes().build());
 		event.put(NETHERSTARFLARE_2.get(), Netherstarflare2Entity.createAttributes().build());
 		event.put(ECHO_BERRY.get(), EchoBerryEntity.createAttributes().build());
-		event.put(FORGOTTENWATCHER_1.get(), Forgottenwatcher1Entity.createAttributes().build());
-		event.put(FORGOTTENWATCHER_2.get(), Forgottenwatcher2Entity.createAttributes().build());
 		event.put(REDSUNPILLAR.get(), RedsunpillarEntity.createAttributes().build());
 		event.put(FOAMFISH.get(), FoamfishEntity.createAttributes().build());
 		event.put(BLUEJELLYFLOAT.get(), BluejellyfloatEntity.createAttributes().build());
 		event.put(GREENJELLYFLOAT.get(), GreenjellyfloatEntity.createAttributes().build());
 		event.put(REDJELLYFLOAT.get(), RedjellyfloatEntity.createAttributes().build());
 		event.put(JELLY.get(), JellyEntity.createAttributes().build());
-		event.put(LARGEJELLY.get(), LargejellyEntity.createAttributes().build());
 		event.put(MOTHERORB.get(), MotherorbEntity.createAttributes().build());
-		event.put(WINDYSHORE_FLARE_1.get(), WindyshoreFlare1Entity.createAttributes().build());
-		event.put(WINDYSHORES_CLOUD.get(), WindyshoresCloudEntity.createAttributes().build());
 		event.put(IVORYSHADE.get(), IvoryshadeEntity.createAttributes().build());
 		event.put(FLUFFWHALE.get(), FluffwhaleEntity.createAttributes().build());
 		event.put(FORCEOBLECK.get(), ForceobleckEntity.createAttributes().build());
@@ -1476,16 +1485,13 @@ public class ElementureModEntities {
 		event.put(ARMOREDTURTLE.get(), ArmoredturtleEntity.createAttributes().build());
 		event.put(SIRENLING.get(), SirenlingEntity.createAttributes().build());
 		event.put(OSTRACHAIN.get(), OstrachainEntity.createAttributes().build());
-		event.put(OSTRACHAIN_LINK.get(), OstrachainLinkEntity.createAttributes().build());
 		event.put(RIMEBOID.get(), RimeboidEntity.createAttributes().build());
 		event.put(BUBBLE_O_BLUE.get(), BubbleOBlueEntity.createAttributes().build());
 		event.put(TARWORM.get(), TarwormEntity.createAttributes().build());
 		event.put(TARWORM_LINK.get(), TarwormLinkEntity.createAttributes().build());
 		event.put(TARUMBRA.get(), TarumbraEntity.createAttributes().build());
 		event.put(UMBRASYL_SEGMENT.get(), UmbrasylSegmentEntity.createAttributes().build());
-		event.put(UMBRASYL.get(), UmbrasylEntity.createAttributes().build());
 		event.put(TARSPIRIT.get(), TarspiritEntity.createAttributes().build());
-		event.put(SIRENQUEEN.get(), SirenqueenEntity.createAttributes().build());
 		event.put(ROCKETWORM.get(), RocketwormEntity.createAttributes().build());
 		event.put(BUBBLE.get(), BubbleEntity.createAttributes().build());
 		event.put(KASSEM.get(), KassemEntity.createAttributes().build());
@@ -1502,11 +1508,33 @@ public class ElementureModEntities {
 		event.put(GOLDEN_SPIDERLING.get(), GoldenSpiderlingEntity.createAttributes().build());
 		event.put(SPIDER_SWARMER.get(), SpiderSwarmerEntity.createAttributes().build());
 		event.put(SPIDERMATRIARCH.get(), SpidermatriarchEntity.createAttributes().build());
-		event.put(MAGTUNA_BUSTER_FIRESTORM_BALL.get(), MagtunaBusterFirestormBallEntity.createAttributes().build());
 		event.put(SLUMBERING_SOLDIER.get(), SlumberingSoldierEntity.createAttributes().build());
 		event.put(NIGHTMARE_ARBALEST.get(), NightmareArbalestEntity.createAttributes().build());
 		event.put(NIGHTMARE_MASS.get(), NightmareMassEntity.createAttributes().build());
+		event.put(SLUMBERIN_GENERAL_ORB.get(), SlumberinGeneralOrbEntity.createAttributes().build());
+		event.put(BUTTERFLYBUDFAMILIAR.get(), ButterflybudfamiliarEntity.createAttributes().build());
+		event.put(LOUSYSWORDFAMILIAR.get(), LousyswordfamiliarEntity.createAttributes().build());
+		event.put(HIDDENRUNESFAMILIAR.get(), HiddenrunesfamiliarEntity.createAttributes().build());
+		event.put(SOULSKULLFAMILIAR.get(), SoulskullfamiliarEntity.createAttributes().build());
+		event.put(TINYCLAYMANFAMILIAR.get(), TinyclaymanfamiliarEntity.createAttributes().build());
+		event.put(THENINEFAMILIAR.get(), TheninefamiliarEntity.createAttributes().build());
+		event.put(BUZYBEEFAMILIAR.get(), BuzybeefamiliarEntity.createAttributes().build());
+		event.put(OBSIDIANBOBBER_ENT.get(), ObsidianbobberEntEntity.createAttributes().build());
+		event.put(COALPUCKFAMILIAR.get(), CoalpuckfamiliarEntity.createAttributes().build());
+		event.put(MINOSKULLFLAIBULLET.get(), MinoskullflaibulletEntity.createAttributes().build());
+		event.put(HARPOONBULLET.get(), HarpoonbulletEntity.createAttributes().build());
+		event.put(CTHULHUPET.get(), CthulhupetEntity.createAttributes().build());
+		event.put(CHROMATICWHEEL_BULLET.get(), ChromaticwheelBulletEntity.createAttributes().build());
+		event.put(BABYGHAST.get(), BabyghastEntity.createAttributes().build());
+		event.put(DEATHSWITNESS.get(), DeathswitnessEntity.createAttributes().build());
+		event.put(MEMORYBOBBER_ENTITY.get(), MemorybobberEntityEntity.createAttributes().build());
+		event.put(FORGOTTENWATCHER_1.get(), Forgottenwatcher1Entity.createAttributes().build());
+		event.put(FORGOTTENWATCHER_2.get(), Forgottenwatcher2Entity.createAttributes().build());
+		event.put(WINDYSHORE_FLARE_1.get(), WindyshoreFlare1Entity.createAttributes().build());
+		event.put(WINDYSHORES_CLOUD.get(), WindyshoresCloudEntity.createAttributes().build());
+		event.put(OSTRACHAIN_LINK.get(), OstrachainLinkEntity.createAttributes().build());
+		event.put(MAGTUNA_BUSTER_FIRESTORM_BALL.get(), MagtunaBusterFirestormBallEntity.createAttributes().build());
 		event.put(NIGHTMARE_SPIKE.get(), NightmareSpikeEntity.createAttributes().build());
-		event.put(SPIDER_QUEEN.get(), SpiderQueenEntity.createAttributes().build());
+		event.put(OCEANANGEL.get(), OceanangelEntity.createAttributes().build());
 	}
 }

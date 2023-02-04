@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "l_elementalsilvercore",
     "customModelName": "Normal",
-    "name": "Silverlightningcore",
+    "name": "Silver lightning core",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:Skillwindow"
@@ -15,6 +15,9 @@
     "useDuration": 0,
     "toolType": 1.0,
     "damageCount": 0,
+    "recipeRemainder": {
+      "value": ""
+    },
     "destroyAnyBlock": false,
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
@@ -25,6 +28,7 @@
       "A silver core containing shocking lightning"
     ],
     "hasGlow": true,
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onItemInInventoryTick": {
@@ -33,6 +37,9 @@
     "isFood": false,
     "nutritionalValue": 0,
     "saturation": 0.30000001192092896,
+    "eatResultItem": {
+      "value": ""
+    },
     "isMeat": false,
     "isAlwaysEdible": false,
     "animation": "eat"

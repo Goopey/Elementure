@@ -21,6 +21,9 @@ public class ElementureModTabs {
 	public static CreativeModeTab TAB_TABMODDEDBOSS;
 	public static CreativeModeTab TAB_SKILLWINDOW;
 	public static CreativeModeTab TAB_FISHINGTAB;
+	public static CreativeModeTab TAB_FORGOTTENBLOCKS_TAB;
+	public static CreativeModeTab TAB_FORGOTTEN_ITEMS_TAB;
+	public static CreativeModeTab TAB_FORGOTTENSPECIALITEMS_TAB;
 
 	public static void load() {
 		TAB_TABMODDEDARMOR = new CreativeModeTab("tabtabmoddedarmor") {
@@ -133,5 +136,38 @@ public class ElementureModTabs {
 				return true;
 			}
 		}.setBackgroundSuffix("item_search.png");
+		TAB_FORGOTTENBLOCKS_TAB = new CreativeModeTab("tabforgottenblocks_tab") {
+			@Override
+			public ItemStack makeIcon() {
+				return new ItemStack(ElementureModBlocks.OLDBRICKS.get());
+			}
+
+			@OnlyIn(Dist.CLIENT)
+			public boolean hasSearchBar() {
+				return false;
+			}
+		};
+		TAB_FORGOTTEN_ITEMS_TAB = new CreativeModeTab("tabforgotten_items_tab") {
+			@Override
+			public ItemStack makeIcon() {
+				return new ItemStack(ElementureModItems.OLDDOWSINGSTICK.get());
+			}
+
+			@OnlyIn(Dist.CLIENT)
+			public boolean hasSearchBar() {
+				return false;
+			}
+		};
+		TAB_FORGOTTENSPECIALITEMS_TAB = new CreativeModeTab("tabforgottenspecialitems_tab") {
+			@Override
+			public ItemStack makeIcon() {
+				return new ItemStack(ElementureModItems.MEMORY_EYE.get());
+			}
+
+			@OnlyIn(Dist.CLIENT)
+			public boolean hasSearchBar() {
+				return false;
+			}
+		};
 	}
 }

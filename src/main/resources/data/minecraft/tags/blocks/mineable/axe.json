@@ -58,6 +58,9 @@
     "elementure:lilypadplanks_pressureplate",
     "elementure:lilypadplanks_door",
     "elementure:lilypadplanks_trapdoor",
-    "elementure:nightmare_shaman"
+    "elementure:nightmare_shaman",
+    "elementure:boardingschool_planks",
+    "elementure:boardingschool_planks_stairs",
+    "elementure:boardingschool_planks_slabs"
   ]
 }

@@ -19,7 +19,7 @@ import java.util.List;
 
 public class CorememoryfragmentItem extends Item {
 	public CorememoryfragmentItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDITEMS).stacksTo(64).rarity(Rarity.RARE));
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FORGOTTEN_ITEMS_TAB).stacksTo(64).rarity(Rarity.RARE));
 	}
 
 	@Override

@@ -16,7 +16,7 @@ import java.util.List;
 
 public class MemoryEyeItem extends Item {
 	public MemoryEyeItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_SKILLWINDOW).stacksTo(1).rarity(Rarity.EPIC));
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FORGOTTENSPECIALITEMS_TAB).stacksTo(1).rarity(Rarity.EPIC));
 	}
 
 	@Override

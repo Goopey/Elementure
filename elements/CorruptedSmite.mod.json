@@ -25,8 +25,9 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "Artifact : smites are made to destroy your enemies. This one is made to destroy your enemies under any circumstance. Failure will ot be allowed again.",
-      "-Stores up damage over a period of time and releases it all at once on your next attack.",
+      "§6Boss trophy",
+      "Artifact : smites are typically made to destroy your enemies. This one is made to destroy your enemies §lunder any circumstance.§l Failure will not be allowed again.",
+      "-Stores up damage over a period of time and releases it all at once on your next melee attack.",
       "-More effective against bosses.",
       "-Increases damage against boss enemies."
     ],

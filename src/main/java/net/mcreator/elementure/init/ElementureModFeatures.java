@@ -102,6 +102,25 @@ public class ElementureModFeatures {
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, FerziumoreFeature.GENERATE_BIOMES, FerziumoreFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> MERTHIUMORE = register("merthiumore", MerthiumoreFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.UNDERGROUND_ORES, MerthiumoreFeature.GENERATE_BIOMES, MerthiumoreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> SHIMMERINGORE = register("shimmeringore", ShimmeringoreFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.UNDERGROUND_ORES, ShimmeringoreFeature.GENERATE_BIOMES, ShimmeringoreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> DEEPFLUTANITEORE = register("deepflutaniteore", DeepflutaniteoreFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, DeepflutaniteoreFeature.GENERATE_BIOMES,
+					DeepflutaniteoreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> DEEPVAMITEORE = register("deepvamiteore", DeepvamiteoreFeature::feature, new FeatureRegistration(
+			GenerationStep.Decoration.UNDERGROUND_ORES, DeepvamiteoreFeature.GENERATE_BIOMES, DeepvamiteoreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> DEEPFERZIUMORE = register("deepferziumore", DeepferziumoreFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, DeepferziumoreFeature.GENERATE_BIOMES,
+					DeepferziumoreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> DEEPMERTHIUMORE = register("deepmerthiumore", DeepmerthiumoreFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, DeepmerthiumoreFeature.GENERATE_BIOMES,
+					DeepmerthiumoreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> DEEPNOOBIUMORE = register("deepnoobiumore", DeepnoobiumoreFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, DeepnoobiumoreFeature.GENERATE_BIOMES,
+					DeepnoobiumoreFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> DEEPSHIMMERINGORE = register("deepshimmeringore", DeepshimmeringoreFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, DeepshimmeringoreFeature.GENERATE_BIOMES,
+					DeepshimmeringoreFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> WILDBLUEBERRY = register("wildblueberry", WildblueberryFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.VEGETAL_DECORATION, WildblueberryFeature.GENERATE_BIOMES, WildblueberryFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> WILDPERRYBERRY = register("wildperryberry", WildperryberryFeature::feature,
@@ -113,6 +132,21 @@ public class ElementureModFeatures {
 	public static final RegistryObject<Feature<?>> WILDSTRAWBERRYBUSH = register("wildstrawberrybush", WildstrawberrybushFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, WildstrawberrybushFeature.GENERATE_BIOMES,
 					WildstrawberrybushFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> WILDCOLDBERRYBUSH = register("wildcoldberrybush", WildcoldberrybushFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, WildcoldberrybushFeature.GENERATE_BIOMES,
+					WildcoldberrybushFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> WILDSUNBERRYBUSH = register("wildsunberrybush", WildsunberrybushFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, WildsunberrybushFeature.GENERATE_BIOMES,
+					WildsunberrybushFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> WILDGOBBERRYBUSH = register("wildgobberrybush", WildgobberrybushFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, WildgobberrybushFeature.GENERATE_BIOMES,
+					WildgobberrybushFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> WILDBILBORRYBUSH = register("wildbilborrybush", WildbilborrybushFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, WildbilborrybushFeature.GENERATE_BIOMES,
+					WildbilborrybushFeature::placedFeature));
+	public static final RegistryObject<Feature<?>> PURPLEMUSHROOMS = register("purplemushrooms", PurplemushroomsFeature::feature,
+			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, PurplemushroomsFeature.GENERATE_BIOMES,
+					PurplemushroomsFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> RAGDOLLARENA = register("ragdollarena", RagdollarenaFeature::feature, new FeatureRegistration(
 			GenerationStep.Decoration.SURFACE_STRUCTURES, RagdollarenaFeature.GENERATE_BIOMES, RagdollarenaFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> FROSTYICEARENA = register("frostyicearena", FrostyicearenaFeature::feature,
@@ -142,8 +176,6 @@ public class ElementureModFeatures {
 	public static final RegistryObject<Feature<?>> MYCENABIOMEBASEBLOCK = register("mycenabiomebaseblock", MycenabiomebaseblockFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, MycenabiomebaseblockFeature.GENERATE_BIOMES,
 					MycenabiomebaseblockFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> SHIMMERINGORE = register("shimmeringore", ShimmeringoreFeature::feature, new FeatureRegistration(
-			GenerationStep.Decoration.UNDERGROUND_ORES, ShimmeringoreFeature.GENERATE_BIOMES, ShimmeringoreFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> RUINGRANITEBIOME = register("ruingranitebiome", RuingranitebiomeFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_STRUCTURES, RuingranitebiomeFeature.GENERATE_BIOMES,
 					RuingranitebiomeFeature::placedFeature));
@@ -161,18 +193,6 @@ public class ElementureModFeatures {
 	public static final RegistryObject<Feature<?>> SUBMERGEDTEMPLE = register("submergedtemple", SubmergedtempleFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, SubmergedtempleFeature.GENERATE_BIOMES,
 					SubmergedtempleFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> WILDCOLDBERRYBUSH = register("wildcoldberrybush", WildcoldberrybushFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, WildcoldberrybushFeature.GENERATE_BIOMES,
-					WildcoldberrybushFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> WILDSUNBERRYBUSH = register("wildsunberrybush", WildsunberrybushFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, WildsunberrybushFeature.GENERATE_BIOMES,
-					WildsunberrybushFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> WILDGOBBERRYBUSH = register("wildgobberrybush", WildgobberrybushFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, WildgobberrybushFeature.GENERATE_BIOMES,
-					WildgobberrybushFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> WILDBILBORRYBUSH = register("wildbilborrybush", WildbilborrybushFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, WildbilborrybushFeature.GENERATE_BIOMES,
-					WildbilborrybushFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> BOULDER_1 = register("boulder_1", Boulder1Feature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, Boulder1Feature.GENERATE_BIOMES, Boulder1Feature::placedFeature));
 	public static final RegistryObject<Feature<?>> BOULDER_2 = register("boulder_2", Boulder2Feature::feature,
@@ -195,29 +215,9 @@ public class ElementureModFeatures {
 			GenerationStep.Decoration.SURFACE_STRUCTURES, SwordtempleFeature.GENERATE_BIOMES, SwordtempleFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> CAMPFIRE_1 = register("campfire_1", Campfire1Feature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, Campfire1Feature.GENERATE_BIOMES, Campfire1Feature::placedFeature));
-	public static final RegistryObject<Feature<?>> PURPLEMUSHROOMS = register("purplemushrooms", PurplemushroomsFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.VEGETAL_DECORATION, PurplemushroomsFeature.GENERATE_BIOMES,
-					PurplemushroomsFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> PURPLEMUSHROOMBIG = register("purplemushroombig", PurplemushroombigFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.SURFACE_STRUCTURES, PurplemushroombigFeature.GENERATE_BIOMES,
 					PurplemushroombigFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> DEEPFLUTANITEORE = register("deepflutaniteore", DeepflutaniteoreFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, DeepflutaniteoreFeature.GENERATE_BIOMES,
-					DeepflutaniteoreFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> DEEPVAMITEORE = register("deepvamiteore", DeepvamiteoreFeature::feature, new FeatureRegistration(
-			GenerationStep.Decoration.UNDERGROUND_ORES, DeepvamiteoreFeature.GENERATE_BIOMES, DeepvamiteoreFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> DEEPFERZIUMORE = register("deepferziumore", DeepferziumoreFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, DeepferziumoreFeature.GENERATE_BIOMES,
-					DeepferziumoreFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> DEEPMERTHIUMORE = register("deepmerthiumore", DeepmerthiumoreFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, DeepmerthiumoreFeature.GENERATE_BIOMES,
-					DeepmerthiumoreFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> DEEPNOOBIUMORE = register("deepnoobiumore", DeepnoobiumoreFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, DeepnoobiumoreFeature.GENERATE_BIOMES,
-					DeepnoobiumoreFeature::placedFeature));
-	public static final RegistryObject<Feature<?>> DEEPSHIMMERINGORE = register("deepshimmeringore", DeepshimmeringoreFeature::feature,
-			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_ORES, DeepshimmeringoreFeature.GENERATE_BIOMES,
-					DeepshimmeringoreFeature::placedFeature));
 	public static final RegistryObject<Feature<?>> DEEPRUINS_RANDOM = register("deepruins_random", DeepruinsRandomFeature::feature,
 			new FeatureRegistration(GenerationStep.Decoration.UNDERGROUND_STRUCTURES, DeepruinsRandomFeature.GENERATE_BIOMES,
 					DeepruinsRandomFeature::placedFeature));

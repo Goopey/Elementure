@@ -41,7 +41,7 @@
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:Tabmoddedblocks"
+      "value": "CUSTOM:ForgottenblocksTab"
     },
     "destroyTool": "Not specified",
     "customDrop": {

@@ -1,0 +1,46 @@
+{
+  "_fv": 34,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Darkgemshard"
+      },
+      {
+        "value": "CUSTOM:Cormunculusblock"
+      },
+      {
+        "value": "CUSTOM:Darkgemshard"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:CormunculusChanneler"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:Darkgem"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:DarkcormunculusChanneler"
+    },
+    "name": "darkcormunculus_channeler_recipe",
+    "namespace": "mod"
+  }
+}

@@ -3,16 +3,16 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "blue_key",
+    "texture": "cangler",
     "customModelName": "Normal",
-    "name": "§l§1Blue key",
-    "rarity": "EPIC",
+    "name": "Cangler",
+    "rarity": "RARE",
     "creativeTab": {
-      "value": "CUSTOM:ForgottenspecialitemsTab"
+      "value": "CUSTOM:Fishingtab"
     },
-    "stackSize": 1,
+    "stackSize": 64,
     "enchantability": 0,
-    "useDuration": 0,
+    "useDuration": 32,
     "toolType": 1.0,
     "damageCount": 0,
     "recipeRemainder": {
@@ -25,25 +25,23 @@
     "enableMeleeDamage": false,
     "damageVsEntity": 0.0,
     "specialInfo": [
-      "§l§1A super-rare key. It trembles with energy, what might you be able to do with it?",
-      "WIP ITEM. You can use it, but it hasn't been fully implemented yet.",
-      "ENTER AT YOUR OWN RISK (MIGHT CRASH)§ksee you later",
-      "§ksonic and knuckles on the sega genesis"
+      "It cangles!",
+      "The fish is absolutely delicious, but toxic if consumed incorrectly."
     ],
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedOnBlock": {
-      "name": "BluekeySpawn"
+    "onFinishUsingItem": {
+      "name": "CanglerConsumeRaw"
     },
-    "isFood": false,
-    "nutritionalValue": 0,
-    "saturation": 0.30000001192092896,
+    "isFood": true,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
     "eatResultItem": {
       "value": ""
     },
-    "isMeat": false,
+    "isMeat": true,
     "isAlwaysEdible": false,
     "animation": "eat"
   }

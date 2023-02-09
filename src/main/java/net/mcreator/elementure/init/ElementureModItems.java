@@ -164,6 +164,7 @@ import net.mcreator.elementure.item.RimecormunculusChannelerItem;
 import net.mcreator.elementure.item.RimeboidFoodItem;
 import net.mcreator.elementure.item.ReinforcedfishingrodItem;
 import net.mcreator.elementure.item.RegensubstanceItem;
+import net.mcreator.elementure.item.RedstonefishItem;
 import net.mcreator.elementure.item.RedseafoambladeItem;
 import net.mcreator.elementure.item.RedseafoamaxeItem;
 import net.mcreator.elementure.item.RedseafoamarmorItem;
@@ -464,6 +465,7 @@ import net.mcreator.elementure.item.FlutaniteaxeItem;
 import net.mcreator.elementure.item.FlutanitearmorItem;
 import net.mcreator.elementure.item.FlashskillItem;
 import net.mcreator.elementure.item.FlameheartartifactItem;
+import net.mcreator.elementure.item.FishnchipsItem;
 import net.mcreator.elementure.item.FishingrecordItem;
 import net.mcreator.elementure.item.FireswordItem;
 import net.mcreator.elementure.item.FiresoulItem;
@@ -623,6 +625,7 @@ import net.mcreator.elementure.item.ChalicepotionItem;
 import net.mcreator.elementure.item.ChaliceofFishingPowerItem;
 import net.mcreator.elementure.item.CausticbladeItem;
 import net.mcreator.elementure.item.CarpItem;
+import net.mcreator.elementure.item.CanglerItem;
 import net.mcreator.elementure.item.CandlestickItem;
 import net.mcreator.elementure.item.CalmingbladeItem;
 import net.mcreator.elementure.item.ButterflybudnectartreatItem;
@@ -2684,6 +2687,9 @@ public class ElementureModItems {
 			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
 	public static final RegistryObject<Item> BOARDINGSCHOOL_WHITE_BRICK_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_WHITE_BRICK_SLABS,
 			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> CANGLER = REGISTRY.register("cangler", () -> new CanglerItem());
+	public static final RegistryObject<Item> FISHNCHIPS = REGISTRY.register("fishnchips", () -> new FishnchipsItem());
+	public static final RegistryObject<Item> REDSTONEFISH = REGISTRY.register("redstonefish", () -> new RedstonefishItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

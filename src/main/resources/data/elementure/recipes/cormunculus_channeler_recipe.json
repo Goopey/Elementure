@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "elementure:darkgemshard"
+    },
+    "1": {
+      "item": "elementure:cormunculusblock"
+    },
+    "2": {
+      "item": "elementure:cormunculusblock"
+    }
+  },
+  "result": {
+    "item": "elementure:cormunculus_channeler",
+    "count": 1
+  }
+}

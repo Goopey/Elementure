@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "tag": "elementure/glasslightbrewer_ingredient"
+    },
+    "1": {
+      "item": "elementure:cormunculus_channeler"
+    },
+    "2": {
+      "item": "elementure:darkgemshard"
+    }
+  },
+  "result": {
+    "item": "elementure:rimecormunculus_channeler",
+    "count": 1
+  }
+}

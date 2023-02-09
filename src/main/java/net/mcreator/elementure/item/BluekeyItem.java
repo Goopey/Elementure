@@ -32,7 +32,7 @@ public class BluekeyItem extends Item {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(new TextComponent("\u00A7l\u00A71A super-rare key. It trembles with energy, what might you be able to do with it?"));
 		list.add(new TextComponent("WIP ITEM. You can use it, but it hasn't been fully implemented yet."));
-		list.add(new TextComponent("\u00A7ksee you later"));
+		list.add(new TextComponent("ENTER AT YOUR OWN RISK (MIGHT CRASH)\u00A7ksee you later"));
 		list.add(new TextComponent("\u00A7ksonic and knuckles on the sega genesis"));
 	}
 

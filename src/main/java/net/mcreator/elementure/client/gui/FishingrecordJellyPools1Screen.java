@@ -13,8 +13,10 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.elementure.world.inventory.FishingrecordJellyPools1Menu;
 import net.mcreator.elementure.procedures.ShaubConfirmProcedure;
+import net.mcreator.elementure.procedures.RedstonefishConfirmProcedure;
 import net.mcreator.elementure.procedures.PacificshaubConfirmProcedure;
 import net.mcreator.elementure.procedures.DeactivateSlotProcedure;
+import net.mcreator.elementure.procedures.CanglerConfirmProcedure;
 import net.mcreator.elementure.procedures.AggressiveshaubConfirmProcedure;
 import net.mcreator.elementure.network.FishingrecordJellyPools1ButtonMessage;
 import net.mcreator.elementure.ElementureMod;
@@ -70,14 +72,12 @@ public class FishingrecordJellyPools1Screen extends AbstractContainerScreen<Fish
 		RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/inventory_slot_texture.png"));
 		this.blit(ms, this.leftPos + -23, this.topPos + 54, 0, 0, 18, 18, 18, 18);
 
-		if (DeactivateSlotProcedure.execute()) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/inventory_slot_texture.png"));
-			this.blit(ms, this.leftPos + -23, this.topPos + 76, 0, 0, 18, 18, 18, 18);
-		}
-		if (DeactivateSlotProcedure.execute()) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/inventory_slot_texture.png"));
-			this.blit(ms, this.leftPos + -23, this.topPos + 98, 0, 0, 18, 18, 18, 18);
-		}
+		RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/inventory_slot_texture.png"));
+		this.blit(ms, this.leftPos + -23, this.topPos + 76, 0, 0, 18, 18, 18, 18);
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/inventory_slot_texture.png"));
+		this.blit(ms, this.leftPos + -23, this.topPos + 98, 0, 0, 18, 18, 18, 18);
+
 		if (DeactivateSlotProcedure.execute()) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/inventory_slot_texture.png"));
 			this.blit(ms, this.leftPos + -23, this.topPos + 120, 0, 0, 18, 18, 18, 18);
@@ -109,6 +109,22 @@ public class FishingrecordJellyPools1Screen extends AbstractContainerScreen<Fish
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/aggressive_shaub.png"));
 		this.blit(ms, this.leftPos + -4, this.topPos + 55, 0, 0, 16, 16, 16, 16);
+
+		if (RedstonefishConfirmProcedure.execute(entity)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/green_checkmark.png"));
+			this.blit(ms, this.leftPos + -20, this.topPos + 79, 0, 0, 12, 12, 12, 12);
+		}
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/red_stonefish.png"));
+		this.blit(ms, this.leftPos + -4, this.topPos + 77, 0, 0, 16, 16, 16, 16);
+
+		if (CanglerConfirmProcedure.execute(entity)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/green_checkmark.png"));
+			this.blit(ms, this.leftPos + -20, this.topPos + 101, 0, 0, 12, 12, 12, 12);
+		}
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/cangler.png"));
+		this.blit(ms, this.leftPos + -4, this.topPos + 99, 0, 0, 16, 16, 16, 16);
 
 		if (DeactivateSlotProcedure.execute()) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/inventory_slot_texture.png"));

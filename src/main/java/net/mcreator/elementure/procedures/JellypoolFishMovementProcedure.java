@@ -84,6 +84,74 @@ public class JellypoolFishMovementProcedure {
 				}
 			}
 		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("cangler")) {
+			if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new ElementureModVariables.PlayerVariables())).firstfishlaunch) {
+				{
+					double _setval = 140;
+					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.bobberPos = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+			FishingbaseMovementProcedure.execute(entity, 36, 8, 10, 5, 0);
+			if (BobberReelingGoodProcedure.execute(entity)) {
+				{
+					double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ElementureModVariables.PlayerVariables())).reelingTimer - 2;
+					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.reelingTimer = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			} else {
+				{
+					double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ElementureModVariables.PlayerVariables())).reelingTimer + 2;
+					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.reelingTimer = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+			if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new ElementureModVariables.PlayerVariables())).bobberPos > (entity
+							.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ElementureModVariables.PlayerVariables())).fishPos) {
+				{
+					double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ElementureModVariables.PlayerVariables())).fishSpeed + 1;
+					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.fishSpeed = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			} else if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new ElementureModVariables.PlayerVariables())).bobberPos < (entity
+							.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ElementureModVariables.PlayerVariables())).fishPos) {
+				{
+					double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+							.orElse(new ElementureModVariables.PlayerVariables())).fishSpeed - 1;
+					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.fishSpeed = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+			}
+		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("redStonefish")) {
+			FishingbaseMovementProcedure.execute(entity, 24, 5, 12, 7, 4);
+			{
+				double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+						.orElse(new ElementureModVariables.PlayerVariables())).reelingTimer - 0.2;
+				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.reelingTimer = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("aggressiveShaub")) {
 			if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 					.orElse(new ElementureModVariables.PlayerVariables())).fishingWait <= 0) {

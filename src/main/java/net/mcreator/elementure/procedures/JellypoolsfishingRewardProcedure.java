@@ -25,6 +25,26 @@ public class JellypoolsfishingRewardProcedure {
 			if (world instanceof Level _level && !_level.isClientSide())
 				_level.addFreshEntity(new ExperienceOrb(_level, (entity.getX()), (entity.getY()), (entity.getZ()), 4));
 		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("redStonefish")) {
+			if (world instanceof Level _level && !_level.isClientSide()) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
+						new ItemStack(ElementureModItems.REDSTONEFISH.get()));
+				entityToSpawn.setPickUpDelay(4);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (world instanceof Level _level && !_level.isClientSide())
+				_level.addFreshEntity(new ExperienceOrb(_level, (entity.getX()), (entity.getY()), (entity.getZ()), 15));
+		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("cangler")) {
+			if (world instanceof Level _level && !_level.isClientSide()) {
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
+						new ItemStack(ElementureModItems.CANGLER.get()));
+				entityToSpawn.setPickUpDelay(4);
+				_level.addFreshEntity(entityToSpawn);
+			}
+			if (world instanceof Level _level && !_level.isClientSide())
+				_level.addFreshEntity(new ExperienceOrb(_level, (entity.getX()), (entity.getY()), (entity.getZ()), 14));
+		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("aggressiveShaub")) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),

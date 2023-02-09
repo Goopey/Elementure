@@ -26,8 +26,6 @@ public class SpacegoopSlingProcedure {
 			return;
 		if ((sourceentity.getDisplayName().getString()).equals("mega1134227") || (sourceentity.getDisplayName().getString()).equals("Dev")) {
 			entity.setDeltaMovement(new Vec3(0, 12, 0));
-			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 6000, 4));
 			new Object() {
 				private int ticks = 0;
 				private float waitTicks;
@@ -49,6 +47,8 @@ public class SpacegoopSlingProcedure {
 				}
 
 				private void run() {
+					if (entity instanceof LivingEntity _entity)
+						_entity.addEffect(new MobEffectInstance(MobEffects.SLOW_FALLING, 6000, 4));
 					entity.setDeltaMovement(new Vec3(0, 0, 0));
 					MinecraftForge.EVENT_BUS.unregister(this);
 				}

@@ -18,6 +18,7 @@ import net.mcreator.elementure.procedures.SmallbrumconfirmProcedure;
 import net.mcreator.elementure.procedures.PipconfirmProcedure;
 import net.mcreator.elementure.procedures.PacuconfirmProcedure;
 import net.mcreator.elementure.procedures.MidnighthalibutConfirmProcedure;
+import net.mcreator.elementure.procedures.MidnighteelConfirmProcedure;
 import net.mcreator.elementure.procedures.MelshconfirmProcedure;
 import net.mcreator.elementure.procedures.MaxtrahiraconfirmProcedure;
 import net.mcreator.elementure.procedures.HalibutconfirmProcedure;
@@ -226,10 +227,9 @@ public class FishingrecordRegular1Screen extends AbstractContainerScreen<Fishing
 		RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/deadbrum.png"));
 		this.blit(ms, this.leftPos + 47, this.topPos + 143, 0, 0, 16, 16, 16, 16);
 
-		if (DeactivateSlotProcedure.execute()) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/inventory_slot_texture.png"));
-			this.blit(ms, this.leftPos + 84, this.topPos + 10, 0, 0, 18, 18, 18, 18);
-		}
+		RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/inventory_slot_texture.png"));
+		this.blit(ms, this.leftPos + 84, this.topPos + 10, 0, 0, 18, 18, 18, 18);
+
 		if (DeactivateSlotProcedure.execute()) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/inventory_slot_texture.png"));
 			this.blit(ms, this.leftPos + 84, this.topPos + 32, 0, 0, 18, 18, 18, 18);
@@ -250,6 +250,14 @@ public class FishingrecordRegular1Screen extends AbstractContainerScreen<Fishing
 			RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/inventory_slot_texture.png"));
 			this.blit(ms, this.leftPos + 84, this.topPos + 120, 0, 0, 18, 18, 18, 18);
 		}
+		if (MidnighteelConfirmProcedure.execute(entity)) {
+			RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/green_checkmark.png"));
+			this.blit(ms, this.leftPos + 87, this.topPos + 13, 0, 0, 12, 12, 12, 12);
+		}
+
+		RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/midnight_eel.png"));
+		this.blit(ms, this.leftPos + 104, this.topPos + 11, 0, 0, 16, 16, 16, 16);
+
 		if (DeactivateSlotProcedure.execute()) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/inventory_slot_texture.png"));
 			this.blit(ms, this.leftPos + 137, this.topPos + 10, 0, 0, 18, 18, 18, 18);

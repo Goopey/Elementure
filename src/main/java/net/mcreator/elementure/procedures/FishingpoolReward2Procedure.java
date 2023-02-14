@@ -11,6 +11,6 @@ public class FishingpoolReward2Procedure {
 		VoidfishingpoolRewardProcedure.execute(world, entity);
 		NetherstarpoolRewardProcedure.execute(world, entity);
 		CrabfishingpoolRewardProcedure.execute(world, entity);
-		DungeonwaterFishingRewardsProcedure.execute(world, entity);
+		FishingpoolReward3Procedure.execute(world, entity);
 	}
 }

@@ -490,9 +490,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "displayCondition": {
-            "name": "DeactivateSlot"
-          },
           "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 45
@@ -561,6 +558,29 @@
           "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 155
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "green_checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "MidnighteelConfirm"
+          },
+          "name": "green_checkmark.png",
+          "x": 213,
+          "y": 48
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "midnight_eel.png",
+          "use1Xscale": false,
+          "name": "midnight_eel.png",
+          "x": 230,
+          "y": 46
         }
       },
       {

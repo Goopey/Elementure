@@ -58,43 +58,20 @@ public class Customfishingpool2Procedure {
 						}
 					}.getValue(world, new BlockPos(entityiterator.getX(), -64, entityiterator.getZ()), "jellyfloatUsed")) {
 						JellypoolsFishingPoolProcedure.execute(world, entity);
+					} else if (new Object() {
+						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
+							BlockEntity blockEntity = world.getBlockEntity(pos);
+							if (blockEntity != null)
+								return blockEntity.getTileData().getBoolean(tag);
+							return false;
+						}
+					}.getValue(world, new BlockPos(entityiterator.getX(), -64, entityiterator.getZ()), "diverscrownUsed")) {
+						DiverscrownFishingPoolProcedure.execute(entity);
 					} else if ((world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 0.5, entityiterator.getZ())))
 							.is(BlockTags.create(new ResourceLocation("forge:lavafishingblocks")))) {
 						LavafishingpoolProcedure.execute(entity);
-					} else if (new ResourceLocation("ocean")
-							.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-									.getRegistryName())
-							|| new ResourceLocation("lukewarm_ocean")
-									.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-											.getRegistryName())
-							|| new ResourceLocation("warm_ocean")
-									.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-											.getRegistryName())
-							|| new ResourceLocation("frozen_ocean")
-									.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-											.getRegistryName())
-							|| new ResourceLocation("cold_ocean")
-									.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-											.getRegistryName())) {
-						OceanfishingpoolProcedure.execute(world, entity);
-					} else if (new ResourceLocation("deep_ocean")
-							.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-									.getRegistryName())
-							|| new ResourceLocation("deep_lukewarm_ocean")
-									.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-											.getRegistryName())
-							|| new ResourceLocation("warm_ocean")
-									.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-											.getRegistryName())
-							|| new ResourceLocation("deep_frozen_ocean")
-									.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-											.getRegistryName())
-							|| new ResourceLocation("deep_cold_ocean")
-									.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-											.getRegistryName())) {
-						DeepOceanfishingpoolProcedure.execute(world, entity);
 					} else {
-						RiverFishingPoolProcedure.execute(world, entity);
+						Customfishingpool3Procedure.execute(world, entity);
 					}
 				}
 			}

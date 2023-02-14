@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.effect.MobEffect;
 
+import net.mcreator.elementure.potion.SwingspeedMobEffect;
 import net.mcreator.elementure.potion.StarburnsMobEffect;
 import net.mcreator.elementure.potion.ParryMobEffect;
 import net.mcreator.elementure.potion.ParryFatigueMobEffect;
@@ -53,4 +54,5 @@ public class ElementureModMobEffects {
 	public static final RegistryObject<MobEffect> DARKFLAME = REGISTRY.register("darkflame", () -> new DarkflameMobEffect());
 	public static final RegistryObject<MobEffect> BUBBLED_EFFECT = REGISTRY.register("bubbled_effect", () -> new BubbledEffectMobEffect());
 	public static final RegistryObject<MobEffect> BUBBLING_EFFECT = REGISTRY.register("bubbling_effect", () -> new BubblingEffectMobEffect());
+	public static final RegistryObject<MobEffect> SWINGSPEED = REGISTRY.register("swingspeed", () -> new SwingspeedMobEffect());
 }

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "experience": 4,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "elementure:raredaggerloach"
+  },
+  "result": "elementure:cookedraredaggerloach"
+}

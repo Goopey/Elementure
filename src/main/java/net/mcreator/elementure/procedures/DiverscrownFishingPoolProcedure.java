@@ -15,12 +15,22 @@ public class DiverscrownFishingPoolProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		{
-			String _setval = "rimeboid";
-			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.chosenFish = _setval;
-				capability.syncPlayerVariables(entity);
-			});
+		if (Math.random() < 0.3) {
+			{
+				String _setval = "rimeBoid";
+				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.chosenFish = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else {
+			{
+				String _setval = "purpleTrouish";
+				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.chosenFish = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 }

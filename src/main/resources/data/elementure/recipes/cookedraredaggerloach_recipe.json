@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 4,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "elementure:raredaggerloach"
+  },
+  "result": "elementure:cookedraredaggerloach"
+}

@@ -72394,6 +72394,473 @@
       "locked_code": false,
       "registry_name": "rimecormunculuschanneler_recipe",
       "path": "~/Weapons/Casters"
+    },
+    {
+      "name": "Purpletrouish",
+      "type": "item",
+      "sortid": 4906,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpletrouish",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "MidnighteelConfirm",
+      "type": "procedure",
+      "sortid": 4907,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "midnighteel_confirm",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/Fishingbook"
+    },
+    {
+      "name": "PurpletrouishdarkgemRecipe",
+      "type": "recipe",
+      "sortid": 4908,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpletrouishdarkgem_recipe",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "DiverscrownfishingIsDiverscrownFishing",
+      "type": "procedure",
+      "sortid": 4909,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diverscrownfishing_is_diverscrown_fishing",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "DiverscrownOverlay",
+      "type": "overlay",
+      "sortid": 4910,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diverscrown_overlay",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "Diverscrownpoolreward",
+      "type": "procedure",
+      "sortid": 4911,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diverscrownpoolreward",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "FishingpoolReward3",
+      "type": "procedure",
+      "sortid": 4912,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fishingpool_reward_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Fishing"
+    },
+    {
+      "name": "Customfishingpool3",
+      "type": "procedure",
+      "sortid": 4913,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "customfishingpool_3",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Fishing"
+    },
+    {
+      "name": "CavefishingPool",
+      "type": "procedure",
+      "sortid": 4914,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cavefishing_pool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/CaveFish"
+    },
+    {
+      "name": "DeepcavefishingPool",
+      "type": "procedure",
+      "sortid": 4915,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "deepcavefishing_pool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/CaveFish"
+    },
+    {
+      "name": "PurpletrouishOverlay",
+      "type": "overlay",
+      "sortid": 4916,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "purpletrouish_overlay",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "PurpletrouishDisplay",
+      "type": "procedure",
+      "sortid": 4917,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpletrouish_display",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "DiverscrownMovement",
+      "type": "procedure",
+      "sortid": 4918,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diverscrown_movement",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "PurpletrouishFuel",
+      "type": "itemextension",
+      "sortid": 4919,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpletrouish_fuel",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "Daggerloach",
+      "type": "item",
+      "sortid": 4920,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daggerloach",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "Raredaggerloach",
+      "type": "item",
+      "sortid": 4921,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raredaggerloach",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "Redsnapper",
+      "type": "item",
+      "sortid": 4922,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redsnapper",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "Mountainbrum",
+      "type": "item",
+      "sortid": 4923,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mountainbrum",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "CookedmuntainbrumRecipe",
+      "type": "recipe",
+      "sortid": 4924,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookedmuntainbrum_recipe",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "Tarwormling",
+      "type": "item",
+      "sortid": 4925,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tarwormling",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "CormunculusJelly",
+      "type": "item",
+      "sortid": 4926,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cormunculus_jelly",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "CookedmountainbrumRecipeSmoker",
+      "type": "recipe",
+      "sortid": 4927,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookedmountainbrum_recipe_smoker",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "Cookeddaggerloach",
+      "type": "item",
+      "sortid": 4928,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookeddaggerloach",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "Cookedraredaggerloach",
+      "type": "item",
+      "sortid": 4929,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookedraredaggerloach",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "CookeddaggerloachRecipe",
+      "type": "recipe",
+      "sortid": 4930,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookeddaggerloach_recipe",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "CookeddaggerloachRecipeSmoker",
+      "type": "recipe",
+      "sortid": 4931,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookeddaggerloach_recipe_smoker",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "CookedraredaggerloachRecipe",
+      "type": "recipe",
+      "sortid": 4932,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookedraredaggerloach_recipe",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "CookedraredaggerloachRecipeSmoker",
+      "type": "recipe",
+      "sortid": 4933,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookedraredaggerloach_recipe_smoker",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "CookedredsnapperEffect",
+      "type": "procedure",
+      "sortid": 4934,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookedredsnapper_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "Cookedredsnapper",
+      "type": "item",
+      "sortid": 4934,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookedredsnapper",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "CookedredsnapperRecipe",
+      "type": "recipe",
+      "sortid": 4935,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookedredsnapper_recipe",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "CookedredsnapperRecipeSmoker",
+      "type": "recipe",
+      "sortid": 4936,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookedredsnapper_recipe_smoker",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "DaggerloachDisplay",
+      "type": "procedure",
+      "sortid": 4937,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daggerloach_display",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "RaredaggerloachDisplay",
+      "type": "procedure",
+      "sortid": 4938,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raredaggerloach_display",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "Swingspeed",
+      "type": "potioneffect",
+      "sortid": 4939,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swingspeed"
+    },
+    {
+      "name": "SwingspeedEffect",
+      "type": "procedure",
+      "sortid": 4940,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swingspeed_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amplifier",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SwingspeedRemoveEffect",
+      "type": "procedure",
+      "sortid": 4941,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swingspeed_remove_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "amplifier",
+            "type": "number"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -73400,6 +73867,7 @@
       "tile.emeraldiumore.name": "Mana ore",
       "item.cobaltarmorhelmet.name": "Cobalt Helmet",
       "item.merthiumarmorlegs.name": "Merthium Leggings",
+      "item.elementure.cookeddaggerloach": "Cooked dagger loach",
       "item.elementure.bladeoftheoldendays": "Blade of the olden days... [N-E-Time]",
       "item.minecraft_worlds.unholyhoe": "Unholy hoe",
       "entity.plasmawraith.name": "Plasma wraith",
@@ -73816,6 +74284,7 @@
       "item.elementure.soulobleck_spawn_egg": "Soul obleck Spawn Egg",
       "block.elementure.airruneblock": "Air rune block",
       "item.minecraft_worlds.abyssalemblem": "Abyssal emblem",
+      "item.elementure.tarwormling": "Tar wormling",
       "item.elementure.undead_delight": "Undead Delight [Dark]",
       "item.minecraft_worlds.blackbarrierkey": "Black barrier key",
       "item.elementure.mycenashroomal_spawn_egg": "Mycena shroomal Spawn Egg",
@@ -74934,6 +75403,7 @@
       "item.elementure.dragonitescalemail_boots": "Dragonewt Scalemail Boots",
       "block.elementure.cut_cloud_sandstone_stairs": "Cut Cloud Sandstone Stairs",
       "item.emeraldbow.name": "Emerald bow",
+      "item.elementure.mountainbrum": "Mountain brum",
       "item.energyblade.name": "Energy blade",
       "entity.northwind.name": "North wind",
       "itemGroup.tabtabmoddedarmor": "Modded armor",
@@ -75338,6 +75808,7 @@
       "item.elementure.greenbarrierkey": "Green barrier key",
       "block.elementure.pinkrimevine": "Pink rimevine",
       "block.elementure.netherbutton": "Nether button",
+      "item.elementure.daggerloach": "Dagger loach",
       "entity.elementure.greenjellyfloat": "Green Jelly",
       "item.noobiumboots.name": "Noobium Boots",
       "block.elementure.netherstar_biome_alphan": "Netherstar Biome Alphan",
@@ -75713,6 +76184,7 @@
       "item.minecraft_worlds.mycenanscepter": "Mycenan scepter",
       "item.elementure.bubbleblaster": "Bubble blaster [Water]",
       "entity.minecraft_worlds.weakdioriteelemental": "Small diorite elemental",
+      "effect.elementure.swingspeed": "Quick Swipe",
       "enchantment.elementure.darksmite": "Dark Smite",
       "block.elementure.netheriteore": "Netherite ore",
       "block.elementure.greenslimesprout": "Green slime sprout",
@@ -75892,6 +76364,7 @@
       "block.elementure.animochromaticprismaticcrystalblock": "Prismatic crystal",
       "block.minecraft_worlds.tier1harvestedfireelement": "Weak harvested fire element",
       "block.elementure.resistancestar": "Demon star",
+      "item.elementure.cookedraredaggerloach": "Cooked rare dagger loach",
       "item.elementure.netherum_titan_spawn_egg": "Netherum Titan Spawn Egg",
       "item.fireballprop.name": "Fire ball prop",
       "item.rottenchunk.name": "Rotten chunk",
@@ -76156,12 +76629,14 @@
       "item.elementure.mycenafumoonspore_spawn_egg": "Mycena fumoon spore Spawn Egg",
       "item.minecraft_worlds.vamitearmor_chestplate": "Vamite Body",
       "item.elementure.strawberry": "Salberry",
+      "item.elementure.redsnapper": "Red snapper",
       "block.minecraft_worlds.corruptgrassplant": "Corrupt grass",
       "item.elementure.candlestick": "Candlestick [Fire]",
       "block.elementure.fireliquid": "Fireliquid",
       "entity.testenvironmentmod.icepillar.name": "Ice pillar",
       "entity.testenvironmentmod.metalicana.name": "Metalicana",
       "item.cursersoul.name": "Curser\u0027s soul",
+      "item.elementure.raredaggerloach": "Rare dagger loach",
       "block.elementure.tier_1harvestedairelement": "Weak air element harvested",
       "item.minecraft_worlds.hollowknightmask_helmet": "Knightly Helmet",
       "item.minecraft_worlds.regensubstance_bucket": "Regensubstance Bucket",
@@ -76444,6 +76919,7 @@
       "item.elementure.noobium_helmet": "Noobium Helmet",
       "entity.elementure.netherumleaper": "Netherum leaper",
       "tile.corruptblock.name": "Corrupt block",
+      "item.elementure.purpletrouish": "Purple trouish",
       "block.minecraft_worlds.greenbarrier": "Green barrier",
       "item.enderblastskill.name": "Ender blast skill",
       "item.elementure.merthiumpickaxe": "Merthium pickaxe",
@@ -76770,6 +77246,7 @@
       "entity.elementure.scrapguardian": "Scrap guardian",
       "block.elementure.mycenabrick_pot": "Mycena brick pot",
       "item.minecraft_worlds.thebluebox": "The blue box",
+      "item.elementure.cookedredsnapper": "Cooked red snapper",
       "block.elementure.deepbrine": "Deep brine",
       "tile.orangebarrier.name": "Orange barrier",
       "item.elementure.ferziumingot": "Ferzium ingot [Fire]",
@@ -76937,6 +77414,7 @@
       "block.elementure.lilypadplanks_fence": "Lily pad planks Fence",
       "item.elementure.netherquartzcharger_spawn_egg": "Nether quartz charger Spawn Egg",
       "block.elementure.boardingschool_planks": "Boarding school planks",
+      "item.elementure.cormunculus_jelly": "Cormunculus Jelly",
       "tile.airruneblock.name": "Air rune block",
       "entity.destroyer.name": "Broken destroyer",
       "item.dustfluxsword.name": "Dustflux sword [Void]",
@@ -77174,6 +77652,10 @@
           },
           {
             "name": "WindyshoresFish",
+            "children": []
+          },
+          {
+            "name": "CaveFish",
             "children": []
           }
         ]

@@ -1,0 +1,23 @@
+{
+  "_fv": 34,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Quick Swipe",
+    "icon": "quickened_swings.png",
+    "color": {
+      "value": -16737793,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "SwingspeedEffect"
+    },
+    "onExpired": {
+      "name": "SwingspeedRemoveEffect"
+    }
+  }
+}

@@ -72861,6 +72861,391 @@
           }
         ]
       }
+    },
+    {
+      "name": "MountainbrumDisplay",
+      "type": "procedure",
+      "sortid": 4942,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mountainbrum_display",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "TarwormlingDisplay",
+      "type": "procedure",
+      "sortid": 4943,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tarwormling_display",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "RedsnapperDisplay",
+      "type": "procedure",
+      "sortid": 4944,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redsnapper_display",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "CormunculusjellyDisplay",
+      "type": "procedure",
+      "sortid": 4945,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cormunculusjelly_display",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "CookeddaggerloachEffect",
+      "type": "procedure",
+      "sortid": 4946,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookeddaggerloach_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "CookedraredaggerloachEffect",
+      "type": "procedure",
+      "sortid": 4947,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cookedraredaggerloach_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "Fishingrecord2",
+      "type": "gui",
+      "sortid": 4948,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fishingrecord_2",
+      "path": "~/Fishing/Fishingbook"
+    },
+    {
+      "name": "Openfishingrecord2",
+      "type": "procedure",
+      "sortid": 4949,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "openfishingrecord_2",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Fishing/Fishingbook"
+    },
+    {
+      "name": "Openfishingrecord1",
+      "type": "procedure",
+      "sortid": 4950,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "openfishingrecord_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Fishing/Fishingbook"
+    },
+    {
+      "name": "FishingrecordDiverscrown",
+      "type": "gui",
+      "sortid": 4951,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fishingrecord_diverscrown",
+      "path": "~/Fishing/Fishingbook"
+    },
+    {
+      "name": "DiverscrownOpen",
+      "type": "procedure",
+      "sortid": 4952,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diverscrown_open",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Fishing/Fishingbook"
+    },
+    {
+      "name": "RimeboidConfirm",
+      "type": "procedure",
+      "sortid": 4953,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rimeboid_confirm",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/Fishingbook"
+    },
+    {
+      "name": "PurpletrahiraConfirm",
+      "type": "procedure",
+      "sortid": 4954,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "purpletrahira_confirm",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/Fishingbook"
+    },
+    {
+      "name": "DaggerloachConfirm",
+      "type": "procedure",
+      "sortid": 4955,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "daggerloach_confirm",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/Fishingbook"
+    },
+    {
+      "name": "RaredaggerloachConfirm",
+      "type": "procedure",
+      "sortid": 4956,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raredaggerloach_confirm",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/Fishingbook"
+    },
+    {
+      "name": "MountainbrumConfirm",
+      "type": "procedure",
+      "sortid": 4957,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mountainbrum_confirm",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/Fishingbook"
+    },
+    {
+      "name": "RedsnapperConfirm",
+      "type": "procedure",
+      "sortid": 4958,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "redsnapper_confirm",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/Fishingbook"
+    },
+    {
+      "name": "TarwormlingConfirm",
+      "type": "procedure",
+      "sortid": 4959,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tarwormling_confirm",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/Fishingbook"
+    },
+    {
+      "name": "CormunculusjellyConfirm",
+      "type": "procedure",
+      "sortid": 4960,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cormunculusjelly_confirm",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Fishing/Fishingbook"
+    },
+    {
+      "name": "TarwormlingOverlay",
+      "type": "overlay",
+      "sortid": 4961,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "tarwormling_overlay",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "CormunculusJellyOverlay",
+      "type": "overlay",
+      "sortid": 4962,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "cormunculus_jelly_overlay",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "DaggerloachOverlay",
+      "type": "overlay",
+      "sortid": 4963,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "daggerloach_overlay",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "RaredaggerloachOverlay",
+      "type": "overlay",
+      "sortid": 4964,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "raredaggerloach_overlay",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "RedsnapperOverlay",
+      "type": "overlay",
+      "sortid": 4965,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "redsnapper_overlay",
+      "path": "~/Fishing/DiversCrownFish"
+    },
+    {
+      "name": "MountainbrumOverlay",
+      "type": "overlay",
+      "sortid": 4966,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "mountainbrum_overlay",
+      "path": "~/Fishing/DiversCrownFish"
     }
   ],
   "variable_elements": [

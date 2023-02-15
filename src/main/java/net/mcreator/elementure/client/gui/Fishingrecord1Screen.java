@@ -127,31 +127,31 @@ public class Fishingrecord1Screen extends AbstractContainerScreen<Fishingrecord1
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 9, this.topPos + 22, 70, 20, new TextComponent("Legendary"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + 22, 70, 20, new TextComponent("Legendary"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(1, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 9, this.topPos + 47, 70, 20, new TextComponent("Lava Fish"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + 47, 70, 20, new TextComponent("Lava Fish"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(2, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 9, this.topPos + 72, 70, 20, new TextComponent("Void Fish"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + 72, 70, 20, new TextComponent("Void Fish"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(3, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 14, this.topPos + 97, 65, 20, new TextComponent("Diseased"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + -4, this.topPos + 97, 65, 20, new TextComponent("Diseased"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(4, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 24, this.topPos + 122, 55, 20, new TextComponent("Mycena"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + -4, this.topPos + 122, 55, 20, new TextComponent("Mycena"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(5, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 5, x, y, z);
@@ -185,6 +185,12 @@ public class Fishingrecord1Screen extends AbstractContainerScreen<Fishingrecord1
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(10, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 10, x, y, z);
+			}
+		}));
+		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 122, 46, 20, new TextComponent("Next"), e -> {
+			if (true) {
+				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(11, x, y, z));
+				Fishingrecord1ButtonMessage.handleButtonAction(entity, 11, x, y, z);
 			}
 		}));
 	}

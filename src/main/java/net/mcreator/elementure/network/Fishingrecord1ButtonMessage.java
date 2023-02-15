@@ -20,6 +20,7 @@ import net.mcreator.elementure.procedures.Opennetherstarfish1Procedure;
 import net.mcreator.elementure.procedures.Openmycenafish1Procedure;
 import net.mcreator.elementure.procedures.OpenlegendaryfishProcedure;
 import net.mcreator.elementure.procedures.Openlavafish1Procedure;
+import net.mcreator.elementure.procedures.Openfishingrecord2Procedure;
 import net.mcreator.elementure.procedures.Opendiseasedfish1Procedure;
 import net.mcreator.elementure.procedures.Jellypoolsopen1Procedure;
 import net.mcreator.elementure.procedures.DungeonwaterrecordOpenProcedure;
@@ -115,6 +116,10 @@ public class Fishingrecord1ButtonMessage {
 		if (buttonID == 10) {
 
 			OpenwindyshoresProcedure.execute(world, entity);
+		}
+		if (buttonID == 11) {
+
+			Openfishingrecord2Procedure.execute(world, entity);
 		}
 	}
 

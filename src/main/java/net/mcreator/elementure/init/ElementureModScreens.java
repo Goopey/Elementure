@@ -36,7 +36,9 @@ import net.mcreator.elementure.client.gui.FishingrecordLegendary1Screen;
 import net.mcreator.elementure.client.gui.FishingrecordLava1Screen;
 import net.mcreator.elementure.client.gui.FishingrecordJellyPools1Screen;
 import net.mcreator.elementure.client.gui.FishingrecordDungeonwaterScreen;
+import net.mcreator.elementure.client.gui.FishingrecordDiverscrownScreen;
 import net.mcreator.elementure.client.gui.FishingrecordDiseased1Screen;
+import net.mcreator.elementure.client.gui.Fishingrecord2Screen;
 import net.mcreator.elementure.client.gui.Fishingrecord1Screen;
 import net.mcreator.elementure.client.gui.DemonheartGUIScreen;
 import net.mcreator.elementure.client.gui.CustomfishingrodInventoryScreen;
@@ -87,6 +89,8 @@ public class ElementureModScreens {
 			MenuScreens.register(ElementureModMenus.NANOSHRIMP_GUI, NanoshrimpGUIScreen::new);
 			MenuScreens.register(ElementureModMenus.MUSICPLAYER_GUI_3, MusicplayerGUI3Screen::new);
 			MenuScreens.register(ElementureModMenus.FISHINGRECORD_WINDYSHORES, FishingrecordWindyshoresScreen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_2, Fishingrecord2Screen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_DIVERSCROWN, FishingrecordDiverscrownScreen::new);
 		});
 	}
 }

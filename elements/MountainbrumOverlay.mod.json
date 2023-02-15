@@ -1,0 +1,61 @@
+{
+  "_fv": 34,
+  "_type": "overlay",
+  "definition": {
+    "priority": "LOW",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "mountainbrum.png",
+          "use1Xscale": false,
+          "name": "mountainbrum.png",
+          "x": 156,
+          "y": 188
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "boulder_fishing.png",
+          "use1Xscale": false,
+          "name": "boulder_fishing.png",
+          "x": 142,
+          "y": 164
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "boulder_fishing.png",
+          "use1Xscale": false,
+          "name": "boulder_fishing.png",
+          "x": 142,
+          "y": 24
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "boulder_fishing.png",
+          "use1Xscale": false,
+          "name": "boulder_fishing.png",
+          "x": 142,
+          "y": 110
+        }
+      }
+    ],
+    "baseTexture": "",
+    "overlayTarget": "Ingame",
+    "displayCondition": {
+      "name": "MountainbrumDisplay"
+    },
+    "gridSettings": {
+      "sx": 4,
+      "sy": 4,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

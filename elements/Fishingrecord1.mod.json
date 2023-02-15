@@ -64,7 +64,7 @@
           "width": 70,
           "height": 20,
           "name": "Legendary",
-          "x": 135,
+          "x": 120,
           "y": 68
         }
       },
@@ -78,7 +78,7 @@
           "width": 70,
           "height": 20,
           "name": "Lava Fish",
-          "x": 135,
+          "x": 120,
           "y": 93
         }
       },
@@ -102,7 +102,7 @@
           "width": 70,
           "height": 20,
           "name": "Void Fish",
-          "x": 135,
+          "x": 120,
           "y": 118
         }
       },
@@ -126,7 +126,7 @@
           "width": 65,
           "height": 20,
           "name": "Diseased",
-          "x": 140,
+          "x": 121,
           "y": 143
         }
       },
@@ -160,7 +160,7 @@
           "width": 55,
           "height": 20,
           "name": "Mycena",
-          "x": 150,
+          "x": 121,
           "y": 168
         }
       },
@@ -282,6 +282,20 @@
           "name": "Windy Shores",
           "x": 243,
           "y": 143
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next",
+          "onClick": {
+            "name": "Openfishingrecord2"
+          },
+          "width": 46,
+          "height": 20,
+          "name": "Next",
+          "x": 243,
+          "y": 168
         }
       }
     ],

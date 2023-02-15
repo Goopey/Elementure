@@ -8,6 +8,7 @@ public class DiverscrownFishingPoolProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
+		double rnd = 0;
 		{
 			String _setval = "diversCrown";
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -15,7 +16,8 @@ public class DiverscrownFishingPoolProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		if (Math.random() < 0.3) {
+		rnd = Math.random();
+		if (rnd < 0.25) {
 			{
 				String _setval = "rimeBoid";
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -23,9 +25,57 @@ public class DiverscrownFishingPoolProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-		} else {
+		} else if (rnd < 0.42) {
+			{
+				String _setval = "daggerLoach";
+				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.chosenFish = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else if (rnd < 0.47) {
+			{
+				String _setval = "rareDaggerLoach";
+				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.chosenFish = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else if (rnd < 0.62) {
+			{
+				String _setval = "mountainBrum";
+				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.chosenFish = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else if (rnd < 0.69) {
 			{
 				String _setval = "purpleTrouish";
+				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.chosenFish = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else if (rnd < 0.77) {
+			{
+				String _setval = "tarWormling";
+				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.chosenFish = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else if (rnd < 0.82) {
+			{
+				String _setval = "cormunculusJelly";
+				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.chosenFish = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+		} else {
+			{
+				String _setval = "redSnapper";
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.chosenFish = _setval;
 					capability.syncPlayerVariables(entity);

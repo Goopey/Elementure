@@ -37,7 +37,9 @@ import net.mcreator.elementure.world.inventory.FishingrecordLegendary1Menu;
 import net.mcreator.elementure.world.inventory.FishingrecordLava1Menu;
 import net.mcreator.elementure.world.inventory.FishingrecordJellyPools1Menu;
 import net.mcreator.elementure.world.inventory.FishingrecordDungeonwaterMenu;
+import net.mcreator.elementure.world.inventory.FishingrecordDiverscrownMenu;
 import net.mcreator.elementure.world.inventory.FishingrecordDiseased1Menu;
+import net.mcreator.elementure.world.inventory.Fishingrecord2Menu;
 import net.mcreator.elementure.world.inventory.Fishingrecord1Menu;
 import net.mcreator.elementure.world.inventory.DemonheartGUIMenu;
 import net.mcreator.elementure.world.inventory.CustomfishingrodInventoryMenu;
@@ -123,6 +125,10 @@ public class ElementureModMenus {
 			(id, inv, extraData) -> new MusicplayerGUI3Menu(id, inv, extraData));
 	public static final MenuType<FishingrecordWindyshoresMenu> FISHINGRECORD_WINDYSHORES = register("fishingrecord_windyshores",
 			(id, inv, extraData) -> new FishingrecordWindyshoresMenu(id, inv, extraData));
+	public static final MenuType<Fishingrecord2Menu> FISHINGRECORD_2 = register("fishingrecord_2",
+			(id, inv, extraData) -> new Fishingrecord2Menu(id, inv, extraData));
+	public static final MenuType<FishingrecordDiverscrownMenu> FISHINGRECORD_DIVERSCROWN = register("fishingrecord_diverscrown",
+			(id, inv, extraData) -> new FishingrecordDiverscrownMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

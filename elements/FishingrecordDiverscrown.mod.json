@@ -1,0 +1,296 @@
+{
+  "_fv": 34,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 171,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "book_fishing.png",
+          "use1Xscale": false,
+          "name": "book_fishing.png",
+          "x": 91,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 102,
+          "y": 45
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 102,
+          "y": 67
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 102,
+          "y": 89
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 102,
+          "y": 111
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 102,
+          "y": 133
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 102,
+          "y": 155
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 102,
+          "y": 177
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "green_checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "RimeboidConfirm"
+          },
+          "name": "green_checkmark.png",
+          "x": 105,
+          "y": 48
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rimeboid.png",
+          "use1Xscale": false,
+          "name": "rimeboid.png",
+          "x": 121,
+          "y": 46
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "green_checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "PurpletrahiraConfirm"
+          },
+          "name": "green_checkmark.png",
+          "x": 105,
+          "y": 70
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "purple_trouish.png",
+          "use1Xscale": false,
+          "name": "purple_trouish.png",
+          "x": 121,
+          "y": 68
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "green_checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "DaggerloachConfirm"
+          },
+          "name": "green_checkmark.png",
+          "x": 105,
+          "y": 92
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "dagger_loach.png",
+          "use1Xscale": false,
+          "name": "dagger_loach.png",
+          "x": 121,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "green_checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "RaredaggerloachConfirm"
+          },
+          "name": "green_checkmark.png",
+          "x": 105,
+          "y": 114
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rare_dagger_loach.png",
+          "use1Xscale": false,
+          "name": "rare_dagger_loach.png",
+          "x": 121,
+          "y": 112
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "green_checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "MountainbrumConfirm"
+          },
+          "name": "green_checkmark.png",
+          "x": 105,
+          "y": 136
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mountainbrum.png",
+          "use1Xscale": false,
+          "name": "mountainbrum.png",
+          "x": 121,
+          "y": 134
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "green_checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "RedsnapperConfirm"
+          },
+          "name": "green_checkmark.png",
+          "x": 105,
+          "y": 158
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "red_snapper.png",
+          "use1Xscale": false,
+          "name": "red_snapper.png",
+          "x": 121,
+          "y": 156
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "green_checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "TarwormlingConfirm"
+          },
+          "name": "green_checkmark.png",
+          "x": 105,
+          "y": 180
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "tar_wormling.png",
+          "use1Xscale": false,
+          "name": "tar_wormling.png",
+          "x": 121,
+          "y": 178
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "inventory_slot_texture.png",
+          "use1Xscale": true,
+          "name": "inventory_slot_texture.png",
+          "x": 154,
+          "y": 45
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "green_checkmark.png",
+          "use1Xscale": true,
+          "displayCondition": {
+            "name": "CormunculusjellyConfirm"
+          },
+          "name": "green_checkmark.png",
+          "x": 157,
+          "y": 48
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cormunculus_jelly.png",
+          "use1Xscale": false,
+          "name": "cormunculus_jelly.png",
+          "x": 173,
+          "y": 46
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 2,
+      "sy": 2,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

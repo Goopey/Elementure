@@ -27,7 +27,7 @@ public class FerziumbladeItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 0f;
+				return 1.9999999999999996f;
 			}
 
 			public int getLevel() {

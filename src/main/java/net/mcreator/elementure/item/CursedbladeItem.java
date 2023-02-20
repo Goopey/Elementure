@@ -26,7 +26,7 @@ public class CursedbladeItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 1.5f;
+				return 1.9999999999999996f;
 			}
 
 			public int getLevel() {

@@ -12,6 +12,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.ChatType;
@@ -54,6 +55,12 @@ public class SpacegoopSlingProcedure {
 				}
 			}.start(world, 40);
 			if (entity instanceof Player) {
+				{
+					Entity _ent = entity;
+					_ent.teleportTo((entity.getX()), (entity.getY() + 1024), (entity.getZ()));
+					if (_ent instanceof ServerPlayer _serverPlayer)
+						_serverPlayer.connection.teleport((entity.getX()), (entity.getY() + 1024), (entity.getZ()), _ent.getYRot(), _ent.getXRot());
+				}
 				{
 					List<? extends Player> _players = new ArrayList<>(world.players());
 					for (Entity entityiterator : _players) {

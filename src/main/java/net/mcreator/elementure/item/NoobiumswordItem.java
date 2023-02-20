@@ -27,7 +27,7 @@ public class NoobiumswordItem extends SwordItem {
 			}
 
 			public float getAttackDamageBonus() {
-				return 0.5f;
+				return 2f;
 			}
 
 			public int getLevel() {

@@ -21,6 +21,7 @@ import net.mcreator.elementure.network.OpenrelicinventorykeyMessage;
 import net.mcreator.elementure.network.MusicplayerMessage;
 import net.mcreator.elementure.network.FishingreelInMessage;
 import net.mcreator.elementure.network.FishingabilityMessage;
+import net.mcreator.elementure.network.DirectionalDodgeKeyMessage;
 import net.mcreator.elementure.ElementureMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -32,6 +33,9 @@ public class ElementureModKeyMappings {
 	public static final KeyMapping FISHINGREEL_IN = new KeyMapping("key.elementure.fishingreel_in", GLFW.GLFW_KEY_Z, "key.categories.gameplay");
 	public static final KeyMapping FISHINGABILITY = new KeyMapping("key.elementure.fishingability", GLFW.GLFW_KEY_X, "key.categories.gameplay");
 	public static final KeyMapping MUSICPLAYER = new KeyMapping("key.elementure.musicplayer", GLFW.GLFW_KEY_EQUAL, "key.categories.misc");
+	public static final KeyMapping DIRECTIONAL_DODGE_KEY = new KeyMapping("key.elementure.directional_dodge_key", GLFW.GLFW_KEY_SPACE,
+			"key.categories.movement");
+	public static final KeyMapping WEAPON_ARTS_KEY = new KeyMapping("key.elementure.weapon_arts_key", GLFW.GLFW_KEY_V, "key.categories.gameplay");
 	private static long FISHINGREEL_IN_LASTPRESS = 0;
 	private static long FISHINGABILITY_LASTPRESS = 0;
 
@@ -42,6 +46,8 @@ public class ElementureModKeyMappings {
 		ClientRegistry.registerKeyBinding(FISHINGREEL_IN);
 		ClientRegistry.registerKeyBinding(FISHINGABILITY);
 		ClientRegistry.registerKeyBinding(MUSICPLAYER);
+		ClientRegistry.registerKeyBinding(DIRECTIONAL_DODGE_KEY);
+		ClientRegistry.registerKeyBinding(WEAPON_ARTS_KEY);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -87,6 +93,12 @@ public class ElementureModKeyMappings {
 					if (event.getAction() == GLFW.GLFW_PRESS) {
 						ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerMessage(0, 0));
 						MusicplayerMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+					}
+				}
+				if (event.getKey() == DIRECTIONAL_DODGE_KEY.getKey().getValue()) {
+					if (event.getAction() == GLFW.GLFW_PRESS) {
+						ElementureMod.PACKET_HANDLER.sendToServer(new DirectionalDodgeKeyMessage(0, 0));
+						DirectionalDodgeKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 					}
 				}
 			}

@@ -1,0 +1,12 @@
+{
+  "_fv": 34,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SPACE",
+    "keyBindingName": "Directional Dodge Key",
+    "keyBindingCategoryKey": "movement",
+    "onKeyPressed": {
+      "name": "DirectionalDodgeOnKeyPressed"
+    }
+  }
+}

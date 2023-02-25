@@ -17,7 +17,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
@@ -45,10 +44,10 @@ public class MycenashroomvillagerpriestOpenTradesProcedure {
 			{
 				if (sourceentity instanceof ServerPlayer _ent) {
 					BlockPos _bpos = new BlockPos(x, y, z);
-					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 						@Override
 						public Component getDisplayName() {
-							return new TextComponent("MycenashroomvillagerGUI");
+							return Component.literal("MycenashroomvillagerGUI");
 						}
 
 						@Override
@@ -63,7 +62,7 @@ public class MycenashroomvillagerpriestOpenTradesProcedure {
 						&& _current.get() instanceof Map _slots) {
 					ItemStack _setstack = new ItemStack(Items.ROTTEN_FLESH);
 					_setstack.setCount(
-							Math.round(32 - ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.HERO_OF_THE_VILLAGE)
+							(int) Math.round(32 - ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.HERO_OF_THE_VILLAGE)
 									? _livEnt.getEffect(MobEffects.HERO_OF_THE_VILLAGE).getAmplifier()
 									: 0) + 1)));
 					((Slot) _slots.get(0)).set(_setstack);
@@ -79,7 +78,7 @@ public class MycenashroomvillagerpriestOpenTradesProcedure {
 				if (sourceentity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
 					ItemStack _setstack = new ItemStack(Blocks.NETHER_WART);
-					_setstack.setCount((int) Math.round((8 + sourceentity.getPersistentData().getDouble("tradeAmount") / 0.5)
+					_setstack.setCount((int) (int) Math.round((8 + sourceentity.getPersistentData().getDouble("tradeAmount") / 0.5)
 							- ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.HERO_OF_THE_VILLAGE)
 									? _livEnt.getEffect(MobEffects.HERO_OF_THE_VILLAGE).getAmplifier()
 									: 0) + 1) * 2));
@@ -126,7 +125,7 @@ public class MycenashroomvillagerpriestOpenTradesProcedure {
 						&& _current.get() instanceof Map _slots) {
 					ItemStack _setstack = new ItemStack(Items.ROTTEN_FLESH);
 					_setstack.setCount(
-							Math.round(32 - ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.HERO_OF_THE_VILLAGE)
+							(int) Math.round(32 - ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.HERO_OF_THE_VILLAGE)
 									? _livEnt.getEffect(MobEffects.HERO_OF_THE_VILLAGE).getAmplifier()
 									: 0) + 1) * 2));
 					((Slot) _slots.get(4)).set(_setstack);
@@ -162,7 +161,7 @@ public class MycenashroomvillagerpriestOpenTradesProcedure {
 						&& _current.get() instanceof Map _slots) {
 					ItemStack _setstack = new ItemStack(Items.ROTTEN_FLESH);
 					_setstack.setCount(
-							Math.round(32 - ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.HERO_OF_THE_VILLAGE)
+							(int) Math.round(32 - ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.HERO_OF_THE_VILLAGE)
 									? _livEnt.getEffect(MobEffects.HERO_OF_THE_VILLAGE).getAmplifier()
 									: 0) + 1) * 2));
 					((Slot) _slots.get(0)).set(_setstack);
@@ -207,7 +206,7 @@ public class MycenashroomvillagerpriestOpenTradesProcedure {
 				if (sourceentity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
 						&& _current.get() instanceof Map _slots) {
 					ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
-					_setstack.setCount((int) Math.round((4 + sourceentity.getPersistentData().getDouble("tradeAmount") / 1.5)
+					_setstack.setCount((int) (int) Math.round((4 + sourceentity.getPersistentData().getDouble("tradeAmount") / 1.5)
 							- ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.HERO_OF_THE_VILLAGE)
 									? _livEnt.getEffect(MobEffects.HERO_OF_THE_VILLAGE).getAmplifier()
 									: 0) + 1)));
@@ -257,7 +256,7 @@ public class MycenashroomvillagerpriestOpenTradesProcedure {
 						&& _current.get() instanceof Map _slots) {
 					ItemStack _setstack = new ItemStack(Items.ROTTEN_FLESH);
 					_setstack.setCount(
-							Math.round(32 - ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.HERO_OF_THE_VILLAGE)
+							(int) Math.round(32 - ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.HERO_OF_THE_VILLAGE)
 									? _livEnt.getEffect(MobEffects.HERO_OF_THE_VILLAGE).getAmplifier()
 									: 0) + 1) * 2));
 					((Slot) _slots.get(8)).set(_setstack);
@@ -275,7 +274,7 @@ public class MycenashroomvillagerpriestOpenTradesProcedure {
 						&& _current.get() instanceof Map _slots) {
 					ItemStack _setstack = new ItemStack(Items.ROTTEN_FLESH);
 					_setstack.setCount(
-							Math.round(32 - ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.HERO_OF_THE_VILLAGE)
+							(int) Math.round(32 - ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.HERO_OF_THE_VILLAGE)
 									? _livEnt.getEffect(MobEffects.HERO_OF_THE_VILLAGE).getAmplifier()
 									: 0) + 1) * 2));
 					((Slot) _slots.get(0)).set(_setstack);

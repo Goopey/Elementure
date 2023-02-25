@@ -70,7 +70,7 @@ public class CormunculusChannelerItem extends Item {
 			double z = entity.getZ();
 			if (CormunculuschannelerGlowProcedure.execute(entity)) {
 				CormunculusChannelerEntity entityarrow = CormunculusChannelerEntity.shoot(world, entity, world.getRandom(), 1f,
-						5 + CormunculusReturnDamageBonusProcedure.execute(entity) * 5, 0);
+						5 + CormunculusReturnDamageBonusProcedure.execute(entity) * 2, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 				CormunculuschannelerConsumeProcedure.execute(entity);

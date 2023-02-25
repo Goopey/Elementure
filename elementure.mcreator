@@ -45788,7 +45788,7 @@
       "name": "BeltpouchGUI",
       "type": "gui",
       "sortid": 3621,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "beltpouch_gui",
       "path": "~/Relics"
@@ -59641,7 +59641,7 @@
       "name": "Magtunabuster",
       "type": "rangeditem",
       "sortid": 737,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "magtunabuster",
       "path": "~/Combat/Weapons/Others/MagTunaBuster"
@@ -60461,7 +60461,7 @@
       "name": "Familiar12",
       "type": "biome",
       "sortid": 4274,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "familiar_12",
       "path": "~/Dungeons/BlueKey"
@@ -61183,7 +61183,7 @@
       "name": "Darkgemcrossbolter",
       "type": "rangeditem",
       "sortid": 740,
-      "compiles": true,
+      "compiles": false,
       "locked_code": true,
       "registry_name": "darkgemcrossbolter",
       "path": "~/Combat/Weapons/Others/DarkGemCrossBolter"
@@ -68205,7 +68205,7 @@
       "name": "Tidalcomet",
       "type": "rangeditem",
       "sortid": 749,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "tidalcomet",
       "path": "~/Combat/Weapons/Others/TidalComet"
@@ -69617,7 +69617,7 @@
       "name": "DungeonhatchLocked",
       "type": "block",
       "sortid": 453,
-      "compiles": false,
+      "compiles": true,
       "locked_code": true,
       "registry_name": "dungeonhatch_locked",
       "path": "~/Dungeons"

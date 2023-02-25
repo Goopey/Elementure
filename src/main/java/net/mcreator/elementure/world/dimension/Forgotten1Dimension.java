@@ -10,7 +10,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.levelgen.carver.WorldCarver;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
@@ -21,12 +20,9 @@ import net.minecraft.core.Registry;
 import net.minecraft.client.renderer.DimensionSpecialEffects;
 
 import net.mcreator.elementure.procedures.BluekeySetToForgottenSpawnProcedure;
-import net.mcreator.elementure.procedures.BluekeyReturnHomeProcedure;
 
 import java.util.Set;
 import java.util.HashSet;
-
-import com.google.common.collect.ImmutableSet;
 
 @Mod.EventBusSubscriber
 public class Forgotten1Dimension {
@@ -60,17 +56,16 @@ public class Forgotten1Dimension {
 
 	@SubscribeEvent
 	public static void onPlayerChangedDimensionEvent(PlayerEvent.PlayerChangedDimensionEvent event) {
-		Entity entity = event.getPlayer();
+		Entity entity = event.getEntity();
 		Level world = entity.level;
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
 		/*if (event.getFrom() == ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("elementure:forgotten_1"))) {
-
 			BluekeyReturnHomeProcedure.execute(world, entity);
-		}*/
+		}
+		*/
 		if (event.getTo() == ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("elementure:forgotten_1"))) {
-
 			BluekeySetToForgottenSpawnProcedure.execute(world, entity);
 		}
 	}

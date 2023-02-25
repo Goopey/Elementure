@@ -10,7 +10,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.EnhancedtargodpiercerTrueDarkProcedure;
@@ -59,9 +58,9 @@ public class EnhancedtargodpiercerItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A76Boss trophy"));
-		list.add(new TextComponent("A special spear with super-reach, armor piercing and damage that ramps up with attacks."));
-		list.add(new TextComponent("Sprays Dark Flames whenever enough damage has been dealt."));
+		list.add(Component.literal("\u00A76Boss trophy"));
+		list.add(Component.literal("A special spear with super-reach, armor piercing and damage that ramps up with attacks."));
+		list.add(Component.literal("Sprays Dark Flames whenever enough damage has been dealt."));
 	}
 
 	@Override

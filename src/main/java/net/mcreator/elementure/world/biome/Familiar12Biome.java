@@ -1,8 +1,6 @@
 
 package net.mcreator.elementure.world.biome;
 
-import net.minecraftforge.common.BiomeDictionary;
-
 import net.minecraft.world.level.levelgen.placement.NoiseThresholdCountPlacement;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.BiomeFilter;
@@ -11,14 +9,9 @@ import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.VegetationFeatures;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
-import net.minecraft.data.BuiltinRegistries;
-import net.minecraft.core.Registry;
-
-import net.mcreator.elementure.init.ElementureModBiomes;
 
 import java.util.List;
 
@@ -33,13 +26,7 @@ public class Familiar12Biome {
 								BiomeFilter.biome())));
 		BiomeDefaultFeatures.addSavannaGrass(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
-		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).biomeCategory(Biome.BiomeCategory.DESERT).temperature(0.5f)
-				.downfall(0f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build())
-				.build();
-	}
-
-	public static void init() {
-		BiomeDictionary.addTypes(ResourceKey.create(Registry.BIOME_REGISTRY, BuiltinRegistries.BIOME.getKey(ElementureModBiomes.FAMILIAR_12.get())),
-				BiomeDictionary.Type.PLAINS);
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).temperature(0.5f).downfall(0f).specialEffects(effects)
+				.mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
 	}
 }

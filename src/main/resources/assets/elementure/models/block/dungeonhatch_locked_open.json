@@ -3,5 +3,6 @@
   "textures": {
     "texture": "elementure:blocks/dungeonhatch_locked",
     "particle": "elementure:blocks/dungeonhatch_locked"
-  }
+  },
+  "render_type": "solid"
 }

@@ -1,9 +1,6 @@
 
 package net.mcreator.elementure.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
@@ -18,24 +15,21 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.ShieldingprotectionruneDisableBuildingProcedure;
 import net.mcreator.elementure.procedures.DungeonhatchLockedUnlockProcedure;
-import net.mcreator.elementure.init.ElementureModBlocks;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
 public class DungeonhatchLockedBlock extends TrapDoorBlock {
 	public DungeonhatchLockedBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.METAL).strength(-1, 3600000).requiresCorrectToolForDrops().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+				.isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
 	}
 
 	@Override
@@ -65,11 +59,12 @@ public class DungeonhatchLockedBlock extends TrapDoorBlock {
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
+
 		ShieldingprotectionruneDisableBuildingProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 5);
 	}
@@ -84,15 +79,12 @@ public class DungeonhatchLockedBlock extends TrapDoorBlock {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
+
 		DungeonhatchLockedUnlockProcedure.execute(world, x, y, z, entity);
 		if (entity.getAbilities().instabuild) {
 			return InteractionResult.SUCCESS;
 		}
 		return InteractionResult.FAIL;
-	}
 
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.DUNGEONHATCH_LOCKED.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

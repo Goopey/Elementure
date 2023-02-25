@@ -4,5 +4,6 @@
     "all": "elementure:blocks/soul_sand_valley_memorial",
     "particle": "elementure:blocks/soul_sand_valley_memorial",
     "0": "elementure:blocks/soul_sand_valley_memorial"
-  }
+  },
+  "render_type": "cutout"
 }

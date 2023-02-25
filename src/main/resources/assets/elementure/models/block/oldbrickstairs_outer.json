@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/old_bricks",
     "top": "elementure:blocks/old_bricks",
     "side": "elementure:blocks/old_bricks"
-  }
+  },
+  "render_type": "cutout"
 }

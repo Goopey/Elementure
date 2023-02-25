@@ -1,6 +1,6 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *	MCreator note: This file will be REGENERATED on each build.
  */
 package net.mcreator.elementure.init;
 
@@ -54,43 +54,43 @@ public class ElementureModScreens {
 	@SubscribeEvent
 	public static void clientLoad(FMLClientSetupEvent event) {
 		event.enqueueWork(() -> {
-			MenuScreens.register(ElementureModMenus.DEMONHEART_GUI, DemonheartGUIScreen::new);
-			MenuScreens.register(ElementureModMenus.MYCENASHROOMVILLAGER_GUI, MycenashroomvillagerGUIScreen::new);
-			MenuScreens.register(ElementureModMenus.MYCENASHROOMVILLAGER_GUI_2, MycenashroomvillagerGUI2Screen::new);
-			MenuScreens.register(ElementureModMenus.RELICINVENTORY, RelicinventoryScreen::new);
-			MenuScreens.register(ElementureModMenus.AGEDROSARY_GUI, AgedrosaryGUIScreen::new);
-			MenuScreens.register(ElementureModMenus.SUITCASE_GUI, SuitcaseGUIScreen::new);
-			MenuScreens.register(ElementureModMenus.POUCH_GUI, PouchGUIScreen::new);
-			MenuScreens.register(ElementureModMenus.MEMORYMATRIX_GUI, MemorymatrixGuiScreen::new);
-			MenuScreens.register(ElementureModMenus.BIRTHINGMODULE_GUI, BirthingmoduleGUIScreen::new);
-			MenuScreens.register(ElementureModMenus.CUSTOMFISHINGROD_INVENTORY, CustomfishingrodInventoryScreen::new);
-			MenuScreens.register(ElementureModMenus.SOULFORGE_GUI, SoulforgeGUIScreen::new);
-			MenuScreens.register(ElementureModMenus.FISHINGRECORD_1, Fishingrecord1Screen::new);
-			MenuScreens.register(ElementureModMenus.FISHINGRECORD_REGULAR_1, FishingrecordRegular1Screen::new);
-			MenuScreens.register(ElementureModMenus.FISHINGRECORD_LEGENDARY_1, FishingrecordLegendary1Screen::new);
-			MenuScreens.register(ElementureModMenus.FISHINGRECORD_REGULAR_2, FishingrecordRegular2Screen::new);
-			MenuScreens.register(ElementureModMenus.FISHINGRECORD_LAVA_1, FishingrecordLava1Screen::new);
-			MenuScreens.register(ElementureModMenus.FISHINGRECORD_DISEASED_1, FishingrecordDiseased1Screen::new);
-			MenuScreens.register(ElementureModMenus.FISHINGRECORD_VOID_1, FishingrecordVoid1Screen::new);
-			MenuScreens.register(ElementureModMenus.FISHINGRECORD_MYCENA_1, FishingrecordMycena1Screen::new);
-			MenuScreens.register(ElementureModMenus.FISHINGRECORD_NETHER_STAR_1, FishingrecordNetherStar1Screen::new);
-			MenuScreens.register(ElementureModMenus.MUSICPLAYER_GUI, MusicplayerGUIScreen::new);
-			MenuScreens.register(ElementureModMenus.MUSICPLAYER_GUI_2, MusicplayerGUI2Screen::new);
-			MenuScreens.register(ElementureModMenus.CREDITS_MUSIC_GUI, CreditsMusicGUIScreen::new);
-			MenuScreens.register(ElementureModMenus.FISHINGRECORD_JELLY_POOLS_1, FishingrecordJellyPools1Screen::new);
-			MenuScreens.register(ElementureModMenus.BELTPOUCH_GUI, BeltpouchGUIScreen::new);
-			MenuScreens.register(ElementureModMenus.WEAPONALTAR_GUI, WeaponaltarGUIScreen::new);
-			MenuScreens.register(ElementureModMenus.GLASSLIGHTBREWER_GUI, GlasslightbrewerGUIScreen::new);
-			MenuScreens.register(ElementureModMenus.GLASSBELLBOAT_GUI, GlassbellboatGUIScreen::new);
-			MenuScreens.register(ElementureModMenus.CREDITS_MUSIC_GUI_2, CreditsMusicGUI2Screen::new);
-			MenuScreens.register(ElementureModMenus.FISHINGRECORD_SHELLFISH, FishingrecordShellfishScreen::new);
-			MenuScreens.register(ElementureModMenus.FISHINGRECORD_DUNGEONWATER, FishingrecordDungeonwaterScreen::new);
-			MenuScreens.register(ElementureModMenus.CRABPOT_GUI, CrabpotGUIScreen::new);
-			MenuScreens.register(ElementureModMenus.NANOSHRIMP_GUI, NanoshrimpGUIScreen::new);
-			MenuScreens.register(ElementureModMenus.MUSICPLAYER_GUI_3, MusicplayerGUI3Screen::new);
-			MenuScreens.register(ElementureModMenus.FISHINGRECORD_WINDYSHORES, FishingrecordWindyshoresScreen::new);
-			MenuScreens.register(ElementureModMenus.FISHINGRECORD_2, Fishingrecord2Screen::new);
-			MenuScreens.register(ElementureModMenus.FISHINGRECORD_DIVERSCROWN, FishingrecordDiverscrownScreen::new);
+			MenuScreens.register(ElementureModMenus.DEMONHEART_GUI.get(), DemonheartGUIScreen::new);
+			MenuScreens.register(ElementureModMenus.MYCENASHROOMVILLAGER_GUI.get(), MycenashroomvillagerGUIScreen::new);
+			MenuScreens.register(ElementureModMenus.MYCENASHROOMVILLAGER_GUI_2.get(), MycenashroomvillagerGUI2Screen::new);
+			MenuScreens.register(ElementureModMenus.RELICINVENTORY.get(), RelicinventoryScreen::new);
+			MenuScreens.register(ElementureModMenus.AGEDROSARY_GUI.get(), AgedrosaryGUIScreen::new);
+			MenuScreens.register(ElementureModMenus.SUITCASE_GUI.get(), SuitcaseGUIScreen::new);
+			MenuScreens.register(ElementureModMenus.POUCH_GUI.get(), PouchGUIScreen::new);
+			MenuScreens.register(ElementureModMenus.MEMORYMATRIX_GUI.get(), MemorymatrixGuiScreen::new);
+			MenuScreens.register(ElementureModMenus.BIRTHINGMODULE_GUI.get(), BirthingmoduleGUIScreen::new);
+			MenuScreens.register(ElementureModMenus.CUSTOMFISHINGROD_INVENTORY.get(), CustomfishingrodInventoryScreen::new);
+			MenuScreens.register(ElementureModMenus.SOULFORGE_GUI.get(), SoulforgeGUIScreen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_1.get(), Fishingrecord1Screen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_REGULAR_1.get(), FishingrecordRegular1Screen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_LEGENDARY_1.get(), FishingrecordLegendary1Screen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_REGULAR_2.get(), FishingrecordRegular2Screen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_LAVA_1.get(), FishingrecordLava1Screen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_DISEASED_1.get(), FishingrecordDiseased1Screen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_VOID_1.get(), FishingrecordVoid1Screen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_MYCENA_1.get(), FishingrecordMycena1Screen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_NETHER_STAR_1.get(), FishingrecordNetherStar1Screen::new);
+			MenuScreens.register(ElementureModMenus.MUSICPLAYER_GUI.get(), MusicplayerGUIScreen::new);
+			MenuScreens.register(ElementureModMenus.MUSICPLAYER_GUI_2.get(), MusicplayerGUI2Screen::new);
+			MenuScreens.register(ElementureModMenus.CREDITS_MUSIC_GUI.get(), CreditsMusicGUIScreen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_JELLY_POOLS_1.get(), FishingrecordJellyPools1Screen::new);
+			MenuScreens.register(ElementureModMenus.BELTPOUCH_GUI.get(), BeltpouchGUIScreen::new);
+			MenuScreens.register(ElementureModMenus.WEAPONALTAR_GUI.get(), WeaponaltarGUIScreen::new);
+			MenuScreens.register(ElementureModMenus.GLASSLIGHTBREWER_GUI.get(), GlasslightbrewerGUIScreen::new);
+			MenuScreens.register(ElementureModMenus.GLASSBELLBOAT_GUI.get(), GlassbellboatGUIScreen::new);
+			MenuScreens.register(ElementureModMenus.CREDITS_MUSIC_GUI_2.get(), CreditsMusicGUI2Screen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_SHELLFISH.get(), FishingrecordShellfishScreen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_DUNGEONWATER.get(), FishingrecordDungeonwaterScreen::new);
+			MenuScreens.register(ElementureModMenus.CRABPOT_GUI.get(), CrabpotGUIScreen::new);
+			MenuScreens.register(ElementureModMenus.NANOSHRIMP_GUI.get(), NanoshrimpGUIScreen::new);
+			MenuScreens.register(ElementureModMenus.MUSICPLAYER_GUI_3.get(), MusicplayerGUI3Screen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_WINDYSHORES.get(), FishingrecordWindyshoresScreen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_2.get(), Fishingrecord2Screen::new);
+			MenuScreens.register(ElementureModMenus.FISHINGRECORD_DIVERSCROWN.get(), FishingrecordDiverscrownScreen::new);
 		});
 	}
 }

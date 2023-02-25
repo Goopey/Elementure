@@ -8,5 +8,6 @@
     "south": "elementure:blocks/bigglowingmushroom",
     "west": "elementure:blocks/bigglowingmushroom",
     "particle": "elementure:blocks/bigglowingmushroom"
-  }
+  },
+  "render_type": "solid"
 }

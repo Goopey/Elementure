@@ -8,5 +8,6 @@
     "south": "elementure:blocks/frostyicealphan",
     "west": "elementure:blocks/frostyicealphan",
     "particle": "elementure:blocks/crackingice1"
-  }
+  },
+  "render_type": "solid"
 }

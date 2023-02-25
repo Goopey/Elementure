@@ -8,5 +8,6 @@
     "south": "elementure:blocks/sandblock",
     "west": "elementure:blocks/sandblock",
     "particle": "elementure:blocks/sandblock"
-  }
+  },
+  "render_type": "solid"
 }

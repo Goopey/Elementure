@@ -4,5 +4,6 @@
     "all": "elementure:blocks/rottendemonheart",
     "particle": "elementure:blocks/rottendemonheart",
     "main": "elementure:blocks/rottendemonheart"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

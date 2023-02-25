@@ -8,5 +8,6 @@
     "south": "elementure:blocks/boardingschool_blueewall",
     "west": "elementure:blocks/boardingschool_blueewall",
     "particle": "elementure:blocks/boardingschool_blueewall"
-  }
+  },
+  "render_type": "solid"
 }

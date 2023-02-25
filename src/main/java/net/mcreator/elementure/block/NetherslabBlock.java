@@ -19,7 +19,7 @@ import java.util.Collections;
 
 public class NetherslabBlock extends SlabBlock {
 	public NetherslabBlock() {
-		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(4f, 120f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(4f, 120f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override

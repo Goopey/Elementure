@@ -1,7 +1,0 @@
-{
-  "parent": "block/door_top",
-  "textures": {
-    "bottom": "elementure:blocks/nether_door_bottom",
-    "top": "elementure:blocks/nether_door_top"
-  }
-}

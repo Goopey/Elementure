@@ -15,7 +15,7 @@ public class LightningandesiteplaceProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putString("omeganProcedure", "lightningAndesite");
+					_blockEntity.getPersistentData().putString("omeganProcedure", "lightningAndesite");
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

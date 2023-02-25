@@ -8,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
@@ -21,9 +21,9 @@ public class LargejellyDropsProcedure {
 		ProtectionzoneremoverEffectProcedure.execute(world, (entity.getX()), (entity.getY()), (entity.getZ()));
 		for (int index0 = 0; index0 < (int) (1 + Math.round(Math.random())); index0++) {
 			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performCommand(
+				_level.getServer().getCommands().performPrefixedCommand(
 						new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4,
-								"", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
+								"", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 						"loot spawn ~ ~ ~ loot elementure:chests/slatedpools_treasurechest");
 		}
 		for (int index1 = 0; index1 < (int) (1 + Math.round(Math.random())); index1++) {

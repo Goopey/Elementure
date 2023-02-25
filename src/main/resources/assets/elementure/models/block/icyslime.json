@@ -8,5 +8,6 @@
     "south": "elementure:blocks/iceslime",
     "west": "elementure:blocks/iceslime",
     "particle": "elementure:blocks/iceslime"
-  }
+  },
+  "render_type": "translucent"
 }

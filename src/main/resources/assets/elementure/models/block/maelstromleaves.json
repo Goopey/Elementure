@@ -8,5 +8,6 @@
     "south": "elementure:blocks/maelstromleaves",
     "west": "elementure:blocks/maelstromleaves",
     "particle": "elementure:blocks/maelstromleaves"
-  }
+  },
+  "render_type": "cutout"
 }

@@ -8,5 +8,6 @@
     "south": "elementure:blocks/boardingschool_whiteewall",
     "west": "elementure:blocks/boardingschool_whiteewall",
     "particle": "elementure:blocks/boardingschool_whiteewall"
-  }
+  },
+  "render_type": "solid"
 }

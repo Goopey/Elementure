@@ -6,7 +6,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.init.ElementureModTabs;
@@ -21,7 +20,7 @@ public class SkeletonShieldItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Relic : Offers immunity to attacks from skeletons."));
-		list.add(new TextComponent("Effect is reduced against skeleton bosses."));
+		list.add(Component.literal("Relic : Offers immunity to attacks from skeletons."));
+		list.add(Component.literal("Effect is reduced against skeleton bosses."));
 	}
 }

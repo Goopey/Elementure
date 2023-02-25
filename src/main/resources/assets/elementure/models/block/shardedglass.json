@@ -8,5 +8,6 @@
     "south": "elementure:blocks/sharded_glass",
     "west": "elementure:blocks/sharded_glass",
     "particle": "elementure:blocks/sharded_glass"
-  }
+  },
+  "render_type": "cutout"
 }

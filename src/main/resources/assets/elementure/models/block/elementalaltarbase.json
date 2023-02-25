@@ -4,5 +4,6 @@
     "all": "elementure:blocks/elementalaltarbase",
     "particle": "elementure:blocks/elementalaltarbase",
     "main": "elementure:blocks/elementalaltarbase"
-  }
+  },
+  "render_type": "cutout"
 }

@@ -42,13 +42,6 @@ public class JellyfloatsmallGenFeature extends Feature<NoneFeatureConfiguration>
 		return FEATURE;
 	}
 
-	public static Holder<PlacedFeature> placedFeature() {
-		return PLACED_FEATURE;
-	}
-
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("frozen_ocean"), new ResourceLocation("deep_cold_ocean"),
-			new ResourceLocation("ocean"), new ResourceLocation("cold_ocean"), new ResourceLocation("deep_ocean"),
-			new ResourceLocation("deep_frozen_ocean"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 	private final List<Block> base_blocks;
 	private StructureTemplate template = null;
@@ -87,7 +80,6 @@ public class JellyfloatsmallGenFeature extends Feature<NoneFeatureConfiguration>
 								.setRotation(Rotation.values()[context.random().nextInt(3)]).setRandom(context.random())
 								.addProcessor(BlockIgnoreProcessor.STRUCTURE_AND_AIR).setIgnoreEntities(false),
 						context.random(), 2)) {
-
 					JellyfloatsmallGenPlaceProcedure.execute(world, x, y, z);
 					anyPlaced = true;
 				}

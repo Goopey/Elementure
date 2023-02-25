@@ -7,7 +7,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.init.ElementureModTabs;
@@ -27,7 +26,7 @@ public class MemoryshardItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent(
+		list.add(Component.literal(
 				"A fragment of a whole memory heart. Unfortunaly, the memories inside are now lost, but it might still be useful in some regard."));
 	}
 }

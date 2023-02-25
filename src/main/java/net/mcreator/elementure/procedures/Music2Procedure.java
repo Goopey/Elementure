@@ -4,6 +4,9 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.elementure.network.ElementureModVariables;
 import net.mcreator.elementure.entity.UmbrasylEntity;
@@ -33,17 +36,23 @@ public class Music2Procedure {
 			}
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"playsound elementure:stand_tall music @s");
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands()
+							.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+									_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+									_ent.getDisplayName(), _ent.level.getServer(), _ent), "playsound elementure:stand_tall music @s");
+				}
 			}
 		} else if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new ElementureModVariables.PlayerVariables())).musicName).equals("standTall")) {
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"stopsound @s music elementure:stand_tall");
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands()
+							.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+									_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+									_ent.getDisplayName(), _ent.level.getServer(), _ent), "stopsound @s music elementure:stand_tall");
+				}
 			}
 		}
 		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -66,17 +75,27 @@ public class Music2Procedure {
 			}
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"playsound elementure:hydrothermal_hollow music @s");
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands()
+							.performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+											_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+											_ent.getDisplayName(), _ent.level.getServer(), _ent),
+									"playsound elementure:hydrothermal_hollow music @s");
+				}
 			}
 		} else if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new ElementureModVariables.PlayerVariables())).musicName).equals("hydrothermalHollow")) {
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"stopsound @s music elementure:hydrothermal_hollow");
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands()
+							.performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+											_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+											_ent.getDisplayName(), _ent.level.getServer(), _ent),
+									"stopsound @s music elementure:hydrothermal_hollow");
+				}
 			}
 		}
 		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -99,17 +118,23 @@ public class Music2Procedure {
 			}
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"playsound elementure:rebel_base_1 music @s");
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands()
+							.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+									_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+									_ent.getDisplayName(), _ent.level.getServer(), _ent), "playsound elementure:rebel_base_1 music @s");
+				}
 			}
 		} else if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new ElementureModVariables.PlayerVariables())).musicName).equals("netherstar")) {
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"stopsound @s music elementure:rebel_base_1");
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands()
+							.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+									_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+									_ent.getDisplayName(), _ent.level.getServer(), _ent), "stopsound @s music elementure:rebel_base_1");
+				}
 			}
 		}
 		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -132,9 +157,12 @@ public class Music2Procedure {
 			}
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"playsound elementure:black_iron_pact music @s");
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands()
+							.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+									_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+									_ent.getDisplayName(), _ent.level.getServer(), _ent), "playsound elementure:black_iron_pact music @s");
+				}
 			}
 		} else if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new ElementureModVariables.PlayerVariables())).musicName).equals("umbrasyl")
@@ -142,9 +170,12 @@ public class Music2Procedure {
 						AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 256, 256, 256), e -> true).isEmpty())) {
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"stopsound @s music elementure:black_iron_pact");
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands()
+							.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+									_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+									_ent.getDisplayName(), _ent.level.getServer(), _ent), "stopsound @s music elementure:black_iron_pact");
+				}
 			}
 		}
 		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
@@ -167,9 +198,14 @@ public class Music2Procedure {
 			}
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"playsound elementure:stand_at_mithrill_hall music @s");
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands()
+							.performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+											_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+											_ent.getDisplayName(), _ent.level.getServer(), _ent),
+									"playsound elementure:stand_at_mithrill_hall music @s");
+				}
 			}
 		} else if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new ElementureModVariables.PlayerVariables())).musicName).equals("sirenqueen")
@@ -177,9 +213,14 @@ public class Music2Procedure {
 						AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 256, 256, 256), e -> true).isEmpty())) {
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-							"stopsound @s music elementure:stand_at_mithrill_hall");
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands()
+							.performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+											_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+											_ent.getDisplayName(), _ent.level.getServer(), _ent),
+									"stopsound @s music elementure:stand_at_mithrill_hall");
+				}
 			}
 		}
 	}

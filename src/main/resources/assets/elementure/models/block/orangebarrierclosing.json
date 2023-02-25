@@ -4,5 +4,6 @@
     "all": "elementure:blocks/orange_barrier",
     "particle": "elementure:blocks/orange_barrier",
     "0": "elementure:blocks/orange_barrier"
-  }
+  },
+  "render_type": "translucent"
 }

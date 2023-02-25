@@ -10,7 +10,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.GreenseafoambladeHealingProcedure;
@@ -60,7 +59,7 @@ public class GreenseafoamaxeItem extends AxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("The green jelly infused makes it enhance healing. It also leaches life from your enemies."));
+		list.add(Component.literal("The green jelly infused makes it enhance healing. It also leaches life from your enemies."));
 	}
 
 	@Override

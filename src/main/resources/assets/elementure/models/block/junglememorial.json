@@ -4,5 +4,6 @@
     "all": "elementure:blocks/jungle_memorial",
     "particle": "elementure:blocks/jungle_memorial",
     "0": "elementure:blocks/jungle_memorial"
-  }
+  },
+  "render_type": "solid"
 }

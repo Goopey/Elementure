@@ -3,8 +3,7 @@ package net.mcreator.elementure.procedures;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
-
-import java.util.Random;
+import net.minecraft.util.RandomSource;
 
 public class CoalpuckSetOnFireProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
@@ -13,7 +12,7 @@ public class CoalpuckSetOnFireProcedure {
 		if (itemstack.getItem() == Items.FLINT_AND_STEEL) {
 			{
 				ItemStack _ist = itemstack;
-				if (_ist.hurt(1, new Random(), null)) {
+				if (_ist.hurt(1, RandomSource.create(), null)) {
 					_ist.shrink(1);
 					_ist.setDamageValue(0);
 				}

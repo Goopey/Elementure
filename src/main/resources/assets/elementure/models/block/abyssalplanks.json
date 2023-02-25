@@ -8,5 +8,6 @@
     "south": "elementure:blocks/abyssalplanks",
     "west": "elementure:blocks/abyssalplanks",
     "particle": "elementure:blocks/abyssalplanks"
-  }
+  },
+  "render_type": "solid"
 }

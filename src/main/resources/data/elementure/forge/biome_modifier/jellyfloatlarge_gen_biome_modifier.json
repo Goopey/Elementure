@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "frozen_ocean",
+    "deep_frozen_ocean"
+  ],
+  "features": "elementure:jellyfloatlarge_gen",
+  "step": "surface_structures"
+}

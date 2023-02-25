@@ -8,5 +8,6 @@
     "south": "elementure:blocks/lilypad_block",
     "west": "elementure:blocks/lilypad_block",
     "particle": "elementure:blocks/lilypad_block"
-  }
+  },
+  "render_type": "solid"
 }

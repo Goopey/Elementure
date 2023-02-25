@@ -8,5 +8,6 @@
     "south": "elementure:blocks/lilypad_log_stripped",
     "west": "elementure:blocks/lilypad_log_stripped",
     "particle": "elementure:blocks/lilypad_log_stripped"
-  }
+  },
+  "render_type": "solid"
 }

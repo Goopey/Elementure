@@ -7,7 +7,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.init.ElementureModTabs;
@@ -27,6 +26,6 @@ public class GranitelensItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Relic : Has a small chance to damage creatures in a zone around you whenever an enemy is attacked."));
+		list.add(Component.literal("Relic : Has a small chance to damage creatures in a zone around you whenever an enemy is attacked."));
 	}
 }

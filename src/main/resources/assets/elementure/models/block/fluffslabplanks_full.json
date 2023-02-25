@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/fluff_plank",
     "top": "elementure:blocks/fluff_plank",
     "side": "elementure:blocks/fluff_plank"
-  }
+  },
+  "render_type": "solid"
 }

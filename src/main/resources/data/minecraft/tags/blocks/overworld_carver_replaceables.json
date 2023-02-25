@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "elementure:runeblock",
+    "elementure:pitstone",
+    "minecraft:dead_brain_coral_block",
+    "minecraft:stone",
+    "minecraft:grass_block",
+    "minecraft:dirt",
+    "minecraft:red_sand",
+    "elementure:silvershoressand"
+  ]
+}

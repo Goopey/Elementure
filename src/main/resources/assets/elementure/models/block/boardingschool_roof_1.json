@@ -8,5 +8,6 @@
     "south": "elementure:blocks/boardingschool_roof1",
     "west": "elementure:blocks/boardingschool_roof1",
     "particle": "elementure:blocks/boardingschool_roof1"
-  }
+  },
+  "render_type": "solid"
 }

@@ -1,9 +1,5 @@
 package net.mcreator.elementure.procedures;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
 import net.minecraft.world.level.levelgen.Heightmap;
@@ -19,6 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.elementure.init.ElementureModBlocks;
+import net.mcreator.elementure.ElementureMod;
 
 public class WindyshoresBaseGenProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -51,7 +48,7 @@ public class WindyshoresBaseGenProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putBoolean("windyshoresUsed", (true));
+						_blockEntity.getPersistentData().putBoolean("windyshoresUsed", (true));
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -89,65 +86,21 @@ public class WindyshoresBaseGenProcedure {
 		}
 		WORLD_MID = 204;
 		for (int index3 = 0; index3 < (int) (1 + Math.round(Math.random() * 2)); index3++) {
-			new Object() {
-				private int ticks = 0;
-				private float waitTicks;
-				private LevelAccessor world;
-
-				public void start(LevelAccessor world, int waitTicks) {
-					this.waitTicks = waitTicks;
-					MinecraftForge.EVENT_BUS.register(this);
-					this.world = world;
-				}
-
-				@SubscribeEvent
-				public void tick(TickEvent.ServerTickEvent event) {
-					if (event.phase == TickEvent.Phase.END) {
-						this.ticks += 1;
-						if (this.ticks >= this.waitTicks)
-							run();
-					}
-				}
-
-				private void run() {
-					IvorytowerGenProcedure.execute(world, (x - 60 + Math.random() * 120), (204 + Math.random() * 96 - 48),
-							(z - 60 + Math.random() * 120));
-					MinecraftForge.EVENT_BUS.unregister(this);
-				}
-			}.start(world, 20);
+			ElementureMod.queueServerWork(20, () -> {
+				IvorytowerGenProcedure.execute(world, (x - 60 + Math.random() * 120), (204 + Math.random() * 96 - 48),
+						(z - 60 + Math.random() * 120));
+			});
 		}
-		new Object() {
-			private int ticks = 0;
-			private float waitTicks;
-			private LevelAccessor world;
-
-			public void start(LevelAccessor world, int waitTicks) {
-				this.waitTicks = waitTicks;
-				MinecraftForge.EVENT_BUS.register(this);
-				this.world = world;
-			}
-
-			@SubscribeEvent
-			public void tick(TickEvent.ServerTickEvent event) {
-				if (event.phase == TickEvent.Phase.END) {
-					this.ticks += 1;
-					if (this.ticks >= this.waitTicks)
-						run();
+		ElementureMod.queueServerWork(40, () -> {
+			if (world instanceof ServerLevel _serverworld) {
+				StructureTemplate template = _serverworld.getStructureManager()
+						.getOrCreate(new ResourceLocation("elementure", "windyshores_starry_beach"));
+				if (template != null) {
+					template.placeInWorld(_serverworld, new BlockPos(x - 8, 270, z - 8), new BlockPos(x - 8, 270, z - 8),
+							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							_serverworld.random, 3);
 				}
 			}
-
-			private void run() {
-				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager()
-							.getOrCreate(new ResourceLocation("elementure", "windyshores_starry_beach"));
-					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x - 8, 270, z - 8), new BlockPos(x - 8, 270, z - 8),
-								new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-								_serverworld.random, 3);
-					}
-				}
-				MinecraftForge.EVENT_BUS.unregister(this);
-			}
-		}.start(world, 40);
+		});
 	}
 }

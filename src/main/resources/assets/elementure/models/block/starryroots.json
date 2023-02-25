@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/vines_starry",
     "particle": "elementure:blocks/vines_starry"
-  }
+  },
+  "render_type": "solid"
 }

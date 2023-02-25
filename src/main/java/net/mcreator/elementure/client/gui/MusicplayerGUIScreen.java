@@ -5,7 +5,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
@@ -84,49 +83,49 @@ public class MusicplayerGUIScreen extends AbstractContainerScreen<MusicplayerGUI
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 73, this.topPos + 143, 60, 20, new TextComponent("Credits"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 73, this.topPos + 143, 60, 20, Component.literal("Credits"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUIButtonMessage(0, x, y, z));
 				MusicplayerGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 157, this.topPos + 143, 45, 20, new TextComponent("Next"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 157, this.topPos + 143, 45, 20, Component.literal("Next"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUIButtonMessage(1, x, y, z));
 				MusicplayerGUIButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 27, 135, 20, new TextComponent("Marble Forest - Mudeth"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 27, 135, 20, Component.literal("Marble Forest - Mudeth"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUIButtonMessage(2, x, y, z));
 				MusicplayerGUIButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 49, 160, 20, new TextComponent("Coral Labyrinth - Red&Green"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 49, 160, 20, Component.literal("Coral Labyrinth - Red&Green"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUIButtonMessage(3, x, y, z));
 				MusicplayerGUIButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 71, 85, 20, new TextComponent("Intro - C418"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 71, 85, 20, Component.literal("Intro - C418"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUIButtonMessage(4, x, y, z));
 				MusicplayerGUIButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 93, 160, 20, new TextComponent("Dark Choir - Mattia Cupelli"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 93, 160, 20, Component.literal("Dark Choir - Mattia Cupelli"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUIButtonMessage(5, x, y, z));
 				MusicplayerGUIButtonMessage.handleButtonAction(entity, 5, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 64, this.topPos + 3, 77, 20, new TextComponent("STOP MUSIC"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 64, this.topPos + 3, 77, 20, Component.literal("STOP MUSIC"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUIButtonMessage(6, x, y, z));
 				MusicplayerGUIButtonMessage.handleButtonAction(entity, 6, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 115, 134, 20, new TextComponent("Forgotten - REPULSIVE"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 115, 134, 20, Component.literal("Forgotten - REPULSIVE"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUIButtonMessage(7, x, y, z));
 				MusicplayerGUIButtonMessage.handleButtonAction(entity, 7, x, y, z);

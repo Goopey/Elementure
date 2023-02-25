@@ -1,7 +1,0 @@
-{
-  "parent": "block/door_top",
-  "textures": {
-    "bottom": "elementure:blocks/old_door_1",
-    "top": "elementure:blocks/old_door_2"
-  }
-}

@@ -9,6 +9,9 @@ import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.elementure.init.ElementureModItems;
 
@@ -18,7 +21,7 @@ import javax.annotation.Nullable;
 public class Lebigmaigre07LoginGiveFamiliarProcedure {
 	@SubscribeEvent
 	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-		execute(event, event.getPlayer());
+		execute(event, event.getEntity());
 	}
 
 	public static void execute(Entity entity) {
@@ -31,9 +34,13 @@ public class Lebigmaigre07LoginGiveFamiliarProcedure {
 		if ((entity.getDisplayName().getString()).equals("Lebigmaigre")) {
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+									_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+									_ent.getDisplayName(), _ent.level.getServer(), _ent),
 							"playsound elementure:cucuiganon music @e[distance=..40,type=minecraft:player]");
+				}
 			}
 			if (!entity.getPersistentData().getBoolean("loginfamiliarobtained")) {
 				entity.getPersistentData().putBoolean("loginfamiliarobtained", (true));

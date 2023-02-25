@@ -4,5 +4,6 @@
     "all": "elementure:blocks/taiga_memorial",
     "particle": "elementure:blocks/taiga_memorial",
     "0": "elementure:blocks/taiga_memorial"
-  }
+  },
+  "render_type": "solid"
 }

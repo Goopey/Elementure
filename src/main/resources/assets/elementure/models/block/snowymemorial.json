@@ -4,5 +4,6 @@
     "all": "elementure:blocks/snowy_memorial",
     "particle": "elementure:blocks/snowy_memorial",
     "0": "elementure:blocks/snowy_memorial"
-  }
+  },
+  "render_type": "solid"
 }

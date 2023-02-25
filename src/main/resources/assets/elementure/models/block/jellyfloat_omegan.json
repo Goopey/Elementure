@@ -8,5 +8,6 @@
     "south": "elementure:blocks/gravel",
     "west": "elementure:blocks/gravel",
     "particle": "elementure:blocks/gravel"
-  }
+  },
+  "render_type": "solid"
 }

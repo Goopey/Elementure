@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "taiga",
+    "old_growth_pine_taiga",
+    "snowy_taiga",
+    "old_growth_spruce_taiga"
+  ],
+  "features": "elementure:wildblueberry",
+  "step": "vegetal_decoration"
+}

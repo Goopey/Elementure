@@ -1,7 +1,7 @@
 package net.mcreator.elementure.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
@@ -15,13 +15,14 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.util.RandomSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.Registry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
@@ -35,7 +36,6 @@ import net.mcreator.elementure.entity.CustombobberEntity;
 
 import java.util.stream.Collectors;
 import java.util.concurrent.atomic.AtomicReference;
-import java.util.Random;
 import java.util.List;
 import java.util.Iterator;
 import java.util.Comparator;
@@ -88,7 +88,7 @@ public class ReinforcedfishingrodSendBobberProcedure {
 					if ((new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -96,7 +96,7 @@ public class ReinforcedfishingrodSendBobberProcedure {
 					}.getItemStack(1, itemstack)).getItem() == ElementureModItems.OBSIDIANBOBBER.get() || (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -137,7 +137,7 @@ public class ReinforcedfishingrodSendBobberProcedure {
 				} else if ((new Object() {
 					public ItemStack getItemStack(int sltid, ItemStack _isc) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 							_retval.set(capability.getStackInSlot(sltid).copy());
 						});
 						return _retval.get();
@@ -181,7 +181,7 @@ public class ReinforcedfishingrodSendBobberProcedure {
 					}
 					{
 						ItemStack _ist = itemstack;
-						if (_ist.hurt(1, new Random(), null)) {
+						if (_ist.hurt(1, RandomSource.create(), null)) {
 							_ist.shrink(1);
 							_ist.setDamageValue(0);
 						}
@@ -201,7 +201,7 @@ public class ReinforcedfishingrodSendBobberProcedure {
 					itemstack.getOrCreateTag().putBoolean("sent", (false));
 					entity.getPersistentData().putBoolean("FISH", (false));
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent("You lost the fish!"), (true));
+						_player.displayClientMessage(Component.literal("You lost the fish!"), (true));
 				}
 			} else if (fishBobber == true) {
 				if (Math.random() / 2 + itemstack.getOrCreateTag().getDouble("fishingPower") / 12 > 0.4) {
@@ -217,7 +217,7 @@ public class ReinforcedfishingrodSendBobberProcedure {
 					}
 					{
 						ItemStack _ist = itemstack;
-						if (_ist.hurt(1, new Random(), null)) {
+						if (_ist.hurt(1, RandomSource.create(), null)) {
 							_ist.shrink(1);
 							_ist.setDamageValue(0);
 						}
@@ -237,7 +237,7 @@ public class ReinforcedfishingrodSendBobberProcedure {
 					itemstack.getOrCreateTag().putBoolean("sent", (false));
 					entity.getPersistentData().putBoolean("FISH", (false));
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent("You lost the fish!"), (true));
+						_player.displayClientMessage(Component.literal("You lost the fish!"), (true));
 				}
 			} else {
 				entity.getPersistentData().putBoolean("FISH", (false));

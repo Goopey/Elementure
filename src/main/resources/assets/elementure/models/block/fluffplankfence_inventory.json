@@ -3,5 +3,6 @@
   "textures": {
     "texture": "elementure:blocks/fluff_plank",
     "particle": "elementure:blocks/fluff_plank"
-  }
+  },
+  "render_type": "solid"
 }

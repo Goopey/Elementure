@@ -4,5 +4,6 @@
     "all": "elementure:blocks/smallakyberrybush",
     "particle": "elementure:blocks/smallakyberrybush",
     "0": "elementure:blocks/smallakyberrybush"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

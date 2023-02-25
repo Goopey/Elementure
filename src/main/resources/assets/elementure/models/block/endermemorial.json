@@ -4,5 +4,6 @@
     "all": "elementure:blocks/ender_memorial",
     "particle": "elementure:blocks/ender_memorial",
     "0": "elementure:blocks/ender_memorial"
-  }
+  },
+  "render_type": "solid"
 }

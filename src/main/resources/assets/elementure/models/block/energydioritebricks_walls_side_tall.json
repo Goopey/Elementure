@@ -3,5 +3,6 @@
   "textures": {
     "wall": "elementure:blocks/energy_diorite_bricks",
     "particle": "elementure:blocks/energy_diorite_bricks"
-  }
+  },
+  "render_type": "solid"
 }

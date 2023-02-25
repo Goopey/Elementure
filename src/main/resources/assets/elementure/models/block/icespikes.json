@@ -5,5 +5,6 @@
     "particle": "elementure:blocks/icespikes",
     "0": "elementure:blocks/icespikes",
     "-1": "elementure:blocks/icespikes"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

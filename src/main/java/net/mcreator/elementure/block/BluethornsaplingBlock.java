@@ -1,9 +1,6 @@
 
 package net.mcreator.elementure.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
@@ -26,25 +23,22 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.FluffsaplingValidLocationProcedure;
 import net.mcreator.elementure.procedures.BluethornsaplinggrowProcedure;
 import net.mcreator.elementure.procedures.BluethornsaplingMealProcedure;
-import net.mcreator.elementure.init.ElementureModBlocks;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
 public class BluethornsaplingBlock extends Block {
 	public BluethornsaplingBlock() {
 		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(0.1f, 0.5f).noCollission().noOcclusion().randomTicks()
-				.isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
+				.isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override
@@ -83,13 +77,8 @@ public class BluethornsaplingBlock extends Block {
 	}
 
 	@Override
-	public BlockPathTypes getAiPathNodeType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
+	public BlockPathTypes getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
 		return BlockPathTypes.OPEN;
-	}
-
-	@Override
-	public Block.OffsetType getOffsetType() {
-		return Block.OffsetType.XZ;
 	}
 
 	@Override
@@ -106,7 +95,7 @@ public class BluethornsaplingBlock extends Block {
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();
@@ -129,10 +118,4 @@ public class BluethornsaplingBlock extends Block {
 		BluethornsaplingMealProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.BLUETHORNSAPLING.get(), renderType -> renderType == RenderType.cutoutMipped());
-	}
-
 }

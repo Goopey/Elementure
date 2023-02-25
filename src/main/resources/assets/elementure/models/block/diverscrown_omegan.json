@@ -8,5 +8,6 @@
     "south": "elementure:blocks/new_stone",
     "west": "elementure:blocks/new_stone",
     "particle": "elementure:blocks/new_stone"
-  }
+  },
+  "render_type": "solid"
 }

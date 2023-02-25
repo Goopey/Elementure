@@ -1,9 +1,6 @@
 
 package net.mcreator.elementure.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.HitResult;
@@ -32,14 +29,11 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.MemoryplantCheckProcedure;
 import net.mcreator.elementure.procedures.Memoryplant3HarvestProcedure;
 import net.mcreator.elementure.procedures.Memoryplant3DropsProcedure;
 import net.mcreator.elementure.init.ElementureModItems;
-import net.mcreator.elementure.init.ElementureModBlocks;
 import net.mcreator.elementure.block.entity.Memoryplant3BlockEntity;
 
 import java.util.List;
@@ -172,10 +166,4 @@ public class Memoryplant3Block extends Block
 		else
 			return 0;
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.MEMORYPLANT_3.get(), renderType -> renderType == RenderType.cutout());
-	}
-
 }

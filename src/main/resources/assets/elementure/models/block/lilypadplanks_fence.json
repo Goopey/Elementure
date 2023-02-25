@@ -3,5 +3,6 @@
   "textures": {
     "texture": "elementure:blocks/lilypad_plank",
     "particle": "elementure:blocks/lilypad_plank"
-  }
+  },
+  "render_type": "solid"
 }

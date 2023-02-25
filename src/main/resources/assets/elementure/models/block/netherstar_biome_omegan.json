@@ -8,5 +8,6 @@
     "south": "elementure:blocks/soulsand",
     "west": "elementure:blocks/soulsand",
     "particle": "elementure:blocks/soulsand"
-  }
+  },
+  "render_type": "solid"
 }

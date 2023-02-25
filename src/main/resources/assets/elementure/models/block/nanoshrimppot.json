@@ -4,5 +4,6 @@
     "all": "elementure:blocks/nano_shrimp_pot_texturemap",
     "particle": "elementure:blocks/nano_shrimp_pot_texturemap",
     "0": "elementure:blocks/nano_shrimp_pot_texturemap"
-  }
+  },
+  "render_type": "cutout"
 }

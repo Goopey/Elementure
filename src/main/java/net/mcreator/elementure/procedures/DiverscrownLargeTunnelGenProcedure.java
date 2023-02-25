@@ -1,9 +1,5 @@
 package net.mcreator.elementure.procedures;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.block.state.BlockState;
@@ -12,12 +8,13 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
 import net.mcreator.elementure.init.ElementureModBlocks;
+import net.mcreator.elementure.ElementureMod;
 
 public class DiverscrownLargeTunnelGenProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -30,59 +27,15 @@ public class DiverscrownLargeTunnelGenProcedure {
 		double maxX = 0;
 		double repeatTimes = 0;
 		LilypadLargeGenProcedure.execute(world, x, y, z);
-		new Object() {
-			private int ticks = 0;
-			private float waitTicks;
-			private LevelAccessor world;
-
-			public void start(LevelAccessor world, int waitTicks) {
-				this.waitTicks = waitTicks;
-				MinecraftForge.EVENT_BUS.register(this);
-				this.world = world;
-			}
-
-			@SubscribeEvent
-			public void tick(TickEvent.ServerTickEvent event) {
-				if (event.phase == TickEvent.Phase.END) {
-					this.ticks += 1;
-					if (this.ticks >= this.waitTicks)
-						run();
-				}
-			}
-
-			private void run() {
-				DiverscrownMainRootProcedure.execute(world, x, (y - 15), z);
-				MinecraftForge.EVENT_BUS.unregister(this);
-			}
-		}.start(world, 5);
-		new Object() {
-			private int ticks = 0;
-			private float waitTicks;
-			private LevelAccessor world;
-
-			public void start(LevelAccessor world, int waitTicks) {
-				this.waitTicks = waitTicks;
-				MinecraftForge.EVENT_BUS.register(this);
-				this.world = world;
-			}
-
-			@SubscribeEvent
-			public void tick(TickEvent.ServerTickEvent event) {
-				if (event.phase == TickEvent.Phase.END) {
-					this.ticks += 1;
-					if (this.ticks >= this.waitTicks)
-						run();
-				}
-			}
-
-			private void run() {
-				DiverscrownSmallTunnelGenProcedure.execute(world, (x - 66), 0, z);
-				DiverscrownSmallTunnelGenProcedure.execute(world, (x + 66), 0, z);
-				DiverscrownSmallTunnelGenProcedure.execute(world, x, 0, (z - 66));
-				DiverscrownSmallTunnelGenProcedure.execute(world, x, 0, (z + 66));
-				MinecraftForge.EVENT_BUS.unregister(this);
-			}
-		}.start(world, 10);
+		ElementureMod.queueServerWork(5, () -> {
+			DiverscrownMainRootProcedure.execute(world, x, (y - 15), z);
+		});
+		ElementureMod.queueServerWork(10, () -> {
+			DiverscrownSmallTunnelGenProcedure.execute(world, (x - 66), 0, z);
+			DiverscrownSmallTunnelGenProcedure.execute(world, (x + 66), 0, z);
+			DiverscrownSmallTunnelGenProcedure.execute(world, x, 0, (z - 66));
+			DiverscrownSmallTunnelGenProcedure.execute(world, x, 0, (z + 66));
+		});
 		locX = -44;
 		locY = -9;
 		locZ = -44;
@@ -99,7 +52,7 @@ public class DiverscrownLargeTunnelGenProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("diverscrownOmeganRole", 4);
+								_blockEntity.getPersistentData().putDouble("diverscrownOmeganRole", 4);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -178,7 +131,7 @@ public class DiverscrownLargeTunnelGenProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("diverscrownOmeganRole", 2);
+								_blockEntity.getPersistentData().putDouble("diverscrownOmeganRole", 2);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -226,85 +179,41 @@ public class DiverscrownLargeTunnelGenProcedure {
 		}
 		repeatTimes = 1;
 		for (int index3 = 0; index3 < (int) (10); index3++) {
-			new Object() {
-				private int ticks = 0;
-				private float waitTicks;
-				private LevelAccessor world;
-
-				public void start(LevelAccessor world, int waitTicks) {
-					this.waitTicks = waitTicks;
-					MinecraftForge.EVENT_BUS.register(this);
-					this.world = world;
-				}
-
-				@SubscribeEvent
-				public void tick(TickEvent.ServerTickEvent event) {
-					if (event.phase == TickEvent.Phase.END) {
-						this.ticks += 1;
-						if (this.ticks >= this.waitTicks)
-							run();
-					}
-				}
-
-				private void run() {
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands()
-								.performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-										new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-										"kill @e[type=minecraft:item, distance=0..40]");
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands()
-								.performCommand(
-										new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 40), z), Vec2.ZERO, _level, 4, "",
-												new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-										"kill @e[type=minecraft:item, distance=0..40]");
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands()
-								.performCommand(
-										new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 80), z), Vec2.ZERO, _level, 4, "",
-												new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-										"kill @e[type=minecraft:item, distance=0..40]");
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands()
-								.performCommand(
-										new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 120), z), Vec2.ZERO, _level, 4, "",
-												new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-										"kill @e[type=minecraft:item, distance=0..40]");
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands()
-								.performCommand(
-										new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 160), z), Vec2.ZERO, _level, 4, "",
-												new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-										"kill @e[type=minecraft:item, distance=0..40]");
-					MinecraftForge.EVENT_BUS.unregister(this);
-				}
-			}.start(world, (int) (repeatTimes * 5));
+			ElementureMod.queueServerWork((int) (repeatTimes * 5), () -> {
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands()
+							.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
+									Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"kill @e[type=minecraft:item, distance=0..40]");
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands()
+							.performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 40), z), Vec2.ZERO, _level, 4, "",
+											Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"kill @e[type=minecraft:item, distance=0..40]");
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands()
+							.performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 80), z), Vec2.ZERO, _level, 4, "",
+											Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"kill @e[type=minecraft:item, distance=0..40]");
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands()
+							.performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 120), z), Vec2.ZERO, _level, 4, "",
+											Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"kill @e[type=minecraft:item, distance=0..40]");
+				if (world instanceof ServerLevel _level)
+					_level.getServer().getCommands()
+							.performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 160), z), Vec2.ZERO, _level, 4, "",
+											Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+									"kill @e[type=minecraft:item, distance=0..40]");
+			});
 			repeatTimes = repeatTimes + 1;
 		}
-		new Object() {
-			private int ticks = 0;
-			private float waitTicks;
-			private LevelAccessor world;
-
-			public void start(LevelAccessor world, int waitTicks) {
-				this.waitTicks = waitTicks;
-				MinecraftForge.EVENT_BUS.register(this);
-				this.world = world;
-			}
-
-			@SubscribeEvent
-			public void tick(TickEvent.ServerTickEvent event) {
-				if (event.phase == TickEvent.Phase.END) {
-					this.ticks += 1;
-					if (this.ticks >= this.waitTicks)
-						run();
-				}
-			}
-
-			private void run() {
-				DiverscrownSirenheartGenProcedure.execute(world, x, 12, z);
-				MinecraftForge.EVENT_BUS.unregister(this);
-			}
-		}.start(world, 60);
+		ElementureMod.queueServerWork(60, () -> {
+			DiverscrownSirenheartGenProcedure.execute(world, x, 12, z);
+		});
 	}
 }

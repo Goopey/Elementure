@@ -8,5 +8,6 @@
     "south": "elementure:blocks/mycena_mossy_grass_side",
     "west": "elementure:blocks/mycena_mossy_grass_side",
     "particle": "elementure:blocks/dirtblock"
-  }
+  },
+  "render_type": "solid"
 }

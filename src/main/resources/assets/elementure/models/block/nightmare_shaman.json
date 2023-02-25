@@ -4,5 +4,6 @@
     "all": "elementure:blocks/nightmare_shaman_texturemap",
     "particle": "elementure:blocks/nightmare_shaman_texturemap",
     "0": "elementure:blocks/nightmare_shaman_texturemap"
-  }
+  },
+  "render_type": "solid"
 }

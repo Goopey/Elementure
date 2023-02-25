@@ -21,7 +21,7 @@ public class MossdungeonInfectedSpawnsProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putBoolean("mycenaUsed", (true));
+					_blockEntity.getPersistentData().putBoolean("mycenaUsed", (true));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

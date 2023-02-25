@@ -1,9 +1,6 @@
 
 package net.mcreator.elementure.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -16,10 +13,6 @@ import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-
-import net.mcreator.elementure.init.ElementureModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -36,7 +29,7 @@ public class PooltileStairsBlock extends StairBlock {
 	}
 
 	@Override
-	public boolean isRandomlyTicking(BlockState p_56947_) {
+	public boolean isRandomlyTicking(BlockState state) {
 		return false;
 	}
 
@@ -59,10 +52,4 @@ public class PooltileStairsBlock extends StairBlock {
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.POOLTILE_STAIRS.get(), renderType -> renderType == RenderType.cutout());
-	}
-
 }

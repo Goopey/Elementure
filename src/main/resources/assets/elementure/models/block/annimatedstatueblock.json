@@ -4,5 +4,6 @@
     "all": "elementure:blocks/annimatedstatueblock",
     "particle": "elementure:blocks/annimatedstatueblock",
     "0": "elementure:blocks/annimatedstatueblock"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

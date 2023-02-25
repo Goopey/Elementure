@@ -10,7 +10,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.DeepbladeEffectProcedure;
@@ -57,7 +56,7 @@ public class DeepbladeItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("An ancient dagger. It's sensible to light."));
-		list.add(new TextComponent("Deal extra damage against glowing mobs."));
+		list.add(Component.literal("An ancient dagger. It's sensible to light."));
+		list.add(Component.literal("Deal extra damage against glowing mobs."));
 	}
 }

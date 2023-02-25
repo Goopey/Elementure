@@ -4,5 +4,6 @@
     "all": "elementure:blocks/mushy_slime_glue",
     "particle": "elementure:blocks/mushy_slime_glue",
     "0": "elementure:blocks/mushy_slime_glue"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

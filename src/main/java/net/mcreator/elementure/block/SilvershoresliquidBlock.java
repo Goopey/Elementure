@@ -5,7 +5,6 @@ import org.checkerframework.checker.units.qual.s;
 
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.LiquidBlock;
@@ -16,8 +15,8 @@ import net.mcreator.elementure.init.ElementureModFluids;
 
 public class SilvershoresliquidBlock extends LiquidBlock {
 	public SilvershoresliquidBlock() {
-		super(() -> (FlowingFluid) ElementureModFluids.SILVERSHORESLIQUID.get(), BlockBehaviour.Properties.of(Material.LAVA, MaterialColor.METAL)
-				.strength(100f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).lightLevel(s -> 4));
+		super(() -> ElementureModFluids.SILVERSHORESLIQUID.get(), BlockBehaviour.Properties.of(Material.LAVA, MaterialColor.METAL).strength(100f)
+				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).lightLevel(s -> 4).noCollission().noLootTable());
 	}
 
 	@Override

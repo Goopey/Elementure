@@ -8,5 +8,6 @@
     "south": "elementure:blocks/cloudsand",
     "west": "elementure:blocks/cloudsand",
     "particle": "elementure:blocks/cloudsand"
-  }
+  },
+  "render_type": "solid"
 }

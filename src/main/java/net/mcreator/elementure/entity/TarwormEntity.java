@@ -4,15 +4,11 @@ package net.mcreator.elementure.entity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.common.ForgeMod;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
@@ -33,7 +29,6 @@ import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
@@ -58,13 +53,7 @@ import javax.annotation.Nullable;
 
 import java.util.EnumSet;
 
-@Mod.EventBusSubscriber
 public class TarwormEntity extends Monster {
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.WATER_AMBIENT).add(new MobSpawnSettings.SpawnerData(ElementureModEntities.TARWORM.get(), 100, 1, 2));
-	}
-
 	public TarwormEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(ElementureModEntities.TARWORM.get(), world);
 	}
@@ -78,14 +67,14 @@ public class TarwormEntity extends Monster {
 			@Override
 			public void tick() {
 				if (TarwormEntity.this.isInWater())
-					TarwormEntity.this.setDeltaMovement(TarwormEntity.this.getDeltaMovement().add(0, 0.002, 0));
+					TarwormEntity.this.setDeltaMovement(TarwormEntity.this.getDeltaMovement().add(0, 0.005, 0));
 				if (this.operation == MoveControl.Operation.MOVE_TO && !TarwormEntity.this.getNavigation().isDone()) {
 					double dx = this.wantedX - TarwormEntity.this.getX();
 					double dy = this.wantedY - TarwormEntity.this.getY();
 					double dz = this.wantedZ - TarwormEntity.this.getZ();
 					float f = (float) (Mth.atan2(dz, dx) * (double) (180 / Math.PI)) - 90;
 					float f1 = (float) (this.speedModifier * TarwormEntity.this.getAttribute(Attributes.MOVEMENT_SPEED).getValue());
-					TarwormEntity.this.setYRot(this.rotlerp(TarwormEntity.this.getYRot(), f, 10) - 2.f);
+					TarwormEntity.this.setYRot(this.rotlerp(TarwormEntity.this.getYRot(), f, 10));
 					TarwormEntity.this.yBodyRot = TarwormEntity.this.getYRot();
 					TarwormEntity.this.yHeadRot = TarwormEntity.this.getYRot();
 					if (TarwormEntity.this.isInWater()) {
@@ -127,9 +116,7 @@ public class TarwormEntity extends Monster {
 				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
 			}
 		});
-		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Player.class, false, false));
-		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, ServerPlayer.class, false, false));
-		this.goalSelector.addGoal(4, new Goal() {
+		this.goalSelector.addGoal(2, new Goal() {
 			{
 				this.setFlags(EnumSet.of(Goal.Flag.MOVE));
 			}
@@ -169,6 +156,8 @@ public class TarwormEntity extends Monster {
 				}
 			}
 		});
+		this.targetSelector.addGoal(3, new NearestAttackableTargetGoal(this, Player.class, false, false));
+		this.targetSelector.addGoal(4, new NearestAttackableTargetGoal(this, ServerPlayer.class, false, false));
 		this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
 		this.goalSelector.addGoal(6, new RandomSwimmingGoal(this, 0.5, 40));
 	}
@@ -241,11 +230,12 @@ public class TarwormEntity extends Monster {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 1.8);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 2.6);
 		builder = builder.add(Attributes.MAX_HEALTH, 40);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
-		builder = builder.add(ForgeMod.SWIM_SPEED.get(), 1.8);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
+		builder = builder.add(ForgeMod.SWIM_SPEED.get(), 2.6);
 		return builder;
 	}
 }

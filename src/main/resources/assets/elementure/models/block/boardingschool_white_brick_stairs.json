@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/boardingschool_whitebricks",
     "top": "elementure:blocks/boardingschool_whitebricks",
     "side": "elementure:blocks/boardingschool_whitebricks"
-  }
+  },
+  "render_type": "solid"
 }

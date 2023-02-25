@@ -7,7 +7,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.init.ElementureModTabs;
@@ -27,7 +26,7 @@ public class SmallblessingofspeedItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("..."));
-		list.add(new TextComponent("It's a bar of sugar."));
+		list.add(Component.literal("..."));
+		list.add(Component.literal("It's a bar of sugar."));
 	}
 }

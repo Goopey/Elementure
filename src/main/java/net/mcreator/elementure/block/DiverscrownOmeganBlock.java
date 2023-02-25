@@ -17,13 +17,13 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.elementure.procedures.DiverscrownOmeganGen1Procedure;
 import net.mcreator.elementure.block.entity.DiverscrownOmeganBlockEntity;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -62,7 +62,7 @@ public class DiverscrownOmeganBlock extends Block
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();

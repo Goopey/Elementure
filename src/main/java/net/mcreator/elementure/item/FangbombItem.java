@@ -18,7 +18,6 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
@@ -44,7 +43,7 @@ public class FangbombItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Stuns a group of enemies. Simple, somewhat easy to use."));
+		list.add(Component.literal("Stuns a group of enemies. Simple, somewhat easy to use."));
 	}
 
 	@Override
@@ -100,7 +99,6 @@ public class FangbombItem extends Item {
 								entity.getInventory().removeItem(stack);
 						}
 					}
-
 					FangbombConsumeProcedure.execute(entity);
 				}
 			}

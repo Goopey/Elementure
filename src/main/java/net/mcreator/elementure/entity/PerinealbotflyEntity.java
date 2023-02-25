@@ -27,6 +27,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
@@ -35,8 +36,6 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.elementure.procedures.PerinealbotflyDropsProcedure;
 import net.mcreator.elementure.procedures.HarvestsyrupProcedure;
 import net.mcreator.elementure.init.ElementureModEntities;
-
-import java.util.Random;
 
 public class PerinealbotflyEntity extends PathfinderMob {
 	public PerinealbotflyEntity(PlayMessages.SpawnEntity packet, Level world) {
@@ -66,7 +65,7 @@ public class PerinealbotflyEntity extends PathfinderMob {
 		this.goalSelector.addGoal(1, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
-				Random random = PerinealbotflyEntity.this.getRandom();
+				RandomSource random = PerinealbotflyEntity.this.getRandom();
 				double dir_x = PerinealbotflyEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_y = PerinealbotflyEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_z = PerinealbotflyEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);

@@ -15,7 +15,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.MycenanarmorFullSetAbilityProcedure;
@@ -77,7 +76,7 @@ public abstract class MycenanarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent(
+			list.add(Component.literal(
 					"Full armor effect : when losing health,you have a chance to instantly regenerate health and infect enemies close to you with fungal spores"));
 		}
 
@@ -95,7 +94,7 @@ public abstract class MycenanarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent(
+			list.add(Component.literal(
 					"Full armor effect : when losing health,you have a chance to instantly regenerate health and infect enemies close to you with fungal spores"));
 		}
 
@@ -118,7 +117,7 @@ public abstract class MycenanarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent(
+			list.add(Component.literal(
 					"Full armor effect : when losing health,you have a chance to instantly regenerate health and infect enemies close to you with fungal spores"));
 		}
 
@@ -136,7 +135,7 @@ public abstract class MycenanarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent(
+			list.add(Component.literal(
 					"Full armor effect : when losing health,you have a chance to instantly regenerate health and infect enemies close to you with fungal spores"));
 		}
 

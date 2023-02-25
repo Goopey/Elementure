@@ -9,7 +9,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.PipAssignPowerProcedure;
@@ -31,7 +30,7 @@ public class PipItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("A tiny fish. It doesn't make good food, but it might make good bait."));
+		list.add(Component.literal("A tiny fish. It doesn't make good food, but it might make good bait."));
 	}
 
 	@Override

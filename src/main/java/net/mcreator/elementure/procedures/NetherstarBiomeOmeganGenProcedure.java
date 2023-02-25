@@ -1,9 +1,5 @@
 package net.mcreator.elementure.procedures;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
@@ -20,7 +16,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
@@ -28,6 +24,7 @@ import net.minecraft.commands.CommandSource;
 import net.mcreator.elementure.init.ElementureModEntities;
 import net.mcreator.elementure.init.ElementureModBlocks;
 import net.mcreator.elementure.entity.ScrapguardianEntity;
+import net.mcreator.elementure.ElementureMod;
 
 public class NetherstarBiomeOmeganGenProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -37,35 +34,14 @@ public class NetherstarBiomeOmeganGenProcedure {
 			world = _origLevel.getServer().getLevel(Level.NETHER);
 			if (world != null) {
 				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level,
-							4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(), "forceload add ~ ~");
-				new Object() {
-					private int ticks = 0;
-					private float waitTicks;
-					private LevelAccessor world;
-
-					public void start(LevelAccessor world, int waitTicks) {
-						this.waitTicks = waitTicks;
-						MinecraftForge.EVENT_BUS.register(this);
-						this.world = world;
-					}
-
-					@SubscribeEvent
-					public void tick(TickEvent.ServerTickEvent event) {
-						if (event.phase == TickEvent.Phase.END) {
-							this.ticks += 1;
-							if (this.ticks >= this.waitTicks)
-								run();
-						}
-					}
-
-					private void run() {
-						if (world instanceof ServerLevel _level)
-							_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO,
-									_level, 4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(), "forceload remove all");
-						MinecraftForge.EVENT_BUS.unregister(this);
-					}
-				}.start(world, 360);
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO,
+							_level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "forceload add ~ ~");
+				ElementureMod.queueServerWork(360, () -> {
+					if (world instanceof ServerLevel _level)
+						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z),
+								Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"forceload remove all");
+				});
 			}
 			world = _worldorig;
 		}
@@ -73,7 +49,7 @@ public class NetherstarBiomeOmeganGenProcedure {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getDouble(tag);
+					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "netherstarOGenRole") == 0) {
@@ -82,7 +58,7 @@ public class NetherstarBiomeOmeganGenProcedure {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getDouble(tag);
+					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "netherstarOGenRole") == 1) {
@@ -93,7 +69,7 @@ public class NetherstarBiomeOmeganGenProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("netherstarOGenRole", 5);
+					_blockEntity.getPersistentData().putDouble("netherstarOGenRole", 5);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -104,18 +80,20 @@ public class NetherstarBiomeOmeganGenProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("netherstarOGenRole", 2);
+					_blockEntity.getPersistentData().putDouble("netherstarOGenRole", 2);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4,
-						"", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(), "kill @e[type=minecraft:item, distance=0..84]");
+				_level.getServer().getCommands()
+						.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
+								Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"kill @e[type=minecraft:item, distance=0..84]");
 		} else if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getDouble(tag);
+					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "netherstarOGenRole") == 2) {
@@ -124,7 +102,7 @@ public class NetherstarBiomeOmeganGenProcedure {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getDouble(tag);
+					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "netherstarOGenRole") == 3) {
@@ -134,41 +112,19 @@ public class NetherstarBiomeOmeganGenProcedure {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getDouble(tag);
+					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "netherstarOGenRole") == 4) {
 			world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-			new Object() {
-				private int ticks = 0;
-				private float waitTicks;
-				private LevelAccessor world;
-
-				public void start(LevelAccessor world, int waitTicks) {
-					this.waitTicks = waitTicks;
-					MinecraftForge.EVENT_BUS.register(this);
-					this.world = world;
-				}
-
-				@SubscribeEvent
-				public void tick(TickEvent.ServerTickEvent event) {
-					if (event.phase == TickEvent.Phase.END) {
-						this.ticks += 1;
-						if (this.ticks >= this.waitTicks)
-							run();
-					}
-				}
-
-				private void run() {
-					StarryplainsFloorGenProcedure.execute(world, x, y, z);
-					MinecraftForge.EVENT_BUS.unregister(this);
-				}
-			}.start(world, 60);
+			ElementureMod.queueServerWork(60, () -> {
+				StarryplainsFloorGenProcedure.execute(world, x, y, z);
+			});
 		} else if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getDouble(tag);
+					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "netherstarOGenRole") == 5) {

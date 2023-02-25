@@ -17,7 +17,6 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
@@ -42,7 +41,7 @@ public class MycenanchannelerItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Summons a bunch of Mycenan Fumoon Sporelings around where you cast the skill"));
+		list.add(Component.literal("Summons a bunch of Mycenan Fumoon Sporelings around where you cast the skill"));
 	}
 
 	@Override
@@ -72,7 +71,6 @@ public class MycenanchannelerItem extends Item {
 				MycenanchannelerEntity entityarrow = MycenanchannelerEntity.shoot(world, entity, world.getRandom(), 1f, 0, 1);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				MycenanchannelerConsumeProcedure.execute(entity);
 			}
 		}

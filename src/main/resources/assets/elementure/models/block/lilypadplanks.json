@@ -8,5 +8,6 @@
     "south": "elementure:blocks/lilypad_plank",
     "west": "elementure:blocks/lilypad_plank",
     "particle": "elementure:blocks/lilypad_plank"
-  }
+  },
+  "render_type": "solid"
 }

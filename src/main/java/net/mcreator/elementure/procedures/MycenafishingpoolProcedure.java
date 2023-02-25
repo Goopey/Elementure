@@ -1,6 +1,6 @@
 package net.mcreator.elementure.procedures;
 
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
@@ -76,7 +76,7 @@ public class MycenafishingpoolProcedure {
 				if ((new Object() {
 					public ItemStack getItemStack(int sltid, ItemStack _isc) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 							_retval.set(capability.getStackInSlot(sltid).copy());
 						});
 						return _retval.get();
@@ -85,7 +85,7 @@ public class MycenafishingpoolProcedure {
 						.getItem() == ElementureModItems.MYCENANBOBBER.get() || (new Object() {
 							public ItemStack getItemStack(int sltid, ItemStack _isc) {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-								_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									_retval.set(capability.getStackInSlot(sltid).copy());
 								});
 								return _retval.get();
@@ -154,7 +154,7 @@ public class MycenafishingpoolProcedure {
 				if ((new Object() {
 					public ItemStack getItemStack(int sltid, ItemStack _isc) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 							_retval.set(capability.getStackInSlot(sltid).copy());
 						});
 						return _retval.get();
@@ -163,7 +163,7 @@ public class MycenafishingpoolProcedure {
 						.getItem() == ElementureModItems.MYCENANBOBBER.get() || (new Object() {
 							public ItemStack getItemStack(int sltid, ItemStack _isc) {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-								_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									_retval.set(capability.getStackInSlot(sltid).copy());
 								});
 								return _retval.get();

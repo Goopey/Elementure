@@ -4,5 +4,6 @@
     "all": "elementure:blocks/scrapper",
     "particle": "elementure:blocks/scrapper",
     "0": "elementure:blocks/scrapper"
-  }
+  },
+  "render_type": "cutout"
 }

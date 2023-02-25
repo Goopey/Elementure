@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "forest",
+    "windswept_hills",
+    "flower_forest",
+    "windswept_forest",
+    "windswept_gravelly_hills"
+  ],
+  "features": "elementure:campfire_1",
+  "step": "surface_structures"
+}

@@ -61,7 +61,6 @@ public class VamitechannelerItem extends Item {
 				VamitechannelerEntity entityarrow = VamitechannelerEntity.shoot(world, entity, world.getRandom(), 0f, 0, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				VamitechannelerConsumeProcedure.execute(entity);
 			}
 		}

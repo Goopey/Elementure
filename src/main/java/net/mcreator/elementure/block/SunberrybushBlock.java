@@ -1,9 +1,6 @@
 
 package net.mcreator.elementure.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
@@ -28,12 +25,9 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.SunberrybushHarvestProcedure;
 import net.mcreator.elementure.init.ElementureModItems;
-import net.mcreator.elementure.init.ElementureModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -115,10 +109,4 @@ public class SunberrybushBlock extends Block {
 		SunberrybushHarvestProcedure.execute(world, x, y, z);
 		return InteractionResult.SUCCESS;
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.SUNBERRYBUSH.get(), renderType -> renderType == RenderType.cutoutMipped());
-	}
-
 }

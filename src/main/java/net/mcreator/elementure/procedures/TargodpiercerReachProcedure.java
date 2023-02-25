@@ -8,6 +8,9 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.elementure.init.ElementureModItems;
 
@@ -35,16 +38,24 @@ public class TargodpiercerReachProcedure {
 				.get()) {
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+									_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+									_ent.getDisplayName(), _ent.level.getServer(), _ent),
 							"attribute @s forge:reach_distance modifier add 1e32c5ba-7571-4036-a6e1-02df4175f281 targodpiercerReach 1.2 multiply");
+				}
 			}
 		} else {
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+									_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+									_ent.getDisplayName(), _ent.level.getServer(), _ent),
 							"attribute @s forge:reach_distance modifier remove 1e32c5ba-7571-4036-a6e1-02df4175f281");
+				}
 			}
 		}
 	}

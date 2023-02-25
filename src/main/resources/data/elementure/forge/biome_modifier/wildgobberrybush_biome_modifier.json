@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "bamboo_jungle",
+    "sparse_jungle",
+    "dark_forest",
+    "jungle"
+  ],
+  "features": "elementure:wildgobberrybush",
+  "step": "vegetal_decoration"
+}

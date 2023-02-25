@@ -37,13 +37,6 @@ public class FrostyicearenaFeature extends Feature<NoneFeatureConfiguration> {
 		return FEATURE;
 	}
 
-	public static Holder<PlacedFeature> placedFeature() {
-		return PLACED_FEATURE;
-	}
-
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("frozen_ocean"), new ResourceLocation("frozen_river"),
-			new ResourceLocation("ice_spikes"), new ResourceLocation("plains"), new ResourceLocation("snowy_taiga"),
-			new ResourceLocation("snowy_beach"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 	private StructureTemplate template = null;
 

@@ -1,9 +1,6 @@
 
 package net.mcreator.elementure.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.HitResult;
@@ -26,19 +23,16 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.MemoryplantCheckProcedure;
 import net.mcreator.elementure.procedures.Memoryplant1GrowProcedure;
 import net.mcreator.elementure.init.ElementureModItems;
-import net.mcreator.elementure.init.ElementureModBlocks;
 import net.mcreator.elementure.block.entity.Memoryplant1BlockEntity;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -111,7 +105,7 @@ public class Memoryplant1Block extends Block
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();
@@ -164,10 +158,4 @@ public class Memoryplant1Block extends Block
 		else
 			return 0;
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.MEMORYPLANT_1.get(), renderType -> renderType == RenderType.cutout());
-	}
-
 }

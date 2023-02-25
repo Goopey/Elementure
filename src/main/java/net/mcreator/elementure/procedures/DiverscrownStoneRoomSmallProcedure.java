@@ -27,7 +27,7 @@ public class DiverscrownStoneRoomSmallProcedure {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getDouble(tag);
+					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "diverscrownRoomSize") > 0) {
@@ -35,7 +35,7 @@ public class DiverscrownStoneRoomSmallProcedure {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
-						return blockEntity.getTileData().getDouble(tag);
+						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
 			}.getValue(world, new BlockPos(x, y, z), "diverscrownRoomSize");
@@ -52,7 +52,7 @@ public class DiverscrownStoneRoomSmallProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("diverscrownOmeganRole", 8);
+							_blockEntity.getPersistentData().putDouble("diverscrownOmeganRole", 8);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -83,7 +83,7 @@ public class DiverscrownStoneRoomSmallProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getTileData().putDouble("diverscrownOmeganRole", 3);
+				_blockEntity.getPersistentData().putDouble("diverscrownOmeganRole", 3);
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
@@ -92,7 +92,7 @@ public class DiverscrownStoneRoomSmallProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getTileData().putDouble("diverscrownRoomSize", ((Math.sqrt(rndSize) - 3) * (Math.sqrt(rndSize) - 3)));
+				_blockEntity.getPersistentData().putDouble("diverscrownRoomSize", ((Math.sqrt(rndSize) - 3) * (Math.sqrt(rndSize) - 3)));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}

@@ -6,6 +6,9 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.elementure.network.ElementureModVariables;
 import net.mcreator.elementure.init.ElementureModItems;
@@ -48,16 +51,24 @@ public class BlackstonegrimacetalismanEffectProcedure {
 						.getItem() == ElementureModItems.BLACKSTONEGRIMACE_TALISMAN.get()) {
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+									_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+									_ent.getDisplayName(), _ent.level.getServer(), _ent),
 							"attribute @s minecraft:generic.armor modifier add 3ef0ed4a-f7fc-488a-b3a9-5bf4689d9945 blackstngrimarmor 2 add");
+				}
 			}
 		} else {
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+									_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+									_ent.getDisplayName(), _ent.level.getServer(), _ent),
 							"attribute @s minecraft:generic.armor modifier remove 3ef0ed4a-f7fc-488a-b3a9-5bf4689d9945");
+				}
 			}
 		}
 	}

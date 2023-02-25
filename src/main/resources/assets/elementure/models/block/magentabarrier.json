@@ -4,5 +4,6 @@
     "all": "elementure:blocks/magenta_barrier",
     "particle": "elementure:blocks/magenta_barrier",
     "0": "elementure:blocks/magenta_barrier"
-  }
+  },
+  "render_type": "translucent"
 }

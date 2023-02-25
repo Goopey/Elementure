@@ -8,5 +8,6 @@
     "south": "elementure:blocks/ligniteblock",
     "west": "elementure:blocks/ligniteblock",
     "particle": "elementure:blocks/ligniteblock"
-  }
+  },
+  "render_type": "solid"
 }

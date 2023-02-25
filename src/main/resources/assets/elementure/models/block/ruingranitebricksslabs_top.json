@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/ruin_granite_bricks",
     "top": "elementure:blocks/ruin_granite_bricks",
     "side": "elementure:blocks/ruin_granite_bricks"
-  }
+  },
+  "render_type": "solid"
 }

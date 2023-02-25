@@ -15,6 +15,7 @@ import net.minecraft.world.entity.projectile.ItemSupplier;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
@@ -23,8 +24,6 @@ import net.mcreator.elementure.procedures.AngelfishchannelerExplosionProcedure;
 import net.mcreator.elementure.procedures.AngelfishChannelerTrailProcedure;
 import net.mcreator.elementure.init.ElementureModItems;
 import net.mcreator.elementure.init.ElementureModEntities;
-
-import java.util.Random;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class AngelfishChannelerEntity extends AbstractArrow implements ItemSupplier {
@@ -86,7 +85,7 @@ public class AngelfishChannelerEntity extends AbstractArrow implements ItemSuppl
 			this.discard();
 	}
 
-	public static AngelfishChannelerEntity shoot(Level world, LivingEntity entity, Random random, float power, double damage, int knockback) {
+	public static AngelfishChannelerEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
 		AngelfishChannelerEntity entityarrow = new AngelfishChannelerEntity(ElementureModEntities.ANGELFISH_CHANNELER.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
@@ -111,7 +110,7 @@ public class AngelfishChannelerEntity extends AbstractArrow implements ItemSuppl
 		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);
 		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("")),
-				SoundSource.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
+				SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

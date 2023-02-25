@@ -4,5 +4,6 @@
     "all": "elementure:blocks/blue_barrier",
     "particle": "elementure:blocks/blue_barrier",
     "0": "elementure:blocks/blue_barrier"
-  }
+  },
+  "render_type": "translucent"
 }

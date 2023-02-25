@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/mycena_vine",
     "particle": "elementure:blocks/mycena_vine"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

@@ -19,7 +19,7 @@ import java.util.Collections;
 
 public class DirecrypttilesSlabBlock extends SlabBlock {
 	public DirecrypttilesSlabBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(60f, 50f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(60f, 50f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override

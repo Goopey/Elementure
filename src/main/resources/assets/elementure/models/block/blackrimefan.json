@@ -4,5 +4,6 @@
     "all": "elementure:blocks/black_rimefan",
     "particle": "elementure:blocks/black_rimefan",
     "0": "elementure:blocks/black_rimefan"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

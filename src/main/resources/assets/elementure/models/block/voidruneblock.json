@@ -8,5 +8,6 @@
     "south": "elementure:blocks/voidruneblock",
     "west": "elementure:blocks/voidruneblock",
     "particle": "elementure:blocks/voidruneblock"
-  }
+  },
+  "render_type": "solid"
 }

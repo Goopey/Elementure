@@ -48,7 +48,7 @@ public class SpiderboreSpawnArachneelProcedure {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
-						return blockEntity.getTileData().getDouble(tag);
+						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
 			}.getValue(world, new BlockPos(x, y, z), "spawningTimer") <= 0) {
@@ -57,7 +57,7 @@ public class SpiderboreSpawnArachneelProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("spawningTimer", 40);
+						_blockEntity.getPersistentData().putDouble("spawningTimer", 40);
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -97,7 +97,7 @@ public class SpiderboreSpawnArachneelProcedure {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x, y, z), "secondArachneel")) {
@@ -111,7 +111,7 @@ public class SpiderboreSpawnArachneelProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putBoolean("secondArachneel", (true));
+						_blockEntity.getPersistentData().putBoolean("secondArachneel", (true));
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -121,11 +121,11 @@ public class SpiderboreSpawnArachneelProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("spawningTimer", ((new Object() {
+						_blockEntity.getPersistentData().putDouble("spawningTimer", ((new Object() {
 							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getDouble(tag);
+									return blockEntity.getPersistentData().getDouble(tag);
 								return -1;
 							}
 						}.getValue(world, new BlockPos(x, y, z), "spawningTimer")) - 1));

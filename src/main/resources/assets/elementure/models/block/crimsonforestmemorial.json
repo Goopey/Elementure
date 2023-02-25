@@ -4,5 +4,6 @@
     "all": "elementure:blocks/crimson_forest_memorial",
     "particle": "elementure:blocks/crimson_forest_memorial",
     "0": "elementure:blocks/crimson_forest_memorial"
-  }
+  },
+  "render_type": "cutout"
 }

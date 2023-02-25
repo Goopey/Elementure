@@ -2,5 +2,6 @@
   "parent": "block/pressure_plate_up",
   "textures": {
     "texture": "elementure:blocks/fluff_plank"
-  }
+  },
+  "render_type": "solid"
 }

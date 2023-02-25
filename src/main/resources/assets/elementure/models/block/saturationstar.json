@@ -4,5 +4,6 @@
     "all": "elementure:blocks/saturationstar",
     "particle": "elementure:blocks/saturationstar",
     "0": "elementure:blocks/saturationstar"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

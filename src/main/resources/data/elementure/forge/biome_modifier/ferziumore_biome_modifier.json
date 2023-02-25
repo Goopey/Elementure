@@ -1,0 +1,17 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "savanna_plateau",
+    "old_growth_pine_taiga",
+    "plains",
+    "beach",
+    "savanna",
+    "windswept_savanna",
+    "wooded_badlands",
+    "desert",
+    "eroded_badlands",
+    "old_growth_spruce_taiga"
+  ],
+  "features": "elementure:ferziumore",
+  "step": "underground_ores"
+}

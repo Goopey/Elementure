@@ -13,7 +13,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
@@ -30,8 +29,8 @@ public class RecallaltarBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Allows you to dive safely into the pitlands and return."));
-		list.add(new TextComponent("Be careful! Once you place this block near the bedrock, you won't be able to pick it back up."));
+		list.add(Component.literal("Allows you to dive safely into the pitlands and return."));
+		list.add(Component.literal("Be careful! Once you place this block near the bedrock, you won't be able to pick it back up."));
 	}
 
 	@Override

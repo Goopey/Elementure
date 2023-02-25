@@ -28,7 +28,7 @@ public class DarkgemCrystalLaserProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putString("darkgemLaserDir", "up");
+						_blockEntity.getPersistentData().putString("darkgemLaserDir", "up");
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -42,7 +42,7 @@ public class DarkgemCrystalLaserProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putString("darkgemLaserDir", "down");
+						_blockEntity.getPersistentData().putString("darkgemLaserDir", "down");
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -56,7 +56,7 @@ public class DarkgemCrystalLaserProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putString("darkgemLaserDir", "east");
+						_blockEntity.getPersistentData().putString("darkgemLaserDir", "east");
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -75,7 +75,7 @@ public class DarkgemCrystalLaserProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putString("darkgemLaserDir", "south");
+						_blockEntity.getPersistentData().putString("darkgemLaserDir", "south");
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -89,7 +89,7 @@ public class DarkgemCrystalLaserProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putString("darkgemLaserDir", "north");
+						_blockEntity.getPersistentData().putString("darkgemLaserDir", "north");
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}

@@ -1,9 +1,6 @@
 
 package net.mcreator.elementure.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.FluidState;
@@ -19,12 +16,9 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.WildbilborrybushDropSilverProcedure;
 import net.mcreator.elementure.init.ElementureModItems;
-import net.mcreator.elementure.init.ElementureModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -63,10 +57,5 @@ public class WildbilborrybushBlock extends FlowerBlock {
 	public void wasExploded(Level world, BlockPos pos, Explosion e) {
 		super.wasExploded(world, pos, e);
 		WildbilborrybushDropSilverProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.WILDBILBORRYBUSH.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

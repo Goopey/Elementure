@@ -5,7 +5,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
@@ -84,55 +83,55 @@ public class MusicplayerGUI2Screen extends AbstractContainerScreen<MusicplayerGU
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 73, this.topPos + 143, 60, 20, new TextComponent("Credits"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 73, this.topPos + 143, 60, 20, Component.literal("Credits"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(0, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 157, this.topPos + 143, 45, 20, new TextComponent("Next"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 157, this.topPos + 143, 45, 20, Component.literal("Next"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(1, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 2, this.topPos + 143, 45, 20, new TextComponent("Back"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 2, this.topPos + 143, 45, 20, Component.literal("Back"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(2, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 64, this.topPos + 3, 77, 20, new TextComponent("STOP MUSIC"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 64, this.topPos + 3, 77, 20, Component.literal("STOP MUSIC"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(3, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 27, 155, 20, new TextComponent("One More Day - Lena Raine"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 27, 155, 20, Component.literal("One More Day - Lena Raine"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(4, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 49, 144, 20, new TextComponent("Stand Tall - Lena Raine"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 49, 144, 20, Component.literal("Stand Tall - Lena Raine"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(5, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 5, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 71, 166, 20, new TextComponent("Hydrothermal Hollow - Lui37"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 71, 166, 20, Component.literal("Hydrothermal Hollow - Lui37"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(6, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 6, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 93, 150, 20, new TextComponent("Rebel Base 1 - Crusaders"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 93, 150, 20, Component.literal("Rebel Base 1 - Crusaders"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(7, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 7, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 115, 176, 20, new TextComponent("Black Iron Pact - Battle Bros"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 115, 176, 20, Component.literal("Black Iron Pact - Battle Bros"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(8, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 8, x, y, z);

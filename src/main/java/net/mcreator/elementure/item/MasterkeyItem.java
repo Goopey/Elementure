@@ -10,7 +10,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.init.ElementureModTabs;
@@ -36,8 +35,8 @@ public class MasterkeyItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Used to unlock most chests."));
-		list.add(new TextComponent("Can unlock chests with multiple locks on its own."));
-		list.add(new TextComponent("Cannot unlock boss chests or the like."));
+		list.add(Component.literal("Used to unlock most chests."));
+		list.add(Component.literal("Can unlock chests with multiple locks on its own."));
+		list.add(Component.literal("Cannot unlock boss chests or the like."));
 	}
 }

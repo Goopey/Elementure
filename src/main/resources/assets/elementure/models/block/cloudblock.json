@@ -8,5 +8,6 @@
     "south": "elementure:blocks/clouds",
     "west": "elementure:blocks/clouds",
     "particle": "elementure:blocks/clouds"
-  }
+  },
+  "render_type": "translucent"
 }

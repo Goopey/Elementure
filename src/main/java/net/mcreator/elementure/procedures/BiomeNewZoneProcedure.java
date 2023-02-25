@@ -34,7 +34,7 @@ public class BiomeNewZoneProcedure {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "mycenaUsed") && y < 0) {
@@ -52,7 +52,7 @@ public class BiomeNewZoneProcedure {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "mycenaUsed") && y < 64) {
@@ -70,7 +70,7 @@ public class BiomeNewZoneProcedure {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "mycenaUsed")) {
@@ -88,7 +88,7 @@ public class BiomeNewZoneProcedure {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, 0, z), "netherstarOutsideUsed") && y > 127) {
@@ -106,7 +106,7 @@ public class BiomeNewZoneProcedure {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, 0, z), "netherstarOutsideUsed")) {
@@ -124,7 +124,7 @@ public class BiomeNewZoneProcedure {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, 0, z), "netherstarUsed") && y < 60) {
@@ -142,7 +142,7 @@ public class BiomeNewZoneProcedure {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, 0, z), "netherstarUsed")) {
@@ -160,7 +160,7 @@ public class BiomeNewZoneProcedure {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "jellyfloatUsed")) {
@@ -178,7 +178,7 @@ public class BiomeNewZoneProcedure {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "grayskullLake")) {

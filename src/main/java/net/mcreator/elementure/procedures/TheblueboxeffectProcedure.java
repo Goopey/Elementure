@@ -11,7 +11,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.particles.ParticleTypes;
 
 import net.mcreator.elementure.network.ElementureModVariables;
@@ -67,7 +67,7 @@ public class TheblueboxeffectProcedure {
 				}
 				if (Math.random() < 0.1) {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent("You opened it, let the flood come!"), (true));
+						_player.displayClientMessage(Component.literal("You opened it, let the flood come!"), (true));
 					{
 						final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
 						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true)

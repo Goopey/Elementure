@@ -8,5 +8,6 @@
     "south": "elementure:blocks/ferziumore",
     "west": "elementure:blocks/ferziumore",
     "particle": "elementure:blocks/ferziumore"
-  }
+  },
+  "render_type": "solid"
 }

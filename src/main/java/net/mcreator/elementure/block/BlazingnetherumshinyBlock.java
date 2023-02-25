@@ -18,6 +18,7 @@ import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
@@ -26,7 +27,6 @@ import net.mcreator.elementure.procedures.NetherstarCrustSetFireProcedure;
 import net.mcreator.elementure.procedures.BlazingnetherumSendParticlesProcedure;
 import net.mcreator.elementure.procedures.BlazingnetherumParticlesProcedure;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -63,7 +63,7 @@ public class BlazingnetherumshinyBlock extends Block {
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();
@@ -75,7 +75,7 @@ public class BlazingnetherumshinyBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	@Override
-	public void animateTick(BlockState blockstate, Level world, BlockPos pos, Random random) {
+	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
 		super.animateTick(blockstate, world, pos, random);
 		Player entity = Minecraft.getInstance().player;
 		int x = pos.getX();

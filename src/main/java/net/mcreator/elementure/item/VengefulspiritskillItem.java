@@ -48,7 +48,6 @@ public class VengefulspiritskillItem extends Item {
 				VengefulspiritskillEntity entityarrow = VengefulspiritskillEntity.shoot(world, entity, world.getRandom(), 1f, 7.5, 4);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				VengefulspiritskillConsumeProcedure.execute(entity);
 			}
 		}

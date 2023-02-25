@@ -10,7 +10,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.PlainsboxDropsProcedure;
@@ -31,7 +30,7 @@ public class PlainsboxItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Contains savanna and plains stuff."));
+		list.add(Component.literal("Contains savanna and plains stuff."));
 	}
 
 	@Override

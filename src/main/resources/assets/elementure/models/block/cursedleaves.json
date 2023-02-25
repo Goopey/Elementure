@@ -8,5 +8,6 @@
     "south": "elementure:blocks/cursedleaves",
     "west": "elementure:blocks/cursedleaves",
     "particle": "elementure:blocks/cursedleaves"
-  }
+  },
+  "render_type": "cutout"
 }

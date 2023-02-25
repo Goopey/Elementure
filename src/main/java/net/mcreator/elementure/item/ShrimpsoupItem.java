@@ -10,7 +10,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.ShrimpsoupBubblerEffectProcedure;
@@ -29,7 +28,7 @@ public class ShrimpsoupItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("The ingredients are weird and the soup also looks weird. A fearsome meal though."));
+		list.add(Component.literal("The ingredients are weird and the soup also looks weird. A fearsome meal though."));
 	}
 
 	@Override

@@ -4,5 +4,6 @@
     "all": "elementure:blocks/savanna_memorial",
     "particle": "elementure:blocks/savanna_memorial",
     "0": "elementure:blocks/savanna_memorial"
-  }
+  },
+  "render_type": "solid"
 }

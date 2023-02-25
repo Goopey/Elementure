@@ -4,14 +4,10 @@ package net.mcreator.elementure.entity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
@@ -25,11 +21,11 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
@@ -39,15 +35,7 @@ import net.mcreator.elementure.procedures.FluffwhaleSpawnProcedure;
 import net.mcreator.elementure.procedures.FluffwhaleDropsProcedure;
 import net.mcreator.elementure.init.ElementureModEntities;
 
-import java.util.Random;
-
-@Mod.EventBusSubscriber
 public class FluffwhaleEntity extends Monster {
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.AMBIENT).add(new MobSpawnSettings.SpawnerData(ElementureModEntities.FLUFFWHALE.get(), 200, 2, 4));
-	}
-
 	public FluffwhaleEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(ElementureModEntities.FLUFFWHALE.get(), world);
 	}
@@ -82,7 +70,7 @@ public class FluffwhaleEntity extends Monster {
 		this.goalSelector.addGoal(3, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
-				Random random = FluffwhaleEntity.this.getRandom();
+				RandomSource random = FluffwhaleEntity.this.getRandom();
 				double dir_x = FluffwhaleEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_y = FluffwhaleEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_z = FluffwhaleEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);

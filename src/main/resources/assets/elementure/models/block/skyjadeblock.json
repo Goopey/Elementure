@@ -8,5 +8,6 @@
     "south": "elementure:blocks/skyjadeblock",
     "west": "elementure:blocks/skyjadeblock",
     "particle": "elementure:blocks/skyjadeblock"
-  }
+  },
+  "render_type": "solid"
 }

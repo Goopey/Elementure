@@ -3,5 +3,6 @@
   "textures": {
     "wall": "elementure:blocks/lightning_andesite_brick",
     "particle": "elementure:blocks/lightning_andesite_brick"
-  }
+  },
+  "render_type": "solid"
 }

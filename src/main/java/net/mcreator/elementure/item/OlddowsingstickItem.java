@@ -11,7 +11,6 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
@@ -41,8 +40,8 @@ public class OlddowsingstickItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("-\"It's a bent stick.\""));
-		list.add(new TextComponent("-\"It's not just a stick, it's a friend!\""));
+		list.add(Component.literal("-\"It's a bent stick.\""));
+		list.add(Component.literal("-\"It's not just a stick, it's a friend!\""));
 	}
 
 	@Override

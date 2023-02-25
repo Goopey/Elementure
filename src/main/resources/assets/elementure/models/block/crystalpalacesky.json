@@ -8,5 +8,6 @@
     "south": "elementure:blocks/crystal_palace_sky",
     "west": "elementure:blocks/crystal_palace_sky",
     "particle": "elementure:blocks/crystal_palace_sky"
-  }
+  },
+  "render_type": "solid"
 }

@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/boardingschool_roof1",
     "top": "elementure:blocks/boardingschool_roof1",
     "side": "elementure:blocks/boardingschool_roof1"
-  }
+  },
+  "render_type": "solid"
 }

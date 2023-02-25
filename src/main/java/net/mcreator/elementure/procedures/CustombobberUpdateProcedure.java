@@ -1,9 +1,6 @@
 package net.mcreator.elementure.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.material.Fluid;
@@ -27,6 +24,7 @@ import net.minecraft.core.BlockPos;
 
 import net.mcreator.elementure.init.ElementureModParticleTypes;
 import net.mcreator.elementure.init.ElementureModBlocks;
+import net.mcreator.elementure.ElementureMod;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -85,32 +83,10 @@ public class CustombobberUpdateProcedure {
 										_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.FISHNOTIFPARTICLE.get()),
 												(entity.getX()), (entity.getY() + 0.375), (entity.getZ()), (int) (3 + Math.random() * 2), 0.1, 0.1,
 												0.1, 0);
-									new Object() {
-										private int ticks = 0;
-										private float waitTicks;
-										private LevelAccessor world;
-
-										public void start(LevelAccessor world, int waitTicks) {
-											this.waitTicks = waitTicks;
-											MinecraftForge.EVENT_BUS.register(this);
-											this.world = world;
-										}
-
-										@SubscribeEvent
-										public void tick(TickEvent.ServerTickEvent event) {
-											if (event.phase == TickEvent.Phase.END) {
-												this.ticks += 1;
-												if (this.ticks >= this.waitTicks)
-													run();
-											}
-										}
-
-										private void run() {
-											entityiterator.getPersistentData().putBoolean("FISH", (false));
-											entity.getPersistentData().putBoolean("FISH", (false));
-											MinecraftForge.EVENT_BUS.unregister(this);
-										}
-									}.start(world, 24);
+									ElementureMod.queueServerWork(24, () -> {
+										entityiterator.getPersistentData().putBoolean("FISH", (false));
+										entity.getPersistentData().putBoolean("FISH", (false));
+									});
 								}
 								entity.getPersistentData().putDouble("bobberWait", 0);
 							} else {
@@ -158,32 +134,10 @@ public class CustombobberUpdateProcedure {
 										_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.FISHNOTIFPARTICLE.get()),
 												(entity.getX()), (entity.getY() + 0.375), (entity.getZ()), (int) (3 + Math.random() * 2), 0.1, 0.1,
 												0.1, 0);
-									new Object() {
-										private int ticks = 0;
-										private float waitTicks;
-										private LevelAccessor world;
-
-										public void start(LevelAccessor world, int waitTicks) {
-											this.waitTicks = waitTicks;
-											MinecraftForge.EVENT_BUS.register(this);
-											this.world = world;
-										}
-
-										@SubscribeEvent
-										public void tick(TickEvent.ServerTickEvent event) {
-											if (event.phase == TickEvent.Phase.END) {
-												this.ticks += 1;
-												if (this.ticks >= this.waitTicks)
-													run();
-											}
-										}
-
-										private void run() {
-											entityiterator.getPersistentData().putBoolean("FISH", (false));
-											entity.getPersistentData().putBoolean("FISH", (false));
-											MinecraftForge.EVENT_BUS.unregister(this);
-										}
-									}.start(world, 24);
+									ElementureMod.queueServerWork(24, () -> {
+										entityiterator.getPersistentData().putBoolean("FISH", (false));
+										entity.getPersistentData().putBoolean("FISH", (false));
+									});
 								}
 								entity.getPersistentData().putDouble("bobberWait", 0);
 							} else {

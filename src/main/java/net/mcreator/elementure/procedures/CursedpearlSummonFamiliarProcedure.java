@@ -11,7 +11,7 @@ import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
@@ -46,9 +46,9 @@ public class CursedpearlSummonFamiliarProcedure {
 				entity.getPersistentData().putDouble("summontimer", (entity.getPersistentData().getDouble("summontimer") - 1));
 			} else {
 				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performCommand(
+					_level.getServer().getCommands().performPrefixedCommand(
 							new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level,
-									4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
+									4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							("summon elementure:theninefamiliar ~ ~ ~" + (" {Tame:1, Owner:" + (entity.getDisplayName().getString() + "}"))));
 			}
 		}

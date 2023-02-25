@@ -48,7 +48,6 @@ public class EnergyblastskillItem extends Item {
 				EnergyblastskillEntity entityarrow = EnergyblastskillEntity.shoot(world, entity, world.getRandom(), 1f, 5.5, 1);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				EnergyblastskillConsumeProcedure.execute(entity);
 			}
 		}

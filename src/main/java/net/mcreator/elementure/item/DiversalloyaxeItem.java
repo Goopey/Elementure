@@ -10,7 +10,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.DiversalloyaxeTrueAirProcedure;
@@ -59,10 +58,10 @@ public class DiversalloyaxeItem extends AxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Mines faster underwater."));
-		list.add(new TextComponent("Slices through water very well."));
-		list.add(new TextComponent(
-				"Deals increased damage versus water creatures and aquatic mobs and extracts more air essence when attacking them."));
+		list.add(Component.literal("Mines faster underwater."));
+		list.add(Component.literal("Slices through water very well."));
+		list.add(Component
+				.literal("Deals increased damage versus water creatures and aquatic mobs and extracts more air essence when attacking them."));
 	}
 
 	@Override

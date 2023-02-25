@@ -8,5 +8,6 @@
     "south": "elementure:blocks/pool_tiles",
     "west": "elementure:blocks/pool_tiles",
     "particle": "elementure:blocks/pool_tiles"
-  }
+  },
+  "render_type": "solid"
 }

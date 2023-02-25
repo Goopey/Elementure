@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/boardingschool_rust_block",
     "top": "elementure:blocks/boardingschool_rust_block",
     "side": "elementure:blocks/boardingschool_rust_block"
-  }
+  },
+  "render_type": "solid"
 }

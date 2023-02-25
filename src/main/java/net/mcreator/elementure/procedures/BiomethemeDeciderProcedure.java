@@ -18,7 +18,7 @@ public class BiomethemeDeciderProcedure {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "mycenaUsed")) {
@@ -33,7 +33,7 @@ public class BiomethemeDeciderProcedure {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "jellyfloatUsed")) {
@@ -48,14 +48,14 @@ public class BiomethemeDeciderProcedure {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, 0, z), "netherstarUsed") || new Object() {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, 0, z), "netherstarOutsideUsed")) {
@@ -75,7 +75,7 @@ public class BiomethemeDeciderProcedure {
 				});
 			}
 		} else if ((entity.level.dimension()) == (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("elementure:forgotten_1")))
-				&& new ResourceLocation("elementure:familiar_11").equals(world.getBiome(new BlockPos(x, y, z)).value().getRegistryName())) {
+				&& world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("elementure:familiar_11"))) {
 			{
 				String _setval = "RepulsiveForgotten";
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -87,7 +87,7 @@ public class BiomethemeDeciderProcedure {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "windyshoresUsed") && Math.random() < 0.5) {
@@ -102,7 +102,7 @@ public class BiomethemeDeciderProcedure {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "windyshoresUsed")) {
@@ -117,7 +117,7 @@ public class BiomethemeDeciderProcedure {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "diverscrownUsed")) {

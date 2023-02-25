@@ -18,7 +18,8 @@ import java.util.Collections;
 
 public class SmoothCloudSandstoneWallBlock extends WallBlock {
 	public SmoothCloudSandstoneWallBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.9000000000000001f, 16.5f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.9000000000000001f, 16.5f).requiresCorrectToolForDrops()
+				.dynamicShape());
 	}
 
 	@Override

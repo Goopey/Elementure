@@ -11,7 +11,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 
 import javax.annotation.Nullable;
 
@@ -35,7 +35,7 @@ public class FillLebigmaigreInventoryProcedure {
 		if ((entity.getDisplayName().getString()).equals("Lebigmaigre")) {
 			if (world.dayTime() % 24000 < 11750 && world.dayTime() % 24000 > 11500) {
 				noPaper = new ItemStack(Items.SLIME_BALL);
-				(noPaper).setHoverName(new TextComponent("Stacks no Paper"));
+				(noPaper).setHoverName(Component.literal("Stacks no Paper"));
 				if (entity instanceof Player _player) {
 					ItemStack _setstack = noPaper;
 					_setstack.setCount(1);

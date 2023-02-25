@@ -48,7 +48,6 @@ public class FireblastskillItem extends Item {
 				FireblastskillEntity entityarrow = FireblastskillEntity.shoot(world, entity, world.getRandom(), 1f, 5, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				FireblastskillConsumeProcedure.execute(world, entity);
 			}
 		}

@@ -8,5 +8,6 @@
     "south": "elementure:blocks/rareglasslight",
     "west": "elementure:blocks/rareglasslight",
     "particle": "elementure:blocks/rareglasslight"
-  }
+  },
+  "render_type": "translucent"
 }

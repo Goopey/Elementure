@@ -1,9 +1,6 @@
 
 package net.mcreator.elementure.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
@@ -26,11 +23,8 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.init.ElementureModItems;
-import net.mcreator.elementure.init.ElementureModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -42,7 +36,7 @@ public class ObsidiansproutsBlock extends Block implements SimpleWaterloggedBloc
 
 	public ObsidiansproutsBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.5f, 1600f).noCollission().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
+				.isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}
 
@@ -88,11 +82,6 @@ public class ObsidiansproutsBlock extends Block implements SimpleWaterloggedBloc
 	}
 
 	@Override
-	public Block.OffsetType getOffsetType() {
-		return Block.OffsetType.XZ;
-	}
-
-	@Override
 	public PushReaction getPistonPushReaction(BlockState state) {
 		return PushReaction.DESTROY;
 	}
@@ -104,10 +93,4 @@ public class ObsidiansproutsBlock extends Block implements SimpleWaterloggedBloc
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(ElementureModItems.SHARDEDOBSIDIAN.get(), 3));
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.OBSIDIANSPROUTS.get(), renderType -> renderType == RenderType.cutout());
-	}
-
 }

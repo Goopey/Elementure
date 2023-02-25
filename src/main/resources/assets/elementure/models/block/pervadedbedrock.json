@@ -8,5 +8,6 @@
     "south": "elementure:blocks/pervaded_bedrock",
     "west": "elementure:blocks/pervaded_bedrock",
     "particle": "elementure:blocks/pervaded_bedrock"
-  }
+  },
+  "render_type": "solid"
 }

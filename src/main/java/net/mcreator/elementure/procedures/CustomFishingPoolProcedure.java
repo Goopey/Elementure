@@ -1,7 +1,7 @@
 package net.mcreator.elementure.procedures;
 
 import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
@@ -41,7 +41,7 @@ public class CustomFishingPoolProcedure {
 						} else if ((new Object() {
 							public ItemStack getItemStack(int sltid, ItemStack _isc) {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-								_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									_retval.set(capability.getStackInSlot(sltid).copy());
 								});
 								return _retval.get();
@@ -58,7 +58,7 @@ public class CustomFishingPoolProcedure {
 						} else if ((new Object() {
 							public ItemStack getItemStack(int sltid, ItemStack _isc) {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-								_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									_retval.set(capability.getStackInSlot(sltid).copy());
 								});
 								return _retval.get();
@@ -66,7 +66,7 @@ public class CustomFishingPoolProcedure {
 						}.getItemStack(1, itemstack)).getItem() == ElementureModItems.CRABBOBBER.get() || (new Object() {
 							public ItemStack getItemStack(int sltid, ItemStack _isc) {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-								_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									_retval.set(capability.getStackInSlot(sltid).copy());
 								});
 								return _retval.get();
@@ -76,7 +76,7 @@ public class CustomFishingPoolProcedure {
 						} else if ((new Object() {
 							public ItemStack getItemStack(int sltid, ItemStack _isc) {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-								_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									_retval.set(capability.getStackInSlot(sltid).copy());
 								});
 								return _retval.get();
@@ -86,7 +86,7 @@ public class CustomFishingPoolProcedure {
 						} else if ((new Object() {
 							public ItemStack getItemStack(int sltid, ItemStack _isc) {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-								_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									_retval.set(capability.getStackInSlot(sltid).copy());
 								});
 								return _retval.get();
@@ -111,7 +111,7 @@ public class CustomFishingPoolProcedure {
 		if (!(new Object() {
 			public ItemStack getItemStack(int sltid, ItemStack _isc) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					_retval.set(capability.getStackInSlot(sltid).copy());
 				});
 				return _retval.get();
@@ -122,7 +122,7 @@ public class CustomFishingPoolProcedure {
 				final ItemStack _setstack = (new Object() {
 					public ItemStack getItemStack(int sltid, ItemStack _isc) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 							_retval.set(capability.getStackInSlot(sltid).copy());
 						});
 						return _retval.get();
@@ -132,13 +132,13 @@ public class CustomFishingPoolProcedure {
 				_setstack.setCount((int) (((new Object() {
 					public ItemStack getItemStack(int sltid, ItemStack _isc) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 							_retval.set(capability.getStackInSlot(sltid).copy());
 						});
 						return _retval.get();
 					}
 				}.getItemStack(0, itemstack))).getCount() - 1));
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					if (capability instanceof IItemHandlerModifiable) {
 						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
 					}

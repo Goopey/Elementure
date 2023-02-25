@@ -22,7 +22,6 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
@@ -128,7 +127,7 @@ public class EnhancedtarspiritstaffItem extends TieredItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Uses dark essence to summon explosive tar spirits."));
+		list.add(Component.literal("Uses dark essence to summon explosive tar spirits."));
 	}
 
 	@Override

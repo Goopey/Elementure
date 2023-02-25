@@ -15,6 +15,6 @@ public class TarwormRenderer extends MobRenderer<TarwormEntity, Modeltarworm<Tar
 
 	@Override
 	public ResourceLocation getTextureLocation(TarwormEntity entity) {
-		return new ResourceLocation("elementure:textures/tarworm_texturemap.png");
+		return new ResourceLocation("elementure:textures/entities/tarworm_texturemap.png");
 	}
 }

@@ -3,9 +3,6 @@ package net.mcreator.elementure.block;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -29,11 +26,8 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.RimebushHasGroundProcedure;
-import net.mcreator.elementure.init.ElementureModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -115,10 +109,4 @@ public class BlackrimebushBlock extends Block implements SimpleWaterloggedBlock
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.BLACKRIMEBUSH.get(), renderType -> renderType == RenderType.cutoutMipped());
-	}
-
 }

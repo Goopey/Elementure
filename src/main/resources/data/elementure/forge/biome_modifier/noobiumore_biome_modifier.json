@@ -1,0 +1,17 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "savanna_plateau",
+    "stony_shore",
+    "sunflower_plains",
+    "windswept_hills",
+    "plains",
+    "windswept_savanna",
+    "wooded_badlands",
+    "windswept_forest",
+    "windswept_gravelly_hills",
+    "eroded_badlands"
+  ],
+  "features": "elementure:noobiumore",
+  "step": "underground_ores"
+}

@@ -4,5 +4,6 @@
     "all": "elementure:blocks/nether_memorial",
     "particle": "elementure:blocks/nether_memorial",
     "0": "elementure:blocks/nether_memorial"
-  }
+  },
+  "render_type": "cutout"
 }

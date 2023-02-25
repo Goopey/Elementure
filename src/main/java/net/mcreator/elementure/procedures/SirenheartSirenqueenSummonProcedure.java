@@ -10,7 +10,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.elementure.init.ElementureModEntities;
@@ -62,7 +62,7 @@ public class SirenheartSirenqueenSummonProcedure {
 			}
 		} else {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("Not enough space"), (true));
+				_player.displayClientMessage(Component.literal("Not enough space"), (true));
 		}
 	}
 }

@@ -8,5 +8,6 @@
     "south": "elementure:blocks/abyssaltntside",
     "west": "elementure:blocks/abyssaltntside",
     "particle": "elementure:blocks/abyssaltntbottom"
-  }
+  },
+  "render_type": "solid"
 }

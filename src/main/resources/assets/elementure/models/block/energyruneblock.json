@@ -8,5 +8,6 @@
     "south": "elementure:blocks/energyruneblock",
     "west": "elementure:blocks/energyruneblock",
     "particle": "elementure:blocks/energyruneblock"
-  }
+  },
+  "render_type": "solid"
 }

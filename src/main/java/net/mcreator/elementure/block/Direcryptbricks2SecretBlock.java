@@ -20,7 +20,7 @@ import java.util.Collections;
 
 public class Direcryptbricks2SecretBlock extends TrapDoorBlock {
 	public Direcryptbricks2SecretBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(60f, 50f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(60f, 50f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override

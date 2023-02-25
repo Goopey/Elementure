@@ -8,5 +8,6 @@
     "south": "elementure:blocks/tarstone",
     "west": "elementure:blocks/tarstone",
     "particle": "elementure:blocks/tarstone"
-  }
+  },
+  "render_type": "solid"
 }

@@ -1,9 +1,6 @@
 
 package net.mcreator.elementure.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
@@ -14,10 +11,6 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-
-import net.mcreator.elementure.init.ElementureModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -25,7 +18,7 @@ import java.util.Collections;
 public class LilypadplanksGateBlock extends FenceGateBlock {
 	public LilypadplanksGateBlock() {
 		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(4f, 16.5f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+				.isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
 	}
 
 	@Override
@@ -44,10 +37,5 @@ public class LilypadplanksGateBlock extends FenceGateBlock {
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.LILYPADPLANKS_GATE.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

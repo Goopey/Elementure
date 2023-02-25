@@ -4,5 +4,6 @@
     "all": "elementure:blocks/visionstar",
     "particle": "elementure:blocks/visionstar",
     "0": "elementure:blocks/visionstar"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

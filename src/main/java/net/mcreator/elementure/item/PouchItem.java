@@ -3,8 +3,8 @@ package net.mcreator.elementure.item;
 
 import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.items.ItemStackHandler;
-import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
@@ -19,7 +19,6 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.CompoundTag;
@@ -47,7 +46,7 @@ public class PouchItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("A simple leather pouch. It can't contain a lot of stuff, but it should at least be useful."));
+		list.add(Component.literal("A simple leather pouch. It can't contain a lot of stuff, but it should at least be useful."));
 	}
 
 	@Override
@@ -58,10 +57,10 @@ public class PouchItem extends Item {
 		double y = entity.getY();
 		double z = entity.getZ();
 		if (entity instanceof ServerPlayer serverPlayer) {
-			NetworkHooks.openGui(serverPlayer, new MenuProvider() {
+			NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return new TextComponent("Pouch");
+					return Component.literal("Pouch");
 				}
 
 				@Override
@@ -88,7 +87,7 @@ public class PouchItem extends Item {
 	public CompoundTag getShareTag(ItemStack stack) {
 		CompoundTag nbt = super.getShareTag(stack);
 		if (nbt != null)
-			stack.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+			stack.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 					.ifPresent(capability -> nbt.put("Inventory", ((ItemStackHandler) capability).serializeNBT()));
 		return nbt;
 	}
@@ -97,7 +96,7 @@ public class PouchItem extends Item {
 	public void readShareTag(ItemStack stack, @Nullable CompoundTag nbt) {
 		super.readShareTag(stack, nbt);
 		if (nbt != null)
-			stack.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+			stack.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 					.ifPresent(capability -> ((ItemStackHandler) capability).deserializeNBT((CompoundTag) nbt.get("Inventory")));
 	}
 }

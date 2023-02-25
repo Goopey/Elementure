@@ -8,5 +8,6 @@
     "south": "elementure:blocks/cursedlog",
     "west": "elementure:blocks/cursedlog",
     "particle": "elementure:blocks/cursedlogtop"
-  }
+  },
+  "render_type": "solid"
 }

@@ -7,7 +7,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 
 public class PolaroidTeleportProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
@@ -32,7 +32,7 @@ public class PolaroidTeleportProcedure {
 			} else {
 				if (world.isClientSide()) {
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent("This isn't the right dimension."), (true));
+						_player.displayClientMessage(Component.literal("This isn't the right dimension."), (true));
 				}
 			}
 		}

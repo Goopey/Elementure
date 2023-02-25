@@ -3,5 +3,6 @@
   "textures": {
     "wall": "elementure:blocks/lightning_andesite_tile",
     "particle": "elementure:blocks/lightning_andesite_tile"
-  }
+  },
+  "render_type": "solid"
 }

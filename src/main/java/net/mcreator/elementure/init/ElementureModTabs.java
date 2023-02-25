@@ -4,9 +4,6 @@
  */
 package net.mcreator.elementure.init;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
 
@@ -32,7 +29,7 @@ public class ElementureModTabs {
 				return new ItemStack(ElementureModItems.KNIGHTMASTERARMOR_CHESTPLATE.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -43,7 +40,7 @@ public class ElementureModTabs {
 				return new ItemStack(ElementureModItems.DARKGEMSWORD.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -54,7 +51,7 @@ public class ElementureModTabs {
 				return new ItemStack(ElementureModItems.DIVERSALLOYPICKAXE.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -65,7 +62,7 @@ public class ElementureModTabs {
 				return new ItemStack(ElementureModItems.FLUTANITEINGOT.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -76,7 +73,7 @@ public class ElementureModTabs {
 				return new ItemStack(ElementureModItems.DIVERSBEACON.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -87,7 +84,7 @@ public class ElementureModTabs {
 				return new ItemStack(ElementureModItems.HONEYBERRYJAM.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -98,7 +95,7 @@ public class ElementureModTabs {
 				return new ItemStack(ElementureModBlocks.NETHERUMDUST_NEBULATURFBLOCK.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -109,7 +106,7 @@ public class ElementureModTabs {
 				return new ItemStack(ElementureModItems.SIRENQUEEN_EVIL_EYE.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -120,7 +117,7 @@ public class ElementureModTabs {
 				return new ItemStack(ElementureModItems.RIMECORMUNCULUS_CHANNELER.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -131,7 +128,7 @@ public class ElementureModTabs {
 				return new ItemStack(ElementureModItems.CHUB.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return true;
 			}
@@ -142,7 +139,7 @@ public class ElementureModTabs {
 				return new ItemStack(ElementureModBlocks.OLDBRICKS.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -153,7 +150,7 @@ public class ElementureModTabs {
 				return new ItemStack(ElementureModItems.OLDDOWSINGSTICK.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}
@@ -164,7 +161,7 @@ public class ElementureModTabs {
 				return new ItemStack(ElementureModItems.MEMORY_EYE.get());
 			}
 
-			@OnlyIn(Dist.CLIENT)
+			@Override
 			public boolean hasSearchBar() {
 				return false;
 			}

@@ -8,5 +8,6 @@
     "south": "elementure:blocks/mycenan_alloy_block",
     "west": "elementure:blocks/mycenan_alloy_block",
     "particle": "elementure:blocks/mycenan_alloy_block"
-  }
+  },
+  "render_type": "solid"
 }

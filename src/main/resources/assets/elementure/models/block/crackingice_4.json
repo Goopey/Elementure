@@ -8,5 +8,6 @@
     "south": "elementure:blocks/crackingice4",
     "west": "elementure:blocks/crackingice4",
     "particle": "elementure:blocks/crackingice4"
-  }
+  },
+  "render_type": "translucent"
 }

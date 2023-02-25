@@ -4,5 +4,6 @@
     "all": "elementure:blocks/ocean_memorial",
     "particle": "elementure:blocks/ocean_memorial",
     "0": "elementure:blocks/ocean_memorial"
-  }
+  },
+  "render_type": "solid"
 }

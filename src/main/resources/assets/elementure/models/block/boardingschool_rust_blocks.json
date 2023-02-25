@@ -8,5 +8,6 @@
     "south": "elementure:blocks/boardingschool_rust_block",
     "west": "elementure:blocks/boardingschool_rust_block",
     "particle": "elementure:blocks/boardingschool_rust_block"
-  }
+  },
+  "render_type": "solid"
 }

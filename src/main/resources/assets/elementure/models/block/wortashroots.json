@@ -8,5 +8,6 @@
     "south": "elementure:blocks/wortash_roots",
     "west": "elementure:blocks/wortash_roots",
     "particle": "elementure:blocks/wortash_roots"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

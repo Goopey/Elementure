@@ -4,5 +4,6 @@
     "all": "elementure:blocks/luckystar",
     "particle": "elementure:blocks/luckystar",
     "0": "elementure:blocks/luckystar"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

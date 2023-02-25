@@ -48,7 +48,6 @@ public class AirblastskillItem extends Item {
 				AirblastskillEntity entityarrow = AirblastskillEntity.shoot(world, entity, world.getRandom(), 1f, 3, 8);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				AirblastskillConsumeProcedure.execute(entity);
 			}
 		}

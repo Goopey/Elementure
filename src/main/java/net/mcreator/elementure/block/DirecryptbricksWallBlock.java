@@ -18,7 +18,7 @@ import java.util.Collections;
 
 public class DirecryptbricksWallBlock extends WallBlock {
 	public DirecryptbricksWallBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(60f, 50f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(60f, 50f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override

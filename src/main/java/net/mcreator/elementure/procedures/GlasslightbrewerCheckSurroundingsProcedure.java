@@ -100,7 +100,7 @@ public class GlasslightbrewerCheckSurroundingsProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getTileData().putDouble("cookSpeed", cookSpeedValSet);
+				_blockEntity.getPersistentData().putDouble("cookSpeed", cookSpeedValSet);
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}

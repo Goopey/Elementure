@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/wysberrybush",
     "particle": "elementure:blocks/wysberrybush"
-  }
+  },
+  "render_type": "cutout"
 }

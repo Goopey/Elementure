@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
@@ -34,7 +34,7 @@ public class MycenadepthssecretroomProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("omeganGenRole", 11);
+							_blockEntity.getPersistentData().putDouble("omeganGenRole", 11);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -47,7 +47,7 @@ public class MycenadepthssecretroomProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("omeganGenRole", 12);
+							_blockEntity.getPersistentData().putDouble("omeganGenRole", 12);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -74,12 +74,14 @@ public class MycenadepthssecretroomProcedure {
 		world.setBlock(new BlockPos(x, y - 3, z), Blocks.CHEST.defaultBlockState(), 3);
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands()
-					.performCommand(
-							new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 3), z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
+					.performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 3), z), Vec2.ZERO, _level, 4, "", Component.literal(""),
 									_level.getServer(), null).withSuppressedOutput(),
 							"data merge block ~ ~ ~ {LootTable:\"elementure:mycenanlootchest\"}");
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-					new TextComponent(""), _level.getServer(), null).withSuppressedOutput(), "kill @e[type=minecraft:item, distance=0.1..24]");
+			_level.getServer().getCommands()
+					.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
+							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"kill @e[type=minecraft:item, distance=0.1..24]");
 	}
 }

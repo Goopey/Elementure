@@ -17,7 +17,6 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
@@ -42,7 +41,7 @@ public class NoobiumchannelerItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Allows you to cast a flurry of small stone pellets."));
+		list.add(Component.literal("Allows you to cast a flurry of small stone pellets."));
 	}
 
 	@Override
@@ -73,7 +72,6 @@ public class NoobiumchannelerItem extends Item {
 				NoobiumchannelerEntity entityarrow = NoobiumchannelerEntity.shoot(world, entity, world.getRandom(), 1f, 1.6, 1);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				NoobiumchannelerConsumeProcedure.execute(entity);
 				entity.releaseUsingItem();
 			}

@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "elementure:greenjellyfloat",
+    "weight": 140,
+    "minCount": 2,
+    "maxCount": 4
+  }
+}

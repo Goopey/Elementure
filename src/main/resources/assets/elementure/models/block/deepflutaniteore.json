@@ -8,5 +8,6 @@
     "south": "elementure:blocks/deep_flutaniteore",
     "west": "elementure:blocks/deep_flutaniteore",
     "particle": "elementure:blocks/deep_flutaniteore"
-  }
+  },
+  "render_type": "solid"
 }

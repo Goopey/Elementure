@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/mycena_sprouts",
     "particle": "elementure:blocks/mycena_sprouts"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

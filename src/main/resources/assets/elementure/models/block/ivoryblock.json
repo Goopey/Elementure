@@ -8,5 +8,6 @@
     "south": "elementure:blocks/ivory_block",
     "west": "elementure:blocks/ivory_block",
     "particle": "elementure:blocks/ivory_block"
-  }
+  },
+  "render_type": "solid"
 }

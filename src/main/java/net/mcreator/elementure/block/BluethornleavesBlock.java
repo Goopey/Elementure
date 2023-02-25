@@ -1,9 +1,6 @@
 
 package net.mcreator.elementure.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.Fluids;
@@ -31,20 +28,17 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.WortashPlayerPlacedProcedure;
 import net.mcreator.elementure.procedures.BluethornleavesMineProcedure;
 import net.mcreator.elementure.procedures.BluethornDropsProcedure;
 import net.mcreator.elementure.procedures.BluehtorndecayProcedure;
-import net.mcreator.elementure.init.ElementureModBlocks;
 import net.mcreator.elementure.block.entity.BluethornleavesBlockEntity;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -107,7 +101,7 @@ public class BluethornleavesBlock extends Block implements SimpleWaterloggedBloc
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();
@@ -179,10 +173,4 @@ public class BluethornleavesBlock extends Block implements SimpleWaterloggedBloc
 		else
 			return 0;
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.BLUETHORNLEAVES.get(), renderType -> renderType == RenderType.cutout());
-	}
-
 }

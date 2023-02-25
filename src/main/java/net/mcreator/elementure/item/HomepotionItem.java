@@ -13,7 +13,6 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.HomepotionEffectProcedure;
@@ -46,8 +45,8 @@ public class HomepotionItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Drink to return to your roots."));
-		list.add(new TextComponent("It's hard to drink and prone to issues."));
+		list.add(Component.literal("Drink to return to your roots."));
+		list.add(Component.literal("It's hard to drink and prone to issues."));
 	}
 
 	@Override

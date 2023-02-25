@@ -8,5 +8,6 @@
     "south": "elementure:blocks/darkgem_block",
     "west": "elementure:blocks/darkgem_block",
     "particle": "elementure:blocks/darkgem_block"
-  }
+  },
+  "render_type": "solid"
 }

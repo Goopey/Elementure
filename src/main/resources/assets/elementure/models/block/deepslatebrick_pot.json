@@ -4,5 +4,6 @@
     "all": "elementure:blocks/deepslatebrickpot",
     "particle": "elementure:blocks/deepslatebrickpot",
     "0": "elementure:blocks/deepslatebrickpot"
-  }
+  },
+  "render_type": "cutout"
 }

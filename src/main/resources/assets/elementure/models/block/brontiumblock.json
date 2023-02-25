@@ -8,5 +8,6 @@
     "south": "elementure:blocks/brontium_block",
     "west": "elementure:blocks/brontium_block",
     "particle": "elementure:blocks/brontium_block"
-  }
+  },
+  "render_type": "solid"
 }

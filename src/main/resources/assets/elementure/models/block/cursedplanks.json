@@ -8,5 +8,6 @@
     "south": "elementure:blocks/cursedplanks",
     "west": "elementure:blocks/cursedplanks",
     "particle": "elementure:blocks/cursedplanks"
-  }
+  },
+  "render_type": "solid"
 }

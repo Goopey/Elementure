@@ -1,16 +1,19 @@
 package net.mcreator.elementure.procedures;
 
-import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.elementure.network.ElementureModVariables;
 import net.mcreator.elementure.init.ElementureModItems;
@@ -42,7 +45,7 @@ public class AgedrosaryEffectProcedure {
 			if ((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -53,7 +56,7 @@ public class AgedrosaryEffectProcedure {
 					.getItem() == ElementureModItems.PEARLEDSLIME.get() || (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -65,7 +68,7 @@ public class AgedrosaryEffectProcedure {
 					|| (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -76,15 +79,18 @@ public class AgedrosaryEffectProcedure {
 							.getItem() == ElementureModItems.PEARLEDSLIME.get()) {
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-								"effect give @s minecraft:jump_boost 12 0");
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent), "effect give @s minecraft:jump_boost 12 0");
+					}
 				}
 			}
 			if ((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -95,7 +101,7 @@ public class AgedrosaryEffectProcedure {
 					.getItem() == ElementureModItems.IMMACULATEPEARL.get() || (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -107,7 +113,7 @@ public class AgedrosaryEffectProcedure {
 					|| (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -122,16 +128,21 @@ public class AgedrosaryEffectProcedure {
 								: 0) <= 1) {
 					{
 						Entity _ent = entity;
-						if (!_ent.level.isClientSide() && _ent.getServer() != null)
-							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-									"effect give @s minecraft:regeneration 9 0");
+						if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+							_ent.getServer().getCommands()
+									.performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+													_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+													_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
+											"effect give @s minecraft:regeneration 9 0");
+						}
 					}
 				}
 			}
 			if ((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -142,7 +153,7 @@ public class AgedrosaryEffectProcedure {
 					.getItem() == ElementureModItems.TAINTEDPEARL.get() || (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -154,7 +165,7 @@ public class AgedrosaryEffectProcedure {
 					|| (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -166,16 +177,21 @@ public class AgedrosaryEffectProcedure {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < 8) {
 					{
 						Entity _ent = entity;
-						if (!_ent.level.isClientSide() && _ent.getServer() != null)
-							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-									"effect give @s minecraft:strength 6 0");
+						if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+							_ent.getServer().getCommands()
+									.performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+													_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+													_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
+											"effect give @s minecraft:strength 6 0");
+						}
 					}
 				}
 			}
 			if ((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -186,7 +202,7 @@ public class AgedrosaryEffectProcedure {
 					.getItem() == ElementureModItems.SHINYPEARL.get() || (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -198,7 +214,7 @@ public class AgedrosaryEffectProcedure {
 					|| (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -296,7 +312,7 @@ public class AgedrosaryEffectProcedure {
 			if ((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -307,7 +323,7 @@ public class AgedrosaryEffectProcedure {
 					.getItem() == ElementureModItems.SHIMMERINGPEARL.get() || (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -319,7 +335,7 @@ public class AgedrosaryEffectProcedure {
 					|| (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -472,7 +488,7 @@ public class AgedrosaryEffectProcedure {
 			if ((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -483,7 +499,7 @@ public class AgedrosaryEffectProcedure {
 					.getItem() == Items.ENDER_PEARL || (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -495,7 +511,7 @@ public class AgedrosaryEffectProcedure {
 					|| (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -534,7 +550,7 @@ public class AgedrosaryEffectProcedure {
 			if ((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -545,7 +561,7 @@ public class AgedrosaryEffectProcedure {
 					.getItem() == Items.ENDER_PEARL || (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -557,7 +573,7 @@ public class AgedrosaryEffectProcedure {
 					|| (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -591,7 +607,7 @@ public class AgedrosaryEffectProcedure {
 			if ((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -602,7 +618,7 @@ public class AgedrosaryEffectProcedure {
 					.getItem() == ElementureModItems.PEARLEDSLIME.get() || (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -614,7 +630,7 @@ public class AgedrosaryEffectProcedure {
 					|| (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -625,15 +641,18 @@ public class AgedrosaryEffectProcedure {
 							.getItem() == ElementureModItems.PEARLEDSLIME.get()) {
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-								"effect give @s minecraft:jump_boost 12 0");
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent), "effect give @s minecraft:jump_boost 12 0");
+					}
 				}
 			}
 			if ((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -644,7 +663,7 @@ public class AgedrosaryEffectProcedure {
 					.getItem() == ElementureModItems.IMMACULATEPEARL.get() || (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -656,7 +675,7 @@ public class AgedrosaryEffectProcedure {
 					|| (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -671,16 +690,21 @@ public class AgedrosaryEffectProcedure {
 								: 0) <= 1) {
 					{
 						Entity _ent = entity;
-						if (!_ent.level.isClientSide() && _ent.getServer() != null)
-							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-									"effect give @s minecraft:regeneration 9 0");
+						if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+							_ent.getServer().getCommands()
+									.performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+													_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+													_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
+											"effect give @s minecraft:regeneration 9 0");
+						}
 					}
 				}
 			}
 			if ((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -691,7 +715,7 @@ public class AgedrosaryEffectProcedure {
 					.getItem() == ElementureModItems.TAINTEDPEARL.get() || (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -703,7 +727,7 @@ public class AgedrosaryEffectProcedure {
 					|| (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -715,16 +739,21 @@ public class AgedrosaryEffectProcedure {
 				if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < 8) {
 					{
 						Entity _ent = entity;
-						if (!_ent.level.isClientSide() && _ent.getServer() != null)
-							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-									"effect give @s minecraft:strength 6 0");
+						if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+							_ent.getServer().getCommands()
+									.performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+													_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+													_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
+											"effect give @s minecraft:strength 6 0");
+						}
 					}
 				}
 			}
 			if ((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -735,7 +764,7 @@ public class AgedrosaryEffectProcedure {
 					.getItem() == ElementureModItems.SHINYPEARL.get() || (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -747,7 +776,7 @@ public class AgedrosaryEffectProcedure {
 					|| (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -845,7 +874,7 @@ public class AgedrosaryEffectProcedure {
 			if ((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -856,7 +885,7 @@ public class AgedrosaryEffectProcedure {
 					.getItem() == ElementureModItems.SHIMMERINGPEARL.get() || (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();
@@ -868,7 +897,7 @@ public class AgedrosaryEffectProcedure {
 					|| (new Object() {
 						public ItemStack getItemStack(int sltid, ItemStack _isc) {
 							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								_retval.set(capability.getStackInSlot(sltid).copy());
 							});
 							return _retval.get();

@@ -30,7 +30,7 @@ public class RuingranitebricksstairsBlock extends StairBlock {
 	}
 
 	@Override
-	public boolean isRandomlyTicking(BlockState p_56947_) {
+	public boolean isRandomlyTicking(BlockState state) {
 		return false;
 	}
 

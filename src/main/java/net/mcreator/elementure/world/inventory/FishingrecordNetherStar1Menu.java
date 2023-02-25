@@ -5,6 +5,7 @@ import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
@@ -28,7 +29,7 @@ public class FishingrecordNetherStar1Menu extends AbstractContainerMenu implemen
 	private boolean bound = false;
 
 	public FishingrecordNetherStar1Menu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(ElementureModMenus.FISHINGRECORD_NETHER_STAR_1, id);
+		super(ElementureModMenus.FISHINGRECORD_NETHER_STAR_1.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
 		this.internal = new ItemStackHandler(0);
@@ -44,6 +45,11 @@ public class FishingrecordNetherStar1Menu extends AbstractContainerMenu implemen
 	@Override
 	public boolean stillValid(Player player) {
 		return true;
+	}
+
+	@Override
+	public ItemStack quickMoveStack(Player playerIn, int index) {
+		return ItemStack.EMPTY;
 	}
 
 	public Map<Integer, Slot> get() {

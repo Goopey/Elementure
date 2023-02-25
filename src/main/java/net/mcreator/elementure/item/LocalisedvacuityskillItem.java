@@ -48,7 +48,6 @@ public class LocalisedvacuityskillItem extends Item {
 				LocalisedvacuityskillEntity entityarrow = LocalisedvacuityskillEntity.shoot(world, entity, world.getRandom(), 1f, 8, 2);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				LocalisedvacuityskillConsumeProcedure.execute(entity);
 			}
 		}

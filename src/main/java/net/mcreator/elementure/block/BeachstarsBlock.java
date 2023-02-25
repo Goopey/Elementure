@@ -3,9 +3,6 @@ package net.mcreator.elementure.block;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.Material;
@@ -19,25 +16,22 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.FluffsaplingValidLocationProcedure;
 import net.mcreator.elementure.procedures.BeachstarsFumeProcedure;
-import net.mcreator.elementure.init.ElementureModBlocks;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
 public class BeachstarsBlock extends Block {
 	public BeachstarsBlock() {
 		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(0.05f, 0.5f).lightLevel(s -> 15).noCollission()
-				.noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true)
-				.isRedstoneConductor((bs, br, bp) -> false));
+				.noOcclusion().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)
+				.offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override
@@ -70,11 +64,6 @@ public class BeachstarsBlock extends Block {
 	}
 
 	@Override
-	public Block.OffsetType getOffsetType() {
-		return Block.OffsetType.XZ;
-	}
-
-	@Override
 	public PushReaction getPistonPushReaction(BlockState state) {
 		return PushReaction.DESTROY;
 	}
@@ -94,7 +83,7 @@ public class BeachstarsBlock extends Block {
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();
@@ -103,10 +92,4 @@ public class BeachstarsBlock extends Block {
 		BeachstarsFumeProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 4);
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.BEACHSTARS.get(), renderType -> renderType == RenderType.cutoutMipped());
-	}
-
 }

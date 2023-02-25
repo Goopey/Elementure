@@ -8,5 +8,6 @@
     "south": "elementure:blocks/spider_bore_deepslate_bricks",
     "west": "elementure:blocks/spider_bore_deepslate_bricks",
     "particle": "elementure:blocks/spider_bore_deepslate_bricks"
-  }
+  },
+  "render_type": "solid"
 }

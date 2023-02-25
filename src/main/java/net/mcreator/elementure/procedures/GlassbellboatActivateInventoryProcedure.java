@@ -1,6 +1,6 @@
 package net.mcreator.elementure.procedures;
 
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
@@ -19,6 +19,8 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.Registry;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.elementure.init.ElementureModMobEffects;
 import net.mcreator.elementure.init.ElementureModItems;
@@ -46,7 +48,7 @@ public class GlassbellboatActivateInventoryProcedure {
 			if ((new Object() {
 				public ItemStack getItemStack(int sltid, Entity entity) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -54,7 +56,7 @@ public class GlassbellboatActivateInventoryProcedure {
 			}.getItemStack(0, entity)).getItem() == ElementureModItems.GLASSBELLBOAT_DARKFLAMESPRAYER.get() || (new Object() {
 				public ItemStack getItemStack(int sltid, Entity entity) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -105,7 +107,7 @@ public class GlassbellboatActivateInventoryProcedure {
 		if ((new Object() {
 			public ItemStack getItemStack(int sltid, Entity entity) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					_retval.set(capability.getStackInSlot(sltid).copy());
 				});
 				return _retval.get();
@@ -113,7 +115,7 @@ public class GlassbellboatActivateInventoryProcedure {
 		}.getItemStack(0, entity)).getItem() == ElementureModItems.DIVERSBEACON.get() || (new Object() {
 			public ItemStack getItemStack(int sltid, Entity entity) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					_retval.set(capability.getStackInSlot(sltid).copy());
 				});
 				return _retval.get();
@@ -134,7 +136,7 @@ public class GlassbellboatActivateInventoryProcedure {
 		if ((new Object() {
 			public ItemStack getItemStack(int sltid, Entity entity) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					_retval.set(capability.getStackInSlot(sltid).copy());
 				});
 				return _retval.get();
@@ -142,7 +144,7 @@ public class GlassbellboatActivateInventoryProcedure {
 		}.getItemStack(0, entity)).getItem() == ElementureModItems.GLASSBELLBOAT_POWER_THRUSTER.get() || (new Object() {
 			public ItemStack getItemStack(int sltid, Entity entity) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					_retval.set(capability.getStackInSlot(sltid).copy());
 				});
 				return _retval.get();
@@ -153,7 +155,7 @@ public class GlassbellboatActivateInventoryProcedure {
 		if ((new Object() {
 			public ItemStack getItemStack(int sltid, Entity entity) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					_retval.set(capability.getStackInSlot(sltid).copy());
 				});
 				return _retval.get();
@@ -161,7 +163,7 @@ public class GlassbellboatActivateInventoryProcedure {
 		}.getItemStack(0, entity)).getItem() == ElementureModItems.GLASSBELLBOAT_TURBO_THRUSTER.get() || (new Object() {
 			public ItemStack getItemStack(int sltid, Entity entity) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					_retval.set(capability.getStackInSlot(sltid).copy());
 				});
 				return _retval.get();
@@ -179,9 +181,11 @@ public class GlassbellboatActivateInventoryProcedure {
 		}
 		{
 			Entity _ent = entity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null)
-				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-						("attribute @s forge:swim_speed base set " + (2.2 + speedVal)));
+			if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(),
+						_ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+						_ent.getDisplayName(), _ent.level.getServer(), _ent), ("attribute @s forge:swim_speed base set " + (2.2 + speedVal)));
+			}
 		}
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));

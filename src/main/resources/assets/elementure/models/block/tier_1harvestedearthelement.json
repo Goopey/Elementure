@@ -4,5 +4,6 @@
     "all": "elementure:blocks/e_elementalaltar",
     "particle": "elementure:blocks/e_elementalaltar",
     "0": "elementure:blocks/e_elementalaltar"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

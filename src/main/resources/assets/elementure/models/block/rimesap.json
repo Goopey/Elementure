@@ -8,5 +8,6 @@
     "south": "elementure:blocks/rimesap_block",
     "west": "elementure:blocks/rimesap_block",
     "particle": "elementure:blocks/rimesap_block"
-  }
+  },
+  "render_type": "translucent"
 }

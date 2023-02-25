@@ -8,5 +8,6 @@
     "south": "elementure:blocks/magenta_rimemoss",
     "west": "elementure:blocks/magenta_rimemoss",
     "particle": "elementure:blocks/magenta_rimemoss"
-  }
+  },
+  "render_type": "solid"
 }

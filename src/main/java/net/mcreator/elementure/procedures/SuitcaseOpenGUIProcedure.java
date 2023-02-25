@@ -12,7 +12,6 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
@@ -37,10 +36,10 @@ public class SuitcaseOpenGUIProcedure {
 				{
 					if (entity instanceof ServerPlayer _ent) {
 						BlockPos _bpos = new BlockPos(entity.getX(), entity.getY(), entity.getZ());
-						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
-								return new TextComponent("BeltpouchGUI");
+								return Component.literal("BeltpouchGUI");
 							}
 
 							@Override
@@ -58,10 +57,10 @@ public class SuitcaseOpenGUIProcedure {
 				{
 					if (entity instanceof ServerPlayer _ent) {
 						BlockPos _bpos = new BlockPos(entity.getX(), entity.getY(), entity.getZ());
-						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
-								return new TextComponent("PouchGUI");
+								return Component.literal("PouchGUI");
 							}
 
 							@Override
@@ -79,10 +78,10 @@ public class SuitcaseOpenGUIProcedure {
 				{
 					if (entity instanceof ServerPlayer _ent) {
 						BlockPos _bpos = new BlockPos(entity.getX(), entity.getY(), entity.getZ());
-						NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+						NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 							@Override
 							public Component getDisplayName() {
-								return new TextComponent("SuitcaseGUI");
+								return Component.literal("SuitcaseGUI");
 							}
 
 							@Override

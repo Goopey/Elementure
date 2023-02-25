@@ -12,7 +12,6 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.BlockAndTintGetter;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
@@ -27,7 +26,7 @@ public class CloudsandBlock extends Block {
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("White sand that floats"));
+		list.add(Component.literal("White sand that floats"));
 	}
 
 	@Override

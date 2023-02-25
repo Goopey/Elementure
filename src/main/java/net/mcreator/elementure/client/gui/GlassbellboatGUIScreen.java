@@ -5,7 +5,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
@@ -84,7 +83,7 @@ public class GlassbellboatGUIScreen extends AbstractContainerScreen<Glassbellboa
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 6, 61, 20, new TextComponent("Pick up"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 6, 61, 20, Component.literal("Pick up"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new GlassbellboatGUIButtonMessage(0, x, y, z));
 				GlassbellboatGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);

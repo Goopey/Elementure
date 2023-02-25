@@ -4,5 +4,6 @@
     "all": "elementure:blocks/purple_barrier",
     "particle": "elementure:blocks/purple_barrier",
     "0": "elementure:blocks/purple_barrier"
-  }
+  },
+  "render_type": "translucent"
 }

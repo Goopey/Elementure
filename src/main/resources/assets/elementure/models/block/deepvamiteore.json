@@ -8,5 +8,6 @@
     "south": "elementure:blocks/deep_vamiteore",
     "west": "elementure:blocks/deep_vamiteore",
     "particle": "elementure:blocks/deep_vamiteore"
-  }
+  },
+  "render_type": "solid"
 }

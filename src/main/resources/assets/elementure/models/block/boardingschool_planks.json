@@ -8,5 +8,6 @@
     "south": "elementure:blocks/boardingschool_planks1",
     "west": "elementure:blocks/boardingschool_planks1",
     "particle": "elementure:blocks/boardingschool_planks1"
-  }
+  },
+  "render_type": "solid"
 }

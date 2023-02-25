@@ -20,6 +20,7 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
@@ -29,7 +30,6 @@ import net.mcreator.elementure.procedures.SpidernestDamageProcedure;
 import net.mcreator.elementure.init.ElementureModBlocks;
 import net.mcreator.elementure.block.entity.SpidernestCobblestoneBlockEntity;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -68,7 +68,7 @@ public class SpidernestCobblestoneBlock extends Block
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();

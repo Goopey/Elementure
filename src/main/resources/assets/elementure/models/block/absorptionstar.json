@@ -4,5 +4,6 @@
     "all": "elementure:blocks/absorptionstar",
     "particle": "elementure:blocks/absorptionstar",
     "0": "elementure:blocks/absorptionstar"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

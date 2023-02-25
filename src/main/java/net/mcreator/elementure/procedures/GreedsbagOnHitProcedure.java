@@ -21,7 +21,7 @@ import javax.annotation.Nullable;
 public class GreedsbagOnHitProcedure {
 	@SubscribeEvent
 	public static void onPlayerCriticalHit(CriticalHitEvent event) {
-		execute(event, event.getPlayer().level, event.getPlayer().getX(), event.getPlayer().getY(), event.getPlayer().getZ(), event.getTarget());
+		execute(event, event.getEntity().level, event.getEntity().getX(), event.getEntity().getY(), event.getEntity().getZ(), event.getTarget());
 	}
 
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {

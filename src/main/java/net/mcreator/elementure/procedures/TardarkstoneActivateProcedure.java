@@ -12,7 +12,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.elementure.init.ElementureModEntities;
@@ -50,7 +50,7 @@ public class TardarkstoneActivateProcedure {
 			}
 		} else {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("Requires Blaze powder"), (true));
+				_player.displayClientMessage(Component.literal("Requires Blaze powder"), (true));
 		}
 	}
 }

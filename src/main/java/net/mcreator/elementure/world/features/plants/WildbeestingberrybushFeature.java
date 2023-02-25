@@ -15,7 +15,6 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
@@ -35,20 +34,12 @@ public class WildbeestingberrybushFeature extends RandomPatchFeature {
 		FEATURE = new WildbeestingberrybushFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("elementure:wildbeestingberrybush", FEATURE,
 				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
-						new SimpleBlockConfiguration(BlockStateProvider.simple(ElementureModBlocks.WILDBEESTINGBERRYBUSH.get().defaultBlockState())),
-						List.of(), 64));
+						new SimpleBlockConfiguration(BlockStateProvider.simple(ElementureModBlocks.WILDBEESTINGBERRYBUSH.get())), List.of(), 64));
 		PLACED_FEATURE = PlacementUtils.register("elementure:wildbeestingberrybush", CONFIGURED_FEATURE, List.of(CountPlacement.of(1),
 				RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 		return FEATURE;
 	}
 
-	public static Holder<PlacedFeature> placedFeature() {
-		return PLACED_FEATURE;
-	}
-
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("savanna_plateau"),
-			new ResourceLocation("sunflower_plains"), new ResourceLocation("plains"), new ResourceLocation("savanna"),
-			new ResourceLocation("windswept_savanna"), new ResourceLocation("flower_forest"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 
 	public WildbeestingberrybushFeature() {

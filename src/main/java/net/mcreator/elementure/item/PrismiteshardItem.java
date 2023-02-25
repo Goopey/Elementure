@@ -10,7 +10,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.init.ElementureModTabs;
@@ -36,8 +35,8 @@ public class PrismiteshardItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent(
-				"These shards make no sense... You can hold them in your hand, but your fingers go through when you try to touch them."));
-		list.add(new TextComponent("They burn stuff and yet they feel cold."));
+		list.add(Component
+				.literal("These shards make no sense... You can hold them in your hand, but your fingers go through when you try to touch them."));
+		list.add(Component.literal("They burn stuff and yet they feel cold."));
 	}
 }

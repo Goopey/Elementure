@@ -21,7 +21,7 @@ public class NetherstaroutskirtsGenProcedure {
 				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
-						return blockEntity.getTileData().getBoolean(tag);
+						return blockEntity.getPersistentData().getBoolean(tag);
 					return false;
 				}
 			}.getValue(world, new BlockPos(x + CoordsX, 0, z + CoordsZ), "netherstarUsed"))) {
@@ -34,7 +34,7 @@ public class NetherstaroutskirtsGenProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("netherstarAGenRole", 4);
+								_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 4);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -44,7 +44,7 @@ public class NetherstaroutskirtsGenProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("netherstarAGenRole", 5);
+								_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 5);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -58,7 +58,7 @@ public class NetherstaroutskirtsGenProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("netherstarAGenRole", 6);
+							_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 6);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}

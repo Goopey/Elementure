@@ -82,7 +82,6 @@ public class WarpedspearItem extends Item {
 				WarpedspearEntity entityarrow = WarpedspearEntity.shoot(world, entity, world.getRandom(), 1f, 4, 3);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				WarpedspearShootSalvoProcedure.execute(world, entity);
 			}
 		}

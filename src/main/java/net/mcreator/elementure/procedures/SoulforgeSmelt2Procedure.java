@@ -1,7 +1,7 @@
 package net.mcreator.elementure.procedures;
 
 import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -33,7 +33,7 @@ public class SoulforgeSmelt2Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
@@ -44,7 +44,7 @@ public class SoulforgeSmelt2Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
@@ -55,7 +55,7 @@ public class SoulforgeSmelt2Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
@@ -66,7 +66,7 @@ public class SoulforgeSmelt2Procedure {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 					BlockEntity _ent = world.getBlockEntity(pos);
 					if (_ent != null)
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 								.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 					return _retval.get();
 				}
@@ -83,7 +83,7 @@ public class SoulforgeSmelt2Procedure {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
-						return blockEntity.getTileData().getDouble(tag);
+						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
 			}.getValue(world, new BlockPos(x, y, z), "smeltTime") >= 12) {
@@ -92,7 +92,7 @@ public class SoulforgeSmelt2Procedure {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);
 						if (_ent != null)
-							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 									.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
@@ -101,7 +101,7 @@ public class SoulforgeSmelt2Procedure {
 						AtomicInteger _retval = new AtomicInteger(0);
 						BlockEntity _ent = world.getBlockEntity(pos);
 						if (_ent != null)
-							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 									.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).getCount()));
 						return _retval.get();
 					}
@@ -111,7 +111,7 @@ public class SoulforgeSmelt2Procedure {
 						if (_ent != null) {
 							final int _slotid = 0;
 							final int _amount = 1;
-							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable) {
 									ItemStack _stk = capability.getStackInSlot(_slotid).copy();
 									_stk.shrink(_amount);
@@ -125,7 +125,7 @@ public class SoulforgeSmelt2Procedure {
 						if (_ent != null) {
 							final int _slotid = 1;
 							final int _amount = 1;
-							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable) {
 									ItemStack _stk = capability.getStackInSlot(_slotid).copy();
 									_stk.shrink(_amount);
@@ -139,7 +139,7 @@ public class SoulforgeSmelt2Procedure {
 						if (_ent != null) {
 							final int _slotid = 2;
 							final int _amount = 1;
-							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable) {
 									ItemStack _stk = capability.getStackInSlot(_slotid).copy();
 									_stk.shrink(_amount);
@@ -153,7 +153,7 @@ public class SoulforgeSmelt2Procedure {
 						if (_ent != null) {
 							final int _slotid = 3;
 							final int _amount = 1;
-							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable) {
 									ItemStack _stk = capability.getStackInSlot(_slotid).copy();
 									_stk.shrink(_amount);
@@ -168,7 +168,7 @@ public class SoulforgeSmelt2Procedure {
 							final int _slotid = 4;
 							final ItemStack _setstack = new ItemStack(ElementureModItems.MYCENANALLOY.get());
 							_setstack.setCount(1);
-							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 								if (capability instanceof IItemHandlerModifiable)
 									((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
 							});
@@ -179,7 +179,7 @@ public class SoulforgeSmelt2Procedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("smeltTime", 0);
+							_blockEntity.getPersistentData().putDouble("smeltTime", 0);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -190,11 +190,11 @@ public class SoulforgeSmelt2Procedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("smeltTime", (new Object() {
+						_blockEntity.getPersistentData().putDouble("smeltTime", (new Object() {
 							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getDouble(tag);
+									return blockEntity.getPersistentData().getDouble(tag);
 								return -1;
 							}
 						}.getValue(world, new BlockPos(x, y, z), "smeltTime") + 1));
@@ -208,7 +208,7 @@ public class SoulforgeSmelt2Procedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("smeltTime", 0);
+					_blockEntity.getPersistentData().putDouble("smeltTime", 0);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

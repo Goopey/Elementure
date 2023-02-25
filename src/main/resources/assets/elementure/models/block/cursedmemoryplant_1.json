@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/cursed_bulb_1",
     "particle": "elementure:blocks/cursed_bulb_1"
-  }
+  },
+  "render_type": "cutout"
 }

@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "desert",
+  "features": "elementure:ragdollarena",
+  "step": "surface_structures"
+}

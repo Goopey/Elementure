@@ -4,5 +4,6 @@
     "all": "elementure:blocks/cyan_rimevine",
     "particle": "elementure:blocks/cyan_rimevine",
     "0": "elementure:blocks/cyan_rimevine"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

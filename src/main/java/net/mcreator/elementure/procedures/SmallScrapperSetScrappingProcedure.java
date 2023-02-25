@@ -23,7 +23,7 @@ public class SmallScrapperSetScrappingProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("scrapStartUp", 20);
+					_blockEntity.getPersistentData().putDouble("scrapStartUp", 20);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -32,7 +32,7 @@ public class SmallScrapperSetScrappingProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("amountScraps", 1);
+					_blockEntity.getPersistentData().putDouble("amountScraps", 1);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -43,7 +43,7 @@ public class SmallScrapperSetScrappingProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("scrapStartUp", 25);
+					_blockEntity.getPersistentData().putDouble("scrapStartUp", 25);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -52,7 +52,7 @@ public class SmallScrapperSetScrappingProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("amountScraps", 2);
+					_blockEntity.getPersistentData().putDouble("amountScraps", 2);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -63,7 +63,7 @@ public class SmallScrapperSetScrappingProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("scrapStartUp", 30);
+					_blockEntity.getPersistentData().putDouble("scrapStartUp", 30);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -72,7 +72,7 @@ public class SmallScrapperSetScrappingProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("amountScraps", 3);
+					_blockEntity.getPersistentData().putDouble("amountScraps", 3);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

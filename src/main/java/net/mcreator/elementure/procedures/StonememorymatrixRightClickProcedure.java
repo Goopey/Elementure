@@ -16,7 +16,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
@@ -50,7 +49,7 @@ public class StonememorymatrixRightClickProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "total_teleport_num") + 1); index0++) {
@@ -68,11 +67,11 @@ public class StonememorymatrixRightClickProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble(("memorial_x_" + (new Object() {
+							_blockEntity.getPersistentData().putDouble(("memorial_x_" + (new Object() {
 								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getDouble(tag);
+										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
 							}.getValue(world, new BlockPos(x, y, z), "total_teleport_num"))),
@@ -86,11 +85,11 @@ public class StonememorymatrixRightClickProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble(("memorial_y_" + (new Object() {
+							_blockEntity.getPersistentData().putDouble(("memorial_y_" + (new Object() {
 								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getDouble(tag);
+										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
 							}.getValue(world, new BlockPos(x, y, z), "total_teleport_num"))),
@@ -104,11 +103,11 @@ public class StonememorymatrixRightClickProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble(("memorial_z_" + (new Object() {
+							_blockEntity.getPersistentData().putDouble(("memorial_z_" + (new Object() {
 								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getDouble(tag);
+										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
 							}.getValue(world, new BlockPos(x, y, z), "total_teleport_num"))),
@@ -122,11 +121,11 @@ public class StonememorymatrixRightClickProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putString(("memorial_type_" + (new Object() {
+							_blockEntity.getPersistentData().putString(("memorial_type_" + (new Object() {
 								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getDouble(tag);
+										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
 							}.getValue(world, new BlockPos(x, y, z), "total_teleport_num"))),
@@ -140,11 +139,11 @@ public class StonememorymatrixRightClickProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putString(("memorial_name_" + (new Object() {
+							_blockEntity.getPersistentData().putString(("memorial_name_" + (new Object() {
 								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getDouble(tag);
+										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
 							}.getValue(world, new BlockPos(x, y, z), "total_teleport_num"))),
@@ -158,11 +157,11 @@ public class StonememorymatrixRightClickProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("total_teleport_num", (new Object() {
+							_blockEntity.getPersistentData().putDouble("total_teleport_num", (new Object() {
 								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getDouble(tag);
+										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
 							}.getValue(world, new BlockPos(x, y, z), "total_teleport_num") + 1));
@@ -228,10 +227,10 @@ public class StonememorymatrixRightClickProcedure {
 			{
 				if (entity instanceof ServerPlayer _ent) {
 					BlockPos _bpos = new BlockPos(x, y, z);
-					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 						@Override
 						public Component getDisplayName() {
-							return new TextComponent("MemorymatrixGui");
+							return Component.literal("MemorymatrixGui");
 						}
 
 						@Override

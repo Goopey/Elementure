@@ -8,5 +8,6 @@
     "south": "elementure:blocks/pitstone",
     "west": "elementure:blocks/pitstone",
     "particle": "elementure:blocks/pitstone"
-  }
+  },
+  "render_type": "solid"
 }

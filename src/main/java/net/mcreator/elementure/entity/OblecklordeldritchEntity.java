@@ -28,6 +28,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.AreaEffectCloud;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerBossEvent;
@@ -38,7 +39,6 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.elementure.procedures.OblecklordeldritchRevertProcedure;
 import net.mcreator.elementure.init.ElementureModEntities;
 
-import java.util.Random;
 import java.util.EnumSet;
 
 public class OblecklordeldritchEntity extends Monster {
@@ -122,7 +122,7 @@ public class OblecklordeldritchEntity extends Monster {
 		this.goalSelector.addGoal(6, new RandomStrollGoal(this, 1, 20) {
 			@Override
 			protected Vec3 getPosition() {
-				Random random = OblecklordeldritchEntity.this.getRandom();
+				RandomSource random = OblecklordeldritchEntity.this.getRandom();
 				double dir_x = OblecklordeldritchEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_y = OblecklordeldritchEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_z = OblecklordeldritchEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);

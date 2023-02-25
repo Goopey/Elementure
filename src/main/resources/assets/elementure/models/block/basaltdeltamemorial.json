@@ -4,5 +4,6 @@
     "all": "elementure:blocks/basalt_delta_memorial",
     "particle": "elementure:blocks/basalt_delta_memorial",
     "0": "elementure:blocks/basalt_delta_memorial"
-  }
+  },
+  "render_type": "cutout"
 }

@@ -4,5 +4,6 @@
     "all": "elementure:blocks/lime_rimefan",
     "particle": "elementure:blocks/lime_rimefan",
     "0": "elementure:blocks/lime_rimefan"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

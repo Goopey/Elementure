@@ -19,9 +19,9 @@ import javax.annotation.Nullable;
 public class OldnailHealProcedure {
 	@SubscribeEvent
 	public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
-		if (event.getHand() != event.getPlayer().getUsedItemHand())
+		if (event.getHand() != event.getEntity().getUsedItemHand())
 			return;
-		execute(event, event.getPlayer());
+		execute(event, event.getEntity());
 	}
 
 	public static void execute(Entity entity) {

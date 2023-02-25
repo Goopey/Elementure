@@ -8,5 +8,6 @@
     "south": "elementure:blocks/prismatic_crystal_20",
     "west": "elementure:blocks/prismatic_crystal_20",
     "particle": "elementure:blocks/prismatic_crystal_20"
-  }
+  },
+  "render_type": "solid"
 }

@@ -5,7 +5,6 @@ import org.checkerframework.checker.units.qual.s;
 
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.LiquidBlock;
@@ -16,10 +15,8 @@ import net.mcreator.elementure.init.ElementureModFluids;
 
 public class NetherumfluidBlock extends LiquidBlock {
 	public NetherumfluidBlock() {
-		super(() -> (FlowingFluid) ElementureModFluids.NETHERUMFLUID.get(),
-				BlockBehaviour.Properties.of(Material.LAVA, MaterialColor.WOOL).strength(2000f)
-
-						.lightLevel(s -> 15));
+		super(() -> ElementureModFluids.NETHERUMFLUID.get(),
+				BlockBehaviour.Properties.of(Material.LAVA, MaterialColor.WOOL).strength(2000f).lightLevel(s -> 15).noCollission().noLootTable());
 	}
 
 	@Override

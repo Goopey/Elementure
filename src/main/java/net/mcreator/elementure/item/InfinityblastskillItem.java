@@ -48,7 +48,6 @@ public class InfinityblastskillItem extends Item {
 				InfinityblastskillEntity entityarrow = InfinityblastskillEntity.shoot(world, entity, world.getRandom(), 1f, 9.6, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				InfinityblastskillConsumeProcedure.execute(entity);
 			}
 		}

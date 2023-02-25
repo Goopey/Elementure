@@ -4,5 +4,6 @@
     "all": "elementure:blocks/abyssalflames",
     "particle": "elementure:blocks/abyssalflames",
     "0": "elementure:blocks/abyssalflames"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

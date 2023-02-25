@@ -8,5 +8,6 @@
     "south": "elementure:blocks/energy_diorite_tile",
     "west": "elementure:blocks/energy_diorite_tile",
     "particle": "elementure:blocks/energy_diorite_tile"
-  }
+  },
+  "render_type": "solid"
 }

@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/boardingschool_whiteewall",
     "top": "elementure:blocks/boardingschool_whiteewall",
     "side": "elementure:blocks/boardingschool_whiteewall"
-  }
+  },
+  "render_type": "solid"
 }

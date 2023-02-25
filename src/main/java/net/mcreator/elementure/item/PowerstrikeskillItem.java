@@ -48,7 +48,6 @@ public class PowerstrikeskillItem extends Item {
 				PowerstrikeskillEntity entityarrow = PowerstrikeskillEntity.shoot(world, entity, world.getRandom(), 1f, 6.9, 3);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				PowerstrikeskillConsumeProcedure.execute(entity);
 			}
 		}

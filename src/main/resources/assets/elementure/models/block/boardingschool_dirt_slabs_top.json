@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/boardingschool_dirt",
     "top": "elementure:blocks/boardingschool_dirt",
     "side": "elementure:blocks/boardingschool_dirt"
-  }
+  },
+  "render_type": "solid"
 }

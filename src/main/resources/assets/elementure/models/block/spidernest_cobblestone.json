@@ -8,5 +8,6 @@
     "south": "elementure:blocks/spider_infested_cobblestone",
     "west": "elementure:blocks/spider_infested_cobblestone",
     "particle": "elementure:blocks/spider_infested_cobblestone"
-  }
+  },
+  "render_type": "solid"
 }

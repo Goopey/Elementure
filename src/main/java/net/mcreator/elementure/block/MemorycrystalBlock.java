@@ -17,13 +17,13 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.util.RandomSource;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.elementure.init.ElementureModParticleTypes;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -59,7 +59,7 @@ public class MemorycrystalBlock extends Block {
 
 	@OnlyIn(Dist.CLIENT)
 	@Override
-	public void animateTick(BlockState blockstate, Level world, BlockPos pos, Random random) {
+	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
 		super.animateTick(blockstate, world, pos, random);
 		Player entity = Minecraft.getInstance().player;
 		int x = pos.getX();

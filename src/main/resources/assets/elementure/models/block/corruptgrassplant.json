@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/corruptgrassplant",
     "particle": "elementure:blocks/corruptgrassplant"
-  }
+  },
+  "render_type": "cutout"
 }

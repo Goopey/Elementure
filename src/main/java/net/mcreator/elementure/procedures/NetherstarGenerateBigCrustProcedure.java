@@ -13,7 +13,7 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
@@ -48,7 +48,7 @@ public class NetherstarGenerateBigCrustProcedure {
 										BlockEntity _blockEntity = world.getBlockEntity(_bp);
 										BlockState _bs = world.getBlockState(_bp);
 										if (_blockEntity != null)
-											_blockEntity.getTileData().putDouble("netherstarAGenRole", 15);
+											_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 15);
 										if (world instanceof Level _level)
 											_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 									}
@@ -60,7 +60,7 @@ public class NetherstarGenerateBigCrustProcedure {
 												BlockEntity _blockEntity = world.getBlockEntity(_bp);
 												BlockState _bs = world.getBlockState(_bp);
 												if (_blockEntity != null)
-													_blockEntity.getTileData().putDouble("netherstarAGenRole", 19);
+													_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 19);
 												if (world instanceof Level _level)
 													_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 											}
@@ -70,7 +70,7 @@ public class NetherstarGenerateBigCrustProcedure {
 												BlockEntity _blockEntity = world.getBlockEntity(_bp);
 												BlockState _bs = world.getBlockState(_bp);
 												if (_blockEntity != null)
-													_blockEntity.getTileData().putDouble("netherstarAGenRole", 17);
+													_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 17);
 												if (world instanceof Level _level)
 													_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 											}
@@ -80,7 +80,7 @@ public class NetherstarGenerateBigCrustProcedure {
 												BlockEntity _blockEntity = world.getBlockEntity(_bp);
 												BlockState _bs = world.getBlockState(_bp);
 												if (_blockEntity != null)
-													_blockEntity.getTileData().putDouble("netherstarAGenRole", 16);
+													_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 16);
 												if (world instanceof Level _level)
 													_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 											}
@@ -92,7 +92,7 @@ public class NetherstarGenerateBigCrustProcedure {
 												BlockEntity _blockEntity = world.getBlockEntity(_bp);
 												BlockState _bs = world.getBlockState(_bp);
 												if (_blockEntity != null)
-													_blockEntity.getTileData().putDouble("netherstarAGenRole", 19);
+													_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 19);
 												if (world instanceof Level _level)
 													_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 											}
@@ -102,7 +102,7 @@ public class NetherstarGenerateBigCrustProcedure {
 												BlockEntity _blockEntity = world.getBlockEntity(_bp);
 												BlockState _bs = world.getBlockState(_bp);
 												if (_blockEntity != null)
-													_blockEntity.getTileData().putDouble("netherstarAGenRole", 17);
+													_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 17);
 												if (world instanceof Level _level)
 													_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 											}
@@ -112,7 +112,7 @@ public class NetherstarGenerateBigCrustProcedure {
 												BlockEntity _blockEntity = world.getBlockEntity(_bp);
 												BlockState _bs = world.getBlockState(_bp);
 												if (_blockEntity != null)
-													_blockEntity.getTileData().putDouble("netherstarAGenRole", 18);
+													_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 18);
 												if (world instanceof Level _level)
 													_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 											}
@@ -138,7 +138,7 @@ public class NetherstarGenerateBigCrustProcedure {
 									BlockEntity _blockEntity = world.getBlockEntity(_bp);
 									BlockState _bs = world.getBlockState(_bp);
 									if (_blockEntity != null)
-										_blockEntity.getTileData().putDouble("netherstarAGenRole", 7);
+										_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 7);
 									if (world instanceof Level _level)
 										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 								}
@@ -165,7 +165,7 @@ public class NetherstarGenerateBigCrustProcedure {
 										BlockEntity _blockEntity = world.getBlockEntity(_bp);
 										BlockState _bs = world.getBlockState(_bp);
 										if (_blockEntity != null)
-											_blockEntity.getTileData().putDouble("netherstarAGenRole", 11);
+											_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 11);
 										if (world instanceof Level _level)
 											_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 									}
@@ -199,7 +199,7 @@ public class NetherstarGenerateBigCrustProcedure {
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
 											BlockState _bs = world.getBlockState(_bp);
 											if (_blockEntity != null)
-												_blockEntity.getTileData().putDouble("netherstarAGenRole", 12);
+												_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 12);
 											if (world instanceof Level _level)
 												_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 										}
@@ -221,7 +221,7 @@ public class NetherstarGenerateBigCrustProcedure {
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
 											BlockState _bs = world.getBlockState(_bp);
 											if (_blockEntity != null)
-												_blockEntity.getTileData().putDouble("netherstarAGenRole", 13);
+												_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 13);
 											if (world instanceof Level _level)
 												_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 										}
@@ -233,7 +233,7 @@ public class NetherstarGenerateBigCrustProcedure {
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
 											BlockState _bs = world.getBlockState(_bp);
 											if (_blockEntity != null)
-												_blockEntity.getTileData().putDouble("netherstarAGenRole", 1);
+												_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 1);
 											if (world instanceof Level _level)
 												_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 										}
@@ -242,7 +242,7 @@ public class NetherstarGenerateBigCrustProcedure {
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
 											BlockState _bs = world.getBlockState(_bp);
 											if (_blockEntity != null)
-												_blockEntity.getTileData().putDouble("platformSize", Math.round(Math.random() * 5 + 1));
+												_blockEntity.getPersistentData().putDouble("platformSize", Math.round(Math.random() * 5 + 1));
 											if (world instanceof Level _level)
 												_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 										}
@@ -256,7 +256,7 @@ public class NetherstarGenerateBigCrustProcedure {
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
 											BlockState _bs = world.getBlockState(_bp);
 											if (_blockEntity != null)
-												_blockEntity.getTileData().putDouble("netherstarAGenRole", 13);
+												_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 13);
 											if (world instanceof Level _level)
 												_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 										}
@@ -268,7 +268,7 @@ public class NetherstarGenerateBigCrustProcedure {
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
 											BlockState _bs = world.getBlockState(_bp);
 											if (_blockEntity != null)
-												_blockEntity.getTileData().putDouble("netherstarAGenRole", 1);
+												_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 1);
 											if (world instanceof Level _level)
 												_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 										}
@@ -277,7 +277,7 @@ public class NetherstarGenerateBigCrustProcedure {
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
 											BlockState _bs = world.getBlockState(_bp);
 											if (_blockEntity != null)
-												_blockEntity.getTileData().putDouble("platformSize", Math.round(Math.random() * 8 + 4));
+												_blockEntity.getPersistentData().putDouble("platformSize", Math.round(Math.random() * 8 + 4));
 											if (world instanceof Level _level)
 												_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 										}
@@ -290,7 +290,7 @@ public class NetherstarGenerateBigCrustProcedure {
 										BlockEntity _blockEntity = world.getBlockEntity(_bp);
 										BlockState _bs = world.getBlockState(_bp);
 										if (_blockEntity != null)
-											_blockEntity.getTileData().putDouble("netherstarAGenRole", 10);
+											_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 10);
 										if (world instanceof Level _level)
 											_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 									}
@@ -303,7 +303,7 @@ public class NetherstarGenerateBigCrustProcedure {
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
 											BlockState _bs = world.getBlockState(_bp);
 											if (_blockEntity != null)
-												_blockEntity.getTileData().putDouble("netherstarAGenRole", 13);
+												_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 13);
 											if (world instanceof Level _level)
 												_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 										}
@@ -315,7 +315,7 @@ public class NetherstarGenerateBigCrustProcedure {
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
 											BlockState _bs = world.getBlockState(_bp);
 											if (_blockEntity != null)
-												_blockEntity.getTileData().putDouble("netherstarAGenRole", 1);
+												_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 1);
 											if (world instanceof Level _level)
 												_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 										}
@@ -324,7 +324,7 @@ public class NetherstarGenerateBigCrustProcedure {
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
 											BlockState _bs = world.getBlockState(_bp);
 											if (_blockEntity != null)
-												_blockEntity.getTileData().putDouble("platformSize", Math.round(Math.random() * 8 + 4));
+												_blockEntity.getPersistentData().putDouble("platformSize", Math.round(Math.random() * 8 + 4));
 											if (world instanceof Level _level)
 												_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 										}
@@ -339,7 +339,7 @@ public class NetherstarGenerateBigCrustProcedure {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(x + CoordsX, 0, z + CoordsZ), "netherstarUsed"))) {
@@ -349,7 +349,7 @@ public class NetherstarGenerateBigCrustProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putBoolean("netherstarUsed", (true));
+								_blockEntity.getPersistentData().putBoolean("netherstarUsed", (true));
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -366,7 +366,7 @@ public class NetherstarGenerateBigCrustProcedure {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(x + CoordsX, 0, z + CoordsZ), "netherstarUsed"))) {
@@ -376,7 +376,7 @@ public class NetherstarGenerateBigCrustProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putBoolean("netherstarUsed", (true));
+								_blockEntity.getPersistentData().putBoolean("netherstarUsed", (true));
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -393,7 +393,7 @@ public class NetherstarGenerateBigCrustProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("netherstarAGenRole", 15);
+								_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 15);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -405,7 +405,7 @@ public class NetherstarGenerateBigCrustProcedure {
 									BlockEntity _blockEntity = world.getBlockEntity(_bp);
 									BlockState _bs = world.getBlockState(_bp);
 									if (_blockEntity != null)
-										_blockEntity.getTileData().putDouble("netherstarAGenRole", 19);
+										_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 19);
 									if (world instanceof Level _level)
 										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 								}
@@ -415,7 +415,7 @@ public class NetherstarGenerateBigCrustProcedure {
 									BlockEntity _blockEntity = world.getBlockEntity(_bp);
 									BlockState _bs = world.getBlockState(_bp);
 									if (_blockEntity != null)
-										_blockEntity.getTileData().putDouble("netherstarAGenRole", 17);
+										_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 17);
 									if (world instanceof Level _level)
 										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 								}
@@ -425,7 +425,7 @@ public class NetherstarGenerateBigCrustProcedure {
 									BlockEntity _blockEntity = world.getBlockEntity(_bp);
 									BlockState _bs = world.getBlockState(_bp);
 									if (_blockEntity != null)
-										_blockEntity.getTileData().putDouble("netherstarAGenRole", 16);
+										_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 16);
 									if (world instanceof Level _level)
 										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 								}
@@ -437,7 +437,7 @@ public class NetherstarGenerateBigCrustProcedure {
 									BlockEntity _blockEntity = world.getBlockEntity(_bp);
 									BlockState _bs = world.getBlockState(_bp);
 									if (_blockEntity != null)
-										_blockEntity.getTileData().putDouble("netherstarAGenRole", 19);
+										_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 19);
 									if (world instanceof Level _level)
 										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 								}
@@ -447,7 +447,7 @@ public class NetherstarGenerateBigCrustProcedure {
 									BlockEntity _blockEntity = world.getBlockEntity(_bp);
 									BlockState _bs = world.getBlockState(_bp);
 									if (_blockEntity != null)
-										_blockEntity.getTileData().putDouble("netherstarAGenRole", 17);
+										_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 17);
 									if (world instanceof Level _level)
 										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 								}
@@ -457,7 +457,7 @@ public class NetherstarGenerateBigCrustProcedure {
 									BlockEntity _blockEntity = world.getBlockEntity(_bp);
 									BlockState _bs = world.getBlockState(_bp);
 									if (_blockEntity != null)
-										_blockEntity.getTileData().putDouble("netherstarAGenRole", 18);
+										_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 18);
 									if (world instanceof Level _level)
 										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 								}
@@ -492,9 +492,9 @@ public class NetherstarGenerateBigCrustProcedure {
 								world = _origLevel.getServer().getLevel(Level.NETHER);
 								if (world != null) {
 									if (world instanceof ServerLevel _level)
-										_level.getServer().getCommands().performCommand(
+										_level.getServer().getCommands().performPrefixedCommand(
 												new CommandSourceStack(CommandSource.NULL, new Vec3((x + CoordsX), y, (z + CoordsZ)), Vec2.ZERO,
-														_level, 4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
+														_level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 												"forceload add ~ ~");
 								}
 								world = _worldorig;
@@ -521,7 +521,7 @@ public class NetherstarGenerateBigCrustProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getTileData().putDouble("netherstarOGenRole", 1);
+				_blockEntity.getPersistentData().putDouble("netherstarOGenRole", 1);
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
@@ -533,7 +533,7 @@ public class NetherstarGenerateBigCrustProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("netherstarAGenRole", 8);
+					_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 8);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -544,7 +544,7 @@ public class NetherstarGenerateBigCrustProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("netherstarAGenRole", 8);
+					_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 8);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -555,7 +555,7 @@ public class NetherstarGenerateBigCrustProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("netherstarAGenRole", 8);
+					_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 8);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -566,7 +566,7 @@ public class NetherstarGenerateBigCrustProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("netherstarAGenRole", 8);
+					_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 8);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

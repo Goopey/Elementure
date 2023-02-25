@@ -4,5 +4,6 @@
     "all": "elementure:blocks/pooltile_summoner_texture",
     "particle": "elementure:blocks/pooltile_summoner_texture",
     "0": "elementure:blocks/pooltile_summoner_texture"
-  }
+  },
+  "render_type": "cutout"
 }

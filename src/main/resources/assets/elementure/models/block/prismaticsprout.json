@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/prismatic_sprouts",
     "particle": "elementure:blocks/prismatic_sprouts"
-  }
+  },
+  "render_type": "cutout"
 }

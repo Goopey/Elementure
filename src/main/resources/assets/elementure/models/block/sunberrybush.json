@@ -4,5 +4,6 @@
     "all": "elementure:blocks/smallsunberrybush",
     "particle": "elementure:blocks/smallsunberrybush",
     "0": "elementure:blocks/smallsunberrybush"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

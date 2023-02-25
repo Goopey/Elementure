@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "elementure:netherstar_spawn",
+  "step": "underground_structures"
+}

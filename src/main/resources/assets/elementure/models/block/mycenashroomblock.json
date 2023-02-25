@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/mycenashroom",
     "particle": "elementure:blocks/mycenashroom"
-  }
+  },
+  "render_type": "cutout"
 }

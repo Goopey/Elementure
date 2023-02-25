@@ -4,5 +4,6 @@
     "all": "elementure:blocks/starflower",
     "particle": "elementure:blocks/starflower",
     "0": "elementure:blocks/starflower"
-  }
+  },
+  "render_type": "cutout"
 }

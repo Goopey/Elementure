@@ -40,13 +40,6 @@ public class DiverscrownFeature extends Feature<NoneFeatureConfiguration> {
 		return FEATURE;
 	}
 
-	public static Holder<PlacedFeature> placedFeature() {
-		return PLACED_FEATURE;
-	}
-
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("grove"), new ResourceLocation("stony_peaks"),
-			new ResourceLocation("snowy_slopes"), new ResourceLocation("frozen_peaks"), new ResourceLocation("jagged_peaks"),
-			new ResourceLocation("meadow"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 	private StructureTemplate template = null;
 
@@ -80,7 +73,6 @@ public class DiverscrownFeature extends Feature<NoneFeatureConfiguration> {
 						context.level(), spawnTo, spawnTo, new StructurePlaceSettings().setMirror(Mirror.NONE).setRotation(Rotation.NONE)
 								.setRandom(context.random()).addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK).setIgnoreEntities(false),
 						context.random(), 2)) {
-
 					DiverscrownPlaceProcedure.execute(world, x, y, z);
 					anyPlaced = true;
 				}

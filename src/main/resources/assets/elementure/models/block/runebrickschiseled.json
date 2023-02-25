@@ -8,5 +8,6 @@
     "south": "elementure:blocks/runebrickblockchisel",
     "west": "elementure:blocks/runebrickblockchisel",
     "particle": "elementure:blocks/runebrickblockchisel"
-  }
+  },
+  "render_type": "solid"
 }

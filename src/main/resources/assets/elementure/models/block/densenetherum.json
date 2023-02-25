@@ -8,5 +8,6 @@
     "south": "elementure:blocks/dense_netherum",
     "west": "elementure:blocks/dense_netherum",
     "particle": "elementure:blocks/dense_netherum"
-  }
+  },
+  "render_type": "solid"
 }

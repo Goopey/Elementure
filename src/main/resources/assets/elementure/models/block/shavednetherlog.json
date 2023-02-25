@@ -8,5 +8,6 @@
     "south": "elementure:blocks/nether_log_shaved",
     "west": "elementure:blocks/nether_log_shaved",
     "particle": "elementure:blocks/nether_log_top_shaved"
-  }
+  },
+  "render_type": "solid"
 }

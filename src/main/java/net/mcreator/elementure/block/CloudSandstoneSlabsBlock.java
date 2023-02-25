@@ -19,7 +19,8 @@ import java.util.Collections;
 
 public class CloudSandstoneSlabsBlock extends SlabBlock {
 	public CloudSandstoneSlabsBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.9000000000000001f, 16.5f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.9000000000000001f, 16.5f).requiresCorrectToolForDrops()
+				.dynamicShape());
 	}
 
 	@Override

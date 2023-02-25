@@ -4,5 +4,6 @@
     "all": "elementure:blocks/lime_barrier",
     "particle": "elementure:blocks/lime_barrier",
     "0": "elementure:blocks/lime_barrier"
-  }
+  },
+  "render_type": "translucent"
 }

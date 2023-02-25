@@ -1,7 +1,7 @@
 package net.mcreator.elementure.procedures;
 
 import net.minecraftforge.items.ItemHandlerHelper;
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
@@ -32,7 +32,7 @@ public class GlassbellboatPickupProcedure {
 						ItemStack _setstack = (new Object() {
 							public ItemStack getItemStack(int sltid, Entity entity) {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-								entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									_retval.set(capability.getStackInSlot(sltid).copy());
 								});
 								return _retval.get();
@@ -45,7 +45,7 @@ public class GlassbellboatPickupProcedure {
 						ItemStack _setstack = (new Object() {
 							public ItemStack getItemStack(int sltid, Entity entity) {
 								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-								entity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									_retval.set(capability.getStackInSlot(sltid).copy());
 								});
 								return _retval.get();

@@ -11,6 +11,9 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.elementure.network.ElementureModVariables;
 import net.mcreator.elementure.init.ElementureModItems;
@@ -46,9 +49,13 @@ public class CometcrownEffectProcedure {
 						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).getItem() == relic_item.getItem()) {
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+									_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+									_ent.getDisplayName(), _ent.level.getServer(), _ent),
 							"attribute @s minecraft:generic.movement_speed modifier add 09ce44f4-9a87-45e4-912e-4a359266d299 cometcrownspeed 0.08 multiply_base");
+				}
 			}
 			if (Math.random() < 0.0075) {
 				{
@@ -84,9 +91,13 @@ public class CometcrownEffectProcedure {
 		} else {
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+									_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+									_ent.getDisplayName(), _ent.level.getServer(), _ent),
 							"attribute @s minecraft:generic.movement_speed modifier remove 09ce44f4-9a87-45e4-912e-4a359266d299");
+				}
 			}
 		}
 	}

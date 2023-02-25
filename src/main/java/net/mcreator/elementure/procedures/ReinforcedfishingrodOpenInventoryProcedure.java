@@ -1,7 +1,7 @@
 package net.mcreator.elementure.procedures;
 
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
@@ -12,7 +12,6 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
@@ -33,10 +32,10 @@ public class ReinforcedfishingrodOpenInventoryProcedure {
 		{
 			if (entity instanceof ServerPlayer _ent) {
 				BlockPos _bpos = new BlockPos(x, y, z);
-				NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+				NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
-						return new TextComponent("CustomfishingrodInventory");
+						return Component.literal("CustomfishingrodInventory");
 					}
 
 					@Override
@@ -50,7 +49,7 @@ public class ReinforcedfishingrodOpenInventoryProcedure {
 			ItemStack _setstack = (new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -59,7 +58,7 @@ public class ReinforcedfishingrodOpenInventoryProcedure {
 			_setstack.setCount(((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -72,7 +71,7 @@ public class ReinforcedfishingrodOpenInventoryProcedure {
 			ItemStack _setstack = (new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -81,7 +80,7 @@ public class ReinforcedfishingrodOpenInventoryProcedure {
 			_setstack.setCount(((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -94,7 +93,7 @@ public class ReinforcedfishingrodOpenInventoryProcedure {
 			ItemStack _setstack = (new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();
@@ -103,7 +102,7 @@ public class ReinforcedfishingrodOpenInventoryProcedure {
 			_setstack.setCount(((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-					_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 						_retval.set(capability.getStackInSlot(sltid).copy());
 					});
 					return _retval.get();

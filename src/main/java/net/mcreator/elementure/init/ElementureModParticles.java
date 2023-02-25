@@ -6,11 +6,8 @@ package net.mcreator.elementure.init;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
+import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
 import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.client.Minecraft;
 
 import net.mcreator.elementure.client.particle.WortashmossParticle;
 import net.mcreator.elementure.client.particle.WebParticlesParticle;
@@ -49,71 +46,39 @@ import net.mcreator.elementure.client.particle.AngelstarparticleParticle;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ElementureModParticles {
 	@SubscribeEvent
-	public static void registerParticles(ParticleFactoryRegisterEvent event) {
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.SOULFLAME.get(), SoulflameParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.TELEPORTPARTICLE.get(),
-				TeleportparticleParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.MEMORYPARTICLE.get(),
-				MemoryparticleParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.TRANSPARENTMEMORYPARTICLE.get(),
-				TransparentmemoryparticleParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.NEARMEMORYPARTICLE.get(),
-				NearmemoryparticleParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.MEMORYCRYSTALPARTICLE_1.get(),
-				Memorycrystalparticle1Particle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.MEMORYCRYSTALPARTICLE_2.get(),
-				Memorycrystalparticle2Particle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.MEMORYCRYSTALPARTICLE_3.get(),
-				Memorycrystalparticle3Particle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.FISHINGLINEPARTICLE.get(),
-				FishinglineparticleParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.SPOREPARTICLE.get(),
-				SporeparticleParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.FISHNOTIFPARTICLE.get(),
-				FishnotifparticleParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.MINOSKULLFLAIL_PARTICLE.get(),
-				MinoskullflailParticleParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.SHADOWPARTICLE_1.get(),
-				Shadowparticle1Particle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.SHADOWPARTICLE_2.get(),
-				Shadowparticle2Particle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.BRIGHTPARTICLE_1.get(),
-				Brightparticle1Particle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.BRIGHTPARTICLE_2.get(),
-				Brightparticle2Particle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.STRINGPARTICLE.get(),
-				StringparticleParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.NETHERSTARDUST_1.get(),
-				Netherstardust1Particle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.NETHERSTARDUST_2.get(),
-				Netherstardust2Particle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.NETHERSTARDUST_3.get(),
-				Netherstardust3Particle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.STARFLOWERPARTICLE.get(),
-				StarflowerparticleParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.JELLYBUBBLE.get(),
-				JellybubbleParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.REDSUN_SWIPE.get(),
-				RedsunSwipeParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.REDSUN_FLAME.get(),
-				RedsunFlameParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.CLOUDFLUFF.get(),
-				CloudfluffParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.CLOUDFLUFF_BIG.get(),
-				CloudfluffBigParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.CLOUDSMOKE.get(),
-				CloudsmokeParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.WORTASHMOSS.get(),
-				WortashmossParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.TARFLAME_PARTICLE.get(),
-				TarflameParticleParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.MYCENAHOTSPRIINGBUBBLE.get(),
-				MycenahotspriingbubbleParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.BONE_FRAGMENTS.get(),
-				BoneFragmentsParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.WEB_PARTICLES.get(),
-				WebParticlesParticle::provider);
-		Minecraft.getInstance().particleEngine.register((SimpleParticleType) ElementureModParticleTypes.ANGELSTARPARTICLE.get(),
-				AngelstarparticleParticle::provider);
+	public static void registerParticles(RegisterParticleProvidersEvent event) {
+		event.register(ElementureModParticleTypes.SOULFLAME.get(), SoulflameParticle::provider);
+		event.register(ElementureModParticleTypes.TELEPORTPARTICLE.get(), TeleportparticleParticle::provider);
+		event.register(ElementureModParticleTypes.MEMORYPARTICLE.get(), MemoryparticleParticle::provider);
+		event.register(ElementureModParticleTypes.TRANSPARENTMEMORYPARTICLE.get(), TransparentmemoryparticleParticle::provider);
+		event.register(ElementureModParticleTypes.NEARMEMORYPARTICLE.get(), NearmemoryparticleParticle::provider);
+		event.register(ElementureModParticleTypes.MEMORYCRYSTALPARTICLE_1.get(), Memorycrystalparticle1Particle::provider);
+		event.register(ElementureModParticleTypes.MEMORYCRYSTALPARTICLE_2.get(), Memorycrystalparticle2Particle::provider);
+		event.register(ElementureModParticleTypes.MEMORYCRYSTALPARTICLE_3.get(), Memorycrystalparticle3Particle::provider);
+		event.register(ElementureModParticleTypes.FISHINGLINEPARTICLE.get(), FishinglineparticleParticle::provider);
+		event.register(ElementureModParticleTypes.SPOREPARTICLE.get(), SporeparticleParticle::provider);
+		event.register(ElementureModParticleTypes.FISHNOTIFPARTICLE.get(), FishnotifparticleParticle::provider);
+		event.register(ElementureModParticleTypes.MINOSKULLFLAIL_PARTICLE.get(), MinoskullflailParticleParticle::provider);
+		event.register(ElementureModParticleTypes.SHADOWPARTICLE_1.get(), Shadowparticle1Particle::provider);
+		event.register(ElementureModParticleTypes.SHADOWPARTICLE_2.get(), Shadowparticle2Particle::provider);
+		event.register(ElementureModParticleTypes.BRIGHTPARTICLE_1.get(), Brightparticle1Particle::provider);
+		event.register(ElementureModParticleTypes.BRIGHTPARTICLE_2.get(), Brightparticle2Particle::provider);
+		event.register(ElementureModParticleTypes.STRINGPARTICLE.get(), StringparticleParticle::provider);
+		event.register(ElementureModParticleTypes.NETHERSTARDUST_1.get(), Netherstardust1Particle::provider);
+		event.register(ElementureModParticleTypes.NETHERSTARDUST_2.get(), Netherstardust2Particle::provider);
+		event.register(ElementureModParticleTypes.NETHERSTARDUST_3.get(), Netherstardust3Particle::provider);
+		event.register(ElementureModParticleTypes.STARFLOWERPARTICLE.get(), StarflowerparticleParticle::provider);
+		event.register(ElementureModParticleTypes.JELLYBUBBLE.get(), JellybubbleParticle::provider);
+		event.register(ElementureModParticleTypes.REDSUN_SWIPE.get(), RedsunSwipeParticle::provider);
+		event.register(ElementureModParticleTypes.REDSUN_FLAME.get(), RedsunFlameParticle::provider);
+		event.register(ElementureModParticleTypes.CLOUDFLUFF.get(), CloudfluffParticle::provider);
+		event.register(ElementureModParticleTypes.CLOUDFLUFF_BIG.get(), CloudfluffBigParticle::provider);
+		event.register(ElementureModParticleTypes.CLOUDSMOKE.get(), CloudsmokeParticle::provider);
+		event.register(ElementureModParticleTypes.WORTASHMOSS.get(), WortashmossParticle::provider);
+		event.register(ElementureModParticleTypes.TARFLAME_PARTICLE.get(), TarflameParticleParticle::provider);
+		event.register(ElementureModParticleTypes.MYCENAHOTSPRIINGBUBBLE.get(), MycenahotspriingbubbleParticle::provider);
+		event.register(ElementureModParticleTypes.BONE_FRAGMENTS.get(), BoneFragmentsParticle::provider);
+		event.register(ElementureModParticleTypes.WEB_PARTICLES.get(), WebParticlesParticle::provider);
+		event.register(ElementureModParticleTypes.ANGELSTARPARTICLE.get(), AngelstarparticleParticle::provider);
 	}
 }

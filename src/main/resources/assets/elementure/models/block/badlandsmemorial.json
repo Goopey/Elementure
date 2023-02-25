@@ -4,5 +4,6 @@
     "all": "elementure:blocks/badlands_memorial",
     "particle": "elementure:blocks/badlands_memorial",
     "0": "elementure:blocks/badlands_memorial"
-  }
+  },
+  "render_type": "solid"
 }

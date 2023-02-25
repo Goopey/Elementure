@@ -3,9 +3,6 @@ package net.mcreator.elementure.block;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
@@ -33,18 +30,15 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.SlimeturfRndRotProcedure;
 import net.mcreator.elementure.procedures.SlimesproutValidPlacementProcedure;
 import net.mcreator.elementure.procedures.JellyBubblesProcedure;
-import net.mcreator.elementure.init.ElementureModBlocks;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -57,7 +51,7 @@ public class GreenslimefolBlock extends Block implements SimpleWaterloggedBlock
 	public GreenslimefolBlock() {
 		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(0f, 1f).lightLevel(s -> 5).noCollission().noOcclusion()
 				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)
-				.dynamicShape());
+				.dynamicShape().offsetType(Block.OffsetType.XZ));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 
@@ -134,11 +128,6 @@ public class GreenslimefolBlock extends Block implements SimpleWaterloggedBlock
 	}
 
 	@Override
-	public Block.OffsetType getOffsetType() {
-		return Block.OffsetType.XZ;
-	}
-
-	@Override
 	public PushReaction getPistonPushReaction(BlockState state) {
 		return PushReaction.DESTROY;
 	}
@@ -159,7 +148,7 @@ public class GreenslimefolBlock extends Block implements SimpleWaterloggedBlock
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();
@@ -168,10 +157,4 @@ public class GreenslimefolBlock extends Block implements SimpleWaterloggedBlock
 		JellyBubblesProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 4);
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.GREENSLIMEFOL.get(), renderType -> renderType == RenderType.cutout());
-	}
-
 }

@@ -4,5 +4,6 @@
     "all": "elementure:blocks/buriedrustysword2",
     "particle": "elementure:blocks/buriedrustysword2",
     "0": "elementure:blocks/buriedrustysword2"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

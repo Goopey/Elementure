@@ -19,8 +19,8 @@ import javax.annotation.Nullable;
 @Mod.EventBusSubscriber
 public class DenyNetherStarSpawnsProcedure {
 	@SubscribeEvent
-	public static void onEntityTick(LivingEvent.LivingUpdateEvent event) {
-		execute(event, event.getEntityLiving().level, event.getEntityLiving().getX(), event.getEntityLiving().getZ(), event.getEntityLiving());
+	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
+		execute(event, event.getEntity().level, event.getEntity().getX(), event.getEntity().getZ(), event.getEntity());
 	}
 
 	public static void execute(LevelAccessor world, double x, double z, Entity entity) {
@@ -35,7 +35,7 @@ public class DenyNetherStarSpawnsProcedure {
 				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
-						return blockEntity.getTileData().getBoolean(tag);
+						return blockEntity.getPersistentData().getBoolean(tag);
 					return false;
 				}
 			}.getValue(world, new BlockPos(x, 0, z), "netherstarUsed")

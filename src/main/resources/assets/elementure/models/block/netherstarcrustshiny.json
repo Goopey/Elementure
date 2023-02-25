@@ -8,5 +8,6 @@
     "south": "elementure:blocks/netherstarcrustshiny",
     "west": "elementure:blocks/netherstarcrustshiny",
     "particle": "elementure:blocks/netherstarcrustshiny"
-  }
+  },
+  "render_type": "solid"
 }

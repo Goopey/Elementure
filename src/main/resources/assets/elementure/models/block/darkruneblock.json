@@ -8,5 +8,6 @@
     "south": "elementure:blocks/blackruneblock",
     "west": "elementure:blocks/blackruneblock",
     "particle": "elementure:blocks/blackruneblock"
-  }
+  },
+  "render_type": "solid"
 }

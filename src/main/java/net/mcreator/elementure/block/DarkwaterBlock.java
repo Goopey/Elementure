@@ -2,7 +2,6 @@
 package net.mcreator.elementure.block;
 
 import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.LiquidBlock;
@@ -16,9 +15,7 @@ import net.mcreator.elementure.init.ElementureModFluids;
 
 public class DarkwaterBlock extends LiquidBlock {
 	public DarkwaterBlock() {
-		super(() -> (FlowingFluid) ElementureModFluids.DARKWATER.get(), BlockBehaviour.Properties.of(Material.WATER).strength(100f)
-
-		);
+		super(() -> ElementureModFluids.DARKWATER.get(), BlockBehaviour.Properties.of(Material.WATER).strength(100f).noCollission().noLootTable());
 	}
 
 	@Override

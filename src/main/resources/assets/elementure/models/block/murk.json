@@ -8,5 +8,6 @@
     "south": "elementure:blocks/murk",
     "west": "elementure:blocks/murk",
     "particle": "elementure:blocks/murk"
-  }
+  },
+  "render_type": "cutout"
 }

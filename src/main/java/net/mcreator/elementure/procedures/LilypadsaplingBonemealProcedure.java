@@ -1,9 +1,5 @@
 package net.mcreator.elementure.procedures;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.GameType;
@@ -17,6 +13,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.elementure.init.ElementureModBlocks;
+import net.mcreator.elementure.ElementureMod;
 
 public class LilypadsaplingBonemealProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -38,33 +35,11 @@ public class LilypadsaplingBonemealProcedure {
 				}.checkGamemode(entity))) {
 					((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)).shrink(1);
 				}
-				new Object() {
-					private int ticks = 0;
-					private float waitTicks;
-					private LevelAccessor world;
-
-					public void start(LevelAccessor world, int waitTicks) {
-						this.waitTicks = waitTicks;
-						MinecraftForge.EVENT_BUS.register(this);
-						this.world = world;
-					}
-
-					@SubscribeEvent
-					public void tick(TickEvent.ServerTickEvent event) {
-						if (event.phase == TickEvent.Phase.END) {
-							this.ticks += 1;
-							if (this.ticks >= this.waitTicks)
-								run();
-						}
-					}
-
-					private void run() {
-						world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-						world.setBlock(new BlockPos(x, y, z), ElementureModBlocks.LILYPADLOG.get().defaultBlockState(), 3);
-						LilypadTreeGenProcedure.execute(world, x, y, z);
-						MinecraftForge.EVENT_BUS.unregister(this);
-					}
-				}.start(world, 0);
+				ElementureMod.queueServerWork(0, () -> {
+					world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
+					world.setBlock(new BlockPos(x, y, z), ElementureModBlocks.LILYPADLOG.get().defaultBlockState(), 3);
+					LilypadTreeGenProcedure.execute(world, x, y, z);
+				});
 			} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.BONE_MEAL
 					&& !(new Object() {
 						public boolean checkGamemode(Entity _ent) {

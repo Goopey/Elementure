@@ -8,5 +8,6 @@
     "south": "elementure:blocks/airruneblock",
     "west": "elementure:blocks/airruneblock",
     "particle": "elementure:blocks/airruneblock"
-  }
+  },
+  "render_type": "solid"
 }

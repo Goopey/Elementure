@@ -39,11 +39,6 @@ public class MycenabiomebaseblockFeature extends Feature<NoneFeatureConfiguratio
 		return FEATURE;
 	}
 
-	public static Holder<PlacedFeature> placedFeature() {
-		return PLACED_FEATURE;
-	}
-
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("plains"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 	private StructureTemplate template = null;
 
@@ -75,7 +70,6 @@ public class MycenabiomebaseblockFeature extends Feature<NoneFeatureConfiguratio
 						context.level(), spawnTo, spawnTo, new StructurePlaceSettings().setMirror(Mirror.NONE).setRotation(Rotation.NONE)
 								.setRandom(context.random()).addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK).setIgnoreEntities(false),
 						context.random(), 2)) {
-
 					ScheduleupdateProcedureProcedure.execute(world, x, y, z);
 					anyPlaced = true;
 				}

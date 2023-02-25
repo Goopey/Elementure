@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/wortash_sapling",
     "particle": "elementure:blocks/wortash_sapling"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

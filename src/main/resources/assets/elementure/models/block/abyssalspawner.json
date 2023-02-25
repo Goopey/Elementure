@@ -8,5 +8,6 @@
     "south": "elementure:blocks/abyssalcorruption",
     "west": "elementure:blocks/abyssalcorruption",
     "particle": "elementure:blocks/abyssalcorruption"
-  }
+  },
+  "render_type": "solid"
 }

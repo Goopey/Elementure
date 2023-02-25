@@ -1,7 +1,7 @@
 package net.mcreator.elementure.procedures;
 
 import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
@@ -36,7 +36,7 @@ public class CustomfishingrodInventorySaveProcedure {
 						return 0;
 					}
 				}.getAmount(0));
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					if (capability instanceof IItemHandlerModifiable) {
 						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
 					}
@@ -58,7 +58,7 @@ public class CustomfishingrodInventorySaveProcedure {
 						return 0;
 					}
 				}.getAmount(1));
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					if (capability instanceof IItemHandlerModifiable) {
 						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
 					}
@@ -80,7 +80,7 @@ public class CustomfishingrodInventorySaveProcedure {
 						return 0;
 					}
 				}.getAmount(2));
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					if (capability instanceof IItemHandlerModifiable) {
 						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
 					}
@@ -104,7 +104,7 @@ public class CustomfishingrodInventorySaveProcedure {
 						return 0;
 					}
 				}.getAmount(0));
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					if (capability instanceof IItemHandlerModifiable) {
 						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
 					}
@@ -126,7 +126,7 @@ public class CustomfishingrodInventorySaveProcedure {
 						return 0;
 					}
 				}.getAmount(1));
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					if (capability instanceof IItemHandlerModifiable) {
 						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
 					}
@@ -148,7 +148,7 @@ public class CustomfishingrodInventorySaveProcedure {
 						return 0;
 					}
 				}.getAmount(2));
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					if (capability instanceof IItemHandlerModifiable) {
 						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
 					}

@@ -40,20 +40,16 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.util.RandomSource;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.elementure.procedures.EndermemorialTeleportProcedure;
-import net.mcreator.elementure.init.ElementureModBlocks;
 import net.mcreator.elementure.block.entity.EndermemorialBlockEntity;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -70,7 +66,7 @@ public class EndermemorialBlock extends Block implements SimpleWaterloggedBlock,
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent(
+		list.add(Component.literal(
 				"A special kind of memorial which allows you to teleport back from anywhere. The energy it manifests seems unstable and unsettling though."));
 	}
 
@@ -145,7 +141,7 @@ public class EndermemorialBlock extends Block implements SimpleWaterloggedBlock,
 
 	@OnlyIn(Dist.CLIENT)
 	@Override
-	public void animateTick(BlockState blockstate, Level world, BlockPos pos, Random random) {
+	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
 		super.animateTick(blockstate, world, pos, random);
 		Player entity = Minecraft.getInstance().player;
 		int x = pos.getX();
@@ -219,10 +215,5 @@ public class EndermemorialBlock extends Block implements SimpleWaterloggedBlock,
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.ENDERMEMORIAL.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

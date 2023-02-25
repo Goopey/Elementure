@@ -5,7 +5,7 @@ import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
@@ -28,9 +28,9 @@ public class MycenasporeslingeringcloudEffectProcedure {
 			for (int index0 = 0; index0 < (int) (2704); index0++) {
 				if (LocX * LocX + LocZ * LocZ < 9) {
 					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performCommand(
+						_level.getServer().getCommands().performPrefixedCommand(
 								new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX() + LocX), (entity.getY()), (entity.getZ() + LocZ)),
-										Vec2.ZERO, _level, 4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
+										Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								"particle minecraft:entity_effect ~ ~ ~ 0 1 0 1 0 normal");
 				}
 				LocX = LocX + 0.25;
@@ -50,9 +50,9 @@ public class MycenasporeslingeringcloudEffectProcedure {
 			for (int index1 = 0; index1 < (int) (169); index1++) {
 				if (LocX * LocX + LocZ * LocZ < 9) {
 					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performCommand(
+						_level.getServer().getCommands().performPrefixedCommand(
 								new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX() + LocX), (entity.getY()), (entity.getZ() + LocZ)),
-										Vec2.ZERO, _level, 4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
+										Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								"effect give @e[distance=0.1..1] minecraft_worlds:mycenanspores 40 0");
 				}
 				LocX = LocX + 1;

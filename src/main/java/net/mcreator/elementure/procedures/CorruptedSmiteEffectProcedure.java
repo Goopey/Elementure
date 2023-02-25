@@ -11,8 +11,11 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.tags.TagKey;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Registry;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.elementure.network.ElementureModVariables;
 import net.mcreator.elementure.init.ElementureModItems;
@@ -54,18 +57,24 @@ public class CorruptedSmiteEffectProcedure {
 					if (entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("elementure:resistboss")))) {
 						{
 							Entity _ent = entity;
-							if (!_ent.level.isClientSide() && _ent.getServer() != null)
-								_ent.getServer().getCommands().performCommand(
-										_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+							if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+								_ent.getServer().getCommands().performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+												_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+												_ent.getDisplayName(), _ent.level.getServer(), _ent),
 										"attribute @s minecraft:generic.attack_damage modifier add f77e33b9-ab11-42d0-a79b-e0e893237779 corruptedSmiteDamage 1 add");
+							}
 						}
 					} else {
 						{
 							Entity _ent = entity;
-							if (!_ent.level.isClientSide() && _ent.getServer() != null)
-								_ent.getServer().getCommands().performCommand(
-										_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+							if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+								_ent.getServer().getCommands().performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+												_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+												_ent.getDisplayName(), _ent.level.getServer(), _ent),
 										"attribute @s minecraft:generic.attack_damage modifier remove f77e33b9-ab11-42d0-a79b-e0e893237779");
+							}
 						}
 					}
 				}

@@ -10,7 +10,7 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.Registry;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
@@ -36,9 +36,9 @@ public class CausticvialliquidEffectProcedure {
 			for (int index0 = 0; index0 < (int) (625); index0++) {
 				if (LocX * LocX + LocZ * LocZ < 9) {
 					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performCommand(
+						_level.getServer().getCommands().performPrefixedCommand(
 								new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX() + LocX), (entity.getY()), (entity.getZ() + LocZ)),
-										Vec2.ZERO, _level, 4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
+										Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								"particle minecraft:entity_effect ~ ~ ~ 0 1 0 1 0 normal");
 				}
 				LocX = LocX + 0.25;

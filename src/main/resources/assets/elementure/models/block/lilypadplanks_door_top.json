@@ -1,7 +1,0 @@
-{
-  "parent": "block/door_top",
-  "textures": {
-    "bottom": "elementure:blocks/lilypad_door_bottom",
-    "top": "elementure:blocks/lilypad_door_top"
-  }
-}

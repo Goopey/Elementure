@@ -8,5 +8,6 @@
     "south": "elementure:blocks/purple_mushroom_block",
     "west": "elementure:blocks/purple_mushroom_block",
     "particle": "elementure:blocks/purple_mushroom_block"
-  }
+  },
+  "render_type": "solid"
 }

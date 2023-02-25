@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/beachstars",
     "particle": "elementure:blocks/beachstars"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

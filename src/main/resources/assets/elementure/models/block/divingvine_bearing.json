@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/divingvines",
     "particle": "elementure:blocks/divingvines"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

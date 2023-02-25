@@ -8,5 +8,6 @@
     "south": "elementure:blocks/springwater_flowing",
     "west": "elementure:blocks/springwater_flowing",
     "particle": "elementure:blocks/springwater_flowing"
-  }
+  },
+  "render_type": "solid"
 }

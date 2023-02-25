@@ -8,5 +8,6 @@
     "south": "elementure:blocks/deep_noobiumore",
     "west": "elementure:blocks/deep_noobiumore",
     "particle": "elementure:blocks/deep_noobiumore"
-  }
+  },
+  "render_type": "solid"
 }

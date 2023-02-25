@@ -11,7 +11,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.MycenanfungalshotEffectProcedure;
@@ -39,7 +38,7 @@ public class MycenanfungalshotItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Renders you immune to fungal burns and growths for 4 minutes."));
+		list.add(Component.literal("Renders you immune to fungal burns and growths for 4 minutes."));
 	}
 
 	@Override

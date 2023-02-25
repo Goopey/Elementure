@@ -15,7 +15,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.FerziumarmorFullArmorEffectProcedure;
@@ -76,7 +75,7 @@ public abstract class FerziumarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("Full armor effect : When using fire essence, you emanate an aura of fire which lights your enemies on fire"));
+			list.add(Component.literal("Full armor effect : When using fire essence, you emanate an aura of fire which lights your enemies on fire"));
 		}
 
 		@Override
@@ -93,7 +92,7 @@ public abstract class FerziumarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("Full armor effect : When using fire essence, you emanate an aura of fire which lights your enemies on fire"));
+			list.add(Component.literal("Full armor effect : When using fire essence, you emanate an aura of fire which lights your enemies on fire"));
 		}
 
 		@Override
@@ -115,7 +114,7 @@ public abstract class FerziumarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("Full armor effect : When using fire essence, you emanate an aura of fire which lights your enemies on fire"));
+			list.add(Component.literal("Full armor effect : When using fire essence, you emanate an aura of fire which lights your enemies on fire"));
 		}
 
 		@Override
@@ -132,7 +131,7 @@ public abstract class FerziumarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("Full armor effect : When using fire essence, you emanate an aura of fire which lights your enemies on fire"));
+			list.add(Component.literal("Full armor effect : When using fire essence, you emanate an aura of fire which lights your enemies on fire"));
 		}
 
 		@Override

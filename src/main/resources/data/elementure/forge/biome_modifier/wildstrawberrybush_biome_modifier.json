@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "old_growth_birch_forest",
+    "forest",
+    "birch_forest"
+  ],
+  "features": "elementure:wildstrawberrybush",
+  "step": "vegetal_decoration"
+}

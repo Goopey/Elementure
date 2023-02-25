@@ -4,5 +4,6 @@
     "all": "elementure:blocks/swamp_memorial",
     "particle": "elementure:blocks/swamp_memorial",
     "0": "elementure:blocks/mushroom_memorial"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

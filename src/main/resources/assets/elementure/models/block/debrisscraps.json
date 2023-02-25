@@ -4,5 +4,6 @@
     "all": "elementure:blocks/debrisscrap_block_texturemap",
     "particle": "elementure:blocks/debrisscrap_block_texturemap",
     "0": "elementure:blocks/debrisscrap_block_texturemap"
-  }
+  },
+  "render_type": "cutout"
 }

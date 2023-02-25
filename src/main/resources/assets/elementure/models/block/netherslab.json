@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/nether_planks",
     "top": "elementure:blocks/nether_planks",
     "side": "elementure:blocks/nether_planks"
-  }
+  },
+  "render_type": "solid"
 }

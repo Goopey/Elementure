@@ -4,13 +4,9 @@ package net.mcreator.elementure.entity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
@@ -25,7 +21,6 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
@@ -43,20 +38,7 @@ import net.mcreator.elementure.procedures.BlackstonegrimaceEffectProcedure;
 import net.mcreator.elementure.procedures.BlackstoneGrimaceDropsProcedure;
 import net.mcreator.elementure.init.ElementureModEntities;
 
-import java.util.Set;
-
-@Mod.EventBusSubscriber
 public class BlackstoneGrimaceEntity extends Monster {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("warped_forest"), new ResourceLocation("soul_sand_valley"),
-			new ResourceLocation("basalt_deltas"), new ResourceLocation("crimson_forest"), new ResourceLocation("nether_wastes"));
-
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.MONSTER)
-					.add(new MobSpawnSettings.SpawnerData(ElementureModEntities.BLACKSTONE_GRIMACE.get(), 20, 1, 1));
-	}
-
 	public BlackstoneGrimaceEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(ElementureModEntities.BLACKSTONE_GRIMACE.get(), world);
 	}

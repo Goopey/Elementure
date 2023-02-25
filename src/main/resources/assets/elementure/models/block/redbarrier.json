@@ -4,5 +4,6 @@
     "all": "elementure:blocks/red_barrier",
     "particle": "elementure:blocks/red_barrier",
     "0": "elementure:blocks/red_barrier"
-  }
+  },
+  "render_type": "translucent"
 }

@@ -4,5 +4,6 @@
     "all": "elementure:blocks/speedstar",
     "particle": "elementure:blocks/speedstar",
     "0": "elementure:blocks/speedstar"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

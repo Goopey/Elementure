@@ -1,9 +1,5 @@
 package net.mcreator.elementure.procedures;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Blocks;
@@ -12,6 +8,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.elementure.init.ElementureModBlocks;
+import net.mcreator.elementure.ElementureMod;
 
 public class BedofchaosRoomGenProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -33,7 +30,7 @@ public class BedofchaosRoomGenProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putBoolean("diverscrownUsed", (true));
+							_blockEntity.getPersistentData().putBoolean("diverscrownUsed", (true));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -45,7 +42,7 @@ public class BedofchaosRoomGenProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putBoolean("diverscrowncenterUsed", (true));
+						_blockEntity.getPersistentData().putBoolean("diverscrowncenterUsed", (true));
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -100,7 +97,7 @@ public class BedofchaosRoomGenProcedure {
 									BlockEntity _blockEntity = world.getBlockEntity(_bp);
 									BlockState _bs = world.getBlockState(_bp);
 									if (_blockEntity != null)
-										_blockEntity.getTileData().putDouble("diverscrownOmeganRole", 6);
+										_blockEntity.getPersistentData().putDouble("diverscrownOmeganRole", 6);
 									if (world instanceof Level _level)
 										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 								}
@@ -118,7 +115,7 @@ public class BedofchaosRoomGenProcedure {
 									BlockEntity _blockEntity = world.getBlockEntity(_bp);
 									BlockState _bs = world.getBlockState(_bp);
 									if (_blockEntity != null)
-										_blockEntity.getTileData().putDouble("diverscrownOmeganRole", 7);
+										_blockEntity.getPersistentData().putDouble("diverscrownOmeganRole", 7);
 									if (world instanceof Level _level)
 										_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 								}
@@ -145,63 +142,19 @@ public class BedofchaosRoomGenProcedure {
 				}
 			}
 		}
-		new Object() {
-			private int ticks = 0;
-			private float waitTicks;
-			private LevelAccessor world;
-
-			public void start(LevelAccessor world, int waitTicks) {
-				this.waitTicks = waitTicks;
-				MinecraftForge.EVENT_BUS.register(this);
-				this.world = world;
+		ElementureMod.queueServerWork(60, () -> {
+			TaravatarshrineGenProcedure.execute(world, x, (-53), z);
+		});
+		ElementureMod.queueServerWork(60, () -> {
+			if (Math.random() < 0.25) {
+				CrystalPalaceBoxGenProcedure.execute(world, (x - 140), (-30), z);
+			} else if (Math.random() < 0.33) {
+				CrystalPalaceBoxGenProcedure.execute(world, (x + 140), (-30), z);
+			} else if (Math.random() < 0.5) {
+				CrystalPalaceBoxGenProcedure.execute(world, x, (-30), (z - 140));
+			} else {
+				CrystalPalaceBoxGenProcedure.execute(world, x, (-30), (z + 140));
 			}
-
-			@SubscribeEvent
-			public void tick(TickEvent.ServerTickEvent event) {
-				if (event.phase == TickEvent.Phase.END) {
-					this.ticks += 1;
-					if (this.ticks >= this.waitTicks)
-						run();
-				}
-			}
-
-			private void run() {
-				TaravatarshrineGenProcedure.execute(world, x, (-53), z);
-				MinecraftForge.EVENT_BUS.unregister(this);
-			}
-		}.start(world, 60);
-		new Object() {
-			private int ticks = 0;
-			private float waitTicks;
-			private LevelAccessor world;
-
-			public void start(LevelAccessor world, int waitTicks) {
-				this.waitTicks = waitTicks;
-				MinecraftForge.EVENT_BUS.register(this);
-				this.world = world;
-			}
-
-			@SubscribeEvent
-			public void tick(TickEvent.ServerTickEvent event) {
-				if (event.phase == TickEvent.Phase.END) {
-					this.ticks += 1;
-					if (this.ticks >= this.waitTicks)
-						run();
-				}
-			}
-
-			private void run() {
-				if (Math.random() < 0.25) {
-					CrystalPalaceBoxGenProcedure.execute(world, (x - 140), (-30), z);
-				} else if (Math.random() < 0.33) {
-					CrystalPalaceBoxGenProcedure.execute(world, (x + 140), (-30), z);
-				} else if (Math.random() < 0.5) {
-					CrystalPalaceBoxGenProcedure.execute(world, x, (-30), (z - 140));
-				} else {
-					CrystalPalaceBoxGenProcedure.execute(world, x, (-30), (z + 140));
-				}
-				MinecraftForge.EVENT_BUS.unregister(this);
-			}
-		}.start(world, 60);
+		});
 	}
 }

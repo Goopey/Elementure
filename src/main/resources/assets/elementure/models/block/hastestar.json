@@ -4,5 +4,6 @@
     "all": "elementure:blocks/hastestar",
     "particle": "elementure:blocks/hastestar",
     "0": "elementure:blocks/hastestar"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

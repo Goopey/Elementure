@@ -8,7 +8,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
@@ -37,7 +37,7 @@ public class MycenaWestEastTunnelGenProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("omeganGenRole", 18);
+							_blockEntity.getPersistentData().putDouble("omeganGenRole", 18);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -53,7 +53,7 @@ public class MycenaWestEastTunnelGenProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("omeganGenRole", 14);
+								_blockEntity.getPersistentData().putDouble("omeganGenRole", 14);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -97,13 +97,15 @@ public class MycenaWestEastTunnelGenProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("omeganGenRole", 17);
+					_blockEntity.getPersistentData().putDouble("omeganGenRole", 17);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
 		}
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands().performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-					new TextComponent(""), _level.getServer(), null).withSuppressedOutput(), "kill @e[type=minecraft:item, distance=0.1..100]");
+			_level.getServer().getCommands()
+					.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
+							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"kill @e[type=minecraft:item, distance=0.1..100]");
 	}
 }

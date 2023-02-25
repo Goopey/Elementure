@@ -2,5 +2,6 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "elementure:items/beachstars"
-  }
+  },
+  "render_type": "translucent"
 }

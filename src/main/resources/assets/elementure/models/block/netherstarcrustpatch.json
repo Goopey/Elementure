@@ -8,5 +8,6 @@
     "south": "elementure:blocks/netherum_crust_patch",
     "west": "elementure:blocks/netherum_crust_patch",
     "particle": "elementure:blocks/netherum_crust_patch"
-  }
+  },
+  "render_type": "solid"
 }

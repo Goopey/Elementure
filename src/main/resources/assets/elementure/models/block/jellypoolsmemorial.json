@@ -4,5 +4,6 @@
     "all": "elementure:blocks/jellyfloatmemorial_texture",
     "particle": "elementure:blocks/jellyfloatmemorial_texture",
     "0": "elementure:blocks/jellyfloatmemorial_texture"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

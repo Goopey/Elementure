@@ -8,5 +8,6 @@
     "south": "elementure:blocks/dire_crypt_bricks_2",
     "west": "elementure:blocks/dire_crypt_bricks_2",
     "particle": "elementure:blocks/dire_crypt_bricks_2"
-  }
+  },
+  "render_type": "solid"
 }

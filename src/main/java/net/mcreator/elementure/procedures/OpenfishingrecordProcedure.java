@@ -11,7 +11,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
@@ -28,10 +27,10 @@ public class OpenfishingrecordProcedure {
 			{
 				if (entity instanceof ServerPlayer _ent) {
 					BlockPos _bpos = new BlockPos(entity.getX(), entity.getY(), entity.getZ());
-					NetworkHooks.openGui((ServerPlayer) _ent, new MenuProvider() {
+					NetworkHooks.openScreen((ServerPlayer) _ent, new MenuProvider() {
 						@Override
 						public Component getDisplayName() {
-							return new TextComponent("Fishingrecord1");
+							return Component.literal("Fishingrecord1");
 						}
 
 						@Override
@@ -43,7 +42,7 @@ public class OpenfishingrecordProcedure {
 			}
 		} else {
 			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(new TextComponent("Put the book in your main hand to use it."), (true));
+				_player.displayClientMessage(Component.literal("Put the book in your main hand to use it."), (true));
 		}
 	}
 }

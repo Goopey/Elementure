@@ -1,7 +1,0 @@
-{
-  "parent": "block/door_top",
-  "textures": {
-    "bottom": "elementure:blocks/pool_tiles",
-    "top": "elementure:blocks/pool_tiles"
-  }
-}

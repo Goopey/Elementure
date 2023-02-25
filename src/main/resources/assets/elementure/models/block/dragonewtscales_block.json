@@ -8,5 +8,6 @@
     "south": "elementure:blocks/dragonewt_scales_block",
     "west": "elementure:blocks/dragonewt_scales_block",
     "particle": "elementure:blocks/dragonewt_scales_block"
-  }
+  },
+  "render_type": "solid"
 }

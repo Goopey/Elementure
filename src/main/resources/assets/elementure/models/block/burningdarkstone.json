@@ -8,5 +8,6 @@
     "south": "elementure:blocks/burning_darkstone",
     "west": "elementure:blocks/burning_darkstone",
     "particle": "elementure:blocks/burning_darkstone"
-  }
+  },
+  "render_type": "solid"
 }

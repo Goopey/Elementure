@@ -12,14 +12,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.elementure.init.ElementureModBlocks;
-
-import java.util.Random;
 
 public class NetherlogShaveProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
@@ -56,7 +55,7 @@ public class NetherlogShaveProcedure {
 			}
 			{
 				ItemStack _ist = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-				if (_ist.hurt(1, new Random(), null)) {
+				if (_ist.hurt(1, RandomSource.create(), null)) {
 					_ist.shrink(1);
 					_ist.setDamageValue(0);
 				}

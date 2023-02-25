@@ -8,5 +8,6 @@
     "south": "elementure:blocks/fluff_plank",
     "west": "elementure:blocks/fluff_plank",
     "particle": "elementure:blocks/fluff_plank"
-  }
+  },
+  "render_type": "solid"
 }

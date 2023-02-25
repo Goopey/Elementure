@@ -16,7 +16,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
@@ -74,7 +73,7 @@ public class CandlestickItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent(
+		list.add(Component.literal(
 				"Sprays a fire cloud when enough fire essence has been collected. Consumes all your essence, but casts a bigger cloud whenever sneaking."));
 	}
 

@@ -1,9 +1,6 @@
 package net.mcreator.elementure.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.LevelAccessor;
@@ -18,6 +15,7 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.elementure.init.ElementureModParticleTypes;
+import net.mcreator.elementure.ElementureMod;
 
 public class TarspiritDespawnProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -39,43 +37,21 @@ public class TarspiritDespawnProcedure {
 				}
 			}
 			if (entity.getPersistentData().getBoolean("tarSpiritExplodey")) {
-				new Object() {
-					private int ticks = 0;
-					private float waitTicks;
-					private LevelAccessor world;
-
-					public void start(LevelAccessor world, int waitTicks) {
-						this.waitTicks = waitTicks;
-						MinecraftForge.EVENT_BUS.register(this);
-						this.world = world;
-					}
-
-					@SubscribeEvent
-					public void tick(TickEvent.ServerTickEvent event) {
-						if (event.phase == TickEvent.Phase.END) {
-							this.ticks += 1;
-							if (this.ticks >= this.waitTicks)
-								run();
+				ElementureMod.queueServerWork(2, () -> {
+					if (world instanceof Level _level) {
+						if (!_level.isClientSide()) {
+							_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
+									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.conduit.ambient.short")), SoundSource.PLAYERS,
+									1, (float) 0.2);
+						} else {
+							_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
+									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.conduit.ambient.short")), SoundSource.PLAYERS,
+									1, (float) 0.2, false);
 						}
 					}
-
-					private void run() {
-						if (world instanceof Level _level) {
-							if (!_level.isClientSide()) {
-								_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-										ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.conduit.ambient.short")),
-										SoundSource.PLAYERS, 1, (float) 0.2);
-							} else {
-								_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-										ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.conduit.ambient.short")),
-										SoundSource.PLAYERS, 1, (float) 0.2, false);
-							}
-						}
-						if (world instanceof Level _level && !_level.isClientSide())
-							_level.explode(null, (entity.getX()), (entity.getY()), (entity.getZ()), (float) 1.2, Explosion.BlockInteraction.NONE);
-						MinecraftForge.EVENT_BUS.unregister(this);
-					}
-				}.start(world, 2);
+					if (world instanceof Level _level && !_level.isClientSide())
+						_level.explode(null, (entity.getX()), (entity.getY()), (entity.getZ()), (float) 1.2, Explosion.BlockInteraction.NONE);
+				});
 			}
 			if (!entity.level.isClientSide())
 				entity.discard();

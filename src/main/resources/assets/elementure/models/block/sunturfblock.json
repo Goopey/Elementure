@@ -8,5 +8,6 @@
     "south": "elementure:blocks/sun_grass_side",
     "west": "elementure:blocks/sun_grass_side",
     "particle": "elementure:blocks/active_netherum"
-  }
+  },
+  "render_type": "solid"
 }

@@ -4,5 +4,6 @@
     "all": "elementure:blocks/cyan_barrier",
     "particle": "elementure:blocks/cyan_barrier",
     "0": "elementure:blocks/cyan_barrier"
-  }
+  },
+  "render_type": "translucent"
 }

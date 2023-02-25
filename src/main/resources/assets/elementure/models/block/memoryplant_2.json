@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/memory_plant_2",
     "particle": "elementure:blocks/memory_plant_2"
-  }
+  },
+  "render_type": "cutout"
 }

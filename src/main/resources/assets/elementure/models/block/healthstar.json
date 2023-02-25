@@ -4,5 +4,6 @@
     "all": "elementure:blocks/healthstar",
     "particle": "elementure:blocks/healthstar",
     "0": "elementure:blocks/healthstar"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

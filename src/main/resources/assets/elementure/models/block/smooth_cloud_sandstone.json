@@ -8,5 +8,6 @@
     "south": "elementure:blocks/cloud_sandstone_top",
     "west": "elementure:blocks/cloud_sandstone_top",
     "particle": "elementure:blocks/cloud_sandstone_top"
-  }
+  },
+  "render_type": "solid"
 }

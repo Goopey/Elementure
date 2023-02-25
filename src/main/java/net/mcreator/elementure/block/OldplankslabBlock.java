@@ -17,7 +17,7 @@ import java.util.Collections;
 
 public class OldplankslabBlock extends SlabBlock {
 	public OldplankslabBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOD).strength(-1, 3600000));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOD).strength(-1, 3600000).dynamicShape());
 	}
 
 	@Override

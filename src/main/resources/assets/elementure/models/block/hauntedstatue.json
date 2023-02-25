@@ -4,5 +4,6 @@
     "all": "elementure:blocks/haunted_statue_texture",
     "particle": "elementure:blocks/haunted_statue_texture",
     "0": "elementure:blocks/haunted_statue_texture"
-  }
+  },
+  "render_type": "cutout"
 }

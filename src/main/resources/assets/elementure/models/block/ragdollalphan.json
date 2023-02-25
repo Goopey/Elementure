@@ -8,5 +8,6 @@
     "south": "elementure:blocks/ragdollalphan",
     "west": "elementure:blocks/ragdollalphan",
     "particle": "elementure:blocks/ragdollalphantop"
-  }
+  },
+  "render_type": "solid"
 }

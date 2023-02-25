@@ -4,12 +4,8 @@ package net.mcreator.elementure.entity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.ItemStack;
@@ -27,7 +23,6 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.AgeableMob;
@@ -46,13 +41,7 @@ import net.mcreator.elementure.init.ElementureModBlocks;
 
 import java.util.List;
 
-@Mod.EventBusSubscriber
 public class MycenaroamerEntity extends Animal {
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(ElementureModEntities.MYCENAROAMER.get(), 52, 4, 4));
-	}
-
 	public MycenaroamerEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(ElementureModEntities.MYCENAROAMER.get(), world);
 	}

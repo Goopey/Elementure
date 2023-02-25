@@ -4,5 +4,6 @@
     "all": "elementure:blocks/desert_memorial",
     "particle": "elementure:blocks/desert_memorial",
     "0": "elementure:blocks/desert_memorial"
-  }
+  },
+  "render_type": "solid"
 }

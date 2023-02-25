@@ -21,7 +21,6 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
@@ -49,9 +48,9 @@ public class TwistedBladeItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A76Boss trophy"));
-		list.add(new TextComponent("Uses dark energy to shoot warped blades."));
-		list.add(new TextComponent("Can't collect essence."));
+		list.add(Component.literal("\u00A76Boss trophy"));
+		list.add(Component.literal("Uses dark energy to shoot warped blades."));
+		list.add(Component.literal("Can't collect essence."));
 	}
 
 	@Override
@@ -95,7 +94,6 @@ public class TwistedBladeItem extends Item {
 				TwistedBladeEntity entityarrow = TwistedBladeEntity.shoot(world, entity, world.getRandom(), 1f, 2, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				TwistedbladeConsumeDarkProcedure.execute(entity);
 			}
 		}

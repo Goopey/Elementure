@@ -18,7 +18,6 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
@@ -44,7 +43,7 @@ public class FangbolaItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("It sabotages (Reduces enemy movement speed)"));
+		list.add(Component.literal("It sabotages (Reduces enemy movement speed)"));
 	}
 
 	@Override
@@ -100,7 +99,6 @@ public class FangbolaItem extends Item {
 								entity.getInventory().removeItem(stack);
 						}
 					}
-
 					FangbolaConsumeProcedure.execute(entity);
 				}
 			}

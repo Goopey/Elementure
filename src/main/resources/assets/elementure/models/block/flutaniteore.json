@@ -8,5 +8,6 @@
     "south": "elementure:blocks/flutanite_ore",
     "west": "elementure:blocks/flutanite_ore",
     "particle": "elementure:blocks/flutanite_ore"
-  }
+  },
+  "render_type": "solid"
 }

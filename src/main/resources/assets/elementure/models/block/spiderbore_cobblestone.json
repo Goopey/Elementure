@@ -8,5 +8,6 @@
     "south": "elementure:blocks/spider_bore_cobblestone",
     "west": "elementure:blocks/spider_bore_cobblestone",
     "particle": "elementure:blocks/spider_bore_cobblestone"
-  }
+  },
+  "render_type": "solid"
 }

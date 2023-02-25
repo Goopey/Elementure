@@ -8,5 +8,6 @@
     "south": "elementure:blocks/scrap_bricks",
     "west": "elementure:blocks/scrap_bricks",
     "particle": "elementure:blocks/scrap_bricks"
-  }
+  },
+  "render_type": "solid"
 }

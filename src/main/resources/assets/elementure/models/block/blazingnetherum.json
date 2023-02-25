@@ -8,5 +8,6 @@
     "south": "elementure:blocks/blazing_netherum",
     "west": "elementure:blocks/blazing_netherum",
     "particle": "elementure:blocks/blazing_netherum"
-  }
+  },
+  "render_type": "solid"
 }

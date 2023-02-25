@@ -2,5 +2,6 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "elementure:items/mycenium_moss_ball"
-  }
+  },
+  "render_type": "translucent"
 }

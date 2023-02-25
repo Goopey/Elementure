@@ -15,7 +15,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.FlutanitearmorFullArmorEffectProcedure;
@@ -76,7 +75,7 @@ public abstract class FlutanitearmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("Full armor effect : you regain a third of the air essence you use"));
+			list.add(Component.literal("Full armor effect : you regain a third of the air essence you use"));
 		}
 
 		@Override
@@ -93,7 +92,7 @@ public abstract class FlutanitearmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("Full armor effect : you regain a third of the air essence you use"));
+			list.add(Component.literal("Full armor effect : you regain a third of the air essence you use"));
 		}
 
 		@Override
@@ -115,7 +114,7 @@ public abstract class FlutanitearmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("Full armor effect : you regain a third of the air essence you use"));
+			list.add(Component.literal("Full armor effect : you regain a third of the air essence you use"));
 		}
 
 		@Override
@@ -132,7 +131,7 @@ public abstract class FlutanitearmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("Full armor effect : you regain a third of the air essence you use"));
+			list.add(Component.literal("Full armor effect : you regain a third of the air essence you use"));
 		}
 
 		@Override

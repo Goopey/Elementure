@@ -4,5 +4,6 @@
     "all": "elementure:blocks/glasslightbrewer",
     "particle": "elementure:blocks/glasslightbrewer",
     "0": "elementure:blocks/glasslightbrewer"
-  }
+  },
+  "render_type": "translucent"
 }

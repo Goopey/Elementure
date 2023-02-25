@@ -4,5 +4,6 @@
     "all": "elementure:blocks/magenta_rimefan",
     "particle": "elementure:blocks/magenta_rimefan",
     "0": "elementure:blocks/magenta_rimefan"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

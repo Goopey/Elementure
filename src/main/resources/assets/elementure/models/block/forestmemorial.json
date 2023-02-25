@@ -4,5 +4,6 @@
     "all": "elementure:blocks/forest_memorial",
     "particle": "elementure:blocks/forest_memorial",
     "0": "elementure:blocks/forest_memorial"
-  }
+  },
+  "render_type": "solid"
 }

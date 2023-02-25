@@ -8,5 +8,6 @@
     "south": "elementure:blocks/crystalinecore",
     "west": "elementure:blocks/crystalinecore",
     "particle": "elementure:blocks/crystalinecore"
-  }
+  },
+  "render_type": "solid"
 }

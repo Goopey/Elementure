@@ -8,5 +8,6 @@
     "south": "elementure:blocks/burning_tarstone",
     "west": "elementure:blocks/burning_tarstone",
     "particle": "elementure:blocks/burning_tarstone"
-  }
+  },
+  "render_type": "solid"
 }

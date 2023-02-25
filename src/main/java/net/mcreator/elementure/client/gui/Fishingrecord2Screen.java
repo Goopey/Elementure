@@ -5,7 +5,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
@@ -96,19 +95,19 @@ public class Fishingrecord2Screen extends AbstractContainerScreen<Fishingrecord2
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + -2, 85, 20, new TextComponent("Diver's Crown"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + -2, 85, 20, Component.literal("Diver's Crown"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord2ButtonMessage(0, x, y, z));
 				Fishingrecord2ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + 122, 46, 20, new TextComponent("Back"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + 122, 46, 20, Component.literal("Back"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord2ButtonMessage(1, x, y, z));
 				Fishingrecord2ButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 122, 46, 20, new TextComponent("Next"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 122, 46, 20, Component.literal("Next"), e -> {
 		}) {
 			@Override
 			public void render(PoseStack ms, int gx, int gy, float ticks) {

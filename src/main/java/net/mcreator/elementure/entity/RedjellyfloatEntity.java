@@ -4,14 +4,10 @@ package net.mcreator.elementure.entity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.common.ForgeMod;
 
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
@@ -28,7 +24,6 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.AreaEffectCloud;
@@ -42,14 +37,7 @@ import net.mcreator.elementure.procedures.JellybiomeSpawnConditionProcedure;
 import net.mcreator.elementure.init.ElementureModItems;
 import net.mcreator.elementure.init.ElementureModEntities;
 
-@Mod.EventBusSubscriber
 public class RedjellyfloatEntity extends PathfinderMob {
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.WATER_CREATURE)
-				.add(new MobSpawnSettings.SpawnerData(ElementureModEntities.REDJELLYFLOAT.get(), 80, 2, 4));
-	}
-
 	public RedjellyfloatEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(ElementureModEntities.REDJELLYFLOAT.get(), world);
 	}

@@ -4,13 +4,9 @@ package net.mcreator.elementure.entity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
@@ -21,7 +17,6 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
@@ -34,13 +29,7 @@ import net.mcreator.elementure.procedures.NetherstarInsideSpawningProcedure;
 import net.mcreator.elementure.init.ElementureModItems;
 import net.mcreator.elementure.init.ElementureModEntities;
 
-@Mod.EventBusSubscriber
 public class EchoBerryEntity extends PathfinderMob {
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ElementureModEntities.ECHO_BERRY.get(), 25, 1, 1));
-	}
-
 	public EchoBerryEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(ElementureModEntities.ECHO_BERRY.get(), world);
 	}

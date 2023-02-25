@@ -17,7 +17,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.TurtlearmorFullarmorBonusProcedure;
@@ -77,7 +76,7 @@ public abstract class TurtlearmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("Full armor effect :  infinite water breathing."));
+			list.add(Component.literal("Full armor effect :  infinite water breathing."));
 		}
 
 		@Override
@@ -99,7 +98,7 @@ public abstract class TurtlearmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("Full armor effect :  infinite water breathing."));
+			list.add(Component.literal("Full armor effect :  infinite water breathing."));
 		}
 
 		@Override
@@ -116,7 +115,7 @@ public abstract class TurtlearmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("Full armor effect :  infinite water breathing."));
+			list.add(Component.literal("Full armor effect :  infinite water breathing."));
 		}
 
 		@Override

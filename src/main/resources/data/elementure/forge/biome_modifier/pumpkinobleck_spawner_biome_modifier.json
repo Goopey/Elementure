@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "elementure:pumpkinobleck_spawner",
+  "step": "surface_structures"
+}

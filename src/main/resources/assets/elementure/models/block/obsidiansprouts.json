@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/obsidian_sprout",
     "particle": "elementure:blocks/obsidian_sprout"
-  }
+  },
+  "render_type": "cutout"
 }

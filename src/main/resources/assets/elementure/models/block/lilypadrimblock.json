@@ -8,5 +8,6 @@
     "south": "elementure:blocks/lilypadrim_block",
     "west": "elementure:blocks/lilypadrim_block",
     "particle": "elementure:blocks/lilypadrim_block"
-  }
+  },
+  "render_type": "solid"
 }

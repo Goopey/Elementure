@@ -4,5 +4,6 @@
     "all": "elementure:blocks/yellow_rimefan",
     "particle": "elementure:blocks/yellow_rimefan",
     "0": "elementure:blocks/yellow_rimefan"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

@@ -22,14 +22,14 @@ public class NetherstarmemorialTeleportProcedure {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, 0, z), "netherstarUsed")) == true || (new Object() {
 			public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getBoolean(tag);
+					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, 0, z), "netherstarOutsideUsed")) == true) {
@@ -57,7 +57,7 @@ public class NetherstarmemorialTeleportProcedure {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(x, y, z), "has_memory_matrix")) == false) {
@@ -79,7 +79,7 @@ public class NetherstarmemorialTeleportProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putBoolean("has_memory_matrix", (true));
+							_blockEntity.getPersistentData().putBoolean("has_memory_matrix", (true));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -88,7 +88,7 @@ public class NetherstarmemorialTeleportProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("memory_matrix_x",
+							_blockEntity.getPersistentData().putDouble("memory_matrix_x",
 									((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag()
 											.getDouble("matrix_x")));
 						if (world instanceof Level _level)
@@ -99,7 +99,7 @@ public class NetherstarmemorialTeleportProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("memory_matrix_y",
+							_blockEntity.getPersistentData().putDouble("memory_matrix_y",
 									((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag()
 											.getDouble("matrix_y")));
 						if (world instanceof Level _level)
@@ -110,7 +110,7 @@ public class NetherstarmemorialTeleportProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("memory_matrix_z",
+							_blockEntity.getPersistentData().putDouble("memory_matrix_z",
 									((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag()
 											.getDouble("matrix_z")));
 						if (world instanceof Level _level)
@@ -171,7 +171,7 @@ public class NetherstarmemorialTeleportProcedure {
 				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
-						return blockEntity.getTileData().getBoolean(tag);
+						return blockEntity.getPersistentData().getBoolean(tag);
 					return false;
 				}
 			}.getValue(world, new BlockPos(x, y, z), "has_memory_matrix")) {
@@ -180,7 +180,7 @@ public class NetherstarmemorialTeleportProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "memory_matrix_x")));
@@ -188,7 +188,7 @@ public class NetherstarmemorialTeleportProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "memory_matrix_y")));
@@ -196,7 +196,7 @@ public class NetherstarmemorialTeleportProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "memory_matrix_z")));

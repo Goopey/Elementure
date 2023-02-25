@@ -1,9 +1,6 @@
 
 package net.mcreator.elementure.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.FluidState;
@@ -23,18 +20,14 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.ScrapleavesPlayerPlacedProcedure;
 import net.mcreator.elementure.procedures.ScrapleavesDropsProcedure;
 import net.mcreator.elementure.procedures.ScrapleavesDecayProcedure;
-import net.mcreator.elementure.init.ElementureModBlocks;
 import net.mcreator.elementure.block.entity.ScrapleavesBlockEntity;
-
-import java.util.Random;
 
 public class ScrapleavesBlock extends Block
 		implements
@@ -42,7 +35,7 @@ public class ScrapleavesBlock extends Block
 			EntityBlock {
 	public ScrapleavesBlock() {
 		super(BlockBehaviour.Properties.of(Material.LEAVES, MaterialColor.SNOW).sound(SoundType.GRASS).strength(0f, 5f).requiresCorrectToolForDrops()
-				.noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false).noDrops());
+				.noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false).noLootTable());
 	}
 
 	@Override
@@ -63,7 +56,7 @@ public class ScrapleavesBlock extends Block
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();
@@ -134,10 +127,4 @@ public class ScrapleavesBlock extends Block
 		else
 			return 0;
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.SCRAPLEAVES.get(), renderType -> renderType == RenderType.cutout());
-	}
-
 }

@@ -4,5 +4,6 @@
     "all": "elementure:blocks/dungeonlantern",
     "particle": "elementure:blocks/dungeonlantern",
     "0": "elementure:blocks/dungeonlantern"
-  }
+  },
+  "render_type": "solid"
 }

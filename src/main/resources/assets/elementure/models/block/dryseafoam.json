@@ -8,5 +8,6 @@
     "south": "elementure:blocks/dry_seafoam",
     "west": "elementure:blocks/dry_seafoam",
     "particle": "elementure:blocks/dry_seafoam"
-  }
+  },
+  "render_type": "solid"
 }

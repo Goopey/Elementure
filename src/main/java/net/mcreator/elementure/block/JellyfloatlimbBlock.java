@@ -3,9 +3,6 @@ package net.mcreator.elementure.block;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
@@ -35,12 +32,9 @@ import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.SlimeturfRndRotProcedure;
 import net.mcreator.elementure.procedures.SlimesproutValidPlacementProcedure;
-import net.mcreator.elementure.init.ElementureModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -54,7 +48,7 @@ public class JellyfloatlimbBlock extends Block implements SimpleWaterloggedBlock
 	public JellyfloatlimbBlock() {
 		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(0f, 1f).lightLevel(s -> 10).noCollission().noOcclusion()
 				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false)
-				.dynamicShape());
+				.dynamicShape().offsetType(Block.OffsetType.XZ));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 
@@ -131,11 +125,6 @@ public class JellyfloatlimbBlock extends Block implements SimpleWaterloggedBlock
 	}
 
 	@Override
-	public Block.OffsetType getOffsetType() {
-		return Block.OffsetType.XZ;
-	}
-
-	@Override
 	public PushReaction getPistonPushReaction(BlockState state) {
 		return PushReaction.DESTROY;
 	}
@@ -153,10 +142,4 @@ public class JellyfloatlimbBlock extends Block implements SimpleWaterloggedBlock
 		super.onPlace(blockstate, world, pos, oldState, moving);
 		SlimeturfRndRotProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.JELLYFLOATLIMB.get(), renderType -> renderType == RenderType.cutout());
-	}
-
 }

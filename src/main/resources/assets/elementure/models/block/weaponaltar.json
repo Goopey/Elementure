@@ -4,5 +4,6 @@
     "all": "elementure:blocks/weaponaltar_texture",
     "particle": "elementure:blocks/weaponaltar_texture",
     "0": "elementure:blocks/weaponaltar_texture"
-  }
+  },
+  "render_type": "cutout"
 }

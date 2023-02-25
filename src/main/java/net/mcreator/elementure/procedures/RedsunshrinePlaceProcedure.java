@@ -13,7 +13,7 @@ public class RedsunshrinePlaceProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getTileData().putString("omeganProcedure", "redsun");
+				_blockEntity.getPersistentData().putString("omeganProcedure", "redsun");
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}

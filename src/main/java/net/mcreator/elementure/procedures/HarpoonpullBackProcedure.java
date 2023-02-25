@@ -12,7 +12,7 @@ import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
@@ -76,7 +76,7 @@ public class HarpoonpullBackProcedure {
 					}
 					entity.getPersistentData().putBoolean("FISH", (false));
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent("You lost the fish!"), (true));
+						_player.displayClientMessage(Component.literal("You lost the fish!"), (true));
 				}
 			} else if (fishBobber) {
 				if (Math.random() / 2 + itemstack.getOrCreateTag().getDouble("fishingPower") / 12 > 0.4) {
@@ -104,7 +104,7 @@ public class HarpoonpullBackProcedure {
 					}
 					entity.getPersistentData().putBoolean("FISH", (false));
 					if (entity instanceof Player _player && !_player.level.isClientSide())
-						_player.displayClientMessage(new TextComponent("You lost the fish!"), (true));
+						_player.displayClientMessage(Component.literal("You lost the fish!"), (true));
 				}
 			} else {
 				entity.getPersistentData().putBoolean("FISH", (false));

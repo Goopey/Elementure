@@ -4,14 +4,10 @@ package net.mcreator.elementure.entity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.RangedAttackMob;
@@ -30,11 +26,11 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
@@ -46,21 +42,7 @@ import net.mcreator.elementure.procedures.AscendedaspidParticleSpawnProcedure;
 import net.mcreator.elementure.procedures.AscendedAspidDropsProcedure;
 import net.mcreator.elementure.init.ElementureModEntities;
 
-import java.util.Set;
-import java.util.Random;
-
-@Mod.EventBusSubscriber
 public class AscendedaspidEntity extends Monster implements RangedAttackMob {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("warped_forest"), new ResourceLocation("soul_sand_valley"),
-			new ResourceLocation("basalt_deltas"), new ResourceLocation("crimson_forest"), new ResourceLocation("nether_wastes"));
-
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.MONSTER)
-					.add(new MobSpawnSettings.SpawnerData(ElementureModEntities.ASCENDEDASPID.get(), 112, 1, 2));
-	}
-
 	public AscendedaspidEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(ElementureModEntities.ASCENDEDASPID.get(), world);
 	}
@@ -96,7 +78,7 @@ public class AscendedaspidEntity extends Monster implements RangedAttackMob {
 		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 1, 20) {
 			@Override
 			protected Vec3 getPosition() {
-				Random random = AscendedaspidEntity.this.getRandom();
+				RandomSource random = AscendedaspidEntity.this.getRandom();
 				double dir_x = AscendedaspidEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_y = AscendedaspidEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_z = AscendedaspidEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);

@@ -15,7 +15,6 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.IvoryarmorFullarmorBonusProcedure;
@@ -77,7 +76,7 @@ public abstract class IvoryarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("Full armor effect : randomly deals damage to creatures around you"));
+			list.add(Component.literal("Full armor effect : randomly deals damage to creatures around you"));
 		}
 
 		@Override
@@ -94,7 +93,7 @@ public abstract class IvoryarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("Full armor effect : randomly deals damage to creatures around you"));
+			list.add(Component.literal("Full armor effect : randomly deals damage to creatures around you"));
 		}
 
 		@Override
@@ -116,7 +115,7 @@ public abstract class IvoryarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("Full armor effect : randomly deals damage to creatures around you"));
+			list.add(Component.literal("Full armor effect : randomly deals damage to creatures around you"));
 		}
 
 		@Override
@@ -133,7 +132,7 @@ public abstract class IvoryarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(new TextComponent("Full armor effect : randomly deals damage to creatures around you"));
+			list.add(Component.literal("Full armor effect : randomly deals damage to creatures around you"));
 		}
 
 		@Override

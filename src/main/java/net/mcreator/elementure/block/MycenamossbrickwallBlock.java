@@ -19,7 +19,7 @@ import java.util.Collections;
 
 public class MycenamossbrickwallBlock extends WallBlock {
 	public MycenamossbrickwallBlock() {
-		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.LEAVES).sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override

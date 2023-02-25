@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/bilborrybush",
     "particle": "elementure:blocks/bilborrybush"
-  }
+  },
+  "render_type": "cutout"
 }

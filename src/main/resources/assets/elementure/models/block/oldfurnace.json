@@ -8,5 +8,6 @@
     "south": "elementure:blocks/old_furnace_side",
     "west": "elementure:blocks/old_furnace_side",
     "particle": "elementure:blocks/old_furnace_top"
-  }
+  },
+  "render_type": "solid"
 }

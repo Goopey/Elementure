@@ -8,5 +8,6 @@
     "south": "elementure:blocks/empty_cobblestone_nest",
     "west": "elementure:blocks/empty_cobblestone_nest",
     "particle": "elementure:blocks/empty_cobblestone_nest"
-  }
+  },
+  "render_type": "solid"
 }

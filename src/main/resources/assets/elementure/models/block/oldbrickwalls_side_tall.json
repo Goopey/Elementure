@@ -3,5 +3,6 @@
   "textures": {
     "wall": "elementure:blocks/old_bricks",
     "particle": "elementure:blocks/old_bricks"
-  }
+  },
+  "render_type": "cutout"
 }

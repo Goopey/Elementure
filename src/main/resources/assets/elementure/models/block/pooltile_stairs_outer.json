@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/pool_tiles",
     "top": "elementure:blocks/pool_tiles",
     "side": "elementure:blocks/pool_tiles"
-  }
+  },
+  "render_type": "cutout"
 }

@@ -8,5 +8,6 @@
     "south": "elementure:blocks/blazingnetherumshiny",
     "west": "elementure:blocks/blazingnetherumshiny",
     "particle": "elementure:blocks/blazingnetherumshiny"
-  }
+  },
+  "render_type": "solid"
 }

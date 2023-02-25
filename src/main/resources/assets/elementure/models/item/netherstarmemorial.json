@@ -2,5 +2,6 @@
   "parent": "item/generated",
   "textures": {
     "layer0": "elementure:items/nether_star_memorial_item"
-  }
+  },
+  "render_type": "translucent"
 }

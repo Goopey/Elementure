@@ -8,5 +8,6 @@
     "south": "elementure:blocks/tardarkstone",
     "west": "elementure:blocks/tardarkstone",
     "particle": "elementure:blocks/tardarkstone"
-  }
+  },
+  "render_type": "solid"
 }

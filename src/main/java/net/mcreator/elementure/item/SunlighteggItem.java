@@ -13,7 +13,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.SunlighteggSummonProcedure;
@@ -39,7 +38,7 @@ public class SunlighteggItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("An egg as bright as the Sun."));
+		list.add(Component.literal("An egg as bright as the Sun."));
 	}
 
 	@Override

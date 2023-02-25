@@ -4,14 +4,10 @@ package net.mcreator.elementure.entity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
@@ -27,11 +23,11 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
@@ -41,21 +37,9 @@ import net.mcreator.elementure.procedures.NetherstarOutskirtsSpawningProcedure;
 import net.mcreator.elementure.procedures.DragonewtDropsProcedure;
 import net.mcreator.elementure.init.ElementureModEntities;
 
-import java.util.Set;
-import java.util.Random;
 import java.util.EnumSet;
 
-@Mod.EventBusSubscriber
 public class DragonewtEntity extends Monster {
-	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("warped_forest"), new ResourceLocation("soul_sand_valley"),
-			new ResourceLocation("crimson_forest"), new ResourceLocation("nether_wastes"));
-
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		if (SPAWN_BIOMES.contains(event.getName()))
-			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(ElementureModEntities.DRAGONEWT.get(), 150, 1, 4));
-	}
-
 	public DragonewtEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(ElementureModEntities.DRAGONEWT.get(), world);
 	}
@@ -130,7 +114,7 @@ public class DragonewtEntity extends Monster {
 		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 1, 20) {
 			@Override
 			protected Vec3 getPosition() {
-				Random random = DragonewtEntity.this.getRandom();
+				RandomSource random = DragonewtEntity.this.getRandom();
 				double dir_x = DragonewtEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_y = DragonewtEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_z = DragonewtEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);

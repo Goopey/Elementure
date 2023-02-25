@@ -8,5 +8,6 @@
     "south": "elementure:blocks/old_plank",
     "west": "elementure:blocks/old_plank",
     "particle": "elementure:blocks/old_plank"
-  }
+  },
+  "render_type": "solid"
 }

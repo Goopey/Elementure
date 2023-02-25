@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "beach",
+    "river"
+  ],
+  "features": "elementure:curious_boat",
+  "step": "surface_structures"
+}

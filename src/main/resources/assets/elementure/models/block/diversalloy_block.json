@@ -8,5 +8,6 @@
     "south": "elementure:blocks/diversalloyblock",
     "west": "elementure:blocks/diversalloyblock",
     "particle": "elementure:blocks/diversalloyblock"
-  }
+  },
+  "render_type": "solid"
 }

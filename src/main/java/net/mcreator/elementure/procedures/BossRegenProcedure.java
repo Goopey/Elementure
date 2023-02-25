@@ -23,8 +23,8 @@ import java.util.ArrayList;
 @Mod.EventBusSubscriber
 public class BossRegenProcedure {
 	@SubscribeEvent
-	public static void onEntityTick(LivingEvent.LivingUpdateEvent event) {
-		execute(event, event.getEntityLiving().level, event.getEntityLiving());
+	public static void onEntityTick(LivingEvent.LivingTickEvent event) {
+		execute(event, event.getEntity().level, event.getEntity());
 	}
 
 	public static void execute(LevelAccessor world, Entity entity) {

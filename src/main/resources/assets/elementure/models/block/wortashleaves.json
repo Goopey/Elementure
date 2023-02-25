@@ -8,5 +8,6 @@
     "south": "elementure:blocks/wortash_leaves",
     "west": "elementure:blocks/wortash_leaves",
     "particle": "elementure:blocks/wortash_leaves"
-  }
+  },
+  "render_type": "cutout"
 }

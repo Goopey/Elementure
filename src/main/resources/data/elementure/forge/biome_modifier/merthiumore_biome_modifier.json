@@ -1,0 +1,17 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "frozen_ocean",
+    "frozen_river",
+    "stony_shore",
+    "ocean",
+    "plains",
+    "beach",
+    "river",
+    "deep_ocean",
+    "swamp",
+    "snowy_beach"
+  ],
+  "features": "elementure:merthiumore",
+  "step": "underground_ores"
+}

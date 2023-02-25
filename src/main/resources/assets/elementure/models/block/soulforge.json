@@ -8,5 +8,6 @@
     "south": "elementure:blocks/soulforge_side",
     "west": "elementure:blocks/soulforge_side",
     "particle": "elementure:blocks/soulforge_tops"
-  }
+  },
+  "render_type": "solid"
 }

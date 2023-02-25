@@ -8,5 +8,6 @@
     "south": "elementure:blocks/gleamingobsidian",
     "west": "elementure:blocks/gleamingobsidian",
     "particle": "elementure:blocks/gleamingobsidian"
-  }
+  },
+  "render_type": "solid"
 }

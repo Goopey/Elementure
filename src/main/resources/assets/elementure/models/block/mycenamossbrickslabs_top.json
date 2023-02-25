@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/mycena_moss_bricks",
     "top": "elementure:blocks/mycena_moss_bricks",
     "side": "elementure:blocks/mycena_moss_bricks"
-  }
+  },
+  "render_type": "solid"
 }

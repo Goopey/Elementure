@@ -3,5 +3,6 @@
   "textures": {
     "texture": "elementure:blocks/fluff_trapdoor",
     "particle": "elementure:blocks/fluff_trapdoor"
-  }
+  },
+  "render_type": "solid"
 }

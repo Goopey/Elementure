@@ -20,7 +20,7 @@ import java.util.Collections;
 public class RuingranitebrickswallsBlock extends WallBlock {
 	public RuingranitebrickswallsBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BLACK).sound(SoundType.STONE).strength(4.5f, 27.5f)
-				.requiresCorrectToolForDrops());
+				.requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override

@@ -7,7 +7,6 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.init.ElementureModTabs;
@@ -25,8 +24,8 @@ public class ShrimpItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("''Hello."));
-		list.add(new TextComponent("I'm underwater.''"));
-		list.add(new TextComponent("It's a shrimp."));
+		list.add(Component.literal("''Hello."));
+		list.add(Component.literal("I'm underwater.''"));
+		list.add(Component.literal("It's a shrimp."));
 	}
 }

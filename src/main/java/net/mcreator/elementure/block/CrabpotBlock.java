@@ -2,8 +2,6 @@
 package net.mcreator.elementure.block;
 
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -37,22 +35,18 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.world.inventory.CrabpotGUIMenu;
 import net.mcreator.elementure.procedures.CrabpotFishingProcedure;
-import net.mcreator.elementure.init.ElementureModBlocks;
 import net.mcreator.elementure.block.entity.CrabpotBlockEntity;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -70,7 +64,7 @@ public class CrabpotBlock extends Block implements SimpleWaterloggedBlock, Entit
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Automatically catches small and weak fish. Can only fish in rivers and oceans."));
+		list.add(Component.literal("Automatically catches small and weak fish. Can only fish in rivers and oceans."));
 	}
 
 	@Override
@@ -146,7 +140,7 @@ public class CrabpotBlock extends Block implements SimpleWaterloggedBlock, Entit
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();
@@ -160,10 +154,10 @@ public class CrabpotBlock extends Block implements SimpleWaterloggedBlock, Entit
 	public InteractionResult use(BlockState blockstate, Level world, BlockPos pos, Player entity, InteractionHand hand, BlockHitResult hit) {
 		super.use(blockstate, world, pos, entity, hand, hit);
 		if (entity instanceof ServerPlayer player) {
-			NetworkHooks.openGui(player, new MenuProvider() {
+			NetworkHooks.openScreen(player, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return new TextComponent("Crab pot");
+					return Component.literal("Crab pot");
 				}
 
 				@Override
@@ -218,10 +212,4 @@ public class CrabpotBlock extends Block implements SimpleWaterloggedBlock, Entit
 		else
 			return 0;
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.CRABPOT.get(), renderType -> renderType == RenderType.cutout());
-	}
-
 }

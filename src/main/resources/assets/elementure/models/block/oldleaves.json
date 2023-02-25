@@ -8,5 +8,6 @@
     "south": "elementure:blocks/oldleaves",
     "west": "elementure:blocks/oldleaves",
     "particle": "elementure:blocks/oldleaves"
-  }
+  },
+  "render_type": "cutout"
 }

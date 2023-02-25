@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "elementure:coalpuck",
+    "weight": 16,
+    "minCount": 1,
+    "maxCount": 6
+  }
+}

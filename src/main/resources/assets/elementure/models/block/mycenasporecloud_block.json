@@ -8,5 +8,6 @@
     "south": "elementure:blocks/mycena_spore_cloud",
     "west": "elementure:blocks/mycena_spore_cloud",
     "particle": "elementure:blocks/mycena_spore_cloud"
-  }
+  },
+  "render_type": "translucent"
 }

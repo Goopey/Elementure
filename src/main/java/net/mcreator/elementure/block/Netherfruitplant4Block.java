@@ -3,9 +3,6 @@ package net.mcreator.elementure.block;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.HitResult;
@@ -31,13 +28,10 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.Netherfruitplant4HarvestProcedure;
 import net.mcreator.elementure.procedures.NetherfruitFarmlandProcedure;
 import net.mcreator.elementure.init.ElementureModItems;
-import net.mcreator.elementure.init.ElementureModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -90,7 +84,7 @@ public class Netherfruitplant4Block extends Block {
 	}
 
 	@Override
-	public BlockPathTypes getAiPathNodeType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
+	public BlockPathTypes getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
 		return BlockPathTypes.COCOA;
 	}
 
@@ -121,10 +115,4 @@ public class Netherfruitplant4Block extends Block {
 		Netherfruitplant4HarvestProcedure.execute(world, x, y, z);
 		return InteractionResult.SUCCESS;
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.NETHERFRUITPLANT_4.get(), renderType -> renderType == RenderType.cutout());
-	}
-
 }

@@ -8,7 +8,6 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.ObsidianbobberAssignStrengthProcedure;
@@ -32,14 +31,14 @@ public class ObsidianbobberItem extends Item {
 	}
 
 	@Override
-	public ItemStack getContainerItem(ItemStack itemstack) {
+	public ItemStack getCraftingRemainingItem(ItemStack itemstack) {
 		return new ItemStack(this);
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("A masterful, nether bobber made out of obsidian and netherite."));
+		list.add(Component.literal("A masterful, nether bobber made out of obsidian and netherite."));
 	}
 
 	@Override

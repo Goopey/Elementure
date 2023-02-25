@@ -8,5 +8,6 @@
     "south": "elementure:blocks/ferziumblock",
     "west": "elementure:blocks/ferziumblock",
     "particle": "elementure:blocks/ferziumblock"
-  }
+  },
+  "render_type": "solid"
 }

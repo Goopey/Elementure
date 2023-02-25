@@ -8,5 +8,6 @@
     "south": "elementure:blocks/lightning_andesite_1",
     "west": "elementure:blocks/lightning_andesite_1",
     "particle": "elementure:blocks/lightning_andesite_1"
-  }
+  },
+  "render_type": "solid"
 }

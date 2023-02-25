@@ -4,13 +4,9 @@ package net.mcreator.elementure.entity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -23,7 +19,6 @@ import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
@@ -38,14 +33,7 @@ import net.mcreator.elementure.procedures.NetherstarflareSpawningProcedure;
 import net.mcreator.elementure.procedures.NetherstarflareFlareProcedure;
 import net.mcreator.elementure.init.ElementureModEntities;
 
-@Mod.EventBusSubscriber
 public class NetherstarflareEntity extends PathfinderMob {
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.AMBIENT)
-				.add(new MobSpawnSettings.SpawnerData(ElementureModEntities.NETHERSTARFLARE.get(), 12, 1, 1));
-	}
-
 	public NetherstarflareEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(ElementureModEntities.NETHERSTARFLARE.get(), world);
 	}

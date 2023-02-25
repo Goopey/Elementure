@@ -4,5 +4,6 @@
     "all": "elementure:blocks/resistancestar",
     "particle": "elementure:blocks/resistancestar",
     "0": "elementure:blocks/resistancestar"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

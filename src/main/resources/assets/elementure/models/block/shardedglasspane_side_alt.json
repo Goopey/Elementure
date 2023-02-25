@@ -3,5 +3,6 @@
   "textures": {
     "edge": "elementure:blocks/sharded_glass",
     "pane": "elementure:blocks/sharded_glass"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

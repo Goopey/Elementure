@@ -4,5 +4,6 @@
     "all": "elementure:blocks/mycena_moss_bricks",
     "particle": "elementure:blocks/mycena_moss_bricks",
     "0": "elementure:blocks/mycena_moss_bricks"
-  }
+  },
+  "render_type": "cutout"
 }

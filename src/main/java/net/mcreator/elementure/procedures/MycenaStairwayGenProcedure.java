@@ -29,7 +29,7 @@ public class MycenaStairwayGenProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getTileData().putDouble("omeganGenRole", 16);
+				_blockEntity.getPersistentData().putDouble("omeganGenRole", 16);
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
@@ -38,7 +38,7 @@ public class MycenaStairwayGenProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getTileData().putDouble("height", CoordsY);
+				_blockEntity.getPersistentData().putDouble("height", CoordsY);
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}

@@ -8,5 +8,6 @@
     "south": "elementure:blocks/emptied_bedrock",
     "west": "elementure:blocks/emptied_bedrock",
     "particle": "elementure:blocks/emptied_bedrock"
-  }
+  },
+  "render_type": "solid"
 }

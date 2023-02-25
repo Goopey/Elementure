@@ -19,7 +19,7 @@ public class MycenabiomealphanNormGenProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("omeganGenRole", 4);
+					_blockEntity.getPersistentData().putDouble("omeganGenRole", 4);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -32,7 +32,7 @@ public class MycenabiomealphanNormGenProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getTileData().putBoolean("mycenaUsed", (true));
+				_blockEntity.getPersistentData().putBoolean("mycenaUsed", (true));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
@@ -54,7 +54,7 @@ public class MycenabiomealphanNormGenProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("omeganGenRole", 1);
+							_blockEntity.getPersistentData().putDouble("omeganGenRole", 1);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -66,7 +66,7 @@ public class MycenabiomealphanNormGenProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("omeganGenRole", 7);
+								_blockEntity.getPersistentData().putDouble("omeganGenRole", 7);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -77,7 +77,7 @@ public class MycenabiomealphanNormGenProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("omeganGenRole", 8);
+								_blockEntity.getPersistentData().putDouble("omeganGenRole", 8);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -88,7 +88,7 @@ public class MycenabiomealphanNormGenProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("omeganGenRole", 10);
+								_blockEntity.getPersistentData().putDouble("omeganGenRole", 10);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -123,7 +123,7 @@ public class MycenabiomealphanNormGenProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("omeganGenRole", 5);
+							_blockEntity.getPersistentData().putDouble("omeganGenRole", 5);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -134,7 +134,7 @@ public class MycenabiomealphanNormGenProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("omeganGenRole", 9);
+							_blockEntity.getPersistentData().putDouble("omeganGenRole", 9);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}

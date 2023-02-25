@@ -28,37 +28,27 @@ public class Customfishingpool3Procedure {
 						CavefishingPoolProcedure.execute(entity);
 					} else if (entityiterator.getY() < -10) {
 						DeepcavefishingPoolProcedure.execute(entity);
-					} else if (new ResourceLocation("ocean")
-							.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-									.getRegistryName())
-							|| new ResourceLocation("lukewarm_ocean")
-									.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-											.getRegistryName())
-							|| new ResourceLocation("warm_ocean")
-									.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-											.getRegistryName())
-							|| new ResourceLocation("frozen_ocean")
-									.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-											.getRegistryName())
-							|| new ResourceLocation("cold_ocean")
-									.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-											.getRegistryName())) {
+					} else if (world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))
+							.is(new ResourceLocation("ocean"))
+							|| world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))
+									.is(new ResourceLocation("lukewarm_ocean"))
+							|| world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))
+									.is(new ResourceLocation("warm_ocean"))
+							|| world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))
+									.is(new ResourceLocation("frozen_ocean"))
+							|| world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))
+									.is(new ResourceLocation("cold_ocean"))) {
 						OceanfishingpoolProcedure.execute(world, entity);
-					} else if (new ResourceLocation("deep_ocean")
-							.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-									.getRegistryName())
-							|| new ResourceLocation("deep_lukewarm_ocean")
-									.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-											.getRegistryName())
-							|| new ResourceLocation("warm_ocean")
-									.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-											.getRegistryName())
-							|| new ResourceLocation("deep_frozen_ocean")
-									.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-											.getRegistryName())
-							|| new ResourceLocation("deep_cold_ocean")
-									.equals(world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ())).value()
-											.getRegistryName())) {
+					} else if (world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))
+							.is(new ResourceLocation("deep_ocean"))
+							|| world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))
+									.is(new ResourceLocation("deep_lukewarm_ocean"))
+							|| world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))
+									.is(new ResourceLocation("warm_ocean"))
+							|| world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))
+									.is(new ResourceLocation("deep_frozen_ocean"))
+							|| world.getBiome(new BlockPos(entityiterator.getX(), entityiterator.getY(), entityiterator.getZ()))
+									.is(new ResourceLocation("deep_cold_ocean"))) {
 						DeepOceanfishingpoolProcedure.execute(world, entity);
 					} else {
 						RiverFishingPoolProcedure.execute(world, entity);

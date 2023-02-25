@@ -8,5 +8,6 @@
     "south": "elementure:blocks/corruptice",
     "west": "elementure:blocks/corruptice",
     "particle": "elementure:blocks/corruptice"
-  }
+  },
+  "render_type": "solid"
 }

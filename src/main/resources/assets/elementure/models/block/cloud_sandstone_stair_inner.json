@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/cloud_sandstone_bottom",
     "top": "elementure:blocks/cloud_sandstone_top",
     "side": "elementure:blocks/cloud_sandstone"
-  }
+  },
+  "render_type": "solid"
 }

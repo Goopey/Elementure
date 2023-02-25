@@ -1,7 +1,7 @@
 package net.mcreator.elementure.procedures;
 
 import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.Blocks;
@@ -30,7 +30,7 @@ public class NanoshrimppotFishingProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
@@ -40,7 +40,7 @@ public class NanoshrimppotFishingProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
@@ -50,7 +50,7 @@ public class NanoshrimppotFishingProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
@@ -60,7 +60,7 @@ public class NanoshrimppotFishingProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
@@ -70,7 +70,7 @@ public class NanoshrimppotFishingProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
@@ -80,7 +80,7 @@ public class NanoshrimppotFishingProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
@@ -106,7 +106,7 @@ public class NanoshrimppotFishingProcedure {
 								final int _slotid = 0;
 								final ItemStack _setstack = new ItemStack(Items.RAW_IRON);
 								_setstack.setCount((int) ((fish).getCount() + 1));
-								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
 										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
 								});
@@ -121,7 +121,7 @@ public class NanoshrimppotFishingProcedure {
 								final int _slotid = 1;
 								final ItemStack _setstack = new ItemStack(Items.RAW_GOLD);
 								_setstack.setCount((int) ((fish2).getCount() + 1));
-								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
 										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
 								});
@@ -136,7 +136,7 @@ public class NanoshrimppotFishingProcedure {
 								final int _slotid = 2;
 								final ItemStack _setstack = new ItemStack(Items.LAPIS_LAZULI);
 								_setstack.setCount((int) ((fish3).getCount() + 1));
-								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
 										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
 								});
@@ -151,7 +151,7 @@ public class NanoshrimppotFishingProcedure {
 								final int _slotid = 3;
 								final ItemStack _setstack = new ItemStack(Items.REDSTONE);
 								_setstack.setCount((int) ((fish4).getCount() + 1));
-								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
 										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
 								});
@@ -166,7 +166,7 @@ public class NanoshrimppotFishingProcedure {
 								final int _slotid = 4;
 								final ItemStack _setstack = new ItemStack(Items.EMERALD);
 								_setstack.setCount((int) ((fish5).getCount() + 1));
-								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
 										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
 								});
@@ -181,7 +181,7 @@ public class NanoshrimppotFishingProcedure {
 								final int _slotid = 5;
 								final ItemStack _setstack = new ItemStack(Items.DIAMOND);
 								_setstack.setCount((int) ((fish6).getCount() + 1));
-								_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+								_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 									if (capability instanceof IItemHandlerModifiable)
 										((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
 								});

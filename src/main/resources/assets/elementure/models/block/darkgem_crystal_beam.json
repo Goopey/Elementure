@@ -8,5 +8,6 @@
     "south": "elementure:blocks/darkgemcrystalbeam",
     "west": "elementure:blocks/darkgemcrystalbeam",
     "particle": "elementure:blocks/darkgemcrystalbeam"
-  }
+  },
+  "render_type": "translucent"
 }

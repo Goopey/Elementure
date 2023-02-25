@@ -8,5 +8,6 @@
     "south": "elementure:blocks/corruptgrass",
     "west": "elementure:blocks/corruptgrass",
     "particle": "elementure:blocks/abyssalcorruption"
-  }
+  },
+  "render_type": "solid"
 }

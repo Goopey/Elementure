@@ -8,5 +8,6 @@
     "south": "elementure:blocks/silverore",
     "west": "elementure:blocks/silverore",
     "particle": "elementure:blocks/silverore"
-  }
+  },
+  "render_type": "solid"
 }

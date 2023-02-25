@@ -4,5 +4,6 @@
     "all": "elementure:blocks/birthing_module",
     "particle": "elementure:blocks/birthing_module",
     "0": "elementure:blocks/birthing_module"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

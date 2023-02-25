@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/lilypad_plank",
     "top": "elementure:blocks/lilypad_plank",
     "side": "elementure:blocks/lilypad_plank"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

@@ -4,5 +4,6 @@
     "all": "elementure:blocks/jumpstar",
     "particle": "elementure:blocks/jumpstar",
     "0": "elementure:blocks/jumpstar"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

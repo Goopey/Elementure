@@ -3,5 +3,6 @@
   "textures": {
     "wall": "elementure:blocks/altarbrick",
     "particle": "elementure:blocks/altarbrick"
-  }
+  },
+  "render_type": "solid"
 }

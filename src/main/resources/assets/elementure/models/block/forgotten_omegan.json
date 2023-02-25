@@ -8,5 +8,6 @@
     "south": "elementure:blocks/dark",
     "west": "elementure:blocks/dark",
     "particle": "elementure:blocks/dark"
-  }
+  },
+  "render_type": "solid"
 }

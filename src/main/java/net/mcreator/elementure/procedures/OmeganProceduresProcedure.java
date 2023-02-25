@@ -11,7 +11,7 @@ public class OmeganProceduresProcedure {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getString(tag);
+					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
 		}.getValue(world, new BlockPos(x, y, z), "omeganProcedure")).equals("swordTempleBase")) {
@@ -21,7 +21,7 @@ public class OmeganProceduresProcedure {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getString(tag);
+					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
 		}.getValue(world, new BlockPos(x, y, z), "omeganProcedure")).equals("swordTempleBase")) {
@@ -31,7 +31,7 @@ public class OmeganProceduresProcedure {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getString(tag);
+					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
 		}.getValue(world, new BlockPos(x, y, z), "omeganProcedure")).equals("ruinGranite")) {
@@ -41,7 +41,7 @@ public class OmeganProceduresProcedure {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getString(tag);
+					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
 		}.getValue(world, new BlockPos(x, y, z), "omeganProcedure")).equals("energyDiorite")) {
@@ -51,7 +51,7 @@ public class OmeganProceduresProcedure {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getString(tag);
+					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
 		}.getValue(world, new BlockPos(x, y, z), "omeganProcedure")).equals("lightningAndesite")) {
@@ -61,7 +61,7 @@ public class OmeganProceduresProcedure {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getString(tag);
+					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
 		}.getValue(world, new BlockPos(x, y, z), "omeganProcedure")).equals("memoryGrotto")) {
@@ -71,7 +71,7 @@ public class OmeganProceduresProcedure {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getString(tag);
+					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
 		}.getValue(world, new BlockPos(x, y, z), "omeganProcedure")).equals("smallDeepRuins")) {
@@ -81,7 +81,7 @@ public class OmeganProceduresProcedure {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getString(tag);
+					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
 		}.getValue(world, new BlockPos(x, y, z), "omeganProcedure")).equals("deepRuins")) {
@@ -91,7 +91,7 @@ public class OmeganProceduresProcedure {
 			public String getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getString(tag);
+					return blockEntity.getPersistentData().getString(tag);
 				return "";
 			}
 		}.getValue(world, new BlockPos(x, y, z), "omeganProcedure")).equals("grayskullLake")) {

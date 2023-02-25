@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "mushroom_fields",
+  "features": "elementure:purplemushrooms",
+  "step": "vegetal_decoration"
+}

@@ -18,7 +18,7 @@ public class Mycenasidegen3Procedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getTileData().putBoolean("mycenaUsed", (true));
+				_blockEntity.getPersistentData().putBoolean("mycenaUsed", (true));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
@@ -37,7 +37,7 @@ public class Mycenasidegen3Procedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("omeganGenRole", 19);
+						_blockEntity.getPersistentData().putDouble("omeganGenRole", 19);
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -47,7 +47,7 @@ public class Mycenasidegen3Procedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("omeganGenRole", 8);
+						_blockEntity.getPersistentData().putDouble("omeganGenRole", 8);
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -80,7 +80,7 @@ public class Mycenasidegen3Procedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("omeganGenRole", 9);
+							_blockEntity.getPersistentData().putDouble("omeganGenRole", 9);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}

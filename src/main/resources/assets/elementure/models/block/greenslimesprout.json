@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/green_slime_sprout",
     "particle": "elementure:blocks/green_slime_sprout"
-  }
+  },
+  "render_type": "cutout"
 }

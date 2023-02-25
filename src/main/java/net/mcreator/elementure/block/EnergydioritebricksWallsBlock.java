@@ -18,7 +18,7 @@ import java.util.Collections;
 
 public class EnergydioritebricksWallsBlock extends WallBlock {
 	public EnergydioritebricksWallsBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(4.5f, 27.5f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(4.5f, 27.5f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override

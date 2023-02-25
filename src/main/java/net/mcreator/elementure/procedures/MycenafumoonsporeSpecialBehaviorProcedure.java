@@ -9,7 +9,7 @@ import net.minecraft.world.level.Explosion;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
@@ -34,9 +34,9 @@ public class MycenafumoonsporeSpecialBehaviorProcedure {
 				if (world instanceof Level _level && !_level.isClientSide())
 					_level.explode(null, (entity.getX()), (entity.getY()), (entity.getZ()), 1, Explosion.BlockInteraction.BREAK);
 				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performCommand(
+					_level.getServer().getCommands().performPrefixedCommand(
 							new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getY()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level,
-									4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
+									4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"/effect give @e[distance=0.1..4] minecraft_worlds:mycenanspores 6 0");
 			}
 		}

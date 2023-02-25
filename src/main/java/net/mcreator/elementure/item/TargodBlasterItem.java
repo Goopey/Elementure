@@ -13,7 +13,6 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.init.ElementureModTabs;
@@ -35,8 +34,7 @@ public class TargodBlasterItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("\u00A76Boss trophy"));
-		list.add(new TextComponent("Blasts powerful burning lumps of tar"));
+		list.add(Component.literal("Blasts powerful burning lumps of tar"));
 	}
 
 	@Override
@@ -56,7 +54,7 @@ public class TargodBlasterItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				TargodBlasterEntity entityarrow = TargodBlasterEntity.shoot(world, entity, world.getRandom(), 1.2000000000000002f, 7.5, 1);
+				TargodBlasterEntity entityarrow = TargodBlasterEntity.shoot(world, entity, world.getRandom(), 1.2000000000000002f, 5, 1);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 			}

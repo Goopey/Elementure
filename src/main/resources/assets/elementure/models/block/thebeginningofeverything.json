@@ -8,5 +8,6 @@
     "south": "elementure:blocks/nothing",
     "west": "elementure:blocks/nothing",
     "particle": "elementure:blocks/nothing"
-  }
+  },
+  "render_type": "translucent"
 }

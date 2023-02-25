@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/nether_sapling",
     "particle": "elementure:blocks/nether_sapling"
-  }
+  },
+  "render_type": "solid"
 }

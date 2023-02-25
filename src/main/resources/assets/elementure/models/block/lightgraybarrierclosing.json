@@ -4,5 +4,6 @@
     "all": "elementure:blocks/light_gray_barrier",
     "particle": "elementure:blocks/light_gray_barrier",
     "0": "elementure:blocks/light_gray_barrier"
-  }
+  },
+  "render_type": "translucent"
 }

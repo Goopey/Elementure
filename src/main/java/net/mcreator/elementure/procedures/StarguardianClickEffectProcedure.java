@@ -28,9 +28,9 @@ import javax.annotation.Nullable;
 public class StarguardianClickEffectProcedure {
 	@SubscribeEvent
 	public static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
-		if (event.getHand() != event.getPlayer().getUsedItemHand())
+		if (event.getHand() != event.getEntity().getUsedItemHand())
 			return;
-		execute(event, event.getWorld(), event.getPlayer());
+		execute(event, event.getLevel(), event.getEntity());
 	}
 
 	public static void execute(LevelAccessor world, Entity entity) {

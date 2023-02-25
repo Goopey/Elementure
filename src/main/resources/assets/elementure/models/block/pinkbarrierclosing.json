@@ -4,5 +4,6 @@
     "all": "elementure:blocks/pink_barrier",
     "particle": "elementure:blocks/pink_barrier",
     "0": "elementure:blocks/pink_barrier"
-  }
+  },
+  "render_type": "translucent"
 }

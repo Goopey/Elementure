@@ -2,7 +2,7 @@ package net.mcreator.elementure.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
@@ -28,7 +28,7 @@ public class GlasslightbrewerBrewProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
@@ -38,7 +38,7 @@ public class GlasslightbrewerBrewProcedure {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);
 						if (_ent != null)
-							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 									.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
@@ -48,7 +48,7 @@ public class GlasslightbrewerBrewProcedure {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);
 						if (_ent != null)
-							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 									.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
@@ -58,7 +58,7 @@ public class GlasslightbrewerBrewProcedure {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);
 						if (_ent != null)
-							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 									.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
@@ -68,7 +68,7 @@ public class GlasslightbrewerBrewProcedure {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);
 						if (_ent != null)
-							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 									.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
@@ -77,7 +77,7 @@ public class GlasslightbrewerBrewProcedure {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);
 						if (_ent != null)
-							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 									.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
@@ -86,7 +86,7 @@ public class GlasslightbrewerBrewProcedure {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);
 						if (_ent != null)
-							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 									.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
@@ -95,7 +95,7 @@ public class GlasslightbrewerBrewProcedure {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);
 						if (_ent != null)
-							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 									.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
@@ -106,7 +106,7 @@ public class GlasslightbrewerBrewProcedure {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
-						return blockEntity.getTileData().getDouble(tag);
+						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
 			}.getValue(world, new BlockPos(x, y, z), "cookTime") > 24) {
@@ -125,7 +125,7 @@ public class GlasslightbrewerBrewProcedure {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 						BlockEntity _ent = world.getBlockEntity(pos);
 						if (_ent != null)
-							_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null)
+							_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
 									.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 						return _retval.get();
 					}
@@ -140,7 +140,7 @@ public class GlasslightbrewerBrewProcedure {
 						final int _slotid = 6;
 						final ItemStack _setstack = potion;
 						_setstack.setCount(1);
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 							if (capability instanceof IItemHandlerModifiable)
 								((IItemHandlerModifiable) capability).setStackInSlot(_slotid, _setstack);
 						});
@@ -151,7 +151,7 @@ public class GlasslightbrewerBrewProcedure {
 					if (_ent != null) {
 						final int _slotid = 4;
 						final int _amount = 1;
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 							if (capability instanceof IItemHandlerModifiable) {
 								ItemStack _stk = capability.getStackInSlot(_slotid).copy();
 								_stk.shrink(_amount);
@@ -165,7 +165,7 @@ public class GlasslightbrewerBrewProcedure {
 					if (_ent != null) {
 						final int _slotid = 5;
 						final int _amount = 1;
-						_ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+						_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 							if (capability instanceof IItemHandlerModifiable) {
 								ItemStack _stk = capability.getStackInSlot(_slotid).copy();
 								_stk.shrink(_amount);
@@ -188,7 +188,7 @@ public class GlasslightbrewerBrewProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("cookTime", 0);
+						_blockEntity.getPersistentData().putDouble("cookTime", 0);
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -198,18 +198,18 @@ public class GlasslightbrewerBrewProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("cookTime", (new Object() {
+						_blockEntity.getPersistentData().putDouble("cookTime", (new Object() {
 							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getDouble(tag);
+									return blockEntity.getPersistentData().getDouble(tag);
 								return -1;
 							}
 						}.getValue(world, new BlockPos(x, y, z), "cookTime") + 1 + new Object() {
 							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getDouble(tag);
+									return blockEntity.getPersistentData().getDouble(tag);
 								return -1;
 							}
 						}.getValue(world, new BlockPos(x, y, z), "cookSpeed")));
@@ -223,7 +223,7 @@ public class GlasslightbrewerBrewProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("cookTime", 0);
+					_blockEntity.getPersistentData().putDouble("cookTime", 0);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

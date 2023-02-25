@@ -24,7 +24,7 @@ public class MycenasouthvillagewayProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("XOff", 0);
+					_blockEntity.getPersistentData().putDouble("XOff", 0);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -34,7 +34,7 @@ public class MycenasouthvillagewayProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("XOff", 1);
+					_blockEntity.getPersistentData().putDouble("XOff", 1);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -43,7 +43,7 @@ public class MycenasouthvillagewayProcedure {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getDouble(tag);
+					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 1, z))).getBlock() == Blocks.DIRT
@@ -51,7 +51,7 @@ public class MycenasouthvillagewayProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 1, z))).getBlock() == ElementureModBlocks.MYCENIUM.get()
@@ -59,7 +59,7 @@ public class MycenasouthvillagewayProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 1, z))).getBlock() == ElementureModBlocks.MYCENAMOSSYGRASS.get()
@@ -67,7 +67,7 @@ public class MycenasouthvillagewayProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 1, z))).getBlock() == Blocks.STONE
@@ -75,7 +75,7 @@ public class MycenasouthvillagewayProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 2, z))).getBlock() == Blocks.DIRT
@@ -83,7 +83,7 @@ public class MycenasouthvillagewayProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 2, z))).getBlock() == ElementureModBlocks.MYCENIUM.get()
@@ -91,7 +91,7 @@ public class MycenasouthvillagewayProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 2, z))).getBlock() == ElementureModBlocks.MYCENAMOSSYGRASS.get()
@@ -99,14 +99,14 @@ public class MycenasouthvillagewayProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 2, z))).getBlock() == Blocks.STONE) && new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, -64, z), "bridgeLength") > 0) {
@@ -115,7 +115,7 @@ public class MycenasouthvillagewayProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putBoolean("low", (true));
+					_blockEntity.getPersistentData().putBoolean("low", (true));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}
@@ -125,7 +125,7 @@ public class MycenasouthvillagewayProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, -64, z), "XOff"), y + CoordsY, z))).getBlock() == Blocks.DIRT) {
@@ -134,7 +134,7 @@ public class MycenasouthvillagewayProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putBoolean("high", (true));
+							_blockEntity.getPersistentData().putBoolean("high", (true));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -151,7 +151,7 @@ public class MycenasouthvillagewayProcedure {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
-						return blockEntity.getTileData().getDouble(tag);
+						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
 			}.getValue(world, new BlockPos(x, -64, z), "bridgeLength") < 9) {
@@ -159,7 +159,7 @@ public class MycenasouthvillagewayProcedure {
 					public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getBoolean(tag);
+							return blockEntity.getPersistentData().getBoolean(tag);
 						return false;
 					}
 				}.getValue(world, new BlockPos(x, -64, z), "high")) == true) {
@@ -167,7 +167,7 @@ public class MycenasouthvillagewayProcedure {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getDouble(tag);
+								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
 					}.getValue(world, new BlockPos(x, -64, z), "bridgeLength") == 5) {
@@ -192,7 +192,7 @@ public class MycenasouthvillagewayProcedure {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getDouble(tag);
+								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
 					}.getValue(world, new BlockPos(x, -64, z), "XOff")), y, z);
@@ -202,11 +202,11 @@ public class MycenasouthvillagewayProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("bridgeLength", (new Object() {
+							_blockEntity.getPersistentData().putDouble("bridgeLength", (new Object() {
 								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getDouble(tag);
+										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
 							}.getValue(world, new BlockPos(x, -64, z), "bridgeLength") + 1));
@@ -218,7 +218,7 @@ public class MycenasouthvillagewayProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("alphanGenRole", 5);
+							_blockEntity.getPersistentData().putDouble("alphanGenRole", 5);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -226,7 +226,7 @@ public class MycenasouthvillagewayProcedure {
 					public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getBoolean(tag);
+							return blockEntity.getPersistentData().getBoolean(tag);
 						return false;
 					}
 				}.getValue(world, new BlockPos(x, -64, z), "low")) == true) {
@@ -234,7 +234,7 @@ public class MycenasouthvillagewayProcedure {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getDouble(tag);
+								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
 					}.getValue(world, new BlockPos(x, -64, z), "bridgeLength") == 5) {
@@ -259,7 +259,7 @@ public class MycenasouthvillagewayProcedure {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getDouble(tag);
+								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
 					}.getValue(world, new BlockPos(x, -64, z), "XOff")), (y + 2), z);
@@ -269,11 +269,11 @@ public class MycenasouthvillagewayProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("bridgeLength", (new Object() {
+							_blockEntity.getPersistentData().putDouble("bridgeLength", (new Object() {
 								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getDouble(tag);
+										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
 							}.getValue(world, new BlockPos(x, -64, z), "bridgeLength") + 1));
@@ -285,7 +285,7 @@ public class MycenasouthvillagewayProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("alphanGenRole", 5);
+							_blockEntity.getPersistentData().putDouble("alphanGenRole", 5);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -294,7 +294,7 @@ public class MycenasouthvillagewayProcedure {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getDouble(tag);
+								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
 					}.getValue(world, new BlockPos(x, -64, z), "bridgeLength") == 5) {
@@ -319,7 +319,7 @@ public class MycenasouthvillagewayProcedure {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getDouble(tag);
+								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
 					}.getValue(world, new BlockPos(x, -64, z), "XOff")), y, z);
@@ -329,11 +329,11 @@ public class MycenasouthvillagewayProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("bridgeLength", (new Object() {
+							_blockEntity.getPersistentData().putDouble("bridgeLength", (new Object() {
 								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getDouble(tag);
+										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
 							}.getValue(world, new BlockPos(x, -64, z), "bridgeLength") + 1));
@@ -345,7 +345,7 @@ public class MycenasouthvillagewayProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("alphanGenRole", 5);
+							_blockEntity.getPersistentData().putDouble("alphanGenRole", 5);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -354,7 +354,7 @@ public class MycenasouthvillagewayProcedure {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
-						return blockEntity.getTileData().getDouble(tag);
+						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
 			}.getValue(world, new BlockPos(x, -64, z), "bridgeLength") == 9) {
@@ -362,7 +362,7 @@ public class MycenasouthvillagewayProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, -64, z), "XOff")), y, z);

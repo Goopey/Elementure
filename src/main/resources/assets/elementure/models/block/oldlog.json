@@ -8,5 +8,6 @@
     "south": "elementure:blocks/old_log_side",
     "west": "elementure:blocks/old_log_side",
     "particle": "elementure:blocks/old_log_top"
-  }
+  },
+  "render_type": "solid"
 }

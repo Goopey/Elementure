@@ -8,5 +8,6 @@
     "south": "elementure:blocks/green_slime_turf_side",
     "west": "elementure:blocks/green_slime_turf_side",
     "particle": "elementure:blocks/gravel"
-  }
+  },
+  "render_type": "solid"
 }

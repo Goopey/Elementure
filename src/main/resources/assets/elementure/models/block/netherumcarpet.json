@@ -8,5 +8,6 @@
     "south": "elementure:blocks/netherum_carpet",
     "west": "elementure:blocks/netherum_carpet",
     "particle": "elementure:blocks/netherum_carpet"
-  }
+  },
+  "render_type": "solid"
 }

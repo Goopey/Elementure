@@ -21,7 +21,6 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
@@ -57,7 +56,7 @@ public class ArchkassemStaffItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Rats are seeking to purify the world using these as cleansing torches."));
+		list.add(Component.literal("Rats are seeking to purify the world using these as cleansing torches."));
 	}
 
 	@Override
@@ -101,7 +100,6 @@ public class ArchkassemStaffItem extends Item {
 				ArchkassemStaffEntity entityarrow = ArchkassemStaffEntity.shoot(world, entity, world.getRandom(), 1f, 3.9999999999999996, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				ArchkassemstaffConsumeProcedure.execute(entity);
 			}
 		}

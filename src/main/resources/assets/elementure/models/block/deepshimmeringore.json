@@ -8,5 +8,6 @@
     "south": "elementure:blocks/deep_shimmeringore",
     "west": "elementure:blocks/deep_shimmeringore",
     "particle": "elementure:blocks/deep_shimmeringore"
-  }
+  },
+  "render_type": "solid"
 }

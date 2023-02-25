@@ -8,5 +8,6 @@
     "south": "elementure:blocks/abyssportalblock",
     "west": "elementure:blocks/abyssportalblock",
     "particle": "elementure:blocks/abyssportalblock"
-  }
+  },
+  "render_type": "solid"
 }

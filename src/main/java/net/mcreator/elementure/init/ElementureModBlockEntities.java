@@ -79,7 +79,8 @@ import net.mcreator.elementure.block.entity.AurumbricksBlockEntity;
 import net.mcreator.elementure.ElementureMod;
 
 public class ElementureModBlockEntities {
-	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, ElementureMod.MODID);
+	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES,
+			ElementureMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> OMEGANCENTER = register("omegancenter", ElementureModBlocks.OMEGANCENTER,
 			OmegancenterBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> BIGGLOWINGMUSHROOM = register("bigglowingmushroom", ElementureModBlocks.BIGGLOWINGMUSHROOM,

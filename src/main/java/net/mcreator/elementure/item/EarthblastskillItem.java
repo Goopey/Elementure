@@ -48,7 +48,6 @@ public class EarthblastskillItem extends Item {
 				EarthblastskillEntity entityarrow = EarthblastskillEntity.shoot(world, entity, world.getRandom(), 1f, 4, 3);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				EarthblastskillConsumeProcedure.execute(entity);
 			}
 		}

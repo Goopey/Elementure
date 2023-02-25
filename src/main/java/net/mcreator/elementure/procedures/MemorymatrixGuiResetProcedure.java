@@ -13,7 +13,7 @@ public class MemorymatrixGuiResetProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getTileData().putDouble("teleport_num", 0);
+				_blockEntity.getPersistentData().putDouble("teleport_num", 0);
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}

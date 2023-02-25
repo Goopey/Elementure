@@ -3,5 +3,6 @@
   "textures": {
     "texture": "elementure:blocks/pool_tiles_2",
     "particle": "elementure:blocks/pool_tiles_2"
-  }
+  },
+  "render_type": "solid"
 }

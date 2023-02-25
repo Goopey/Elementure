@@ -1,0 +1,15 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "warped_forest",
+    "soul_sand_valley",
+    "crimson_forest",
+    "nether_wastes"
+  ],
+  "spawners": {
+    "type": "elementure:dragonewt",
+    "weight": 150,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

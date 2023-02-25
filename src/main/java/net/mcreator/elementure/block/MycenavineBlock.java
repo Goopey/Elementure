@@ -3,9 +3,6 @@ package net.mcreator.elementure.block;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -21,10 +18,9 @@ import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.MycenavineGrowProcedure;
 import net.mcreator.elementure.procedures.MycenavineBreakProcedure;
@@ -32,7 +28,6 @@ import net.mcreator.elementure.procedures.MycenavineBlockPickProcedure;
 import net.mcreator.elementure.procedures.MycenavineBlockIsPlacedProcedure;
 import net.mcreator.elementure.init.ElementureModBlocks;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -84,7 +79,7 @@ public class MycenavineBlock extends Block {
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();
@@ -106,10 +101,4 @@ public class MycenavineBlock extends Block {
 		super.setPlacedBy(world, pos, blockstate, entity, itemstack);
 		MycenavineBlockIsPlacedProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.MYCENAVINE.get(), renderType -> renderType == RenderType.cutoutMipped());
-	}
-
 }

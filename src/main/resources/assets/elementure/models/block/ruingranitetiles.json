@@ -8,5 +8,6 @@
     "south": "elementure:blocks/ruin_granite_tiles",
     "west": "elementure:blocks/ruin_granite_tiles",
     "particle": "elementure:blocks/ruin_granite_tiles"
-  }
+  },
+  "render_type": "solid"
 }

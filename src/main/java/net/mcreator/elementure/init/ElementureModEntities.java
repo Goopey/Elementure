@@ -246,7 +246,7 @@ import net.mcreator.elementure.ElementureMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ElementureModEntities {
-	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, ElementureMod.MODID);
+	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, ElementureMod.MODID);
 	public static final RegistryObject<EntityType<GamerbowEntity>> GAMERBOW = register("projectile_gamerbow",
 			EntityType.Builder.<GamerbowEntity>of(GamerbowEntity::new, MobCategory.MISC).setCustomClientFactory(GamerbowEntity::new)
 					.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));

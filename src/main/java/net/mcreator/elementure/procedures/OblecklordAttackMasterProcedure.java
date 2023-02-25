@@ -1,9 +1,6 @@
 package net.mcreator.elementure.procedures;
 
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
@@ -29,6 +26,7 @@ import net.mcreator.elementure.init.ElementureModEntities;
 import net.mcreator.elementure.entity.OblecklordeldritchEntity;
 import net.mcreator.elementure.entity.ObleckEntity;
 import net.mcreator.elementure.entity.MerthiumchannelerEntity;
+import net.mcreator.elementure.ElementureMod;
 
 import java.util.stream.Collectors;
 import java.util.List;
@@ -67,32 +65,10 @@ public class OblecklordAttackMasterProcedure {
 									false);
 						}
 					}
-					new Object() {
-						private int ticks = 0;
-						private float waitTicks;
-						private LevelAccessor world;
-
-						public void start(LevelAccessor world, int waitTicks) {
-							this.waitTicks = waitTicks;
-							MinecraftForge.EVENT_BUS.register(this);
-							this.world = world;
-						}
-
-						@SubscribeEvent
-						public void tick(TickEvent.ServerTickEvent event) {
-							if (event.phase == TickEvent.Phase.END) {
-								this.ticks += 1;
-								if (this.ticks >= this.waitTicks)
-									run();
-							}
-						}
-
-						private void run() {
-							entity.getPersistentData().putBoolean("attackongoing", (false));
-							entity.getPersistentData().putBoolean("slice", (false));
-							MinecraftForge.EVENT_BUS.unregister(this);
-						}
-					}.start(world, 15);
+					ElementureMod.queueServerWork(15, () -> {
+						entity.getPersistentData().putBoolean("attackongoing", (false));
+						entity.getPersistentData().putBoolean("slice", (false));
+					});
 				} else if (Math.random() < 0.3) {
 					entity.getPersistentData().putBoolean("shootingbullet", (true));
 					entity.getPersistentData().putBoolean("attackongoing", (true));
@@ -125,31 +101,9 @@ public class OblecklordAttackMasterProcedure {
 				} else if (Math.random() >= 0.9) {
 					OblecklordAdaptOvercomeProcedure.execute(world, entity);
 					entity.getPersistentData().putBoolean("chaosSpeed", (true));
-					new Object() {
-						private int ticks = 0;
-						private float waitTicks;
-						private LevelAccessor world;
-
-						public void start(LevelAccessor world, int waitTicks) {
-							this.waitTicks = waitTicks;
-							MinecraftForge.EVENT_BUS.register(this);
-							this.world = world;
-						}
-
-						@SubscribeEvent
-						public void tick(TickEvent.ServerTickEvent event) {
-							if (event.phase == TickEvent.Phase.END) {
-								this.ticks += 1;
-								if (this.ticks >= this.waitTicks)
-									run();
-							}
-						}
-
-						private void run() {
-							entity.getPersistentData().putBoolean("chaosSpeed", (false));
-							MinecraftForge.EVENT_BUS.unregister(this);
-						}
-					}.start(world, 240);
+					ElementureMod.queueServerWork(240, () -> {
+						entity.getPersistentData().putBoolean("chaosSpeed", (false));
+					});
 				} else {
 					for (int index1 = 0; index1 < (int) (5); index1++) {
 						OblecklordbombProcedure.execute(world, (x + Math.random() * 12 - 6), y, (z + Math.random() * 12 - 6));

@@ -38,12 +38,6 @@ public class Campfire1Feature extends Feature<NoneFeatureConfiguration> {
 		return FEATURE;
 	}
 
-	public static Holder<PlacedFeature> placedFeature() {
-		return PLACED_FEATURE;
-	}
-
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("forest"), new ResourceLocation("windswept_hills"),
-			new ResourceLocation("flower_forest"), new ResourceLocation("windswept_forest"), new ResourceLocation("windswept_gravelly_hills"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 	private final List<Block> base_blocks;
 	private StructureTemplate template = null;

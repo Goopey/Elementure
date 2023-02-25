@@ -15,7 +15,6 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
@@ -35,19 +34,12 @@ public class WildstrawberrybushFeature extends RandomPatchFeature {
 		FEATURE = new WildstrawberrybushFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("elementure:wildstrawberrybush", FEATURE,
 				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
-						new SimpleBlockConfiguration(BlockStateProvider.simple(ElementureModBlocks.WILDSTRAWBERRYBUSH.get().defaultBlockState())),
-						List.of(), 64));
+						new SimpleBlockConfiguration(BlockStateProvider.simple(ElementureModBlocks.WILDSTRAWBERRYBUSH.get())), List.of(), 64));
 		PLACED_FEATURE = PlacementUtils.register("elementure:wildstrawberrybush", CONFIGURED_FEATURE, List.of(CountPlacement.of(2),
 				RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 		return FEATURE;
 	}
 
-	public static Holder<PlacedFeature> placedFeature() {
-		return PLACED_FEATURE;
-	}
-
-	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("old_growth_birch_forest"),
-			new ResourceLocation("forest"), new ResourceLocation("birch_forest"));
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 
 	public WildstrawberrybushFeature() {

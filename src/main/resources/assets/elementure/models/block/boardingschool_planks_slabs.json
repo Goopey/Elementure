@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/boardingschool_planks1",
     "top": "elementure:blocks/boardingschool_planks1",
     "side": "elementure:blocks/boardingschool_planks1"
-  }
+  },
+  "render_type": "solid"
 }

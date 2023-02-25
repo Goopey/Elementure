@@ -4,5 +4,6 @@
     "all": "elementure:blocks/diverscrown_memorial",
     "particle": "elementure:blocks/diverscrown_memorial",
     "0": "elementure:blocks/diverscrown_memorial"
-  }
+  },
+  "render_type": "solid"
 }

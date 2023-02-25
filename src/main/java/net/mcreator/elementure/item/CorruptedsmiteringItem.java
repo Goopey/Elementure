@@ -11,7 +11,6 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
@@ -40,7 +39,7 @@ public class CorruptedsmiteringItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent(
-				"Relic : Imbues your weapon with smiting energy. Increase damage dealt to unclassified mobs by 1. It's made out of aurum."));
+		list.add(Component
+				.literal("Relic : Imbues your weapon with smiting energy. Increase damage dealt to unclassified mobs by 1. It's made out of aurum."));
 	}
 }

@@ -8,5 +8,6 @@
     "south": "elementure:blocks/shardlessmaelstromlog",
     "west": "elementure:blocks/shardlessmaelstromlog",
     "particle": "elementure:blocks/maelstromlogtop"
-  }
+  },
+  "render_type": "solid"
 }

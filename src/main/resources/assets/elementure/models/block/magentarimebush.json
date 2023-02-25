@@ -4,5 +4,6 @@
     "all": "elementure:blocks/magenta_rimebush",
     "particle": "elementure:blocks/magenta_rimebush",
     "0": "elementure:blocks/magenta_rimebush"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

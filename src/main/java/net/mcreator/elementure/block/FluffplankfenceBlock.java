@@ -19,7 +19,7 @@ import java.util.Collections;
 
 public class FluffplankfenceBlock extends FenceBlock {
 	public FluffplankfenceBlock() {
-		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1.6f, 8f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1.6f, 8f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override

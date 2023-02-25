@@ -4,5 +4,6 @@
     "all": "elementure:blocks/wallweb",
     "particle": "elementure:blocks/wallweb",
     "0": "elementure:blocks/wallweb"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

@@ -48,7 +48,6 @@ public class PsyblastskillItem extends Item {
 				PsyblastskillEntity entityarrow = PsyblastskillEntity.shoot(world, entity, world.getRandom(), 1f, 5.6, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				PsyblastskillConsumeProcedure.execute(entity);
 			}
 		}

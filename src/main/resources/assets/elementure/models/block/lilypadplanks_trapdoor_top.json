@@ -3,5 +3,6 @@
   "textures": {
     "texture": "elementure:blocks/lilypad_trapdoor",
     "particle": "elementure:blocks/lilypad_trapdoor"
-  }
+  },
+  "render_type": "solid"
 }

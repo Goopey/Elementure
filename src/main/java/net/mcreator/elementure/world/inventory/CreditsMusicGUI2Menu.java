@@ -5,6 +5,7 @@ import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
@@ -28,7 +29,7 @@ public class CreditsMusicGUI2Menu extends AbstractContainerMenu implements Suppl
 	private boolean bound = false;
 
 	public CreditsMusicGUI2Menu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(ElementureModMenus.CREDITS_MUSIC_GUI_2, id);
+		super(ElementureModMenus.CREDITS_MUSIC_GUI_2.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
 		this.internal = new ItemStackHandler(0);
@@ -44,6 +45,11 @@ public class CreditsMusicGUI2Menu extends AbstractContainerMenu implements Suppl
 	@Override
 	public boolean stillValid(Player player) {
 		return true;
+	}
+
+	@Override
+	public ItemStack quickMoveStack(Player playerIn, int index) {
+		return ItemStack.EMPTY;
 	}
 
 	public Map<Integer, Slot> get() {

@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/sunberrybush",
     "particle": "elementure:blocks/sunberrybush"
-  }
+  },
+  "render_type": "cutout"
 }

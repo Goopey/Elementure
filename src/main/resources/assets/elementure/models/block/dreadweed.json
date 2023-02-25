@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/dreadweed",
     "particle": "elementure:blocks/dreadweed"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

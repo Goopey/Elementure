@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "grove",
+    "stony_peaks",
+    "snowy_slopes",
+    "frozen_peaks",
+    "jagged_peaks",
+    "meadow"
+  ],
+  "features": "elementure:diverscrown",
+  "step": "surface_structures"
+}

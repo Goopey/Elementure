@@ -35,7 +35,7 @@ public class GrayskulllakeGenProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putBoolean("grayskullLake", (true));
+					_blockEntity.getPersistentData().putBoolean("grayskullLake", (true));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

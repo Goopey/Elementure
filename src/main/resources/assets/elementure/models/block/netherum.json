@@ -8,5 +8,6 @@
     "south": "elementure:blocks/netherum",
     "west": "elementure:blocks/netherum",
     "particle": "elementure:blocks/netherum"
-  }
+  },
+  "render_type": "solid"
 }

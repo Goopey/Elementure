@@ -8,5 +8,6 @@
     "south": "elementure:blocks/corruptleaves",
     "west": "elementure:blocks/corruptleaves",
     "particle": "elementure:blocks/corruptleaves"
-  }
+  },
+  "render_type": "cutout"
 }

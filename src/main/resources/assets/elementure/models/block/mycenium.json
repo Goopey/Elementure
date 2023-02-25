@@ -8,5 +8,6 @@
     "south": "elementure:blocks/mycenium_side",
     "west": "elementure:blocks/mycenium_side",
     "particle": "elementure:blocks/dirtblock"
-  }
+  },
+  "render_type": "solid"
 }

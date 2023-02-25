@@ -3,5 +3,6 @@
   "textures": {
     "wall": "elementure:blocks/cloud_sandstone_bottom",
     "particle": "elementure:blocks/cloud_sandstone_bottom"
-  }
+  },
+  "render_type": "solid"
 }

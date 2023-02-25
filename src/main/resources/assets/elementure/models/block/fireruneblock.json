@@ -8,5 +8,6 @@
     "south": "elementure:blocks/fireruneblock",
     "west": "elementure:blocks/fireruneblock",
     "particle": "elementure:blocks/fireruneblock"
-  }
+  },
+  "render_type": "solid"
 }

@@ -8,5 +8,6 @@
     "south": "elementure:blocks/maelstromplanks",
     "west": "elementure:blocks/maelstromplanks",
     "particle": "elementure:blocks/maelstromplanks"
-  }
+  },
+  "render_type": "solid"
 }

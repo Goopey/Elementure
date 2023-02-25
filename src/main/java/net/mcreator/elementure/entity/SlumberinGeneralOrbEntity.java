@@ -24,6 +24,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
@@ -34,7 +35,6 @@ import net.mcreator.elementure.procedures.SlumberingGeneralOrbSmokeProcedure;
 import net.mcreator.elementure.procedures.SlumberinGeneralOrbBlindProcedure;
 import net.mcreator.elementure.init.ElementureModEntities;
 
-import java.util.Random;
 import java.util.EnumSet;
 
 public class SlumberinGeneralOrbEntity extends Monster {
@@ -113,7 +113,7 @@ public class SlumberinGeneralOrbEntity extends Monster {
 		this.goalSelector.addGoal(5, new RandomStrollGoal(this, 2, 20) {
 			@Override
 			protected Vec3 getPosition() {
-				Random random = SlumberinGeneralOrbEntity.this.getRandom();
+				RandomSource random = SlumberinGeneralOrbEntity.this.getRandom();
 				double dir_x = SlumberinGeneralOrbEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_y = SlumberinGeneralOrbEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_z = SlumberinGeneralOrbEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);

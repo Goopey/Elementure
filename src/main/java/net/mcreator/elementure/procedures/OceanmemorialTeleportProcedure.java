@@ -19,16 +19,16 @@ public class OceanmemorialTeleportProcedure {
 		if (entity == null)
 			return;
 		boolean can_use_matrix = false;
-		if (new ResourceLocation("cold_ocean").equals(world.getBiome(new BlockPos(x, y, z)).value().getRegistryName())
-				|| new ResourceLocation("deep_frozen_ocean").equals(world.getBiome(new BlockPos(x, y, z)).value().getRegistryName())
-				|| new ResourceLocation("deep_cold_ocean").equals(world.getBiome(new BlockPos(x, y, z)).value().getRegistryName())
-				|| new ResourceLocation("deep_lukewarm_ocean").equals(world.getBiome(new BlockPos(x, y, z)).value().getRegistryName())
-				|| new ResourceLocation("warm_ocean").equals(world.getBiome(new BlockPos(x, y, z)).value().getRegistryName())
-				|| new ResourceLocation("ocean").equals(world.getBiome(new BlockPos(x, y, z)).value().getRegistryName())
-				|| new ResourceLocation("frozen_ocean").equals(world.getBiome(new BlockPos(x, y, z)).value().getRegistryName())
-				|| new ResourceLocation("deep_ocean").equals(world.getBiome(new BlockPos(x, y, z)).value().getRegistryName())
-				|| new ResourceLocation("warm_ocean").equals(world.getBiome(new BlockPos(x, y, z)).value().getRegistryName())
-				|| new ResourceLocation("lukewarm_ocean").equals(world.getBiome(new BlockPos(x, y, z)).value().getRegistryName())) {
+		if (world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("cold_ocean"))
+				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("deep_frozen_ocean"))
+				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("deep_cold_ocean"))
+				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("deep_lukewarm_ocean"))
+				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("warm_ocean"))
+				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("ocean"))
+				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("frozen_ocean"))
+				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("deep_ocean"))
+				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("warm_ocean"))
+				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("lukewarm_ocean"))) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.POLAROID
 					.get()) {
 				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("allow_teleport",
@@ -53,7 +53,7 @@ public class OceanmemorialTeleportProcedure {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(x, y, z), "has_memory_matrix")) == false) {
@@ -75,7 +75,7 @@ public class OceanmemorialTeleportProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putBoolean("has_memory_matrix", (true));
+							_blockEntity.getPersistentData().putBoolean("has_memory_matrix", (true));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -84,7 +84,7 @@ public class OceanmemorialTeleportProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("memory_matrix_x",
+							_blockEntity.getPersistentData().putDouble("memory_matrix_x",
 									((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag()
 											.getDouble("matrix_x")));
 						if (world instanceof Level _level)
@@ -95,7 +95,7 @@ public class OceanmemorialTeleportProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("memory_matrix_y",
+							_blockEntity.getPersistentData().putDouble("memory_matrix_y",
 									((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag()
 											.getDouble("matrix_y")));
 						if (world instanceof Level _level)
@@ -106,7 +106,7 @@ public class OceanmemorialTeleportProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("memory_matrix_z",
+							_blockEntity.getPersistentData().putDouble("memory_matrix_z",
 									((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag()
 											.getDouble("matrix_z")));
 						if (world instanceof Level _level)
@@ -167,7 +167,7 @@ public class OceanmemorialTeleportProcedure {
 				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
-						return blockEntity.getTileData().getBoolean(tag);
+						return blockEntity.getPersistentData().getBoolean(tag);
 					return false;
 				}
 			}.getValue(world, new BlockPos(x, y, z), "has_memory_matrix")) {
@@ -176,7 +176,7 @@ public class OceanmemorialTeleportProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "memory_matrix_x")));
@@ -184,7 +184,7 @@ public class OceanmemorialTeleportProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "memory_matrix_y")));
@@ -192,7 +192,7 @@ public class OceanmemorialTeleportProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "memory_matrix_z")));

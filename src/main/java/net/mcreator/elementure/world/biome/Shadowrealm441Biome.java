@@ -21,7 +21,7 @@ public class Shadowrealm441Biome {
 				.backgroundMusic(new Music(new SoundEvent(new ResourceLocation("elementure:cucuiganon")), 12000, 24000, true)).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
-		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).biomeCategory(Biome.BiomeCategory.NONE).temperature(2f).downfall(0.3f)
-				.specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).temperature(2f).downfall(0.3f).specialEffects(effects)
+				.mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
 	}
 }

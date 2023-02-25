@@ -27,6 +27,7 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
@@ -37,7 +38,6 @@ import net.mcreator.elementure.procedures.JellysuckAttackProcedure;
 import net.mcreator.elementure.procedures.JellyDropsProcedure;
 import net.mcreator.elementure.init.ElementureModEntities;
 
-import java.util.Random;
 import java.util.EnumSet;
 
 public class JellyEntity extends Monster {
@@ -117,7 +117,7 @@ public class JellyEntity extends Monster {
 		this.goalSelector.addGoal(6, new RandomStrollGoal(this, 0.8, 20) {
 			@Override
 			protected Vec3 getPosition() {
-				Random random = JellyEntity.this.getRandom();
+				RandomSource random = JellyEntity.this.getRandom();
 				double dir_x = JellyEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_y = JellyEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 16);
 				double dir_z = JellyEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 16);

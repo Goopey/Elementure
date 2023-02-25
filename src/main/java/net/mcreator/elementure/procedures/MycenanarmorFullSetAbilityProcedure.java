@@ -9,7 +9,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
@@ -40,8 +40,8 @@ public class MycenanarmorFullSetAbilityProcedure {
 				}
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands()
-							.performCommand(
-									new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", new TextComponent(""),
+							.performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""),
 											_level.getServer(), null).withSuppressedOutput(),
 									"effect give @e[distance=0.1..4] elementure:mycenanspores 4 1");
 			}

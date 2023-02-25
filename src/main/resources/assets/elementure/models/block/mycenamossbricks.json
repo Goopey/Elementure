@@ -8,5 +8,6 @@
     "south": "elementure:blocks/mycena_moss_bricks",
     "west": "elementure:blocks/mycena_moss_bricks",
     "particle": "elementure:blocks/mycena_moss_bricks"
-  }
+  },
+  "render_type": "solid"
 }

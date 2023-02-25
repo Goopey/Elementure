@@ -8,5 +8,6 @@
     "south": "elementure:blocks/pink_jelly_liquid",
     "west": "elementure:blocks/pink_jelly_liquid",
     "particle": "elementure:blocks/pink_jelly_liquid"
-  }
+  },
+  "render_type": "translucent"
 }

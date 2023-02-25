@@ -1,9 +1,6 @@
 
 package net.mcreator.elementure.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
@@ -36,12 +33,9 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.PotbreakonImpactProcedure;
 import net.mcreator.elementure.procedures.DeepslatebrickpotExtraDropProcedure;
-import net.mcreator.elementure.init.ElementureModBlocks;
 
 public class MycenabrickPotBlock extends Block implements SimpleWaterloggedBlock
 
@@ -51,7 +45,7 @@ public class MycenabrickPotBlock extends Block implements SimpleWaterloggedBlock
 
 	public MycenabrickPotBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(0.3f, 0f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
+				.isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 
@@ -110,13 +104,8 @@ public class MycenabrickPotBlock extends Block implements SimpleWaterloggedBlock
 	}
 
 	@Override
-	public BlockPathTypes getAiPathNodeType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
+	public BlockPathTypes getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
 		return BlockPathTypes.BLOCKED;
-	}
-
-	@Override
-	public Block.OffsetType getOffsetType() {
-		return Block.OffsetType.XZ;
 	}
 
 	@Override
@@ -150,10 +139,4 @@ public class MycenabrickPotBlock extends Block implements SimpleWaterloggedBlock
 		PotbreakonImpactProcedure.execute(world, x, y, z);
 		return InteractionResult.SUCCESS;
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.MYCENABRICK_POT.get(), renderType -> renderType == RenderType.cutout());
-	}
-
 }

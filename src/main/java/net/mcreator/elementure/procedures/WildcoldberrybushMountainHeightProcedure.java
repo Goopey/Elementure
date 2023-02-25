@@ -6,6 +6,6 @@ import net.minecraft.core.BlockPos;
 
 public class WildcoldberrybushMountainHeightProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		return !(new ResourceLocation("windswept_hills").equals(world.getBiome(new BlockPos(x, y, z)).value().getRegistryName()) && y < 97);
+		return !(world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("windswept_hills")) && y < 97);
 	}
 }

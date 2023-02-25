@@ -1,23 +1,23 @@
 modLoader="javafml"
-loaderVersion="[40,)"
+loaderVersion="[43,)"
 license="All Rights Reserved"
 
 [[mods]]
 modId="elementure"
-version="1.3.4"
+version="2.0.0"
 displayName="Elementure"
 credits="Created using mod maker MCreator and a lot of custom code - https://mcreator.net/about"
 displayURL="1.https://mcreator.net/modification/37122/nextworld-mod 2.https://www.curseforge.com/minecraft/mc-mods/elementure"
 logoFile="logo.png"
 authors="Goopey"
 description='''
-Something has appeared in the Mountains! Search for cracks in the ground. Something has also appeared in the ocean! Every ocean has something different.
+Something has appeared in the Warm Ocean! Explore the new Ostree as it looms over your world.
 '''
 
 [[dependencies.elementure]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.2]"
+    versionRange="[1.19.2]"
     ordering="NONE"
     side="BOTH"
 

@@ -41,11 +41,6 @@ public class GrayskullLakeFeature extends Feature<NoneFeatureConfiguration> {
 		return FEATURE;
 	}
 
-	public static Holder<PlacedFeature> placedFeature() {
-		return PLACED_FEATURE;
-	}
-
-	public static final Set<ResourceLocation> GENERATE_BIOMES = null;
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
 	private final List<Block> base_blocks;
 	private StructureTemplate template = null;
@@ -82,7 +77,6 @@ public class GrayskullLakeFeature extends Feature<NoneFeatureConfiguration> {
 								.setRotation(Rotation.values()[context.random().nextInt(3)]).setRandom(context.random())
 								.addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK).setIgnoreEntities(false),
 						context.random(), 2)) {
-
 					GrayskullPlaceProcedure.execute(world, x, y, z);
 					anyPlaced = true;
 				}

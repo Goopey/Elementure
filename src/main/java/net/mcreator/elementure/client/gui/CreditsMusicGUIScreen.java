@@ -5,7 +5,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
@@ -99,7 +98,7 @@ public class CreditsMusicGUIScreen extends AbstractContainerScreen<CreditsMusicG
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 169, this.topPos + 141, 72, 20, new TextComponent("Next Page"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 169, this.topPos + 141, 72, 20, Component.literal("Next Page"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new CreditsMusicGUIButtonMessage(0, x, y, z));
 				CreditsMusicGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);

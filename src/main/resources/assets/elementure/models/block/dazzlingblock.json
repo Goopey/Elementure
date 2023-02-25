@@ -8,5 +8,6 @@
     "south": "elementure:blocks/cobaltblock",
     "west": "elementure:blocks/cobaltblock",
     "particle": "elementure:blocks/cobaltblock"
-  }
+  },
+  "render_type": "solid"
 }

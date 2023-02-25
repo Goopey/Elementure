@@ -4,5 +4,6 @@
     "all": "elementure:blocks/darkbum",
     "particle": "elementure:blocks/darkbum",
     "0": "elementure:blocks/darkbum"
-  }
+  },
+  "render_type": "solid"
 }

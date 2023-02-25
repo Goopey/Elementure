@@ -8,5 +8,6 @@
     "south": "elementure:blocks/omegancenter",
     "west": "elementure:blocks/omegancenter",
     "particle": "elementure:blocks/omegancenter"
-  }
+  },
+  "render_type": "solid"
 }

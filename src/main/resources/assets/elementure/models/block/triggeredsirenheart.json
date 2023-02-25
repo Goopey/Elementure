@@ -4,5 +4,6 @@
     "all": "elementure:blocks/triggered_sirenheart_texture",
     "particle": "elementure:blocks/triggered_sirenheart_texture",
     "0": "elementure:blocks/triggered_sirenheart_texture"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

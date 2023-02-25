@@ -8,5 +8,6 @@
     "south": "elementure:blocks/tar",
     "west": "elementure:blocks/tar",
     "particle": "elementure:blocks/tar"
-  }
+  },
+  "render_type": "solid"
 }

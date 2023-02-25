@@ -4,5 +4,6 @@
     "all": "elementure:blocks/fish_altar",
     "particle": "elementure:blocks/fish_altar",
     "0": "elementure:blocks/fish_altar"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

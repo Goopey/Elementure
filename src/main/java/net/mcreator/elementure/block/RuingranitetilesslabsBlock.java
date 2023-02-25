@@ -21,7 +21,7 @@ import java.util.Collections;
 public class RuingranitetilesslabsBlock extends SlabBlock {
 	public RuingranitetilesslabsBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE, MaterialColor.COLOR_BLACK).sound(SoundType.STONE).strength(4.5f, 27.5f)
-				.requiresCorrectToolForDrops());
+				.requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override

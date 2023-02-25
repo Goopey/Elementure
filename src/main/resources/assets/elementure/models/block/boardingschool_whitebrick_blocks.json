@@ -8,5 +8,6 @@
     "south": "elementure:blocks/boardingschool_whitebricks",
     "west": "elementure:blocks/boardingschool_whitebricks",
     "particle": "elementure:blocks/boardingschool_whitebricks"
-  }
+  },
+  "render_type": "solid"
 }

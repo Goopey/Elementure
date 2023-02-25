@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/altarbrick",
     "top": "elementure:blocks/altarbrick",
     "side": "elementure:blocks/altarbrick"
-  }
+  },
+  "render_type": "solid"
 }

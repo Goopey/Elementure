@@ -4,5 +4,6 @@
     "all": "elementure:blocks/memory_heart_texture",
     "particle": "elementure:blocks/memory_heart_texture",
     "main": "elementure:blocks/memory_heart_texture"
-  }
+  },
+  "render_type": "translucent"
 }

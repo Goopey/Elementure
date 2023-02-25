@@ -4,5 +4,6 @@
     "all": "elementure:blocks/jellyfloat_limb_texture",
     "particle": "elementure:blocks/jellyfloat_limb_texture",
     "main": "elementure:blocks/jellyfloat_limb_texture"
-  }
+  },
+  "render_type": "cutout"
 }

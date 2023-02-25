@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/dire_crypt_tiles",
     "top": "elementure:blocks/dire_crypt_tiles",
     "side": "elementure:blocks/dire_crypt_tiles"
-  }
+  },
+  "render_type": "solid"
 }

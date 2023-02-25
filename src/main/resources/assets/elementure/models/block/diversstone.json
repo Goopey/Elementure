@@ -8,5 +8,6 @@
     "south": "elementure:blocks/divers_stone",
     "west": "elementure:blocks/divers_stone",
     "particle": "elementure:blocks/divers_stone"
-  }
+  },
+  "render_type": "solid"
 }

@@ -4,5 +4,6 @@
     "all": "elementure:blocks/firestar",
     "particle": "elementure:blocks/firestar",
     "0": "elementure:blocks/firestar"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

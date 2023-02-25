@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/energy_diorite_bricks",
     "top": "elementure:blocks/energy_diorite_bricks",
     "side": "elementure:blocks/energy_diorite_bricks"
-  }
+  },
+  "render_type": "solid"
 }

@@ -8,5 +8,6 @@
     "south": "elementure:blocks/gray_rimemoss",
     "west": "elementure:blocks/gray_rimemoss",
     "particle": "elementure:blocks/gray_rimemoss"
-  }
+  },
+  "render_type": "solid"
 }

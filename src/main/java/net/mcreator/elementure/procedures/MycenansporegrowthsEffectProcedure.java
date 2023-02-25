@@ -7,7 +7,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
@@ -18,14 +18,14 @@ public class MycenansporegrowthsEffectProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands().performCommand(
+			_level.getServer().getCommands().performPrefixedCommand(
 					new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "",
-							new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
+							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					"effect give @e[distance=0..6] minecraft_worlds:mycenanspores 8 1");
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands().performCommand(
+			_level.getServer().getCommands().performPrefixedCommand(
 					new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "",
-							new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
+							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					"effect give @e[distance=0.1..4] minecraft_worlds:mycenansporegrowths 24 0");
 		if (Math.random() < 0.33) {
 			if (entity instanceof LivingEntity _entity)

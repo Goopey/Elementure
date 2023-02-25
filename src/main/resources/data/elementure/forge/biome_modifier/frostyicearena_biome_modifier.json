@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "frozen_ocean",
+    "frozen_river",
+    "ice_spikes",
+    "plains",
+    "snowy_taiga",
+    "snowy_beach"
+  ],
+  "features": "elementure:frostyicearena",
+  "step": "underground_structures"
+}

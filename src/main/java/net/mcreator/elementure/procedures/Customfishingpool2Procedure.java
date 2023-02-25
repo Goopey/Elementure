@@ -35,7 +35,7 @@ public class Customfishingpool2Procedure {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(entityiterator.getX(), -64, entityiterator.getZ()), "mycenaUsed")) {
@@ -44,7 +44,7 @@ public class Customfishingpool2Procedure {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(entityiterator.getX(), -64, entityiterator.getZ()), "windyshoresUsed")) {
@@ -53,7 +53,7 @@ public class Customfishingpool2Procedure {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(entityiterator.getX(), -64, entityiterator.getZ()), "jellyfloatUsed")) {
@@ -62,7 +62,7 @@ public class Customfishingpool2Procedure {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(entityiterator.getX(), -64, entityiterator.getZ()), "diverscrownUsed")) {

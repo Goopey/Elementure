@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "sunflower_plains",
+    "plains",
+    "savanna"
+  ],
+  "features": "elementure:abandonnedfarm",
+  "step": "surface_structures"
+}

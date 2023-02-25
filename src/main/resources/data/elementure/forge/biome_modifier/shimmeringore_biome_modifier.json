@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "elementure:shimmeringore",
+  "step": "underground_ores"
+}

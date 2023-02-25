@@ -19,7 +19,7 @@ import java.util.Collections;
 
 public class MycenamossbrickslabsBlock extends SlabBlock {
 	public MycenamossbrickslabsBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2f, 6f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override

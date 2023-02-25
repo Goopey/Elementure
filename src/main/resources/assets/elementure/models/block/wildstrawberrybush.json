@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/salberrybush",
     "particle": "elementure:blocks/salberrybush"
-  }
+  },
+  "render_type": "cutout"
 }

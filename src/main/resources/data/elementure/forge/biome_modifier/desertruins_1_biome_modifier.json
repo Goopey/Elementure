@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "desert",
+  "features": "elementure:desertruins_1",
+  "step": "surface_structures"
+}

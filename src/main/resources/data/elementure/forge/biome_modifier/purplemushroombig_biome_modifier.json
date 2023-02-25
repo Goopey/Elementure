@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "mushroom_fields",
+  "features": "elementure:purplemushroombig",
+  "step": "surface_structures"
+}

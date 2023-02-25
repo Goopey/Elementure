@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "elementure:curious_monolith_1",
+  "step": "surface_structures"
+}

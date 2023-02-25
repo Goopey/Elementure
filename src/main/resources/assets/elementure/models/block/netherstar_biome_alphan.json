@@ -8,5 +8,6 @@
     "south": "elementure:blocks/netherrack",
     "west": "elementure:blocks/netherrack",
     "particle": "elementure:blocks/netherrack"
-  }
+  },
+  "render_type": "solid"
 }

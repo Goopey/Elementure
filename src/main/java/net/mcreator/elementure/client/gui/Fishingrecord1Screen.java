@@ -5,7 +5,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
@@ -121,73 +120,73 @@ public class Fishingrecord1Screen extends AbstractContainerScreen<Fishingrecord1
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + -2, 85, 20, new TextComponent("Regular Fish"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + -2, 85, 20, Component.literal("Regular Fish"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(0, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + 22, 70, 20, new TextComponent("Legendary"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + 22, 70, 20, Component.literal("Legendary"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(1, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + 47, 70, 20, new TextComponent("Lava Fish"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + 47, 70, 20, Component.literal("Lava Fish"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(2, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + 72, 70, 20, new TextComponent("Void Fish"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + 72, 70, 20, Component.literal("Void Fish"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(3, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + -4, this.topPos + 97, 65, 20, new TextComponent("Diseased"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + -4, this.topPos + 97, 65, 20, Component.literal("Diseased"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(4, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + -4, this.topPos + 122, 55, 20, new TextComponent("Mycena"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + -4, this.topPos + 122, 55, 20, Component.literal("Mycena"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(5, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 5, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + -2, 80, 20, new TextComponent("Nether Star"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + -2, 80, 20, Component.literal("Nether Star"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(6, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 6, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 22, 82, 20, new TextComponent("Jelly Pools"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 22, 82, 20, Component.literal("Jelly Pools"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(7, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 7, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 47, 72, 20, new TextComponent("Shellfish"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 47, 72, 20, Component.literal("Shellfish"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(8, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 8, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 72, 61, 20, new TextComponent("Special"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 72, 61, 20, Component.literal("Special"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(9, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 9, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 97, 77, 20, new TextComponent("Windy Shores"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 97, 77, 20, Component.literal("Windy Shores"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(10, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 10, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 122, 46, 20, new TextComponent("Next"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 122, 46, 20, Component.literal("Next"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(11, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 11, x, y, z);

@@ -18,7 +18,7 @@ import javax.annotation.Nullable;
 public class GoopeyLoginGiveFamiliarProcedure {
 	@SubscribeEvent
 	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
-		execute(event, event.getPlayer());
+		execute(event, event.getEntity());
 	}
 
 	public static void execute(Entity entity) {

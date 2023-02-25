@@ -8,5 +8,6 @@
     "south": "elementure:blocks/abyssalgas",
     "west": "elementure:blocks/abyssalgas",
     "particle": "elementure:blocks/abyssalgas"
-  }
+  },
+  "render_type": "solid"
 }

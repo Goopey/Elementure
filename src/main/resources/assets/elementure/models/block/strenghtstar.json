@@ -4,5 +4,6 @@
     "all": "elementure:blocks/strenghtstar",
     "particle": "elementure:blocks/strenghtstar",
     "0": "elementure:blocks/strenghtstar"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

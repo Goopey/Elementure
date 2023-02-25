@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/old_plank",
     "top": "elementure:blocks/old_plank",
     "side": "elementure:blocks/old_plank"
-  }
+  },
+  "render_type": "solid"
 }

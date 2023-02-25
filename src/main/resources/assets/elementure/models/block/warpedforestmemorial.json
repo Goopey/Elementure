@@ -4,5 +4,6 @@
     "all": "elementure:blocks/warped_forest_memorial",
     "particle": "elementure:blocks/warped_forest_memorial",
     "0": "elementure:blocks/warped_forest_memorial"
-  }
+  },
+  "render_type": "cutout"
 }

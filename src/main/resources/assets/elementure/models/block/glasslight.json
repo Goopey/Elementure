@@ -8,5 +8,6 @@
     "south": "elementure:blocks/glasslight",
     "west": "elementure:blocks/glasslight",
     "particle": "elementure:blocks/glasslight"
-  }
+  },
+  "render_type": "translucent"
 }

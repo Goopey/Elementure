@@ -4,5 +4,6 @@
     "all": "elementure:blocks/lightblue_rimevine",
     "particle": "elementure:blocks/lightblue_rimevine",
     "0": "elementure:blocks/lightblue_rimevine"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

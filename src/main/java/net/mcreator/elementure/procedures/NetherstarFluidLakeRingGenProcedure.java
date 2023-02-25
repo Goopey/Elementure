@@ -23,7 +23,7 @@ public class NetherstarFluidLakeRingGenProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("netherstarAGenRole", 3);
+						_blockEntity.getPersistentData().putDouble("netherstarAGenRole", 3);
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -32,7 +32,7 @@ public class NetherstarFluidLakeRingGenProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("lakeSize", Math.round(2 * Math.random() + 2));
+						_blockEntity.getPersistentData().putDouble("lakeSize", Math.round(2 * Math.random() + 2));
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}

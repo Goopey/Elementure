@@ -19,9 +19,9 @@ import javax.annotation.Nullable;
 public class RubedoClickEffectProcedure {
 	@SubscribeEvent
 	public static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
-		if (event.getHand() != event.getPlayer().getUsedItemHand())
+		if (event.getHand() != event.getEntity().getUsedItemHand())
 			return;
-		execute(event, event.getPlayer());
+		execute(event, event.getEntity());
 	}
 
 	public static void execute(Entity entity) {

@@ -8,5 +8,6 @@
     "south": "elementure:blocks/cormunculus_mushroom",
     "west": "elementure:blocks/cormunculus_mushroom",
     "particle": "elementure:blocks/cormunculus_mushroom"
-  }
+  },
+  "render_type": "translucent"
 }

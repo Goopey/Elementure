@@ -4,5 +4,6 @@
     "all": "elementure:blocks/mycena_memorial",
     "particle": "elementure:blocks/mycena_memorial",
     "0": "elementure:blocks/mycena_memorial"
-  }
+  },
+  "render_type": "solid"
 }

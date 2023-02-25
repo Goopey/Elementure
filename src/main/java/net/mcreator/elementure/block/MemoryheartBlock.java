@@ -32,22 +32,18 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.elementure.procedures.MemorygrottoGenerateProcedure;
 import net.mcreator.elementure.init.ElementureModItems;
-import net.mcreator.elementure.init.ElementureModBlocks;
 import net.mcreator.elementure.block.entity.MemoryheartBlockEntity;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -63,7 +59,7 @@ public class MemoryheartBlock extends Block implements SimpleWaterloggedBlock, E
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("A wonder of a crystal orb. You can see inside of it pictures as if it was a Crystal Ball meant for divining..."));
+		list.add(Component.literal("A wonder of a crystal orb. You can see inside of it pictures as if it was a Crystal Ball meant for divining..."));
 	}
 
 	@Override
@@ -123,7 +119,7 @@ public class MemoryheartBlock extends Block implements SimpleWaterloggedBlock, E
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();
@@ -135,7 +131,7 @@ public class MemoryheartBlock extends Block implements SimpleWaterloggedBlock, E
 
 	@OnlyIn(Dist.CLIENT)
 	@Override
-	public void animateTick(BlockState blockstate, Level world, BlockPos pos, Random random) {
+	public void animateTick(BlockState blockstate, Level world, BlockPos pos, RandomSource random) {
 		super.animateTick(blockstate, world, pos, random);
 		Player entity = Minecraft.getInstance().player;
 		int x = pos.getX();
@@ -195,10 +191,4 @@ public class MemoryheartBlock extends Block implements SimpleWaterloggedBlock, E
 		else
 			return 0;
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.MEMORYHEART.get(), renderType -> renderType == RenderType.translucent());
-	}
-
 }

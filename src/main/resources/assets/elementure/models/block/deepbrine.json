@@ -8,5 +8,6 @@
     "south": "elementure:blocks/deepbrine",
     "west": "elementure:blocks/deepbrine",
     "particle": "elementure:blocks/deepbrine"
-  }
+  },
+  "render_type": "translucent"
 }

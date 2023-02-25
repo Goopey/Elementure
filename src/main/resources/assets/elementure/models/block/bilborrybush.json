@@ -4,5 +4,6 @@
     "all": "elementure:blocks/smallbilborrybush",
     "particle": "elementure:blocks/smallbilborrybush",
     "0": "elementure:blocks/smallbilborrybush"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

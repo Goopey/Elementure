@@ -8,5 +8,6 @@
     "south": "elementure:blocks/protectionremover",
     "west": "elementure:blocks/protectionremover",
     "particle": "elementure:blocks/protectionremover"
-  }
+  },
+  "render_type": "solid"
 }

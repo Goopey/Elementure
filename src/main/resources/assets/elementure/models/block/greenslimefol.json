@@ -4,5 +4,6 @@
     "all": "elementure:blocks/green_slime_fol_texture",
     "particle": "elementure:blocks/green_slime_fol_texture",
     "main": "elementure:blocks/green_slime_fol_texture"
-  }
+  },
+  "render_type": "cutout"
 }

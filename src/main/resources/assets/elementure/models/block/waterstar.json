@@ -4,5 +4,6 @@
     "all": "elementure:blocks/waterstar",
     "particle": "elementure:blocks/waterstar",
     "0": "elementure:blocks/waterstar"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

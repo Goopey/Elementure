@@ -1,9 +1,5 @@
 package net.mcreator.elementure.procedures;
 
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
-
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.Vec2;
 import net.minecraft.world.level.block.state.properties.Property;
@@ -15,13 +11,14 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
 import net.mcreator.elementure.init.ElementureModBlocks;
+import net.mcreator.elementure.ElementureMod;
 
 public class DiverscrownStoneRoomAirProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -134,7 +131,7 @@ public class DiverscrownStoneRoomAirProcedure {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getDouble(tag);
+					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "diverscrownRoomSize") > 0) {
@@ -142,7 +139,7 @@ public class DiverscrownStoneRoomAirProcedure {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
-						return blockEntity.getTileData().getDouble(tag);
+						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
 			}.getValue(world, new BlockPos(x, y, z), "diverscrownRoomSize");
@@ -165,7 +162,7 @@ public class DiverscrownStoneRoomAirProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("diverscrownOmeganRole", 5);
+								_blockEntity.getPersistentData().putDouble("diverscrownOmeganRole", 5);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -174,7 +171,7 @@ public class DiverscrownStoneRoomAirProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("plantType", rndPlant);
+								_blockEntity.getPersistentData().putDouble("plantType", rndPlant);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -343,34 +340,12 @@ public class DiverscrownStoneRoomAirProcedure {
 				}
 			}
 		}
-		new Object() {
-			private int ticks = 0;
-			private float waitTicks;
-			private LevelAccessor world;
-
-			public void start(LevelAccessor world, int waitTicks) {
-				this.waitTicks = waitTicks;
-				MinecraftForge.EVENT_BUS.register(this);
-				this.world = world;
-			}
-
-			@SubscribeEvent
-			public void tick(TickEvent.ServerTickEvent event) {
-				if (event.phase == TickEvent.Phase.END) {
-					this.ticks += 1;
-					if (this.ticks >= this.waitTicks)
-						run();
-				}
-			}
-
-			private void run() {
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands()
-							.performCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-									new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
-									"kill @e[type=minecraft:item,distance=0..25]");
-				MinecraftForge.EVENT_BUS.unregister(this);
-			}
-		}.start(world, 10);
+		ElementureMod.queueServerWork(10, () -> {
+			if (world instanceof ServerLevel _level)
+				_level.getServer().getCommands()
+						.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
+								Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								"kill @e[type=minecraft:item,distance=0..25]");
+		});
 	}
 }

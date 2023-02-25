@@ -13,7 +13,6 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.ChalicepotionEffectProcedure;
@@ -41,7 +40,7 @@ public class ChalicepotionItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("A white chalice potion, only... a weird substance is bubbling in it."));
+		list.add(Component.literal("A white chalice potion, only... a weird substance is bubbling in it."));
 	}
 
 	@Override

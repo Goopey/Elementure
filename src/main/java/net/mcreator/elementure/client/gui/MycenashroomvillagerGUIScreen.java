@@ -5,7 +5,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
@@ -94,7 +93,7 @@ public class MycenashroomvillagerGUIScreen extends AbstractContainerScreen<Mycen
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 123, this.topPos + 33, 40, 20, new TextComponent("Next"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 123, this.topPos + 33, 40, 20, Component.literal("Next"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MycenashroomvillagerGUIButtonMessage(0, x, y, z));
 				MycenashroomvillagerGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);

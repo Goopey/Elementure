@@ -1,0 +1,11 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "stony_shore",
+    "windswept_hills",
+    "windswept_forest",
+    "windswept_gravelly_hills"
+  ],
+  "features": "elementure:wildsunberrybush",
+  "step": "vegetal_decoration"
+}

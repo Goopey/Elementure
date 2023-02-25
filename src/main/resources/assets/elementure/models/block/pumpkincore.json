@@ -8,5 +8,6 @@
     "south": "elementure:blocks/pumpkin_core",
     "west": "elementure:blocks/pumpkin_core",
     "particle": "elementure:blocks/pumpkin_core"
-  }
+  },
+  "render_type": "solid"
 }

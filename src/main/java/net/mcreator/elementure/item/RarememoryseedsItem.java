@@ -9,7 +9,6 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.RarememoryseedsPlantProcedure;
@@ -30,9 +29,9 @@ public class RarememoryseedsItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("A seed used to harvest rare memories."));
-		list.add(new TextComponent("-Grows on cobblestone"));
-		list.add(new TextComponent("-Water helps"));
+		list.add(Component.literal("A seed used to harvest rare memories."));
+		list.add(Component.literal("-Grows on cobblestone"));
+		list.add(Component.literal("-Water helps"));
 	}
 
 	@Override

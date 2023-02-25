@@ -8,5 +8,6 @@
     "south": "elementure:blocks/corruptlog",
     "west": "elementure:blocks/corruptlog",
     "particle": "elementure:blocks/corruptlogtop"
-  }
+  },
+  "render_type": "solid"
 }

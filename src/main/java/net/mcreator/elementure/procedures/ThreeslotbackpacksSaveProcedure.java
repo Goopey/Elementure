@@ -1,7 +1,7 @@
 package net.mcreator.elementure.procedures;
 
 import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
@@ -28,7 +28,7 @@ public class ThreeslotbackpacksSaveProcedure {
 				_setstack.setCount((((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
 						&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get((int) inventorySlots)).getItem() : ItemStack.EMPTY).copy()))
 						.getCount());
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					if (capability instanceof IItemHandlerModifiable) {
 						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
 					}

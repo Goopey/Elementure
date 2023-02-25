@@ -4,5 +4,6 @@
     "all": "elementure:blocks/lightgray_rimefan",
     "particle": "elementure:blocks/lightgray_rimefan",
     "0": "elementure:blocks/lightgray_rimefan"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

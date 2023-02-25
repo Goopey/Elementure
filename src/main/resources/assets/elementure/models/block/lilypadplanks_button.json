@@ -2,5 +2,6 @@
   "parent": "block/button",
   "textures": {
     "texture": "elementure:blocks/lilypad_plank"
-  }
+  },
+  "render_type": "solid"
 }

@@ -9,6 +9,8 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.elementure.network.ElementureModVariables;
 import net.mcreator.elementure.init.ElementureModItems;
@@ -51,11 +53,14 @@ public class RainbowarmorFullaEffectProcedure {
 								.getOrCreateTag().getDouble("bonus") >= 0) {
 							{
 								Entity _ent = entity;
-								if (!_ent.level.isClientSide() && _ent.getServer() != null)
-									_ent.getServer().getCommands().performCommand(
-											_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+									_ent.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+													_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+													_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
 											(("replaceitem entity @s armor.chest elementure:rainbowarmor_chestplate{AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:8,Slot:chest,Name:\"generic.armor\",UUID:[I;-12183,31952,173830,-63904]},{AttributeName:\"generic.armor_toughness\",Amount:2.6,Slot:chest,Name:\"generic.armor_toughness\",UUID:[I;-12183,32052,173830,-64104]},{AttributeName:\"generic.movement_speed\",Amount:-0.1,Slot:chest,Operation:1,Name:\"generic.movement_speed\",UUID:[I;-12183,32152,173830,-64304]}], Damage :"
 													+ "" + new java.text.DecimalFormat("##.##").format((itemstack).getDamageValue())) + "}"));
+								}
 							}
 							if (entity instanceof LivingEntity _entity)
 								_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 20, 0));
@@ -76,48 +81,66 @@ public class RainbowarmorFullaEffectProcedure {
 						} else {
 							{
 								Entity _ent = entity;
-								if (!_ent.level.isClientSide() && _ent.getServer() != null)
-									_ent.getServer().getCommands().performCommand(
-											_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+								if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+									_ent.getServer().getCommands().performPrefixedCommand(
+											new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+													_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+													_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
 											(("replaceitem entity @s armor.chest elementure:rainbowarmor_chestplate{AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:8,Slot:chest,Name:\"generic.armor\",UUID:[I;-12183,31952,173830,-63904]},{AttributeName:\"generic.armor_toughness\",Amount:2.6,Slot:chest,Name:\"generic.armor_toughness\",UUID:[I;-12183,32052,173830,-64104]}], Damage :"
 													+ "" + new java.text.DecimalFormat("##.##").format((itemstack).getDamageValue())) + "}"));
+								}
 							}
 						}
 					} else {
 						{
 							Entity _ent = entity;
-							if (!_ent.level.isClientSide() && _ent.getServer() != null)
-								_ent.getServer().getCommands().performCommand(
-										_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+							if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+								_ent.getServer().getCommands().performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+												_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+												_ent.getDisplayName(), _ent.level.getServer(), _ent),
 										(("replaceitem entity @s armor.chest elementure:rainbowarmor_chestplate{AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:8,Slot:chest,Name:\"generic.armor\",UUID:[I;-12183,31952,173830,-63904]},{AttributeName:\"generic.armor_toughness\",Amount:2.6,Slot:chest,Name:\"generic.armor_toughness\",UUID:[I;-12183,32052,173830,-64104]}], Damage :"
 												+ "" + new java.text.DecimalFormat("##.##").format((itemstack).getDamageValue())) + "}"));
+							}
 						}
 					}
 				} else {
 					{
 						Entity _ent = entity;
-						if (!_ent.level.isClientSide() && _ent.getServer() != null)
-							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+						if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+							_ent.getServer().getCommands().performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+											_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+											_ent.getDisplayName(), _ent.level.getServer(), _ent),
 									(("replaceitem entity @s armor.chest elementure:rainbowarmor_chestplate{AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:8,Slot:chest,Name:\"generic.armor\",UUID:[I;-12183,31952,173830,-63904]},{AttributeName:\"generic.armor_toughness\",Amount:2.6,Slot:chest,Name:\"generic.armor_toughness\",UUID:[I;-12183,32052,173830,-64104]}], Damage :"
 											+ "" + new java.text.DecimalFormat("##.##").format((itemstack).getDamageValue())) + "}"));
+						}
 					}
 				}
 			} else {
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent),
 								(("replaceitem entity @s armor.chest elementure:rainbowarmor_chestplate{AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:8,Slot:chest,Name:\"generic.armor\",UUID:[I;-12183,31952,173830,-63904]},{AttributeName:\"generic.armor_toughness\",Amount:2.6,Slot:chest,Name:\"generic.armor_toughness\",UUID:[I;-12183,32052,173830,-64104]}], Damage :"
 										+ "" + new java.text.DecimalFormat("##.##").format((itemstack).getDamageValue())) + "}"));
+					}
 				}
 			}
 		} else {
 			{
 				Entity _ent = entity;
-				if (!_ent.level.isClientSide() && _ent.getServer() != null)
-					_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+					_ent.getServer().getCommands().performPrefixedCommand(
+							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+									_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+									_ent.getDisplayName(), _ent.level.getServer(), _ent),
 							(("replaceitem entity @s armor.chest elementure:rainbowarmor_chestplate{AttributeModifiers:[{AttributeName:\"generic.armor\",Amount:8,Slot:chest,Name:\"generic.armor\",UUID:[I;-12183,31952,173830,-63904]},{AttributeName:\"generic.armor_toughness\",Amount:2.6,Slot:chest,Name:\"generic.armor_toughness\",UUID:[I;-12183,32052,173830,-64104]}], Damage :"
 									+ "" + new java.text.DecimalFormat("##.##").format((itemstack).getDamageValue())) + "}"));
+				}
 			}
 		}
 	}

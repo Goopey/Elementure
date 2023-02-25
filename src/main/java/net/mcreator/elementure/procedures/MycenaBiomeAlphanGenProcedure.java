@@ -13,7 +13,7 @@ public class MycenaBiomeAlphanGenProcedure {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getDouble(tag);
+					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "alphanGenRole") == 1) {
@@ -22,7 +22,7 @@ public class MycenaBiomeAlphanGenProcedure {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getDouble(tag);
+					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "alphanGenRole") == 2) {
@@ -32,7 +32,7 @@ public class MycenaBiomeAlphanGenProcedure {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getDouble(tag);
+					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "alphanGenRole") == 3) {
@@ -42,7 +42,7 @@ public class MycenaBiomeAlphanGenProcedure {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getDouble(tag);
+					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "alphanGenRole") == 4) {
@@ -52,7 +52,7 @@ public class MycenaBiomeAlphanGenProcedure {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getDouble(tag);
+					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "alphanGenRole") == 5) {
@@ -62,7 +62,7 @@ public class MycenaBiomeAlphanGenProcedure {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getDouble(tag);
+					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "alphanGenRole") > 5) {
@@ -72,7 +72,7 @@ public class MycenaBiomeAlphanGenProcedure {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
-						return blockEntity.getTileData().getDouble(tag);
+						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
 			}.getValue(world, new BlockPos(x, y, z), "wait") == 1) {
@@ -80,28 +80,28 @@ public class MycenaBiomeAlphanGenProcedure {
 					public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getBoolean(tag);
+							return blockEntity.getPersistentData().getBoolean(tag);
 						return false;
 					}
 				}.getValue(world, new BlockPos(x + 1, -64, z), "mycenaUsed")) == true) || !((new Object() {
 					public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getBoolean(tag);
+							return blockEntity.getPersistentData().getBoolean(tag);
 						return false;
 					}
 				}.getValue(world, new BlockPos(x - 1, -64, z), "mycenaUsed")) == true) || !((new Object() {
 					public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getBoolean(tag);
+							return blockEntity.getPersistentData().getBoolean(tag);
 						return false;
 					}
 				}.getValue(world, new BlockPos(x, -64, z - 1), "mycenaUsed")) == true) || !((new Object() {
 					public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getBoolean(tag);
+							return blockEntity.getPersistentData().getBoolean(tag);
 						return false;
 					}
 				}.getValue(world, new BlockPos(x, -64, z + 1), "mycenaUsed")) == true)) {
@@ -111,56 +111,56 @@ public class MycenaBiomeAlphanGenProcedure {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(x + 2, -64, z), "mycenaUsed")) == true) || !((new Object() {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(x - 2, -64, z), "mycenaUsed")) == true) || !((new Object() {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(x, -64, z - 2), "mycenaUsed")) == true) || !((new Object() {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(x, -64, z + 2), "mycenaUsed")) == true) || !((new Object() {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(x + 1, -64, z + 1), "mycenaUsed")) == true) || !((new Object() {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(x + 1, -64, z - 1), "mycenaUsed")) == true) || !((new Object() {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(x - 1, -64, z + 1), "mycenaUsed")) == true) || !((new Object() {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(x - 1, -64, z - 1), "mycenaUsed")) == true)) {
@@ -170,84 +170,84 @@ public class MycenaBiomeAlphanGenProcedure {
 							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getBoolean(tag);
+									return blockEntity.getPersistentData().getBoolean(tag);
 								return false;
 							}
 						}.getValue(world, new BlockPos(x + 3, -64, z), "mycenaUsed")) == true) || !((new Object() {
 							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getBoolean(tag);
+									return blockEntity.getPersistentData().getBoolean(tag);
 								return false;
 							}
 						}.getValue(world, new BlockPos(x - 3, -64, z), "mycenaUsed")) == true) || !((new Object() {
 							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getBoolean(tag);
+									return blockEntity.getPersistentData().getBoolean(tag);
 								return false;
 							}
 						}.getValue(world, new BlockPos(x, -64, z + 3), "mycenaUsed")) == true) || !((new Object() {
 							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getBoolean(tag);
+									return blockEntity.getPersistentData().getBoolean(tag);
 								return false;
 							}
 						}.getValue(world, new BlockPos(x, -64, z - 3), "mycenaUsed")) == true) || !((new Object() {
 							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getBoolean(tag);
+									return blockEntity.getPersistentData().getBoolean(tag);
 								return false;
 							}
 						}.getValue(world, new BlockPos(x + 2, -64, z + 1), "mycenaUsed")) == true) || !((new Object() {
 							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getBoolean(tag);
+									return blockEntity.getPersistentData().getBoolean(tag);
 								return false;
 							}
 						}.getValue(world, new BlockPos(x + 2, -64, z - 1), "mycenaUsed")) == true) || !((new Object() {
 							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getBoolean(tag);
+									return blockEntity.getPersistentData().getBoolean(tag);
 								return false;
 							}
 						}.getValue(world, new BlockPos(x - 2, -64, z - 1), "mycenaUsed")) == true) || !((new Object() {
 							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getBoolean(tag);
+									return blockEntity.getPersistentData().getBoolean(tag);
 								return false;
 							}
 						}.getValue(world, new BlockPos(x - 2, -64, z + 1), "mycenaUsed")) == true) || !((new Object() {
 							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getBoolean(tag);
+									return blockEntity.getPersistentData().getBoolean(tag);
 								return false;
 							}
 						}.getValue(world, new BlockPos(x + 1, -64, z + 2), "mycenaUsed")) == true) || !((new Object() {
 							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getBoolean(tag);
+									return blockEntity.getPersistentData().getBoolean(tag);
 								return false;
 							}
 						}.getValue(world, new BlockPos(x + 1, -64, z - 2), "mycenaUsed")) == true) || !((new Object() {
 							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getBoolean(tag);
+									return blockEntity.getPersistentData().getBoolean(tag);
 								return false;
 							}
 						}.getValue(world, new BlockPos(x - 1, -64, z + 2), "mycenaUsed")) == true) || !((new Object() {
 							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getBoolean(tag);
+									return blockEntity.getPersistentData().getBoolean(tag);
 								return false;
 							}
 						}.getValue(world, new BlockPos(x - 1, -64, z - 2), "mycenaUsed")) == true)) {
@@ -257,112 +257,112 @@ public class MycenaBiomeAlphanGenProcedure {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x + 4, -64, z), "mycenaUsed")) == true) || !((new Object() {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x - 4, -64, z), "mycenaUsed")) == true) || !((new Object() {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x, -64, z + 4), "mycenaUsed")) == true) || !((new Object() {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x, -64, z - 4), "mycenaUsed")) == true) || !((new Object() {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x + 3, -64, z + 1), "mycenaUsed")) == true) || !((new Object() {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x + 3, -64, z - 1), "mycenaUsed")) == true) || !((new Object() {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x - 3, -64, z + 1), "mycenaUsed")) == true) || !((new Object() {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x - 3, -64, z - 1), "mycenaUsed")) == true) || !((new Object() {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x + 1, -64, z + 3), "mycenaUsed")) == true) || !((new Object() {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x + 1, -64, z - 3), "mycenaUsed")) == true) || !((new Object() {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x - 1, -64, z + 3), "mycenaUsed")) == true) || !((new Object() {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x - 1, -64, z - 3), "mycenaUsed")) == true) || !((new Object() {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x + 2, -64, z + 2), "mycenaUsed")) == true) || !((new Object() {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x + 2, -64, z - 2), "mycenaUsed")) == true) || !((new Object() {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x - 2, -64, z + 2), "mycenaUsed")) == true) || !((new Object() {
 								public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getBoolean(tag);
+										return blockEntity.getPersistentData().getBoolean(tag);
 									return false;
 								}
 							}.getValue(world, new BlockPos(x - 2, -64, z - 2), "mycenaUsed")) == true)) {
@@ -379,7 +379,7 @@ public class MycenaBiomeAlphanGenProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("wait", 1);
+					_blockEntity.getPersistentData().putDouble("wait", 1);
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

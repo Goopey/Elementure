@@ -8,5 +8,6 @@
     "south": "elementure:blocks/aurum_tiles",
     "west": "elementure:blocks/aurum_tiles",
     "particle": "elementure:blocks/aurum_tiles"
-  }
+  },
+  "render_type": "solid"
 }

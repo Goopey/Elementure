@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/boardingschool_gray_concrete",
     "top": "elementure:blocks/boardingschool_gray_concrete",
     "side": "elementure:blocks/boardingschool_gray_concrete"
-  }
+  },
+  "render_type": "solid"
 }

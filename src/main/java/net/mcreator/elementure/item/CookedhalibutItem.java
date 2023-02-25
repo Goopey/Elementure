@@ -7,7 +7,6 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.init.ElementureModTabs;
@@ -25,7 +24,7 @@ public class CookedhalibutItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("A cooked halibut, a great source of food."));
-		list.add(new TextComponent("You'd be hard pressed to find something more filling."));
+		list.add(Component.literal("A cooked halibut, a great source of food."));
+		list.add(Component.literal("You'd be hard pressed to find something more filling."));
 	}
 }

@@ -8,5 +8,6 @@
     "south": "elementure:blocks/waterruneblock",
     "west": "elementure:blocks/waterruneblock",
     "particle": "elementure:blocks/waterruneblock"
-  }
+  },
+  "render_type": "solid"
 }

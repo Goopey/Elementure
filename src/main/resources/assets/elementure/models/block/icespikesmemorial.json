@@ -4,5 +4,6 @@
     "all": "elementure:blocks/ice_spikes_memorial",
     "particle": "elementure:blocks/ice_spikes_memorial",
     "0": "elementure:blocks/ice_spikes_memorial"
-  }
+  },
+  "render_type": "solid"
 }

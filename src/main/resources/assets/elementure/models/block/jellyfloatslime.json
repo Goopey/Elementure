@@ -8,5 +8,6 @@
     "south": "elementure:blocks/jellyfloat_slime",
     "west": "elementure:blocks/jellyfloat_slime",
     "particle": "elementure:blocks/jellyfloat_slime"
-  }
+  },
+  "render_type": "translucent"
 }

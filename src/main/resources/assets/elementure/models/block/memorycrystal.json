@@ -8,5 +8,6 @@
     "south": "elementure:blocks/hpristal",
     "west": "elementure:blocks/hpristal",
     "particle": "elementure:blocks/hpristal"
-  }
+  },
+  "render_type": "solid"
 }

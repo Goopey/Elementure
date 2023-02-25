@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/purple_mushrooms",
     "particle": "elementure:blocks/purple_mushrooms"
-  }
+  },
+  "render_type": "cutout"
 }

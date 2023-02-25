@@ -3,5 +3,6 @@
   "textures": {
     "cross": "elementure:blocks/nebulaoxeye",
     "particle": "elementure:blocks/nebulaoxeye"
-  }
+  },
+  "render_type": "cutout"
 }

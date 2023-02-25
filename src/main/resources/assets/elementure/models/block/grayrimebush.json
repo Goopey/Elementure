@@ -4,5 +4,6 @@
     "all": "elementure:blocks/gray_rimebush",
     "particle": "elementure:blocks/gray_rimebush",
     "0": "elementure:blocks/gray_rimebush"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

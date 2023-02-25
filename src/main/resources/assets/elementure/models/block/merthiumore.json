@@ -8,5 +8,6 @@
     "south": "elementure:blocks/merthiumore",
     "west": "elementure:blocks/merthiumore",
     "particle": "elementure:blocks/merthiumore"
-  }
+  },
+  "render_type": "solid"
 }

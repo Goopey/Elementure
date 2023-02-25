@@ -15,6 +15,7 @@ import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
@@ -22,7 +23,6 @@ import net.mcreator.elementure.procedures.NetherstarprismaticspawnerSpawningProc
 import net.mcreator.elementure.procedures.NetherstarCrustSetFireProcedure;
 import net.mcreator.elementure.init.ElementureModBlocks;
 
-import java.util.Random;
 import java.util.List;
 import java.util.Collections;
 
@@ -59,7 +59,7 @@ public class NetherstarPrismaticspawnerBlock extends Block {
 	}
 
 	@Override
-	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, Random random) {
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
 		super.tick(blockstate, world, pos, random);
 		int x = pos.getX();
 		int y = pos.getY();

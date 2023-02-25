@@ -4,5 +4,6 @@
     "all": "elementure:blocks/mountains_memorial",
     "particle": "elementure:blocks/mountains_memorial",
     "0": "elementure:blocks/mountains_memorial"
-  }
+  },
+  "render_type": "solid"
 }

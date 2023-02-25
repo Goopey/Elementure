@@ -19,12 +19,10 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.ChatType;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.advancements.AdvancementProgress;
 import net.minecraft.advancements.Advancement;
-import net.minecraft.Util;
 
 import net.mcreator.elementure.network.ElementureModVariables;
 import net.mcreator.elementure.init.ElementureModItems;
@@ -63,8 +61,7 @@ public class ArmageddonRightClickedOnBlockProcedure {
 			if (!world.isClientSide()) {
 				MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (_mcserv != null)
-					_mcserv.getPlayerList().broadcastMessage(new TextComponent("The abyssal corruption is spreading!"), ChatType.SYSTEM,
-							Util.NIL_UUID);
+					_mcserv.getPlayerList().broadcastSystemMessage(Component.literal("The abyssal corruption is spreading!"), false);
 			}
 		} else {
 			if (entity instanceof LivingEntity _entity)

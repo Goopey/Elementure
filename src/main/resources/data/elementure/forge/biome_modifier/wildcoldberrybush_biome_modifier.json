@@ -1,0 +1,16 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "frozen_ocean",
+    "deep_cold_ocean",
+    "frozen_river",
+    "snowy_plains",
+    "windswept_hills",
+    "cold_ocean",
+    "snowy_taiga",
+    "deep_frozen_ocean",
+    "snowy_beach"
+  ],
+  "features": "elementure:wildcoldberrybush",
+  "step": "vegetal_decoration"
+}

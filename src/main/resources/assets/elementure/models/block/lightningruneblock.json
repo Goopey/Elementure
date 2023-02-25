@@ -8,5 +8,6 @@
     "south": "elementure:blocks/lightningruneblock",
     "west": "elementure:blocks/lightningruneblock",
     "particle": "elementure:blocks/lightningruneblock"
-  }
+  },
+  "render_type": "solid"
 }

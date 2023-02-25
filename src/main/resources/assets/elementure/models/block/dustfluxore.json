@@ -8,5 +8,6 @@
     "south": "elementure:blocks/dustfluxore",
     "west": "elementure:blocks/dustfluxore",
     "particle": "elementure:blocks/dustfluxore"
-  }
+  },
+  "render_type": "solid"
 }

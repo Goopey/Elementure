@@ -1,0 +1,9 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "beach",
+    "snowy_beach"
+  ],
+  "features": "elementure:windyshores",
+  "step": "surface_structures"
+}

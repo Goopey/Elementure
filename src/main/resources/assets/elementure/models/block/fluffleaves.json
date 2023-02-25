@@ -8,5 +8,6 @@
     "south": "elementure:blocks/fluff_leaves",
     "west": "elementure:blocks/fluff_leaves",
     "particle": "elementure:blocks/fluff_leaves"
-  }
+  },
+  "render_type": "cutout"
 }

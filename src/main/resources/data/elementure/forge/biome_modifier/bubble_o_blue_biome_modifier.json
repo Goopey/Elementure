@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "elementure:bubble_o_blue",
+    "weight": 100,
+    "minCount": 2,
+    "maxCount": 3
+  }
+}

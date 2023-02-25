@@ -8,5 +8,6 @@
     "south": "elementure:blocks/bluethorn_leaves",
     "west": "elementure:blocks/bluethorn_leaves",
     "particle": "elementure:blocks/bluethorn_leaves"
-  }
+  },
+  "render_type": "cutout"
 }

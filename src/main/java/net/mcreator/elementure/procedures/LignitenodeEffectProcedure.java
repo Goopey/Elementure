@@ -6,6 +6,9 @@ import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.elementure.network.ElementureModVariables;
 import net.mcreator.elementure.init.ElementureModItems;
@@ -51,16 +54,24 @@ public class LignitenodeEffectProcedure {
 						.getItem() == ElementureModItems.SILVERLIGHTNINGCORE.get()) {
 					{
 						Entity _ent = entity;
-						if (!_ent.level.isClientSide() && _ent.getServer() != null)
-							_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+						if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+							_ent.getServer().getCommands().performPrefixedCommand(
+									new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+											_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+											_ent.getDisplayName(), _ent.level.getServer(), _ent),
 									(("summon elementure:staticsprite ~ ~ ~ {Tame:1, Owner:" + entity.getDisplayName().getString()) + "}"));
+						}
 					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent),
 								(("summon elementure:staticsprite ~ ~ ~ {Tame:1, Owner:" + entity.getDisplayName().getString()) + "}"));
+					}
 				}
 			}
 		}

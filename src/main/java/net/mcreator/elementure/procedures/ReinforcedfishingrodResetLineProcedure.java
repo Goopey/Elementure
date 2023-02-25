@@ -1,6 +1,6 @@
 package net.mcreator.elementure.procedures;
 
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
@@ -47,7 +47,7 @@ public class ReinforcedfishingrodResetLineProcedure {
 		itemstack.getOrCreateTag().putDouble("fishingPower", (3 + (new Object() {
 			public ItemStack getItemStack(int sltid, ItemStack _isc) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					_retval.set(capability.getStackInSlot(sltid).copy());
 				});
 				return _retval.get();
@@ -55,7 +55,7 @@ public class ReinforcedfishingrodResetLineProcedure {
 		}.getItemStack(0, itemstack)).getOrCreateTag().getDouble("fishingPower") + (new Object() {
 			public ItemStack getItemStack(int sltid, ItemStack _isc) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					_retval.set(capability.getStackInSlot(sltid).copy());
 				});
 				return _retval.get();
@@ -63,7 +63,7 @@ public class ReinforcedfishingrodResetLineProcedure {
 		}.getItemStack(1, itemstack)).getOrCreateTag().getDouble("fishingPower") + (new Object() {
 			public ItemStack getItemStack(int sltid, ItemStack _isc) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					_retval.set(capability.getStackInSlot(sltid).copy());
 				});
 				return _retval.get();
@@ -75,7 +75,7 @@ public class ReinforcedfishingrodResetLineProcedure {
 		itemstack.getOrCreateTag().putDouble("attractionPower", (0 + (new Object() {
 			public ItemStack getItemStack(int sltid, ItemStack _isc) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					_retval.set(capability.getStackInSlot(sltid).copy());
 				});
 				return _retval.get();
@@ -83,7 +83,7 @@ public class ReinforcedfishingrodResetLineProcedure {
 		}.getItemStack(0, itemstack)).getOrCreateTag().getDouble("attractionPower") + (new Object() {
 			public ItemStack getItemStack(int sltid, ItemStack _isc) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					_retval.set(capability.getStackInSlot(sltid).copy());
 				});
 				return _retval.get();
@@ -91,7 +91,7 @@ public class ReinforcedfishingrodResetLineProcedure {
 		}.getItemStack(1, itemstack)).getOrCreateTag().getDouble("attractionPower") + (new Object() {
 			public ItemStack getItemStack(int sltid, ItemStack _isc) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					_retval.set(capability.getStackInSlot(sltid).copy());
 				});
 				return _retval.get();
@@ -103,7 +103,7 @@ public class ReinforcedfishingrodResetLineProcedure {
 		itemstack.getOrCreateTag().putDouble("crateChance", (0 + (new Object() {
 			public ItemStack getItemStack(int sltid, ItemStack _isc) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					_retval.set(capability.getStackInSlot(sltid).copy());
 				});
 				return _retval.get();
@@ -111,7 +111,7 @@ public class ReinforcedfishingrodResetLineProcedure {
 		}.getItemStack(0, itemstack)).getOrCreateTag().getDouble("crateChance") + (new Object() {
 			public ItemStack getItemStack(int sltid, ItemStack _isc) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					_retval.set(capability.getStackInSlot(sltid).copy());
 				});
 				return _retval.get();
@@ -119,7 +119,7 @@ public class ReinforcedfishingrodResetLineProcedure {
 		}.getItemStack(1, itemstack)).getOrCreateTag().getDouble("crateChance") + (new Object() {
 			public ItemStack getItemStack(int sltid, ItemStack _isc) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					_retval.set(capability.getStackInSlot(sltid).copy());
 				});
 				return _retval.get();

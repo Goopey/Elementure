@@ -3,5 +3,6 @@
   "textures": {
     "texture": "elementure:blocks/nether_planks",
     "particle": "elementure:blocks/nether_planks"
-  }
+  },
+  "render_type": "solid"
 }

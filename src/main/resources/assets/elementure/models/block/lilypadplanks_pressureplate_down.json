@@ -2,5 +2,6 @@
   "parent": "block/pressure_plate_down",
   "textures": {
     "texture": "elementure:blocks/lilypad_plank"
-  }
+  },
+  "render_type": "solid"
 }

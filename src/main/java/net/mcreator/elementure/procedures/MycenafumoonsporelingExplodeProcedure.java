@@ -7,7 +7,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.Explosion;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
@@ -21,9 +21,9 @@ public class MycenafumoonsporelingExplodeProcedure {
 			MycenashroomcloudProcedure.execute(world, (entity.getX()), (entity.getY()), (entity.getZ()));
 		}
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands().performCommand(
+			_level.getServer().getCommands().performPrefixedCommand(
 					new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "",
-							new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
+							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					"/effect give @e[distance=0.1..4] elementure:mycenanspores 4 1");
 		if (world instanceof Level _level && !_level.isClientSide())
 			_level.explode(null, (entity.getX()), (entity.getY()), (entity.getZ()), (float) 1.5, Explosion.BlockInteraction.NONE);

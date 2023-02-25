@@ -5,7 +5,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
@@ -93,7 +92,7 @@ public class CreditsMusicGUI2Screen extends AbstractContainerScreen<CreditsMusic
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 169, this.topPos + 141, 72, 20, new TextComponent("Next Page"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 169, this.topPos + 141, 72, 20, Component.literal("Next Page"), e -> {
 		}) {
 			@Override
 			public void render(PoseStack ms, int gx, int gy, float ticks) {
@@ -101,7 +100,7 @@ public class CreditsMusicGUI2Screen extends AbstractContainerScreen<CreditsMusic
 					super.render(ms, gx, gy, ticks);
 			}
 		});
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 141, 93, 20, new TextComponent("Previous Page"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 141, 93, 20, Component.literal("Previous Page"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new CreditsMusicGUI2ButtonMessage(1, x, y, z));
 				CreditsMusicGUI2ButtonMessage.handleButtonAction(entity, 1, x, y, z);

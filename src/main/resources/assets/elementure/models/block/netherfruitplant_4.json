@@ -3,5 +3,6 @@
   "textures": {
     "crop": "elementure:blocks/netherfruit_plant_4",
     "particle": "elementure:blocks/netherfruit_plant_4"
-  }
+  },
+  "render_type": "cutout"
 }

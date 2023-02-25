@@ -8,5 +8,6 @@
     "south": "elementure:blocks/nebulaturfside",
     "west": "elementure:blocks/nebulaturfside",
     "particle": "elementure:blocks/netherum_carpet"
-  }
+  },
+  "render_type": "solid"
 }

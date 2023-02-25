@@ -76,7 +76,7 @@ public class DiverscrownBottomRootsProcedure {
 				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
-						return blockEntity.getTileData().getBoolean(tag);
+						return blockEntity.getPersistentData().getBoolean(tag);
 					return false;
 				}
 			}.getValue(world, new BlockPos(x + xOff * height, BEDROCK_LEVEL, z + zOff * height), "diverscrowncenterUsed"))) {
@@ -87,7 +87,7 @@ public class DiverscrownBottomRootsProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("diverscrownOmeganRole", 1);
+						_blockEntity.getPersistentData().putDouble("diverscrownOmeganRole", 1);
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -103,7 +103,7 @@ public class DiverscrownBottomRootsProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("diverscrownOmeganRole", 1);
+							_blockEntity.getPersistentData().putDouble("diverscrownOmeganRole", 1);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}

@@ -8,5 +8,6 @@
     "south": "elementure:blocks/silvershores_sand",
     "west": "elementure:blocks/silvershores_sand",
     "particle": "elementure:blocks/silvershores_sand"
-  }
+  },
+  "render_type": "solid"
 }

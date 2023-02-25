@@ -5,7 +5,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.components.Button;
@@ -240,7 +239,7 @@ public class FishingrecordShellfishScreen extends AbstractContainerScreen<Fishin
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 127, this.topPos + 140, 70, 20, new TextComponent("Next Page"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 127, this.topPos + 140, 70, 20, Component.literal("Next Page"), e -> {
 			if (DeactivateSlotProcedure.execute()) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new FishingrecordShellfishButtonMessage(0, x, y, z));
 				FishingrecordShellfishButtonMessage.handleButtonAction(entity, 0, x, y, z);

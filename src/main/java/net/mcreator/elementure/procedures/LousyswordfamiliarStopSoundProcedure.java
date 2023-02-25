@@ -1,6 +1,9 @@
 package net.mcreator.elementure.procedures;
 
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 public class LousyswordfamiliarStopSoundProcedure {
 	public static void execute(Entity sourceentity) {
@@ -8,9 +11,12 @@ public class LousyswordfamiliarStopSoundProcedure {
 			return;
 		{
 			Entity _ent = sourceentity;
-			if (!_ent.level.isClientSide() && _ent.getServer() != null)
-				_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-						"stopsound @s music elementure:cucuiganon");
+			if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+				_ent.getServer().getCommands()
+						.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+								_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+								_ent.getDisplayName(), _ent.level.getServer(), _ent), "stopsound @s music elementure:cucuiganon");
+			}
 		}
 	}
 }

@@ -8,7 +8,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.network.chat.TextComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.CommandSource;
 
@@ -32,9 +32,9 @@ public class BrontiumarmorFullArmorEffectProcedure {
 										? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD)
 										: ItemStack.EMPTY).getOrCreateTag().getDouble("previousTimeEssence")) {
 							if (world instanceof ServerLevel _level)
-								_level.getServer().getCommands().performCommand(
+								_level.getServer().getCommands().performPrefixedCommand(
 										new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())),
-												Vec2.ZERO, _level, 4, "", new TextComponent(""), _level.getServer(), null).withSuppressedOutput(),
+												Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 										"effect give @e[distance=0.1..40] minecraft:slowness 10 2");
 						}
 						(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)

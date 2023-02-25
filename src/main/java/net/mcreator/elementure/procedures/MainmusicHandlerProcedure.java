@@ -7,6 +7,9 @@ import net.minecraftforge.event.TickEvent;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.CommandSource;
 
 import net.mcreator.elementure.network.ElementureModVariables;
 
@@ -36,123 +39,200 @@ public class MainmusicHandlerProcedure {
 					.orElse(new ElementureModVariables.PlayerVariables())).musicName).equals("")) {
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-								"stopsound @s music minecraft:music.creative");
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent), "stopsound @s music minecraft:music.creative");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-								"stopsound @s music minecraft:music.game");
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent), "stopsound @s music minecraft:music.game");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-								"stopsound @s music minecraft:music.end");
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent), "stopsound @s music minecraft:music.end");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-								"stopsound @s music minecraft:music.credits");
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent), "stopsound @s music minecraft:music.credits");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-								"stopsound @s music minecraft:music.menu");
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent), "stopsound @s music minecraft:music.menu");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-								"stopsound @s music minecraft:music.dragon");
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands()
+								.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent), "stopsound @s music minecraft:music.dragon");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent),
 								"stopsound @s music minecraft:music.nether.basalt_deltas");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent),
 								"stopsound @s music minecraft:music.nether.crimson_forest");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent),
 								"stopsound @s music minecraft:music.nether.nether_wastes");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent),
 								"stopsound @s music minecraft:music.nether.soul_sand_valley");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent),
 								"stopsound @s music minecraft:music.nether.warped_forest");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent),
 								"stopsound @s music minecraft:music.overworld.dripstone_caves");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent),
 								"stopsound @s music minecraft:music.overworld.frozen_peaks");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-								"stopsound @s music minecraft:music.overworld.grove");
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+												_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+												_ent.getDisplayName(), _ent.level.getServer(), _ent),
+										"stopsound @s music minecraft:music.overworld.grove");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent),
 								"stopsound @s music minecraft:music.overworld.jagged_peaks");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent),
 								"stopsound @s music minecraft:music.overworld.lush_caves");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-								"stopsound @s music minecraft:music.overworld.meadow");
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+												_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+												_ent.getDisplayName(), _ent.level.getServer(), _ent),
+										"stopsound @s music minecraft:music.overworld.meadow");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent),
 								"stopsound @s music minecraft:music.overworld.snowy_slopes");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands().performPrefixedCommand(
+								new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+										_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+										_ent.getDisplayName(), _ent.level.getServer(), _ent),
 								"stopsound @s music minecraft:music.overworld.snowy_stony_peaks");
+					}
 				}
 				{
 					Entity _ent = entity;
-					if (!_ent.level.isClientSide() && _ent.getServer() != null)
-						_ent.getServer().getCommands().performCommand(_ent.createCommandSourceStack().withSuppressedOutput().withPermission(4),
-								"stopsound @s music minecraft:music.under_water");
+					if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+						_ent.getServer().getCommands()
+								.performPrefixedCommand(
+										new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
+												_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
+												_ent.getDisplayName(), _ent.level.getServer(), _ent),
+										"stopsound @s music minecraft:music.under_water");
+					}
 				}
 			}
 		}

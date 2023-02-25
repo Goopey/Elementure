@@ -7,7 +7,6 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.CrabbobberAssignPowerProcedure;
@@ -23,7 +22,7 @@ public class CrabbobberItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("A special bobber made to grapple shellfish and the like."));
+		list.add(Component.literal("A special bobber made to grapple shellfish and the like."));
 	}
 
 	@Override

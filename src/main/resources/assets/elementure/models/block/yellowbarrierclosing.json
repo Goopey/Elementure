@@ -4,5 +4,6 @@
     "all": "elementure:blocks/yellow_barrier",
     "particle": "elementure:blocks/yellow_barrier",
     "0": "elementure:blocks/yellow_barrier"
-  }
+  },
+  "render_type": "translucent"
 }

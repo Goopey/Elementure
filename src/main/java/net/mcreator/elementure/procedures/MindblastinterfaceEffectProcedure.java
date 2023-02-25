@@ -4,7 +4,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
-import net.minecraftforge.common.MinecraftForge;
 
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
@@ -22,6 +21,7 @@ import net.minecraft.core.Registry;
 import net.mcreator.elementure.network.ElementureModVariables;
 import net.mcreator.elementure.init.ElementureModParticleTypes;
 import net.mcreator.elementure.init.ElementureModItems;
+import net.mcreator.elementure.ElementureMod;
 
 import javax.annotation.Nullable;
 
@@ -80,43 +80,21 @@ public class MindblastinterfaceEffectProcedure {
 							entityiterator.setDeltaMovement(
 									new Vec3(((Math.random() - 0.5) * 2), ((Math.random() - 0.5) * 2), ((Math.random() - 0.5) * 2)));
 							for (int index0 = 0; index0 < (int) (16); index0++) {
-								new Object() {
-									private int ticks = 0;
-									private float waitTicks;
-									private LevelAccessor world;
-
-									public void start(LevelAccessor world, int waitTicks) {
-										this.waitTicks = waitTicks;
-										MinecraftForge.EVENT_BUS.register(this);
-										this.world = world;
-									}
-
-									@SubscribeEvent
-									public void tick(TickEvent.ServerTickEvent event) {
-										if (event.phase == TickEvent.Phase.END) {
-											this.ticks += 1;
-											if (this.ticks >= this.waitTicks)
-												run();
+								ElementureMod.queueServerWork((int) spin_delay, () -> {
+									{
+										Entity _ent = entityiterator;
+										_ent.setYRot((float) (entityiterator.getYRot() + Math.random() * 60 - 30));
+										_ent.setXRot(0);
+										_ent.setYBodyRot(_ent.getYRot());
+										_ent.setYHeadRot(_ent.getYRot());
+										_ent.yRotO = _ent.getYRot();
+										_ent.xRotO = _ent.getXRot();
+										if (_ent instanceof LivingEntity _entity) {
+											_entity.yBodyRotO = _entity.getYRot();
+											_entity.yHeadRotO = _entity.getYRot();
 										}
 									}
-
-									private void run() {
-										{
-											Entity _ent = entityiterator;
-											_ent.setYRot((float) (entityiterator.getYRot() + Math.random() * 60 - 30));
-											_ent.setXRot(0);
-											_ent.setYBodyRot(_ent.getYRot());
-											_ent.setYHeadRot(_ent.getYRot());
-											_ent.yRotO = _ent.getYRot();
-											_ent.xRotO = _ent.getXRot();
-											if (_ent instanceof LivingEntity _entity) {
-												_entity.yBodyRotO = _entity.getYRot();
-												_entity.yHeadRotO = _entity.getYRot();
-											}
-										}
-										MinecraftForge.EVENT_BUS.unregister(this);
-									}
-								}.start(world, (int) spin_delay);
+								});
 								spin_delay = spin_delay + 1;
 							}
 						}

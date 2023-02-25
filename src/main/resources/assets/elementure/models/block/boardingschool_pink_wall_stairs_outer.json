@@ -4,5 +4,6 @@
     "bottom": "elementure:blocks/boardingschool_pinkwall",
     "top": "elementure:blocks/boardingschool_pinkwall",
     "side": "elementure:blocks/boardingschool_pinkwall"
-  }
+  },
+  "render_type": "solid"
 }

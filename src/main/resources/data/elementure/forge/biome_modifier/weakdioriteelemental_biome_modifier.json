@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "elementure:weakdioriteelemental",
+    "weight": 52,
+    "minCount": 3,
+    "maxCount": 7
+  }
+}

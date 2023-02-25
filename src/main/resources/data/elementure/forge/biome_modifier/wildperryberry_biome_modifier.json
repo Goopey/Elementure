@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "mushroom_fields",
+    "frozen_river",
+    "stony_shore",
+    "beach",
+    "river",
+    "swamp",
+    "snowy_beach"
+  ],
+  "features": "elementure:wildperryberry",
+  "step": "vegetal_decoration"
+}

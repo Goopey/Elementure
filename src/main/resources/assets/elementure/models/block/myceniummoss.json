@@ -6,5 +6,6 @@
     "0": "elementure:blocks/mycenium_moss",
     "1": "elementure:blocks/mycenium_moss_side",
     "missing": "elementure:blocks/mycenium_moss"
-  }
+  },
+  "render_type": "cutout_mipped"
 }

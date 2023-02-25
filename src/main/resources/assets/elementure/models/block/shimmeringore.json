@@ -8,5 +8,6 @@
     "south": "elementure:blocks/shimmering_ore",
     "west": "elementure:blocks/shimmering_ore",
     "particle": "elementure:blocks/shimmering_ore"
-  }
+  },
+  "render_type": "solid"
 }

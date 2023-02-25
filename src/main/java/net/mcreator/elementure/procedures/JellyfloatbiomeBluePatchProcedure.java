@@ -28,7 +28,7 @@ public class JellyfloatbiomeBluePatchProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putBoolean("jellyfloatUsed", (true));
+							_blockEntity.getPersistentData().putBoolean("jellyfloatUsed", (true));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -63,7 +63,7 @@ public class JellyfloatbiomeBluePatchProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getTileData().putBoolean("jellyfloatUsed", (true));
+				_blockEntity.getPersistentData().putBoolean("jellyfloatUsed", (true));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}

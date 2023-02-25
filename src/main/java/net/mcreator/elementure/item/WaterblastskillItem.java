@@ -48,7 +48,6 @@ public class WaterblastskillItem extends Item {
 				WaterblastskillEntity entityarrow = WaterblastskillEntity.shoot(world, entity, world.getRandom(), 1f, 2.5, 4);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				WaterblastskillConsumeProcedure.execute(world, entity);
 			}
 		}

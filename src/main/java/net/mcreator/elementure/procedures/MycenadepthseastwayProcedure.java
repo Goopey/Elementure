@@ -15,7 +15,7 @@ public class MycenadepthseastwayProcedure {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
 				if (blockEntity != null)
-					return blockEntity.getTileData().getDouble(tag);
+					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "wait") > 1) {
@@ -25,7 +25,7 @@ public class MycenadepthseastwayProcedure {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getDouble(tag);
+								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
 					}.getValue(world, new BlockPos(x, y, z), "w")) / 2) {
@@ -33,28 +33,28 @@ public class MycenadepthseastwayProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "secretRoomNumber") < 2 && Math.random() < 0.05 && (new Object() {
 					public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getBoolean(tag);
+							return blockEntity.getPersistentData().getBoolean(tag);
 						return false;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "secretRoom")) == false && (new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "w") == 3 || new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "w") == 4)) {
@@ -68,7 +68,7 @@ public class MycenadepthseastwayProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putBoolean("secretRoom", (true));
+							_blockEntity.getPersistentData().putBoolean("secretRoom", (true));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -77,7 +77,7 @@ public class MycenadepthseastwayProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putBoolean("secretRoom", (true));
+							_blockEntity.getPersistentData().putBoolean("secretRoom", (true));
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -86,11 +86,11 @@ public class MycenadepthseastwayProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("secretRoomNumber", (new Object() {
+							_blockEntity.getPersistentData().putDouble("secretRoomNumber", (new Object() {
 								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getDouble(tag);
+										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
 							}.getValue(world, new BlockPos(x, y, z), "secretRoomNumber") + 1));
@@ -102,11 +102,11 @@ public class MycenadepthseastwayProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("secretRoomNumber", (new Object() {
+							_blockEntity.getPersistentData().putDouble("secretRoomNumber", (new Object() {
 								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getDouble(tag);
+										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
 							}.getValue(world, new BlockPos(x, y, z), "secretRoomNumber") + 1));
@@ -120,7 +120,7 @@ public class MycenadepthseastwayProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("alphanGenRole", 10);
+						_blockEntity.getPersistentData().putDouble("alphanGenRole", 10);
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -129,11 +129,11 @@ public class MycenadepthseastwayProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("w", (new Object() {
+						_blockEntity.getPersistentData().putDouble("w", (new Object() {
 							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getDouble(tag);
+									return blockEntity.getPersistentData().getDouble(tag);
 								return -1;
 							}
 						}.getValue(world, new BlockPos(x, y, z), "w") + 1));
@@ -145,11 +145,11 @@ public class MycenadepthseastwayProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("roomW", (new Object() {
+						_blockEntity.getPersistentData().putDouble("roomW", (new Object() {
 							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getDouble(tag);
+									return blockEntity.getPersistentData().getDouble(tag);
 								return -1;
 							}
 						}.getValue(world, new BlockPos(x, y, z), "roomW")));
@@ -161,11 +161,11 @@ public class MycenadepthseastwayProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putBoolean("stairway", (new Object() {
+						_blockEntity.getPersistentData().putBoolean("stairway", (new Object() {
 							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getBoolean(tag);
+									return blockEntity.getPersistentData().getBoolean(tag);
 								return false;
 							}
 						}.getValue(world, new BlockPos(x, y, z), "stairway")));
@@ -177,11 +177,11 @@ public class MycenadepthseastwayProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putBoolean("secretRoom", (new Object() {
+						_blockEntity.getPersistentData().putBoolean("secretRoom", (new Object() {
 							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getBoolean(tag);
+									return blockEntity.getPersistentData().getBoolean(tag);
 								return false;
 							}
 						}.getValue(world, new BlockPos(x, y, z), "secretRoom")));
@@ -193,11 +193,11 @@ public class MycenadepthseastwayProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("secretRoomNumber", (new Object() {
+						_blockEntity.getPersistentData().putDouble("secretRoomNumber", (new Object() {
 							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getDouble(tag);
+									return blockEntity.getPersistentData().getDouble(tag);
 								return -1;
 							}
 						}.getValue(world, new BlockPos(x, y, z), "secretRoomNumber")));
@@ -209,11 +209,11 @@ public class MycenadepthseastwayProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("roomDirection", (new Object() {
+						_blockEntity.getPersistentData().putDouble("roomDirection", (new Object() {
 							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getDouble(tag);
+									return blockEntity.getPersistentData().getDouble(tag);
 								return -1;
 							}
 						}.getValue(world, new BlockPos(x, y, z), "roomDirection")));
@@ -229,7 +229,7 @@ public class MycenadepthseastwayProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("alphanGenRole", 17);
+							_blockEntity.getPersistentData().putDouble("alphanGenRole", 17);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -240,7 +240,7 @@ public class MycenadepthseastwayProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("alphanGenRole", 20);
+								_blockEntity.getPersistentData().putDouble("alphanGenRole", 20);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -249,7 +249,7 @@ public class MycenadepthseastwayProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("weight", 10);
+								_blockEntity.getPersistentData().putDouble("weight", 10);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -259,7 +259,7 @@ public class MycenadepthseastwayProcedure {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(x, y, z), "stairway")) == true) {
@@ -272,7 +272,7 @@ public class MycenadepthseastwayProcedure {
 								BlockEntity _blockEntity = world.getBlockEntity(_bp);
 								BlockState _bs = world.getBlockState(_bp);
 								if (_blockEntity != null)
-									_blockEntity.getTileData().putDouble("alphanGenRole", 14);
+									_blockEntity.getPersistentData().putDouble("alphanGenRole", 14);
 								if (world instanceof Level _level)
 									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 							}
@@ -284,7 +284,7 @@ public class MycenadepthseastwayProcedure {
 								BlockEntity _blockEntity = world.getBlockEntity(_bp);
 								BlockState _bs = world.getBlockState(_bp);
 								if (_blockEntity != null)
-									_blockEntity.getTileData().putDouble("alphanGenRole", 8);
+									_blockEntity.getPersistentData().putDouble("alphanGenRole", 8);
 								if (world instanceof Level _level)
 									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 							}
@@ -293,7 +293,7 @@ public class MycenadepthseastwayProcedure {
 								BlockEntity _blockEntity = world.getBlockEntity(_bp);
 								BlockState _bs = world.getBlockState(_bp);
 								if (_blockEntity != null)
-									_blockEntity.getTileData().putBoolean("stairway", (false));
+									_blockEntity.getPersistentData().putBoolean("stairway", (false));
 								if (world instanceof Level _level)
 									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 							}
@@ -308,7 +308,7 @@ public class MycenadepthseastwayProcedure {
 								BlockEntity _blockEntity = world.getBlockEntity(_bp);
 								BlockState _bs = world.getBlockState(_bp);
 								if (_blockEntity != null)
-									_blockEntity.getTileData().putDouble("alphanGenRole", 14);
+									_blockEntity.getPersistentData().putDouble("alphanGenRole", 14);
 								if (world instanceof Level _level)
 									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 							}
@@ -319,7 +319,7 @@ public class MycenadepthseastwayProcedure {
 								BlockEntity _blockEntity = world.getBlockEntity(_bp);
 								BlockState _bs = world.getBlockState(_bp);
 								if (_blockEntity != null)
-									_blockEntity.getTileData().putDouble("alphanGenRole", 7);
+									_blockEntity.getPersistentData().putDouble("alphanGenRole", 7);
 								if (world instanceof Level _level)
 									_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 							}
@@ -328,11 +328,11 @@ public class MycenadepthseastwayProcedure {
 								BlockEntity _blockEntity = world.getBlockEntity(_bp);
 								BlockState _bs = world.getBlockState(_bp);
 								if (_blockEntity != null)
-									_blockEntity.getTileData().putBoolean("stairway", (new Object() {
+									_blockEntity.getPersistentData().putBoolean("stairway", (new Object() {
 										public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 											BlockEntity blockEntity = world.getBlockEntity(pos);
 											if (blockEntity != null)
-												return blockEntity.getTileData().getBoolean(tag);
+												return blockEntity.getPersistentData().getBoolean(tag);
 											return false;
 										}
 									}.getValue(world, new BlockPos(x, y, z), "stairway")));
@@ -347,7 +347,7 @@ public class MycenadepthseastwayProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("direction", 5);
+						_blockEntity.getPersistentData().putDouble("direction", 5);
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -356,14 +356,14 @@ public class MycenadepthseastwayProcedure {
 					public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getBoolean(tag);
+							return blockEntity.getPersistentData().getBoolean(tag);
 						return false;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "stairway")) == true && Math.random() > 0.33 + ((new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "roomW")) - 1) / 3) {
@@ -376,7 +376,7 @@ public class MycenadepthseastwayProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("alphanGenRole", 14);
+								_blockEntity.getPersistentData().putDouble("alphanGenRole", 14);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -388,7 +388,7 @@ public class MycenadepthseastwayProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("alphanGenRole", 8);
+								_blockEntity.getPersistentData().putDouble("alphanGenRole", 8);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -397,7 +397,7 @@ public class MycenadepthseastwayProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putBoolean("stairway", (false));
+								_blockEntity.getPersistentData().putBoolean("stairway", (false));
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -412,7 +412,7 @@ public class MycenadepthseastwayProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("alphanGenRole", 14);
+								_blockEntity.getPersistentData().putDouble("alphanGenRole", 14);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -420,7 +420,7 @@ public class MycenadepthseastwayProcedure {
 							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getBoolean(tag);
+									return blockEntity.getPersistentData().getBoolean(tag);
 								return false;
 							}
 						}.getValue(world, new BlockPos(x, y, z), "stairway")) == true) {
@@ -433,7 +433,7 @@ public class MycenadepthseastwayProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putDouble("alphanGenRole", 7);
+								_blockEntity.getPersistentData().putDouble("alphanGenRole", 7);
 							if (world instanceof Level _level)
 								_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 						}
@@ -442,11 +442,11 @@ public class MycenadepthseastwayProcedure {
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)
-								_blockEntity.getTileData().putBoolean("stairway", (new Object() {
+								_blockEntity.getPersistentData().putBoolean("stairway", (new Object() {
 									public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 										BlockEntity blockEntity = world.getBlockEntity(pos);
 										if (blockEntity != null)
-											return blockEntity.getTileData().getBoolean(tag);
+											return blockEntity.getPersistentData().getBoolean(tag);
 										return false;
 									}
 								}.getValue(world, new BlockPos(x, y, z), "stairway")));
@@ -460,11 +460,11 @@ public class MycenadepthseastwayProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("secretRoomNumber", (new Object() {
+						_blockEntity.getPersistentData().putDouble("secretRoomNumber", (new Object() {
 							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getDouble(tag);
+									return blockEntity.getPersistentData().getDouble(tag);
 								return -1;
 							}
 						}.getValue(world, new BlockPos(x, y, z), "secretRoomNumber")));
@@ -476,11 +476,11 @@ public class MycenadepthseastwayProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("roomW", (new Object() {
+						_blockEntity.getPersistentData().putDouble("roomW", (new Object() {
 							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getDouble(tag);
+									return blockEntity.getPersistentData().getDouble(tag);
 								return -1;
 							}
 						}.getValue(world, new BlockPos(x, y, z), "roomW")));
@@ -492,11 +492,11 @@ public class MycenadepthseastwayProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("roomDirection", (new Object() {
+						_blockEntity.getPersistentData().putDouble("roomDirection", (new Object() {
 							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
-									return blockEntity.getTileData().getDouble(tag);
+									return blockEntity.getPersistentData().getDouble(tag);
 								return -1;
 							}
 						}.getValue(world, new BlockPos(x, y, z), "roomDirection")));
@@ -507,7 +507,7 @@ public class MycenadepthseastwayProcedure {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
-							return blockEntity.getTileData().getDouble(tag);
+							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "roomDirection") > 0) {
@@ -516,11 +516,11 @@ public class MycenadepthseastwayProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("direction", (new Object() {
+							_blockEntity.getPersistentData().putDouble("direction", (new Object() {
 								public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 									BlockEntity blockEntity = world.getBlockEntity(pos);
 									if (blockEntity != null)
-										return blockEntity.getTileData().getDouble(tag);
+										return blockEntity.getPersistentData().getDouble(tag);
 									return -1;
 								}
 							}.getValue(world, new BlockPos(x, y, z), "roomDirection")));
@@ -533,7 +533,7 @@ public class MycenadepthseastwayProcedure {
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
 						BlockState _bs = world.getBlockState(_bp);
 						if (_blockEntity != null)
-							_blockEntity.getTileData().putDouble("direction", 4);
+							_blockEntity.getPersistentData().putDouble("direction", 4);
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
@@ -546,11 +546,11 @@ public class MycenadepthseastwayProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putBoolean("isLastFloor", (new Object() {
+					_blockEntity.getPersistentData().putBoolean("isLastFloor", (new Object() {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(x, y, z), "isLastFloor")));
@@ -562,11 +562,11 @@ public class MycenadepthseastwayProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putBoolean("isLastFloor", (new Object() {
+					_blockEntity.getPersistentData().putBoolean("isLastFloor", (new Object() {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getBoolean(tag);
+								return blockEntity.getPersistentData().getBoolean(tag);
 							return false;
 						}
 					}.getValue(world, new BlockPos(x, y, z), "isLastFloor")));
@@ -579,11 +579,11 @@ public class MycenadepthseastwayProcedure {
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
-					_blockEntity.getTileData().putDouble("wait", (new Object() {
+					_blockEntity.getPersistentData().putDouble("wait", (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
 							if (blockEntity != null)
-								return blockEntity.getTileData().getDouble(tag);
+								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
 					}.getValue(world, new BlockPos(x, y, z), "wait") + 1));

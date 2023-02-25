@@ -3,9 +3,6 @@ package net.mcreator.elementure.block;
 
 import org.checkerframework.checker.units.qual.s;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
@@ -38,15 +35,11 @@ import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.Containers;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.OceanmemorialTeleportProcedure;
-import net.mcreator.elementure.init.ElementureModBlocks;
 import net.mcreator.elementure.block.entity.OceanmemorialBlockEntity;
 
 import java.util.List;
@@ -65,7 +58,7 @@ public class OceanmemorialBlock extends Block implements SimpleWaterloggedBlock,
 	@Override
 	public void appendHoverText(ItemStack itemstack, BlockGetter world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("A special kind of block which allows you to remember a place and teleport back there."));
+		list.add(Component.literal("A special kind of block which allows you to remember a place and teleport back there."));
 	}
 
 	@Override
@@ -183,10 +176,5 @@ public class OceanmemorialBlock extends Block implements SimpleWaterloggedBlock,
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;
-	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.OCEANMEMORIAL.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

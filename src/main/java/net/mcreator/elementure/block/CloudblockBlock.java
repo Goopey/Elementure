@@ -1,9 +1,6 @@
 
 package net.mcreator.elementure.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.level.material.Material;
@@ -27,11 +24,8 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.CloudsSlowProcedure;
-import net.mcreator.elementure.init.ElementureModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -92,7 +86,7 @@ public class CloudblockBlock extends Block implements SimpleWaterloggedBlock
 	}
 
 	@Override
-	public BlockPathTypes getAiPathNodeType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
+	public BlockPathTypes getBlockPathType(BlockState state, BlockGetter world, BlockPos pos, Mob entity) {
 		return BlockPathTypes.WALKABLE;
 	}
 
@@ -109,10 +103,4 @@ public class CloudblockBlock extends Block implements SimpleWaterloggedBlock
 		super.entityInside(blockstate, world, pos, entity);
 		CloudsSlowProcedure.execute(entity);
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.CLOUDBLOCK.get(), renderType -> renderType == RenderType.translucent());
-	}
-
 }

@@ -1,9 +1,6 @@
 
 package net.mcreator.elementure.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -15,16 +12,13 @@ import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
 
 import net.mcreator.elementure.procedures.Crackingice3BreakingProcedure;
-import net.mcreator.elementure.init.ElementureModBlocks;
 
 public class Crackingice3Block extends Block {
 	public Crackingice3Block() {
 		super(BlockBehaviour.Properties.of(Material.ICE_SOLID).sound(SoundType.GLASS).strength(0.5f, 2.5f).requiresCorrectToolForDrops().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false).noDrops());
+				.isRedstoneConductor((bs, br, bp) -> false).noLootTable());
 	}
 
 	@Override
@@ -44,10 +38,4 @@ public class Crackingice3Block extends Block {
 		super.stepOn(world, pos, blockstate, entity);
 		Crackingice3BreakingProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.CRACKINGICE_3.get(), renderType -> renderType == RenderType.translucent());
-	}
-
 }

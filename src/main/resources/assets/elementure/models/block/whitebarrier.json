@@ -4,5 +4,6 @@
     "all": "elementure:blocks/white_barrier",
     "particle": "elementure:blocks/white_barrier",
     "0": "elementure:blocks/white_barrier"
-  }
+  },
+  "render_type": "translucent"
 }

@@ -8,5 +8,6 @@
     "south": "elementure:blocks/radiantobsidian",
     "west": "elementure:blocks/radiantobsidian",
     "particle": "elementure:blocks/radiantobsidian"
-  }
+  },
+  "render_type": "solid"
 }

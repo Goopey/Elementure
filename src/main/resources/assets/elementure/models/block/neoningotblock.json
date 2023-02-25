@@ -8,5 +8,6 @@
     "south": "elementure:blocks/neonoreblock",
     "west": "elementure:blocks/neonoreblock",
     "particle": "elementure:blocks/neonoreblock"
-  }
+  },
+  "render_type": "solid"
 }

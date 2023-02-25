@@ -48,7 +48,6 @@ public class LightningblastskillItem extends Item {
 				LightningblastskillEntity entityarrow = LightningblastskillEntity.shoot(world, entity, world.getRandom(), 1.5f, 4.5, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				LightningblastskillConsumeProcedure.execute(entity);
 			}
 		}

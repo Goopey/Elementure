@@ -8,5 +8,6 @@
     "south": "elementure:blocks/homegatesides",
     "west": "elementure:blocks/homegatesides",
     "particle": "elementure:blocks/homegateside"
-  }
+  },
+  "render_type": "solid"
 }

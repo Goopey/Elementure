@@ -4,5 +4,6 @@
     "all": "elementure:blocks/windyshores_memorial",
     "particle": "elementure:blocks/windyshores_memorial",
     "0": "elementure:blocks/windyshores_memorial"
-  }
+  },
+  "render_type": "solid"
 }

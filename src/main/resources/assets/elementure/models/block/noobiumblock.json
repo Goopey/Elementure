@@ -8,5 +8,6 @@
     "south": "elementure:blocks/noobiumblock",
     "west": "elementure:blocks/noobiumblock",
     "particle": "elementure:blocks/noobiumblock"
-  }
+  },
+  "render_type": "solid"
 }

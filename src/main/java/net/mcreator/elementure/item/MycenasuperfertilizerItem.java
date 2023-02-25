@@ -9,7 +9,6 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.MycenasuperfertilizerSummonMycenaShroomlordProcedure;
@@ -30,7 +29,7 @@ public class MycenasuperfertilizerItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent(
+		list.add(Component.literal(
 				"Boss item : It's a mushroom surrounded with so much bone-meal, it's sure to grow to huge proportions as soon as you plant it."));
 	}
 

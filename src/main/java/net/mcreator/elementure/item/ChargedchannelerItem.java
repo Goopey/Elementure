@@ -17,7 +17,6 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
@@ -43,7 +42,7 @@ public class ChargedchannelerItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(
-				new TextComponent("Allows you to cast an electrifying lightning bolt on your enemies which electrocutes them and zaps around more."));
+				Component.literal("Allows you to cast an electrifying lightning bolt on your enemies which electrocutes them and zaps around more."));
 	}
 
 	@Override
@@ -73,7 +72,6 @@ public class ChargedchannelerItem extends Item {
 				ChargedchannelerEntity entityarrow = ChargedchannelerEntity.shoot(world, entity, world.getRandom(), 1.4000000000000001f, 3.7, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				ChargedchannelerConsumeProcedure.execute(entity);
 			}
 		}

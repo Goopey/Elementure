@@ -8,5 +8,6 @@
     "south": "elementure:blocks/old_bricks",
     "west": "elementure:blocks/old_bricks",
     "particle": "elementure:blocks/old_bricks"
-  }
+  },
+  "render_type": "solid"
 }

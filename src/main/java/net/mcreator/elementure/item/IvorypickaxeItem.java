@@ -11,7 +11,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 
 import net.mcreator.elementure.procedures.IvorypickaxeInstamineIvoryProcedure;
@@ -52,7 +51,7 @@ public class IvorypickaxeItem extends PickaxeItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Right-click to mine ivory instantaneously."));
+		list.add(Component.literal("Right-click to mine ivory instantaneously."));
 	}
 
 	@Override

@@ -1,16 +1,15 @@
 
 /*
- *    MCreator note: This file will be REGENERATED on each build.
+ *	MCreator note: This file will be REGENERATED on each build.
  */
 package net.mcreator.elementure.init;
 
-import net.minecraftforge.network.IContainerFactory;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.registries.RegistryObject;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.common.extensions.IForgeMenuType;
 
 import net.minecraft.world.inventory.MenuType;
-import net.minecraft.world.inventory.AbstractContainerMenu;
 
 import net.mcreator.elementure.world.inventory.WeaponaltarGUIMenu;
 import net.mcreator.elementure.world.inventory.SuitcaseGUIMenu;
@@ -49,96 +48,82 @@ import net.mcreator.elementure.world.inventory.CrabpotGUIMenu;
 import net.mcreator.elementure.world.inventory.BirthingmoduleGUIMenu;
 import net.mcreator.elementure.world.inventory.BeltpouchGUIMenu;
 import net.mcreator.elementure.world.inventory.AgedrosaryGUIMenu;
+import net.mcreator.elementure.ElementureMod;
 
-import java.util.List;
-import java.util.ArrayList;
-
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ElementureModMenus {
-	private static final List<MenuType<?>> REGISTRY = new ArrayList<>();
-	public static final MenuType<DemonheartGUIMenu> DEMONHEART_GUI = register("demonheart_gui",
-			(id, inv, extraData) -> new DemonheartGUIMenu(id, inv, extraData));
-	public static final MenuType<MycenashroomvillagerGUIMenu> MYCENASHROOMVILLAGER_GUI = register("mycenashroomvillager_gui",
-			(id, inv, extraData) -> new MycenashroomvillagerGUIMenu(id, inv, extraData));
-	public static final MenuType<MycenashroomvillagerGUI2Menu> MYCENASHROOMVILLAGER_GUI_2 = register("mycenashroomvillager_gui_2",
-			(id, inv, extraData) -> new MycenashroomvillagerGUI2Menu(id, inv, extraData));
-	public static final MenuType<RelicinventoryMenu> RELICINVENTORY = register("relicinventory",
-			(id, inv, extraData) -> new RelicinventoryMenu(id, inv, extraData));
-	public static final MenuType<AgedrosaryGUIMenu> AGEDROSARY_GUI = register("agedrosary_gui",
-			(id, inv, extraData) -> new AgedrosaryGUIMenu(id, inv, extraData));
-	public static final MenuType<SuitcaseGUIMenu> SUITCASE_GUI = register("suitcase_gui",
-			(id, inv, extraData) -> new SuitcaseGUIMenu(id, inv, extraData));
-	public static final MenuType<PouchGUIMenu> POUCH_GUI = register("pouch_gui", (id, inv, extraData) -> new PouchGUIMenu(id, inv, extraData));
-	public static final MenuType<MemorymatrixGuiMenu> MEMORYMATRIX_GUI = register("memorymatrix_gui",
-			(id, inv, extraData) -> new MemorymatrixGuiMenu(id, inv, extraData));
-	public static final MenuType<BirthingmoduleGUIMenu> BIRTHINGMODULE_GUI = register("birthingmodule_gui",
-			(id, inv, extraData) -> new BirthingmoduleGUIMenu(id, inv, extraData));
-	public static final MenuType<CustomfishingrodInventoryMenu> CUSTOMFISHINGROD_INVENTORY = register("customfishingrod_inventory",
-			(id, inv, extraData) -> new CustomfishingrodInventoryMenu(id, inv, extraData));
-	public static final MenuType<SoulforgeGUIMenu> SOULFORGE_GUI = register("soulforge_gui",
-			(id, inv, extraData) -> new SoulforgeGUIMenu(id, inv, extraData));
-	public static final MenuType<Fishingrecord1Menu> FISHINGRECORD_1 = register("fishingrecord_1",
-			(id, inv, extraData) -> new Fishingrecord1Menu(id, inv, extraData));
-	public static final MenuType<FishingrecordRegular1Menu> FISHINGRECORD_REGULAR_1 = register("fishingrecord_regular_1",
-			(id, inv, extraData) -> new FishingrecordRegular1Menu(id, inv, extraData));
-	public static final MenuType<FishingrecordLegendary1Menu> FISHINGRECORD_LEGENDARY_1 = register("fishingrecord_legendary_1",
-			(id, inv, extraData) -> new FishingrecordLegendary1Menu(id, inv, extraData));
-	public static final MenuType<FishingrecordRegular2Menu> FISHINGRECORD_REGULAR_2 = register("fishingrecord_regular_2",
-			(id, inv, extraData) -> new FishingrecordRegular2Menu(id, inv, extraData));
-	public static final MenuType<FishingrecordLava1Menu> FISHINGRECORD_LAVA_1 = register("fishingrecord_lava_1",
-			(id, inv, extraData) -> new FishingrecordLava1Menu(id, inv, extraData));
-	public static final MenuType<FishingrecordDiseased1Menu> FISHINGRECORD_DISEASED_1 = register("fishingrecord_diseased_1",
-			(id, inv, extraData) -> new FishingrecordDiseased1Menu(id, inv, extraData));
-	public static final MenuType<FishingrecordVoid1Menu> FISHINGRECORD_VOID_1 = register("fishingrecord_void_1",
-			(id, inv, extraData) -> new FishingrecordVoid1Menu(id, inv, extraData));
-	public static final MenuType<FishingrecordMycena1Menu> FISHINGRECORD_MYCENA_1 = register("fishingrecord_mycena_1",
-			(id, inv, extraData) -> new FishingrecordMycena1Menu(id, inv, extraData));
-	public static final MenuType<FishingrecordNetherStar1Menu> FISHINGRECORD_NETHER_STAR_1 = register("fishingrecord_nether_star_1",
-			(id, inv, extraData) -> new FishingrecordNetherStar1Menu(id, inv, extraData));
-	public static final MenuType<MusicplayerGUIMenu> MUSICPLAYER_GUI = register("musicplayer_gui",
-			(id, inv, extraData) -> new MusicplayerGUIMenu(id, inv, extraData));
-	public static final MenuType<MusicplayerGUI2Menu> MUSICPLAYER_GUI_2 = register("musicplayer_gui_2",
-			(id, inv, extraData) -> new MusicplayerGUI2Menu(id, inv, extraData));
-	public static final MenuType<CreditsMusicGUIMenu> CREDITS_MUSIC_GUI = register("credits_music_gui",
-			(id, inv, extraData) -> new CreditsMusicGUIMenu(id, inv, extraData));
-	public static final MenuType<FishingrecordJellyPools1Menu> FISHINGRECORD_JELLY_POOLS_1 = register("fishingrecord_jelly_pools_1",
-			(id, inv, extraData) -> new FishingrecordJellyPools1Menu(id, inv, extraData));
-	public static final MenuType<BeltpouchGUIMenu> BELTPOUCH_GUI = register("beltpouch_gui",
-			(id, inv, extraData) -> new BeltpouchGUIMenu(id, inv, extraData));
-	public static final MenuType<WeaponaltarGUIMenu> WEAPONALTAR_GUI = register("weaponaltar_gui",
-			(id, inv, extraData) -> new WeaponaltarGUIMenu(id, inv, extraData));
-	public static final MenuType<GlasslightbrewerGUIMenu> GLASSLIGHTBREWER_GUI = register("glasslightbrewer_gui",
-			(id, inv, extraData) -> new GlasslightbrewerGUIMenu(id, inv, extraData));
-	public static final MenuType<GlassbellboatGUIMenu> GLASSBELLBOAT_GUI = register("glassbellboat_gui",
-			(id, inv, extraData) -> new GlassbellboatGUIMenu(id, inv, extraData));
-	public static final MenuType<CreditsMusicGUI2Menu> CREDITS_MUSIC_GUI_2 = register("credits_music_gui_2",
-			(id, inv, extraData) -> new CreditsMusicGUI2Menu(id, inv, extraData));
-	public static final MenuType<FishingrecordShellfishMenu> FISHINGRECORD_SHELLFISH = register("fishingrecord_shellfish",
-			(id, inv, extraData) -> new FishingrecordShellfishMenu(id, inv, extraData));
-	public static final MenuType<FishingrecordDungeonwaterMenu> FISHINGRECORD_DUNGEONWATER = register("fishingrecord_dungeonwater",
-			(id, inv, extraData) -> new FishingrecordDungeonwaterMenu(id, inv, extraData));
-	public static final MenuType<CrabpotGUIMenu> CRABPOT_GUI = register("crabpot_gui",
-			(id, inv, extraData) -> new CrabpotGUIMenu(id, inv, extraData));
-	public static final MenuType<NanoshrimpGUIMenu> NANOSHRIMP_GUI = register("nanoshrimp_gui",
-			(id, inv, extraData) -> new NanoshrimpGUIMenu(id, inv, extraData));
-	public static final MenuType<MusicplayerGUI3Menu> MUSICPLAYER_GUI_3 = register("musicplayer_gui_3",
-			(id, inv, extraData) -> new MusicplayerGUI3Menu(id, inv, extraData));
-	public static final MenuType<FishingrecordWindyshoresMenu> FISHINGRECORD_WINDYSHORES = register("fishingrecord_windyshores",
-			(id, inv, extraData) -> new FishingrecordWindyshoresMenu(id, inv, extraData));
-	public static final MenuType<Fishingrecord2Menu> FISHINGRECORD_2 = register("fishingrecord_2",
-			(id, inv, extraData) -> new Fishingrecord2Menu(id, inv, extraData));
-	public static final MenuType<FishingrecordDiverscrownMenu> FISHINGRECORD_DIVERSCROWN = register("fishingrecord_diverscrown",
-			(id, inv, extraData) -> new FishingrecordDiverscrownMenu(id, inv, extraData));
-
-	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
-		MenuType<T> menuType = new MenuType<T>(containerFactory);
-		menuType.setRegistryName(registryname);
-		REGISTRY.add(menuType);
-		return menuType;
-	}
-
-	@SubscribeEvent
-	public static void registerContainers(RegistryEvent.Register<MenuType<?>> event) {
-		event.getRegistry().registerAll(REGISTRY.toArray(new MenuType[0]));
-	}
+	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, ElementureMod.MODID);
+	public static final RegistryObject<MenuType<DemonheartGUIMenu>> DEMONHEART_GUI = REGISTRY.register("demonheart_gui",
+			() -> IForgeMenuType.create(DemonheartGUIMenu::new));
+	public static final RegistryObject<MenuType<MycenashroomvillagerGUIMenu>> MYCENASHROOMVILLAGER_GUI = REGISTRY.register("mycenashroomvillager_gui",
+			() -> IForgeMenuType.create(MycenashroomvillagerGUIMenu::new));
+	public static final RegistryObject<MenuType<MycenashroomvillagerGUI2Menu>> MYCENASHROOMVILLAGER_GUI_2 = REGISTRY
+			.register("mycenashroomvillager_gui_2", () -> IForgeMenuType.create(MycenashroomvillagerGUI2Menu::new));
+	public static final RegistryObject<MenuType<RelicinventoryMenu>> RELICINVENTORY = REGISTRY.register("relicinventory",
+			() -> IForgeMenuType.create(RelicinventoryMenu::new));
+	public static final RegistryObject<MenuType<AgedrosaryGUIMenu>> AGEDROSARY_GUI = REGISTRY.register("agedrosary_gui",
+			() -> IForgeMenuType.create(AgedrosaryGUIMenu::new));
+	public static final RegistryObject<MenuType<SuitcaseGUIMenu>> SUITCASE_GUI = REGISTRY.register("suitcase_gui",
+			() -> IForgeMenuType.create(SuitcaseGUIMenu::new));
+	public static final RegistryObject<MenuType<PouchGUIMenu>> POUCH_GUI = REGISTRY.register("pouch_gui",
+			() -> IForgeMenuType.create(PouchGUIMenu::new));
+	public static final RegistryObject<MenuType<MemorymatrixGuiMenu>> MEMORYMATRIX_GUI = REGISTRY.register("memorymatrix_gui",
+			() -> IForgeMenuType.create(MemorymatrixGuiMenu::new));
+	public static final RegistryObject<MenuType<BirthingmoduleGUIMenu>> BIRTHINGMODULE_GUI = REGISTRY.register("birthingmodule_gui",
+			() -> IForgeMenuType.create(BirthingmoduleGUIMenu::new));
+	public static final RegistryObject<MenuType<CustomfishingrodInventoryMenu>> CUSTOMFISHINGROD_INVENTORY = REGISTRY
+			.register("customfishingrod_inventory", () -> IForgeMenuType.create(CustomfishingrodInventoryMenu::new));
+	public static final RegistryObject<MenuType<SoulforgeGUIMenu>> SOULFORGE_GUI = REGISTRY.register("soulforge_gui",
+			() -> IForgeMenuType.create(SoulforgeGUIMenu::new));
+	public static final RegistryObject<MenuType<Fishingrecord1Menu>> FISHINGRECORD_1 = REGISTRY.register("fishingrecord_1",
+			() -> IForgeMenuType.create(Fishingrecord1Menu::new));
+	public static final RegistryObject<MenuType<FishingrecordRegular1Menu>> FISHINGRECORD_REGULAR_1 = REGISTRY.register("fishingrecord_regular_1",
+			() -> IForgeMenuType.create(FishingrecordRegular1Menu::new));
+	public static final RegistryObject<MenuType<FishingrecordLegendary1Menu>> FISHINGRECORD_LEGENDARY_1 = REGISTRY
+			.register("fishingrecord_legendary_1", () -> IForgeMenuType.create(FishingrecordLegendary1Menu::new));
+	public static final RegistryObject<MenuType<FishingrecordRegular2Menu>> FISHINGRECORD_REGULAR_2 = REGISTRY.register("fishingrecord_regular_2",
+			() -> IForgeMenuType.create(FishingrecordRegular2Menu::new));
+	public static final RegistryObject<MenuType<FishingrecordLava1Menu>> FISHINGRECORD_LAVA_1 = REGISTRY.register("fishingrecord_lava_1",
+			() -> IForgeMenuType.create(FishingrecordLava1Menu::new));
+	public static final RegistryObject<MenuType<FishingrecordDiseased1Menu>> FISHINGRECORD_DISEASED_1 = REGISTRY.register("fishingrecord_diseased_1",
+			() -> IForgeMenuType.create(FishingrecordDiseased1Menu::new));
+	public static final RegistryObject<MenuType<FishingrecordVoid1Menu>> FISHINGRECORD_VOID_1 = REGISTRY.register("fishingrecord_void_1",
+			() -> IForgeMenuType.create(FishingrecordVoid1Menu::new));
+	public static final RegistryObject<MenuType<FishingrecordMycena1Menu>> FISHINGRECORD_MYCENA_1 = REGISTRY.register("fishingrecord_mycena_1",
+			() -> IForgeMenuType.create(FishingrecordMycena1Menu::new));
+	public static final RegistryObject<MenuType<FishingrecordNetherStar1Menu>> FISHINGRECORD_NETHER_STAR_1 = REGISTRY
+			.register("fishingrecord_nether_star_1", () -> IForgeMenuType.create(FishingrecordNetherStar1Menu::new));
+	public static final RegistryObject<MenuType<MusicplayerGUIMenu>> MUSICPLAYER_GUI = REGISTRY.register("musicplayer_gui",
+			() -> IForgeMenuType.create(MusicplayerGUIMenu::new));
+	public static final RegistryObject<MenuType<MusicplayerGUI2Menu>> MUSICPLAYER_GUI_2 = REGISTRY.register("musicplayer_gui_2",
+			() -> IForgeMenuType.create(MusicplayerGUI2Menu::new));
+	public static final RegistryObject<MenuType<CreditsMusicGUIMenu>> CREDITS_MUSIC_GUI = REGISTRY.register("credits_music_gui",
+			() -> IForgeMenuType.create(CreditsMusicGUIMenu::new));
+	public static final RegistryObject<MenuType<FishingrecordJellyPools1Menu>> FISHINGRECORD_JELLY_POOLS_1 = REGISTRY
+			.register("fishingrecord_jelly_pools_1", () -> IForgeMenuType.create(FishingrecordJellyPools1Menu::new));
+	public static final RegistryObject<MenuType<BeltpouchGUIMenu>> BELTPOUCH_GUI = REGISTRY.register("beltpouch_gui",
+			() -> IForgeMenuType.create(BeltpouchGUIMenu::new));
+	public static final RegistryObject<MenuType<WeaponaltarGUIMenu>> WEAPONALTAR_GUI = REGISTRY.register("weaponaltar_gui",
+			() -> IForgeMenuType.create(WeaponaltarGUIMenu::new));
+	public static final RegistryObject<MenuType<GlasslightbrewerGUIMenu>> GLASSLIGHTBREWER_GUI = REGISTRY.register("glasslightbrewer_gui",
+			() -> IForgeMenuType.create(GlasslightbrewerGUIMenu::new));
+	public static final RegistryObject<MenuType<GlassbellboatGUIMenu>> GLASSBELLBOAT_GUI = REGISTRY.register("glassbellboat_gui",
+			() -> IForgeMenuType.create(GlassbellboatGUIMenu::new));
+	public static final RegistryObject<MenuType<CreditsMusicGUI2Menu>> CREDITS_MUSIC_GUI_2 = REGISTRY.register("credits_music_gui_2",
+			() -> IForgeMenuType.create(CreditsMusicGUI2Menu::new));
+	public static final RegistryObject<MenuType<FishingrecordShellfishMenu>> FISHINGRECORD_SHELLFISH = REGISTRY.register("fishingrecord_shellfish",
+			() -> IForgeMenuType.create(FishingrecordShellfishMenu::new));
+	public static final RegistryObject<MenuType<FishingrecordDungeonwaterMenu>> FISHINGRECORD_DUNGEONWATER = REGISTRY
+			.register("fishingrecord_dungeonwater", () -> IForgeMenuType.create(FishingrecordDungeonwaterMenu::new));
+	public static final RegistryObject<MenuType<CrabpotGUIMenu>> CRABPOT_GUI = REGISTRY.register("crabpot_gui",
+			() -> IForgeMenuType.create(CrabpotGUIMenu::new));
+	public static final RegistryObject<MenuType<NanoshrimpGUIMenu>> NANOSHRIMP_GUI = REGISTRY.register("nanoshrimp_gui",
+			() -> IForgeMenuType.create(NanoshrimpGUIMenu::new));
+	public static final RegistryObject<MenuType<MusicplayerGUI3Menu>> MUSICPLAYER_GUI_3 = REGISTRY.register("musicplayer_gui_3",
+			() -> IForgeMenuType.create(MusicplayerGUI3Menu::new));
+	public static final RegistryObject<MenuType<FishingrecordWindyshoresMenu>> FISHINGRECORD_WINDYSHORES = REGISTRY
+			.register("fishingrecord_windyshores", () -> IForgeMenuType.create(FishingrecordWindyshoresMenu::new));
+	public static final RegistryObject<MenuType<Fishingrecord2Menu>> FISHINGRECORD_2 = REGISTRY.register("fishingrecord_2",
+			() -> IForgeMenuType.create(Fishingrecord2Menu::new));
+	public static final RegistryObject<MenuType<FishingrecordDiverscrownMenu>> FISHINGRECORD_DIVERSCROWN = REGISTRY
+			.register("fishingrecord_diverscrown", () -> IForgeMenuType.create(FishingrecordDiverscrownMenu::new));
 }

@@ -52,7 +52,7 @@ public class DiverscrownStoneRoomLargeProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getTileData().putDouble("diverscrownOmeganRole", 3);
+				_blockEntity.getPersistentData().putDouble("diverscrownOmeganRole", 3);
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
@@ -61,7 +61,7 @@ public class DiverscrownStoneRoomLargeProcedure {
 			BlockEntity _blockEntity = world.getBlockEntity(_bp);
 			BlockState _bs = world.getBlockState(_bp);
 			if (_blockEntity != null)
-				_blockEntity.getTileData().putDouble("diverscrownRoomSize", ((Math.sqrt(rndSize) - 3) * (Math.sqrt(rndSize) - 3)));
+				_blockEntity.getPersistentData().putDouble("diverscrownRoomSize", ((Math.sqrt(rndSize) - 3) * (Math.sqrt(rndSize) - 3)));
 			if (world instanceof Level _level)
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
@@ -76,7 +76,7 @@ public class DiverscrownStoneRoomLargeProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("diverscrownOmeganRole", 2);
+						_blockEntity.getPersistentData().putDouble("diverscrownOmeganRole", 2);
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -85,7 +85,7 @@ public class DiverscrownStoneRoomLargeProcedure {
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
-						_blockEntity.getTileData().putDouble("diverscrownRoomSize", (rndSize - (Math.sqrt(rndSize) + 15) * 2));
+						_blockEntity.getPersistentData().putDouble("diverscrownRoomSize", (rndSize - (Math.sqrt(rndSize) + 15) * 2));
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}

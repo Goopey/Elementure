@@ -20,7 +20,7 @@ import java.util.Collections;
 public class FluffplankpressureplateBlock extends PressurePlateBlock {
 	public FluffplankpressureplateBlock() {
 		super(Sensitivity.EVERYTHING,
-				BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1.6f, 8f).requiresCorrectToolForDrops());
+				BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(1.6f, 8f).requiresCorrectToolForDrops().dynamicShape());
 	}
 
 	@Override

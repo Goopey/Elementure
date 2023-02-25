@@ -8,5 +8,6 @@
     "south": "elementure:blocks/boardingschool_pinkwall",
     "west": "elementure:blocks/boardingschool_pinkwall",
     "particle": "elementure:blocks/boardingschool_pinkwall"
-  }
+  },
+  "render_type": "solid"
 }

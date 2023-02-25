@@ -8,5 +8,6 @@
     "south": "elementure:blocks/shield_protection_rune",
     "west": "elementure:blocks/shield_protection_rune",
     "particle": "elementure:blocks/shield_protection_rune"
-  }
+  },
+  "render_type": "solid"
 }

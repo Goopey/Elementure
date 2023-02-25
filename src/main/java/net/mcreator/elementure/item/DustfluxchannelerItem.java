@@ -17,7 +17,6 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
@@ -42,8 +41,8 @@ public class DustfluxchannelerItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("Allows you to cast a skill that warps space around your target"));
-		list.add(new TextComponent("randomly forcing it in a random direction or slowing it down."));
+		list.add(Component.literal("Allows you to cast a skill that warps space around your target"));
+		list.add(Component.literal("randomly forcing it in a random direction or slowing it down."));
 	}
 
 	@Override
@@ -73,7 +72,6 @@ public class DustfluxchannelerItem extends Item {
 				DustfluxchannelerEntity entityarrow = DustfluxchannelerEntity.shoot(world, entity, world.getRandom(), 1f, 5.6, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
-
 				DustfluxchannelerConsumeProcedure.execute(entity);
 			}
 		}

@@ -8,5 +8,6 @@
     "south": "elementure:blocks/grassblockside",
     "west": "elementure:blocks/grassblockside",
     "particle": "elementure:blocks/dirtblock"
-  }
+  },
+  "render_type": "solid"
 }

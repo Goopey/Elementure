@@ -3,5 +3,6 @@
   "textures": {
     "texture": "elementure:blocks/nether_trap_door",
     "particle": "elementure:blocks/nether_trap_door"
-  }
+  },
+  "render_type": "solid"
 }

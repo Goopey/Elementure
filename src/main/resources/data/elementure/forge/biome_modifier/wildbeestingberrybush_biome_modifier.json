@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_features",
+  "biomes": [
+    "savanna_plateau",
+    "sunflower_plains",
+    "plains",
+    "savanna",
+    "windswept_savanna",
+    "flower_forest"
+  ],
+  "features": "elementure:wildbeestingberrybush",
+  "step": "vegetal_decoration"
+}

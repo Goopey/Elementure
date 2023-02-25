@@ -19,10 +19,9 @@ import net.mcreator.elementure.ElementureMod;
 
 public class ElementureModBiomes {
 	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, ElementureMod.MODID);
-	public static final RegistryObject<Biome> ABYSSALPLAINS = REGISTRY.register("abyssalplains", () -> AbyssalplainsBiome.createBiome());
-	public static final RegistryObject<Biome> SHADOWREALM_441 = REGISTRY.register("shadowrealm_441", () -> Shadowrealm441Biome.createBiome());
-	public static final RegistryObject<Biome> FAMILIAR_11 = REGISTRY.register("familiar_11", () -> Familiar11Biome.createBiome());
-	public static final RegistryObject<Biome> FAMILIAR_12 = REGISTRY.register("familiar_12", () -> Familiar12Biome.createBiome());
-	public static final RegistryObject<Biome> FORBIDDEN_RED_SHORES = REGISTRY.register("forbidden_red_shores",
-			() -> ForbiddenRedShoresBiome.createBiome());
+	public static final RegistryObject<Biome> ABYSSALPLAINS = REGISTRY.register("abyssalplains", AbyssalplainsBiome::createBiome);
+	public static final RegistryObject<Biome> SHADOWREALM_441 = REGISTRY.register("shadowrealm_441", Shadowrealm441Biome::createBiome);
+	public static final RegistryObject<Biome> FAMILIAR_11 = REGISTRY.register("familiar_11", Familiar11Biome::createBiome);
+	public static final RegistryObject<Biome> FAMILIAR_12 = REGISTRY.register("familiar_12", Familiar12Biome::createBiome);
+	public static final RegistryObject<Biome> FORBIDDEN_RED_SHORES = REGISTRY.register("forbidden_red_shores", ForbiddenRedShoresBiome::createBiome);
 }

@@ -16,13 +16,13 @@ public class OstrachainRenderer extends MobRenderer<OstrachainEntity, Modelostra
 		this.addLayer(new EyesLayer<OstrachainEntity, Modelostrachain<OstrachainEntity>>(this) {
 			@Override
 			public RenderType renderType() {
-				return RenderType.eyes(new ResourceLocation("elementure:textures/ostrachain_lighting_texturemap.png"));
+				return RenderType.eyes(new ResourceLocation("elementure:textures/entities/ostrachain_lighting_texturemap.png"));
 			}
 		});
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(OstrachainEntity entity) {
-		return new ResourceLocation("elementure:textures/ostrachain_texturemap.png");
+		return new ResourceLocation("elementure:textures/entities/ostrachain_texturemap.png");
 	}
 }

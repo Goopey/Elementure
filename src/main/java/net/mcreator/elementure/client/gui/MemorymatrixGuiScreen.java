@@ -6,7 +6,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
@@ -55,9 +54,9 @@ public class MemorymatrixGuiScreen extends AbstractContainerScreen<MemorymatrixG
 		RenderSystem.defaultBlendFunc();
 		RenderSystem.setShaderTexture(0, texture);
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-		RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/memory_matrix_gui_background.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/memory_matrix_gui_background.png"));
 		this.blit(ms, this.leftPos + 38, this.topPos + 75, 0, 0, 64, 64, 64, 64);
-		RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/memory_matrix_gui_deco.png"));
+		RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/memory_matrix_gui_deco.png"));
 		this.blit(ms, this.leftPos + 38, this.topPos + 75, 0, 0, 64, 64, 64, 64);
 		RenderSystem.disableBlend();
 	}
@@ -82,14 +81,14 @@ public class MemorymatrixGuiScreen extends AbstractContainerScreen<MemorymatrixG
 			public String getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);
 				if (BlockEntity != null)
-					return BlockEntity.getTileData().getString(tag);
+					return BlockEntity.getPersistentData().getString(tag);
 				return "";
 			}
 		}.getValue(new BlockPos((int) x, (int) y, (int) z), "memorial_name_" + ((new Object() {
 			public double getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);
 				if (BlockEntity != null)
-					return BlockEntity.getTileData().getDouble(tag);
+					return BlockEntity.getPersistentData().getDouble(tag);
 				return 0;
 			}
 		}.getValue(new BlockPos((int) x, (int) y, (int) z), "teleport_num"))))), 40, 23, -12829636);
@@ -97,7 +96,7 @@ public class MemorymatrixGuiScreen extends AbstractContainerScreen<MemorymatrixG
 			public double getValue(BlockPos pos, String tag) {
 				BlockEntity BlockEntity = world.getBlockEntity(pos);
 				if (BlockEntity != null)
-					return BlockEntity.getTileData().getDouble(tag);
+					return BlockEntity.getPersistentData().getDouble(tag);
 				return 0;
 			}
 		}.getValue(new BlockPos((int) x, (int) y, (int) z), "teleport_num") + 1) + "", 27, 23, -12829636);
@@ -113,19 +112,19 @@ public class MemorymatrixGuiScreen extends AbstractContainerScreen<MemorymatrixG
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 109, this.topPos + 41, 30, 20, new TextComponent(">"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 109, this.topPos + 41, 30, 20, Component.literal(">"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MemorymatrixGuiButtonMessage(0, x, y, z));
 				MemorymatrixGuiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 3, this.topPos + 41, 30, 20, new TextComponent("<"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 3, this.topPos + 41, 30, 20, Component.literal("<"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MemorymatrixGuiButtonMessage(1, x, y, z));
 				MemorymatrixGuiButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}));
-		this.addRenderableWidget(new Button(this.leftPos + 54, this.topPos + 41, 35, 20, new TextComponent("Go"), e -> {
+		this.addRenderableWidget(new Button(this.leftPos + 54, this.topPos + 41, 35, 20, Component.literal("Go"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MemorymatrixGuiButtonMessage(2, x, y, z));
 				MemorymatrixGuiButtonMessage.handleButtonAction(entity, 2, x, y, z);

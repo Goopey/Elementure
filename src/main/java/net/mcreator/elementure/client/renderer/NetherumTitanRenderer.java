@@ -16,13 +16,13 @@ public class NetherumTitanRenderer extends MobRenderer<NetherumTitanEntity, Mode
 		this.addLayer(new EyesLayer<NetherumTitanEntity, Modelnetherum_titan<NetherumTitanEntity>>(this) {
 			@Override
 			public RenderType renderType() {
-				return RenderType.eyes(new ResourceLocation("elementure:textures/netherum_titan_lighting_texturemap.png"));
+				return RenderType.eyes(new ResourceLocation("elementure:textures/entities/netherum_titan_lighting_texturemap.png"));
 			}
 		});
 	}
 
 	@Override
 	public ResourceLocation getTextureLocation(NetherumTitanEntity entity) {
-		return new ResourceLocation("elementure:textures/netherum_titan_texturemap.png");
+		return new ResourceLocation("elementure:textures/entities/netherum_titan_texturemap.png");
 	}
 }

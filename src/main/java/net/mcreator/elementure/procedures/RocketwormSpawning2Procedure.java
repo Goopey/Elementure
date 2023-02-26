@@ -26,7 +26,6 @@ public class RocketwormSpawning2Procedure {
 		double yaw = 0;
 		double bod = 0;
 		if (!entity.getPersistentData().getBoolean("cannotSpawn")) {
-			((RocketwormEntity) entity).setHead();
 			lengthChain = 4 + Math.round(Math.random() * 6);
 			entity.getPersistentData().putDouble("chainId", (Math.random() * 12500 + entity.getX() * 10000 + entity.getY() * 100 + entity.getZ()));
 			entity.getPersistentData().putDouble("chainPos", 1);
@@ -70,10 +69,8 @@ public class RocketwormSpawning2Procedure {
 							if (num >= lengthChain) {
 								entityiterator.getPersistentData().putBoolean("isEnd", (true));
 								entityiterator.getPersistentData().putDouble("bodyType", 2);
-								((RocketwormEntity) entityiterator).setTail();
 							} else {
 								entityiterator.getPersistentData().putDouble("bodyType", 1);
-								((RocketwormEntity) entityiterator).setBody();
 							}
 							break;
 						}

@@ -15,6 +15,6 @@ public class HalloweenspiritRenderer extends MobRenderer<HalloweenspiritEntity, 
 
 	@Override
 	public ResourceLocation getTextureLocation(HalloweenspiritEntity entity) {
-		return new ResourceLocation("elementure:textures/spirit.png");
+		return new ResourceLocation("elementure:textures/entities/spirit.png");
 	}
 }

@@ -68,7 +68,7 @@ public class TarwormEntity extends Monster {
 			public void tick() {
 				if (TarwormEntity.this.isInWater())
 					TarwormEntity.this.setDeltaMovement(TarwormEntity.this.getDeltaMovement().add(0, 0.005, 0));
-				if (this.operation == MoveControl.Operation.MOVE_TO && !TarwormEntity.this.getNavigation().isDone()) {
+				if (this.operation == MoveControl.Operation.MOVE_TO && !TarwormEntity.this.getNavigation().isDone() && Math.random() < 0.25) {
 					double dx = this.wantedX - TarwormEntity.this.getX();
 					double dy = this.wantedY - TarwormEntity.this.getY();
 					double dz = this.wantedZ - TarwormEntity.this.getZ();

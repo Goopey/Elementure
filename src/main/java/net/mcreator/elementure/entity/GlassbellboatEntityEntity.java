@@ -44,7 +44,6 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.nbt.Tag;
@@ -213,10 +212,10 @@ public class GlassbellboatEntityEntity extends PathfinderMob {
 		InteractionResult retval = InteractionResult.sidedSuccess(this.level.isClientSide());
 		if (sourceentity.isSecondaryUseActive()) {
 			if (sourceentity instanceof ServerPlayer serverPlayer) {
-				NetworkHooks.openGui(serverPlayer, new MenuProvider() {
+				NetworkHooks.openScreen(serverPlayer, new MenuProvider() {
 					@Override
 					public Component getDisplayName() {
-						return new TextComponent("Glass bellboat");
+						return Component.literal("Glass bellboat");
 					}
 
 					@Override

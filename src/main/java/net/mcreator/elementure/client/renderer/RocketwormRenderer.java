@@ -11,11 +11,6 @@ import net.mcreator.elementure.entity.RocketwormEntity;
 import net.mcreator.elementure.client.model.ModelrocketWormBody;
 
 public class RocketwormRenderer extends MobRenderer<RocketwormEntity, ModelrocketWormBody<RocketwormEntity>> {
-	private final ResourceLocation[] bodyTypeArr = new ResourceLocation[]{
-			new ResourceLocation("elementure:textures/entities/rocketwormhead_texturemap.png"),
-			new ResourceLocation("elementure:textures/entities/rocketwormbody_texturemap.png"),
-			new ResourceLocation("elementure:textures/entities/rocketwormtail_texturemap.png")};
-
 	public RocketwormRenderer(EntityRendererProvider.Context context) {
 		super(context, new ModelrocketWormBody(context.bakeLayer(ModelrocketWormBody.LAYER_LOCATION)), 0.5f);
 		this.addLayer(new EyesLayer<RocketwormEntity, ModelrocketWormBody<RocketwormEntity>>(this) {
@@ -28,6 +23,6 @@ public class RocketwormRenderer extends MobRenderer<RocketwormEntity, Modelrocke
 
 	@Override
 	public ResourceLocation getTextureLocation(RocketwormEntity entity) {
-		return bodyTypeArr[entity.getBodyType()];
+		return new ResourceLocation("elementure:textures/entities/rocketwormhead_texturemap.png");
 	}
 }

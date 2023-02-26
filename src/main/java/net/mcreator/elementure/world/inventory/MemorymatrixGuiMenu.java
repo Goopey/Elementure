@@ -5,6 +5,7 @@ import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.IItemHandler;
 
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
@@ -12,6 +13,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.elementure.procedures.MemorymatrixGuiResetProcedure;
 import net.mcreator.elementure.init.ElementureModMenus;
 
 import java.util.function.Supplier;
@@ -28,7 +30,7 @@ public class MemorymatrixGuiMenu extends AbstractContainerMenu implements Suppli
 	private boolean bound = false;
 
 	public MemorymatrixGuiMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(ElementureModMenus.MEMORYMATRIX_GUI, id);
+		super(ElementureModMenus.MEMORYMATRIX_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
 		this.internal = new ItemStackHandler(0);
@@ -44,6 +46,17 @@ public class MemorymatrixGuiMenu extends AbstractContainerMenu implements Suppli
 	@Override
 	public boolean stillValid(Player player) {
 		return true;
+	}
+
+	@Override
+	public ItemStack quickMoveStack(Player playerIn, int index) {
+		return ItemStack.EMPTY;
+	}
+
+	@Override
+	public void removed(Player playerIn) {
+		super.removed(playerIn);
+		MemorymatrixGuiResetProcedure.execute(world, x, y, z);
 	}
 
 	public Map<Integer, Slot> get() {

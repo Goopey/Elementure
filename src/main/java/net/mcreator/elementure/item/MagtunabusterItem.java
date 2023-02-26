@@ -17,7 +17,6 @@ import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.Minecraft;
 
@@ -42,7 +41,7 @@ public class MagtunabusterItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(new TextComponent("A fire cannon and a fish."));
+		list.add(Component.literal("A fire cannon and a fish."));
 	}
 
 	@Override
@@ -69,7 +68,7 @@ public class MagtunabusterItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (MagtunabusterHasFireEssenceProcedure.execute(entity)) {
-				MagtunabusterEntity entityarrow = MagtunabusterEntity.shoot(world, entity, world.getRandom(), 0.6f, 6.5, 0);
+				MagtunabusterEntity entityarrow = MagtunabusterEntity.shoot(world, entity, world.getRandom(), 0.6f, 3.6, 0);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 				MagtunabusterApplyCooldownProcedure.execute(entity, itemstack);

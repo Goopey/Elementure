@@ -15,6 +15,6 @@ public class OctolankRenderer extends MobRenderer<OctolankEntity, Modeloctolank<
 
 	@Override
 	public ResourceLocation getTextureLocation(OctolankEntity entity) {
-		return new ResourceLocation("elementure:textures/octolank_texturemap.png");
+		return new ResourceLocation("elementure:textures/entities/octolank_texturemap.png");
 	}
 }

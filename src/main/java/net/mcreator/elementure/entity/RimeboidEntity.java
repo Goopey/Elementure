@@ -4,24 +4,20 @@ package net.mcreator.elementure.entity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.common.ForgeMod;
 
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.navigation.FlyingPathNavigation;
-import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
+import net.minecraft.world.entity.ai.goal.RandomSwimmingGoal;
 import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
 import net.minecraft.world.entity.ai.goal.FollowMobGoal;
+import net.minecraft.world.entity.ai.goal.AvoidEntityGoal;
 import net.minecraft.world.entity.ai.control.FlyingMoveControl;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
@@ -30,9 +26,9 @@ import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
@@ -51,15 +47,8 @@ import javax.annotation.Nullable;
 
 import java.util.Random;
 
-@Mod.EventBusSubscriber
 public class RimeboidEntity extends PathfinderMob {
 	public ResourceLocation color;
-
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.WATER_AMBIENT)
-				.add(new MobSpawnSettings.SpawnerData(ElementureModEntities.RIMEBOID.get(), 180, 2, 3));
-	}
 
 	public RimeboidEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(ElementureModEntities.RIMEBOID.get(), world);
@@ -86,18 +75,10 @@ public class RimeboidEntity extends PathfinderMob {
 	@Override
 	protected void registerGoals() {
 		super.registerGoals();
-		this.goalSelector.addGoal(1, new FollowMobGoal(this, (float) 1, 0.1f, 16));
-		this.goalSelector.addGoal(2, new RandomStrollGoal(this, 1.4, 20) {
-			@Override
-			protected Vec3 getPosition() {
-				Random random = RimeboidEntity.this.getRandom();
-				double dir_x = RimeboidEntity.this.getX() + ((random.nextFloat() * 2 - 1) * 6);
-				double dir_y = RimeboidEntity.this.getY() + ((random.nextFloat() * 2 - 1) * 6);
-				double dir_z = RimeboidEntity.this.getZ() + ((random.nextFloat() * 2 - 1) * 6);
-				return new Vec3(dir_x, dir_y, dir_z);
-			}
-		});
+		this.goalSelector.addGoal(1, new RandomSwimmingGoal(this, 1, 40));
+		this.goalSelector.addGoal(2, new FollowMobGoal(this, (float) 1, 16, 0));
 		this.goalSelector.addGoal(3, new LookAtPlayerGoal(this, RimeboidEntity.class, (float) 6));
+		this.goalSelector.addGoal(4, new AvoidEntityGoal<>(this, RimeboidEntity.class, (float) 1, 1, 1.2));
 	}
 
 	public ResourceLocation setColor() {
@@ -217,6 +198,19 @@ public class RimeboidEntity extends PathfinderMob {
 	}
 
 	@Override
+	public boolean isPushable() {
+		return false;
+	}
+
+	@Override
+	protected void doPush(Entity entityIn) {
+	}
+
+	@Override
+	protected void pushEntities() {
+	}
+
+	@Override
 	protected void checkFallDamage(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
 	}
 
@@ -246,6 +240,7 @@ public class RimeboidEntity extends PathfinderMob {
 		builder = builder.add(Attributes.MAX_HEALTH, 2);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.FLYING_SPEED, 1.2);
 		builder = builder.add(ForgeMod.SWIM_SPEED.get(), 1.2);
 		return builder;

@@ -4,14 +4,10 @@ package net.mcreator.elementure.entity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.common.ForgeMod;
 
 import net.minecraft.world.level.pathfinder.BlockPathTypes;
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.Level;
@@ -26,7 +22,6 @@ import net.minecraft.world.entity.SpawnGroupData;
 import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.MobSpawnType;
-import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.damagesource.DamageSource;
@@ -38,20 +33,13 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 
 import net.mcreator.elementure.procedures.OstrachainWiggleProcedure;
-import net.mcreator.elementure.procedures.OstrachainSpawningProcedure;
 import net.mcreator.elementure.procedures.OstrachainSpawnProcedure;
+import net.mcreator.elementure.procedures.DiverscrownTunnelSpawningProcedure;
 import net.mcreator.elementure.init.ElementureModEntities;
 
 import javax.annotation.Nullable;
 
-@Mod.EventBusSubscriber
 public class OstrachainEntity extends PathfinderMob {
-	@SubscribeEvent
-	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.WATER_AMBIENT)
-				.add(new MobSpawnSettings.SpawnerData(ElementureModEntities.OSTRACHAIN.get(), 70, 4, 4));
-	}
-
 	public OstrachainEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(ElementureModEntities.OSTRACHAIN.get(), world);
 	}
@@ -65,7 +53,7 @@ public class OstrachainEntity extends PathfinderMob {
 			@Override
 			public void tick() {
 				if (OstrachainEntity.this.isInWater())
-					OstrachainEntity.this.setDeltaMovement(OstrachainEntity.this.getDeltaMovement().add(0, 0.002, 0));
+					OstrachainEntity.this.setDeltaMovement(OstrachainEntity.this.getDeltaMovement().add(0, 0.005, 0));
 				if (this.operation == MoveControl.Operation.MOVE_TO && !OstrachainEntity.this.getNavigation().isDone() && Math.random() < 0.25) {
 					double dx = this.wantedX - OstrachainEntity.this.getX();
 					double dy = this.wantedY - OstrachainEntity.this.getY();
@@ -161,7 +149,7 @@ public class OstrachainEntity extends PathfinderMob {
 					int x = pos.getX();
 					int y = pos.getY();
 					int z = pos.getZ();
-					return OstrachainSpawningProcedure.execute(world, x, y, z);
+					return DiverscrownTunnelSpawningProcedure.execute(world, x, y, z);
 				});
 	}
 
@@ -171,6 +159,7 @@ public class OstrachainEntity extends PathfinderMob {
 		builder = builder.add(Attributes.MAX_HEALTH, 20);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(ForgeMod.SWIM_SPEED.get(), 1.6);
 		return builder;
 	}

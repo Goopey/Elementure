@@ -15,6 +15,6 @@ public class DarkspiritRenderer extends MobRenderer<DarkspiritEntity, Modelempty
 
 	@Override
 	public ResourceLocation getTextureLocation(DarkspiritEntity entity) {
-		return new ResourceLocation("elementure:textures/empty_texturemap.png");
+		return new ResourceLocation("elementure:textures/entities/empty_texturemap.png");
 	}
 }

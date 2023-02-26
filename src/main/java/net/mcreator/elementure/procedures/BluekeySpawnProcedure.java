@@ -23,7 +23,6 @@ import net.minecraft.client.Minecraft;
 
 import net.mcreator.elementure.init.ElementureModItems;
 import net.mcreator.elementure.init.ElementureModBlocks;
-import net.mcreator.elementure.ElementureMod;
 
 public class BluekeySpawnProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
@@ -43,16 +42,14 @@ public class BluekeySpawnProcedure {
 			}.checkGamemode(entity))) {
 				(itemstack).shrink(1);
 			}
-			ElementureMod.queueServerWork(0, () -> {
-				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "bluedoorframe"));
-					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x - 1, y - 1, z - 1), new BlockPos(x - 1, y - 1, z - 1),
-								new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-								_serverworld.random, 3);
-					}
+			if (world instanceof ServerLevel _serverworld) {
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "bluedoorframe"));
+				if (template != null) {
+					template.placeInWorld(_serverworld, new BlockPos(x - 1, y - 1, z - 1), new BlockPos(x - 1, y - 1, z - 1),
+							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							_serverworld.random, 3);
 				}
-			});
+			}
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.PORTAL, x, y, z, 300, 4, 4, 4, 0.5);
 			if (world instanceof Level _level) {

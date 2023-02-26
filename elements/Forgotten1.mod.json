@@ -5,6 +5,9 @@
     "biomesInDimension": [
       {
         "value": "CUSTOM:Familiar11"
+      },
+      {
+        "value": "CUSTOM:Familiar12"
       }
     ],
     "worldGenType": "Normal world gen",

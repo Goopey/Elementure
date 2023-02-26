@@ -29,22 +29,14 @@ import net.mcreator.elementure.ElementureMod;
 public class NetherstarBiomeOmeganGenProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double numBlazingStars = 0;
-		if (world instanceof ServerLevel _origLevel) {
-			LevelAccessor _worldorig = world;
-			world = _origLevel.getServer().getLevel(Level.NETHER);
-			if (world != null) {
-				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO,
-							_level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "forceload add ~ ~");
-				ElementureMod.queueServerWork(360, () -> {
-					if (world instanceof ServerLevel _level)
-						_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z),
-								Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"forceload remove all");
-				});
-			}
-			world = _worldorig;
-		}
+		if (world instanceof ServerLevel _level)
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level,
+					4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "forceload add ~ ~");
+		ElementureMod.queueServerWork(360, () -> {
+			if (world instanceof ServerLevel _level)
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO,
+						_level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "forceload remove all");
+		});
 		if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -117,9 +109,7 @@ public class NetherstarBiomeOmeganGenProcedure {
 			}
 		}.getValue(world, new BlockPos(x, y, z), "netherstarOGenRole") == 4) {
 			world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
-			ElementureMod.queueServerWork(60, () -> {
-				StarryplainsFloorGenProcedure.execute(world, x, y, z);
-			});
+			StarryplainsFloorGenProcedure.execute(world, x, y, z);
 		} else if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);

@@ -1,7 +1,6 @@
 
 package net.mcreator.elementure.world.dimension;
 
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -10,8 +9,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.resources.ResourceLocation;
@@ -20,22 +17,12 @@ import net.minecraft.core.Registry;
 import net.minecraft.client.renderer.DimensionSpecialEffects;
 
 import net.mcreator.elementure.procedures.BluekeySetToForgottenSpawnProcedure;
-
-import java.util.Set;
-import java.util.HashSet;
+import net.mcreator.elementure.procedures.BluekeyReturnHomeProcedure;
 
 @Mod.EventBusSubscriber
 public class Forgotten1Dimension {
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 	public static class Fixers {
-		@SubscribeEvent
-		public static void registerFillerBlocks(FMLCommonSetupEvent event) {
-			Set<Block> replaceableBlocks = new HashSet<>();
-			replaceableBlocks.add(Blocks.STONE);
-			replaceableBlocks.add(Blocks.GRASS_BLOCK);
-			replaceableBlocks.add(Blocks.DIRT);
-		}
-
 		@SubscribeEvent
 		@OnlyIn(Dist.CLIENT)
 		public static void registerDimensionSpecialEffects(FMLClientSetupEvent event) {
@@ -61,11 +48,12 @@ public class Forgotten1Dimension {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-		/*if (event.getFrom() == ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("elementure:forgotten_1"))) {
+		if (event.getFrom() == ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("elementure:forgotten_1"))) {
+
 			BluekeyReturnHomeProcedure.execute(world, entity);
 		}
-		*/
 		if (event.getTo() == ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("elementure:forgotten_1"))) {
+
 			BluekeySetToForgottenSpawnProcedure.execute(world, entity);
 		}
 	}

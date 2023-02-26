@@ -121,7 +121,7 @@ public class NetherstarBiomeOmeganGenProcedure {
 			numBlazingStars = 6 + Math.round(Math.random() * 4);
 			world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 			if (world instanceof ServerLevel _serverworld) {
-				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "abandonned_farm"));
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "flamedrill"));
 				if (template != null) {
 					template.placeInWorld(_serverworld, new BlockPos(x - 9, y - 9, z - 9), new BlockPos(x - 9, y - 9, z - 9),
 							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),

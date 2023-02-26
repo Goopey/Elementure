@@ -52,8 +52,8 @@ public class WindyshoresBaseGenProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				if (Math.random() < 0.0012) {
-					for (int index1 = 0; index1 < (int) (8); index1++) {
+				if (Math.random() < 0.0024) {
+					for (int index1 = 0; index1 < (int) (10); index1++) {
 						if (Math.random() < 0.2) {
 							if (Math.random() < 0.88) {
 								WindyshoresIslandPatchGenProcedure.execute(world, ((x + locX) - 5 + Math.random() * 10),

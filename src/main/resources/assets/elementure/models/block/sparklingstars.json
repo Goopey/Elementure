@@ -4,5 +4,6 @@
     "all": "elementure:blocks/sparkling_stars_slate",
     "particle": "elementure:blocks/sparkling_stars_slate",
     "main": "elementure:blocks/sparkling_stars_slate"
-  }
+  },
+  "render_type": "translucent"
 }

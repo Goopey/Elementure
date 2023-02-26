@@ -4,5 +4,5 @@
     "cross": "elementure:blocks/vines_starry",
     "particle": "elementure:blocks/vines_starry"
   },
-  "render_type": "solid"
+  "render_type": "cutout_mipped"
 }

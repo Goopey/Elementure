@@ -20,9 +20,10 @@ public class DirectionalDodgeOnKeyPressedProcedure {
 			return;
 		if (!entity.isInWaterOrBubble()
 				&& !((world.getBlockState(new BlockPos(entity.getX(), entity.getY(), entity.getZ()))).getBlock() == Blocks.LADDER)
-				&& (entity instanceof LivingEntity _livEnt ? _livEnt.isBlocking() : false) && entity.getDeltaMovement().y() > 0) {
-			if (0 <= ElementureModVariables.WorldVariables.get(world).Skillcharge) {
-				entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (-0.075), (entity.getDeltaMovement().z())));
+				&& (entity instanceof LivingEntity _livEnt ? _livEnt.isBlocking() : false) && entity.getDeltaMovement().y() >= 0) {
+			if (0 >= (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+					.orElse(new ElementureModVariables.PlayerVariables())).dodgeCooldown) {
+				entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (-1), (entity.getDeltaMovement().z())));
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
 						_level.playSound(null, new BlockPos(x, y, z),
@@ -44,11 +45,13 @@ public class DirectionalDodgeOnKeyPressedProcedure {
 				if (entity.getDeltaMovement().z() < -0.015) {
 					entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y()), (-1)));
 				}
-				ElementureModVariables.WorldVariables.get(world).Skillcharge = 432;
-				ElementureModVariables.WorldVariables.get(world).syncData(world);
-			} else {
-				ElementureModVariables.WorldVariables.get(world).Skillcharge = ElementureModVariables.WorldVariables.get(world).Skillcharge + -1;
-				ElementureModVariables.WorldVariables.get(world).syncData(world);
+				{
+					double _setval = 432;
+					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.dodgeCooldown = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 			}
 		}
 	}

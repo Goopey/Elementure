@@ -73347,6 +73347,23 @@
       "locked_code": false,
       "registry_name": "weapon_arts_key",
       "path": "~/Core/CombatMechanics/WeaponArts"
+    },
+    {
+      "name": "DirectionalDodgeCooldown",
+      "type": "procedure",
+      "sortid": 4970,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "directional_dodge_cooldown",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Core/CombatMechanics/Dodging"
     }
   ],
   "variable_elements": [
@@ -73931,6 +73948,12 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "dodgeCooldown",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
     }
   ],
   "sound_elements": [

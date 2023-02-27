@@ -150,6 +150,7 @@ public class ElementureModVariables {
 				clone.zonenamelingering = original.zonenamelingering;
 				clone.newzonetime = original.newzonetime;
 				clone.fishBiome = original.fishBiome;
+				clone.dodgeCooldown = original.dodgeCooldown;
 			}
 		}
 
@@ -468,6 +469,7 @@ public class ElementureModVariables {
 		public double newzonetime = 0;
 		public String fishBiome = "\"\"";
 		public boolean isInsane = false;
+		public double dodgeCooldown = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -545,6 +547,7 @@ public class ElementureModVariables {
 			nbt.putDouble("newzonetime", newzonetime);
 			nbt.putString("fishBiome", fishBiome);
 			nbt.putBoolean("isInsane", isInsane);
+			nbt.putDouble("dodgeCooldown", dodgeCooldown);
 			return nbt;
 		}
 
@@ -619,6 +622,7 @@ public class ElementureModVariables {
 			newzonetime = nbt.getDouble("newzonetime");
 			fishBiome = nbt.getString("fishBiome");
 			isInsane = nbt.getBoolean("isInsane");
+			dodgeCooldown = nbt.getDouble("dodgeCooldown");
 		}
 	}
 
@@ -713,6 +717,7 @@ public class ElementureModVariables {
 					variables.newzonetime = message.data.newzonetime;
 					variables.fishBiome = message.data.fishBiome;
 					variables.isInsane = message.data.isInsane;
+					variables.dodgeCooldown = message.data.dodgeCooldown;
 				}
 			});
 			context.setPacketHandled(true);

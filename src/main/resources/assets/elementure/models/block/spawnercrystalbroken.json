@@ -4,5 +4,6 @@
     "all": "elementure:blocks/spawnercrystal",
     "particle": "elementure:blocks/spawnercrystal",
     "0": "elementure:blocks/spawnercrystal"
-  }
+  },
+  "render_type": "cutout"
 }

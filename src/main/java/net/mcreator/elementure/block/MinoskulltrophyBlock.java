@@ -1,12 +1,8 @@
 
 package net.mcreator.elementure.block;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.Fluids;
@@ -31,10 +27,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-
-import net.mcreator.elementure.init.ElementureModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -63,23 +55,24 @@ public class MinoskulltrophyBlock extends Block implements SimpleWaterloggedBloc
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
-		Vec3 offset = state.getOffset(world, pos);
-		switch ((Direction) state.getValue(FACING)) {
-			case SOUTH :
-			default :
-				return box(3, 0, 3, 13, 10, 13).move(offset.x, offset.y, offset.z);
-			case NORTH :
-				return box(3, 0, 3, 13, 10, 13).move(offset.x, offset.y, offset.z);
-			case EAST :
-				return box(3, 0, 3, 13, 10, 13).move(offset.x, offset.y, offset.z);
-			case WEST :
-				return box(3, 0, 3, 13, 10, 13).move(offset.x, offset.y, offset.z);
-		}
+
+		return switch (state.getValue(FACING)) {
+			default -> box(3, 0, 3, 13, 10, 13);
+			case NORTH -> box(3, 0, 3, 13, 10, 13);
+			case EAST -> box(3, 0, 3, 13, 10, 13);
+			case WEST -> box(3, 0, 3, 13, 10, 13);
+		};
 	}
 
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		builder.add(FACING, WATERLOGGED);
+	}
+
+	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;
+		return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(WATERLOGGED, flag);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {
@@ -88,12 +81,6 @@ public class MinoskulltrophyBlock extends Block implements SimpleWaterloggedBloc
 
 	public BlockState mirror(BlockState state, Mirror mirrorIn) {
 		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
-	}
-
-	@Override
-	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		boolean flag = context.getLevel().getFluidState(context.getClickedPos()).getType() == Fluids.WATER;;
-		return this.defaultBlockState().setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(WATERLOGGED, flag);
 	}
 
 	@Override
@@ -124,10 +111,4 @@ public class MinoskulltrophyBlock extends Block implements SimpleWaterloggedBloc
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
 	}
-
-	@OnlyIn(Dist.CLIENT)
-	public static void registerRenderLayer() {
-		ItemBlockRenderTypes.setRenderLayer(ElementureModBlocks.MINOSKULLTROPHY.get(), renderType -> renderType == RenderType.cutoutMipped());
-	}
-
 }

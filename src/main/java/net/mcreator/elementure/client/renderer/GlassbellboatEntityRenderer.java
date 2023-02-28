@@ -15,6 +15,6 @@ public class GlassbellboatEntityRenderer extends MobRenderer<GlassbellboatEntity
 
 	@Override
 	public ResourceLocation getTextureLocation(GlassbellboatEntityEntity entity) {
-		return new ResourceLocation("elementure:textures/glassbellboat_texturemap.png");
+		return new ResourceLocation("elementure:textures/entities/glassbellboat_texturemap.png");
 	}
 }

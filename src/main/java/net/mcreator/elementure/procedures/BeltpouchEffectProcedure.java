@@ -1,11 +1,11 @@
 package net.mcreator.elementure.procedures;
 
 import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.item.alchemy.PotionUtils;
@@ -38,33 +38,43 @@ public class BeltpouchEffectProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
+		ItemStack item3 = ItemStack.EMPTY;
+		ItemStack item2 = ItemStack.EMPTY;
+		ItemStack item1 = ItemStack.EMPTY;
+		item1 = (new Object() {
+			public ItemStack getItemStack(int sltid, ItemStack _isc) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+					_retval.set(capability.getStackInSlot(sltid).copy());
+				});
+				return _retval.get();
+			}
+		}.getItemStack(0, ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag)));
+		item2 = (new Object() {
+			public ItemStack getItemStack(int sltid, ItemStack _isc) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+					_retval.set(capability.getStackInSlot(sltid).copy());
+				});
+				return _retval.get();
+			}
+		}.getItemStack(1, ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag)));
+		item3 = (new Object() {
+			public ItemStack getItemStack(int sltid, ItemStack _isc) {
+				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+					_retval.set(capability.getStackInSlot(sltid).copy());
+				});
+				return _retval.get();
+			}
+		}.getItemStack(2, ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag)));
 		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag).getItem() == ElementureModItems.BELTPOUCH.get()
-				//---
-				&& ((new Object() {
-					public ItemStack getItemStack(int sltid, ItemStack _isc) {
-						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							_retval.set(capability.getStackInSlot(sltid).copy());
-						});
-						return _retval.get();
-					}
-				}.getItemStack(0, ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag))).getItem() instanceof PotionItem)
-				//---
-				&& (PotionUtils.getPotion(new Object() {
-					public ItemStack getItemStack(int sltid, ItemStack _isc) {
-						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							_retval.set(capability.getStackInSlot(sltid).copy());
-						});
-						return _retval.get();
-					}
-				}.getItemStack(0, ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag))) == Potions.HEALING)
-				//---
+				&& item1.getItem() instanceof PotionItem && PotionUtils.getPotion(item1) == Potions.HEALING
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < 5) {
-			//----//
 			if (entity instanceof LivingEntity _entity)
 				_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 4));
 			{
@@ -73,7 +83,7 @@ public class BeltpouchEffectProcedure {
 				final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
 				final int _sltid = 0;
 				_setstack.setCount(1);
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					if (capability instanceof IItemHandlerModifiable) {
 						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
 					}
@@ -81,31 +91,8 @@ public class BeltpouchEffectProcedure {
 			}
 		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag).getItem() == ElementureModItems.BELTPOUCH.get()
-				//---
-				&& ((new Object() {
-					public ItemStack getItemStack(int sltid, ItemStack _isc) {
-						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							_retval.set(capability.getStackInSlot(sltid).copy());
-						});
-						return _retval.get();
-					}
-				}.getItemStack(1, ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag))).getItem() instanceof PotionItem)
-				//---
-				&& (PotionUtils.getPotion(new Object() {
-					public ItemStack getItemStack(int sltid, ItemStack _isc) {
-						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							_retval.set(capability.getStackInSlot(sltid).copy());
-						});
-						return _retval.get();
-					}
-				}.getItemStack(1, ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag))) == Potions.HEALING)
-				//---
+				&& item2.getItem() instanceof PotionItem && PotionUtils.getPotion(item2) == Potions.HEALING
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < 5) {
-			//----//
 			if (entity instanceof LivingEntity _entity)
 				_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 4));
 			{
@@ -114,7 +101,7 @@ public class BeltpouchEffectProcedure {
 				final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
 				final int _sltid = 1;
 				_setstack.setCount(1);
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					if (capability instanceof IItemHandlerModifiable) {
 						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
 					}
@@ -122,31 +109,8 @@ public class BeltpouchEffectProcedure {
 			}
 		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag).getItem() == ElementureModItems.BELTPOUCH.get()
-				//---
-				&& ((new Object() {
-					public ItemStack getItemStack(int sltid, ItemStack _isc) {
-						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							_retval.set(capability.getStackInSlot(sltid).copy());
-						});
-						return _retval.get();
-					}
-				}.getItemStack(2, ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag))).getItem() instanceof PotionItem)
-				//---
-				&& (PotionUtils.getPotion(new Object() {
-					public ItemStack getItemStack(int sltid, ItemStack _isc) {
-						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
-							_retval.set(capability.getStackInSlot(sltid).copy());
-						});
-						return _retval.get();
-					}
-				}.getItemStack(2, ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag))) == Potions.HEALING)
-				//---
+				&& item3.getItem() instanceof PotionItem && PotionUtils.getPotion(item3) == Potions.HEALING
 				&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < 5) {
-			//----//
 			if (entity instanceof LivingEntity _entity)
 				_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 4));
 			{
@@ -155,7 +119,7 @@ public class BeltpouchEffectProcedure {
 				final ItemStack _setstack = new ItemStack(Items.GLASS_BOTTLE);
 				final int _sltid = 2;
 				_setstack.setCount(1);
-				_isc.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
+				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					if (capability instanceof IItemHandlerModifiable) {
 						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);
 					}

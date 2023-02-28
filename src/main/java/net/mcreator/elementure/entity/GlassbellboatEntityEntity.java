@@ -8,8 +8,8 @@ import net.minecraftforge.items.wrapper.EntityHandsInvWrapper;
 import net.minecraftforge.items.wrapper.EntityArmorInvWrapper;
 import net.minecraftforge.items.wrapper.CombinedInvWrapper;
 import net.minecraftforge.items.ItemStackHandler;
-import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.ForgeMod;
 
@@ -81,13 +81,13 @@ public class GlassbellboatEntityEntity extends PathfinderMob {
 					double dy = this.wantedY - GlassbellboatEntityEntity.this.getY();
 					double dz = this.wantedZ - GlassbellboatEntityEntity.this.getZ();
 					float f = (float) (Mth.atan2(dz, dx) * (double) (180 / Math.PI)) - 90;
-					float f1 = (float) (this.speedModifier * (GlassbellboatEntityEntity.this.getAttribute(Attributes.MOVEMENT_SPEED).getValue()));
+					float f1 = (float) (this.speedModifier * GlassbellboatEntityEntity.this.getAttribute(Attributes.MOVEMENT_SPEED).getValue());
 					GlassbellboatEntityEntity.this.setYRot(this.rotlerp(GlassbellboatEntityEntity.this.getYRot(), f, 10));
 					GlassbellboatEntityEntity.this.yBodyRot = GlassbellboatEntityEntity.this.getYRot();
 					GlassbellboatEntityEntity.this.yHeadRot = GlassbellboatEntityEntity.this.getYRot();
 					if (GlassbellboatEntityEntity.this.isInWater()) {
 						GlassbellboatEntityEntity.this
-								.setSpeed((float) (GlassbellboatEntityEntity.this.getAttribute(Attributes.MOVEMENT_SPEED).getValue()));
+								.setSpeed((float) GlassbellboatEntityEntity.this.getAttribute(Attributes.MOVEMENT_SPEED).getValue());
 						float f2 = -(float) (Mth.atan2(dy, (float) Math.sqrt(dx * dx + dz * dz)) * (180 / Math.PI));
 						f2 = Mth.clamp(Mth.wrapDegrees(f2), -85, 85);
 						GlassbellboatEntityEntity.this.setXRot(this.rotlerp(GlassbellboatEntityEntity.this.getXRot(), f2, 5));
@@ -176,7 +176,7 @@ public class GlassbellboatEntityEntity extends PathfinderMob {
 
 	@Override
 	public <T> LazyOptional<T> getCapability(@Nonnull Capability<T> capability, @Nullable Direction side) {
-		if (this.isAlive() && capability == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY && side == null)
+		if (this.isAlive() && capability == ForgeCapabilities.ITEM_HANDLER && side == null)
 			return LazyOptional.of(() -> combined).cast();
 		return super.getCapability(capability, side);
 	}
@@ -268,12 +268,12 @@ public class GlassbellboatEntityEntity extends PathfinderMob {
 			this.yRotO = this.getYRot();
 			this.setXRot(entity.getXRot() * 0.5F);
 			this.setRot(this.getYRot(), this.getXRot());
-			this.flyingSpeed = (float) (this.getSpeed()) * 0.15F;
+			this.flyingSpeed = this.getSpeed() * 0.15F;
 			this.yBodyRot = entity.getYRot();
 			this.yHeadRot = entity.getYRot();
 			this.maxUpStep = 1.0F;
 			if (entity instanceof LivingEntity passenger) {
-				this.setSpeed((float) (this.getAttributeValue(Attributes.MOVEMENT_SPEED)));
+				this.setSpeed((float) this.getAttributeValue(Attributes.MOVEMENT_SPEED));
 				float forward = passenger.zza;
 				float strafe = passenger.xxa;
 				super.travel(new Vec3(strafe, 0, forward));
@@ -302,6 +302,7 @@ public class GlassbellboatEntityEntity extends PathfinderMob {
 		builder = builder.add(Attributes.MAX_HEALTH, 120);
 		builder = builder.add(Attributes.ARMOR, 10);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 4);
+		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.KNOCKBACK_RESISTANCE, 1000);
 		builder = builder.add(ForgeMod.SWIM_SPEED.get(), 2.2);
 		return builder;

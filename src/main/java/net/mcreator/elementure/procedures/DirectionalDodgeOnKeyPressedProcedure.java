@@ -46,7 +46,7 @@ public class DirectionalDodgeOnKeyPressedProcedure {
 					entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y()), (-1)));
 				}
 				{
-					double _setval = 432;
+					double _setval = 30;
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.dodgeCooldown = _setval;
 						capability.syncPlayerVariables(entity);

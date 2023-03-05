@@ -22,6 +22,7 @@ import net.mcreator.elementure.item.YellowbarrierkeyItem;
 import net.mcreator.elementure.item.XpvestItem;
 import net.mcreator.elementure.item.WhiterimeshineItem;
 import net.mcreator.elementure.item.WhitebarrierkeyItem;
+import net.mcreator.elementure.item.WeaponArtItemItem;
 import net.mcreator.elementure.item.WatersoulItem;
 import net.mcreator.elementure.item.WaterelementliquidItem;
 import net.mcreator.elementure.item.WaterblastskillItem;
@@ -599,6 +600,7 @@ import net.mcreator.elementure.item.CorruptdewItem;
 import net.mcreator.elementure.item.CormunculustunerItem;
 import net.mcreator.elementure.item.CormunculusSwimmingcharmItem;
 import net.mcreator.elementure.item.CormunculusJellyItem;
+import net.mcreator.elementure.item.CormunculusClubItem;
 import net.mcreator.elementure.item.CormunculusCleansingtorchItem;
 import net.mcreator.elementure.item.CormunculusChannelerItem;
 import net.mcreator.elementure.item.CorememoryseedsItem;
@@ -2711,6 +2713,8 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> COOKEDRAREDAGGERLOACH = REGISTRY.register("cookedraredaggerloach",
 			() -> new CookedraredaggerloachItem());
 	public static final RegistryObject<Item> COOKEDREDSNAPPER = REGISTRY.register("cookedredsnapper", () -> new CookedredsnapperItem());
+	public static final RegistryObject<Item> CORMUNCULUS_CLUB = REGISTRY.register("cormunculus_club", () -> new CormunculusClubItem());
+	public static final RegistryObject<Item> WEAPONARTITEM = REGISTRY.register("weaponartitem", () -> new WeaponArtItemItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

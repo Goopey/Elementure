@@ -15,6 +15,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
+import net.mcreator.elementure.network.WeaponArtsKeyMessage;
 import net.mcreator.elementure.network.QuickBackpackKeyMessage;
 import net.mcreator.elementure.network.OpenrelicinventorykeyMessage;
 import net.mcreator.elementure.network.MusicplayerMessage;
@@ -116,7 +117,19 @@ public class ElementureModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping WEAPON_ARTS_KEY = new KeyMapping("key.elementure.weapon_arts_key", GLFW.GLFW_KEY_V, "key.categories.gameplay");
+	public static final KeyMapping WEAPON_ARTS_KEY = new KeyMapping("key.elementure.weapon_arts_key", GLFW.GLFW_KEY_V, "key.categories.gameplay") {
+		private boolean isDownOld = false;
+
+		@Override
+		public void setDown(boolean isDown) {
+			super.setDown(isDown);
+			if (isDownOld != isDown && isDown) {
+				ElementureMod.PACKET_HANDLER.sendToServer(new WeaponArtsKeyMessage(0, 0));
+				WeaponArtsKeyMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+			}
+			isDownOld = isDown;
+		}
+	};
 	private static long FISHINGREEL_IN_LASTPRESS = 0;
 	private static long FISHINGABILITY_LASTPRESS = 0;
 
@@ -142,6 +155,7 @@ public class ElementureModKeyMappings {
 				FISHINGABILITY.consumeClick();
 				MUSICPLAYER.consumeClick();
 				DIRECTIONAL_DODGE_KEY.consumeClick();
+				WEAPON_ARTS_KEY.consumeClick();
 			}
 		}
 	}

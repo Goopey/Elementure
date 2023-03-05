@@ -26,7 +26,7 @@ public class MycenanpickaxeItem extends PickaxeItem {
 			}
 
 			public int getLevel() {
-				return 1;
+				return 2;
 			}
 
 			public int getEnchantmentValue() {

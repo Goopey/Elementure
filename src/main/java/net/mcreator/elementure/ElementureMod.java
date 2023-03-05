@@ -13,6 +13,8 @@
  */
 package net.mcreator.elementure;
 
+import software.bernie.geckolib3.GeckoLib;
+
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
@@ -76,6 +78,7 @@ public class ElementureMod {
 		ElementureModParticleTypes.REGISTRY.register(bus);
 		ElementureModMenus.REGISTRY.register(bus);
 		ElementureModBiomes.REGISTRY.register(bus);
+		GeckoLib.initialize();
 	}
 
 	private static final String PROTOCOL_VERSION = "1";

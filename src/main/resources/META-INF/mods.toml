@@ -23,4 +23,10 @@ Something has appeared in the Warm Ocean! Explore the new Ostree as it looms ove
 
 
 
+[[dependencies.elementure]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 

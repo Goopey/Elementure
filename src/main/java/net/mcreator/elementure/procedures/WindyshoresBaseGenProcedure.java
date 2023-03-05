@@ -52,8 +52,8 @@ public class WindyshoresBaseGenProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-				if (Math.random() < 0.0024) {
-					for (int index1 = 0; index1 < (int) (10); index1++) {
+				if (Math.random() < 0.0018) {
+					for (int index1 = 0; index1 < (int) (8); index1++) {
 						if (Math.random() < 0.2) {
 							if (Math.random() < 0.88) {
 								WindyshoresIslandPatchGenProcedure.execute(world, ((x + locX) - 5 + Math.random() * 10),
@@ -93,8 +93,7 @@ public class WindyshoresBaseGenProcedure {
 		}
 		ElementureMod.queueServerWork(40, () -> {
 			if (world instanceof ServerLevel _serverworld) {
-				StructureTemplate template = _serverworld.getStructureManager()
-						.getOrCreate(new ResourceLocation("elementure", "windyshores_starry_beach"));
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "abandonned_farm"));
 				if (template != null) {
 					template.placeInWorld(_serverworld, new BlockPos(x - 8, 270, z - 8), new BlockPos(x - 8, 270, z - 8),
 							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),

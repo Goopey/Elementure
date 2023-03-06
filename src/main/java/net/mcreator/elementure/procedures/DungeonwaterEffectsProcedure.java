@@ -17,11 +17,9 @@ public class DungeonwaterEffectsProcedure {
 			blockUnder = (world.getBlockState(new BlockPos(x, y - 1, z)));
 			if (blockUnder.getBlock() == Blocks.LIME_TERRACOTTA) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.MYCENAHOTSPRIINGBUBBLE.get()), (x + 0.5), (y + 0.25),
-							(z + 0.5), (int) (1 + Math.round(Math.random() * 2)), 0.02, 0.02, 0.02, 0.005);
+					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.MYCENAHOTSPRIINGBUBBLE.get()), (x + 0.5), (y + 0.25), (z + 0.5), (int) (1 + Math.round(Math.random() * 2)), 0.02, 0.02, 0.02, 0.005);
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.SMOKE, (x + 0.5), (y + 0.25), (z + 0.5), (int) (1 + Math.round(Math.random())), 0.02, 0.02,
-							0.02, 0.005);
+					_level.sendParticles(ParticleTypes.SMOKE, (x + 0.5), (y + 0.25), (z + 0.5), (int) (1 + Math.round(Math.random())), 0.02, 0.02, 0.02, 0.005);
 			}
 		}
 	}

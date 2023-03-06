@@ -49,7 +49,6 @@ public class PumpkincoreBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		PumpkincoreSpawnPumpkinMimicsProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 60);
 	}

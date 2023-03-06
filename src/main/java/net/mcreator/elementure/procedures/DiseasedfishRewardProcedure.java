@@ -14,61 +14,49 @@ public class DiseasedfishRewardProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("diseasedCod")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("diseasedCod")) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-						new ItemStack(ElementureModItems.DISEASEDCOD.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.DISEASEDCOD.get()));
 				entityToSpawn.setPickUpDelay(4);
 				_level.addFreshEntity(entityToSpawn);
 			}
 			if (world instanceof Level _level && !_level.isClientSide())
 				_level.addFreshEntity(new ExperienceOrb(_level, (entity.getX()), (entity.getY()), (entity.getZ()), 6));
-		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("diseasedChub")) {
+		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("diseasedChub")) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-						new ItemStack(ElementureModItems.DISEASEDCHUB.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.DISEASEDCHUB.get()));
 				entityToSpawn.setPickUpDelay(4);
 				_level.addFreshEntity(entityToSpawn);
 			}
 			if (world instanceof Level _level && !_level.isClientSide())
 				_level.addFreshEntity(new ExperienceOrb(_level, (entity.getX()), (entity.getY()), (entity.getZ()), 6));
-		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("fatGrouki")) {
+		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("fatGrouki")) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-						new ItemStack(ElementureModItems.FATGROUKI.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.FATGROUKI.get()));
 				entityToSpawn.setPickUpDelay(4);
 				_level.addFreshEntity(entityToSpawn);
 			}
 			if (world instanceof Level _level && !_level.isClientSide())
 				_level.addFreshEntity(new ExperienceOrb(_level, (entity.getX()), (entity.getY()), (entity.getZ()), 8));
-		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("carp")) {
+		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("carp")) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-						new ItemStack(ElementureModItems.CARP.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.CARP.get()));
 				entityToSpawn.setPickUpDelay(4);
 				_level.addFreshEntity(entityToSpawn);
 			}
 			if (world instanceof Level _level && !_level.isClientSide())
 				_level.addFreshEntity(new ExperienceOrb(_level, (entity.getX()), (entity.getY()), (entity.getZ()), 9));
-		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("warpedFish")) {
+		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("warpedFish")) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-						new ItemStack(ElementureModItems.WARPEDFISH.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.WARPEDFISH.get()));
 				entityToSpawn.setPickUpDelay(4);
 				_level.addFreshEntity(entityToSpawn);
 			}
 			if (world instanceof Level _level && !_level.isClientSide())
 				_level.addFreshEntity(new ExperienceOrb(_level, (entity.getX()), (entity.getY()), (entity.getZ()), 10));
-		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("twistedFish")) {
+		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("twistedFish")) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-						new ItemStack(ElementureModItems.TWISTEDFISH.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.TWISTEDFISH.get()));
 				entityToSpawn.setPickUpDelay(4);
 				_level.addFreshEntity(entityToSpawn);
 			}

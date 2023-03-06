@@ -16,10 +16,8 @@ public class MycenaadultmobsquickDespawnProcedure {
 		} else {
 			entity.getPersistentData().putDouble("lifetime", 0);
 			if (Math.random() < 0.25) {
-				if (!(!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 32, 32, 32),
-						e -> true).isEmpty())
-						&& !(!world.getEntitiesOfClass(ServerPlayer.class,
-								AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 32, 32, 32), e -> true).isEmpty())) {
+				if (!(!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 32, 32, 32), e -> true).isEmpty())
+						&& !(!world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 32, 32, 32), e -> true).isEmpty())) {
 					if (!entity.level.isClientSide())
 						entity.discard();
 				}

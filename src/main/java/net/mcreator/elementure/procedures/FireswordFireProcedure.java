@@ -29,8 +29,7 @@ public class FireswordFireProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-				.is(ItemTags.create(new ResourceLocation("forge:fireitem"))))) {
+		if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("forge:fireitem"))))) {
 			entity.getPersistentData().putBoolean("fireACTIVE", (false));
 		}
 	}

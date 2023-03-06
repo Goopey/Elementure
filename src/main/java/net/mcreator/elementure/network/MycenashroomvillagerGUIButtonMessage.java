@@ -70,7 +70,6 @@ public class MycenashroomvillagerGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(MycenashroomvillagerGUIButtonMessage.class, MycenashroomvillagerGUIButtonMessage::buffer,
-				MycenashroomvillagerGUIButtonMessage::new, MycenashroomvillagerGUIButtonMessage::handler);
+		ElementureMod.addNetworkMessage(MycenashroomvillagerGUIButtonMessage.class, MycenashroomvillagerGUIButtonMessage::buffer, MycenashroomvillagerGUIButtonMessage::new, MycenashroomvillagerGUIButtonMessage::handler);
 	}
 }

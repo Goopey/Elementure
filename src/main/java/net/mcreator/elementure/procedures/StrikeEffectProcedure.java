@@ -33,16 +33,13 @@ public class StrikeEffectProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMobType() == MobType.UNDEFINED : false)
-				&& EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.STRIKE.get(),
-						(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
+				&& EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.STRIKE.get(), (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
 			if (entity.canChangeDimensions()) {
 				entity.hurt(DamageSource.GENERIC,
-						(float) Math.ceil(2.5 * (EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.STRIKE.get(),
-								(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) + 1)));
+						(float) Math.ceil(2.5 * (EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.STRIKE.get(), (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) + 1)));
 			} else {
 				entity.hurt(DamageSource.GENERIC,
-						(float) Math.ceil(1.5 * (EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.STRIKE.get(),
-								(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) + 1)));
+						(float) Math.ceil(1.5 * (EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.STRIKE.get(), (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) + 1)));
 			}
 		}
 	}

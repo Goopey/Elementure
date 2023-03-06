@@ -22,12 +22,10 @@ public class NetherumleaperTeleportProcedure {
 				Entity _ent = entity;
 				_ent.teleportTo(tpX, ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY()), tpZ);
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(tpX, ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY()), tpZ,
-							_ent.getYRot(), _ent.getXRot());
+					_serverPlayer.connection.teleport(tpX, ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY()), tpZ, _ent.getYRot(), _ent.getXRot());
 			}
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SOULFLAME.get()), tpX,
-						((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY()), tpZ, 25, 0.3, 0.3, 0.3, 0.01);
+				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SOULFLAME.get()), tpX, ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getY()), tpZ, 25, 0.3, 0.3, 0.3, 0.01);
 		}
 	}
 }

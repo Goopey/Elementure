@@ -62,8 +62,7 @@ public class DiverscrownPlantMossGenProcedure {
 		locY2 = -4;
 		locZ2 = -4;
 		for (int index0 = 0; index0 < (int) (729); index0++) {
-			if (locX2 * locX2 + locY2 * locY2 + locZ2 * locZ2 < 16
-					&& (world.getBlockState(new BlockPos(x + locX2, y + locY2, z + locZ2))).getBlock() == ElementureModBlocks.DIVERSSTONE.get()) {
+			if (locX2 * locX2 + locY2 * locY2 + locZ2 * locZ2 < 16 && (world.getBlockState(new BlockPos(x + locX2, y + locY2, z + locZ2))).getBlock() == ElementureModBlocks.DIVERSSTONE.get()) {
 				world.setBlock(new BlockPos(x + locX2, y + locY2, z + locZ2), plant4, 3);
 			}
 			locX2 = locX2 + 1;

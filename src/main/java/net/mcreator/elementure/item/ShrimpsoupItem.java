@@ -19,10 +19,9 @@ import java.util.List;
 
 public class ShrimpsoupItem extends Item {
 	public ShrimpsoupItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(16).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(8).saturationMod(1.8f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(16).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(1.8f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

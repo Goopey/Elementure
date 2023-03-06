@@ -12,7 +12,6 @@ public class TidalcometTrailProcedure {
 		if (immediatesourceentity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.STARFLOWERPARTICLE.get()), (immediatesourceentity.getX()),
-					(immediatesourceentity.getY()), (immediatesourceentity.getZ()), 40, 0.3, 0.3, 0.3, 0);
+			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.STARFLOWERPARTICLE.get()), (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), 40, 0.3, 0.3, 0.3, 0);
 	}
 }

@@ -15,12 +15,10 @@ public class Cursedmemoryplant3HarvestProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.IMMORTALIZER
-				.get())) {
+		if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.IMMORTALIZER.get())) {
 			world.setBlock(new BlockPos(x, y, z), ElementureModBlocks.CURSEDMEMORYPLANT_1.get().defaultBlockState(), 3);
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5),
-						new ItemStack(ElementureModItems.CURSEDFORGOTTENFRAGMENT.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(ElementureModItems.CURSEDFORGOTTENFRAGMENT.get()));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}

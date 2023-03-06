@@ -26,7 +26,6 @@ public class MemoryshardItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal(
-				"A fragment of a whole memory heart. Unfortunaly, the memories inside are now lost, but it might still be useful in some regard."));
+		list.add(Component.literal("A fragment of a whole memory heart. Unfortunaly, the memories inside are now lost, but it might still be useful in some regard."));
 	}
 }

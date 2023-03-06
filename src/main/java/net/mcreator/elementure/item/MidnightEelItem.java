@@ -15,10 +15,9 @@ import java.util.List;
 
 public class MidnightEelItem extends Item {
 	public MidnightEelItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.RARE)
-				.food((new FoodProperties.Builder()).nutrition(7).saturationMod(0.7999999999999999f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(7).saturationMod(0.7999999999999999f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

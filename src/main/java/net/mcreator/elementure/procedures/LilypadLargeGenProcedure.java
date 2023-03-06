@@ -83,35 +83,23 @@ public class LilypadLargeGenProcedure {
 		DiverscrownLilypadGroundSlopeProcedure.execute(world, x, (y + 6), z);
 		ElementureMod.queueServerWork(10, () -> {
 			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands()
-						.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-								Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"kill @e[type=minecraft:item, distance=0.1..30]");
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+						"kill @e[type=minecraft:item, distance=0.1..30]");
 			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands()
-						.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 20), z), Vec2.ZERO, _level, 4, "",
-								Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"kill @e[type=minecraft:item, distance=0.1..30]");
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 20), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+						"kill @e[type=minecraft:item, distance=0.1..30]");
 			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands()
-						.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 40), z), Vec2.ZERO, _level, 4, "",
-								Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"kill @e[type=minecraft:item, distance=0.1..30]");
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 40), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+						"kill @e[type=minecraft:item, distance=0.1..30]");
 			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands()
-						.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 60), z), Vec2.ZERO, _level, 4, "",
-								Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"kill @e[type=minecraft:item, distance=0.1..30]");
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 60), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+						"kill @e[type=minecraft:item, distance=0.1..30]");
 			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands()
-						.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 80), z), Vec2.ZERO, _level, 4, "",
-								Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"kill @e[type=minecraft:item, distance=0.1..30]");
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 80), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+						"kill @e[type=minecraft:item, distance=0.1..30]");
 			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands()
-						.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 100), z), Vec2.ZERO, _level, 4, "",
-								Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"kill @e[type=minecraft:item, distance=0.1..30]");
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 100), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+						"kill @e[type=minecraft:item, distance=0.1..30]");
 		});
 		for (int index2 = 0; index2 < (int) (2); index2++) {
 			locX = x + Math.random() * 32 - 16;

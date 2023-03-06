@@ -23,11 +23,9 @@ public class RocketwormSetNewHeadTailProcedure {
 		double yaw = 0;
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if (entity.getPersistentData().getDouble("chainId") == entityiterator.getPersistentData().getDouble("chainId")
-						&& entityiterator instanceof RocketwormEntity) {
+				if (entity.getPersistentData().getDouble("chainId") == entityiterator.getPersistentData().getDouble("chainId") && entityiterator instanceof RocketwormEntity) {
 					if (entity.getPersistentData().getDouble("chainPos") + 1 == entityiterator.getPersistentData().getDouble("chainPos")) {
 						entity.getPersistentData().putDouble("bodyType", 2);
 					} else if (entity.getPersistentData().getDouble("chainPos") - 1 == entityiterator.getPersistentData().getDouble("chainPos")) {

@@ -15,10 +15,9 @@ import java.util.List;
 
 public class MidnighthalibutItem extends Item {
 	public MidnighthalibutItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(6).saturationMod(1.2000000000000002f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(1.2000000000000002f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

@@ -41,8 +41,7 @@ public class MycenansuperchannelerItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal(
-				"Throws a spore bomb that infects affected enemies with spore growths that explode into other spore bombs that also inflict targets with spore growths"));
+		list.add(Component.literal("Throws a spore bomb that infects affected enemies with spore growths that explode into other spore bombs that also inflict targets with spore growths"));
 	}
 
 	@Override

@@ -76,8 +76,7 @@ public abstract class MycenanarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal(
-					"Full armor effect : when losing health,you have a chance to instantly regenerate health and infect enemies close to you with fungal spores"));
+			list.add(Component.literal("Full armor effect : when losing health,you have a chance to instantly regenerate health and infect enemies close to you with fungal spores"));
 		}
 
 		@Override
@@ -94,8 +93,7 @@ public abstract class MycenanarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal(
-					"Full armor effect : when losing health,you have a chance to instantly regenerate health and infect enemies close to you with fungal spores"));
+			list.add(Component.literal("Full armor effect : when losing health,you have a chance to instantly regenerate health and infect enemies close to you with fungal spores"));
 		}
 
 		@Override
@@ -117,8 +115,7 @@ public abstract class MycenanarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal(
-					"Full armor effect : when losing health,you have a chance to instantly regenerate health and infect enemies close to you with fungal spores"));
+			list.add(Component.literal("Full armor effect : when losing health,you have a chance to instantly regenerate health and infect enemies close to you with fungal spores"));
 		}
 
 		@Override
@@ -135,8 +132,7 @@ public abstract class MycenanarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal(
-					"Full armor effect : when losing health,you have a chance to instantly regenerate health and infect enemies close to you with fungal spores"));
+			list.add(Component.literal("Full armor effect : when losing health,you have a chance to instantly regenerate health and infect enemies close to you with fungal spores"));
 		}
 
 		@Override

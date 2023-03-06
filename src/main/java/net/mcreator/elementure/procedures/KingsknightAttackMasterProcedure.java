@@ -28,12 +28,10 @@ public class KingsknightAttackMasterProcedure {
 		double playX = 0;
 		double playZ = 0;
 		double playY = 0;
-		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)
-				&& (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).isAlive()) {
+		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null) && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).isAlive()) {
 			if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.MOVEMENT_SPEED) : false) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SOULFLAME.get()), (entity.getX()), (entity.getY()),
-							(entity.getZ()), 6, 1.2, 1.2, 1.2, 0.22);
+					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SOULFLAME.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 6, 1.2, 1.2, 1.2, 0.22);
 			}
 			if (entity.getPersistentData().getDouble("attackCooldown") == 66) {
 				attackChoice = Math.random();
@@ -54,8 +52,7 @@ public class KingsknightAttackMasterProcedure {
 					if (entity.getPersistentData().getDouble("attackCooldown") <= 76) {
 						{
 							final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-							List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(12 / 2d), e -> true)
-									.stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(12 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
 									.collect(Collectors.toList());
 							for (Entity entityiterator : _entfound) {
 								if (entityiterator instanceof Player || entityiterator instanceof ServerPlayer) {
@@ -80,12 +77,10 @@ public class KingsknightAttackMasterProcedure {
 							_level.sendParticles(ParticleTypes.SMOKE, (entity.getX()), (entity.getY()), (entity.getZ()), 50, 1, 1, 1, 0.05);
 						{
 							Entity _ent = entity;
-							_ent.teleportTo((entity.getPersistentData().getDouble("kingsKnightAttackTeleportX")),
-									(entity.getPersistentData().getDouble("kingsKnightAttackTeleportY")),
+							_ent.teleportTo((entity.getPersistentData().getDouble("kingsKnightAttackTeleportX")), (entity.getPersistentData().getDouble("kingsKnightAttackTeleportY")),
 									(entity.getPersistentData().getDouble("kingsKnightAttackTeleportZ")));
 							if (_ent instanceof ServerPlayer _serverPlayer)
-								_serverPlayer.connection.teleport((entity.getPersistentData().getDouble("kingsKnightAttackTeleportX")),
-										(entity.getPersistentData().getDouble("kingsKnightAttackTeleportY")),
+								_serverPlayer.connection.teleport((entity.getPersistentData().getDouble("kingsKnightAttackTeleportX")), (entity.getPersistentData().getDouble("kingsKnightAttackTeleportY")),
 										(entity.getPersistentData().getDouble("kingsKnightAttackTeleportZ")), _ent.getYRot(), _ent.getXRot());
 						}
 						entity.getPersistentData().putDouble("attackCooldown", 0);

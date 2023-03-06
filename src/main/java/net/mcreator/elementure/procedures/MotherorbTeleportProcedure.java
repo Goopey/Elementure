@@ -33,8 +33,7 @@ public class MotherorbTeleportProcedure {
 			return;
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if (!(entity == entityiterator)) {
 					if (entityiterator instanceof Player || entityiterator instanceof ServerPlayer) {
@@ -44,22 +43,19 @@ public class MotherorbTeleportProcedure {
 									return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
 								} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
 									return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
-											&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId())
-													.getGameMode() == GameType.CREATIVE;
+											&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
 								}
 								return false;
 							}
 						}.checkGamemode(entityiterator))) {
 							if (entityiterator instanceof ServerPlayer _player && !_player.level.isClientSide()) {
-								ResourceKey<Level> destinationType = ResourceKey.create(Registry.DIMENSION_REGISTRY,
-										new ResourceLocation("elementure:forgotten_1"));
+								ResourceKey<Level> destinationType = ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("elementure:forgotten_1"));
 								if (_player.level.dimension() == destinationType)
 									return;
 								ServerLevel nextLevel = _player.server.getLevel(destinationType);
 								if (nextLevel != null) {
 									_player.connection.send(new ClientboundGameEventPacket(ClientboundGameEventPacket.WIN_GAME, 0));
-									_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(),
-											_player.getXRot());
+									_player.teleportTo(nextLevel, _player.getX(), _player.getY(), _player.getZ(), _player.getYRot(), _player.getXRot());
 									_player.connection.send(new ClientboundPlayerAbilitiesPacket(_player.getAbilities()));
 									for (MobEffectInstance _effectinstance : _player.getActiveEffects())
 										_player.connection.send(new ClientboundUpdateMobEffectPacket(_player.getId(), _effectinstance));
@@ -76,13 +72,10 @@ public class MotherorbTeleportProcedure {
 		}
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(128 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(128 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if (!(entityiterator instanceof MotherorbEntity) && !entityiterator.getType()
-						.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
-					entityiterator.setDeltaMovement(
-							new Vec3(((entity.getX() - entityiterator.getX()) / 6), 0.1, ((entity.getZ() - entityiterator.getZ()) / 6)));
+				if (!(entityiterator instanceof MotherorbEntity) && !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
+					entityiterator.setDeltaMovement(new Vec3(((entity.getX() - entityiterator.getX()) / 6), 0.1, ((entity.getZ() - entityiterator.getZ()) / 6)));
 				}
 			}
 		}

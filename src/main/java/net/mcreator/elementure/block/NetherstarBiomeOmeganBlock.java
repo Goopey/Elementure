@@ -25,10 +25,7 @@ import net.mcreator.elementure.block.entity.NetherstarBiomeOmeganBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class NetherstarBiomeOmeganBlock extends Block
-		implements
-
-			EntityBlock {
+public class NetherstarBiomeOmeganBlock extends Block implements EntityBlock {
 	public NetherstarBiomeOmeganBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRAVEL).strength(-1, 3600000));
 	}
@@ -58,7 +55,6 @@ public class NetherstarBiomeOmeganBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		NetherstarBiomeOmeganGenProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 10);
 	}

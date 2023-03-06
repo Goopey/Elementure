@@ -25,8 +25,7 @@ public class JellybladeReachProcedure {
 		RegistryObject<Attribute> registerAttrib = ForgeMod.REACH_DISTANCE;
 		EquipmentSlot equipSlot = EquipmentSlot.MAINHAND;
 		Attribute attrib = registerAttrib.get();
-		if (spear.getItem() == ElementureModItems.JELLYBLADE.get() && registerAttrib.isPresent()
-				&& !spear.getAttributeModifiers(equipSlot).containsKey(attrib)) {
+		if (spear.getItem() == ElementureModItems.JELLYBLADE.get() && registerAttrib.isPresent() && !spear.getAttributeModifiers(equipSlot).containsKey(attrib)) {
 			amount = 2;
 			UUID id = UUID.fromString("29b23646-7e33-4a6d-9150-3217d940607f");
 			Supplier<String> nameSupplier = () -> name;

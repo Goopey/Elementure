@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGHEST",
@@ -9,7 +9,6 @@
         "data": {
           "image": "backg_fishingminigame.png",
           "use1Xscale": false,
-          "name": "backg_fishingminigame.png",
           "x": 136,
           "y": 6
         }
@@ -19,7 +18,6 @@
         "data": {
           "image": "fishing_progress_bar.png",
           "use1Xscale": false,
-          "name": "fishing_progress_bar.png",
           "x": 190,
           "y": 10
         }
@@ -32,7 +30,6 @@
           "displayCondition": {
             "name": "Reelingtimer1"
           },
-          "name": "fishing_progress_bar_1.png",
           "x": 192,
           "y": 187
         }
@@ -45,7 +42,6 @@
           "displayCondition": {
             "name": "Reelingtimer2"
           },
-          "name": "fishing_progress_bar_2.png",
           "x": 192,
           "y": 162
         }
@@ -58,7 +54,6 @@
           "displayCondition": {
             "name": "Reelingtimer3"
           },
-          "name": "fishing_progress_bar_3.png",
           "x": 192,
           "y": 137
         }
@@ -71,7 +66,6 @@
           "displayCondition": {
             "name": "Reelingtimer4"
           },
-          "name": "fishing_progress_bar_4.png",
           "x": 192,
           "y": 112
         }
@@ -84,7 +78,6 @@
           "displayCondition": {
             "name": "Reelingtimer5"
           },
-          "name": "fishing_progress_bar_5.png",
           "x": 192,
           "y": 87
         }
@@ -97,7 +90,6 @@
           "displayCondition": {
             "name": "Reelingtimer6"
           },
-          "name": "fishing_progress_bar_6.png",
           "x": 192,
           "y": 62
         }
@@ -110,7 +102,6 @@
           "displayCondition": {
             "name": "Reelingtimer7"
           },
-          "name": "fishing_progress_bar_8.png",
           "x": 192,
           "y": 37
         }
@@ -123,7 +114,6 @@
           "displayCondition": {
             "name": "Reelingtimer8"
           },
-          "name": "fishing_progress_bar_10.png",
           "x": 192,
           "y": 12
         }
@@ -133,7 +123,6 @@
         "data": {
           "image": "backg_fishingitems.png",
           "use1Xscale": false,
-          "name": "backg_fishingitems.png",
           "x": 222,
           "y": 56
         }
@@ -143,7 +132,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 228,
           "y": 109
         }
@@ -153,7 +141,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 228,
           "y": 64
         }
@@ -163,7 +150,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 228,
           "y": 154
         }
@@ -173,7 +159,6 @@
         "data": {
           "image": "fishing_stun_progress_bar.png",
           "use1Xscale": false,
-          "name": "fishing_stun_progress_bar.png",
           "x": 258,
           "y": 62
         }
@@ -186,7 +171,6 @@
           "displayCondition": {
             "name": "Stuntimer1"
           },
-          "name": "stun_bar_1.png",
           "x": 260,
           "y": 154
         }
@@ -199,7 +183,6 @@
           "displayCondition": {
             "name": "Stuntimer2"
           },
-          "name": "stun_bar_2.png",
           "x": 260,
           "y": 136
         }
@@ -212,7 +195,6 @@
           "displayCondition": {
             "name": "Stuntimer3"
           },
-          "name": "stun_bar_3.png",
           "x": 260,
           "y": 118
         }
@@ -225,7 +207,6 @@
           "displayCondition": {
             "name": "Stuntimer4"
           },
-          "name": "stun_bar_4.png",
           "x": 260,
           "y": 100
         }
@@ -238,7 +219,6 @@
           "displayCondition": {
             "name": "Stuntimer5"
           },
-          "name": "stun_bar_5.png",
           "x": 260,
           "y": 82
         }
@@ -251,7 +231,6 @@
           "displayCondition": {
             "name": "Stuntimer6"
           },
-          "name": "stun_bar_6.png",
           "x": 260,
           "y": 64
         }

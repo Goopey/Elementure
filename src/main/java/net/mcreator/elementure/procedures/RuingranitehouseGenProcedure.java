@@ -17,11 +17,9 @@ public class RuingranitehouseGenProcedure {
 			if (Math.random() < 0.5) {
 				ElementureMod.queueServerWork(20, () -> {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "ruingranite_house"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "ruingranite_house"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x - 4, y, z - 3), new BlockPos(x - 4, y, z - 3),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x - 4, y, z - 3), new BlockPos(x - 4, y, z - 3), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}
@@ -33,11 +31,9 @@ public class RuingranitehouseGenProcedure {
 			} else {
 				ElementureMod.queueServerWork(20, () -> {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "ruingranite_temple"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "ruingranite_temple"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x - 3, y, z - 3), new BlockPos(x - 3, y, z - 3),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x - 3, y, z - 3), new BlockPos(x - 3, y, z - 3), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}

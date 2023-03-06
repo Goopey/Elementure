@@ -70,7 +70,6 @@ public class FishingrecordJellyPools1ButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(FishingrecordJellyPools1ButtonMessage.class, FishingrecordJellyPools1ButtonMessage::buffer,
-				FishingrecordJellyPools1ButtonMessage::new, FishingrecordJellyPools1ButtonMessage::handler);
+		ElementureMod.addNetworkMessage(FishingrecordJellyPools1ButtonMessage.class, FishingrecordJellyPools1ButtonMessage::buffer, FishingrecordJellyPools1ButtonMessage::new, FishingrecordJellyPools1ButtonMessage::handler);
 	}
 }

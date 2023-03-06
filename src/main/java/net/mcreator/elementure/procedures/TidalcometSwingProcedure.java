@@ -18,12 +18,8 @@ public class TidalcometSwingProcedure {
 		if (itemstack.getOrCreateTag().getBoolean("hasCometLight")) {
 			itemstack.getOrCreateTag().putBoolean("hasCometLight", (false));
 			itemstack.getOrCreateTag().putDouble("cometSwings", 0);
-			if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1)
-					.getItem() == ElementureModItems.COMETCROWN.get()
-					|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2)
-							.getItem() == ElementureModItems.COMETCROWN.get()) {
+			if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).getItem() == ElementureModItems.COMETCROWN.get()
+					|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).getItem() == ElementureModItems.COMETCROWN.get()) {
 				{
 					Entity _shootFrom = entity;
 					Level projectileLevel = _shootFrom.level;

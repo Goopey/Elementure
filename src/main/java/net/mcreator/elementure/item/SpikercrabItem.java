@@ -15,10 +15,9 @@ import java.util.List;
 
 public class SpikercrabItem extends Item {
 	public SpikercrabItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.4f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.4f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

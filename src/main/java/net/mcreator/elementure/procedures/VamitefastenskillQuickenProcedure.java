@@ -17,8 +17,7 @@ public class VamitefastenskillQuickenProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.HUNGER, 300, 0));
 			{
-				double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).time_NE_essence - 33;
+				double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).time_NE_essence - 33;
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.time_NE_essence = _setval;
 					capability.syncPlayerVariables(entity);

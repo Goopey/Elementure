@@ -26,8 +26,7 @@ import java.util.Collections;
 
 public class TarDarkstoneBlock extends Block {
 	public TarDarkstoneBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(-1, 3600000).lightLevel(s -> 15)
-				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(-1, 3600000).lightLevel(s -> 15).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override
@@ -53,7 +52,6 @@ public class TarDarkstoneBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-
 		TardarkstoneActivateProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}

@@ -29,8 +29,7 @@ public class WaterblastskillTrueWaterProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.WATERBLASTSKILL
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.WATERBLASTSKILL.get()) {
 			entity.getPersistentData().putBoolean("waterACTIVE", (true));
 		}
 	}

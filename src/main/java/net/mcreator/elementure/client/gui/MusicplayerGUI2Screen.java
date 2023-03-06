@@ -1,4 +1,3 @@
-
 package net.mcreator.elementure.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,15 @@ public class MusicplayerGUI2Screen extends AbstractContainerScreen<MusicplayerGU
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_credits;
+	Button button_next;
+	Button button_back;
+	Button button_stop_music;
+	Button button_one_more_day_lena_raine;
+	Button button_stand_tall_lena_raine;
+	Button button_hydrothermal_hollow_lui37;
+	Button button_rebel_base_1_crusaders;
+	Button button_black_iron_pact_battle_bros;
 
 	public MusicplayerGUI2Screen(MusicplayerGUI2Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -83,59 +91,77 @@ public class MusicplayerGUI2Screen extends AbstractContainerScreen<MusicplayerGU
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 73, this.topPos + 143, 60, 20, Component.literal("Credits"), e -> {
+		button_credits = new Button(this.leftPos + 73, this.topPos + 143, 60, 20, Component.translatable("gui.elementure.musicplayer_gui_2.button_credits"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(0, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 157, this.topPos + 143, 45, 20, Component.literal("Next"), e -> {
+		});
+		guistate.put("button:button_credits", button_credits);
+		this.addRenderableWidget(button_credits);
+		button_next = new Button(this.leftPos + 157, this.topPos + 143, 45, 20, Component.translatable("gui.elementure.musicplayer_gui_2.button_next"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(1, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 2, this.topPos + 143, 45, 20, Component.literal("Back"), e -> {
+		});
+		guistate.put("button:button_next", button_next);
+		this.addRenderableWidget(button_next);
+		button_back = new Button(this.leftPos + 2, this.topPos + 143, 45, 20, Component.translatable("gui.elementure.musicplayer_gui_2.button_back"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(2, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 64, this.topPos + 3, 77, 20, Component.literal("STOP MUSIC"), e -> {
+		});
+		guistate.put("button:button_back", button_back);
+		this.addRenderableWidget(button_back);
+		button_stop_music = new Button(this.leftPos + 64, this.topPos + 3, 77, 20, Component.translatable("gui.elementure.musicplayer_gui_2.button_stop_music"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(3, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 27, 155, 20, Component.literal("One More Day - Lena Raine"), e -> {
+		});
+		guistate.put("button:button_stop_music", button_stop_music);
+		this.addRenderableWidget(button_stop_music);
+		button_one_more_day_lena_raine = new Button(this.leftPos + 5, this.topPos + 27, 155, 20, Component.translatable("gui.elementure.musicplayer_gui_2.button_one_more_day_lena_raine"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(4, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 49, 144, 20, Component.literal("Stand Tall - Lena Raine"), e -> {
+		});
+		guistate.put("button:button_one_more_day_lena_raine", button_one_more_day_lena_raine);
+		this.addRenderableWidget(button_one_more_day_lena_raine);
+		button_stand_tall_lena_raine = new Button(this.leftPos + 5, this.topPos + 49, 144, 20, Component.translatable("gui.elementure.musicplayer_gui_2.button_stand_tall_lena_raine"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(5, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 5, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 71, 166, 20, Component.literal("Hydrothermal Hollow - Lui37"), e -> {
+		});
+		guistate.put("button:button_stand_tall_lena_raine", button_stand_tall_lena_raine);
+		this.addRenderableWidget(button_stand_tall_lena_raine);
+		button_hydrothermal_hollow_lui37 = new Button(this.leftPos + 5, this.topPos + 71, 166, 20, Component.translatable("gui.elementure.musicplayer_gui_2.button_hydrothermal_hollow_lui37"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(6, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 6, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 93, 150, 20, Component.literal("Rebel Base 1 - Crusaders"), e -> {
+		});
+		guistate.put("button:button_hydrothermal_hollow_lui37", button_hydrothermal_hollow_lui37);
+		this.addRenderableWidget(button_hydrothermal_hollow_lui37);
+		button_rebel_base_1_crusaders = new Button(this.leftPos + 5, this.topPos + 93, 150, 20, Component.translatable("gui.elementure.musicplayer_gui_2.button_rebel_base_1_crusaders"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(7, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 7, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 115, 176, 20, Component.literal("Black Iron Pact - Battle Bros"), e -> {
+		});
+		guistate.put("button:button_rebel_base_1_crusaders", button_rebel_base_1_crusaders);
+		this.addRenderableWidget(button_rebel_base_1_crusaders);
+		button_black_iron_pact_battle_bros = new Button(this.leftPos + 5, this.topPos + 115, 176, 20, Component.translatable("gui.elementure.musicplayer_gui_2.button_black_iron_pact_battle_bros"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI2ButtonMessage(8, x, y, z));
 				MusicplayerGUI2ButtonMessage.handleButtonAction(entity, 8, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_black_iron_pact_battle_bros", button_black_iron_pact_battle_bros);
+		this.addRenderableWidget(button_black_iron_pact_battle_bros);
 	}
 }

@@ -57,8 +57,7 @@ public class IvorypickaxeItem extends PickaxeItem {
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		IvorypickaxeInstamineIvoryProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(),
-				context.getClickedPos().getZ(), context.getItemInHand());
+		IvorypickaxeInstamineIvoryProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getItemInHand());
 		return InteractionResult.SUCCESS;
 	}
 

@@ -44,29 +44,17 @@ public class Modelivory_shade<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition head = partdefinition
-				.addOrReplaceChild("head",
-						CubeListBuilder.create().texOffs(32, 48).addBox(-4.0F, -8.0F, -5.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.0F))
-								.texOffs(18, 59).addBox(-3.0F, 0.0F, -5.0F, 6.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)),
-						PartPose.offset(0.0F, -6.0F, 0.0F));
-		PartDefinition arm_right = partdefinition.addOrReplaceChild("arm_right", CubeListBuilder.create().texOffs(0, 0).mirror()
-				.addBox(-1.0F, 0.0F, -1.0F, 2.0F, 18.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-6.0F, -3.5F, 0.0F));
-		PartDefinition arm_left = partdefinition.addOrReplaceChild("arm_left",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, 0.0F, -1.0F, 2.0F, 18.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(6.0F, -3.5F, 0.0F));
-		PartDefinition legs = partdefinition.addOrReplaceChild("legs",
-				CubeListBuilder.create().texOffs(0, 21).addBox(-4.0F, -1.0F, -2.0F, 8.0F, 2.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 9.0F, 0.0F));
-		PartDefinition legright = legs.addOrReplaceChild("legright", CubeListBuilder.create().texOffs(0, 0).mirror()
-				.addBox(-1.0F, 0.0F, -1.0F, 2.0F, 14.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-2.0F, 1.0F, 0.0F));
-		PartDefinition legleft = legs.addOrReplaceChild("legleft",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, 0.0F, -1.0F, 2.0F, 14.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(2.0F, 1.0F, 0.0F));
-		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -30.0F, -1.01F, 2.0F, 14.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(36, 0)
-						.addBox(-4.5F, -29.0F, -2.5F, 9.0F, 10.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(28, 16)
-						.addBox(-8.0F, -29.5F, -1.0F, 16.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 24.0F, 0.0F));
+		PartDefinition head = partdefinition.addOrReplaceChild("head",
+				CubeListBuilder.create().texOffs(32, 48).addBox(-4.0F, -8.0F, -5.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(18, 59).addBox(-3.0F, 0.0F, -5.0F, 6.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)),
+				PartPose.offset(0.0F, -6.0F, 0.0F));
+		PartDefinition arm_right = partdefinition.addOrReplaceChild("arm_right", CubeListBuilder.create().texOffs(0, 0).mirror().addBox(-1.0F, 0.0F, -1.0F, 2.0F, 18.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false),
+				PartPose.offset(-6.0F, -3.5F, 0.0F));
+		PartDefinition arm_left = partdefinition.addOrReplaceChild("arm_left", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, 0.0F, -1.0F, 2.0F, 18.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(6.0F, -3.5F, 0.0F));
+		PartDefinition legs = partdefinition.addOrReplaceChild("legs", CubeListBuilder.create().texOffs(0, 21).addBox(-4.0F, -1.0F, -2.0F, 8.0F, 2.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 9.0F, 0.0F));
+		PartDefinition legright = legs.addOrReplaceChild("legright", CubeListBuilder.create().texOffs(0, 0).mirror().addBox(-1.0F, 0.0F, -1.0F, 2.0F, 14.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-2.0F, 1.0F, 0.0F));
+		PartDefinition legleft = legs.addOrReplaceChild("legleft", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, 0.0F, -1.0F, 2.0F, 14.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(2.0F, 1.0F, 0.0F));
+		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -30.0F, -1.01F, 2.0F, 14.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(36, 0)
+				.addBox(-4.5F, -29.0F, -2.5F, 9.0F, 10.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(28, 16).addBox(-8.0F, -29.5F, -1.0F, 16.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
 
@@ -82,8 +70,7 @@ public class Modelivory_shade<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		head.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		arm_right.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		arm_left.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);

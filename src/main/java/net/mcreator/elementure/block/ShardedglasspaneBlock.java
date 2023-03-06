@@ -16,8 +16,7 @@ import java.util.Collections;
 
 public class ShardedglasspaneBlock extends IronBarsBlock {
 	public ShardedglasspaneBlock() {
-		super(BlockBehaviour.Properties.of(Material.GLASS).sound(SoundType.GLASS).strength(0.4f, 2f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.GLASS).sound(SoundType.GLASS).strength(0.4f, 2f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override

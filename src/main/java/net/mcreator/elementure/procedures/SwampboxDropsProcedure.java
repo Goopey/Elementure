@@ -17,8 +17,7 @@ public class SwampboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index0 = 0; index0 < (int) (Math.ceil(Math.random() * 4)); index0++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.OAK_SAPLING));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.OAK_SAPLING));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -27,8 +26,7 @@ public class SwampboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index1 = 0; index1 < (int) (Math.ceil(Math.random() * 8)); index1++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.OAK_LOG));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.OAK_LOG));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -46,8 +44,7 @@ public class SwampboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index3 = 0; index3 < (int) (Math.ceil(Math.random() * 8)); index3++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.RED_MUSHROOM));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.RED_MUSHROOM));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -56,8 +53,7 @@ public class SwampboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index4 = 0; index4 < (int) (Math.ceil(Math.random() * 8)); index4++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.BROWN_MUSHROOM));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.BROWN_MUSHROOM));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -66,8 +62,7 @@ public class SwampboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index5 = 0; index5 < (int) (Math.ceil(Math.random() * 4)); index5++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.LILY_PAD));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.LILY_PAD));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -76,8 +71,7 @@ public class SwampboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index6 = 0; index6 < (int) (Math.ceil(Math.random() * 4)); index6++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Items.SLIME_BALL));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Items.SLIME_BALL));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -86,8 +80,7 @@ public class SwampboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index7 = 0; index7 < (int) (Math.ceil(Math.random() * 4)); index7++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.DEAD_BUSH));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.DEAD_BUSH));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -105,8 +98,7 @@ public class SwampboxDropsProcedure {
 		if (Math.random() < 0.1) {
 			for (int index9 = 0; index9 < (int) (Math.ceil(Math.random() * 8)); index9++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(ElementureModItems.PERRYBERRY.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.PERRYBERRY.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}

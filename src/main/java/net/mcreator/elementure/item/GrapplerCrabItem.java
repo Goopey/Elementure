@@ -15,16 +15,14 @@ import java.util.List;
 
 public class GrapplerCrabItem extends Item {
 	public GrapplerCrabItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.4f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.4f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component
-				.literal("Even though it has very tiny pincers, it's spider-like legs allow it to grapple other crab-like creatures easily."));
+		list.add(Component.literal("Even though it has very tiny pincers, it's spider-like legs allow it to grapple other crab-like creatures easily."));
 	}
 }

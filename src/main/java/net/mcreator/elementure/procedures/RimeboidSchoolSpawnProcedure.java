@@ -27,13 +27,11 @@ public class RimeboidSchoolSpawnProcedure {
 						if (Math.random() < 0.85) {
 							if (world instanceof ServerLevel _level) {
 								Entity entityToSpawn = new RimeboidEntity(ElementureModEntities.RIMEBOID.get(), _level);
-								entityToSpawn.moveTo((entity.getX() + Math.random() * 6 - 3), (entity.getY() + Math.random() * 6 - 3),
-										(entity.getZ() + Math.random() * 6 - 3), 0, 0);
+								entityToSpawn.moveTo((entity.getX() + Math.random() * 6 - 3), (entity.getY() + Math.random() * 6 - 3), (entity.getZ() + Math.random() * 6 - 3), 0, 0);
 								entityToSpawn.setYBodyRot(0);
 								entityToSpawn.setYHeadRot(0);
 								if (entityToSpawn instanceof Mob _mobToSpawn)
-									_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()),
-											MobSpawnType.MOB_SUMMONED, null, null);
+									_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 								world.addFreshEntity(entityToSpawn);
 							}
 						}
@@ -41,8 +39,7 @@ public class RimeboidSchoolSpawnProcedure {
 					if (entity.getPersistentData().getBoolean("isBonus")) {
 						{
 							final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-							List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true)
-									.stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
 									.collect(Collectors.toList());
 							for (Entity entityiterator : _entfound) {
 								if (entityiterator instanceof RimeboidEntity) {
@@ -53,8 +50,7 @@ public class RimeboidSchoolSpawnProcedure {
 					} else {
 						{
 							final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-							List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true)
-									.stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(10 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
 									.collect(Collectors.toList());
 							for (Entity entityiterator : _entfound) {
 								if (entityiterator instanceof RimeboidEntity) {

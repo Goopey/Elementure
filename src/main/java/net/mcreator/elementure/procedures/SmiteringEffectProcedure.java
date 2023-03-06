@@ -31,23 +31,12 @@ public class SmiteringEffectProcedure {
 	private static void execute(@Nullable Event event, Entity entity, Entity sourceentity) {
 		if (entity == null || sourceentity == null)
 			return;
-		if (((sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).getItem() == ElementureModItems.SMITERING.get()
-				|| ((sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_2)
-						.getItem() == ElementureModItems.SMITERING.get()
-				|| ((sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_3)
-						.getItem() == ElementureModItems.SMITERING.get()
-				|| ((sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_4)
-						.getItem() == ElementureModItems.SMITERING.get()
-				|| ((sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_5)
-						.getItem() == ElementureModItems.SMITERING.get()
-				|| ((sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_6)
-						.getItem() == ElementureModItems.SMITERING.get()) {
+		if (((sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).getItem() == ElementureModItems.SMITERING.get()
+				|| ((sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_2).getItem() == ElementureModItems.SMITERING.get()
+				|| ((sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_3).getItem() == ElementureModItems.SMITERING.get()
+				|| ((sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_4).getItem() == ElementureModItems.SMITERING.get()
+				|| ((sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_5).getItem() == ElementureModItems.SMITERING.get()
+				|| ((sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_6).getItem() == ElementureModItems.SMITERING.get()) {
 			if (entity instanceof LivingEntity _livEnt ? _livEnt.getMobType() == MobType.UNDEAD : false) {
 				entity.hurt(DamageSource.GENERIC, 1);
 			}

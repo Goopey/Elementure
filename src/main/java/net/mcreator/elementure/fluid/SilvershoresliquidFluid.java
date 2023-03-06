@@ -14,10 +14,8 @@ import net.mcreator.elementure.init.ElementureModFluidTypes;
 import net.mcreator.elementure.init.ElementureModBlocks;
 
 public abstract class SilvershoresliquidFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(
-			() -> ElementureModFluidTypes.SILVERSHORESLIQUID_TYPE.get(), () -> ElementureModFluids.SILVERSHORESLIQUID.get(),
-			() -> ElementureModFluids.FLOWING_SILVERSHORESLIQUID.get()).explosionResistance(100f)
-			.bucket(() -> ElementureModItems.SILVERSHORESLIQUID_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.SILVERSHORESLIQUID.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ElementureModFluidTypes.SILVERSHORESLIQUID_TYPE.get(), () -> ElementureModFluids.SILVERSHORESLIQUID.get(),
+			() -> ElementureModFluids.FLOWING_SILVERSHORESLIQUID.get()).explosionResistance(100f).bucket(() -> ElementureModItems.SILVERSHORESLIQUID_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.SILVERSHORESLIQUID.get());
 
 	private SilvershoresliquidFluid() {
 		super(PROPERTIES);

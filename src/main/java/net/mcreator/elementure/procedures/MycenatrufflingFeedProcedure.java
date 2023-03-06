@@ -26,8 +26,7 @@ public class MycenatrufflingFeedProcedure {
 				Entity entityToSpawn = new MycenatruffloonEntity(ElementureModEntities.MYCENATRUFFLOON.get(), _level);
 				entityToSpawn.moveTo((entity.getX()), (entity.getY()), (entity.getZ()), world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
-							null);
+					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				world.addFreshEntity(entityToSpawn);
 			}
 		} else if (itemstack.getItem() == ElementureModItems.MYCENASHROOMITEM.get() && entity.getPersistentData().getDouble("growth") < 8) {

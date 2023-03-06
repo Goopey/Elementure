@@ -8,11 +8,9 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.mcreator.elementure.entity.WeakandesiteelementalEntity;
 import net.mcreator.elementure.client.model.Modelweaklightningandesiteelemental;
 
-public class WeakandesiteelementalRenderer
-		extends
-			MobRenderer<WeakandesiteelementalEntity, Modelweaklightningandesiteelemental<WeakandesiteelementalEntity>> {
+public class WeakandesiteelementalRenderer extends MobRenderer<WeakandesiteelementalEntity, Modelweaklightningandesiteelemental<WeakandesiteelementalEntity>> {
 	public WeakandesiteelementalRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelweaklightningandesiteelemental(context.bakeLayer(Modelweaklightningandesiteelemental.LAYER_LOCATION)), 0.3f);
+		super(context, new Modelweaklightningandesiteelemental(context.bakeLayer(Modelweaklightningandesiteelemental.LAYER_LOCATION)), 0.30000000000000004f);
 	}
 
 	@Override

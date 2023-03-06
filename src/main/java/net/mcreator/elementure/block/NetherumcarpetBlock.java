@@ -24,8 +24,7 @@ import java.util.Collections;
 
 public class NetherumcarpetBlock extends FallingBlock {
 	public NetherumcarpetBlock() {
-		super(BlockBehaviour.Properties.of(Material.SAND).sound(SoundType.SAND).strength(20f, 1200f).lightLevel(s -> 6).friction(0.55f)
-				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of(Material.SAND).sound(SoundType.SAND).strength(20f, 1200f).lightLevel(s -> 6).friction(0.55f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override

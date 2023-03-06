@@ -7,7 +7,6 @@ import net.mcreator.elementure.network.ElementureModVariables;
 
 public class ObleckclericSpawningProcedure {
 	public static boolean execute(LevelAccessor world) {
-		return ElementureModVariables.WorldVariables.get(world).elementalOreObtained && !(world.getDifficulty() == Difficulty.PEACEFUL)
-				&& Math.random() < 0.05;
+		return ElementureModVariables.WorldVariables.get(world).elementalOreObtained && !(world.getDifficulty() == Difficulty.PEACEFUL) && Math.random() < 0.05;
 	}
 }

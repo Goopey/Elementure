@@ -14,11 +14,8 @@ import net.mcreator.elementure.init.ElementureModFluidTypes;
 import net.mcreator.elementure.init.ElementureModBlocks;
 
 public abstract class LightningelementliquidFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(
-			() -> ElementureModFluidTypes.LIGHTNINGELEMENTLIQUID_TYPE.get(), () -> ElementureModFluids.LIGHTNINGELEMENTLIQUID.get(),
-			() -> ElementureModFluids.FLOWING_LIGHTNINGELEMENTLIQUID.get()).explosionResistance(100f)
-			.bucket(() -> ElementureModItems.LIGHTNINGELEMENTLIQUID_BUCKET.get())
-			.block(() -> (LiquidBlock) ElementureModBlocks.LIGHTNINGELEMENTLIQUID.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ElementureModFluidTypes.LIGHTNINGELEMENTLIQUID_TYPE.get(), () -> ElementureModFluids.LIGHTNINGELEMENTLIQUID.get(),
+			() -> ElementureModFluids.FLOWING_LIGHTNINGELEMENTLIQUID.get()).explosionResistance(100f).bucket(() -> ElementureModItems.LIGHTNINGELEMENTLIQUID_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.LIGHTNINGELEMENTLIQUID.get());
 
 	private LightningelementliquidFluid() {
 		super(PROPERTIES);

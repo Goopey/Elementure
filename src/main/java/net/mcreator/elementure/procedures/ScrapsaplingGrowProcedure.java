@@ -36,12 +36,10 @@ public class ScrapsaplingGrowProcedure {
 				height = height + 1;
 			}
 			if (world instanceof ServerLevel _serverworld) {
-				StructureTemplate template = _serverworld.getStructureManager()
-						.getOrCreate(new ResourceLocation("elementure", "nether_scrap_tree_base"));
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "nether_scrap_tree_base"));
 				if (template != null) {
 					template.placeInWorld(_serverworld, new BlockPos(x - 3, y + randomheight, z - 3), new BlockPos(x - 3, y + randomheight, z - 3),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-							_serverworld.random, 3);
+							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 		}

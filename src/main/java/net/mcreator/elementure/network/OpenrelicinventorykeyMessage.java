@@ -58,7 +58,6 @@ public class OpenrelicinventorykeyMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(OpenrelicinventorykeyMessage.class, OpenrelicinventorykeyMessage::buffer, OpenrelicinventorykeyMessage::new,
-				OpenrelicinventorykeyMessage::handler);
+		ElementureMod.addNetworkMessage(OpenrelicinventorykeyMessage.class, OpenrelicinventorykeyMessage::buffer, OpenrelicinventorykeyMessage::new, OpenrelicinventorykeyMessage::handler);
 	}
 }

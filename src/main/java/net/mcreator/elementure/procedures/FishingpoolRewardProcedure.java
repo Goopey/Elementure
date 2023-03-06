@@ -9,8 +9,7 @@ public class FishingpoolRewardProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		entity.getPersistentData().putString("caughtFishElementure", ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish));
+		entity.getPersistentData().putString("caughtFishElementure", ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish));
 		MycenafishingpoolRewardProcedure.execute(world, entity);
 		VanillafishingpoolrewardProcedure.execute(world, entity);
 		LavafishingpoolRewardProcedure.execute(world, entity);

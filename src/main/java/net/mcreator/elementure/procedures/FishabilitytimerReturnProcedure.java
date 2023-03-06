@@ -8,7 +8,6 @@ public class FishabilitytimerReturnProcedure {
 	public static double execute(Entity entity) {
 		if (entity == null)
 			return 0;
-		return (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).fishAbilityTimer;
+		return (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fishAbilityTimer;
 	}
 }

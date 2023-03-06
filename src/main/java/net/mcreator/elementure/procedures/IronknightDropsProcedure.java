@@ -16,10 +16,8 @@ public class IronknightDropsProcedure {
 		if (sourceentity == null)
 			return;
 		double lootBonus = 0;
-		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.MOB_LOOTING,
-				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
-			lootBonus = 1 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.MOB_LOOTING,
-					(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
+		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.MOB_LOOTING, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
+			lootBonus = 1 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.MOB_LOOTING, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY));
 		}
 		if (Math.random() < 0.9 - lootBonus / 20) {
 			if (world instanceof Level _level && !_level.isClientSide()) {

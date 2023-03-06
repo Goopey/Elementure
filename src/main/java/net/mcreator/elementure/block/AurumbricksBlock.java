@@ -13,7 +13,7 @@ import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
@@ -26,10 +26,7 @@ import net.mcreator.elementure.block.entity.AurumbricksBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class AurumbricksBlock extends Block
-		implements
-
-			EntityBlock {
+public class AurumbricksBlock extends Block implements EntityBlock {
 	public AurumbricksBlock() {
 		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.STONE).strength(6f, 40f).lightLevel(s -> 3).requiresCorrectToolForDrops());
 	}
@@ -41,7 +38,7 @@ public class AurumbricksBlock extends Block
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 2;
 		return false;
 	}

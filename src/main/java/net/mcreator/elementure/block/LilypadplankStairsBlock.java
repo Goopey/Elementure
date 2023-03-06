@@ -17,8 +17,7 @@ import java.util.Collections;
 
 public class LilypadplankStairsBlock extends StairBlock {
 	public LilypadplankStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(4f, 16.5f)
-				.noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.WOOD).sound(SoundType.WOOD).strength(4f, 16.5f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
 	}
 
 	@Override

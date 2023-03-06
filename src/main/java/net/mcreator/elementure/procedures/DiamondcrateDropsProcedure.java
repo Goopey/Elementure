@@ -20,55 +20,46 @@ public class DiamondcrateDropsProcedure {
 			return;
 		ItemStack droppedweapon = ItemStack.EMPTY;
 		(itemstack).shrink(1);
-		if (Math.random() < 0.16 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.LUCK)
-				? _livEnt.getEffect(MobEffects.LUCK).getAmplifier()
-				: 0) / 10) {
+		if (Math.random() < 0.16 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.LUCK) ? _livEnt.getEffect(MobEffects.LUCK).getAmplifier() : 0) / 10) {
 			if (Math.random() < 0.14) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(ElementureModItems.OBSIDIANBOBBER.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.OBSIDIANBOBBER.get()));
 					entityToSpawn.setPickUpDelay(4);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			} else if (Math.random() < 0.17) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(ElementureModItems.THEBLUEBOX.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.THEBLUEBOX.get()));
 					entityToSpawn.setPickUpDelay(4);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			} else if (Math.random() < 0.2) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(ElementureModItems.MOSSCHARM.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.MOSSCHARM.get()));
 					entityToSpawn.setPickUpDelay(4);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			} else if (Math.random() < 0.25) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(ElementureModItems.ENCASEDWINDS.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.ENCASEDWINDS.get()));
 					entityToSpawn.setPickUpDelay(4);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			} else if (Math.random() < 0.33) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(ElementureModItems.CONDUCTIVECHARM.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.CONDUCTIVECHARM.get()));
 					entityToSpawn.setPickUpDelay(4);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			} else if (Math.random() < 0.5) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(ElementureModItems.SMALLBLESSINGOFSPEED.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.SMALLBLESSINGOFSPEED.get()));
 					entityToSpawn.setPickUpDelay(4);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			} else {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(ElementureModItems.BLESSINGOFSPEED.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.BLESSINGOFSPEED.get()));
 					entityToSpawn.setPickUpDelay(4);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -77,8 +68,7 @@ public class DiamondcrateDropsProcedure {
 			if (Math.random() < 0.05) {
 				for (int index0 = 0; index0 < (int) (Math.round(Math.random()) + 2); index0++) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-								new ItemStack(ElementureModItems.EXTRAPOTENTJELLY.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.EXTRAPOTENTJELLY.get()));
 						entityToSpawn.setPickUpDelay(4);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -86,8 +76,7 @@ public class DiamondcrateDropsProcedure {
 			} else if (Math.random() < 0.1) {
 				for (int index1 = 0; index1 < (int) (Math.round(Math.random()) + 1); index1++) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-								new ItemStack(Items.DIAMOND));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Items.DIAMOND));
 						entityToSpawn.setPickUpDelay(4);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -95,8 +84,7 @@ public class DiamondcrateDropsProcedure {
 			} else if (Math.random() >= 0.1 && Math.random() < 0.2) {
 				for (int index2 = 0; index2 < (int) (Math.random() * 24 + 28); index2++) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-								new ItemStack(ElementureModItems.MAGNETICBAIT.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.MAGNETICBAIT.get()));
 						entityToSpawn.setPickUpDelay(4);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -123,8 +111,7 @@ public class DiamondcrateDropsProcedure {
 			} else if (Math.random() >= 0.3 && Math.random() < 0.55) {
 				for (int index3 = 0; index3 < (int) (Math.random() * 6 + 4); index3++) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-								new ItemStack(Items.GOLDEN_APPLE));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Items.GOLDEN_APPLE));
 						entityToSpawn.setPickUpDelay(4);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -160,16 +147,14 @@ public class DiamondcrateDropsProcedure {
 			} else if (Math.random() >= 0.75 && Math.random() < 0.8) {
 				for (int index4 = 0; index4 < (int) (Math.random() * 7 + 2); index4++) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-								new ItemStack(Items.ENDER_PEARL));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Items.ENDER_PEARL));
 						entityToSpawn.setPickUpDelay(4);
 						_level.addFreshEntity(entityToSpawn);
 					}
 				}
 			} else {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.DIAMOND_BLOCK));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.DIAMOND_BLOCK));
 					entityToSpawn.setPickUpDelay(4);
 					_level.addFreshEntity(entityToSpawn);
 				}

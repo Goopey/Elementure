@@ -15,8 +15,7 @@ import java.util.List;
 
 public class PeriwinkleItem extends Item {
 	public PeriwinkleItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.72f).alwaysEat().meat().build()));
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.72f).alwaysEat().meat().build()));
 	}
 
 	@Override

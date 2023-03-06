@@ -11,7 +11,6 @@ import net.mcreator.elementure.init.ElementureModFluids;
 
 public class RegensubstanceItem extends BucketItem {
 	public RegensubstanceItem() {
-		super(ElementureModFluids.REGENSUBSTANCE,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(CreativeModeTab.TAB_MISC));
+		super(ElementureModFluids.REGENSUBSTANCE, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(CreativeModeTab.TAB_MISC));
 	}
 }

@@ -9,8 +9,7 @@ public class GreendemonDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isCurrentFish = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("greenDemon")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("greenDemon")) {
 			isCurrentFish = true;
 		} else {
 			isCurrentFish = false;

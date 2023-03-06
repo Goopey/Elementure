@@ -1,4 +1,3 @@
-
 package net.mcreator.elementure.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,18 @@ public class Fishingrecord1Screen extends AbstractContainerScreen<Fishingrecord1
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_regular_fish;
+	Button button_legendary;
+	Button button_lava_fish;
+	Button button_void_fish;
+	Button button_diseased;
+	Button button_mycena;
+	Button button_nether_star;
+	Button button_jelly_pools;
+	Button button_shellfish;
+	Button button_special;
+	Button button_windy_shores;
+	Button button_next;
 
 	public Fishingrecord1Screen(Fishingrecord1Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -120,77 +131,101 @@ public class Fishingrecord1Screen extends AbstractContainerScreen<Fishingrecord1
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + -2, 85, 20, Component.literal("Regular Fish"), e -> {
+		button_regular_fish = new Button(this.leftPos + -5, this.topPos + -2, 85, 20, Component.translatable("gui.elementure.fishingrecord_1.button_regular_fish"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(0, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + 22, 70, 20, Component.literal("Legendary"), e -> {
+		});
+		guistate.put("button:button_regular_fish", button_regular_fish);
+		this.addRenderableWidget(button_regular_fish);
+		button_legendary = new Button(this.leftPos + -5, this.topPos + 22, 70, 20, Component.translatable("gui.elementure.fishingrecord_1.button_legendary"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(1, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + 47, 70, 20, Component.literal("Lava Fish"), e -> {
+		});
+		guistate.put("button:button_legendary", button_legendary);
+		this.addRenderableWidget(button_legendary);
+		button_lava_fish = new Button(this.leftPos + -5, this.topPos + 47, 70, 20, Component.translatable("gui.elementure.fishingrecord_1.button_lava_fish"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(2, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + 72, 70, 20, Component.literal("Void Fish"), e -> {
+		});
+		guistate.put("button:button_lava_fish", button_lava_fish);
+		this.addRenderableWidget(button_lava_fish);
+		button_void_fish = new Button(this.leftPos + -5, this.topPos + 72, 70, 20, Component.translatable("gui.elementure.fishingrecord_1.button_void_fish"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(3, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + -4, this.topPos + 97, 65, 20, Component.literal("Diseased"), e -> {
+		});
+		guistate.put("button:button_void_fish", button_void_fish);
+		this.addRenderableWidget(button_void_fish);
+		button_diseased = new Button(this.leftPos + -4, this.topPos + 97, 65, 20, Component.translatable("gui.elementure.fishingrecord_1.button_diseased"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(4, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 4, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + -4, this.topPos + 122, 55, 20, Component.literal("Mycena"), e -> {
+		});
+		guistate.put("button:button_diseased", button_diseased);
+		this.addRenderableWidget(button_diseased);
+		button_mycena = new Button(this.leftPos + -4, this.topPos + 122, 55, 20, Component.translatable("gui.elementure.fishingrecord_1.button_mycena"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(5, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 5, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + -2, 80, 20, Component.literal("Nether Star"), e -> {
+		});
+		guistate.put("button:button_mycena", button_mycena);
+		this.addRenderableWidget(button_mycena);
+		button_nether_star = new Button(this.leftPos + 117, this.topPos + -2, 80, 20, Component.translatable("gui.elementure.fishingrecord_1.button_nether_star"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(6, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 6, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 22, 82, 20, Component.literal("Jelly Pools"), e -> {
+		});
+		guistate.put("button:button_nether_star", button_nether_star);
+		this.addRenderableWidget(button_nether_star);
+		button_jelly_pools = new Button(this.leftPos + 117, this.topPos + 22, 82, 20, Component.translatable("gui.elementure.fishingrecord_1.button_jelly_pools"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(7, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 7, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 47, 72, 20, Component.literal("Shellfish"), e -> {
+		});
+		guistate.put("button:button_jelly_pools", button_jelly_pools);
+		this.addRenderableWidget(button_jelly_pools);
+		button_shellfish = new Button(this.leftPos + 117, this.topPos + 47, 72, 20, Component.translatable("gui.elementure.fishingrecord_1.button_shellfish"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(8, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 8, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 72, 61, 20, Component.literal("Special"), e -> {
+		});
+		guistate.put("button:button_shellfish", button_shellfish);
+		this.addRenderableWidget(button_shellfish);
+		button_special = new Button(this.leftPos + 117, this.topPos + 72, 61, 20, Component.translatable("gui.elementure.fishingrecord_1.button_special"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(9, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 9, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 97, 77, 20, Component.literal("Windy Shores"), e -> {
+		});
+		guistate.put("button:button_special", button_special);
+		this.addRenderableWidget(button_special);
+		button_windy_shores = new Button(this.leftPos + 117, this.topPos + 97, 77, 20, Component.translatable("gui.elementure.fishingrecord_1.button_windy_shores"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(10, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 10, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 122, 46, 20, Component.literal("Next"), e -> {
+		});
+		guistate.put("button:button_windy_shores", button_windy_shores);
+		this.addRenderableWidget(button_windy_shores);
+		button_next = new Button(this.leftPos + 117, this.topPos + 122, 46, 20, Component.translatable("gui.elementure.fishingrecord_1.button_next"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord1ButtonMessage(11, x, y, z));
 				Fishingrecord1ButtonMessage.handleButtonAction(entity, 11, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_next", button_next);
+		this.addRenderableWidget(button_next);
 	}
 }

@@ -105,7 +105,6 @@ public class MusicplayerGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(MusicplayerGUIButtonMessage.class, MusicplayerGUIButtonMessage::buffer, MusicplayerGUIButtonMessage::new,
-				MusicplayerGUIButtonMessage::handler);
+		ElementureMod.addNetworkMessage(MusicplayerGUIButtonMessage.class, MusicplayerGUIButtonMessage::buffer, MusicplayerGUIButtonMessage::new, MusicplayerGUIButtonMessage::handler);
 	}
 }

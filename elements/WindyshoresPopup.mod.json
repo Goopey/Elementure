@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGHEST",
@@ -7,12 +7,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Windy Shores",
+          "name": "label_windy_shores",
+          "text": {
+            "fixedValue": "Windy Shores"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "Windy Shores",
           "x": 184,
           "y": 28
         }

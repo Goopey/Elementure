@@ -14,13 +14,8 @@ public class StarburnsEffectProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.removeEffect(ElementureModMobEffects.STARBURNS.get());
 		}
-		if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.STARBURNS.get())
-				? _livEnt.getEffect(ElementureModMobEffects.STARBURNS.get()).getDuration()
-				: 0)
-				% Math.max(10,
-						60 - (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.STARBURNS.get())
-								? _livEnt.getEffect(ElementureModMobEffects.STARBURNS.get()).getAmplifier()
-								: 0) * 3) == 0) {
+		if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.STARBURNS.get()) ? _livEnt.getEffect(ElementureModMobEffects.STARBURNS.get()).getDuration() : 0)
+				% Math.max(10, 60 - (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.STARBURNS.get()) ? _livEnt.getEffect(ElementureModMobEffects.STARBURNS.get()).getAmplifier() : 0) * 3) == 0) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.hurt(new DamageSource("starburn").bypassArmor(), 1);
 		}

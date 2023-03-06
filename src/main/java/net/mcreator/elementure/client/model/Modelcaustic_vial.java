@@ -31,17 +31,14 @@ public class Modelcaustic_vial<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition flask = partdefinition
-				.addOrReplaceChild("flask",
-						CubeListBuilder.create().texOffs(112, 0).addBox(-8.99F, 6.0F, -2.01F, 4.0F, 4.0F, 4.0F, new CubeDeformation(0.0F))
-								.texOffs(91, 0).addBox(-7.99F, 4.0F, -1.0F, 2.0F, 7.0F, 2.0F, new CubeDeformation(0.0F)),
-						PartPose.offset(7.0F, 14.0F, 0.0F));
+		PartDefinition flask = partdefinition.addOrReplaceChild("flask",
+				CubeListBuilder.create().texOffs(112, 0).addBox(-8.99F, 6.0F, -2.01F, 4.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(91, 0).addBox(-7.99F, 4.0F, -1.0F, 2.0F, 7.0F, 2.0F, new CubeDeformation(0.0F)),
+				PartPose.offset(7.0F, 14.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 128, 64);
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		flask.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 

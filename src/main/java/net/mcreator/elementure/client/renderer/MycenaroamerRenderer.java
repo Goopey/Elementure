@@ -12,7 +12,7 @@ import net.mcreator.elementure.client.model.Modelmycena_roamer;
 
 public class MycenaroamerRenderer extends MobRenderer<MycenaroamerEntity, Modelmycena_roamer<MycenaroamerEntity>> {
 	public MycenaroamerRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelmycena_roamer(context.bakeLayer(Modelmycena_roamer.LAYER_LOCATION)), 0.3f);
+		super(context, new Modelmycena_roamer(context.bakeLayer(Modelmycena_roamer.LAYER_LOCATION)), 0.30000000000000004f);
 		this.addLayer(new EyesLayer<MycenaroamerEntity, Modelmycena_roamer<MycenaroamerEntity>>(this) {
 			@Override
 			public RenderType renderType() {

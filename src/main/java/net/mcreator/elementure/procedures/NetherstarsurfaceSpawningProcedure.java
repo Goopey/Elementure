@@ -12,8 +12,7 @@ public class NetherstarsurfaceSpawningProcedure {
 		double locY = 0;
 		double locZ = 0;
 		boolean shouldSpawn = false;
-		return ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == ElementureModBlocks.NETHERUMCARPET.get()
-				|| (world.getBlockState(new BlockPos(x, y, z))).getBlock() == ElementureModBlocks.NETHERUMDUST_NEBULATURFBLOCK.get())
+		return ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == ElementureModBlocks.NETHERUMCARPET.get() || (world.getBlockState(new BlockPos(x, y, z))).getBlock() == ElementureModBlocks.NETHERUMDUST_NEBULATURFBLOCK.get())
 				&& new Object() {
 					public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);

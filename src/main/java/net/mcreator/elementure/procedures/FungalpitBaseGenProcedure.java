@@ -47,19 +47,15 @@ public class FungalpitBaseGenProcedure {
 								if (Math.random() < 0.021) {
 									FungalpitPickPOIProcedure.execute(world, (x + locX), (y + locYCalc), (z + locZ));
 								} else if (Math.random() < 0.85) {
-									world.setBlock(new BlockPos(x + locX, y + 1 + locYCalc, z + locZ),
-											ElementureModBlocks.MYCENASHROOMBLOCK.get().defaultBlockState(), 3);
+									world.setBlock(new BlockPos(x + locX, y + 1 + locYCalc, z + locZ), ElementureModBlocks.MYCENASHROOMBLOCK.get().defaultBlockState(), 3);
 								} else {
-									world.setBlock(new BlockPos(x + locX, y + 1 + locYCalc, z + locZ),
-											ElementureModBlocks.MYCENASPROUTS.get().defaultBlockState(), 3);
+									world.setBlock(new BlockPos(x + locX, y + 1 + locYCalc, z + locZ), ElementureModBlocks.MYCENASPROUTS.get().defaultBlockState(), 3);
 								}
 							}
 							if (Math.random() < 0.7) {
-								world.setBlock(new BlockPos(x + locX, y + locYCalc, z + locZ), ElementureModBlocks.MYCENIUM.get().defaultBlockState(),
-										3);
+								world.setBlock(new BlockPos(x + locX, y + locYCalc, z + locZ), ElementureModBlocks.MYCENIUM.get().defaultBlockState(), 3);
 							} else {
-								world.setBlock(new BlockPos(x + locX, y + locYCalc, z + locZ),
-										ElementureModBlocks.MYCENAMOSSYGRASS.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + locX, y + locYCalc, z + locZ), ElementureModBlocks.MYCENAMOSSYGRASS.get().defaultBlockState(), 3);
 							}
 							world.setBlock(new BlockPos(x + locX, y - 1 + locYCalc, z + locZ), Blocks.COARSE_DIRT.defaultBlockState(), 3);
 							if (Math.random() < 0.005) {
@@ -74,15 +70,11 @@ public class FungalpitBaseGenProcedure {
 						} else {
 							world.setBlock(new BlockPos(x + locX, y + locYCalc, z + locZ), Blocks.AIR.defaultBlockState(), 3);
 						}
-					} else if (!((world.getBlockState(new BlockPos(x + locX, y + locYCalc, z + locZ)))
-							.getBlock() == ElementureModBlocks.BIGGLOWINGMUSHROOM.get())
+					} else if (!((world.getBlockState(new BlockPos(x + locX, y + locYCalc, z + locZ))).getBlock() == ElementureModBlocks.BIGGLOWINGMUSHROOM.get())
 							&& !((world.getBlockState(new BlockPos(x + locX, y + locYCalc, z + locZ))).getBlock() == Blocks.MUSHROOM_STEM)
-							&& !((world.getBlockState(new BlockPos(x + locX, y + locYCalc, z + locZ))).getBlock() == ElementureModBlocks.MYCENASPROUTS
-									.get())
-							&& !((world.getBlockState(new BlockPos(x + locX, y + locYCalc, z + locZ)))
-									.getBlock() == ElementureModBlocks.MYCENASHROOMBLOCK.get())
-							&& !((world.getBlockState(new BlockPos(x + locX, y + locYCalc, z + locZ))).getBlock() == ElementureModBlocks.MYCENAVINE
-									.get())) {
+							&& !((world.getBlockState(new BlockPos(x + locX, y + locYCalc, z + locZ))).getBlock() == ElementureModBlocks.MYCENASPROUTS.get())
+							&& !((world.getBlockState(new BlockPos(x + locX, y + locYCalc, z + locZ))).getBlock() == ElementureModBlocks.MYCENASHROOMBLOCK.get())
+							&& !((world.getBlockState(new BlockPos(x + locX, y + locYCalc, z + locZ))).getBlock() == ElementureModBlocks.MYCENAVINE.get())) {
 						world.setBlock(new BlockPos(x + locX, y + locYCalc, z + locZ), Blocks.AIR.defaultBlockState(), 3);
 						if (Math.random() < 0.00125 && locYCalc > 4) {
 							MycenasporecloudChunkGenProcedure.execute(world, (x + locX), (y + locYCalc), (z + locZ));

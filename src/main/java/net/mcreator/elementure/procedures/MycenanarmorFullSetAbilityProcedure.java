@@ -20,17 +20,11 @@ public class MycenanarmorFullSetAbilityProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-				.getItem() == ElementureModItems.MYCENANARMOR_HELMET.get()
-				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
-						.getItem() == ElementureModItems.MYCENANARMOR_LEGGINGS.get()
-				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
-						.getItem() == ElementureModItems.MYCENANARMOR_BOOTS.get()) {
-			if (entity.getPersistentData().getDouble("previousHealth") > (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
-					&& (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < 16
-					&& Math.random() < 0.2 + ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.LUCK)
-							? _livEnt.getEffect(MobEffects.LUCK).getAmplifier()
-							: 0) + 1) / 20) {
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == ElementureModItems.MYCENANARMOR_HELMET.get()
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == ElementureModItems.MYCENANARMOR_LEGGINGS.get()
+				&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == ElementureModItems.MYCENANARMOR_BOOTS.get()) {
+			if (entity.getPersistentData().getDouble("previousHealth") > (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) && (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) < 16
+					&& Math.random() < 0.2 + ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.LUCK) ? _livEnt.getEffect(MobEffects.LUCK).getAmplifier() : 0) + 1) / 20) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) + 2));
 				if (world instanceof ServerLevel _level)
@@ -39,11 +33,8 @@ public class MycenanarmorFullSetAbilityProcedure {
 					MycenashroomcloudProcedure.execute(world, x, y, z);
 				}
 				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands()
-							.performPrefixedCommand(
-									new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""),
-											_level.getServer(), null).withSuppressedOutput(),
-									"effect give @e[distance=0.1..4] elementure:mycenanspores 4 1");
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"effect give @e[distance=0.1..4] elementure:mycenanspores 4 1");
 			}
 			entity.getPersistentData().putDouble("previousHealth", (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1));
 		}

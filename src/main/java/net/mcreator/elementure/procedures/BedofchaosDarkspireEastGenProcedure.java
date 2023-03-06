@@ -16,31 +16,25 @@ public class BedofchaosDarkspireEastGenProcedure {
 		ElementureMod.queueServerWork(20, () -> {
 			if (Math.random() < 0.75) {
 				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager()
-							.getOrCreate(new ResourceLocation("elementure", "boc_darkspire_small_side"));
+					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "boc_darkspire_small_side"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x - 1, y - 2, z - 2), new BlockPos(x - 1, y - 2, z - 2),
-								new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x - 1, y - 2, z - 2), new BlockPos(x - 1, y - 2, z - 2), new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
 			} else if (Math.random() < 0.75) {
 				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager()
-							.getOrCreate(new ResourceLocation("elementure", "boc_darkspire_medium_side"));
+					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "boc_darkspire_medium_side"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 2, z - 2), new BlockPos(x - 4, y - 2, z - 2),
-								new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 2, z - 2), new BlockPos(x - 4, y - 2, z - 2), new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
 			} else {
 				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager()
-							.getOrCreate(new ResourceLocation("elementure", "boc_darkspire_large_side"));
+					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "boc_darkspire_large_side"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x - 5, y - 2, z - 2), new BlockPos(x - 5, y - 2, z - 2),
-								new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x - 5, y - 2, z - 2), new BlockPos(x - 5, y - 2, z - 2), new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}

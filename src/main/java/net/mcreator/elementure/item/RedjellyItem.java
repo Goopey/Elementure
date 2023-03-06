@@ -13,10 +13,9 @@ import net.mcreator.elementure.init.ElementureModTabs;
 
 public class RedjellyItem extends Item {
 	public RedjellyItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.5f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.5f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

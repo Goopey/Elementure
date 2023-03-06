@@ -17,10 +17,9 @@ import java.util.List;
 
 public class CanglerItem extends Item {
 	public CanglerItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.RARE)
-				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

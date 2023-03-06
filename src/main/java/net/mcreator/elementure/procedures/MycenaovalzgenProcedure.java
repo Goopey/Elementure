@@ -20,14 +20,10 @@ public class MycenaovalzgenProcedure {
 		for (int index0 = 0; index0 < (int) (48735); index0++) {
 			if (CoordsX * CoordsX + 2 * CoordsZ * CoordsZ <= 784) {
 				if (((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.GRASS_BLOCK
-						&& !((world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ)))
-								.getBlock() == ElementureModBlocks.BIGGLOWINGMUSHROOM.get())
-						|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ))).getBlock() == Blocks.OAK_LOG
-								&& (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.DIRT)
-						&& !((world.getBlockState(new BlockPos(x + CoordsX, -64, z + CoordsZ))).getBlock() == ElementureModBlocks.PERVADEDBEDROCK
-								.get())) {
-					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-							ElementureModBlocks.MYCENA_BIOME_ALPHAN.get().defaultBlockState(), 3);
+						&& !((world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ))).getBlock() == ElementureModBlocks.BIGGLOWINGMUSHROOM.get())
+						|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ))).getBlock() == Blocks.OAK_LOG && (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.DIRT)
+						&& !((world.getBlockState(new BlockPos(x + CoordsX, -64, z + CoordsZ))).getBlock() == ElementureModBlocks.PERVADEDBEDROCK.get())) {
+					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MYCENA_BIOME_ALPHAN.get().defaultBlockState(), 3);
 					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ), Blocks.AIR.defaultBlockState(), 3);
 					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY + 2, z + CoordsZ), Blocks.AIR.defaultBlockState(), 3);
 					world.setBlock(new BlockPos(x + CoordsX, -64, z + CoordsZ), ElementureModBlocks.PERVADEDBEDROCK.get().defaultBlockState(), 3);

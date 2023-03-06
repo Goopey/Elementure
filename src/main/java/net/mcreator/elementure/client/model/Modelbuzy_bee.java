@@ -41,43 +41,27 @@ public class Modelbuzy_bee<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition main_body = partdefinition
-				.addOrReplaceChild(
-						"main_body", CubeListBuilder.create().texOffs(0, 0).addBox(-3.5F, -1.5F, 3.0F, 7.0F, 7.0F, 10.0F, new CubeDeformation(0.0F))
-								.texOffs(5, 6).addBox(0.0F, 1.5F, 13.0F, 0.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)),
-						PartPose.offset(0.0F, 10.5F, -8.0F));
+		PartDefinition main_body = partdefinition.addOrReplaceChild("main_body",
+				CubeListBuilder.create().texOffs(0, 0).addBox(-3.5F, -1.5F, 3.0F, 7.0F, 7.0F, 10.0F, new CubeDeformation(0.0F)).texOffs(5, 6).addBox(0.0F, 1.5F, 13.0F, 0.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)),
+				PartPose.offset(0.0F, 10.5F, -8.0F));
 		PartDefinition l_foot_r1 = main_body.addOrReplaceChild("l_foot_r1",
-				CubeListBuilder.create().texOffs(7, 0).addBox(-0.5F, -3.2F, 0.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(7, 0)
-						.addBox(-4.5F, -3.2F, 0.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)),
+				CubeListBuilder.create().texOffs(7, 0).addBox(-0.5F, -3.2F, 0.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(7, 0).addBox(-4.5F, -3.2F, 0.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(2.0F, 8.5F, 8.0F, 0.3491F, 0.0F, 0.0F));
-		PartDefinition left_wing = main_body.addOrReplaceChild("left_wing",
-				CubeListBuilder.create().texOffs(38, 0).mirror().addBox(0.0F, 0.0F, -2.0F, 7.0F, 0.0F, 6.0F, new CubeDeformation(0.0F)).mirror(false),
-				PartPose.offset(1.5F, -1.5F, 7.0F));
-		PartDefinition right_wing = main_body.addOrReplaceChild("right_wing",
-				CubeListBuilder.create().texOffs(38, 0).addBox(-7.0F, 0.0F, -2.0F, 7.0F, 0.0F, 6.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(-1.5F, -1.5F, 7.0F));
-		PartDefinition antannae = main_body
-				.addOrReplaceChild(
-						"antannae", CubeListBuilder.create().texOffs(0, 0).addBox(-1.5F, -2.0F, -3.0F, 0.0F, 2.0F, 3.0F, new CubeDeformation(0.0F))
-								.texOffs(0, 0).addBox(1.5F, -2.0F, -3.0F, 0.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)),
-						PartPose.offset(0.0F, 0.5F, 3.0F));
-		PartDefinition front_feet = main_body
-				.addOrReplaceChild(
-						"front_feet", CubeListBuilder.create().texOffs(7, 0).addBox(-1.5F, 0.0F, 0.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F))
-								.texOffs(7, 0).addBox(0.5F, 0.0F, 0.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)),
-						PartPose.offset(0.0F, 5.5F, 6.0F));
+		PartDefinition left_wing = main_body.addOrReplaceChild("left_wing", CubeListBuilder.create().texOffs(38, 0).mirror().addBox(0.0F, 0.0F, -2.0F, 7.0F, 0.0F, 6.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(1.5F, -1.5F, 7.0F));
+		PartDefinition right_wing = main_body.addOrReplaceChild("right_wing", CubeListBuilder.create().texOffs(38, 0).addBox(-7.0F, 0.0F, -2.0F, 7.0F, 0.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(-1.5F, -1.5F, 7.0F));
+		PartDefinition antannae = main_body.addOrReplaceChild("antannae",
+				CubeListBuilder.create().texOffs(0, 0).addBox(-1.5F, -2.0F, -3.0F, 0.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(1.5F, -2.0F, -3.0F, 0.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.5F, 3.0F));
+		PartDefinition front_feet = main_body.addOrReplaceChild("front_feet",
+				CubeListBuilder.create().texOffs(7, 0).addBox(-1.5F, 0.0F, 0.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(7, 0).addBox(0.5F, 0.0F, 0.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 5.5F, 6.0F));
 		PartDefinition back_feet = main_body.addOrReplaceChild("back_feet", CubeListBuilder.create(), PartPose.offset(0.0F, 5.5F, 9.0F));
 		PartDefinition r_foot_back_r1 = back_feet.addOrReplaceChild("r_foot_back_r1",
-				CubeListBuilder.create().texOffs(7, 0).addBox(-0.5F, -3.2F, 0.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(7, 0)
-						.addBox(3.5F, -3.2F, 0.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)),
+				CubeListBuilder.create().texOffs(7, 0).addBox(-0.5F, -3.2F, 0.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(7, 0).addBox(3.5F, -3.2F, 0.0F, 1.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(-2.0F, 3.0F, 1.0F, 0.3491F, 0.0F, 0.0F));
-		PartDefinition suit_case = main_body.addOrReplaceChild(
-				"suit_case", CubeListBuilder.create().texOffs(37, 9).addBox(-0.5F, -3.5F, -2.5F, 1.0F, 2.0F, 3.0F, new CubeDeformation(0.0F))
-						.texOffs(44, 9).addBox(-1.5F, -2.0F, -4.5F, 3.0F, 4.0F, 7.0F, new CubeDeformation(0.0F)),
+		PartDefinition suit_case = main_body.addOrReplaceChild("suit_case",
+				CubeListBuilder.create().texOffs(37, 9).addBox(-0.5F, -3.5F, -2.5F, 1.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(44, 9).addBox(-1.5F, -2.0F, -4.5F, 3.0F, 4.0F, 7.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(-2.0F, 10.35F, 8.67F));
 		PartDefinition fedora = main_body.addOrReplaceChild("fedora",
-				CubeListBuilder.create().texOffs(23, 20).addBox(-2.5F, -0.1F, -2.0F, 5.0F, 0.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(0, 18)
-						.addBox(-2.0F, -1.1F, -1.5F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)),
+				CubeListBuilder.create().texOffs(23, 20).addBox(-2.5F, -0.1F, -2.0F, 5.0F, 0.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(0, 18).addBox(-2.0F, -1.1F, -1.5F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, -1.5F, 4.0F, 0.0436F, 0.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 32);
 	}
@@ -90,15 +74,11 @@ public class Modelbuzy_bee<T extends Entity> extends EntityModel<T> {
 		this.front_feet.xRot = (float) ((Math.sin(ageInTicks / 6) / 8) + 0.1);
 		this.right_wing.zRot = (float) ((Math.sin(ageInTicks) / 2));
 		this.left_wing.zRot = (float) ((Math.sin(ageInTicks + Math.PI) / 2));
-		this.main_body.setPos(0.0F,
-				(10.5F + (float) ((Math.cos(ageInTicks / 6) * (1 / (Math.cos((1 / 1.5) * Math.asin(Math.sin(1.5 * (ageInTicks / 6))))))
-						+ Math.cos(ageInTicks / 6)) / 2.5)),
-				-8.0F);
+		this.main_body.setPos(0.0F, (10.5F + (float) ((Math.cos(ageInTicks / 6) * (1 / (Math.cos((1 / 1.5) * Math.asin(Math.sin(1.5 * (ageInTicks / 6)))))) + Math.cos(ageInTicks / 6)) / 2.5)), -8.0F);
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		main_body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

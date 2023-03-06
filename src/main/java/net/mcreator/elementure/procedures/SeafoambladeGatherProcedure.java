@@ -10,8 +10,7 @@ public class SeafoambladeGatherProcedure {
 			return;
 		if (Math.random() < 0.4) {
 			{
-				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).water_essence + 5;
+				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).water_essence + 5;
 				sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.water_essence = _setval;
 					capability.syncPlayerVariables(sourceentity);

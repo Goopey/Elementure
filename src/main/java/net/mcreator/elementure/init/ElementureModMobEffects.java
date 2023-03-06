@@ -32,20 +32,15 @@ import net.mcreator.elementure.ElementureMod;
 
 public class ElementureModMobEffects {
 	public static final DeferredRegister<MobEffect> REGISTRY = DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, ElementureMod.MODID);
-	public static final RegistryObject<MobEffect> CURSEDSIGHT_POTION_ITEM = REGISTRY.register("cursedsight_potion_item",
-			() -> new CursedsightMobEffect());
-	public static final RegistryObject<MobEffect> FROZENEFFECT_POTION_ITEM = REGISTRY.register("frozeneffect_potion_item",
-			() -> new FrozeneffectMobEffect());
-	public static final RegistryObject<MobEffect> COLDEFFECT_POTION_ITEM = REGISTRY.register("coldeffect_potion_item",
-			() -> new ColdeffectMobEffect());
+	public static final RegistryObject<MobEffect> CURSEDSIGHT_POTION_ITEM = REGISTRY.register("cursedsight_potion_item", () -> new CursedsightMobEffect());
+	public static final RegistryObject<MobEffect> FROZENEFFECT_POTION_ITEM = REGISTRY.register("frozeneffect_potion_item", () -> new FrozeneffectMobEffect());
+	public static final RegistryObject<MobEffect> COLDEFFECT_POTION_ITEM = REGISTRY.register("coldeffect_potion_item", () -> new ColdeffectMobEffect());
 	public static final RegistryObject<MobEffect> MYCENANSPORES = REGISTRY.register("mycenanspores", () -> new MycenansporesMobEffect());
-	public static final RegistryObject<MobEffect> MYCENANSPOREGROWTHS = REGISTRY.register("mycenansporegrowths",
-			() -> new MycenansporegrowthsMobEffect());
+	public static final RegistryObject<MobEffect> MYCENANSPOREGROWTHS = REGISTRY.register("mycenansporegrowths", () -> new MycenansporegrowthsMobEffect());
 	public static final RegistryObject<MobEffect> FISHINGPOWER = REGISTRY.register("fishingpower", () -> new FishingpowerMobEffect());
 	public static final RegistryObject<MobEffect> PARRY_FATIGUE = REGISTRY.register("parry_fatigue", () -> new ParryFatigueMobEffect());
 	public static final RegistryObject<MobEffect> PARRY = REGISTRY.register("parry", () -> new ParryMobEffect());
-	public static final RegistryObject<MobEffect> MYCENANFUNGALSPORES_IMMUNITY = REGISTRY.register("mycenanfungalspores_immunity",
-			() -> new MycenanfungalsporesImmunityMobEffect());
+	public static final RegistryObject<MobEffect> MYCENANFUNGALSPORES_IMMUNITY = REGISTRY.register("mycenanfungalspores_immunity", () -> new MycenanfungalsporesImmunityMobEffect());
 	public static final RegistryObject<MobEffect> HINDERED = REGISTRY.register("hindered", () -> new HinderedMobEffect());
 	public static final RegistryObject<MobEffect> HEATRESISTANCE = REGISTRY.register("heatresistance", () -> new HeatresistanceMobEffect());
 	public static final RegistryObject<MobEffect> STARBURNS = REGISTRY.register("starburns", () -> new StarburnsMobEffect());

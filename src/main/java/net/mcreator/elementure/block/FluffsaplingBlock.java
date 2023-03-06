@@ -2,6 +2,7 @@
 package net.mcreator.elementure.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.BlockHitResult;
@@ -37,8 +38,8 @@ import java.util.Collections;
 
 public class FluffsaplingBlock extends Block {
 	public FluffsaplingBlock() {
-		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(0.1f, 0.5f).noCollission().noOcclusion().randomTicks()
-				.isRedstoneConductor((bs, br, bp) -> false).dynamicShape().offsetType(Block.OffsetType.XZ));
+		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(0.09999999999999999f, 0.5f).noCollission().noOcclusion().randomTicks().isRedstoneConductor((bs, br, bp) -> false).dynamicShape()
+				.offsetType(Block.OffsetType.XZ));
 	}
 
 	@Override
@@ -49,6 +50,11 @@ public class FluffsaplingBlock extends Block {
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
 	}
 
 	@Override
@@ -69,11 +75,8 @@ public class FluffsaplingBlock extends Block {
 	}
 
 	@Override
-	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos,
-			BlockPos facingPos) {
-		return !state.canSurvive(world, currentPos)
-				? Blocks.AIR.defaultBlockState()
-				: super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos, BlockPos facingPos) {
+		return !state.canSurvive(world, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, facing, facingState, world, currentPos, facingPos);
 	}
 
 	@Override
@@ -100,7 +103,6 @@ public class FluffsaplingBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		FluffsaplinggrowProcedure.execute(world, x, y, z);
 	}
 
@@ -114,7 +116,6 @@ public class FluffsaplingBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-
 		FluffsaplingMealProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "block",
   "definition": {
     "texture": "pervaded_bedrock",
@@ -79,13 +79,7 @@
     "luminance": 0,
     "unbreakable": true,
     "breakHarvestLevel": 1,
-    "spawnParticles": false,
-    "particleToSpawn": {
-      "value": "SQUID_INK"
-    },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.2999999985098839,
-    "particleAmount": 1,
+    "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

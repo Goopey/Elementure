@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGH",
@@ -9,7 +9,6 @@
         "data": {
           "image": "fishing_background_starryisland.png",
           "use1Xscale": false,
-          "name": "fishing_background_starryisland.png",
           "x": 143,
           "y": 13
         }

@@ -103,8 +103,7 @@ public class MycenabiomealphanNormGenProcedure {
 		world.setBlock(new BlockPos(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 		for (int index0 = 0; index0 < (int) (15); index0++) {
 			if (heightoff > 0 && heightoff < 8) {
-				if (!((world.getBlockState(new BlockPos(x, y + heightoff, z))).getBlock() == ElementureModBlocks.BIGGLOWINGMUSHROOM.get())
-						|| !((world.getBlockState(new BlockPos(x, y + heightoff, z))).getBlock() == Blocks.MUSHROOM_STEM)
+				if (!((world.getBlockState(new BlockPos(x, y + heightoff, z))).getBlock() == ElementureModBlocks.BIGGLOWINGMUSHROOM.get()) || !((world.getBlockState(new BlockPos(x, y + heightoff, z))).getBlock() == Blocks.MUSHROOM_STEM)
 						|| !((world.getBlockState(new BlockPos(x, y + heightoff, z))).getBlock() == ElementureModBlocks.MYCENA_BIOME_ALPHAN.get())
 						|| !((world.getBlockState(new BlockPos(x, y + heightoff, z))).getBlock() == ElementureModBlocks.MYCENA_BIOME_OMEGAN.get())) {
 					if ((world.getBlockState(new BlockPos(x, (y + heightoff) - 1, z))).getBlock() == ElementureModBlocks.MYCENAVINE.get()) {
@@ -138,8 +137,7 @@ public class MycenabiomealphanNormGenProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-				} else if (!((world.getBlockState(new BlockPos(x, y + heightoff, z))).getBlock() == ElementureModBlocks.BIGGLOWINGMUSHROOM.get())
-						|| !((world.getBlockState(new BlockPos(x, y + heightoff, z))).getBlock() == Blocks.MUSHROOM_STEM)
+				} else if (!((world.getBlockState(new BlockPos(x, y + heightoff, z))).getBlock() == ElementureModBlocks.BIGGLOWINGMUSHROOM.get()) || !((world.getBlockState(new BlockPos(x, y + heightoff, z))).getBlock() == Blocks.MUSHROOM_STEM)
 						|| !((world.getBlockState(new BlockPos(x, y + heightoff, z))).getBlock() == ElementureModBlocks.MYCENA_BIOME_ALPHAN.get())
 						|| !((world.getBlockState(new BlockPos(x, y + heightoff, z))).getBlock() == ElementureModBlocks.MYCENA_BIOME_OMEGAN.get())) {
 					if ((world.getBlockState(new BlockPos(x, (y + heightoff) - 1, z))).getBlock() == ElementureModBlocks.MYCENAVINE.get()) {

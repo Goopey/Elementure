@@ -10,8 +10,7 @@ public class BagsymbolconditionProcedure {
 		if (entity == null)
 			return false;
 		boolean shouldRender = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag).getItem() == Blocks.AIR.asItem()) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag).getItem() == Blocks.AIR.asItem()) {
 			shouldRender = true;
 		}
 		return shouldRender;

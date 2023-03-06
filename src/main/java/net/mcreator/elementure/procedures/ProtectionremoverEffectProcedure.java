@@ -8,28 +8,22 @@ import net.mcreator.elementure.init.ElementureModBlocks;
 
 public class ProtectionremoverEffectProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if ((world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == ElementureModBlocks.PROTECTIONRUNE.get()
-				|| (world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == ElementureModBlocks.RECEIVINGPROTECTIONRUNE.get()) {
+		if ((world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == ElementureModBlocks.PROTECTIONRUNE.get() || (world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == ElementureModBlocks.RECEIVINGPROTECTIONRUNE.get()) {
 			world.setBlock(new BlockPos(x + 1, y, z), ElementureModBlocks.PROTECTIONREMOVER.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(new BlockPos(x - 1, y, z))).getBlock() == ElementureModBlocks.PROTECTIONRUNE.get()
-				|| (world.getBlockState(new BlockPos(x - 1, y, z))).getBlock() == ElementureModBlocks.RECEIVINGPROTECTIONRUNE.get()) {
+		if ((world.getBlockState(new BlockPos(x - 1, y, z))).getBlock() == ElementureModBlocks.PROTECTIONRUNE.get() || (world.getBlockState(new BlockPos(x - 1, y, z))).getBlock() == ElementureModBlocks.RECEIVINGPROTECTIONRUNE.get()) {
 			world.setBlock(new BlockPos(x - 1, y, z), ElementureModBlocks.PROTECTIONREMOVER.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == ElementureModBlocks.PROTECTIONRUNE.get()
-				|| (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == ElementureModBlocks.RECEIVINGPROTECTIONRUNE.get()) {
+		if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == ElementureModBlocks.PROTECTIONRUNE.get() || (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == ElementureModBlocks.RECEIVINGPROTECTIONRUNE.get()) {
 			world.setBlock(new BlockPos(x, y + 1, z), ElementureModBlocks.PROTECTIONREMOVER.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == ElementureModBlocks.PROTECTIONRUNE.get()
-				|| (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == ElementureModBlocks.RECEIVINGPROTECTIONRUNE.get()) {
+		if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == ElementureModBlocks.PROTECTIONRUNE.get() || (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == ElementureModBlocks.RECEIVINGPROTECTIONRUNE.get()) {
 			world.setBlock(new BlockPos(x, y - 1, z), ElementureModBlocks.PROTECTIONREMOVER.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(new BlockPos(x, y, z + 1))).getBlock() == ElementureModBlocks.PROTECTIONRUNE.get()
-				|| (world.getBlockState(new BlockPos(x, y, z + 1))).getBlock() == ElementureModBlocks.RECEIVINGPROTECTIONRUNE.get()) {
+		if ((world.getBlockState(new BlockPos(x, y, z + 1))).getBlock() == ElementureModBlocks.PROTECTIONRUNE.get() || (world.getBlockState(new BlockPos(x, y, z + 1))).getBlock() == ElementureModBlocks.RECEIVINGPROTECTIONRUNE.get()) {
 			world.setBlock(new BlockPos(x, y, z + 1), ElementureModBlocks.PROTECTIONREMOVER.get().defaultBlockState(), 3);
 		}
-		if ((world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == ElementureModBlocks.PROTECTIONRUNE.get()
-				|| (world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == ElementureModBlocks.RECEIVINGPROTECTIONRUNE.get()) {
+		if ((world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == ElementureModBlocks.PROTECTIONRUNE.get() || (world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == ElementureModBlocks.RECEIVINGPROTECTIONRUNE.get()) {
 			world.setBlock(new BlockPos(x, y, z - 1), ElementureModBlocks.PROTECTIONREMOVER.get().defaultBlockState(), 3);
 		}
 		if ((world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == ElementureModBlocks.SHIELDINGPROTECTIONRUNE.get()) {

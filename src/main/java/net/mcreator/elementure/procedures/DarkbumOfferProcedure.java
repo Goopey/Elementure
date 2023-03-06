@@ -19,22 +19,19 @@ public class DarkbumOfferProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.APPLE) {
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(Items.APPLE);
-				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-						_player.inventoryMenu.getCraftSlots());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 			world.setBlock(new BlockPos(x, y, z), ElementureModBlocks.DARKBUMREDAPPLE.get().defaultBlockState(), 3);
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLDEN_APPLE) {
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(Items.GOLDEN_APPLE);
-				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-						_player.inventoryMenu.getCraftSlots());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 			world.setBlock(new BlockPos(x, y, z), ElementureModBlocks.DARKBUMGOLDENAPPLE.get().defaultBlockState(), 3);
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.ENCHANTED_GOLDEN_APPLE) {
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(Items.ENCHANTED_GOLDEN_APPLE);
-				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-						_player.inventoryMenu.getCraftSlots());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 			if (world instanceof Level _level && !_level.isClientSide()) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 1), z, new ItemStack(Items.ENCHANTED_GOLDEN_APPLE));

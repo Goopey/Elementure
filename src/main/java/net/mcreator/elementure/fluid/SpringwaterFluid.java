@@ -14,10 +14,8 @@ import net.mcreator.elementure.init.ElementureModFluidTypes;
 import net.mcreator.elementure.init.ElementureModBlocks;
 
 public abstract class SpringwaterFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(
-			() -> ElementureModFluidTypes.SPRINGWATER_TYPE.get(), () -> ElementureModFluids.SPRINGWATER.get(),
-			() -> ElementureModFluids.FLOWING_SPRINGWATER.get()).explosionResistance(100f).bucket(() -> ElementureModItems.SPRINGWATER_BUCKET.get())
-			.block(() -> (LiquidBlock) ElementureModBlocks.SPRINGWATER.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ElementureModFluidTypes.SPRINGWATER_TYPE.get(), () -> ElementureModFluids.SPRINGWATER.get(), () -> ElementureModFluids.FLOWING_SPRINGWATER.get())
+			.explosionResistance(100f).bucket(() -> ElementureModItems.SPRINGWATER_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.SPRINGWATER.get());
 
 	private SpringwaterFluid() {
 		super(PROPERTIES);

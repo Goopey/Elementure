@@ -31,9 +31,8 @@ public class BluesickleItem extends Item {
 
 	@Override
 	public float getDestroySpeed(ItemStack itemstack, BlockState blockstate) {
-		return List.of(ElementureModBlocks.PRISMATICSPROUT.get(), ElementureModBlocks.STARRYROOTS.get(), ElementureModBlocks.NETHERLEAVES.get(),
-				ElementureModBlocks.SCRAPLEAVES.get(), Blocks.WARPED_FUNGUS, Blocks.CRIMSON_FUNGUS, Blocks.WITHER_ROSE, Blocks.SHROOMLIGHT,
-				ElementureModBlocks.STARFLOWER.get()).contains(blockstate.getBlock()) ? 9f : 1;
+		return List.of(ElementureModBlocks.PRISMATICSPROUT.get(), ElementureModBlocks.STARRYROOTS.get(), ElementureModBlocks.NETHERLEAVES.get(), ElementureModBlocks.SCRAPLEAVES.get(), Blocks.WARPED_FUNGUS, Blocks.CRIMSON_FUNGUS, Blocks.WITHER_ROSE,
+				Blocks.SHROOMLIGHT, ElementureModBlocks.STARFLOWER.get()).contains(blockstate.getBlock()) ? 9f : 1;
 	}
 
 	@Override
@@ -59,10 +58,8 @@ public class BluesickleItem extends Item {
 		if (equipmentSlot == EquipmentSlot.MAINHAND) {
 			ImmutableMultimap.Builder<Attribute, AttributeModifier> builder = ImmutableMultimap.builder();
 			builder.putAll(super.getDefaultAttributeModifiers(equipmentSlot));
-			builder.put(Attributes.ATTACK_DAMAGE,
-					new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Tool modifier", 1f, AttributeModifier.Operation.ADDITION));
-			builder.put(Attributes.ATTACK_SPEED,
-					new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", -3, AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_DAMAGE, new AttributeModifier(BASE_ATTACK_DAMAGE_UUID, "Tool modifier", 1f, AttributeModifier.Operation.ADDITION));
+			builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(BASE_ATTACK_SPEED_UUID, "Tool modifier", -3, AttributeModifier.Operation.ADDITION));
 			return builder.build();
 		}
 		return super.getDefaultAttributeModifiers(equipmentSlot);

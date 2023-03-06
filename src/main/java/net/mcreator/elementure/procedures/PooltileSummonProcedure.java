@@ -26,8 +26,7 @@ public class PooltileSummonProcedure {
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
 					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-								null, null);
+						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 					world.addFreshEntity(entityToSpawn);
 				}
 			} else if (Math.random() < 0.33 && world.isEmptyBlock(new BlockPos(x + 4, y, z))) {
@@ -37,8 +36,7 @@ public class PooltileSummonProcedure {
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
 					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-								null, null);
+						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 					world.addFreshEntity(entityToSpawn);
 				}
 			} else if (Math.random() < 0.5 && world.isEmptyBlock(new BlockPos(x, y, z - 4))) {
@@ -48,8 +46,7 @@ public class PooltileSummonProcedure {
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
 					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-								null, null);
+						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 					world.addFreshEntity(entityToSpawn);
 				}
 			} else if (world.isEmptyBlock(new BlockPos(x, y, z + 4))) {
@@ -59,8 +56,7 @@ public class PooltileSummonProcedure {
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
 					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-								null, null);
+						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 					world.addFreshEntity(entityToSpawn);
 				}
 			} else {

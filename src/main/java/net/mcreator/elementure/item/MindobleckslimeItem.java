@@ -19,10 +19,9 @@ import java.util.List;
 
 public class MindobleckslimeItem extends Item {
 	public MindobleckslimeItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(2.4f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(2.4f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

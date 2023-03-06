@@ -29,8 +29,7 @@ public class BrontiumslowtimeskillTrueTimeProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-				.getItem() == ElementureModItems.BRONTIUMSLOWTIMESKILL.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.BRONTIUMSLOWTIMESKILL.get()) {
 			entity.getPersistentData().putBoolean("timeNEACTIVE", (true));
 		}
 	}

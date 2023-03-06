@@ -17,9 +17,7 @@ public class SlatedpoolsWallZProcedure {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "slatedpools_wall_z"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x, y, z - 1), new BlockPos(x, y, z - 1),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-							_serverworld.random, 3);
+					template.placeInWorld(_serverworld, new BlockPos(x, y, z - 1), new BlockPos(x, y, z - 1), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 		});

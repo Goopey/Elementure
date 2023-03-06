@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -15,7 +15,6 @@
         "data": {
           "image": "book_fishing.png",
           "use1Xscale": false,
-          "name": "book_fishing.png",
           "x": 94,
           "y": 33
         }
@@ -25,7 +24,6 @@
         "data": {
           "image": "dagger_loach.png",
           "use1Xscale": false,
-          "name": "dagger_loach.png",
           "x": 104,
           "y": 45
         }
@@ -33,13 +31,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_divers_crown",
           "text": "Diver's Crown",
           "onClick": {
             "name": "DiverscrownOpen"
           },
           "width": 85,
           "height": 20,
-          "name": "Diver's Crown",
           "x": 120,
           "y": 43
         }
@@ -52,7 +50,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "crumster.png",
           "x": 212,
           "y": 45
         }
@@ -60,13 +57,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_back",
           "text": "Back",
           "onClick": {
             "name": "Openfishingrecord1"
           },
           "width": 46,
           "height": 20,
-          "name": "Back",
           "x": 120,
           "y": 168
         }
@@ -74,13 +71,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_next",
           "text": "Next",
           "displayCondition": {
             "name": "DeactivateSlot"
           },
           "width": 46,
           "height": 20,
-          "name": "Next",
           "x": 243,
           "y": 168
         }

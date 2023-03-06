@@ -33,11 +33,10 @@ public class FerziumoreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new FerziumoreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("elementure:ferziumore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ElementureModBlocks.FERZIUMORE.get().defaultBlockState())), 9));
+		CONFIGURED_FEATURE = FeatureUtils.register("elementure:ferziumore", FEATURE,
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ElementureModBlocks.FERZIUMORE.get().defaultBlockState())), 9));
 		PLACED_FEATURE = PlacementUtils.register("elementure:ferziumore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(4), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(31)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(4), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(31)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

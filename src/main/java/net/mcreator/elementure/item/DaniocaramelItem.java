@@ -18,10 +18,9 @@ import java.util.List;
 
 public class DaniocaramelItem extends Item {
 	public DaniocaramelItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.6f).alwaysEat()
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.6f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

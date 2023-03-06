@@ -28,20 +28,15 @@ public class SlumberingGeneralAttackProcedure {
 		double locX = 0;
 		double locY = 0;
 		if (world.dayTime() % 12 == 0) {
-			if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)
-					&& (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).isAlive()) {
+			if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null) && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).isAlive()) {
 				if (entity.getPersistentData().getDouble("attackCooldown") <= -5) {
-					if (!(!world.getEntitiesOfClass(SlumberinGeneralOrbEntity.class,
-							AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 14, 14, 14), e -> true).isEmpty())
-							&& Math.random() < 0.45) {
+					if (!(!world.getEntitiesOfClass(SlumberinGeneralOrbEntity.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 14, 14, 14), e -> true).isEmpty()) && Math.random() < 0.45) {
 						for (int index0 = 0; index0 < (int) (3 + Math.round(Math.random())); index0++) {
 							if (world instanceof ServerLevel _level) {
 								Entity entityToSpawn = new SlumberinGeneralOrbEntity(ElementureModEntities.SLUMBERIN_GENERAL_ORB.get(), _level);
-								entityToSpawn.moveTo((entity.getX() + Math.random() * 6 - 3), (entity.getY() + 0.2),
-										(entity.getZ() + Math.random() * 6 - 3), world.getRandom().nextFloat() * 360F, 0);
+								entityToSpawn.moveTo((entity.getX() + Math.random() * 6 - 3), (entity.getY() + 0.2), (entity.getZ() + Math.random() * 6 - 3), world.getRandom().nextFloat() * 360F, 0);
 								if (entityToSpawn instanceof Mob _mobToSpawn)
-									_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()),
-											MobSpawnType.MOB_SUMMONED, null, null);
+									_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 								world.addFreshEntity(entityToSpawn);
 							}
 						}
@@ -49,8 +44,7 @@ public class SlumberingGeneralAttackProcedure {
 					} else {
 						{
 							final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-							List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(18 / 2d), e -> true)
-									.stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(18 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
 									.collect(Collectors.toList());
 							for (Entity entityiterator : _entfound) {
 								if (entityiterator instanceof Player) {
@@ -61,8 +55,7 @@ public class SlumberingGeneralAttackProcedure {
 										Entity entityToSpawn = new NightmareSpikeEntity(ElementureModEntities.NIGHTMARE_SPIKE.get(), _level);
 										entityToSpawn.moveTo(locX, locY, locZ, world.getRandom().nextFloat() * 360F, 0);
 										if (entityToSpawn instanceof Mob _mobToSpawn)
-											_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()),
-													MobSpawnType.MOB_SUMMONED, null, null);
+											_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 										world.addFreshEntity(entityToSpawn);
 									}
 								}
@@ -71,11 +64,9 @@ public class SlumberingGeneralAttackProcedure {
 						for (int index1 = 0; index1 < (int) (48); index1++) {
 							if (world instanceof ServerLevel _level) {
 								Entity entityToSpawn = new NightmareSpikeEntity(ElementureModEntities.NIGHTMARE_SPIKE.get(), _level);
-								entityToSpawn.moveTo((entity.getX() + Math.random() * 12 - 6), locY, (entity.getZ() + Math.random() * 12 - 6),
-										world.getRandom().nextFloat() * 360F, 0);
+								entityToSpawn.moveTo((entity.getX() + Math.random() * 12 - 6), locY, (entity.getZ() + Math.random() * 12 - 6), world.getRandom().nextFloat() * 360F, 0);
 								if (entityToSpawn instanceof Mob _mobToSpawn)
-									_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()),
-											MobSpawnType.MOB_SUMMONED, null, null);
+									_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 								world.addFreshEntity(entityToSpawn);
 							}
 						}

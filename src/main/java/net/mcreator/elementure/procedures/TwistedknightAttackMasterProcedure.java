@@ -30,8 +30,7 @@ public class TwistedknightAttackMasterProcedure {
 		double playX = 0;
 		double playZ = 0;
 		double playY = 0;
-		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)
-				&& (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).isAlive()) {
+		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null) && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).isAlive()) {
 			if (entity.getPersistentData().getDouble("attackCooldown") == 80) {
 				attackChoice = Math.random();
 				if (attackChoice < 0.33) {
@@ -64,22 +63,16 @@ public class TwistedknightAttackMasterProcedure {
 										if (!projectileLevel.isClientSide()) {
 											Projectile _entityToSpawn = new Object() {
 												public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
-													AbstractArrow entityToSpawn = new TwistedBladeEntity(ElementureModEntities.TWISTED_BLADE.get(),
-															level);
+													AbstractArrow entityToSpawn = new TwistedBladeEntity(ElementureModEntities.TWISTED_BLADE.get(), level);
 													entityToSpawn.setOwner(shooter);
 													entityToSpawn.setBaseDamage(damage);
 													entityToSpawn.setKnockback(knockback);
 													entityToSpawn.setSilent(true);
 													return entityToSpawn;
 												}
-											}.getArrow(projectileLevel, entity,
-													(float) (3 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_BOOST)
-															? _livEnt.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier()
-															: 0)),
-													0);
+											}.getArrow(projectileLevel, entity, (float) (3 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_BOOST) ? _livEnt.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier() : 0)), 0);
 											_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-											_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y,
-													_shootFrom.getLookAngle().z, 1, 0);
+											_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 1, 0);
 											projectileLevel.addFreshEntity(_entityToSpawn);
 										}
 									}
@@ -90,8 +83,7 @@ public class TwistedknightAttackMasterProcedure {
 										if (!projectileLevel.isClientSide()) {
 											Projectile _entityToSpawn = new Object() {
 												public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
-													AbstractArrow entityToSpawn = new TwistedBladeEntity(ElementureModEntities.TWISTED_BLADE.get(),
-															level);
+													AbstractArrow entityToSpawn = new TwistedBladeEntity(ElementureModEntities.TWISTED_BLADE.get(), level);
 													entityToSpawn.setOwner(shooter);
 													entityToSpawn.setBaseDamage(damage);
 													entityToSpawn.setKnockback(knockback);
@@ -100,8 +92,7 @@ public class TwistedknightAttackMasterProcedure {
 												}
 											}.getArrow(projectileLevel, entity, 2, 0);
 											_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-											_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y,
-													_shootFrom.getLookAngle().z, 1, 0);
+											_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, 1, 0);
 											projectileLevel.addFreshEntity(_entityToSpawn);
 										}
 									}
@@ -127,14 +118,12 @@ public class TwistedknightAttackMasterProcedure {
 						if (entity.getPersistentData().getDouble("attackCooldown") < 172) {
 							{
 								final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-								List<Entity> _entfound = world
-										.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream()
-										.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+								List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+										.collect(Collectors.toList());
 								for (Entity entityiterator : _entfound) {
 									if (entity.getY() < entityiterator.getY() + 0.33 || entity.getY() > entityiterator.getY() - 0.33) {
 										if (world instanceof ServerLevel _level)
-											_level.sendParticles(ParticleTypes.SQUID_INK, (entityiterator.getX()), (entityiterator.getY()),
-													(entityiterator.getZ()), 3, 1.2, 1.2, 1.2, 0.22);
+											_level.sendParticles(ParticleTypes.SQUID_INK, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 3, 1.2, 1.2, 1.2, 0.22);
 									}
 								}
 							}
@@ -142,23 +131,18 @@ public class TwistedknightAttackMasterProcedure {
 						} else {
 							{
 								final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-								List<Entity> _entfound = world
-										.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream()
-										.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+								List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+										.collect(Collectors.toList());
 								for (Entity entityiterator : _entfound) {
 									if (entity.getY() < entityiterator.getY() + 0.33 || entity.getY() > entityiterator.getY() - 0.33) {
 										if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.DAMAGE_BOOST) : false) {
 											if (world instanceof Level _level && !_level.isClientSide())
 												_level.explode(null, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()),
-														(float) (1.5 + (entity instanceof LivingEntity _livEnt
-																&& _livEnt.hasEffect(MobEffects.DAMAGE_BOOST)
-																		? _livEnt.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier()
-																		: 0)),
+														(float) (1.5 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_BOOST) ? _livEnt.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier() : 0)),
 														Explosion.BlockInteraction.NONE);
 										} else {
 											if (world instanceof Level _level && !_level.isClientSide())
-												_level.explode(null, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 1,
-														Explosion.BlockInteraction.NONE);
+												_level.explode(null, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 1, Explosion.BlockInteraction.NONE);
 										}
 									}
 								}

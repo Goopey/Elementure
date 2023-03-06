@@ -10,8 +10,7 @@ public class RainbowswordTrueLightProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.RAINBOWSWORD
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.RAINBOWSWORD.get()) {
 			entity.getPersistentData().putBoolean("lightACTIVE", (true));
 		}
 	}

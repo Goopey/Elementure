@@ -30,9 +30,7 @@ import net.mcreator.elementure.procedures.TarEffectProcedure;
 import java.util.List;
 import java.util.Collections;
 
-public class TarBlock extends Block implements SimpleWaterloggedBlock
-
-{
+public class TarBlock extends Block implements SimpleWaterloggedBlock {
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public TarBlock() {
@@ -72,8 +70,7 @@ public class TarBlock extends Block implements SimpleWaterloggedBlock
 	}
 
 	@Override
-	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos,
-			BlockPos facingPos) {
+	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos, BlockPos facingPos) {
 		if (state.getValue(WATERLOGGED)) {
 			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}

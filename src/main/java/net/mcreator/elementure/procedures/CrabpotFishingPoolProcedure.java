@@ -26,8 +26,7 @@ public class CrabpotFishingPoolProcedure {
 					});
 				}
 			}
-		} else if (world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("deep_ocean"))
-				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("ocean"))) {
+		} else if (world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("deep_ocean")) || world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("ocean"))) {
 			if (Math.random() < 0.5) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
@@ -55,10 +54,8 @@ public class CrabpotFishingPoolProcedure {
 					}
 				}
 			}
-		} else if (world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("deep_cold_ocean"))
-				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("cold_ocean"))
-				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("deep_frozen_ocean"))
-				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("frozen_ocean"))) {
+		} else if (world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("deep_cold_ocean")) || world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("cold_ocean"))
+				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("deep_frozen_ocean")) || world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("frozen_ocean"))) {
 			if (Math.random() < 0.5) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));
@@ -86,10 +83,8 @@ public class CrabpotFishingPoolProcedure {
 					}
 				}
 			}
-		} else if (world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("warm_ocean"))
-				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("warm_ocean"))
-				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("deep_lukewarm_ocean"))
-				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("lukewarm_ocean"))) {
+		} else if (world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("warm_ocean")) || world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("warm_ocean"))
+				|| world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("deep_lukewarm_ocean")) || world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("lukewarm_ocean"))) {
 			if (Math.random() < 0.5) {
 				{
 					BlockEntity _ent = world.getBlockEntity(new BlockPos(x, y, z));

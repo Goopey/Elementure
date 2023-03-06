@@ -14,8 +14,7 @@ public class BlackstonegrimaceSpawnsProcedure {
 		locY = -1;
 		locZ = -1;
 		for (int index0 = 0; index0 < (int) (27); index0++) {
-			if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.BLACKSTONE
-					|| (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.BASALT) {
+			if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.BLACKSTONE || (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.BASALT) {
 				shouldSpawn = true;
 			}
 			locX = locX + 1;

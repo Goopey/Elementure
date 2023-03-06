@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -12,7 +12,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm1"
           },
-          "name": "music_box_popup_anim_1.png",
           "x": 1,
           "y": 1
         }
@@ -25,7 +24,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm2"
           },
-          "name": "music_box_popup_anim_2.png",
           "x": 1,
           "y": 1
         }
@@ -38,7 +36,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm3"
           },
-          "name": "music_box_popup_anim_3.png",
           "x": 1,
           "y": 1
         }
@@ -51,7 +48,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm4"
           },
-          "name": "music_box_popup_anim_4.png",
           "x": 1,
           "y": 1
         }
@@ -64,7 +60,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm5"
           },
-          "name": "music_box_popup_anim_5.png",
           "x": 1,
           "y": 1
         }
@@ -77,7 +72,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm6"
           },
-          "name": "music_box_popup_anim_6.png",
           "x": 1,
           "y": 1
         }
@@ -90,7 +84,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm7"
           },
-          "name": "music_box_popup_anim_7.png",
           "x": 1,
           "y": 1
         }
@@ -103,7 +96,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm8"
           },
-          "name": "music_box_popup_anim_8.png",
           "x": 1,
           "y": 1
         }
@@ -116,7 +108,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm9"
           },
-          "name": "music_box_popup_anim_9.png",
           "x": 1,
           "y": 1
         }
@@ -129,7 +120,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm10"
           },
-          "name": "music_box_popup_anim_10.png",
           "x": 1,
           "y": 1
         }
@@ -142,7 +132,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm11"
           },
-          "name": "music_box_popup_anim_11.png",
           "x": 1,
           "y": 1
         }
@@ -155,7 +144,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm12"
           },
-          "name": "music_box_popup_anim_12.png",
           "x": 1,
           "y": 1
         }
@@ -168,7 +156,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm13"
           },
-          "name": "music_box_popup_anim_13.png",
           "x": 1,
           "y": 1
         }
@@ -181,7 +168,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm14"
           },
-          "name": "music_box_popup_anim_14.png",
           "x": 1,
           "y": 1
         }
@@ -194,7 +180,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm15"
           },
-          "name": "music_box_popup_anim_15.png",
           "x": 1,
           "y": 1
         }
@@ -207,7 +192,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm16"
           },
-          "name": "music_box_popup_anim_16.png",
           "x": 1,
           "y": 1
         }
@@ -220,7 +204,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm17"
           },
-          "name": "music_box_popup_anim_17.png",
           "x": 1,
           "y": 1
         }
@@ -233,7 +216,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm18"
           },
-          "name": "music_box_popup_anim_18.png",
           "x": 1,
           "y": 1
         }
@@ -246,7 +228,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm19"
           },
-          "name": "music_box_popup_anim_19.png",
           "x": 1,
           "y": 1
         }
@@ -259,7 +240,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm20"
           },
-          "name": "music_box_popup_anim_20.png",
           "x": 1,
           "y": 1
         }
@@ -272,7 +252,6 @@
           "displayCondition": {
             "name": "MusicpopupanimConfirm21"
           },
-          "name": "music_box_popup_anim_20.png",
           "x": 1,
           "y": 1
         }

@@ -655,8 +655,7 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> MINISTRAWBERRYBUSH = REGISTRY.register("ministrawberrybush", () -> new MinistrawberrybushBlock());
 	public static final RegistryObject<Block> STRAWBERRYBUSH = REGISTRY.register("strawberrybush", () -> new StrawberrybushBlock());
 	public static final RegistryObject<Block> BEESTINGBERRYBUSH = REGISTRY.register("beestingberrybush", () -> new BeestingberrybushBlock());
-	public static final RegistryObject<Block> MINIBEESTINGBERRYBUSH = REGISTRY.register("minibeestingberrybush",
-			() -> new MinibeestingberrybushBlock());
+	public static final RegistryObject<Block> MINIBEESTINGBERRYBUSH = REGISTRY.register("minibeestingberrybush", () -> new MinibeestingberrybushBlock());
 	public static final RegistryObject<Block> PERRYBERRYBUSH = REGISTRY.register("perryberrybush", () -> new PerryberrybushBlock());
 	public static final RegistryObject<Block> MINIPERRYBERRYBUSH = REGISTRY.register("miniperryberrybush", () -> new MiniperryberrybushBlock());
 	public static final RegistryObject<Block> BLUEBERRYBUSH = REGISTRY.register("blueberrybush", () -> new BlueberrybushBlock());
@@ -665,8 +664,7 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> MAELSTROMLOG = REGISTRY.register("maelstromlog", () -> new MaelstromlogBlock());
 	public static final RegistryObject<Block> MAELSTROMPLANKS = REGISTRY.register("maelstromplanks", () -> new MaelstromplanksBlock());
 	public static final RegistryObject<Block> MAELSTROMLEAVES = REGISTRY.register("maelstromleaves", () -> new MaelstromleavesBlock());
-	public static final RegistryObject<Block> SHARDLESSMAELSTROMLOG = REGISTRY.register("shardlessmaelstromlog",
-			() -> new ShardlessmaelstromlogBlock());
+	public static final RegistryObject<Block> SHARDLESSMAELSTROMLOG = REGISTRY.register("shardlessmaelstromlog", () -> new ShardlessmaelstromlogBlock());
 	public static final RegistryObject<Block> FLUTANITEBLOCK = REGISTRY.register("flutaniteblock", () -> new FlutaniteblockBlock());
 	public static final RegistryObject<Block> ABYSSALSPOTTER = REGISTRY.register("abyssalspotter", () -> new AbyssalspotterBlock());
 	public static final RegistryObject<Block> ABYSSALSPAWNER = REGISTRY.register("abyssalspawner", () -> new AbyssalspawnerBlock());
@@ -726,21 +724,14 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> REDBARRIER = REGISTRY.register("redbarrier", () -> new RedbarrierBlock());
 	public static final RegistryObject<Block> WHITEBARRIER = REGISTRY.register("whitebarrier", () -> new WhitebarrierBlock());
 	public static final RegistryObject<Block> YELLOWBARRIER = REGISTRY.register("yellowbarrier", () -> new YellowbarrierBlock());
-	public static final RegistryObject<Block> BURIEDRUSTYIRONSWORD_1 = REGISTRY.register("buriedrustyironsword_1",
-			() -> new Buriedrustyironsword1Block());
-	public static final RegistryObject<Block> BURIEDRUSTYIRONSWORD_2 = REGISTRY.register("buriedrustyironsword_2",
-			() -> new Buriedrustyironsword2Block());
+	public static final RegistryObject<Block> BURIEDRUSTYIRONSWORD_1 = REGISTRY.register("buriedrustyironsword_1", () -> new Buriedrustyironsword1Block());
+	public static final RegistryObject<Block> BURIEDRUSTYIRONSWORD_2 = REGISTRY.register("buriedrustyironsword_2", () -> new Buriedrustyironsword2Block());
 	public static final RegistryObject<Block> ELEMENTALALTARBASE = REGISTRY.register("elementalaltarbase", () -> new ElementalaltarbaseBlock());
-	public static final RegistryObject<Block> TIER_1HARVESTEDWATERELEMENT = REGISTRY.register("tier_1harvestedwaterelement",
-			() -> new Tier1harvestedwaterelementBlock());
-	public static final RegistryObject<Block> TIER_1HARVESTEDFIREELEMENT = REGISTRY.register("tier_1harvestedfireelement",
-			() -> new Tier1harvestedfireelementBlock());
-	public static final RegistryObject<Block> TIER_1HARVESTEDEARTHELEMENT = REGISTRY.register("tier_1harvestedearthelement",
-			() -> new Tier1harvestedearthelementBlock());
-	public static final RegistryObject<Block> TIER_1HARVESTEDAIRELEMENT = REGISTRY.register("tier_1harvestedairelement",
-			() -> new Tier1harvestedairelementBlock());
-	public static final RegistryObject<Block> TIER_1HARVESTEDLIGHTNINGELEMENT = REGISTRY.register("tier_1harvestedlightningelement",
-			() -> new Tier1harvestedlightningelementBlock());
+	public static final RegistryObject<Block> TIER_1HARVESTEDWATERELEMENT = REGISTRY.register("tier_1harvestedwaterelement", () -> new Tier1harvestedwaterelementBlock());
+	public static final RegistryObject<Block> TIER_1HARVESTEDFIREELEMENT = REGISTRY.register("tier_1harvestedfireelement", () -> new Tier1harvestedfireelementBlock());
+	public static final RegistryObject<Block> TIER_1HARVESTEDEARTHELEMENT = REGISTRY.register("tier_1harvestedearthelement", () -> new Tier1harvestedearthelementBlock());
+	public static final RegistryObject<Block> TIER_1HARVESTEDAIRELEMENT = REGISTRY.register("tier_1harvestedairelement", () -> new Tier1harvestedairelementBlock());
+	public static final RegistryObject<Block> TIER_1HARVESTEDLIGHTNINGELEMENT = REGISTRY.register("tier_1harvestedlightningelement", () -> new Tier1harvestedlightningelementBlock());
 	public static final RegistryObject<Block> BIGGLOWINGMUSHROOM = REGISTRY.register("bigglowingmushroom", () -> new BigglowingmushroomBlock());
 	public static final RegistryObject<Block> CURSEDEYELOG = REGISTRY.register("cursedeyelog", () -> new CursedeyelogBlock());
 	public static final RegistryObject<Block> CURSEDLOG = REGISTRY.register("cursedlog", () -> new CursedlogBlock());
@@ -761,8 +752,7 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> ICESPIKES = REGISTRY.register("icespikes", () -> new IcespikesBlock());
 	public static final RegistryObject<Block> ICEMINE = REGISTRY.register("icemine", () -> new IcemineBlock());
 	public static final RegistryObject<Block> POLISHEDRUINGRANITE = REGISTRY.register("polishedruingranite", () -> new PolishedruingraniteBlock());
-	public static final RegistryObject<Block> CHISELEDRUINEDGRANITE = REGISTRY.register("chiseledruinedgranite",
-			() -> new ChiseledruinedgraniteBlock());
+	public static final RegistryObject<Block> CHISELEDRUINEDGRANITE = REGISTRY.register("chiseledruinedgranite", () -> new ChiseledruinedgraniteBlock());
 	public static final RegistryObject<Block> NOOBIUMBLOCK = REGISTRY.register("noobiumblock", () -> new NoobiumblockBlock());
 	public static final RegistryObject<Block> MYCENASHROOMBLOCK = REGISTRY.register("mycenashroomblock", () -> new MycenashroomblockBlock());
 	public static final RegistryObject<Block> MYCENAVINE = REGISTRY.register("mycenavine", () -> new MycenavineBlock());
@@ -773,18 +763,13 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> MYCENANALLOYBLOCK = REGISTRY.register("mycenanalloyblock", () -> new MycenanalloyblockBlock());
 	public static final RegistryObject<Block> DAZZLINGBLOCK = REGISTRY.register("dazzlingblock", () -> new DazzlingblockBlock());
 	public static final RegistryObject<Block> MYCENAMOSSBRICKS = REGISTRY.register("mycenamossbricks", () -> new MycenamossbricksBlock());
-	public static final RegistryObject<Block> MYCENAMOSSBRICKSTAIRS = REGISTRY.register("mycenamossbrickstairs",
-			() -> new MycenamossbrickstairsBlock());
+	public static final RegistryObject<Block> MYCENAMOSSBRICKSTAIRS = REGISTRY.register("mycenamossbrickstairs", () -> new MycenamossbrickstairsBlock());
 	public static final RegistryObject<Block> MYCENAMOSSBRICKSLABS = REGISTRY.register("mycenamossbrickslabs", () -> new MycenamossbrickslabsBlock());
 	public static final RegistryObject<Block> MYCENAMOSSBRICKWALL = REGISTRY.register("mycenamossbrickwall", () -> new MycenamossbrickwallBlock());
-	public static final RegistryObject<Block> POLISHEDENERGYDIORITE = REGISTRY.register("polishedenergydiorite",
-			() -> new PolishedenergydioriteBlock());
-	public static final RegistryObject<Block> CHISELEDENERGYDIORITE = REGISTRY.register("chiseledenergydiorite",
-			() -> new ChiseledenergydioriteBlock());
-	public static final RegistryObject<Block> POLISHEDLIGHTNINGANDESITE = REGISTRY.register("polishedlightningandesite",
-			() -> new PolishedlightningandesiteBlock());
-	public static final RegistryObject<Block> CHISELEDLIGHTNINGANDESITE = REGISTRY.register("chiseledlightningandesite",
-			() -> new ChiseledlightningandesiteBlock());
+	public static final RegistryObject<Block> POLISHEDENERGYDIORITE = REGISTRY.register("polishedenergydiorite", () -> new PolishedenergydioriteBlock());
+	public static final RegistryObject<Block> CHISELEDENERGYDIORITE = REGISTRY.register("chiseledenergydiorite", () -> new ChiseledenergydioriteBlock());
+	public static final RegistryObject<Block> POLISHEDLIGHTNINGANDESITE = REGISTRY.register("polishedlightningandesite", () -> new PolishedlightningandesiteBlock());
+	public static final RegistryObject<Block> CHISELEDLIGHTNINGANDESITE = REGISTRY.register("chiseledlightningandesite", () -> new ChiseledlightningandesiteBlock());
 	public static final RegistryObject<Block> MEMORYHEART = REGISTRY.register("memoryheart", () -> new MemoryheartBlock());
 	public static final RegistryObject<Block> BRONTIUMBLOCK = REGISTRY.register("brontiumblock", () -> new BrontiumblockBlock());
 	public static final RegistryObject<Block> ENDERMEMORIAL = REGISTRY.register("endermemorial", () -> new EndermemorialBlock());
@@ -822,59 +807,33 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> DENSENETHERUM = REGISTRY.register("densenetherum", () -> new DensenetherumBlock());
 	public static final RegistryObject<Block> BLAZINGNETHERUM = REGISTRY.register("blazingnetherum", () -> new BlazingnetherumBlock());
 	public static final RegistryObject<Block> NETHERUMCARPET = REGISTRY.register("netherumcarpet", () -> new NetherumcarpetBlock());
-	public static final RegistryObject<Block> PRISMATICCRYSTALBLOCK = REGISTRY.register("prismaticcrystalblock",
-			() -> new PrismaticcrystalblockBlock());
+	public static final RegistryObject<Block> PRISMATICCRYSTALBLOCK = REGISTRY.register("prismaticcrystalblock", () -> new PrismaticcrystalblockBlock());
 	public static final RegistryObject<Block> STARRYROOTS = REGISTRY.register("starryroots", () -> new StarryrootsBlock());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK = REGISTRY.register("coloredprismaticcrystalblock",
-			() -> new ColoredprismaticcrystalblockBlock());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_2 = REGISTRY.register("coloredprismaticcrystalblock_2",
-			() -> new Coloredprismaticcrystalblock2Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_3 = REGISTRY.register("coloredprismaticcrystalblock_3",
-			() -> new Coloredprismaticcrystalblock3Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_4 = REGISTRY.register("coloredprismaticcrystalblock_4",
-			() -> new Coloredprismaticcrystalblock4Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_5 = REGISTRY.register("coloredprismaticcrystalblock_5",
-			() -> new Coloredprismaticcrystalblock5Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_6 = REGISTRY.register("coloredprismaticcrystalblock_6",
-			() -> new Coloredprismaticcrystalblock6Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_7 = REGISTRY.register("coloredprismaticcrystalblock_7",
-			() -> new Coloredprismaticcrystalblock7Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_8 = REGISTRY.register("coloredprismaticcrystalblock_8",
-			() -> new Coloredprismaticcrystalblock8Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_9 = REGISTRY.register("coloredprismaticcrystalblock_9",
-			() -> new Coloredprismaticcrystalblock9Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_10 = REGISTRY.register("coloredprismaticcrystalblock_10",
-			() -> new Coloredprismaticcrystalblock10Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_11 = REGISTRY.register("coloredprismaticcrystalblock_11",
-			() -> new Coloredprismaticcrystalblock11Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_12 = REGISTRY.register("coloredprismaticcrystalblock_12",
-			() -> new Coloredprismaticcrystalblock12Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_13 = REGISTRY.register("coloredprismaticcrystalblock_13",
-			() -> new Coloredprismaticcrystalblock13Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_14 = REGISTRY.register("coloredprismaticcrystalblock_14",
-			() -> new Coloredprismaticcrystalblock14Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_15 = REGISTRY.register("coloredprismaticcrystalblock_15",
-			() -> new Coloredprismaticcrystalblock15Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_16 = REGISTRY.register("coloredprismaticcrystalblock_16",
-			() -> new Coloredprismaticcrystalblock16Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_17 = REGISTRY.register("coloredprismaticcrystalblock_17",
-			() -> new Coloredprismaticcrystalblock17Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_18 = REGISTRY.register("coloredprismaticcrystalblock_18",
-			() -> new Coloredprismaticcrystalblock18Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_19 = REGISTRY.register("coloredprismaticcrystalblock_19",
-			() -> new Coloredprismaticcrystalblock19Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_20 = REGISTRY.register("coloredprismaticcrystalblock_20",
-			() -> new Coloredprismaticcrystalblock20Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_21 = REGISTRY.register("coloredprismaticcrystalblock_21",
-			() -> new Coloredprismaticcrystalblock21Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_22 = REGISTRY.register("coloredprismaticcrystalblock_22",
-			() -> new Coloredprismaticcrystalblock22Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_23 = REGISTRY.register("coloredprismaticcrystalblock_23",
-			() -> new Coloredprismaticcrystalblock23Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_24 = REGISTRY.register("coloredprismaticcrystalblock_24",
-			() -> new Coloredprismaticcrystalblock24Block());
-	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_25 = REGISTRY.register("coloredprismaticcrystalblock_25",
-			() -> new Coloredprismaticcrystalblock25Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK = REGISTRY.register("coloredprismaticcrystalblock", () -> new ColoredprismaticcrystalblockBlock());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_2 = REGISTRY.register("coloredprismaticcrystalblock_2", () -> new Coloredprismaticcrystalblock2Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_3 = REGISTRY.register("coloredprismaticcrystalblock_3", () -> new Coloredprismaticcrystalblock3Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_4 = REGISTRY.register("coloredprismaticcrystalblock_4", () -> new Coloredprismaticcrystalblock4Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_5 = REGISTRY.register("coloredprismaticcrystalblock_5", () -> new Coloredprismaticcrystalblock5Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_6 = REGISTRY.register("coloredprismaticcrystalblock_6", () -> new Coloredprismaticcrystalblock6Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_7 = REGISTRY.register("coloredprismaticcrystalblock_7", () -> new Coloredprismaticcrystalblock7Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_8 = REGISTRY.register("coloredprismaticcrystalblock_8", () -> new Coloredprismaticcrystalblock8Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_9 = REGISTRY.register("coloredprismaticcrystalblock_9", () -> new Coloredprismaticcrystalblock9Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_10 = REGISTRY.register("coloredprismaticcrystalblock_10", () -> new Coloredprismaticcrystalblock10Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_11 = REGISTRY.register("coloredprismaticcrystalblock_11", () -> new Coloredprismaticcrystalblock11Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_12 = REGISTRY.register("coloredprismaticcrystalblock_12", () -> new Coloredprismaticcrystalblock12Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_13 = REGISTRY.register("coloredprismaticcrystalblock_13", () -> new Coloredprismaticcrystalblock13Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_14 = REGISTRY.register("coloredprismaticcrystalblock_14", () -> new Coloredprismaticcrystalblock14Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_15 = REGISTRY.register("coloredprismaticcrystalblock_15", () -> new Coloredprismaticcrystalblock15Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_16 = REGISTRY.register("coloredprismaticcrystalblock_16", () -> new Coloredprismaticcrystalblock16Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_17 = REGISTRY.register("coloredprismaticcrystalblock_17", () -> new Coloredprismaticcrystalblock17Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_18 = REGISTRY.register("coloredprismaticcrystalblock_18", () -> new Coloredprismaticcrystalblock18Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_19 = REGISTRY.register("coloredprismaticcrystalblock_19", () -> new Coloredprismaticcrystalblock19Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_20 = REGISTRY.register("coloredprismaticcrystalblock_20", () -> new Coloredprismaticcrystalblock20Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_21 = REGISTRY.register("coloredprismaticcrystalblock_21", () -> new Coloredprismaticcrystalblock21Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_22 = REGISTRY.register("coloredprismaticcrystalblock_22", () -> new Coloredprismaticcrystalblock22Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_23 = REGISTRY.register("coloredprismaticcrystalblock_23", () -> new Coloredprismaticcrystalblock23Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_24 = REGISTRY.register("coloredprismaticcrystalblock_24", () -> new Coloredprismaticcrystalblock24Block());
+	public static final RegistryObject<Block> COLOREDPRISMATICCRYSTALBLOCK_25 = REGISTRY.register("coloredprismaticcrystalblock_25", () -> new Coloredprismaticcrystalblock25Block());
 	public static final RegistryObject<Block> NETHERSTARCRUSTPATCH = REGISTRY.register("netherstarcrustpatch", () -> new NetherstarcrustpatchBlock());
 	public static final RegistryObject<Block> NETHERLOG = REGISTRY.register("netherlog", () -> new NetherlogBlock());
 	public static final RegistryObject<Block> SHAVEDNETHERLOG = REGISTRY.register("shavednetherlog", () -> new ShavednetherlogBlock());
@@ -883,8 +842,7 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> NETHERPLANKS = REGISTRY.register("netherplanks", () -> new NetherplanksBlock());
 	public static final RegistryObject<Block> NETHERLEAVES = REGISTRY.register("netherleaves", () -> new NetherleavesBlock());
 	public static final RegistryObject<Block> SCRAPLEAVES = REGISTRY.register("scrapleaves", () -> new ScrapleavesBlock());
-	public static final RegistryObject<Block> WHITEPRISMATICCRYSTALBLOCK = REGISTRY.register("whiteprismaticcrystalblock",
-			() -> new WhiteprismaticcrystalblockBlock());
+	public static final RegistryObject<Block> WHITEPRISMATICCRYSTALBLOCK = REGISTRY.register("whiteprismaticcrystalblock", () -> new WhiteprismaticcrystalblockBlock());
 	public static final RegistryObject<Block> DEBRISSCRAPBRICKS = REGISTRY.register("debrisscrapbricks", () -> new DebrisscrapbricksBlock());
 	public static final RegistryObject<Block> NETHERDOOR = REGISTRY.register("netherdoor", () -> new NetherdoorBlock());
 	public static final RegistryObject<Block> NETHERFENCE = REGISTRY.register("netherfence", () -> new NetherfenceBlock());
@@ -903,48 +861,35 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> DIRECRYPTTILES_2 = REGISTRY.register("direcrypttiles_2", () -> new Direcrypttiles2Block());
 	public static final RegistryObject<Block> DIRECRYPTBRICKS_2 = REGISTRY.register("direcryptbricks_2", () -> new Direcryptbricks2Block());
 	public static final RegistryObject<Block> PROTECTIONRUNE = REGISTRY.register("protectionrune", () -> new ProtectionruneBlock());
-	public static final RegistryObject<Block> RECEIVINGPROTECTIONRUNE = REGISTRY.register("receivingprotectionrune",
-			() -> new ReceivingprotectionruneBlock());
-	public static final RegistryObject<Block> SHIELDINGPROTECTIONRUNE = REGISTRY.register("shieldingprotectionrune",
-			() -> new ShieldingprotectionruneBlock());
+	public static final RegistryObject<Block> RECEIVINGPROTECTIONRUNE = REGISTRY.register("receivingprotectionrune", () -> new ReceivingprotectionruneBlock());
+	public static final RegistryObject<Block> SHIELDINGPROTECTIONRUNE = REGISTRY.register("shieldingprotectionrune", () -> new ShieldingprotectionruneBlock());
 	public static final RegistryObject<Block> HAUNTEDSTATUE = REGISTRY.register("hauntedstatue", () -> new HauntedstatueBlock());
 	public static final RegistryObject<Block> SPAWNERCRYSTAL = REGISTRY.register("spawnercrystal", () -> new SpawnercrystalBlock());
 	public static final RegistryObject<Block> SPAWNERCRYSTALBROKEN = REGISTRY.register("spawnercrystalbroken", () -> new SpawnercrystalbrokenBlock());
 	public static final RegistryObject<Block> DIRECRYPTTILES_SLAB = REGISTRY.register("direcrypttiles_slab", () -> new DirecrypttilesSlabBlock());
-	public static final RegistryObject<Block> DIRECRYPTTILES_STAIRS = REGISTRY.register("direcrypttiles_stairs",
-			() -> new DirecrypttilesStairsBlock());
+	public static final RegistryObject<Block> DIRECRYPTTILES_STAIRS = REGISTRY.register("direcrypttiles_stairs", () -> new DirecrypttilesStairsBlock());
 	public static final RegistryObject<Block> DIRECRYPTTILES_WALL = REGISTRY.register("direcrypttiles_wall", () -> new DirecrypttilesWallBlock());
 	public static final RegistryObject<Block> DIRECRYPTBRICKS_SLAB = REGISTRY.register("direcryptbricks_slab", () -> new DirecryptbricksSlabBlock());
-	public static final RegistryObject<Block> DIRECRYPTBRICKS_STAIRS = REGISTRY.register("direcryptbricks_stairs",
-			() -> new DirecryptbricksStairsBlock());
+	public static final RegistryObject<Block> DIRECRYPTBRICKS_STAIRS = REGISTRY.register("direcryptbricks_stairs", () -> new DirecryptbricksStairsBlock());
 	public static final RegistryObject<Block> DIRECRYPTBRICKS_WALL = REGISTRY.register("direcryptbricks_wall", () -> new DirecryptbricksWallBlock());
-	public static final RegistryObject<Block> DIRECRYPTTILES_2_SLAB = REGISTRY.register("direcrypttiles_2_slab",
-			() -> new Direcrypttiles2SlabBlock());
-	public static final RegistryObject<Block> DIRECRYPTTILES_2_STAIRS = REGISTRY.register("direcrypttiles_2_stairs",
-			() -> new Direcrypttiles2StairsBlock());
-	public static final RegistryObject<Block> DIRECRYPTTILES_2_WALL = REGISTRY.register("direcrypttiles_2_wall",
-			() -> new Direcrypttiles2WallBlock());
-	public static final RegistryObject<Block> DIRECRYPTBRICKS_2_SLAB = REGISTRY.register("direcryptbricks_2_slab",
-			() -> new Direcryptbricks2SlabBlock());
-	public static final RegistryObject<Block> DIRECRYPTBRICKS_2_STAIRS = REGISTRY.register("direcryptbricks_2_stairs",
-			() -> new Direcryptbricks2StairsBlock());
-	public static final RegistryObject<Block> DIRECRYPTBRICKS_2_WALL = REGISTRY.register("direcryptbricks_2_wall",
-			() -> new Direcryptbricks2WallBlock());
+	public static final RegistryObject<Block> DIRECRYPTTILES_2_SLAB = REGISTRY.register("direcrypttiles_2_slab", () -> new Direcrypttiles2SlabBlock());
+	public static final RegistryObject<Block> DIRECRYPTTILES_2_STAIRS = REGISTRY.register("direcrypttiles_2_stairs", () -> new Direcrypttiles2StairsBlock());
+	public static final RegistryObject<Block> DIRECRYPTTILES_2_WALL = REGISTRY.register("direcrypttiles_2_wall", () -> new Direcrypttiles2WallBlock());
+	public static final RegistryObject<Block> DIRECRYPTBRICKS_2_SLAB = REGISTRY.register("direcryptbricks_2_slab", () -> new Direcryptbricks2SlabBlock());
+	public static final RegistryObject<Block> DIRECRYPTBRICKS_2_STAIRS = REGISTRY.register("direcryptbricks_2_stairs", () -> new Direcryptbricks2StairsBlock());
+	public static final RegistryObject<Block> DIRECRYPTBRICKS_2_WALL = REGISTRY.register("direcryptbricks_2_wall", () -> new Direcryptbricks2WallBlock());
 	public static final RegistryObject<Block> PURPLEMUSHROOMBLOCK = REGISTRY.register("purplemushroomblock", () -> new PurplemushroomblockBlock());
 	public static final RegistryObject<Block> AURUMBRICKS = REGISTRY.register("aurumbricks", () -> new AurumbricksBlock());
 	public static final RegistryObject<Block> AURUMTILES = REGISTRY.register("aurumtiles", () -> new AurumtilesBlock());
 	public static final RegistryObject<Block> SHARDEDGLASS = REGISTRY.register("shardedglass", () -> new ShardedglassBlock());
 	public static final RegistryObject<Block> SHARDEDGLASSPANE = REGISTRY.register("shardedglasspane", () -> new ShardedglasspaneBlock());
 	public static final RegistryObject<Block> AURUMBLOCK = REGISTRY.register("aurumblock", () -> new AurumblockBlock());
-	public static final RegistryObject<Block> CRIMSONFORESTMEMORIAL = REGISTRY.register("crimsonforestmemorial",
-			() -> new CrimsonforestmemorialBlock());
+	public static final RegistryObject<Block> CRIMSONFORESTMEMORIAL = REGISTRY.register("crimsonforestmemorial", () -> new CrimsonforestmemorialBlock());
 	public static final RegistryObject<Block> WARPEDFORESTMEMORIAL = REGISTRY.register("warpedforestmemorial", () -> new WarpedforestmemorialBlock());
-	public static final RegistryObject<Block> SOULSANDVALLEYMEMORIAL = REGISTRY.register("soulsandvalleymemorial",
-			() -> new SoulsandvalleymemorialBlock());
+	public static final RegistryObject<Block> SOULSANDVALLEYMEMORIAL = REGISTRY.register("soulsandvalleymemorial", () -> new SoulsandvalleymemorialBlock());
 	public static final RegistryObject<Block> BASALTDELTAMEMORIAL = REGISTRY.register("basaltdeltamemorial", () -> new BasaltdeltamemorialBlock());
 	public static final RegistryObject<Block> NETHERSTARMEMORIAL = REGISTRY.register("netherstarmemorial", () -> new NetherstarmemorialBlock());
-	public static final RegistryObject<Block> DRAGONEWTSCALES_BLOCK = REGISTRY.register("dragonewtscales_block",
-			() -> new DragonewtscalesBlockBlock());
+	public static final RegistryObject<Block> DRAGONEWTSCALES_BLOCK = REGISTRY.register("dragonewtscales_block", () -> new DragonewtscalesBlockBlock());
 	public static final RegistryObject<Block> NETHERSTARCRUSTSHINY = REGISTRY.register("netherstarcrustshiny", () -> new NetherstarcrustshinyBlock());
 	public static final RegistryObject<Block> NETHERUMSHINY = REGISTRY.register("netherumshiny", () -> new NetherumshinyBlock());
 	public static final RegistryObject<Block> ACTIVENETHERUMSHINY = REGISTRY.register("activenetherumshiny", () -> new ActivenetherumshinyBlock());
@@ -952,13 +897,11 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> BLAZINGNETHERUMSHINY = REGISTRY.register("blazingnetherumshiny", () -> new BlazingnetherumshinyBlock());
 	public static final RegistryObject<Block> NETHERUMCARPETSHINY = REGISTRY.register("netherumcarpetshiny", () -> new NetherumcarpetshinyBlock());
 	public static final RegistryObject<Block> BABYNETHERSTARSHINY = REGISTRY.register("babynetherstarshiny", () -> new BabynetherstarshinyBlock());
-	public static final RegistryObject<Block> NETHERSTARCRUSTPATCHSHINY = REGISTRY.register("netherstarcrustpatchshiny",
-			() -> new NetherstarcrustpatchshinyBlock());
+	public static final RegistryObject<Block> NETHERSTARCRUSTPATCHSHINY = REGISTRY.register("netherstarcrustpatchshiny", () -> new NetherstarcrustpatchshinyBlock());
 	public static final RegistryObject<Block> SPARKLINGSTARS = REGISTRY.register("sparklingstars", () -> new SparklingstarsBlock());
 	public static final RegistryObject<Block> FUMINGSPARKLINGSTARS = REGISTRY.register("fumingsparklingstars", () -> new FumingsparklingstarsBlock());
 	public static final RegistryObject<Block> SUNTURFBLOCK = REGISTRY.register("sunturfblock", () -> new SunturfblockBlock());
-	public static final RegistryObject<Block> NETHERUMDUST_NEBULATURFBLOCK = REGISTRY.register("netherumdust_nebulaturfblock",
-			() -> new NetherumdustNebulaturfblockBlock());
+	public static final RegistryObject<Block> NETHERUMDUST_NEBULATURFBLOCK = REGISTRY.register("netherumdust_nebulaturfblock", () -> new NetherumdustNebulaturfblockBlock());
 	public static final RegistryObject<Block> PRISMATICSPROUT = REGISTRY.register("prismaticsprout", () -> new PrismaticsproutBlock());
 	public static final RegistryObject<Block> STARFLOWER = REGISTRY.register("starflower", () -> new StarflowerBlock());
 	public static final RegistryObject<Block> RADIANTOBSIDIAN = REGISTRY.register("radiantobsidian", () -> new RadiantobsidianBlock());
@@ -968,48 +911,28 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> SOLARLILY = REGISTRY.register("solarlily", () -> new SolarlilyBlock());
 	public static final RegistryObject<Block> RUINGRANITETILES = REGISTRY.register("ruingranitetiles", () -> new RuingranitetilesBlock());
 	public static final RegistryObject<Block> RUINGRANITEBRICKS = REGISTRY.register("ruingranitebricks", () -> new RuingranitebricksBlock());
-	public static final RegistryObject<Block> RUINGRANITETILESSTAIRS = REGISTRY.register("ruingranitetilesstairs",
-			() -> new RuingranitetilesstairsBlock());
-	public static final RegistryObject<Block> RUINGRANITETILESSLABS = REGISTRY.register("ruingranitetilesslabs",
-			() -> new RuingranitetilesslabsBlock());
-	public static final RegistryObject<Block> RUINGRANITETILESWALLS = REGISTRY.register("ruingranitetileswalls",
-			() -> new RuingranitetileswallsBlock());
-	public static final RegistryObject<Block> RUINGRANITEBRICKSSTAIRS = REGISTRY.register("ruingranitebricksstairs",
-			() -> new RuingranitebricksstairsBlock());
-	public static final RegistryObject<Block> RUINGRANITEBRICKSSLABS = REGISTRY.register("ruingranitebricksslabs",
-			() -> new RuingranitebricksslabsBlock());
-	public static final RegistryObject<Block> RUINGRANITEBRICKSWALLS = REGISTRY.register("ruingranitebrickswalls",
-			() -> new RuingranitebrickswallsBlock());
+	public static final RegistryObject<Block> RUINGRANITETILESSTAIRS = REGISTRY.register("ruingranitetilesstairs", () -> new RuingranitetilesstairsBlock());
+	public static final RegistryObject<Block> RUINGRANITETILESSLABS = REGISTRY.register("ruingranitetilesslabs", () -> new RuingranitetilesslabsBlock());
+	public static final RegistryObject<Block> RUINGRANITETILESWALLS = REGISTRY.register("ruingranitetileswalls", () -> new RuingranitetileswallsBlock());
+	public static final RegistryObject<Block> RUINGRANITEBRICKSSTAIRS = REGISTRY.register("ruingranitebricksstairs", () -> new RuingranitebricksstairsBlock());
+	public static final RegistryObject<Block> RUINGRANITEBRICKSSLABS = REGISTRY.register("ruingranitebricksslabs", () -> new RuingranitebricksslabsBlock());
+	public static final RegistryObject<Block> RUINGRANITEBRICKSWALLS = REGISTRY.register("ruingranitebrickswalls", () -> new RuingranitebrickswallsBlock());
 	public static final RegistryObject<Block> ENERGYDIORITETILE = REGISTRY.register("energydioritetile", () -> new EnergydioritetileBlock());
 	public static final RegistryObject<Block> ENERGYDIORITEBRICKS = REGISTRY.register("energydioritebricks", () -> new EnergydioritebricksBlock());
-	public static final RegistryObject<Block> ENERGYDIORITETILE_STAIRS = REGISTRY.register("energydioritetile_stairs",
-			() -> new EnergydioritetileStairsBlock());
-	public static final RegistryObject<Block> ENERGYDIORITETILE_SLABS = REGISTRY.register("energydioritetile_slabs",
-			() -> new EnergydioritetileSlabsBlock());
-	public static final RegistryObject<Block> ENERGYDIORITETILE_WALLS = REGISTRY.register("energydioritetile_walls",
-			() -> new EnergydioritetileWallsBlock());
-	public static final RegistryObject<Block> ENERGYDIORITEBRICKS_STAIRS = REGISTRY.register("energydioritebricks_stairs",
-			() -> new EnergydioritebricksStairsBlock());
-	public static final RegistryObject<Block> ENERGYDIORITEBRICKS_SLABS = REGISTRY.register("energydioritebricks_slabs",
-			() -> new EnergydioritebricksSlabsBlock());
-	public static final RegistryObject<Block> ENERGYDIORITEBRICKS_WALLS = REGISTRY.register("energydioritebricks_walls",
-			() -> new EnergydioritebricksWallsBlock());
-	public static final RegistryObject<Block> LIGHTNINGANDESITETILE = REGISTRY.register("lightningandesitetile",
-			() -> new LightningandesitetileBlock());
-	public static final RegistryObject<Block> LIGHTNINGANDESITEBRICKS = REGISTRY.register("lightningandesitebricks",
-			() -> new LightningandesitebricksBlock());
-	public static final RegistryObject<Block> LIGHTNINGANDESITETILESSTAIRS = REGISTRY.register("lightningandesitetilesstairs",
-			() -> new LightningandesitetilesstairsBlock());
-	public static final RegistryObject<Block> LIGHTNINGANDESITETILESSLABS = REGISTRY.register("lightningandesitetilesslabs",
-			() -> new LightningandesitetilesslabsBlock());
-	public static final RegistryObject<Block> LIGHTNINGANDESITETILESWALLS = REGISTRY.register("lightningandesitetileswalls",
-			() -> new LightningandesitetileswallsBlock());
-	public static final RegistryObject<Block> LIGHTNINGANDESITEBRICKSSTAIRS = REGISTRY.register("lightningandesitebricksstairs",
-			() -> new LightningandesitebricksstairsBlock());
-	public static final RegistryObject<Block> LIGHTNINGANDESITEBRICKSSLABS = REGISTRY.register("lightningandesitebricksslabs",
-			() -> new LightningandesitebricksslabsBlock());
-	public static final RegistryObject<Block> LIGHTNINGANDESITEBRICKSWALLS = REGISTRY.register("lightningandesitebrickswalls",
-			() -> new LightningandesitebrickswallsBlock());
+	public static final RegistryObject<Block> ENERGYDIORITETILE_STAIRS = REGISTRY.register("energydioritetile_stairs", () -> new EnergydioritetileStairsBlock());
+	public static final RegistryObject<Block> ENERGYDIORITETILE_SLABS = REGISTRY.register("energydioritetile_slabs", () -> new EnergydioritetileSlabsBlock());
+	public static final RegistryObject<Block> ENERGYDIORITETILE_WALLS = REGISTRY.register("energydioritetile_walls", () -> new EnergydioritetileWallsBlock());
+	public static final RegistryObject<Block> ENERGYDIORITEBRICKS_STAIRS = REGISTRY.register("energydioritebricks_stairs", () -> new EnergydioritebricksStairsBlock());
+	public static final RegistryObject<Block> ENERGYDIORITEBRICKS_SLABS = REGISTRY.register("energydioritebricks_slabs", () -> new EnergydioritebricksSlabsBlock());
+	public static final RegistryObject<Block> ENERGYDIORITEBRICKS_WALLS = REGISTRY.register("energydioritebricks_walls", () -> new EnergydioritebricksWallsBlock());
+	public static final RegistryObject<Block> LIGHTNINGANDESITETILE = REGISTRY.register("lightningandesitetile", () -> new LightningandesitetileBlock());
+	public static final RegistryObject<Block> LIGHTNINGANDESITEBRICKS = REGISTRY.register("lightningandesitebricks", () -> new LightningandesitebricksBlock());
+	public static final RegistryObject<Block> LIGHTNINGANDESITETILESSTAIRS = REGISTRY.register("lightningandesitetilesstairs", () -> new LightningandesitetilesstairsBlock());
+	public static final RegistryObject<Block> LIGHTNINGANDESITETILESSLABS = REGISTRY.register("lightningandesitetilesslabs", () -> new LightningandesitetilesslabsBlock());
+	public static final RegistryObject<Block> LIGHTNINGANDESITETILESWALLS = REGISTRY.register("lightningandesitetileswalls", () -> new LightningandesitetileswallsBlock());
+	public static final RegistryObject<Block> LIGHTNINGANDESITEBRICKSSTAIRS = REGISTRY.register("lightningandesitebricksstairs", () -> new LightningandesitebricksstairsBlock());
+	public static final RegistryObject<Block> LIGHTNINGANDESITEBRICKSSLABS = REGISTRY.register("lightningandesitebricksslabs", () -> new LightningandesitebricksslabsBlock());
+	public static final RegistryObject<Block> LIGHTNINGANDESITEBRICKSWALLS = REGISTRY.register("lightningandesitebrickswalls", () -> new LightningandesitebrickswallsBlock());
 	public static final RegistryObject<Block> GREENSLIMETURF = REGISTRY.register("greenslimeturf", () -> new GreenslimeturfBlock());
 	public static final RegistryObject<Block> BLUESLIMETURF = REGISTRY.register("blueslimeturf", () -> new BlueslimeturfBlock());
 	public static final RegistryObject<Block> PINKSLIMETURF = REGISTRY.register("pinkslimeturf", () -> new PinkslimeturfBlock());
@@ -1048,8 +971,7 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> FLUFFLOG = REGISTRY.register("flufflog", () -> new FlufflogBlock());
 	public static final RegistryObject<Block> STRIPPED_FLUFFLOG = REGISTRY.register("stripped_flufflog", () -> new StrippedFlufflogBlock());
 	public static final RegistryObject<Block> FLUFFLOGFULL = REGISTRY.register("flufflogfull", () -> new FlufflogfullBlock());
-	public static final RegistryObject<Block> STRIPPED_FLUFFLOGFULL = REGISTRY.register("stripped_flufflogfull",
-			() -> new StrippedFlufflogfullBlock());
+	public static final RegistryObject<Block> STRIPPED_FLUFFLOGFULL = REGISTRY.register("stripped_flufflogfull", () -> new StrippedFlufflogfullBlock());
 	public static final RegistryObject<Block> FLUFFPLANKS = REGISTRY.register("fluffplanks", () -> new FluffplanksBlock());
 	public static final RegistryObject<Block> FLUFFSTAIRPLANKS = REGISTRY.register("fluffstairplanks", () -> new FluffstairplanksBlock());
 	public static final RegistryObject<Block> FLUFFSLABPLANKS = REGISTRY.register("fluffslabplanks", () -> new FluffslabplanksBlock());
@@ -1058,8 +980,7 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> FLUFFPLANKTRAPDOOR = REGISTRY.register("fluffplanktrapdoor", () -> new FluffplanktrapdoorBlock());
 	public static final RegistryObject<Block> FLUFFPLANKDOOR = REGISTRY.register("fluffplankdoor", () -> new FluffplankdoorBlock());
 	public static final RegistryObject<Block> FLUFFPLANKBUTTON = REGISTRY.register("fluffplankbutton", () -> new FluffplankbuttonBlock());
-	public static final RegistryObject<Block> FLUFFPLANKPRESSUREPLATE = REGISTRY.register("fluffplankpressureplate",
-			() -> new FluffplankpressureplateBlock());
+	public static final RegistryObject<Block> FLUFFPLANKPRESSUREPLATE = REGISTRY.register("fluffplankpressureplate", () -> new FluffplankpressureplateBlock());
 	public static final RegistryObject<Block> CLOUDGEYSERBLOCK = REGISTRY.register("cloudgeyserblock", () -> new CloudgeyserblockBlock());
 	public static final RegistryObject<Block> WORTASHLEAVES = REGISTRY.register("wortashleaves", () -> new WortashleavesBlock());
 	public static final RegistryObject<Block> WORTASHSAPLING = REGISTRY.register("wortashsapling", () -> new WortashsaplingBlock());
@@ -1157,64 +1078,44 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> DIVERSALLOY_BLOCK = REGISTRY.register("diversalloy_block", () -> new DiversalloyBlockBlock());
 	public static final RegistryObject<Block> DARKGEMBLOCK = REGISTRY.register("darkgemblock", () -> new DarkgemblockBlock());
 	public static final RegistryObject<Block> DIVERSCROWN_MEMORIAL = REGISTRY.register("diverscrown_memorial", () -> new DiverscrownMemorialBlock());
-	public static final RegistryObject<Block> MYCENASPORECLOUD_BLOCK = REGISTRY.register("mycenasporecloud_block",
-			() -> new MycenasporecloudBlockBlock());
-	public static final RegistryObject<Block> SHIELDINGPROTECTIONRUNE_SMALL = REGISTRY.register("shieldingprotectionrune_small",
-			() -> new ShieldingprotectionruneSmallBlock());
+	public static final RegistryObject<Block> MYCENASPORECLOUD_BLOCK = REGISTRY.register("mycenasporecloud_block", () -> new MycenasporecloudBlockBlock());
+	public static final RegistryObject<Block> SHIELDINGPROTECTIONRUNE_SMALL = REGISTRY.register("shieldingprotectionrune_small", () -> new ShieldingprotectionruneSmallBlock());
 	public static final RegistryObject<Block> LILYPADPLANKS = REGISTRY.register("lilypadplanks", () -> new LilypadplanksBlock());
 	public static final RegistryObject<Block> STRIPPEDLILYPADLOG = REGISTRY.register("strippedlilypadlog", () -> new StrippedlilypadlogBlock());
 	public static final RegistryObject<Block> LILYPADLOG = REGISTRY.register("lilypadlog", () -> new LilypadlogBlock());
 	public static final RegistryObject<Block> LILYPADSAPLING = REGISTRY.register("lilypadsapling", () -> new LilypadsaplingBlock());
 	public static final RegistryObject<Block> LILYPADPLANK_STAIRS = REGISTRY.register("lilypadplank_stairs", () -> new LilypadplankStairsBlock());
 	public static final RegistryObject<Block> LILYPADPLANKSLABS = REGISTRY.register("lilypadplankslabs", () -> new LilypadplankslabsBlock());
-	public static final RegistryObject<Block> STRIPPEDLILYPADLOG_FULL = REGISTRY.register("strippedlilypadlog_full",
-			() -> new StrippedlilypadlogFullBlock());
+	public static final RegistryObject<Block> STRIPPEDLILYPADLOG_FULL = REGISTRY.register("strippedlilypadlog_full", () -> new StrippedlilypadlogFullBlock());
 	public static final RegistryObject<Block> LILYPADLOG_FULL = REGISTRY.register("lilypadlog_full", () -> new LilypadlogFullBlock());
 	public static final RegistryObject<Block> LILYPADPLANKS_GATE = REGISTRY.register("lilypadplanks_gate", () -> new LilypadplanksGateBlock());
 	public static final RegistryObject<Block> LILYPADPLANKS_FENCE = REGISTRY.register("lilypadplanks_fence", () -> new LilypadplanksFenceBlock());
 	public static final RegistryObject<Block> LILYPADPLANKS_BUTTON = REGISTRY.register("lilypadplanks_button", () -> new LilypadplanksButtonBlock());
-	public static final RegistryObject<Block> LILYPADPLANKS_PRESSUREPLATE = REGISTRY.register("lilypadplanks_pressureplate",
-			() -> new LilypadplanksPressureplateBlock());
+	public static final RegistryObject<Block> LILYPADPLANKS_PRESSUREPLATE = REGISTRY.register("lilypadplanks_pressureplate", () -> new LilypadplanksPressureplateBlock());
 	public static final RegistryObject<Block> LILYPADPLANKS_DOOR = REGISTRY.register("lilypadplanks_door", () -> new LilypadplanksDoorBlock());
-	public static final RegistryObject<Block> LILYPADPLANKS_TRAPDOOR = REGISTRY.register("lilypadplanks_trapdoor",
-			() -> new LilypadplanksTrapdoorBlock());
-	public static final RegistryObject<Block> SPIDERNEST_COBBLESTONE = REGISTRY.register("spidernest_cobblestone",
-			() -> new SpidernestCobblestoneBlock());
-	public static final RegistryObject<Block> EMPTYNEST_COBBLESTONE = REGISTRY.register("emptynest_cobblestone",
-			() -> new EmptynestCobblestoneBlock());
-	public static final RegistryObject<Block> SPIDERBORE_COBBLESTONE = REGISTRY.register("spiderbore_cobblestone",
-			() -> new SpiderboreCobblestoneBlock());
-	public static final RegistryObject<Block> SPIDERBORE_DEEPSLATEBRICKS = REGISTRY.register("spiderbore_deepslatebricks",
-			() -> new SpiderboreDeepslatebricksBlock());
+	public static final RegistryObject<Block> LILYPADPLANKS_TRAPDOOR = REGISTRY.register("lilypadplanks_trapdoor", () -> new LilypadplanksTrapdoorBlock());
+	public static final RegistryObject<Block> SPIDERNEST_COBBLESTONE = REGISTRY.register("spidernest_cobblestone", () -> new SpidernestCobblestoneBlock());
+	public static final RegistryObject<Block> EMPTYNEST_COBBLESTONE = REGISTRY.register("emptynest_cobblestone", () -> new EmptynestCobblestoneBlock());
+	public static final RegistryObject<Block> SPIDERBORE_COBBLESTONE = REGISTRY.register("spiderbore_cobblestone", () -> new SpiderboreCobblestoneBlock());
+	public static final RegistryObject<Block> SPIDERBORE_DEEPSLATEBRICKS = REGISTRY.register("spiderbore_deepslatebricks", () -> new SpiderboreDeepslatebricksBlock());
 	public static final RegistryObject<Block> WALLWEB = REGISTRY.register("wallweb", () -> new WallwebBlock());
 	public static final RegistryObject<Block> PUMPKINCORE = REGISTRY.register("pumpkincore", () -> new PumpkincoreBlock());
 	public static final RegistryObject<Block> DUNGEONLANTERN = REGISTRY.register("dungeonlantern", () -> new DungeonlanternBlock());
 	public static final RegistryObject<Block> DUNGEONHATCH_LOCKED = REGISTRY.register("dungeonhatch_locked", () -> new DungeonhatchLockedBlock());
 	public static final RegistryObject<Block> DUNGEONHATCH = REGISTRY.register("dungeonhatch", () -> new DungeonhatchBlock());
 	public static final RegistryObject<Block> CLOUD_SANDSTONE = REGISTRY.register("cloud_sandstone", () -> new CloudSandstoneBlock());
-	public static final RegistryObject<Block> SMOOTH_CLOUD_SANDSTONE = REGISTRY.register("smooth_cloud_sandstone",
-			() -> new SmoothCloudSandstoneBlock());
+	public static final RegistryObject<Block> SMOOTH_CLOUD_SANDSTONE = REGISTRY.register("smooth_cloud_sandstone", () -> new SmoothCloudSandstoneBlock());
 	public static final RegistryObject<Block> CUT_CLOUD_SANDSTONE = REGISTRY.register("cut_cloud_sandstone", () -> new CutCloudSandstoneBlock());
-	public static final RegistryObject<Block> CHISELED_CLOUD_SANDSTONE = REGISTRY.register("chiseled_cloud_sandstone",
-			() -> new ChiseledCloudSandstoneBlock());
-	public static final RegistryObject<Block> CLOUD_SANDSTONE_SLABS = REGISTRY.register("cloud_sandstone_slabs",
-			() -> new CloudSandstoneSlabsBlock());
-	public static final RegistryObject<Block> CLOUD_SANDSTONE_STAIR = REGISTRY.register("cloud_sandstone_stair",
-			() -> new CloudSandstoneStairBlock());
-	public static final RegistryObject<Block> CLOUD_SANDSTONE_WALLS = REGISTRY.register("cloud_sandstone_walls",
-			() -> new CloudSandstoneWallsBlock());
-	public static final RegistryObject<Block> SMOOTH_CLOUD_SANDSTONE_SLAB = REGISTRY.register("smooth_cloud_sandstone_slab",
-			() -> new SmoothCloudSandstoneSlabBlock());
-	public static final RegistryObject<Block> SMOOTH_CLOUD_SANDSTONE_STAIRS = REGISTRY.register("smooth_cloud_sandstone_stairs",
-			() -> new SmoothCloudSandstoneStairsBlock());
-	public static final RegistryObject<Block> SMOOTH_CLOUD_SANDSTONE_WALL = REGISTRY.register("smooth_cloud_sandstone_wall",
-			() -> new SmoothCloudSandstoneWallBlock());
-	public static final RegistryObject<Block> CUT_CLOUD_SANDSTONE_SLAB = REGISTRY.register("cut_cloud_sandstone_slab",
-			() -> new CutCloudSandstoneSlabBlock());
-	public static final RegistryObject<Block> CUT_CLOUD_SANDSTONE_STAIRS = REGISTRY.register("cut_cloud_sandstone_stairs",
-			() -> new CutCloudSandstoneStairsBlock());
-	public static final RegistryObject<Block> CUT_CLOUD_SANDSTONE_WALL = REGISTRY.register("cut_cloud_sandstone_wall",
-			() -> new CutCloudSandstoneWallBlock());
+	public static final RegistryObject<Block> CHISELED_CLOUD_SANDSTONE = REGISTRY.register("chiseled_cloud_sandstone", () -> new ChiseledCloudSandstoneBlock());
+	public static final RegistryObject<Block> CLOUD_SANDSTONE_SLABS = REGISTRY.register("cloud_sandstone_slabs", () -> new CloudSandstoneSlabsBlock());
+	public static final RegistryObject<Block> CLOUD_SANDSTONE_STAIR = REGISTRY.register("cloud_sandstone_stair", () -> new CloudSandstoneStairBlock());
+	public static final RegistryObject<Block> CLOUD_SANDSTONE_WALLS = REGISTRY.register("cloud_sandstone_walls", () -> new CloudSandstoneWallsBlock());
+	public static final RegistryObject<Block> SMOOTH_CLOUD_SANDSTONE_SLAB = REGISTRY.register("smooth_cloud_sandstone_slab", () -> new SmoothCloudSandstoneSlabBlock());
+	public static final RegistryObject<Block> SMOOTH_CLOUD_SANDSTONE_STAIRS = REGISTRY.register("smooth_cloud_sandstone_stairs", () -> new SmoothCloudSandstoneStairsBlock());
+	public static final RegistryObject<Block> SMOOTH_CLOUD_SANDSTONE_WALL = REGISTRY.register("smooth_cloud_sandstone_wall", () -> new SmoothCloudSandstoneWallBlock());
+	public static final RegistryObject<Block> CUT_CLOUD_SANDSTONE_SLAB = REGISTRY.register("cut_cloud_sandstone_slab", () -> new CutCloudSandstoneSlabBlock());
+	public static final RegistryObject<Block> CUT_CLOUD_SANDSTONE_STAIRS = REGISTRY.register("cut_cloud_sandstone_stairs", () -> new CutCloudSandstoneStairsBlock());
+	public static final RegistryObject<Block> CUT_CLOUD_SANDSTONE_WALL = REGISTRY.register("cut_cloud_sandstone_wall", () -> new CutCloudSandstoneWallBlock());
 	public static final RegistryObject<Block> VAMITEORE = REGISTRY.register("vamiteore", () -> new VamiteoreBlock());
 	public static final RegistryObject<Block> NOOBIUMORE = REGISTRY.register("noobiumore", () -> new NoobiumoreBlock());
 	public static final RegistryObject<Block> NEONBLOCK = REGISTRY.register("neonblock", () -> new NeonblockBlock());
@@ -1241,8 +1142,7 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> TAR_DARKSTONE = REGISTRY.register("tar_darkstone", () -> new TarDarkstoneBlock());
 	public static final RegistryObject<Block> WILDBLUEBERRY = REGISTRY.register("wildblueberry", () -> new WildblueberryBlock());
 	public static final RegistryObject<Block> WILDPERRYBERRY = REGISTRY.register("wildperryberry", () -> new WildperryberryBlock());
-	public static final RegistryObject<Block> WILDBEESTINGBERRYBUSH = REGISTRY.register("wildbeestingberrybush",
-			() -> new WildbeestingberrybushBlock());
+	public static final RegistryObject<Block> WILDBEESTINGBERRYBUSH = REGISTRY.register("wildbeestingberrybush", () -> new WildbeestingberrybushBlock());
 	public static final RegistryObject<Block> WILDSTRAWBERRYBUSH = REGISTRY.register("wildstrawberrybush", () -> new WildstrawberrybushBlock());
 	public static final RegistryObject<Block> WILDCOLDBERRYBUSH = REGISTRY.register("wildcoldberrybush", () -> new WildcoldberrybushBlock());
 	public static final RegistryObject<Block> WILDSUNBERRYBUSH = REGISTRY.register("wildsunberrybush", () -> new WildsunberrybushBlock());
@@ -1272,68 +1172,40 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> OLDLEAVES = REGISTRY.register("oldleaves", () -> new OldleavesBlock());
 	public static final RegistryObject<Block> RANDOMTELEPORT_BLOCK = REGISTRY.register("randomteleport_block", () -> new RandomteleportBlockBlock());
 	public static final RegistryObject<Block> SILVERSHORESSAND = REGISTRY.register("silvershoressand", () -> new SilvershoressandBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_BLUE_WALL = REGISTRY.register("boardingschool_blue_wall",
-			() -> new BoardingschoolBlueWallBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_BLUEWALL_STAIRS = REGISTRY.register("boardingschool_bluewall_stairs",
-			() -> new BoardingschoolBluewallStairsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_BLUEWALL_SLABS = REGISTRY.register("boardingschool_bluewall_slabs",
-			() -> new BoardingschoolBluewallSlabsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_YELLOW_WALL = REGISTRY.register("boardingschool_yellow_wall",
-			() -> new BoardingschoolYellowWallBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_YELLOW_WALL_STAIRS = REGISTRY.register("boardingschool_yellow_wall_stairs",
-			() -> new BoardingschoolYellowWallStairsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_YELLOW_WALL_SLABS = REGISTRY.register("boardingschool_yellow_wall_slabs",
-			() -> new BoardingschoolYellowWallSlabsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_PINK_WALL = REGISTRY.register("boardingschool_pink_wall",
-			() -> new BoardingschoolPinkWallBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_PINK_WALL_STAIRS = REGISTRY.register("boardingschool_pink_wall_stairs",
-			() -> new BoardingschoolPinkWallStairsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_PINK_WALL_SLABS = REGISTRY.register("boardingschool_pink_wall_slabs",
-			() -> new BoardingschoolPinkWallSlabsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_WHITE_WALL = REGISTRY.register("boardingschool_white_wall",
-			() -> new BoardingschoolWhiteWallBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_WHITE_WALL_STAIRS = REGISTRY.register("boardingschool_white_wall_stairs",
-			() -> new BoardingschoolWhiteWallStairsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_WHITE_WALL_SLABS = REGISTRY.register("boardingschool_white_wall_slabs",
-			() -> new BoardingschoolWhiteWallSlabsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_BLUE_WALL = REGISTRY.register("boardingschool_blue_wall", () -> new BoardingschoolBlueWallBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_BLUEWALL_STAIRS = REGISTRY.register("boardingschool_bluewall_stairs", () -> new BoardingschoolBluewallStairsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_BLUEWALL_SLABS = REGISTRY.register("boardingschool_bluewall_slabs", () -> new BoardingschoolBluewallSlabsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_YELLOW_WALL = REGISTRY.register("boardingschool_yellow_wall", () -> new BoardingschoolYellowWallBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_YELLOW_WALL_STAIRS = REGISTRY.register("boardingschool_yellow_wall_stairs", () -> new BoardingschoolYellowWallStairsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_YELLOW_WALL_SLABS = REGISTRY.register("boardingschool_yellow_wall_slabs", () -> new BoardingschoolYellowWallSlabsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_PINK_WALL = REGISTRY.register("boardingschool_pink_wall", () -> new BoardingschoolPinkWallBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_PINK_WALL_STAIRS = REGISTRY.register("boardingschool_pink_wall_stairs", () -> new BoardingschoolPinkWallStairsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_PINK_WALL_SLABS = REGISTRY.register("boardingschool_pink_wall_slabs", () -> new BoardingschoolPinkWallSlabsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_WHITE_WALL = REGISTRY.register("boardingschool_white_wall", () -> new BoardingschoolWhiteWallBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_WHITE_WALL_STAIRS = REGISTRY.register("boardingschool_white_wall_stairs", () -> new BoardingschoolWhiteWallStairsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_WHITE_WALL_SLABS = REGISTRY.register("boardingschool_white_wall_slabs", () -> new BoardingschoolWhiteWallSlabsBlock());
 	public static final RegistryObject<Block> BOARDINGSCHOOL_DIRT = REGISTRY.register("boardingschool_dirt", () -> new BoardingschoolDirtBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_DIRT_STAIRS = REGISTRY.register("boardingschool_dirt_stairs",
-			() -> new BoardingschoolDirtStairsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_DIRT_SLABS = REGISTRY.register("boardingschool_dirt_slabs",
-			() -> new BoardingschoolDirtSlabsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_ROOF_1 = REGISTRY.register("boardingschool_roof_1",
-			() -> new BoardingschoolRoof1Block());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_ROOF_1_STAIRS = REGISTRY.register("boardingschool_roof_1_stairs",
-			() -> new BoardingschoolRoof1StairsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_ROOF_1_SLABS = REGISTRY.register("boardingschool_roof_1_slabs",
-			() -> new BoardingschoolRoof1SlabsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_GRAYCONCRETE = REGISTRY.register("boardingschool_grayconcrete",
-			() -> new BoardingschoolGrayconcreteBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_GRAY_CONCRETE_STAIRS = REGISTRY.register("boardingschool_gray_concrete_stairs",
-			() -> new BoardingschoolGrayConcreteStairsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_GRAY_CONCRETE_SLABS = REGISTRY.register("boardingschool_gray_concrete_slabs",
-			() -> new BoardingschoolGrayConcreteSlabsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_PLANKS = REGISTRY.register("boardingschool_planks",
-			() -> new BoardingschoolPlanksBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_PLANKS_STAIRS = REGISTRY.register("boardingschool_planks_stairs",
-			() -> new BoardingschoolPlanksStairsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_PLANKS_SLABS = REGISTRY.register("boardingschool_planks_slabs",
-			() -> new BoardingschoolPlanksSlabsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_RUST_BLOCKS = REGISTRY.register("boardingschool_rust_blocks",
-			() -> new BoardingschoolRustBlocksBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_RUST_BLOCK_STAIRS = REGISTRY.register("boardingschool_rust_block_stairs",
-			() -> new BoardingschoolRustBlockStairsBlock());
-	public static final RegistryObject<Block> CORRUPTFLOWEREASTEREGG = REGISTRY.register("corruptflowereasteregg",
-			() -> new CorruptflowereastereggBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_DIRT_STAIRS = REGISTRY.register("boardingschool_dirt_stairs", () -> new BoardingschoolDirtStairsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_DIRT_SLABS = REGISTRY.register("boardingschool_dirt_slabs", () -> new BoardingschoolDirtSlabsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_ROOF_1 = REGISTRY.register("boardingschool_roof_1", () -> new BoardingschoolRoof1Block());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_ROOF_1_STAIRS = REGISTRY.register("boardingschool_roof_1_stairs", () -> new BoardingschoolRoof1StairsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_ROOF_1_SLABS = REGISTRY.register("boardingschool_roof_1_slabs", () -> new BoardingschoolRoof1SlabsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_GRAYCONCRETE = REGISTRY.register("boardingschool_grayconcrete", () -> new BoardingschoolGrayconcreteBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_GRAY_CONCRETE_STAIRS = REGISTRY.register("boardingschool_gray_concrete_stairs", () -> new BoardingschoolGrayConcreteStairsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_GRAY_CONCRETE_SLABS = REGISTRY.register("boardingschool_gray_concrete_slabs", () -> new BoardingschoolGrayConcreteSlabsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_PLANKS = REGISTRY.register("boardingschool_planks", () -> new BoardingschoolPlanksBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_PLANKS_STAIRS = REGISTRY.register("boardingschool_planks_stairs", () -> new BoardingschoolPlanksStairsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_PLANKS_SLABS = REGISTRY.register("boardingschool_planks_slabs", () -> new BoardingschoolPlanksSlabsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_RUST_BLOCKS = REGISTRY.register("boardingschool_rust_blocks", () -> new BoardingschoolRustBlocksBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_RUST_BLOCK_STAIRS = REGISTRY.register("boardingschool_rust_block_stairs", () -> new BoardingschoolRustBlockStairsBlock());
+	public static final RegistryObject<Block> CORRUPTFLOWEREASTEREGG = REGISTRY.register("corruptflowereasteregg", () -> new CorruptflowereastereggBlock());
 	public static final RegistryObject<Block> ABYSSALFIRE = REGISTRY.register("abyssalfire", () -> new AbyssalfireBlock());
 	public static final RegistryObject<Block> FIRELIQUID = REGISTRY.register("fireliquid", () -> new FireliquidBlock());
 	public static final RegistryObject<Block> EARTHELEMENTLIQUID = REGISTRY.register("earthelementliquid", () -> new EarthelementliquidBlock());
 	public static final RegistryObject<Block> AIRELEMENTLIQUID = REGISTRY.register("airelementliquid", () -> new AirelementliquidBlock());
 	public static final RegistryObject<Block> WATERELEMENTLIQUID = REGISTRY.register("waterelementliquid", () -> new WaterelementliquidBlock());
-	public static final RegistryObject<Block> LIGHTNINGELEMENTLIQUID = REGISTRY.register("lightningelementliquid",
-			() -> new LightningelementliquidBlock());
-	public static final RegistryObject<Block> THEBEGINNINGOFEVERYTHING = REGISTRY.register("thebeginningofeverything",
-			() -> new ThebeginningofeverythingBlock());
+	public static final RegistryObject<Block> LIGHTNINGELEMENTLIQUID = REGISTRY.register("lightningelementliquid", () -> new LightningelementliquidBlock());
+	public static final RegistryObject<Block> THEBEGINNINGOFEVERYTHING = REGISTRY.register("thebeginningofeverything", () -> new ThebeginningofeverythingBlock());
 	public static final RegistryObject<Block> ABYSSPORTALBLOCK = REGISTRY.register("abyssportalblock", () -> new AbyssportalblockBlock());
 	public static final RegistryObject<Block> THEABYSS_PORTAL = REGISTRY.register("theabyss_portal", () -> new TheabyssPortalBlock());
 	public static final RegistryObject<Block> SPRINGWATER = REGISTRY.register("springwater", () -> new SpringwaterBlock());
@@ -1345,13 +1217,10 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> CYANBARRIERCLOSING = REGISTRY.register("cyanbarrierclosing", () -> new CyanbarrierclosingBlock());
 	public static final RegistryObject<Block> GRAYBARRIERCLOSING = REGISTRY.register("graybarrierclosing", () -> new GraybarrierclosingBlock());
 	public static final RegistryObject<Block> GREENBARRIERCLOSING = REGISTRY.register("greenbarrierclosing", () -> new GreenbarrierclosingBlock());
-	public static final RegistryObject<Block> LIGHTBLUEBARRIERCLOSING = REGISTRY.register("lightbluebarrierclosing",
-			() -> new LightbluebarrierclosingBlock());
-	public static final RegistryObject<Block> LIGHTGRAYBARRIERCLOSING = REGISTRY.register("lightgraybarrierclosing",
-			() -> new LightgraybarrierclosingBlock());
+	public static final RegistryObject<Block> LIGHTBLUEBARRIERCLOSING = REGISTRY.register("lightbluebarrierclosing", () -> new LightbluebarrierclosingBlock());
+	public static final RegistryObject<Block> LIGHTGRAYBARRIERCLOSING = REGISTRY.register("lightgraybarrierclosing", () -> new LightgraybarrierclosingBlock());
 	public static final RegistryObject<Block> LIMEBARRIERCLOSING = REGISTRY.register("limebarrierclosing", () -> new LimebarrierclosingBlock());
-	public static final RegistryObject<Block> MAGENTABARRIERCLOSING = REGISTRY.register("magentabarrierclosing",
-			() -> new MagentabarrierclosingBlock());
+	public static final RegistryObject<Block> MAGENTABARRIERCLOSING = REGISTRY.register("magentabarrierclosing", () -> new MagentabarrierclosingBlock());
 	public static final RegistryObject<Block> ORANGEBARRIERCLOSING = REGISTRY.register("orangebarrierclosing", () -> new OrangebarrierclosingBlock());
 	public static final RegistryObject<Block> PINKBARRIERCLOSING = REGISTRY.register("pinkbarrierclosing", () -> new PinkbarrierclosingBlock());
 	public static final RegistryObject<Block> PURPLEBARRIERCLOSING = REGISTRY.register("purplebarrierclosing", () -> new PurplebarrierclosingBlock());
@@ -1372,23 +1241,15 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> THEPITLANDS_PORTAL = REGISTRY.register("thepitlands_portal", () -> new ThepitlandsPortalBlock());
 	public static final RegistryObject<Block> PERVADEDBEDROCK = REGISTRY.register("pervadedbedrock", () -> new PervadedbedrockBlock());
 	public static final RegistryObject<Block> EMPTIEDBEDROCK = REGISTRY.register("emptiedbedrock", () -> new EmptiedbedrockBlock());
-	public static final RegistryObject<Block> NETHERSTAR_BIOME_ALPHAN = REGISTRY.register("netherstar_biome_alphan",
-			() -> new NetherstarBiomeAlphanBlock());
-	public static final RegistryObject<Block> NETHERSTAR_BIOME_OMEGAN = REGISTRY.register("netherstar_biome_omegan",
-			() -> new NetherstarBiomeOmeganBlock());
-	public static final RegistryObject<Block> ANIMOCHROMATICPRISMATICCRYSTALBLOCK = REGISTRY.register("animochromaticprismaticcrystalblock",
-			() -> new AnimochromaticprismaticcrystalblockBlock());
-	public static final RegistryObject<Block> NETHERSTAR_PRISMATICSPAWNER = REGISTRY.register("netherstar_prismaticspawner",
-			() -> new NetherstarPrismaticspawnerBlock());
-	public static final RegistryObject<Block> NETHERSTAR_PRISMATICWALL = REGISTRY.register("netherstar_prismaticwall",
-			() -> new NetherstarPrismaticwallBlock());
+	public static final RegistryObject<Block> NETHERSTAR_BIOME_ALPHAN = REGISTRY.register("netherstar_biome_alphan", () -> new NetherstarBiomeAlphanBlock());
+	public static final RegistryObject<Block> NETHERSTAR_BIOME_OMEGAN = REGISTRY.register("netherstar_biome_omegan", () -> new NetherstarBiomeOmeganBlock());
+	public static final RegistryObject<Block> ANIMOCHROMATICPRISMATICCRYSTALBLOCK = REGISTRY.register("animochromaticprismaticcrystalblock", () -> new AnimochromaticprismaticcrystalblockBlock());
+	public static final RegistryObject<Block> NETHERSTAR_PRISMATICSPAWNER = REGISTRY.register("netherstar_prismaticspawner", () -> new NetherstarPrismaticspawnerBlock());
+	public static final RegistryObject<Block> NETHERSTAR_PRISMATICWALL = REGISTRY.register("netherstar_prismaticwall", () -> new NetherstarPrismaticwallBlock());
 	public static final RegistryObject<Block> PROTECTIONREMOVER = REGISTRY.register("protectionremover", () -> new ProtectionremoverBlock());
-	public static final RegistryObject<Block> PROTECTIONZONEREMOVER = REGISTRY.register("protectionzoneremover",
-			() -> new ProtectionzoneremoverBlock());
-	public static final RegistryObject<Block> DIRECRYPTBRICKS_SECRET = REGISTRY.register("direcryptbricks_secret",
-			() -> new DirecryptbricksSecretBlock());
-	public static final RegistryObject<Block> DIRECRYPTBRICKS_2_SECRET = REGISTRY.register("direcryptbricks_2_secret",
-			() -> new Direcryptbricks2SecretBlock());
+	public static final RegistryObject<Block> PROTECTIONZONEREMOVER = REGISTRY.register("protectionzoneremover", () -> new ProtectionzoneremoverBlock());
+	public static final RegistryObject<Block> DIRECRYPTBRICKS_SECRET = REGISTRY.register("direcryptbricks_secret", () -> new DirecryptbricksSecretBlock());
+	public static final RegistryObject<Block> DIRECRYPTBRICKS_2_SECRET = REGISTRY.register("direcryptbricks_2_secret", () -> new Direcryptbricks2SecretBlock());
 	public static final RegistryObject<Block> JELLYFLOAT_OMEGAN = REGISTRY.register("jellyfloat_omegan", () -> new JellyfloatOmeganBlock());
 	public static final RegistryObject<Block> SILVERORE = REGISTRY.register("silverore", () -> new SilveroreBlock());
 	public static final RegistryObject<Block> FISHALTAR = REGISTRY.register("fishaltar", () -> new FishaltarBlock());
@@ -1419,12 +1280,8 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> CURSEDMEMORYPLANT_1 = REGISTRY.register("cursedmemoryplant_1", () -> new Cursedmemoryplant1Block());
 	public static final RegistryObject<Block> CURSEDMEMORYPLANT_2 = REGISTRY.register("cursedmemoryplant_2", () -> new Cursedmemoryplant2Block());
 	public static final RegistryObject<Block> CURSEDMEMORYPLANT_3 = REGISTRY.register("cursedmemoryplant_3", () -> new Cursedmemoryplant3Block());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_RUST_BLOCK_SLABS = REGISTRY.register("boardingschool_rust_block_slabs",
-			() -> new BoardingschoolRustBlockSlabsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_WHITEBRICK_BLOCKS = REGISTRY.register("boardingschool_whitebrick_blocks",
-			() -> new BoardingschoolWhitebrickBlocksBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_WHITE_BRICK_STAIRS = REGISTRY.register("boardingschool_white_brick_stairs",
-			() -> new BoardingschoolWhiteBrickStairsBlock());
-	public static final RegistryObject<Block> BOARDINGSCHOOL_WHITE_BRICK_SLABS = REGISTRY.register("boardingschool_white_brick_slabs",
-			() -> new BoardingschoolWhiteBrickSlabsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_RUST_BLOCK_SLABS = REGISTRY.register("boardingschool_rust_block_slabs", () -> new BoardingschoolRustBlockSlabsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_WHITEBRICK_BLOCKS = REGISTRY.register("boardingschool_whitebrick_blocks", () -> new BoardingschoolWhitebrickBlocksBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_WHITE_BRICK_STAIRS = REGISTRY.register("boardingschool_white_brick_stairs", () -> new BoardingschoolWhiteBrickStairsBlock());
+	public static final RegistryObject<Block> BOARDINGSCHOOL_WHITE_BRICK_SLABS = REGISTRY.register("boardingschool_white_brick_slabs", () -> new BoardingschoolWhiteBrickSlabsBlock());
 }

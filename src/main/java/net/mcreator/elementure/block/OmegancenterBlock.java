@@ -13,7 +13,7 @@ import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
@@ -29,13 +29,9 @@ import net.mcreator.elementure.block.entity.OmegancenterBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class OmegancenterBlock extends Block
-		implements
-
-			EntityBlock {
+public class OmegancenterBlock extends Block implements EntityBlock {
 	public OmegancenterBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(-1, 3600000).lightLevel(s -> 15)
-				.requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GLASS).strength(-1, 3600000).lightLevel(s -> 15).requiresCorrectToolForDrops());
 	}
 
 	@Override
@@ -45,7 +41,7 @@ public class OmegancenterBlock extends Block
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 11;
 		return false;
 	}
@@ -70,7 +66,6 @@ public class OmegancenterBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		OmeganProceduresProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 10);
 	}

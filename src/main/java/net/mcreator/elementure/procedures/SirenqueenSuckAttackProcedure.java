@@ -31,30 +31,23 @@ public class SirenqueenSuckAttackProcedure {
 			return;
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave")), SoundSource.HOSTILE, (float) 1.2, (float) 0.6);
+				_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave")), SoundSource.HOSTILE, (float) 1.2, (float) 0.6);
 			} else {
-				_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave")), SoundSource.HOSTILE, (float) 1.2, (float) 0.6,
-						false);
+				_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave")), SoundSource.HOSTILE, (float) 1.2, (float) 0.6, false);
 			}
 		}
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(12 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(12 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if (!(entityiterator instanceof SirenqueenEntity) && !(entityiterator instanceof SirenqueenEntity) && !entityiterator.getType()
-						.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
-					entityiterator.setDeltaMovement(
-							new Vec3(((entity.getX() - entityiterator.getX()) / 7), 0.1, ((entity.getZ() - entityiterator.getZ()) / 7)));
+				if (!(entityiterator instanceof SirenqueenEntity) && !(entityiterator instanceof SirenqueenEntity) && !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
+					entityiterator.setDeltaMovement(new Vec3(((entity.getX() - entityiterator.getX()) / 7), 0.1, ((entity.getZ() - entityiterator.getZ()) / 7)));
 					if (entityiterator instanceof LivingEntity _entity)
 						_entity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 120, 1));
 				}
 			}
 		}
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.JELLYBUBBLE.get()), (entity.getX()), (entity.getY()),
-					(entity.getZ()), 40, 0.5, 0.5, 0.5, 0.03);
+			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.JELLYBUBBLE.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 40, 0.5, 0.5, 0.5, 0.03);
 	}
 }

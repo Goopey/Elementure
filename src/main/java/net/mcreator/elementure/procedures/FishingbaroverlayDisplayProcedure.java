@@ -9,8 +9,7 @@ public class FishingbaroverlayDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean displayFishingOverlay = false;
-		if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("")) {
+		if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("")) {
 			displayFishingOverlay = true;
 		} else {
 			displayFishingOverlay = false;

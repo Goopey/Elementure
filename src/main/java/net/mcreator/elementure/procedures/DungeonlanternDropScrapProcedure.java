@@ -17,12 +17,9 @@ public class DungeonlanternDropScrapProcedure {
 			return;
 		ItemStack item = ItemStack.EMPTY;
 		item = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-		if (Math.random() < 0.25 + (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, item) != 0
-				? (1 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, item)) / 4
-				: 0)) {
+		if (Math.random() < 0.25 + (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, item) != 0 ? (1 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_FORTUNE, item)) / 4 : 0)) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (x - 0.5), (y + 0.5), (z - 0.5),
-						new ItemStack(ElementureModItems.RUST_SHARD.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (x - 0.5), (y + 0.5), (z - 0.5), new ItemStack(ElementureModItems.RUST_SHARD.get()));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}

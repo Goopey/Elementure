@@ -29,8 +29,7 @@ public class MerthiumchannelerTrueWaterProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.MERTHIUMCHANNELER
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.MERTHIUMCHANNELER.get()) {
 			entity.getPersistentData().putBoolean("waterACTIVE", (true));
 		}
 	}

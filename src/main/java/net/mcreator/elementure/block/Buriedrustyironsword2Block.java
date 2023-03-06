@@ -1,6 +1,9 @@
 
 package net.mcreator.elementure.block;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
@@ -36,15 +39,12 @@ import net.mcreator.elementure.procedures.BuriedrustyironswordDugUpProcedure;
 import java.util.List;
 import java.util.Collections;
 
-public class Buriedrustyironsword2Block extends Block implements SimpleWaterloggedBlock
-
-{
+public class Buriedrustyironsword2Block extends Block implements SimpleWaterloggedBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public Buriedrustyironsword2Block() {
-		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).instabreak().noCollission().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.METAL).sound(SoundType.METAL).instabreak().noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 
@@ -56,6 +56,11 @@ public class Buriedrustyironsword2Block extends Block implements SimpleWaterlogg
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
 	}
 
 	@Override
@@ -83,8 +88,7 @@ public class Buriedrustyironsword2Block extends Block implements SimpleWaterlogg
 	}
 
 	@Override
-	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos,
-			BlockPos facingPos) {
+	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos, BlockPos facingPos) {
 		if (state.getValue(WATERLOGGED)) {
 			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
@@ -122,7 +126,6 @@ public class Buriedrustyironsword2Block extends Block implements SimpleWaterlogg
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-
 		BuriedrustyironswordDugUpProcedure.execute(world, x, y, z);
 		return InteractionResult.SUCCESS;
 	}

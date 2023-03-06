@@ -11,10 +11,9 @@ import net.mcreator.elementure.init.ElementureModTabs;
 
 public class CookedfatgroukiItem extends Item {
 	public CookedfatgroukiItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(8).saturationMod(0.3f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(0.3f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

@@ -19,18 +19,13 @@ public class NebulaturfspreadProcedure {
 			CoordsZ = -2;
 			for (int index0 = 0; index0 < (int) (125); index0++) {
 				if (4 * CoordsY * CoordsY + CoordsX * CoordsX + CoordsZ * CoordsZ < 4
-						&& ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-								.getBlock() == ElementureModBlocks.NETHERUMCARPET.get()
-								|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-										.getBlock() == ElementureModBlocks.NETHERUMCARPETSHINY.get())
+						&& ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERUMCARPET.get()
+								|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERUMCARPETSHINY.get())
 						&& !world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ)).canOcclude()) {
-					if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-							.getBlock() == ElementureModBlocks.NETHERUMCARPETSHINY.get()) {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ),
-								ElementureModBlocks.SPARKLINGSTARS.get().defaultBlockState(), 3);
+					if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERUMCARPETSHINY.get()) {
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ), ElementureModBlocks.SPARKLINGSTARS.get().defaultBlockState(), 3);
 					}
-					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-							ElementureModBlocks.NETHERUMDUST_NEBULATURFBLOCK.get().defaultBlockState(), 3);
+					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERUMDUST_NEBULATURFBLOCK.get().defaultBlockState(), 3);
 				}
 				CoordsX = CoordsX + 1;
 				if (CoordsX == 2) {

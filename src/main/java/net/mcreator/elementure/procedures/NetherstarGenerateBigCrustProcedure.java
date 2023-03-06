@@ -32,16 +32,12 @@ public class NetherstarGenerateBigCrustProcedure {
 		for (int index0 = 0; index0 < (int) (1295029); index0++) {
 			if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 2916) {
 				if (y + CoordsY > 0) {
-					if (!((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.OBSIDIAN)
-							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.NETHER_PORTAL)
-							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-									.getBlock() == ElementureModBlocks.NETHERSTAR_BIOME_OMEGAN.get())
-							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-									.getBlock() == ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get())) {
+					if (!((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.OBSIDIAN) && !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.NETHER_PORTAL)
+							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERSTAR_BIOME_OMEGAN.get())
+							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get())) {
 						if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ >= 2700 && y + CoordsY >= 128 && y + CoordsY <= 130) {
 							if (y + CoordsY == 130 && Math.random() < 0.03) {
-								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-										ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
 								if (Math.random() < 0.5) {
 									if (!world.isClientSide()) {
 										BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
@@ -121,18 +117,14 @@ public class NetherstarGenerateBigCrustProcedure {
 								}
 							} else {
 								if (Math.random() < 0.01) {
-									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-											ElementureModBlocks.NETHERUMCARPETSHINY.get().defaultBlockState(), 3);
+									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERUMCARPETSHINY.get().defaultBlockState(), 3);
 								} else {
-									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-											ElementureModBlocks.NETHERUMCARPET.get().defaultBlockState(), 3);
+									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERUMCARPET.get().defaultBlockState(), 3);
 								}
 							}
-						} else if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ >= 2700
-								&& CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 2916) {
+						} else if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ >= 2700 && CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 2916) {
 							if (Math.random() < 0.0035) {
-								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-										ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
 								if (!world.isClientSide()) {
 									BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 									BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -144,22 +136,17 @@ public class NetherstarGenerateBigCrustProcedure {
 								}
 							} else {
 								if (Math.random() < 0.01) {
-									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-											ElementureModBlocks.NETHERSTARCRUSTSHINY.get().defaultBlockState(), 3);
+									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTARCRUSTSHINY.get().defaultBlockState(), 3);
 								} else {
-									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-											ElementureModBlocks.NETHERSTARCRUST.get().defaultBlockState(), 3);
+									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTARCRUST.get().defaultBlockState(), 3);
 								}
 							}
-						} else if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ < 2700
-								&& CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ >= 2350) {
+						} else if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ < 2700 && CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ >= 2350) {
 							if (CoordsY < -35) {
-								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-										ElementureModBlocks.PRISMATICCRYSTALBLOCK.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.PRISMATICCRYSTALBLOCK.get().defaultBlockState(), 3);
 							} else if (CoordsY > 38) {
 								if (Math.random() < 0.00175) {
-									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-											ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
+									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
 									if (!world.isClientSide()) {
 										BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 										BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -171,29 +158,23 @@ public class NetherstarGenerateBigCrustProcedure {
 									}
 								} else {
 									if (Math.random() < 0.01) {
-										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-												ElementureModBlocks.NETHERUM.get().defaultBlockState(), 3);
+										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERUM.get().defaultBlockState(), 3);
 									} else {
-										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-												ElementureModBlocks.NETHERUM.get().defaultBlockState(), 3);
+										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERUM.get().defaultBlockState(), 3);
 									}
 								}
 							} else {
 								if (Math.random() < 0.01) {
-									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-											ElementureModBlocks.NETHERUM.get().defaultBlockState(), 3);
+									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERUM.get().defaultBlockState(), 3);
 								} else {
-									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-											ElementureModBlocks.NETHERUM.get().defaultBlockState(), 3);
+									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERUM.get().defaultBlockState(), 3);
 								}
 							}
 						} else {
 							if (CoordsY < -35) {
 								if (CoordsX * CoordsX + Math.floor(Math.abs((CoordsY + 8) / 3.5)) * 216 + CoordsZ * CoordsZ >= 2300) {
-									if (CoordsX * CoordsX + Math.floor(Math.abs((CoordsY + 8) / 3.55)) * 216 + CoordsZ * CoordsZ <= 2300
-											&& Math.random() < 0.037) {
-										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-												ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
+									if (CoordsX * CoordsX + Math.floor(Math.abs((CoordsY + 8) / 3.55)) * 216 + CoordsZ * CoordsZ <= 2300 && Math.random() < 0.037) {
+										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
 										if (!world.isClientSide()) {
 											BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -204,18 +185,15 @@ public class NetherstarGenerateBigCrustProcedure {
 												_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 										}
 									} else {
-										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-												ElementureModBlocks.PRISMATICCRYSTALBLOCK.get().defaultBlockState(), 3);
+										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.PRISMATICCRYSTALBLOCK.get().defaultBlockState(), 3);
 									}
 								} else {
 									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), Blocks.AIR.defaultBlockState(), 3);
 								}
 							} else {
-								if (Math.random() < 0.00028 && CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ < 2350
-										&& CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ >= 1560) {
+								if (Math.random() < 0.00028 && CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ < 2350 && CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ >= 1560) {
 									if (Math.random() < 0.15) {
-										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-												ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
+										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
 										if (!world.isClientSide()) {
 											BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -226,8 +204,7 @@ public class NetherstarGenerateBigCrustProcedure {
 												_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 										}
 									} else {
-										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-												ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
+										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
 										if (!world.isClientSide()) {
 											BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -249,8 +226,7 @@ public class NetherstarGenerateBigCrustProcedure {
 									}
 								} else if (Math.random() < 0.000053 && CoordsY > 24) {
 									if (Math.random() < 0.15) {
-										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-												ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
+										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
 										if (!world.isClientSide()) {
 											BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -261,8 +237,7 @@ public class NetherstarGenerateBigCrustProcedure {
 												_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 										}
 									} else {
-										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-												ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
+										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
 										if (!world.isClientSide()) {
 											BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -283,8 +258,7 @@ public class NetherstarGenerateBigCrustProcedure {
 										}
 									}
 								} else if (Math.random() < 0.00087 && CoordsY > 24 && Math.random() >= 0.00004625) {
-									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-											ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
+									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
 									if (!world.isClientSide()) {
 										BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 										BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -296,8 +270,7 @@ public class NetherstarGenerateBigCrustProcedure {
 									}
 								} else if (Math.random() < 0.00038 && CoordsY > -20 && CoordsY < 25) {
 									if (Math.random() < 0.15) {
-										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-												ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
+										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
 										if (!world.isClientSide()) {
 											BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -308,8 +281,7 @@ public class NetherstarGenerateBigCrustProcedure {
 												_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 										}
 									} else {
-										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-												ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
+										world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
 										if (!world.isClientSide()) {
 											BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 											BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -356,8 +328,7 @@ public class NetherstarGenerateBigCrustProcedure {
 						if (CoordsX == 0) {
 							world.setBlock(new BlockPos(x + CoordsX, 1, z + CoordsZ), ElementureModBlocks.NETHERITEORE.get().defaultBlockState(), 3);
 							if (Math.random() < 0.5) {
-								world.setBlock(new BlockPos(x + CoordsX, 2, z + CoordsZ), ElementureModBlocks.NETHERITEORE.get().defaultBlockState(),
-										3);
+								world.setBlock(new BlockPos(x + CoordsX, 2, z + CoordsZ), ElementureModBlocks.NETHERITEORE.get().defaultBlockState(), 3);
 							}
 						}
 					}
@@ -382,11 +353,9 @@ public class NetherstarGenerateBigCrustProcedure {
 						}
 					}
 				}
-			} else if (CoordsX * CoordsX + CoordsZ * CoordsZ <= 2916 && CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ >= 2700
-					&& y + CoordsY >= 128 && y + CoordsY <= 130) {
+			} else if (CoordsX * CoordsX + CoordsZ * CoordsZ <= 2916 && CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ >= 2700 && y + CoordsY >= 128 && y + CoordsY <= 130) {
 				if (y + CoordsY == 130 && Math.random() < 0.03) {
-					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-							ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
+					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
 					if (Math.random() < 0.5) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
@@ -466,11 +435,9 @@ public class NetherstarGenerateBigCrustProcedure {
 					}
 				} else {
 					if (Math.random() < 0.01) {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-								ElementureModBlocks.NETHERUMCARPETSHINY.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERUMCARPETSHINY.get().defaultBlockState(), 3);
 					} else {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-								ElementureModBlocks.NETHERUMCARPET.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERUMCARPET.get().defaultBlockState(), 3);
 					}
 				}
 			}
@@ -493,8 +460,7 @@ public class NetherstarGenerateBigCrustProcedure {
 								if (world != null) {
 									if (world instanceof ServerLevel _level)
 										_level.getServer().getCommands().performPrefixedCommand(
-												new CommandSourceStack(CommandSource.NULL, new Vec3((x + CoordsX), y, (z + CoordsZ)), Vec2.ZERO,
-														_level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+												new CommandSourceStack(CommandSource.NULL, new Vec3((x + CoordsX), y, (z + CoordsZ)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 												"forceload add ~ ~");
 								}
 								world = _worldorig;
@@ -510,9 +476,8 @@ public class NetherstarGenerateBigCrustProcedure {
 		if (world instanceof ServerLevel _serverworld) {
 			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "netherstarvillage"));
 			if (template != null) {
-				template.placeInWorld(_serverworld, new BlockPos(x - 15, y + 25, z - 12), new BlockPos(x - 15, y + 25, z - 12),
-						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
-						3);
+				template.placeInWorld(_serverworld, new BlockPos(x - 15, y + 25, z - 12), new BlockPos(x - 15, y + 25, z - 12), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						_serverworld.random, 3);
 			}
 		}
 		world.setBlock(new BlockPos(x, y, z), ElementureModBlocks.NETHERSTAR_BIOME_OMEGAN.get().defaultBlockState(), 3);

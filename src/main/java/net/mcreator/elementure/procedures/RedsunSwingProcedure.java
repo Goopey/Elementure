@@ -57,13 +57,9 @@ public class RedsunSwingProcedure {
 		if (itemstack.getOrCreateTag().getBoolean("redSunActive")) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:redsun_super_swing")), SoundSource.PLAYERS,
-							(float) 0.8, (float) 0.6);
+					_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:redsun_super_swing")), SoundSource.PLAYERS, (float) 0.8, (float) 0.6);
 				} else {
-					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:redsun_super_swing")), SoundSource.PLAYERS,
-							(float) 0.8, (float) 0.6, false);
+					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:redsun_super_swing")), SoundSource.PLAYERS, (float) 0.8, (float) 0.6, false);
 				}
 			}
 			if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) != 0) {
@@ -73,12 +69,9 @@ public class RedsunSwingProcedure {
 				swordDmg = swordDmg + 3;
 			}
 			swordDmg = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack)
-					+ 3 * (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_BOOST)
-							? _livEnt.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier()
-							: 0);
+					+ 3 * (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_BOOST) ? _livEnt.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier() : 0);
 			{
-				double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).fire_essence - 16;
+				double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fire_essence - 16;
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.fire_essence = _setval;
 					capability.syncPlayerVariables(entity);
@@ -96,31 +89,25 @@ public class RedsunSwingProcedure {
 			yaw8 = Math.cos(entity.getYRot() / ((-180) / Math.PI) + 0.26 * Math.PI);
 			yaw9 = Math.sin(entity.getYRot() / ((-180) / Math.PI) - 0.26 * Math.PI);
 			yaw10 = Math.cos(entity.getYRot() / ((-180) / Math.PI) - 0.26 * Math.PI);
-			world.addParticle((SimpleParticleType) (ElementureModParticleTypes.REDSUN_SWIPE.get()), (entity.getX() + 1.5 * yaw * pitch),
-					(entity.getY() + 1.22 + 1.5 * pitch2), (entity.getZ() + 1.5 * yaw2 * pitch), 0, 0, 0);
+			world.addParticle((SimpleParticleType) (ElementureModParticleTypes.REDSUN_SWIPE.get()), (entity.getX() + 1.5 * yaw * pitch), (entity.getY() + 1.22 + 1.5 * pitch2), (entity.getZ() + 1.5 * yaw2 * pitch), 0, 0, 0);
 			for (int index0 = 0; index0 < (int) (8); index0++) {
-				world.addParticle(ParticleTypes.FLAME, (entity.getX() + 1 * yaw * pitch), (entity.getY() + 1.633 + 0.85 * pitch2),
-						(entity.getZ() + 1 * yaw2 * pitch), ((Math.random() - 0.5) / 4), ((Math.random() - 0.5) / 4), ((Math.random() - 0.5) / 4));
+				world.addParticle(ParticleTypes.FLAME, (entity.getX() + 1 * yaw * pitch), (entity.getY() + 1.633 + 0.85 * pitch2), (entity.getZ() + 1 * yaw2 * pitch), ((Math.random() - 0.5) / 4), ((Math.random() - 0.5) / 4),
+						((Math.random() - 0.5) / 4));
 			}
 			for (int index1 = 0; index1 < (int) (4); index1++) {
-				world.addParticle(ParticleTypes.FLAME, (entity.getX() + 1.15 * yaw3 * pitch), (entity.getY() + 1.633 + 0.85 * pitch2),
-						(entity.getZ() + 1.15 * yaw4 * pitch), ((Math.random() - 0.5) / 16), ((Math.random() - 0.5) / 16),
+				world.addParticle(ParticleTypes.FLAME, (entity.getX() + 1.15 * yaw3 * pitch), (entity.getY() + 1.633 + 0.85 * pitch2), (entity.getZ() + 1.15 * yaw4 * pitch), ((Math.random() - 0.5) / 16), ((Math.random() - 0.5) / 16),
 						((Math.random() - 0.5) / 16));
-				world.addParticle(ParticleTypes.FLAME, (entity.getX() + 1.15 * yaw5 * pitch), (entity.getY() + 1.633 + 0.85 * pitch2),
-						(entity.getZ() + 1.15 * yaw6 * pitch), ((Math.random() - 0.5) / 16), ((Math.random() - 0.5) / 16),
+				world.addParticle(ParticleTypes.FLAME, (entity.getX() + 1.15 * yaw5 * pitch), (entity.getY() + 1.633 + 0.85 * pitch2), (entity.getZ() + 1.15 * yaw6 * pitch), ((Math.random() - 0.5) / 16), ((Math.random() - 0.5) / 16),
 						((Math.random() - 0.5) / 16));
-				world.addParticle(ParticleTypes.FLAME, (entity.getX() + 1.45 * yaw7 * pitch), (entity.getY() + 1.633 + 0.85 * pitch2),
-						(entity.getZ() + 1.45 * yaw8 * pitch), ((Math.random() - 0.5) / 16), ((Math.random() - 0.5) / 16),
+				world.addParticle(ParticleTypes.FLAME, (entity.getX() + 1.45 * yaw7 * pitch), (entity.getY() + 1.633 + 0.85 * pitch2), (entity.getZ() + 1.45 * yaw8 * pitch), ((Math.random() - 0.5) / 16), ((Math.random() - 0.5) / 16),
 						((Math.random() - 0.5) / 16));
-				world.addParticle(ParticleTypes.FLAME, (entity.getX() + 1.45 * yaw9 * pitch), (entity.getY() + 1.633 + 0.85 * pitch2),
-						(entity.getZ() + 1.45 * yaw10 * pitch), ((Math.random() - 0.5) / 16), ((Math.random() - 0.5) / 16),
+				world.addParticle(ParticleTypes.FLAME, (entity.getX() + 1.45 * yaw9 * pitch), (entity.getY() + 1.633 + 0.85 * pitch2), (entity.getZ() + 1.45 * yaw10 * pitch), ((Math.random() - 0.5) / 16), ((Math.random() - 0.5) / 16),
 						((Math.random() - 0.5) / 16));
 			}
 			{
-				final Vec3 _center = new Vec3((entity.getX() + 0.85 * yaw * pitch), (entity.getY() + 1.633 + 0.85 * pitch2),
-						(entity.getZ() + 0.85 * yaw2 * pitch));
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(6 / 2d), e -> true).stream()
-						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+				final Vec3 _center = new Vec3((entity.getX() + 0.85 * yaw * pitch), (entity.getY() + 1.633 + 0.85 * pitch2), (entity.getZ() + 0.85 * yaw2 * pitch));
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(6 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+						.collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
 					if (!(entityiterator == entity)) {
 						entityiterator.hurt(DamageSource.IN_FIRE, (float) (20 + swordDmg));
@@ -130,13 +117,9 @@ public class RedsunSwingProcedure {
 		} else if (itemstack.getOrCreateTag().getDouble("redSunOverload") > 0) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:redsun_super_swing")), SoundSource.PLAYERS,
-							(float) 0.6, (float) 0.4);
+					_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:redsun_super_swing")), SoundSource.PLAYERS, (float) 0.6, (float) 0.4);
 				} else {
-					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:redsun_super_swing")), SoundSource.PLAYERS,
-							(float) 0.6, (float) 0.4, false);
+					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:redsun_super_swing")), SoundSource.PLAYERS, (float) 0.6, (float) 0.4, false);
 				}
 			}
 			if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) != 0) {
@@ -146,12 +129,9 @@ public class RedsunSwingProcedure {
 				swordDmg = swordDmg + 3;
 			}
 			swordDmg = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack)
-					+ 3 * (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_BOOST)
-							? _livEnt.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier()
-							: 0);
+					+ 3 * (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_BOOST) ? _livEnt.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier() : 0);
 			{
-				double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).fire_essence - 31;
+				double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fire_essence - 31;
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.fire_essence = _setval;
 					capability.syncPlayerVariables(entity);
@@ -162,41 +142,33 @@ public class RedsunSwingProcedure {
 			yaw = Math.sin(entity.getYRot() / ((-180) / Math.PI));
 			yaw2 = Math.cos(entity.getYRot() / ((-180) / Math.PI));
 			for (int index2 = 0; index2 < (int) (8); index2++) {
-				world.addParticle(ParticleTypes.FLAME, (entity.getX() + 0.85 * yaw * pitch), (entity.getY() + 1.633 + 0.85 * pitch2),
-						(entity.getZ() + 0.85 * yaw2 * pitch), ((Math.random() - 0.5) / 2), ((Math.random() - 0.5) / 2), ((Math.random() - 0.5) / 2));
+				world.addParticle(ParticleTypes.FLAME, (entity.getX() + 0.85 * yaw * pitch), (entity.getY() + 1.633 + 0.85 * pitch2), (entity.getZ() + 0.85 * yaw2 * pitch), ((Math.random() - 0.5) / 2), ((Math.random() - 0.5) / 2),
+						((Math.random() - 0.5) / 2));
 			}
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new RedsunpillarEntity(ElementureModEntities.REDSUNPILLAR.get(), _level);
-				entityToSpawn.moveTo((entity.getX() + (2 + Math.random()) * yaw * pitch), (entity.getY() + 0.6 + (2 + Math.random()) * pitch2),
-						(entity.getZ() + (2 + Math.random()) * yaw2 * pitch), world.getRandom().nextFloat() * 360F, 0);
+				entityToSpawn.moveTo((entity.getX() + (2 + Math.random()) * yaw * pitch), (entity.getY() + 0.6 + (2 + Math.random()) * pitch2), (entity.getZ() + (2 + Math.random()) * yaw2 * pitch), world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
-							null);
+					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				world.addFreshEntity(entityToSpawn);
 			}
 			{
-				final Vec3 _center = new Vec3((entity.getX() + 0.85 * yaw * pitch), (entity.getY() + 1.633 + 0.85 * pitch2),
-						(entity.getZ() + 0.85 * yaw2 * pitch));
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(6 / 2d), e -> true).stream()
-						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+				final Vec3 _center = new Vec3((entity.getX() + 0.85 * yaw * pitch), (entity.getY() + 1.633 + 0.85 * pitch2), (entity.getZ() + 0.85 * yaw2 * pitch));
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(6 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+						.collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
 					if (!(entityiterator == entity)) {
 						entityiterator.hurt(DamageSource.IN_FIRE, (float) (28 + swordDmg));
 					}
 				}
 			}
-			world.addParticle((SimpleParticleType) (ElementureModParticleTypes.REDSUN_SWIPE.get()), (entity.getX() + 1.5 * yaw * pitch),
-					(entity.getY() + 1.22 + 1.5 * pitch2), (entity.getZ() + 1.5 * yaw2 * pitch), 0, 0, 0);
+			world.addParticle((SimpleParticleType) (ElementureModParticleTypes.REDSUN_SWIPE.get()), (entity.getX() + 1.5 * yaw * pitch), (entity.getY() + 1.22 + 1.5 * pitch2), (entity.getZ() + 1.5 * yaw2 * pitch), 0, 0, 0);
 		} else {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:redsun_swing")), SoundSource.PLAYERS, (float) 0.6,
-							(float) 0.4);
+					_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:redsun_swing")), SoundSource.PLAYERS, (float) 0.6, (float) 0.4);
 				} else {
-					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:redsun_swing")), SoundSource.PLAYERS, (float) 0.6,
-							(float) 0.4, false);
+					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:redsun_swing")), SoundSource.PLAYERS, (float) 0.6, (float) 0.4, false);
 				}
 			}
 		}

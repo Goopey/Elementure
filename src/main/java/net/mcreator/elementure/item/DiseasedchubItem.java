@@ -16,10 +16,9 @@ import java.util.List;
 
 public class DiseasedchubItem extends Item {
 	public DiseasedchubItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(3).saturationMod(1.2f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(1.2f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

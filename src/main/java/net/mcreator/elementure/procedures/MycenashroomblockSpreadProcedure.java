@@ -26,37 +26,25 @@ public class MycenashroomblockSpreadProcedure {
 		CoordsY = -4;
 		CoordsZ = -4;
 		for (int index0 = 0; index0 < (int) (729); index0++) {
-			if (16 * CoordsY * CoordsY + CoordsX * CoordsX + CoordsZ * CoordsZ < 16
-					&& (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR
-					&& Math.random() < 0.0000012
-					&& ((world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ))).getBlock() == ElementureModBlocks.MYCENIUM
-							.get()
-							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ)))
-									.getBlock() == ElementureModBlocks.MYCENAMOSSYGRASS.get()
-							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ)))
-									.getBlock() == ElementureModBlocks.BIGGLOWINGMUSHROOM.get()
-							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ)))
-									.getBlock() == ElementureModBlocks.ENERGYDIORITE.get()
-							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ)))
-									.getBlock() == ElementureModBlocks.LIGHTNINGANDESITE.get()
-							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ)))
-									.getBlock() == ElementureModBlocks.RUINGRANITE.get()
+			if (16 * CoordsY * CoordsY + CoordsX * CoordsX + CoordsZ * CoordsZ < 16 && (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR && Math.random() < 0.0000012
+					&& ((world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ))).getBlock() == ElementureModBlocks.MYCENIUM.get()
+							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ))).getBlock() == ElementureModBlocks.MYCENAMOSSYGRASS.get()
+							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ))).getBlock() == ElementureModBlocks.BIGGLOWINGMUSHROOM.get()
+							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ))).getBlock() == ElementureModBlocks.ENERGYDIORITE.get()
+							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ))).getBlock() == ElementureModBlocks.LIGHTNINGANDESITE.get()
+							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ))).getBlock() == ElementureModBlocks.RUINGRANITE.get()
 							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ))).getBlock() == Blocks.COARSE_DIRT
 							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ))).getBlock() == Blocks.PODZOL
 							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ))).getBlock() == Blocks.MYCELIUM
 							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ))).getBlock() == Blocks.DIRT
-							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ)))
-									.getBlock() == Blocks.BROWN_MUSHROOM_BLOCK
-							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ)))
-									.getBlock() == Blocks.RED_MUSHROOM_BLOCK
+							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ))).getBlock() == Blocks.BROWN_MUSHROOM_BLOCK
+							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ))).getBlock() == Blocks.RED_MUSHROOM_BLOCK
 							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ))).getBlock() == Blocks.STONE
 							|| (world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ))).getBlock() == Blocks.GRASS_BLOCK)) {
 				if (Math.random() < 0.94) {
-					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-							ElementureModBlocks.MYCENASHROOMBLOCK.get().defaultBlockState(), 3);
+					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MYCENASHROOMBLOCK.get().defaultBlockState(), 3);
 				} else {
-					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MYCENASPROUTS.get().defaultBlockState(),
-							3);
+					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MYCENASPROUTS.get().defaultBlockState(), 3);
 				}
 			}
 			CoordsX = CoordsX + 1;

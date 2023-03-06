@@ -14,14 +14,10 @@ public class DragonitescalemailFullarmorEffectProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-				.getItem() == ElementureModItems.DRAGONITESCALEMAIL_HELMET.get()) {
-			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
-					.getItem() == ElementureModItems.DRAGONITESCALEMAIL_CHESTPLATE.get()) {
-				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
-						.getItem() == ElementureModItems.DRAGONITESCALEMAIL_LEGGINGS.get()) {
-					if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
-							.getItem() == ElementureModItems.DRAGONITESCALEMAIL_BOOTS.get()) {
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == ElementureModItems.DRAGONITESCALEMAIL_HELMET.get()) {
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == ElementureModItems.DRAGONITESCALEMAIL_CHESTPLATE.get()) {
+				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == ElementureModItems.DRAGONITESCALEMAIL_LEGGINGS.get()) {
+					if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == ElementureModItems.DRAGONITESCALEMAIL_BOOTS.get()) {
 						if (entity instanceof LivingEntity _entity)
 							_entity.addEffect(new MobEffectInstance(ElementureModMobEffects.HEATRESISTANCE.get(), 60, 0));
 						if (entity instanceof LivingEntity _entity)

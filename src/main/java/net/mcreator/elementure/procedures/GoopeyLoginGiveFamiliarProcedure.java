@@ -28,8 +28,8 @@ public class GoopeyLoginGiveFamiliarProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (!entity.getPersistentData().getBoolean("loginfamiliarobtained") && ((entity.getDisplayName().getString()).equals("mega1134227")
-				|| (entity.getDisplayName().getString()).equals("Dev") || (entity.getDisplayName().getString()).equals("Goopey"))) {
+		if (!entity.getPersistentData().getBoolean("loginfamiliarobtained")
+				&& ((entity.getDisplayName().getString()).equals("mega1134227") || (entity.getDisplayName().getString()).equals("Dev") || (entity.getDisplayName().getString()).equals("Goopey"))) {
 			entity.getPersistentData().putBoolean("loginfamiliarobtained", (true));
 			if (entity instanceof Player _player) {
 				ItemStack _setstack = new ItemStack(ElementureModItems.SPACEGOOP.get());

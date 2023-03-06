@@ -15,8 +15,7 @@ public class DragonewtDropsProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof Level _level && !_level.isClientSide()) {
-			ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-					new ItemStack(ElementureModBlocks.BLAZINGNETHERUM.get()));
+			ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModBlocks.BLAZINGNETHERUM.get()));
 			entityToSpawn.setPickUpDelay(0);
 			_level.addFreshEntity(entityToSpawn);
 		}
@@ -27,8 +26,7 @@ public class DragonewtDropsProcedure {
 		}
 		for (int index0 = 0; index0 < (int) (1 + Math.round(Math.random() * 2)); index0++) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-						new ItemStack(ElementureModItems.DRAGONEWT_SCALES.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.DRAGONEWT_SCALES.get()));
 				entityToSpawn.setPickUpDelay(0);
 				_level.addFreshEntity(entityToSpawn);
 			}

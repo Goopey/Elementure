@@ -1,4 +1,3 @@
-
 package net.mcreator.elementure.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -25,6 +24,8 @@ public class CreditsMusicGUI2Screen extends AbstractContainerScreen<CreditsMusic
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_next_page;
+	Button button_previous_page;
 
 	public CreditsMusicGUI2Screen(CreditsMusicGUI2Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -76,10 +77,10 @@ public class CreditsMusicGUI2Screen extends AbstractContainerScreen<CreditsMusic
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Thanks for the music and art :", 3, 37, -35328);
-		this.font.draw(poseStack, "Search them up! They're all really cool people.", 1, 162, -35328);
-		this.font.draw(poseStack, "Battle Brothers - Monkey Bros", 6, 46, -16777216);
-		this.font.draw(poseStack, "Demon Stone - *heavenly choir*", 6, 56, -16777216);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.credits_music_gui_2.label_thanks_for_the_music_and_art"), 3, 37, -35328);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.credits_music_gui_2.label_search_them_up_theyre_all_real"), 1, 162, -35328);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.credits_music_gui_2.label_battle_brothers_monkey_bros"), 6, 46, -16777216);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.credits_music_gui_2.label_demon_stone_heavenly_choir"), 6, 56, -16777216);
 	}
 
 	@Override
@@ -92,19 +93,23 @@ public class CreditsMusicGUI2Screen extends AbstractContainerScreen<CreditsMusic
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 169, this.topPos + 141, 72, 20, Component.literal("Next Page"), e -> {
+		button_next_page = new Button(this.leftPos + 169, this.topPos + 141, 72, 20, Component.translatable("gui.elementure.credits_music_gui_2.button_next_page"), e -> {
 		}) {
 			@Override
 			public void render(PoseStack ms, int gx, int gy, float ticks) {
 				if (DeactivateSlotProcedure.execute())
 					super.render(ms, gx, gy, ticks);
 			}
-		});
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 141, 93, 20, Component.literal("Previous Page"), e -> {
+		};
+		guistate.put("button:button_next_page", button_next_page);
+		this.addRenderableWidget(button_next_page);
+		button_previous_page = new Button(this.leftPos + 5, this.topPos + 141, 93, 20, Component.translatable("gui.elementure.credits_music_gui_2.button_previous_page"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new CreditsMusicGUI2ButtonMessage(1, x, y, z));
 				CreditsMusicGUI2ButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_previous_page", button_previous_page);
+		this.addRenderableWidget(button_previous_page);
 	}
 }

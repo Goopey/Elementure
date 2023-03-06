@@ -17,8 +17,7 @@ public class ObsidianbobberDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean displayline = false;
-		if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("")) {
+		if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("")) {
 			if ((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -27,8 +26,7 @@ public class ObsidianbobberDisplayProcedure {
 					});
 					return _retval.get();
 				}
-			}.getItemStack(1, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)))
-					.getItem() == ElementureModItems.OBSIDIANBOBBER.get()) {
+			}.getItemStack(1, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY))).getItem() == ElementureModItems.OBSIDIANBOBBER.get()) {
 				displayline = true;
 			} else if ((new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
@@ -38,17 +36,15 @@ public class ObsidianbobberDisplayProcedure {
 					});
 					return _retval.get();
 				}
-			}.getItemStack(1, (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)))
-					.getItem() == ElementureModItems.OBSIDIANBOBBER.get() && !((new Object() {
-						public ItemStack getItemStack(int sltid, ItemStack _isc) {
-							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								_retval.set(capability.getStackInSlot(sltid).copy());
-							});
-							return _retval.get();
-						}
-					}.getItemStack(1, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY))).getItem() == Blocks.AIR
-							.asItem())) {
+			}.getItemStack(1, (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY))).getItem() == ElementureModItems.OBSIDIANBOBBER.get() && !((new Object() {
+				public ItemStack getItemStack(int sltid, ItemStack _isc) {
+					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+					_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+						_retval.set(capability.getStackInSlot(sltid).copy());
+					});
+					return _retval.get();
+				}
+			}.getItemStack(1, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY))).getItem() == Blocks.AIR.asItem())) {
 				displayline = true;
 			}
 		}

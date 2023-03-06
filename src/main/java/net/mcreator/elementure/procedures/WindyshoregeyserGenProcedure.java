@@ -17,16 +17,14 @@ public class WindyshoregeyserGenProcedure {
 		if (world instanceof ServerLevel _serverworld) {
 			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "windyshores_geyser_2"));
 			if (template != null) {
-				template.placeInWorld(_serverworld, new BlockPos(x - 3, y - 3, z - 3), new BlockPos(x - 3, y - 3, z - 3),
-						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
+				template.placeInWorld(_serverworld, new BlockPos(x - 3, y - 3, z - 3), new BlockPos(x - 3, y - 3, z - 3), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
 						3);
 			}
 		}
 		for (int index0 = 0; index0 < (int) (8); index0++) {
 			locX = Math.random() < 0.5 ? Math.random() * 20 + 3 : Math.random() * (-20) - 3;
 			locZ = Math.random() < 0.5 ? Math.random() * 20 + 3 : Math.random() * (-20) - 3;
-			FlufftreeGenProcedure.execute(world, (x + locX),
-					(world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + locX), (int) (z + locZ))), (z + locZ));
+			FlufftreeGenProcedure.execute(world, (x + locX), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + locX), (int) (z + locZ))), (z + locZ));
 		}
 	}
 }

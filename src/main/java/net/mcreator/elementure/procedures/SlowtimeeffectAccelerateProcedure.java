@@ -10,13 +10,10 @@ public class SlowtimeeffectAccelerateProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, (int) entity.getPersistentData().getDouble("slowtimeeffecttimer"), 0,
-					(false), (false)));
+			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, (int) entity.getPersistentData().getDouble("slowtimeeffecttimer"), 0, (false), (false)));
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, (int) entity.getPersistentData().getDouble("slowtimeeffecttimer"), 0,
-					(false), (false)));
+			_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, (int) entity.getPersistentData().getDouble("slowtimeeffecttimer"), 0, (false), (false)));
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, (int) entity.getPersistentData().getDouble("slowtimeeffecttimer"), 0, (false),
-					(false)));
+			_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, (int) entity.getPersistentData().getDouble("slowtimeeffecttimer"), 0, (false), (false)));
 	}
 }

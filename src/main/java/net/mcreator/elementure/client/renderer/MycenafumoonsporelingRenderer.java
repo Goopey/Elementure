@@ -10,11 +10,9 @@ import net.minecraft.client.renderer.RenderType;
 import net.mcreator.elementure.entity.MycenafumoonsporelingEntity;
 import net.mcreator.elementure.client.model.Modelmycena_fumoon_sporeling;
 
-public class MycenafumoonsporelingRenderer
-		extends
-			MobRenderer<MycenafumoonsporelingEntity, Modelmycena_fumoon_sporeling<MycenafumoonsporelingEntity>> {
+public class MycenafumoonsporelingRenderer extends MobRenderer<MycenafumoonsporelingEntity, Modelmycena_fumoon_sporeling<MycenafumoonsporelingEntity>> {
 	public MycenafumoonsporelingRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelmycena_fumoon_sporeling(context.bakeLayer(Modelmycena_fumoon_sporeling.LAYER_LOCATION)), 0.2f);
+		super(context, new Modelmycena_fumoon_sporeling(context.bakeLayer(Modelmycena_fumoon_sporeling.LAYER_LOCATION)), 0.19999999999999998f);
 		this.addLayer(new EyesLayer<MycenafumoonsporelingEntity, Modelmycena_fumoon_sporeling<MycenafumoonsporelingEntity>>(this) {
 			@Override
 			public RenderType renderType() {

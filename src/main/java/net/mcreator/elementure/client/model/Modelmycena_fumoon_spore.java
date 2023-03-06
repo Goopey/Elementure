@@ -21,8 +21,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class Modelmycena_fumoon_spore<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("elementure", "modelmycena_fumoon_spore"),
-			"main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("elementure", "modelmycena_fumoon_spore"), "main");
 	public final ModelPart body;
 
 	public Modelmycena_fumoon_spore(ModelPart root) {
@@ -33,25 +32,18 @@ public class Modelmycena_fumoon_spore<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition body = partdefinition.addOrReplaceChild("body",
-				CubeListBuilder.create().texOffs(26, 0).addBox(-3.0F, -1.0F, -1.0F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(12, 19)
-						.addBox(-2.0F, -1.75F, -1.5F, 5.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(26, 7)
-						.addBox(3.0F, -1.0F, -1.0F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-0.5F, -1.0F, -2.01F, 2.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 12)
-						.addBox(-1.5F, -0.35F, -2.0F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-3.26F, -1.5F, 0.26F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(0.74F, -0.5F, -1.99F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(2.74F, -1.5F, -1.99F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(3.24F, -0.5F, 0.51F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-2.26F, -1.5F, -1.99F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-0.76F, -1.5F, 1.26F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(0.51F, -2.25F, -0.74F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)),
+				CubeListBuilder.create().texOffs(26, 0).addBox(-3.0F, -1.0F, -1.0F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(12, 19).addBox(-2.0F, -1.75F, -1.5F, 5.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(26, 7)
+						.addBox(3.0F, -1.0F, -1.0F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-0.5F, -1.0F, -2.01F, 2.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 12)
+						.addBox(-1.5F, -0.35F, -2.0F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-3.26F, -1.5F, 0.26F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
+						.addBox(0.74F, -0.5F, -1.99F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(2.74F, -1.5F, -1.99F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
+						.addBox(3.24F, -0.5F, 0.51F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-2.26F, -1.5F, -1.99F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
+						.addBox(-0.76F, -1.5F, 1.26F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(0.51F, -2.25F, -0.74F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 16.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 32, 32);
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 

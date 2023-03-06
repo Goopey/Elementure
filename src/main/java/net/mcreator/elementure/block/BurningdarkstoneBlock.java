@@ -23,8 +23,7 @@ import java.util.Collections;
 
 public class BurningdarkstoneBlock extends Block {
 	public BurningdarkstoneBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(-1, 3600000).lightLevel(s -> 15)
-				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(-1, 3600000).lightLevel(s -> 15).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override
@@ -52,7 +51,6 @@ public class BurningdarkstoneBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		BurningdarkstoneDeactivateProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 100);
 	}

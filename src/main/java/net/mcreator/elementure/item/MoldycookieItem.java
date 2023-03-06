@@ -15,10 +15,9 @@ import java.util.List;
 
 public class MoldycookieItem extends Item {
 	public MoldycookieItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_SKILLWINDOW).stacksTo(1).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.2f).alwaysEat()
+		super(new Item.Properties().tab(ElementureModTabs.TAB_SKILLWINDOW).stacksTo(1).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.2f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

@@ -33,11 +33,10 @@ public class NoobiumoreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new NoobiumoreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("elementure:noobiumore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ElementureModBlocks.NOOBIUMORE.get().defaultBlockState())), 9));
+		CONFIGURED_FEATURE = FeatureUtils.register("elementure:noobiumore", FEATURE,
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ElementureModBlocks.NOOBIUMORE.get().defaultBlockState())), 9));
 		PLACED_FEATURE = PlacementUtils.register("elementure:noobiumore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(4), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(3), VerticalAnchor.absolute(22)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(4), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(3), VerticalAnchor.absolute(22)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

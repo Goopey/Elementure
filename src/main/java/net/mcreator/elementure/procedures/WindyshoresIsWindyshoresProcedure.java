@@ -8,8 +8,7 @@ public class WindyshoresIsWindyshoresProcedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		return ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).fishBiome).equals("windyShores") && !Isangelpip2Procedure.execute(entity)
+		return ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fishBiome).equals("windyShores") && !Isangelpip2Procedure.execute(entity)
 				&& !Iscometfish2Procedure.execute(entity);
 	}
 }

@@ -20,8 +20,7 @@ public class DarkgemCrystalLaserProcedure {
 		boolean particles = false;
 		if (Math.random() < 0.03111111111) {
 			particles = false;
-			if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.WATER
-					&& (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == ElementureModBlocks.DARKGEM_CRYSTAL.get()) {
+			if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.WATER && (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == ElementureModBlocks.DARKGEM_CRYSTAL.get()) {
 				world.setBlock(new BlockPos(x, y + 1, z), ElementureModBlocks.DARKGEM_CRYSTAL_BEAM.get().defaultBlockState(), 3);
 				if (!world.isClientSide()) {
 					BlockPos _bp = new BlockPos(x, y + 1, z);
@@ -34,8 +33,7 @@ public class DarkgemCrystalLaserProcedure {
 				}
 				particles = true;
 			}
-			if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.WATER
-					&& (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == ElementureModBlocks.DARKGEM_CRYSTAL.get()) {
+			if ((world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.WATER && (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == ElementureModBlocks.DARKGEM_CRYSTAL.get()) {
 				world.setBlock(new BlockPos(x, y - 1, z), ElementureModBlocks.DARKGEM_CRYSTAL_BEAM.get().defaultBlockState(), 3);
 				if (!world.isClientSide()) {
 					BlockPos _bp = new BlockPos(x, y - 1, z);
@@ -48,8 +46,7 @@ public class DarkgemCrystalLaserProcedure {
 				}
 				particles = true;
 			}
-			if ((world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == Blocks.WATER
-					&& (world.getBlockState(new BlockPos(x - 1, y, z))).getBlock() == ElementureModBlocks.DARKGEM_CRYSTAL.get()) {
+			if ((world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == Blocks.WATER && (world.getBlockState(new BlockPos(x - 1, y, z))).getBlock() == ElementureModBlocks.DARKGEM_CRYSTAL.get()) {
 				world.setBlock(new BlockPos(x + 1, y, z), ElementureModBlocks.DARKGEM_CRYSTAL_BEAM.get().defaultBlockState(), 3);
 				if (!world.isClientSide()) {
 					BlockPos _bp = new BlockPos(x + 1, y, z);
@@ -62,13 +59,11 @@ public class DarkgemCrystalLaserProcedure {
 				}
 				particles = true;
 			}
-			if ((world.getBlockState(new BlockPos(x - 1, y, z))).getBlock() == Blocks.WATER
-					&& (world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == ElementureModBlocks.DARKGEM_CRYSTAL.get()) {
+			if ((world.getBlockState(new BlockPos(x - 1, y, z))).getBlock() == Blocks.WATER && (world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == ElementureModBlocks.DARKGEM_CRYSTAL.get()) {
 				world.setBlock(new BlockPos(x - 1, y, z), ElementureModBlocks.DARKGEM_CRYSTAL_BEAM.get().defaultBlockState(), 3);
 				particles = true;
 			}
-			if ((world.getBlockState(new BlockPos(x, y, z + 1))).getBlock() == Blocks.WATER
-					&& (world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == ElementureModBlocks.DARKGEM_CRYSTAL.get()) {
+			if ((world.getBlockState(new BlockPos(x, y, z + 1))).getBlock() == Blocks.WATER && (world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == ElementureModBlocks.DARKGEM_CRYSTAL.get()) {
 				world.setBlock(new BlockPos(x, y, z + 1), ElementureModBlocks.DARKGEM_CRYSTAL_BEAM.get().defaultBlockState(), 3);
 				if (!world.isClientSide()) {
 					BlockPos _bp = new BlockPos(x, y, z + 1);
@@ -81,8 +76,7 @@ public class DarkgemCrystalLaserProcedure {
 				}
 				particles = true;
 			}
-			if ((world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == Blocks.WATER
-					&& (world.getBlockState(new BlockPos(x, y, z + 1))).getBlock() == ElementureModBlocks.DARKGEM_CRYSTAL.get()) {
+			if ((world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == Blocks.WATER && (world.getBlockState(new BlockPos(x, y, z + 1))).getBlock() == ElementureModBlocks.DARKGEM_CRYSTAL.get()) {
 				world.setBlock(new BlockPos(x, y, z - 1), ElementureModBlocks.DARKGEM_CRYSTAL_BEAM.get().defaultBlockState(), 3);
 				if (!world.isClientSide()) {
 					BlockPos _bp = new BlockPos(x, y, z - 1);
@@ -100,21 +94,16 @@ public class DarkgemCrystalLaserProcedure {
 					_level.sendParticles(ParticleTypes.END_ROD, (x + 0.5), (y + 0.5), (z + 0.5), 50, 1.6, 1.6, 1.6, 0);
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_block.chime")), SoundSource.BLOCKS, 3, 1);
+						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_block.chime")), SoundSource.BLOCKS, 3, 1);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_block.chime")),
-								SoundSource.BLOCKS, 3, 1, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_block.chime")), SoundSource.BLOCKS, 3, 1, false);
 					}
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(x, y, z),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_block.place")), SoundSource.BLOCKS,
-								(float) 1.5, 1);
+						_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_block.place")), SoundSource.BLOCKS, (float) 1.5, 1);
 					} else {
-						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_block.place")),
-								SoundSource.BLOCKS, (float) 1.5, 1, false);
+						_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.amethyst_block.place")), SoundSource.BLOCKS, (float) 1.5, 1, false);
 					}
 				}
 			}

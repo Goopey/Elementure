@@ -24,8 +24,7 @@ public class ShadowcandleDebuffProcedure {
 			return;
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(12 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(12 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof Player || entityiterator instanceof ServerPlayer) {
 					if (entityiterator instanceof LivingEntity _entity)
@@ -41,10 +40,8 @@ public class ShadowcandleDebuffProcedure {
 			}
 		}
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SHADOWPARTICLE_1.get()), (entity.getX()), (entity.getY()),
-					(entity.getZ()), 1, 0.25, 0.25, 0.25, 0.01);
+			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SHADOWPARTICLE_1.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 1, 0.25, 0.25, 0.25, 0.01);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SHADOWPARTICLE_2.get()), (entity.getX()), (entity.getY()),
-					(entity.getZ()), 2, 0.25, 0.25, 0.25, 0.01);
+			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SHADOWPARTICLE_2.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 2, 0.25, 0.25, 0.25, 0.01);
 	}
 }

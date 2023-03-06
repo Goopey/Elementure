@@ -24,9 +24,8 @@ public class NethersaplingsurfaceGrowProcedure {
 		if (world instanceof ServerLevel _serverworld) {
 			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "nether_tree_base"));
 			if (template != null) {
-				template.placeInWorld(_serverworld, new BlockPos(x - 2, y + randomheight, z - 2), new BlockPos(x - 2, y + randomheight, z - 2),
-						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
-						3);
+				template.placeInWorld(_serverworld, new BlockPos(x - 2, y + randomheight, z - 2), new BlockPos(x - 2, y + randomheight, z - 2), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						_serverworld.random, 3);
 			}
 		}
 		NetherleavesExtraGenProcedure.execute(world, x, (y + randomheight), z);

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "block",
   "definition": {
     "texture": "omegancenter",
@@ -99,13 +99,7 @@
     "luminance": 15,
     "unbreakable": true,
     "breakHarvestLevel": 11,
-    "spawnParticles": false,
-    "particleToSpawn": {
-      "value": "CRIT_MAGIC"
-    },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 1.9,
-    "particleAmount": 28,
+    "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

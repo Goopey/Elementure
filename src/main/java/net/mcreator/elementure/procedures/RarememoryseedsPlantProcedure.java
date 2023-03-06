@@ -16,8 +16,7 @@ public class RarememoryseedsPlantProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (((world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.COBBLESTONE
-				|| (world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.MOSSY_COBBLESTONE)
+		if (((world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.COBBLESTONE || (world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.MOSSY_COBBLESTONE)
 				&& (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.AIR) {
 			world.setBlock(new BlockPos(x, y + 1, z), ElementureModBlocks.RAREMEMORYPLANT_1.get().defaultBlockState(), 3);
 			if (!(new Object() {
@@ -25,8 +24,8 @@ public class RarememoryseedsPlantProcedure {
 					if (_ent instanceof ServerPlayer _serverPlayer) {
 						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
 					} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
-						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft
-								.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
+						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
 					}
 					return false;
 				}

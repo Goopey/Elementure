@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "plant",
   "definition": {
     "renderType": 12,
@@ -85,6 +85,7 @@
         "value": "Blocks.MYCELIUM"
       }
     ],
+    "isBonemealable": false,
     "frequencyOnChunks": 3,
     "spawnWorldTypes": [
       "Surface"

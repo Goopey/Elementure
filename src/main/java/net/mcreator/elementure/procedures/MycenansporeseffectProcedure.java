@@ -11,13 +11,9 @@ public class MycenansporeseffectProcedure {
 		if (entity == null)
 			return;
 		if (entity.getPersistentData().getDouble("mycenansporetimer") > 5) {
-			if (Math.random() < 0.5 && !((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.MYCENANSPORES.get())
-					? _livEnt.getEffect(ElementureModMobEffects.MYCENANSPORES.get()).getDuration()
-					: 0) == 0)) {
+			if (Math.random() < 0.5 && !((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.MYCENANSPORES.get()) ? _livEnt.getEffect(ElementureModMobEffects.MYCENANSPORES.get()).getDuration() : 0) == 0)) {
 				entity.hurt(DamageSource.ON_FIRE,
-						(float) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.MYCENANSPORES.get())
-								? _livEnt.getEffect(ElementureModMobEffects.MYCENANSPORES.get()).getAmplifier()
-								: 0) + 1));
+						(float) ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.MYCENANSPORES.get()) ? _livEnt.getEffect(ElementureModMobEffects.MYCENANSPORES.get()).getAmplifier() : 0) + 1));
 			}
 			entity.getPersistentData().putDouble("mycenansporetimer", 0);
 		} else {

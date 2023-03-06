@@ -85,19 +85,14 @@ public class StarCorePlatformGenBaseProcedure {
 				}
 			}.getValue(world, new BlockPos(x, y, z), "platformSize"))) {
 				if (CoordsY < 0) {
-					if (!((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.OBSIDIAN)
-							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.NETHER_PORTAL)
+					if (!((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.OBSIDIAN) && !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.NETHER_PORTAL)
 							&& (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR
-							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-									.getBlock() == ElementureModBlocks.ACTIVENETHERUM.get())
-							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-									.getBlock() == ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get())
-							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-									.getBlock() == ElementureModBlocks.NETHERSTAR_BIOME_OMEGAN.get())) {
+							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.ACTIVENETHERUM.get())
+							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get())
+							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERSTAR_BIOME_OMEGAN.get())) {
 						if (CoordsY < -2) {
 							if (Math.random() < 0.05) {
-								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-										ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
 								if (!world.isClientSide()) {
 									BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 									BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -109,20 +104,16 @@ public class StarCorePlatformGenBaseProcedure {
 								}
 							} else {
 								if (Math.random() < 0.01) {
-									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-											ElementureModBlocks.ACTIVENETHERUMSHINY.get().defaultBlockState(), 3);
+									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.ACTIVENETHERUMSHINY.get().defaultBlockState(), 3);
 								} else {
-									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-											ElementureModBlocks.ACTIVENETHERUM.get().defaultBlockState(), 3);
+									world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.ACTIVENETHERUM.get().defaultBlockState(), 3);
 								}
 							}
 						} else {
 							if (Math.random() < 0.01) {
-								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-										ElementureModBlocks.ACTIVENETHERUMSHINY.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.ACTIVENETHERUMSHINY.get().defaultBlockState(), 3);
 							} else {
-								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-										ElementureModBlocks.ACTIVENETHERUM.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.ACTIVENETHERUM.get().defaultBlockState(), 3);
 							}
 						}
 					}
@@ -140,22 +131,16 @@ public class StarCorePlatformGenBaseProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "platformSize"))
-						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.OBSIDIAN)
+				}.getValue(world, new BlockPos(x, y, z), "platformSize")) && !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.OBSIDIAN)
 						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.NETHER_PORTAL)) {
-					if (!((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-							.getBlock() == ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get())
-							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-									.getBlock() == ElementureModBlocks.NETHERSTAR_BIOME_OMEGAN.get())
+					if (!((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get())
+							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERSTAR_BIOME_OMEGAN.get())
 							&& (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR
-							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-									.getBlock() == ElementureModBlocks.ACTIVENETHERUM.get())) {
+							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.ACTIVENETHERUM.get())) {
 						if (Math.random() < 0.01) {
-							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-									ElementureModBlocks.ACTIVENETHERUMSHINY.get().defaultBlockState(), 3);
+							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.ACTIVENETHERUMSHINY.get().defaultBlockState(), 3);
 						} else {
-							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-									ElementureModBlocks.ACTIVENETHERUM.get().defaultBlockState(), 3);
+							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.ACTIVENETHERUM.get().defaultBlockState(), 3);
 						}
 					}
 				}

@@ -23,10 +23,9 @@ import java.util.List;
 
 public class GreenjackItem extends Item {
 	public GreenjackItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.EPIC)
-				.food((new FoodProperties.Builder()).nutrition(12).saturationMod(2f).alwaysEat()
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(12).saturationMod(2f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

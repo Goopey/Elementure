@@ -1,5 +1,5 @@
 {
-  "parent": "elementure:custom/cormunculus_club",
+  "parent": "elementure:displaysettings/cormunculus_club",
   "textures": {
     "layer0": "elementure:items/cormunculus_club_texturemap"
   }

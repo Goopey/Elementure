@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -16,10 +16,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 0,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": false,
-          "name": "Slot #0",
           "x": 150,
           "y": 71
         }
@@ -30,10 +34,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 1,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": false,
-          "name": "Slot #1",
           "x": 204,
           "y": 71
         }
@@ -44,10 +52,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 2,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": false,
-          "name": "Slot #2",
           "x": 258,
           "y": 71
         }
@@ -57,7 +69,6 @@
         "data": {
           "image": "bait_symbol.png",
           "use1Xscale": false,
-          "name": "bait_symbol.png",
           "x": 151,
           "y": 71
         }
@@ -67,7 +78,6 @@
         "data": {
           "image": "bobber_symbol.png",
           "use1Xscale": false,
-          "name": "bobber_symbol.png",
           "x": 205,
           "y": 71
         }
@@ -77,7 +87,6 @@
         "data": {
           "image": "line_symbol.png",
           "use1Xscale": false,
-          "name": "line_symbol.png",
           "x": 258,
           "y": 72
         }

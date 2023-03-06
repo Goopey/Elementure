@@ -21,10 +21,9 @@ import java.util.List;
 
 public class ChalicepotionItem extends Item {
 	public ChalicepotionItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_BREWING).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(1).saturationMod(0f).alwaysEat()
+		super(new Item.Properties().tab(CreativeModeTab.TAB_BREWING).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

@@ -9,8 +9,7 @@ public class HightrahiraDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isCurrentFish = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("highTrahira")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("highTrahira")) {
 			isCurrentFish = true;
 		} else {
 			isCurrentFish = false;

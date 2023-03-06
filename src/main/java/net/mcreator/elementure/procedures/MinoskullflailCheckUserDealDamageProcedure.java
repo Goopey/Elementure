@@ -39,28 +39,22 @@ public class MinoskullflailCheckUserDealDamageProcedure {
 		dist = 1;
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1.5 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1.5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if (!(entityiterator instanceof MinoskullflaibulletEntity)
-						&& !(entityiterator.getDisplayName().getString()).equals(entity.getPersistentData().getString("playerName"))
-						&& !(entityiterator instanceof ItemEntity) && !(entityiterator instanceof ItemFrame)) {
-					entityiterator.hurt(DamageSource.GENERIC,
-							(float) (8 / (Math.floor((entityiterator instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) / 3) + 1)));
+				if (!(entityiterator instanceof MinoskullflaibulletEntity) && !(entityiterator.getDisplayName().getString()).equals(entity.getPersistentData().getString("playerName")) && !(entityiterator instanceof ItemEntity)
+						&& !(entityiterator instanceof ItemFrame)) {
+					entityiterator.hurt(DamageSource.GENERIC, (float) (8 / (Math.floor((entityiterator instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) / 3) + 1)));
 				}
 			}
 		}
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof Player || entityiterator instanceof ServerPlayer) {
 					if ((entityiterator.getDisplayName().getString()).equals(entity.getPersistentData().getString("playerName"))
-							&& ((entityiterator instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-									.getItem() == ElementureModItems.MINOSKULLSTICK.get()
-									|| (entityiterator instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)
-											.getItem() == ElementureModItems.MINOSKULLSTICK.get())) {
+							&& ((entityiterator instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.MINOSKULLSTICK.get()
+									|| (entityiterator instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.MINOSKULLSTICK.get())) {
 						staySpawned = true;
 						playX = entityiterator.getX();
 						playY = entityiterator.getY() + 1.2;
@@ -74,8 +68,8 @@ public class MinoskullflailCheckUserDealDamageProcedure {
 				entity.discard();
 			{
 				final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream()
-						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+						.collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
 					entityiterator.getPersistentData().putDouble("flailwait", 0);
 				}
@@ -83,8 +77,7 @@ public class MinoskullflailCheckUserDealDamageProcedure {
 		}
 		for (int index0 = 0; index0 < (int) (15); index0++) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.MINOSKULLFLAIL_PARTICLE.get()),
-						(entity.getX() + (dist * (entity.getX() - playX)) / (-15)), (entity.getY() + (dist * (entity.getY() - playY)) / (-15)),
+				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.MINOSKULLFLAIL_PARTICLE.get()), (entity.getX() + (dist * (entity.getX() - playX)) / (-15)), (entity.getY() + (dist * (entity.getY() - playY)) / (-15)),
 						(entity.getZ() + (dist * (entity.getZ() - playZ)) / (-15)), 1, 0, 0, 0, 0);
 			dist = dist + 1;
 		}

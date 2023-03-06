@@ -11,10 +11,9 @@ import net.mcreator.elementure.init.ElementureModTabs;
 
 public class SmallbrumItem extends Item {
 	public SmallbrumItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.7999999999999999f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.7999999999999999f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

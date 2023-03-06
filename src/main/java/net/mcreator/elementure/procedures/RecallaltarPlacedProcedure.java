@@ -29,9 +29,8 @@ public class RecallaltarPlacedProcedure {
 			if (!world.isClientSide()) {
 				MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();
 				if (_mcserv != null)
-					_mcserv.getPlayerList().broadcastSystemMessage(Component.literal(
-							"A Recall Altar has been placed! You may now dive under the bedrock into the deep lands below without dying. Make sure to equip yourself correctly so that you can come back."),
-							false);
+					_mcserv.getPlayerList().broadcastSystemMessage(
+							Component.literal("A Recall Altar has been placed! You may now dive under the bedrock into the deep lands below without dying. Make sure to equip yourself correctly so that you can come back."), false);
 			}
 		}
 	}

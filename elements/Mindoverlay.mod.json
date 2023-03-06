@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGH",
@@ -7,12 +7,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:integer:mind_essence>",
+          "name": "label_varintegermind_essence",
+          "text": {
+            "fixedValue": "<VAR:integer:mind_essence>"
+          },
           "color": {
             "value": -16737997,
             "falpha": 0.0
           },
-          "name": "<VAR:integer:mind_essence>",
           "x": 393,
           "y": 197
         }
@@ -22,7 +24,6 @@
         "data": {
           "image": "playermind.png",
           "use1Xscale": true,
-          "name": "playermind.png",
           "x": 384,
           "y": 206
         }

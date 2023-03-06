@@ -14,10 +14,8 @@ import net.mcreator.elementure.init.ElementureModFluidTypes;
 import net.mcreator.elementure.init.ElementureModBlocks;
 
 public abstract class CorruptdewFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(
-			() -> ElementureModFluidTypes.CORRUPTDEW_TYPE.get(), () -> ElementureModFluids.CORRUPTDEW.get(),
-			() -> ElementureModFluids.FLOWING_CORRUPTDEW.get()).explosionResistance(100f).bucket(() -> ElementureModItems.CORRUPTDEW_BUCKET.get())
-			.block(() -> (LiquidBlock) ElementureModBlocks.CORRUPTDEW.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ElementureModFluidTypes.CORRUPTDEW_TYPE.get(), () -> ElementureModFluids.CORRUPTDEW.get(), () -> ElementureModFluids.FLOWING_CORRUPTDEW.get())
+			.explosionResistance(100f).bucket(() -> ElementureModItems.CORRUPTDEW_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.CORRUPTDEW.get());
 
 	private CorruptdewFluid() {
 		super(PROPERTIES);

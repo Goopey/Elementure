@@ -37,19 +37,15 @@ public class SuitcasehoneySummonFamiliarProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_familiar)
-				.getItem() == ElementureModItems.SUITCASEHONEY.get()) {
-			if (!world.getEntitiesOfClass(BuzybeefamiliarEntity.class,
-					AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 25, 25, 25), e -> true).isEmpty()) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_familiar).getItem() == ElementureModItems.SUITCASEHONEY.get()) {
+			if (!world.getEntitiesOfClass(BuzybeefamiliarEntity.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 25, 25, 25), e -> true).isEmpty()) {
 				entity.getPersistentData().putDouble("summontimer", 10);
 			} else if (entity.getPersistentData().getDouble("summontimer") > -3) {
 				entity.getPersistentData().putDouble("summontimer", (entity.getPersistentData().getDouble("summontimer") - 1));
 			} else {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level,
-									4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							("summon elementure:buzybeefamiliar ~ ~ ~" + (" {Tame:1, Owner:" + (entity.getDisplayName().getString() + "}"))));
 			}
 		}

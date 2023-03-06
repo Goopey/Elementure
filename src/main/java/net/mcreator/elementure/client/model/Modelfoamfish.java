@@ -42,23 +42,13 @@ public class Modelfoamfish<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition r_fin = partdefinition.addOrReplaceChild("r_fin", CubeListBuilder.create().texOffs(-8, 56).mirror()
-				.addBox(-4.5F, 0.0F, -3.5F, 5.0F, 0.0F, 8.0F, new CubeDeformation(0.01F)).mirror(false), PartPose.offset(-4.5F, 20.0F, -2.5F));
-		PartDefinition l_fin = partdefinition.addOrReplaceChild("l_fin",
-				CubeListBuilder.create().texOffs(-8, 56).addBox(-0.5F, 0.0F, -3.5F, 5.0F, 0.0F, 8.0F, new CubeDeformation(0.01F)),
-				PartPose.offset(4.5F, 20.0F, -2.5F));
-		PartDefinition tailtop = partdefinition.addOrReplaceChild("tailtop",
-				CubeListBuilder.create().texOffs(36, 50).addBox(-3.5F, -3.5F, 0.0F, 7.0F, 7.0F, 7.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 19.5F, 5.0F));
-		PartDefinition tailmid = tailtop.addOrReplaceChild("tailmid",
-				CubeListBuilder.create().texOffs(42, 35).addBox(-2.5F, -2.5F, 0.0F, 5.0F, 5.0F, 6.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 0.0F, 7.0F));
-		PartDefinition tailend = tailmid.addOrReplaceChild("tailend",
-				CubeListBuilder.create().texOffs(15, 30).addBox(0.0F, -5.0F, 0.0F, 0.0F, 10.0F, 9.0F, new CubeDeformation(0.01F)),
-				PartPose.offset(0.0F, 0.0F, 6.0F));
-		PartDefinition bb_main = partdefinition.addOrReplaceChild(
-				"bb_main", CubeListBuilder.create().texOffs(0, 0).addBox(-4.5F, -9.0F, -9.0F, 9.0F, 9.0F, 14.0F, new CubeDeformation(0.0F))
-						.texOffs(46, 0).addBox(-4.0F, -8.5F, -10.0F, 8.0F, 8.0F, 1.0F, new CubeDeformation(0.0F)),
+		PartDefinition r_fin = partdefinition.addOrReplaceChild("r_fin", CubeListBuilder.create().texOffs(-8, 56).mirror().addBox(-4.5F, 0.0F, -3.5F, 5.0F, 0.0F, 8.0F, new CubeDeformation(0.01F)).mirror(false), PartPose.offset(-4.5F, 20.0F, -2.5F));
+		PartDefinition l_fin = partdefinition.addOrReplaceChild("l_fin", CubeListBuilder.create().texOffs(-8, 56).addBox(-0.5F, 0.0F, -3.5F, 5.0F, 0.0F, 8.0F, new CubeDeformation(0.01F)), PartPose.offset(4.5F, 20.0F, -2.5F));
+		PartDefinition tailtop = partdefinition.addOrReplaceChild("tailtop", CubeListBuilder.create().texOffs(36, 50).addBox(-3.5F, -3.5F, 0.0F, 7.0F, 7.0F, 7.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 19.5F, 5.0F));
+		PartDefinition tailmid = tailtop.addOrReplaceChild("tailmid", CubeListBuilder.create().texOffs(42, 35).addBox(-2.5F, -2.5F, 0.0F, 5.0F, 5.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 7.0F));
+		PartDefinition tailend = tailmid.addOrReplaceChild("tailend", CubeListBuilder.create().texOffs(15, 30).addBox(0.0F, -5.0F, 0.0F, 0.0F, 10.0F, 9.0F, new CubeDeformation(0.01F)), PartPose.offset(0.0F, 0.0F, 6.0F));
+		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
+				CubeListBuilder.create().texOffs(0, 0).addBox(-4.5F, -9.0F, -9.0F, 9.0F, 9.0F, 14.0F, new CubeDeformation(0.0F)).texOffs(46, 0).addBox(-4.0F, -8.5F, -10.0F, 8.0F, 8.0F, 1.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
@@ -73,8 +63,7 @@ public class Modelfoamfish<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		r_fin.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		l_fin.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		tailtop.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);

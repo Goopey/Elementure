@@ -18,10 +18,8 @@ public class JellypoolsOmeganSmallBaseGenProcedure {
 		CoordsZ = -2;
 		CoordsY = -12;
 		for (int index0 = 0; index0 < (int) (625); index0++) {
-			if ((world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11))).getBlock() == Blocks.GRAVEL
-					&& !world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY + 1, z + CoordsZ * 11)).canOcclude()) {
-				world.setBlock(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11),
-						ElementureModBlocks.JELLYFLOAT_ALPHAN.get().defaultBlockState(), 3);
+			if ((world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11))).getBlock() == Blocks.GRAVEL && !world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY + 1, z + CoordsZ * 11)).canOcclude()) {
+				world.setBlock(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11), ElementureModBlocks.JELLYFLOAT_ALPHAN.get().defaultBlockState(), 3);
 				if (!world.isClientSide()) {
 					BlockPos _bp = new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);

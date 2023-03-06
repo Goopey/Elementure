@@ -35,9 +35,7 @@ public class AngelfishChannelerBallProcedure {
 			ind1 = ind1 + 1;//Loop 2
 			for (int index1 = 0; index1 < (int) (mPhi - 1); index1++) {
 				phi = (2 * Math.PI * ind2) / mPhi;
-				world.addParticle((SimpleParticleType) (ElementureModParticleTypes.ANGELSTARPARTICLE.get()),
-						(x + radius * Math.sin(teta) * Math.cos(phi)), (y + radius * Math.sin(teta) * Math.sin(phi)), (z + radius * Math.cos(teta)),
-						0, 0, 0);
+				world.addParticle((SimpleParticleType) (ElementureModParticleTypes.ANGELSTARPARTICLE.get()), (x + radius * Math.sin(teta) * Math.cos(phi)), (y + radius * Math.sin(teta) * Math.sin(phi)), (z + radius * Math.cos(teta)), 0, 0, 0);
 				ind2 = ind2 + 1;
 				nPoints = nPoints + 1;
 			}

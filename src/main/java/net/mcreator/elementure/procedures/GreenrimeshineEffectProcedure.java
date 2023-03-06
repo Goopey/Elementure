@@ -33,12 +33,9 @@ public class GreenrimeshineEffectProcedure {
 			return;
 		if (itemstack.getItem() == ElementureModItems.RAREGREENRIMESHINE.get() || itemstack.getItem() == ElementureModItems.GREENRIMESHINE.get()) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION,
-						(int) (itemstack.getOrCreateTag().getDouble("duration") / itemstack.getOrCreateTag().getDouble("potency")),
-						(int) itemstack.getOrCreateTag().getDouble("potency")));
+				_entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, (int) (itemstack.getOrCreateTag().getDouble("duration") / itemstack.getOrCreateTag().getDouble("potency")), (int) itemstack.getOrCreateTag().getDouble("potency")));
 			if (entity instanceof LivingEntity _entity)
-				_entity.setHealth((float) ((1 + itemstack.getOrCreateTag().getDouble("potency")) * 2
-						+ (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)));
+				_entity.setHealth((float) ((1 + itemstack.getOrCreateTag().getDouble("potency")) * 2 + (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)));
 		}
 	}
 }

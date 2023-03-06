@@ -27,19 +27,13 @@ public class DiverscrownLilypadGroundSlopeProcedure {
 						isAir = false;
 						break;
 					} else if (locRSmall > 45) {
-						if (!world.getBlockState(new BlockPos(x + locX,
-								(y + locY * Math.sqrt(locRSmall - 43)) - (Math.abs(locX) + Math.abs(locZ)) / Math.max(locRSmall - 43, 8), z + locZ))
-								.canOcclude()) {
+						if (!world.getBlockState(new BlockPos(x + locX, (y + locY * Math.sqrt(locRSmall - 43)) - (Math.abs(locX) + Math.abs(locZ)) / Math.max(locRSmall - 43, 8), z + locZ)).canOcclude()) {
 							isAir = true;
-							DiverscrownHillSideGenProcedure.execute(world, (x + locX),
-									((y + locY * Math.sqrt(locRSmall - 43)) - (Math.abs(locX) + Math.abs(locZ)) / Math.max(locRSmall - 43, 8)),
-									(z + locZ));
+							DiverscrownHillSideGenProcedure.execute(world, (x + locX), ((y + locY * Math.sqrt(locRSmall - 43)) - (Math.abs(locX) + Math.abs(locZ)) / Math.max(locRSmall - 43, 8)), (z + locZ));
 						}
 					} else {
 						isAir = true;
-						DiverscrownHillSideGenProcedure.execute(world, (x + locX),
-								((y + locY * Math.sqrt(locRSmall - 43)) - (Math.abs(locX) + Math.abs(locZ)) / Math.max(locRSmall - 43, 8)),
-								(z + locZ));
+						DiverscrownHillSideGenProcedure.execute(world, (x + locX), ((y + locY * Math.sqrt(locRSmall - 43)) - (Math.abs(locX) + Math.abs(locZ)) / Math.max(locRSmall - 43, 8)), (z + locZ));
 					}
 				}
 				locX = locX + 1;

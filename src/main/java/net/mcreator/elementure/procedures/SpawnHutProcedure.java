@@ -42,16 +42,14 @@ public class SpawnHutProcedure {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "old_house"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 4, z - 4), new BlockPos(x - 4, y - 4, z - 4),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+					template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 4, z - 4), new BlockPos(x - 4, y - 4, z - 4), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 							_serverworld.random, 3);
 				}
 			}
 			ElementureModVariables.MapVariables.get(world).setSpawn = true;
 			ElementureModVariables.MapVariables.get(world).syncData(world);
 		}
-		if (!(entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).has_spawned) {
+		if (!(entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).has_spawned) {
 			{
 				boolean _setval = true;
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

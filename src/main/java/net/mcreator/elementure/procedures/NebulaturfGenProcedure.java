@@ -21,8 +21,7 @@ public class NebulaturfGenProcedure {
 		modX = Math.random() * 1.66 + 0.66;
 		modZ = Math.random() * 1.66 + 0.66;
 		for (int index0 = 0; index0 < (int) (361); index0++) {
-			if (locX * locX * modX + locZ * locZ * modZ < 81 && ((world.getBlockState(new BlockPos(x + locX, y, z + locZ)))
-					.getBlock() == ElementureModBlocks.NETHERUMCARPET.get()
+			if (locX * locX * modX + locZ * locZ * modZ < 81 && ((world.getBlockState(new BlockPos(x + locX, y, z + locZ))).getBlock() == ElementureModBlocks.NETHERUMCARPET.get()
 					|| (world.getBlockState(new BlockPos(x + locX, y, z + locZ))).getBlock() == ElementureModBlocks.NETHERUMCARPETSHINY.get())) {
 				if ((world.getBlockState(new BlockPos(x + locX, y, z + locZ))).getBlock() == ElementureModBlocks.NETHERUMCARPETSHINY.get()) {
 					world.setBlock(new BlockPos(x + locX, y + 1, z + locZ), ElementureModBlocks.SPARKLINGSTARS.get().defaultBlockState(), 3);

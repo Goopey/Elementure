@@ -22,8 +22,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class Modelmycena_shroom_villager_farmer<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(
-			new ResourceLocation("elementure", "modelmycena_shroom_villager_farmer"), "main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("elementure", "modelmycena_shroom_villager_farmer"), "main");
 	public final ModelPart LeftArmBone;
 	public final ModelPart RightArmBone;
 	public final ModelPart Body;
@@ -43,46 +42,30 @@ public class Modelmycena_shroom_villager_farmer<T extends Entity> extends Entity
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition LeftArmBone = partdefinition.addOrReplaceChild(
-				"LeftArmBone", CubeListBuilder.create().texOffs(58, 0).mirror()
-						.addBox(-0.5F, -0.75F, -1.0F, 1.0F, 9.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false),
+		PartDefinition LeftArmBone = partdefinition.addOrReplaceChild("LeftArmBone", CubeListBuilder.create().texOffs(58, 0).mirror().addBox(-0.5F, -0.75F, -1.0F, 1.0F, 9.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false),
 				PartPose.offsetAndRotation(1.75F, 5.5F, 0.0F, 0.0F, 0.0F, -0.0873F));
-		PartDefinition RightArmBone = partdefinition.addOrReplaceChild("RightArmBone",
-				CubeListBuilder.create().texOffs(58, 0).addBox(-0.5F, -0.75F, -1.0F, 1.0F, 9.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition RightArmBone = partdefinition.addOrReplaceChild("RightArmBone", CubeListBuilder.create().texOffs(58, 0).addBox(-0.5F, -0.75F, -1.0F, 1.0F, 9.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(-1.75F, 5.5F, 0.0F, 0.0F, 0.0F, 0.0873F));
 		PartDefinition Body = partdefinition.addOrReplaceChild("Body",
-				CubeListBuilder.create().texOffs(56, 48).addBox(-1.3F, -12.455F, -1.0F, 2.0F, 14.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(6, 0)
-						.addBox(-1.8F, -9.455F, -1.005F, 3.0F, 10.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(45, 60)
-						.addBox(-0.8F, -6.455F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(36, 62)
-						.addBox(-1.8F, -6.455F, -0.5F, 3.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-2.05F, -8.205F, -0.99F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-1.55F, -8.455F, -0.995F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(0.45F, -8.205F, -0.99F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-0.05F, -8.455F, -0.995F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)),
+				CubeListBuilder.create().texOffs(56, 48).addBox(-1.3F, -12.455F, -1.0F, 2.0F, 14.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(6, 0).addBox(-1.8F, -9.455F, -1.005F, 3.0F, 10.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(45, 60)
+						.addBox(-0.8F, -6.455F, -1.5F, 1.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(36, 62).addBox(-1.8F, -6.455F, -0.5F, 3.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
+						.addBox(-2.05F, -8.205F, -0.99F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-1.55F, -8.455F, -0.995F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
+						.addBox(0.45F, -8.205F, -0.99F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-0.05F, -8.455F, -0.995F, 1.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.3F, 12.455F, 0.0F));
-		PartDefinition rLegBone = partdefinition.addOrReplaceChild("rLegBone",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-0.49F, 0.0F, -0.99F, 1.0F, 11.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(-1.0F, 13.0F, 0.0F));
-		PartDefinition lLegBone = partdefinition.addOrReplaceChild("lLegBone",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-0.51F, 0.0F, -0.99F, 1.0F, 11.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(1.0F, 13.0F, 0.0F));
+		PartDefinition rLegBone = partdefinition.addOrReplaceChild("rLegBone", CubeListBuilder.create().texOffs(0, 0).addBox(-0.49F, 0.0F, -0.99F, 1.0F, 11.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-1.0F, 13.0F, 0.0F));
+		PartDefinition lLegBone = partdefinition.addOrReplaceChild("lLegBone", CubeListBuilder.create().texOffs(0, 0).addBox(-0.51F, 0.0F, -0.99F, 1.0F, 11.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 13.0F, 0.0F));
 		PartDefinition HeadBone = partdefinition.addOrReplaceChild("HeadBone",
-				CubeListBuilder.create().texOffs(0, 58).addBox(-2.5F, -25.0F, -2.5F, 5.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(0, 51)
-						.addBox(-3.0F, -25.4F, -3.0F, 6.0F, 1.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(17, 36)
-						.addBox(-1.0F, -26.19F, -2.99F, 2.0F, 1.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(24, 33)
-						.addBox(-3.01F, -26.19F, -1.0F, 6.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 45)
-						.addBox(-2.5F, -26.2F, -2.5F, 5.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(0, 40)
-						.addBox(-2.0F, -26.7F, -2.0F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(12, 30)
-						.addBox(-0.5F, -26.69F, -2.49F, 1.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(0, 34)
-						.addBox(-2.51F, -26.69F, -0.5F, 5.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 36)
+				CubeListBuilder.create().texOffs(0, 58).addBox(-2.5F, -25.0F, -2.5F, 5.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(0, 51).addBox(-3.0F, -25.4F, -3.0F, 6.0F, 1.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(17, 36)
+						.addBox(-1.0F, -26.19F, -2.99F, 2.0F, 1.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(24, 33).addBox(-3.01F, -26.19F, -1.0F, 6.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 45)
+						.addBox(-2.5F, -26.2F, -2.5F, 5.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(0, 40).addBox(-2.0F, -26.7F, -2.0F, 4.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(12, 30)
+						.addBox(-0.5F, -26.69F, -2.49F, 1.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(0, 34).addBox(-2.51F, -26.69F, -0.5F, 5.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(0, 36)
 						.addBox(-1.5F, -27.0F, -1.5F, 3.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		LeftArmBone.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		RightArmBone.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		Body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);

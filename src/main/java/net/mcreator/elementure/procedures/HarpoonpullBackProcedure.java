@@ -35,17 +35,14 @@ public class HarpoonpullBackProcedure {
 		double yaw2 = 0;
 		boolean fishBobber = false;
 		ItemStack harpoon = ItemStack.EMPTY;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("")) {
 			fishBobber = false;
 			{
 				final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream()
-						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+						.collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
-					if (entityiterator instanceof HarpoonbulletEntity
-							&& (entityiterator.getPersistentData().getString("playerName")).equals(entity.getDisplayName().getString())
-							&& entityiterator.getPersistentData().getBoolean("FISH")) {
+					if (entityiterator instanceof HarpoonbulletEntity && (entityiterator.getPersistentData().getString("playerName")).equals(entity.getDisplayName().getString()) && entityiterator.getPersistentData().getBoolean("FISH")) {
 						fishBobber = true;
 					}
 				}
@@ -53,8 +50,7 @@ public class HarpoonpullBackProcedure {
 			if (entity.getPersistentData().getBoolean("FISH")) {
 				if (Math.random() / 2 + itemstack.getOrCreateTag().getDouble("fishingPower") / 12 > 0.4) {
 					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements()
-								.getAdvancement(new ResourceLocation("elementure:elementure_fishingadvancement"));
+						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("elementure:elementure_fishingadvancement"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 						if (!_ap.isDone()) {
 							Iterator _iterator = _ap.getRemainingCriteria().iterator();
@@ -66,12 +62,9 @@ public class HarpoonpullBackProcedure {
 				} else {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.basalt.break")), SoundSource.NEUTRAL, 1, 1);
+							_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.basalt.break")), SoundSource.NEUTRAL, 1, 1);
 						} else {
-							_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.basalt.break")), SoundSource.NEUTRAL, 1, 1,
-									false);
+							_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.basalt.break")), SoundSource.NEUTRAL, 1, 1, false);
 						}
 					}
 					entity.getPersistentData().putBoolean("FISH", (false));
@@ -81,8 +74,7 @@ public class HarpoonpullBackProcedure {
 			} else if (fishBobber) {
 				if (Math.random() / 2 + itemstack.getOrCreateTag().getDouble("fishingPower") / 12 > 0.4) {
 					if (entity instanceof ServerPlayer _player) {
-						Advancement _adv = _player.server.getAdvancements()
-								.getAdvancement(new ResourceLocation("elementure:elementure_fishingadvancement"));
+						Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("elementure:elementure_fishingadvancement"));
 						AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);
 						if (!_ap.isDone()) {
 							Iterator _iterator = _ap.getRemainingCriteria().iterator();
@@ -94,12 +86,9 @@ public class HarpoonpullBackProcedure {
 				} else {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.basalt.break")), SoundSource.NEUTRAL, 1, 1);
+							_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.basalt.break")), SoundSource.NEUTRAL, 1, 1);
 						} else {
-							_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.basalt.break")), SoundSource.NEUTRAL, 1, 1,
-									false);
+							_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.basalt.break")), SoundSource.NEUTRAL, 1, 1, false);
 						}
 					}
 					entity.getPersistentData().putBoolean("FISH", (false));

@@ -45,9 +45,7 @@ public class PitlandsteleportProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity instanceof Player _playerHasItem
-				? _playerHasItem.getInventory().contains(new ItemStack(ElementureModItems.THEPITLANDS.get()))
-				: false) {
+		if (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(ElementureModItems.THEPITLANDS.get())) : false) {
 			{
 				Entity _ent = entity;
 				_ent.teleportTo(x, 255, z);
@@ -72,8 +70,7 @@ public class PitlandsteleportProcedure {
 			}
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(ElementureModItems.THEPITLANDS.get());
-				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-						_player.inventoryMenu.getCraftSlots());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 			{
 				String _setval = "pitlands1";

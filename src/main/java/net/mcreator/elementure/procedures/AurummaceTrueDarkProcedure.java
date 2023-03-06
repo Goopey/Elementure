@@ -14,8 +14,7 @@ public class AurummaceTrueDarkProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.AURUMMACE.get()) {
 			entity.getPersistentData().putBoolean("darkACTIVE", (true));
 			AurumheldParticlesProcedure.execute(world, entity);
-		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.AURUMMACE
-				.get()) {
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.AURUMMACE.get()) {
 			AurumheldParticlesProcedure.execute(world, entity);
 		}
 	}

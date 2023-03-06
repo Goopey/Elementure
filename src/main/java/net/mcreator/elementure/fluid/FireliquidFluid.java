@@ -14,10 +14,8 @@ import net.mcreator.elementure.init.ElementureModFluidTypes;
 import net.mcreator.elementure.init.ElementureModBlocks;
 
 public abstract class FireliquidFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(
-			() -> ElementureModFluidTypes.FIRELIQUID_TYPE.get(), () -> ElementureModFluids.FIRELIQUID.get(),
-			() -> ElementureModFluids.FLOWING_FIRELIQUID.get()).explosionResistance(100f).bucket(() -> ElementureModItems.FIRELIQUID_BUCKET.get())
-			.block(() -> (LiquidBlock) ElementureModBlocks.FIRELIQUID.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ElementureModFluidTypes.FIRELIQUID_TYPE.get(), () -> ElementureModFluids.FIRELIQUID.get(), () -> ElementureModFluids.FLOWING_FIRELIQUID.get())
+			.explosionResistance(100f).bucket(() -> ElementureModItems.FIRELIQUID_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.FIRELIQUID.get());
 
 	private FireliquidFluid() {
 		super(PROPERTIES);

@@ -46,46 +46,27 @@ public class Modelbutterfly_bud<T extends Entity> extends EntityModel<T> {
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition body = partdefinition.addOrReplaceChild("body", CubeListBuilder.create(), PartPose.offset(0.0F, 4.0F, 0.0F));
 		PartDefinition wingright1bone = body.addOrReplaceChild("wingright1bone", CubeListBuilder.create(), PartPose.offset(-2.5F, -0.25F, -2.5F));
-		PartDefinition wingright1 = wingright1bone.addOrReplaceChild("wingright1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-14.0F, 0.0F, -3.5F, 14.0F, 0.0F, 7.0F, new CubeDeformation(0.0F)),
+		PartDefinition wingright1 = wingright1bone.addOrReplaceChild("wingright1", CubeListBuilder.create().texOffs(0, 0).addBox(-14.0F, 0.0F, -3.5F, 14.0F, 0.0F, 7.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0873F, 0.0F, 0.0F));
 		PartDefinition wingright2bone = body.addOrReplaceChild("wingright2bone", CubeListBuilder.create(), PartPose.offset(-2.5F, 0.25F, -1.0F));
-		PartDefinition wingright2 = wingright2bone.addOrReplaceChild("wingright2",
-				CubeListBuilder.create().texOffs(0, 8).addBox(-8.0F, 0.0F, -1.0F, 8.0F, 0.0F, 6.0F, new CubeDeformation(0.0F)),
+		PartDefinition wingright2 = wingright2bone.addOrReplaceChild("wingright2", CubeListBuilder.create().texOffs(0, 8).addBox(-8.0F, 0.0F, -1.0F, 8.0F, 0.0F, 6.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.0436F, 0.0F, 0.0F));
 		PartDefinition wingleft1bone = body.addOrReplaceChild("wingleft1bone", CubeListBuilder.create(), PartPose.offset(2.5F, -0.25F, -2.5F));
-		PartDefinition wingleft1 = wingleft1bone
-				.addOrReplaceChild(
-						"wingleft1", CubeListBuilder.create().texOffs(0, 0).mirror()
-								.addBox(0.0F, -1.0F, -3.5F, 14.0F, 0.0F, 7.0F, new CubeDeformation(0.0F)).mirror(false),
-						PartPose.offsetAndRotation(0.0F, 1.0F, 0.0F, 0.0873F, 0.0F, 0.0F));
+		PartDefinition wingleft1 = wingleft1bone.addOrReplaceChild("wingleft1", CubeListBuilder.create().texOffs(0, 0).mirror().addBox(0.0F, -1.0F, -3.5F, 14.0F, 0.0F, 7.0F, new CubeDeformation(0.0F)).mirror(false),
+				PartPose.offsetAndRotation(0.0F, 1.0F, 0.0F, 0.0873F, 0.0F, 0.0F));
 		PartDefinition wingleft2bone = body.addOrReplaceChild("wingleft2bone", CubeListBuilder.create(), PartPose.offset(2.5F, 0.25F, -1.0F));
-		PartDefinition wingleft2 = wingleft2bone.addOrReplaceChild("wingleft2",
-				CubeListBuilder.create().texOffs(0, 8).mirror().addBox(0.0F, 0.0F, -1.0F, 8.0F, 0.0F, 6.0F, new CubeDeformation(0.0F)).mirror(false),
+		PartDefinition wingleft2 = wingleft2bone.addOrReplaceChild("wingleft2", CubeListBuilder.create().texOffs(0, 8).mirror().addBox(0.0F, 0.0F, -1.0F, 8.0F, 0.0F, 6.0F, new CubeDeformation(0.0F)).mirror(false),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.0436F, 0.0F, 0.0F));
-		PartDefinition body1 = body.addOrReplaceChild("body1",
-				CubeListBuilder.create().texOffs(46, 11).addBox(-2.0F, -2.0F, -1.0F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(20, 60)
-						.addBox(1.5F, 1.0F, 2.0F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(20, 60).addBox(-2.5F, 1.0F, 2.0F, 1.0F, 2.0F,
-								1.0F, new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.0436F, 0.0F, 0.0F));
-		PartDefinition body3 = body1.addOrReplaceChild("body3",
-				CubeListBuilder.create().texOffs(52, 23).addBox(-1.5F, -1.5F, 0.5F, 3.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(0.0F, 0.0F, 3.0F, -0.1309F, 0.0F, 0.0F));
-		PartDefinition body2 = body.addOrReplaceChild("body2",
-				CubeListBuilder.create().texOffs(44, 0).addBox(-2.5F, -2.65F, -2.65F, 5.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(20, 60)
-						.addBox(2.0F, 1.25F, -0.25F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(20, 60).addBox(-3.0F, 1.25F, -0.25F, 1.0F,
-								2.0F, 1.0F, new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(0.0F, 0.0F, -2.0F, 0.0436F, 0.0F, 0.0F));
-		PartDefinition head = body2.addOrReplaceChild("head",
-				CubeListBuilder.create().texOffs(54, 53).addBox(-1.5F, -1.5F, -1.5F, 3.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(43, 61)
-						.addBox(-0.5F, 0.5F, -0.9F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(52, 53).addBox(0.0F, 0.5F, -2.9F, 0.0F, 5.0F,
-								6.0F, new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(0.0F, 0.0F, -2.65F, 0.0873F, 0.0F, 0.0F));
-		PartDefinition antennae1 = head.addOrReplaceChild("antennae1",
-				CubeListBuilder.create().texOffs(35, 58).addBox(-0.25F, -2.42F, -2.85F, 0.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)),
+		PartDefinition body1 = body.addOrReplaceChild("body1", CubeListBuilder.create().texOffs(46, 11).addBox(-2.0F, -2.0F, -1.0F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(20, 60)
+				.addBox(1.5F, 1.0F, 2.0F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(20, 60).addBox(-2.5F, 1.0F, 2.0F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.0436F, 0.0F, 0.0F));
+		PartDefinition body3 = body1.addOrReplaceChild("body3", CubeListBuilder.create().texOffs(52, 23).addBox(-1.5F, -1.5F, 0.5F, 3.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 3.0F, -0.1309F, 0.0F, 0.0F));
+		PartDefinition body2 = body.addOrReplaceChild("body2", CubeListBuilder.create().texOffs(44, 0).addBox(-2.5F, -2.65F, -2.65F, 5.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(20, 60)
+				.addBox(2.0F, 1.25F, -0.25F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(20, 60).addBox(-3.0F, 1.25F, -0.25F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, -2.0F, 0.0436F, 0.0F, 0.0F));
+		PartDefinition head = body2.addOrReplaceChild("head", CubeListBuilder.create().texOffs(54, 53).addBox(-1.5F, -1.5F, -1.5F, 3.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(43, 61)
+				.addBox(-0.5F, 0.5F, -0.9F, 1.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(52, 53).addBox(0.0F, 0.5F, -2.9F, 0.0F, 5.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, -2.65F, 0.0873F, 0.0F, 0.0F));
+		PartDefinition antennae1 = head.addOrReplaceChild("antennae1", CubeListBuilder.create().texOffs(35, 58).addBox(-0.25F, -2.42F, -2.85F, 0.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(1.25F, -1.25F, -1.5F, 0.5236F, -0.48F, 0.1309F));
-		PartDefinition antennae2 = head.addOrReplaceChild("antennae2",
-				CubeListBuilder.create().texOffs(26, 58).addBox(0.25F, -2.42F, -2.85F, 0.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)),
+		PartDefinition antennae2 = head.addOrReplaceChild("antennae2", CubeListBuilder.create().texOffs(26, 58).addBox(0.25F, -2.42F, -2.85F, 0.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(-1.25F, -1.25F, -1.5F, 0.5236F, 0.48F, -0.1309F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
@@ -103,8 +84,7 @@ public class Modelbutterfly_bud<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

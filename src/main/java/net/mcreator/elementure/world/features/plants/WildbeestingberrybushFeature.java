@@ -33,10 +33,8 @@ public class WildbeestingberrybushFeature extends RandomPatchFeature {
 	public static Feature<?> feature() {
 		FEATURE = new WildbeestingberrybushFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("elementure:wildbeestingberrybush", FEATURE,
-				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
-						new SimpleBlockConfiguration(BlockStateProvider.simple(ElementureModBlocks.WILDBEESTINGBERRYBUSH.get())), List.of(), 64));
-		PLACED_FEATURE = PlacementUtils.register("elementure:wildbeestingberrybush", CONFIGURED_FEATURE, List.of(CountPlacement.of(1),
-				RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ElementureModBlocks.WILDBEESTINGBERRYBUSH.get())), List.of(), 64));
+		PLACED_FEATURE = PlacementUtils.register("elementure:wildbeestingberrybush", CONFIGURED_FEATURE, List.of(CountPlacement.of(1), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 		return FEATURE;
 	}
 

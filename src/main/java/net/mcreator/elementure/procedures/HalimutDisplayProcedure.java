@@ -9,8 +9,7 @@ public class HalimutDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isFishChosen = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("halimut")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("halimut")) {
 			isFishChosen = true;
 		} else {
 			isFishChosen = false;

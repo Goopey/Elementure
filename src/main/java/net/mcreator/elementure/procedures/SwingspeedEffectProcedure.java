@@ -15,7 +15,7 @@ public class SwingspeedEffectProcedure {
 			sum = sum + Math.sqrt(potionLevel - counter);
 			counter = counter + 1;
 		}
-		((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_SPEED).setBaseValue(
-				(((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_SPEED).getValue() + sum * 0.33));
+		((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_SPEED)
+				.setBaseValue((((LivingEntity) entity).getAttribute(net.minecraft.world.entity.ai.attributes.Attributes.ATTACK_SPEED).getValue() + sum * 0.33));
 	}
 }

@@ -25,10 +25,8 @@ public class MycenadepthssecretroomProcedure {
 		CoordsZ = -6;
 		for (int index0 = 0; index0 < (int) (1521); index0++) {
 			if (CoordsX * CoordsX + CoordsZ * CoordsZ + 2.5 * CoordsY * CoordsY <= 36 && y + CoordsY > 0) {
-				if (CoordsX * CoordsX + CoordsZ * CoordsZ + 2.5 * CoordsY * CoordsY >= 35 && CoordsY < -2
-						&& world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ)).canOcclude() && Math.random() < 0.5) {
-					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-							ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
+				if (CoordsX * CoordsX + CoordsZ * CoordsZ + 2.5 * CoordsY * CoordsY >= 35 && CoordsY < -2 && world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ)).canOcclude() && Math.random() < 0.5) {
+					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
 					if (!world.isClientSide()) {
 						BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -38,10 +36,8 @@ public class MycenadepthssecretroomProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-				} else if (CoordsX * CoordsX + CoordsZ * CoordsZ + 2.5 * CoordsY * CoordsY >= 35 && CoordsY > 2 && Math.random() < 0.5
-						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR)) {
-					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-							ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
+				} else if (CoordsX * CoordsX + CoordsZ * CoordsZ + 2.5 * CoordsY * CoordsY >= 35 && CoordsY > 2 && Math.random() < 0.5 && !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR)) {
+					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
 					if (!world.isClientSide()) {
 						BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -73,15 +69,10 @@ public class MycenadepthssecretroomProcedure {
 		}
 		world.setBlock(new BlockPos(x, y - 3, z), Blocks.CHEST.defaultBlockState(), 3);
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 3), z), Vec2.ZERO, _level, 4, "", Component.literal(""),
-									_level.getServer(), null).withSuppressedOutput(),
-							"data merge block ~ ~ ~ {LootTable:\"elementure:mycenanlootchest\"}");
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 3), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"data merge block ~ ~ ~ {LootTable:\"elementure:mycenanlootchest\"}");
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"kill @e[type=minecraft:item, distance=0.1..24]");
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"kill @e[type=minecraft:item, distance=0.1..24]");
 	}
 }

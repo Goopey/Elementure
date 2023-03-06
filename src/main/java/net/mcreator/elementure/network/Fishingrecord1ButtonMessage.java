@@ -125,7 +125,6 @@ public class Fishingrecord1ButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(Fishingrecord1ButtonMessage.class, Fishingrecord1ButtonMessage::buffer, Fishingrecord1ButtonMessage::new,
-				Fishingrecord1ButtonMessage::handler);
+		ElementureMod.addNetworkMessage(Fishingrecord1ButtonMessage.class, Fishingrecord1ButtonMessage::buffer, Fishingrecord1ButtonMessage::new, Fishingrecord1ButtonMessage::handler);
 	}
 }

@@ -24,8 +24,7 @@ public class SpiderqueenAttackMasterProcedure {
 				_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, (entity.getX()), (entity.getY()), (entity.getZ()), 1, 0.8, 0.2, 0.8, 0);
 		}
 		if (world.dayTime() % 15 == 0) {
-			if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)
-					&& (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).isAlive()) {
+			if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null) && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).isAlive()) {
 				if (entity.getPersistentData().getDouble("attackCooldown") == 0) {
 					((SpiderQueenEntity) entity).setRolling(false);
 					entity.getPersistentData().putBoolean("balling", (false));
@@ -36,11 +35,9 @@ public class SpiderqueenAttackMasterProcedure {
 							for (int index0 = 0; index0 < (int) (1 + Math.round(Math.random())); index0++) {
 								if (world instanceof ServerLevel _level) {
 									Entity entityToSpawn = new ArachneelEntity(ElementureModEntities.ARACHNEEL.get(), _level);
-									entityToSpawn.moveTo((entity.getX() + Math.random() * 6 - 3), (entity.getY() + 0.2),
-											(entity.getZ() + Math.random() * 6 - 3), world.getRandom().nextFloat() * 360F, 0);
+									entityToSpawn.moveTo((entity.getX() + Math.random() * 6 - 3), (entity.getY() + 0.2), (entity.getZ() + Math.random() * 6 - 3), world.getRandom().nextFloat() * 360F, 0);
 									if (entityToSpawn instanceof Mob _mobToSpawn)
-										_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()),
-												MobSpawnType.MOB_SUMMONED, null, null);
+										_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 									world.addFreshEntity(entityToSpawn);
 								}
 							}
@@ -48,11 +45,9 @@ public class SpiderqueenAttackMasterProcedure {
 							for (int index1 = 0; index1 < (int) (1 + Math.round(Math.random() * 2)); index1++) {
 								if (world instanceof ServerLevel _level) {
 									Entity entityToSpawn = new HeadHostEntity(ElementureModEntities.HEAD_HOST.get(), _level);
-									entityToSpawn.moveTo((entity.getX() + Math.random() * 6 - 3), (entity.getY() + 0.2),
-											(entity.getZ() + Math.random() * 6 - 3), world.getRandom().nextFloat() * 360F, 0);
+									entityToSpawn.moveTo((entity.getX() + Math.random() * 6 - 3), (entity.getY() + 0.2), (entity.getZ() + Math.random() * 6 - 3), world.getRandom().nextFloat() * 360F, 0);
 									if (entityToSpawn instanceof Mob _mobToSpawn)
-										_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()),
-												MobSpawnType.MOB_SUMMONED, null, null);
+										_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 									world.addFreshEntity(entityToSpawn);
 								}
 							}

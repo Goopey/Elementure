@@ -12,7 +12,6 @@ public class KassemstaffParticlesProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.TELEPORTPARTICLE.get()), (entity.getX()), (entity.getY()),
-					(entity.getZ()), 20, 0.125, 0.125, 0.125, 0.001);
+			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.TELEPORTPARTICLE.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 20, 0.125, 0.125, 0.125, 0.001);
 	}
 }

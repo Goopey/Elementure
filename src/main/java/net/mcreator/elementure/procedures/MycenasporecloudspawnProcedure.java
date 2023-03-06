@@ -19,8 +19,7 @@ public class MycenasporecloudspawnProcedure {
 		double CoordsX = 0;
 		double CoordsZ = 0;
 		double maxChecks = 0;
-		if (Math.random() < 0.016666666
-				&& !(!world.getEntitiesOfClass(MycenatrufflingEntity.class, AABB.ofSize(new Vec3(x, y, z), 32, 32, 32), e -> true).isEmpty())
+		if (Math.random() < 0.016666666 && !(!world.getEntitiesOfClass(MycenatrufflingEntity.class, AABB.ofSize(new Vec3(x, y, z), 32, 32, 32), e -> true).isEmpty())
 				&& !(!world.getEntitiesOfClass(MycenatruffloonEntity.class, AABB.ofSize(new Vec3(x, y, z), 32, 32, 32), e -> true).isEmpty())) {
 			CoordsX = Math.random() * 6 - 3;
 			CoordsY = Math.random() * 6 - 3;
@@ -33,8 +32,7 @@ public class MycenasporecloudspawnProcedure {
 							Entity entityToSpawn = new MycenatrufflingEntity(ElementureModEntities.MYCENATRUFFLING.get(), _level);
 							entityToSpawn.moveTo((x + CoordsX), (y + CoordsY), (z + CoordsZ), world.getRandom().nextFloat() * 360F, 0);
 							if (entityToSpawn instanceof Mob _mobToSpawn)
-								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()),
-										MobSpawnType.MOB_SUMMONED, null, null);
+								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 							world.addFreshEntity(entityToSpawn);
 						}
 					} else {
@@ -42,8 +40,7 @@ public class MycenasporecloudspawnProcedure {
 							Entity entityToSpawn = new MycenatruffloonEntity(ElementureModEntities.MYCENATRUFFLOON.get(), _level);
 							entityToSpawn.moveTo((x + CoordsX), (y + CoordsY), (z + CoordsZ), world.getRandom().nextFloat() * 360F, 0);
 							if (entityToSpawn instanceof Mob _mobToSpawn)
-								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()),
-										MobSpawnType.MOB_SUMMONED, null, null);
+								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 							world.addFreshEntity(entityToSpawn);
 						}
 					}

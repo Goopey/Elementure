@@ -16,8 +16,7 @@ public class CandleknightDropsProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof Level _level && !_level.isClientSide()) {
-			ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-					new ItemStack(ElementureModItems.CANDLESTICK.get()));
+			ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.CANDLESTICK.get()));
 			entityToSpawn.setPickUpDelay(10);
 			_level.addFreshEntity(entityToSpawn);
 		}
@@ -36,8 +35,7 @@ public class CandleknightDropsProcedure {
 			}
 		}
 		if (world instanceof Level _level && !_level.isClientSide()) {
-			ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-					new ItemStack(ElementureModItems.ORANGEBARRIERKEY.get()));
+			ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.ORANGEBARRIERKEY.get()));
 			entityToSpawn.setPickUpDelay(10);
 			_level.addFreshEntity(entityToSpawn);
 		}

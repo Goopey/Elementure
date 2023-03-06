@@ -15,8 +15,7 @@ import java.util.Collections;
 
 public class BoardingschoolPinkWallStairsBlock extends StairBlock {
 	public BoardingschoolPinkWallStairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(-1, 3600000).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(-1, 3600000).dynamicShape());
 	}
 
 	@Override

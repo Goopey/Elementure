@@ -10,7 +10,7 @@ import net.mcreator.elementure.client.model.Modelcoal_puck;
 
 public class CoalpuckfamiliarRenderer extends MobRenderer<CoalpuckfamiliarEntity, Modelcoal_puck<CoalpuckfamiliarEntity>> {
 	public CoalpuckfamiliarRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelcoal_puck(context.bakeLayer(Modelcoal_puck.LAYER_LOCATION)), 0.3f);
+		super(context, new Modelcoal_puck(context.bakeLayer(Modelcoal_puck.LAYER_LOCATION)), 0.30000000000000004f);
 	}
 
 	@Override

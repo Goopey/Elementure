@@ -10,8 +10,7 @@ public class CurserswordTrueMindProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.CURSERSWORD
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.CURSERSWORD.get()) {
 			entity.getPersistentData().putBoolean("mindACTIVE", (true));
 		}
 	}

@@ -21,11 +21,8 @@ public class MycenafumoonsporeExplodeProcedure {
 			MycenashroomcloudProcedure.execute(world, (x + 0.5), (y + 0.5), (z + 0.5));
 		}
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""),
-									_level.getServer(), null).withSuppressedOutput(),
-							"/effect give @e[distance=0.1..4] elementure:mycenanspores 6 0");
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"/effect give @e[distance=0.1..4] elementure:mycenanspores 6 0");
 		if (world instanceof Level _level && !_level.isClientSide())
 			_level.explode(null, (x + 0.5), (y + 0.5), (z + 0.5), (float) 0.5, Explosion.BlockInteraction.NONE);
 	}

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "block",
   "definition": {
     "texture": "memory_heart_texture",
@@ -101,13 +101,7 @@
     "luminance": 6,
     "unbreakable": false,
     "breakHarvestLevel": 2,
-    "spawnParticles": true,
-    "particleToSpawn": {
-      "value": "NAUTILUS"
-    },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.30000000149011613,
-    "particleAmount": 1,
+    "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

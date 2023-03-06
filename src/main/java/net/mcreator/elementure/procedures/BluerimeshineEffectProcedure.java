@@ -38,9 +38,7 @@ public class BluerimeshineEffectProcedure {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 4, 3));
 			if (world instanceof Level _level && !_level.isClientSide())
-				_level.explode(null, (entity.getX()), (entity.getY()), (entity.getZ()),
-						(float) ((itemstack.getOrCreateTag().getDouble("duration") / 600) * itemstack.getOrCreateTag().getDouble("potency")),
-						Explosion.BlockInteraction.NONE);
+				_level.explode(null, (entity.getX()), (entity.getY()), (entity.getZ()), (float) ((itemstack.getOrCreateTag().getDouble("duration") / 600) * itemstack.getOrCreateTag().getDouble("potency")), Explosion.BlockInteraction.NONE);
 		}
 	}
 }

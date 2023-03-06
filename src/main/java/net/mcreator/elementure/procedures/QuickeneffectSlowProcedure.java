@@ -10,13 +10,10 @@ public class QuickeneffectSlowProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, (int) entity.getPersistentData().getDouble("quickeneffecttimer"), 0,
-					(false), (false)));
+			_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, (int) entity.getPersistentData().getDouble("quickeneffecttimer"), 0, (false), (false)));
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, (int) entity.getPersistentData().getDouble("quickeneffecttimer"), 0,
-					(false), (false)));
+			_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, (int) entity.getPersistentData().getDouble("quickeneffecttimer"), 0, (false), (false)));
 		if (entity instanceof LivingEntity _entity)
-			_entity.addEffect(
-					new MobEffectInstance(MobEffects.GLOWING, (int) entity.getPersistentData().getDouble("quickeneffecttimer"), 0, (false), (false)));
+			_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, (int) entity.getPersistentData().getDouble("quickeneffecttimer"), 0, (false), (false)));
 	}
 }

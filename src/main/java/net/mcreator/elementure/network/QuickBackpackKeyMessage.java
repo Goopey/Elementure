@@ -58,7 +58,6 @@ public class QuickBackpackKeyMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(QuickBackpackKeyMessage.class, QuickBackpackKeyMessage::buffer, QuickBackpackKeyMessage::new,
-				QuickBackpackKeyMessage::handler);
+		ElementureMod.addNetworkMessage(QuickBackpackKeyMessage.class, QuickBackpackKeyMessage::buffer, QuickBackpackKeyMessage::new, QuickBackpackKeyMessage::handler);
 	}
 }

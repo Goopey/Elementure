@@ -17,8 +17,7 @@ import java.util.List;
 
 public class RedstonefishItem extends Item {
 	public RedstonefishItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.RARE)
-				.food((new FoodProperties.Builder()).nutrition(5).saturationMod(0.3f).alwaysEat().meat().build()));
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(5).saturationMod(0.3f).alwaysEat().meat().build()));
 	}
 
 	@Override

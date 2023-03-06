@@ -12,16 +12,14 @@ public class GreenjackEatenRawProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).earth_essence + 20;
+			double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).earth_essence + 20;
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.earth_essence = _setval;
 				capability.syncPlayerVariables(entity);
 			});
 		}
 		{
-			double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).light_essence + 20;
+			double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).light_essence + 20;
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.light_essence = _setval;
 				capability.syncPlayerVariables(entity);

@@ -70,7 +70,6 @@ public class GlassbellboatGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(GlassbellboatGUIButtonMessage.class, GlassbellboatGUIButtonMessage::buffer,
-				GlassbellboatGUIButtonMessage::new, GlassbellboatGUIButtonMessage::handler);
+		ElementureMod.addNetworkMessage(GlassbellboatGUIButtonMessage.class, GlassbellboatGUIButtonMessage::buffer, GlassbellboatGUIButtonMessage::new, GlassbellboatGUIButtonMessage::handler);
 	}
 }

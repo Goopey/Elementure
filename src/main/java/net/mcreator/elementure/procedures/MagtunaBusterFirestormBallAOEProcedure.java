@@ -31,23 +31,18 @@ public class MagtunaBusterFirestormBallAOEProcedure {
 			for (int index0 = 0; index0 < (int) (repeatTimes); index0++) {
 				if (locX * locX + locZ * locZ < rad2) {
 					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.FLAME, (entity.getX() + locX), (entity.getY()), (entity.getZ() + locZ), 4, 0.2, 0.2, 0.2,
-								0.01);
+						_level.sendParticles(ParticleTypes.FLAME, (entity.getX() + locX), (entity.getY()), (entity.getZ() + locZ), 4, 0.2, 0.2, 0.2, 0.01);
 					if (Math.random() < 0.3) {
 						if (world instanceof ServerLevel _level)
-							_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, (entity.getX() + locX), (entity.getY()), (entity.getZ() + locZ),
-									1, 0.15, 0.15, 0.15, 0.01);
+							_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, (entity.getX() + locX), (entity.getY()), (entity.getZ() + locZ), 1, 0.15, 0.15, 0.15, 0.01);
 					}
 					{
 						final Vec3 _center = new Vec3((entity.getX() + locX), (entity.getY()), (entity.getZ() + locZ));
-						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true)
-								.stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+								.collect(Collectors.toList());
 						for (Entity entityiterator : _entfound) {
-							if (!(entityiterator == entity)
-									&& !entityiterator.getType()
-											.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
-									&& !entityiterator.getType()
-											.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
+							if (!(entityiterator == entity) && !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
+									&& !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
 								entityiterator.setSecondsOnFire(8);
 								if (Math.random() < 0.7) {
 									entityiterator.hurt(DamageSource.IN_FIRE, 3);

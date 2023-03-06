@@ -37,8 +37,7 @@ public class ArmageddonItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal(
-				"IMPORTANT : This item better be used in the overworld or the result might not be favorable... If you wish to obtain the Abyss Heart, do so at your own peril..."));
+		list.add(Component.literal("IMPORTANT : This item better be used in the overworld or the result might not be favorable... If you wish to obtain the Abyss Heart, do so at your own peril..."));
 		list.add(Component.literal("Using this item might cause some damage..."));
 		list.add(Component.literal("Proceed anyway?"));
 	}
@@ -46,8 +45,7 @@ public class ArmageddonItem extends Item {
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		ArmageddonRightClickedOnBlockProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getZ(),
-				context.getPlayer());
+		ArmageddonRightClickedOnBlockProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getZ(), context.getPlayer());
 		return InteractionResult.SUCCESS;
 	}
 }

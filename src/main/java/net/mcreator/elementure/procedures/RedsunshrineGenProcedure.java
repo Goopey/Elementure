@@ -14,9 +14,7 @@ public class RedsunshrineGenProcedure {
 		if (world instanceof ServerLevel _serverworld) {
 			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "redsun_shrine"));
 			if (template != null) {
-				template.placeInWorld(_serverworld, new BlockPos(x, 192, z), new BlockPos(x, 192, z),
-						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
-						3);
+				template.placeInWorld(_serverworld, new BlockPos(x, 192, z), new BlockPos(x, 192, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 			}
 		}
 	}

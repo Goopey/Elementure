@@ -26,31 +26,25 @@ public class BabystarGen1Procedure {
 				if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 10) {
 					if (y + CoordsY > 0) {
 						if (Math.random() < 0.01) {
-							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-									ElementureModBlocks.BLAZINGNETHERUMSHINY.get().defaultBlockState(), 3);
+							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.BLAZINGNETHERUMSHINY.get().defaultBlockState(), 3);
 						} else {
-							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-									ElementureModBlocks.BLAZINGNETHERUM.get().defaultBlockState(), 3);
+							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.BLAZINGNETHERUM.get().defaultBlockState(), 3);
 						}
 					}
 				} else if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 22) {
 					if (y + CoordsY > 0) {
 						if (Math.random() < 0.01) {
-							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-									ElementureModBlocks.DENSENETHERUMSHINY.get().defaultBlockState(), 3);
+							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.DENSENETHERUMSHINY.get().defaultBlockState(), 3);
 						} else {
-							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-									ElementureModBlocks.DENSENETHERUM.get().defaultBlockState(), 3);
+							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.DENSENETHERUM.get().defaultBlockState(), 3);
 						}
 					}
 				} else {
 					if (y + CoordsY > 0) {
 						if (Math.random() < 0.01) {
-							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-									ElementureModBlocks.NETHERUMSHINY.get().defaultBlockState(), 3);
+							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERUMSHINY.get().defaultBlockState(), 3);
 						} else {
-							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-									ElementureModBlocks.NETHERUM.get().defaultBlockState(), 3);
+							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERUM.get().defaultBlockState(), 3);
 						}
 					}
 				}
@@ -106,43 +100,34 @@ public class BabystarGen1Procedure {
 			} else {
 				if (Math.random() < 0.25) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "netherite_crystal"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "netherite_crystal"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x - 1, CoordY, z - 1), new BlockPos(x - 1, CoordY, z - 1),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x - 1, CoordY, z - 1), new BlockPos(x - 1, CoordY, z - 1), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}
 				} else if (Math.random() < 0.5) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "netherite_crystal"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "netherite_crystal"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x - 1, CoordY, z - 1), new BlockPos(x - 1, CoordY, z - 1),
-									new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x - 1, CoordY, z - 1), new BlockPos(x - 1, CoordY, z - 1), new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}
 				} else if (Math.random() < 0.75) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "netherite_crystal"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "netherite_crystal"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x - 1, CoordY, z - 1), new BlockPos(x - 1, CoordY, z - 1),
-									new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_180).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x - 1, CoordY, z - 1), new BlockPos(x - 1, CoordY, z - 1), new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_180).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}
 				} else {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "netherite_crystal"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "netherite_crystal"));
 						if (template != null) {
-							template.placeInWorld(
-									_serverworld, new BlockPos(x - 1, CoordY, z - 1), new BlockPos(x - 1, CoordY, z - 1), new StructurePlaceSettings()
-											.setRotation(Rotation.COUNTERCLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
-									_serverworld.random, 3);
+							template.placeInWorld(_serverworld, new BlockPos(x - 1, CoordY, z - 1), new BlockPos(x - 1, CoordY, z - 1),
+									new StructurePlaceSettings().setRotation(Rotation.COUNTERCLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 						}
 					}
 				}

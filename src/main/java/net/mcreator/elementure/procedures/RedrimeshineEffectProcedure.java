@@ -33,11 +33,9 @@ public class RedrimeshineEffectProcedure {
 			return;
 		if (itemstack.getItem() == ElementureModItems.RAREREDRIMESHINE.get() || itemstack.getItem() == ElementureModItems.REDRIMESHINE.get()) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.POISON, (int) itemstack.getOrCreateTag().getDouble("duration"),
-						(int) Math.floor(itemstack.getOrCreateTag().getDouble("potency") / 2)));
+				_entity.addEffect(new MobEffectInstance(MobEffects.POISON, (int) itemstack.getOrCreateTag().getDouble("duration"), (int) Math.floor(itemstack.getOrCreateTag().getDouble("potency") / 2)));
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, (int) itemstack.getOrCreateTag().getDouble("duration"),
-						(int) itemstack.getOrCreateTag().getDouble("potency")));
+				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, (int) itemstack.getOrCreateTag().getDouble("duration"), (int) itemstack.getOrCreateTag().getDouble("potency")));
 		}
 	}
 }

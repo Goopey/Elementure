@@ -46,36 +46,19 @@ public class ModelnightmareMass<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition leg_1 = partdefinition.addOrReplaceChild("leg_1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -1.0F, -1.0F, 2.0F, 7.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(-5.0F, 18.0F, 0.0F));
-		PartDefinition leg_2 = partdefinition.addOrReplaceChild("leg_2",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -1.0F, -1.0F, 2.0F, 7.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(5.0F, 18.0F, -2.0F));
-		PartDefinition leg_3 = partdefinition.addOrReplaceChild("leg_3",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -3.0F, -1.0F, 2.0F, 9.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(5.0F, 18.0F, 3.0F));
-		PartDefinition leg_4 = partdefinition.addOrReplaceChild("leg_4",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-0.99F, -1.0F, -0.99F, 2.0F, 7.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(1.0F, 18.0F, 4.0F));
-		PartDefinition leg_5 = partdefinition.addOrReplaceChild("leg_5",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-0.99F, -2.0F, -0.99F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(-2.0F, 18.0F, 3.0F));
-		PartDefinition leg_6 = partdefinition.addOrReplaceChild("leg_6",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-0.99F, -2.0F, -0.99F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(-3.0F, 18.0F, -4.0F));
-		PartDefinition leg_7 = partdefinition.addOrReplaceChild("leg_7",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-0.99F, -3.0F, -0.99F, 2.0F, 9.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 18.0F, -5.0F));
-		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, -13.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(1.0F)),
-				PartPose.offset(0.0F, 24.0F, 0.0F));
+		PartDefinition leg_1 = partdefinition.addOrReplaceChild("leg_1", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -1.0F, -1.0F, 2.0F, 7.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-5.0F, 18.0F, 0.0F));
+		PartDefinition leg_2 = partdefinition.addOrReplaceChild("leg_2", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -1.0F, -1.0F, 2.0F, 7.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(5.0F, 18.0F, -2.0F));
+		PartDefinition leg_3 = partdefinition.addOrReplaceChild("leg_3", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -3.0F, -1.0F, 2.0F, 9.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(5.0F, 18.0F, 3.0F));
+		PartDefinition leg_4 = partdefinition.addOrReplaceChild("leg_4", CubeListBuilder.create().texOffs(0, 0).addBox(-0.99F, -1.0F, -0.99F, 2.0F, 7.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 18.0F, 4.0F));
+		PartDefinition leg_5 = partdefinition.addOrReplaceChild("leg_5", CubeListBuilder.create().texOffs(0, 0).addBox(-0.99F, -2.0F, -0.99F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-2.0F, 18.0F, 3.0F));
+		PartDefinition leg_6 = partdefinition.addOrReplaceChild("leg_6", CubeListBuilder.create().texOffs(0, 0).addBox(-0.99F, -2.0F, -0.99F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-3.0F, 18.0F, -4.0F));
+		PartDefinition leg_7 = partdefinition.addOrReplaceChild("leg_7", CubeListBuilder.create().texOffs(0, 0).addBox(-0.99F, -3.0F, -0.99F, 2.0F, 9.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 18.0F, -5.0F));
+		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main", CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, -13.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(1.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 32, 16);
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		leg_1.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		leg_2.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		leg_3.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);

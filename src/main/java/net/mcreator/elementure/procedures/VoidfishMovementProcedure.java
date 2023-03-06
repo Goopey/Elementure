@@ -27,12 +27,9 @@ public class VoidfishMovementProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("supremeTrahira")) {
-			if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).fishingWait <= 0) {
-				if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).firstfishlaunch) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("supremeTrahira")) {
+			if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fishingWait <= 0) {
+				if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).firstfishlaunch) {
 					{
 						double _setval = 3 * Math.random();
 						entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -72,34 +69,26 @@ public class VoidfishMovementProcedure {
 				}
 			} else {
 				{
-					double _setval = ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new ElementureModVariables.PlayerVariables())).fishingWait
-							- (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).fishingEratic)
-							- 1;
+					double _setval = ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fishingWait
+							- (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fishingEratic) - 1;
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.fishingWait = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}
 			}
-			if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).fishingWait / 2) % 4 == 0) {
+			if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fishingWait / 2) % 4 == 0) {
 				{
-					double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new ElementureModVariables.PlayerVariables())).bobberSpeed + (Math.random() - 0.5) / 2;
+					double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).bobberSpeed + (Math.random() - 0.5) / 2;
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.bobberSpeed = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}
 			}
-		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("memoryFish")) {
-			if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).fishingWait <= 0) {
-				if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).firstfishlaunch) {
+		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("memoryFish")) {
+			if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fishingWait <= 0) {
+				if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).firstfishlaunch) {
 					{
 						double _setval = 5 * Math.random();
 						entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -139,34 +128,26 @@ public class VoidfishMovementProcedure {
 				}
 			} else {
 				{
-					double _setval = ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new ElementureModVariables.PlayerVariables())).fishingWait
-							- (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).fishingEratic)
-							- 1;
+					double _setval = ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fishingWait
+							- (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fishingEratic) - 1;
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.fishingWait = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}
 			}
-			if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).fishingWait / 2) % 3 == 0) {
+			if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fishingWait / 2) % 3 == 0) {
 				{
-					double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new ElementureModVariables.PlayerVariables())).fishSpeed + (Math.random() - 0.5) / 2;
+					double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fishSpeed + (Math.random() - 0.5) / 2;
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.fishSpeed = _setval;
 						capability.syncPlayerVariables(entity);
 					});
 				}
 			}
-		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("memoryFishRare")) {
-			if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).fishingWait <= 0) {
-				if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).firstfishlaunch) {
+		} else if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("memoryFishRare")) {
+			if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fishingWait <= 0) {
+				if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).firstfishlaunch) {
 					{
 						double _setval = 4 * Math.random();
 						entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -206,11 +187,8 @@ public class VoidfishMovementProcedure {
 				}
 			} else {
 				{
-					double _setval = ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new ElementureModVariables.PlayerVariables())).fishingWait
-							- (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).fishingEratic)
-							- 1;
+					double _setval = ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fishingWait
+							- (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fishingEratic) - 1;
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.fishingWait = _setval;
 						capability.syncPlayerVariables(entity);

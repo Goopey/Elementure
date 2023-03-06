@@ -34,60 +34,29 @@ public class Modelthe_nine<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create(), PartPose.offset(0.0F, 14.0F, 0.0F));
-		PartDefinition eye_1 = main.addOrReplaceChild("eye_1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(5.0F, -6.0F, 3.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
-						.addBox(5.0F, -5.5F, 2.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56)
-						.addBox(4.5F, -5.5F, 3.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 2.0F, 0.0F));
-		PartDefinition eye_2 = main.addOrReplaceChild("eye_2",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-7.0F, -8.0F, -1.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
-						.addBox(-7.0F, -7.5F, -1.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56)
-						.addBox(-7.5F, -7.5F, -1.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 10.0F, 0.0F));
-		PartDefinition eye_3 = main.addOrReplaceChild("eye_3",
-				CubeListBuilder.create().texOffs(0, 0).addBox(2.0F, -6.5F, -6.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
-						.addBox(2.0F, -6.0F, -6.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56)
-						.addBox(1.5F, -6.0F, -6.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 10.0F, 0.0F));
-		PartDefinition eye_4 = main.addOrReplaceChild("eye_4",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -10.5F, 4.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
-						.addBox(-1.0F, -10.0F, 3.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56)
-						.addBox(-1.5F, -10.0F, 4.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 10.0F, 0.0F));
-		PartDefinition eye_5 = main.addOrReplaceChild("eye_5",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-5.0F, -10.5F, -8.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
-						.addBox(-5.0F, -10.0F, -8.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56)
-						.addBox(-5.5F, -10.0F, -8.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 10.0F, 0.0F));
-		PartDefinition eye_6 = main.addOrReplaceChild("eye_6",
-				CubeListBuilder.create().texOffs(0, 0).addBox(0.0F, -12.5F, -2.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
-						.addBox(0.0F, -12.0F, -2.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56)
-						.addBox(-0.5F, -12.0F, -2.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 10.0F, 0.0F));
-		PartDefinition eye_7 = main.addOrReplaceChild("eye_7",
-				CubeListBuilder.create().texOffs(0, 0).addBox(4.0F, -14.5F, -8.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
-						.addBox(4.0F, -14.0F, -8.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56)
-						.addBox(3.5F, -14.0F, -8.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 10.0F, 0.0F));
-		PartDefinition eye_8 = main.addOrReplaceChild("eye_8",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-7.0F, -15.5F, 2.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
-						.addBox(-7.0F, -15.0F, 1.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56)
-						.addBox(-7.5F, -15.0F, 2.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 10.0F, 0.0F));
-		PartDefinition eye_9 = main.addOrReplaceChild("eye_9",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-2.0F, -18.5F, -3.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
-						.addBox(-2.0F, -18.0F, -3.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56)
-						.addBox(-2.5F, -18.0F, -3.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 10.0F, 0.0F));
+		PartDefinition eye_1 = main.addOrReplaceChild("eye_1", CubeListBuilder.create().texOffs(0, 0).addBox(5.0F, -6.0F, 3.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
+				.addBox(5.0F, -5.5F, 2.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56).addBox(4.5F, -5.5F, 3.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 2.0F, 0.0F));
+		PartDefinition eye_2 = main.addOrReplaceChild("eye_2", CubeListBuilder.create().texOffs(0, 0).addBox(-7.0F, -8.0F, -1.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
+				.addBox(-7.0F, -7.5F, -1.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56).addBox(-7.5F, -7.5F, -1.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 10.0F, 0.0F));
+		PartDefinition eye_3 = main.addOrReplaceChild("eye_3", CubeListBuilder.create().texOffs(0, 0).addBox(2.0F, -6.5F, -6.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
+				.addBox(2.0F, -6.0F, -6.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56).addBox(1.5F, -6.0F, -6.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 10.0F, 0.0F));
+		PartDefinition eye_4 = main.addOrReplaceChild("eye_4", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -10.5F, 4.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
+				.addBox(-1.0F, -10.0F, 3.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56).addBox(-1.5F, -10.0F, 4.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 10.0F, 0.0F));
+		PartDefinition eye_5 = main.addOrReplaceChild("eye_5", CubeListBuilder.create().texOffs(0, 0).addBox(-5.0F, -10.5F, -8.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
+				.addBox(-5.0F, -10.0F, -8.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56).addBox(-5.5F, -10.0F, -8.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 10.0F, 0.0F));
+		PartDefinition eye_6 = main.addOrReplaceChild("eye_6", CubeListBuilder.create().texOffs(0, 0).addBox(0.0F, -12.5F, -2.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
+				.addBox(0.0F, -12.0F, -2.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56).addBox(-0.5F, -12.0F, -2.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 10.0F, 0.0F));
+		PartDefinition eye_7 = main.addOrReplaceChild("eye_7", CubeListBuilder.create().texOffs(0, 0).addBox(4.0F, -14.5F, -8.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
+				.addBox(4.0F, -14.0F, -8.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56).addBox(3.5F, -14.0F, -8.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 10.0F, 0.0F));
+		PartDefinition eye_8 = main.addOrReplaceChild("eye_8", CubeListBuilder.create().texOffs(0, 0).addBox(-7.0F, -15.5F, 2.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
+				.addBox(-7.0F, -15.0F, 1.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56).addBox(-7.5F, -15.0F, 2.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 10.0F, 0.0F));
+		PartDefinition eye_9 = main.addOrReplaceChild("eye_9", CubeListBuilder.create().texOffs(0, 0).addBox(-2.0F, -18.5F, -3.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 55)
+				.addBox(-2.0F, -18.0F, -3.5F, 4.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(46, 56).addBox(-2.5F, -18.0F, -3.0F, 5.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 10.0F, 0.0F));
 		PartDefinition eye_easteregg = main.addOrReplaceChild("eye_easteregg",
-				CubeListBuilder.create().texOffs(56, 0).addBox(0.0F, -3.0F, -2.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(2.0F, 3.0F, -6.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(-5.0F, -1.0F, -8.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(-7.0F, 1.5F, -1.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(-1.0F, -1.0F, 4.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(5.0F, -4.5F, 3.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(4.0F, -5.0F, -8.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(-2.0F, -9.0F, -3.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
+				CubeListBuilder.create().texOffs(56, 0).addBox(0.0F, -3.0F, -2.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(56, 0).addBox(2.0F, 3.0F, -6.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
+						.addBox(-5.0F, -1.0F, -8.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(56, 0).addBox(-7.0F, 1.5F, -1.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
+						.addBox(-1.0F, -1.0F, 4.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(56, 0).addBox(5.0F, -4.5F, 3.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
+						.addBox(4.0F, -5.0F, -8.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(56, 0).addBox(-2.0F, -9.0F, -3.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
 						.addBox(-7.0F, -6.0F, 2.0F, 4.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 1.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
@@ -104,8 +73,7 @@ public class Modelthe_nine<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

@@ -12,7 +12,7 @@ import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
@@ -33,10 +33,7 @@ import net.mcreator.elementure.block.entity.SpidernestCobblestoneBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class SpidernestCobblestoneBlock extends Block
-		implements
-
-			EntityBlock {
+public class SpidernestCobblestoneBlock extends Block implements EntityBlock {
 	public SpidernestCobblestoneBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOL).strength(10f, 15f).requiresCorrectToolForDrops());
 	}
@@ -48,7 +45,7 @@ public class SpidernestCobblestoneBlock extends Block
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 0;
 		return false;
 	}
@@ -73,7 +70,6 @@ public class SpidernestCobblestoneBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		SpidernestSpawnSpiderlingProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 92);
 	}
@@ -88,7 +84,6 @@ public class SpidernestCobblestoneBlock extends Block
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-
 		SpidernestDamageProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}

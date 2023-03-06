@@ -16,8 +16,7 @@ public class BoulderDiversCrownGenProcedure {
 		if (world instanceof ServerLevel _serverworld) {
 			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "diversstoneboulder"));
 			if (template != null) {
-				template.placeInWorld(_serverworld, new BlockPos(x - 2, y - 1, z - 2), new BlockPos(x - 2, y - 1, z - 2),
-						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
+				template.placeInWorld(_serverworld, new BlockPos(x - 2, y - 1, z - 2), new BlockPos(x - 2, y - 1, z - 2), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
 						3);
 			}
 		}
@@ -26,11 +25,9 @@ public class BoulderDiversCrownGenProcedure {
 				locX = x + Math.random() * 6 - 3;
 				locZ = z + Math.random() * 6 - 3;
 				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager()
-							.getOrCreate(new ResourceLocation("elementure", "diversstoneboulder"));
+					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "diversstoneboulder"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(locX - 2, y - 1, locZ - 2), new BlockPos(locX - 2, y - 1, locZ - 2),
-								new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(locX - 2, y - 1, locZ - 2), new BlockPos(locX - 2, y - 1, locZ - 2), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}

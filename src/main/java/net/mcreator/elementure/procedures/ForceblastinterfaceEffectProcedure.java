@@ -48,39 +48,27 @@ public class ForceblastinterfaceEffectProcedure {
 		double pitch2 = 0;
 		double yaw = 0;
 		relic_item = new ItemStack(ElementureModItems.FORCEBLASTINTERFACE.get());
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).getItem() == relic_item.getItem()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_2).getItem() == relic_item.getItem()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_3).getItem() == relic_item.getItem()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_4).getItem() == relic_item.getItem()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_5).getItem() == relic_item.getItem()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_6).getItem() == relic_item.getItem()) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).getItem() == relic_item.getItem()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_2).getItem() == relic_item.getItem()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_3).getItem() == relic_item.getItem()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_4).getItem() == relic_item.getItem()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_5).getItem() == relic_item.getItem()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_6).getItem() == relic_item.getItem()) {
 			if (Math.random() < 0.02) {
 				pitch = Math.cos(entity.getXRot() / ((-180) / Math.PI));
 				pitch2 = Math.sin(entity.getXRot() / ((-180) / Math.PI));
 				yaw = Math.sin(entity.getYRot() / ((-180) / Math.PI));
 				yaw2 = Math.cos(entity.getYRot() / ((-180) / Math.PI));
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.FLAME, (entity.getX() + 0.85 * yaw * pitch), (entity.getY() + 1 + 0.85 * pitch2),
-							(entity.getZ() + 0.85 * yaw2 * pitch), 20, 0.6, 0.6, 0.6, 0.01);
+					_level.sendParticles(ParticleTypes.FLAME, (entity.getX() + 0.85 * yaw * pitch), (entity.getY() + 1 + 0.85 * pitch2), (entity.getZ() + 0.85 * yaw2 * pitch), 20, 0.6, 0.6, 0.6, 0.01);
 				{
-					final Vec3 _center = new Vec3((entity.getX() + 0.85 * yaw * pitch), (entity.getY() + 1.633 + 0.85 * pitch2),
-							(entity.getZ() + 0.85 * yaw2 * pitch));
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true).stream()
-							.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+					final Vec3 _center = new Vec3((entity.getX() + 0.85 * yaw * pitch), (entity.getY() + 1.633 + 0.85 * pitch2), (entity.getZ() + 0.85 * yaw2 * pitch));
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							.collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
-						if (!(entityiterator == entity)
-								&& !entityiterator.getType()
-										.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
-								&& !entityiterator.getType()
-										.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
-							if (!entityiterator.getType()
-									.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:force_mobs")))) {
+						if (!(entityiterator == entity) && !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
+								&& !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
+							if (!entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:force_mobs")))) {
 								entityiterator.hurt(DamageSource.GENERIC, 2);
 							}
 							entityiterator.setDeltaMovement(new Vec3((0.85 * yaw * pitch), (0.85 * pitch2), (0.85 * yaw2 * pitch)));

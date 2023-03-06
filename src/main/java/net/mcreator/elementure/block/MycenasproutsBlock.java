@@ -4,6 +4,7 @@ package net.mcreator.elementure.block;
 import org.checkerframework.checker.units.qual.s;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -34,8 +35,7 @@ import java.util.Collections;
 
 public class MycenasproutsBlock extends Block {
 	public MycenasproutsBlock() {
-		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(0.05f, 0.5f).lightLevel(s -> 1).noCollission()
-				.noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.PLANT).sound(SoundType.GRASS).strength(0.05f, 0.5f).lightLevel(s -> 1).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 	}
 
 	@Override
@@ -49,8 +49,12 @@ public class MycenasproutsBlock extends Block {
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
 
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return box(0, 0, 0, 16, 11.2, 16);
 	}
 
@@ -80,7 +84,6 @@ public class MycenasproutsBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		MycenasproutsSpreadProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 10);
 	}
@@ -101,7 +104,6 @@ public class MycenasproutsBlock extends Block {
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-
 		MycenasproutsFertilizeProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}

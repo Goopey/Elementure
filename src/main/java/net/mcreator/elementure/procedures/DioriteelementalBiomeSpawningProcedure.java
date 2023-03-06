@@ -18,8 +18,7 @@ public class DioriteelementalBiomeSpawningProcedure {
 		CoordsZ = -1;
 		for (int index0 = 0; index0 < (int) (27); index0++) {
 			if (!(world.getDifficulty() == Difficulty.PEACEFUL)) {
-				if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-						.is(BlockTags.create(new ResourceLocation("elementure:energydioritebiomeblock"))) && !EnergisedDioriteNear) {
+				if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).is(BlockTags.create(new ResourceLocation("elementure:energydioritebiomeblock"))) && !EnergisedDioriteNear) {
 					EnergisedDioriteNear = true;
 				}
 			}

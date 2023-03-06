@@ -31,15 +31,10 @@ public class OldnailHealProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (entity.getPersistentData().getBoolean("soulACTIVE") == true
-				&& (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).soul_essence >= 33
-				&& !(entity instanceof Player _playerHasItem
-						? _playerHasItem.getInventory().contains(new ItemStack(ElementureModItems.OLDNAILHEALCHARM.get()))
-						: false)) {
+		if (entity.getPersistentData().getBoolean("soulACTIVE") == true && (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).soul_essence >= 33
+				&& !(entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(ElementureModItems.OLDNAILHEALCHARM.get())) : false)) {
 			{
-				double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).soul_essence - 33;
+				double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).soul_essence - 33;
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.soul_essence = _setval;
 					capability.syncPlayerVariables(entity);

@@ -65,17 +65,15 @@ public class FungalpitFishingpoolProcedure {
 						});
 						return _retval.get();
 					}
-				}.getItemStack(1, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)))
-						.getItem() == ElementureModItems.MYCENANBOBBER.get() || (new Object() {
-							public ItemStack getItemStack(int sltid, ItemStack _isc) {
-								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-								_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									_retval.set(capability.getStackInSlot(sltid).copy());
-								});
-								return _retval.get();
-							}
-						}.getItemStack(1, (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)))
-								.getItem() == ElementureModItems.MYCENANBOBBER.get()) {
+				}.getItemStack(1, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY))).getItem() == ElementureModItems.MYCENANBOBBER.get() || (new Object() {
+					public ItemStack getItemStack(int sltid, ItemStack _isc) {
+						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+						_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+							_retval.set(capability.getStackInSlot(sltid).copy());
+						});
+						return _retval.get();
+					}
+				}.getItemStack(1, (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY))).getItem() == ElementureModItems.MYCENANBOBBER.get()) {
 					{
 						String _setval = "greenJack";
 						entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -135,17 +133,15 @@ public class FungalpitFishingpoolProcedure {
 						});
 						return _retval.get();
 					}
-				}.getItemStack(1, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)))
-						.getItem() == ElementureModItems.MYCENANBOBBER.get() || (new Object() {
-							public ItemStack getItemStack(int sltid, ItemStack _isc) {
-								AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-								_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-									_retval.set(capability.getStackInSlot(sltid).copy());
-								});
-								return _retval.get();
-							}
-						}.getItemStack(1, (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)))
-								.getItem() == ElementureModItems.MYCENANBOBBER.get()) {
+				}.getItemStack(1, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY))).getItem() == ElementureModItems.MYCENANBOBBER.get() || (new Object() {
+					public ItemStack getItemStack(int sltid, ItemStack _isc) {
+						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
+						_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
+							_retval.set(capability.getStackInSlot(sltid).copy());
+						});
+						return _retval.get();
+					}
+				}.getItemStack(1, (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY))).getItem() == ElementureModItems.MYCENANBOBBER.get()) {
 					{
 						String _setval = "greenJack";
 						entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

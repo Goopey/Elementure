@@ -11,7 +11,6 @@ import net.mcreator.elementure.init.ElementureModFluids;
 
 public class DarkwaterItem extends BucketItem {
 	public DarkwaterItem() {
-		super(ElementureModFluids.DARKWATER,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(CreativeModeTab.TAB_MISC));
+		super(ElementureModFluids.DARKWATER, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(CreativeModeTab.TAB_MISC));
 	}
 }

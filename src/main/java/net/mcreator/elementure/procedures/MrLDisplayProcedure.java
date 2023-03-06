@@ -9,7 +9,6 @@ public class MrLDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isFish = false;
-		return ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("mrL");
+		return ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("mrL");
 	}
 }

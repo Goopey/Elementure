@@ -18,8 +18,7 @@ public class DarkgemshovelDamageProcedure {
 		double hasSharpness = 0;
 		double hasWeakness = 0;
 		{
-			double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).dark_essence - 7;
+			double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).dark_essence - 7;
 			sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.dark_essence = _setval;
 				capability.syncPlayerVariables(sourceentity);
@@ -41,16 +40,9 @@ public class DarkgemshovelDamageProcedure {
 			hasWeakness = 0;
 		}
 		entity.hurt(DamageSource.GENERIC,
-				(float) (((6
-						+ Math.ceil((sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new ElementureModVariables.PlayerVariables())).dark_essence / 3)
-						+ 3 * ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_BOOST)
-								? _livEnt.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier()
-								: 0) + hasStrength))
-						- 4 * ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WEAKNESS)
-								? _livEnt.getEffect(MobEffects.WEAKNESS).getAmplifier()
-								: 0) + hasWeakness)
-						+ 2 * (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) + hasSharpness))
-						/ (0.05 * (entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0))));
+				(float) (((6 + Math.ceil((sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).dark_essence / 3)
+						+ 3 * ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_BOOST) ? _livEnt.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier() : 0) + hasStrength))
+						- 4 * ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WEAKNESS) ? _livEnt.getEffect(MobEffects.WEAKNESS).getAmplifier() : 0) + hasWeakness)
+						+ 2 * (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) + hasSharpness)) / (0.05 * (entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0))));
 	}
 }

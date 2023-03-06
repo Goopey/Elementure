@@ -49,7 +49,6 @@ public class ProtectionzoneremoverBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		ProtectionzoneremoverEffectProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 10);
 	}

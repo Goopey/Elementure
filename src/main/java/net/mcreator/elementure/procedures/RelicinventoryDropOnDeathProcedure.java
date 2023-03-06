@@ -34,12 +34,10 @@ public class RelicinventoryDropOnDeathProcedure {
 		if (entity == null)
 			return;
 		if (!world.getLevelData().getGameRules().getBoolean(GameRules.RULE_KEEPINVENTORY)) {
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_familiar).getOrCreateTag().getBoolean("bound")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_familiar).getOrCreateTag().getBoolean("bound")) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_familiar).copy()));
+							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_familiar).copy()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -58,12 +56,10 @@ public class RelicinventoryDropOnDeathProcedure {
 					});
 				}
 			}
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).getOrCreateTag().getBoolean("bound")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).getOrCreateTag().getBoolean("bound")) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).copy()));
+							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).copy()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -82,12 +78,10 @@ public class RelicinventoryDropOnDeathProcedure {
 					});
 				}
 			}
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_2).getOrCreateTag().getBoolean("bound")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_2).getOrCreateTag().getBoolean("bound")) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_2).copy()));
+							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_2).copy()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -106,12 +100,10 @@ public class RelicinventoryDropOnDeathProcedure {
 					});
 				}
 			}
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_3).getOrCreateTag().getBoolean("bound")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_3).getOrCreateTag().getBoolean("bound")) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_3).copy()));
+							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_3).copy()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -130,12 +122,10 @@ public class RelicinventoryDropOnDeathProcedure {
 					});
 				}
 			}
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_4).getOrCreateTag().getBoolean("bound")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_4).getOrCreateTag().getBoolean("bound")) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_4).copy()));
+							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_4).copy()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -154,12 +144,10 @@ public class RelicinventoryDropOnDeathProcedure {
 					});
 				}
 			}
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_5).getOrCreateTag().getBoolean("bound")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_5).getOrCreateTag().getBoolean("bound")) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_5).copy()));
+							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_5).copy()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -178,12 +166,10 @@ public class RelicinventoryDropOnDeathProcedure {
 					});
 				}
 			}
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_6).getOrCreateTag().getBoolean("bound")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_6).getOrCreateTag().getBoolean("bound")) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_6).copy()));
+							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_6).copy()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -202,12 +188,10 @@ public class RelicinventoryDropOnDeathProcedure {
 					});
 				}
 			}
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).getOrCreateTag().getBoolean("bound")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).getOrCreateTag().getBoolean("bound")) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).copy()));
+							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).copy()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -226,12 +210,10 @@ public class RelicinventoryDropOnDeathProcedure {
 					});
 				}
 			}
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).getOrCreateTag().getBoolean("bound")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).getOrCreateTag().getBoolean("bound")) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).copy()));
+							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).copy()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -250,12 +232,10 @@ public class RelicinventoryDropOnDeathProcedure {
 					});
 				}
 			}
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_blood).getOrCreateTag().getBoolean("bound")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_blood).getOrCreateTag().getBoolean("bound")) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_blood).copy()));
+							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_blood).copy()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -274,12 +254,10 @@ public class RelicinventoryDropOnDeathProcedure {
 					});
 				}
 			}
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag).getOrCreateTag().getBoolean("bound")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag).getOrCreateTag().getBoolean("bound")) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag).copy()));
+							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag).copy()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -298,12 +276,10 @@ public class RelicinventoryDropOnDeathProcedure {
 					});
 				}
 			}
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_core).getOrCreateTag().getBoolean("bound")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_core).getOrCreateTag().getBoolean("bound")) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_core).copy()));
+							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_core).copy()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}

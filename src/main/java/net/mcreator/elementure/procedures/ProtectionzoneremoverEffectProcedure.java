@@ -19,17 +19,13 @@ public class ProtectionzoneremoverEffectProcedure {
 		for (int index0 = 0; index0 < (int) (50653); index0++) {
 			if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.DUNGEONWATER.get()) {
 				world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), Blocks.WATER.defaultBlockState(), 3);
-			} else if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ)))
-					.is(BlockTags.create(new ResourceLocation("elementure:despawnable_dungeon_spawners")))) {
+			} else if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).is(BlockTags.create(new ResourceLocation("elementure:despawnable_dungeon_spawners")))) {
 				world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), Blocks.AIR.defaultBlockState(), 3);
 			} else if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.PROTECTIONRUNE.get()
-					|| (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.RECEIVINGPROTECTIONRUNE
-							.get()) {
+					|| (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.RECEIVINGPROTECTIONRUNE.get()) {
 				world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), ElementureModBlocks.PROTECTIONREMOVER.get().defaultBlockState(), 3);
-			} else if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.SHIELDINGPROTECTIONRUNE
-					.get()
-					|| (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ)))
-							.getBlock() == ElementureModBlocks.SHIELDINGPROTECTIONRUNE_SMALL.get()) {
+			} else if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.SHIELDINGPROTECTIONRUNE.get()
+					|| (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.SHIELDINGPROTECTIONRUNE_SMALL.get()) {
 				world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), ElementureModBlocks.PROTECTIONZONEREMOVER.get().defaultBlockState(), 3);
 			}
 			locX = locX + 1;

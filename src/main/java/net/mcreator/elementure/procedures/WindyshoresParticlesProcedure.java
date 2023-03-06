@@ -41,11 +41,9 @@ public class WindyshoresParticlesProcedure {
 			}
 		}.getValue(world, new BlockPos(entity.getX(), -64, entity.getZ()), "windyshoresUsed")) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.CLOUDFLUFF.get()), (entity.getX()), (entity.getY()),
-						(entity.getZ()), 14, 11, 11, 11, 0.002);
+				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.CLOUDFLUFF.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 14, 11, 11, 11, 0.002);
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.CLOUDFLUFF_BIG.get()), (entity.getX()), (entity.getY()),
-						(entity.getZ()), 4, 11, 11, 11, 0.002);
+				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.CLOUDFLUFF_BIG.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 4, 11, 11, 11, 0.002);
 		}
 	}
 }

@@ -33,8 +33,7 @@ public class WhiterimeshineEffectProcedure {
 			return;
 		if (itemstack.getItem() == ElementureModItems.RAREWHITERIMESHINE.get() || itemstack.getItem() == ElementureModItems.WHITERIMESHINE.get()) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, (int) (itemstack.getOrCreateTag().getDouble("duration") * 20),
-						(int) itemstack.getOrCreateTag().getDouble("potency")));
+				_entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, (int) (itemstack.getOrCreateTag().getDouble("duration") * 20), (int) itemstack.getOrCreateTag().getDouble("potency")));
 		}
 	}
 }

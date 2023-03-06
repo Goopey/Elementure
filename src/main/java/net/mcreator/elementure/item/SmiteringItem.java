@@ -26,7 +26,6 @@ public class SmiteringItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal(
-				"Relic : Imbues your weapon with undead-smiting energy. Increase damage dealt to undeads by 1. It's made out of weird iron."));
+		list.add(Component.literal("Relic : Imbues your weapon with undead-smiting energy. Increase damage dealt to undeads by 1. It's made out of weird iron."));
 	}
 }

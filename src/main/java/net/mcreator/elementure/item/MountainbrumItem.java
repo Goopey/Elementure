@@ -15,10 +15,9 @@ import java.util.List;
 
 public class MountainbrumItem extends Item {
 	public MountainbrumItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.3f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

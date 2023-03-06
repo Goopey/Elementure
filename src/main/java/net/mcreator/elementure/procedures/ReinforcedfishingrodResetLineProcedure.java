@@ -31,8 +31,7 @@ public class ReinforcedfishingrodResetLineProcedure {
 		bobberThere = false;
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:fishingbobberentity")))
 						&& (entityiterator.getPersistentData().getString("playerName")).equals(entity.getDisplayName().getString())) {
@@ -69,9 +68,7 @@ public class ReinforcedfishingrodResetLineProcedure {
 				return _retval.get();
 			}
 		}.getItemStack(2, itemstack)).getOrCreateTag().getDouble("fishingPower")
-				+ (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.FISHINGPOWER.get())
-						? _livEnt.getEffect(ElementureModMobEffects.FISHINGPOWER.get()).getAmplifier()
-						: 0) * 3));
+				+ (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.FISHINGPOWER.get()) ? _livEnt.getEffect(ElementureModMobEffects.FISHINGPOWER.get()).getAmplifier() : 0) * 3));
 		itemstack.getOrCreateTag().putDouble("attractionPower", (0 + (new Object() {
 			public ItemStack getItemStack(int sltid, ItemStack _isc) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -97,9 +94,7 @@ public class ReinforcedfishingrodResetLineProcedure {
 				return _retval.get();
 			}
 		}.getItemStack(2, itemstack)).getOrCreateTag().getDouble("attractionPower")
-				+ (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.FISHINGPOWER.get())
-						? _livEnt.getEffect(ElementureModMobEffects.FISHINGPOWER.get()).getAmplifier()
-						: 0) * 3));
+				+ (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.FISHINGPOWER.get()) ? _livEnt.getEffect(ElementureModMobEffects.FISHINGPOWER.get()).getAmplifier() : 0) * 3));
 		itemstack.getOrCreateTag().putDouble("crateChance", (0 + (new Object() {
 			public ItemStack getItemStack(int sltid, ItemStack _isc) {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -124,12 +119,9 @@ public class ReinforcedfishingrodResetLineProcedure {
 				});
 				return _retval.get();
 			}
-		}.getItemStack(2, itemstack)).getOrCreateTag().getDouble("crateChance")
-				+ EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.MAGNETIC_ENCHANTMENT.get(), itemstack)));
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-				.is(ItemTags.create(new ResourceLocation("elementure:elementure_fishingrod_tag")))
-				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(new ResourceLocation("elementure:elementure_fishingrod_tag")))) {
+		}.getItemStack(2, itemstack)).getOrCreateTag().getDouble("crateChance") + EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.MAGNETIC_ENCHANTMENT.get(), itemstack)));
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("elementure:elementure_fishingrod_tag")))
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("elementure:elementure_fishingrod_tag")))) {
 			FishminigameUpdateProcedure.execute(world, entity, itemstack);
 		} else {
 			{

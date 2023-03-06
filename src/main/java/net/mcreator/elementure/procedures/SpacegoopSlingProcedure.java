@@ -18,7 +18,6 @@ import net.minecraft.commands.CommandSource;
 
 import net.mcreator.elementure.ElementureMod;
 
-import java.util.List;
 import java.util.ArrayList;
 
 public class SpacegoopSlingProcedure {
@@ -39,19 +38,12 @@ public class SpacegoopSlingProcedure {
 					if (_ent instanceof ServerPlayer _serverPlayer)
 						_serverPlayer.connection.teleport((entity.getX()), (entity.getY() + 1024), (entity.getZ()), _ent.getYRot(), _ent.getXRot());
 				}
-				{
-					List<? extends Player> _players = new ArrayList<>(world.players());
-					for (Entity entityiterator : _players) {
-						{
-							Entity _ent = entityiterator;
-							if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-								_ent.getServer().getCommands()
-										.performPrefixedCommand(
-												new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
-														_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-														_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent),
-												"playsound elementure:lebigma master @s");
-							}
+				for (Entity entityiterator : new ArrayList<>(world.players())) {
+					{
+						Entity _ent = entityiterator;
+						if (!_ent.level.isClientSide() && _ent.getServer() != null) {
+							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+									_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "playsound elementure:lebigma master @s");
 						}
 					}
 				}

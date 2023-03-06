@@ -29,8 +29,7 @@ public class EarthswordEarthProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-				.is(ItemTags.create(new ResourceLocation("forge:earthitem"))))) {
+		if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("forge:earthitem"))))) {
 			entity.getPersistentData().putBoolean("earthACTIVE", (false));
 		}
 	}

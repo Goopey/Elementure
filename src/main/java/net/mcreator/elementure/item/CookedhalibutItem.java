@@ -15,10 +15,9 @@ import java.util.List;
 
 public class CookedhalibutItem extends Item {
 	public CookedhalibutItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(8).saturationMod(2.4f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(2.4f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

@@ -87,8 +87,7 @@ public class PouchItem extends Item {
 	public CompoundTag getShareTag(ItemStack stack) {
 		CompoundTag nbt = super.getShareTag(stack);
 		if (nbt != null)
-			stack.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-					.ifPresent(capability -> nbt.put("Inventory", ((ItemStackHandler) capability).serializeNBT()));
+			stack.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> nbt.put("Inventory", ((ItemStackHandler) capability).serializeNBT()));
 		return nbt;
 	}
 
@@ -96,7 +95,6 @@ public class PouchItem extends Item {
 	public void readShareTag(ItemStack stack, @Nullable CompoundTag nbt) {
 		super.readShareTag(stack, nbt);
 		if (nbt != null)
-			stack.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-					.ifPresent(capability -> ((ItemStackHandler) capability).deserializeNBT((CompoundTag) nbt.get("Inventory")));
+			stack.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> ((ItemStackHandler) capability).deserializeNBT((CompoundTag) nbt.get("Inventory")));
 	}
 }

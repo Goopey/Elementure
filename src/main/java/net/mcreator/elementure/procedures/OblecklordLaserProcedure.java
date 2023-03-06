@@ -29,16 +29,13 @@ public class OblecklordLaserProcedure {
 		if (entity.getPersistentData().getDouble("laserWait") > 29 && entity.getPersistentData().getDouble("laserWait") < 61) {
 			for (int index0 = 0; index0 < (int) (16); index0++) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.CRIT, (entity.getX() + laser_length * yaw * pitch), (entity.getY() + 1.5 + pitch2),
-							(entity.getZ() + laser_length * yaw2 * pitch), 24, 0.15, 0.15, 0.15, 0.05);
+					_level.sendParticles(ParticleTypes.CRIT, (entity.getX() + laser_length * yaw * pitch), (entity.getY() + 1.5 + pitch2), (entity.getZ() + laser_length * yaw2 * pitch), 24, 0.15, 0.15, 0.15, 0.05);
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.ENCHANTED_HIT, (entity.getX() + laser_length * yaw * pitch), (entity.getY() + 1.5 + pitch2),
-							(entity.getZ() + laser_length * yaw2 * pitch), 24, 0.15, 0.15, 0.15, 0.05);
+					_level.sendParticles(ParticleTypes.ENCHANTED_HIT, (entity.getX() + laser_length * yaw * pitch), (entity.getY() + 1.5 + pitch2), (entity.getZ() + laser_length * yaw2 * pitch), 24, 0.15, 0.15, 0.15, 0.05);
 				{
-					final Vec3 _center = new Vec3((entity.getX() + laser_length * yaw * pitch), (entity.getY() + 1.5 + pitch2),
-							(entity.getZ() + laser_length * yaw2 * pitch));
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1.15 / 2d), e -> true).stream()
-							.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+					final Vec3 _center = new Vec3((entity.getX() + laser_length * yaw * pitch), (entity.getY() + 1.5 + pitch2), (entity.getZ() + laser_length * yaw2 * pitch));
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1.15 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							.collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						entityiterator.hurt(DamageSource.WITHER, 3);
 					}
@@ -46,8 +43,7 @@ public class OblecklordLaserProcedure {
 				laser_length = laser_length + 1;
 			}
 			for (int index1 = 0; index1 < (int) (80); index1++) {
-				world.addParticle(ParticleTypes.ELECTRIC_SPARK, (entity.getX() + yaw * pitch), (entity.getY() + 1.5 + pitch2),
-						(entity.getZ() + yaw2 * pitch), (16 * yaw * pitch), pitch2, (16 * yaw2 * pitch));
+				world.addParticle(ParticleTypes.ELECTRIC_SPARK, (entity.getX() + yaw * pitch), (entity.getY() + 1.5 + pitch2), (entity.getZ() + yaw2 * pitch), (16 * yaw * pitch), pitch2, (16 * yaw2 * pitch));
 			}
 			entity.getPersistentData().putDouble("laserWait", (entity.getPersistentData().getDouble("laserWait") + 1));
 		} else if (entity.getPersistentData().getDouble("laserWait") >= 61) {

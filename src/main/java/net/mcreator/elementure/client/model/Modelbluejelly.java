@@ -40,31 +40,19 @@ public class Modelbluejelly<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition tentacle_1 = partdefinition.addOrReplaceChild(
-				"tentacle_1", CubeListBuilder.create().texOffs(0, 91).mirror()
-						.addBox(-3.0F, -1.0F, -2.0F, 5.0F, 32.0F, 5.0F, new CubeDeformation(0.0F)).mirror(false),
+		PartDefinition tentacle_1 = partdefinition.addOrReplaceChild("tentacle_1", CubeListBuilder.create().texOffs(0, 91).mirror().addBox(-3.0F, -1.0F, -2.0F, 5.0F, 32.0F, 5.0F, new CubeDeformation(0.0F)).mirror(false),
 				PartPose.offset(7.0F, 16.0F, -7.0F));
-		PartDefinition tentacle_2 = partdefinition.addOrReplaceChild("tentacle_2",
-				CubeListBuilder.create().texOffs(0, 91).addBox(-4.0F, -1.0F, -1.0F, 5.0F, 32.0F, 5.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(-5.0F, 16.0F, -8.0F));
+		PartDefinition tentacle_2 = partdefinition.addOrReplaceChild("tentacle_2", CubeListBuilder.create().texOffs(0, 91).addBox(-4.0F, -1.0F, -1.0F, 5.0F, 32.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offset(-5.0F, 16.0F, -8.0F));
 		PartDefinition tentacle_3 = partdefinition.addOrReplaceChild("tentacle_3", CubeListBuilder.create(), PartPose.offset(-7.0F, 16.0F, 7.0F));
-		PartDefinition cube_r1 = tentacle_3.addOrReplaceChild("cube_r1",
-				CubeListBuilder.create().texOffs(0, 91).addBox(-2.5F, -17.0F, -2.5F, 5.0F, 32.0F, 5.0F, new CubeDeformation(0.0F)),
+		PartDefinition cube_r1 = tentacle_3.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(0, 91).addBox(-2.5F, -17.0F, -2.5F, 5.0F, 32.0F, 5.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.5F, 16.0F, -0.5F, 0.0F, 1.5708F, 0.0F));
 		PartDefinition tentacle_4 = partdefinition.addOrReplaceChild("tentacle_4", CubeListBuilder.create(), PartPose.offset(7.0F, 16.0F, 7.0F));
-		PartDefinition cube_r2 = tentacle_4.addOrReplaceChild(
-				"cube_r2", CubeListBuilder.create().texOffs(0, 91).mirror()
-						.addBox(-2.5F, -17.01F, -2.5F, 5.0F, 32.0F, 5.0F, new CubeDeformation(0.0F)).mirror(false),
+		PartDefinition cube_r2 = tentacle_4.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(0, 91).mirror().addBox(-2.5F, -17.01F, -2.5F, 5.0F, 32.0F, 5.0F, new CubeDeformation(0.0F)).mirror(false),
 				PartPose.offsetAndRotation(-0.5F, 16.01F, -0.5F, 0.0F, -1.5708F, 0.0F));
-		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-12.0F, -32.0F, -12.0F, 24.0F, 24.0F, 24.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 24.0F, 0.0F));
-		PartDefinition l_wing_r1 = bb_main.addOrReplaceChild("l_wing_r1",
-				CubeListBuilder.create().texOffs(92, 0).addBox(-5.5F, -1.0F, -6.0F, 6.0F, 10.0F, 12.0F, new CubeDeformation(0.0F)),
+		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main", CubeListBuilder.create().texOffs(0, 0).addBox(-12.0F, -32.0F, -12.0F, 24.0F, 24.0F, 24.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
+		PartDefinition l_wing_r1 = bb_main.addOrReplaceChild("l_wing_r1", CubeListBuilder.create().texOffs(92, 0).addBox(-5.5F, -1.0F, -6.0F, 6.0F, 10.0F, 12.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(12.0F, -24.0F, 0.0F, 0.0F, 0.0F, -0.4363F));
-		PartDefinition r_wing_r1 = bb_main.addOrReplaceChild(
-				"r_wing_r1", CubeListBuilder.create().texOffs(92, 0).mirror()
-						.addBox(-0.5F, -1.0F, -6.0F, 6.0F, 10.0F, 12.0F, new CubeDeformation(0.0F)).mirror(false),
+		PartDefinition r_wing_r1 = bb_main.addOrReplaceChild("r_wing_r1", CubeListBuilder.create().texOffs(92, 0).mirror().addBox(-0.5F, -1.0F, -6.0F, 6.0F, 10.0F, 12.0F, new CubeDeformation(0.0F)).mirror(false),
 				PartPose.offsetAndRotation(-12.0F, -24.0F, 0.0F, 0.0F, 0.0F, 0.4363F));
 		return LayerDefinition.create(meshdefinition, 128, 128);
 	}
@@ -78,8 +66,7 @@ public class Modelbluejelly<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		tentacle_1.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		tentacle_2.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		tentacle_3.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);

@@ -17,10 +17,9 @@ import java.util.List;
 
 public class EchoberryitemItem extends Item {
 	public EchoberryitemItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(4).rarity(Rarity.RARE)
-				.food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.1f).alwaysEat()
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(4).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.1f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

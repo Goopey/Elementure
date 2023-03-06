@@ -9,8 +9,7 @@ public class MagtunabusterDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isCurrentFish = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("magtunaBuster")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("magtunaBuster")) {
 			isCurrentFish = true;
 		} else {
 			isCurrentFish = false;

@@ -17,8 +17,7 @@ public class MycenadepthsgroundmossgenProcedure {
 		CoordsY = -7;
 		CoordsZ = -3;
 		for (int index0 = 0; index0 < (int) (735); index0++) {
-			if (YUsed == false && (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR
-					&& world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ)).canOcclude()) {
+			if (YUsed == false && (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR && world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ)).canOcclude()) {
 				world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MYCENIUMMOSS.get().defaultBlockState(), 3);
 				YUsed = true;
 			}

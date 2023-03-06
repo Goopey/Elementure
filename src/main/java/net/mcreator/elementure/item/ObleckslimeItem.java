@@ -12,10 +12,9 @@ import net.mcreator.elementure.init.ElementureModTabs;
 
 public class ObleckslimeItem extends Item {
 	public ObleckslimeItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(16).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(2).saturationMod(1.2000000000000002f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(16).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(1.2000000000000002f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

@@ -43,8 +43,7 @@ public class JellybladeItem extends SwordItem {
 			}
 
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(ElementureModItems.BLUEJELLY.get()), new ItemStack(ElementureModItems.REDJELLY.get()),
-						new ItemStack(ElementureModItems.GREENJELLY.get()));
+				return Ingredient.of(new ItemStack(ElementureModItems.BLUEJELLY.get()), new ItemStack(ElementureModItems.REDJELLY.get()), new ItemStack(ElementureModItems.GREENJELLY.get()));
 			}
 		}, 3, -3f, new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDSWORDS));
 	}

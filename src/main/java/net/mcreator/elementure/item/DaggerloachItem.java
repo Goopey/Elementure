@@ -15,10 +15,9 @@ import java.util.List;
 
 public class DaggerloachItem extends Item {
 	public DaggerloachItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(3).saturationMod(0.4f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(0.4f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

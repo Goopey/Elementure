@@ -12,8 +12,7 @@ public class DiverscrownLilypadtreePatchProcedure {
 			if (Math.random() < 0.8) {
 				locX = x + Math.random() * 24 - 12;
 				locZ = z + Math.random() * 24 - 12;
-				LilypadTreeGenProcedure.execute(world, locX, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) locX, (int) locZ)),
-						locZ);
+				LilypadTreeGenProcedure.execute(world, locX, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) locX, (int) locZ)), locZ);
 			}
 		}
 	}

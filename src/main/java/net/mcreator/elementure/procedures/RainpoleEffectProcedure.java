@@ -16,8 +16,7 @@ public class RainpoleEffectProcedure {
 			return;
 		(itemstack).shrink(1);
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())),
-							Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "weather rain");
+			_level.getServer().getCommands().performPrefixedCommand(
+					new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "weather rain");
 	}
 }

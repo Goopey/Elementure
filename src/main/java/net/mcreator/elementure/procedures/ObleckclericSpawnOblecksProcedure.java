@@ -26,47 +26,38 @@ public class ObleckclericSpawnOblecksProcedure {
 				locX = Math.random() * 8 - 4;
 				locZ = Math.random() * 8 - 4;
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.MEMORYPARTICLE.get()), (entity.getX()), (entity.getY() + 1),
-							(entity.getZ()), 50, 0.33, 0.33, 0.33, 0.033);
+					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.MEMORYPARTICLE.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 50, 0.33, 0.33, 0.33, 0.033);
 				if ((world.getBlockState(new BlockPos(entity.getX() + locX, entity.getY(), entity.getZ() + locZ))).getBlock() == Blocks.AIR) {
 					if (Math.random() < 0.6) {
 						if (world instanceof ServerLevel _level) {
 							Entity entityToSpawn = new ObleckEntity(ElementureModEntities.OBLECK.get(), _level);
-							entityToSpawn.moveTo((entity.getX() + locX), (entity.getY()), (entity.getZ() + locZ),
-									world.getRandom().nextFloat() * 360F, 0);
+							entityToSpawn.moveTo((entity.getX() + locX), (entity.getY()), (entity.getZ() + locZ), world.getRandom().nextFloat() * 360F, 0);
 							if (entityToSpawn instanceof Mob _mobToSpawn)
-								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()),
-										MobSpawnType.MOB_SUMMONED, null, null);
+								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 							world.addFreshEntity(entityToSpawn);
 						}
 					} else if (Math.random() < 0.33) {
 						if (world instanceof ServerLevel _level) {
 							Entity entityToSpawn = new MindobleckEntity(ElementureModEntities.MINDOBLECK.get(), _level);
-							entityToSpawn.moveTo((entity.getX() + locX), (entity.getY()), (entity.getZ() + locZ),
-									world.getRandom().nextFloat() * 360F, 0);
+							entityToSpawn.moveTo((entity.getX() + locX), (entity.getY()), (entity.getZ() + locZ), world.getRandom().nextFloat() * 360F, 0);
 							if (entityToSpawn instanceof Mob _mobToSpawn)
-								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()),
-										MobSpawnType.MOB_SUMMONED, null, null);
+								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 							world.addFreshEntity(entityToSpawn);
 						}
 					} else if (Math.random() < 0.5) {
 						if (world instanceof ServerLevel _level) {
 							Entity entityToSpawn = new ObleckEntity(ElementureModEntities.OBLECK.get(), _level);
-							entityToSpawn.moveTo((entity.getX() + locX), (entity.getY()), (entity.getZ() + locZ),
-									world.getRandom().nextFloat() * 360F, 0);
+							entityToSpawn.moveTo((entity.getX() + locX), (entity.getY()), (entity.getZ() + locZ), world.getRandom().nextFloat() * 360F, 0);
 							if (entityToSpawn instanceof Mob _mobToSpawn)
-								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()),
-										MobSpawnType.MOB_SUMMONED, null, null);
+								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 							world.addFreshEntity(entityToSpawn);
 						}
 					} else {
 						if (world instanceof ServerLevel _level) {
 							Entity entityToSpawn = new ObleckEntity(ElementureModEntities.OBLECK.get(), _level);
-							entityToSpawn.moveTo((entity.getX() + locX), (entity.getY()), (entity.getZ() + locZ),
-									world.getRandom().nextFloat() * 360F, 0);
+							entityToSpawn.moveTo((entity.getX() + locX), (entity.getY()), (entity.getZ() + locZ), world.getRandom().nextFloat() * 360F, 0);
 							if (entityToSpawn instanceof Mob _mobToSpawn)
-								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()),
-										MobSpawnType.MOB_SUMMONED, null, null);
+								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 							world.addFreshEntity(entityToSpawn);
 						}
 					}
@@ -75,8 +66,7 @@ public class ObleckclericSpawnOblecksProcedure {
 						Entity entityToSpawn = new ObleckturretEntity(ElementureModEntities.OBLECKTURRET.get(), _level);
 						entityToSpawn.moveTo((entity.getX()), (entity.getY() + 1), (entity.getZ()), world.getRandom().nextFloat() * 360F, 0);
 						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-									null, null);
+							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						world.addFreshEntity(entityToSpawn);
 					}
 				}

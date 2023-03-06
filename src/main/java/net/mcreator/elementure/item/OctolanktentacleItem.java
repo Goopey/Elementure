@@ -16,10 +16,9 @@ import java.util.List;
 
 public class OctolanktentacleItem extends Item {
 	public OctolanktentacleItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(9).saturationMod(1.4000000000000001f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(9).saturationMod(1.4000000000000001f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

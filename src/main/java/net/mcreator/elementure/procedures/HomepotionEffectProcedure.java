@@ -12,8 +12,7 @@ public class HomepotionEffectProcedure {
 			Entity _ent = entity;
 			_ent.teleportTo((world.getLevelData().getXSpawn()), (world.getLevelData().getYSpawn()), (world.getLevelData().getZSpawn()));
 			if (_ent instanceof ServerPlayer _serverPlayer)
-				_serverPlayer.connection.teleport((world.getLevelData().getXSpawn()), (world.getLevelData().getYSpawn()),
-						(world.getLevelData().getZSpawn()), _ent.getYRot(), _ent.getXRot());
+				_serverPlayer.connection.teleport((world.getLevelData().getXSpawn()), (world.getLevelData().getYSpawn()), (world.getLevelData().getZSpawn()), _ent.getYRot(), _ent.getXRot());
 		}
 	}
 }

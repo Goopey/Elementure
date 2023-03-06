@@ -35,11 +35,9 @@ public class DarksmiteEffectProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		if (entity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:light_mobs")))
-				&& EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.DARKSMITE.get(),
-						(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
+				&& EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.DARKSMITE.get(), (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
 			entity.hurt(DamageSource.WITHER,
-					(float) Math.ceil(2.5 * (EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.DARKSMITE.get(),
-							(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) + 1)));
+					(float) Math.ceil(2.5 * (EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.DARKSMITE.get(), (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) + 1)));
 		}
 	}
 }

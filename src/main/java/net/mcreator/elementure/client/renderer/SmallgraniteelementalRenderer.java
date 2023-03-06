@@ -10,7 +10,7 @@ import net.mcreator.elementure.client.model.Modelsmallgraniteelemental;
 
 public class SmallgraniteelementalRenderer extends MobRenderer<SmallgraniteelementalEntity, Modelsmallgraniteelemental<SmallgraniteelementalEntity>> {
 	public SmallgraniteelementalRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelsmallgraniteelemental(context.bakeLayer(Modelsmallgraniteelemental.LAYER_LOCATION)), 0.3f);
+		super(context, new Modelsmallgraniteelemental(context.bakeLayer(Modelsmallgraniteelemental.LAYER_LOCATION)), 0.30000000000000004f);
 	}
 
 	@Override

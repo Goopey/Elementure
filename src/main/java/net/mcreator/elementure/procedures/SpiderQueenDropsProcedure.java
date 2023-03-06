@@ -13,21 +13,18 @@ public class SpiderQueenDropsProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof Level _level && !_level.isClientSide()) {
-			ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-					new ItemStack(ElementureModItems.LIMEBARRIERKEY.get()));
+			ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.LIMEBARRIERKEY.get()));
 			entityToSpawn.setPickUpDelay(10);
 			_level.addFreshEntity(entityToSpawn);
 		}
 		if (world instanceof Level _level && !_level.isClientSide()) {
-			ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-					new ItemStack(ElementureModItems.SPIDERQUEENFANGS.get()));
+			ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.SPIDERQUEENFANGS.get()));
 			entityToSpawn.setPickUpDelay(10);
 			_level.addFreshEntity(entityToSpawn);
 		}
 		for (int index0 = 0; index0 < (int) (3); index0++) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-						new ItemStack(ElementureModItems.ARACHNEELFANG.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.ARACHNEELFANG.get()));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}

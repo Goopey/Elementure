@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -9,7 +9,6 @@
         "data": {
           "image": "string_line.png",
           "use1Xscale": false,
-          "name": "string_line.png",
           "x": 251,
           "y": 78
         }

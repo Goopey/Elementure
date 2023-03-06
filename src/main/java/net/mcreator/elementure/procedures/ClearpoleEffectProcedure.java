@@ -19,11 +19,9 @@ public class ClearpoleEffectProcedure {
 			return;
 		(itemstack).shrink(1);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.CLOUDSMOKE.get()), (entity.getX()), (entity.getY()),
-					(entity.getZ()), 60, 0.8, 0.8, 0.8, 0.01);
+			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.CLOUDSMOKE.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 60, 0.8, 0.8, 0.8, 0.01);
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())),
-							Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "weather clear");
+			_level.getServer().getCommands().performPrefixedCommand(
+					new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(), "weather clear");
 	}
 }

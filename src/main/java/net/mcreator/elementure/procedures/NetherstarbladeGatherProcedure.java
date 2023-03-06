@@ -10,8 +10,7 @@ public class NetherstarbladeGatherProcedure {
 			return;
 		if (Math.random() < 0.25) {
 			{
-				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).energy_essence + 7;
+				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).energy_essence + 7;
 				sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.energy_essence = _setval;
 					capability.syncPlayerVariables(sourceentity);
@@ -19,8 +18,7 @@ public class NetherstarbladeGatherProcedure {
 			}
 			if (Math.random() < 0.5) {
 				{
-					double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new ElementureModVariables.PlayerVariables())).energy_essence + 3;
+					double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).energy_essence + 3;
 					sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.energy_essence = _setval;
 						capability.syncPlayerVariables(sourceentity);

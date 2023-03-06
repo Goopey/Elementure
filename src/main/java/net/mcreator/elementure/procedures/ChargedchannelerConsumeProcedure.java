@@ -9,8 +9,7 @@ public class ChargedchannelerConsumeProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).lightning_essence - 44;
+			double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).lightning_essence - 44;
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.lightning_essence = _setval;
 				capability.syncPlayerVariables(entity);

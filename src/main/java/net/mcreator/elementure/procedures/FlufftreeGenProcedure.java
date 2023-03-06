@@ -24,8 +24,7 @@ public class FlufftreeGenProcedure {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "fluff_tree_1"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 1, z - 2), new BlockPos(x - 4, y - 1, z - 2),
-								new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 1, z - 2), new BlockPos(x - 4, y - 1, z - 2), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
@@ -33,8 +32,7 @@ public class FlufftreeGenProcedure {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "fluff_tree_1"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x + 4, y - 1, z - 3), new BlockPos(x + 4, y - 1, z - 3),
-								new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x + 4, y - 1, z - 3), new BlockPos(x + 4, y - 1, z - 3), new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
@@ -42,8 +40,7 @@ public class FlufftreeGenProcedure {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "fluff_tree_1"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x + 4, y - 1, z + 2), new BlockPos(x + 4, y - 1, z + 2),
-								new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_180).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x + 4, y - 1, z + 2), new BlockPos(x + 4, y - 1, z + 2), new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_180).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
@@ -51,9 +48,7 @@ public class FlufftreeGenProcedure {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "fluff_tree_1"));
 					if (template != null) {
-						template.placeInWorld(
-								_serverworld, new BlockPos(x - 4, y - 1, z + 3), new BlockPos(x - 4, y - 1, z + 3), new StructurePlaceSettings()
-										.setRotation(Rotation.COUNTERCLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 1, z + 3), new BlockPos(x - 4, y - 1, z + 3), new StructurePlaceSettings().setRotation(Rotation.COUNTERCLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
@@ -64,8 +59,7 @@ public class FlufftreeGenProcedure {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "fluff_tree_2"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 1, z - 3), new BlockPos(x - 4, y - 1, z - 3),
-								new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 1, z - 3), new BlockPos(x - 4, y - 1, z - 3), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
@@ -73,8 +67,7 @@ public class FlufftreeGenProcedure {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "fluff_tree_2"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x + 4, y - 1, z - 4), new BlockPos(x + 4, y - 1, z - 4),
-								new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x + 4, y - 1, z - 4), new BlockPos(x + 4, y - 1, z - 4), new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
@@ -82,8 +75,7 @@ public class FlufftreeGenProcedure {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "fluff_tree_2"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x + 4, y - 1, z + 3), new BlockPos(x + 4, y - 1, z + 3),
-								new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_180).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x + 4, y - 1, z + 3), new BlockPos(x + 4, y - 1, z + 3), new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_180).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
@@ -91,9 +83,7 @@ public class FlufftreeGenProcedure {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "fluff_tree_2"));
 					if (template != null) {
-						template.placeInWorld(
-								_serverworld, new BlockPos(x - 4, y - 1, z + 4), new BlockPos(x - 4, y - 1, z + 4), new StructurePlaceSettings()
-										.setRotation(Rotation.COUNTERCLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 1, z + 4), new BlockPos(x - 4, y - 1, z + 4), new StructurePlaceSettings().setRotation(Rotation.COUNTERCLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
@@ -104,8 +94,7 @@ public class FlufftreeGenProcedure {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "fluff_tree_3"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 1, z - 3), new BlockPos(x - 4, y - 1, z - 3),
-								new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 1, z - 3), new BlockPos(x - 4, y - 1, z - 3), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
@@ -113,8 +102,7 @@ public class FlufftreeGenProcedure {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "fluff_tree_3"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x + 4, y - 1, z - 3), new BlockPos(x + 4, y - 1, z - 3),
-								new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x + 4, y - 1, z - 3), new BlockPos(x + 4, y - 1, z - 3), new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
@@ -122,8 +110,7 @@ public class FlufftreeGenProcedure {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "fluff_tree_3"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x + 4, y - 1, z + 3), new BlockPos(x + 4, y - 1, z + 3),
-								new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_180).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x + 4, y - 1, z + 3), new BlockPos(x + 4, y - 1, z + 3), new StructurePlaceSettings().setRotation(Rotation.CLOCKWISE_180).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
@@ -131,9 +118,7 @@ public class FlufftreeGenProcedure {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "fluff_tree_3"));
 					if (template != null) {
-						template.placeInWorld(
-								_serverworld, new BlockPos(x - 4, y - 1, z + 3), new BlockPos(x - 4, y - 1, z + 3), new StructurePlaceSettings()
-										.setRotation(Rotation.COUNTERCLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 1, z + 3), new BlockPos(x - 4, y - 1, z + 3), new StructurePlaceSettings().setRotation(Rotation.COUNTERCLOCKWISE_90).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
@@ -144,8 +129,7 @@ public class FlufftreeGenProcedure {
 		locY = -3;
 		locZ = -3;
 		for (int index0 = 0; index0 < (int) (343); index0++) {
-			if (locX * locX + locY * locY + locZ * locZ < 27 && Math.random() < 0.015
-					&& world.isEmptyBlock(new BlockPos(x + locX, y + yBot + locY, z + locZ))) {
+			if (locX * locX + locY * locY + locZ * locZ < 27 && Math.random() < 0.015 && world.isEmptyBlock(new BlockPos(x + locX, y + yBot + locY, z + locZ))) {
 				world.setBlock(new BlockPos(x + locX, y + yBot + locY, z + locZ), ElementureModBlocks.FLUFFLEAVES.get().defaultBlockState(), 3);
 			}
 			locX = locX + 1;

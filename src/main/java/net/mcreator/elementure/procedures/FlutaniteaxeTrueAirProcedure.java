@@ -10,8 +10,7 @@ public class FlutaniteaxeTrueAirProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.FLUTANITEAXE
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.FLUTANITEAXE.get()) {
 			entity.getPersistentData().putBoolean("airACTIVE", (true));
 		}
 	}

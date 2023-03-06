@@ -16,10 +16,9 @@ import java.util.List;
 
 public class PumpkindonutItem extends Item {
 	public PumpkindonutItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.RARE)
-				.food((new FoodProperties.Builder()).nutrition(7).saturationMod(1.5999999999999999f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(7).saturationMod(1.5999999999999999f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -15,7 +15,6 @@
         "data": {
           "image": "trade_arrow_3.png",
           "use1Xscale": false,
-          "name": "trade_arrow_3.png",
           "x": 195,
           "y": 71
         }
@@ -26,10 +25,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 0,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
           "x": 177,
           "y": 58
         }
@@ -40,10 +43,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 1,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #1",
           "x": 177,
           "y": 80
         }
@@ -52,9 +59,10 @@
         "type": "outputslot",
         "data": {
           "id": 2,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #2",
           "x": 231,
           "y": 71
         }
@@ -62,12 +70,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Potent Jelly",
+          "name": "label_potent_jelly",
+          "text": {
+            "fixedValue": "Potent Jelly"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Potent Jelly",
           "x": 195,
           "y": 57
         }
@@ -75,12 +85,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Item",
+          "name": "label_item",
+          "text": {
+            "fixedValue": "Item"
+          },
           "color": {
             "value": -12829636,
             "falpha": 0.0
           },
-          "name": "Item",
           "x": 195,
           "y": 88
         }

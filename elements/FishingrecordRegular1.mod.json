@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -15,7 +15,6 @@
         "data": {
           "image": "book_fishing.png",
           "use1Xscale": false,
-          "name": "book_fishing.png",
           "x": 92,
           "y": 35
         }
@@ -25,7 +24,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 45
         }
@@ -35,7 +33,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 67
         }
@@ -45,7 +42,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 89
         }
@@ -55,7 +51,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 111
         }
@@ -65,7 +60,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 133
         }
@@ -75,7 +69,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 155
         }
@@ -85,7 +78,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 177
         }
@@ -98,7 +90,6 @@
           "displayCondition": {
             "name": "Chubconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 48
         }
@@ -108,7 +99,6 @@
         "data": {
           "image": "chub.png",
           "use1Xscale": false,
-          "name": "chub.png",
           "x": 121,
           "y": 46
         }
@@ -121,7 +111,6 @@
           "displayCondition": {
             "name": "Trahiraconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 70
         }
@@ -131,7 +120,6 @@
         "data": {
           "image": "trahira.png",
           "use1Xscale": false,
-          "name": "trahira.png",
           "x": 121,
           "y": 68
         }
@@ -144,7 +132,6 @@
           "displayCondition": {
             "name": "Maxtrahiraconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 92
         }
@@ -154,7 +141,6 @@
         "data": {
           "image": "max_trahira.png",
           "use1Xscale": false,
-          "name": "max_trahira.png",
           "x": 121,
           "y": 90
         }
@@ -167,7 +153,6 @@
           "displayCondition": {
             "name": "Smallbrumconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 114
         }
@@ -177,7 +162,6 @@
         "data": {
           "image": "smallbrum.png",
           "use1Xscale": false,
-          "name": "smallbrum.png",
           "x": 121,
           "y": 112
         }
@@ -190,7 +174,6 @@
           "displayCondition": {
             "name": "Greatbrumconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 136
         }
@@ -200,7 +183,6 @@
         "data": {
           "image": "greatbrum.png",
           "use1Xscale": false,
-          "name": "greatbrum.png",
           "x": 121,
           "y": 134
         }
@@ -213,7 +195,6 @@
           "displayCondition": {
             "name": "Halibutconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 158
         }
@@ -223,7 +204,6 @@
         "data": {
           "image": "halibut.png",
           "use1Xscale": false,
-          "name": "halibut.png",
           "x": 121,
           "y": 156
         }
@@ -236,7 +216,6 @@
           "displayCondition": {
             "name": "Trouishconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 180
         }
@@ -246,7 +225,6 @@
         "data": {
           "image": "trouish.png",
           "use1Xscale": false,
-          "name": "trouish.png",
           "x": 121,
           "y": 178
         }
@@ -256,7 +234,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 45
         }
@@ -266,7 +243,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 67
         }
@@ -276,7 +252,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 89
         }
@@ -286,7 +261,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 111
         }
@@ -296,7 +270,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 133
         }
@@ -306,7 +279,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 155
         }
@@ -316,7 +288,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 177
         }
@@ -329,7 +300,6 @@
           "displayCondition": {
             "name": "Pipconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 157,
           "y": 48
         }
@@ -339,7 +309,6 @@
         "data": {
           "image": "pip.png",
           "use1Xscale": false,
-          "name": "pip.png",
           "x": 173,
           "y": 46
         }
@@ -352,7 +321,6 @@
           "displayCondition": {
             "name": "Melshconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 157,
           "y": 70
         }
@@ -362,7 +330,6 @@
         "data": {
           "image": "melsh.png",
           "use1Xscale": false,
-          "name": "melsh.png",
           "x": 173,
           "y": 68
         }
@@ -375,7 +342,6 @@
           "displayCondition": {
             "name": "Eelconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 157,
           "y": 92
         }
@@ -385,7 +351,6 @@
         "data": {
           "image": "eel.png",
           "use1Xscale": false,
-          "name": "eel.png",
           "x": 173,
           "y": 90
         }
@@ -398,7 +363,6 @@
           "displayCondition": {
             "name": "Pacuconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 157,
           "y": 114
         }
@@ -408,7 +372,6 @@
         "data": {
           "image": "pacu.png",
           "use1Xscale": false,
-          "name": "pacu.png",
           "x": 173,
           "y": 112
         }
@@ -421,7 +384,6 @@
           "displayCondition": {
             "name": "DelaconcordeConfirm"
           },
-          "name": "green_checkmark.png",
           "x": 157,
           "y": 136
         }
@@ -434,7 +396,6 @@
           "displayCondition": {
             "name": "DelaconcordeConfirm"
           },
-          "name": "dela_concorde.png",
           "x": 174,
           "y": 134
         }
@@ -447,7 +408,6 @@
           "displayCondition": {
             "name": "MidnighthalibutConfirm"
           },
-          "name": "green_checkmark.png",
           "x": 157,
           "y": 158
         }
@@ -457,7 +417,6 @@
         "data": {
           "image": "midnight_halibut.png",
           "use1Xscale": false,
-          "name": "midnight_halibut.png",
           "x": 173,
           "y": 156
         }
@@ -470,7 +429,6 @@
           "displayCondition": {
             "name": "DeadbrumConfirm"
           },
-          "name": "green_checkmark.png",
           "x": 157,
           "y": 180
         }
@@ -480,7 +438,6 @@
         "data": {
           "image": "deadbrum.png",
           "use1Xscale": false,
-          "name": "deadbrum.png",
           "x": 173,
           "y": 178
         }
@@ -490,7 +447,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 45
         }
@@ -503,7 +459,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 67
         }
@@ -516,7 +471,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 89
         }
@@ -529,7 +483,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 111
         }
@@ -542,7 +495,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 133
         }
@@ -555,7 +507,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 155
         }
@@ -568,7 +519,6 @@
           "displayCondition": {
             "name": "MidnighteelConfirm"
           },
-          "name": "green_checkmark.png",
           "x": 213,
           "y": 48
         }
@@ -578,7 +528,6 @@
         "data": {
           "image": "midnight_eel.png",
           "use1Xscale": false,
-          "name": "midnight_eel.png",
           "x": 230,
           "y": 46
         }
@@ -591,7 +540,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 45
         }
@@ -604,7 +552,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 67
         }
@@ -617,7 +564,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 89
         }
@@ -630,7 +576,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 111
         }
@@ -643,7 +588,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 133
         }
@@ -656,7 +600,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 155
         }
@@ -664,6 +607,7 @@
       {
         "type": "button",
         "data": {
+          "name": "button_next_page",
           "text": "Next Page",
           "onClick": {
             "name": "Openregularfish2"
@@ -673,7 +617,6 @@
           },
           "width": 70,
           "height": 20,
-          "name": "Next Page",
           "x": 253,
           "y": 175
         }

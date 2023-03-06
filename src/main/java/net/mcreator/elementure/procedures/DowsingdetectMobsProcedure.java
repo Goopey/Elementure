@@ -25,18 +25,12 @@ public class DowsingdetectMobsProcedure {
 		boolean ret_val = false;
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(12 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(12 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if (entityiterator.getType()
-						.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("elementure:dowsing_detectable")))) {
+				if (entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("elementure:dowsing_detectable")))) {
 					ret_val = true;
-					if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1)
-							.getItem() == ElementureModItems.DARKSENSE.get()
-							|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2)
-									.getItem() == ElementureModItems.DARKSENSE.get()) {
+					if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).getItem() == ElementureModItems.DARKSENSE.get()
+							|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).getItem() == ElementureModItems.DARKSENSE.get()) {
 						if (entityiterator instanceof LivingEntity _entity)
 							_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 60, 0));
 					}

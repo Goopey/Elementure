@@ -18,10 +18,9 @@ import java.util.List;
 
 public class MycenashroomitemItem extends Item {
 	public MycenashroomitemItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.300000011920929f).alwaysEat()
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.30000001192092896f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

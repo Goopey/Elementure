@@ -21,10 +21,9 @@ import java.util.List;
 
 public class HomepotionItem extends Item {
 	public HomepotionItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_BREWING).stacksTo(1).rarity(Rarity.RARE)
-				.food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat()
+		super(new Item.Properties().tab(CreativeModeTab.TAB_BREWING).stacksTo(1).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

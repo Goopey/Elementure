@@ -25,8 +25,7 @@ public class ChaliceofFishingPowerREcipeBrewingRecipe implements IBrewingRecipe 
 	@Override
 	public boolean isInput(ItemStack input) {
 		Item inputItem = input.getItem();
-		return (inputItem == Items.POTION || inputItem == Items.SPLASH_POTION || inputItem == Items.LINGERING_POTION)
-				&& PotionUtils.getPotion(input) == Potions.THICK;
+		return (inputItem == Items.POTION || inputItem == Items.SPLASH_POTION || inputItem == Items.LINGERING_POTION) && PotionUtils.getPotion(input) == Potions.THICK;
 	}
 
 	@Override

@@ -28,22 +28,19 @@ public class SpidernestSpawnSpiderlingProcedure {
 		double locY = 0;
 		{
 			final Vec3 _center = new Vec3(x, y, z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if ((entityiterator instanceof SpiderlingEntity || entityiterator instanceof HeadHostEntity)
-						&& (entityiterator.getPersistentData().getString("spiderling_id")).equals((x + "" + y) + "" + z)) {
+				if ((entityiterator instanceof SpiderlingEntity || entityiterator instanceof HeadHostEntity) && (entityiterator.getPersistentData().getString("spiderling_id")).equals((x + "" + y) + "" + z)) {
 					canSpawn = true;
 				}
 			}
 		}
 		if (!canSpawn && !world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 24, 24, 24), e -> true).isEmpty()
-				&& !(((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 24, 24, 24), e -> true).stream()
-						.sorted(new Object() {
-							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-								return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
+				&& !(((Entity) world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 24, 24, 24), e -> true).stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 			for (int index0 = 0; index0 < (int) (2); index0++) {
 				if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.AIR) {
 					locY = 1.1;
@@ -67,8 +64,7 @@ public class SpidernestSpawnSpiderlingProcedure {
 						Entity entityToSpawn = new SpiderlingEntity(ElementureModEntities.SPIDERLING.get(), _level);
 						entityToSpawn.moveTo((x + locX), (y + locY), (z + locZ), world.getRandom().nextFloat() * 360F, 0);
 						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-									null, null);
+							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						world.addFreshEntity(entityToSpawn);
 					}
 				} else {
@@ -76,15 +72,14 @@ public class SpidernestSpawnSpiderlingProcedure {
 						Entity entityToSpawn = new HeadHostEntity(ElementureModEntities.HEAD_HOST.get(), _level);
 						entityToSpawn.moveTo((x + locX), (y + locY), (z + locZ), world.getRandom().nextFloat() * 360F, 0);
 						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-									null, null);
+							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						world.addFreshEntity(entityToSpawn);
 					}
 				}
 				{
 					final Vec3 _center = new Vec3((x + locX), (y + locY), (z + locZ));
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(0.1 / 2d), e -> true).stream()
-							.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(0.1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							.collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						if (entityiterator instanceof SpiderlingEntity || entityiterator instanceof HeadHostEntity) {
 							entityiterator.getPersistentData().putString("spiderling_id", ((x + "" + y) + "" + z));

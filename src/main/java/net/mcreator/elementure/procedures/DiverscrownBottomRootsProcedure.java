@@ -29,30 +29,24 @@ public class DiverscrownBottomRootsProcedure {
 					if (locX * locX + locY * locY + locZ * locZ < 22) {
 						if (Math.random() < 0.002) {
 							if (Math.random() < 0.05) {
-								world.setBlock(new BlockPos(x + locX + xOff * height, (y + locY) - height * 4, z + locZ + zOff * height),
-										ElementureModBlocks.RAREGLASSLIGHT.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + locX + xOff * height, (y + locY) - height * 4, z + locZ + zOff * height), ElementureModBlocks.RAREGLASSLIGHT.get().defaultBlockState(), 3);
 							} else {
-								world.setBlock(new BlockPos(x + locX + xOff * height, (y + locY) - height * 4, z + locZ + zOff * height),
-										ElementureModBlocks.GLASSLIGHT.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + locX + xOff * height, (y + locY) - height * 4, z + locZ + zOff * height), ElementureModBlocks.GLASSLIGHT.get().defaultBlockState(), 3);
 							}
 						} else {
-							world.setBlock(new BlockPos(x + locX + xOff * height, (y + locY) - height * 4, z + locZ + zOff * height),
-									ElementureModBlocks.LILYPADLOG_FULL.get().defaultBlockState(), 3);
+							world.setBlock(new BlockPos(x + locX + xOff * height, (y + locY) - height * 4, z + locZ + zOff * height), ElementureModBlocks.LILYPADLOG_FULL.get().defaultBlockState(), 3);
 						}
 					}
 				} else {
 					if (locX * locX + locY * locY + locZ * locZ < 18) {
 						if (Math.random() < 0.002) {
 							if (Math.random() < 0.05) {
-								world.setBlock(new BlockPos(x + locX + xOff * height, (y + locY) - height * 4, z + locZ + zOff * height),
-										ElementureModBlocks.RAREGLASSLIGHT.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + locX + xOff * height, (y + locY) - height * 4, z + locZ + zOff * height), ElementureModBlocks.RAREGLASSLIGHT.get().defaultBlockState(), 3);
 							} else {
-								world.setBlock(new BlockPos(x + locX + xOff * height, (y + locY) - height * 4, z + locZ + zOff * height),
-										ElementureModBlocks.GLASSLIGHT.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + locX + xOff * height, (y + locY) - height * 4, z + locZ + zOff * height), ElementureModBlocks.GLASSLIGHT.get().defaultBlockState(), 3);
 							}
 						} else {
-							world.setBlock(new BlockPos(x + locX + xOff * height, (y + locY) - height * 4, z + locZ + zOff * height),
-									ElementureModBlocks.LILYPADLOG_FULL.get().defaultBlockState(), 3);
+							world.setBlock(new BlockPos(x + locX + xOff * height, (y + locY) - height * 4, z + locZ + zOff * height), ElementureModBlocks.LILYPADLOG_FULL.get().defaultBlockState(), 3);
 						}
 					}
 				}
@@ -80,8 +74,7 @@ public class DiverscrownBottomRootsProcedure {
 					return false;
 				}
 			}.getValue(world, new BlockPos(x + xOff * height, BEDROCK_LEVEL, z + zOff * height), "diverscrowncenterUsed"))) {
-				world.setBlock(new BlockPos(x + xOff * height, y - height * 4, z + zOff * height),
-						ElementureModBlocks.DIVERSCROWN_OMEGAN.get().defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x + xOff * height, y - height * 4, z + zOff * height), ElementureModBlocks.DIVERSCROWN_OMEGAN.get().defaultBlockState(), 3);
 				if (!world.isClientSide()) {
 					BlockPos _bp = new BlockPos(x + xOff * height, y - height * 4, z + zOff * height);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -96,8 +89,7 @@ public class DiverscrownBottomRootsProcedure {
 				if (Math.random() < 0.2) {
 					DiverscrownBottomRootsProcedure.execute(world, (x + xOff * height), (y - height * 4), (z + zOff * height));
 				} else {
-					world.setBlock(new BlockPos(x + xOff * height, y - height * 4, z + zOff * height),
-							ElementureModBlocks.DIVERSCROWN_OMEGAN.get().defaultBlockState(), 3);
+					world.setBlock(new BlockPos(x + xOff * height, y - height * 4, z + zOff * height), ElementureModBlocks.DIVERSCROWN_OMEGAN.get().defaultBlockState(), 3);
 					if (!world.isClientSide()) {
 						BlockPos _bp = new BlockPos(x + xOff * height, y - height * 4, z + zOff * height);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);

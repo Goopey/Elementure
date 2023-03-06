@@ -15,10 +15,9 @@ import java.util.List;
 
 public class RedsnapperItem extends Item {
 	public RedsnapperItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(3).saturationMod(0.3f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(0.3f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

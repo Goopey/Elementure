@@ -35,25 +35,18 @@ public class CthulhufishSummonFamiliarProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_familiar).getItem() == ElementureModItems.CTHULHUFISH.get()) {
-			if (!world.getEntitiesOfClass(CthulhupetEntity.class,
-					AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 25, 25, 25), e -> true).isEmpty()) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_familiar).getItem() == ElementureModItems.CTHULHUFISH.get()) {
+			if (!world.getEntitiesOfClass(CthulhupetEntity.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 25, 25, 25), e -> true).isEmpty()) {
 				entity.getPersistentData().putDouble("summontimer", 10);
 			} else if (entity.getPersistentData().getDouble("summontimer") > -3) {
 				entity.getPersistentData().putDouble("summontimer", (entity.getPersistentData().getDouble("summontimer") - 1));
 			} else {
-				if ((((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_familiar).getDisplayName().getString())
-						.equals("Cthulhu fish")) {
+				if ((((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_familiar).getDisplayName().getString()).equals("Cthulhu fish")) {
 					{
 						Entity _ent = entity;
 						if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-							_ent.getServer().getCommands().performPrefixedCommand(
-									new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
-											_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
-											_ent.getDisplayName(), _ent.level.getServer(), _ent),
-									("summon elementure:cthulhupet ~ ~ ~" + (" {Tame:1, Owner:" + (entity.getDisplayName().getString() + "}"))));
+							_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+									_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), ("summon elementure:cthulhupet ~ ~ ~" + (" {Tame:1, Owner:" + (entity.getDisplayName().getString() + "}"))));
 						}
 					}
 				} else {
@@ -61,14 +54,12 @@ public class CthulhufishSummonFamiliarProcedure {
 						Entity _ent = entity;
 						if (!_ent.level.isClientSide() && _ent.getServer() != null) {
 							_ent.getServer().getCommands().performPrefixedCommand(
-									new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
-											_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
-											_ent.getDisplayName(), _ent.level.getServer(), _ent),
+									new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(), _ent.getDisplayName(),
+											_ent.level.getServer(), _ent),
 									("summon elementure:cthulhupet ~ ~ ~" + (" {Tame:1, Owner:" + ((entity.getDisplayName().getString() + ", ") + ""
 											+ ("CustomName:\"" + ""
-													+ (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-															.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_familiar)
-															.getDisplayName().getString() + "" + "\"}"))))));
+													+ (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_familiar).getDisplayName().getString() + ""
+															+ "\"}"))))));
 						}
 					}
 				}

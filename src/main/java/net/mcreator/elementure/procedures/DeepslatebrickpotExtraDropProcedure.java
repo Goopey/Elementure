@@ -16,8 +16,7 @@ public class DeepslatebrickpotExtraDropProcedure {
 		if (Math.random() < 0.05) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z,
-						new ItemStack((ForgeRegistries.ITEMS.tags().getTag(ItemTags.create(new ResourceLocation("elementure:deepruins_random_drop")))
-								.getRandomElement(RandomSource.create()).orElseGet(() -> Items.AIR))));
+						new ItemStack((ForgeRegistries.ITEMS.tags().getTag(ItemTags.create(new ResourceLocation("elementure:deepruins_random_drop"))).getRandomElement(RandomSource.create()).orElseGet(() -> Items.AIR))));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}

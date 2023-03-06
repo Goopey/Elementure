@@ -13,14 +13,10 @@ public class MycenaStairwayGenProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		double CoordsY = 0;
 		double FloorNum = 0;
-		while (!((world.getBlockState(new BlockPos(x, y + CoordsY + 1, z))).getBlock() == Blocks.STONE)
-				&& !((world.getBlockState(new BlockPos(x, y + CoordsY + 1, z))).getBlock() == Blocks.GRANITE)
-				&& !((world.getBlockState(new BlockPos(x, y + CoordsY + 1, z))).getBlock() == Blocks.DIORITE)
-				&& !((world.getBlockState(new BlockPos(x, y + CoordsY + 1, z))).getBlock() == ElementureModBlocks.ENERGYDIORITE.get())
-				&& !((world.getBlockState(new BlockPos(x, y + CoordsY + 1, z))).getBlock() == ElementureModBlocks.LIGHTNINGANDESITE.get())
-				&& !((world.getBlockState(new BlockPos(x, y + CoordsY + 1, z))).getBlock() == Blocks.ANDESITE)
-				&& !((world.getBlockState(new BlockPos(x, y + CoordsY + 1, z))).getBlock() == ElementureModBlocks.RUINGRANITE.get())
-				&& y + CoordsY < 256 && CoordsY < 32) {
+		while (!((world.getBlockState(new BlockPos(x, y + CoordsY + 1, z))).getBlock() == Blocks.STONE) && !((world.getBlockState(new BlockPos(x, y + CoordsY + 1, z))).getBlock() == Blocks.GRANITE)
+				&& !((world.getBlockState(new BlockPos(x, y + CoordsY + 1, z))).getBlock() == Blocks.DIORITE) && !((world.getBlockState(new BlockPos(x, y + CoordsY + 1, z))).getBlock() == ElementureModBlocks.ENERGYDIORITE.get())
+				&& !((world.getBlockState(new BlockPos(x, y + CoordsY + 1, z))).getBlock() == ElementureModBlocks.LIGHTNINGANDESITE.get()) && !((world.getBlockState(new BlockPos(x, y + CoordsY + 1, z))).getBlock() == Blocks.ANDESITE)
+				&& !((world.getBlockState(new BlockPos(x, y + CoordsY + 1, z))).getBlock() == ElementureModBlocks.RUINGRANITE.get()) && y + CoordsY < 256 && CoordsY < 32) {
 			CoordsY = CoordsY + 1;
 		}
 		world.setBlock(new BlockPos(x, y + CoordsY, z), ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);

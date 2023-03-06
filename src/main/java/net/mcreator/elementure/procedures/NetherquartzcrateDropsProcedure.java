@@ -20,20 +20,16 @@ public class NetherquartzcrateDropsProcedure {
 			return;
 		ItemStack sword = ItemStack.EMPTY;
 		(itemstack).shrink(1);
-		if (Math.random() < 0.1 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.LUCK)
-				? _livEnt.getEffect(MobEffects.LUCK).getAmplifier()
-				: 0) / 10) {
+		if (Math.random() < 0.1 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.LUCK) ? _livEnt.getEffect(MobEffects.LUCK).getAmplifier() : 0) / 10) {
 			if (Math.random() < 0.7) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(ElementureModItems.LIQUIDFLAME.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.LIQUIDFLAME.get()));
 					entityToSpawn.setPickUpDelay(4);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			} else {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(ElementureModItems.GREEDSBAG.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.GREEDSBAG.get()));
 					entityToSpawn.setPickUpDelay(4);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -42,8 +38,7 @@ public class NetherquartzcrateDropsProcedure {
 			if (Math.random() < 0.1) {
 				for (int index0 = 0; index0 < (int) (Math.random() * 12 + 6); index0++) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-								new ItemStack(Blocks.WARPED_STEM));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.WARPED_STEM));
 						entityToSpawn.setPickUpDelay(4);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -51,14 +46,12 @@ public class NetherquartzcrateDropsProcedure {
 			} else if (Math.random() >= 0.1 && Math.random() < 0.2) {
 				for (int index1 = 0; index1 < (int) (Math.random() * 6 + 4); index1++) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-								new ItemStack(Blocks.WARPED_FUNGUS));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.WARPED_FUNGUS));
 						entityToSpawn.setPickUpDelay(4);
 						_level.addFreshEntity(entityToSpawn);
 					}
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-								new ItemStack(Blocks.TWISTING_VINES));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.TWISTING_VINES));
 						entityToSpawn.setPickUpDelay(4);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -66,14 +59,12 @@ public class NetherquartzcrateDropsProcedure {
 			} else if (Math.random() >= 0.2 && Math.random() < 0.35) {
 				for (int index2 = 0; index2 < (int) (Math.random() * 6 + 4); index2++) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-								new ItemStack(Blocks.CRIMSON_FUNGUS));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.CRIMSON_FUNGUS));
 						entityToSpawn.setPickUpDelay(4);
 						_level.addFreshEntity(entityToSpawn);
 					}
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-								new ItemStack(Blocks.WEEPING_VINES));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.WEEPING_VINES));
 						entityToSpawn.setPickUpDelay(4);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -82,24 +73,21 @@ public class NetherquartzcrateDropsProcedure {
 				if (ElementureModVariables.MapVariables.get(world).isHalloween) {
 					for (int index3 = 0; index3 < (int) (Math.random() * 6 + 2); index3++) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-									new ItemStack(ElementureModItems.DANIOCARAMEL.get()));
+							ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.DANIOCARAMEL.get()));
 							entityToSpawn.setPickUpDelay(4);
 							_level.addFreshEntity(entityToSpawn);
 						}
 					}
 				} else if (Math.random() < 0.2) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-								new ItemStack(Items.HONEY_BOTTLE));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Items.HONEY_BOTTLE));
 						entityToSpawn.setPickUpDelay(4);
 						_level.addFreshEntity(entityToSpawn);
 					}
 				} else {
 					for (int index4 = 0; index4 < (int) (Math.random() * 6 + 4); index4++) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-									new ItemStack(Items.COOKED_PORKCHOP));
+							ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Items.COOKED_PORKCHOP));
 							entityToSpawn.setPickUpDelay(4);
 							_level.addFreshEntity(entityToSpawn);
 						}
@@ -119,16 +107,14 @@ public class NetherquartzcrateDropsProcedure {
 				if (Math.random() < 0.7) {
 					for (int index6 = 0; index6 < (int) (Math.random() * 2 + 2); index6++) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-									new ItemStack(ElementureModItems.PIP.get()));
+							ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.PIP.get()));
 							entityToSpawn.setPickUpDelay(4);
 							_level.addFreshEntity(entityToSpawn);
 						}
 					}
 				} else {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-								new ItemStack(ElementureModItems.STRENGTHENEDSTRING.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.STRENGTHENEDSTRING.get()));
 						entityToSpawn.setPickUpDelay(4);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -136,8 +122,7 @@ public class NetherquartzcrateDropsProcedure {
 			} else {
 				for (int index7 = 0; index7 < (int) (Math.random() * 12 + 6); index7++) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-								new ItemStack(Blocks.CRIMSON_STEM));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.CRIMSON_STEM));
 						entityToSpawn.setPickUpDelay(4);
 						_level.addFreshEntity(entityToSpawn);
 					}

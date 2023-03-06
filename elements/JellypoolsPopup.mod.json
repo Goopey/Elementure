@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGHEST",
@@ -7,12 +7,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Jelly Pools",
+          "name": "label_jelly_pools",
+          "text": {
+            "fixedValue": "Jelly Pools"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "Jelly Pools",
           "x": 186,
           "y": 26
         }

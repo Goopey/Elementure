@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGHEST",
@@ -7,12 +7,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Grayskull Lake",
+          "name": "label_grayskull_lake",
+          "text": {
+            "fixedValue": "Grayskull Lake"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "Grayskull Lake",
           "x": 178,
           "y": 28
         }

@@ -9,8 +9,7 @@ public class RaredaggerloachDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isFish = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("rareDaggerLoach")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("rareDaggerLoach")) {
 			isFish = true;
 		} else {
 			isFish = false;

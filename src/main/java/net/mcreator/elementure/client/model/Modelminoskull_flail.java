@@ -21,8 +21,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class Modelminoskull_flail<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("elementure", "modelminoskull_flail"),
-			"main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("elementure", "modelminoskull_flail"), "main");
 	public final ModelPart bb_main;
 
 	public Modelminoskull_flail(ModelPart root) {
@@ -33,17 +32,14 @@ public class Modelminoskull_flail<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-5.0F, -10.0F, -5.0F, 10.0F, 10.0F, 10.0F, new CubeDeformation(0.0F)).texOffs(0, 26)
-						.addBox(-7.0F, -9.0F, -4.0F, 14.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(0, 42)
-						.addBox(-4.0F, -9.0F, -7.0F, 8.0F, 8.0F, 14.0F, new CubeDeformation(0.0F)).texOffs(32, 12)
-						.addBox(-4.0F, -12.0F, -4.0F, 8.0F, 14.0F, 8.0F, new CubeDeformation(0.0F)),
+				CubeListBuilder.create().texOffs(0, 0).addBox(-5.0F, -10.0F, -5.0F, 10.0F, 10.0F, 10.0F, new CubeDeformation(0.0F)).texOffs(0, 26).addBox(-7.0F, -9.0F, -4.0F, 14.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(0, 42)
+						.addBox(-4.0F, -9.0F, -7.0F, 8.0F, 8.0F, 14.0F, new CubeDeformation(0.0F)).texOffs(32, 12).addBox(-4.0F, -12.0F, -4.0F, 8.0F, 14.0F, 8.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		bb_main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 

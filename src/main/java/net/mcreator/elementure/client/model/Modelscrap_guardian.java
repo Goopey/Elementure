@@ -34,15 +34,12 @@ public class Modelscrap_guardian<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition eye = partdefinition.addOrReplaceChild("eye",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-3.0F, -15.0F, -3.0F, 6.0F, 6.0F, 6.0F, new CubeDeformation(3.5F)),
-				PartPose.offset(0.0F, 22.0F, 0.0F));
-		PartDefinition body = partdefinition.addOrReplaceChild("body",
-				CubeListBuilder.create().texOffs(8, 0).addBox(-8.0F, -20.0F, -8.0F, 16.0F, 16.0F, 16.0F, new CubeDeformation(6.0F)).texOffs(80, 0)
-						.addBox(-6.0F, -21.0F, -6.0F, 12.0F, 18.0F, 12.0F, new CubeDeformation(6.0F)).texOffs(0, 40)
-						.addBox(-9.0F, -18.0F, -6.0F, 18.0F, 12.0F, 12.0F, new CubeDeformation(6.0F)).texOffs(68, 34)
-						.addBox(-6.0F, -18.0F, -9.0F, 12.0F, 12.0F, 18.0F, new CubeDeformation(6.0F)),
-				PartPose.offset(0.0F, 22.0F, 0.0F));
+		PartDefinition eye = partdefinition.addOrReplaceChild("eye", CubeListBuilder.create().texOffs(0, 0).addBox(-3.0F, -15.0F, -3.0F, 6.0F, 6.0F, 6.0F, new CubeDeformation(3.5F)), PartPose.offset(0.0F, 22.0F, 0.0F));
+		PartDefinition body = partdefinition
+				.addOrReplaceChild(
+						"body", CubeListBuilder.create().texOffs(8, 0).addBox(-8.0F, -20.0F, -8.0F, 16.0F, 16.0F, 16.0F, new CubeDeformation(6.0F)).texOffs(80, 0).addBox(-6.0F, -21.0F, -6.0F, 12.0F, 18.0F, 12.0F, new CubeDeformation(6.0F))
+								.texOffs(0, 40).addBox(-9.0F, -18.0F, -6.0F, 18.0F, 12.0F, 12.0F, new CubeDeformation(6.0F)).texOffs(68, 34).addBox(-6.0F, -18.0F, -9.0F, 12.0F, 12.0F, 18.0F, new CubeDeformation(6.0F)),
+						PartPose.offset(0.0F, 22.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 128, 64);
 	}
 
@@ -54,8 +51,7 @@ public class Modelscrap_guardian<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		eye.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}

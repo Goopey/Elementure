@@ -28,37 +28,25 @@ public class SpiderqueenDamageProcedure {
 		double yaw2 = 0;
 		double pitch2 = 0;
 		double yaw = 0;
-		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.POISON) : false)
-				&& !sourceentity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
-				&& !sourceentity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))
-				&& world.dayTime() % 10 == 0) {
-			poisonDamage = ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.POISON)
-					? _livEnt.getEffect(MobEffects.POISON).getAmplifier()
-					: 0) + 1)
-					* 0.8
-					* (sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.POISON)
-							? _livEnt.getEffect(MobEffects.POISON).getDuration()
-							: 0)
-					* 0.05;
+		if ((sourceentity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.POISON) : false) && !sourceentity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
+				&& !sourceentity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities"))) && world.dayTime() % 10 == 0) {
+			poisonDamage = ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.POISON) ? _livEnt.getEffect(MobEffects.POISON).getAmplifier() : 0) + 1) * 0.8
+					* (sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.POISON) ? _livEnt.getEffect(MobEffects.POISON).getDuration() : 0) * 0.05;
 			if (sourceentity instanceof LivingEntity _entity)
-				_entity.setHealth((float) Math.max(1,
-						(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) - Math.round(poisonDamage * 0.4)));
+				_entity.setHealth((float) Math.max(1, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) - Math.round(poisonDamage * 0.4)));
 			if (sourceentity instanceof LivingEntity _entity)
 				_entity.removeEffect(MobEffects.POISON);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(sourceentity.getX(), sourceentity.getY(), sourceentity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.turtle.egg_crack")), SoundSource.NEUTRAL, (float) 1.1,
+					_level.playSound(null, new BlockPos(sourceentity.getX(), sourceentity.getY(), sourceentity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.turtle.egg_crack")), SoundSource.NEUTRAL, (float) 1.1,
 							(float) 0.75);
 				} else {
-					_level.playLocalSound((sourceentity.getX()), (sourceentity.getY()), (sourceentity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.turtle.egg_crack")), SoundSource.NEUTRAL, (float) 1.1,
-							(float) 0.75, false);
+					_level.playLocalSound((sourceentity.getX()), (sourceentity.getY()), (sourceentity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.turtle.egg_crack")), SoundSource.NEUTRAL, (float) 1.1, (float) 0.75,
+							false);
 				}
 			}
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.WORTASHMOSS.get()), (sourceentity.getX()),
-						(sourceentity.getY() + 1), (sourceentity.getZ()), 12, 0.2, 0.2, 0.2, 0.01);
+				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.WORTASHMOSS.get()), (sourceentity.getX()), (sourceentity.getY() + 1), (sourceentity.getZ()), 12, 0.2, 0.2, 0.2, 0.01);
 			pitch = Math.cos(sourceentity.getXRot() / ((-180) / Math.PI));
 			pitch2 = Math.sin(sourceentity.getXRot() / ((-180) / Math.PI));
 			yaw = Math.sin(sourceentity.getYRot() / ((-180) / Math.PI));

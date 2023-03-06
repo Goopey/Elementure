@@ -28,18 +28,13 @@ public class ArchkassemstaffSprayFireProcedure {
 		yaw = Math.sin(entity.getYRot() / ((-180) / Math.PI));
 		yaw2 = Math.cos(entity.getYRot() / ((-180) / Math.PI));
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.SMALL_FLAME, (entity.getX() + 2 * yaw * pitch), (entity.getY() + 1.633 + 2 * pitch2),
-					(entity.getZ() + 2 * yaw2 * pitch), 10, 0.075, 0.075, 0.075, 0);
+			_level.sendParticles(ParticleTypes.SMALL_FLAME, (entity.getX() + 2 * yaw * pitch), (entity.getY() + 1.633 + 2 * pitch2), (entity.getZ() + 2 * yaw2 * pitch), 10, 0.075, 0.075, 0.075, 0);
 		{
-			final Vec3 _center = new Vec3((entity.getX() + 2 * yaw * pitch), (entity.getY() + 1.633 + 2 * pitch2),
-					(entity.getZ() + 2 * yaw2 * pitch));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(0.5 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			final Vec3 _center = new Vec3((entity.getX() + 2 * yaw * pitch), (entity.getY() + 1.633 + 2 * pitch2), (entity.getZ() + 2 * yaw2 * pitch));
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(0.5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if (!(entityiterator == entity)
-						&& !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
-						&& !entityiterator.getType()
-								.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
+				if (!(entityiterator == entity) && !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
+						&& !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
 					entityiterator.hurt(DamageSource.IN_FIRE, 1);
 				}
 			}

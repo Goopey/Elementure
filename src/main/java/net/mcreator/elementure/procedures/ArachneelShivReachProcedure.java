@@ -34,27 +34,20 @@ public class ArachneelShivReachProcedure {
 			return;
 		ItemStack spear = ItemStack.EMPTY;
 		double amount = 0;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.ARACHNEEL_SHIV
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.ARACHNEEL_SHIV.get()) {
 			{
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-					_ent.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
-									_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
-									_ent.getDisplayName(), _ent.level.getServer(), _ent),
-							"attribute @s forge:reach_distance modifier add 9984b5d3-2c5f-4719-9685-5bad1c4ae6af arachneelShivReach -2 add");
+					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "attribute @s forge:reach_distance modifier add 9984b5d3-2c5f-4719-9685-5bad1c4ae6af arachneelShivReach -2 add");
 				}
 			}
 		} else {
 			{
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-					_ent.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(),
-									_ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
-									_ent.getDisplayName(), _ent.level.getServer(), _ent),
-							"attribute @s forge:reach_distance modifier remove 9984b5d3-2c5f-4719-9685-5bad1c4ae6af");
+					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "attribute @s forge:reach_distance modifier remove 9984b5d3-2c5f-4719-9685-5bad1c4ae6af");
 				}
 			}
 		}

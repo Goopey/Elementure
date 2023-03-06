@@ -26,18 +26,16 @@ public class LargejellyAOEAttackProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.JELLYBUBBLE.get()), (entity.getX()), (entity.getY()),
-					(entity.getZ()), 40, 0.5, 0.5, 0.5, 0.03);
+			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.JELLYBUBBLE.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 40, 0.5, 0.5, 0.5, 0.03);
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles(ParticleTypes.END_ROD, (entity.getX()), (entity.getY()), (entity.getZ()), 40, 0.5, 0.5, 0.5, 0.03);
 		ElementureMod.queueServerWork(20, () -> {
 			{
 				final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(14 / 2d), e -> true).stream()
-						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(14 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+						.collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
-					if (!(entityiterator instanceof JellyEntity) && !(entityiterator instanceof LargejellyEntity) && !entityiterator.getType()
-							.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
+					if (!(entityiterator instanceof JellyEntity) && !(entityiterator instanceof LargejellyEntity) && !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
 						entity.hurt(DamageSource.DRY_OUT, 4);
 					}
 				}

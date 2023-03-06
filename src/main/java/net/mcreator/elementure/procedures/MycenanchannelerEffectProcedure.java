@@ -14,11 +14,9 @@ public class MycenanchannelerEffectProcedure {
 		for (int index0 = 0; index0 < (int) (3); index0++) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new MycenafumoonsporelingEntity(ElementureModEntities.MYCENAFUMOONSPORELING.get(), _level);
-				entityToSpawn.moveTo((x + Math.random() * 6 - 3), (y + Math.random()), (z + Math.random() * 6 - 3),
-						world.getRandom().nextFloat() * 360F, 0);
+				entityToSpawn.moveTo((x + Math.random() * 6 - 3), (y + Math.random()), (z + Math.random() * 6 - 3), world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
-							null);
+					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				world.addFreshEntity(entityToSpawn);
 			}
 		}

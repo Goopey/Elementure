@@ -46,8 +46,7 @@ public class StatueprotectorAttackMasterProcedure {
 		}
 		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.DAMAGE_RESISTANCE) : false) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SOULFLAME.get()), (entity.getX()), (entity.getY()),
-						(entity.getZ()), 8, 0.1, 0.1, 0.1, 0.1);
+				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SOULFLAME.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 8, 0.1, 0.1, 0.1, 0.1);
 		}
 		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.DAMAGE_BOOST) : false) {
 			if (world instanceof ServerLevel _level)
@@ -61,13 +60,9 @@ public class StatueprotectorAttackMasterProcedure {
 					_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 200, 0, (false), (false)));
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.elder_guardian.curse")), SoundSource.NEUTRAL, 1,
-								1);
+						_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.elder_guardian.curse")), SoundSource.NEUTRAL, 1, 1);
 					} else {
-						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.elder_guardian.curse")), SoundSource.NEUTRAL, 1, 1,
-								false);
+						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.elder_guardian.curse")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 			} else {
@@ -75,22 +70,16 @@ public class StatueprotectorAttackMasterProcedure {
 					_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 2, (false), (false)));
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:dungeon_breath")), SoundSource.NEUTRAL, 1, 1);
+						_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:dungeon_breath")), SoundSource.NEUTRAL, 1, 1);
 					} else {
-						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:dungeon_breath")), SoundSource.NEUTRAL, 1, 1,
-								false);
+						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:dungeon_breath")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.chorus_flower.death")), SoundSource.NEUTRAL, 1, 1);
+						_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.chorus_flower.death")), SoundSource.NEUTRAL, 1, 1);
 					} else {
-						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.chorus_flower.death")), SoundSource.NEUTRAL, 1, 1,
-								false);
+						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.chorus_flower.death")), SoundSource.NEUTRAL, 1, 1, false);
 					}
 				}
 			}
@@ -104,8 +93,7 @@ public class StatueprotectorAttackMasterProcedure {
 						Entity entityToSpawn = new StatuewraithEntity(ElementureModEntities.STATUEWRAITH.get(), _level);
 						entityToSpawn.moveTo((entity.getX()), (entity.getY()), (entity.getZ()), world.getRandom().nextFloat() * 360F, 0);
 						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-									null, null);
+							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						world.addFreshEntity(entityToSpawn);
 					}
 				}
@@ -133,8 +121,7 @@ public class StatueprotectorAttackMasterProcedure {
 			}
 			entity.getPersistentData().putDouble("attackWait", 0);
 		}
-		if (!world.getEntitiesOfClass(AndesiteelementalEntity.class, AABB.ofSize(new Vec3(x, y, z), 32, 32, 32), e -> true).isEmpty()
-				|| !world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 32, 32, 32), e -> true).isEmpty()) {
+		if (!world.getEntitiesOfClass(AndesiteelementalEntity.class, AABB.ofSize(new Vec3(x, y, z), 32, 32, 32), e -> true).isEmpty() || !world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3(x, y, z), 32, 32, 32), e -> true).isEmpty()) {
 			if (entity.getPersistentData().getDouble("playerProxTime") < -300) {
 				entity.getPersistentData().putDouble("playerProxTime", (-150));
 			}
@@ -154,12 +141,11 @@ public class StatueprotectorAttackMasterProcedure {
 					_level.sendParticles(ParticleTypes.WHITE_ASH, (entity.getX()), (entity.getY()), (entity.getZ()), 25, 1.8, 1.8, 1.8, 0.1);
 				{
 					final Vec3 _center = new Vec3(x, y, z);
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(24 / 2d), e -> true).stream()
-							.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(24 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							.collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						if (!(entityiterator instanceof StatueprotectorEntity) && !(entityiterator instanceof StatuewraithEntity)) {
-							entityiterator.setDeltaMovement(
-									new Vec3((entityiterator.getX() - entity.getX()), 0.2, (entityiterator.getZ() - entity.getZ())));
+							entityiterator.setDeltaMovement(new Vec3((entityiterator.getX() - entity.getX()), 0.2, (entityiterator.getZ() - entity.getZ())));
 						}
 					}
 				}
@@ -174,12 +160,11 @@ public class StatueprotectorAttackMasterProcedure {
 					_level.sendParticles(ParticleTypes.WHITE_ASH, (entity.getX()), (entity.getY()), (entity.getZ()), 25, 1.8, 1.8, 1.8, 0.1);
 				{
 					final Vec3 _center = new Vec3(x, y, z);
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(24 / 2d), e -> true).stream()
-							.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(24 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							.collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						if (!(entityiterator instanceof StatueprotectorEntity) && !(entityiterator instanceof StatuewraithEntity)) {
-							entityiterator.setDeltaMovement(
-									new Vec3((entityiterator.getX() - entity.getX()), 0.2, (entityiterator.getZ() - entity.getZ())));
+							entityiterator.setDeltaMovement(new Vec3((entityiterator.getX() - entity.getX()), 0.2, (entityiterator.getZ() - entity.getZ())));
 						}
 					}
 				}

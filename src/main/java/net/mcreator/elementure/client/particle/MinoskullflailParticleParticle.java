@@ -25,8 +25,7 @@ public class MinoskullflailParticleParticle extends TextureSheetParticle {
 			this.spriteSet = spriteSet;
 		}
 
-		public Particle createParticle(SimpleParticleType typeIn, ClientLevel worldIn, double x, double y, double z, double xSpeed, double ySpeed,
-				double zSpeed) {
+		public Particle createParticle(SimpleParticleType typeIn, ClientLevel worldIn, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
 			return new MinoskullflailParticleParticle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
 		}
 	}
@@ -39,7 +38,7 @@ public class MinoskullflailParticleParticle extends TextureSheetParticle {
 		this.setSize(0.2f, 0.2f);
 
 		this.lifetime = 1;
-		this.gravity = 0.01f;
+		this.gravity = 0.009999999999999995f;
 		this.hasPhysics = false;
 		this.xd = vx * 1;
 		this.yd = vy * 1;

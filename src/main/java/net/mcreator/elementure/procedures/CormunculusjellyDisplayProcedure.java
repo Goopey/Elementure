@@ -9,8 +9,7 @@ public class CormunculusjellyDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isFish = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("cormunculusJelly")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("cormunculusJelly")) {
 			isFish = true;
 		} else {
 			isFish = false;

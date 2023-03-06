@@ -85,7 +85,6 @@ public class MusicplayerGUI3ButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(MusicplayerGUI3ButtonMessage.class, MusicplayerGUI3ButtonMessage::buffer, MusicplayerGUI3ButtonMessage::new,
-				MusicplayerGUI3ButtonMessage::handler);
+		ElementureMod.addNetworkMessage(MusicplayerGUI3ButtonMessage.class, MusicplayerGUI3ButtonMessage::buffer, MusicplayerGUI3ButtonMessage::new, MusicplayerGUI3ButtonMessage::handler);
 	}
 }

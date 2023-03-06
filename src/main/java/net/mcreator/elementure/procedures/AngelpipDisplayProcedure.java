@@ -9,7 +9,6 @@ public class AngelpipDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean displayline = false;
-		return ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("angelPip");
+		return ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("angelPip");
 	}
 }

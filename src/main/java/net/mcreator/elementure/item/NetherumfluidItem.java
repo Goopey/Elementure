@@ -11,7 +11,6 @@ import net.mcreator.elementure.init.ElementureModFluids;
 
 public class NetherumfluidItem extends BucketItem {
 	public NetherumfluidItem() {
-		super(ElementureModFluids.NETHERUMFLUID,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(CreativeModeTab.TAB_MISC));
+		super(ElementureModFluids.NETHERUMFLUID, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(CreativeModeTab.TAB_MISC));
 	}
 }

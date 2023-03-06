@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGHEST",
@@ -9,7 +9,6 @@
         "data": {
           "image": "newzone_popup_9.png",
           "use1Xscale": true,
-          "name": "newzone_popup_9.png",
           "x": 163,
           "y": 3
         }
@@ -19,7 +18,6 @@
         "data": {
           "image": "newzone_popup_top_9.png",
           "use1Xscale": true,
-          "name": "newzone_popup_top_9.png",
           "x": 192,
           "y": 39
         }

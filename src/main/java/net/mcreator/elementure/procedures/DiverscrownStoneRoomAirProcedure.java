@@ -148,15 +148,12 @@ public class DiverscrownStoneRoomAirProcedure {
 			rndSize = rndSize * rndSize;
 		}
 		for (int index0 = 0; index0 < (int) (29791); index0++) {
-			if (locX * locX * xOff + locY * locY * yOff + locZ * locZ * zOff <= rndSize
-					&& (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.DIVERSSTONE.get()) {
+			if (locX * locX * xOff + locY * locY * yOff + locZ * locZ * zOff <= rndSize && (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.DIVERSSTONE.get()) {
 				world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), Blocks.WATER.defaultBlockState(), 3);
 				if (locX * locX * xOff + locY * locY * yOff + locZ * locZ * zOff >= rndSize - 20 && Math.random() < 0.1625) {
 					if (Math.random() < 0.075) {
-						world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), ElementureModBlocks.DIVERSCROWN_OMEGAN.get().defaultBlockState(),
-								3);
-						world.scheduleTick(new BlockPos(x + locX, y + locY, z + locZ),
-								world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ)).getBlock(), 40);
+						world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), ElementureModBlocks.DIVERSCROWN_OMEGAN.get().defaultBlockState(), 3);
+						world.scheduleTick(new BlockPos(x + locX, y + locY, z + locZ), world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ)).getBlock(), 40);
 						if (!world.isClientSide()) {
 							BlockPos _bp = new BlockPos(x + locX, y + locY, z + locZ);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -208,9 +205,7 @@ public class DiverscrownStoneRoomAirProcedure {
 											world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 									}
 								}
-							} else if ((world instanceof Level _lvl_isPow
-									? _lvl_isPow.hasNeighborSignal(new BlockPos(x + locX, y + locY, (z + locZ) - 1))
-									: false) && Math.random() < 0.5) {
+							} else if ((world instanceof Level _lvl_isPow ? _lvl_isPow.hasNeighborSignal(new BlockPos(x + locX, y + locY, (z + locZ) - 1)) : false) && Math.random() < 0.5) {
 								{
 									Direction _dir = Direction.SOUTH;
 									BlockPos _pos = new BlockPos(x + locX, y + locY, z + locZ);
@@ -224,9 +219,7 @@ public class DiverscrownStoneRoomAirProcedure {
 											world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 									}
 								}
-							} else if ((world instanceof Level _lvl_isPow
-									? _lvl_isPow.hasNeighborSignal(new BlockPos(x + locX + 1, y + locY, z + locZ))
-									: false) && Math.random() < 0.5) {
+							} else if ((world instanceof Level _lvl_isPow ? _lvl_isPow.hasNeighborSignal(new BlockPos(x + locX + 1, y + locY, z + locZ)) : false) && Math.random() < 0.5) {
 								{
 									Direction _dir = Direction.WEST;
 									BlockPos _pos = new BlockPos(x + locX, y + locY, z + locZ);
@@ -240,9 +233,7 @@ public class DiverscrownStoneRoomAirProcedure {
 											world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 									}
 								}
-							} else if ((world instanceof Level _lvl_isPow
-									? _lvl_isPow.hasNeighborSignal(new BlockPos((x + locX) - 1, y + locY, z + locZ))
-									: false) && Math.random() < 0.5) {
+							} else if ((world instanceof Level _lvl_isPow ? _lvl_isPow.hasNeighborSignal(new BlockPos((x + locX) - 1, y + locY, z + locZ)) : false) && Math.random() < 0.5) {
 								{
 									Direction _dir = Direction.EAST;
 									BlockPos _pos = new BlockPos(x + locX, y + locY, z + locZ);
@@ -270,9 +261,7 @@ public class DiverscrownStoneRoomAirProcedure {
 											world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 									}
 								}
-							} else if (world instanceof Level _lvl_isPow
-									? _lvl_isPow.hasNeighborSignal(new BlockPos(x + locX, y + locY, (z + locZ) - 1))
-									: false) {
+							} else if (world instanceof Level _lvl_isPow ? _lvl_isPow.hasNeighborSignal(new BlockPos(x + locX, y + locY, (z + locZ) - 1)) : false) {
 								{
 									Direction _dir = Direction.SOUTH;
 									BlockPos _pos = new BlockPos(x + locX, y + locY, z + locZ);
@@ -286,9 +275,7 @@ public class DiverscrownStoneRoomAirProcedure {
 											world.setBlock(_pos, _bs.setValue(_ap, _dir.getAxis()), 3);
 									}
 								}
-							} else if (world instanceof Level _lvl_isPow
-									? _lvl_isPow.hasNeighborSignal(new BlockPos(x + locX + 1, y + locY, z + locZ))
-									: false) {
+							} else if (world instanceof Level _lvl_isPow ? _lvl_isPow.hasNeighborSignal(new BlockPos(x + locX + 1, y + locY, z + locZ)) : false) {
 								{
 									Direction _dir = Direction.WEST;
 									BlockPos _pos = new BlockPos(x + locX, y + locY, z + locZ);
@@ -319,8 +306,7 @@ public class DiverscrownStoneRoomAirProcedure {
 							}
 						}
 						if (world instanceof Level _level)
-							_level.updateNeighborsAt(new BlockPos(x + locX, y + locY, z + locZ),
-									_level.getBlockState(new BlockPos(x + locX, y + locY, z + locZ)).getBlock());
+							_level.updateNeighborsAt(new BlockPos(x + locX, y + locY, z + locZ), _level.getBlockState(new BlockPos(x + locX, y + locY, z + locZ)).getBlock());
 					}
 				}
 			}
@@ -342,10 +328,8 @@ public class DiverscrownStoneRoomAirProcedure {
 		}
 		ElementureMod.queueServerWork(10, () -> {
 			if (world instanceof ServerLevel _level)
-				_level.getServer().getCommands()
-						.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-								Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-								"kill @e[type=minecraft:item,distance=0..25]");
+				_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+						"kill @e[type=minecraft:item,distance=0..25]");
 		});
 	}
 }

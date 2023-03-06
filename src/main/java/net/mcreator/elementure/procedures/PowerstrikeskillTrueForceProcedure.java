@@ -29,8 +29,7 @@ public class PowerstrikeskillTrueForceProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.POWERSTRIKESKILL
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.POWERSTRIKESKILL.get()) {
 			entity.getPersistentData().putBoolean("forceACTIVE", (true));
 		}
 	}

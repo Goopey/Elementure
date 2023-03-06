@@ -14,8 +14,7 @@ public class Mycenavillagertransaction3Procedure {
 			return;
 		if (new Object() {
 			public int getAmount(int sltid) {
-				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-						&& _current.get() instanceof Map _slots) {
+				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 					if (stack != null)
 						return stack.getCount();
@@ -24,8 +23,7 @@ public class Mycenavillagertransaction3Procedure {
 			}
 		}.getAmount(10) == new Object() {
 			public int getAmount(int sltid) {
-				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-						&& _current.get() instanceof Map _slots) {
+				if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 					ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 					if (stack != null)
 						return stack.getCount();
@@ -33,12 +31,10 @@ public class Mycenavillagertransaction3Procedure {
 				return 0;
 			}
 		}.getAmount(11)) {
-			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-					&& _current.get() instanceof Map _slots) {
+			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				((Slot) _slots.get(9)).remove(new Object() {
 					public int getAmount(int sltid) {
-						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-								&& _current.get() instanceof Map _slots) {
+						if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 							ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 							if (stack != null)
 								return stack.getCount();

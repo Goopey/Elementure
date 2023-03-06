@@ -12,8 +12,7 @@ public class AngelfishChannelerTrailProcedure {
 		if (immediatesourceentity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.ANGELSTARPARTICLE.get()), (immediatesourceentity.getX()),
-					(immediatesourceentity.getY()), (immediatesourceentity.getZ()), 1, 0, 0, 0, 0);
+			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.ANGELSTARPARTICLE.get()), (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), 1, 0, 0, 0, 0);
 		immediatesourceentity.setNoGravity((true));
 	}
 }

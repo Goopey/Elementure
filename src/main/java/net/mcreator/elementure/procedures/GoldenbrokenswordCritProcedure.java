@@ -42,23 +42,15 @@ public class GoldenbrokenswordCritProcedure {
 			hasLuck = 0;
 		}
 		if (Math.random() < 0.05
-				+ ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.CURSEDSIGHT_POTION_ITEM.get())
-						? _livEnt.getEffect(ElementureModMobEffects.CURSEDSIGHT_POTION_ITEM.get()).getAmplifier()
-						: 0) + hasLuck) * 0.05) {
-			entity.hurt(DamageSource.GENERIC,
-					(float) (10
-							+ 3 * ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_BOOST)
-									? _livEnt.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier()
-									: 0) + hasStrength)
-							+ 2 * (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) + hasSharpness)));
+				+ ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.CURSEDSIGHT_POTION_ITEM.get()) ? _livEnt.getEffect(ElementureModMobEffects.CURSEDSIGHT_POTION_ITEM.get()).getAmplifier() : 0) + hasLuck)
+						* 0.05) {
+			entity.hurt(DamageSource.GENERIC, (float) (10 + 3 * ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_BOOST) ? _livEnt.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier() : 0) + hasStrength)
+					+ 2 * (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) + hasSharpness)));
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(sourceentity.getX(), sourceentity.getY(), sourceentity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.crit")), SoundSource.NEUTRAL, 1, 1);
+					_level.playSound(null, new BlockPos(sourceentity.getX(), sourceentity.getY(), sourceentity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.crit")), SoundSource.NEUTRAL, 1, 1);
 				} else {
-					_level.playLocalSound((sourceentity.getX()), (sourceentity.getY()), (sourceentity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.crit")), SoundSource.NEUTRAL, 1, 1,
-							false);
+					_level.playLocalSound((sourceentity.getX()), (sourceentity.getY()), (sourceentity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.crit")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
 			if (world instanceof ServerLevel _level)

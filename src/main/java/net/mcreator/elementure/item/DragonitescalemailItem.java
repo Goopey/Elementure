@@ -93,14 +93,9 @@ public abstract class DragonitescalemailItem extends ArmorItem {
 				@Override
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
 					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("head",
-									new Modeldragonite_helmet_scalemail(
-											Minecraft.getInstance().getEntityModels().bakeLayer(Modeldragonite_helmet_scalemail.LAYER_LOCATION)).head,
-									"hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
+							Map.of("head", new Modeldragonite_helmet_scalemail(Minecraft.getInstance().getEntityModels().bakeLayer(Modeldragonite_helmet_scalemail.LAYER_LOCATION)).head, "hat",
+									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+									"left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
 									new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
@@ -133,19 +128,12 @@ public abstract class DragonitescalemailItem extends ArmorItem {
 				@Override
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body",
-							new Modeldragonite_chest_scalemail(
-									Minecraft.getInstance().getEntityModels().bakeLayer(Modeldragonite_chest_scalemail.LAYER_LOCATION)).body,
-							"left_arm",
-							new Modeldragonite_chest_scalemail(
-									Minecraft.getInstance().getEntityModels().bakeLayer(Modeldragonite_chest_scalemail.LAYER_LOCATION)).left_arm,
-							"right_arm",
-							new Modeldragonite_chest_scalemail(
-									Minecraft.getInstance().getEntityModels().bakeLayer(Modeldragonite_chest_scalemail.LAYER_LOCATION)).right_arm,
-							"head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
+							Map.of("body", new Modeldragonite_chest_scalemail(Minecraft.getInstance().getEntityModels().bakeLayer(Modeldragonite_chest_scalemail.LAYER_LOCATION)).body, "left_arm",
+									new Modeldragonite_chest_scalemail(Minecraft.getInstance().getEntityModels().bakeLayer(Modeldragonite_chest_scalemail.LAYER_LOCATION)).left_arm, "right_arm",
+									new Modeldragonite_chest_scalemail(Minecraft.getInstance().getEntityModels().bakeLayer(Modeldragonite_chest_scalemail.LAYER_LOCATION)).right_arm, "head",
+									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+									"left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
 					armorModel.young = living.isBaby();
@@ -182,17 +170,11 @@ public abstract class DragonitescalemailItem extends ArmorItem {
 				@Override
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("left_leg",
-							new Modeldragonite_leggings_scalemail(
-									Minecraft.getInstance().getEntityModels().bakeLayer(Modeldragonite_leggings_scalemail.LAYER_LOCATION)).l_leg,
-							"right_leg",
-							new Modeldragonite_leggings_scalemail(
-									Minecraft.getInstance().getEntityModels().bakeLayer(Modeldragonite_leggings_scalemail.LAYER_LOCATION)).r_leg,
-							"head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
+							Map.of("left_leg", new Modeldragonite_leggings_scalemail(Minecraft.getInstance().getEntityModels().bakeLayer(Modeldragonite_leggings_scalemail.LAYER_LOCATION)).l_leg, "right_leg",
+									new Modeldragonite_leggings_scalemail(Minecraft.getInstance().getEntityModels().bakeLayer(Modeldragonite_leggings_scalemail.LAYER_LOCATION)).r_leg, "head",
+									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+									"right_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
 					armorModel.young = living.isBaby();
@@ -224,17 +206,11 @@ public abstract class DragonitescalemailItem extends ArmorItem {
 				@Override
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("left_leg",
-							new Modeldragonite_boots_scalemail(
-									Minecraft.getInstance().getEntityModels().bakeLayer(Modeldragonite_boots_scalemail.LAYER_LOCATION)).l_foot,
-							"right_leg",
-							new Modeldragonite_boots_scalemail(
-									Minecraft.getInstance().getEntityModels().bakeLayer(Modeldragonite_boots_scalemail.LAYER_LOCATION)).r_foot,
-							"head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
+							Map.of("left_leg", new Modeldragonite_boots_scalemail(Minecraft.getInstance().getEntityModels().bakeLayer(Modeldragonite_boots_scalemail.LAYER_LOCATION)).l_foot, "right_leg",
+									new Modeldragonite_boots_scalemail(Minecraft.getInstance().getEntityModels().bakeLayer(Modeldragonite_boots_scalemail.LAYER_LOCATION)).r_foot, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+									"hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "body", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_arm",
+									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_arm", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
 					armorModel.young = living.isBaby();

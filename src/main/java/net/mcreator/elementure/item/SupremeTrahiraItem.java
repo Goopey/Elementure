@@ -16,10 +16,9 @@ import java.util.List;
 
 public class SupremeTrahiraItem extends Item {
 	public SupremeTrahiraItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(5).saturationMod(0.6f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(5).saturationMod(0.6f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

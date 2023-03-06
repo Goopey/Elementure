@@ -10,7 +10,7 @@ import net.mcreator.elementure.client.model.Modelweakdioriteelemental;
 
 public class WeakdioriteelementalRenderer extends MobRenderer<WeakdioriteelementalEntity, Modelweakdioriteelemental<WeakdioriteelementalEntity>> {
 	public WeakdioriteelementalRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelweakdioriteelemental(context.bakeLayer(Modelweakdioriteelemental.LAYER_LOCATION)), 0.3f);
+		super(context, new Modelweakdioriteelemental(context.bakeLayer(Modelweakdioriteelemental.LAYER_LOCATION)), 0.30000000000000004f);
 	}
 
 	@Override

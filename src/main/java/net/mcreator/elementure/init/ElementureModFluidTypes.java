@@ -30,16 +30,11 @@ public class ElementureModFluidTypes {
 	public static final RegistryObject<FluidType> CORRUPTDEW_TYPE = REGISTRY.register("corruptdew", () -> new CorruptdewFluidType());
 	public static final RegistryObject<FluidType> NETHERUMFLUID_TYPE = REGISTRY.register("netherumfluid", () -> new NetherumfluidFluidType());
 	public static final RegistryObject<FluidType> DUNGEONWATER_TYPE = REGISTRY.register("dungeonwater", () -> new DungeonwaterFluidType());
-	public static final RegistryObject<FluidType> SILVERSHORESLIQUID_TYPE = REGISTRY.register("silvershoresliquid",
-			() -> new SilvershoresliquidFluidType());
+	public static final RegistryObject<FluidType> SILVERSHORESLIQUID_TYPE = REGISTRY.register("silvershoresliquid", () -> new SilvershoresliquidFluidType());
 	public static final RegistryObject<FluidType> FIRELIQUID_TYPE = REGISTRY.register("fireliquid", () -> new FireliquidFluidType());
-	public static final RegistryObject<FluidType> EARTHELEMENTLIQUID_TYPE = REGISTRY.register("earthelementliquid",
-			() -> new EarthelementliquidFluidType());
-	public static final RegistryObject<FluidType> AIRELEMENTLIQUID_TYPE = REGISTRY.register("airelementliquid",
-			() -> new AirelementliquidFluidType());
-	public static final RegistryObject<FluidType> WATERELEMENTLIQUID_TYPE = REGISTRY.register("waterelementliquid",
-			() -> new WaterelementliquidFluidType());
-	public static final RegistryObject<FluidType> LIGHTNINGELEMENTLIQUID_TYPE = REGISTRY.register("lightningelementliquid",
-			() -> new LightningelementliquidFluidType());
+	public static final RegistryObject<FluidType> EARTHELEMENTLIQUID_TYPE = REGISTRY.register("earthelementliquid", () -> new EarthelementliquidFluidType());
+	public static final RegistryObject<FluidType> AIRELEMENTLIQUID_TYPE = REGISTRY.register("airelementliquid", () -> new AirelementliquidFluidType());
+	public static final RegistryObject<FluidType> WATERELEMENTLIQUID_TYPE = REGISTRY.register("waterelementliquid", () -> new WaterelementliquidFluidType());
+	public static final RegistryObject<FluidType> LIGHTNINGELEMENTLIQUID_TYPE = REGISTRY.register("lightningelementliquid", () -> new LightningelementliquidFluidType());
 	public static final RegistryObject<FluidType> SPRINGWATER_TYPE = REGISTRY.register("springwater", () -> new SpringwaterFluidType());
 }

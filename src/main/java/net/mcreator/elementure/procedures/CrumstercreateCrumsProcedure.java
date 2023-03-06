@@ -16,8 +16,7 @@ public class CrumstercreateCrumsProcedure {
 			itemstack.getOrCreateTag().putDouble("crum", 0);
 			if (Math.random() < 0.05) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(ElementureModItems.CRUM.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.CRUM.get()));
 					entityToSpawn.setPickUpDelay(2);
 					_level.addFreshEntity(entityToSpawn);
 				}

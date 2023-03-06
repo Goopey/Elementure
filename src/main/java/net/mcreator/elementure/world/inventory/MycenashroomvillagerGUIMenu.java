@@ -84,12 +84,12 @@ public class MycenashroomvillagerGUIMenu extends AbstractContainerMenu implement
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 8) {
 			@Override
-			public boolean mayPickup(Player player) {
+			public boolean mayPickup(Player entity) {
 				return false;
 			}
 
 			@Override
-			public boolean mayPlace(ItemStack stack) {
+			public boolean mayPlace(ItemStack itemstack) {
 				return false;
 			}
 		}));
@@ -126,12 +126,12 @@ public class MycenashroomvillagerGUIMenu extends AbstractContainerMenu implement
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 7, 35) {
 			@Override
-			public boolean mayPickup(Player player) {
+			public boolean mayPickup(Player entity) {
 				return false;
 			}
 
 			@Override
-			public boolean mayPlace(ItemStack stack) {
+			public boolean mayPlace(ItemStack itemstack) {
 				return false;
 			}
 		}));
@@ -168,23 +168,23 @@ public class MycenashroomvillagerGUIMenu extends AbstractContainerMenu implement
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 97, 35) {
 			@Override
-			public boolean mayPickup(Player player) {
+			public boolean mayPickup(Player entity) {
 				return false;
 			}
 
 			@Override
-			public boolean mayPlace(ItemStack stack) {
+			public boolean mayPlace(ItemStack itemstack) {
 				return false;
 			}
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 7, 62) {
 			@Override
-			public boolean mayPickup(Player player) {
+			public boolean mayPickup(Player entity) {
 				return false;
 			}
 
 			@Override
-			public boolean mayPlace(ItemStack stack) {
+			public boolean mayPlace(ItemStack itemstack) {
 				return false;
 			}
 		}));
@@ -221,23 +221,23 @@ public class MycenashroomvillagerGUIMenu extends AbstractContainerMenu implement
 		}));
 		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 97, 62) {
 			@Override
-			public boolean mayPickup(Player player) {
+			public boolean mayPickup(Player entity) {
 				return false;
 			}
 
 			@Override
-			public boolean mayPlace(ItemStack stack) {
+			public boolean mayPlace(ItemStack itemstack) {
 				return false;
 			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 97, 8) {
 			@Override
-			public boolean mayPickup(Player player) {
+			public boolean mayPickup(Player entity) {
 				return false;
 			}
 
 			@Override
-			public boolean mayPlace(ItemStack stack) {
+			public boolean mayPlace(ItemStack itemstack) {
 				return false;
 			}
 		}));

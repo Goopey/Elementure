@@ -100,12 +100,12 @@ public class RelicinventoryMenu extends AbstractContainerMenu implements Supplie
 		}));
 		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 66, 35) {
 			@Override
-			public boolean mayPickup(Player player) {
+			public boolean mayPickup(Player entity) {
 				return false;
 			}
 
 			@Override
-			public boolean mayPlace(ItemStack stack) {
+			public boolean mayPlace(ItemStack itemstack) {
 				return false;
 			}
 		}));

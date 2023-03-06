@@ -76,11 +76,9 @@ public class UmbrasylAttackMasterProcedure {
 		}
 		if (!entity.getPersistentData().getBoolean("umbrasylWillMelee")) {
 			if (entity.getPersistentData().getBoolean("umbrasylPhase2")) {
-				entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x() * 0.9), (entity.getDeltaMovement().y() * 0.9),
-						(entity.getDeltaMovement().z() * 0.9)));
+				entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x() * 0.9), (entity.getDeltaMovement().y() * 0.9), (entity.getDeltaMovement().z() * 0.9)));
 			} else {
-				entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x() * 0.7), (entity.getDeltaMovement().y() * 0.7),
-						(entity.getDeltaMovement().z() * 0.7)));
+				entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x() * 0.7), (entity.getDeltaMovement().y() * 0.7), (entity.getDeltaMovement().z() * 0.7)));
 			}
 		}
 		UmbrasylFireBallSprayProcedure.execute(world, entity);
@@ -89,13 +87,9 @@ public class UmbrasylAttackMasterProcedure {
 				if (Math.random() < 0.5) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ender_dragon.growl")), SoundSource.HOSTILE, 1,
-									(float) 0.8);
+							_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ender_dragon.growl")), SoundSource.HOSTILE, 1, (float) 0.8);
 						} else {
-							_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ender_dragon.growl")), SoundSource.HOSTILE, 1,
-									(float) 0.8, false);
+							_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ender_dragon.growl")), SoundSource.HOSTILE, 1, (float) 0.8, false);
 						}
 					}
 				}
@@ -103,28 +97,21 @@ public class UmbrasylAttackMasterProcedure {
 				if (Math.random() < 0.35) {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ender_dragon.growl")), SoundSource.HOSTILE, 1,
-									1);
+							_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ender_dragon.growl")), SoundSource.HOSTILE, 1, 1);
 						} else {
-							_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ender_dragon.growl")), SoundSource.HOSTILE, 1,
-									1, false);
+							_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ender_dragon.growl")), SoundSource.HOSTILE, 1, 1, false);
 						}
 					}
 				}
 			}
-			if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 256, 256, 256),
-					e -> true).isEmpty()
-					|| !world.getEntitiesOfClass(ServerPlayer.class,
-							AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 256, 256, 256), e -> true).isEmpty()) {
+			if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 256, 256, 256), e -> true).isEmpty()
+					|| !world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 256, 256, 256), e -> true).isEmpty()) {
 				{
 					final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(256 / 2d), e -> true).stream()
-							.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(256 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							.collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
-						if (!((entityiterator.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new ElementureModVariables.PlayerVariables())).musicName).equals("umbrasyl")
+						if (!((entityiterator.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).musicName).equals("umbrasyl")
 								&& (entityiterator instanceof Player || entityiterator instanceof ServerPlayer)) {
 							{
 								String _setval = "umbrasyl";
@@ -138,32 +125,25 @@ public class UmbrasylAttackMasterProcedure {
 				}
 			}
 		}
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
-				/ (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) < 0.5
-				&& !entity.getPersistentData().getBoolean("umbrasylPhase2")) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) / (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) < 0.5 && !entity.getPersistentData().getBoolean("umbrasylPhase2")) {
 			{
 				final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(12 / 2d), e -> true).stream()
-						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(12 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+						.collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof Player || entityiterator instanceof ServerPlayer) {
 						if (world instanceof Level _level && !_level.isClientSide())
-							_level.explode(null, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 2,
-									Explosion.BlockInteraction.NONE);
+							_level.explode(null, (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 2, Explosion.BlockInteraction.NONE);
 						if (world instanceof ServerLevel _level)
-							_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.TARFLAME_PARTICLE.get()), (entityiterator.getX()),
-									(entityiterator.getY()), (entityiterator.getZ()), 20, 0.6, 0.6, 0.6, 0);
+							_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.TARFLAME_PARTICLE.get()), (entityiterator.getX()), (entityiterator.getY()), (entityiterator.getZ()), 20, 0.6, 0.6, 0.6, 0);
 					}
 				}
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ender_dragon.growl")), SoundSource.HOSTILE, 1, 1);
+					_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ender_dragon.growl")), SoundSource.HOSTILE, 1, 1);
 				} else {
-					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ender_dragon.growl")), SoundSource.HOSTILE, 1, 1,
-							false);
+					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.ender_dragon.growl")), SoundSource.HOSTILE, 1, 1, false);
 				}
 			}
 			entity.getPersistentData().putBoolean("umbrasylPhase2", (true));

@@ -11,12 +11,10 @@ public class JellyfloattendrilBubblesProcedure {
 		if (Math.random() < 0.2) {
 			if (Math.random() < 0.5) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.JELLYBUBBLE.get()), (x + 0.5), (y + 0.25), (z + 0.5), 1,
-							0.12, 0.12, 0.12, 0.002);
+					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.JELLYBUBBLE.get()), (x + 0.5), (y + 0.25), (z + 0.5), 1, 0.12, 0.12, 0.12, 0.002);
 			} else {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.JELLYBUBBLE.get()), (x + 0.5), (y + 0.25), (z + 0.5), 2,
-							0.12, 0.12, 0.12, 0.002);
+					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.JELLYBUBBLE.get()), (x + 0.5), (y + 0.25), (z + 0.5), 2, 0.12, 0.12, 0.12, 0.002);
 			}
 		}
 	}

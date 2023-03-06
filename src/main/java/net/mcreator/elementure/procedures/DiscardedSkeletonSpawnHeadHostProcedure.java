@@ -27,41 +27,31 @@ public class DiscardedSkeletonSpawnHeadHostProcedure {
 				if (!entity.level.isClientSide())
 					entity.discard();
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.BONE_FRAGMENTS.get()), (entity.getX()), (entity.getY()),
-							(entity.getZ()), 5, 0.5, 0.5, 0.5, 0);
+					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.BONE_FRAGMENTS.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 5, 0.5, 0.5, 0.5, 0);
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.WEB_PARTICLES.get()), (entity.getX()), (entity.getY()),
-							(entity.getZ()), 5, 0.5, 0.5, 0.5, 0);
+					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.WEB_PARTICLES.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 5, 0.5, 0.5, 0.5, 0);
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.SMOKE, (entity.getX()), (entity.getY()), (entity.getZ()), 2, 0.5, 0.5, 0.5, 0);
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new HeadlessDiscardedSkeletonEntity(ElementureModEntities.HEADLESS_DISCARDED_SKELETON.get(), _level);
 					entityToSpawn.moveTo((entity.getX()), (entity.getY()), (entity.getZ()), world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-								null, null);
+						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 					world.addFreshEntity(entityToSpawn);
 				}
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new HeadHostEntity(ElementureModEntities.HEAD_HOST.get(), _level);
 					entityToSpawn.moveTo((entity.getX()), (entity.getY() + 0.5), (entity.getZ()), world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-								null, null);
+						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 					world.addFreshEntity(entityToSpawn);
 				}
-			} else if (!world
-					.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 8, 8, 8), e -> true)
-					.isEmpty()
-					&& !(((Entity) world.getEntitiesOfClass(Player.class,
-							AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 8, 8, 8), e -> true).stream()
-							.sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-								}
-							}.compareDistOf((entity.getX()), (entity.getY()), (entity.getZ()))).findFirst().orElse(null)) instanceof Player _plr
-									? _plr.getAbilities().instabuild
-									: false)) {
+			} else if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 8, 8, 8), e -> true).isEmpty()
+					&& !(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 8, 8, 8), e -> true).stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+						}
+					}.compareDistOf((entity.getX()), (entity.getY()), (entity.getZ()))).findFirst().orElse(null)) instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {
 				entity.getPersistentData().putDouble("spawnHostTimer", (entity.getPersistentData().getDouble("spawnHostTimer") + 1));
 			} else if (entity.getPersistentData().getDouble("spawnHostTimer") > 0) {
 				entity.getPersistentData().putDouble("spawnHostTimer", (entity.getPersistentData().getDouble("spawnHostTimer") + 1));

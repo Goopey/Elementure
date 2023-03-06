@@ -9,7 +9,6 @@ import net.mcreator.elementure.init.ElementureModFluids;
 
 public class RegensubstanceBlock extends LiquidBlock {
 	public RegensubstanceBlock() {
-		super(() -> ElementureModFluids.REGENSUBSTANCE.get(),
-				BlockBehaviour.Properties.of(Material.WATER).strength(100f).noCollission().noLootTable());
+		super(() -> ElementureModFluids.REGENSUBSTANCE.get(), BlockBehaviour.Properties.of(Material.WATER).strength(100f).noCollission().noLootTable());
 	}
 }

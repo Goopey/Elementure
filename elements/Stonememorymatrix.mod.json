@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "block",
   "definition": {
     "texture": "stone_memory_matrix",
@@ -101,13 +101,7 @@
     "luminance": 7,
     "unbreakable": false,
     "breakHarvestLevel": 2,
-    "spawnParticles": false,
-    "particleToSpawn": {
-      "value": "CUSTOM:Soulflame"
-    },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.5,
-    "particleAmount": 4,
+    "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

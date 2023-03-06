@@ -9,8 +9,7 @@ public class CarpDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isFish = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("carp")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("carp")) {
 			isFish = true;
 		} else {
 			isFish = false;

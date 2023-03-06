@@ -37,129 +37,100 @@ public class WestmycenahousesProcedure {
 		MycenahousepillargenProcedure.execute(world, (x + 2), (y - 1), (z - 2));
 		if (Math.random() < 0.14) {
 			if (world instanceof ServerLevel _serverworld) {
-				StructureTemplate template = _serverworld.getStructureManager()
-						.getOrCreate(new ResourceLocation("elementure", "mycena_farm_house_west"));
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mycena_farm_house_west"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 5, y, z - 5), new BlockPos(x - 5, y, z - 5),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-							_serverworld.random, 3);
+					template.placeInWorld(_serverworld, new BlockPos(x - 5, y, z - 5), new BlockPos(x - 5, y, z - 5), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new MycenashroomvillagerfarmerEntity(ElementureModEntities.MYCENASHROOMVILLAGERFARMER.get(), _level);
 				entityToSpawn.moveTo((x + 2), (y + 2), z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
-							null);
+					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				world.addFreshEntity(entityToSpawn);
 			}
 		} else if (Math.random() < 0.28 && Math.random() > 0.14) {
 			if (world instanceof ServerLevel _serverworld) {
-				StructureTemplate template = _serverworld.getStructureManager()
-						.getOrCreate(new ResourceLocation("elementure", "mycena_leatherworker_house_west"));
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mycena_leatherworker_house_west"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 5, y, z - 5), new BlockPos(x - 5, y, z - 5),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-							_serverworld.random, 3);
+					template.placeInWorld(_serverworld, new BlockPos(x - 5, y, z - 5), new BlockPos(x - 5, y, z - 5), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 			if (world instanceof ServerLevel _level) {
-				Entity entityToSpawn = new MycenashroomvillagerleatherworkerEntity(ElementureModEntities.MYCENASHROOMVILLAGERLEATHERWORKER.get(),
-						_level);
+				Entity entityToSpawn = new MycenashroomvillagerleatherworkerEntity(ElementureModEntities.MYCENASHROOMVILLAGERLEATHERWORKER.get(), _level);
 				entityToSpawn.moveTo((x + 2), (y + 2), z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
-							null);
+					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				world.addFreshEntity(entityToSpawn);
 			}
 		} else if (Math.random() < 0.42 && Math.random() > 0.28) {
 			if (world instanceof ServerLevel _serverworld) {
-				StructureTemplate template = _serverworld.getStructureManager()
-						.getOrCreate(new ResourceLocation("elementure", "mycena_librarian_house_west"));
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mycena_librarian_house_west"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 5, y, z - 5), new BlockPos(x - 5, y, z - 5),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-							_serverworld.random, 3);
+					template.placeInWorld(_serverworld, new BlockPos(x - 5, y, z - 5), new BlockPos(x - 5, y, z - 5), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new MycenashroomvillagerlibrarianEntity(ElementureModEntities.MYCENASHROOMVILLAGERLIBRARIAN.get(), _level);
 				entityToSpawn.moveTo((x + 2), (y + 2), z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
-							null);
+					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				world.addFreshEntity(entityToSpawn);
 			}
 		} else if (Math.random() < 0.56 && Math.random() > 0.42) {
 			if (world instanceof ServerLevel _serverworld) {
-				StructureTemplate template = _serverworld.getStructureManager()
-						.getOrCreate(new ResourceLocation("elementure", "mycena_priest_house_west"));
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mycena_priest_house_west"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 5, y, z - 5), new BlockPos(x - 5, y, z - 5),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-							_serverworld.random, 3);
+					template.placeInWorld(_serverworld, new BlockPos(x - 5, y, z - 5), new BlockPos(x - 5, y, z - 5), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new MycenashroomvillagerpriestEntity(ElementureModEntities.MYCENASHROOMVILLAGERPRIEST.get(), _level);
 				entityToSpawn.moveTo((x + 2), (y + 2), z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
-							null);
+					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				world.addFreshEntity(entityToSpawn);
 			}
 		} else if (Math.random() < 0.7 && Math.random() > 0.56) {
 			if (world instanceof ServerLevel _serverworld) {
-				StructureTemplate template = _serverworld.getStructureManager()
-						.getOrCreate(new ResourceLocation("elementure", "mycena_regular_house_west"));
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mycena_regular_house_west"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 5, y, z - 5), new BlockPos(x - 5, y, z - 5),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-							_serverworld.random, 3);
+					template.placeInWorld(_serverworld, new BlockPos(x - 5, y, z - 5), new BlockPos(x - 5, y, z - 5), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new MycenashroomvillagerNitwitEntity(ElementureModEntities.MYCENASHROOMVILLAGER_NITWIT.get(), _level);
 				entityToSpawn.moveTo((x + 2), (y + 2), z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
-							null);
+					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				world.addFreshEntity(entityToSpawn);
 			}
 		} else if (Math.random() < 0.84 && Math.random() > 0.7) {
 			if (world instanceof ServerLevel _serverworld) {
-				StructureTemplate template = _serverworld.getStructureManager()
-						.getOrCreate(new ResourceLocation("elementure", "mycena_fisherman_west"));
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mycena_fisherman_west"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 5, y, z - 5), new BlockPos(x - 5, y, z - 5),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-							_serverworld.random, 3);
+					template.placeInWorld(_serverworld, new BlockPos(x - 5, y, z - 5), new BlockPos(x - 5, y, z - 5), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new MycenashroomvillagerFishermanEntity(ElementureModEntities.MYCENASHROOMVILLAGER_FISHERMAN.get(), _level);
 				entityToSpawn.moveTo((x + 2), (y + 2), z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
-							null);
+					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				world.addFreshEntity(entityToSpawn);
 			}
 		} else {
 			if (world instanceof ServerLevel _serverworld) {
-				StructureTemplate template = _serverworld.getStructureManager()
-						.getOrCreate(new ResourceLocation("elementure", "mycena_smith_house_west"));
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mycena_smith_house_west"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 5, y, z - 5), new BlockPos(x - 5, y, z - 5),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-							_serverworld.random, 3);
+					template.placeInWorld(_serverworld, new BlockPos(x - 5, y, z - 5), new BlockPos(x - 5, y, z - 5), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new MycenashroomvillagerblacksmithEntity(ElementureModEntities.MYCENASHROOMVILLAGERBLACKSMITH.get(), _level);
 				entityToSpawn.moveTo((x + 2), (y + 2), z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
-							null);
+					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				world.addFreshEntity(entityToSpawn);
 			}
 		}

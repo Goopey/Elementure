@@ -23,8 +23,7 @@ public class MycenasporecloudGenerateProcedure {
 		rndX = Math.random() + 1;
 		rndZ = Math.random() + 1;
 		for (int index0 = 0; index0 < (int) (repeatTimes); index0++) {
-			if (locX * locX * rndX + locY * locY * 2 + locZ * locZ * rndZ < rad2
-					&& (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.AIR) {
+			if (locX * locX * rndX + locY * locY * 2 + locZ * locZ * rndZ < rad2 && (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.AIR) {
 				world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), ElementureModBlocks.MYCENASPORECLOUD_BLOCK.get().defaultBlockState(), 3);
 			}
 			locX = locX + 1;

@@ -9,8 +9,7 @@ public class MagmachubDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isMHalimut = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("magmaChub")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("magmaChub")) {
 			isMHalimut = true;
 		} else {
 			isMHalimut = false;

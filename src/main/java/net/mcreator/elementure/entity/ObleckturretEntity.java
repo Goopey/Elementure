@@ -1,16 +1,6 @@
 
 package net.mcreator.elementure.entity;
 
-import software.bernie.geckolib3.util.GeckoLibUtil;
-import software.bernie.geckolib3.core.manager.AnimationFactory;
-import software.bernie.geckolib3.core.manager.AnimationData;
-import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
-import software.bernie.geckolib3.core.controller.AnimationController;
-import software.bernie.geckolib3.core.builder.ILoopType.EDefaultLoopTypes;
-import software.bernie.geckolib3.core.builder.AnimationBuilder;
-import software.bernie.geckolib3.core.PlayState;
-import software.bernie.geckolib3.core.IAnimatable;
-
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
@@ -47,12 +37,7 @@ import net.mcreator.elementure.init.ElementureModEntities;
 
 import java.util.EnumSet;
 
-public class ObleckturretEntity extends Monster implements RangedAttackMob, IAnimatable {
-	private AnimationFactory factory = GeckoLibUtil.createFactory(this);
-	private boolean swinging;
-	private long lastSwing;
-	public String animationprocedure = "empty";
-
+public class ObleckturretEntity extends Monster implements RangedAttackMob {
 	public ObleckturretEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(ElementureModEntities.OBLECKTURRET.get(), world);
 	}
@@ -63,11 +48,6 @@ public class ObleckturretEntity extends Monster implements RangedAttackMob, IAni
 		setNoAi(false);
 		setPersistenceRequired();
 		this.moveControl = new FlyingMoveControl(this, 10, true);
-	}
-
-	public void aiStep() {
-		super.aiStep();
-		this.setNoGravity(true);
 	}
 
 	@Override
@@ -86,7 +66,7 @@ public class ObleckturretEntity extends Monster implements RangedAttackMob, IAni
 		this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
-				return (double) (4.0 + entity.getBbWidth() * entity.getBbWidth());
+				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
 			}
 		});
 		this.targetSelector.addGoal(2, new NearestAttackableTargetGoal(this, Player.class, true, true));
@@ -106,8 +86,7 @@ public class ObleckturretEntity extends Monster implements RangedAttackMob, IAni
 
 			@Override
 			public boolean canContinueToUse() {
-				return ObleckturretEntity.this.getMoveControl().hasWanted() && ObleckturretEntity.this.getTarget() != null
-						&& ObleckturretEntity.this.getTarget().isAlive();
+				return ObleckturretEntity.this.getMoveControl().hasWanted() && ObleckturretEntity.this.getTarget() != null && ObleckturretEntity.this.getTarget().isAlive();
 			}
 
 			@Override
@@ -132,7 +111,7 @@ public class ObleckturretEntity extends Monster implements RangedAttackMob, IAni
 			}
 		});
 		this.targetSelector.addGoal(5, new HurtByTargetGoal(this));
-		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10) {
+		this.goalSelector.addGoal(1, new RangedAttackGoal(this, 1.25, 20, 10f) {
 			@Override
 			public boolean canContinueToUse() {
 				return this.canUse();
@@ -184,8 +163,7 @@ public class ObleckturretEntity extends Monster implements RangedAttackMob, IAni
 
 	@Override
 	public void performRangedAttack(LivingEntity target, float flval) {
-		ObleckturretEntityProjectile entityarrow = new ObleckturretEntityProjectile(ElementureModEntities.OBLECKTURRET_PROJECTILE.get(), this,
-				this.level);
+		ObleckturretEntityProjectile entityarrow = new ObleckturretEntityProjectile(ElementureModEntities.OBLECKTURRET_PROJECTILE.get(), this, this.level);
 		double d0 = target.getY() + target.getEyeHeight() - 1.1;
 		double d1 = target.getX() - this.getX();
 		double d3 = target.getZ() - this.getZ();
@@ -202,6 +180,11 @@ public class ObleckturretEntity extends Monster implements RangedAttackMob, IAni
 		super.setNoGravity(true);
 	}
 
+	public void aiStep() {
+		super.aiStep();
+		this.setNoGravity(true);
+	}
+
 	public static void init() {
 	}
 
@@ -214,75 +197,5 @@ public class ObleckturretEntity extends Monster implements RangedAttackMob, IAni
 		builder = builder.add(Attributes.FOLLOW_RANGE, 16);
 		builder = builder.add(Attributes.FLYING_SPEED, 0.1);
 		return builder;
-	}
-
-	private <E extends IAnimatable> PlayState movementPredicate(AnimationEvent<E> event) {
-		if (this.animationprocedure.equals("empty")) {
-			if (event.isMoving() || !(event.getLimbSwingAmount() > -0.15F && event.getLimbSwingAmount() < 0.15F)) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("walk", EDefaultLoopTypes.LOOP));
-				return PlayState.CONTINUE;
-			}
-			if (this.isDeadOrDying()) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("death", EDefaultLoopTypes.PLAY_ONCE));
-				return PlayState.CONTINUE;
-			}
-			if (this.isInWaterOrBubble()) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("swim", EDefaultLoopTypes.LOOP));
-				return PlayState.CONTINUE;
-			}
-			if (this.isShiftKeyDown()) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("sneak", EDefaultLoopTypes.LOOP));
-				return PlayState.CONTINUE;
-			} else if (this.isSprinting()) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("sprint", EDefaultLoopTypes.LOOP));
-				return PlayState.CONTINUE;
-			}
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("idle", EDefaultLoopTypes.LOOP));
-			return PlayState.CONTINUE;
-		}
-		return PlayState.STOP;
-	}
-
-	private <E extends IAnimatable> PlayState attackingPredicate(AnimationEvent<E> event) {
-		double d1 = this.getX() - this.xOld;
-		double d0 = this.getZ() - this.zOld;
-		float velocity = (float) Math.sqrt(d1 * d1 + d0 * d0);
-		if (getAttackAnim(event.getPartialTick()) > 0f && !this.swinging) {
-			this.swinging = true;
-			this.lastSwing = level.getGameTime();
-		}
-		if (this.swinging && this.lastSwing + 15L <= level.getGameTime()) {
-			this.swinging = false;
-		}
-		if (this.swinging && event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
-			event.getController().markNeedsReload();
-			event.getController().setAnimation(new AnimationBuilder().addAnimation("attack", EDefaultLoopTypes.PLAY_ONCE));
-			return PlayState.CONTINUE;
-		}
-		return PlayState.CONTINUE;
-	}
-
-	private <E extends IAnimatable> PlayState procedurePredicate(AnimationEvent<E> event) {
-		if (!(this.animationprocedure.equals("empty"))
-				&& event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
-			event.getController().setAnimation(new AnimationBuilder().addAnimation(this.animationprocedure, EDefaultLoopTypes.PLAY_ONCE));
-			if (event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
-				this.animationprocedure = "empty";
-				event.getController().markNeedsReload();
-			}
-		}
-		return PlayState.CONTINUE;
-	}
-
-	@Override
-	public void registerControllers(AnimationData data) {
-		data.addAnimationController(new AnimationController<>(this, "movement", 4, this::movementPredicate));
-		data.addAnimationController(new AnimationController<>(this, "attacking", 4, this::attackingPredicate));
-		data.addAnimationController(new AnimationController<>(this, "procedure", 4, this::procedurePredicate));
-	}
-
-	@Override
-	public AnimationFactory getFactory() {
-		return this.factory;
 	}
 }

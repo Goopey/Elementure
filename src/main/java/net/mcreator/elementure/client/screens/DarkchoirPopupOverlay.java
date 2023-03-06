@@ -12,6 +12,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.Minecraft;
 
@@ -28,27 +29,22 @@ public class DarkchoirPopupOverlay {
 		int h = event.getWindow().getGuiScaledHeight();
 		int posX = w / 2;
 		int posY = h / 2;
-		Level _world = null;
-		double _x = 0;
-		double _y = 0;
-		double _z = 0;
+		Level world = null;
+		double x = 0;
+		double y = 0;
+		double z = 0;
 		Player entity = Minecraft.getInstance().player;
 		if (entity != null) {
-			_world = entity.level;
-			_x = entity.getX();
-			_y = entity.getY();
-			_z = entity.getZ();
+			world = entity.level;
+			x = entity.getX();
+			y = entity.getY();
+			z = entity.getZ();
 		}
-		Level world = _world;
-		double x = _x;
-		double y = _y;
-		double z = _z;
 		RenderSystem.disableDepthTest();
 		RenderSystem.depthMask(false);
 		RenderSystem.enableBlend();
 		RenderSystem.setShader(GameRenderer::getPositionTexShader);
-		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
-				GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (DarkchoirpopupConfirmProcedure.execute(entity)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/music_box_popup_2.png"));
@@ -60,8 +56,8 @@ public class DarkchoirPopupOverlay {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("elementure:textures/screens/music_wheel.png"));
 			Minecraft.getInstance().gui.blit(event.getPoseStack(), posX + -104, posY + -115, 0, 0, 16, 16, 16, 16);
 
-			Minecraft.getInstance().font.draw(event.getPoseStack(), "Dark Choir", posX + -198, posY + -116, -203);
-			Minecraft.getInstance().font.draw(event.getPoseStack(), "By:Mattia Cupelli", posX + -198, posY + -108, -203);
+			Minecraft.getInstance().font.draw(event.getPoseStack(), Component.translatable("gui.elementure.darkchoir_popup.label_dark_choir"), posX + -198, posY + -116, -203);
+			Minecraft.getInstance().font.draw(event.getPoseStack(), Component.translatable("gui.elementure.darkchoir_popup.label_bymattia_cupelli"), posX + -198, posY + -108, -203);
 		}
 		RenderSystem.depthMask(true);
 		RenderSystem.defaultBlendFunc();

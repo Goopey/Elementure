@@ -12,7 +12,6 @@ public class DarklurkerParticlesProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SHADOWPARTICLE_1.get()), (entity.getX()), (entity.getY()),
-					(entity.getZ()), 3, 0.25, 0.25, 0.25, 0.01);
+			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SHADOWPARTICLE_1.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 3, 0.25, 0.25, 0.25, 0.01);
 	}
 }

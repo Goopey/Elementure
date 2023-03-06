@@ -13,40 +13,35 @@ public class WindyshoresBonemealGrassProcedure {
 		double locZ = 0;
 		if (world instanceof Level _level) {
 			BlockPos _bp = new BlockPos(x, y, z);
-			if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
-					|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
+			if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp) || BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
 				if (!_level.isClientSide())
 					_level.levelEvent(2005, _bp, 0);
 			}
 		}
 		if (world instanceof Level _level) {
 			BlockPos _bp = new BlockPos(x, y + 1, z);
-			if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
-					|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
+			if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp) || BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
 				if (!_level.isClientSide())
 					_level.levelEvent(2005, _bp, 0);
 			}
 		}
 		if (world instanceof Level _level) {
 			BlockPos _bp = new BlockPos(x, y + 2, z);
-			if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
-					|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
+			if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp) || BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
 				if (!_level.isClientSide())
 					_level.levelEvent(2005, _bp, 0);
 			}
 		}
 		if (world instanceof Level _level) {
 			BlockPos _bp = new BlockPos(x, y - 1, z);
-			if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
-					|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
+			if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp) || BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
 				if (!_level.isClientSide())
 					_level.levelEvent(2005, _bp, 0);
 			}
 		}
 		if (world instanceof Level _level) {
 			BlockPos _bp = new BlockPos(x, y - 2, z);
-			if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
-					|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
+			if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp) || BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
 				if (!_level.isClientSide())
 					_level.levelEvent(2005, _bp, 0);
 			}
@@ -57,40 +52,35 @@ public class WindyshoresBonemealGrassProcedure {
 				locZ = z + Math.random() * 16 - 8;
 				if (world instanceof Level _level) {
 					BlockPos _bp = new BlockPos(x, y, z);
-					if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
-							|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
+					if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp) || BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
 						if (!_level.isClientSide())
 							_level.levelEvent(2005, _bp, 0);
 					}
 				}
 				if (world instanceof Level _level) {
 					BlockPos _bp = new BlockPos(x, y + 1, z);
-					if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
-							|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
+					if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp) || BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
 						if (!_level.isClientSide())
 							_level.levelEvent(2005, _bp, 0);
 					}
 				}
 				if (world instanceof Level _level) {
 					BlockPos _bp = new BlockPos(x, y + 2, z);
-					if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
-							|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
+					if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp) || BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
 						if (!_level.isClientSide())
 							_level.levelEvent(2005, _bp, 0);
 					}
 				}
 				if (world instanceof Level _level) {
 					BlockPos _bp = new BlockPos(x, y - 1, z);
-					if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
-							|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
+					if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp) || BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
 						if (!_level.isClientSide())
 							_level.levelEvent(2005, _bp, 0);
 					}
 				}
 				if (world instanceof Level _level) {
 					BlockPos _bp = new BlockPos(x, y - 2, z);
-					if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp)
-							|| BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
+					if (BoneMealItem.growCrop(new ItemStack(Items.BONE_MEAL), _level, _bp) || BoneMealItem.growWaterPlant(new ItemStack(Items.BONE_MEAL), _level, _bp, null)) {
 						if (!_level.isClientSide())
 							_level.levelEvent(2005, _bp, 0);
 					}

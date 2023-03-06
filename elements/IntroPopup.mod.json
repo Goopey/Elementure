@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -9,7 +9,6 @@
         "data": {
           "image": "music_box_popup_2.png",
           "use1Xscale": false,
-          "name": "music_box_popup_2.png",
           "x": 1,
           "y": 1
         }
@@ -19,7 +18,6 @@
         "data": {
           "image": "music_dot.png",
           "use1Xscale": false,
-          "name": "music_dot.png",
           "x": 1,
           "y": 5
         }
@@ -29,7 +27,6 @@
         "data": {
           "image": "music_wheel.png",
           "use1Xscale": false,
-          "name": "music_wheel.png",
           "x": 109,
           "y": 5
         }
@@ -37,12 +34,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Intro",
+          "name": "label_intro",
+          "text": {
+            "fixedValue": "Intro"
+          },
           "color": {
             "value": -203,
             "falpha": 0.0
           },
-          "name": "Intro",
           "x": 15,
           "y": 4
         }
@@ -50,12 +49,14 @@
       {
         "type": "label",
         "data": {
-          "text": "By:C418",
+          "name": "label_byc418",
+          "text": {
+            "fixedValue": "By:C418"
+          },
           "color": {
             "value": -203,
             "falpha": 0.0
           },
-          "name": "By:C418",
           "x": 15,
           "y": 12
         }

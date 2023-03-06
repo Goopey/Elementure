@@ -32,8 +32,8 @@ public class NetherstaroutskirtsLavaSpawningProcedure {
 			noOtherOctolanks = true;
 			{
 				final Vec3 _center = new Vec3(x, y, z);
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(20 / 2d), e -> true).stream()
-						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(20 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+						.collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof OctolankEntity) {
 						noOtherOctolanks = false;
@@ -41,8 +41,7 @@ public class NetherstaroutskirtsLavaSpawningProcedure {
 				}
 			}
 			for (int index0 = 0; index0 < (int) (125); index0++) {
-				if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ)))
-						.is(BlockTags.create(new ResourceLocation("elementure:netherstarblocks")))) {
+				if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).is(BlockTags.create(new ResourceLocation("elementure:netherstarblocks")))) {
 					if (!(new Object() {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -53,8 +52,7 @@ public class NetherstaroutskirtsLavaSpawningProcedure {
 					}.getValue(world, new BlockPos(x + locX, 0, z + locZ), "netherstarUsed"))) {
 						shouldSpawn = true;
 					}
-				} else if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.LAVA
-						|| (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.LAVA) {
+				} else if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.LAVA || (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.LAVA) {
 					lavaSurround = lavaSurround + 1;
 				}
 				locX = locX + 1;

@@ -35,8 +35,7 @@ public class BluekeySetToForgottenSpawnProcedure {
 				if (_ent instanceof ServerPlayer _serverPlayer) {
 					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
 				} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
-					return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance()
-							.getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
+					return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
 				}
 				return false;
 			}
@@ -66,11 +65,9 @@ public class BluekeySetToForgottenSpawnProcedure {
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "bluedoorexitframe"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "bluedoorexitframe"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(-1, locY + 1, -1), new BlockPos(-1, locY + 1, -1),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(-1, locY + 1, -1), new BlockPos(-1, locY + 1, -1), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}

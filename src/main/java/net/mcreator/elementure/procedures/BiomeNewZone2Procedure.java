@@ -19,8 +19,7 @@ public class BiomeNewZone2Procedure {
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "windyshoresUsed") && y > 270) {
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("starryIsland")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("starryIsland")) {
 				{
 					String _setval = "starryIsland";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -37,8 +36,7 @@ public class BiomeNewZone2Procedure {
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "windyshoresUsed") && y > 40) {
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("windyShores")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("windyShores")) {
 				{
 					String _setval = "windyShores";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -55,8 +53,7 @@ public class BiomeNewZone2Procedure {
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "diverscrownUsed") && y > 0) {
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("diversCrown")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("diversCrown")) {
 				{
 					String _setval = "diversCrown";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -73,8 +70,7 @@ public class BiomeNewZone2Procedure {
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "diverscrownUsed")) {
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("bedOfChaos")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("bedOfChaos")) {
 				{
 					String _setval = "bedOfChaos";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

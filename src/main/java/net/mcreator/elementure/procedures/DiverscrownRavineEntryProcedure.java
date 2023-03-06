@@ -22,8 +22,7 @@ public class DiverscrownRavineEntryProcedure {
 			for (int index0 = 0; index0 < (int) (289); index0++) {
 				if ((locX * factorOne + locX * factorTwo) - locZ < Math.abs(largeness - locX) && (locX * factorOne + locX * factorTwo) - locZ > 0) {
 					if ((world.getBlockState(new BlockPos(x + locX, y - 4, z + locZ))).getBlock() == ElementureModBlocks.LILYPADBLOCK.get()
-							|| (world.getBlockState(new BlockPos(x + locX, y - 4, z + locZ))).getBlock() == ElementureModBlocks.LILYPADRIMBLOCK
-									.get()) {
+							|| (world.getBlockState(new BlockPos(x + locX, y - 4, z + locZ))).getBlock() == ElementureModBlocks.LILYPADRIMBLOCK.get()) {
 						world.setBlock(new BlockPos(x + locX, y - 1, z + locZ), Blocks.WATER.defaultBlockState(), 3);
 						world.setBlock(new BlockPos(x + locX, y - 2, z + locZ), Blocks.WATER.defaultBlockState(), 3);
 						world.setBlock(new BlockPos(x + locX, y - 3, z + locZ), Blocks.WATER.defaultBlockState(), 3);
@@ -53,8 +52,7 @@ public class DiverscrownRavineEntryProcedure {
 			for (int index1 = 0; index1 < (int) (289); index1++) {
 				if ((locZ * factorOne + locZ * factorTwo) - locX < Math.abs(largeness - locZ) && (locZ * factorOne + locZ * factorTwo) - locX > 0) {
 					if ((world.getBlockState(new BlockPos(x + locX, y - 4, z + locZ))).getBlock() == ElementureModBlocks.LILYPADBLOCK.get()
-							|| (world.getBlockState(new BlockPos(x + locX, y - 4, z + locZ))).getBlock() == ElementureModBlocks.LILYPADRIMBLOCK
-									.get()) {
+							|| (world.getBlockState(new BlockPos(x + locX, y - 4, z + locZ))).getBlock() == ElementureModBlocks.LILYPADRIMBLOCK.get()) {
 						world.setBlock(new BlockPos(x + locX, y - 1, z + locZ), Blocks.WATER.defaultBlockState(), 3);
 						world.setBlock(new BlockPos(x + locX, y - 2, z + locZ), Blocks.WATER.defaultBlockState(), 3);
 						world.setBlock(new BlockPos(x + locX, y - 3, z + locZ), Blocks.WATER.defaultBlockState(), 3);

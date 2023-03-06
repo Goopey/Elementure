@@ -21,11 +21,9 @@ public class MycenashroomlordAttackBehavior1Procedure {
 			if (locX * locX + locZ * locZ <= 25 && Math.random() < 0.04) {
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new MycenashroomlingEntity(ElementureModEntities.MYCENASHROOMLING.get(), _level);
-					entityToSpawn.moveTo((entity.getX() + locX), (entity.getY() + 2), (entity.getZ() + locZ), world.getRandom().nextFloat() * 360F,
-							0);
+					entityToSpawn.moveTo((entity.getX() + locX), (entity.getY() + 2), (entity.getZ() + locZ), world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-								null, null);
+						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 					world.addFreshEntity(entityToSpawn);
 				}
 				MycenashroomcloudProcedure.execute(world, (entity.getX() + locX), (entity.getY() + 2), (entity.getZ() + locZ));

@@ -10,7 +10,7 @@ import net.mcreator.elementure.client.model.Modelheat_seeker;
 
 public class HeatseekerRenderer extends MobRenderer<HeatseekerEntity, Modelheat_seeker<HeatseekerEntity>> {
 	public HeatseekerRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelheat_seeker(context.bakeLayer(Modelheat_seeker.LAYER_LOCATION)), 0.2f);
+		super(context, new Modelheat_seeker(context.bakeLayer(Modelheat_seeker.LAYER_LOCATION)), 0.19999999999999998f);
 	}
 
 	@Override

@@ -20,16 +20,11 @@ public class DiverscrownlilypadSmallRootProcedure {
 		for (int index0 = 0; index0 < (int) (27); index0++) {
 			if (locX * locX + locY * locY + locZ * locZ <= 1) {
 				world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), ElementureModBlocks.LILYPADLOG_FULL.get().defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x + locX + xOff, y + locY + 2, z + locZ + zOff),
-						ElementureModBlocks.LILYPADLOG_FULL.get().defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x + locX + xOff * 2, y + locY + 4, z + locZ + zOff * 2),
-						ElementureModBlocks.LILYPADLOG_FULL.get().defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x + locX + xOff * 3, y + locY + 6, z + locZ + zOff * 3),
-						ElementureModBlocks.LILYPADLOG_FULL.get().defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x + locX + xOff * 3, y + locY + 8, z + locZ + zOff * 3),
-						ElementureModBlocks.LILYPADLOG_FULL.get().defaultBlockState(), 3);
-				world.setBlock(new BlockPos(x + locX + xOff * 3, y + locY + 10, z + locZ + zOff * 3),
-						ElementureModBlocks.LILYPADLOG_FULL.get().defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x + locX + xOff, y + locY + 2, z + locZ + zOff), ElementureModBlocks.LILYPADLOG_FULL.get().defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x + locX + xOff * 2, y + locY + 4, z + locZ + zOff * 2), ElementureModBlocks.LILYPADLOG_FULL.get().defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x + locX + xOff * 3, y + locY + 6, z + locZ + zOff * 3), ElementureModBlocks.LILYPADLOG_FULL.get().defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x + locX + xOff * 3, y + locY + 8, z + locZ + zOff * 3), ElementureModBlocks.LILYPADLOG_FULL.get().defaultBlockState(), 3);
+				world.setBlock(new BlockPos(x + locX + xOff * 3, y + locY + 10, z + locZ + zOff * 3), ElementureModBlocks.LILYPADLOG_FULL.get().defaultBlockState(), 3);
 			}
 			locX = locX + 1;
 			if (locX > 1) {

@@ -9,7 +9,6 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerPlayer;
 
-import java.util.List;
 import java.util.ArrayList;
 
 public class LargejellyAttackMasterProcedure {
@@ -17,45 +16,29 @@ public class LargejellyAttackMasterProcedure {
 		if (entity == null)
 			return;
 		double shieldLvl = 0;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
-				/ (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) < 0.25
-				&& !entity.getPersistentData().getBoolean("3rdinchUsed")) {
-			{
-				List<? extends Player> _players = new ArrayList<>(world.players());
-				for (Entity entityiterator : _players) {
-					shieldLvl = shieldLvl + 1;
-				}
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) / (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) < 0.25 && !entity.getPersistentData().getBoolean("3rdinchUsed")) {
+			for (Entity entityiterator : new ArrayList<>(world.players())) {
+				shieldLvl = shieldLvl + 1;
 			}
 			entity.getPersistentData().putBoolean("3rdinchUsed", (true));
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 6000, (int) (shieldLvl * 8)));
-		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
-				/ (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) < 0.5
-				&& !entity.getPersistentData().getBoolean("2ndinchUsed")) {
-			{
-				List<? extends Player> _players = new ArrayList<>(world.players());
-				for (Entity entityiterator : _players) {
-					shieldLvl = shieldLvl + 1;
-				}
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) / (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) < 0.5 && !entity.getPersistentData().getBoolean("2ndinchUsed")) {
+			for (Entity entityiterator : new ArrayList<>(world.players())) {
+				shieldLvl = shieldLvl + 1;
 			}
 			entity.getPersistentData().putBoolean("2ndinchUsed", (true));
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 6000, (int) (shieldLvl * 6)));
-		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
-				/ (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) < 0.75
-				&& !entity.getPersistentData().getBoolean("1stinchUsed")) {
-			{
-				List<? extends Player> _players = new ArrayList<>(world.players());
-				for (Entity entityiterator : _players) {
-					shieldLvl = shieldLvl + 1;
-				}
+		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) / (entity instanceof LivingEntity _livEnt ? _livEnt.getMaxHealth() : -1) < 0.75 && !entity.getPersistentData().getBoolean("1stinchUsed")) {
+			for (Entity entityiterator : new ArrayList<>(world.players())) {
+				shieldLvl = shieldLvl + 1;
 			}
 			entity.getPersistentData().putBoolean("1stinchUsed", (true));
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, 6000, (int) (shieldLvl * 4)));
 		}
-		if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof Player
-				&& (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof ServerPlayer) {
+		if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof Player && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof ServerPlayer) {
 			if (entity.getPersistentData().getDouble("attackCooldown") == 90) {
 				if (Math.random() < 0.5) {
 					LargejellySuckAttackProcedure.execute(world, entity);

@@ -34,12 +34,10 @@ public class PurplerimeshineEffectProcedure {
 		if (itemstack.getItem() == ElementureModItems.RAREPURPLERIMESHINE.get() || itemstack.getItem() == ElementureModItems.PURPLERIMESHINE.get()) {
 			if (entity.isInWater()) {
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, (int) itemstack.getOrCreateTag().getDouble("duration"),
-							(int) itemstack.getOrCreateTag().getDouble("potency")));
+					_entity.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, (int) itemstack.getOrCreateTag().getDouble("duration"), (int) itemstack.getOrCreateTag().getDouble("potency")));
 			} else {
 				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, (int) itemstack.getOrCreateTag().getDouble("duration"),
-							(int) itemstack.getOrCreateTag().getDouble("potency")));
+					_entity.addEffect(new MobEffectInstance(MobEffects.LEVITATION, (int) itemstack.getOrCreateTag().getDouble("duration"), (int) itemstack.getOrCreateTag().getDouble("potency")));
 			}
 		}
 	}

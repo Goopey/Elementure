@@ -13,11 +13,9 @@ public class MycenaRoofReliefGenProcedure {
 		CoordsZ = -3;
 		CoordsY = -6;
 		for (int index0 = 0; index0 < (int) (324); index0++) {
-			if (!(CoordsX < -2) && !(CoordsZ < -2) && !(CoordsX > 2) && !(CoordsZ < -2) && !(CoordsX < -2) && !(CoordsZ > 2) && !(CoordsX > 2)
-					&& !(CoordsZ > 2)) {
+			if (!(CoordsX < -2) && !(CoordsZ < -2) && !(CoordsX > 2) && !(CoordsZ < -2) && !(CoordsX < -2) && !(CoordsZ > 2) && !(CoordsX > 2) && !(CoordsZ > 2)) {
 				if (CoordsX == 3 || CoordsX == -3 || CoordsZ == -3 || CoordsZ == 3) {
-					if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR
-							&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ))).getBlock() == Blocks.AIR)) {
+					if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR && !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ))).getBlock() == Blocks.AIR)) {
 						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), Blocks.STONE.defaultBlockState(), 3);
 						if (Math.random() < 0.006) {
 							RoofreliefMycenaDepthsDecorationProcedure.execute(world, (x + CoordsX), ((y + CoordsY) - 1), (z + CoordsZ));
@@ -28,8 +26,7 @@ public class MycenaRoofReliefGenProcedure {
 					}
 				} else if (CoordsX == 2 || CoordsX == -2 || CoordsZ == 2 || CoordsZ == -2) {
 					if (CoordsY >= -4) {
-						if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR
-								&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ))).getBlock() == Blocks.AIR)) {
+						if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR && !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ))).getBlock() == Blocks.AIR)) {
 							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), Blocks.STONE.defaultBlockState(), 3);
 							if (Math.random() < 0.006) {
 								RoofreliefMycenaDepthsDecorationProcedure.execute(world, (x + CoordsX), ((y + CoordsY) - 1), (z + CoordsZ));
@@ -41,8 +38,7 @@ public class MycenaRoofReliefGenProcedure {
 					}
 				} else if (CoordsX == 1 || CoordsX == -1 || CoordsZ == 1 || CoordsZ == -1) {
 					if (CoordsY >= -2) {
-						if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR
-								&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ))).getBlock() == Blocks.AIR)) {
+						if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR && !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ))).getBlock() == Blocks.AIR)) {
 							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), Blocks.STONE.defaultBlockState(), 3);
 							if (Math.random() < 0.006) {
 								RoofreliefMycenaDepthsDecorationProcedure.execute(world, (x + CoordsX), ((y + CoordsY) - 1), (z + CoordsZ));
@@ -51,8 +47,7 @@ public class MycenaRoofReliefGenProcedure {
 					}
 				} else {
 					if (CoordsY >= -2) {
-						if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR
-								&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ))).getBlock() == Blocks.AIR)) {
+						if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR && !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ))).getBlock() == Blocks.AIR)) {
 							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), Blocks.STONE.defaultBlockState(), 3);
 							if (Math.random() < 0.006) {
 								RoofreliefMycenaDepthsDecorationProcedure.execute(world, (x + CoordsX), ((y + CoordsY) - 1), (z + CoordsZ));

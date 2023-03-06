@@ -35,17 +35,14 @@ public class Modelcoal_puck<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition body_whole_pivot = partdefinition.addOrReplaceChild("body_whole_pivot",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-3.0F, -3.0F, -3.0F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(28, 0)
-						.addBox(-2.5F, 3.0F, -0.5F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(28, 0).mirror()
-						.addBox(1.5F, 3.0F, -0.5F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false).texOffs(0, 13)
-						.addBox(-3.0F, -1.5F, -3.15F, 6.0F, 3.0F, 0.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 16.0F, 0.0F));
-		PartDefinition right_arm_r1 = body_whole_pivot.addOrReplaceChild("right_arm_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)),
+		PartDefinition body_whole_pivot = partdefinition
+				.addOrReplaceChild(
+						"body_whole_pivot", CubeListBuilder.create().texOffs(0, 0).addBox(-3.0F, -3.0F, -3.0F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(28, 0).addBox(-2.5F, 3.0F, -0.5F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F))
+								.texOffs(28, 0).mirror().addBox(1.5F, 3.0F, -0.5F, 1.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).mirror(false).texOffs(0, 13).addBox(-3.0F, -1.5F, -3.15F, 6.0F, 3.0F, 0.0F, new CubeDeformation(0.0F)),
+						PartPose.offset(0.0F, 16.0F, 0.0F));
+		PartDefinition right_arm_r1 = body_whole_pivot.addOrReplaceChild("right_arm_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(-3.0F, -1.0F, 0.0F, 0.0F, 0.0F, 0.1745F));
-		PartDefinition left_arm_r1 = body_whole_pivot.addOrReplaceChild("left_arm_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)),
+		PartDefinition left_arm_r1 = body_whole_pivot.addOrReplaceChild("left_arm_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(3.0F, -1.0F, 0.0F, 0.0F, 0.0F, -0.1745F));
 		return LayerDefinition.create(meshdefinition, 32, 16);
 	}
@@ -60,8 +57,7 @@ public class Modelcoal_puck<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		body_whole_pivot.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

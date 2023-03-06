@@ -58,7 +58,6 @@ public class DirectionalDodgeKeyMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(DirectionalDodgeKeyMessage.class, DirectionalDodgeKeyMessage::buffer, DirectionalDodgeKeyMessage::new,
-				DirectionalDodgeKeyMessage::handler);
+		ElementureMod.addNetworkMessage(DirectionalDodgeKeyMessage.class, DirectionalDodgeKeyMessage::buffer, DirectionalDodgeKeyMessage::new, DirectionalDodgeKeyMessage::handler);
 	}
 }

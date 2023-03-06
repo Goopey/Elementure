@@ -32,8 +32,7 @@ import java.util.Collections;
 
 public class PurplemushroomsBlock extends FlowerBlock {
 	public PurplemushroomsBlock() {
-		super(MobEffects.MOVEMENT_SPEED, 5, BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.COLOR_PURPLE).sound(SoundType.FUNGUS)
-				.instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.NONE));
+		super(MobEffects.MOVEMENT_SPEED, 5, BlockBehaviour.Properties.of(Material.PLANT, MaterialColor.COLOR_PURPLE).sound(SoundType.FUNGUS).instabreak().noCollission().offsetType(BlockBehaviour.OffsetType.NONE));
 	}
 
 	@Override

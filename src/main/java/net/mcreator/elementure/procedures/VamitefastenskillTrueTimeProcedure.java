@@ -29,8 +29,7 @@ public class VamitefastenskillTrueTimeProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.VAMITEFASTENSKILL
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.VAMITEFASTENSKILL.get()) {
 			entity.getPersistentData().putBoolean("timeNEACTIVE", (true));
 		}
 	}

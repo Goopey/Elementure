@@ -31,8 +31,7 @@ import java.util.Optional;
 
 public class ThepitlandsPortalBlock extends NetherPortalBlock {
 	public ThepitlandsPortalBlock() {
-		super(BlockBehaviour.Properties.of(Material.PORTAL).noCollission().randomTicks().strength(-1.0F).sound(SoundType.GLASS).lightLevel(s -> 0)
-				.noLootTable());
+		super(BlockBehaviour.Properties.of(Material.PORTAL).noCollission().randomTicks().strength(-1.0F).sound(SoundType.GLASS).lightLevel(s -> 0).noLootTable());
 	}
 
 	@Override
@@ -47,14 +46,11 @@ public class ThepitlandsPortalBlock extends NetherPortalBlock {
 	}
 
 	@Override
-	public BlockState updateShape(BlockState p_54928_, Direction p_54929_, BlockState p_54930_, LevelAccessor p_54931_, BlockPos p_54932_,
-			BlockPos p_54933_) {
+	public BlockState updateShape(BlockState p_54928_, Direction p_54929_, BlockState p_54930_, LevelAccessor p_54931_, BlockPos p_54932_, BlockPos p_54933_) {
 		Direction.Axis direction$axis = p_54929_.getAxis();
 		Direction.Axis direction$axis1 = p_54928_.getValue(AXIS);
 		boolean flag = direction$axis1 != direction$axis && direction$axis.isHorizontal();
-		return !flag && !p_54930_.is(this) && !(new ThepitlandsPortalShape(p_54931_, p_54932_, direction$axis1)).isComplete()
-				? Blocks.AIR.defaultBlockState()
-				: super.updateShape(p_54928_, p_54929_, p_54930_, p_54931_, p_54932_, p_54933_);
+		return !flag && !p_54930_.is(this) && !(new ThepitlandsPortalShape(p_54931_, p_54932_, direction$axis1)).isComplete() ? Blocks.AIR.defaultBlockState() : super.updateShape(p_54928_, p_54929_, p_54930_, p_54931_, p_54932_, p_54933_);
 	}
 
 	@OnlyIn(Dist.CLIENT)
@@ -95,7 +91,6 @@ public class ThepitlandsPortalBlock extends NetherPortalBlock {
 	}
 
 	private void teleportToDimension(Entity entity, BlockPos pos, ResourceKey<Level> destinationType) {
-		entity.changeDimension(entity.getServer().getLevel(destinationType),
-				new ThepitlandsTeleporter(entity.getServer().getLevel(destinationType), pos));
+		entity.changeDimension(entity.getServer().getLevel(destinationType), new ThepitlandsTeleporter(entity.getServer().getLevel(destinationType), pos));
 	}
 }

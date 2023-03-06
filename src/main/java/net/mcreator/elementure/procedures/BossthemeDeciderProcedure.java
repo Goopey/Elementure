@@ -13,8 +13,7 @@ public class BossthemeDeciderProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (!world.getEntitiesOfClass(UmbrasylEntity.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 256, 256, 256),
-				e -> true).isEmpty()) {
+		if (!world.getEntitiesOfClass(UmbrasylEntity.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 256, 256, 256), e -> true).isEmpty()) {
 			{
 				String _setval = "umbrasyl";
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -22,8 +21,7 @@ public class BossthemeDeciderProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-		} else if (!world.getEntitiesOfClass(SirenqueenEntity.class,
-				AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 256, 256, 256), e -> true).isEmpty()) {
+		} else if (!world.getEntitiesOfClass(SirenqueenEntity.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 256, 256, 256), e -> true).isEmpty()) {
 			{
 				String _setval = "sirenqueen";
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

@@ -18,31 +18,25 @@ public class BedofchaosDarkspireTopGenProcedure {
 			if (!((world.getBlockState(new BlockPos(x, y + 3, z))).getBlock() == Blocks.WATER)) {
 				if (Math.random() < 0.75) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "boc_darkspire_small_top"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "boc_darkspire_small_top"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x - 2, y + 1, z - 2), new BlockPos(x - 2, y + 1, z - 2),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x - 2, y + 1, z - 2), new BlockPos(x - 2, y + 1, z - 2), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}
 				} else if (Math.random() < 0.75) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "boc_darkspire_medium_top"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "boc_darkspire_medium_top"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x - 2, y - 2, z - 2), new BlockPos(x - 2, y - 2, z - 2),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x - 2, y - 2, z - 2), new BlockPos(x - 2, y - 2, z - 2), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}
 				} else {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "boc_darkspire_large_top"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "boc_darkspire_large_top"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x - 2, y - 4, z - 2), new BlockPos(x - 2, y - 4, z - 2),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x - 2, y - 4, z - 2), new BlockPos(x - 2, y - 4, z - 2), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}

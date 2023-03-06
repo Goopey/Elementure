@@ -26,8 +26,7 @@ public class NetherstaroutskirtsGenProcedure {
 				}
 			}.getValue(world, new BlockPos(x + CoordsX, 0, z + CoordsZ), "netherstarUsed"))) {
 				if (Math.random() < 0.0001) {
-					world.setBlock(new BlockPos(x + CoordsX, randomHeight, z + CoordsZ),
-							ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
+					world.setBlock(new BlockPos(x + CoordsX, randomHeight, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
 					if (Math.random() < 0.5) {
 						if (!world.isClientSide()) {
 							BlockPos _bp = new BlockPos(x + CoordsX, randomHeight, z + CoordsZ);
@@ -51,8 +50,7 @@ public class NetherstaroutskirtsGenProcedure {
 					}
 				}
 				if (Math.random() < 0.0005) {
-					world.setBlock(new BlockPos(x + CoordsX, randomHeight, z + CoordsZ),
-							ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
+					world.setBlock(new BlockPos(x + CoordsX, randomHeight, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
 					if (!world.isClientSide()) {
 						BlockPos _bp = new BlockPos(x + CoordsX, randomHeight, z + CoordsZ);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -65,11 +63,9 @@ public class NetherstaroutskirtsGenProcedure {
 				}
 				if (Math.random() < 0.000025) {
 					if (Math.random() < 0.15) {
-						world.setBlock(new BlockPos(x + CoordsX, randomHeight / 1.5, z + CoordsZ),
-								ElementureModBlocks.BABYNETHERSTARSHINY.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX, randomHeight / 1.5, z + CoordsZ), ElementureModBlocks.BABYNETHERSTARSHINY.get().defaultBlockState(), 3);
 					} else {
-						world.setBlock(new BlockPos(x + CoordsX, randomHeight / 1.5, z + CoordsZ),
-								ElementureModBlocks.BABYNETHERSTARBLOCK.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX, randomHeight / 1.5, z + CoordsZ), ElementureModBlocks.BABYNETHERSTARBLOCK.get().defaultBlockState(), 3);
 					}
 				}
 			}

@@ -9,7 +9,6 @@ public class SkipsnakeDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isFish = false;
-		return ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("skipSnake");
+		return ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("skipSnake");
 	}
 }

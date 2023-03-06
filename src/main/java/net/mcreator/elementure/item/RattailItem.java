@@ -21,7 +21,6 @@ public class RattailItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("\u00A7cW.I.P"));
-		list.add(Component.literal(
-				"This item is part of a bigger patch of content which has not been implemented yet. It is useless now, but it will be quite useful in the future."));
+		list.add(Component.literal("This item is part of a bigger patch of content which has not been implemented yet. It is useless now, but it will be quite useful in the future."));
 	}
 }

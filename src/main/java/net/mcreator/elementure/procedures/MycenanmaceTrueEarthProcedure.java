@@ -10,8 +10,7 @@ public class MycenanmaceTrueEarthProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.MYCENANMACE
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.MYCENANMACE.get()) {
 			entity.getPersistentData().putBoolean("earthACTIVE", (true));
 		}
 	}

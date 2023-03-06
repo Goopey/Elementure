@@ -10,9 +10,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.mcreator.elementure.entity.MycenainfectedshroomguardEntity;
 import net.mcreator.elementure.client.model.Modelmycena_shroom_infected_guard;
 
-public class MycenainfectedshroomguardRenderer
-		extends
-			MobRenderer<MycenainfectedshroomguardEntity, Modelmycena_shroom_infected_guard<MycenainfectedshroomguardEntity>> {
+public class MycenainfectedshroomguardRenderer extends MobRenderer<MycenainfectedshroomguardEntity, Modelmycena_shroom_infected_guard<MycenainfectedshroomguardEntity>> {
 	public MycenainfectedshroomguardRenderer(EntityRendererProvider.Context context) {
 		super(context, new Modelmycena_shroom_infected_guard(context.bakeLayer(Modelmycena_shroom_infected_guard.LAYER_LOCATION)), 0.5f);
 		this.addLayer(new EyesLayer<MycenainfectedshroomguardEntity, Modelmycena_shroom_infected_guard<MycenainfectedshroomguardEntity>>(this) {

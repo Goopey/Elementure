@@ -94,8 +94,7 @@ public class ElementureModFeatures {
 	public static final RegistryObject<Feature<?>> DEEPSHIMMERINGORE = REGISTRY.register("deepshimmeringore", DeepshimmeringoreFeature::feature);
 	public static final RegistryObject<Feature<?>> WILDBLUEBERRY = REGISTRY.register("wildblueberry", WildblueberryFeature::feature);
 	public static final RegistryObject<Feature<?>> WILDPERRYBERRY = REGISTRY.register("wildperryberry", WildperryberryFeature::feature);
-	public static final RegistryObject<Feature<?>> WILDBEESTINGBERRYBUSH = REGISTRY.register("wildbeestingberrybush",
-			WildbeestingberrybushFeature::feature);
+	public static final RegistryObject<Feature<?>> WILDBEESTINGBERRYBUSH = REGISTRY.register("wildbeestingberrybush", WildbeestingberrybushFeature::feature);
 	public static final RegistryObject<Feature<?>> WILDSTRAWBERRYBUSH = REGISTRY.register("wildstrawberrybush", WildstrawberrybushFeature::feature);
 	public static final RegistryObject<Feature<?>> WILDCOLDBERRYBUSH = REGISTRY.register("wildcoldberrybush", WildcoldberrybushFeature::feature);
 	public static final RegistryObject<Feature<?>> WILDSUNBERRYBUSH = REGISTRY.register("wildsunberrybush", WildsunberrybushFeature::feature);
@@ -105,20 +104,16 @@ public class ElementureModFeatures {
 	public static final RegistryObject<Feature<?>> RAGDOLLARENA = REGISTRY.register("ragdollarena", RagdollarenaFeature::feature);
 	public static final RegistryObject<Feature<?>> FROSTYICEARENA = REGISTRY.register("frostyicearena", FrostyicearenaFeature::feature);
 	public static final RegistryObject<Feature<?>> VILLAGERSTATUE = REGISTRY.register("villagerstatue", VillagerstatueFeature::feature);
-	public static final RegistryObject<Feature<?>> FLUTANITEFLOATINGCHUNK = REGISTRY.register("flutanitefloatingchunk",
-			FlutanitefloatingchunkFeature::feature);
+	public static final RegistryObject<Feature<?>> FLUTANITEFLOATINGCHUNK = REGISTRY.register("flutanitefloatingchunk", FlutanitefloatingchunkFeature::feature);
 	public static final RegistryObject<Feature<?>> RUNICFIRESHRINE = REGISTRY.register("runicfireshrine", RunicfireshrineFeature::feature);
 	public static final RegistryObject<Feature<?>> RUNICWATERSHRINE = REGISTRY.register("runicwatershrine", RunicwatershrineFeature::feature);
-	public static final RegistryObject<Feature<?>> RUNICLIGHTNINGSHRINE = REGISTRY.register("runiclightningshrine",
-			RuniclightningshrineFeature::feature);
+	public static final RegistryObject<Feature<?>> RUNICLIGHTNINGSHRINE = REGISTRY.register("runiclightningshrine", RuniclightningshrineFeature::feature);
 	public static final RegistryObject<Feature<?>> RUNICEARTHSHRINE = REGISTRY.register("runicearthshrine", RunicearthshrineFeature::feature);
 	public static final RegistryObject<Feature<?>> RUNICAIRSHRINE = REGISTRY.register("runicairshrine", RunicairshrineFeature::feature);
-	public static final RegistryObject<Feature<?>> MYCENABIOMEBASEBLOCK = REGISTRY.register("mycenabiomebaseblock",
-			MycenabiomebaseblockFeature::feature);
+	public static final RegistryObject<Feature<?>> MYCENABIOMEBASEBLOCK = REGISTRY.register("mycenabiomebaseblock", MycenabiomebaseblockFeature::feature);
 	public static final RegistryObject<Feature<?>> RUINGRANITEBIOME = REGISTRY.register("ruingranitebiome", RuingranitebiomeFeature::feature);
 	public static final RegistryObject<Feature<?>> ENERGYDIORITEBIOME = REGISTRY.register("energydioritebiome", EnergydioritebiomeFeature::feature);
-	public static final RegistryObject<Feature<?>> LIGHTNINGANDESITEBIOME = REGISTRY.register("lightningandesitebiome",
-			LightningandesitebiomeFeature::feature);
+	public static final RegistryObject<Feature<?>> LIGHTNINGANDESITEBIOME = REGISTRY.register("lightningandesitebiome", LightningandesitebiomeFeature::feature);
 	public static final RegistryObject<Feature<?>> MEMORYGROTTO_SPAWN = REGISTRY.register("memorygrotto_spawn", MemorygrottoSpawnFeature::feature);
 	public static final RegistryObject<Feature<?>> DESERTRUINS_1 = REGISTRY.register("desertruins_1", Desertruins1Feature::feature);
 	public static final RegistryObject<Feature<?>> SUBMERGEDTEMPLE = REGISTRY.register("submergedtemple", SubmergedtempleFeature::feature);
@@ -126,8 +121,7 @@ public class ElementureModFeatures {
 	public static final RegistryObject<Feature<?>> BOULDER_2 = REGISTRY.register("boulder_2", Boulder2Feature::feature);
 	public static final RegistryObject<Feature<?>> LOSTCRAFTINGTABLE = REGISTRY.register("lostcraftingtable", LostcraftingtableFeature::feature);
 	public static final RegistryObject<Feature<?>> BOULDERSWORD = REGISTRY.register("bouldersword", BoulderswordFeature::feature);
-	public static final RegistryObject<Feature<?>> BURIEDSWORDSTRUCTURE = REGISTRY.register("buriedswordstructure",
-			BuriedswordstructureFeature::feature);
+	public static final RegistryObject<Feature<?>> BURIEDSWORDSTRUCTURE = REGISTRY.register("buriedswordstructure", BuriedswordstructureFeature::feature);
 	public static final RegistryObject<Feature<?>> NETHERSTAR_SPAWN = REGISTRY.register("netherstar_spawn", NetherstarSpawnFeature::feature);
 	public static final RegistryObject<Feature<?>> ABANDONNEDFARM = REGISTRY.register("abandonnedfarm", AbandonnedfarmFeature::feature);
 	public static final RegistryObject<Feature<?>> SWORDTEMPLE = REGISTRY.register("swordtemple", SwordtempleFeature::feature);
@@ -142,8 +136,7 @@ public class ElementureModFeatures {
 	public static final RegistryObject<Feature<?>> BOULDERS_OW = REGISTRY.register("boulders_ow", BouldersOWFeature::feature);
 	public static final RegistryObject<Feature<?>> WINDYSHORES = REGISTRY.register("windyshores", WindyshoresFeature::feature);
 	public static final RegistryObject<Feature<?>> DIVERSCROWN = REGISTRY.register("diverscrown", DiverscrownFeature::feature);
-	public static final RegistryObject<Feature<?>> PUMPKINOBLECK_SPAWNER = REGISTRY.register("pumpkinobleck_spawner",
-			PumpkinobleckSpawnerFeature::feature);
+	public static final RegistryObject<Feature<?>> PUMPKINOBLECK_SPAWNER = REGISTRY.register("pumpkinobleck_spawner", PumpkinobleckSpawnerFeature::feature);
 	public static final RegistryObject<Feature<?>> BEACON_TOWER = REGISTRY.register("beacon_tower", BeaconTowerFeature::feature);
 	public static final RegistryObject<Feature<?>> CURIOUS_MONOLITH_1 = REGISTRY.register("curious_monolith_1", CuriousMonolith1Feature::feature);
 	public static final RegistryObject<Feature<?>> CURIOUS_MONOLITH_2 = REGISTRY.register("curious_monolith_2", CuriousMonolith2Feature::feature);

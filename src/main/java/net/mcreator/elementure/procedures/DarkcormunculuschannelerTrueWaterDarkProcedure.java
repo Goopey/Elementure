@@ -30,8 +30,7 @@ public class DarkcormunculuschannelerTrueWaterDarkProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-				.getItem() == ElementureModItems.DARKCORMUNCULUS_CHANNELER.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.DARKCORMUNCULUS_CHANNELER.get()) {
 			if (world.dayTime() % 200 < 100) {
 				entity.getPersistentData().putBoolean("waterACTIVE", (true));
 				entity.getPersistentData().putBoolean("darkACTIVE", (false));

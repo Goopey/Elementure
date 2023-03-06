@@ -9,8 +9,7 @@ public class ArchkassemstaffConsumeProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).fire_essence - 20;
+			double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fire_essence - 20;
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.fire_essence = _setval;
 				capability.syncPlayerVariables(entity);

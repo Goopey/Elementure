@@ -12,8 +12,7 @@ public class DiversalloyshovelEffectProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.DIVERSALLOYSHOVEL
-				.get() && !entity.isInWater()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.DIVERSALLOYSHOVEL.get() && !entity.isInWater()) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SLOWDOWN, 2, 1));
 		}

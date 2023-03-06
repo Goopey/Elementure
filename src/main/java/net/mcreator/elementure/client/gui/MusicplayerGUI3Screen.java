@@ -1,4 +1,3 @@
-
 package net.mcreator.elementure.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -25,6 +24,11 @@ public class MusicplayerGUI3Screen extends AbstractContainerScreen<MusicplayerGU
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_credits;
+	Button button_next;
+	Button button_back;
+	Button button_stop_music;
+	Button button_stand_at_mithrill_hall_demon_s;
 
 	public MusicplayerGUI3Screen(MusicplayerGUI3Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -84,38 +88,47 @@ public class MusicplayerGUI3Screen extends AbstractContainerScreen<MusicplayerGU
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 73, this.topPos + 143, 60, 20, Component.literal("Credits"), e -> {
+		button_credits = new Button(this.leftPos + 73, this.topPos + 143, 60, 20, Component.translatable("gui.elementure.musicplayer_gui_3.button_credits"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI3ButtonMessage(0, x, y, z));
 				MusicplayerGUI3ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 157, this.topPos + 143, 45, 20, Component.literal("Next"), e -> {
+		});
+		guistate.put("button:button_credits", button_credits);
+		this.addRenderableWidget(button_credits);
+		button_next = new Button(this.leftPos + 157, this.topPos + 143, 45, 20, Component.translatable("gui.elementure.musicplayer_gui_3.button_next"), e -> {
 		}) {
 			@Override
 			public void render(PoseStack ms, int gx, int gy, float ticks) {
 				if (DeactivateSlotProcedure.execute())
 					super.render(ms, gx, gy, ticks);
 			}
-		});
-		this.addRenderableWidget(new Button(this.leftPos + 2, this.topPos + 143, 45, 20, Component.literal("Back"), e -> {
+		};
+		guistate.put("button:button_next", button_next);
+		this.addRenderableWidget(button_next);
+		button_back = new Button(this.leftPos + 2, this.topPos + 143, 45, 20, Component.translatable("gui.elementure.musicplayer_gui_3.button_back"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI3ButtonMessage(2, x, y, z));
 				MusicplayerGUI3ButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 64, this.topPos + 3, 77, 20, Component.literal("STOP MUSIC"), e -> {
+		});
+		guistate.put("button:button_back", button_back);
+		this.addRenderableWidget(button_back);
+		button_stop_music = new Button(this.leftPos + 64, this.topPos + 3, 77, 20, Component.translatable("gui.elementure.musicplayer_gui_3.button_stop_music"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI3ButtonMessage(3, x, y, z));
 				MusicplayerGUI3ButtonMessage.handleButtonAction(entity, 3, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(
-				new Button(this.leftPos + 1, this.topPos + 27, 202, 20, Component.literal("Stand At Mithrill Hall - Demon Stone"), e -> {
-					if (true) {
-						ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI3ButtonMessage(4, x, y, z));
-						MusicplayerGUI3ButtonMessage.handleButtonAction(entity, 4, x, y, z);
-					}
-				}));
+		});
+		guistate.put("button:button_stop_music", button_stop_music);
+		this.addRenderableWidget(button_stop_music);
+		button_stand_at_mithrill_hall_demon_s = new Button(this.leftPos + 1, this.topPos + 27, 202, 20, Component.translatable("gui.elementure.musicplayer_gui_3.button_stand_at_mithrill_hall_demon_s"), e -> {
+			if (true) {
+				ElementureMod.PACKET_HANDLER.sendToServer(new MusicplayerGUI3ButtonMessage(4, x, y, z));
+				MusicplayerGUI3ButtonMessage.handleButtonAction(entity, 4, x, y, z);
+			}
+		});
+		guistate.put("button:button_stand_at_mithrill_hall_demon_s", button_stand_at_mithrill_hall_demon_s);
+		this.addRenderableWidget(button_stand_at_mithrill_hall_demon_s);
 	}
 }

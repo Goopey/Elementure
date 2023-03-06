@@ -36,43 +36,27 @@ public class ElementureModFluids {
 	public static final RegistryObject<FlowingFluid> DARKWATER = REGISTRY.register("darkwater", () -> new DarkwaterFluid.Source());
 	public static final RegistryObject<FlowingFluid> FLOWING_DARKWATER = REGISTRY.register("flowing_darkwater", () -> new DarkwaterFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> REGENSUBSTANCE = REGISTRY.register("regensubstance", () -> new RegensubstanceFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_REGENSUBSTANCE = REGISTRY.register("flowing_regensubstance",
-			() -> new RegensubstanceFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> FLOWING_REGENSUBSTANCE = REGISTRY.register("flowing_regensubstance", () -> new RegensubstanceFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> CORRUPTDEW = REGISTRY.register("corruptdew", () -> new CorruptdewFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_CORRUPTDEW = REGISTRY.register("flowing_corruptdew",
-			() -> new CorruptdewFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> FLOWING_CORRUPTDEW = REGISTRY.register("flowing_corruptdew", () -> new CorruptdewFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> NETHERUMFLUID = REGISTRY.register("netherumfluid", () -> new NetherumfluidFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_NETHERUMFLUID = REGISTRY.register("flowing_netherumfluid",
-			() -> new NetherumfluidFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> FLOWING_NETHERUMFLUID = REGISTRY.register("flowing_netherumfluid", () -> new NetherumfluidFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> DUNGEONWATER = REGISTRY.register("dungeonwater", () -> new DungeonwaterFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_DUNGEONWATER = REGISTRY.register("flowing_dungeonwater",
-			() -> new DungeonwaterFluid.Flowing());
-	public static final RegistryObject<FlowingFluid> SILVERSHORESLIQUID = REGISTRY.register("silvershoresliquid",
-			() -> new SilvershoresliquidFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_SILVERSHORESLIQUID = REGISTRY.register("flowing_silvershoresliquid",
-			() -> new SilvershoresliquidFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> FLOWING_DUNGEONWATER = REGISTRY.register("flowing_dungeonwater", () -> new DungeonwaterFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> SILVERSHORESLIQUID = REGISTRY.register("silvershoresliquid", () -> new SilvershoresliquidFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_SILVERSHORESLIQUID = REGISTRY.register("flowing_silvershoresliquid", () -> new SilvershoresliquidFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> FIRELIQUID = REGISTRY.register("fireliquid", () -> new FireliquidFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_FIRELIQUID = REGISTRY.register("flowing_fireliquid",
-			() -> new FireliquidFluid.Flowing());
-	public static final RegistryObject<FlowingFluid> EARTHELEMENTLIQUID = REGISTRY.register("earthelementliquid",
-			() -> new EarthelementliquidFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_EARTHELEMENTLIQUID = REGISTRY.register("flowing_earthelementliquid",
-			() -> new EarthelementliquidFluid.Flowing());
-	public static final RegistryObject<FlowingFluid> AIRELEMENTLIQUID = REGISTRY.register("airelementliquid",
-			() -> new AirelementliquidFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_AIRELEMENTLIQUID = REGISTRY.register("flowing_airelementliquid",
-			() -> new AirelementliquidFluid.Flowing());
-	public static final RegistryObject<FlowingFluid> WATERELEMENTLIQUID = REGISTRY.register("waterelementliquid",
-			() -> new WaterelementliquidFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_WATERELEMENTLIQUID = REGISTRY.register("flowing_waterelementliquid",
-			() -> new WaterelementliquidFluid.Flowing());
-	public static final RegistryObject<FlowingFluid> LIGHTNINGELEMENTLIQUID = REGISTRY.register("lightningelementliquid",
-			() -> new LightningelementliquidFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_LIGHTNINGELEMENTLIQUID = REGISTRY.register("flowing_lightningelementliquid",
-			() -> new LightningelementliquidFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> FLOWING_FIRELIQUID = REGISTRY.register("flowing_fireliquid", () -> new FireliquidFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> EARTHELEMENTLIQUID = REGISTRY.register("earthelementliquid", () -> new EarthelementliquidFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_EARTHELEMENTLIQUID = REGISTRY.register("flowing_earthelementliquid", () -> new EarthelementliquidFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> AIRELEMENTLIQUID = REGISTRY.register("airelementliquid", () -> new AirelementliquidFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_AIRELEMENTLIQUID = REGISTRY.register("flowing_airelementliquid", () -> new AirelementliquidFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> WATERELEMENTLIQUID = REGISTRY.register("waterelementliquid", () -> new WaterelementliquidFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_WATERELEMENTLIQUID = REGISTRY.register("flowing_waterelementliquid", () -> new WaterelementliquidFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> LIGHTNINGELEMENTLIQUID = REGISTRY.register("lightningelementliquid", () -> new LightningelementliquidFluid.Source());
+	public static final RegistryObject<FlowingFluid> FLOWING_LIGHTNINGELEMENTLIQUID = REGISTRY.register("flowing_lightningelementliquid", () -> new LightningelementliquidFluid.Flowing());
 	public static final RegistryObject<FlowingFluid> SPRINGWATER = REGISTRY.register("springwater", () -> new SpringwaterFluid.Source());
-	public static final RegistryObject<FlowingFluid> FLOWING_SPRINGWATER = REGISTRY.register("flowing_springwater",
-			() -> new SpringwaterFluid.Flowing());
+	public static final RegistryObject<FlowingFluid> FLOWING_SPRINGWATER = REGISTRY.register("flowing_springwater", () -> new SpringwaterFluid.Flowing());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {

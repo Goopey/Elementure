@@ -15,8 +15,8 @@ import net.mcreator.elementure.init.ElementureModFluids;
 
 public class SilvershoresliquidBlock extends LiquidBlock {
 	public SilvershoresliquidBlock() {
-		super(() -> ElementureModFluids.SILVERSHORESLIQUID.get(), BlockBehaviour.Properties.of(Material.LAVA, MaterialColor.METAL).strength(100f)
-				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).lightLevel(s -> 4).noCollission().noLootTable());
+		super(() -> ElementureModFluids.SILVERSHORESLIQUID.get(),
+				BlockBehaviour.Properties.of(Material.LAVA, MaterialColor.METAL).strength(100f).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true).lightLevel(s -> 4).noCollission().noLootTable());
 	}
 
 	@Override

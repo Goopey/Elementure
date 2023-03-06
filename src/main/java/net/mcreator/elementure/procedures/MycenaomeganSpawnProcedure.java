@@ -32,8 +32,7 @@ public class MycenaomeganSpawnProcedure {
 						Entity entityToSpawn = new MycenainfectedshroomguardEntity(ElementureModEntities.MYCENAINFECTEDSHROOMGUARD.get(), _level);
 						entityToSpawn.moveTo((x + CoordsX), (y + CoordsY), (z + CoordsZ), world.getRandom().nextFloat() * 360F, 0);
 						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-									null, null);
+							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						world.addFreshEntity(entityToSpawn);
 					}
 				} else if (Math.random() > 0.14 && Math.random() < 0.28) {
@@ -41,8 +40,7 @@ public class MycenaomeganSpawnProcedure {
 						Entity entityToSpawn = new MycenashroomlingEntity(ElementureModEntities.MYCENASHROOMLING.get(), _level);
 						entityToSpawn.moveTo((x + CoordsX), (y + CoordsY), (z + CoordsZ), world.getRandom().nextFloat() * 360F, 0);
 						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-									null, null);
+							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						world.addFreshEntity(entityToSpawn);
 					}
 				} else if (Math.random() > 0.28 && Math.random() < 0.43) {
@@ -50,8 +48,7 @@ public class MycenaomeganSpawnProcedure {
 						Entity entityToSpawn = new MycenasporelingEntity(ElementureModEntities.MYCENASPORELING.get(), _level);
 						entityToSpawn.moveTo((x + CoordsX), (y + CoordsY), (z + CoordsZ), world.getRandom().nextFloat() * 360F, 0);
 						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-									null, null);
+							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						world.addFreshEntity(entityToSpawn);
 					}
 				} else if (Math.random() > 0.43 && Math.random() < 0.57) {
@@ -59,8 +56,7 @@ public class MycenaomeganSpawnProcedure {
 						Entity entityToSpawn = new MycenashroomalEntity(ElementureModEntities.MYCENASHROOMAL.get(), _level);
 						entityToSpawn.moveTo((x + CoordsX), (y + CoordsY), (z + CoordsZ), world.getRandom().nextFloat() * 360F, 0);
 						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-									null, null);
+							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						world.addFreshEntity(entityToSpawn);
 					}
 				} else if (Math.random() > 0.57 && Math.random() < 0.71) {
@@ -68,8 +64,7 @@ public class MycenaomeganSpawnProcedure {
 						Entity entityToSpawn = new MycenaroamerEntity(ElementureModEntities.MYCENAROAMER.get(), _level);
 						entityToSpawn.moveTo((x + CoordsX), (y + CoordsY), (z + CoordsZ), world.getRandom().nextFloat() * 360F, 0);
 						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-									null, null);
+							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						world.addFreshEntity(entityToSpawn);
 					}
 				} else if (Math.random() > 0.71 && Math.random() < 0.86) {
@@ -77,8 +72,7 @@ public class MycenaomeganSpawnProcedure {
 						Entity entityToSpawn = new MycenatruffloonEntity(ElementureModEntities.MYCENATRUFFLOON.get(), _level);
 						entityToSpawn.moveTo((x + CoordsX), (y + CoordsY), (z + CoordsZ), world.getRandom().nextFloat() * 360F, 0);
 						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-									null, null);
+							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						world.addFreshEntity(entityToSpawn);
 					}
 				} else {
@@ -86,8 +80,7 @@ public class MycenaomeganSpawnProcedure {
 						Entity entityToSpawn = new MycenatrufflingEntity(ElementureModEntities.MYCENATRUFFLING.get(), _level);
 						entityToSpawn.moveTo((x + CoordsX), (y + CoordsY), (z + CoordsZ), world.getRandom().nextFloat() * 360F, 0);
 						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-									null, null);
+							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						world.addFreshEntity(entityToSpawn);
 					}
 				}

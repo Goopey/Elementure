@@ -15,8 +15,7 @@ public class BluesickleHarvestProcedure {
 		if (EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.SELFSUSTAINING_FLAME.get(), itemstack) != 0) {
 			hasSelfsustainingFlame = 1;
 		}
-		if (Math.random() < 0.075 * (1 + hasSelfsustainingFlame
-				+ EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.SELFSUSTAINING_FLAME.get(), itemstack))) {
+		if (Math.random() < 0.075 * (1 + hasSelfsustainingFlame + EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.SELFSUSTAINING_FLAME.get(), itemstack))) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
 				ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(ElementureModItems.BLUEMASS.get()));
 				entityToSpawn.setPickUpDelay(10);

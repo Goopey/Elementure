@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,13 +13,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_credits",
           "text": "Credits",
           "onClick": {
             "name": "Creditsopen"
           },
           "width": 60,
           "height": 20,
-          "name": "Credits",
           "x": 184,
           "y": 180
         }
@@ -27,13 +27,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_next",
           "text": "Next",
           "onClick": {
             "name": "Musicplayer2Open"
           },
           "width": 45,
           "height": 20,
-          "name": "Next",
           "x": 268,
           "y": 180
         }
@@ -41,13 +41,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_marble_forest_mudeth",
           "text": "Marble Forest - Mudeth",
           "onClick": {
             "name": "MarbleforestPlay"
           },
           "width": 135,
           "height": 20,
-          "name": "Marble Forest - Mudeth",
           "x": 116,
           "y": 64
         }
@@ -55,13 +55,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_coral_labyrinth_redgreen",
           "text": "Coral Labyrinth - Red&Green",
           "onClick": {
             "name": "CorallabyrinthPlay"
           },
           "width": 160,
           "height": 20,
-          "name": "Coral Labyrinth - Red&Green",
           "x": 116,
           "y": 86
         }
@@ -69,13 +69,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_intro_c418",
           "text": "Intro - C418",
           "onClick": {
             "name": "IntroPlay"
           },
           "width": 85,
           "height": 20,
-          "name": "Intro - C418",
           "x": 116,
           "y": 108
         }
@@ -83,13 +83,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_dark_choir_mattia_cupelli",
           "text": "Dark Choir - Mattia Cupelli",
           "onClick": {
             "name": "DarkchoirPlay"
           },
           "width": 160,
           "height": 20,
-          "name": "Dark Choir - Mattia Cupelli",
           "x": 116,
           "y": 130
         }
@@ -97,13 +97,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_stop_music",
           "text": "STOP MUSIC",
           "onClick": {
             "name": "MusicStopMusic"
           },
           "width": 77,
           "height": 20,
-          "name": "STOP MUSIC",
           "x": 175,
           "y": 40
         }
@@ -111,13 +111,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_forgotten_repulsive",
           "text": "Forgotten - REPULSIVE",
           "onClick": {
             "name": "RepulsiveForgottenPlay"
           },
           "width": 134,
           "height": 20,
-          "name": "Forgotten - REPULSIVE",
           "x": 116,
           "y": 152
         }

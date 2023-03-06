@@ -38,8 +38,7 @@ public class BiomeNewZoneProcedure {
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "mycenaUsed") && y < 0) {
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("fungalPit")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("fungalPit")) {
 				{
 					String _setval = "fungalPit";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -56,8 +55,7 @@ public class BiomeNewZoneProcedure {
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "mycenaUsed") && y < 64) {
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("mycenaDepths")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("mycenaDepths")) {
 				{
 					String _setval = "mycenaDepths";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -74,8 +72,7 @@ public class BiomeNewZoneProcedure {
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "mycenaUsed")) {
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("mycena")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("mycena")) {
 				{
 					String _setval = "mycena";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -92,8 +89,7 @@ public class BiomeNewZoneProcedure {
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, 0, z), "netherstarOutsideUsed") && y > 127) {
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("netherstarSurface")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("netherstarSurface")) {
 				{
 					String _setval = "netherstarSurface";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -110,8 +106,7 @@ public class BiomeNewZoneProcedure {
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, 0, z), "netherstarOutsideUsed")) {
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("netherstarOutside")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("netherstarOutside")) {
 				{
 					String _setval = "netherstarOutside";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -128,8 +123,7 @@ public class BiomeNewZoneProcedure {
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, 0, z), "netherstarUsed") && y < 60) {
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("netherstarPrismaticbed")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("netherstarPrismaticbed")) {
 				{
 					String _setval = "netherstarPrismaticbed";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -146,8 +140,7 @@ public class BiomeNewZoneProcedure {
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, 0, z), "netherstarUsed")) {
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("netherstar")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("netherstar")) {
 				{
 					String _setval = "netherstar";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -164,8 +157,7 @@ public class BiomeNewZoneProcedure {
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "jellyfloatUsed")) {
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("jellyfloat")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("jellyfloat")) {
 				{
 					String _setval = "jellyfloat";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -182,8 +174,7 @@ public class BiomeNewZoneProcedure {
 				return false;
 			}
 		}.getValue(world, new BlockPos(x, -64, z), "grayskullLake")) {
-			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("grayskullLake")) {
+			if (!((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).zonenamelingering).equals("grayskullLake")) {
 				{
 					String _setval = "grayskullLake";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

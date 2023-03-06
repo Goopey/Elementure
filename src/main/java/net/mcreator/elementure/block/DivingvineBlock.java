@@ -3,6 +3,9 @@ package net.mcreator.elementure.block;
 
 import org.checkerframework.checker.units.qual.s;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.Fluids;
@@ -34,14 +37,11 @@ import net.mcreator.elementure.procedures.DiversvineTestUpProcedure;
 import java.util.List;
 import java.util.Collections;
 
-public class DivingvineBlock extends Block implements SimpleWaterloggedBlock
-
-{
+public class DivingvineBlock extends Block implements SimpleWaterloggedBlock {
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public DivingvineBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRASS).strength(0f, 1f).lightLevel(s -> 9).noCollission().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.GRASS).strength(0f, 1f).lightLevel(s -> 9).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
 	}
 
@@ -58,6 +58,11 @@ public class DivingvineBlock extends Block implements SimpleWaterloggedBlock
 	@Override
 	public int getLightBlock(BlockState state, BlockGetter worldIn, BlockPos pos) {
 		return 0;
+	}
+
+	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
 	}
 
 	@Override
@@ -88,14 +93,11 @@ public class DivingvineBlock extends Block implements SimpleWaterloggedBlock
 	}
 
 	@Override
-	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos,
-			BlockPos facingPos) {
+	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos, BlockPos facingPos) {
 		if (state.getValue(WATERLOGGED)) {
 			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
-		return !state.canSurvive(world, currentPos)
-				? Blocks.AIR.defaultBlockState()
-				: super.updateShape(state, facing, facingState, world, currentPos, facingPos);
+		return !state.canSurvive(world, currentPos) ? Blocks.AIR.defaultBlockState() : super.updateShape(state, facing, facingState, world, currentPos, facingPos);
 	}
 
 	@Override
@@ -118,7 +120,6 @@ public class DivingvineBlock extends Block implements SimpleWaterloggedBlock
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		DivingvinebearingSpreadProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 450);
 	}

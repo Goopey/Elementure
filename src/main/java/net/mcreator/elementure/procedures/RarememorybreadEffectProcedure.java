@@ -9,8 +9,7 @@ public class RarememorybreadEffectProcedure {
 		if (entity == null)
 			return;
 		{
-			double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).sanity + 30;
+			double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).sanity + 30;
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.sanity = _setval;
 				capability.syncPlayerVariables(entity);

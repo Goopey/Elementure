@@ -29,14 +29,12 @@ public class CustomFishingPoolProcedure {
 		boolean pool2 = false;
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:fishingbobberentity")))
 						&& (entityiterator.getPersistentData().getString("playerName")).equals(entity.getDisplayName().getString())) {
 					if (Math.random() < 0.05 + itemstack.getOrCreateTag().getDouble("crateChance") * 0.1) {
-						if ((world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 0.5, entityiterator.getZ())))
-								.is(BlockTags.create(new ResourceLocation("forge:lavafishingblocks")))) {
+						if ((world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 0.5, entityiterator.getZ()))).is(BlockTags.create(new ResourceLocation("forge:lavafishingblocks")))) {
 							LavacratePoolProcedure.execute(world, entity);
 						} else if ((new Object() {
 							public ItemStack getItemStack(int sltid, ItemStack _isc) {
@@ -52,8 +50,7 @@ public class CustomFishingPoolProcedure {
 							Customfishpoolcrate2Procedure.execute(world, entity);
 						}
 					} else {
-						if ((world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 0.5, entityiterator.getZ())))
-								.getBlock() == ElementureModBlocks.DUNGEONWATER.get()) {
+						if ((world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 0.5, entityiterator.getZ()))).getBlock() == ElementureModBlocks.DUNGEONWATER.get()) {
 							DungeonwaterFishingpoolProcedure.execute(world, entity);
 						} else if ((new Object() {
 							public ItemStack getItemStack(int sltid, ItemStack _isc) {
@@ -93,8 +90,7 @@ public class CustomFishingPoolProcedure {
 							}
 						}.getItemStack(1, itemstack)).getItem() == ElementureModItems.MEMORYBOBBER.get()) {
 							VoidFishingPoolProcedure.execute(entity);
-						} else if ((world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 0.5, entityiterator.getZ())))
-								.getBlock() == ElementureModBlocks.NETHERUMFLUID.get()) {
+						} else if ((world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 0.5, entityiterator.getZ()))).getBlock() == ElementureModBlocks.NETHERUMFLUID.get()) {
 							NetherstarpoolProcedure.execute(entity);
 						} else {
 							pool2 = true;

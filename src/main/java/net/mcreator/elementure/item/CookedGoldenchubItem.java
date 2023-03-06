@@ -17,10 +17,9 @@ import java.util.List;
 
 public class CookedGoldenchubItem extends Item {
 	public CookedGoldenchubItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(6).saturationMod(2.4f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(2.4f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

@@ -21,10 +21,9 @@ import java.util.List;
 
 public class PrismaticscrubberItem extends Item {
 	public PrismaticscrubberItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDITEMS).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.2f).alwaysEat()
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDITEMS).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.19999999999999998f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override
@@ -52,8 +51,7 @@ public class PrismaticscrubberItem extends Item {
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		PrismaticscrubberScrubProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(),
-				context.getClickedPos().getZ());
+		PrismaticscrubberScrubProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ());
 		return InteractionResult.SUCCESS;
 	}
 }

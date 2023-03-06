@@ -30,14 +30,10 @@ public class FragilityeffectHitEffectProcedure {
 			return;
 		if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(ElementureModMobEffects.FRAGILITY.get()) : false) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
-					- (1 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.FRAGILITY.get())
-							? _livEnt.getEffect(ElementureModMobEffects.FRAGILITY.get()).getAmplifier()
-							: 0)) > 0) {
+					- (1 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.FRAGILITY.get()) ? _livEnt.getEffect(ElementureModMobEffects.FRAGILITY.get()).getAmplifier() : 0)) > 0) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.setHealth((float) ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1)
-							- (1 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.FRAGILITY.get())
-									? _livEnt.getEffect(ElementureModMobEffects.FRAGILITY.get()).getAmplifier()
-									: 0))));
+							- (1 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.FRAGILITY.get()) ? _livEnt.getEffect(ElementureModMobEffects.FRAGILITY.get()).getAmplifier() : 0))));
 			}
 		}
 	}

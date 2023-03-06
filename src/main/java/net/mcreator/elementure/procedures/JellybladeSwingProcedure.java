@@ -27,20 +27,15 @@ public class JellybladeSwingProcedure {
 		yaw = Math.sin(sourceentity.getYRot() / ((-180) / Math.PI));
 		yaw2 = Math.cos(sourceentity.getYRot() / ((-180) / Math.PI));
 		for (int index0 = 0; index0 < (int) (16); index0++) {
-			world.addParticle(ParticleTypes.ELECTRIC_SPARK, (sourceentity.getX() + 3.25 * yaw * pitch), (sourceentity.getY() + 1.633 + 3.25 * pitch2),
-					(sourceentity.getZ() + 3.25 * yaw2 * pitch), ((Math.random() - 0.5) / 4), ((Math.random() - 0.5) / 4),
-					((Math.random() - 0.5) / 4));
+			world.addParticle(ParticleTypes.ELECTRIC_SPARK, (sourceentity.getX() + 3.25 * yaw * pitch), (sourceentity.getY() + 1.633 + 3.25 * pitch2), (sourceentity.getZ() + 3.25 * yaw2 * pitch), ((Math.random() - 0.5) / 4),
+					((Math.random() - 0.5) / 4), ((Math.random() - 0.5) / 4));
 		}
 		{
-			final Vec3 _center = new Vec3((sourceentity.getX() + 4.5 * yaw * pitch), (sourceentity.getY() + 1.633 + 4.5 * pitch2),
-					(sourceentity.getZ() + 4.5 * yaw2 * pitch));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			final Vec3 _center = new Vec3((sourceentity.getX() + 4.5 * yaw * pitch), (sourceentity.getY() + 1.633 + 4.5 * pitch2), (sourceentity.getZ() + 4.5 * yaw2 * pitch));
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if (!(entityiterator == entity) && !(entityiterator == sourceentity)
-						&& !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
-						&& !entityiterator.getType()
-								.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
+				if (!(entityiterator == entity) && !(entityiterator == sourceentity) && !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
+						&& !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
 					entity.hurt(DamageSource.GENERIC, 2);
 				}
 			}

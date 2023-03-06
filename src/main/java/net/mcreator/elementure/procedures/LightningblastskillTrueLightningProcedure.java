@@ -29,8 +29,7 @@ public class LightningblastskillTrueLightningProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.LIGHTNINGBLASTSKILL
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.LIGHTNINGBLASTSKILL.get()) {
 			entity.getPersistentData().putBoolean("lightningACTIVE", (true));
 		}
 	}

@@ -9,8 +9,7 @@ public class MelshDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isFish = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("melsh")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("melsh")) {
 			isFish = true;
 		} else {
 			isFish = false;

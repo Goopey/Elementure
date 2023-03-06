@@ -8,9 +8,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.mcreator.elementure.entity.StarryvillagerblacksmithEntity;
 import net.mcreator.elementure.client.model.Modelstarryvillagersmith;
 
-public class StarryvillagerblacksmithRenderer
-		extends
-			MobRenderer<StarryvillagerblacksmithEntity, Modelstarryvillagersmith<StarryvillagerblacksmithEntity>> {
+public class StarryvillagerblacksmithRenderer extends MobRenderer<StarryvillagerblacksmithEntity, Modelstarryvillagersmith<StarryvillagerblacksmithEntity>> {
 	public StarryvillagerblacksmithRenderer(EntityRendererProvider.Context context) {
 		super(context, new Modelstarryvillagersmith(context.bakeLayer(Modelstarryvillagersmith.LAYER_LOCATION)), 0.5f);
 	}

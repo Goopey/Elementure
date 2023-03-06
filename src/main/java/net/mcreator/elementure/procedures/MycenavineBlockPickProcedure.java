@@ -19,8 +19,7 @@ public class MycenavineBlockPickProcedure {
 			return;
 		if ((entity instanceof Player _plr ? _plr.getAbilities().instabuild : false) == false) {
 			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.SHEARS
-					|| EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH,
-							(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) > 0) {
+					|| EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SILK_TOUCH, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) > 0) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 0.5), z, new ItemStack(ElementureModBlocks.MYCENAVINE.get()));
 					entityToSpawn.setPickUpDelay(10);
@@ -29,8 +28,7 @@ public class MycenavineBlockPickProcedure {
 			} else {
 				for (int index0 = 0; index0 < (int) (Math.random() * 3); index0++) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 0.5), z,
-								new ItemStack(ElementureModBlocks.MYCENASHROOMBLOCK.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, x, (y + 0.5), z, new ItemStack(ElementureModBlocks.MYCENASHROOMBLOCK.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}

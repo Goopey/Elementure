@@ -243,49 +243,31 @@ public class Mycenaroomtunnelplacement0Procedure {
 				_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 		}
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 12), z), Vec2.ZERO, _level, 4, "",
-							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"/kill @e[type=minecraft:item, distance=0..100]");
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 12), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"/kill @e[type=minecraft:item, distance=0..100]");
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 9), z), Vec2.ZERO, _level, 4, "",
-							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"/kill @e[type=minecraft:item, distance=0..100]");
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 9), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"/kill @e[type=minecraft:item, distance=0..100]");
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 6), z), Vec2.ZERO, _level, 4, "",
-							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"/kill @e[type=minecraft:item, distance=0..100]");
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 6), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"/kill @e[type=minecraft:item, distance=0..100]");
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 3), z), Vec2.ZERO, _level, 4, "",
-							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"/kill @e[type=minecraft:item, distance=0..100]");
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 3), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"/kill @e[type=minecraft:item, distance=0..100]");
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"/kill @e[type=minecraft:item, distance=0..100]");
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"/kill @e[type=minecraft:item, distance=0..100]");
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y + 3), z), Vec2.ZERO, _level, 4, "",
-							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"/kill @e[type=minecraft:item, distance=0..100]");
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y + 3), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"/kill @e[type=minecraft:item, distance=0..100]");
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y + 6), z), Vec2.ZERO, _level, 4, "",
-							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"/kill @e[type=minecraft:item, distance=0..100]");
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y + 6), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"/kill @e[type=minecraft:item, distance=0..100]");
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y + 9), z), Vec2.ZERO, _level, 4, "",
-							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"/kill @e[type=minecraft:item, distance=0..100]");
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y + 9), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"/kill @e[type=minecraft:item, distance=0..100]");
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y + 12), z), Vec2.ZERO, _level, 4, "",
-							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"/kill @e[type=minecraft:item, distance=0..100]");
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y + 12), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"/kill @e[type=minecraft:item, distance=0..100]");
 	}
 }

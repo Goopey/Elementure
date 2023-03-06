@@ -3,6 +3,9 @@ package net.mcreator.elementure.block;
 
 import org.checkerframework.checker.units.qual.s;
 
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.material.MaterialColor;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.material.FluidState;
@@ -15,8 +18,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.HoeItem;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -31,13 +34,9 @@ import net.mcreator.elementure.procedures.NetherleavesDropsProcedure;
 import net.mcreator.elementure.procedures.NetherleavesDecayProcedure;
 import net.mcreator.elementure.block.entity.NetherleavesBlockEntity;
 
-public class NetherleavesBlock extends Block
-		implements
-
-			EntityBlock {
+public class NetherleavesBlock extends Block implements EntityBlock {
 	public NetherleavesBlock() {
-		super(BlockBehaviour.Properties.of(Material.LEAVES, MaterialColor.SNOW).sound(SoundType.GRASS).strength(0f, 5f).lightLevel(s -> 5)
-				.requiresCorrectToolForDrops().noOcclusion().randomTicks().hasPostProcess((bs, br, bp) -> true)
+		super(BlockBehaviour.Properties.of(Material.LEAVES, MaterialColor.SNOW).sound(SoundType.GRASS).strength(0f, 5f).lightLevel(s -> 5).requiresCorrectToolForDrops().noOcclusion().randomTicks().hasPostProcess((bs, br, bp) -> true)
 				.emissiveRendering((bs, br, bp) -> true).isRedstoneConductor((bs, br, bp) -> false).noLootTable());
 	}
 
@@ -52,8 +51,13 @@ public class NetherleavesBlock extends Block
 	}
 
 	@Override
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
+
+	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof HoeItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 0;
 		return false;
 	}
@@ -64,7 +68,6 @@ public class NetherleavesBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		NetherleavesDecayProcedure.execute(world, x, y, z);
 	}
 

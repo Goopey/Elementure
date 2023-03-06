@@ -14,10 +14,9 @@ import net.mcreator.elementure.init.ElementureModFluidTypes;
 import net.mcreator.elementure.init.ElementureModBlocks;
 
 public abstract class NetherumfluidFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(
-			() -> ElementureModFluidTypes.NETHERUMFLUID_TYPE.get(), () -> ElementureModFluids.NETHERUMFLUID.get(),
-			() -> ElementureModFluids.FLOWING_NETHERUMFLUID.get()).explosionResistance(2000f).tickRate(20).levelDecreasePerBlock(2)
-			.bucket(() -> ElementureModItems.NETHERUMFLUID_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.NETHERUMFLUID.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ElementureModFluidTypes.NETHERUMFLUID_TYPE.get(), () -> ElementureModFluids.NETHERUMFLUID.get(),
+			() -> ElementureModFluids.FLOWING_NETHERUMFLUID.get()).explosionResistance(2000f).tickRate(20).levelDecreasePerBlock(2).bucket(() -> ElementureModItems.NETHERUMFLUID_BUCKET.get())
+			.block(() -> (LiquidBlock) ElementureModBlocks.NETHERUMFLUID.get());
 
 	private NetherumfluidFluid() {
 		super(PROPERTIES);

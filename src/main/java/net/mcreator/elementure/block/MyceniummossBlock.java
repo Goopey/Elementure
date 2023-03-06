@@ -4,6 +4,7 @@ package net.mcreator.elementure.block;
 import org.checkerframework.checker.units.qual.s;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.PushReaction;
@@ -22,7 +23,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.ShovelItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.util.RandomSource;
@@ -40,8 +41,8 @@ public class MyceniummossBlock extends FallingBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public MyceniummossBlock() {
-		super(BlockBehaviour.Properties.of(Material.TOP_SNOW, MaterialColor.PLANT).sound(SoundType.GRASS).strength(0.35f, 1.5f).lightLevel(s -> 3)
-				.requiresCorrectToolForDrops().friction(0.7000000000000001f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.TOP_SNOW, MaterialColor.PLANT).sound(SoundType.GRASS).strength(0.35000000000000003f, 1.5f).lightLevel(s -> 3).requiresCorrectToolForDrops().friction(0.7000000000000001f).noOcclusion()
+				.isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -61,8 +62,12 @@ public class MyceniummossBlock extends FallingBlock {
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
 
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
 			default -> box(0, 0, 0, 16, 2, 16);
 			case NORTH -> box(0, 0, 0, 16, 2, 16);
@@ -101,7 +106,7 @@ public class MyceniummossBlock extends FallingBlock {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof ShovelItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 0;
 		return false;
 	}
@@ -127,7 +132,6 @@ public class MyceniummossBlock extends FallingBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		MyceniummossBreakProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 1);
 	}

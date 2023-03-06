@@ -29,21 +29,15 @@ public class DelaconcordedimensionSetSpawnProcedure {
 			Entity _ent = entity;
 			_ent.teleportTo(locX, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) locX, (int) locZ)), locZ);
 			if (_ent instanceof ServerPlayer _serverPlayer)
-				_serverPlayer.connection.teleport(locX, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) locX, (int) locZ)), locZ,
-						_ent.getYRot(), _ent.getXRot());
+				_serverPlayer.connection.teleport(locX, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) locX, (int) locZ)), locZ, _ent.getYRot(), _ent.getXRot());
 		}
-		if (!((world.getBlockState(new BlockPos(0, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, 0, 0) - 1, 0)))
-				.getBlock() == ElementureModBlocks.FISHALTAR.get())) {
+		if (!((world.getBlockState(new BlockPos(0, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, 0, 0) - 1, 0))).getBlock() == ElementureModBlocks.FISHALTAR.get())) {
 			if (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, 0, 0) > 10) {
-				world.setBlock(new BlockPos(0, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, 0, 0), 0),
-						ElementureModBlocks.FISHALTAR.get().defaultBlockState(), 3);
+				world.setBlock(new BlockPos(0, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, 0, 0), 0), ElementureModBlocks.FISHALTAR.get().defaultBlockState(), 3);
 			} else {
-				world.setBlock(new BlockPos(0, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, 0, 0), 0),
-						Blocks.SMOOTH_QUARTZ.defaultBlockState(), 3);
-				if (!((world.getBlockState(new BlockPos(0, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, 0, 0) - 1, 0)))
-						.getBlock() == ElementureModBlocks.FISHALTAR.get())) {
-					world.setBlock(new BlockPos(0, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, 0, 0), 0),
-							ElementureModBlocks.FISHALTAR.get().defaultBlockState(), 3);
+				world.setBlock(new BlockPos(0, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, 0, 0), 0), Blocks.SMOOTH_QUARTZ.defaultBlockState(), 3);
+				if (!((world.getBlockState(new BlockPos(0, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, 0, 0) - 1, 0))).getBlock() == ElementureModBlocks.FISHALTAR.get())) {
+					world.setBlock(new BlockPos(0, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, 0, 0), 0), ElementureModBlocks.FISHALTAR.get().defaultBlockState(), 3);
 				}
 			}
 		}

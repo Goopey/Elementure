@@ -24,7 +24,6 @@ public class MagneticEnchantmentEnchantment extends Enchantment {
 	@Override
 	public boolean canApplyAtEnchantingTable(ItemStack stack) {
 		Item item = stack.getItem();
-		return List.of(ElementureModItems.IRONBOBBER.get(), ElementureModItems.REINFORCEDFISHINGROD.get(), ElementureModItems.MAGNETICBAIT.get())
-				.contains(item);
+		return List.of(ElementureModItems.IRONBOBBER.get(), ElementureModItems.REINFORCEDFISHINGROD.get(), ElementureModItems.MAGNETICBAIT.get()).contains(item);
 	}
 }

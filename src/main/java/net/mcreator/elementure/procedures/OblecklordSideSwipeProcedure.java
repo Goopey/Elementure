@@ -34,18 +34,13 @@ public class OblecklordSideSwipeProcedure {
 		yaw5 = Math.sin(entity.getYRot() / ((-180) / Math.PI) - 0.33 * Math.PI);
 		yaw6 = Math.cos(entity.getYRot() / ((-180) / Math.PI) - 0.33 * Math.PI);
 		for (int index0 = 0; index0 < (int) (50); index0++) {
-			world.addParticle(ParticleTypes.ITEM_SLIME, (entity.getX() + 1.3 * yaw * pitch), (entity.getY() + 1 + 1.3 * pitch2),
-					(entity.getZ() + 1.3 * yaw2 * pitch), 0, 0.001, 0);
-			world.addParticle(ParticleTypes.ITEM_SLIME, (entity.getX() + 1.3 * yaw3 * pitch), (entity.getY() + 1 + 1.3 * pitch2),
-					(entity.getZ() + 1.3 * yaw4 * pitch), 0, 0.001, 0);
-			world.addParticle(ParticleTypes.ITEM_SLIME, (entity.getX() + 1.3 * yaw5 * pitch), (entity.getY() + 1 + 1.3 * pitch2),
-					(entity.getZ() + 1.3 * yaw6 * pitch), 0, 0.001, 0);
+			world.addParticle(ParticleTypes.ITEM_SLIME, (entity.getX() + 1.3 * yaw * pitch), (entity.getY() + 1 + 1.3 * pitch2), (entity.getZ() + 1.3 * yaw2 * pitch), 0, 0.001, 0);
+			world.addParticle(ParticleTypes.ITEM_SLIME, (entity.getX() + 1.3 * yaw3 * pitch), (entity.getY() + 1 + 1.3 * pitch2), (entity.getZ() + 1.3 * yaw4 * pitch), 0, 0.001, 0);
+			world.addParticle(ParticleTypes.ITEM_SLIME, (entity.getX() + 1.3 * yaw5 * pitch), (entity.getY() + 1 + 1.3 * pitch2), (entity.getZ() + 1.3 * yaw6 * pitch), 0, 0.001, 0);
 		}
 		{
-			final Vec3 _center = new Vec3((entity.getX() + 1.3 * yaw * pitch), (entity.getY() + 1 + 1.3 * pitch2),
-					(entity.getZ() + 1.3 * yaw2 * pitch));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			final Vec3 _center = new Vec3((entity.getX() + 1.3 * yaw * pitch), (entity.getY() + 1 + 1.3 * pitch2), (entity.getZ() + 1.3 * yaw2 * pitch));
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof ServerPlayer || entityiterator instanceof Player) {
 					entityiterator.hurt(DamageSource.GENERIC, 8);
@@ -53,10 +48,8 @@ public class OblecklordSideSwipeProcedure {
 			}
 		}
 		{
-			final Vec3 _center = new Vec3((entity.getX() + 1.3 * yaw3 * pitch), (entity.getY() + 1 + 1.3 * pitch2),
-					(entity.getZ() + 1.3 * yaw4 * pitch));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			final Vec3 _center = new Vec3((entity.getX() + 1.3 * yaw3 * pitch), (entity.getY() + 1 + 1.3 * pitch2), (entity.getZ() + 1.3 * yaw4 * pitch));
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof ServerPlayer || entityiterator instanceof Player) {
 					entityiterator.hurt(DamageSource.GENERIC, 8);
@@ -64,10 +57,8 @@ public class OblecklordSideSwipeProcedure {
 			}
 		}
 		{
-			final Vec3 _center = new Vec3((entity.getX() + 1.3 * yaw5 * pitch), (entity.getY() + 1 + 1.3 * pitch2),
-					(entity.getZ() + 1.3 * yaw6 * pitch));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			final Vec3 _center = new Vec3((entity.getX() + 1.3 * yaw5 * pitch), (entity.getY() + 1 + 1.3 * pitch2), (entity.getZ() + 1.3 * yaw6 * pitch));
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof ServerPlayer || entityiterator instanceof Player) {
 					entityiterator.hurt(DamageSource.GENERIC, 8);

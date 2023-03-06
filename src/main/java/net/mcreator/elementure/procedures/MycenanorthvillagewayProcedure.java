@@ -47,70 +47,63 @@ public class MycenanorthvillagewayProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 1, z))).getBlock() == Blocks.DIRT
-				|| (world.getBlockState(new BlockPos(x + new Object() {
-					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-						BlockEntity blockEntity = world.getBlockEntity(pos);
-						if (blockEntity != null)
-							return blockEntity.getPersistentData().getDouble(tag);
-						return -1;
-					}
-				}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 1, z))).getBlock() == ElementureModBlocks.MYCENIUM.get()
-				|| (world.getBlockState(new BlockPos(x + new Object() {
-					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-						BlockEntity blockEntity = world.getBlockEntity(pos);
-						if (blockEntity != null)
-							return blockEntity.getPersistentData().getDouble(tag);
-						return -1;
-					}
-				}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 1, z))).getBlock() == ElementureModBlocks.MYCENAMOSSYGRASS.get()
-				|| (world.getBlockState(new BlockPos(x + new Object() {
-					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-						BlockEntity blockEntity = world.getBlockEntity(pos);
-						if (blockEntity != null)
-							return blockEntity.getPersistentData().getDouble(tag);
-						return -1;
-					}
-				}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 1, z))).getBlock() == Blocks.STONE
-				|| (world.getBlockState(new BlockPos(x + new Object() {
-					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-						BlockEntity blockEntity = world.getBlockEntity(pos);
-						if (blockEntity != null)
-							return blockEntity.getPersistentData().getDouble(tag);
-						return -1;
-					}
-				}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 2, z))).getBlock() == Blocks.DIRT
-				|| (world.getBlockState(new BlockPos(x + new Object() {
-					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-						BlockEntity blockEntity = world.getBlockEntity(pos);
-						if (blockEntity != null)
-							return blockEntity.getPersistentData().getDouble(tag);
-						return -1;
-					}
-				}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 2, z))).getBlock() == ElementureModBlocks.MYCENIUM.get()
-				|| (world.getBlockState(new BlockPos(x + new Object() {
-					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-						BlockEntity blockEntity = world.getBlockEntity(pos);
-						if (blockEntity != null)
-							return blockEntity.getPersistentData().getDouble(tag);
-						return -1;
-					}
-				}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 2, z))).getBlock() == ElementureModBlocks.MYCENAMOSSYGRASS.get()
-				|| (world.getBlockState(new BlockPos(x + new Object() {
-					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-						BlockEntity blockEntity = world.getBlockEntity(pos);
-						if (blockEntity != null)
-							return blockEntity.getPersistentData().getDouble(tag);
-						return -1;
-					}
-				}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 2, z))).getBlock() == Blocks.STONE) && new Object() {
-					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
-						BlockEntity blockEntity = world.getBlockEntity(pos);
-						if (blockEntity != null)
-							return blockEntity.getPersistentData().getDouble(tag);
-						return -1;
-					}
-				}.getValue(world, new BlockPos(x, -64, z), "bridgeLength") > 0) {
+		}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 1, z))).getBlock() == Blocks.DIRT || (world.getBlockState(new BlockPos(x + new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 1, z))).getBlock() == ElementureModBlocks.MYCENIUM.get() || (world.getBlockState(new BlockPos(x + new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 1, z))).getBlock() == ElementureModBlocks.MYCENAMOSSYGRASS.get() || (world.getBlockState(new BlockPos(x + new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 1, z))).getBlock() == Blocks.STONE || (world.getBlockState(new BlockPos(x + new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 2, z))).getBlock() == Blocks.DIRT || (world.getBlockState(new BlockPos(x + new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 2, z))).getBlock() == ElementureModBlocks.MYCENIUM.get() || (world.getBlockState(new BlockPos(x + new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 2, z))).getBlock() == ElementureModBlocks.MYCENAMOSSYGRASS.get() || (world.getBlockState(new BlockPos(x + new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, new BlockPos(x, y, z), "XOff"), y - 2, z))).getBlock() == Blocks.STONE) && new Object() {
+			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
+				BlockEntity blockEntity = world.getBlockEntity(pos);
+				if (blockEntity != null)
+					return blockEntity.getPersistentData().getDouble(tag);
+				return -1;
+			}
+		}.getValue(world, new BlockPos(x, -64, z), "bridgeLength") > 0) {
 			if (!world.isClientSide()) {
 				BlockPos _bp = new BlockPos(x, -64, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -146,8 +139,7 @@ public class MycenanorthvillagewayProcedure {
 				}
 			}
 		}
-		if ((world.getBlockState(new BlockPos(x, -64, z))).getBlock() == ElementureModBlocks.PERVADEDBEDROCK.get()
-				|| (world.getBlockState(new BlockPos(x, -64, z))).getBlock() == ElementureModBlocks.EMPTIEDBEDROCK.get()) {
+		if ((world.getBlockState(new BlockPos(x, -64, z))).getBlock() == ElementureModBlocks.PERVADEDBEDROCK.get() || (world.getBlockState(new BlockPos(x, -64, z))).getBlock() == ElementureModBlocks.EMPTIEDBEDROCK.get()) {
 			if (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -184,8 +176,7 @@ public class MycenanorthvillagewayProcedure {
 							Entity entityToSpawn = new MycenashroomguardEntity(ElementureModEntities.MYCENASHROOMGUARD.get(), _level);
 							entityToSpawn.moveTo(x, (y + 2), z, world.getRandom().nextFloat() * 360F, 0);
 							if (entityToSpawn instanceof Mob _mobToSpawn)
-								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()),
-										MobSpawnType.MOB_SUMMONED, null, null);
+								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 							world.addFreshEntity(entityToSpawn);
 						}
 					}
@@ -251,8 +242,7 @@ public class MycenanorthvillagewayProcedure {
 							Entity entityToSpawn = new MycenashroomguardEntity(ElementureModEntities.MYCENASHROOMGUARD.get(), _level);
 							entityToSpawn.moveTo(x, (y + 2), z, world.getRandom().nextFloat() * 360F, 0);
 							if (entityToSpawn instanceof Mob _mobToSpawn)
-								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()),
-										MobSpawnType.MOB_SUMMONED, null, null);
+								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 							world.addFreshEntity(entityToSpawn);
 						}
 					}
@@ -311,8 +301,7 @@ public class MycenanorthvillagewayProcedure {
 							Entity entityToSpawn = new MycenashroomguardEntity(ElementureModEntities.MYCENASHROOMGUARD.get(), _level);
 							entityToSpawn.moveTo(x, (y + 2), z, world.getRandom().nextFloat() * 360F, 0);
 							if (entityToSpawn instanceof Mob _mobToSpawn)
-								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()),
-										MobSpawnType.MOB_SUMMONED, null, null);
+								_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 							world.addFreshEntity(entityToSpawn);
 						}
 					}

@@ -20,8 +20,7 @@ public class StarryplainsFloorGen2Procedure {
 						return blockEntity.getPersistentData().getBoolean(tag);
 					return false;
 				}
-			}.getValue(world, new BlockPos(x + CoordsX, 0, z + CoordsZ), "netherstarUsed")) && CoordsX * CoordsX + CoordsZ * CoordsZ > 2916
-					&& CoordsX * CoordsX + CoordsZ * CoordsZ <= 13456
+			}.getValue(world, new BlockPos(x + CoordsX, 0, z + CoordsZ), "netherstarUsed")) && CoordsX * CoordsX + CoordsZ * CoordsZ > 2916 && CoordsX * CoordsX + CoordsZ * CoordsZ <= 13456
 					&& !((world.getBlockState(new BlockPos(x + CoordsX, 129, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERUM.get())) {
 				if (Math.random() < 0.01) {
 					world.setBlock(new BlockPos(x + CoordsX, 129, z + CoordsZ), ElementureModBlocks.NETHERUMCARPETSHINY.get().defaultBlockState(), 3);

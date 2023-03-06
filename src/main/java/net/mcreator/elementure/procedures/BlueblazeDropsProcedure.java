@@ -16,15 +16,12 @@ public class BlueblazeDropsProcedure {
 		if (entity == null || sourceentity == null)
 			return;
 		double hasLooting = 0;
-		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.MOB_LOOTING,
-				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
+		if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.MOB_LOOTING, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) != 0) {
 			hasLooting = 1;
 		}
-		if (Math.random() < 0.1 + (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.MOB_LOOTING,
-				(sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) + hasLooting) * 0.1) {
+		if (Math.random() < 0.1 + (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.MOB_LOOTING, (sourceentity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) + hasLooting) * 0.1) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-						new ItemStack(ElementureModItems.BLUEMASS.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.BLUEMASS.get()));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}

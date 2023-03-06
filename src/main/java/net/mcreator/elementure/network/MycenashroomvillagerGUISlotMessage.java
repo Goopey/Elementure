@@ -131,7 +131,6 @@ public class MycenashroomvillagerGUISlotMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(MycenashroomvillagerGUISlotMessage.class, MycenashroomvillagerGUISlotMessage::buffer,
-				MycenashroomvillagerGUISlotMessage::new, MycenashroomvillagerGUISlotMessage::handler);
+		ElementureMod.addNetworkMessage(MycenashroomvillagerGUISlotMessage.class, MycenashroomvillagerGUISlotMessage::buffer, MycenashroomvillagerGUISlotMessage::new, MycenashroomvillagerGUISlotMessage::handler);
 	}
 }

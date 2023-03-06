@@ -39,28 +39,21 @@ public class DodgeeffectHitEffectProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(ElementureModMobEffects.DODGE.get()) : false)
-				&& Math.random() < ((double) (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.DODGE.get())
-						? _livEnt.getEffect(ElementureModMobEffects.DODGE.get()).getAmplifier()
-						: 0) + 1.0) / 10.0) {
+				&& Math.random() < ((double) (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.DODGE.get()) ? _livEnt.getEffect(ElementureModMobEffects.DODGE.get()).getAmplifier() : 0) + 1.0) / 10.0) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SHADOWPARTICLE_2.get()), (entity.getX()), (entity.getY()),
-						(entity.getZ()), 12, 0.3, 0.3, 0.3, 0.01);
+				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SHADOWPARTICLE_2.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 12, 0.3, 0.3, 0.3, 0.01);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.sweep")), SoundSource.NEUTRAL, 1, 1);
+					_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.sweep")), SoundSource.NEUTRAL, 1, 1);
 				} else {
-					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.sweep")), SoundSource.NEUTRAL, 1, 1,
-							false);
+					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.sweep")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
 			{
 				Entity _ent = entity;
 				_ent.teleportTo((entity.getX() + Math.random() * 4 - 2), (entity.getY() + Math.random()), (entity.getZ() + Math.random() * 4 - 2));
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport((entity.getX() + Math.random() * 4 - 2), (entity.getY() + Math.random()),
-							(entity.getZ() + Math.random() * 4 - 2), _ent.getYRot(), _ent.getXRot());
+					_serverPlayer.connection.teleport((entity.getX() + Math.random() * 4 - 2), (entity.getY() + Math.random()), (entity.getZ() + Math.random() * 4 - 2), _ent.getYRot(), _ent.getXRot());
 			}
 			if (event != null && event.isCancelable()) {
 				event.setCanceled(true);

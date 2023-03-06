@@ -23,30 +23,21 @@ public class TarspiritDespawnProcedure {
 			return;
 		if (entity.getPersistentData().getDouble("tarspiritDespawnTime") > 480) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.TARFLAME_PARTICLE.get()), (entity.getX()), (entity.getY()),
-						(entity.getZ()), 28, 0.3, 0.3, 0.3, 0);
+				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.TARFLAME_PARTICLE.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 28, 0.3, 0.3, 0.3, 0);
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.silverfish.ambient")), SoundSource.PLAYERS, 1,
-							(float) 0.1);
+					_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.silverfish.ambient")), SoundSource.PLAYERS, 1, (float) 0.1);
 				} else {
-					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.silverfish.ambient")), SoundSource.PLAYERS, 1,
-							(float) 0.1, false);
+					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.silverfish.ambient")), SoundSource.PLAYERS, 1, (float) 0.1, false);
 				}
 			}
 			if (entity.getPersistentData().getBoolean("tarSpiritExplodey")) {
 				ElementureMod.queueServerWork(2, () -> {
 					if (world instanceof Level _level) {
 						if (!_level.isClientSide()) {
-							_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.conduit.ambient.short")), SoundSource.PLAYERS,
-									1, (float) 0.2);
+							_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.conduit.ambient.short")), SoundSource.PLAYERS, 1, (float) 0.2);
 						} else {
-							_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-									ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.conduit.ambient.short")), SoundSource.PLAYERS,
-									1, (float) 0.2, false);
+							_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.conduit.ambient.short")), SoundSource.PLAYERS, 1, (float) 0.2, false);
 						}
 					}
 					if (world instanceof Level _level && !_level.isClientSide())
@@ -62,7 +53,6 @@ public class TarspiritDespawnProcedure {
 				entity.getPersistentData().putDouble("tarspiritDespawnTime", (entity.getPersistentData().getDouble("tarspiritDespawnTime") + 1));
 			}
 		}
-		entity.setDeltaMovement(
-				new Vec3((entity.getDeltaMovement().x() * 1.05), (entity.getDeltaMovement().y() * 1.05), (entity.getDeltaMovement().z() * 1.05)));
+		entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x() * 1.05), (entity.getDeltaMovement().y() * 1.05), (entity.getDeltaMovement().z() * 1.05)));
 	}
 }

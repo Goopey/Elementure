@@ -42,20 +42,15 @@ public class UmbrasylFireBreathProcedure {
 			yaw2 = Math.cos(entity.getYRot() / ((-180) / Math.PI));
 			for (int index0 = 0; index0 < (int) (30); index0++) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.TARFLAME_PARTICLE.get()),
-							(entity.getX() + (1.5 + num * 0.65) * yaw * pitch), (entity.getY() + 0.2 + (1.5 + num * 0.65) * pitch2),
+					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.TARFLAME_PARTICLE.get()), (entity.getX() + (1.5 + num * 0.65) * yaw * pitch), (entity.getY() + 0.2 + (1.5 + num * 0.65) * pitch2),
 							(entity.getZ() + (1.5 + num * 0.65) * yaw2 * pitch), 35, 0.9, 0.9, 0.9, 0.01);
 				{
-					final Vec3 _center = new Vec3((entity.getX() + (1.5 + num * 0.65) * yaw * pitch),
-							(entity.getY() + 2 + (1.5 + num * 0.65) * pitch2), (entity.getZ() + (1.5 + num * 0.65) * yaw2 * pitch));
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1.8 / 2d), e -> true).stream()
-							.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+					final Vec3 _center = new Vec3((entity.getX() + (1.5 + num * 0.65) * yaw * pitch), (entity.getY() + 2 + (1.5 + num * 0.65) * pitch2), (entity.getZ() + (1.5 + num * 0.65) * yaw2 * pitch));
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1.8 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							.collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
-						if (!(entityiterator == entity) && !(entityiterator instanceof UmbrasylSegmentEntity)
-								&& !entityiterator.getType()
-										.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
-								&& !entityiterator.getType()
-										.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
+						if (!(entityiterator == entity) && !(entityiterator instanceof UmbrasylSegmentEntity) && !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
+								&& !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
 							if (entity.getPersistentData().getBoolean("umbrasylPhase2")) {
 								entityiterator.hurt(DamageSource.LAVA, 1);
 								if (entityiterator instanceof LivingEntity _entity)
@@ -72,16 +67,11 @@ public class UmbrasylFireBreathProcedure {
 				}
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null,
-								new BlockPos(entity.getX() + (1.5 + num * 0.65) * yaw * pitch, entity.getY() + 2 + (1.5 + num * 0.65) * pitch2,
-										entity.getZ() + (1.5 + num * 0.65) * yaw2 * pitch),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.blaze.burn")), SoundSource.HOSTILE, (float) 0.67,
-								(float) 0.8);
+						_level.playSound(null, new BlockPos(entity.getX() + (1.5 + num * 0.65) * yaw * pitch, entity.getY() + 2 + (1.5 + num * 0.65) * pitch2, entity.getZ() + (1.5 + num * 0.65) * yaw2 * pitch),
+								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.blaze.burn")), SoundSource.HOSTILE, (float) 0.67, (float) 0.8);
 					} else {
-						_level.playLocalSound((entity.getX() + (1.5 + num * 0.65) * yaw * pitch), (entity.getY() + 2 + (1.5 + num * 0.65) * pitch2),
-								(entity.getZ() + (1.5 + num * 0.65) * yaw2 * pitch),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.blaze.burn")), SoundSource.HOSTILE, (float) 0.67,
-								(float) 0.8, false);
+						_level.playLocalSound((entity.getX() + (1.5 + num * 0.65) * yaw * pitch), (entity.getY() + 2 + (1.5 + num * 0.65) * pitch2), (entity.getZ() + (1.5 + num * 0.65) * yaw2 * pitch),
+								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.blaze.burn")), SoundSource.HOSTILE, (float) 0.67, (float) 0.8, false);
 					}
 				}
 				num = num + 1.5;

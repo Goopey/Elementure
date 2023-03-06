@@ -18,8 +18,7 @@ public class TarumbraSpawningProcedure {
 					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
-		}.getValue(world, new BlockPos(x, -64, z), "diverscrowncenterUsed")
-				&& !(!world.getEntitiesOfClass(TarumbraEntity.class, AABB.ofSize(new Vec3(x, y, z), 32, 32, 32), e -> true).isEmpty())) {
+		}.getValue(world, new BlockPos(x, -64, z), "diverscrowncenterUsed") && !(!world.getEntitiesOfClass(TarumbraEntity.class, AABB.ofSize(new Vec3(x, y, z), 32, 32, 32), e -> true).isEmpty())) {
 			return true;
 		}
 		return false;

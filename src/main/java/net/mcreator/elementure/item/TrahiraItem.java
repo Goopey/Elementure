@@ -11,10 +11,9 @@ import net.mcreator.elementure.init.ElementureModTabs;
 
 public class TrahiraItem extends Item {
 	public TrahiraItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.3f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.3f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -9,7 +9,6 @@
         "data": {
           "image": "music_box_popup_3.png",
           "use1Xscale": false,
-          "name": "music_box_popup_3.png",
           "x": 1,
           "y": 1
         }
@@ -19,7 +18,6 @@
         "data": {
           "image": "music_dot.png",
           "use1Xscale": false,
-          "name": "music_dot.png",
           "x": 1,
           "y": 5
         }
@@ -29,7 +27,6 @@
         "data": {
           "image": "music_wheel.png",
           "use1Xscale": false,
-          "name": "music_wheel.png",
           "x": 145,
           "y": 5
         }
@@ -37,12 +34,14 @@
       {
         "type": "label",
         "data": {
-          "text": "The Black Iron Pact",
+          "name": "label_the_black_iron_pact",
+          "text": {
+            "fixedValue": "The Black Iron Pact"
+          },
           "color": {
             "value": -203,
             "falpha": 0.0
           },
-          "name": "The Black Iron Pact",
           "x": 15,
           "y": 4
         }
@@ -50,12 +49,14 @@
       {
         "type": "label",
         "data": {
-          "text": "From:Battle Brothers",
+          "name": "label_frombattle_brothers",
+          "text": {
+            "fixedValue": "From:Battle Brothers"
+          },
           "color": {
             "value": -203,
             "falpha": 0.0
           },
-          "name": "From:Battle Brothers",
           "x": 15,
           "y": 12
         }

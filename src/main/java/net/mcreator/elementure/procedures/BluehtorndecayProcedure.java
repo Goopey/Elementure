@@ -28,15 +28,10 @@ public class BluehtorndecayProcedure {
 				CoordsY = -6;
 				CoordsZ = -6;
 				for (int index0 = 0; index0 < (int) (2197); index0++) {
-					if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 36
-							&& ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.FLUFFLOG
-									.get()
-									|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-											.getBlock() == ElementureModBlocks.FLUFFLOGFULL.get()
-									|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-											.getBlock() == ElementureModBlocks.STRIPPED_FLUFFLOG.get()
-									|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-											.getBlock() == ElementureModBlocks.STRIPPED_FLUFFLOGFULL.get())) {
+					if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 36 && ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.FLUFFLOG.get()
+							|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.FLUFFLOGFULL.get()
+							|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.STRIPPED_FLUFFLOG.get()
+							|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.STRIPPED_FLUFFLOGFULL.get())) {
 						notdecay = true;
 					} else if (Math.random() < 0.001 && (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.AIR) {
 						world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);

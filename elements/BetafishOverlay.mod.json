@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "LOW",
@@ -9,7 +9,6 @@
         "data": {
           "image": "fishing_background_netherstar.png",
           "use1Xscale": false,
-          "name": "fishing_background_netherstar.png",
           "x": 142,
           "y": 12
         }
@@ -19,7 +18,6 @@
         "data": {
           "image": "beta_fish.png",
           "use1Xscale": false,
-          "name": "beta_fish.png",
           "x": 156,
           "y": 188
         }

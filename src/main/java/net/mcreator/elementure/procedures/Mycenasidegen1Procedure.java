@@ -44,12 +44,9 @@ public class Mycenasidegen1Procedure {
 		}
 		while (heightOff <= 14) {
 			if (heightOff > 0 && heightOff < 6) {
-				if (!((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == ElementureModBlocks.BIGGLOWINGMUSHROOM.get())
-						|| !((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == Blocks.MUSHROOM_STEM)
-						|| !((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == ElementureModBlocks.MYCENA_BIOME_ALPHAN
-								.get())
-						|| !((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == ElementureModBlocks.MYCENA_BIOME_OMEGAN
-								.get())) {
+				if (!((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == ElementureModBlocks.BIGGLOWINGMUSHROOM.get()) || !((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == Blocks.MUSHROOM_STEM)
+						|| !((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == ElementureModBlocks.MYCENA_BIOME_ALPHAN.get())
+						|| !((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == ElementureModBlocks.MYCENA_BIOME_OMEGAN.get())) {
 					if ((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == ElementureModBlocks.MYCENAVINE.get()) {
 						world.setBlock(new BlockPos(x, y + heightOff, z), ElementureModBlocks.MYCENAVINE.get().defaultBlockState(), 3);
 					} else if (Math.random() < 0.17) {
@@ -70,13 +67,10 @@ public class Mycenasidegen1Procedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-				} else if (!((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == ElementureModBlocks.BIGGLOWINGMUSHROOM
-						.get())
+				} else if (!((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == ElementureModBlocks.BIGGLOWINGMUSHROOM.get())
 						|| !((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == Blocks.MUSHROOM_STEM)
-						|| !((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == ElementureModBlocks.MYCENA_BIOME_ALPHAN
-								.get())
-						|| !((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == ElementureModBlocks.MYCENA_BIOME_OMEGAN
-								.get())) {
+						|| !((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == ElementureModBlocks.MYCENA_BIOME_ALPHAN.get())
+						|| !((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == ElementureModBlocks.MYCENA_BIOME_OMEGAN.get())) {
 					if ((world.getBlockState(new BlockPos(x, (y + heightOff) - 1, z))).getBlock() == ElementureModBlocks.MYCENAVINE.get()) {
 						world.setBlock(new BlockPos(x, y + heightOff, z), ElementureModBlocks.MYCENAVINE.get().defaultBlockState(), 3);
 					} else if (Math.random() < 0.17) {

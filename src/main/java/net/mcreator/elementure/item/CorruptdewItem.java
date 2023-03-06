@@ -11,7 +11,6 @@ import net.mcreator.elementure.init.ElementureModFluids;
 
 public class CorruptdewItem extends BucketItem {
 	public CorruptdewItem() {
-		super(ElementureModFluids.CORRUPTDEW,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(CreativeModeTab.TAB_MISC));
+		super(ElementureModFluids.CORRUPTDEW, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(CreativeModeTab.TAB_MISC));
 	}
 }

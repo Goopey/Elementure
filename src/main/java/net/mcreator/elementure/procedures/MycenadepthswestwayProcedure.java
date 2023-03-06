@@ -19,8 +19,7 @@ public class MycenadepthswestwayProcedure {
 				return -1;
 			}
 		}.getValue(world, new BlockPos(x, y, z), "wait") > 1) {
-			if (((world.getBlockState(new BlockPos(x, -64, z))).getBlock() == ElementureModBlocks.PERVADEDBEDROCK.get()
-					|| (world.getBlockState(new BlockPos(x, -64, z))).getBlock() == ElementureModBlocks.EMPTIEDBEDROCK.get())
+			if (((world.getBlockState(new BlockPos(x, -64, z))).getBlock() == ElementureModBlocks.PERVADEDBEDROCK.get() || (world.getBlockState(new BlockPos(x, -64, z))).getBlock() == ElementureModBlocks.EMPTIEDBEDROCK.get())
 					&& Math.random() < 3 - (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 							BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -220,8 +219,7 @@ public class MycenadepthswestwayProcedure {
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
-			} else if (!((world.getBlockState(new BlockPos(x, -64, z))).getBlock() == ElementureModBlocks.PERVADEDBEDROCK.get())
-					&& !((world.getBlockState(new BlockPos(x, -64, z))).getBlock() == ElementureModBlocks.EMPTIEDBEDROCK.get())) {
+			} else if (!((world.getBlockState(new BlockPos(x, -64, z))).getBlock() == ElementureModBlocks.PERVADEDBEDROCK.get()) && !((world.getBlockState(new BlockPos(x, -64, z))).getBlock() == ElementureModBlocks.EMPTIEDBEDROCK.get())) {
 				if (Math.random() < 0.33) {
 					world.setBlock(new BlockPos(x - 7, y, z), ElementureModBlocks.MYCENA_BIOME_ALPHAN.get().defaultBlockState(), 3);
 					if (!world.isClientSide()) {
@@ -263,8 +261,7 @@ public class MycenadepthswestwayProcedure {
 							return false;
 						}
 					}.getValue(world, new BlockPos(x, y, z), "stairway")) == true) {
-						if ((world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.AIR
-								|| (world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.WATER
+						if ((world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.AIR || (world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.WATER
 								|| (world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.LAVA) {
 							world.setBlock(new BlockPos(x - 3, y, z), ElementureModBlocks.MYCENA_BIOME_ALPHAN.get().defaultBlockState(), 3);
 							if (!world.isClientSide()) {
@@ -299,8 +296,7 @@ public class MycenadepthswestwayProcedure {
 							}
 						}
 					} else {
-						if ((world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.AIR
-								|| (world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.WATER
+						if ((world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.AIR || (world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.WATER
 								|| (world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.LAVA) {
 							world.setBlock(new BlockPos(x - 3, y, z), ElementureModBlocks.MYCENA_BIOME_ALPHAN.get().defaultBlockState(), 3);
 							if (!world.isClientSide()) {
@@ -367,8 +363,7 @@ public class MycenadepthswestwayProcedure {
 						return -1;
 					}
 				}.getValue(world, new BlockPos(x, y, z), "roomW")) - 1) / 3) {
-					if ((world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.AIR
-							|| (world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.WATER
+					if ((world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.AIR || (world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.WATER
 							|| (world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.LAVA) {
 						world.setBlock(new BlockPos(x - 3, y, z), ElementureModBlocks.MYCENA_BIOME_ALPHAN.get().defaultBlockState(), 3);
 						if (!world.isClientSide()) {
@@ -403,8 +398,7 @@ public class MycenadepthswestwayProcedure {
 						}
 					}
 				} else {
-					if ((world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.AIR
-							|| (world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.WATER
+					if ((world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.AIR || (world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.WATER
 							|| (world.getBlockState(new BlockPos(x - 7, y, z))).getBlock() == Blocks.LAVA) {
 						if ((new Object() {
 							public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {

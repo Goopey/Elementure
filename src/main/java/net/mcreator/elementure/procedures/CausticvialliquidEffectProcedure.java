@@ -37,8 +37,7 @@ public class CausticvialliquidEffectProcedure {
 				if (LocX * LocX + LocZ * LocZ < 9) {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(
-								new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX() + LocX), (entity.getY()), (entity.getZ() + LocZ)),
-										Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX() + LocX), (entity.getY()), (entity.getZ() + LocZ)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								"particle minecraft:entity_effect ~ ~ ~ 0 1 0 1 0 normal");
 				}
 				LocX = LocX + 0.25;
@@ -55,11 +54,10 @@ public class CausticvialliquidEffectProcedure {
 				if (LocX * LocX + LocZ * LocZ < 9) {
 					{
 						final Vec3 _center = new Vec3((entity.getX() + LocX), (entity.getY()), (entity.getZ() + LocZ));
-						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true)
-								.stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+								.collect(Collectors.toList());
 						for (Entity entityiterator : _entfound) {
-							if (!entityiterator.getType()
-									.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))) {
+							if (!entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))) {
 								if (entity instanceof LivingEntity _entity)
 									_entity.hurt(new DamageSource("acid").bypassArmor(), 2);
 							}

@@ -19,27 +19,27 @@
 			}
 		},
 		"animation.weaponartitem.bash": {
-			"animation_length": 1.33333,
+			"animation_length": 0.83333,
 			"bones": {
 				"stick": {
 					"rotation": {
 						"0.0": {
 							"vector": [0, 0, 0]
 						},
-						"0.4167": {
+						"0.1667": {
 							"vector": [-30, 0, 0],
 							"easing": "easeOutElastic",
 							"easingArgs": [1]
 						},
-						"0.6667": {
+						"0.25": {
 							"vector": [110, 0, 0],
 							"easing": "easeInExpo"
 						},
-						"1.0833": {
+						"0.6667": {
 							"vector": [0, 0, 0],
 							"easing": "easeInOutBack"
 						},
-						"1.3333": {
+						"0.8333": {
 							"vector": [0, 0, 0]
 						}
 					}

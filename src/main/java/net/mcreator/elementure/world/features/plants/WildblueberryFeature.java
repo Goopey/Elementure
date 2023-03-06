@@ -32,10 +32,9 @@ public class WildblueberryFeature extends RandomPatchFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new WildblueberryFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("elementure:wildblueberry", FEATURE, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
-				new SimpleBlockConfiguration(BlockStateProvider.simple(ElementureModBlocks.WILDBLUEBERRY.get())), List.of(), 64));
-		PLACED_FEATURE = PlacementUtils.register("elementure:wildblueberry", CONFIGURED_FEATURE, List.of(CountPlacement.of(2),
-				RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("elementure:wildblueberry", FEATURE,
+				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ElementureModBlocks.WILDBLUEBERRY.get())), List.of(), 64));
+		PLACED_FEATURE = PlacementUtils.register("elementure:wildblueberry", CONFIGURED_FEATURE, List.of(CountPlacement.of(2), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 		return FEATURE;
 	}
 

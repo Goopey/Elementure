@@ -51,8 +51,7 @@ public class BluedoorportalTeleportProcedure {
 						Entity _ent = entity;
 						_ent.teleportTo((world.getLevelData().getXSpawn()), (world.getLevelData().getYSpawn()), (world.getLevelData().getZSpawn()));
 						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport((world.getLevelData().getXSpawn()), (world.getLevelData().getYSpawn()),
-									(world.getLevelData().getZSpawn()), _ent.getYRot(), _ent.getXRot());
+							_serverPlayer.connection.teleport((world.getLevelData().getXSpawn()), (world.getLevelData().getYSpawn()), (world.getLevelData().getZSpawn()), _ent.getYRot(), _ent.getXRot());
 					}
 				}
 				world = _worldorig;
@@ -79,8 +78,8 @@ public class BluedoorportalTeleportProcedure {
 					if (_ent instanceof ServerPlayer _serverPlayer) {
 						return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
 					} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
-						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft
-								.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
+						return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null
+								&& Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
 					}
 					return false;
 				}
@@ -90,8 +89,7 @@ public class BluedoorportalTeleportProcedure {
 			}
 			if (world instanceof ServerLevel _origLevel) {
 				LevelAccessor _worldorig = world;
-				world = _origLevel.getServer()
-						.getLevel(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("elementure:forgotten_1")));
+				world = _origLevel.getServer().getLevel(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("elementure:forgotten_1")));
 				if (world != null) {
 					if (new Object() {
 						public double getValue(LevelAccessor world, BlockPos pos, String tag) {

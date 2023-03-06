@@ -18,10 +18,9 @@ import java.util.List;
 
 public class RarememorybreadItem extends Item {
 	public RarememorybreadItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.6f).alwaysEat()
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.6f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

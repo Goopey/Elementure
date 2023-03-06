@@ -10,8 +10,7 @@ public class CloudgeyserParticlesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (Math.random() < 0.66) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.CLOUDSMOKE.get()), (x + 0.5), (y + 1.1), (z + 0.5), 4, 0.2, 0.2,
-						0.2, 0.002);
+				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.CLOUDSMOKE.get()), (x + 0.5), (y + 1.1), (z + 0.5), 4, 0.2, 0.2, 0.2, 0.002);
 		}
 	}
 }

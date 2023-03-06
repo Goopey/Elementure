@@ -10,8 +10,7 @@ public class IcebladeGatherAirWaterProcedure {
 			return;
 		if (Math.random() < 0.2) {
 			{
-				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).water_essence + 3;
+				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).water_essence + 3;
 				sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.water_essence = _setval;
 					capability.syncPlayerVariables(sourceentity);
@@ -20,8 +19,7 @@ public class IcebladeGatherAirWaterProcedure {
 		}
 		if (Math.random() < 0.1) {
 			{
-				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).air_essence + 3;
+				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).air_essence + 3;
 				sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.air_essence = _setval;
 					capability.syncPlayerVariables(sourceentity);

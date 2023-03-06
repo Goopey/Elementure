@@ -17,8 +17,7 @@ public class AndesiteelementalsBiomeSpawningProcedure {
 		CoordsZ = -1;
 		for (int index0 = 0; index0 < (int) (27); index0++) {
 			if (!(world.getDifficulty() == Difficulty.PEACEFUL)) {
-				if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-						.is(BlockTags.create(new ResourceLocation("elementure:lightningandesiteblocks"))) && !LightningAndesiteNear) {
+				if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).is(BlockTags.create(new ResourceLocation("elementure:lightningandesiteblocks"))) && !LightningAndesiteNear) {
 					LightningAndesiteNear = true;
 				}
 			}

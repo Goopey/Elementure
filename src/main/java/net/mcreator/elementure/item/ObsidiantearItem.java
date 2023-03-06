@@ -26,7 +26,6 @@ public class ObsidiantearItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal(
-				"Relic : A tear-shaped piece of obsidian that leaks water. Enough water to extinguish multiple fires, but not indefinitely. Recharges."));
+		list.add(Component.literal("Relic : A tear-shaped piece of obsidian that leaks water. Enough water to extinguish multiple fires, but not indefinitely. Recharges."));
 	}
 }

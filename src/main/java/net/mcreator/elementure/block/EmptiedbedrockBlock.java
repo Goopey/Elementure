@@ -23,10 +23,7 @@ import net.mcreator.elementure.block.entity.EmptiedbedrockBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class EmptiedbedrockBlock extends Block
-		implements
-
-			EntityBlock {
+public class EmptiedbedrockBlock extends Block implements EntityBlock {
 	public EmptiedbedrockBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(-1, 3600000));
 	}

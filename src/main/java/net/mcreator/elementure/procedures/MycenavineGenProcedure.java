@@ -12,9 +12,7 @@ public class MycenavineGenProcedure {
 		CoordsY = 20;
 		locY = Math.random() * (-24);
 		while (CoordsY >= locY) {
-			if ((world.isEmptyBlock(new BlockPos(x, y + CoordsY, z))
-					|| (world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == ElementureModBlocks.MYCENASPORECLOUD_BLOCK.get())
-					&& y + CoordsY > -64) {
+			if ((world.isEmptyBlock(new BlockPos(x, y + CoordsY, z)) || (world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == ElementureModBlocks.MYCENASPORECLOUD_BLOCK.get()) && y + CoordsY > -64) {
 				world.setBlock(new BlockPos(x, y + CoordsY, z), ElementureModBlocks.MYCENAVINE.get().defaultBlockState(), 3);
 			}
 			CoordsY = CoordsY - 1;

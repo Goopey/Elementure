@@ -15,11 +15,9 @@ public class MinoskullPLayHurtSfxProcedure {
 			return;
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.cow.hurt")), SoundSource.NEUTRAL, 4, (float) 0.4);
+				_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.cow.hurt")), SoundSource.NEUTRAL, 4, (float) 0.4);
 			} else {
-				_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.cow.hurt")), SoundSource.NEUTRAL, 4, (float) 0.4, false);
+				_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.cow.hurt")), SoundSource.NEUTRAL, 4, (float) 0.4, false);
 			}
 		}
 	}

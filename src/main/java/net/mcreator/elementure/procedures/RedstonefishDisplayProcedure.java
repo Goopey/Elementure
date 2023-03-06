@@ -9,8 +9,7 @@ public class RedstonefishDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isFish = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("redStonefish")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("redStonefish")) {
 			isFish = true;
 		} else {
 			isFish = false;

@@ -32,12 +32,8 @@ public class BubblingeffectHitEffectProcedure {
 		if (sourceentity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(ElementureModMobEffects.BUBBLING_EFFECT.get()) : false) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(ElementureModMobEffects.BUBBLED_EFFECT.get(),
-						(int) (200 + (sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.BUBBLING_EFFECT.get())
-								? _livEnt.getEffect(ElementureModMobEffects.BUBBLING_EFFECT.get()).getAmplifier()
-								: 0) * 100),
-						(int) ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.BUBBLING_EFFECT.get())
-								? _livEnt.getEffect(ElementureModMobEffects.BUBBLING_EFFECT.get()).getAmplifier()
-								: 0) / 2)));
+						(int) (200 + (sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.BUBBLING_EFFECT.get()) ? _livEnt.getEffect(ElementureModMobEffects.BUBBLING_EFFECT.get()).getAmplifier() : 0) * 100),
+						(int) ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.BUBBLING_EFFECT.get()) ? _livEnt.getEffect(ElementureModMobEffects.BUBBLING_EFFECT.get()).getAmplifier() : 0) / 2)));
 		}
 	}
 }

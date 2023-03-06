@@ -33,11 +33,9 @@ public class YellowrimeshineEffectProcedure {
 			return;
 		if (itemstack.getItem() == ElementureModItems.RAREYELLOWRIMESHINE.get() || itemstack.getItem() == ElementureModItems.YELLOWRIMESHINE.get()) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, (int) (itemstack.getOrCreateTag().getDouble("duration") / 3),
-						(int) itemstack.getOrCreateTag().getDouble("potency")));
+				_entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, (int) (itemstack.getOrCreateTag().getDouble("duration") / 3), (int) itemstack.getOrCreateTag().getDouble("potency")));
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, (int) (itemstack.getOrCreateTag().getDouble("duration") / 3),
-						(int) itemstack.getOrCreateTag().getDouble("potency")));
+				_entity.addEffect(new MobEffectInstance(MobEffects.ABSORPTION, (int) (itemstack.getOrCreateTag().getDouble("duration") / 3), (int) itemstack.getOrCreateTag().getDouble("potency")));
 		}
 	}
 }

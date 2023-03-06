@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -15,7 +15,6 @@
         "data": {
           "image": "book_fishing.png",
           "use1Xscale": false,
-          "name": "book_fishing.png",
           "x": 92,
           "y": 35
         }
@@ -25,7 +24,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 45
         }
@@ -35,7 +33,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 67
         }
@@ -45,7 +42,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 89
         }
@@ -55,7 +51,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 111
         }
@@ -65,7 +60,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 133
         }
@@ -78,7 +72,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 155
         }
@@ -91,7 +84,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 177
         }
@@ -104,7 +96,6 @@
           "displayCondition": {
             "name": "Magmachubconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 48
         }
@@ -114,7 +105,6 @@
         "data": {
           "image": "magma_chub.png",
           "use1Xscale": false,
-          "name": "magma_chub.png",
           "x": 121,
           "y": 46
         }
@@ -127,7 +117,6 @@
           "displayCondition": {
             "name": "Hightrahiraconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 70
         }
@@ -137,7 +126,6 @@
         "data": {
           "image": "high_trahira.png",
           "use1Xscale": false,
-          "name": "high_trahira.png",
           "x": 121,
           "y": 68
         }
@@ -150,7 +138,6 @@
           "displayCondition": {
             "name": "Magmacarpconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 92
         }
@@ -160,7 +147,6 @@
         "data": {
           "image": "magma_fish.png",
           "use1Xscale": false,
-          "name": "magma_fish.png",
           "x": 121,
           "y": 90
         }
@@ -173,7 +159,6 @@
           "displayCondition": {
             "name": "Ashenfishconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 114
         }
@@ -183,7 +168,6 @@
         "data": {
           "image": "ashen_fish.png",
           "use1Xscale": false,
-          "name": "ashen_fish.png",
           "x": 121,
           "y": 112
         }
@@ -196,7 +180,6 @@
           "displayCondition": {
             "name": "Greendemonconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 136
         }
@@ -206,7 +189,6 @@
         "data": {
           "image": "green_demon_fish.png",
           "use1Xscale": false,
-          "name": "green_demon_fish.png",
           "x": 121,
           "y": 134
         }
@@ -219,7 +201,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 45
         }
@@ -232,7 +213,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 67
         }
@@ -245,7 +225,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 89
         }
@@ -258,7 +237,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 111
         }
@@ -271,7 +249,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 133
         }
@@ -284,7 +261,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 155
         }
@@ -297,7 +273,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 177
         }
@@ -310,7 +285,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 45
         }
@@ -323,7 +297,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 67
         }
@@ -336,7 +309,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 89
         }
@@ -349,7 +321,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 111
         }
@@ -362,7 +333,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 133
         }
@@ -375,7 +345,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 155
         }
@@ -388,7 +357,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 45
         }
@@ -401,7 +369,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 67
         }
@@ -414,7 +381,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 89
         }
@@ -427,7 +393,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 111
         }
@@ -440,7 +405,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 133
         }
@@ -453,7 +417,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 155
         }
@@ -461,6 +424,7 @@
       {
         "type": "button",
         "data": {
+          "name": "button_next_page",
           "text": "Next Page",
           "onClick": {
             "name": "Openregularfish2"
@@ -470,7 +434,6 @@
           },
           "width": 70,
           "height": 20,
-          "name": "Next Page",
           "x": 253,
           "y": 175
         }

@@ -1,4 +1,3 @@
-
 package net.mcreator.elementure.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -72,8 +71,8 @@ public class BirthingmoduleGUIScreen extends AbstractContainerScreen<Birthingmod
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Potent Jelly", 69, 8, -12829636);
-		this.font.draw(poseStack, "Item", 69, 39, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.birthingmodule_gui.label_potent_jelly"), 69, 8, -12829636);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.birthingmodule_gui.label_item"), 69, 39, -12829636);
 	}
 
 	@Override

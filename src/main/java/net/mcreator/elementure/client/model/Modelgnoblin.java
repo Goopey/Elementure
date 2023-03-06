@@ -44,37 +44,24 @@ public class Modelgnoblin<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition head = partdefinition
-				.addOrReplaceChild(
-						"head", CubeListBuilder.create().texOffs(0, 0).addBox(-2.0F, -5.0F, -2.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F))
-								.texOffs(0, 0).addBox(-0.5F, -2.0F, -2.5F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)),
-						PartPose.offset(0.0F, 12.0F, 0.0F));
-		PartDefinition harpoon_bon = partdefinition.addOrReplaceChild("harpoon_bon",
-				CubeListBuilder.create().texOffs(60, 0).addBox(-1.0F, -8.5F, -0.5F, 1.0F, 16.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(58, 26)
-						.addBox(-2.0F, -12.5F, 0.0F, 3.0F, 6.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(45, 23).addBox(-0.5F, -12.5F, -1.5F, 0.0F,
-								6.0F, 3.0F, new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(0.0F, 15.0F, 2.0F, 0.0F, 0.0F, -0.7418F));
-		PartDefinition left_arm = partdefinition.addOrReplaceChild("left_arm", CubeListBuilder.create().texOffs(16, 0).mirror()
-				.addBox(-1.0F, 0.0F, -1.0F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(3.0F, 12.0F, 0.0F));
-		PartDefinition right_arm = partdefinition.addOrReplaceChild("right_arm",
-				CubeListBuilder.create().texOffs(16, 0).addBox(-1.0F, 0.0F, -1.0F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(-3.0F, 12.0F, 0.0F));
-		PartDefinition right_leg = partdefinition.addOrReplaceChild("right_leg",
-				CubeListBuilder.create().texOffs(0, 24).addBox(-2.0F, 0.0F, -1.0F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 18.0F, 0.0F));
-		PartDefinition left_leg = partdefinition.addOrReplaceChild("left_leg",
-				CubeListBuilder.create().texOffs(0, 24).mirror().addBox(0.0F, 0.0F, -1.0F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false),
-				PartPose.offset(0.0F, 18.0F, 0.0F));
-		PartDefinition bb_main = partdefinition.addOrReplaceChild(
-				"bb_main", CubeListBuilder.create().texOffs(0, 9).addBox(-2.0F, -12.0F, -1.0F, 4.0F, 6.0F, 2.0F, new CubeDeformation(0.0F))
-						.texOffs(50, 15).addBox(-2.0F, -11.0F, 1.0F, 4.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition head = partdefinition.addOrReplaceChild("head",
+				CubeListBuilder.create().texOffs(0, 0).addBox(-2.0F, -5.0F, -2.0F, 4.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-0.5F, -2.0F, -2.5F, 1.0F, 3.0F, 1.0F, new CubeDeformation(0.0F)),
+				PartPose.offset(0.0F, 12.0F, 0.0F));
+		PartDefinition harpoon_bon = partdefinition.addOrReplaceChild("harpoon_bon", CubeListBuilder.create().texOffs(60, 0).addBox(-1.0F, -8.5F, -0.5F, 1.0F, 16.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(58, 26)
+				.addBox(-2.0F, -12.5F, 0.0F, 3.0F, 6.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(45, 23).addBox(-0.5F, -12.5F, -1.5F, 0.0F, 6.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 15.0F, 2.0F, 0.0F, 0.0F, -0.7418F));
+		PartDefinition left_arm = partdefinition.addOrReplaceChild("left_arm", CubeListBuilder.create().texOffs(16, 0).mirror().addBox(-1.0F, 0.0F, -1.0F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false),
+				PartPose.offset(3.0F, 12.0F, 0.0F));
+		PartDefinition right_arm = partdefinition.addOrReplaceChild("right_arm", CubeListBuilder.create().texOffs(16, 0).addBox(-1.0F, 0.0F, -1.0F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-3.0F, 12.0F, 0.0F));
+		PartDefinition right_leg = partdefinition.addOrReplaceChild("right_leg", CubeListBuilder.create().texOffs(0, 24).addBox(-2.0F, 0.0F, -1.0F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 18.0F, 0.0F));
+		PartDefinition left_leg = partdefinition.addOrReplaceChild("left_leg", CubeListBuilder.create().texOffs(0, 24).mirror().addBox(0.0F, 0.0F, -1.0F, 2.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(0.0F, 18.0F, 0.0F));
+		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
+				CubeListBuilder.create().texOffs(0, 9).addBox(-2.0F, -12.0F, -1.0F, 4.0F, 6.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(50, 15).addBox(-2.0F, -11.0F, 1.0F, 4.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 32);
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		head.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		harpoon_bon.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		left_arm.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);

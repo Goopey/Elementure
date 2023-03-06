@@ -31,10 +31,8 @@ public class InsanityBlurEffectConditionProcedure {
 		if (entity == null)
 			return;
 		if (world.isClientSide()) {
-			if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).sanity < 200 && InsanityIsInDimensionProcedure.execute(entity)) {
-				if (!(entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).isInsane) {
+			if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).sanity < 200 && InsanityIsInDimensionProcedure.execute(entity)) {
+				if (!(entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).isInsane) {
 					Minecraft.getInstance().gameRenderer.loadEffect(new ResourceLocation("shaders/post/desaturate.json"));
 					{
 						boolean _setval = true;
@@ -45,8 +43,7 @@ public class InsanityBlurEffectConditionProcedure {
 					}
 				}
 			} else {
-				if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).isInsane) {
+				if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).isInsane) {
 					{
 						boolean _setval = false;
 						entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

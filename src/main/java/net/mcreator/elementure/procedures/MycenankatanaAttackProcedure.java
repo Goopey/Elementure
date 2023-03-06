@@ -20,39 +20,25 @@ public class MycenankatanaAttackProcedure {
 			return;
 		if (Math.random() < 0.4) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(ElementureModMobEffects.MYCENANSPORES.get(),
-						(int) (80 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.LUCK)
-								? _livEnt.getEffect(MobEffects.LUCK).getAmplifier()
-								: 0) * 20),
-						(int) Math.ceil(0.5 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) / 2
-								+ EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BANE_OF_ARTHROPODS, itemstack) / 2
-								+ EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SMITE, itemstack) / 2
-								+ (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.LUCK)
-										? _livEnt.getEffect(MobEffects.LUCK).getAmplifier()
-										: 0))));
+				_entity.addEffect(
+						new MobEffectInstance(ElementureModMobEffects.MYCENANSPORES.get(), (int) (80 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.LUCK) ? _livEnt.getEffect(MobEffects.LUCK).getAmplifier() : 0) * 20),
+								(int) Math.ceil(0.5 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) / 2 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BANE_OF_ARTHROPODS, itemstack) / 2
+										+ EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SMITE, itemstack) / 2
+										+ (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.LUCK) ? _livEnt.getEffect(MobEffects.LUCK).getAmplifier() : 0))));
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.CLOUD, (x + 0.5), (y + 0.5), (z + 0.5),
-						(int) (Math.ceil(0.5 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) / 2
-								+ EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BANE_OF_ARTHROPODS, itemstack) / 2
-								+ EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SMITE, itemstack) / 2
-								+ (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.LUCK)
-										? _livEnt.getEffect(MobEffects.LUCK).getAmplifier()
-										: 0))
+						(int) (Math.ceil(0.5 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) / 2 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BANE_OF_ARTHROPODS, itemstack) / 2
+								+ EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SMITE, itemstack) / 2 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.LUCK) ? _livEnt.getEffect(MobEffects.LUCK).getAmplifier() : 0))
 								* 20),
 						0.7, 0.7, 0.7, 0);
-			for (int index0 = 0; index0 < (int) (Math.ceil(0.5 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) / 2
-					+ EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BANE_OF_ARTHROPODS, itemstack) / 2
-					+ EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SMITE, itemstack) / 2
-					+ (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.LUCK)
-							? _livEnt.getEffect(MobEffects.LUCK).getAmplifier()
-							: 0))); index0++) {
+			for (int index0 = 0; index0 < (int) (Math.ceil(0.5 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) / 2 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BANE_OF_ARTHROPODS, itemstack) / 2
+					+ EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SMITE, itemstack) / 2 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.LUCK) ? _livEnt.getEffect(MobEffects.LUCK).getAmplifier() : 0))); index0++) {
 				MycenashroomcloudProcedure.execute(world, (x + 0.5), (y + 0.5), (z + 0.5));
 			}
 		}
 		if (Math.random() < 0.5) {
 			{
-				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).earth_essence + 4;
+				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).earth_essence + 4;
 				sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.earth_essence = _setval;
 					capability.syncPlayerVariables(sourceentity);

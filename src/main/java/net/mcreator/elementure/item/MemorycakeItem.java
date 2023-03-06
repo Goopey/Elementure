@@ -18,10 +18,9 @@ import java.util.List;
 
 public class MemorycakeItem extends Item {
 	public MemorycakeItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.RARE)
-				.food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.9f).alwaysEat()
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.9f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

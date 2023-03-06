@@ -9,8 +9,7 @@ public class GreenjackDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isGreenJack = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("greenJack")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("greenJack")) {
 			isGreenJack = true;
 		} else {
 			isGreenJack = false;

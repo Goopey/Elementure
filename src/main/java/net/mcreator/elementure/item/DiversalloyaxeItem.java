@@ -60,8 +60,7 @@ public class DiversalloyaxeItem extends AxeItem {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("Mines faster underwater."));
 		list.add(Component.literal("Slices through water very well."));
-		list.add(Component
-				.literal("Deals increased damage versus water creatures and aquatic mobs and extracts more air essence when attacking them."));
+		list.add(Component.literal("Deals increased damage versus water creatures and aquatic mobs and extracts more air essence when attacking them."));
 	}
 
 	@Override

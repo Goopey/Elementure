@@ -14,10 +14,8 @@ import net.mcreator.elementure.init.ElementureModFluidTypes;
 import net.mcreator.elementure.init.ElementureModBlocks;
 
 public abstract class EarthelementliquidFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(
-			() -> ElementureModFluidTypes.EARTHELEMENTLIQUID_TYPE.get(), () -> ElementureModFluids.EARTHELEMENTLIQUID.get(),
-			() -> ElementureModFluids.FLOWING_EARTHELEMENTLIQUID.get()).explosionResistance(100f)
-			.bucket(() -> ElementureModItems.EARTHELEMENTLIQUID_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.EARTHELEMENTLIQUID.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ElementureModFluidTypes.EARTHELEMENTLIQUID_TYPE.get(), () -> ElementureModFluids.EARTHELEMENTLIQUID.get(),
+			() -> ElementureModFluids.FLOWING_EARTHELEMENTLIQUID.get()).explosionResistance(100f).bucket(() -> ElementureModItems.EARTHELEMENTLIQUID_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.EARTHELEMENTLIQUID.get());
 
 	private EarthelementliquidFluid() {
 		super(PROPERTIES);

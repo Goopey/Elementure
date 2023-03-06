@@ -10,8 +10,7 @@ public class MeldingbladeGatherProcedure {
 			return;
 		if (Math.random() < 0.4) {
 			{
-				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).mind_essence + 4;
+				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).mind_essence + 4;
 				sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.mind_essence = _setval;
 					capability.syncPlayerVariables(sourceentity);

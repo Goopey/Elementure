@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "procedure",
   "definition": {
     "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables/><block deletable=\"false\" id=\"l-cnir=zA)O*~uPu]9!l\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block id=\"%pjePigticz//gC^tyR@\" type=\"explode\"><value name=\"x\"><block id=\"J/t)yE[7|aY,fzKglTdp\" type=\"coord_x\"/></value><value name=\"y\"><block id=\"|DxT|s5p!x7c?$A/QgfA\" type=\"coord_y\"/></value><value name=\"z\"><block id=\"pK~k%6{^42G}n-/2?x`]\" type=\"coord_z\"/></value><value name=\"power\"><block id=\"dGdT]?Ht}WO]D|${-6xj\" type=\"math_number\"><field name=\"NUM\">16</field></block></value><next><block id=\"!FJMP0|T%3Yi,~M(+)GK\" type=\"block_add\"><value name=\"block\"><block id=\".Bkx7mG=R,6rd.-./M,!\" type=\"mcitem_allblocks\"><field name=\"value\">Blocks.AIR</field></block></value><value name=\"x\"><block id=\"m^_U*s(-EhJ@KzB8Q~*_\" type=\"coord_x\"/></value><value name=\"y\"><block id=\"wC97u|rtis2?Mi~:5MT!\" type=\"coord_y\"/></value><value name=\"z\"><block id=\"7RS?Wdz+*[W[A,l`3MH~\" type=\"coord_z\"/></value></block></next></block></next></block></xml>"

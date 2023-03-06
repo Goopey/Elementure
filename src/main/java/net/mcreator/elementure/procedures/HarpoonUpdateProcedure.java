@@ -55,100 +55,77 @@ public class HarpoonUpdateProcedure {
 		}.getSubmergedHeight(entity) > 0.1) {
 			entity.setDeltaMovement(new Vec3(0, 0.075, 0));
 		}
-		{
-			List<? extends Player> _players = new ArrayList<>(world.players());
-			for (Entity entityiterator : _players) {
-				if ((entityiterator.getDisplayName().getString()).equals(entity.getPersistentData().getString("playerName"))) {
-					if ((entityiterator instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-							.getItem() == ElementureModItems.HARPOON_USED.get()) {
-						if ((world.getBlockState(new BlockPos(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.WATER
-								|| (world.getBlockState(new BlockPos(entity.getX(), entity.getY() - 0.5, entity.getZ())))
-										.getBlock() == Blocks.WATER) {
-							if (entity.getPersistentData().getDouble("bobberWait") >= 110) {
-								if (Math.random() < 0.4) {
-									entity.getPersistentData().putBoolean("FISH", (true));
-									entityiterator.getPersistentData().putBoolean("FISH", (true));
-									if (world instanceof Level _level) {
-										if (!_level.isClientSide()) {
-											_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-													ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.fishing_bobber.splash")),
-													SoundSource.NEUTRAL, 1, 1);
-										} else {
-											_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-													ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.fishing_bobber.splash")),
-													SoundSource.NEUTRAL, 1, 1, false);
-										}
+		for (Entity entityiterator : new ArrayList<>(world.players())) {
+			if ((entityiterator.getDisplayName().getString()).equals(entity.getPersistentData().getString("playerName"))) {
+				if ((entityiterator instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.HARPOON_USED.get()) {
+					if ((world.getBlockState(new BlockPos(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.WATER
+							|| (world.getBlockState(new BlockPos(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.WATER) {
+						if (entity.getPersistentData().getDouble("bobberWait") >= 110) {
+							if (Math.random() < 0.4) {
+								entity.getPersistentData().putBoolean("FISH", (true));
+								entityiterator.getPersistentData().putBoolean("FISH", (true));
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.fishing_bobber.splash")), SoundSource.NEUTRAL, 1, 1);
+									} else {
+										_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.fishing_bobber.splash")), SoundSource.NEUTRAL, 1, 1, false);
 									}
-									if (world instanceof ServerLevel _level)
-										_level.sendParticles(ParticleTypes.FALLING_WATER, (entity.getX()), (entity.getY()), (entity.getZ()), 50, 0.2,
-												0.2, 0.2, 0.3);
-									if (world instanceof ServerLevel _level)
-										_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.FISHNOTIFPARTICLE.get()),
-												(entity.getX()), (entity.getY() + 0.375), (entity.getZ()), (int) (3 + Math.random() * 2), 0.1, 0.1,
-												0.1, 0);
-									ElementureMod.queueServerWork(12, () -> {
-										entityiterator.getPersistentData().putBoolean("FISH", (false));
-										entity.getPersistentData().putBoolean("FISH", (false));
-									});
 								}
-								entity.getPersistentData().putDouble("bobberWait", 0);
-							} else {
-								entity.getPersistentData().putDouble("bobberWait", (entity.getPersistentData().getDouble("bobberWait") + 1));
+								if (world instanceof ServerLevel _level)
+									_level.sendParticles(ParticleTypes.FALLING_WATER, (entity.getX()), (entity.getY()), (entity.getZ()), 50, 0.2, 0.2, 0.2, 0.3);
+								if (world instanceof ServerLevel _level)
+									_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.FISHNOTIFPARTICLE.get()), (entity.getX()), (entity.getY() + 0.375), (entity.getZ()), (int) (3 + Math.random() * 2), 0.1, 0.1, 0.1, 0);
+								ElementureMod.queueServerWork(12, () -> {
+									entityiterator.getPersistentData().putBoolean("FISH", (false));
+									entity.getPersistentData().putBoolean("FISH", (false));
+								});
 							}
+							entity.getPersistentData().putDouble("bobberWait", 0);
+						} else {
+							entity.getPersistentData().putDouble("bobberWait", (entity.getPersistentData().getDouble("bobberWait") + 1));
 						}
-					} else if ((entityiterator instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)
-							.getItem() == ElementureModItems.HARPOON_USED.get()) {
-						if ((world.getBlockState(new BlockPos(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.WATER
-								|| (world.getBlockState(new BlockPos(entity.getX(), entity.getY() - 0.5, entity.getZ())))
-										.getBlock() == Blocks.WATER) {
-							if (entity.getPersistentData().getDouble("bobberWait") >= 110) {
-								if (Math.random() < 0.4) {
-									entity.getPersistentData().putBoolean("FISH", (true));
-									entityiterator.getPersistentData().putBoolean("FISH", (true));
-									if (world instanceof Level _level) {
-										if (!_level.isClientSide()) {
-											_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-													ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.fishing_bobber.splash")),
-													SoundSource.NEUTRAL, 1, 1);
-										} else {
-											_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-													ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.fishing_bobber.splash")),
-													SoundSource.NEUTRAL, 1, 1, false);
-										}
-									}
-									if (world instanceof ServerLevel _level)
-										_level.sendParticles(ParticleTypes.FALLING_WATER, (entity.getX()), (entity.getY()), (entity.getZ()), 50, 0.2,
-												0.2, 0.2, 0.3);
-									if (world instanceof ServerLevel _level)
-										_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.FISHNOTIFPARTICLE.get()),
-												(entity.getX()), (entity.getY() + 0.375), (entity.getZ()), (int) (3 + Math.random() * 2), 0.1, 0.1,
-												0.1, 0);
-									ElementureMod.queueServerWork(12, () -> {
-										entityiterator.getPersistentData().putBoolean("FISH", (false));
-										entity.getPersistentData().putBoolean("FISH", (false));
-									});
-								}
-								entity.getPersistentData().putDouble("bobberWait", 0);
-							} else {
-								entity.getPersistentData().putDouble("bobberWait", (entity.getPersistentData().getDouble("bobberWait") + 1));
-							}
-						}
-					} else {
-						entityiterator.getPersistentData().putBoolean("FISH", (false));
-						if (!entity.level.isClientSide())
-							entity.discard();
 					}
+				} else if ((entityiterator instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.HARPOON_USED.get()) {
+					if ((world.getBlockState(new BlockPos(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.WATER
+							|| (world.getBlockState(new BlockPos(entity.getX(), entity.getY() - 0.5, entity.getZ()))).getBlock() == Blocks.WATER) {
+						if (entity.getPersistentData().getDouble("bobberWait") >= 110) {
+							if (Math.random() < 0.4) {
+								entity.getPersistentData().putBoolean("FISH", (true));
+								entityiterator.getPersistentData().putBoolean("FISH", (true));
+								if (world instanceof Level _level) {
+									if (!_level.isClientSide()) {
+										_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.fishing_bobber.splash")), SoundSource.NEUTRAL, 1, 1);
+									} else {
+										_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.fishing_bobber.splash")), SoundSource.NEUTRAL, 1, 1, false);
+									}
+								}
+								if (world instanceof ServerLevel _level)
+									_level.sendParticles(ParticleTypes.FALLING_WATER, (entity.getX()), (entity.getY()), (entity.getZ()), 50, 0.2, 0.2, 0.2, 0.3);
+								if (world instanceof ServerLevel _level)
+									_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.FISHNOTIFPARTICLE.get()), (entity.getX()), (entity.getY() + 0.375), (entity.getZ()), (int) (3 + Math.random() * 2), 0.1, 0.1, 0.1, 0);
+								ElementureMod.queueServerWork(12, () -> {
+									entityiterator.getPersistentData().putBoolean("FISH", (false));
+									entity.getPersistentData().putBoolean("FISH", (false));
+								});
+							}
+							entity.getPersistentData().putDouble("bobberWait", 0);
+						} else {
+							entity.getPersistentData().putDouble("bobberWait", (entity.getPersistentData().getDouble("bobberWait") + 1));
+						}
+					}
+				} else {
+					entityiterator.getPersistentData().putBoolean("FISH", (false));
+					if (!entity.level.isClientSide())
+						entity.discard();
 				}
 			}
 		}
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if (!(entityiterator instanceof HarpoonbulletEntity)
-						&& !(entityiterator.getDisplayName().getString()).equals(entity.getPersistentData().getString("playerName"))
-						&& !(entityiterator instanceof ItemEntity) && !(entityiterator instanceof ItemFrame)) {
+				if (!(entityiterator instanceof HarpoonbulletEntity) && !(entityiterator.getDisplayName().getString()).equals(entity.getPersistentData().getString("playerName")) && !(entityiterator instanceof ItemEntity)
+						&& !(entityiterator instanceof ItemFrame)) {
 					if ((entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) > 0) {
 						entityiterator.hurt(DamageSource.GENERIC, 5);
 						entity.hurt(DamageSource.GENERIC, 6);
@@ -160,15 +137,12 @@ public class HarpoonUpdateProcedure {
 		dist = 1;
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof Player || entityiterator instanceof ServerPlayer) {
 					if ((entityiterator.getDisplayName().getString()).equals(entity.getPersistentData().getString("playerName"))
-							&& ((entityiterator instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-									.getItem() == ElementureModItems.HARPOON_USED.get()
-									|| (entityiterator instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)
-											.getItem() == ElementureModItems.HARPOON_USED.get())) {
+							&& ((entityiterator instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.HARPOON_USED.get()
+									|| (entityiterator instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.HARPOON_USED.get())) {
 						staySpawned = true;
 						playX = entityiterator.getX();
 						playY = entityiterator.getY() + 1.2;
@@ -183,8 +157,7 @@ public class HarpoonUpdateProcedure {
 		}
 		for (int index0 = 0; index0 < (int) (15); index0++) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.STRINGPARTICLE.get()),
-						(entity.getX() + (dist * (entity.getX() - playX)) / (-15)), (entity.getY() + (dist * (entity.getY() - playY)) / (-15)),
+				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.STRINGPARTICLE.get()), (entity.getX() + (dist * (entity.getX() - playX)) / (-15)), (entity.getY() + (dist * (entity.getY() - playY)) / (-15)),
 						(entity.getZ() + (dist * (entity.getZ() - playZ)) / (-15)), 1, 0, 0, 0, 0);
 			dist = dist + 1;
 		}

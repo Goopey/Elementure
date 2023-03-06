@@ -26,7 +26,6 @@ public class InvaderslayingRingItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal(
-				"Relic : Imbues your weapon with invader smiting powers. Increase damage dealt to illagers and others by 1. Looks like emerald but doesn't shine like it."));
+		list.add(Component.literal("Relic : Imbues your weapon with invader smiting powers. Increase damage dealt to illagers and others by 1. Looks like emerald but doesn't shine like it."));
 	}
 }

@@ -43,20 +43,16 @@ public class SummonblazingballsFlameDrillProcedure {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "bigblazingstar"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 2 + locX, y - 2 + locY, z - 2 + locZ),
-							new BlockPos(x - 2 + locX, y - 2 + locY, z - 2 + locZ),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-							_serverworld.random, 3);
+					template.placeInWorld(_serverworld, new BlockPos(x - 2 + locX, y - 2 + locY, z - 2 + locZ), new BlockPos(x - 2 + locX, y - 2 + locY, z - 2 + locZ),
+							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 		} else {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "blazingstar"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 1 + locX, y - 1 + locY, z - 1 + locZ),
-							new BlockPos(x - 1 + locX, y - 1 + locY, z - 1 + locZ),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-							_serverworld.random, 3);
+					template.placeInWorld(_serverworld, new BlockPos(x - 1 + locX, y - 1 + locY, z - 1 + locZ), new BlockPos(x - 1 + locX, y - 1 + locY, z - 1 + locZ),
+							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 		}

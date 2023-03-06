@@ -12,8 +12,7 @@ public class VamiteQuickenProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.VAMITEINGOT
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.VAMITEINGOT.get()) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 30, 0));
 			itemstack.getOrCreateTag().putDouble("timeheld", (itemstack.getOrCreateTag().getDouble("timeheld") + 1));

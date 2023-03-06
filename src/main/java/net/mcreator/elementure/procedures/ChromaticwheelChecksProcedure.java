@@ -24,14 +24,11 @@ public class ChromaticwheelChecksProcedure {
 			return;
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if (!(entityiterator instanceof ChromaticwheelBulletEntity)
-						&& !(entityiterator.getDisplayName().getString()).equals(entity.getPersistentData().getString("playerName"))
-						&& !(entityiterator instanceof ItemEntity) && !(entityiterator instanceof ItemFrame)) {
-					entityiterator.hurt(DamageSource.GENERIC,
-							(float) (8 / (Math.floor((entityiterator instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) / 3) + 1)));
+				if (!(entityiterator instanceof ChromaticwheelBulletEntity) && !(entityiterator.getDisplayName().getString()).equals(entity.getPersistentData().getString("playerName")) && !(entityiterator instanceof ItemEntity)
+						&& !(entityiterator instanceof ItemFrame)) {
+					entityiterator.hurt(DamageSource.GENERIC, (float) (8 / (Math.floor((entityiterator instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) / 3) + 1)));
 				}
 			}
 		}
@@ -41,8 +38,7 @@ public class ChromaticwheelChecksProcedure {
 			if (!entity.level.isClientSide())
 				entity.discard();
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SOULFLAME.get()), (entity.getX()), (entity.getY()),
-						(entity.getZ()), 4, 0.1, 0.1, 0.1, 0.01);
+				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SOULFLAME.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 4, 0.1, 0.1, 0.1, 0.01);
 		}
 	}
 }

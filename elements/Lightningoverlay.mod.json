@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGH",
@@ -9,7 +9,6 @@
         "data": {
           "image": "playerlightning.png",
           "use1Xscale": true,
-          "name": "playerlightning.png",
           "x": 384,
           "y": 206
         }
@@ -17,12 +16,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:integer:lightning_essence>",
+          "name": "label_varintegerlightning_essence",
+          "text": {
+            "fixedValue": "<VAR:integer:lightning_essence>"
+          },
           "color": {
             "value": -256,
             "falpha": 0.0
           },
-          "name": "<VAR:integer:lightning_essence>",
           "x": 393,
           "y": 197
         }

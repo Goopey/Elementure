@@ -16,10 +16,8 @@ import net.mcreator.elementure.init.ElementureModFluidTypes;
 import net.mcreator.elementure.init.ElementureModBlocks;
 
 public abstract class DungeonwaterFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(
-			() -> ElementureModFluidTypes.DUNGEONWATER_TYPE.get(), () -> ElementureModFluids.DUNGEONWATER.get(),
-			() -> ElementureModFluids.FLOWING_DUNGEONWATER.get()).explosionResistance(100f).bucket(() -> ElementureModItems.DUNGEONWATER_BUCKET.get())
-			.block(() -> (LiquidBlock) ElementureModBlocks.DUNGEONWATER.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ElementureModFluidTypes.DUNGEONWATER_TYPE.get(), () -> ElementureModFluids.DUNGEONWATER.get(),
+			() -> ElementureModFluids.FLOWING_DUNGEONWATER.get()).explosionResistance(100f).bucket(() -> ElementureModItems.DUNGEONWATER_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.DUNGEONWATER.get());
 
 	private DungeonwaterFluid() {
 		super(PROPERTIES);

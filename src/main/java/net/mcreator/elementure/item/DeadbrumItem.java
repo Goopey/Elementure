@@ -17,10 +17,9 @@ import java.util.List;
 
 public class DeadbrumItem extends Item {
 	public DeadbrumItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(6).saturationMod(1f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(1f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

@@ -46,17 +46,14 @@ public class ArmageddonRightClickedOnBlockProcedure {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "abyssalpitportal"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x, 0, z), new BlockPos(x, 0, z),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-							_serverworld.random, 3);
+					template.placeInWorld(_serverworld, new BlockPos(x, 0, z), new BlockPos(x, 0, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 			ElementureModVariables.WorldVariables.get(world).isAbyssalSingularityAlive = true;
 			ElementureModVariables.WorldVariables.get(world).syncData(world);
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(ElementureModItems.ARMAGEDDON.get());
-				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-						_player.inventoryMenu.getCraftSlots());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 			if (!world.isClientSide()) {
 				MinecraftServer _mcserv = ServerLifecycleHooks.getCurrentServer();

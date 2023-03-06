@@ -29,17 +29,12 @@ public class ChromaticchannelerSendDiscProcedure {
 		yaw = Math.sin(entity.getYRot() / ((-180) / Math.PI));
 		yaw2 = Math.cos(entity.getYRot() / ((-180) / Math.PI));
 		if (ChromaticchannelerCanShootProcedure.execute(entity)) {
-			if (!((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-					.getItem() == ElementureModItems.RAINBOWARMOR_HELMET.get()
-					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
-							.getItem() == ElementureModItems.RAINBOWARMOR_CHESTPLATE.get()
-					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
-							.getItem() == ElementureModItems.RAINBOWARMOR_LEGGINGS.get()
-					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
-							.getItem() == ElementureModItems.RAINBOWARMOR_BOOTS.get())) {
+			if (!((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == ElementureModItems.RAINBOWARMOR_HELMET.get()
+					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == ElementureModItems.RAINBOWARMOR_CHESTPLATE.get()
+					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == ElementureModItems.RAINBOWARMOR_LEGGINGS.get()
+					&& (entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == ElementureModItems.RAINBOWARMOR_BOOTS.get())) {
 				{
-					double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new ElementureModVariables.PlayerVariables())).light_essence - 12;
+					double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).light_essence - 12;
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.light_essence = _setval;
 						capability.syncPlayerVariables(entity);
@@ -54,8 +49,7 @@ public class ChromaticchannelerSendDiscProcedure {
 					entityToSpawn.setYHeadRot(entity.getYRot());
 					entityToSpawn.setDeltaMovement((2.2 * yaw * pitch), (2.2 * pitch2), (2.2 * yaw2 * pitch));
 					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-								null, null);
+						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 					world.addFreshEntity(entityToSpawn);
 				}
 				if (entity instanceof LivingEntity _entity)
@@ -70,8 +64,7 @@ public class ChromaticchannelerSendDiscProcedure {
 					entityToSpawn.setYHeadRot(entity.getYRot());
 					entityToSpawn.setDeltaMovement((3.3 * yaw * pitch), (3.3 * pitch2), (3.3 * yaw2 * pitch));
 					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-								null, null);
+						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 					world.addFreshEntity(entityToSpawn);
 				}
 				if (entity instanceof LivingEntity _entity)

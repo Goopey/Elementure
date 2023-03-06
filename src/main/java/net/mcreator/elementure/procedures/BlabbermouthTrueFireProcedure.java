@@ -10,8 +10,7 @@ public class BlabbermouthTrueFireProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.BLABBERMOUTH
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.BLABBERMOUTH.get()) {
 			entity.getPersistentData().putBoolean("fireACTIVE", (true));
 		}
 	}

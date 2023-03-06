@@ -42,26 +42,16 @@ public class Modeltinyclayman<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition main = partdefinition.addOrReplaceChild("main",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -2.0F, -0.5F, 2.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 18.0F, 0.0F));
-		PartDefinition r_leg = main.addOrReplaceChild("r_leg",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(-0.6F, 2.0F, 0.0F));
+		PartDefinition main = partdefinition.addOrReplaceChild("main", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -2.0F, -0.5F, 2.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 18.0F, 0.0F));
+		PartDefinition r_leg = main.addOrReplaceChild("r_leg", CubeListBuilder.create().texOffs(0, 0).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(-0.6F, 2.0F, 0.0F));
 		PartDefinition r_arm = main.addOrReplaceChild("r_arm", CubeListBuilder.create(), PartPose.offset(-1.5F, -2.0F, 0.0F));
-		PartDefinition right_arm_r1 = r_arm.addOrReplaceChild("right_arm_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 5.0F, 1.0F, new CubeDeformation(0.0F)),
+		PartDefinition right_arm_r1 = r_arm.addOrReplaceChild("right_arm_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 5.0F, 1.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.0436F, 0.0436F));
 		PartDefinition l_arm = main.addOrReplaceChild("l_arm", CubeListBuilder.create(), PartPose.offset(1.5F, -2.0F, 0.0F));
-		PartDefinition left_arm_r1 = l_arm.addOrReplaceChild("left_arm_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 5.0F, 1.0F, new CubeDeformation(0.0F)),
+		PartDefinition left_arm_r1 = l_arm.addOrReplaceChild("left_arm_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 5.0F, 1.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.0436F, -0.0436F));
-		PartDefinition l_leg = main.addOrReplaceChild("l_leg",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.55F, 2.0F, 0.0F));
-		PartDefinition head = main.addOrReplaceChild("head",
-				CubeListBuilder.create().texOffs(4, 10).addBox(-1.5F, -3.0F, -1.5F, 3.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, -2.0F, 0.0F));
+		PartDefinition l_leg = main.addOrReplaceChild("l_leg", CubeListBuilder.create().texOffs(0, 0).addBox(-0.5F, 0.0F, -0.5F, 1.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)), PartPose.offset(0.55F, 2.0F, 0.0F));
+		PartDefinition head = main.addOrReplaceChild("head", CubeListBuilder.create().texOffs(4, 10).addBox(-1.5F, -3.0F, -1.5F, 3.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -2.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 16, 16);
 	}
 
@@ -76,8 +66,7 @@ public class Modeltinyclayman<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

@@ -9,8 +9,7 @@ public class ChubDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isMHalimut = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("chub")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("chub")) {
 			isMHalimut = true;
 		} else {
 			isMHalimut = false;

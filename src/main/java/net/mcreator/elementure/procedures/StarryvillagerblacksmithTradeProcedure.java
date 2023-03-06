@@ -19,8 +19,7 @@ public class StarryvillagerblacksmithTradeProcedure {
 			entity.getPersistentData().putDouble("goldPayed", (entity.getPersistentData().getDouble("goldPayed") + 1));
 			if (entity.getPersistentData().getDouble("goldPayed") >= 3) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Items.EMERALD));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Items.EMERALD));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -31,8 +30,7 @@ public class StarryvillagerblacksmithTradeProcedure {
 			entity.getPersistentData().putDouble("ironTraded", (entity.getPersistentData().getDouble("ironTraded") + 1));
 			if (entity.getPersistentData().getDouble("ironTraded") >= 12) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Items.EMERALD));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Items.EMERALD));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -43,8 +41,7 @@ public class StarryvillagerblacksmithTradeProcedure {
 			entity.getPersistentData().putDouble("scrapTraded", (entity.getPersistentData().getDouble("scrapTraded") + 1));
 			if (entity.getPersistentData().getDouble("scrapTraded") >= 32) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Items.EMERALD));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Items.EMERALD));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -55,8 +52,7 @@ public class StarryvillagerblacksmithTradeProcedure {
 			entity.getPersistentData().putDouble("potatoTraded", (entity.getPersistentData().getDouble("potatoTraded") + 1));
 			if (entity.getPersistentData().getDouble("potatoTraded") >= 15) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Items.EMERALD));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Items.EMERALD));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -71,46 +67,40 @@ public class StarryvillagerblacksmithTradeProcedure {
 				if (Math.random() < 0.2) {
 					for (int index0 = 0; index0 < (int) (Math.round(Math.random() * 4) + 8); index0++) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY() + 0.25), (entity.getZ()),
-									new ItemStack(ElementureModBlocks.DEBRISSCRAPBRICKS.get()));
+							ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY() + 0.25), (entity.getZ()), new ItemStack(ElementureModBlocks.DEBRISSCRAPBRICKS.get()));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
 					}
 				} else if (Math.random() < 0.2) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY() + 0.25), (entity.getZ()),
-								new ItemStack(Blocks.ANCIENT_DEBRIS));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY() + 0.25), (entity.getZ()), new ItemStack(Blocks.ANCIENT_DEBRIS));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
 				} else if (Math.random() < 0.2) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY() + 0.25), (entity.getZ()),
-								new ItemStack(Items.NETHERITE_INGOT));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY() + 0.25), (entity.getZ()), new ItemStack(Items.NETHERITE_INGOT));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
 				} else if (Math.random() < 0.2) {
 					for (int index1 = 0; index1 < (int) (Math.ceil(Math.random() * 2)); index1++) {
 						if (world instanceof Level _level && !_level.isClientSide()) {
-							ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY() + 0.25), (entity.getZ()),
-									new ItemStack(ElementureModBlocks.DEBRISSCRAPS.get()));
+							ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY() + 0.25), (entity.getZ()), new ItemStack(ElementureModBlocks.DEBRISSCRAPS.get()));
 							entityToSpawn.setPickUpDelay(10);
 							_level.addFreshEntity(entityToSpawn);
 						}
 					}
 				} else if (Math.random() < 0.2) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY() + 0.25), (entity.getZ()),
-								new ItemStack(ElementureModItems.OBSIDIANBOBBER.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY() + 0.25), (entity.getZ()), new ItemStack(ElementureModItems.OBSIDIANBOBBER.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
 				} else {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY() + 0.25), (entity.getZ()),
-								new ItemStack(ElementureModItems.NETHERSTARHAMMER.get()));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY() + 0.25), (entity.getZ()), new ItemStack(ElementureModItems.NETHERSTARHAMMER.get()));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}

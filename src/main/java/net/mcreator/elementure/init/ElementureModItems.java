@@ -736,23 +736,19 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> DARK = block(ElementureModBlocks.DARK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> SILVERBLOCK = block(ElementureModBlocks.SILVERBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> NEONINGOTBLOCK = block(ElementureModBlocks.NEONINGOTBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> MINISTRAWBERRYBUSH = block(ElementureModBlocks.MINISTRAWBERRYBUSH,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> MINISTRAWBERRYBUSH = block(ElementureModBlocks.MINISTRAWBERRYBUSH, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> STRAWBERRYBUSH = block(ElementureModBlocks.STRAWBERRYBUSH, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> BEESTINGBERRYBUSH = block(ElementureModBlocks.BEESTINGBERRYBUSH, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> MINIBEESTINGBERRYBUSH = block(ElementureModBlocks.MINIBEESTINGBERRYBUSH,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> MINIBEESTINGBERRYBUSH = block(ElementureModBlocks.MINIBEESTINGBERRYBUSH, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> PERRYBERRYBUSH = block(ElementureModBlocks.PERRYBERRYBUSH, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> MINIPERRYBERRYBUSH = block(ElementureModBlocks.MINIPERRYBERRYBUSH,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> MINIPERRYBERRYBUSH = block(ElementureModBlocks.MINIPERRYBERRYBUSH, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> BLUEBERRYBUSH = block(ElementureModBlocks.BLUEBERRYBUSH, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> MINIBLUEBERRYBUSH = block(ElementureModBlocks.MINIBLUEBERRYBUSH, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> MUSHYSLIMEGLUE = block(ElementureModBlocks.MUSHYSLIMEGLUE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> MAELSTROMLOG = block(ElementureModBlocks.MAELSTROMLOG, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> MAELSTROMPLANKS = block(ElementureModBlocks.MAELSTROMPLANKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> MAELSTROMLEAVES = block(ElementureModBlocks.MAELSTROMLEAVES, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> SHARDLESSMAELSTROMLOG = block(ElementureModBlocks.SHARDLESSMAELSTROMLOG,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SHARDLESSMAELSTROMLOG = block(ElementureModBlocks.SHARDLESSMAELSTROMLOG, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> FLUTANITEBLOCK = block(ElementureModBlocks.FLUTANITEBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> ABYSSALSPOTTER = block(ElementureModBlocks.ABYSSALSPOTTER, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> ABYSSALSPAWNER = block(ElementureModBlocks.ABYSSALSPAWNER, ElementureModTabs.TAB_TABMODDEDBLOCKS);
@@ -763,10 +759,8 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> CORRUPTLOG = block(ElementureModBlocks.CORRUPTLOG, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> CORRUPTLEAVES = block(ElementureModBlocks.CORRUPTLEAVES, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> MURK = block(ElementureModBlocks.MURK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> ANNIMATEDSTATUEBLOCK = block(ElementureModBlocks.ANNIMATEDSTATUEBLOCK,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LOOTEDVILLAGERSTATUE = block(ElementureModBlocks.LOOTEDVILLAGERSTATUE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> ANNIMATEDSTATUEBLOCK = block(ElementureModBlocks.ANNIMATEDSTATUEBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LOOTEDVILLAGERSTATUE = block(ElementureModBlocks.LOOTEDVILLAGERSTATUE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> ROTTENDEMONHEART = block(ElementureModBlocks.ROTTENDEMONHEART, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> ABSORPTIONSTAR = block(ElementureModBlocks.ABSORPTIONSTAR, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> FIRESTAR = block(ElementureModBlocks.FIRESTAR, ElementureModTabs.TAB_TABMODDEDBLOCKS);
@@ -791,11 +785,9 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> EARTHRUNEBLOCK = block(ElementureModBlocks.EARTHRUNEBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> WATERRUNEBLOCK = block(ElementureModBlocks.WATERRUNEBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> AIRRUNEBLOCK = block(ElementureModBlocks.AIRRUNEBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LIGHTNINGRUNEBLOCK = block(ElementureModBlocks.LIGHTNINGRUNEBLOCK,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LIGHTNINGRUNEBLOCK = block(ElementureModBlocks.LIGHTNINGRUNEBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> RUNEBRICKS = block(ElementureModBlocks.RUNEBRICKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> RUNEBRICKSCHISELED = block(ElementureModBlocks.RUNEBRICKSCHISELED,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> RUNEBRICKSCHISELED = block(ElementureModBlocks.RUNEBRICKSCHISELED, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> OMEGANCENTER = block(ElementureModBlocks.OMEGANCENTER, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> ENERGYDIORITE = block(ElementureModBlocks.ENERGYDIORITE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> LIGHTNINGANDESITE = block(ElementureModBlocks.LIGHTNINGANDESITE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
@@ -816,24 +808,15 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> REDBARRIER = block(ElementureModBlocks.REDBARRIER, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> WHITEBARRIER = block(ElementureModBlocks.WHITEBARRIER, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> YELLOWBARRIER = block(ElementureModBlocks.YELLOWBARRIER, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> BURIEDRUSTYIRONSWORD_1 = block(ElementureModBlocks.BURIEDRUSTYIRONSWORD_1,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> BURIEDRUSTYIRONSWORD_2 = block(ElementureModBlocks.BURIEDRUSTYIRONSWORD_2,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> ELEMENTALALTARBASE = block(ElementureModBlocks.ELEMENTALALTARBASE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> TIER_1HARVESTEDWATERELEMENT = block(ElementureModBlocks.TIER_1HARVESTEDWATERELEMENT,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> TIER_1HARVESTEDFIREELEMENT = block(ElementureModBlocks.TIER_1HARVESTEDFIREELEMENT,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> TIER_1HARVESTEDEARTHELEMENT = block(ElementureModBlocks.TIER_1HARVESTEDEARTHELEMENT,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> TIER_1HARVESTEDAIRELEMENT = block(ElementureModBlocks.TIER_1HARVESTEDAIRELEMENT,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> TIER_1HARVESTEDLIGHTNINGELEMENT = block(ElementureModBlocks.TIER_1HARVESTEDLIGHTNINGELEMENT,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> BIGGLOWINGMUSHROOM = block(ElementureModBlocks.BIGGLOWINGMUSHROOM,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> BURIEDRUSTYIRONSWORD_1 = block(ElementureModBlocks.BURIEDRUSTYIRONSWORD_1, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> BURIEDRUSTYIRONSWORD_2 = block(ElementureModBlocks.BURIEDRUSTYIRONSWORD_2, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> ELEMENTALALTARBASE = block(ElementureModBlocks.ELEMENTALALTARBASE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> TIER_1HARVESTEDWATERELEMENT = block(ElementureModBlocks.TIER_1HARVESTEDWATERELEMENT, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> TIER_1HARVESTEDFIREELEMENT = block(ElementureModBlocks.TIER_1HARVESTEDFIREELEMENT, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> TIER_1HARVESTEDEARTHELEMENT = block(ElementureModBlocks.TIER_1HARVESTEDEARTHELEMENT, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> TIER_1HARVESTEDAIRELEMENT = block(ElementureModBlocks.TIER_1HARVESTEDAIRELEMENT, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> TIER_1HARVESTEDLIGHTNINGELEMENT = block(ElementureModBlocks.TIER_1HARVESTEDLIGHTNINGELEMENT, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> BIGGLOWINGMUSHROOM = block(ElementureModBlocks.BIGGLOWINGMUSHROOM, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> CURSEDEYELOG = block(ElementureModBlocks.CURSEDEYELOG, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> CURSEDLOG = block(ElementureModBlocks.CURSEDLOG, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> CURSEDPLANKS = block(ElementureModBlocks.CURSEDPLANKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
@@ -852,10 +835,8 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> CRACKINGICE = block(ElementureModBlocks.CRACKINGICE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> ICESPIKES = block(ElementureModBlocks.ICESPIKES, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> ICEMINE = block(ElementureModBlocks.ICEMINE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> POLISHEDRUINGRANITE = block(ElementureModBlocks.POLISHEDRUINGRANITE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> CHISELEDRUINEDGRANITE = block(ElementureModBlocks.CHISELEDRUINEDGRANITE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> POLISHEDRUINGRANITE = block(ElementureModBlocks.POLISHEDRUINGRANITE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CHISELEDRUINEDGRANITE = block(ElementureModBlocks.CHISELEDRUINEDGRANITE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> NOOBIUMBLOCK = block(ElementureModBlocks.NOOBIUMBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> MYCENASHROOMBLOCK = block(ElementureModBlocks.MYCENASHROOMBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> MYCENAVINE = block(ElementureModBlocks.MYCENAVINE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
@@ -866,20 +847,13 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> MYCENANALLOYBLOCK = block(ElementureModBlocks.MYCENANALLOYBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> DAZZLINGBLOCK = block(ElementureModBlocks.DAZZLINGBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> MYCENAMOSSBRICKS = block(ElementureModBlocks.MYCENAMOSSBRICKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> MYCENAMOSSBRICKSTAIRS = block(ElementureModBlocks.MYCENAMOSSBRICKSTAIRS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> MYCENAMOSSBRICKSLABS = block(ElementureModBlocks.MYCENAMOSSBRICKSLABS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> MYCENAMOSSBRICKWALL = block(ElementureModBlocks.MYCENAMOSSBRICKWALL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> POLISHEDENERGYDIORITE = block(ElementureModBlocks.POLISHEDENERGYDIORITE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> CHISELEDENERGYDIORITE = block(ElementureModBlocks.CHISELEDENERGYDIORITE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> POLISHEDLIGHTNINGANDESITE = block(ElementureModBlocks.POLISHEDLIGHTNINGANDESITE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> CHISELEDLIGHTNINGANDESITE = block(ElementureModBlocks.CHISELEDLIGHTNINGANDESITE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> MYCENAMOSSBRICKSTAIRS = block(ElementureModBlocks.MYCENAMOSSBRICKSTAIRS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> MYCENAMOSSBRICKSLABS = block(ElementureModBlocks.MYCENAMOSSBRICKSLABS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> MYCENAMOSSBRICKWALL = block(ElementureModBlocks.MYCENAMOSSBRICKWALL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> POLISHEDENERGYDIORITE = block(ElementureModBlocks.POLISHEDENERGYDIORITE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CHISELEDENERGYDIORITE = block(ElementureModBlocks.CHISELEDENERGYDIORITE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> POLISHEDLIGHTNINGANDESITE = block(ElementureModBlocks.POLISHEDLIGHTNINGANDESITE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CHISELEDLIGHTNINGANDESITE = block(ElementureModBlocks.CHISELEDLIGHTNINGANDESITE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> MEMORYHEART = block(ElementureModBlocks.MEMORYHEART, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> BRONTIUMBLOCK = block(ElementureModBlocks.BRONTIUMBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> ENDERMEMORIAL = block(ElementureModBlocks.ENDERMEMORIAL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
@@ -899,8 +873,7 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> FORESTMEMORIAL = block(ElementureModBlocks.FORESTMEMORIAL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> SAVANNAMEMORIAL = block(ElementureModBlocks.SAVANNAMEMORIAL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> TAIGAMEMORIAL = block(ElementureModBlocks.TAIGAMEMORIAL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> MEMORYCRYSTALSHELL = block(ElementureModBlocks.MEMORYCRYSTALSHELL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> MEMORYCRYSTALSHELL = block(ElementureModBlocks.MEMORYCRYSTALSHELL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> MEMORYCRYSTAL = block(ElementureModBlocks.MEMORYCRYSTAL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> RECALLALTAR = block(ElementureModBlocks.RECALLALTAR, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> COLDBERRYBUSH = block(ElementureModBlocks.COLDBERRYBUSH, ElementureModTabs.TAB_TABMODDEDBLOCKS);
@@ -918,61 +891,34 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> DENSENETHERUM = block(ElementureModBlocks.DENSENETHERUM, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> BLAZINGNETHERUM = block(ElementureModBlocks.BLAZINGNETHERUM, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> NETHERUMCARPET = block(ElementureModBlocks.NETHERUMCARPET, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> PRISMATICCRYSTALBLOCK = block(ElementureModBlocks.PRISMATICCRYSTALBLOCK,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> PRISMATICCRYSTALBLOCK = block(ElementureModBlocks.PRISMATICCRYSTALBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> STARRYROOTS = block(ElementureModBlocks.STARRYROOTS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_2 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_2,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_3 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_3,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_4 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_4,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_5 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_5,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_6 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_6,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_7 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_7,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_8 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_8,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_9 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_9,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_10 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_10,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_11 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_11,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_12 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_12,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_13 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_13,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_14 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_14,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_15 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_15,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_16 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_16,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_17 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_17,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_18 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_18,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_19 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_19,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_20 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_20,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_21 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_21,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_22 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_22,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_23 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_23,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_24 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_24,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_25 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_25,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> NETHERSTARCRUSTPATCH = block(ElementureModBlocks.NETHERSTARCRUSTPATCH,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_2 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_2, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_3 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_3, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_4 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_4, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_5 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_5, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_6 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_6, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_7 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_7, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_8 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_8, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_9 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_9, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_10 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_10, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_11 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_11, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_12 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_12, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_13 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_13, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_14 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_14, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_15 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_15, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_16 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_16, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_17 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_17, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_18 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_18, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_19 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_19, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_20 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_20, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_21 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_21, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_22 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_22, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_23 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_23, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_24 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_24, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> COLOREDPRISMATICCRYSTALBLOCK_25 = block(ElementureModBlocks.COLOREDPRISMATICCRYSTALBLOCK_25, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> NETHERSTARCRUSTPATCH = block(ElementureModBlocks.NETHERSTARCRUSTPATCH, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> NETHERLOG = block(ElementureModBlocks.NETHERLOG, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> SHAVEDNETHERLOG = block(ElementureModBlocks.SHAVEDNETHERLOG, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> NETHERLOG_6 = block(ElementureModBlocks.NETHERLOG_6, ElementureModTabs.TAB_TABMODDEDBLOCKS);
@@ -980,21 +926,18 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> NETHERPLANKS = block(ElementureModBlocks.NETHERPLANKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> NETHERLEAVES = block(ElementureModBlocks.NETHERLEAVES, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> SCRAPLEAVES = block(ElementureModBlocks.SCRAPLEAVES, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> WHITEPRISMATICCRYSTALBLOCK = block(ElementureModBlocks.WHITEPRISMATICCRYSTALBLOCK,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> WHITEPRISMATICCRYSTALBLOCK = block(ElementureModBlocks.WHITEPRISMATICCRYSTALBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> DEBRISSCRAPBRICKS = block(ElementureModBlocks.DEBRISSCRAPBRICKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> NETHERDOOR = doubleBlock(ElementureModBlocks.NETHERDOOR, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> NETHERFENCE = block(ElementureModBlocks.NETHERFENCE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> NETHERGATE = block(ElementureModBlocks.NETHERGATE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> NETHERPRESSUREPLATE = block(ElementureModBlocks.NETHERPRESSUREPLATE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> NETHERPRESSUREPLATE = block(ElementureModBlocks.NETHERPRESSUREPLATE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> NETHERBUTTON = block(ElementureModBlocks.NETHERBUTTON, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> NETHERTRAP = block(ElementureModBlocks.NETHERTRAP, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> NETHERSTAIRS = block(ElementureModBlocks.NETHERSTAIRS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> NETHERSLAB = block(ElementureModBlocks.NETHERSLAB, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> MINOSKULLTROPHY = block(ElementureModBlocks.MINOSKULLTROPHY, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> BABYNETHERSTARBLOCK = block(ElementureModBlocks.BABYNETHERSTARBLOCK,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> BABYNETHERSTARBLOCK = block(ElementureModBlocks.BABYNETHERSTARBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> SOULFORGE = block(ElementureModBlocks.SOULFORGE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> NETHERITEORE = block(ElementureModBlocks.NETHERITEORE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> DIRECRYPTTILES = block(ElementureModBlocks.DIRECRYPTTILES, ElementureModTabs.TAB_TABMODDEDBLOCKS);
@@ -1002,78 +945,47 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> DIRECRYPTTILES_2 = block(ElementureModBlocks.DIRECRYPTTILES_2, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> DIRECRYPTBRICKS_2 = block(ElementureModBlocks.DIRECRYPTBRICKS_2, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> PROTECTIONRUNE = block(ElementureModBlocks.PROTECTIONRUNE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> RECEIVINGPROTECTIONRUNE = block(ElementureModBlocks.RECEIVINGPROTECTIONRUNE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> SHIELDINGPROTECTIONRUNE = block(ElementureModBlocks.SHIELDINGPROTECTIONRUNE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> RECEIVINGPROTECTIONRUNE = block(ElementureModBlocks.RECEIVINGPROTECTIONRUNE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SHIELDINGPROTECTIONRUNE = block(ElementureModBlocks.SHIELDINGPROTECTIONRUNE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> HAUNTEDSTATUE = block(ElementureModBlocks.HAUNTEDSTATUE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> SPAWNERCRYSTAL = block(ElementureModBlocks.SPAWNERCRYSTAL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> SPAWNERCRYSTALBROKEN = block(ElementureModBlocks.SPAWNERCRYSTALBROKEN,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DIRECRYPTTILES_SLAB = block(ElementureModBlocks.DIRECRYPTTILES_SLAB,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DIRECRYPTTILES_STAIRS = block(ElementureModBlocks.DIRECRYPTTILES_STAIRS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DIRECRYPTTILES_WALL = block(ElementureModBlocks.DIRECRYPTTILES_WALL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DIRECRYPTBRICKS_SLAB = block(ElementureModBlocks.DIRECRYPTBRICKS_SLAB,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DIRECRYPTBRICKS_STAIRS = block(ElementureModBlocks.DIRECRYPTBRICKS_STAIRS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DIRECRYPTBRICKS_WALL = block(ElementureModBlocks.DIRECRYPTBRICKS_WALL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DIRECRYPTTILES_2_SLAB = block(ElementureModBlocks.DIRECRYPTTILES_2_SLAB,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DIRECRYPTTILES_2_STAIRS = block(ElementureModBlocks.DIRECRYPTTILES_2_STAIRS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DIRECRYPTTILES_2_WALL = block(ElementureModBlocks.DIRECRYPTTILES_2_WALL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DIRECRYPTBRICKS_2_SLAB = block(ElementureModBlocks.DIRECRYPTBRICKS_2_SLAB,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DIRECRYPTBRICKS_2_STAIRS = block(ElementureModBlocks.DIRECRYPTBRICKS_2_STAIRS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DIRECRYPTBRICKS_2_WALL = block(ElementureModBlocks.DIRECRYPTBRICKS_2_WALL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> PURPLEMUSHROOMBLOCK = block(ElementureModBlocks.PURPLEMUSHROOMBLOCK,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SPAWNERCRYSTALBROKEN = block(ElementureModBlocks.SPAWNERCRYSTALBROKEN, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DIRECRYPTTILES_SLAB = block(ElementureModBlocks.DIRECRYPTTILES_SLAB, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DIRECRYPTTILES_STAIRS = block(ElementureModBlocks.DIRECRYPTTILES_STAIRS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DIRECRYPTTILES_WALL = block(ElementureModBlocks.DIRECRYPTTILES_WALL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DIRECRYPTBRICKS_SLAB = block(ElementureModBlocks.DIRECRYPTBRICKS_SLAB, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DIRECRYPTBRICKS_STAIRS = block(ElementureModBlocks.DIRECRYPTBRICKS_STAIRS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DIRECRYPTBRICKS_WALL = block(ElementureModBlocks.DIRECRYPTBRICKS_WALL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DIRECRYPTTILES_2_SLAB = block(ElementureModBlocks.DIRECRYPTTILES_2_SLAB, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DIRECRYPTTILES_2_STAIRS = block(ElementureModBlocks.DIRECRYPTTILES_2_STAIRS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DIRECRYPTTILES_2_WALL = block(ElementureModBlocks.DIRECRYPTTILES_2_WALL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DIRECRYPTBRICKS_2_SLAB = block(ElementureModBlocks.DIRECRYPTBRICKS_2_SLAB, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DIRECRYPTBRICKS_2_STAIRS = block(ElementureModBlocks.DIRECRYPTBRICKS_2_STAIRS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DIRECRYPTBRICKS_2_WALL = block(ElementureModBlocks.DIRECRYPTBRICKS_2_WALL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> PURPLEMUSHROOMBLOCK = block(ElementureModBlocks.PURPLEMUSHROOMBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> AURUMBRICKS = block(ElementureModBlocks.AURUMBRICKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> AURUMTILES = block(ElementureModBlocks.AURUMTILES, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> SHARDEDGLASS = block(ElementureModBlocks.SHARDEDGLASS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> SHARDEDGLASSPANE = block(ElementureModBlocks.SHARDEDGLASSPANE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> AURUMBLOCK = block(ElementureModBlocks.AURUMBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> CRIMSONFORESTMEMORIAL = block(ElementureModBlocks.CRIMSONFORESTMEMORIAL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> WARPEDFORESTMEMORIAL = block(ElementureModBlocks.WARPEDFORESTMEMORIAL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> SOULSANDVALLEYMEMORIAL = block(ElementureModBlocks.SOULSANDVALLEYMEMORIAL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> BASALTDELTAMEMORIAL = block(ElementureModBlocks.BASALTDELTAMEMORIAL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> NETHERSTARMEMORIAL = block(ElementureModBlocks.NETHERSTARMEMORIAL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DRAGONEWTSCALES_BLOCK = block(ElementureModBlocks.DRAGONEWTSCALES_BLOCK,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> NETHERSTARCRUSTSHINY = block(ElementureModBlocks.NETHERSTARCRUSTSHINY,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CRIMSONFORESTMEMORIAL = block(ElementureModBlocks.CRIMSONFORESTMEMORIAL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> WARPEDFORESTMEMORIAL = block(ElementureModBlocks.WARPEDFORESTMEMORIAL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SOULSANDVALLEYMEMORIAL = block(ElementureModBlocks.SOULSANDVALLEYMEMORIAL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> BASALTDELTAMEMORIAL = block(ElementureModBlocks.BASALTDELTAMEMORIAL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> NETHERSTARMEMORIAL = block(ElementureModBlocks.NETHERSTARMEMORIAL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DRAGONEWTSCALES_BLOCK = block(ElementureModBlocks.DRAGONEWTSCALES_BLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> NETHERSTARCRUSTSHINY = block(ElementureModBlocks.NETHERSTARCRUSTSHINY, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> NETHERUMSHINY = block(ElementureModBlocks.NETHERUMSHINY, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> ACTIVENETHERUMSHINY = block(ElementureModBlocks.ACTIVENETHERUMSHINY,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DENSENETHERUMSHINY = block(ElementureModBlocks.DENSENETHERUMSHINY,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> BLAZINGNETHERUMSHINY = block(ElementureModBlocks.BLAZINGNETHERUMSHINY,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> NETHERUMCARPETSHINY = block(ElementureModBlocks.NETHERUMCARPETSHINY,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> BABYNETHERSTARSHINY = block(ElementureModBlocks.BABYNETHERSTARSHINY,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> NETHERSTARCRUSTPATCHSHINY = block(ElementureModBlocks.NETHERSTARCRUSTPATCHSHINY,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> ACTIVENETHERUMSHINY = block(ElementureModBlocks.ACTIVENETHERUMSHINY, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DENSENETHERUMSHINY = block(ElementureModBlocks.DENSENETHERUMSHINY, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> BLAZINGNETHERUMSHINY = block(ElementureModBlocks.BLAZINGNETHERUMSHINY, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> NETHERUMCARPETSHINY = block(ElementureModBlocks.NETHERUMCARPETSHINY, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> BABYNETHERSTARSHINY = block(ElementureModBlocks.BABYNETHERSTARSHINY, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> NETHERSTARCRUSTPATCHSHINY = block(ElementureModBlocks.NETHERSTARCRUSTPATCHSHINY, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> SPARKLINGSTARS = block(ElementureModBlocks.SPARKLINGSTARS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> FUMINGSPARKLINGSTARS = block(ElementureModBlocks.FUMINGSPARKLINGSTARS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> FUMINGSPARKLINGSTARS = block(ElementureModBlocks.FUMINGSPARKLINGSTARS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> SUNTURFBLOCK = block(ElementureModBlocks.SUNTURFBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> NETHERUMDUST_NEBULATURFBLOCK = block(ElementureModBlocks.NETHERUMDUST_NEBULATURFBLOCK,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> NETHERUMDUST_NEBULATURFBLOCK = block(ElementureModBlocks.NETHERUMDUST_NEBULATURFBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> PRISMATICSPROUT = block(ElementureModBlocks.PRISMATICSPROUT, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> STARFLOWER = block(ElementureModBlocks.STARFLOWER, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> RADIANTOBSIDIAN = block(ElementureModBlocks.RADIANTOBSIDIAN, ElementureModTabs.TAB_TABMODDEDBLOCKS);
@@ -1083,49 +995,28 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> SOLARLILY = block(ElementureModBlocks.SOLARLILY, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> RUINGRANITETILES = block(ElementureModBlocks.RUINGRANITETILES, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> RUINGRANITEBRICKS = block(ElementureModBlocks.RUINGRANITEBRICKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> RUINGRANITETILESSTAIRS = block(ElementureModBlocks.RUINGRANITETILESSTAIRS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> RUINGRANITETILESSLABS = block(ElementureModBlocks.RUINGRANITETILESSLABS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> RUINGRANITETILESWALLS = block(ElementureModBlocks.RUINGRANITETILESWALLS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> RUINGRANITEBRICKSSTAIRS = block(ElementureModBlocks.RUINGRANITEBRICKSSTAIRS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> RUINGRANITEBRICKSSLABS = block(ElementureModBlocks.RUINGRANITEBRICKSSLABS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> RUINGRANITEBRICKSWALLS = block(ElementureModBlocks.RUINGRANITEBRICKSWALLS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> RUINGRANITETILESSTAIRS = block(ElementureModBlocks.RUINGRANITETILESSTAIRS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> RUINGRANITETILESSLABS = block(ElementureModBlocks.RUINGRANITETILESSLABS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> RUINGRANITETILESWALLS = block(ElementureModBlocks.RUINGRANITETILESWALLS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> RUINGRANITEBRICKSSTAIRS = block(ElementureModBlocks.RUINGRANITEBRICKSSTAIRS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> RUINGRANITEBRICKSSLABS = block(ElementureModBlocks.RUINGRANITEBRICKSSLABS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> RUINGRANITEBRICKSWALLS = block(ElementureModBlocks.RUINGRANITEBRICKSWALLS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> ENERGYDIORITETILE = block(ElementureModBlocks.ENERGYDIORITETILE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> ENERGYDIORITEBRICKS = block(ElementureModBlocks.ENERGYDIORITEBRICKS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> ENERGYDIORITETILE_STAIRS = block(ElementureModBlocks.ENERGYDIORITETILE_STAIRS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> ENERGYDIORITETILE_SLABS = block(ElementureModBlocks.ENERGYDIORITETILE_SLABS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> ENERGYDIORITETILE_WALLS = block(ElementureModBlocks.ENERGYDIORITETILE_WALLS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> ENERGYDIORITEBRICKS_STAIRS = block(ElementureModBlocks.ENERGYDIORITEBRICKS_STAIRS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> ENERGYDIORITEBRICKS_SLABS = block(ElementureModBlocks.ENERGYDIORITEBRICKS_SLABS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> ENERGYDIORITEBRICKS_WALLS = block(ElementureModBlocks.ENERGYDIORITEBRICKS_WALLS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LIGHTNINGANDESITETILE = block(ElementureModBlocks.LIGHTNINGANDESITETILE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LIGHTNINGANDESITEBRICKS = block(ElementureModBlocks.LIGHTNINGANDESITEBRICKS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LIGHTNINGANDESITETILESSTAIRS = block(ElementureModBlocks.LIGHTNINGANDESITETILESSTAIRS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LIGHTNINGANDESITETILESSLABS = block(ElementureModBlocks.LIGHTNINGANDESITETILESSLABS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LIGHTNINGANDESITETILESWALLS = block(ElementureModBlocks.LIGHTNINGANDESITETILESWALLS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LIGHTNINGANDESITEBRICKSSTAIRS = block(ElementureModBlocks.LIGHTNINGANDESITEBRICKSSTAIRS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LIGHTNINGANDESITEBRICKSSLABS = block(ElementureModBlocks.LIGHTNINGANDESITEBRICKSSLABS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LIGHTNINGANDESITEBRICKSWALLS = block(ElementureModBlocks.LIGHTNINGANDESITEBRICKSWALLS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> ENERGYDIORITEBRICKS = block(ElementureModBlocks.ENERGYDIORITEBRICKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> ENERGYDIORITETILE_STAIRS = block(ElementureModBlocks.ENERGYDIORITETILE_STAIRS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> ENERGYDIORITETILE_SLABS = block(ElementureModBlocks.ENERGYDIORITETILE_SLABS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> ENERGYDIORITETILE_WALLS = block(ElementureModBlocks.ENERGYDIORITETILE_WALLS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> ENERGYDIORITEBRICKS_STAIRS = block(ElementureModBlocks.ENERGYDIORITEBRICKS_STAIRS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> ENERGYDIORITEBRICKS_SLABS = block(ElementureModBlocks.ENERGYDIORITEBRICKS_SLABS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> ENERGYDIORITEBRICKS_WALLS = block(ElementureModBlocks.ENERGYDIORITEBRICKS_WALLS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LIGHTNINGANDESITETILE = block(ElementureModBlocks.LIGHTNINGANDESITETILE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LIGHTNINGANDESITEBRICKS = block(ElementureModBlocks.LIGHTNINGANDESITEBRICKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LIGHTNINGANDESITETILESSTAIRS = block(ElementureModBlocks.LIGHTNINGANDESITETILESSTAIRS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LIGHTNINGANDESITETILESSLABS = block(ElementureModBlocks.LIGHTNINGANDESITETILESSLABS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LIGHTNINGANDESITETILESWALLS = block(ElementureModBlocks.LIGHTNINGANDESITETILESWALLS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LIGHTNINGANDESITEBRICKSSTAIRS = block(ElementureModBlocks.LIGHTNINGANDESITEBRICKSSTAIRS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LIGHTNINGANDESITEBRICKSSLABS = block(ElementureModBlocks.LIGHTNINGANDESITEBRICKSSLABS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LIGHTNINGANDESITEBRICKSWALLS = block(ElementureModBlocks.LIGHTNINGANDESITEBRICKSWALLS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> GREENSLIMETURF = block(ElementureModBlocks.GREENSLIMETURF, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> BLUESLIMETURF = block(ElementureModBlocks.BLUESLIMETURF, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> PINKSLIMETURF = block(ElementureModBlocks.PINKSLIMETURF, ElementureModTabs.TAB_TABMODDEDBLOCKS);
@@ -1160,24 +1051,20 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> FLUFFLEAVES = block(ElementureModBlocks.FLUFFLEAVES, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> CLOUDSAND = block(ElementureModBlocks.CLOUDSAND, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> CLOUDBLOCK = block(ElementureModBlocks.CLOUDBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> JELLYPOOLSMEMORIAL = block(ElementureModBlocks.JELLYPOOLSMEMORIAL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> JELLYPOOLSMEMORIAL = block(ElementureModBlocks.JELLYPOOLSMEMORIAL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> FLUFFLOG = block(ElementureModBlocks.FLUFFLOG, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> STRIPPED_FLUFFLOG = block(ElementureModBlocks.STRIPPED_FLUFFLOG, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> FLUFFLOGFULL = block(ElementureModBlocks.FLUFFLOGFULL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> STRIPPED_FLUFFLOGFULL = block(ElementureModBlocks.STRIPPED_FLUFFLOGFULL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> STRIPPED_FLUFFLOGFULL = block(ElementureModBlocks.STRIPPED_FLUFFLOGFULL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> FLUFFPLANKS = block(ElementureModBlocks.FLUFFPLANKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> FLUFFSTAIRPLANKS = block(ElementureModBlocks.FLUFFSTAIRPLANKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> FLUFFSLABPLANKS = block(ElementureModBlocks.FLUFFSLABPLANKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> FLUFFGATEPLANKS = block(ElementureModBlocks.FLUFFGATEPLANKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> FLUFFPLANKFENCE = block(ElementureModBlocks.FLUFFPLANKFENCE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> FLUFFPLANKTRAPDOOR = block(ElementureModBlocks.FLUFFPLANKTRAPDOOR,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> FLUFFPLANKTRAPDOOR = block(ElementureModBlocks.FLUFFPLANKTRAPDOOR, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> FLUFFPLANKDOOR = doubleBlock(ElementureModBlocks.FLUFFPLANKDOOR, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> FLUFFPLANKBUTTON = block(ElementureModBlocks.FLUFFPLANKBUTTON, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> FLUFFPLANKPRESSUREPLATE = block(ElementureModBlocks.FLUFFPLANKPRESSUREPLATE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> FLUFFPLANKPRESSUREPLATE = block(ElementureModBlocks.FLUFFPLANKPRESSUREPLATE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> CLOUDGEYSERBLOCK = block(ElementureModBlocks.CLOUDGEYSERBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> WORTASHLEAVES = block(ElementureModBlocks.WORTASHLEAVES, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> WORTASHSAPLING = block(ElementureModBlocks.WORTASHSAPLING, ElementureModTabs.TAB_TABMODDEDBLOCKS);
@@ -1188,8 +1075,7 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> BEACHSTARS = block(ElementureModBlocks.BEACHSTARS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> IVORYBLOCK = block(ElementureModBlocks.IVORYBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> IVORYSPAWNER = block(ElementureModBlocks.IVORYSPAWNER, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> WINDYSHORESMEMORIAL = block(ElementureModBlocks.WINDYSHORESMEMORIAL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> WINDYSHORESMEMORIAL = block(ElementureModBlocks.WINDYSHORESMEMORIAL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> LILYPADBLOCK = block(ElementureModBlocks.LILYPADBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> LILYPADRIMBLOCK = block(ElementureModBlocks.LILYPADRIMBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> DIVERSSTONE = block(ElementureModBlocks.DIVERSSTONE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
@@ -1260,8 +1146,7 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> WHITERIMEFAN = block(ElementureModBlocks.WHITERIMEFAN, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> WHITERIMEBUSH = block(ElementureModBlocks.WHITERIMEBUSH, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> DIVINGVINE = block(ElementureModBlocks.DIVINGVINE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DIVINGVINE_BEARING = block(ElementureModBlocks.DIVINGVINE_BEARING,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DIVINGVINE_BEARING = block(ElementureModBlocks.DIVINGVINE_BEARING, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> TARBLOCK = block(ElementureModBlocks.TARBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> DEEPBRINE = block(ElementureModBlocks.DEEPBRINE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> GLASSLIGHT = block(ElementureModBlocks.GLASSLIGHT, ElementureModTabs.TAB_TABMODDEDBLOCKS);
@@ -1276,80 +1161,50 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> BURNINGDARKSTONE = block(ElementureModBlocks.BURNINGDARKSTONE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> DIVERSALLOY_BLOCK = block(ElementureModBlocks.DIVERSALLOY_BLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> DARKGEMBLOCK = block(ElementureModBlocks.DARKGEMBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DIVERSCROWN_MEMORIAL = block(ElementureModBlocks.DIVERSCROWN_MEMORIAL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> MYCENASPORECLOUD_BLOCK = block(ElementureModBlocks.MYCENASPORECLOUD_BLOCK,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> SHIELDINGPROTECTIONRUNE_SMALL = block(ElementureModBlocks.SHIELDINGPROTECTIONRUNE_SMALL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DIVERSCROWN_MEMORIAL = block(ElementureModBlocks.DIVERSCROWN_MEMORIAL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> MYCENASPORECLOUD_BLOCK = block(ElementureModBlocks.MYCENASPORECLOUD_BLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SHIELDINGPROTECTIONRUNE_SMALL = block(ElementureModBlocks.SHIELDINGPROTECTIONRUNE_SMALL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> LILYPADPLANKS = block(ElementureModBlocks.LILYPADPLANKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> STRIPPEDLILYPADLOG = block(ElementureModBlocks.STRIPPEDLILYPADLOG,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> STRIPPEDLILYPADLOG = block(ElementureModBlocks.STRIPPEDLILYPADLOG, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> LILYPADLOG = block(ElementureModBlocks.LILYPADLOG, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> LILYPADSAPLING = block(ElementureModBlocks.LILYPADSAPLING, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LILYPADPLANK_STAIRS = block(ElementureModBlocks.LILYPADPLANK_STAIRS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LILYPADPLANK_STAIRS = block(ElementureModBlocks.LILYPADPLANK_STAIRS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> LILYPADPLANKSLABS = block(ElementureModBlocks.LILYPADPLANKSLABS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> STRIPPEDLILYPADLOG_FULL = block(ElementureModBlocks.STRIPPEDLILYPADLOG_FULL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> STRIPPEDLILYPADLOG_FULL = block(ElementureModBlocks.STRIPPEDLILYPADLOG_FULL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> LILYPADLOG_FULL = block(ElementureModBlocks.LILYPADLOG_FULL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LILYPADPLANKS_GATE = block(ElementureModBlocks.LILYPADPLANKS_GATE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LILYPADPLANKS_FENCE = block(ElementureModBlocks.LILYPADPLANKS_FENCE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LILYPADPLANKS_BUTTON = block(ElementureModBlocks.LILYPADPLANKS_BUTTON,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LILYPADPLANKS_PRESSUREPLATE = block(ElementureModBlocks.LILYPADPLANKS_PRESSUREPLATE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LILYPADPLANKS_DOOR = doubleBlock(ElementureModBlocks.LILYPADPLANKS_DOOR,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> LILYPADPLANKS_TRAPDOOR = block(ElementureModBlocks.LILYPADPLANKS_TRAPDOOR,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> SPIDERNEST_COBBLESTONE = block(ElementureModBlocks.SPIDERNEST_COBBLESTONE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> EMPTYNEST_COBBLESTONE = block(ElementureModBlocks.EMPTYNEST_COBBLESTONE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> SPIDERBORE_COBBLESTONE = block(ElementureModBlocks.SPIDERBORE_COBBLESTONE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> SPIDERBORE_DEEPSLATEBRICKS = block(ElementureModBlocks.SPIDERBORE_DEEPSLATEBRICKS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LILYPADPLANKS_GATE = block(ElementureModBlocks.LILYPADPLANKS_GATE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LILYPADPLANKS_FENCE = block(ElementureModBlocks.LILYPADPLANKS_FENCE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LILYPADPLANKS_BUTTON = block(ElementureModBlocks.LILYPADPLANKS_BUTTON, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LILYPADPLANKS_PRESSUREPLATE = block(ElementureModBlocks.LILYPADPLANKS_PRESSUREPLATE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LILYPADPLANKS_DOOR = doubleBlock(ElementureModBlocks.LILYPADPLANKS_DOOR, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LILYPADPLANKS_TRAPDOOR = block(ElementureModBlocks.LILYPADPLANKS_TRAPDOOR, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SPIDERNEST_COBBLESTONE = block(ElementureModBlocks.SPIDERNEST_COBBLESTONE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> EMPTYNEST_COBBLESTONE = block(ElementureModBlocks.EMPTYNEST_COBBLESTONE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SPIDERBORE_COBBLESTONE = block(ElementureModBlocks.SPIDERBORE_COBBLESTONE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SPIDERBORE_DEEPSLATEBRICKS = block(ElementureModBlocks.SPIDERBORE_DEEPSLATEBRICKS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> WALLWEB = block(ElementureModBlocks.WALLWEB, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> PUMPKINCORE = block(ElementureModBlocks.PUMPKINCORE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> DUNGEONLANTERN = block(ElementureModBlocks.DUNGEONLANTERN, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> DUNGEONHATCH_LOCKED = block(ElementureModBlocks.DUNGEONHATCH_LOCKED,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> DUNGEONHATCH_LOCKED = block(ElementureModBlocks.DUNGEONHATCH_LOCKED, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> DUNGEONHATCH = block(ElementureModBlocks.DUNGEONHATCH, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> CLOUD_SANDSTONE = block(ElementureModBlocks.CLOUD_SANDSTONE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> SMOOTH_CLOUD_SANDSTONE = block(ElementureModBlocks.SMOOTH_CLOUD_SANDSTONE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> CUT_CLOUD_SANDSTONE = block(ElementureModBlocks.CUT_CLOUD_SANDSTONE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> CHISELED_CLOUD_SANDSTONE = block(ElementureModBlocks.CHISELED_CLOUD_SANDSTONE,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> CLOUD_SANDSTONE_SLABS = block(ElementureModBlocks.CLOUD_SANDSTONE_SLABS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> CLOUD_SANDSTONE_STAIR = block(ElementureModBlocks.CLOUD_SANDSTONE_STAIR,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> CLOUD_SANDSTONE_WALLS = block(ElementureModBlocks.CLOUD_SANDSTONE_WALLS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> SMOOTH_CLOUD_SANDSTONE_SLAB = block(ElementureModBlocks.SMOOTH_CLOUD_SANDSTONE_SLAB,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> SMOOTH_CLOUD_SANDSTONE_STAIRS = block(ElementureModBlocks.SMOOTH_CLOUD_SANDSTONE_STAIRS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> SMOOTH_CLOUD_SANDSTONE_WALL = block(ElementureModBlocks.SMOOTH_CLOUD_SANDSTONE_WALL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> CUT_CLOUD_SANDSTONE_SLAB = block(ElementureModBlocks.CUT_CLOUD_SANDSTONE_SLAB,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> CUT_CLOUD_SANDSTONE_STAIRS = block(ElementureModBlocks.CUT_CLOUD_SANDSTONE_STAIRS,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
-	public static final RegistryObject<Item> CUT_CLOUD_SANDSTONE_WALL = block(ElementureModBlocks.CUT_CLOUD_SANDSTONE_WALL,
-			ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SMOOTH_CLOUD_SANDSTONE = block(ElementureModBlocks.SMOOTH_CLOUD_SANDSTONE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CUT_CLOUD_SANDSTONE = block(ElementureModBlocks.CUT_CLOUD_SANDSTONE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CHISELED_CLOUD_SANDSTONE = block(ElementureModBlocks.CHISELED_CLOUD_SANDSTONE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CLOUD_SANDSTONE_SLABS = block(ElementureModBlocks.CLOUD_SANDSTONE_SLABS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CLOUD_SANDSTONE_STAIR = block(ElementureModBlocks.CLOUD_SANDSTONE_STAIR, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CLOUD_SANDSTONE_WALLS = block(ElementureModBlocks.CLOUD_SANDSTONE_WALLS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SMOOTH_CLOUD_SANDSTONE_SLAB = block(ElementureModBlocks.SMOOTH_CLOUD_SANDSTONE_SLAB, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SMOOTH_CLOUD_SANDSTONE_STAIRS = block(ElementureModBlocks.SMOOTH_CLOUD_SANDSTONE_STAIRS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SMOOTH_CLOUD_SANDSTONE_WALL = block(ElementureModBlocks.SMOOTH_CLOUD_SANDSTONE_WALL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CUT_CLOUD_SANDSTONE_SLAB = block(ElementureModBlocks.CUT_CLOUD_SANDSTONE_SLAB, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CUT_CLOUD_SANDSTONE_STAIRS = block(ElementureModBlocks.CUT_CLOUD_SANDSTONE_STAIRS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> CUT_CLOUD_SANDSTONE_WALL = block(ElementureModBlocks.CUT_CLOUD_SANDSTONE_WALL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> VAMITEORE = block(ElementureModBlocks.VAMITEORE, ElementureModTabs.TAB_TABMODDEDORE);
 	public static final RegistryObject<Item> NOOBIUMORE = block(ElementureModBlocks.NOOBIUMORE, ElementureModTabs.TAB_TABMODDEDORE);
 	public static final RegistryObject<Item> NEONBLOCK = block(ElementureModBlocks.NEONBLOCK, ElementureModTabs.TAB_TABMODDEDORE);
 	public static final RegistryObject<Item> FLUTANITEORE = block(ElementureModBlocks.FLUTANITEORE, ElementureModTabs.TAB_TABMODDEDORE);
-	public static final RegistryObject<Item> LIGHTNINGANDESITEORE = block(ElementureModBlocks.LIGHTNINGANDESITEORE,
-			ElementureModTabs.TAB_TABMODDEDORE);
+	public static final RegistryObject<Item> LIGHTNINGANDESITEORE = block(ElementureModBlocks.LIGHTNINGANDESITEORE, ElementureModTabs.TAB_TABMODDEDORE);
 	public static final RegistryObject<Item> FERZIUMORE = block(ElementureModBlocks.FERZIUMORE, ElementureModTabs.TAB_TABMODDEDORE);
 	public static final RegistryObject<Item> MERTHIUMORE = block(ElementureModBlocks.MERTHIUMORE, ElementureModTabs.TAB_TABMODDEDORE);
 	public static final RegistryObject<Item> DUSTFLUXORE = block(ElementureModBlocks.DUSTFLUXORE, ElementureModTabs.TAB_TABMODDEDORE);
@@ -1428,36 +1283,23 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> ELEMENTALWEB = REGISTRY.register("elementalweb", () -> new ElementalwebItem());
 	public static final RegistryObject<Item> UNHOLYDUST = REGISTRY.register("unholydust", () -> new UnholydustItem());
 	public static final RegistryObject<Item> CHEESERELIC = REGISTRY.register("cheeserelic", () -> new CheeserelicItem());
-	public static final RegistryObject<Item> ARMAGEDDONUPPERRIGHTPIECE = REGISTRY.register("armageddonupperrightpiece",
-			() -> new ArmageddonupperrightpieceItem());
-	public static final RegistryObject<Item> ARMAGEDDONUPPERLEFTPIECE = REGISTRY.register("armageddonupperleftpiece",
-			() -> new ArmageddonupperleftpieceItem());
-	public static final RegistryObject<Item> ARMAGEDDONBOTTOMRIGHTPIECE = REGISTRY.register("armageddonbottomrightpiece",
-			() -> new ArmageddonbottomrightpieceItem());
-	public static final RegistryObject<Item> ARMAGEDDONBOTTOMLEFTPIECE = REGISTRY.register("armageddonbottomleftpiece",
-			() -> new ArmageddonbottomleftpieceItem());
-	public static final RegistryObject<Item> ARMAGEDDONMIDDLEUPPERPIECE = REGISTRY.register("armageddonmiddleupperpiece",
-			() -> new ArmageddonmiddleupperpieceItem());
-	public static final RegistryObject<Item> ARMAGEDDONMIDDLEBOTTOMPIECE = REGISTRY.register("armageddonmiddlebottompiece",
-			() -> new ArmageddonmiddlebottompieceItem());
-	public static final RegistryObject<Item> ARMAGGEDONMIDDLERIGHTPIECE = REGISTRY.register("armaggedonmiddlerightpiece",
-			() -> new ArmaggedonmiddlerightpieceItem());
-	public static final RegistryObject<Item> ARMAGEDDONMIDDLELEFTPIECE = REGISTRY.register("armageddonmiddleleftpiece",
-			() -> new ArmageddonmiddleleftpieceItem());
-	public static final RegistryObject<Item> ARMAGEDDONMIDDLEPIECE = REGISTRY.register("armageddonmiddlepiece",
-			() -> new ArmageddonmiddlepieceItem());
+	public static final RegistryObject<Item> ARMAGEDDONUPPERRIGHTPIECE = REGISTRY.register("armageddonupperrightpiece", () -> new ArmageddonupperrightpieceItem());
+	public static final RegistryObject<Item> ARMAGEDDONUPPERLEFTPIECE = REGISTRY.register("armageddonupperleftpiece", () -> new ArmageddonupperleftpieceItem());
+	public static final RegistryObject<Item> ARMAGEDDONBOTTOMRIGHTPIECE = REGISTRY.register("armageddonbottomrightpiece", () -> new ArmageddonbottomrightpieceItem());
+	public static final RegistryObject<Item> ARMAGEDDONBOTTOMLEFTPIECE = REGISTRY.register("armageddonbottomleftpiece", () -> new ArmageddonbottomleftpieceItem());
+	public static final RegistryObject<Item> ARMAGEDDONMIDDLEUPPERPIECE = REGISTRY.register("armageddonmiddleupperpiece", () -> new ArmageddonmiddleupperpieceItem());
+	public static final RegistryObject<Item> ARMAGEDDONMIDDLEBOTTOMPIECE = REGISTRY.register("armageddonmiddlebottompiece", () -> new ArmageddonmiddlebottompieceItem());
+	public static final RegistryObject<Item> ARMAGGEDONMIDDLERIGHTPIECE = REGISTRY.register("armaggedonmiddlerightpiece", () -> new ArmaggedonmiddlerightpieceItem());
+	public static final RegistryObject<Item> ARMAGEDDONMIDDLELEFTPIECE = REGISTRY.register("armageddonmiddleleftpiece", () -> new ArmageddonmiddleleftpieceItem());
+	public static final RegistryObject<Item> ARMAGEDDONMIDDLEPIECE = REGISTRY.register("armageddonmiddlepiece", () -> new ArmageddonmiddlepieceItem());
 	public static final RegistryObject<Item> DARKSOUL = REGISTRY.register("darksoul", () -> new DarksoulItem());
-	public static final RegistryObject<Item> MYCENATRUFFLOONCHITINSCALE = REGISTRY.register("mycenatruffloonchitinscale",
-			() -> new MycenatruffloonchitinscaleItem());
+	public static final RegistryObject<Item> MYCENATRUFFLOONCHITINSCALE = REGISTRY.register("mycenatruffloonchitinscale", () -> new MycenatruffloonchitinscaleItem());
 	public static final RegistryObject<Item> MYCENAMOSSBRICK = REGISTRY.register("mycenamossbrick", () -> new MycenamossbrickItem());
 	public static final RegistryObject<Item> MYCENAROAMERSCALE = REGISTRY.register("mycenaroamerscale", () -> new MycenaroamerscaleItem());
-	public static final RegistryObject<Item> MYCENANTRANSLATIONBOOK = REGISTRY.register("mycenantranslationbook",
-			() -> new MycenantranslationbookItem());
-	public static final RegistryObject<Item> BUTTERFLYBUDNECTARTREAT = REGISTRY.register("butterflybudnectartreat",
-			() -> new ButterflybudnectartreatItem());
+	public static final RegistryObject<Item> MYCENANTRANSLATIONBOOK = REGISTRY.register("mycenantranslationbook", () -> new MycenantranslationbookItem());
+	public static final RegistryObject<Item> BUTTERFLYBUDNECTARTREAT = REGISTRY.register("butterflybudnectartreat", () -> new ButterflybudnectartreatItem());
 	public static final RegistryObject<Item> HIDDENRUNESTOME = REGISTRY.register("hiddenrunestome", () -> new HiddenrunestomeItem());
-	public static final RegistryObject<Item> SUSPICIOUSLOOKINGSKULL = REGISTRY.register("suspiciouslookingskull",
-			() -> new SuspiciouslookingskullItem());
+	public static final RegistryObject<Item> SUSPICIOUSLOOKINGSKULL = REGISTRY.register("suspiciouslookingskull", () -> new SuspiciouslookingskullItem());
 	public static final RegistryObject<Item> CLAYDOLL = REGISTRY.register("claydoll", () -> new ClaydollItem());
 	public static final RegistryObject<Item> CURSEDPEARL = REGISTRY.register("cursedpearl", () -> new CursedpearlItem());
 	public static final RegistryObject<Item> SUITCASEHONEY = REGISTRY.register("suitcasehoney", () -> new SuitcasehoneyItem());
@@ -1524,16 +1366,12 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> DRYSEAFOAMFRAGMENT = REGISTRY.register("dryseafoamfragment", () -> new DryseafoamfragmentItem());
 	public static final RegistryObject<Item> GLASSLIGHTBOTTLE = REGISTRY.register("glasslightbottle", () -> new GlasslightbottleItem());
 	public static final RegistryObject<Item> RAREGLASSLIGHTBOTTLE = REGISTRY.register("rareglasslightbottle", () -> new RareglasslightbottleItem());
-	public static final RegistryObject<Item> DIRTYGLASSLIGHTBOTTLE = REGISTRY.register("dirtyglasslightbottle",
-			() -> new DirtyglasslightbottleItem());
+	public static final RegistryObject<Item> DIRTYGLASSLIGHTBOTTLE = REGISTRY.register("dirtyglasslightbottle", () -> new DirtyglasslightbottleItem());
 	public static final RegistryObject<Item> GLASSBELLBOAT = REGISTRY.register("glassbellboat", () -> new GlassbellboatItem());
-	public static final RegistryObject<Item> GLASSBELLBOAT_TURBO_THRUSTER = REGISTRY.register("glassbellboat_turbo_thruster",
-			() -> new GlassbellboatTurboThrusterItem());
-	public static final RegistryObject<Item> GLASSBELLBOAT_POWER_THRUSTER = REGISTRY.register("glassbellboat_power_thruster",
-			() -> new GlassbellboatPowerThrusterItem());
+	public static final RegistryObject<Item> GLASSBELLBOAT_TURBO_THRUSTER = REGISTRY.register("glassbellboat_turbo_thruster", () -> new GlassbellboatTurboThrusterItem());
+	public static final RegistryObject<Item> GLASSBELLBOAT_POWER_THRUSTER = REGISTRY.register("glassbellboat_power_thruster", () -> new GlassbellboatPowerThrusterItem());
 	public static final RegistryObject<Item> DIVERSBEACON = REGISTRY.register("diversbeacon", () -> new DiversbeaconItem());
-	public static final RegistryObject<Item> GLASSBELLBOAT_DARKFLAMESPRAYER = REGISTRY.register("glassbellboat_darkflamesprayer",
-			() -> new GlassbellboatDarkflamesprayerItem());
+	public static final RegistryObject<Item> GLASSBELLBOAT_DARKFLAMESPRAYER = REGISTRY.register("glassbellboat_darkflamesprayer", () -> new GlassbellboatDarkflamesprayerItem());
 	public static final RegistryObject<Item> DARKGEMBOLT = REGISTRY.register("darkgembolt", () -> new DarkgemboltItem());
 	public static final RegistryObject<Item> CRABBOBBER = REGISTRY.register("crabbobber", () -> new CrabbobberItem());
 	public static final RegistryObject<Item> RAINPOLE = REGISTRY.register("rainpole", () -> new RainpoleItem());
@@ -1557,8 +1395,7 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> BRONTIUMSWORD = REGISTRY.register("brontiumsword", () -> new BrontiumswordItem());
 	public static final RegistryObject<Item> RAINBOWSWORD = REGISTRY.register("rainbowsword", () -> new RainbowswordItem());
 	public static final RegistryObject<Item> GAMERBOW = REGISTRY.register("gamerbow", () -> new GamerbowItem());
-	public static final RegistryObject<Item> MAELSTROMFIGHTERSTICK = REGISTRY.register("maelstromfighterstick",
-			() -> new MaelstromfighterstickItem());
+	public static final RegistryObject<Item> MAELSTROMFIGHTERSTICK = REGISTRY.register("maelstromfighterstick", () -> new MaelstromfighterstickItem());
 	public static final RegistryObject<Item> UNHOLYSHIELD = REGISTRY.register("unholyshield", () -> new UnholyshieldItem());
 	public static final RegistryObject<Item> UNHOLYSWORD = REGISTRY.register("unholysword", () -> new UnholyswordItem());
 	public static final RegistryObject<Item> CURSERSWORD = REGISTRY.register("cursersword", () -> new CurserswordItem());
@@ -1596,8 +1433,7 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> ABYSSALOATHBLADE = REGISTRY.register("abyssaloathblade", () -> new AbyssaloathbladeItem());
 	public static final RegistryObject<Item> MYCENANMACE = REGISTRY.register("mycenanmace", () -> new MycenanmaceItem());
 	public static final RegistryObject<Item> MYCENANKATANA = REGISTRY.register("mycenankatana", () -> new MycenankatanaItem());
-	public static final RegistryObject<Item> MYCENASHROOMGUARDSPEAR = REGISTRY.register("mycenashroomguardspear",
-			() -> new MycenashroomguardspearItem());
+	public static final RegistryObject<Item> MYCENASHROOMGUARDSPEAR = REGISTRY.register("mycenashroomguardspear", () -> new MycenashroomguardspearItem());
 	public static final RegistryObject<Item> MYCENANSCEPTER = REGISTRY.register("mycenanscepter", () -> new MycenanscepterItem());
 	public static final RegistryObject<Item> DAZZLINGSWORD = REGISTRY.register("dazzlingsword", () -> new DazzlingswordItem());
 	public static final RegistryObject<Item> DAZZLINGBOW = REGISTRY.register("dazzlingbow", () -> new DazzlingbowItem());
@@ -1640,11 +1476,9 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> TARBOMB = REGISTRY.register("tarbomb", () -> new TarbombItem());
 	public static final RegistryObject<Item> TARGOD_BLASTER = REGISTRY.register("targod_blaster", () -> new TargodBlasterItem());
 	public static final RegistryObject<Item> ENHANCEDTARBOMB = REGISTRY.register("enhancedtarbomb", () -> new EnhancedtarbombItem());
-	public static final RegistryObject<Item> ENHANCEDTARGOD_BLASTER = REGISTRY.register("enhancedtargod_blaster",
-			() -> new EnhancedtargodBlasterItem());
+	public static final RegistryObject<Item> ENHANCEDTARGOD_BLASTER = REGISTRY.register("enhancedtargod_blaster", () -> new EnhancedtargodBlasterItem());
 	public static final RegistryObject<Item> TARGODPIERCER = REGISTRY.register("targodpiercer", () -> new TargodpiercerItem());
-	public static final RegistryObject<Item> ENHANCEDTARGODPIERCER = REGISTRY.register("enhancedtargodpiercer",
-			() -> new EnhancedtargodpiercerItem());
+	public static final RegistryObject<Item> ENHANCEDTARGODPIERCER = REGISTRY.register("enhancedtargodpiercer", () -> new EnhancedtargodpiercerItem());
 	public static final RegistryObject<Item> SIRENQUEENFIST = REGISTRY.register("sirenqueenfist", () -> new SirenqueenfistItem());
 	public static final RegistryObject<Item> ARACHNEELBOW = REGISTRY.register("arachneelbow", () -> new ArachneelbowItem());
 	public static final RegistryObject<Item> TIDALCOMET = REGISTRY.register("tidalcomet", () -> new TidalcometItem());
@@ -1653,166 +1487,109 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> UNDEAD_DELIGHT = REGISTRY.register("undead_delight", () -> new UndeadDelightItem());
 	public static final RegistryObject<Item> SHURIFANG = REGISTRY.register("shurifang", () -> new ShurifangItem());
 	public static final RegistryObject<Item> SILVERARMOR_HELMET = REGISTRY.register("silverarmor_helmet", () -> new SilverarmorItem.Helmet());
-	public static final RegistryObject<Item> SILVERARMOR_CHESTPLATE = REGISTRY.register("silverarmor_chestplate",
-			() -> new SilverarmorItem.Chestplate());
+	public static final RegistryObject<Item> SILVERARMOR_CHESTPLATE = REGISTRY.register("silverarmor_chestplate", () -> new SilverarmorItem.Chestplate());
 	public static final RegistryObject<Item> SILVERARMOR_LEGGINGS = REGISTRY.register("silverarmor_leggings", () -> new SilverarmorItem.Leggings());
 	public static final RegistryObject<Item> SILVERARMOR_BOOTS = REGISTRY.register("silverarmor_boots", () -> new SilverarmorItem.Boots());
 	public static final RegistryObject<Item> MERTHIUMARMOR_HELMET = REGISTRY.register("merthiumarmor_helmet", () -> new MerthiumarmorItem.Helmet());
-	public static final RegistryObject<Item> MERTHIUMARMOR_CHESTPLATE = REGISTRY.register("merthiumarmor_chestplate",
-			() -> new MerthiumarmorItem.Chestplate());
-	public static final RegistryObject<Item> MERTHIUMARMOR_LEGGINGS = REGISTRY.register("merthiumarmor_leggings",
-			() -> new MerthiumarmorItem.Leggings());
+	public static final RegistryObject<Item> MERTHIUMARMOR_CHESTPLATE = REGISTRY.register("merthiumarmor_chestplate", () -> new MerthiumarmorItem.Chestplate());
+	public static final RegistryObject<Item> MERTHIUMARMOR_LEGGINGS = REGISTRY.register("merthiumarmor_leggings", () -> new MerthiumarmorItem.Leggings());
 	public static final RegistryObject<Item> MERTHIUMARMOR_BOOTS = REGISTRY.register("merthiumarmor_boots", () -> new MerthiumarmorItem.Boots());
 	public static final RegistryObject<Item> FERZIUMARMOR_HELMET = REGISTRY.register("ferziumarmor_helmet", () -> new FerziumarmorItem.Helmet());
-	public static final RegistryObject<Item> FERZIUMARMOR_CHESTPLATE = REGISTRY.register("ferziumarmor_chestplate",
-			() -> new FerziumarmorItem.Chestplate());
-	public static final RegistryObject<Item> FERZIUMARMOR_LEGGINGS = REGISTRY.register("ferziumarmor_leggings",
-			() -> new FerziumarmorItem.Leggings());
+	public static final RegistryObject<Item> FERZIUMARMOR_CHESTPLATE = REGISTRY.register("ferziumarmor_chestplate", () -> new FerziumarmorItem.Chestplate());
+	public static final RegistryObject<Item> FERZIUMARMOR_LEGGINGS = REGISTRY.register("ferziumarmor_leggings", () -> new FerziumarmorItem.Leggings());
 	public static final RegistryObject<Item> FERZIUMARMOR_BOOTS = REGISTRY.register("ferziumarmor_boots", () -> new FerziumarmorItem.Boots());
-	public static final RegistryObject<Item> FLUTANITEARMOR_HELMET = REGISTRY.register("flutanitearmor_helmet",
-			() -> new FlutanitearmorItem.Helmet());
-	public static final RegistryObject<Item> FLUTANITEARMOR_CHESTPLATE = REGISTRY.register("flutanitearmor_chestplate",
-			() -> new FlutanitearmorItem.Chestplate());
-	public static final RegistryObject<Item> FLUTANITEARMOR_LEGGINGS = REGISTRY.register("flutanitearmor_leggings",
-			() -> new FlutanitearmorItem.Leggings());
+	public static final RegistryObject<Item> FLUTANITEARMOR_HELMET = REGISTRY.register("flutanitearmor_helmet", () -> new FlutanitearmorItem.Helmet());
+	public static final RegistryObject<Item> FLUTANITEARMOR_CHESTPLATE = REGISTRY.register("flutanitearmor_chestplate", () -> new FlutanitearmorItem.Chestplate());
+	public static final RegistryObject<Item> FLUTANITEARMOR_LEGGINGS = REGISTRY.register("flutanitearmor_leggings", () -> new FlutanitearmorItem.Leggings());
 	public static final RegistryObject<Item> FLUTANITEARMOR_BOOTS = REGISTRY.register("flutanitearmor_boots", () -> new FlutanitearmorItem.Boots());
 	public static final RegistryObject<Item> NOOBIUM_HELMET = REGISTRY.register("noobium_helmet", () -> new NoobiumItem.Helmet());
 	public static final RegistryObject<Item> NOOBIUM_CHESTPLATE = REGISTRY.register("noobium_chestplate", () -> new NoobiumItem.Chestplate());
 	public static final RegistryObject<Item> NOOBIUM_LEGGINGS = REGISTRY.register("noobium_leggings", () -> new NoobiumItem.Leggings());
 	public static final RegistryObject<Item> NOOBIUM_BOOTS = REGISTRY.register("noobium_boots", () -> new NoobiumItem.Boots());
 	public static final RegistryObject<Item> LIGNITEARMOR_HELMET = REGISTRY.register("lignitearmor_helmet", () -> new LignitearmorItem.Helmet());
-	public static final RegistryObject<Item> LIGNITEARMOR_CHESTPLATE = REGISTRY.register("lignitearmor_chestplate",
-			() -> new LignitearmorItem.Chestplate());
-	public static final RegistryObject<Item> LIGNITEARMOR_LEGGINGS = REGISTRY.register("lignitearmor_leggings",
-			() -> new LignitearmorItem.Leggings());
+	public static final RegistryObject<Item> LIGNITEARMOR_CHESTPLATE = REGISTRY.register("lignitearmor_chestplate", () -> new LignitearmorItem.Chestplate());
+	public static final RegistryObject<Item> LIGNITEARMOR_LEGGINGS = REGISTRY.register("lignitearmor_leggings", () -> new LignitearmorItem.Leggings());
 	public static final RegistryObject<Item> LIGNITEARMOR_BOOTS = REGISTRY.register("lignitearmor_boots", () -> new LignitearmorItem.Boots());
 	public static final RegistryObject<Item> DUSTFLUXARMOR_HELMET = REGISTRY.register("dustfluxarmor_helmet", () -> new DustfluxarmorItem.Helmet());
-	public static final RegistryObject<Item> DUSTFLUXARMOR_CHESTPLATE = REGISTRY.register("dustfluxarmor_chestplate",
-			() -> new DustfluxarmorItem.Chestplate());
-	public static final RegistryObject<Item> DUSTFLUXARMOR_LEGGINGS = REGISTRY.register("dustfluxarmor_leggings",
-			() -> new DustfluxarmorItem.Leggings());
+	public static final RegistryObject<Item> DUSTFLUXARMOR_CHESTPLATE = REGISTRY.register("dustfluxarmor_chestplate", () -> new DustfluxarmorItem.Chestplate());
+	public static final RegistryObject<Item> DUSTFLUXARMOR_LEGGINGS = REGISTRY.register("dustfluxarmor_leggings", () -> new DustfluxarmorItem.Leggings());
 	public static final RegistryObject<Item> DUSTFLUXARMOR_BOOTS = REGISTRY.register("dustfluxarmor_boots", () -> new DustfluxarmorItem.Boots());
 	public static final RegistryObject<Item> NEONARMOR_HELMET = REGISTRY.register("neonarmor_helmet", () -> new NeonarmorItem.Helmet());
 	public static final RegistryObject<Item> NEONARMOR_CHESTPLATE = REGISTRY.register("neonarmor_chestplate", () -> new NeonarmorItem.Chestplate());
 	public static final RegistryObject<Item> NEONARMOR_LEGGINGS = REGISTRY.register("neonarmor_leggings", () -> new NeonarmorItem.Leggings());
 	public static final RegistryObject<Item> NEONARMOR_BOOTS = REGISTRY.register("neonarmor_boots", () -> new NeonarmorItem.Boots());
 	public static final RegistryObject<Item> VAMITEARMOR_HELMET = REGISTRY.register("vamitearmor_helmet", () -> new VamitearmorItem.Helmet());
-	public static final RegistryObject<Item> VAMITEARMOR_CHESTPLATE = REGISTRY.register("vamitearmor_chestplate",
-			() -> new VamitearmorItem.Chestplate());
+	public static final RegistryObject<Item> VAMITEARMOR_CHESTPLATE = REGISTRY.register("vamitearmor_chestplate", () -> new VamitearmorItem.Chestplate());
 	public static final RegistryObject<Item> VAMITEARMOR_LEGGINGS = REGISTRY.register("vamitearmor_leggings", () -> new VamitearmorItem.Leggings());
 	public static final RegistryObject<Item> VAMITEARMOR_BOOTS = REGISTRY.register("vamitearmor_boots", () -> new VamitearmorItem.Boots());
 	public static final RegistryObject<Item> UNHOLYARMOR_HELMET = REGISTRY.register("unholyarmor_helmet", () -> new UnholyarmorItem.Helmet());
-	public static final RegistryObject<Item> UNHOLYARMOR_CHESTPLATE = REGISTRY.register("unholyarmor_chestplate",
-			() -> new UnholyarmorItem.Chestplate());
+	public static final RegistryObject<Item> UNHOLYARMOR_CHESTPLATE = REGISTRY.register("unholyarmor_chestplate", () -> new UnholyarmorItem.Chestplate());
 	public static final RegistryObject<Item> UNHOLYARMOR_LEGGINGS = REGISTRY.register("unholyarmor_leggings", () -> new UnholyarmorItem.Leggings());
 	public static final RegistryObject<Item> UNHOLYARMOR_BOOTS = REGISTRY.register("unholyarmor_boots", () -> new UnholyarmorItem.Boots());
-	public static final RegistryObject<Item> IRONKNIGHTARMOR_HELMET = REGISTRY.register("ironknightarmor_helmet",
-			() -> new IronknightarmorItem.Helmet());
-	public static final RegistryObject<Item> HOLLOWKNIGHTMASK_HELMET = REGISTRY.register("hollowknightmask_helmet",
-			() -> new HollowknightmaskItem.Helmet());
+	public static final RegistryObject<Item> IRONKNIGHTARMOR_HELMET = REGISTRY.register("ironknightarmor_helmet", () -> new IronknightarmorItem.Helmet());
+	public static final RegistryObject<Item> HOLLOWKNIGHTMASK_HELMET = REGISTRY.register("hollowknightmask_helmet", () -> new HollowknightmaskItem.Helmet());
 	public static final RegistryObject<Item> MYCENANARMOR_HELMET = REGISTRY.register("mycenanarmor_helmet", () -> new MycenanarmorItem.Helmet());
-	public static final RegistryObject<Item> MYCENANARMOR_CHESTPLATE = REGISTRY.register("mycenanarmor_chestplate",
-			() -> new MycenanarmorItem.Chestplate());
-	public static final RegistryObject<Item> MYCENANARMOR_LEGGINGS = REGISTRY.register("mycenanarmor_leggings",
-			() -> new MycenanarmorItem.Leggings());
+	public static final RegistryObject<Item> MYCENANARMOR_CHESTPLATE = REGISTRY.register("mycenanarmor_chestplate", () -> new MycenanarmorItem.Chestplate());
+	public static final RegistryObject<Item> MYCENANARMOR_LEGGINGS = REGISTRY.register("mycenanarmor_leggings", () -> new MycenanarmorItem.Leggings());
 	public static final RegistryObject<Item> MYCENANARMOR_BOOTS = REGISTRY.register("mycenanarmor_boots", () -> new MycenanarmorItem.Boots());
-	public static final RegistryObject<Item> MYCENANMONOCLE_HELMET = REGISTRY.register("mycenanmonocle_helmet",
-			() -> new MycenanmonocleItem.Helmet());
+	public static final RegistryObject<Item> MYCENANMONOCLE_HELMET = REGISTRY.register("mycenanmonocle_helmet", () -> new MycenanmonocleItem.Helmet());
 	public static final RegistryObject<Item> DAZZLINGARMOR_HELMET = REGISTRY.register("dazzlingarmor_helmet", () -> new DazzlingarmorItem.Helmet());
-	public static final RegistryObject<Item> DAZZLINGARMOR_CHESTPLATE = REGISTRY.register("dazzlingarmor_chestplate",
-			() -> new DazzlingarmorItem.Chestplate());
-	public static final RegistryObject<Item> DAZZLINGARMOR_LEGGINGS = REGISTRY.register("dazzlingarmor_leggings",
-			() -> new DazzlingarmorItem.Leggings());
+	public static final RegistryObject<Item> DAZZLINGARMOR_CHESTPLATE = REGISTRY.register("dazzlingarmor_chestplate", () -> new DazzlingarmorItem.Chestplate());
+	public static final RegistryObject<Item> DAZZLINGARMOR_LEGGINGS = REGISTRY.register("dazzlingarmor_leggings", () -> new DazzlingarmorItem.Leggings());
 	public static final RegistryObject<Item> DAZZLINGARMOR_BOOTS = REGISTRY.register("dazzlingarmor_boots", () -> new DazzlingarmorItem.Boots());
 	public static final RegistryObject<Item> BRONTIUMARMOR_HELMET = REGISTRY.register("brontiumarmor_helmet", () -> new BrontiumarmorItem.Helmet());
-	public static final RegistryObject<Item> BRONTIUMARMOR_CHESTPLATE = REGISTRY.register("brontiumarmor_chestplate",
-			() -> new BrontiumarmorItem.Chestplate());
-	public static final RegistryObject<Item> BRONTIUMARMOR_LEGGINGS = REGISTRY.register("brontiumarmor_leggings",
-			() -> new BrontiumarmorItem.Leggings());
+	public static final RegistryObject<Item> BRONTIUMARMOR_CHESTPLATE = REGISTRY.register("brontiumarmor_chestplate", () -> new BrontiumarmorItem.Chestplate());
+	public static final RegistryObject<Item> BRONTIUMARMOR_LEGGINGS = REGISTRY.register("brontiumarmor_leggings", () -> new BrontiumarmorItem.Leggings());
 	public static final RegistryObject<Item> BRONTIUMARMOR_BOOTS = REGISTRY.register("brontiumarmor_boots", () -> new BrontiumarmorItem.Boots());
 	public static final RegistryObject<Item> RAINBOWARMOR_HELMET = REGISTRY.register("rainbowarmor_helmet", () -> new RainbowarmorItem.Helmet());
-	public static final RegistryObject<Item> RAINBOWARMOR_CHESTPLATE = REGISTRY.register("rainbowarmor_chestplate",
-			() -> new RainbowarmorItem.Chestplate());
-	public static final RegistryObject<Item> RAINBOWARMOR_LEGGINGS = REGISTRY.register("rainbowarmor_leggings",
-			() -> new RainbowarmorItem.Leggings());
+	public static final RegistryObject<Item> RAINBOWARMOR_CHESTPLATE = REGISTRY.register("rainbowarmor_chestplate", () -> new RainbowarmorItem.Chestplate());
+	public static final RegistryObject<Item> RAINBOWARMOR_LEGGINGS = REGISTRY.register("rainbowarmor_leggings", () -> new RainbowarmorItem.Leggings());
 	public static final RegistryObject<Item> RAINBOWARMOR_BOOTS = REGISTRY.register("rainbowarmor_boots", () -> new RainbowarmorItem.Boots());
 	public static final RegistryObject<Item> AURUMARMOR_HELMET = REGISTRY.register("aurumarmor_helmet", () -> new AurumarmorItem.Helmet());
-	public static final RegistryObject<Item> AURUMARMOR_CHESTPLATE = REGISTRY.register("aurumarmor_chestplate",
-			() -> new AurumarmorItem.Chestplate());
+	public static final RegistryObject<Item> AURUMARMOR_CHESTPLATE = REGISTRY.register("aurumarmor_chestplate", () -> new AurumarmorItem.Chestplate());
 	public static final RegistryObject<Item> AURUMARMOR_LEGGINGS = REGISTRY.register("aurumarmor_leggings", () -> new AurumarmorItem.Leggings());
 	public static final RegistryObject<Item> AURUMARMOR_BOOTS = REGISTRY.register("aurumarmor_boots", () -> new AurumarmorItem.Boots());
-	public static final RegistryObject<Item> KNIGHTMASTERARMOR_CHESTPLATE = REGISTRY.register("knightmasterarmor_chestplate",
-			() -> new KnightmasterarmorItem.Chestplate());
-	public static final RegistryObject<Item> DRAGONITESCALEMAIL_HELMET = REGISTRY.register("dragonitescalemail_helmet",
-			() -> new DragonitescalemailItem.Helmet());
-	public static final RegistryObject<Item> DRAGONITESCALEMAIL_CHESTPLATE = REGISTRY.register("dragonitescalemail_chestplate",
-			() -> new DragonitescalemailItem.Chestplate());
-	public static final RegistryObject<Item> DRAGONITESCALEMAIL_LEGGINGS = REGISTRY.register("dragonitescalemail_leggings",
-			() -> new DragonitescalemailItem.Leggings());
-	public static final RegistryObject<Item> DRAGONITESCALEMAIL_BOOTS = REGISTRY.register("dragonitescalemail_boots",
-			() -> new DragonitescalemailItem.Boots());
+	public static final RegistryObject<Item> KNIGHTMASTERARMOR_CHESTPLATE = REGISTRY.register("knightmasterarmor_chestplate", () -> new KnightmasterarmorItem.Chestplate());
+	public static final RegistryObject<Item> DRAGONITESCALEMAIL_HELMET = REGISTRY.register("dragonitescalemail_helmet", () -> new DragonitescalemailItem.Helmet());
+	public static final RegistryObject<Item> DRAGONITESCALEMAIL_CHESTPLATE = REGISTRY.register("dragonitescalemail_chestplate", () -> new DragonitescalemailItem.Chestplate());
+	public static final RegistryObject<Item> DRAGONITESCALEMAIL_LEGGINGS = REGISTRY.register("dragonitescalemail_leggings", () -> new DragonitescalemailItem.Leggings());
+	public static final RegistryObject<Item> DRAGONITESCALEMAIL_BOOTS = REGISTRY.register("dragonitescalemail_boots", () -> new DragonitescalemailItem.Boots());
 	public static final RegistryObject<Item> SEAFOAMARMOR_HELMET = REGISTRY.register("seafoamarmor_helmet", () -> new SeafoamarmorItem.Helmet());
-	public static final RegistryObject<Item> SEAFOAMARMOR_CHESTPLATE = REGISTRY.register("seafoamarmor_chestplate",
-			() -> new SeafoamarmorItem.Chestplate());
-	public static final RegistryObject<Item> SEAFOAMARMOR_LEGGINGS = REGISTRY.register("seafoamarmor_leggings",
-			() -> new SeafoamarmorItem.Leggings());
+	public static final RegistryObject<Item> SEAFOAMARMOR_CHESTPLATE = REGISTRY.register("seafoamarmor_chestplate", () -> new SeafoamarmorItem.Chestplate());
+	public static final RegistryObject<Item> SEAFOAMARMOR_LEGGINGS = REGISTRY.register("seafoamarmor_leggings", () -> new SeafoamarmorItem.Leggings());
 	public static final RegistryObject<Item> SEAFOAMARMOR_BOOTS = REGISTRY.register("seafoamarmor_boots", () -> new SeafoamarmorItem.Boots());
-	public static final RegistryObject<Item> REDSEAFOAMARMOR_HELMET = REGISTRY.register("redseafoamarmor_helmet",
-			() -> new RedseafoamarmorItem.Helmet());
-	public static final RegistryObject<Item> REDSEAFOAMARMOR_CHESTPLATE = REGISTRY.register("redseafoamarmor_chestplate",
-			() -> new RedseafoamarmorItem.Chestplate());
-	public static final RegistryObject<Item> REDSEAFOAMARMOR_LEGGINGS = REGISTRY.register("redseafoamarmor_leggings",
-			() -> new RedseafoamarmorItem.Leggings());
-	public static final RegistryObject<Item> REDSEAFOAMARMOR_BOOTS = REGISTRY.register("redseafoamarmor_boots",
-			() -> new RedseafoamarmorItem.Boots());
-	public static final RegistryObject<Item> GREENSEAFOAMARMOR_HELMET = REGISTRY.register("greenseafoamarmor_helmet",
-			() -> new GreenseafoamarmorItem.Helmet());
-	public static final RegistryObject<Item> GREENSEAFOAMARMOR_CHESTPLATE = REGISTRY.register("greenseafoamarmor_chestplate",
-			() -> new GreenseafoamarmorItem.Chestplate());
-	public static final RegistryObject<Item> GREENSEAFOAMARMOR_LEGGINGS = REGISTRY.register("greenseafoamarmor_leggings",
-			() -> new GreenseafoamarmorItem.Leggings());
-	public static final RegistryObject<Item> GREENSEAFOAMARMOR_BOOTS = REGISTRY.register("greenseafoamarmor_boots",
-			() -> new GreenseafoamarmorItem.Boots());
-	public static final RegistryObject<Item> BLUESEAFOAMARMOR_HELMET = REGISTRY.register("blueseafoamarmor_helmet",
-			() -> new BlueseafoamarmorItem.Helmet());
-	public static final RegistryObject<Item> BLUESEAFOAMARMOR_CHESTPLATE = REGISTRY.register("blueseafoamarmor_chestplate",
-			() -> new BlueseafoamarmorItem.Chestplate());
-	public static final RegistryObject<Item> BLUESEAFOAMARMOR_LEGGINGS = REGISTRY.register("blueseafoamarmor_leggings",
-			() -> new BlueseafoamarmorItem.Leggings());
-	public static final RegistryObject<Item> BLUESEAFOAMARMOR_BOOTS = REGISTRY.register("blueseafoamarmor_boots",
-			() -> new BlueseafoamarmorItem.Boots());
+	public static final RegistryObject<Item> REDSEAFOAMARMOR_HELMET = REGISTRY.register("redseafoamarmor_helmet", () -> new RedseafoamarmorItem.Helmet());
+	public static final RegistryObject<Item> REDSEAFOAMARMOR_CHESTPLATE = REGISTRY.register("redseafoamarmor_chestplate", () -> new RedseafoamarmorItem.Chestplate());
+	public static final RegistryObject<Item> REDSEAFOAMARMOR_LEGGINGS = REGISTRY.register("redseafoamarmor_leggings", () -> new RedseafoamarmorItem.Leggings());
+	public static final RegistryObject<Item> REDSEAFOAMARMOR_BOOTS = REGISTRY.register("redseafoamarmor_boots", () -> new RedseafoamarmorItem.Boots());
+	public static final RegistryObject<Item> GREENSEAFOAMARMOR_HELMET = REGISTRY.register("greenseafoamarmor_helmet", () -> new GreenseafoamarmorItem.Helmet());
+	public static final RegistryObject<Item> GREENSEAFOAMARMOR_CHESTPLATE = REGISTRY.register("greenseafoamarmor_chestplate", () -> new GreenseafoamarmorItem.Chestplate());
+	public static final RegistryObject<Item> GREENSEAFOAMARMOR_LEGGINGS = REGISTRY.register("greenseafoamarmor_leggings", () -> new GreenseafoamarmorItem.Leggings());
+	public static final RegistryObject<Item> GREENSEAFOAMARMOR_BOOTS = REGISTRY.register("greenseafoamarmor_boots", () -> new GreenseafoamarmorItem.Boots());
+	public static final RegistryObject<Item> BLUESEAFOAMARMOR_HELMET = REGISTRY.register("blueseafoamarmor_helmet", () -> new BlueseafoamarmorItem.Helmet());
+	public static final RegistryObject<Item> BLUESEAFOAMARMOR_CHESTPLATE = REGISTRY.register("blueseafoamarmor_chestplate", () -> new BlueseafoamarmorItem.Chestplate());
+	public static final RegistryObject<Item> BLUESEAFOAMARMOR_LEGGINGS = REGISTRY.register("blueseafoamarmor_leggings", () -> new BlueseafoamarmorItem.Leggings());
+	public static final RegistryObject<Item> BLUESEAFOAMARMOR_BOOTS = REGISTRY.register("blueseafoamarmor_boots", () -> new BlueseafoamarmorItem.Boots());
 	public static final RegistryObject<Item> IVORYARMOR_HELMET = REGISTRY.register("ivoryarmor_helmet", () -> new IvoryarmorItem.Helmet());
-	public static final RegistryObject<Item> IVORYARMOR_CHESTPLATE = REGISTRY.register("ivoryarmor_chestplate",
-			() -> new IvoryarmorItem.Chestplate());
+	public static final RegistryObject<Item> IVORYARMOR_CHESTPLATE = REGISTRY.register("ivoryarmor_chestplate", () -> new IvoryarmorItem.Chestplate());
 	public static final RegistryObject<Item> IVORYARMOR_LEGGINGS = REGISTRY.register("ivoryarmor_leggings", () -> new IvoryarmorItem.Leggings());
 	public static final RegistryObject<Item> IVORYARMOR_BOOTS = REGISTRY.register("ivoryarmor_boots", () -> new IvoryarmorItem.Boots());
 	public static final RegistryObject<Item> SKYJADEARMOR_HELMET = REGISTRY.register("skyjadearmor_helmet", () -> new SkyjadearmorItem.Helmet());
-	public static final RegistryObject<Item> SKYJADEARMOR_CHESTPLATE = REGISTRY.register("skyjadearmor_chestplate",
-			() -> new SkyjadearmorItem.Chestplate());
-	public static final RegistryObject<Item> SKYJADEARMOR_LEGGINGS = REGISTRY.register("skyjadearmor_leggings",
-			() -> new SkyjadearmorItem.Leggings());
+	public static final RegistryObject<Item> SKYJADEARMOR_CHESTPLATE = REGISTRY.register("skyjadearmor_chestplate", () -> new SkyjadearmorItem.Chestplate());
+	public static final RegistryObject<Item> SKYJADEARMOR_LEGGINGS = REGISTRY.register("skyjadearmor_leggings", () -> new SkyjadearmorItem.Leggings());
 	public static final RegistryObject<Item> SKYJADEARMOR_BOOTS = REGISTRY.register("skyjadearmor_boots", () -> new SkyjadearmorItem.Boots());
-	public static final RegistryObject<Item> DIVERSALLOY_ARMOR_HELMET = REGISTRY.register("diversalloy_armor_helmet",
-			() -> new DiversalloyArmorItem.Helmet());
-	public static final RegistryObject<Item> DIVERSALLOY_ARMOR_CHESTPLATE = REGISTRY.register("diversalloy_armor_chestplate",
-			() -> new DiversalloyArmorItem.Chestplate());
-	public static final RegistryObject<Item> DIVERSALLOY_ARMOR_LEGGINGS = REGISTRY.register("diversalloy_armor_leggings",
-			() -> new DiversalloyArmorItem.Leggings());
-	public static final RegistryObject<Item> DIVERSALLOY_ARMOR_BOOTS = REGISTRY.register("diversalloy_armor_boots",
-			() -> new DiversalloyArmorItem.Boots());
+	public static final RegistryObject<Item> DIVERSALLOY_ARMOR_HELMET = REGISTRY.register("diversalloy_armor_helmet", () -> new DiversalloyArmorItem.Helmet());
+	public static final RegistryObject<Item> DIVERSALLOY_ARMOR_CHESTPLATE = REGISTRY.register("diversalloy_armor_chestplate", () -> new DiversalloyArmorItem.Chestplate());
+	public static final RegistryObject<Item> DIVERSALLOY_ARMOR_LEGGINGS = REGISTRY.register("diversalloy_armor_leggings", () -> new DiversalloyArmorItem.Leggings());
+	public static final RegistryObject<Item> DIVERSALLOY_ARMOR_BOOTS = REGISTRY.register("diversalloy_armor_boots", () -> new DiversalloyArmorItem.Boots());
 	public static final RegistryObject<Item> DARKGEMARMOR_HELMET = REGISTRY.register("darkgemarmor_helmet", () -> new DarkgemarmorItem.Helmet());
-	public static final RegistryObject<Item> DARKGEMARMOR_CHESTPLATE = REGISTRY.register("darkgemarmor_chestplate",
-			() -> new DarkgemarmorItem.Chestplate());
-	public static final RegistryObject<Item> DARKGEMARMOR_LEGGINGS = REGISTRY.register("darkgemarmor_leggings",
-			() -> new DarkgemarmorItem.Leggings());
+	public static final RegistryObject<Item> DARKGEMARMOR_CHESTPLATE = REGISTRY.register("darkgemarmor_chestplate", () -> new DarkgemarmorItem.Chestplate());
+	public static final RegistryObject<Item> DARKGEMARMOR_LEGGINGS = REGISTRY.register("darkgemarmor_leggings", () -> new DarkgemarmorItem.Leggings());
 	public static final RegistryObject<Item> DARKGEMARMOR_BOOTS = REGISTRY.register("darkgemarmor_boots", () -> new DarkgemarmorItem.Boots());
 	public static final RegistryObject<Item> KASSEMARMOR_HELMET = REGISTRY.register("kassemarmor_helmet", () -> new KassemarmorItem.Helmet());
-	public static final RegistryObject<Item> KASSEMARMOR_CHESTPLATE = REGISTRY.register("kassemarmor_chestplate",
-			() -> new KassemarmorItem.Chestplate());
-	public static final RegistryObject<Item> ARCHKASSEMARMOR_HELMET = REGISTRY.register("archkassemarmor_helmet",
-			() -> new ArchkassemarmorItem.Helmet());
-	public static final RegistryObject<Item> ARCHKASSEMARMOR_CHESTPLATE = REGISTRY.register("archkassemarmor_chestplate",
-			() -> new ArchkassemarmorItem.Chestplate());
+	public static final RegistryObject<Item> KASSEMARMOR_CHESTPLATE = REGISTRY.register("kassemarmor_chestplate", () -> new KassemarmorItem.Chestplate());
+	public static final RegistryObject<Item> ARCHKASSEMARMOR_HELMET = REGISTRY.register("archkassemarmor_helmet", () -> new ArchkassemarmorItem.Helmet());
+	public static final RegistryObject<Item> ARCHKASSEMARMOR_CHESTPLATE = REGISTRY.register("archkassemarmor_chestplate", () -> new ArchkassemarmorItem.Chestplate());
 	public static final RegistryObject<Item> XPVEST_CHESTPLATE = REGISTRY.register("xpvest_chestplate", () -> new XpvestItem.Chestplate());
 	public static final RegistryObject<Item> SILVERPICKAXE = REGISTRY.register("silverpickaxe", () -> new SilverpickaxeItem());
 	public static final RegistryObject<Item> SILVERAXE = REGISTRY.register("silveraxe", () -> new SilveraxeItem());
@@ -1878,8 +1655,7 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> REINFORCEDFISHINGROD = REGISTRY.register("reinforcedfishingrod", () -> new ReinforcedfishingrodItem());
 	public static final RegistryObject<Item> HARPOON = REGISTRY.register("harpoon", () -> new HarpoonItem());
 	public static final RegistryObject<Item> NETHERSTARHAMMER = REGISTRY.register("netherstarhammer", () -> new NetherstarhammerItem());
-	public static final RegistryObject<Item> NETHERSTARGUARDIANHAMMER = REGISTRY.register("netherstarguardianhammer",
-			() -> new NetherstarguardianhammerItem());
+	public static final RegistryObject<Item> NETHERSTARGUARDIANHAMMER = REGISTRY.register("netherstarguardianhammer", () -> new NetherstarguardianhammerItem());
 	public static final RegistryObject<Item> AURUMAXE = REGISTRY.register("aurumaxe", () -> new AurumaxeItem());
 	public static final RegistryObject<Item> AURUMPICKAXE = REGISTRY.register("aurumpickaxe", () -> new AurumpickaxeItem());
 	public static final RegistryObject<Item> AURUMHOE = REGISTRY.register("aurumhoe", () -> new AurumhoeItem());
@@ -1914,53 +1690,39 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> SMALL_SCRAPPER = block(ElementureModBlocks.SMALL_SCRAPPER, ElementureModTabs.TAB_TABMODDEDTOOLS);
 	public static final RegistryObject<Item> ROTTENCHUNK = REGISTRY.register("rottenchunk", () -> new RottenchunkItem());
 	public static final RegistryObject<Item> SIGNOFINFECTION = REGISTRY.register("signofinfection", () -> new SignofinfectionItem());
-	public static final RegistryObject<Item> MYCENASHROOMLORDHEART = REGISTRY.register("mycenashroomlordheart",
-			() -> new MycenashroomlordheartItem());
-	public static final RegistryObject<Item> MYCENASUPERFERTILIZER = REGISTRY.register("mycenasuperfertilizer",
-			() -> new MycenasuperfertilizerItem());
+	public static final RegistryObject<Item> MYCENASHROOMLORDHEART = REGISTRY.register("mycenashroomlordheart", () -> new MycenashroomlordheartItem());
+	public static final RegistryObject<Item> MYCENASUPERFERTILIZER = REGISTRY.register("mycenasuperfertilizer", () -> new MycenasuperfertilizerItem());
 	public static final RegistryObject<Item> DESECRATEDSHARD = REGISTRY.register("desecratedshard", () -> new DesecratedshardItem());
 	public static final RegistryObject<Item> DESECRATEDRELIC = REGISTRY.register("desecratedrelic", () -> new DesecratedrelicItem());
 	public static final RegistryObject<Item> OBLECKEGG = REGISTRY.register("obleckegg", () -> new ObleckeggItem());
-	public static final RegistryObject<Item> TWISTEDKNIGHT = REGISTRY.register("twistedknight_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.TWISTEDKNIGHT, -16764109, -13421773,
-					new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
-	public static final RegistryObject<Item> GREEDYKNIGHT = REGISTRY.register("greedyknight_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.GREEDYKNIGHT, -256, -3368704,
-					new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
-	public static final RegistryObject<Item> CAUSTICKNIGHT = REGISTRY.register("causticknight_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.CAUSTICKNIGHT, -16751104, -13395712,
-					new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
-	public static final RegistryObject<Item> CRUELKNIGHT = REGISTRY.register("cruelknight_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.CRUELKNIGHT, -13421773, -13434880,
-					new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
-	public static final RegistryObject<Item> CANDLE_KNIGHT = REGISTRY.register("candle_knight_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.CANDLE_KNIGHT, -3368704, -13210,
-					new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
-	public static final RegistryObject<Item> SPECTREKNIGHT = REGISTRY.register("spectreknight_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SPECTREKNIGHT, -13434829, -13421773,
-					new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
-	public static final RegistryObject<Item> KINGSKNIGHT = REGISTRY.register("kingsknight_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.KINGSKNIGHT, -13159, -3355444,
-					new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
+	public static final RegistryObject<Item> TWISTEDKNIGHT_SPAWN_EGG = REGISTRY.register("twistedknight_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.TWISTEDKNIGHT, -16764109, -13421773, new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
+	public static final RegistryObject<Item> GREEDYKNIGHT_SPAWN_EGG = REGISTRY.register("greedyknight_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.GREEDYKNIGHT, -256, -3368704, new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
+	public static final RegistryObject<Item> CAUSTICKNIGHT_SPAWN_EGG = REGISTRY.register("causticknight_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.CAUSTICKNIGHT, -16751104, -13395712, new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
+	public static final RegistryObject<Item> CRUELKNIGHT_SPAWN_EGG = REGISTRY.register("cruelknight_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.CRUELKNIGHT, -13421773, -13434880, new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
+	public static final RegistryObject<Item> CANDLE_KNIGHT_SPAWN_EGG = REGISTRY.register("candle_knight_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.CANDLE_KNIGHT, -3368704, -13210, new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
+	public static final RegistryObject<Item> SPECTREKNIGHT_SPAWN_EGG = REGISTRY.register("spectreknight_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SPECTREKNIGHT, -13434829, -13421773, new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
+	public static final RegistryObject<Item> KINGSKNIGHT_SPAWN_EGG = REGISTRY.register("kingsknight_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.KINGSKNIGHT, -13159, -3355444, new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
 	public static final RegistryObject<Item> POOLTILE_SUMMONER = block(ElementureModBlocks.POOLTILE_SUMMONER, ElementureModTabs.TAB_TABMODDEDBOSS);
 	public static final RegistryObject<Item> SIRENHEART = block(ElementureModBlocks.SIRENHEART, ElementureModTabs.TAB_TABMODDEDBOSS);
 	public static final RegistryObject<Item> TAR_DARKSTONE = block(ElementureModBlocks.TAR_DARKSTONE, ElementureModTabs.TAB_TABMODDEDBOSS);
-	public static final RegistryObject<Item> UMBRASYL = REGISTRY.register("umbrasyl_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.UMBRASYL, -13434829, -16777216,
-					new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
-	public static final RegistryObject<Item> SIRENQUEEN = REGISTRY.register("sirenqueen_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SIRENQUEEN, -16764058, -13434727,
-					new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
-	public static final RegistryObject<Item> SPIDER_QUEEN = REGISTRY.register("spider_queen_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SPIDER_QUEEN, -13434880, -6750208,
-					new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
-	public static final RegistryObject<Item> SLUMBERING_GENERAL = REGISTRY.register("slumbering_general_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SLUMBERING_GENERAL, -13421773, -10079488,
-					new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
+	public static final RegistryObject<Item> UMBRASYL_SPAWN_EGG = REGISTRY.register("umbrasyl_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.UMBRASYL, -13434829, -16777216, new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
+	public static final RegistryObject<Item> SIRENQUEEN_SPAWN_EGG = REGISTRY.register("sirenqueen_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SIRENQUEEN, -16764058, -13434727, new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
+	public static final RegistryObject<Item> SPIDER_QUEEN_SPAWN_EGG = REGISTRY.register("spider_queen_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SPIDER_QUEEN, -13434880, -6750208, new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
+	public static final RegistryObject<Item> SLUMBERING_GENERAL_SPAWN_EGG = REGISTRY.register("slumbering_general_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SLUMBERING_GENERAL, -13421773, -10079488, new Item.Properties().tab(ElementureModTabs.TAB_TABMODDEDBOSS)));
 	public static final RegistryObject<Item> WILDBLUEBERRY = block(ElementureModBlocks.WILDBLUEBERRY, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> WILDPERRYBERRY = block(ElementureModBlocks.WILDPERRYBERRY, CreativeModeTab.TAB_DECORATIONS);
-	public static final RegistryObject<Item> WILDBEESTINGBERRYBUSH = block(ElementureModBlocks.WILDBEESTINGBERRYBUSH,
-			CreativeModeTab.TAB_DECORATIONS);
+	public static final RegistryObject<Item> WILDBEESTINGBERRYBUSH = block(ElementureModBlocks.WILDBEESTINGBERRYBUSH, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> WILDSTRAWBERRYBUSH = block(ElementureModBlocks.WILDSTRAWBERRYBUSH, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> WILDCOLDBERRYBUSH = block(ElementureModBlocks.WILDCOLDBERRYBUSH, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> WILDSUNBERRYBUSH = block(ElementureModBlocks.WILDSUNBERRYBUSH, CreativeModeTab.TAB_DECORATIONS);
@@ -1975,8 +1737,7 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> SILVERAIRCORE = REGISTRY.register("silveraircore", () -> new SilveraircoreItem());
 	public static final RegistryObject<Item> SILVERLIGHTNINGCORE = REGISTRY.register("silverlightningcore", () -> new SilverlightningcoreItem());
 	public static final RegistryObject<Item> SILVERVOIDCORE = REGISTRY.register("silvervoidcore", () -> new SilvervoidcoreItem());
-	public static final RegistryObject<Item> ENERGYSILVERELEMENTALCORE = REGISTRY.register("energysilverelementalcore",
-			() -> new EnergysilverelementalcoreItem());
+	public static final RegistryObject<Item> ENERGYSILVERELEMENTALCORE = REGISTRY.register("energysilverelementalcore", () -> new EnergysilverelementalcoreItem());
 	public static final RegistryObject<Item> LIGHTSILVERCORE = REGISTRY.register("lightsilvercore", () -> new LightsilvercoreItem());
 	public static final RegistryObject<Item> DARKSILVERCORE = REGISTRY.register("darksilvercore", () -> new DarksilvercoreItem());
 	public static final RegistryObject<Item> ABYSSALHEART = REGISTRY.register("abyssalheart", () -> new AbyssalheartItem());
@@ -1990,15 +1751,12 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> PSYBLASTSKILL = REGISTRY.register("psyblastskill", () -> new PsyblastskillItem());
 	public static final RegistryObject<Item> POWERSTRIKESKILL = REGISTRY.register("powerstrikeskill", () -> new PowerstrikeskillItem());
 	public static final RegistryObject<Item> VAMITEFASTENSKILL = REGISTRY.register("vamitefastenskill", () -> new VamitefastenskillItem());
-	public static final RegistryObject<Item> BRONTIUMSLOWTIMESKILL = REGISTRY.register("brontiumslowtimeskill",
-			() -> new BrontiumslowtimeskillItem());
+	public static final RegistryObject<Item> BRONTIUMSLOWTIMESKILL = REGISTRY.register("brontiumslowtimeskill", () -> new BrontiumslowtimeskillItem());
 	public static final RegistryObject<Item> INFINITYBLASTSKILL = REGISTRY.register("infinityblastskill", () -> new InfinityblastskillItem());
 	public static final RegistryObject<Item> FLASHSKILL = REGISTRY.register("flashskill", () -> new FlashskillItem());
 	public static final RegistryObject<Item> DARKENSKILL = REGISTRY.register("darkenskill", () -> new DarkenskillItem());
-	public static final RegistryObject<Item> LOCALISEDVACUITYSKILL = REGISTRY.register("localisedvacuityskill",
-			() -> new LocalisedvacuityskillItem());
-	public static final RegistryObject<Item> HUNGERINGSPORECLOUDSKILL = REGISTRY.register("hungeringsporecloudskill",
-			() -> new HungeringsporecloudskillItem());
+	public static final RegistryObject<Item> LOCALISEDVACUITYSKILL = REGISTRY.register("localisedvacuityskill", () -> new LocalisedvacuityskillItem());
+	public static final RegistryObject<Item> HUNGERINGSPORECLOUDSKILL = REGISTRY.register("hungeringsporecloudskill", () -> new HungeringsporecloudskillItem());
 	public static final RegistryObject<Item> AGEDROSARY = REGISTRY.register("agedrosary", () -> new AgedrosaryItem());
 	public static final RegistryObject<Item> IMMACULATEPEARL = REGISTRY.register("immaculatepearl", () -> new ImmaculatepearlItem());
 	public static final RegistryObject<Item> MOLTENPEARL = REGISTRY.register("moltenpearl", () -> new MoltenpearlItem());
@@ -2009,8 +1767,7 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> SHARPCOIN = REGISTRY.register("sharpcoin", () -> new SharpcoinItem());
 	public static final RegistryObject<Item> RAGINGNETHERRACK = REGISTRY.register("ragingnetherrack", () -> new RagingnetherrackItem());
 	public static final RegistryObject<Item> THEBLUEBOX = REGISTRY.register("thebluebox", () -> new TheblueboxItem());
-	public static final RegistryObject<Item> SMALLCHARMAGAINSTPOISON = REGISTRY.register("smallcharmagainstpoison",
-			() -> new SmallcharmagainstpoisonItem());
+	public static final RegistryObject<Item> SMALLCHARMAGAINSTPOISON = REGISTRY.register("smallcharmagainstpoison", () -> new SmallcharmagainstpoisonItem());
 	public static final RegistryObject<Item> SNAKEFANGTALISMAN = REGISTRY.register("snakefangtalisman", () -> new SnakefangtalismanItem());
 	public static final RegistryObject<Item> TORMENTEDSAND = REGISTRY.register("tormentedsand", () -> new TormentedsandItem());
 	public static final RegistryObject<Item> SMALLOAKENBLESSING = REGISTRY.register("smalloakenblessing", () -> new SmalloakenblessingItem());
@@ -2024,8 +1781,7 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> LIGNITECHANNELER = REGISTRY.register("lignitechanneler", () -> new LignitechannelerItem());
 	public static final RegistryObject<Item> VAMITECHANNELER = REGISTRY.register("vamitechanneler", () -> new VamitechannelerItem());
 	public static final RegistryObject<Item> BRONTIUMCHANNELER = REGISTRY.register("brontiumchanneler", () -> new BrontiumchannelerItem());
-	public static final RegistryObject<Item> MYCENANSUPERCHANNELER = REGISTRY.register("mycenansuperchanneler",
-			() -> new MycenansuperchannelerItem());
+	public static final RegistryObject<Item> MYCENANSUPERCHANNELER = REGISTRY.register("mycenansuperchanneler", () -> new MycenansuperchannelerItem());
 	public static final RegistryObject<Item> CHARGEDCHANNELER = REGISTRY.register("chargedchanneler", () -> new ChargedchannelerItem());
 	public static final RegistryObject<Item> MYCENANCHANNELER = REGISTRY.register("mycenanchanneler", () -> new MycenanchannelerItem());
 	public static final RegistryObject<Item> NEONCHANNELER = REGISTRY.register("neonchanneler", () -> new NeonchannelerItem());
@@ -2060,8 +1816,7 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> WATERBANE = REGISTRY.register("waterbane", () -> new WaterbaneItem());
 	public static final RegistryObject<Item> HOPPERCHARM = REGISTRY.register("hoppercharm", () -> new HoppercharmItem());
 	public static final RegistryObject<Item> GOLDENHOPPERCHARM = REGISTRY.register("goldenhoppercharm", () -> new GoldenhoppercharmItem());
-	public static final RegistryObject<Item> BLACKSTONEGRIMACE_TALISMAN = REGISTRY.register("blackstonegrimace_talisman",
-			() -> new BlackstonegrimaceTalismanItem());
+	public static final RegistryObject<Item> BLACKSTONEGRIMACE_TALISMAN = REGISTRY.register("blackstonegrimace_talisman", () -> new BlackstonegrimaceTalismanItem());
 	public static final RegistryObject<Item> MONKFIST = REGISTRY.register("monkfist", () -> new MonkfistItem());
 	public static final RegistryObject<Item> OBLECKRELIC = REGISTRY.register("obleckrelic", () -> new ObleckrelicItem());
 	public static final RegistryObject<Item> BELTPOUCH = REGISTRY.register("beltpouch", () -> new BeltpouchItem());
@@ -2080,20 +1835,15 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> MINDBLASTINTERFACE = REGISTRY.register("mindblastinterface", () -> new MindblastinterfaceItem());
 	public static final RegistryObject<Item> FORCEBLASTINTERFACE = REGISTRY.register("forceblastinterface", () -> new ForceblastinterfaceItem());
 	public static final RegistryObject<Item> SOULBLASTINTERFACE = REGISTRY.register("soulblastinterface", () -> new SoulblastinterfaceItem());
-	public static final RegistryObject<Item> CORMUNCULUS_CLEANSINGTORCH = REGISTRY.register("cormunculus_cleansingtorch",
-			() -> new CormunculusCleansingtorchItem());
-	public static final RegistryObject<Item> CORMUNCULUS_SWIMMINGCHARM = REGISTRY.register("cormunculus_swimmingcharm",
-			() -> new CormunculusSwimmingcharmItem());
+	public static final RegistryObject<Item> CORMUNCULUS_CLEANSINGTORCH = REGISTRY.register("cormunculus_cleansingtorch", () -> new CormunculusCleansingtorchItem());
+	public static final RegistryObject<Item> CORMUNCULUS_SWIMMINGCHARM = REGISTRY.register("cormunculus_swimmingcharm", () -> new CormunculusSwimmingcharmItem());
 	public static final RegistryObject<Item> CORMUNCULUSTUNER = REGISTRY.register("cormunculustuner", () -> new CormunculustunerItem());
 	public static final RegistryObject<Item> TARSPIRITSTAFF = REGISTRY.register("tarspiritstaff", () -> new TarspiritstaffItem());
 	public static final RegistryObject<Item> SIRENQUEEN_EVIL_EYE = REGISTRY.register("sirenqueen_evil_eye", () -> new SirenqueenEvilEyeItem());
 	public static final RegistryObject<Item> CORMUNCULUS_CHANNELER = REGISTRY.register("cormunculus_channeler", () -> new CormunculusChannelerItem());
-	public static final RegistryObject<Item> DARKCORMUNCULUS_CHANNELER = REGISTRY.register("darkcormunculus_channeler",
-			() -> new DarkcormunculusChannelerItem());
-	public static final RegistryObject<Item> RIMECORMUNCULUS_CHANNELER = REGISTRY.register("rimecormunculus_channeler",
-			() -> new RimecormunculusChannelerItem());
-	public static final RegistryObject<Item> ENHANCEDTARSPIRITSTAFF = REGISTRY.register("enhancedtarspiritstaff",
-			() -> new EnhancedtarspiritstaffItem());
+	public static final RegistryObject<Item> DARKCORMUNCULUS_CHANNELER = REGISTRY.register("darkcormunculus_channeler", () -> new DarkcormunculusChannelerItem());
+	public static final RegistryObject<Item> RIMECORMUNCULUS_CHANNELER = REGISTRY.register("rimecormunculus_channeler", () -> new RimecormunculusChannelerItem());
+	public static final RegistryObject<Item> ENHANCEDTARSPIRITSTAFF = REGISTRY.register("enhancedtarspiritstaff", () -> new EnhancedtarspiritstaffItem());
 	public static final RegistryObject<Item> ARCHKASSEM_STAFF = REGISTRY.register("archkassem_staff", () -> new ArchkassemStaffItem());
 	public static final RegistryObject<Item> KASSEMSTAFF = REGISTRY.register("kassemstaff", () -> new KassemstaffItem());
 	public static final RegistryObject<Item> PERIWINKLE_CHARM = REGISTRY.register("periwinkle_charm", () -> new PeriwinkleCharmItem());
@@ -2108,268 +1858,175 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> DARKWATER_BUCKET = REGISTRY.register("darkwater_bucket", () -> new DarkwaterItem());
 	public static final RegistryObject<Item> REGENSUBSTANCE_BUCKET = REGISTRY.register("regensubstance_bucket", () -> new RegensubstanceItem());
 	public static final RegistryObject<Item> CORRUPTDEW_BUCKET = REGISTRY.register("corruptdew_bucket", () -> new CorruptdewItem());
-	public static final RegistryObject<Item> MYCENASHROOMVILLAGER_NITWIT = REGISTRY.register("mycenashroomvillager_nitwit_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMVILLAGER_NITWIT, -13382656, -103,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENASHROOMGUARD = REGISTRY.register("mycenashroomguard_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMGUARD, -16711936, -6684724,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENAINFECTEDSHROOMGUARD = REGISTRY.register("mycenainfectedshroomguard_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENAINFECTEDSHROOMGUARD, -16711936, -10027162,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENASHROOMVILLAGERLEATHERWORKER = REGISTRY.register("mycenashroomvillagerleatherworker_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMVILLAGERLEATHERWORKER, -13382656, -103,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENASHROOMVILLAGERBLACKSMITH = REGISTRY.register("mycenashroomvillagerblacksmith_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMVILLAGERBLACKSMITH, -13382656, -103,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENASHROOMVILLAGERLIBRARIAN = REGISTRY.register("mycenashroomvillagerlibrarian_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMVILLAGERLIBRARIAN, -13382656, -103,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENASHROOMVILLAGERPRIEST = REGISTRY.register("mycenashroomvillagerpriest_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMVILLAGERPRIEST, -13382656, -103,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENASHROOMVILLAGERELDER = REGISTRY.register("mycenashroomvillagerelder_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMVILLAGERELDER, -13395712, -3342541,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENASHROOMLING = REGISTRY.register("mycenashroomling_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMLING, -13395712, -16777216,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENASPORELING = REGISTRY.register("mycenasporeling_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASPORELING, -16724992, -13421824,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENASHROOMAL = REGISTRY.register("mycenashroomal_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMAL, -16738048, -16724890,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENAFUMOON = REGISTRY.register("mycenafumoon_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENAFUMOON, -16737997, -6684826,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENAROAMER = REGISTRY.register("mycenaroamer_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENAROAMER, -13408768, -3342388,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENAFUMOONSHROOMLING = REGISTRY.register("mycenafumoonshroomling_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENAFUMOONSHROOMLING, -13395712, -10027213,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENATRUFFLOON = REGISTRY.register("mycenatruffloon_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENATRUFFLOON, -16711834, -13369600,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENATRUFFLING = REGISTRY.register("mycenatruffling_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENATRUFFLING, -13382656, -10027162,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENAFUMOONSPORELING = REGISTRY.register("mycenafumoonsporeling_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENAFUMOONSPORELING, -16751104, -6684928,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENAFUMOONSHROOMLORD = REGISTRY.register("mycenafumoonshroomlord_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENAFUMOONSHROOMLORD, -16764160, -13395712,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENASHROOMVILLAGERFARMER = REGISTRY.register("mycenashroomvillagerfarmer_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMVILLAGERFARMER, -13382656, -103,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> BIGGRANITELEMENTAL = REGISTRY.register("biggranitelemental_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.BIGGRANITELEMENTAL, -13434829, -10092442,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> GRANITEELEMENTAL = REGISTRY.register("graniteelemental_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.GRANITEELEMENTAL, -10092442, -6750004,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> SMALLGRANITEELEMENTAL = REGISTRY.register("smallgraniteelemental_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SMALLGRANITEELEMENTAL, -10092442, -3407668,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> BIGANDESITEELEMENTAL = REGISTRY.register("bigandesiteelemental_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.BIGANDESITEELEMENTAL, -3368704, -205,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> ANDESITEELEMENTAL = REGISTRY.register("andesiteelemental_spawn_egg",
+	public static final RegistryObject<Item> MYCENASHROOMVILLAGER_NITWIT_SPAWN_EGG = REGISTRY.register("mycenashroomvillager_nitwit_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMVILLAGER_NITWIT, -13382656, -103, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENASHROOMGUARD_SPAWN_EGG = REGISTRY.register("mycenashroomguard_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMGUARD, -16711936, -6684724, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENAINFECTEDSHROOMGUARD_SPAWN_EGG = REGISTRY.register("mycenainfectedshroomguard_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENAINFECTEDSHROOMGUARD, -16711936, -10027162, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENASHROOMVILLAGERLEATHERWORKER_SPAWN_EGG = REGISTRY.register("mycenashroomvillagerleatherworker_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMVILLAGERLEATHERWORKER, -13382656, -103, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENASHROOMVILLAGERBLACKSMITH_SPAWN_EGG = REGISTRY.register("mycenashroomvillagerblacksmith_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMVILLAGERBLACKSMITH, -13382656, -103, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENASHROOMVILLAGERLIBRARIAN_SPAWN_EGG = REGISTRY.register("mycenashroomvillagerlibrarian_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMVILLAGERLIBRARIAN, -13382656, -103, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENASHROOMVILLAGERPRIEST_SPAWN_EGG = REGISTRY.register("mycenashroomvillagerpriest_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMVILLAGERPRIEST, -13382656, -103, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENASHROOMVILLAGERELDER_SPAWN_EGG = REGISTRY.register("mycenashroomvillagerelder_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMVILLAGERELDER, -13395712, -3342541, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENASHROOMLING_SPAWN_EGG = REGISTRY.register("mycenashroomling_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMLING, -13395712, -16777216, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENASPORELING_SPAWN_EGG = REGISTRY.register("mycenasporeling_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASPORELING, -16724992, -13421824, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENASHROOMAL_SPAWN_EGG = REGISTRY.register("mycenashroomal_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMAL, -16738048, -16724890, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENAFUMOON_SPAWN_EGG = REGISTRY.register("mycenafumoon_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENAFUMOON, -16737997, -6684826, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENAROAMER_SPAWN_EGG = REGISTRY.register("mycenaroamer_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENAROAMER, -13408768, -3342388, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENAFUMOONSHROOMLING_SPAWN_EGG = REGISTRY.register("mycenafumoonshroomling_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENAFUMOONSHROOMLING, -13395712, -10027213, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENATRUFFLOON_SPAWN_EGG = REGISTRY.register("mycenatruffloon_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENATRUFFLOON, -16711834, -13369600, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENATRUFFLING_SPAWN_EGG = REGISTRY.register("mycenatruffling_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENATRUFFLING, -13382656, -10027162, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENAFUMOONSPORELING_SPAWN_EGG = REGISTRY.register("mycenafumoonsporeling_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENAFUMOONSPORELING, -16751104, -6684928, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENAFUMOONSHROOMLORD_SPAWN_EGG = REGISTRY.register("mycenafumoonshroomlord_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENAFUMOONSHROOMLORD, -16764160, -13395712, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENASHROOMVILLAGERFARMER_SPAWN_EGG = REGISTRY.register("mycenashroomvillagerfarmer_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMVILLAGERFARMER, -13382656, -103, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> BIGGRANITELEMENTAL_SPAWN_EGG = REGISTRY.register("biggranitelemental_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.BIGGRANITELEMENTAL, -13434829, -10092442, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> GRANITEELEMENTAL_SPAWN_EGG = REGISTRY.register("graniteelemental_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.GRANITEELEMENTAL, -10092442, -6750004, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SMALLGRANITEELEMENTAL_SPAWN_EGG = REGISTRY.register("smallgraniteelemental_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SMALLGRANITEELEMENTAL, -10092442, -3407668, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> BIGANDESITEELEMENTAL_SPAWN_EGG = REGISTRY.register("bigandesiteelemental_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.BIGANDESITEELEMENTAL, -3368704, -205, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> ANDESITEELEMENTAL_SPAWN_EGG = REGISTRY.register("andesiteelemental_spawn_egg",
 			() -> new ForgeSpawnEggItem(ElementureModEntities.ANDESITEELEMENTAL, -26368, -205, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> WEAKANDESITEELEMENTAL = REGISTRY.register("weakandesiteelemental_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.WEAKANDESITEELEMENTAL, -13261, -205,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> WEAKDIORITEELEMENTAL = REGISTRY.register("weakdioriteelemental_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.WEAKDIORITEELEMENTAL, -16737844, -10053121,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> DIORITEELEMENTAL = REGISTRY.register("dioriteelemental_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.DIORITEELEMENTAL, -16737844, -16737895,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> BIGDIORITEELEMENTAL = REGISTRY.register("bigdioriteelemental_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.BIGDIORITEELEMENTAL, -16737895, -16751002,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> OBLECK = REGISTRY.register("obleck_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.OBLECK, -16737895, -16711783, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> STATUEPROTECTOR = REGISTRY.register("statueprotector_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.STATUEPROTECTOR, -13421773, -16724941,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MINDOBLECK = REGISTRY.register("mindobleck_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MINDOBLECK, -3407719, -3381505, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> COALPUCK = REGISTRY.register("coalpuck_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.COALPUCK, -13421773, -10066330, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MYCENASHROOMVILLAGER_FISHERMAN = REGISTRY.register("mycenashroomvillager_fisherman_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMVILLAGER_FISHERMAN, -13408768, -16724941,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> WEAKANDESITEELEMENTAL_SPAWN_EGG = REGISTRY.register("weakandesiteelemental_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.WEAKANDESITEELEMENTAL, -13261, -205, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> WEAKDIORITEELEMENTAL_SPAWN_EGG = REGISTRY.register("weakdioriteelemental_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.WEAKDIORITEELEMENTAL, -16737844, -10053121, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> DIORITEELEMENTAL_SPAWN_EGG = REGISTRY.register("dioriteelemental_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.DIORITEELEMENTAL, -16737844, -16737895, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> BIGDIORITEELEMENTAL_SPAWN_EGG = REGISTRY.register("bigdioriteelemental_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.BIGDIORITEELEMENTAL, -16737895, -16751002, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> OBLECK_SPAWN_EGG = REGISTRY.register("obleck_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.OBLECK, -16737895, -16711783, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> STATUEPROTECTOR_SPAWN_EGG = REGISTRY.register("statueprotector_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.STATUEPROTECTOR, -13421773, -16724941, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MINDOBLECK_SPAWN_EGG = REGISTRY.register("mindobleck_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.MINDOBLECK, -3407719, -3381505, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> COALPUCK_SPAWN_EGG = REGISTRY.register("coalpuck_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.COALPUCK, -13421773, -10066330, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MYCENASHROOMVILLAGER_FISHERMAN_SPAWN_EGG = REGISTRY.register("mycenashroomvillager_fisherman_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.MYCENASHROOMVILLAGER_FISHERMAN, -13408768, -16724941, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> NETHERUMFLUID_BUCKET = REGISTRY.register("netherumfluid_bucket", () -> new NetherumfluidItem());
-	public static final RegistryObject<Item> DRAGONEWT = REGISTRY.register("dragonewt_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.DRAGONEWT, -3381760, -65485, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> DRAGONITE = REGISTRY.register("dragonite_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.DRAGONITE, -13159, -154, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> MINOSKULL = REGISTRY.register("minoskull_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.MINOSKULL, -39424, -52429, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> PUMPKINMIMIC = REGISTRY.register("pumpkinmimic_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.PUMPKINMIMIC, -26368, -6737152, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> ASCENDEDASPID = REGISTRY.register("ascendedaspid_spawn_egg",
+	public static final RegistryObject<Item> DRAGONEWT_SPAWN_EGG = REGISTRY.register("dragonewt_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.DRAGONEWT, -3381760, -65485, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> DRAGONITE_SPAWN_EGG = REGISTRY.register("dragonite_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.DRAGONITE, -13159, -154, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> MINOSKULL_SPAWN_EGG = REGISTRY.register("minoskull_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.MINOSKULL, -39424, -52429, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> PUMPKINMIMIC_SPAWN_EGG = REGISTRY.register("pumpkinmimic_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.PUMPKINMIMIC, -26368, -6737152, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> ASCENDEDASPID_SPAWN_EGG = REGISTRY.register("ascendedaspid_spawn_egg",
 			() -> new ForgeSpawnEggItem(ElementureModEntities.ASCENDEDASPID, -13057, -3355393, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> SHADOWCANDLE = REGISTRY.register("shadowcandle_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SHADOWCANDLE, -6750055, -10092442,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> BRIGHTCANDLE = REGISTRY.register("brightcandle_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.BRIGHTCANDLE, -103, -256, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> DARKLURKER = REGISTRY.register("darklurker_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.DARKLURKER, -16777216, -16777216, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> GNOBLIN = REGISTRY.register("gnoblin_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.GNOBLIN, -13408768, -16724992, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> DARKSPIRIT = REGISTRY.register("darkspirit_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.DARKSPIRIT, -13421773, -16777216, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> HALLOWEENSPIRIT = REGISTRY.register("halloweenspirit_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.HALLOWEENSPIRIT, -3355393, -3342337,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> STARRYVILLAGERGATHERER = REGISTRY.register("starryvillagergatherer_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.STARRYVILLAGERGATHERER, -13210, -13312,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> STARRYVILLAGERBLACKSMITH = REGISTRY.register("starryvillagerblacksmith_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.STARRYVILLAGERBLACKSMITH, -103, -13312,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> STARRYVILLAGERGUARDIAN = REGISTRY.register("starryvillagerguardian_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.STARRYVILLAGERGUARDIAN, -103, -13312,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> NETHERSTARVILLAGERDUSTY = REGISTRY.register("netherstarvillagerdusty_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.NETHERSTARVILLAGERDUSTY, -3342337, -6697729,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> HEATSEEKER = REGISTRY.register("heatseeker_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.HEATSEEKER, -39373, -3407821, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> BLACKSTONE_GRIMACE = REGISTRY.register("blackstone_grimace_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.BLACKSTONE_GRIMACE, -13421773, -10092442,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> STATICSPRITE = REGISTRY.register("staticsprite_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.STATICSPRITE, -1, -205, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SHADOWCANDLE_SPAWN_EGG = REGISTRY.register("shadowcandle_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SHADOWCANDLE, -6750055, -10092442, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> BRIGHTCANDLE_SPAWN_EGG = REGISTRY.register("brightcandle_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.BRIGHTCANDLE, -103, -256, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> DARKLURKER_SPAWN_EGG = REGISTRY.register("darklurker_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.DARKLURKER, -16777216, -16777216, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> GNOBLIN_SPAWN_EGG = REGISTRY.register("gnoblin_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.GNOBLIN, -13408768, -16724992, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> DARKSPIRIT_SPAWN_EGG = REGISTRY.register("darkspirit_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.DARKSPIRIT, -13421773, -16777216, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> HALLOWEENSPIRIT_SPAWN_EGG = REGISTRY.register("halloweenspirit_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.HALLOWEENSPIRIT, -3355393, -3342337, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> STARRYVILLAGERGATHERER_SPAWN_EGG = REGISTRY.register("starryvillagergatherer_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.STARRYVILLAGERGATHERER, -13210, -13312, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> STARRYVILLAGERBLACKSMITH_SPAWN_EGG = REGISTRY.register("starryvillagerblacksmith_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.STARRYVILLAGERBLACKSMITH, -103, -13312, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> STARRYVILLAGERGUARDIAN_SPAWN_EGG = REGISTRY.register("starryvillagerguardian_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.STARRYVILLAGERGUARDIAN, -103, -13312, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> NETHERSTARVILLAGERDUSTY_SPAWN_EGG = REGISTRY.register("netherstarvillagerdusty_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.NETHERSTARVILLAGERDUSTY, -3342337, -6697729, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> HEATSEEKER_SPAWN_EGG = REGISTRY.register("heatseeker_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.HEATSEEKER, -39373, -3407821, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> BLACKSTONE_GRIMACE_SPAWN_EGG = REGISTRY.register("blackstone_grimace_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.BLACKSTONE_GRIMACE, -13421773, -10092442, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> STATICSPRITE_SPAWN_EGG = REGISTRY.register("staticsprite_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.STATICSPRITE, -1, -205, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> DUNGEONWATER_BUCKET = REGISTRY.register("dungeonwater_bucket", () -> new DungeonwaterItem());
-	public static final RegistryObject<Item> GHOSTWARRIOR = REGISTRY.register("ghostwarrior_spawn_egg",
+	public static final RegistryObject<Item> GHOSTWARRIOR_SPAWN_EGG = REGISTRY.register("ghostwarrior_spawn_egg",
 			() -> new ForgeSpawnEggItem(ElementureModEntities.GHOSTWARRIOR, -3342337, -6697729, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> PERINEALBOTFLY = REGISTRY.register("perinealbotfly_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.PERINEALBOTFLY, -3407668, -10092442,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> CRYSTALCREEPER = REGISTRY.register("crystalcreeper_spawn_egg",
+	public static final RegistryObject<Item> PERINEALBOTFLY_SPAWN_EGG = REGISTRY.register("perinealbotfly_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.PERINEALBOTFLY, -3407668, -10092442, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> CRYSTALCREEPER_SPAWN_EGG = REGISTRY.register("crystalcreeper_spawn_egg",
 			() -> new ForgeSpawnEggItem(ElementureModEntities.CRYSTALCREEPER, -13108, -3355393, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> BLUEBLAZE = REGISTRY.register("blueblaze_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.BLUEBLAZE, -16751002, -16737895, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> CRYSTALHOPPER = REGISTRY.register("crystalhopper_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.CRYSTALHOPPER, -26215, -154, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> LARGECRYSTALHOPPER = REGISTRY.register("largecrystalhopper_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.LARGECRYSTALHOPPER, -3407719, -39322,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> SNY = REGISTRY.register("sny_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SNY, -103, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> OBLECKCLERIC = REGISTRY.register("obleckcleric_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.OBLECKCLERIC, -16751002, -16724737,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> DIZMITE = REGISTRY.register("dizmite_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.DIZMITE, -13108, -9253, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> OCTOLANK = REGISTRY.register("octolank_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.OCTOLANK, -3381760, -13210, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> NETHERQUARTZCHARGER = REGISTRY.register("netherquartzcharger_spawn_egg",
+	public static final RegistryObject<Item> BLUEBLAZE_SPAWN_EGG = REGISTRY.register("blueblaze_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.BLUEBLAZE, -16751002, -16737895, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> CRYSTALHOPPER_SPAWN_EGG = REGISTRY.register("crystalhopper_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.CRYSTALHOPPER, -26215, -154, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> LARGECRYSTALHOPPER_SPAWN_EGG = REGISTRY.register("largecrystalhopper_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.LARGECRYSTALHOPPER, -3407719, -39322, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SNY_SPAWN_EGG = REGISTRY.register("sny_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.SNY, -103, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> OBLECKCLERIC_SPAWN_EGG = REGISTRY.register("obleckcleric_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.OBLECKCLERIC, -16751002, -16724737, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> DIZMITE_SPAWN_EGG = REGISTRY.register("dizmite_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.DIZMITE, -13108, -9253, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> OCTOLANK_SPAWN_EGG = REGISTRY.register("octolank_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.OCTOLANK, -3381760, -13210, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> NETHERQUARTZCHARGER_SPAWN_EGG = REGISTRY.register("netherquartzcharger_spawn_egg",
 			() -> new ForgeSpawnEggItem(ElementureModEntities.NETHERQUARTZCHARGER, -52, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> SHATTEREDOBSIDIANCHARGER = REGISTRY.register("shatteredobsidiancharger_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SHATTEREDOBSIDIANCHARGER, -13434829, -16777216,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> NETHERUM_TITAN = REGISTRY.register("netherum_titan_spawn_egg",
+	public static final RegistryObject<Item> SHATTEREDOBSIDIANCHARGER_SPAWN_EGG = REGISTRY.register("shatteredobsidiancharger_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SHATTEREDOBSIDIANCHARGER, -13434829, -16777216, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> NETHERUM_TITAN_SPAWN_EGG = REGISTRY.register("netherum_titan_spawn_egg",
 			() -> new ForgeSpawnEggItem(ElementureModEntities.NETHERUM_TITAN, -13312, -6724096, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> NETHERUMLEAPER = REGISTRY.register("netherumleaper_spawn_egg",
+	public static final RegistryObject<Item> NETHERUMLEAPER_SPAWN_EGG = REGISTRY.register("netherumleaper_spawn_egg",
 			() -> new ForgeSpawnEggItem(ElementureModEntities.NETHERUMLEAPER, -26317, -3342439, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> SCRAPGUARDIANSMALL = REGISTRY.register("scrapguardiansmall_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SCRAPGUARDIANSMALL, -13421773, -10066330,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> SCRAPGUARDIAN = REGISTRY.register("scrapguardian_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SCRAPGUARDIAN, -16777216, -13421773,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> FOAMFISH = REGISTRY.register("foamfish_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.FOAMFISH, -52, -103, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> BLUEJELLYFLOAT = REGISTRY.register("bluejellyfloat_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.BLUEJELLYFLOAT, -10053121, -13382401,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> GREENJELLYFLOAT = REGISTRY.register("greenjellyfloat_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.GREENJELLYFLOAT, -16724941, -10027162,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> REDJELLYFLOAT = REGISTRY.register("redjellyfloat_spawn_egg",
+	public static final RegistryObject<Item> SCRAPGUARDIANSMALL_SPAWN_EGG = REGISTRY.register("scrapguardiansmall_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SCRAPGUARDIANSMALL, -13421773, -10066330, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SCRAPGUARDIAN_SPAWN_EGG = REGISTRY.register("scrapguardian_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SCRAPGUARDIAN, -16777216, -13421773, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> FOAMFISH_SPAWN_EGG = REGISTRY.register("foamfish_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.FOAMFISH, -52, -103, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> BLUEJELLYFLOAT_SPAWN_EGG = REGISTRY.register("bluejellyfloat_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.BLUEJELLYFLOAT, -10053121, -13382401, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> GREENJELLYFLOAT_SPAWN_EGG = REGISTRY.register("greenjellyfloat_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.GREENJELLYFLOAT, -16724941, -10027162, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> REDJELLYFLOAT_SPAWN_EGG = REGISTRY.register("redjellyfloat_spawn_egg",
 			() -> new ForgeSpawnEggItem(ElementureModEntities.REDJELLYFLOAT, -3407872, -65485, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> JELLY = REGISTRY.register("jelly_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.JELLY, -3342337, -3355393, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> IVORYSHADE = REGISTRY.register("ivoryshade_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.IVORYSHADE, -52, -154, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> FLUFFWHALE = REGISTRY.register("fluffwhale_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.FLUFFWHALE, -3342337, -52, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> FORCEOBLECK = REGISTRY.register("forceobleck_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.FORCEOBLECK, -52480, -39322, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> SOULOBLECK = REGISTRY.register("soulobleck_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SOULOBLECK, -10053121, -16750951, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> ARMOREDTURTLE = REGISTRY.register("armoredturtle_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.ARMOREDTURTLE, -16764160, -16751053,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> SIRENLING = REGISTRY.register("sirenling_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SIRENLING, -16751002, -16711783, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> OSTRACHAIN = REGISTRY.register("ostrachain_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.OSTRACHAIN, -3355648, -256, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> RIMEBOID = REGISTRY.register("rimeboid_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.RIMEBOID, -6710785, -10092544, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> SILVERSHORESLIQUID_BUCKET = REGISTRY.register("silvershoresliquid_bucket",
-			() -> new SilvershoresliquidItem());
-	public static final RegistryObject<Item> BUBBLE_O_BLUE = REGISTRY.register("bubble_o_blue_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.BUBBLE_O_BLUE, -16750951, -6684775,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> TARWORM = REGISTRY.register("tarworm_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.TARWORM, -16777216, -14803426, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> TARUMBRA = REGISTRY.register("tarumbra_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.TARUMBRA, -13434880, -13424896, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> ROCKETWORM = REGISTRY.register("rocketworm_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.ROCKETWORM, -6710887, -13108, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> KASSEM = REGISTRY.register("kassem_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.KASSEM, -16777165, -13434778, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> TALLKASSEM = REGISTRY.register("tallkassem_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.TALLKASSEM, -16777165, -10092442, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> BIGKASSEM = REGISTRY.register("bigkassem_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.BIGKASSEM, -16777165, -10092391, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> ARCHKASSEM = REGISTRY.register("archkassem_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.ARCHKASSEM, -13434829, -10092544, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> ARACHNEEL = REGISTRY.register("arachneel_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.ARACHNEEL, -16764160, -13421824, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> SKELETAL_HEAD_HOST = REGISTRY.register("skeletal_head_host_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SKELETAL_HEAD_HOST, -6710887, -10066330,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> SKELETAL_HOST = REGISTRY.register("skeletal_host_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SKELETAL_HOST, -10066330, -3355393,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> HEAD_HOST = REGISTRY.register("head_host_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.HEAD_HOST, -13421773, -6737152, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> DISCARDED_SKELETON = REGISTRY.register("discarded_skeleton_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.DISCARDED_SKELETON, -11513776, -13421773,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> HEADLESS_DISCARDED_SKELETON = REGISTRY.register("headless_discarded_skeleton_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.HEADLESS_DISCARDED_SKELETON, -11513776, -13421773,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> SPIDERLING = REGISTRY.register("spiderling_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SPIDERLING, -10066432, -13421824, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> SPIDER_SWARMER = REGISTRY.register("spider_swarmer_spawn_egg",
+	public static final RegistryObject<Item> JELLY_SPAWN_EGG = REGISTRY.register("jelly_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.JELLY, -3342337, -3355393, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> IVORYSHADE_SPAWN_EGG = REGISTRY.register("ivoryshade_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.IVORYSHADE, -52, -154, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> FLUFFWHALE_SPAWN_EGG = REGISTRY.register("fluffwhale_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.FLUFFWHALE, -3342337, -52, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> FORCEOBLECK_SPAWN_EGG = REGISTRY.register("forceobleck_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.FORCEOBLECK, -52480, -39322, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SOULOBLECK_SPAWN_EGG = REGISTRY.register("soulobleck_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.SOULOBLECK, -10053121, -16750951, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> ARMOREDTURTLE_SPAWN_EGG = REGISTRY.register("armoredturtle_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.ARMOREDTURTLE, -16764160, -16751053, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SIRENLING_SPAWN_EGG = REGISTRY.register("sirenling_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.SIRENLING, -16751002, -16711783, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> OSTRACHAIN_SPAWN_EGG = REGISTRY.register("ostrachain_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.OSTRACHAIN, -3355648, -256, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> RIMEBOID_SPAWN_EGG = REGISTRY.register("rimeboid_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.RIMEBOID, -6710785, -10092544, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SILVERSHORESLIQUID_BUCKET = REGISTRY.register("silvershoresliquid_bucket", () -> new SilvershoresliquidItem());
+	public static final RegistryObject<Item> BUBBLE_O_BLUE_SPAWN_EGG = REGISTRY.register("bubble_o_blue_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.BUBBLE_O_BLUE, -16750951, -6684775, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> TARWORM_SPAWN_EGG = REGISTRY.register("tarworm_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.TARWORM, -16777216, -14803426, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> TARUMBRA_SPAWN_EGG = REGISTRY.register("tarumbra_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.TARUMBRA, -13434880, -13424896, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> ROCKETWORM_SPAWN_EGG = REGISTRY.register("rocketworm_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.ROCKETWORM, -6710887, -13108, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> KASSEM_SPAWN_EGG = REGISTRY.register("kassem_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.KASSEM, -16777165, -13434778, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> TALLKASSEM_SPAWN_EGG = REGISTRY.register("tallkassem_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.TALLKASSEM, -16777165, -10092442, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> BIGKASSEM_SPAWN_EGG = REGISTRY.register("bigkassem_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.BIGKASSEM, -16777165, -10092391, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> ARCHKASSEM_SPAWN_EGG = REGISTRY.register("archkassem_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.ARCHKASSEM, -13434829, -10092544, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> ARACHNEEL_SPAWN_EGG = REGISTRY.register("arachneel_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.ARACHNEEL, -16764160, -13421824, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SKELETAL_HEAD_HOST_SPAWN_EGG = REGISTRY.register("skeletal_head_host_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SKELETAL_HEAD_HOST, -6710887, -10066330, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SKELETAL_HOST_SPAWN_EGG = REGISTRY.register("skeletal_host_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SKELETAL_HOST, -10066330, -3355393, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> HEAD_HOST_SPAWN_EGG = REGISTRY.register("head_host_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.HEAD_HOST, -13421773, -6737152, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> DISCARDED_SKELETON_SPAWN_EGG = REGISTRY.register("discarded_skeleton_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.DISCARDED_SKELETON, -11513776, -13421773, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> HEADLESS_DISCARDED_SKELETON_SPAWN_EGG = REGISTRY.register("headless_discarded_skeleton_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.HEADLESS_DISCARDED_SKELETON, -11513776, -13421773, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SPIDERLING_SPAWN_EGG = REGISTRY.register("spiderling_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.SPIDERLING, -10066432, -13421824, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SPIDER_SWARMER_SPAWN_EGG = REGISTRY.register("spider_swarmer_spawn_egg",
 			() -> new ForgeSpawnEggItem(ElementureModEntities.SPIDER_SWARMER, -6710887, -103, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> SPIDERMATRIARCH = REGISTRY.register("spidermatriarch_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SPIDERMATRIARCH, -13434880, -13424620,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> SLUMBERING_SOLDIER = REGISTRY.register("slumbering_soldier_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.SLUMBERING_SOLDIER, -10092442, -13434880,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> NIGHTMARE_ARBALEST = REGISTRY.register("nightmare_arbalest_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.NIGHTMARE_ARBALEST, -16777114, -13434880,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> NIGHTMARE_MASS = REGISTRY.register("nightmare_mass_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.NIGHTMARE_MASS, -16777216, -16777216,
-					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SPIDERMATRIARCH_SPAWN_EGG = REGISTRY.register("spidermatriarch_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SPIDERMATRIARCH, -13434880, -13424620, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SLUMBERING_SOLDIER_SPAWN_EGG = REGISTRY.register("slumbering_soldier_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.SLUMBERING_SOLDIER, -10092442, -13434880, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> NIGHTMARE_ARBALEST_SPAWN_EGG = REGISTRY.register("nightmare_arbalest_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.NIGHTMARE_ARBALEST, -16777114, -13434880, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> NIGHTMARE_MASS_SPAWN_EGG = REGISTRY.register("nightmare_mass_spawn_egg",
+			() -> new ForgeSpawnEggItem(ElementureModEntities.NIGHTMARE_MASS, -16777216, -16777216, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> NIGHTMARE_SHAMAN = block(ElementureModBlocks.NIGHTMARE_SHAMAN, CreativeModeTab.TAB_MISC);
 	public static final RegistryObject<Item> MYCENANSPORESSPLASH = REGISTRY.register("mycenansporessplash", () -> new MycenansporessplashItem());
-	public static final RegistryObject<Item> MYCENANSPORESLINGERING = REGISTRY.register("mycenansporeslingering",
-			() -> new MycenansporeslingeringItem());
+	public static final RegistryObject<Item> MYCENANSPORESLINGERING = REGISTRY.register("mycenansporeslingering", () -> new MycenansporeslingeringItem());
 	public static final RegistryObject<Item> MYCENANSPORESBOTTLE = REGISTRY.register("mycenansporesbottle", () -> new MycenansporesbottleItem());
 	public static final RegistryObject<Item> MYCENANFUNGALSHOT = REGISTRY.register("mycenanfungalshot", () -> new MycenanfungalshotItem());
 	public static final RegistryObject<Item> HOMEPOTION = REGISTRY.register("homepotion", () -> new HomepotionItem());
@@ -2456,8 +2113,7 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> MINDOBLECKSLIME = REGISTRY.register("mindobleckslime", () -> new MindobleckslimeItem());
 	public static final RegistryObject<Item> NETHERFRUIT = REGISTRY.register("netherfruit", () -> new NetherfruitItem());
 	public static final RegistryObject<Item> STARRYSOUP = REGISTRY.register("starrysoup", () -> new StarrysoupItem());
-	public static final RegistryObject<Item> CHALICEOF_FISHING_POWER = REGISTRY.register("chaliceof_fishing_power",
-			() -> new ChaliceofFishingPowerItem());
+	public static final RegistryObject<Item> CHALICEOF_FISHING_POWER = REGISTRY.register("chaliceof_fishing_power", () -> new ChaliceofFishingPowerItem());
 	public static final RegistryObject<Item> PUMPKINJELLY = REGISTRY.register("pumpkinjelly", () -> new PumpkinjellyItem());
 	public static final RegistryObject<Item> PUMPKINDONUT = REGISTRY.register("pumpkindonut", () -> new PumpkindonutItem());
 	public static final RegistryObject<Item> EVILDONUT = REGISTRY.register("evildonut", () -> new EvildonutItem());
@@ -2510,70 +2166,41 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> OLDPLANKSTAIRS = block(ElementureModBlocks.OLDPLANKSTAIRS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
 	public static final RegistryObject<Item> OLDBRICKS = block(ElementureModBlocks.OLDBRICKS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
 	public static final RegistryObject<Item> OLDFURNACE = block(ElementureModBlocks.OLDFURNACE, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> OLDCRAFTINGTABLE = block(ElementureModBlocks.OLDCRAFTINGTABLE,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> OLDCRAFTINGTABLE = block(ElementureModBlocks.OLDCRAFTINGTABLE, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
 	public static final RegistryObject<Item> OLDDOOR = doubleBlock(ElementureModBlocks.OLDDOOR, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
 	public static final RegistryObject<Item> OLDBRICKWALLS = block(ElementureModBlocks.OLDBRICKWALLS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
 	public static final RegistryObject<Item> OLDBRICKSTAIRS = block(ElementureModBlocks.OLDBRICKSTAIRS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
 	public static final RegistryObject<Item> OLDBRICKSLABS = block(ElementureModBlocks.OLDBRICKSLABS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
 	public static final RegistryObject<Item> OLDBED = block(ElementureModBlocks.OLDBED, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
 	public static final RegistryObject<Item> OLDLEAVES = block(ElementureModBlocks.OLDLEAVES, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> RANDOMTELEPORT_BLOCK = block(ElementureModBlocks.RANDOMTELEPORT_BLOCK,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> SILVERSHORESSAND = block(ElementureModBlocks.SILVERSHORESSAND,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_BLUE_WALL = block(ElementureModBlocks.BOARDINGSCHOOL_BLUE_WALL,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_BLUEWALL_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_BLUEWALL_STAIRS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_BLUEWALL_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_BLUEWALL_SLABS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_YELLOW_WALL = block(ElementureModBlocks.BOARDINGSCHOOL_YELLOW_WALL,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_YELLOW_WALL_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_YELLOW_WALL_STAIRS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_YELLOW_WALL_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_YELLOW_WALL_SLABS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_PINK_WALL = block(ElementureModBlocks.BOARDINGSCHOOL_PINK_WALL,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_PINK_WALL_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_PINK_WALL_STAIRS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_PINK_WALL_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_PINK_WALL_SLABS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_WHITE_WALL = block(ElementureModBlocks.BOARDINGSCHOOL_WHITE_WALL,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_WHITE_WALL_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_WHITE_WALL_STAIRS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_WHITE_WALL_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_WHITE_WALL_SLABS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_DIRT = block(ElementureModBlocks.BOARDINGSCHOOL_DIRT,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_DIRT_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_DIRT_STAIRS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_DIRT_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_DIRT_SLABS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_ROOF_1 = block(ElementureModBlocks.BOARDINGSCHOOL_ROOF_1,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_ROOF_1_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_ROOF_1_STAIRS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_ROOF_1_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_ROOF_1_SLABS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_GRAYCONCRETE = block(ElementureModBlocks.BOARDINGSCHOOL_GRAYCONCRETE,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_GRAY_CONCRETE_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_GRAY_CONCRETE_STAIRS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_GRAY_CONCRETE_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_GRAY_CONCRETE_SLABS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_PLANKS = block(ElementureModBlocks.BOARDINGSCHOOL_PLANKS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_PLANKS_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_PLANKS_STAIRS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_PLANKS_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_PLANKS_SLABS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_RUST_BLOCKS = block(ElementureModBlocks.BOARDINGSCHOOL_RUST_BLOCKS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_RUST_BLOCK_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_RUST_BLOCK_STAIRS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> RANDOMTELEPORT_BLOCK = block(ElementureModBlocks.RANDOMTELEPORT_BLOCK, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> SILVERSHORESSAND = block(ElementureModBlocks.SILVERSHORESSAND, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_BLUE_WALL = block(ElementureModBlocks.BOARDINGSCHOOL_BLUE_WALL, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_BLUEWALL_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_BLUEWALL_STAIRS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_BLUEWALL_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_BLUEWALL_SLABS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_YELLOW_WALL = block(ElementureModBlocks.BOARDINGSCHOOL_YELLOW_WALL, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_YELLOW_WALL_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_YELLOW_WALL_STAIRS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_YELLOW_WALL_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_YELLOW_WALL_SLABS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_PINK_WALL = block(ElementureModBlocks.BOARDINGSCHOOL_PINK_WALL, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_PINK_WALL_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_PINK_WALL_STAIRS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_PINK_WALL_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_PINK_WALL_SLABS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_WHITE_WALL = block(ElementureModBlocks.BOARDINGSCHOOL_WHITE_WALL, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_WHITE_WALL_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_WHITE_WALL_STAIRS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_WHITE_WALL_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_WHITE_WALL_SLABS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_DIRT = block(ElementureModBlocks.BOARDINGSCHOOL_DIRT, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_DIRT_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_DIRT_STAIRS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_DIRT_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_DIRT_SLABS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_ROOF_1 = block(ElementureModBlocks.BOARDINGSCHOOL_ROOF_1, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_ROOF_1_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_ROOF_1_STAIRS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_ROOF_1_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_ROOF_1_SLABS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_GRAYCONCRETE = block(ElementureModBlocks.BOARDINGSCHOOL_GRAYCONCRETE, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_GRAY_CONCRETE_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_GRAY_CONCRETE_STAIRS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_GRAY_CONCRETE_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_GRAY_CONCRETE_SLABS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_PLANKS = block(ElementureModBlocks.BOARDINGSCHOOL_PLANKS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_PLANKS_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_PLANKS_STAIRS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_PLANKS_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_PLANKS_SLABS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_RUST_BLOCKS = block(ElementureModBlocks.BOARDINGSCHOOL_RUST_BLOCKS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_RUST_BLOCK_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_RUST_BLOCK_STAIRS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
 	public static final RegistryObject<Item> MEMORYFRAGMENT = REGISTRY.register("memoryfragment", () -> new MemoryfragmentItem());
 	public static final RegistryObject<Item> RAREMEMORYFRAGMENT = REGISTRY.register("rarememoryfragment", () -> new RarememoryfragmentItem());
 	public static final RegistryObject<Item> COREMEMORYFRAGMENT = REGISTRY.register("corememoryfragment", () -> new CorememoryfragmentItem());
@@ -2584,22 +2211,17 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> IMMORTALIZER = REGISTRY.register("immortalizer", () -> new ImmortalizerItem());
 	public static final RegistryObject<Item> OLDDOWSINGSTICK = REGISTRY.register("olddowsingstick", () -> new OlddowsingstickItem());
 	public static final RegistryObject<Item> CURSEDFORGOTTENSEEDS = REGISTRY.register("cursedforgottenseeds", () -> new CursedforgottenseedsItem());
-	public static final RegistryObject<Item> CURSEDFORGOTTENFRAGMENT = REGISTRY.register("cursedforgottenfragment",
-			() -> new CursedforgottenfragmentItem());
-	public static final RegistryObject<Item> TURTLEARMOR_CHESTPLATE = REGISTRY.register("turtlearmor_chestplate",
-			() -> new TurtlearmorItem.Chestplate());
+	public static final RegistryObject<Item> CURSEDFORGOTTENFRAGMENT = REGISTRY.register("cursedforgottenfragment", () -> new CursedforgottenfragmentItem());
+	public static final RegistryObject<Item> TURTLEARMOR_CHESTPLATE = REGISTRY.register("turtlearmor_chestplate", () -> new TurtlearmorItem.Chestplate());
 	public static final RegistryObject<Item> TURTLEARMOR_LEGGINGS = REGISTRY.register("turtlearmor_leggings", () -> new TurtlearmorItem.Leggings());
 	public static final RegistryObject<Item> TURTLEARMOR_BOOTS = REGISTRY.register("turtlearmor_boots", () -> new TurtlearmorItem.Boots());
 	public static final RegistryObject<Item> CORRUPTFLOWEREASTEREGG = block(ElementureModBlocks.CORRUPTFLOWEREASTEREGG, null);
 	public static final RegistryObject<Item> ABYSSALFIRE = block(ElementureModBlocks.ABYSSALFIRE, null);
 	public static final RegistryObject<Item> FIRELIQUID_BUCKET = REGISTRY.register("fireliquid_bucket", () -> new FireliquidItem());
-	public static final RegistryObject<Item> EARTHELEMENTLIQUID_BUCKET = REGISTRY.register("earthelementliquid_bucket",
-			() -> new EarthelementliquidItem());
+	public static final RegistryObject<Item> EARTHELEMENTLIQUID_BUCKET = REGISTRY.register("earthelementliquid_bucket", () -> new EarthelementliquidItem());
 	public static final RegistryObject<Item> AIRELEMENTLIQUID_BUCKET = REGISTRY.register("airelementliquid_bucket", () -> new AirelementliquidItem());
-	public static final RegistryObject<Item> WATERELEMENTLIQUID_BUCKET = REGISTRY.register("waterelementliquid_bucket",
-			() -> new WaterelementliquidItem());
-	public static final RegistryObject<Item> LIGHTNINGELEMENTLIQUID_BUCKET = REGISTRY.register("lightningelementliquid_bucket",
-			() -> new LightningelementliquidItem());
+	public static final RegistryObject<Item> WATERELEMENTLIQUID_BUCKET = REGISTRY.register("waterelementliquid_bucket", () -> new WaterelementliquidItem());
+	public static final RegistryObject<Item> LIGHTNINGELEMENTLIQUID_BUCKET = REGISTRY.register("lightningelementliquid_bucket", () -> new LightningelementliquidItem());
 	public static final RegistryObject<Item> FIREBALLPROP = REGISTRY.register("fireballprop", () -> new FireballpropItem());
 	public static final RegistryObject<Item> THEBEGINNINGOFEVERYTHING = block(ElementureModBlocks.THEBEGINNINGOFEVERYTHING, null);
 	public static final RegistryObject<Item> STRUCTUREITEMTESTER = REGISTRY.register("structureitemtester", () -> new StructureitemtesterItem());
@@ -2648,8 +2270,7 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> SPACEGOOP = REGISTRY.register("spacegoop", () -> new SpacegoopItem());
 	public static final RegistryObject<Item> NETHERSTAR_BIOME_ALPHAN = block(ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN, null);
 	public static final RegistryObject<Item> NETHERSTAR_BIOME_OMEGAN = block(ElementureModBlocks.NETHERSTAR_BIOME_OMEGAN, null);
-	public static final RegistryObject<Item> ANIMOCHROMATICPRISMATICCRYSTALBLOCK = block(ElementureModBlocks.ANIMOCHROMATICPRISMATICCRYSTALBLOCK,
-			null);
+	public static final RegistryObject<Item> ANIMOCHROMATICPRISMATICCRYSTALBLOCK = block(ElementureModBlocks.ANIMOCHROMATICPRISMATICCRYSTALBLOCK, null);
 	public static final RegistryObject<Item> MINOSKULLSTICK = REGISTRY.register("minoskullstick", () -> new MinoskullstickItem());
 	public static final RegistryObject<Item> HARPOON_USED = REGISTRY.register("harpoon_used", () -> new HarpoonUsedItem());
 	public static final RegistryObject<Item> NETHERSTAR_PRISMATICSPAWNER = block(ElementureModBlocks.NETHERSTAR_PRISMATICSPAWNER, null);
@@ -2685,20 +2306,15 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> CRYSTALPALACESKY = block(ElementureModBlocks.CRYSTALPALACESKY, null);
 	public static final RegistryObject<Item> TRIGGEREDSIRENHEART = block(ElementureModBlocks.TRIGGEREDSIRENHEART, null);
 	public static final RegistryObject<Item> MYCENABRICK_POT = block(ElementureModBlocks.MYCENABRICK_POT, null);
-	public static final RegistryObject<Item> NIGHTMARE_SPIKE = REGISTRY.register("nightmare_spike_spawn_egg",
-			() -> new ForgeSpawnEggItem(ElementureModEntities.NIGHTMARE_SPIKE, -16777216, -16777216, new Item.Properties().tab(null)));
+	public static final RegistryObject<Item> NIGHTMARE_SPIKE_SPAWN_EGG = REGISTRY.register("nightmare_spike_spawn_egg", () -> new ForgeSpawnEggItem(ElementureModEntities.NIGHTMARE_SPIKE, -16777216, -16777216, new Item.Properties().tab(null)));
 	public static final RegistryObject<Item> INVISIBLEOMEGAN = block(ElementureModBlocks.INVISIBLEOMEGAN, null);
 	public static final RegistryObject<Item> CURSEDMEMORYPLANT_1 = block(ElementureModBlocks.CURSEDMEMORYPLANT_1, null);
 	public static final RegistryObject<Item> CURSEDMEMORYPLANT_2 = block(ElementureModBlocks.CURSEDMEMORYPLANT_2, null);
 	public static final RegistryObject<Item> CURSEDMEMORYPLANT_3 = block(ElementureModBlocks.CURSEDMEMORYPLANT_3, null);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_RUST_BLOCK_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_RUST_BLOCK_SLABS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_WHITEBRICK_BLOCKS = block(ElementureModBlocks.BOARDINGSCHOOL_WHITEBRICK_BLOCKS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_WHITE_BRICK_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_WHITE_BRICK_STAIRS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
-	public static final RegistryObject<Item> BOARDINGSCHOOL_WHITE_BRICK_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_WHITE_BRICK_SLABS,
-			ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_RUST_BLOCK_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_RUST_BLOCK_SLABS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_WHITEBRICK_BLOCKS = block(ElementureModBlocks.BOARDINGSCHOOL_WHITEBRICK_BLOCKS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_WHITE_BRICK_STAIRS = block(ElementureModBlocks.BOARDINGSCHOOL_WHITE_BRICK_STAIRS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
+	public static final RegistryObject<Item> BOARDINGSCHOOL_WHITE_BRICK_SLABS = block(ElementureModBlocks.BOARDINGSCHOOL_WHITE_BRICK_SLABS, ElementureModTabs.TAB_FORGOTTENBLOCKS_TAB);
 	public static final RegistryObject<Item> CANGLER = REGISTRY.register("cangler", () -> new CanglerItem());
 	public static final RegistryObject<Item> FISHNCHIPS = REGISTRY.register("fishnchips", () -> new FishnchipsItem());
 	public static final RegistryObject<Item> REDSTONEFISH = REGISTRY.register("redstonefish", () -> new RedstonefishItem());
@@ -2710,8 +2326,7 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> TARWORMLING = REGISTRY.register("tarwormling", () -> new TarwormlingItem());
 	public static final RegistryObject<Item> CORMUNCULUS_JELLY = REGISTRY.register("cormunculus_jelly", () -> new CormunculusJellyItem());
 	public static final RegistryObject<Item> COOKEDDAGGERLOACH = REGISTRY.register("cookeddaggerloach", () -> new CookeddaggerloachItem());
-	public static final RegistryObject<Item> COOKEDRAREDAGGERLOACH = REGISTRY.register("cookedraredaggerloach",
-			() -> new CookedraredaggerloachItem());
+	public static final RegistryObject<Item> COOKEDRAREDAGGERLOACH = REGISTRY.register("cookedraredaggerloach", () -> new CookedraredaggerloachItem());
 	public static final RegistryObject<Item> COOKEDREDSNAPPER = REGISTRY.register("cookedredsnapper", () -> new CookedredsnapperItem());
 	public static final RegistryObject<Item> CORMUNCULUS_CLUB = REGISTRY.register("cormunculus_club", () -> new CormunculusClubItem());
 	public static final RegistryObject<Item> WEAPONARTITEM = REGISTRY.register("weaponartitem", () -> new WeaponArtItemItem());

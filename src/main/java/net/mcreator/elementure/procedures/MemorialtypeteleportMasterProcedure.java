@@ -20,14 +20,12 @@ public class MemorialtypeteleportMasterProcedure {
 		if (entity == null)
 			return;
 		if ((entity.getPersistentData().getString("memorial_type")).equals("multi_ender_memorial")) {
-			entity.getPersistentData().putDouble("ender_memorial_curse",
-					(entity.getPersistentData().getDouble("ender_memorial_curse") + Math.random() + 2 + 0.5));
+			entity.getPersistentData().putDouble("ender_memorial_curse", (entity.getPersistentData().getDouble("ender_memorial_curse") + Math.random() + 2 + 0.5));
 			if (Math.random() >= 0.25 && entity.getPersistentData().getDouble("ender_memorial_curse") >= 20) {
 				entity.hurt(DamageSource.OUT_OF_WORLD, 6);
 			} else if (entity.getPersistentData().getDouble("ender_memorial_curse") >= 30) {
 				if (entity instanceof ServerPlayer _player && !_player.level.isClientSide()) {
-					ResourceKey<Level> destinationType = ResourceKey.create(Registry.DIMENSION_REGISTRY,
-							new ResourceLocation("elementure:thepitlands"));
+					ResourceKey<Level> destinationType = ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("elementure:thepitlands"));
 					if (_player.level.dimension() == destinationType)
 						return;
 					ServerLevel nextLevel = _player.server.getLevel(destinationType);

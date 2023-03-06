@@ -40,33 +40,19 @@ public class CormunculusCleansingtorchEffectProcedure {
 		double darkflame_level = 0;
 		double darkflame_time = 0;
 		relic_item = new ItemStack(ElementureModItems.CORMUNCULUS_CLEANSINGTORCH.get());
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).getItem() == relic_item.getItem()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_2).getItem() == relic_item.getItem()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_3).getItem() == relic_item.getItem()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_4).getItem() == relic_item.getItem()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_5).getItem() == relic_item.getItem()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_6).getItem() == relic_item.getItem()) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).getItem() == relic_item.getItem()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_2).getItem() == relic_item.getItem()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_3).getItem() == relic_item.getItem()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_4).getItem() == relic_item.getItem()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_5).getItem() == relic_item.getItem()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_6).getItem() == relic_item.getItem()) {
 			if (world.dayTime() % 40 <= 0) {
-				if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WITHER)
-						? _livEnt.getEffect(MobEffects.WITHER).getDuration()
-						: 0) != 0) {
-					wither_time = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WITHER)
-							? _livEnt.getEffect(MobEffects.WITHER).getDuration()
-							: 0;
-					wither_level = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WITHER)
-							? _livEnt.getEffect(MobEffects.WITHER).getAmplifier()
-							: 0;
+				if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WITHER) ? _livEnt.getEffect(MobEffects.WITHER).getDuration() : 0) != 0) {
+					wither_time = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WITHER) ? _livEnt.getEffect(MobEffects.WITHER).getDuration() : 0;
+					wither_level = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WITHER) ? _livEnt.getEffect(MobEffects.WITHER).getAmplifier() : 0;
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(MobEffects.WITHER);
-					if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WITHER)
-							? _livEnt.getEffect(MobEffects.WITHER).getAmplifier()
-							: 0) == 0) {
+					if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WITHER) ? _livEnt.getEffect(MobEffects.WITHER).getAmplifier() : 0) == 0) {
 						if (entity instanceof LivingEntity _entity)
 							_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, (int) (wither_time - 40), 0));
 					} else {
@@ -74,26 +60,17 @@ public class CormunculusCleansingtorchEffectProcedure {
 							_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, (int) (wither_time - 10), (int) (wither_time - 1)));
 					}
 				}
-				if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.DARKFLAME.get())
-						? _livEnt.getEffect(ElementureModMobEffects.DARKFLAME.get()).getDuration()
-						: 0) != 0) {
-					darkflame_time = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.DARKFLAME.get())
-							? _livEnt.getEffect(ElementureModMobEffects.DARKFLAME.get()).getDuration()
-							: 0;
-					darkflame_level = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.DARKFLAME.get())
-							? _livEnt.getEffect(ElementureModMobEffects.DARKFLAME.get()).getAmplifier()
-							: 0;
+				if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.DARKFLAME.get()) ? _livEnt.getEffect(ElementureModMobEffects.DARKFLAME.get()).getDuration() : 0) != 0) {
+					darkflame_time = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.DARKFLAME.get()) ? _livEnt.getEffect(ElementureModMobEffects.DARKFLAME.get()).getDuration() : 0;
+					darkflame_level = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.DARKFLAME.get()) ? _livEnt.getEffect(ElementureModMobEffects.DARKFLAME.get()).getAmplifier() : 0;
 					if (entity instanceof LivingEntity _entity)
 						_entity.removeEffect(ElementureModMobEffects.DARKFLAME.get());
-					if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.DARKFLAME.get())
-							? _livEnt.getEffect(ElementureModMobEffects.DARKFLAME.get()).getAmplifier()
-							: 0) == 0) {
+					if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.DARKFLAME.get()) ? _livEnt.getEffect(ElementureModMobEffects.DARKFLAME.get()).getAmplifier() : 0) == 0) {
 						if (entity instanceof LivingEntity _entity)
 							_entity.addEffect(new MobEffectInstance(ElementureModMobEffects.DARKFLAME.get(), (int) (darkflame_time - 40), 0));
 					} else {
 						if (entity instanceof LivingEntity _entity)
-							_entity.addEffect(new MobEffectInstance(ElementureModMobEffects.DARKFLAME.get(), (int) (darkflame_time - 10),
-									(int) (darkflame_level - 1)));
+							_entity.addEffect(new MobEffectInstance(ElementureModMobEffects.DARKFLAME.get(), (int) (darkflame_time - 10), (int) (darkflame_level - 1)));
 					}
 				}
 			}

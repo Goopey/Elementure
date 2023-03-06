@@ -33,11 +33,10 @@ public class MerthiumoreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new MerthiumoreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("elementure:merthiumore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ElementureModBlocks.MERTHIUMORE.get().defaultBlockState())), 9));
+		CONFIGURED_FEATURE = FeatureUtils.register("elementure:merthiumore", FEATURE,
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ElementureModBlocks.MERTHIUMORE.get().defaultBlockState())), 9));
 		PLACED_FEATURE = PlacementUtils.register("elementure:merthiumore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(4), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(2), VerticalAnchor.absolute(20)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(4), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(2), VerticalAnchor.absolute(20)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

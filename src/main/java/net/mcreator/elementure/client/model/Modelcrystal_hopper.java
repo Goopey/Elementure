@@ -54,84 +54,52 @@ public class Modelcrystal_hopper<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition mid_gem = partdefinition.addOrReplaceChild("mid_gem",
-				CubeListBuilder.create().texOffs(12, 14).addBox(-3.5F, -13.0F, -4.5F, 7.0F, 7.0F, 9.0F, new CubeDeformation(0.0F)).texOffs(12, 14)
-						.addBox(-4.5F, -17.0F, -2.5F, 9.0F, 10.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(12, 14)
-						.addBox(-2.5F, -20.0F, -3.5F, 5.0F, 9.0F, 7.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 23.0F, 0.0F));
-		PartDefinition gem_8_r1 = mid_gem.addOrReplaceChild("gem_8_r1",
-				CubeListBuilder.create().texOffs(56, 0).addBox(0.5F, -1.5F, -2.4683F, 2.0F, 13.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition mid_gem = partdefinition.addOrReplaceChild("mid_gem", CubeListBuilder.create().texOffs(12, 14).addBox(-3.5F, -13.0F, -4.5F, 7.0F, 7.0F, 9.0F, new CubeDeformation(0.0F)).texOffs(12, 14)
+				.addBox(-4.5F, -17.0F, -2.5F, 9.0F, 10.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(12, 14).addBox(-2.5F, -20.0F, -3.5F, 5.0F, 9.0F, 7.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 23.0F, 0.0F));
+		PartDefinition gem_8_r1 = mid_gem.addOrReplaceChild("gem_8_r1", CubeListBuilder.create().texOffs(56, 0).addBox(0.5F, -1.5F, -2.4683F, 2.0F, 13.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.2346F, -11.4286F, -5.5317F, 0.7615F, 0.6471F, 0.5321F));
-		PartDefinition gem_7_r1 = mid_gem.addOrReplaceChild("gem_7_r1",
-				CubeListBuilder.create().texOffs(56, 0).addBox(0.0F, -1.5F, 0.0F, 2.0F, 11.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition gem_7_r1 = mid_gem.addOrReplaceChild("gem_7_r1", CubeListBuilder.create().texOffs(56, 0).addBox(0.0F, -1.5F, 0.0F, 2.0F, 11.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, -9.3219F, 4.9328F, -0.7615F, -0.6471F, 0.5321F));
-		PartDefinition gem_6_r1 = mid_gem.addOrReplaceChild("gem_6_r1",
-				CubeListBuilder.create().texOffs(56, 0).addBox(-1.0F, -21.0F, -2.01F, 2.0F, 21.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition gem_6_r1 = mid_gem.addOrReplaceChild("gem_6_r1", CubeListBuilder.create().texOffs(56, 0).addBox(-1.0F, -21.0F, -2.01F, 2.0F, 21.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.2618F, 0.0F, 0.5236F));
-		PartDefinition gem_5_r1 = mid_gem.addOrReplaceChild("gem_5_r1",
-				CubeListBuilder.create().texOffs(56, 0).addBox(-1.0F, -17.0F, -2.01F, 2.0F, 17.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition gem_5_r1 = mid_gem.addOrReplaceChild("gem_5_r1", CubeListBuilder.create().texOffs(56, 0).addBox(-1.0F, -17.0F, -2.01F, 2.0F, 17.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.2618F, 0.0F, -0.5236F));
-		PartDefinition gem_4_r1 = mid_gem.addOrReplaceChild("gem_4_r1",
-				CubeListBuilder.create().texOffs(56, 0).addBox(-1.0F, -18.0F, -0.01F, 2.0F, 18.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition gem_4_r1 = mid_gem.addOrReplaceChild("gem_4_r1", CubeListBuilder.create().texOffs(56, 0).addBox(-1.0F, -18.0F, -0.01F, 2.0F, 18.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.2618F, 0.0F, -0.5236F));
-		PartDefinition gem_3_r1 = mid_gem.addOrReplaceChild("gem_3_r1",
-				CubeListBuilder.create().texOffs(56, 0).addBox(-1.0F, -15.0F, -0.01F, 2.0F, 15.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition gem_3_r1 = mid_gem.addOrReplaceChild("gem_3_r1", CubeListBuilder.create().texOffs(56, 0).addBox(-1.0F, -15.0F, -0.01F, 2.0F, 15.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.2618F, 0.0F, 0.5236F));
-		PartDefinition gem_2_r1 = mid_gem.addOrReplaceChild("gem_2_r1",
-				CubeListBuilder.create().texOffs(56, 0).addBox(0.0F, -17.0F, -1.01F, 2.0F, 17.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition gem_2_r1 = mid_gem.addOrReplaceChild("gem_2_r1", CubeListBuilder.create().texOffs(56, 0).addBox(0.0F, -17.0F, -1.01F, 2.0F, 17.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, 0.3927F));
-		PartDefinition gem_1_r1 = mid_gem.addOrReplaceChild("gem_1_r1",
-				CubeListBuilder.create().texOffs(56, 0).addBox(-2.0F, -16.0F, -1.01F, 2.0F, 16.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition gem_1_r1 = mid_gem.addOrReplaceChild("gem_1_r1", CubeListBuilder.create().texOffs(56, 0).addBox(-2.0F, -16.0F, -1.01F, 2.0F, 16.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.0F, -0.3927F));
 		PartDefinition leg9 = partdefinition.addOrReplaceChild("leg9", CubeListBuilder.create(), PartPose.offset(-8.0F, 13.5F, -4.0F));
-		PartDefinition leg9_r1 = leg9.addOrReplaceChild("leg9_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -2.5F, -1.0F, 2.0F, 13.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.0436F, 0.0F));
+		PartDefinition leg9_r1 = leg9.addOrReplaceChild("leg9_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -2.5F, -1.0F, 2.0F, 13.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.0436F, 0.0F));
 		PartDefinition leg8 = partdefinition.addOrReplaceChild("leg8", CubeListBuilder.create(), PartPose.offset(-8.0F, 13.5F, 4.0F));
-		PartDefinition leg8_r1 = leg8.addOrReplaceChild("leg8_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -2.5F, -1.0F, 2.0F, 13.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.0436F, 0.0F));
+		PartDefinition leg8_r1 = leg8.addOrReplaceChild("leg8_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -2.5F, -1.0F, 2.0F, 13.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.0436F, 0.0F));
 		PartDefinition leg7 = partdefinition.addOrReplaceChild("leg7", CubeListBuilder.create(), PartPose.offset(8.0F, 13.5F, 4.0F));
-		PartDefinition leg7_r1 = leg7.addOrReplaceChild("leg7_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -2.5F, -1.0F, 2.0F, 13.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.0436F, 0.0F));
-		PartDefinition leg6_extra = partdefinition.addOrReplaceChild("leg6_extra",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -0.25F, -1.0F, 2.0F, 15.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition leg7_r1 = leg7.addOrReplaceChild("leg7_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -2.5F, -1.0F, 2.0F, 13.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.0436F, 0.0F));
+		PartDefinition leg6_extra = partdefinition.addOrReplaceChild("leg6_extra", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -0.25F, -1.0F, 2.0F, 15.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(7.0F, 9.25F, 9.0F, 0.0F, -0.0436F, 0.0F));
-		PartDefinition leg7_r2 = leg6_extra.addOrReplaceChild("leg7_r2",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition leg7_r2 = leg6_extra.addOrReplaceChild("leg7_r2", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -0.5F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, -1.75F, 0.0F, 0.0F, -0.0436F, 0.0F));
 		PartDefinition leg5 = partdefinition.addOrReplaceChild("leg5", CubeListBuilder.create(), PartPose.offset(8.0F, 11.5F, 0.0F));
-		PartDefinition leg5_r1 = leg5.addOrReplaceChild("leg5_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -2.5F, -1.0F, 2.0F, 15.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.0436F, 0.0F));
+		PartDefinition leg5_r1 = leg5.addOrReplaceChild("leg5_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -2.5F, -1.0F, 2.0F, 15.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.0436F, 0.0F));
 		PartDefinition leg3 = partdefinition.addOrReplaceChild("leg3", CubeListBuilder.create(), PartPose.offset(7.0F, 9.25F, -9.0F));
-		PartDefinition leg3_r1 = leg3.addOrReplaceChild("leg3_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -4.25F, -1.0F, 2.0F, 19.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.0436F, 0.0F));
+		PartDefinition leg3_r1 = leg3.addOrReplaceChild("leg3_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -4.25F, -1.0F, 2.0F, 19.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.0436F, 0.0F));
 		PartDefinition leg_10 = partdefinition.addOrReplaceChild("leg_10", CubeListBuilder.create(), PartPose.offset(8.0F, 13.5F, -4.0F));
-		PartDefinition leg10_r1 = leg_10.addOrReplaceChild("leg10_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -2.5F, -1.0F, 2.0F, 13.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition leg10_r1 = leg_10.addOrReplaceChild("leg10_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -2.5F, -1.0F, 2.0F, 13.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.0436F, 0.0F));
 		PartDefinition leg_4 = partdefinition.addOrReplaceChild("leg_4", CubeListBuilder.create(), PartPose.offset(-7.0F, 9.25F, -9.0F));
-		PartDefinition leg4_r1 = leg_4.addOrReplaceChild("leg4_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -7.25F, -1.0F, 2.0F, 22.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition leg4_r1 = leg_4.addOrReplaceChild("leg4_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -7.25F, -1.0F, 2.0F, 22.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.0436F, 0.0F));
 		PartDefinition leg2 = partdefinition.addOrReplaceChild("leg2", CubeListBuilder.create(), PartPose.offset(-8.0F, 11.5F, 0.0F));
-		PartDefinition leg2_r1 = leg2.addOrReplaceChild("leg2_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -2.5F, -1.0F, 2.0F, 15.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.0436F, 0.0F));
-		PartDefinition leg1_extra = partdefinition.addOrReplaceChild("leg1_extra",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -3.25F, -1.0F, 2.0F, 18.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition leg2_r1 = leg2.addOrReplaceChild("leg2_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -2.5F, -1.0F, 2.0F, 15.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.0436F, 0.0F));
+		PartDefinition leg1_extra = partdefinition.addOrReplaceChild("leg1_extra", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -3.25F, -1.0F, 2.0F, 18.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(-7.0F, 9.25F, 9.0F, 0.0F, -0.0436F, 0.0F));
-		PartDefinition leg11_r1 = leg1_extra.addOrReplaceChild("leg11_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -1.5F, -1.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition leg11_r1 = leg1_extra.addOrReplaceChild("leg11_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -1.5F, -1.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, -5.75F, 0.0F, 0.0F, -0.0436F, 0.0F));
-		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(16, 45).addBox(-5.0F, -8.0F, -7.0F, 10.0F, 5.0F, 14.0F, new CubeDeformation(0.0F)).texOffs(20, 49)
-						.addBox(-6.0F, -8.01F, -5.0F, 12.0F, 5.0F, 10.0F, new CubeDeformation(0.0F)).texOffs(0, 31)
-						.addBox(-3.5F, -7.0F, -8.0F, 7.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 24.0F, 0.0F));
+		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main", CubeListBuilder.create().texOffs(16, 45).addBox(-5.0F, -8.0F, -7.0F, 10.0F, 5.0F, 14.0F, new CubeDeformation(0.0F)).texOffs(20, 49)
+				.addBox(-6.0F, -8.01F, -5.0F, 12.0F, 5.0F, 10.0F, new CubeDeformation(0.0F)).texOffs(0, 31).addBox(-3.5F, -7.0F, -8.0F, 7.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
 
@@ -150,8 +118,7 @@ public class Modelcrystal_hopper<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		mid_gem.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		leg9.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		leg8.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);

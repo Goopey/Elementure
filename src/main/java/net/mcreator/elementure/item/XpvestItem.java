@@ -88,14 +88,10 @@ public abstract class XpvestItem extends ArmorItem {
 				@Override
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body",
-							new Modelxp_vest(Minecraft.getInstance().getEntityModels().bakeLayer(Modelxp_vest.LAYER_LOCATION)).bb_main, "left_arm",
-							new Modelxp_vest(Minecraft.getInstance().getEntityModels().bakeLayer(Modelxp_vest.LAYER_LOCATION)).bone, "right_arm",
-							new Modelxp_vest(Minecraft.getInstance().getEntityModels().bakeLayer(Modelxp_vest.LAYER_LOCATION)).bone, "head",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
-							new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new Modelxp_vest(Minecraft.getInstance().getEntityModels().bakeLayer(Modelxp_vest.LAYER_LOCATION)).bb_main, "left_arm",
+							new Modelxp_vest(Minecraft.getInstance().getEntityModels().bakeLayer(Modelxp_vest.LAYER_LOCATION)).bone, "right_arm", new Modelxp_vest(Minecraft.getInstance().getEntityModels().bakeLayer(Modelxp_vest.LAYER_LOCATION)).bone,
+							"head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()),
+							"left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
 					armorModel.young = living.isBaby();

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -9,7 +9,6 @@
         "data": {
           "image": "green_gill.png",
           "use1Xscale": false,
-          "name": "green_gill.png",
           "x": 169,
           "y": 171
         }
@@ -19,7 +18,6 @@
         "data": {
           "image": "fishing_mycena_mushroom_cloud.png",
           "use1Xscale": false,
-          "name": "fishing_mycena_mushroom_cloud.png",
           "x": 134,
           "y": 120
         }

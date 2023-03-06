@@ -9,8 +9,7 @@ public class TarwormChargeProcedure {
 		if (entity == null)
 			return;
 		if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null) {
-			entity.setDeltaMovement(
-					new Vec3((entity.getDeltaMovement().x() * 0.88), (entity.getDeltaMovement().y() * 0.88), (entity.getDeltaMovement().z() * 0.88)));
+			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x() * 0.88), (entity.getDeltaMovement().y() * 0.88), (entity.getDeltaMovement().z() * 0.88)));
 		}
 	}
 }

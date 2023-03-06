@@ -18,10 +18,9 @@ import java.util.List;
 
 public class HightrahiraItem extends Item {
 	public HightrahiraItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(6).saturationMod(1.2f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(1.2f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

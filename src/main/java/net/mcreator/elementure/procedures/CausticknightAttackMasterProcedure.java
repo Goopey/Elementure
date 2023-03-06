@@ -30,8 +30,7 @@ public class CausticknightAttackMasterProcedure {
 		double playX = 0;
 		double playZ = 0;
 		double playY = 0;
-		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)
-				&& (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).isAlive()) {
+		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null) && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).isAlive()) {
 			if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.MOVEMENT_SPEED) : false) {
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.FALLING_HONEY, (entity.getX()), (entity.getY()), (entity.getZ()), 6, 1.2, 1.2, 1.2, 0.22);
@@ -71,8 +70,7 @@ public class CausticknightAttackMasterProcedure {
 								}
 							}.getArrow(projectileLevel, entity, (float) 0.5, 0);
 							_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-							_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, (float) 0.33,
-									0);
+							_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, (float) 0.33, 0);
 							projectileLevel.addFreshEntity(_entityToSpawn);
 						}
 					}
@@ -84,8 +82,7 @@ public class CausticknightAttackMasterProcedure {
 		}
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator instanceof Player) {
 					if ((entityiterator.getDisplayName().getString()).equals("Lebigmaigre")) {

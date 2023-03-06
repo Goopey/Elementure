@@ -16,8 +16,7 @@ public class BedofchaosTarBallGenProcedure {
 		locZ = -4;
 		for (int index0 = 0; index0 < (int) (729); index0++) {
 			if (locX * locX + locY * locY + locZ * locZ < 16
-					&& ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.WATER
-							|| (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.TAR.get())) {
+					&& ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.WATER || (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.TAR.get())) {
 				if (locX * locX + locY * locY + locZ * locZ > 8 && Math.random() < 0.025) {
 					if (Math.random() < 0.5) {
 						if (Math.random() < 0.75) {

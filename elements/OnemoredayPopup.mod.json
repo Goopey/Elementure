@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -9,7 +9,6 @@
         "data": {
           "image": "music_box_popup_2.png",
           "use1Xscale": false,
-          "name": "music_box_popup_2.png",
           "x": 1,
           "y": 1
         }
@@ -19,7 +18,6 @@
         "data": {
           "image": "music_dot.png",
           "use1Xscale": false,
-          "name": "music_dot.png",
           "x": 1,
           "y": 5
         }
@@ -29,7 +27,6 @@
         "data": {
           "image": "music_wheel.png",
           "use1Xscale": false,
-          "name": "music_wheel.png",
           "x": 109,
           "y": 5
         }
@@ -37,12 +34,14 @@
       {
         "type": "label",
         "data": {
-          "text": "One More Day",
+          "name": "label_one_more_day",
+          "text": {
+            "fixedValue": "One More Day"
+          },
           "color": {
             "value": -203,
             "falpha": 0.0
           },
-          "name": "One More Day",
           "x": 15,
           "y": 4
         }
@@ -50,12 +49,14 @@
       {
         "type": "label",
         "data": {
-          "text": "By:Lena Raine",
+          "name": "label_bylena_raine",
+          "text": {
+            "fixedValue": "By:Lena Raine"
+          },
           "color": {
             "value": -203,
             "falpha": 0.0
           },
-          "name": "By:Lena Raine",
           "x": 15,
           "y": 12
         }

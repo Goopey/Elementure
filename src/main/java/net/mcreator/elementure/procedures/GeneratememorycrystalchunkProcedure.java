@@ -14,11 +14,8 @@ public class GeneratememorycrystalchunkProcedure {
 		CoordsY = -3;
 		CoordsZ = -3;
 		for (int index0 = 0; index0 < (int) (343); index0++) {
-			if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 9
-					&& (!((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-							.getBlock() == ElementureModBlocks.MEMORYCRYSTALSHELL.get())
-							|| !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-									.getBlock() == ElementureModBlocks.MEMORYCRYSTAL.get()))) {
+			if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 9 && (!((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MEMORYCRYSTALSHELL.get())
+					|| !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MEMORYCRYSTAL.get()))) {
 				world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MEMORYCRYSTAL.get().defaultBlockState(), 3);
 			}
 			CoordsX = CoordsX + 1;

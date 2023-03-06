@@ -15,8 +15,7 @@ import net.mcreator.elementure.init.ElementureModFluids;
 
 public class NetherumfluidBlock extends LiquidBlock {
 	public NetherumfluidBlock() {
-		super(() -> ElementureModFluids.NETHERUMFLUID.get(),
-				BlockBehaviour.Properties.of(Material.LAVA, MaterialColor.WOOL).strength(2000f).lightLevel(s -> 15).noCollission().noLootTable());
+		super(() -> ElementureModFluids.NETHERUMFLUID.get(), BlockBehaviour.Properties.of(Material.LAVA, MaterialColor.WOOL).strength(2000f).lightLevel(s -> 15).noCollission().noLootTable());
 	}
 
 	@Override

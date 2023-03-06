@@ -240,8 +240,7 @@ public class ElementureModModels {
 		event.registerLayerDefinition(Modelsword_temple_armor.LAYER_LOCATION, Modelsword_temple_armor::createBodyLayer);
 		event.registerLayerDefinition(Modelarchkassem_cloak.LAYER_LOCATION, Modelarchkassem_cloak::createBodyLayer);
 		event.registerLayerDefinition(Modelobleck_cleric.LAYER_LOCATION, Modelobleck_cleric::createBodyLayer);
-		event.registerLayerDefinition(Modelmycena_shroom_villager_leatherworker.LAYER_LOCATION,
-				Modelmycena_shroom_villager_leatherworker::createBodyLayer);
+		event.registerLayerDefinition(Modelmycena_shroom_villager_leatherworker.LAYER_LOCATION, Modelmycena_shroom_villager_leatherworker::createBodyLayer);
 		event.registerLayerDefinition(Modeltinyclayman.LAYER_LOCATION, Modeltinyclayman::createBodyLayer);
 		event.registerLayerDefinition(ModelechoFruit.LAYER_LOCATION, ModelechoFruit::createBodyLayer);
 		event.registerLayerDefinition(Modelforgotten_watcher_2.LAYER_LOCATION, Modelforgotten_watcher_2::createBodyLayer);

@@ -21,8 +21,7 @@ public class WindyshoresIslandGenProcedure {
 		locZ = -18;
 		for (int index0 = 0; index0 < (int) (1369); index0++) {
 			if (locX * locX + locZ * locZ < 324 && world.isEmptyBlock(new BlockPos(x + locX, y, z + locZ))
-					&& (world.isEmptyBlock(new BlockPos(x + locX, y - 1, z + locZ))
-							|| (world.getBlockState(new BlockPos(x + locX, y - 1, z + locZ))).getBlock() == ElementureModBlocks.CLOUDBLOCK.get())) {
+					&& (world.isEmptyBlock(new BlockPos(x + locX, y - 1, z + locZ)) || (world.getBlockState(new BlockPos(x + locX, y - 1, z + locZ))).getBlock() == ElementureModBlocks.CLOUDBLOCK.get())) {
 				world.setBlock(new BlockPos(x + locX, y, z + locZ), ElementureModBlocks.CLOUDBLOCK.get().defaultBlockState(), 3);
 			}
 			locX = locX + 1;
@@ -62,16 +61,11 @@ public class WindyshoresIslandGenProcedure {
 				}
 			}
 			if (canPlace) {
-				if (locY <= -2 && (world.isEmptyBlock(new BlockPos(x + locX, y + locY + 1, z + locZ))
-						|| (world.getBlockState(new BlockPos(x + locX, y + locY + 1, z + locZ))).getBlock() == ElementureModBlocks.CLOUDBLOCK
-								.get())) {
+				if (locY <= -2 && (world.isEmptyBlock(new BlockPos(x + locX, y + locY + 1, z + locZ)) || (world.getBlockState(new BlockPos(x + locX, y + locY + 1, z + locZ))).getBlock() == ElementureModBlocks.CLOUDBLOCK.get())) {
 					world.setBlock(new BlockPos(x + locX, y + locY + 1, z + locZ), Blocks.STONE.defaultBlockState(), 3);
-				} else if (locY == 1 && (world.isEmptyBlock(new BlockPos(x + locX, y + locY, z + locZ))
-						|| (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.CLOUDBLOCK.get())) {
+				} else if (locY == 1 && (world.isEmptyBlock(new BlockPos(x + locX, y + locY, z + locZ)) || (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.CLOUDBLOCK.get())) {
 					world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), ElementureModBlocks.CLOUDSAND.get().defaultBlockState(), 3);
-				} else if (locY >= 3 && (world.isEmptyBlock(new BlockPos(x + locX, (y + locY) - 1, z + locZ))
-						|| (world.getBlockState(new BlockPos(x + locX, (y + locY) - 1, z + locZ))).getBlock() == ElementureModBlocks.CLOUDBLOCK
-								.get())) {
+				} else if (locY >= 3 && (world.isEmptyBlock(new BlockPos(x + locX, (y + locY) - 1, z + locZ)) || (world.getBlockState(new BlockPos(x + locX, (y + locY) - 1, z + locZ))).getBlock() == ElementureModBlocks.CLOUDBLOCK.get())) {
 					if (Math.random() < 0.012) {
 						WindyshoresIslandDecorationProcedure.execute(world, (x + locX), ((y + locY) - 1), (z + locZ));
 					}

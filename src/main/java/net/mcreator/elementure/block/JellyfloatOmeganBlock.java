@@ -25,10 +25,7 @@ import net.mcreator.elementure.block.entity.JellyfloatOmeganBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class JellyfloatOmeganBlock extends Block
-		implements
-
-			EntityBlock {
+public class JellyfloatOmeganBlock extends Block implements EntityBlock {
 	public JellyfloatOmeganBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(-1, 3600000));
 	}
@@ -58,7 +55,6 @@ public class JellyfloatOmeganBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		JellyfloatbiomeOmegan1Procedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 10);
 	}

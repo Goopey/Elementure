@@ -64,15 +64,12 @@ public class GlassbellboatActivateInventoryProcedure {
 			}.getItemStack(1, entity)).getItem() == ElementureModItems.GLASSBELLBOAT_DARKFLAMESPRAYER.get()) {
 				{
 					final Vec3 _center = new Vec3((entity.getX() + 3.8 * yaw), (entity.getY()), (entity.getZ() + 3.8 * yaw2));
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream()
-							.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							.collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
-						if (!(entityiterator instanceof Player) && !(entityiterator instanceof ServerPlayer) && !(entityiterator == entity)
-								&& !((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)
-								&& !entityiterator.getType()
-										.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
-								&& !entityiterator.getType()
-										.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
+						if (!(entityiterator instanceof Player) && !(entityiterator instanceof ServerPlayer) && !(entityiterator == entity) && !((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)
+								&& !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
+								&& !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
 							spray = true;
 							if (entityiterator instanceof LivingEntity _entity)
 								_entity.addEffect(new MobEffectInstance(ElementureModMobEffects.DARKFLAME.get(), 120, 0));
@@ -83,15 +80,12 @@ public class GlassbellboatActivateInventoryProcedure {
 			} else {
 				{
 					final Vec3 _center = new Vec3((entity.getX() + 3.8 * yaw), (entity.getY()), (entity.getZ() + 3.8 * yaw2));
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream()
-							.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							.collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
-						if (!(entityiterator instanceof Player) && !(entityiterator instanceof ServerPlayer) && !(entityiterator == entity)
-								&& !((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)
-								&& !entityiterator.getType()
-										.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
-								&& !entityiterator.getType()
-										.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
+						if (!(entityiterator instanceof Player) && !(entityiterator instanceof ServerPlayer) && !(entityiterator == entity) && !((entityiterator instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)
+								&& !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
+								&& !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
 							spray = true;
 							entityiterator.hurt(DamageSource.LAVA, 4);
 						}
@@ -100,8 +94,7 @@ public class GlassbellboatActivateInventoryProcedure {
 			}
 			if (spray) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles(ParticleTypes.SMALL_FLAME, (entity.getX() + 3.8 * yaw), (entity.getY()), (entity.getZ() + 3.8 * yaw2), 100,
-							0.85, 0.85, 0.85, 0.01);
+					_level.sendParticles(ParticleTypes.SMALL_FLAME, (entity.getX() + 3.8 * yaw), (entity.getY()), (entity.getZ() + 3.8 * yaw2), 100, 0.85, 0.85, 0.85, 0.01);
 			}
 		}
 		if ((new Object() {
@@ -123,8 +116,8 @@ public class GlassbellboatActivateInventoryProcedure {
 		}.getItemStack(1, entity)).getItem() == ElementureModItems.DIVERSBEACON.get()) {
 			{
 				final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream()
-						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+						.collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof Player || entityiterator instanceof ServerPlayer) {
 						if (entityiterator instanceof LivingEntity _entity)
@@ -171,8 +164,7 @@ public class GlassbellboatActivateInventoryProcedure {
 		}.getItemStack(1, entity)).getItem() == ElementureModItems.GLASSBELLBOAT_TURBO_THRUSTER.get()) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.DOLPHINS_GRACE, 60, 1, (false), (false)));
-			entity.setDeltaMovement(
-					new Vec3((entity.getDeltaMovement().x() / 1.07), (entity.getDeltaMovement().y() / 1.07), (entity.getDeltaMovement().z() / 1.07)));
+			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x() / 1.07), (entity.getDeltaMovement().y() / 1.07), (entity.getDeltaMovement().z() / 1.07)));
 			if (speedVal > 0) {
 				speedVal = 0.24;
 			} else {
@@ -182,15 +174,13 @@ public class GlassbellboatActivateInventoryProcedure {
 		{
 			Entity _ent = entity;
 			if (!_ent.level.isClientSide() && _ent.getServer() != null) {
-				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(),
-						_ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4, _ent.getName().getString(),
-						_ent.getDisplayName(), _ent.level.getServer(), _ent), ("attribute @s forge:swim_speed base set " + (2.2 + speedVal)));
+				_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
+						_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), ("attribute @s forge:swim_speed base set " + (2.2 + speedVal)));
 			}
 		}
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(0.1 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(0.1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if ((entityiterator.getVehicle()) == entity) {
 					pitch = Math.cos(entity.getXRot() / ((-180) / Math.PI));
@@ -199,11 +189,9 @@ public class GlassbellboatActivateInventoryProcedure {
 					yaw3 = Math.sin((-1.867) * Math.PI + entity.getYRot() / ((-180) / Math.PI));
 					yaw4 = Math.cos((-1.867) * Math.PI + entity.getYRot() / ((-180) / Math.PI));
 					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.FLAME, (entity.getX() + (-3.125) * yaw), (entity.getY()),
-								(entity.getZ() + (-3.125) * yaw2), 20, 0.12, 0.12, 0.12, 0.01);
+						_level.sendParticles(ParticleTypes.FLAME, (entity.getX() + (-3.125) * yaw), (entity.getY()), (entity.getZ() + (-3.125) * yaw2), 20, 0.12, 0.12, 0.12, 0.01);
 					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.FLAME, (entity.getX() + (-3.125) * yaw3), (entity.getY()),
-								(entity.getZ() + (-3.125) * yaw4), 20, 0.12, 0.12, 0.12, 0.01);
+						_level.sendParticles(ParticleTypes.FLAME, (entity.getX() + (-3.125) * yaw3), (entity.getY()), (entity.getZ() + (-3.125) * yaw4), 20, 0.12, 0.12, 0.12, 0.01);
 					if (entityiterator instanceof LivingEntity _entity)
 						_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 2, 0, (false), (false)));
 					entityiterator.setAirSupply((int) entityiterator.getMaxAirSupply());

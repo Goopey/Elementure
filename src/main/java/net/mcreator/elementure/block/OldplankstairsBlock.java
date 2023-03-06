@@ -17,8 +17,7 @@ import java.util.Collections;
 
 public class OldplankstairsBlock extends StairBlock {
 	public OldplankstairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(),
-				BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOD).strength(-1, 3600000).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOD).strength(-1, 3600000).dynamicShape());
 	}
 
 	@Override

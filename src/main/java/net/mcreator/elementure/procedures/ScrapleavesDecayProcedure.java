@@ -27,15 +27,10 @@ public class ScrapleavesDecayProcedure {
 			CoordsY = -6;
 			CoordsZ = -6;
 			for (int index0 = 0; index0 < (int) (2197); index0++) {
-				if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 36
-						&& ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERLOG
-								.get()
-								|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-										.getBlock() == ElementureModBlocks.SHAVEDNETHERLOG.get()
-								|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-										.getBlock() == ElementureModBlocks.NETHERLOG_6.get()
-								|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-										.getBlock() == ElementureModBlocks.SHAVEDNETHERLOG_6.get())) {
+				if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 36 && ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERLOG.get()
+						|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.SHAVEDNETHERLOG.get()
+						|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERLOG_6.get()
+						|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.SHAVEDNETHERLOG_6.get())) {
 					notdecay = true;
 					if (Math.random() < 0.00025 && (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.AIR) {
 						DebrisscrapfallProcedure.execute(world, x, (y - 1), z);

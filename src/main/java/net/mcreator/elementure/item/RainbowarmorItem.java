@@ -76,8 +76,7 @@ public abstract class RainbowarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component
-					.literal("Full armor effect : using light essence makes you regain 8 light essence and applies glowing and regeneration"));
+			list.add(Component.literal("Full armor effect : using light essence makes you regain 8 light essence and applies glowing and regeneration"));
 			list.add(Component.literal("Also makes the chromatic channeler stronger and free to use, but with a slightly longer cooldown"));
 		}
 
@@ -95,8 +94,7 @@ public abstract class RainbowarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component
-					.literal("Full armor effect : using light essence makes you regain 8 light essence and applies glowing and regeneration"));
+			list.add(Component.literal("Full armor effect : using light essence makes you regain 8 light essence and applies glowing and regeneration"));
 			list.add(Component.literal("Also makes the chromatic channeler stronger and free to use, but with a slightly longer cooldown"));
 		}
 
@@ -119,8 +117,7 @@ public abstract class RainbowarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component
-					.literal("Full armor effect : using light essence makes you regain 8 light essence and applies glowing and regeneration"));
+			list.add(Component.literal("Full armor effect : using light essence makes you regain 8 light essence and applies glowing and regeneration"));
 			list.add(Component.literal("Also makes the chromatic channeler stronger and free to use, but with a slightly longer cooldown"));
 		}
 
@@ -138,8 +135,7 @@ public abstract class RainbowarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component
-					.literal("Full armor effect : using light essence makes you regain 8 light essence and applies glowing and regeneration"));
+			list.add(Component.literal("Full armor effect : using light essence makes you regain 8 light essence and applies glowing and regeneration"));
 			list.add(Component.literal("Also makes the chromatic channeler stronger and free to use, but with a slightly longer cooldown"));
 		}
 

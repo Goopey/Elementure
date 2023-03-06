@@ -30,8 +30,7 @@ public class RimecormunculuschannelerTrueWaterLightProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-				.getItem() == ElementureModItems.RIMECORMUNCULUS_CHANNELER.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.RIMECORMUNCULUS_CHANNELER.get()) {
 			if (world.dayTime() % 200 < 100) {
 				entity.getPersistentData().putBoolean("waterACTIVE", (true));
 				entity.getPersistentData().putBoolean("lightACTIVE", (false));

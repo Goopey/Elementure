@@ -11,10 +11,9 @@ import net.mcreator.elementure.init.ElementureModTabs;
 
 public class PerryberryItem extends Item {
 	public PerryberryItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.300000011920929f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.30000001192092896f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

@@ -26,15 +26,10 @@ public class MycenadepthsYRoomGenProcedure {
 		CoordsZ = -8;
 		for (int index0 = 0; index0 < (int) (6647); index0++) {
 			if (CoordsX * CoordsX + 0.65 * CoordsY * CoordsY + CoordsZ * CoordsZ <= 64 && y + CoordsY > 0) {
-				if (CoordsX * CoordsX + 0.65 * CoordsY * CoordsY + CoordsZ * CoordsZ >= 63 && CoordsY < -3
-						&& world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ)).canOcclude()
-						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-								.getBlock() == ElementureModBlocks.MYCENA_BIOME_ALPHAN.get())
-						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MYCENAVINE
-								.get())
-						&& Math.random() < 0.75) {
-					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-							ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
+				if (CoordsX * CoordsX + 0.65 * CoordsY * CoordsY + CoordsZ * CoordsZ >= 63 && CoordsY < -3 && world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ)).canOcclude()
+						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MYCENA_BIOME_ALPHAN.get())
+						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MYCENAVINE.get()) && Math.random() < 0.75) {
+					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
 					if (!world.isClientSide()) {
 						BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -44,15 +39,10 @@ public class MycenadepthsYRoomGenProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-				} else if (CoordsX * CoordsX + 0.65 * CoordsY * CoordsY + CoordsZ * CoordsZ >= 63 && CoordsY > 3
-						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ))).getBlock() == Blocks.AIR)
-						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-								.getBlock() == ElementureModBlocks.MYCENA_BIOME_ALPHAN.get())
-						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MYCENAVINE
-								.get())
-						&& Math.random() < 0.5) {
-					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-							ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
+				} else if (CoordsX * CoordsX + 0.65 * CoordsY * CoordsY + CoordsZ * CoordsZ >= 63 && CoordsY > 3 && !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ))).getBlock() == Blocks.AIR)
+						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MYCENA_BIOME_ALPHAN.get())
+						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MYCENAVINE.get()) && Math.random() < 0.5) {
+					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
 					if (!world.isClientSide()) {
 						BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -62,15 +52,12 @@ public class MycenadepthsYRoomGenProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-				} else if (!((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-						.getBlock() == ElementureModBlocks.MYCENA_BIOME_ALPHAN.get())
-						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MYCENAVINE
-								.get())) {
+				} else if (!((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MYCENA_BIOME_ALPHAN.get())
+						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MYCENAVINE.get())) {
 					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), Blocks.AIR.defaultBlockState(), 3);
 				}
 				if (CoordsX * CoordsX + 0.65 * CoordsY * CoordsY + CoordsZ * CoordsZ >= 63 && CoordsY < -3 && Math.random() < 0.025) {
-					world.setBlock(new BlockPos(x + CoordsX, (y + CoordsY) - 4, z + CoordsZ),
-							ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
+					world.setBlock(new BlockPos(x + CoordsX, (y + CoordsY) - 4, z + CoordsZ), ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
 					if (!world.isClientSide()) {
 						BlockPos _bp = new BlockPos(x + CoordsX, (y + CoordsY) - 4, z + CoordsZ);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -99,9 +86,7 @@ public class MycenadepthsYRoomGenProcedure {
 			}
 		}
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"kill @e[type=minecraft:item, distance=0.1..24]");
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"kill @e[type=minecraft:item, distance=0.1..24]");
 	}
 }

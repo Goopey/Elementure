@@ -2,6 +2,7 @@
 package net.mcreator.elementure.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.Material;
@@ -41,15 +42,12 @@ import net.mcreator.elementure.init.ElementureModItems;
 import java.util.List;
 import java.util.Collections;
 
-public class SeafoambubbleBlock extends Block implements SimpleWaterloggedBlock
-
-{
+public class SeafoambubbleBlock extends Block implements SimpleWaterloggedBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 	public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
 	public SeafoambubbleBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOL).strength(12f, 20f).noCollission().noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOL).strength(12f, 20f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(WATERLOGGED, false));
 	}
 
@@ -69,8 +67,12 @@ public class SeafoambubbleBlock extends Block implements SimpleWaterloggedBlock
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
 
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
 			default -> box(0, 0, 0, 16, 14, 16);
 			case NORTH -> box(0, 0, 0, 16, 14, 16);
@@ -104,8 +106,7 @@ public class SeafoambubbleBlock extends Block implements SimpleWaterloggedBlock
 	}
 
 	@Override
-	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos,
-			BlockPos facingPos) {
+	public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor world, BlockPos currentPos, BlockPos facingPos) {
 		if (state.getValue(WATERLOGGED)) {
 			world.scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickDelay(world));
 		}
@@ -133,7 +134,6 @@ public class SeafoambubbleBlock extends Block implements SimpleWaterloggedBlock
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		SeafoambubbleSpawnProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 100);
 	}

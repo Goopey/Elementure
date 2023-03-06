@@ -50,8 +50,7 @@ public class NightmareShamanDestroyProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "damageProgress") + 1 + ((DiggerItem) pick.getItem()).getAttackDamage() / 3
-							+ EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_EFFICIENCY, pick)));
+					}.getValue(world, new BlockPos(x, y, z), "damageProgress") + 1 + ((DiggerItem) pick.getItem()).getAttackDamage() / 3 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.BLOCK_EFFICIENCY, pick)));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

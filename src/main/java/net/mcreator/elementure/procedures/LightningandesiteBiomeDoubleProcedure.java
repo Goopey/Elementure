@@ -17,24 +17,17 @@ public class LightningandesiteBiomeDoubleProcedure {
 		CoordsZ = -12;
 		for (int index0 = 0; index0 < (int) (15625); index0++) {
 			if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 144) {
-				if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-						.is(BlockTags.create(new ResourceLocation("elementure:elementureundergroundbiomestone_replaceable")))) {
+				if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).is(BlockTags.create(new ResourceLocation("elementure:elementureundergroundbiomestone_replaceable")))) {
 					if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 48) {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-								ElementureModBlocks.CHISELEDLIGHTNINGANDESITE.get().defaultBlockState(), 3);
-					} else if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ < 134
-							&& CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ > 48) {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-								ElementureModBlocks.LIGHTNINGANDESITE.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.CHISELEDLIGHTNINGANDESITE.get().defaultBlockState(), 3);
+					} else if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ < 134 && CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ > 48) {
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.LIGHTNINGANDESITE.get().defaultBlockState(), 3);
 					} else {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-								ElementureModBlocks.POLISHEDLIGHTNINGANDESITE.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.POLISHEDLIGHTNINGANDESITE.get().defaultBlockState(), 3);
 					}
-				} else if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-						.is(BlockTags.create(new ResourceLocation("elementure:elementureundergroundbiomeore_replaceable")))) {
+				} else if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).is(BlockTags.create(new ResourceLocation("elementure:elementureundergroundbiomeore_replaceable")))) {
 					if (Math.random() < 0.33) {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-								ElementureModBlocks.LIGHTNINGANDESITEORE.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.LIGHTNINGANDESITEORE.get().defaultBlockState(), 3);
 					}
 				}
 			}

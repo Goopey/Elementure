@@ -10,8 +10,7 @@ public class JellyBubblesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (Math.random() < 0.4) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.JELLYBUBBLE.get()), (x + 0.5), (y + 0.25), (z + 0.5), 2, 0.2,
-						0.2, 0.2, 0.0025);
+				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.JELLYBUBBLE.get()), (x + 0.5), (y + 0.25), (z + 0.5), 2, 0.2, 0.2, 0.2, 0.0025);
 		}
 	}
 }

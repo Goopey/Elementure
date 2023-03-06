@@ -15,8 +15,7 @@ public class PrismaticsproutspreadGenProcedure {
 		for (int index0 = 0; index0 < (int) (numSpikes); index0++) {
 			locX = Math.random() * 8 - 4;
 			locZ = Math.random() * 8 - 4;
-			if (world.getBlockState(new BlockPos(x + locX, y - 1, z + locX)).canOcclude()
-					&& (world.getBlockState(new BlockPos(x + locX, y, z + locX))).getBlock() == Blocks.AIR) {
+			if (world.getBlockState(new BlockPos(x + locX, y - 1, z + locX)).canOcclude() && (world.getBlockState(new BlockPos(x + locX, y, z + locX))).getBlock() == Blocks.AIR) {
 				world.setBlock(new BlockPos(x + locX, y, z + locZ), ElementureModBlocks.PRISMATICSPROUT.get().defaultBlockState(), 3);
 			}
 		}

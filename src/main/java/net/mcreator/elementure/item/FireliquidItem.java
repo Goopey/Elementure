@@ -11,7 +11,6 @@ import net.mcreator.elementure.init.ElementureModFluids;
 
 public class FireliquidItem extends BucketItem {
 	public FireliquidItem() {
-		super(ElementureModFluids.FIRELIQUID,
-				new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(CreativeModeTab.TAB_MISC));
+		super(ElementureModFluids.FIRELIQUID, new Item.Properties().craftRemainder(Items.BUCKET).stacksTo(1).rarity(Rarity.COMMON).tab(CreativeModeTab.TAB_MISC));
 	}
 }

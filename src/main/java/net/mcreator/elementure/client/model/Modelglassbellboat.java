@@ -32,29 +32,20 @@ public class Modelglassbellboat<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(0, 18).addBox(-12.0F, -1.0F, -25.0F, 24.0F, 9.0F, 50.0F, new CubeDeformation(0.0F)).texOffs(86, 77)
-						.addBox(-10.0F, -2.0F, -11.0F, 20.0F, 1.0F, 22.0F, new CubeDeformation(0.0F)).texOffs(0, 84)
-						.addBox(-13.0F, -18.0F, 11.0F, 26.0F, 25.0F, 19.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-13.0F, -3.0F, -24.0F, 26.0F, 2.0F, 13.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(10.0F, -3.0F, -18.0F, 6.0F, 2.0F, 29.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-16.0F, -3.0F, -18.0F, 6.0F, 2.0F, 29.0F, new CubeDeformation(0.0F)).texOffs(110, 16)
-						.addBox(-13.0F, -4.0F, -18.0F, 26.0F, 4.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(146, 88)
-						.addBox(-13.99F, -17.01F, -17.01F, 28.0F, 13.0F, 27.0F, new CubeDeformation(1.0F)).texOffs(0, 0)
-						.addBox(-19.0F, -1.0F, -22.0F, 7.0F, 9.0F, 44.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(12.0F, -1.0F, -22.0F, 7.0F, 9.0F, 44.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-16.0F, 8.0F, -18.0F, 32.0F, 4.0F, 36.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-14.0F, 8.01F, -21.0F, 28.0F, 4.0F, 43.0F, new CubeDeformation(0.0F)).texOffs(128, 0).mirror()
-						.addBox(17.0F, -2.0F, -10.0F, 12.0F, 12.0F, 52.0F, new CubeDeformation(0.0F)).mirror(false).texOffs(128, 0)
-						.addBox(-29.0F, -2.0F, -10.0F, 12.0F, 12.0F, 52.0F, new CubeDeformation(0.0F)).texOffs(216, 0)
-						.addBox(-15.0F, 7.0F, -36.0F, 6.0F, 6.0F, 14.0F, new CubeDeformation(0.0F)).texOffs(216, 0).mirror()
-						.addBox(9.0F, 7.0F, -36.0F, 6.0F, 6.0F, 14.0F, new CubeDeformation(0.0F)).mirror(false),
+				CubeListBuilder.create().texOffs(0, 18).addBox(-12.0F, -1.0F, -25.0F, 24.0F, 9.0F, 50.0F, new CubeDeformation(0.0F)).texOffs(86, 77).addBox(-10.0F, -2.0F, -11.0F, 20.0F, 1.0F, 22.0F, new CubeDeformation(0.0F)).texOffs(0, 84)
+						.addBox(-13.0F, -18.0F, 11.0F, 26.0F, 25.0F, 19.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-13.0F, -3.0F, -24.0F, 26.0F, 2.0F, 13.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
+						.addBox(10.0F, -3.0F, -18.0F, 6.0F, 2.0F, 29.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-16.0F, -3.0F, -18.0F, 6.0F, 2.0F, 29.0F, new CubeDeformation(0.0F)).texOffs(110, 16)
+						.addBox(-13.0F, -4.0F, -18.0F, 26.0F, 4.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(146, 88).addBox(-13.99F, -17.01F, -17.01F, 28.0F, 13.0F, 27.0F, new CubeDeformation(1.0F)).texOffs(0, 0)
+						.addBox(-19.0F, -1.0F, -22.0F, 7.0F, 9.0F, 44.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(12.0F, -1.0F, -22.0F, 7.0F, 9.0F, 44.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
+						.addBox(-16.0F, 8.0F, -18.0F, 32.0F, 4.0F, 36.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-14.0F, 8.01F, -21.0F, 28.0F, 4.0F, 43.0F, new CubeDeformation(0.0F)).texOffs(128, 0).mirror()
+						.addBox(17.0F, -2.0F, -10.0F, 12.0F, 12.0F, 52.0F, new CubeDeformation(0.0F)).mirror(false).texOffs(128, 0).addBox(-29.0F, -2.0F, -10.0F, 12.0F, 12.0F, 52.0F, new CubeDeformation(0.0F)).texOffs(216, 0)
+						.addBox(-15.0F, 7.0F, -36.0F, 6.0F, 6.0F, 14.0F, new CubeDeformation(0.0F)).texOffs(216, 0).mirror().addBox(9.0F, 7.0F, -36.0F, 6.0F, 6.0F, 14.0F, new CubeDeformation(0.0F)).mirror(false),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 256, 128);
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		bb_main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 

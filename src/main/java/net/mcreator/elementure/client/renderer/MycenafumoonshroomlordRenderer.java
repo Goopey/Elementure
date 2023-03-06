@@ -10,9 +10,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.mcreator.elementure.entity.MycenafumoonshroomlordEntity;
 import net.mcreator.elementure.client.model.Modelmycena_fumoon_shroomlord;
 
-public class MycenafumoonshroomlordRenderer
-		extends
-			MobRenderer<MycenafumoonshroomlordEntity, Modelmycena_fumoon_shroomlord<MycenafumoonshroomlordEntity>> {
+public class MycenafumoonshroomlordRenderer extends MobRenderer<MycenafumoonshroomlordEntity, Modelmycena_fumoon_shroomlord<MycenafumoonshroomlordEntity>> {
 	public MycenafumoonshroomlordRenderer(EntityRendererProvider.Context context) {
 		super(context, new Modelmycena_fumoon_shroomlord(context.bakeLayer(Modelmycena_fumoon_shroomlord.LAYER_LOCATION)), 0.6f);
 		this.addLayer(new EyesLayer<MycenafumoonshroomlordEntity, Modelmycena_fumoon_shroomlord<MycenafumoonshroomlordEntity>>(this) {

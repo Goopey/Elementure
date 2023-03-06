@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGH",
@@ -9,7 +9,6 @@
         "data": {
           "image": "playerforce.png",
           "use1Xscale": false,
-          "name": "playerforce.png",
           "x": 384,
           "y": 206
         }
@@ -17,12 +16,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:integer:force_essence>",
+          "name": "label_varintegerforce_essence",
+          "text": {
+            "fixedValue": "<VAR:integer:force_essence>"
+          },
           "color": {
             "value": -3407668,
             "falpha": 0.0
           },
-          "name": "<VAR:integer:force_essence>",
           "x": 393,
           "y": 197
         }

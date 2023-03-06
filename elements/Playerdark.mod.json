@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGH",
@@ -9,7 +9,6 @@
         "data": {
           "image": "playerdark.png",
           "use1Xscale": true,
-          "name": "playerdark.png",
           "x": 384,
           "y": 206
         }
@@ -17,12 +16,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:integer:dark_essence>",
+          "name": "label_varintegerdark_essence",
+          "text": {
+            "fixedValue": "<VAR:integer:dark_essence>"
+          },
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "<VAR:integer:dark_essence>",
           "x": 393,
           "y": 197
         }

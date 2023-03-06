@@ -8,7 +8,6 @@ public class DiverscrownfishingIsDiverscrownFishingProcedure {
 	public static boolean execute(Entity entity) {
 		if (entity == null)
 			return false;
-		return ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).fishBiome).equals("diversCrown");
+		return ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fishBiome).equals("diversCrown");
 	}
 }

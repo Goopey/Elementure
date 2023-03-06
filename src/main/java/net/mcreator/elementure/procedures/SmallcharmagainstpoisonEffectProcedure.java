@@ -34,38 +34,18 @@ public class SmallcharmagainstpoisonEffectProcedure {
 			return;
 		double poison_time = 0;
 		double poison_level = 0;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1)
-				.getItem() == ElementureModItems.SMALLCHARMAGAINSTPOISON.get()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_2)
-						.getItem() == ElementureModItems.SMALLCHARMAGAINSTPOISON.get()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_3)
-						.getItem() == ElementureModItems.SMALLCHARMAGAINSTPOISON.get()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_4)
-						.getItem() == ElementureModItems.SMALLCHARMAGAINSTPOISON.get()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_5)
-						.getItem() == ElementureModItems.SMALLCHARMAGAINSTPOISON.get()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_6)
-						.getItem() == ElementureModItems.SMALLCHARMAGAINSTPOISON.get()) {
-			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.POISON)
-					? _livEnt.getEffect(MobEffects.POISON).getDuration()
-					: 0) != 0 && world.dayTime() % 40 <= 0) {
-				poison_time = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.POISON)
-						? _livEnt.getEffect(MobEffects.POISON).getDuration()
-						: 0;
-				poison_level = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.POISON)
-						? _livEnt.getEffect(MobEffects.POISON).getAmplifier()
-						: 0;
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).getItem() == ElementureModItems.SMALLCHARMAGAINSTPOISON.get()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_2).getItem() == ElementureModItems.SMALLCHARMAGAINSTPOISON.get()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_3).getItem() == ElementureModItems.SMALLCHARMAGAINSTPOISON.get()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_4).getItem() == ElementureModItems.SMALLCHARMAGAINSTPOISON.get()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_5).getItem() == ElementureModItems.SMALLCHARMAGAINSTPOISON.get()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_6).getItem() == ElementureModItems.SMALLCHARMAGAINSTPOISON.get()) {
+			if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.POISON) ? _livEnt.getEffect(MobEffects.POISON).getDuration() : 0) != 0 && world.dayTime() % 40 <= 0) {
+				poison_time = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.POISON) ? _livEnt.getEffect(MobEffects.POISON).getDuration() : 0;
+				poison_level = entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.POISON) ? _livEnt.getEffect(MobEffects.POISON).getAmplifier() : 0;
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(MobEffects.POISON);
-				if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.POISON)
-						? _livEnt.getEffect(MobEffects.POISON).getAmplifier()
-						: 0) == 0) {
+				if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.POISON) ? _livEnt.getEffect(MobEffects.POISON).getAmplifier() : 0) == 0) {
 					if (entity instanceof LivingEntity _entity)
 						_entity.addEffect(new MobEffectInstance(MobEffects.POISON, (int) (poison_time - 40), 0));
 				} else {

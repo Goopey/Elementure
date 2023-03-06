@@ -22,16 +22,14 @@ public class MycenaomeganBaseGenProcedure {
 			if ((world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11))).getBlock() == Blocks.GRASS_BLOCK
 					|| (world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY + 1, z + CoordsZ * 11))).getBlock() == Blocks.OAK_LOG
 							&& (world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11))).getBlock() == Blocks.DIRT
-					|| (world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11))).getBlock() == Blocks.SAND
-							&& (world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11))).getBlock() == Blocks.AIR
+					|| (world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11))).getBlock() == Blocks.SAND && (world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11))).getBlock() == Blocks.AIR
 					|| (world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11))).getBlock() == Blocks.GRAVEL
 							&& (world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11))).getBlock() == Blocks.AIR) {
 				if (CoordsX == 5 || CoordsX == -5 || CoordsZ == -5 || CoordsZ == 5) {
 					if (Math.random() < 0.89) {
 						world.setBlock(new BlockPos(x + CoordsX * 11, y + CoordsY + 1, z + CoordsZ * 11), Blocks.AIR.defaultBlockState(), 3);
 						world.setBlock(new BlockPos(x + CoordsX * 11, y + CoordsY + 2, z + CoordsZ * 11), Blocks.AIR.defaultBlockState(), 3);
-						world.setBlock(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11),
-								ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11), ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
 						if (!world.isClientSide()) {
 							BlockPos _bp = new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -46,8 +44,7 @@ public class MycenaomeganBaseGenProcedure {
 					if (Math.random() < 0.62) {
 						world.setBlock(new BlockPos(x + CoordsX * 11, y + CoordsY + 1, z + CoordsZ * 11), Blocks.AIR.defaultBlockState(), 3);
 						world.setBlock(new BlockPos(x + CoordsX * 11, y + CoordsY + 2, z + CoordsZ * 11), Blocks.AIR.defaultBlockState(), 3);
-						world.setBlock(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11),
-								ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11), ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
 						if (!world.isClientSide()) {
 							BlockPos _bp = new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -61,8 +58,7 @@ public class MycenaomeganBaseGenProcedure {
 				} else {
 					world.setBlock(new BlockPos(x + CoordsX * 11, y + CoordsY + 1, z + CoordsZ * 11), Blocks.AIR.defaultBlockState(), 3);
 					world.setBlock(new BlockPos(x + CoordsX * 11, y + CoordsY + 2, z + CoordsZ * 11), Blocks.AIR.defaultBlockState(), 3);
-					world.setBlock(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11),
-							ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
+					world.setBlock(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11), ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
 					if (!world.isClientSide()) {
 						BlockPos _bp = new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -80,8 +76,7 @@ public class MycenaomeganBaseGenProcedure {
 						if (Math.random() < 0.89) {
 							world.setBlock(new BlockPos(x + CoordsX * 11, y + 1, z + CoordsZ * 11), Blocks.AIR.defaultBlockState(), 3);
 							world.setBlock(new BlockPos(x + CoordsX * 11, y + 2, z + CoordsZ * 11), Blocks.AIR.defaultBlockState(), 3);
-							world.setBlock(new BlockPos(x + CoordsX * 11, y, z + CoordsZ * 11),
-									ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
+							world.setBlock(new BlockPos(x + CoordsX * 11, y, z + CoordsZ * 11), ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
 							if (!world.isClientSide()) {
 								BlockPos _bp = new BlockPos(x + CoordsX * 11, y, z + CoordsZ * 11);
 								BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -96,8 +91,7 @@ public class MycenaomeganBaseGenProcedure {
 						if (Math.random() < 0.62) {
 							world.setBlock(new BlockPos(x + CoordsX * 11, y + 1, z + CoordsZ * 11), Blocks.AIR.defaultBlockState(), 3);
 							world.setBlock(new BlockPos(x + CoordsX * 11, y + 2, z + CoordsZ * 11), Blocks.AIR.defaultBlockState(), 3);
-							world.setBlock(new BlockPos(x + CoordsX * 11, y, z + CoordsZ * 11),
-									ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
+							world.setBlock(new BlockPos(x + CoordsX * 11, y, z + CoordsZ * 11), ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
 							if (!world.isClientSide()) {
 								BlockPos _bp = new BlockPos(x + CoordsX * 11, y, z + CoordsZ * 11);
 								BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -111,8 +105,7 @@ public class MycenaomeganBaseGenProcedure {
 					} else {
 						world.setBlock(new BlockPos(x + CoordsX * 11, y + 1, z + CoordsZ * 11), Blocks.AIR.defaultBlockState(), 3);
 						world.setBlock(new BlockPos(x + CoordsX * 11, y + 2, z + CoordsZ * 11), Blocks.AIR.defaultBlockState(), 3);
-						world.setBlock(new BlockPos(x + CoordsX * 11, y, z + CoordsZ * 11),
-								ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX * 11, y, z + CoordsZ * 11), ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
 						if (!world.isClientSide()) {
 							BlockPos _bp = new BlockPos(x + CoordsX * 11, y, z + CoordsZ * 11);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);

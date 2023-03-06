@@ -30,8 +30,7 @@ public class PinkrimemossBlock extends Block {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public PinkrimemossBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WET_GRASS).strength(0.1f, 1f).lightLevel(s -> 12)
-				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WET_GRASS).strength(0.09999999999999999f, 1f).lightLevel(s -> 12).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 

@@ -23,8 +23,7 @@ public class RocketwormFollowProcedure {
 		double yaw = 0;
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(8 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if (entity.getPersistentData().getDouble("chainId") == entityiterator.getPersistentData().getDouble("chainId")) {
 					if (entity.getPersistentData().getDouble("chainPos") - 1 == entityiterator.getPersistentData().getDouble("chainPos")) {
@@ -35,12 +34,9 @@ public class RocketwormFollowProcedure {
 						yaw2 = Math.cos(entityiterator.getYRot() / ((-180) / Math.PI));
 						{
 							Entity _ent = entity;
-							_ent.teleportTo((entityiterator.getX() + (-0.9) * yaw * pitch), (entityiterator.getY() + (-0.9) * pitch2),
-									(entityiterator.getZ() + (-0.9) * yaw2 * pitch));
+							_ent.teleportTo((entityiterator.getX() + (-0.9) * yaw * pitch), (entityiterator.getY() + (-0.9) * pitch2), (entityiterator.getZ() + (-0.9) * yaw2 * pitch));
 							if (_ent instanceof ServerPlayer _serverPlayer)
-								_serverPlayer.connection.teleport((entityiterator.getX() + (-0.9) * yaw * pitch),
-										(entityiterator.getY() + (-0.9) * pitch2), (entityiterator.getZ() + (-0.9) * yaw2 * pitch), _ent.getYRot(),
-										_ent.getXRot());
+								_serverPlayer.connection.teleport((entityiterator.getX() + (-0.9) * yaw * pitch), (entityiterator.getY() + (-0.9) * pitch2), (entityiterator.getZ() + (-0.9) * yaw2 * pitch), _ent.getYRot(), _ent.getXRot());
 						}
 						alpha = 0.925;
 						if (Math.abs(entity.getYRot() - entityiterator.getYRot()) >= 340) {

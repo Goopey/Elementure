@@ -9,8 +9,7 @@ public class MossfishDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isMossFish = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("mossFish")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("mossFish")) {
 			isMossFish = true;
 		} else {
 			isMossFish = false;

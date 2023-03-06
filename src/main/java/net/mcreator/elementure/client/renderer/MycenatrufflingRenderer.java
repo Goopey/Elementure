@@ -12,7 +12,7 @@ import net.mcreator.elementure.client.model.Modelmycena_truffling;
 
 public class MycenatrufflingRenderer extends MobRenderer<MycenatrufflingEntity, Modelmycena_truffling<MycenatrufflingEntity>> {
 	public MycenatrufflingRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelmycena_truffling(context.bakeLayer(Modelmycena_truffling.LAYER_LOCATION)), 0.3f);
+		super(context, new Modelmycena_truffling(context.bakeLayer(Modelmycena_truffling.LAYER_LOCATION)), 0.30000000000000004f);
 		this.addLayer(new EyesLayer<MycenatrufflingEntity, Modelmycena_truffling<MycenatrufflingEntity>>(this) {
 			@Override
 			public RenderType renderType() {

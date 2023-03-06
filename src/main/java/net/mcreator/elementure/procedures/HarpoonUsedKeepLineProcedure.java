@@ -16,10 +16,8 @@ public class HarpoonUsedKeepLineProcedure {
 	public static void execute(LevelAccessor world, Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-				.is(ItemTags.create(new ResourceLocation("elementure:elementure_fishingrod_tag")))
-				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)
-						.is(ItemTags.create(new ResourceLocation("elementure:elementure_fishingrod_tag")))) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("elementure:elementure_fishingrod_tag")))
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).is(ItemTags.create(new ResourceLocation("elementure:elementure_fishingrod_tag")))) {
 			FishminigameUpdateProcedure.execute(world, entity, itemstack);
 		} else {
 			{
@@ -116,14 +114,9 @@ public class HarpoonUsedKeepLineProcedure {
 			entity.getPersistentData().putBoolean("FISH", (false));
 		}
 		itemstack.getOrCreateTag().putDouble("fishingPower",
-				(5 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.FISHINGPOWER.get())
-						? _livEnt.getEffect(ElementureModMobEffects.FISHINGPOWER.get()).getAmplifier()
-						: 0) * 3));
+				(5 + (entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.FISHINGPOWER.get()) ? _livEnt.getEffect(ElementureModMobEffects.FISHINGPOWER.get()).getAmplifier() : 0) * 3));
 		itemstack.getOrCreateTag().putDouble("attractionPower",
-				((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.FISHINGPOWER.get())
-						? _livEnt.getEffect(ElementureModMobEffects.FISHINGPOWER.get()).getAmplifier()
-						: 0) * 3));
-		itemstack.getOrCreateTag().putDouble("crateChance",
-				(EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.MAGNETIC_ENCHANTMENT.get(), itemstack)));
+				((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(ElementureModMobEffects.FISHINGPOWER.get()) ? _livEnt.getEffect(ElementureModMobEffects.FISHINGPOWER.get()).getAmplifier() : 0) * 3));
+		itemstack.getOrCreateTag().putDouble("crateChance", (EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.MAGNETIC_ENCHANTMENT.get(), itemstack)));
 	}
 }

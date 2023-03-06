@@ -70,7 +70,6 @@ public class CreditsMusicGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(CreditsMusicGUIButtonMessage.class, CreditsMusicGUIButtonMessage::buffer, CreditsMusicGUIButtonMessage::new,
-				CreditsMusicGUIButtonMessage::handler);
+		ElementureMod.addNetworkMessage(CreditsMusicGUIButtonMessage.class, CreditsMusicGUIButtonMessage::buffer, CreditsMusicGUIButtonMessage::new, CreditsMusicGUIButtonMessage::handler);
 	}
 }

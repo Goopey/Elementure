@@ -8,7 +8,6 @@ public class RimecormunculusChannelerParticlesProcedure {
 	public static void execute(LevelAccessor world, Entity immediatesourceentity) {
 		if (immediatesourceentity == null)
 			return;
-		world.addParticle(ParticleTypes.EFFECT, (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), 0, 0,
-				0);
+		world.addParticle(ParticleTypes.EFFECT, (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), 0, 0, 0);
 	}
 }

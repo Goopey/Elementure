@@ -17,14 +17,10 @@ public class MerthiumarmorBreatheProcedure {
 		double yaw2 = 0;
 		double pitch2 = 0;
 		double yaw = 0;
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY)
-				.getItem() == ElementureModItems.MERTHIUMARMOR_HELMET.get()) {
-			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
-					.getItem() == ElementureModItems.MERTHIUMARMOR_CHESTPLATE.get()) {
-				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)
-						.getItem() == ElementureModItems.MERTHIUMARMOR_LEGGINGS.get()) {
-					if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)
-							.getItem() == ElementureModItems.MERTHIUMARMOR_BOOTS.get()) {
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.HEAD) : ItemStack.EMPTY).getItem() == ElementureModItems.MERTHIUMARMOR_HELMET.get()) {
+			if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == ElementureModItems.MERTHIUMARMOR_CHESTPLATE.get()) {
+				if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY).getItem() == ElementureModItems.MERTHIUMARMOR_LEGGINGS.get()) {
+					if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY).getItem() == ElementureModItems.MERTHIUMARMOR_BOOTS.get()) {
 						if (!entity.isInWater()) {
 							if (entity instanceof LivingEntity _entity)
 								_entity.addEffect(new MobEffectInstance(MobEffects.WATER_BREATHING, 400, 0, (false), (false)));

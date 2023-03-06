@@ -10,8 +10,7 @@ public class OthersidebladeDarkSoulTrueProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.OTHERSIDEBLADE
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.OTHERSIDEBLADE.get()) {
 			if (itemstack.getOrCreateTag().getBoolean("othersidebladeVar")) {
 				entity.getPersistentData().putBoolean("darkACTIVE", (true));
 				entity.getPersistentData().putBoolean("soulACTIVE", (false));

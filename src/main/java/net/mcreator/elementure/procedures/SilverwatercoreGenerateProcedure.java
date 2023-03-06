@@ -28,13 +28,11 @@ public class SilverwatercoreGenerateProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_core).getItem() == ElementureModItems.SILVERWATERCORE.get()) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_core).getItem() == ElementureModItems.SILVERWATERCORE.get()) {
 			if (Math.random() < 0.00165) {
 				if (Math.random() < 0.7) {
 					{
-						double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new ElementureModVariables.PlayerVariables())).water_essence + 3;
+						double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).water_essence + 3;
 						entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.water_essence = _setval;
 							capability.syncPlayerVariables(entity);
@@ -42,8 +40,7 @@ public class SilverwatercoreGenerateProcedure {
 					}
 				} else if (Math.random() < 0.95 && Math.random() > 0.7) {
 					{
-						double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new ElementureModVariables.PlayerVariables())).water_essence + 7;
+						double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).water_essence + 7;
 						entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.water_essence = _setval;
 							capability.syncPlayerVariables(entity);
@@ -51,8 +48,7 @@ public class SilverwatercoreGenerateProcedure {
 					}
 				} else {
 					{
-						double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new ElementureModVariables.PlayerVariables())).water_essence + 11;
+						double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).water_essence + 11;
 						entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 							capability.water_essence = _setval;
 							capability.syncPlayerVariables(entity);

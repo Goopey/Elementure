@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -16,10 +16,14 @@
           "inputLimit": {
             "value": "CUSTOM:Suitcase"
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 0,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": false,
-          "name": "Slot #0",
           "x": 168,
           "y": 62
         }
@@ -30,10 +34,14 @@
           "inputLimit": {
             "value": "CUSTOM:Suitcase"
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 1,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": false,
-          "name": "Slot #1",
           "x": 186,
           "y": 62
         }
@@ -44,10 +52,14 @@
           "inputLimit": {
             "value": "CUSTOM:Suitcase"
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 2,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": false,
-          "name": "Slot #2",
           "x": 204,
           "y": 62
         }
@@ -58,10 +70,14 @@
           "inputLimit": {
             "value": "CUSTOM:Suitcase"
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 3,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": false,
-          "name": "Slot #3",
           "x": 222,
           "y": 62
         }
@@ -72,10 +88,14 @@
           "inputLimit": {
             "value": "CUSTOM:Suitcase"
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 4,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": false,
-          "name": "Slot #4",
           "x": 240,
           "y": 62
         }
@@ -86,10 +106,14 @@
           "inputLimit": {
             "value": "CUSTOM:Suitcase"
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 5,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": false,
-          "name": "Slot #5",
           "x": 168,
           "y": 80
         }
@@ -100,10 +124,14 @@
           "inputLimit": {
             "value": "CUSTOM:Suitcase"
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 6,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": false,
-          "name": "Slot #6",
           "x": 186,
           "y": 80
         }
@@ -114,10 +142,14 @@
           "inputLimit": {
             "value": "CUSTOM:Suitcase"
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 7,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": false,
-          "name": "Slot #7",
           "x": 204,
           "y": 80
         }
@@ -128,10 +160,14 @@
           "inputLimit": {
             "value": "CUSTOM:Suitcase"
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 8,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": false,
-          "name": "Slot #8",
           "x": 222,
           "y": 80
         }
@@ -142,10 +178,14 @@
           "inputLimit": {
             "value": "CUSTOM:Suitcase"
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 9,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": false,
-          "name": "Slot #9",
           "x": 240,
           "y": 80
         }

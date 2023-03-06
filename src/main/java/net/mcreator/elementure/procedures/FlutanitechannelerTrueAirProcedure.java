@@ -29,8 +29,7 @@ public class FlutanitechannelerTrueAirProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.FLUTANITECHANNELER
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.FLUTANITECHANNELER.get()) {
 			entity.getPersistentData().putBoolean("airACTIVE", (true));
 		}
 	}

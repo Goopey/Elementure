@@ -32,10 +32,9 @@ public class PurplemushroomsFeature extends RandomPatchFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new PurplemushroomsFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("elementure:purplemushrooms", FEATURE, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
-				new SimpleBlockConfiguration(BlockStateProvider.simple(ElementureModBlocks.PURPLEMUSHROOMS.get())), List.of(), 8));
-		PLACED_FEATURE = PlacementUtils.register("elementure:purplemushrooms", CONFIGURED_FEATURE, List.of(CountPlacement.of(3),
-				RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("elementure:purplemushrooms", FEATURE,
+				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ElementureModBlocks.PURPLEMUSHROOMS.get())), List.of(), 8));
+		PLACED_FEATURE = PlacementUtils.register("elementure:purplemushrooms", CONFIGURED_FEATURE, List.of(CountPlacement.of(3), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 		return FEATURE;
 	}
 

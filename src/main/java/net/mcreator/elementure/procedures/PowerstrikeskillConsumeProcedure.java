@@ -11,8 +11,7 @@ public class PowerstrikeskillConsumeProcedure {
 			return;
 		entity.hurt(DamageSource.GENERIC, 3);
 		{
-			double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).force_essence - 33;
+			double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).force_essence - 33;
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.force_essence = _setval;
 				capability.syncPlayerVariables(entity);

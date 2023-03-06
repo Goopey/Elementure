@@ -18,10 +18,8 @@ import net.mcreator.elementure.ElementureMod;
 
 public class ElementureModEnchantments {
 	public static final DeferredRegister<Enchantment> REGISTRY = DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, ElementureMod.MODID);
-	public static final RegistryObject<Enchantment> MAGNETIC_ENCHANTMENT = REGISTRY.register("magnetic_enchantment",
-			() -> new MagneticEnchantmentEnchantment());
+	public static final RegistryObject<Enchantment> MAGNETIC_ENCHANTMENT = REGISTRY.register("magnetic_enchantment", () -> new MagneticEnchantmentEnchantment());
 	public static final RegistryObject<Enchantment> DARKSMITE = REGISTRY.register("darksmite", () -> new DarksmiteEnchantment());
 	public static final RegistryObject<Enchantment> STRIKE = REGISTRY.register("strike", () -> new StrikeEnchantment());
-	public static final RegistryObject<Enchantment> SELFSUSTAINING_FLAME = REGISTRY.register("selfsustaining_flame",
-			() -> new SelfsustainingFlameEnchantment());
+	public static final RegistryObject<Enchantment> SELFSUSTAINING_FLAME = REGISTRY.register("selfsustaining_flame", () -> new SelfsustainingFlameEnchantment());
 }

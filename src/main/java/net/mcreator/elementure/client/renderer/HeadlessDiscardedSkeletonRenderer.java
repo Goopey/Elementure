@@ -8,9 +8,7 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.mcreator.elementure.entity.HeadlessDiscardedSkeletonEntity;
 import net.mcreator.elementure.client.model.ModelheadlessDiscardedSkeleton;
 
-public class HeadlessDiscardedSkeletonRenderer
-		extends
-			MobRenderer<HeadlessDiscardedSkeletonEntity, ModelheadlessDiscardedSkeleton<HeadlessDiscardedSkeletonEntity>> {
+public class HeadlessDiscardedSkeletonRenderer extends MobRenderer<HeadlessDiscardedSkeletonEntity, ModelheadlessDiscardedSkeleton<HeadlessDiscardedSkeletonEntity>> {
 	public HeadlessDiscardedSkeletonRenderer(EntityRendererProvider.Context context) {
 		super(context, new ModelheadlessDiscardedSkeleton(context.bakeLayer(ModelheadlessDiscardedSkeleton.LAYER_LOCATION)), 0.5f);
 	}

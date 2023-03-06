@@ -54,7 +54,6 @@ public class GoldenbrokenswordItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component
-				.literal("A broken sword. It can either hit really, really hard or like butter. Crit damage scales with sharpness and strength."));
+		list.add(Component.literal("A broken sword. It can either hit really, really hard or like butter. Crit damage scales with sharpness and strength."));
 	}
 }

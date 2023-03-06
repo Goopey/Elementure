@@ -10,8 +10,7 @@ public class VamiteswordTrueTimeProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.VAMITESWORD
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.VAMITESWORD.get()) {
 			entity.getPersistentData().putBoolean("timeNEACTIVE", (true));
 		}
 	}

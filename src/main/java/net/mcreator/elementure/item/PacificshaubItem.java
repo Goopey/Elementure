@@ -18,10 +18,9 @@ import java.util.List;
 
 public class PacificshaubItem extends Item {
 	public PacificshaubItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.2f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.19999999999999998f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

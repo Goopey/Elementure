@@ -39,8 +39,7 @@ public class RubedocharmHitEffectProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).getItem() == ElementureModItems.RUBEDO.get()) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).getItem() == ElementureModItems.RUBEDO.get()) {
 			if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(ElementureModMobEffects.PARRY.get()) : false) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(ElementureModMobEffects.PARRY.get());
@@ -48,32 +47,20 @@ public class RubedocharmHitEffectProcedure {
 					_entity.addEffect(new MobEffectInstance(ElementureModMobEffects.PARRY_FATIGUE.get(), 360, 0));
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.crit")), SoundSource.PLAYERS, 1, 1);
+						_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.crit")), SoundSource.PLAYERS, 1, 1);
 					} else {
-						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.crit")), SoundSource.PLAYERS, 1, 1,
-								false);
+						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.crit")), SoundSource.PLAYERS, 1, 1, false);
 					}
 				}
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.FALLING_LAVA, (entity.getX()), (entity.getY()), (entity.getZ()), 20, 0.35, 0.35, 0.35, 0);
-				((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).getOrCreateTag()
-						.putDouble("rage",
-								(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).getOrCreateTag()
-										.getDouble("rage") + 3));
+				((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).getOrCreateTag().putDouble("rage",
+						(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).getOrCreateTag().getDouble("rage") + 3));
 			}
-			((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).getOrCreateTag()
-					.putDouble("rage",
-							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).getOrCreateTag()
-									.getDouble("rage") + 3));
+			((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).getOrCreateTag().putDouble("rage",
+					(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).getOrCreateTag().getDouble("rage") + 3));
 		}
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).getItem() == ElementureModItems.RUBEDO.get()) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).getItem() == ElementureModItems.RUBEDO.get()) {
 			if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(ElementureModMobEffects.PARRY.get()) : false) {
 				if (entity instanceof LivingEntity _entity)
 					_entity.removeEffect(ElementureModMobEffects.PARRY.get());
@@ -81,29 +68,18 @@ public class RubedocharmHitEffectProcedure {
 					_entity.addEffect(new MobEffectInstance(ElementureModMobEffects.PARRY_FATIGUE.get(), 360, 0));
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {
-						_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.crit")), SoundSource.PLAYERS, 1, 1);
+						_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.crit")), SoundSource.PLAYERS, 1, 1);
 					} else {
-						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-								ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.crit")), SoundSource.PLAYERS, 1, 1,
-								false);
+						_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.player.attack.crit")), SoundSource.PLAYERS, 1, 1, false);
 					}
 				}
 				if (world instanceof ServerLevel _level)
 					_level.sendParticles(ParticleTypes.FALLING_LAVA, (entity.getX()), (entity.getY()), (entity.getZ()), 20, 0.35, 0.35, 0.35, 0);
-				((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).getOrCreateTag()
-						.putDouble("rage",
-								(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-										.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).getOrCreateTag()
-										.getDouble("rage") + 3));
+				((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).getOrCreateTag().putDouble("rage",
+						(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).getOrCreateTag().getDouble("rage") + 3));
 			}
-			((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-					.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).getOrCreateTag()
-					.putDouble("rage",
-							(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-									.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).getOrCreateTag()
-									.getDouble("rage") + 3));
+			((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).getOrCreateTag().putDouble("rage",
+					(((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).getOrCreateTag().getDouble("rage") + 3));
 		}
 	}
 }

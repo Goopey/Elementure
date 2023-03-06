@@ -9,8 +9,7 @@ public class BlabbermouthDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isMHalimut = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("blabberMouth")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("blabberMouth")) {
 			isMHalimut = true;
 		} else {
 			isMHalimut = false;

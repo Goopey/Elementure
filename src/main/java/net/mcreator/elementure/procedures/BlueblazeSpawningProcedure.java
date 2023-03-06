@@ -16,8 +16,7 @@ public class BlueblazeSpawningProcedure {
 		locZ = -3;
 		for (int index0 = 0; index0 < (int) (343); index0++) {
 			if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.NETHERUMCARPET.get()
-					|| (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.BABYNETHERSTARBLOCK
-							.get()) {
+					|| (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == ElementureModBlocks.BABYNETHERSTARBLOCK.get()) {
 				shouldSpawn = true;
 			}
 			locX = locX + 1;

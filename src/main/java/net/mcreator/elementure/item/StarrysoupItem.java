@@ -21,10 +21,9 @@ import java.util.List;
 
 public class StarrysoupItem extends Item {
 	public StarrysoupItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(16).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(8).saturationMod(1f).alwaysEat()
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(16).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(8).saturationMod(1f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

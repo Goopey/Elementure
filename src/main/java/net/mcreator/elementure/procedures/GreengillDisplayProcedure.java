@@ -9,8 +9,7 @@ public class GreengillDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isGreengill = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("greengill")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("greengill")) {
 			isGreengill = true;
 		} else {
 			isGreengill = false;

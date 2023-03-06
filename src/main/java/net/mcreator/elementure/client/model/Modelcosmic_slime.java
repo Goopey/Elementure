@@ -35,17 +35,10 @@ public class Modelcosmic_slime<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition main_body = partdefinition.addOrReplaceChild("main_body",
-				CubeListBuilder.create().texOffs(23, 54).addBox(-2.0F, 0.0F, -1.5F, 4.0F, 7.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(8, 9)
-						.addBox(-3.5F, -0.01F, -1.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(1.5F, -0.01F, -1.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 12.0F, 0.0F));
-		PartDefinition head_main = main_body.addOrReplaceChild("head_main",
-				CubeListBuilder.create().texOffs(48, 34).addBox(-2.0F, 1.0F, -2.0F, 4.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, -5.0F, 0.0F));
-		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-14.0F, -20.0F, -8.0F, 16.0F, 16.0F, 16.0F, new CubeDeformation(-7.0F)),
-				PartPose.offset(0.0F, 24.0F, 0.0F));
+		PartDefinition main_body = partdefinition.addOrReplaceChild("main_body", CubeListBuilder.create().texOffs(23, 54).addBox(-2.0F, 0.0F, -1.5F, 4.0F, 7.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(8, 9)
+				.addBox(-3.5F, -0.01F, -1.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(1.5F, -0.01F, -1.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 12.0F, 0.0F));
+		PartDefinition head_main = main_body.addOrReplaceChild("head_main", CubeListBuilder.create().texOffs(48, 34).addBox(-2.0F, 1.0F, -2.0F, 4.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -5.0F, 0.0F));
+		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main", CubeListBuilder.create().texOffs(0, 0).addBox(-14.0F, -20.0F, -8.0F, 16.0F, 16.0F, 16.0F, new CubeDeformation(-7.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
 
@@ -58,8 +51,7 @@ public class Modelcosmic_slime<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		main_body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		bb_main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}

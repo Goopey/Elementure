@@ -58,7 +58,6 @@ public class WeaponArtsKeyMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(WeaponArtsKeyMessage.class, WeaponArtsKeyMessage::buffer, WeaponArtsKeyMessage::new,
-				WeaponArtsKeyMessage::handler);
+		ElementureMod.addNetworkMessage(WeaponArtsKeyMessage.class, WeaponArtsKeyMessage::buffer, WeaponArtsKeyMessage::new, WeaponArtsKeyMessage::handler);
 	}
 }

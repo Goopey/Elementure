@@ -10,7 +10,7 @@ import net.mcreator.elementure.client.model.Modelbluejelly;
 
 public class RedjellyfloatRenderer extends MobRenderer<RedjellyfloatEntity, Modelbluejelly<RedjellyfloatEntity>> {
 	public RedjellyfloatRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelbluejelly(context.bakeLayer(Modelbluejelly.LAYER_LOCATION)), 0.2f);
+		super(context, new Modelbluejelly(context.bakeLayer(Modelbluejelly.LAYER_LOCATION)), 0.19999999999999998f);
 	}
 
 	@Override

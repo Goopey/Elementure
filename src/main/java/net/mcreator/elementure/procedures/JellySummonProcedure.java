@@ -15,8 +15,7 @@ public class JellySummonProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (!world.getEntitiesOfClass(JellyEntity.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 12, 12, 12),
-				e -> true).isEmpty()) {
+		if (!world.getEntitiesOfClass(JellyEntity.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 12, 12, 12), e -> true).isEmpty()) {
 			if (Math.random() < 0.5) {
 				LargejellySuckAttackProcedure.execute(world, entity);
 			} else {
@@ -30,8 +29,7 @@ public class JellySummonProcedure {
 					entityToSpawn.setYBodyRot(0);
 					entityToSpawn.setYHeadRot(0);
 					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-								null, null);
+						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 					world.addFreshEntity(entityToSpawn);
 				}
 			}

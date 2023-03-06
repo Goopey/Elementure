@@ -16,58 +16,46 @@ public class MycenaplaceGiantMushroomProcedure {
 		ElementureMod.queueServerWork(1, () -> {
 			if (Math.random() < 0.125) {
 				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager()
-							.getOrCreate(new ResourceLocation("elementure", "small_giant_mycena_mushroom"));
+					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "small_giant_mycena_mushroom"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x - 9, y, z - 9), new BlockPos(x - 9, y, z - 9),
-								new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-								_serverworld.random, 3);
+						template.placeInWorld(_serverworld, new BlockPos(x - 9, y, z - 9), new BlockPos(x - 9, y, z - 9), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
+								3);
 					}
 				}
 				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager()
-							.getOrCreate(new ResourceLocation("elementure", "mycena_platform_large"));
+					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mycena_platform_large"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 3, z - 4), new BlockPos(x - 4, y - 3, z - 4),
-								new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 3, z - 4), new BlockPos(x - 4, y - 3, z - 4), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
 			} else if (Math.random() < 0.125) {
 				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager()
-							.getOrCreate(new ResourceLocation("elementure", "tall_giant_mycena_mushroom"));
+					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "tall_giant_mycena_mushroom"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x - 9, y, z - 9), new BlockPos(x - 9, y, z - 9),
-								new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-								_serverworld.random, 3);
+						template.placeInWorld(_serverworld, new BlockPos(x - 9, y, z - 9), new BlockPos(x - 9, y, z - 9), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
+								3);
 					}
 				}
 				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager()
-							.getOrCreate(new ResourceLocation("elementure", "mycena_platform_large"));
+					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mycena_platform_large"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 3, z - 4), new BlockPos(x - 4, y - 3, z - 4),
-								new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 3, z - 4), new BlockPos(x - 4, y - 3, z - 4), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
 			} else {
 				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager()
-							.getOrCreate(new ResourceLocation("elementure", "mycena_big_mushroom"));
+					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mycena_big_mushroom"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x - 3, y - 1, z - 3), new BlockPos(x - 3, y - 1, z - 3),
-								new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x - 3, y - 1, z - 3), new BlockPos(x - 3, y - 1, z - 3), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}
 				if (world instanceof ServerLevel _serverworld) {
-					StructureTemplate template = _serverworld.getStructureManager()
-							.getOrCreate(new ResourceLocation("elementure", "mycena_platform_small"));
+					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mycena_platform_small"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 4, z - 4), new BlockPos(x - 4, y - 4, z - 4),
-								new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						template.placeInWorld(_serverworld, new BlockPos(x - 4, y - 4, z - 4), new BlockPos(x - 4, y - 4, z - 4), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 								_serverworld.random, 3);
 					}
 				}

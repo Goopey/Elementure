@@ -34,8 +34,7 @@ public class BlackrimeshineEffectProcedure {
 			return;
 		if (itemstack.getItem() == ElementureModItems.RAREBLACKRIMESHINE.get() || itemstack.getItem() == ElementureModItems.BLACKRIMESHINE.get()) {
 			if (entity instanceof LivingEntity _entity)
-				_entity.addEffect(new MobEffectInstance(ElementureModMobEffects.DODGE.get(), (int) itemstack.getOrCreateTag().getDouble("duration"),
-						(int) Math.floor(itemstack.getOrCreateTag().getDouble("potency") / 2)));
+				_entity.addEffect(new MobEffectInstance(ElementureModMobEffects.DODGE.get(), (int) itemstack.getOrCreateTag().getDouble("duration"), (int) Math.floor(itemstack.getOrCreateTag().getDouble("potency") / 2)));
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.BLINDNESS, 60, 0));
 		}

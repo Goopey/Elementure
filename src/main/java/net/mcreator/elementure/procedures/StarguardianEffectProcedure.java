@@ -37,37 +37,27 @@ public class StarguardianEffectProcedure {
 	private static void execute(@Nullable Event event, LevelAccessor world, Entity entity) {
 		if (entity == null)
 			return;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1)
-				.getItem() == ElementureModItems.STARGUARDIAN.get()) {
-			if (!world.getEntitiesOfClass(StarguardianstandEntity.class,
-					AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 25, 25, 25), e -> true).isEmpty()
-					&& entity.getPersistentData().getDouble("summontimer") <= 20) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_1).getItem() == ElementureModItems.STARGUARDIAN.get()) {
+			if (!world.getEntitiesOfClass(StarguardianstandEntity.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 25, 25, 25), e -> true).isEmpty() && entity.getPersistentData().getDouble("summontimer") <= 20) {
 				entity.getPersistentData().putDouble("summontimer", (entity.getPersistentData().getDouble("summontimer") + 1));
 			} else if (entity.getPersistentData().getDouble("summontimer") > -20) {
 				entity.getPersistentData().putDouble("summontimer", (entity.getPersistentData().getDouble("summontimer") - 1));
 			} else {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level,
-									4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							("summon elementure:starguardianstand ~ ~ ~" + (" {Tame:1, Owner:" + (entity.getDisplayName().getString() + "}"))));
 			}
 		}
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2)
-				.getItem() == ElementureModItems.STARGUARDIAN.get()) {
-			if (!world.getEntitiesOfClass(StarguardianstandEntity.class,
-					AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 25, 25, 25), e -> true).isEmpty()
-					&& entity.getPersistentData().getDouble("summontimer") <= 20) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_artifact_2).getItem() == ElementureModItems.STARGUARDIAN.get()) {
+			if (!world.getEntitiesOfClass(StarguardianstandEntity.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 25, 25, 25), e -> true).isEmpty() && entity.getPersistentData().getDouble("summontimer") <= 20) {
 				entity.getPersistentData().putDouble("summontimer", (entity.getPersistentData().getDouble("summontimer") + 1));
 			} else if (entity.getPersistentData().getDouble("summontimer") > -20) {
 				entity.getPersistentData().putDouble("summontimer", (entity.getPersistentData().getDouble("summontimer") - 1));
 			} else {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level,
-									4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							("summon elementure:starguardianstand ~ ~ ~" + (" {Tame:1, Owner:" + (entity.getDisplayName().getString() + "}"))));
 			}
 		}

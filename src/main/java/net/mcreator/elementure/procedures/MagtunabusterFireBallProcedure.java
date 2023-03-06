@@ -10,10 +10,8 @@ public class MagtunabusterFireBallProcedure {
 		if (immediatesourceentity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.FLAME, (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()),
-					30, 0.15, 0.15, 0.15, 0.01);
+			_level.sendParticles(ParticleTypes.FLAME, (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), 30, 0.15, 0.15, 0.15, 0.01);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, (immediatesourceentity.getX()), (immediatesourceentity.getY()),
-					(immediatesourceentity.getZ()), 7, 0.1, 0.1, 0.1, 0.01);
+			_level.sendParticles(ParticleTypes.CAMPFIRE_COSY_SMOKE, (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), 7, 0.1, 0.1, 0.1, 0.01);
 	}
 }

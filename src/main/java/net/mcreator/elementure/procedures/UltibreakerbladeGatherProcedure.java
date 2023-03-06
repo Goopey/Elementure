@@ -10,8 +10,7 @@ public class UltibreakerbladeGatherProcedure {
 			return;
 		if (Math.random() < 0.2) {
 			{
-				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).force_essence + 3;
+				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).force_essence + 3;
 				sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.force_essence = _setval;
 					capability.syncPlayerVariables(sourceentity);

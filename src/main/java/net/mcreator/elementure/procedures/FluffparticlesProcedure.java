@@ -17,9 +17,8 @@ public class FluffparticlesProcedure {
 		double CoordsY = 0;
 		if (Math.random() < 0.075) {
 			for (int index0 = 0; index0 < (int) (4); index0++) {
-				world.addParticle((SimpleParticleType) (ElementureModParticleTypes.CLOUDFLUFF.get()), (x + Math.random()), y, (z + Math.random()),
-						(0.05 + (Math.random() < 0.5 ? Math.random() / 100 : Math.random() / (-100))), ((-0.05) - Math.random() / 100),
-						(0.05 + (Math.random() < 0.5 ? Math.random() / 100 : Math.random() / (-100))));
+				world.addParticle((SimpleParticleType) (ElementureModParticleTypes.CLOUDFLUFF.get()), (x + Math.random()), y, (z + Math.random()), (0.05 + (Math.random() < 0.5 ? Math.random() / 100 : Math.random() / (-100))),
+						((-0.05) - Math.random() / 100), (0.05 + (Math.random() < 0.5 ? Math.random() / 100 : Math.random() / (-100))));
 			}
 			if (new Object() {
 				public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -35,15 +34,10 @@ public class FluffparticlesProcedure {
 				CoordsY = -6;
 				CoordsZ = -6;
 				for (int index1 = 0; index1 < (int) (2197); index1++) {
-					if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 36
-							&& ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-									.getBlock() == ElementureModBlocks.STRIPPED_FLUFFLOG.get()
-									|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-											.getBlock() == ElementureModBlocks.STRIPPED_FLUFFLOGFULL.get()
-									|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-											.getBlock() == ElementureModBlocks.FLUFFLOG.get()
-									|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-											.getBlock() == ElementureModBlocks.FLUFFLOGFULL.get())) {
+					if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 36 && ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.STRIPPED_FLUFFLOG.get()
+							|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.STRIPPED_FLUFFLOGFULL.get()
+							|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.FLUFFLOG.get()
+							|| (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.FLUFFLOGFULL.get())) {
 						notdecay = true;
 					} else if (Math.random() < 0.001 && (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() == Blocks.AIR) {
 						world.setBlock(new BlockPos(x, y - 1, z), Blocks.AIR.defaultBlockState(), 3);

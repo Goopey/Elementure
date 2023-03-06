@@ -18,8 +18,7 @@ public class PumpkincoreSpawnPumpkinMimicsProcedure {
 		double locZ = 0;
 		double locY = 0;
 		if (Math.random() < 0.1) {
-			if (ElementureModVariables.MapVariables.get(world).isHalloween
-					|| !(world instanceof Level _lvl && _lvl.isDay()) && Math.random() < 0.25) {
+			if (ElementureModVariables.MapVariables.get(world).isHalloween || !(world instanceof Level _lvl && _lvl.isDay()) && Math.random() < 0.25) {
 				locX = Math.random() < 0.5 ? 3 : -3;
 				locZ = Math.random() < 0.5 ? 3 : -3;
 				locY = Math.random() * 3;
@@ -28,8 +27,7 @@ public class PumpkincoreSpawnPumpkinMimicsProcedure {
 						Entity entityToSpawn = new PumpkinmimicEntity(ElementureModEntities.PUMPKINMIMIC.get(), _level);
 						entityToSpawn.moveTo((x + locX), (y + locY), (z + locZ), world.getRandom().nextFloat() * 360F, 0);
 						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-									null, null);
+							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						world.addFreshEntity(entityToSpawn);
 					}
 				}

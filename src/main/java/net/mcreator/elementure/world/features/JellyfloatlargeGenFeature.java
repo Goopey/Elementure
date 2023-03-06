@@ -75,10 +75,8 @@ public class JellyfloatlargeGenFeature extends Feature<NoneFeatureConfiguration>
 				int z = spawnTo.getZ();
 				if (!JellyfloatplaceUnderwaterProcedure.execute(y))
 					continue;
-				if (template.placeInWorld(
-						context.level(), spawnTo, spawnTo, new StructurePlaceSettings().setMirror(Mirror.NONE).setRotation(Rotation.NONE)
-								.setRandom(context.random()).addProcessor(BlockIgnoreProcessor.STRUCTURE_AND_AIR).setIgnoreEntities(false),
-						context.random(), 2)) {
+				if (template.placeInWorld(context.level(), spawnTo, spawnTo,
+						new StructurePlaceSettings().setMirror(Mirror.NONE).setRotation(Rotation.NONE).setRandom(context.random()).addProcessor(BlockIgnoreProcessor.STRUCTURE_AND_AIR).setIgnoreEntities(false), context.random(), 2)) {
 					JellyfloatlargeGenPlaceProcedure.execute(world, x, y, z);
 					anyPlaced = true;
 				}

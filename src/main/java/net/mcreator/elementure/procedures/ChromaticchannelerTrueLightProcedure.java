@@ -10,8 +10,7 @@ public class ChromaticchannelerTrueLightProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.CHROMATICCHANNELER
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.CHROMATICCHANNELER.get()) {
 			entity.getPersistentData().putBoolean("lightACTIVE", (true));
 		}
 	}

@@ -7,10 +7,8 @@ import net.mcreator.elementure.init.ElementureModEnchantments;
 
 public class IronbobberAssignPowerProcedure {
 	public static void execute(ItemStack itemstack) {
-		if (itemstack.getOrCreateTag().getDouble("crateChance") < 2
-				+ EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.MAGNETIC_ENCHANTMENT.get(), itemstack)) {
-			itemstack.getOrCreateTag().putDouble("crateChance",
-					(2 + EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.MAGNETIC_ENCHANTMENT.get(), itemstack)));
+		if (itemstack.getOrCreateTag().getDouble("crateChance") < 2 + EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.MAGNETIC_ENCHANTMENT.get(), itemstack)) {
+			itemstack.getOrCreateTag().putDouble("crateChance", (2 + EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.MAGNETIC_ENCHANTMENT.get(), itemstack)));
 		}
 	}
 }

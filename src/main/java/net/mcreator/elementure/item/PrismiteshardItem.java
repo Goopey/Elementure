@@ -35,8 +35,7 @@ public class PrismiteshardItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component
-				.literal("These shards make no sense... You can hold them in your hand, but your fingers go through when you try to touch them."));
+		list.add(Component.literal("These shards make no sense... You can hold them in your hand, but your fingers go through when you try to touch them."));
 		list.add(Component.literal("They burn stuff and yet they feel cold."));
 	}
 }

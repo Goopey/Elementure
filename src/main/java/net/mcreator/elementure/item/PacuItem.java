@@ -16,10 +16,9 @@ import java.util.List;
 
 public class PacuItem extends Item {
 	public PacuItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.4f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.4f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

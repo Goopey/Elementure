@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGH",
@@ -9,7 +9,6 @@
         "data": {
           "image": "playerearth.png",
           "use1Xscale": true,
-          "name": "playerearth.png",
           "x": 384,
           "y": 206
         }
@@ -17,12 +16,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:integer:earth_essence>",
+          "name": "label_varintegerearth_essence",
+          "text": {
+            "fixedValue": "<VAR:integer:earth_essence>"
+          },
           "color": {
             "value": -10079488,
             "falpha": 0.0
           },
-          "name": "<VAR:integer:earth_essence>",
           "x": 393,
           "y": 197
         }

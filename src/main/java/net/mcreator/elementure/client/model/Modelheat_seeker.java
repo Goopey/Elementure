@@ -47,46 +47,31 @@ public class Modelheat_seeker<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition tentacle_side_left = partdefinition.addOrReplaceChild("tentacle_side_left",
-				CubeListBuilder.create().texOffs(50, 11).addBox(-1.0F, -1.0F, -2.5F, 2.0F, 2.0F, 5.0F, new CubeDeformation(0.0F)),
+		PartDefinition tentacle_side_left = partdefinition.addOrReplaceChild("tentacle_side_left", CubeListBuilder.create().texOffs(50, 11).addBox(-1.0F, -1.0F, -2.5F, 2.0F, 2.0F, 5.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(3.0F, 21.0F, -1.0F, 0.0F, 0.2618F, 0.0F));
-		PartDefinition tentacle_left_2 = tentacle_side_left.addOrReplaceChild("tentacle_left_2",
-				CubeListBuilder.create().texOffs(27, 11).addBox(0.09F, -1.01F, 0.0F, 1.0F, 2.0F, 7.0F, new CubeDeformation(0.0F)),
+		PartDefinition tentacle_left_2 = tentacle_side_left.addOrReplaceChild("tentacle_left_2", CubeListBuilder.create().texOffs(27, 11).addBox(0.09F, -1.01F, 0.0F, 1.0F, 2.0F, 7.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 2.0F, 0.0F, -0.1309F, 0.0F));
-		PartDefinition tentacle_side_right = partdefinition.addOrReplaceChild("tentacle_side_right",
-				CubeListBuilder.create().texOffs(50, 11).addBox(-1.0F, -1.0F, -2.5F, 2.0F, 2.0F, 5.0F, new CubeDeformation(0.0F)),
+		PartDefinition tentacle_side_right = partdefinition.addOrReplaceChild("tentacle_side_right", CubeListBuilder.create().texOffs(50, 11).addBox(-1.0F, -1.0F, -2.5F, 2.0F, 2.0F, 5.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(-3.0F, 21.0F, -1.0F, 0.0F, -0.2618F, 0.0F));
-		PartDefinition tentacle_right_2 = tentacle_side_right.addOrReplaceChild("tentacle_right_2",
-				CubeListBuilder.create().texOffs(27, 11).addBox(-4.09F, -4.01F, 0.0F, 1.0F, 2.0F, 7.0F, new CubeDeformation(0.0F)),
+		PartDefinition tentacle_right_2 = tentacle_side_right.addOrReplaceChild("tentacle_right_2", CubeListBuilder.create().texOffs(27, 11).addBox(-4.09F, -4.01F, 0.0F, 1.0F, 2.0F, 7.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(3.0F, 3.0F, 2.0F, 0.0F, 0.1309F, 0.0F));
-		PartDefinition tentacle_top_2 = partdefinition.addOrReplaceChild("tentacle_top_2",
-				CubeListBuilder.create().texOffs(50, 18).addBox(-1.0F, -0.5F, -2.5F, 2.0F, 2.0F, 5.0F, new CubeDeformation(0.0F)),
+		PartDefinition tentacle_top_2 = partdefinition.addOrReplaceChild("tentacle_top_2", CubeListBuilder.create().texOffs(50, 18).addBox(-1.0F, -0.5F, -2.5F, 2.0F, 2.0F, 5.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 23.5F, -1.0F, -0.2618F, 0.0F, 0.0F));
-		PartDefinition tentacle_top_22 = tentacle_top_2.addOrReplaceChild("tentacle_top_22",
-				CubeListBuilder.create().texOffs(28, 20).addBox(-0.99F, 0.1F, 0.0F, 2.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)),
+		PartDefinition tentacle_top_22 = tentacle_top_2.addOrReplaceChild("tentacle_top_22", CubeListBuilder.create().texOffs(28, 20).addBox(-0.99F, 0.1F, 0.0F, 2.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.5F, 2.0F, 0.1309F, 0.0F, 0.0F));
-		PartDefinition tentacle_top_1 = partdefinition.addOrReplaceChild("tentacle_top_1",
-				CubeListBuilder.create().texOffs(50, 11).addBox(-1.0F, -1.5F, -2.5F, 2.0F, 2.0F, 5.0F, new CubeDeformation(0.0F)),
+		PartDefinition tentacle_top_1 = partdefinition.addOrReplaceChild("tentacle_top_1", CubeListBuilder.create().texOffs(50, 11).addBox(-1.0F, -1.5F, -2.5F, 2.0F, 2.0F, 5.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 18.5F, -1.0F, 0.2618F, 0.0F, 0.0F));
-		PartDefinition tentacle_top_12 = tentacle_top_1.addOrReplaceChild("tentacle_top_12",
-				CubeListBuilder.create().texOffs(24, 10).addBox(-0.99F, -1.1F, 0.0F, 2.0F, 1.0F, 9.0F, new CubeDeformation(0.0F)),
+		PartDefinition tentacle_top_12 = tentacle_top_1.addOrReplaceChild("tentacle_top_12", CubeListBuilder.create().texOffs(24, 10).addBox(-0.99F, -1.1F, 0.0F, 2.0F, 1.0F, 9.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, -0.5F, 2.0F, -0.1309F, 0.0F, 0.0F));
-		PartDefinition head_bone = partdefinition.addOrReplaceChild("head_bone",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-2.0F, -2.0F, -6.0F, 4.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(42, 0)
-						.addBox(-3.0F, -3.0F, -5.0F, 6.0F, 6.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(24, 0)
-						.addBox(-2.5F, -2.5F, 0.0F, 5.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 21.0F, 0.0F));
-		PartDefinition head_6_r1 = head_bone.addOrReplaceChild("head_6_r1",
-				CubeListBuilder.create().texOffs(44, 26).addBox(-2.5F, 1.86F, -1.09F, 5.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)),
+		PartDefinition head_bone = partdefinition.addOrReplaceChild("head_bone", CubeListBuilder.create().texOffs(0, 0).addBox(-2.0F, -2.0F, -6.0F, 4.0F, 4.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(42, 0)
+				.addBox(-3.0F, -3.0F, -5.0F, 6.0F, 6.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(24, 0).addBox(-2.5F, -2.5F, 0.0F, 5.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 21.0F, 0.0F));
+		PartDefinition head_6_r1 = head_bone.addOrReplaceChild("head_6_r1", CubeListBuilder.create().texOffs(44, 26).addBox(-2.5F, 1.86F, -1.09F, 5.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0436F, 0.0F, 0.0F));
-		PartDefinition head_5_r1 = head_bone.addOrReplaceChild("head_5_r1",
-				CubeListBuilder.create().texOffs(19, 26).addBox(-2.5F, -2.86F, -1.09F, 5.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)),
+		PartDefinition head_5_r1 = head_bone.addOrReplaceChild("head_5_r1", CubeListBuilder.create().texOffs(19, 26).addBox(-2.5F, -2.86F, -1.09F, 5.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.0436F, 0.0F, 0.0F));
-		PartDefinition head_4_r1 = head_bone.addOrReplaceChild("head_4_r1",
-				CubeListBuilder.create().texOffs(0, 22).addBox(-0.86F, -2.51F, -3.0F, 1.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)),
+		PartDefinition head_4_r1 = head_bone.addOrReplaceChild("head_4_r1", CubeListBuilder.create().texOffs(0, 22).addBox(-0.86F, -2.51F, -3.0F, 1.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(-2.0F, 0.0F, 2.0F, 0.0F, 0.0436F, 0.0F));
-		PartDefinition head_3_r1 = head_bone.addOrReplaceChild("head_3_r1",
-				CubeListBuilder.create().texOffs(0, 22).addBox(-0.14F, -2.51F, -3.0F, 1.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)),
+		PartDefinition head_3_r1 = head_bone.addOrReplaceChild("head_3_r1", CubeListBuilder.create().texOffs(0, 22).addBox(-0.14F, -2.51F, -3.0F, 1.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(2.0F, 0.0F, 2.0F, 0.0F, -0.0436F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 32);
 	}
@@ -111,8 +96,7 @@ public class Modelheat_seeker<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		tentacle_side_left.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		tentacle_side_right.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		tentacle_top_2.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);

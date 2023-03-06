@@ -29,8 +29,7 @@ public class NeonchannelerTrueEnergyProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.NEONCHANNELER
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.NEONCHANNELER.get()) {
 			entity.getPersistentData().putBoolean("energyACTIVE", (true));
 		}
 	}

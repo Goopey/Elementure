@@ -67,16 +67,14 @@ public class HarpoonSendProcedure {
 			(harpoon).enchant(Enchantments.FISHING_LUCK, EnchantmentHelper.getItemEnchantmentLevel(Enchantments.FISHING_LUCK, itemstack));
 		}
 		if (EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.MAGNETIC_ENCHANTMENT.get(), itemstack) > 0) {
-			(harpoon).enchant(ElementureModEnchantments.MAGNETIC_ENCHANTMENT.get(),
-					EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.MAGNETIC_ENCHANTMENT.get(), itemstack));
+			(harpoon).enchant(ElementureModEnchantments.MAGNETIC_ENCHANTMENT.get(), EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.MAGNETIC_ENCHANTMENT.get(), itemstack));
 		}
 		if (!(new Object() {
 			public boolean checkGamemode(Entity _ent) {
 				if (_ent instanceof ServerPlayer _serverPlayer) {
 					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.CREATIVE;
 				} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
-					return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance()
-							.getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
+					return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.CREATIVE;
 				}
 				return false;
 			}
@@ -111,8 +109,7 @@ public class HarpoonSendProcedure {
 			entityToSpawn.moveTo((entity.getX()), (1.2 + entity.getY()), (entity.getZ()), entity.getYRot(), 0);
 			entityToSpawn.setYBodyRot(entity.getYRot());
 			entityToSpawn.setYHeadRot(entity.getYRot());
-			entityToSpawn.setDeltaMovement(((2.2 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, itemstack)) * yaw * pitch),
-					((2.2 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, itemstack)) * pitch2),
+			entityToSpawn.setDeltaMovement(((2.2 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, itemstack)) * yaw * pitch), ((2.2 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, itemstack)) * pitch2),
 					((2.2 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, itemstack)) * yaw2 * pitch));
 			if (entityToSpawn instanceof Mob _mobToSpawn)
 				_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);

@@ -63,7 +63,6 @@ public class FishingreelInMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(FishingreelInMessage.class, FishingreelInMessage::buffer, FishingreelInMessage::new,
-				FishingreelInMessage::handler);
+		ElementureMod.addNetworkMessage(FishingreelInMessage.class, FishingreelInMessage::buffer, FishingreelInMessage::new, FishingreelInMessage::handler);
 	}
 }

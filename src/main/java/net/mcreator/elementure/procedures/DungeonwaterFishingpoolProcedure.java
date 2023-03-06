@@ -30,19 +30,15 @@ public class DungeonwaterFishingpoolProcedure {
 		}
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:fishingbobberentity")))
 						&& (entityiterator.getPersistentData().getString("playerName")).equals(entity.getDisplayName().getString())) {
-					if ((world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 1.5, entityiterator.getZ())))
-							.getBlock() == Blocks.SAND) {
+					if ((world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 1.5, entityiterator.getZ()))).getBlock() == Blocks.SAND) {
 						GrayskullFishingPoolProcedure.execute(entity);
-					} else if ((world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 1.5, entityiterator.getZ())))
-							.getBlock() == ElementureModBlocks.CLOUDSAND.get()) {
+					} else if ((world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 1.5, entityiterator.getZ()))).getBlock() == ElementureModBlocks.CLOUDSAND.get()) {
 						WindyshoresFishingPoolProcedure.execute(world, entity);
-					} else if ((world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 1.5, entityiterator.getZ())))
-							.getBlock() == Blocks.LIME_TERRACOTTA) {
+					} else if ((world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 1.5, entityiterator.getZ()))).getBlock() == Blocks.LIME_TERRACOTTA) {
 						FungalpitFishingpoolProcedure.execute(world, entity);
 					}
 				}

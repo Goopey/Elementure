@@ -34,8 +34,7 @@ public class Modellousy_sword<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition main_body = partdefinition.addOrReplaceChild("main_body", CubeListBuilder.create(), PartPose.offset(-8.0F, 24.0F, 8.0F));
-		PartDefinition body = main_body.addOrReplaceChild("body",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-8.0F, -17.0F, -3.0F, 16.0F, 16.0F, 0.0F, new CubeDeformation(0.0F)),
+		PartDefinition body = main_body.addOrReplaceChild("body", CubeListBuilder.create().texOffs(0, 0).addBox(-8.0F, -17.0F, -3.0F, 16.0F, 16.0F, 0.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(8.0F, 0.0F, -8.0F, -0.3927F, 0.7854F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 32, 16);
 	}
@@ -47,8 +46,7 @@ public class Modellousy_sword<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		main_body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

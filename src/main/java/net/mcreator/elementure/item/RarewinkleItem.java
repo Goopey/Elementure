@@ -15,8 +15,7 @@ import java.util.List;
 
 public class RarewinkleItem extends Item {
 	public RarewinkleItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.RARE)
-				.food((new FoodProperties.Builder()).nutrition(10).saturationMod(1.2f).alwaysEat().meat().build()));
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(10).saturationMod(1.2f).alwaysEat().meat().build()));
 	}
 
 	@Override

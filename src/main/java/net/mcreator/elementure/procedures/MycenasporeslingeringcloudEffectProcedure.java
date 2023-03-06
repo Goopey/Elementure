@@ -22,15 +22,13 @@ public class MycenasporeslingeringcloudEffectProcedure {
 		} else {
 			entity.getPersistentData().putDouble("wait", (entity.getPersistentData().getDouble("wait") + 1));
 		}
-		if (entity.getPersistentData().getDouble("wait") == 0 || entity.getPersistentData().getDouble("wait") == 10
-				|| entity.getPersistentData().getDouble("wait") == 20 || entity.getPersistentData().getDouble("wait") == 30
+		if (entity.getPersistentData().getDouble("wait") == 0 || entity.getPersistentData().getDouble("wait") == 10 || entity.getPersistentData().getDouble("wait") == 20 || entity.getPersistentData().getDouble("wait") == 30
 				|| entity.getPersistentData().getDouble("wait") == 40) {
 			for (int index0 = 0; index0 < (int) (2704); index0++) {
 				if (LocX * LocX + LocZ * LocZ < 9) {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(
-								new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX() + LocX), (entity.getY()), (entity.getZ() + LocZ)),
-										Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX() + LocX), (entity.getY()), (entity.getZ() + LocZ)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								"particle minecraft:entity_effect ~ ~ ~ 0 1 0 1 0 normal");
 				}
 				LocX = LocX + 0.25;
@@ -51,8 +49,7 @@ public class MycenasporeslingeringcloudEffectProcedure {
 				if (LocX * LocX + LocZ * LocZ < 9) {
 					if (world instanceof ServerLevel _level)
 						_level.getServer().getCommands().performPrefixedCommand(
-								new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX() + LocX), (entity.getY()), (entity.getZ() + LocZ)),
-										Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+								new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX() + LocX), (entity.getY()), (entity.getZ() + LocZ)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 								"effect give @e[distance=0.1..1] minecraft_worlds:mycenanspores 40 0");
 				}
 				LocX = LocX + 1;

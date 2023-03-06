@@ -12,7 +12,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.util.RandomSource;
@@ -27,8 +27,7 @@ import java.util.Collections;
 
 public class DarkgemCrystalBlock extends Block {
 	public DarkgemCrystalBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.AMETHYST).strength(4f, 10f).lightLevel(s -> 11)
-				.requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.AMETHYST).strength(4f, 10f).lightLevel(s -> 11).requiresCorrectToolForDrops().hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override
@@ -44,7 +43,7 @@ public class DarkgemCrystalBlock extends Block {
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 3;
 		return false;
 	}
@@ -69,7 +68,6 @@ public class DarkgemCrystalBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		DarkgemCrystalLaserProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 280);
 	}

@@ -14,8 +14,7 @@ public class WindyshoresIslandPatchGenProcedure {
 		for (int index0 = 0; index0 < (int) (4); index0++) {
 			if (Math.random() < 0.25) {
 				ElementureMod.queueServerWork((int) (locI * 2), () -> {
-					WindyshoresIslandGenProcedure.execute(world, (x - 10 + Math.random() * 20), (y - 1 + (Math.random() * 3 * Math.random() * 3) / 3),
-							(z - 10 + Math.random() * 20));
+					WindyshoresIslandGenProcedure.execute(world, (x - 10 + Math.random() * 20), (y - 1 + (Math.random() * 3 * Math.random() * 3) / 3), (z - 10 + Math.random() * 20));
 				});
 			}
 			locI = locI + 1;

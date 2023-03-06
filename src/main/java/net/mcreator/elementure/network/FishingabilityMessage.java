@@ -63,7 +63,6 @@ public class FishingabilityMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(FishingabilityMessage.class, FishingabilityMessage::buffer, FishingabilityMessage::new,
-				FishingabilityMessage::handler);
+		ElementureMod.addNetworkMessage(FishingabilityMessage.class, FishingabilityMessage::buffer, FishingabilityMessage::new, FishingabilityMessage::handler);
 	}
 }

@@ -59,8 +59,7 @@ public class DiversalloyswordItem extends SwordItem {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("Slices through water very well."));
-		list.add(Component
-				.literal("Deals increased damage versus water creatures and aquatic mobs and extracts more air essence when attacking them."));
+		list.add(Component.literal("Deals increased damage versus water creatures and aquatic mobs and extracts more air essence when attacking them."));
 	}
 
 	@Override

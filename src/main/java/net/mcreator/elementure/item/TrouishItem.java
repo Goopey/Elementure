@@ -15,10 +15,9 @@ import net.mcreator.elementure.init.ElementureModTabs;
 
 public class TrouishItem extends Item {
 	public TrouishItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.4f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(1).saturationMod(0.4f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

@@ -2,6 +2,7 @@
 package net.mcreator.elementure.block;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.storage.loot.LootContext;
@@ -40,15 +41,11 @@ import net.mcreator.elementure.block.entity.NightmareShamanBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class NightmareShamanBlock extends Block
-		implements
-
-			EntityBlock {
+public class NightmareShamanBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public NightmareShamanBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOD).strength(4f, 17.5f).noOcclusion()
-				.isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.WOOD).strength(4f, 17.5f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -63,8 +60,12 @@ public class NightmareShamanBlock extends Block
 	}
 
 	@Override
-	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
+		return Shapes.empty();
+	}
 
+	@Override
+	public VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return switch (state.getValue(FACING)) {
 			default -> box(0, 0, 0, 16, 28, 16);
 			case NORTH -> box(0, 0, 0, 16, 28, 16);
@@ -111,7 +112,6 @@ public class NightmareShamanBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		NightmareShamanSpawnProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 20);
 	}
@@ -126,7 +126,6 @@ public class NightmareShamanBlock extends Block
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-
 		NightmareShamanDestroyProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}

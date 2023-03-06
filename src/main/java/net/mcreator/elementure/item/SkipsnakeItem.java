@@ -9,9 +9,8 @@ import net.mcreator.elementure.init.ElementureModTabs;
 
 public class SkipsnakeItem extends Item {
 	public SkipsnakeItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.7999999999999999f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.7999999999999999f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 }

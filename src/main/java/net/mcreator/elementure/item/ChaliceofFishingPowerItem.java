@@ -21,10 +21,9 @@ import java.util.List;
 
 public class ChaliceofFishingPowerItem extends Item {
 	public ChaliceofFishingPowerItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.RARE)
-				.food((new FoodProperties.Builder()).nutrition(-1).saturationMod(0.3f).alwaysEat()
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(-1).saturationMod(0.3f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

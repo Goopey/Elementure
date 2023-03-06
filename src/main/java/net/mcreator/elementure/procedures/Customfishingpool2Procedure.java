@@ -22,14 +22,12 @@ public class Customfishingpool2Procedure {
 			return;
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if (entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:fishingbobberentity")))
 						&& (entityiterator.getPersistentData().getString("playerName")).equals(entity.getDisplayName().getString())) {
 					if ((world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == (Level.NETHER)
-							&& (world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 0.5, entityiterator.getZ())))
-									.is(BlockTags.create(new ResourceLocation("forge:lavafishingblocks")))) {
+							&& (world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 0.5, entityiterator.getZ()))).is(BlockTags.create(new ResourceLocation("forge:lavafishingblocks")))) {
 						NetherfishingpoolProcedure.execute(entity);
 					} else if (new Object() {
 						public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -67,8 +65,7 @@ public class Customfishingpool2Procedure {
 						}
 					}.getValue(world, new BlockPos(entityiterator.getX(), -64, entityiterator.getZ()), "diverscrownUsed")) {
 						DiverscrownFishingPoolProcedure.execute(entity);
-					} else if ((world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 0.5, entityiterator.getZ())))
-							.is(BlockTags.create(new ResourceLocation("forge:lavafishingblocks")))) {
+					} else if ((world.getBlockState(new BlockPos(entityiterator.getX(), entityiterator.getY() - 0.5, entityiterator.getZ()))).is(BlockTags.create(new ResourceLocation("forge:lavafishingblocks")))) {
 						LavafishingpoolProcedure.execute(entity);
 					} else {
 						Customfishingpool3Procedure.execute(world, entity);

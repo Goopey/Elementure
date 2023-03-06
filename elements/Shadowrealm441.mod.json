@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "biome",
   "definition": {
     "name": "shadowreal_441",
@@ -49,12 +49,29 @@
     "particlesProbability": 0.5,
     "rainingPossibility": 0.30000000000000004,
     "temperature": 2.0,
-    "baseHeight": -1.2,
-    "heightVariation": 2.0,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 0,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": 1.0,
+      "max": 1.0
+    },
+    "genHumidity": {
+      "min": -0.3999999999999999,
+      "max": -0.3999999999999999
+    },
+    "genContinentalness": {
+      "min": 0.38,
+      "max": 0.38
+    },
+    "genErosion": {
+      "min": -1.0,
+      "max": -1.0
+    },
+    "genWeirdness": {
+      "min": -0.6500942723434773,
+      "max": -0.6500942723434773
+    },
     "grassPerChunk": 0,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,

@@ -31,23 +31,16 @@ public class Modelobleck_minion<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.5F, -3.0F, -1.5F, 3.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 24.0F, 0.0F));
-		PartDefinition ear_2_r1 = bb_main
-				.addOrReplaceChild(
-						"ear_2_r1", CubeListBuilder.create().texOffs(0, 11).mirror()
-								.addBox(0.0F, -0.6F, -1.0F, 1.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false),
-						PartPose.offsetAndRotation(1.0F, -2.6F, 1.0F, 0.3927F, -0.3491F, -0.5236F));
-		PartDefinition ear_1_r1 = bb_main.addOrReplaceChild("ear_1_r1",
-				CubeListBuilder.create().texOffs(0, 11).addBox(-1.0F, -0.6F, -1.0F, 1.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main", CubeListBuilder.create().texOffs(0, 0).addBox(-1.5F, -3.0F, -1.5F, 3.0F, 3.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
+		PartDefinition ear_2_r1 = bb_main.addOrReplaceChild("ear_2_r1", CubeListBuilder.create().texOffs(0, 11).mirror().addBox(0.0F, -0.6F, -1.0F, 1.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false),
+				PartPose.offsetAndRotation(1.0F, -2.6F, 1.0F, 0.3927F, -0.3491F, -0.5236F));
+		PartDefinition ear_1_r1 = bb_main.addOrReplaceChild("ear_1_r1", CubeListBuilder.create().texOffs(0, 11).addBox(-1.0F, -0.6F, -1.0F, 1.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(-1.0F, -2.6F, 1.0F, 0.3927F, 0.3491F, 0.5236F));
 		return LayerDefinition.create(meshdefinition, 16, 16);
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		bb_main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 

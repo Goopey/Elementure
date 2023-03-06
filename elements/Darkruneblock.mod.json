@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "block",
   "definition": {
     "texture": "blackruneblock",
@@ -76,13 +76,7 @@
     "luminance": 1,
     "unbreakable": true,
     "breakHarvestLevel": 44,
-    "spawnParticles": true,
-    "particleToSpawn": {
-      "value": "ENCHANTMENT_TABLE"
-    },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.2999999985098839,
-    "particleAmount": 2,
+    "isBonemealable": false,
     "hasInventory": false,
     "openGUIOnRightClick": false,
     "inventorySize": 9,

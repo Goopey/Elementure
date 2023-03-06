@@ -23,11 +23,9 @@ public class OstrachainLinkFollowProcedure {
 		double alpha = 0;
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(6 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(6 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if (entity.getPersistentData().getDouble("chainId") == entityiterator.getPersistentData().getDouble("chainId")
-						&& entity.getPersistentData().getDouble("chainPos") - 1 == entityiterator.getPersistentData().getDouble("chainPos")) {
+				if (entity.getPersistentData().getDouble("chainId") == entityiterator.getPersistentData().getDouble("chainId") && entity.getPersistentData().getDouble("chainPos") - 1 == entityiterator.getPersistentData().getDouble("chainPos")) {
 					isChained = true;
 					pitch = Math.cos(entityiterator.getXRot() / ((-180) / Math.PI));
 					pitch2 = Math.sin(entityiterator.getXRot() / ((-180) / Math.PI));
@@ -35,12 +33,9 @@ public class OstrachainLinkFollowProcedure {
 					yaw2 = Math.cos(entityiterator.getYRot() / ((-180) / Math.PI));
 					{
 						Entity _ent = entity;
-						_ent.teleportTo((entityiterator.getX() + (-1.2) * yaw * pitch), (entityiterator.getY() + (-1.2) * pitch2),
-								(entityiterator.getZ() + (-1.2) * yaw2 * pitch));
+						_ent.teleportTo((entityiterator.getX() + (-1.2) * yaw * pitch), (entityiterator.getY() + (-1.2) * pitch2), (entityiterator.getZ() + (-1.2) * yaw2 * pitch));
 						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport((entityiterator.getX() + (-1.2) * yaw * pitch),
-									(entityiterator.getY() + (-1.2) * pitch2), (entityiterator.getZ() + (-1.2) * yaw2 * pitch), _ent.getYRot(),
-									_ent.getXRot());
+							_serverPlayer.connection.teleport((entityiterator.getX() + (-1.2) * yaw * pitch), (entityiterator.getY() + (-1.2) * pitch2), (entityiterator.getZ() + (-1.2) * yaw2 * pitch), _ent.getYRot(), _ent.getXRot());
 					}
 					alpha = 0.925;
 					{

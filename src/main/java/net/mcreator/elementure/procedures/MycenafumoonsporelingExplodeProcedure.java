@@ -22,8 +22,7 @@ public class MycenafumoonsporelingExplodeProcedure {
 		}
 		if (world instanceof ServerLevel _level)
 			_level.getServer().getCommands().performPrefixedCommand(
-					new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "",
-							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					"/effect give @e[distance=0.1..4] elementure:mycenanspores 4 1");
 		if (world instanceof Level _level && !_level.isClientSide())
 			_level.explode(null, (entity.getX()), (entity.getY()), (entity.getZ()), (float) 1.5, Explosion.BlockInteraction.NONE);

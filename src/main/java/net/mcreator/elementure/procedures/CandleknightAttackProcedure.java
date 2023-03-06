@@ -23,8 +23,7 @@ public class CandleknightAttackProcedure {
 		double playX = 0;
 		double playZ = 0;
 		double playY = 0;
-		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)
-				&& (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).isAlive()) {
+		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null) && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).isAlive()) {
 			if (entity.getPersistentData().getDouble("attackCooldown") == 100) {
 				attackChoice = Math.random();
 				if (attackChoice >= 0.5) {
@@ -50,8 +49,8 @@ public class CandleknightAttackProcedure {
 						_level.sendParticles(ParticleTypes.FLAME, (entity.getX()), (entity.getY()), (entity.getZ()), 75, 1.5, 0.02, 1.5, 0.02);
 					{
 						final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true)
-								.stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(16 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+								.collect(Collectors.toList());
 						for (Entity entityiterator : _entfound) {
 							entityiterator.setSecondsOnFire(10);
 						}

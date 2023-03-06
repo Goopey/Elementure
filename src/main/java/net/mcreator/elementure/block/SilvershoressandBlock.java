@@ -20,7 +20,7 @@ import java.util.Collections;
 
 public class SilvershoressandBlock extends Block {
 	public SilvershoressandBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).strength(0.15f, 0.5f).lightLevel(s -> 2));
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SAND).strength(0.15000000000000002f, 0.5f).lightLevel(s -> 2));
 	}
 
 	@Override

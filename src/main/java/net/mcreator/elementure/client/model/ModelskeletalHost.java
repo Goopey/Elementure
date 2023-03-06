@@ -54,57 +54,38 @@ public class ModelskeletalHost<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition right_leg = partdefinition.addOrReplaceChild("right_leg",
-				CubeListBuilder.create().texOffs(0, 18).addBox(-1.0F, -0.01F, -1.0F, 2.0F, 12.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(-2.0F, 12.0F, 0.0F));
-		PartDefinition left_leg = partdefinition.addOrReplaceChild(
-				"left_leg", CubeListBuilder.create().texOffs(0, 18).mirror()
-						.addBox(-1.0F, -0.01F, -1.0F, 2.0F, 12.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false),
+		PartDefinition right_leg = partdefinition.addOrReplaceChild("right_leg", CubeListBuilder.create().texOffs(0, 18).addBox(-1.0F, -0.01F, -1.0F, 2.0F, 12.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(-2.0F, 12.0F, 0.0F));
+		PartDefinition left_leg = partdefinition.addOrReplaceChild("left_leg", CubeListBuilder.create().texOffs(0, 18).mirror().addBox(-1.0F, -0.01F, -1.0F, 2.0F, 12.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false),
 				PartPose.offset(2.0F, 12.0F, 0.0F));
 		PartDefinition head_tilt = partdefinition.addOrReplaceChild("head_tilt", CubeListBuilder.create(), PartPose.offset(0.0F, 1.0F, 0.5F));
-		PartDefinition head_pivot_bob = head_tilt.addOrReplaceChild("head_pivot_bob",
-				CubeListBuilder.create().texOffs(32, 0).addBox(-3.99F, -8.01F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)),
+		PartDefinition head_pivot_bob = head_tilt.addOrReplaceChild("head_pivot_bob", CubeListBuilder.create().texOffs(32, 0).addBox(-3.99F, -8.01F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, -0.829F, 0.0F, 0.0F));
 		PartDefinition right_arm = partdefinition.addOrReplaceChild("right_arm", CubeListBuilder.create(), PartPose.offset(-5.0F, 1.0F, 0.0F));
-		PartDefinition right_arm_r1 = right_arm.addOrReplaceChild("right_arm_r1",
-				CubeListBuilder.create().texOffs(24, 18).addBox(-1.0F, -1.0F, -1.0F, 2.0F, 12.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition right_arm_r1 = right_arm.addOrReplaceChild("right_arm_r1", CubeListBuilder.create().texOffs(24, 18).addBox(-1.0F, -1.0F, -1.0F, 2.0F, 12.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(-0.01F, 0.5F, 0.0F, 0.0F, 0.0F, 0.1309F));
 		PartDefinition left_arm = partdefinition.addOrReplaceChild("left_arm", CubeListBuilder.create(), PartPose.offset(5.0F, 1.0F, 0.0F));
-		PartDefinition left_arm_r1 = left_arm.addOrReplaceChild(
-				"left_arm_r1", CubeListBuilder.create().texOffs(24, 18).mirror()
-						.addBox(-1.0F, -1.0F, -1.0F, 2.0F, 12.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false),
+		PartDefinition left_arm_r1 = left_arm.addOrReplaceChild("left_arm_r1", CubeListBuilder.create().texOffs(24, 18).mirror().addBox(-1.0F, -1.0F, -1.0F, 2.0F, 12.0F, 2.0F, new CubeDeformation(0.0F)).mirror(false),
 				PartPose.offsetAndRotation(0.01F, 0.5F, 0.0F, 0.0F, 0.0F, -0.1309F));
-		PartDefinition spiderHead = partdefinition.addOrReplaceChild("spiderHead",
-				CubeListBuilder.create().texOffs(44, 54).addBox(-3.0F, -2.0F, -3.0F, 6.0F, 6.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 6.0F, 0.0F));
+		PartDefinition spiderHead = partdefinition.addOrReplaceChild("spiderHead", CubeListBuilder.create().texOffs(44, 54).addBox(-3.0F, -2.0F, -3.0F, 6.0F, 6.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 6.0F, 0.0F));
 		PartDefinition spider_leg_1 = partdefinition.addOrReplaceChild("spider_leg_1", CubeListBuilder.create(), PartPose.offset(-4.0F, 10.0F, 0.0F));
-		PartDefinition cube_r1 = spider_leg_1
-				.addOrReplaceChild(
-						"cube_r1", CubeListBuilder.create().texOffs(44, 35).mirror()
-								.addBox(-1.0F, 0.0F, -4.0F, 2.0F, 2.0F, 6.0F, new CubeDeformation(0.0F)).mirror(false),
-						PartPose.offsetAndRotation(0.0F, -1.0F, -2.0F, 0.2182F, 0.3491F, 0.0F));
+		PartDefinition cube_r1 = spider_leg_1.addOrReplaceChild("cube_r1", CubeListBuilder.create().texOffs(44, 35).mirror().addBox(-1.0F, 0.0F, -4.0F, 2.0F, 2.0F, 6.0F, new CubeDeformation(0.0F)).mirror(false),
+				PartPose.offsetAndRotation(0.0F, -1.0F, -2.0F, 0.2182F, 0.3491F, 0.0F));
 		PartDefinition spider_leg_2 = partdefinition.addOrReplaceChild("spider_leg_2", CubeListBuilder.create(), PartPose.offset(-4.0F, 7.0F, 0.0F));
-		PartDefinition cube_r2 = spider_leg_2.addOrReplaceChild("cube_r2",
-				CubeListBuilder.create().texOffs(44, 35).addBox(-1.0F, 0.0F, -4.0F, 2.0F, 2.0F, 6.0F, new CubeDeformation(0.0F)),
+		PartDefinition cube_r2 = spider_leg_2.addOrReplaceChild("cube_r2", CubeListBuilder.create().texOffs(44, 35).addBox(-1.0F, 0.0F, -4.0F, 2.0F, 2.0F, 6.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, -1.0F, -2.0F, 0.0436F, 0.3054F, 0.0F));
 		PartDefinition spider_leg_3 = partdefinition.addOrReplaceChild("spider_leg_3", CubeListBuilder.create(), PartPose.offset(-4.0F, 2.0F, 0.0F));
-		PartDefinition cube_r3 = spider_leg_3.addOrReplaceChild("cube_r3",
-				CubeListBuilder.create().texOffs(44, 35).addBox(-1.0F, 0.0F, -6.0F, 2.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)),
+		PartDefinition cube_r3 = spider_leg_3.addOrReplaceChild("cube_r3", CubeListBuilder.create().texOffs(44, 35).addBox(-1.0F, 0.0F, -6.0F, 2.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, -1.0F, -2.0F, -0.3927F, 0.1309F, 0.0F));
 		PartDefinition spider_leg_4 = partdefinition.addOrReplaceChild("spider_leg_4", CubeListBuilder.create(), PartPose.offset(4.0F, 7.0F, 0.0F));
-		PartDefinition cube_r4 = spider_leg_4.addOrReplaceChild("cube_r4",
-				CubeListBuilder.create().texOffs(44, 35).addBox(-1.0F, 0.0F, -4.0F, 2.0F, 2.0F, 6.0F, new CubeDeformation(0.0F)),
+		PartDefinition cube_r4 = spider_leg_4.addOrReplaceChild("cube_r4", CubeListBuilder.create().texOffs(44, 35).addBox(-1.0F, 0.0F, -4.0F, 2.0F, 2.0F, 6.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, -1.0F, -2.0F, 0.2618F, -0.3054F, 0.0F));
 		PartDefinition spider_leg_5 = partdefinition.addOrReplaceChild("spider_leg_5", CubeListBuilder.create(), PartPose.offset(3.0F, 12.0F, -2.0F));
-		PartDefinition cube_r5 = spider_leg_5.addOrReplaceChild("cube_r5",
-				CubeListBuilder.create().texOffs(44, 35).addBox(-2.0F, 5.0F, -6.0F, 2.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)),
+		PartDefinition cube_r5 = spider_leg_5.addOrReplaceChild("cube_r5", CubeListBuilder.create().texOffs(44, 35).addBox(-2.0F, 5.0F, -6.0F, 2.0F, 2.0F, 8.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(1.0F, -6.0F, 0.0F, 0.1745F, -0.1745F, 0.0F));
-		PartDefinition bb_main = partdefinition.addOrReplaceChild(
-				"bb_main", CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, -24.0F, -2.0F, 8.0F, 12.0F, 4.0F, new CubeDeformation(0.0F))
-						.texOffs(0, 48).addBox(-4.0F, -24.0F, -2.0F, 8.0F, 12.0F, 4.0F, new CubeDeformation(-0.1F)),
+		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
+				CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, -24.0F, -2.0F, 8.0F, 12.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 48).addBox(-4.0F, -24.0F, -2.0F, 8.0F, 12.0F, 4.0F, new CubeDeformation(-0.1F)),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
-		PartDefinition cube_r6 = bb_main.addOrReplaceChild("cube_r6",
-				CubeListBuilder.create().texOffs(0, 46).addBox(-2.5F, -2.0F, 0.0F, 5.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)),
+		PartDefinition cube_r6 = bb_main.addOrReplaceChild("cube_r6", CubeListBuilder.create().texOffs(0, 46).addBox(-2.5F, -2.0F, 0.0F, 5.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, -24.0F, 0.0F, -0.6981F, 0.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
@@ -125,8 +106,7 @@ public class ModelskeletalHost<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		right_leg.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		left_leg.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		head_tilt.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);

@@ -70,7 +70,6 @@ public class FishingrecordDungeonwaterButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(FishingrecordDungeonwaterButtonMessage.class, FishingrecordDungeonwaterButtonMessage::buffer,
-				FishingrecordDungeonwaterButtonMessage::new, FishingrecordDungeonwaterButtonMessage::handler);
+		ElementureMod.addNetworkMessage(FishingrecordDungeonwaterButtonMessage.class, FishingrecordDungeonwaterButtonMessage::buffer, FishingrecordDungeonwaterButtonMessage::new, FishingrecordDungeonwaterButtonMessage::handler);
 	}
 }

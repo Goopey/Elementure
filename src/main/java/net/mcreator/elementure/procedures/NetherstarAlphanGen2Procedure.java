@@ -47,8 +47,7 @@ public class NetherstarAlphanGen2Procedure {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "babystar"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 2, y - 2, z - 2), new BlockPos(x - 2, y - 2, z - 2),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+					template.placeInWorld(_serverworld, new BlockPos(x - 2, y - 2, z - 2), new BlockPos(x - 2, y - 2, z - 2), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 							_serverworld.random, 3);
 				}
 			}
@@ -97,24 +96,18 @@ public class NetherstarAlphanGen2Procedure {
 					}
 				} else if (Math.random() < 0.33) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "bigprismaticcrystal"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "bigprismaticcrystal"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x - 1, y - Math.round(Math.random() * 3), z - 1),
-									new BlockPos(x - 1, y - Math.round(Math.random() * 3), z - 1),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-									_serverworld.random, 3);
+							template.placeInWorld(_serverworld, new BlockPos(x - 1, y - Math.round(Math.random() * 3), z - 1), new BlockPos(x - 1, y - Math.round(Math.random() * 3), z - 1),
+									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 						}
 					}
 				} else {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "prismaticcrystal"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "prismaticcrystal"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x, (y + 1) - Math.round(Math.random()), z),
-									new BlockPos(x, (y + 1) - Math.round(Math.random()), z),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-									_serverworld.random, 3);
+							template.placeInWorld(_serverworld, new BlockPos(x, (y + 1) - Math.round(Math.random()), z), new BlockPos(x, (y + 1) - Math.round(Math.random()), z),
+									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 						}
 					}
 				}

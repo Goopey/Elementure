@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -15,7 +15,6 @@
         "data": {
           "image": "credits.png",
           "use1Xscale": true,
-          "name": "credits.png",
           "x": 89,
           "y": 34
         }
@@ -23,12 +22,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Thanks for the music and art :",
+          "name": "label_thanks_for_the_music_and_art",
+          "text": {
+            "fixedValue": "Thanks for the music and art :"
+          },
           "color": {
             "value": -35328,
             "falpha": 0.0
           },
-          "name": "Thanks for the music and art :",
           "x": 93,
           "y": 69
         }
@@ -36,12 +37,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Search them up! They're all really cool people.",
+          "name": "label_search_them_up_theyre_all_real",
+          "text": {
+            "fixedValue": "Search them up! They're all really cool people."
+          },
           "color": {
             "value": -35328,
             "falpha": 0.0
           },
-          "name": "Search them up! They're all really cool people.",
           "x": 91,
           "y": 194
         }
@@ -49,12 +52,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Battle Brothers - Monkey Bros",
+          "name": "label_battle_brothers_monkey_bros",
+          "text": {
+            "fixedValue": "Battle Brothers - Monkey Bros"
+          },
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "Battle Brothers - Monkey Bros",
           "x": 96,
           "y": 78
         }
@@ -62,13 +67,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_next_page",
           "text": "Next Page",
           "displayCondition": {
             "name": "DeactivateSlot"
           },
           "width": 72,
           "height": 20,
-          "name": "Next Page",
           "x": 259,
           "y": 173
         }
@@ -76,13 +81,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_previous_page",
           "text": "Previous Page",
           "onClick": {
             "name": "Creditsopen"
           },
           "width": 93,
           "height": 20,
-          "name": "Previous Page",
           "x": 95,
           "y": 173
         }
@@ -90,12 +95,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Demon Stone - *heavenly choir*",
+          "name": "label_demon_stone_heavenly_choir",
+          "text": {
+            "fixedValue": "Demon Stone - *heavenly choir*"
+          },
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "Demon Stone - *heavenly choir*",
           "x": 96,
           "y": 88
         }

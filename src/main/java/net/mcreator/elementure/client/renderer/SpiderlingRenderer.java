@@ -12,7 +12,7 @@ import net.mcreator.elementure.client.model.Modelspiderling;
 
 public class SpiderlingRenderer extends MobRenderer<SpiderlingEntity, Modelspiderling<SpiderlingEntity>> {
 	public SpiderlingRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelspiderling(context.bakeLayer(Modelspiderling.LAYER_LOCATION)), 0.2f);
+		super(context, new Modelspiderling(context.bakeLayer(Modelspiderling.LAYER_LOCATION)), 0.19999999999999998f);
 		this.addLayer(new EyesLayer<SpiderlingEntity, Modelspiderling<SpiderlingEntity>>(this) {
 			@Override
 			public RenderType renderType() {

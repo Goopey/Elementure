@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "block",
   "definition": {
     "texture": "soulforge_tops",
@@ -99,13 +99,7 @@
     "luminance": 9,
     "unbreakable": true,
     "breakHarvestLevel": 1,
-    "spawnParticles": false,
-    "particleToSpawn": {
-      "value": "CUSTOM:Soulflame"
-    },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.1,
-    "particleAmount": 2,
+    "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "SoulforgeGUI",
     "openGUIOnRightClick": true,

@@ -19,17 +19,12 @@ public class MycenashroomlordAttackMasterProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof Player
-				&& (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof ServerPlayer) {
+		if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof Player && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) instanceof ServerPlayer) {
 			if (!entity.getPersistentData().getBoolean("attackongoing")) {
 				if (Math.random() < 0.43 && Math.floor(entity.getPersistentData().getDouble("attackCooldown")) == 90) {
 					if (Math.random() < 0.2) {
 						entity.getPersistentData().putBoolean("superattack", (true));
-					} else if (Math.random() > 0.67
-							&& !(!world
-									.getEntitiesOfClass(MycenashroomlingEntity.class,
-											AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 64, 64, 64), e -> true)
-									.isEmpty())) {
+					} else if (Math.random() > 0.67 && !(!world.getEntitiesOfClass(MycenashroomlingEntity.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 64, 64, 64), e -> true).isEmpty())) {
 						MycenashroomlordAttackBehavior1Procedure.execute(world, x, y, z, entity);
 					} else {
 						MycenashroomlordAttackBehavior2Procedure.execute(world, x, y, z, entity);
@@ -38,11 +33,7 @@ public class MycenashroomlordAttackMasterProcedure {
 				} else if (entity.getPersistentData().getDouble("attackCooldown") >= 170) {
 					if (Math.random() < 0.075) {
 						entity.getPersistentData().putBoolean("superattack", (true));
-					} else if (Math.random() > 0.7
-							&& !(!world
-									.getEntitiesOfClass(MycenashroomalEntity.class,
-											AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 64, 64, 64), e -> true)
-									.isEmpty())) {
+					} else if (Math.random() > 0.7 && !(!world.getEntitiesOfClass(MycenashroomalEntity.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 64, 64, 64), e -> true).isEmpty())) {
 						MycenashroomlordLongAttackBehavior1Procedure.execute(world, x, y, z, entity);
 						entity.getPersistentData().putBoolean("attackongoing", (true));
 						entity.getPersistentData().putDouble("attacktype", 3);
@@ -64,15 +55,13 @@ public class MycenashroomlordAttackMasterProcedure {
 					}
 				} else {
 					if (!entity.getPersistentData().getBoolean("superattack")) {
-						if ((entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.MOVEMENT_SLOWDOWN) : false)
-								|| (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.DIG_SLOWDOWN) : false)) {
+						if ((entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.MOVEMENT_SLOWDOWN) : false) || (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.DIG_SLOWDOWN) : false)) {
 							entity.getPersistentData().putDouble("attackCooldown", (entity.getPersistentData().getDouble("attackCooldown") + 0.75));
 						} else {
 							entity.getPersistentData().putDouble("attackCooldown", (entity.getPersistentData().getDouble("attackCooldown") + 1));
 						}
 					} else {
-						entity.getPersistentData().putDouble("superattackCooldown",
-								(entity.getPersistentData().getDouble("superattackCooldown") + 1));
+						entity.getPersistentData().putDouble("superattackCooldown", (entity.getPersistentData().getDouble("superattackCooldown") + 1));
 					}
 				}
 				if (entity.getPersistentData().getBoolean("superattack") == true) {

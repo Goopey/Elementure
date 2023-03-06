@@ -27,10 +27,8 @@ public class WindyshoresBaseGenProcedure {
 		double WORLD_MID = 0;
 		locX = x + Math.random() * 40 - 20;
 		locZ = z + Math.random() * 40 - 20;
-		if (!((world.getBlockState(new BlockPos(locX, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) locX, (int) locZ) - 1, locZ)))
-				.getBlock() instanceof LiquidBlock)) {
-			WindyshoregeyserGenProcedure.execute(world, locX, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) locX, (int) locZ)),
-					locZ);
+		if (!((world.getBlockState(new BlockPos(locX, world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) locX, (int) locZ) - 1, locZ))).getBlock() instanceof LiquidBlock)) {
+			WindyshoregeyserGenProcedure.execute(world, locX, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) locX, (int) locZ)), locZ);
 		} else {
 			WindyshoregeyserGenProcedure.execute(world, x, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) z)), z);
 		}
@@ -56,11 +54,9 @@ public class WindyshoresBaseGenProcedure {
 					for (int index1 = 0; index1 < (int) (8); index1++) {
 						if (Math.random() < 0.2) {
 							if (Math.random() < 0.88) {
-								WindyshoresIslandPatchGenProcedure.execute(world, ((x + locX) - 5 + Math.random() * 10),
-										(HEIGHT_GEN + locY * 24 + Math.random() * 6), ((z + locZ) - 5 + Math.random() * 10));
+								WindyshoresIslandPatchGenProcedure.execute(world, ((x + locX) - 5 + Math.random() * 10), (HEIGHT_GEN + locY * 24 + Math.random() * 6), ((z + locZ) - 5 + Math.random() * 10));
 							} else {
-								WortashGenProcedure.execute(world, ((x + locX) - 5 + Math.random() * 10),
-										(HEIGHT_GEN + locY * 24 + Math.random() * 6), ((z + locZ) - 5 + Math.random() * 10));
+								WortashGenProcedure.execute(world, ((x + locX) - 5 + Math.random() * 10), (HEIGHT_GEN + locY * 24 + Math.random() * 6), ((z + locZ) - 5 + Math.random() * 10));
 							}
 						}
 						locY = locY + 1;
@@ -80,24 +76,21 @@ public class WindyshoresBaseGenProcedure {
 		}
 		locY = 0;
 		for (int index2 = 0; index2 < (int) (8); index2++) {
-			WindyshoresgeysersmallPlaceProcedure.execute(world, (x - 60 + Math.random() * 120), (HEIGHT_GEN + locY * 27 + Math.random() * 3),
-					(z - 60 + Math.random() * 120));
+			WindyshoresgeysersmallPlaceProcedure.execute(world, (x - 60 + Math.random() * 120), (HEIGHT_GEN + locY * 27 + Math.random() * 3), (z - 60 + Math.random() * 120));
 			locY = locY + 1;
 		}
 		WORLD_MID = 204;
 		for (int index3 = 0; index3 < (int) (1 + Math.round(Math.random() * 2)); index3++) {
 			ElementureMod.queueServerWork(20, () -> {
-				IvorytowerGenProcedure.execute(world, (x - 60 + Math.random() * 120), (204 + Math.random() * 96 - 48),
-						(z - 60 + Math.random() * 120));
+				IvorytowerGenProcedure.execute(world, (x - 60 + Math.random() * 120), (204 + Math.random() * 96 - 48), (z - 60 + Math.random() * 120));
 			});
 		}
 		ElementureMod.queueServerWork(40, () -> {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "abandonned_farm"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 8, 270, z - 8), new BlockPos(x - 8, 270, z - 8),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-							_serverworld.random, 3);
+					template.placeInWorld(_serverworld, new BlockPos(x - 8, 270, z - 8), new BlockPos(x - 8, 270, z - 8), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
+							3);
 				}
 			}
 		});

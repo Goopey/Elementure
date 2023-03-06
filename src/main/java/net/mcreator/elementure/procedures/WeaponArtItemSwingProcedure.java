@@ -6,6 +6,7 @@ import net.mcreator.elementure.item.WeaponArtItemItem;
 
 public class WeaponArtItemSwingProcedure {
 	public static void execute(ItemStack itemstack) {
-		((WeaponArtItemItem) itemstack.getItem()).animationprocedure = "animation.weaponartitem.side_bash";
+		if (itemstack.getItem() instanceof WeaponArtItemItem)
+			itemstack.getOrCreateTag().putString("geckoAnim", "animation.weaponartitem.side_bash");
 	}
 }

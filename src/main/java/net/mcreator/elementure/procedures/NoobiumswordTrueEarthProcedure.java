@@ -10,8 +10,7 @@ public class NoobiumswordTrueEarthProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.NOOBIUMSWORD
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.NOOBIUMSWORD.get()) {
 			entity.getPersistentData().putBoolean("earthACTIVE", (true));
 		}
 	}

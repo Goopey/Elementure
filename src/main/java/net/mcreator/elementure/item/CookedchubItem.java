@@ -16,10 +16,9 @@ import java.util.List;
 
 public class CookedchubItem extends Item {
 	public CookedchubItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(7).saturationMod(1.5999999999999999f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(7).saturationMod(1.5999999999999999f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

@@ -41,28 +41,20 @@ public class Modelghost_warrior<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition legs = partdefinition.addOrReplaceChild("legs", CubeListBuilder.create(), PartPose.offset(2.0F, 12.0F, 0.0F));
-		PartDefinition legs_r1 = legs.addOrReplaceChild("legs_r1",
-				CubeListBuilder.create().texOffs(0, 47).addBox(-4.5F, 1.75F, -2.24F, 9.0F, 13.0F, 4.0F, new CubeDeformation(0.0F)),
+		PartDefinition legs_r1 = legs.addOrReplaceChild("legs_r1", CubeListBuilder.create().texOffs(0, 47).addBox(-4.5F, 1.75F, -2.24F, 9.0F, 13.0F, 4.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(-2.0F, -3.0F, 0.0F, 0.1309F, 0.0F, 0.0F));
-		PartDefinition right_arm = partdefinition.addOrReplaceChild(
-				"right_arm", CubeListBuilder.create().texOffs(0, 16).addBox(-4.0F, 0.0F, -2.0F, 4.0F, 13.0F, 4.0F, new CubeDeformation(0.0F))
-						.texOffs(44, 54).addBox(-4.51F, -2.5F, -2.51F, 5.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)),
+		PartDefinition right_arm = partdefinition.addOrReplaceChild("right_arm",
+				CubeListBuilder.create().texOffs(0, 16).addBox(-4.0F, 0.0F, -2.0F, 4.0F, 13.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(44, 54).addBox(-4.51F, -2.5F, -2.51F, 5.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(-5.0F, 0.0F, 0.0F));
-		PartDefinition left_arm = partdefinition.addOrReplaceChild(
-				"left_arm", CubeListBuilder.create().texOffs(0, 16).mirror().addBox(0.0F, 0.0F, -2.0F, 4.0F, 13.0F, 4.0F, new CubeDeformation(0.0F))
-						.mirror(false).texOffs(44, 54).addBox(-0.5F, -2.5F, -2.5F, 5.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)),
+		PartDefinition left_arm = partdefinition.addOrReplaceChild("left_arm",
+				CubeListBuilder.create().texOffs(0, 16).mirror().addBox(0.0F, 0.0F, -2.0F, 4.0F, 13.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false).texOffs(44, 54).addBox(-0.5F, -2.5F, -2.5F, 5.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(5.0F, 0.0F, 0.0F));
-		PartDefinition sword_r1 = left_arm.addOrReplaceChild("sword_r1",
-				CubeListBuilder.create().texOffs(16, 0).addBox(0.0F, -11.0F, -9.0F, 0.0F, 16.0F, 16.0F, new CubeDeformation(0.0F)),
+		PartDefinition sword_r1 = left_arm.addOrReplaceChild("sword_r1", CubeListBuilder.create().texOffs(16, 0).addBox(0.0F, -11.0F, -9.0F, 0.0F, 16.0F, 16.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(2.0F, 13.2426F, -5.6569F, 2.3562F, 0.0F, -3.1416F));
-		PartDefinition head = partdefinition
-				.addOrReplaceChild("head",
-						CubeListBuilder.create().texOffs(32, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.0F))
-								.texOffs(32, 38).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.5F)),
-						PartPose.offset(0.0F, 0.0F, 0.0F));
-		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-4.5F, -24.0F, -2.0F, 9.0F, 12.0F, 4.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 24.0F, 0.0F));
+		PartDefinition head = partdefinition.addOrReplaceChild("head",
+				CubeListBuilder.create().texOffs(32, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(32, 38).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.5F)),
+				PartPose.offset(0.0F, 0.0F, 0.0F));
+		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main", CubeListBuilder.create().texOffs(0, 0).addBox(-4.5F, -24.0F, -2.0F, 9.0F, 12.0F, 4.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
 
@@ -76,8 +68,7 @@ public class Modelghost_warrior<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		legs.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		right_arm.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		left_arm.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);

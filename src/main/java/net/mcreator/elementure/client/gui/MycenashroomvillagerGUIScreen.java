@@ -1,4 +1,3 @@
-
 package net.mcreator.elementure.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,7 @@ public class MycenashroomvillagerGUIScreen extends AbstractContainerScreen<Mycen
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_next;
 
 	public MycenashroomvillagerGUIScreen(MycenashroomvillagerGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -93,11 +93,13 @@ public class MycenashroomvillagerGUIScreen extends AbstractContainerScreen<Mycen
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 123, this.topPos + 33, 40, 20, Component.literal("Next"), e -> {
+		button_next = new Button(this.leftPos + 123, this.topPos + 33, 40, 20, Component.translatable("gui.elementure.mycenashroomvillager_gui.button_next"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new MycenashroomvillagerGUIButtonMessage(0, x, y, z));
 				MycenashroomvillagerGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_next", button_next);
+		this.addRenderableWidget(button_next);
 	}
 }

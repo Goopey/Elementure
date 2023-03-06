@@ -23,9 +23,8 @@ public class GrayskulllakeGenProcedure {
 		if (world instanceof ServerLevel _serverworld) {
 			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "grayskull_lake"));
 			if (template != null) {
-				template.placeInWorld(_serverworld, new BlockPos(x - 15, y - 4, z - 15), new BlockPos(x - 15, y - 4, z - 15),
-						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
-						3);
+				template.placeInWorld(_serverworld, new BlockPos(x - 15, y - 4, z - 15), new BlockPos(x - 15, y - 4, z - 15), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+						_serverworld.random, 3);
 			}
 		}
 		for (int index0 = 0; index0 < (int) (961); index0++) {

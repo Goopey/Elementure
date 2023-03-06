@@ -21,7 +21,6 @@ public class SpiderqueenfangsItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("\u00A76Boss trophy"));
-		list.add(Component.literal(
-				"Artifact : When creatures around you are poisoned, they immediately take 25% of the poison damage and the poison gets cured."));
+		list.add(Component.literal("Artifact : When creatures around you are poisoned, they immediately take 25% of the poison damage and the poison gets cured."));
 	}
 }

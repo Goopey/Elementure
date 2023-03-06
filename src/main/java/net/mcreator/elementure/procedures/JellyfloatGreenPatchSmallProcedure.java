@@ -21,16 +21,14 @@ public class JellyfloatGreenPatchSmallProcedure {
 					while (world.getBlockState(new BlockPos(x + locX, locY, z + locX)).canOcclude() && locY <= 60) {
 						locY = locY + 1;
 					}
-					if (locY <= 60 && (world.getBlockState(new BlockPos(x + locX, locY - 1, z + locX)))
-							.is(BlockTags.create(new ResourceLocation("elementure:jellybiome_slimeturfs")))) {
+					if (locY <= 60 && (world.getBlockState(new BlockPos(x + locX, locY - 1, z + locX))).is(BlockTags.create(new ResourceLocation("elementure:jellybiome_slimeturfs")))) {
 						world.setBlock(new BlockPos(x + locX, locY - 1, z + locX), ElementureModBlocks.GREENSLIMETURF.get().defaultBlockState(), 3);
 					}
 				} else {
 					while (!world.getBlockState(new BlockPos(x + locX, locY, z + locX)).canOcclude() && locY >= 31) {
 						locY = locY - 1;
 					}
-					if (locY >= 31 && (world.getBlockState(new BlockPos(x + locX, locY, z + locX)))
-							.is(BlockTags.create(new ResourceLocation("elementure:jellybiome_slimeturfs")))) {
+					if (locY >= 31 && (world.getBlockState(new BlockPos(x + locX, locY, z + locX))).is(BlockTags.create(new ResourceLocation("elementure:jellybiome_slimeturfs")))) {
 						world.setBlock(new BlockPos(x + locX, locY, z + locX), ElementureModBlocks.GREENSLIMETURF.get().defaultBlockState(), 3);
 					}
 				}

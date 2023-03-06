@@ -74,8 +74,7 @@ public class BiomethemeDeciderProcedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
-		} else if ((entity.level.dimension()) == (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("elementure:forgotten_1")))
-				&& world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("elementure:familiar_11"))) {
+		} else if ((entity.level.dimension()) == (ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("elementure:forgotten_1"))) && world.getBiome(new BlockPos(x, y, z)).is(new ResourceLocation("elementure:familiar_11"))) {
 			{
 				String _setval = "RepulsiveForgotten";
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

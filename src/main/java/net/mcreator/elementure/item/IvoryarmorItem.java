@@ -63,7 +63,7 @@ public abstract class IvoryarmorItem extends ArmorItem {
 
 			@Override
 			public float getKnockbackResistance() {
-				return 0.2f;
+				return 0.19999999999999998f;
 			}
 		}, slot, properties);
 	}

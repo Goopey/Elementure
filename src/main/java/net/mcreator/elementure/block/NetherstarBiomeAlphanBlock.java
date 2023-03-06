@@ -25,10 +25,7 @@ import net.mcreator.elementure.block.entity.NetherstarBiomeAlphanBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class NetherstarBiomeAlphanBlock extends Block
-		implements
-
-			EntityBlock {
+public class NetherstarBiomeAlphanBlock extends Block implements EntityBlock {
 	public NetherstarBiomeAlphanBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(-1, 3600000));
 	}
@@ -58,7 +55,6 @@ public class NetherstarBiomeAlphanBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		NetherstarAlphanGen1Procedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 10);
 	}

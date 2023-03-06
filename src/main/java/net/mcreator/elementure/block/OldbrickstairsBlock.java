@@ -17,8 +17,7 @@ import java.util.Collections;
 
 public class OldbrickstairsBlock extends StairBlock {
 	public OldbrickstairsBlock() {
-		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(-1, 3600000)
-				.noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
+		super(() -> Blocks.AIR.defaultBlockState(), BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(-1, 3600000).noOcclusion().isRedstoneConductor((bs, br, bp) -> false).dynamicShape());
 	}
 
 	@Override

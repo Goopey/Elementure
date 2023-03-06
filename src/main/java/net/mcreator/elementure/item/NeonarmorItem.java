@@ -75,8 +75,7 @@ public abstract class NeonarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal(
-					"Full armor effect : When using energy essence, heal 2.5 hearts and gain a haste effect which gets stronger the more essence you use for 5 seconds"));
+			list.add(Component.literal("Full armor effect : When using energy essence, heal 2.5 hearts and gain a haste effect which gets stronger the more essence you use for 5 seconds"));
 		}
 
 		@Override
@@ -93,8 +92,7 @@ public abstract class NeonarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal(
-					"Full armor effect : When using energy essence, heal 2.5 hearts and gain a haste effect which gets stronger the more essence you use for 5 seconds"));
+			list.add(Component.literal("Full armor effect : When using energy essence, heal 2.5 hearts and gain a haste effect which gets stronger the more essence you use for 5 seconds"));
 		}
 
 		@Override
@@ -116,8 +114,7 @@ public abstract class NeonarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal(
-					"Full armor effect : When using energy essence, heal 2.5 hearts and gain a haste effect which gets stronger the more essence you use for 5 seconds"));
+			list.add(Component.literal("Full armor effect : When using energy essence, heal 2.5 hearts and gain a haste effect which gets stronger the more essence you use for 5 seconds"));
 		}
 
 		@Override
@@ -134,8 +131,7 @@ public abstract class NeonarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component.literal(
-					"Full armor effect : When using energy essence, heal 2.5 hearts and gain a haste effect which gets stronger the more essence you use for 5 seconds"));
+			list.add(Component.literal("Full armor effect : When using energy essence, heal 2.5 hearts and gain a haste effect which gets stronger the more essence you use for 5 seconds"));
 		}
 
 		@Override

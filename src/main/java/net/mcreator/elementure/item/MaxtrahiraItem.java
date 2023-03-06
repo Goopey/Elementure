@@ -14,8 +14,7 @@ import net.mcreator.elementure.init.ElementureModTabs;
 
 public class MaxtrahiraItem extends Item {
 	public MaxtrahiraItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.EPIC)
-				.food((new FoodProperties.Builder()).nutrition(20).saturationMod(6f).alwaysEat().meat().build()));
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(20).saturationMod(6f).alwaysEat().meat().build()));
 	}
 
 	@Override

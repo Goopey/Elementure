@@ -10,8 +10,7 @@ public class ObleckDashProcedure {
 		if (entity == null)
 			return;
 		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null) && Math.random() < 0.0025) {
-			entity.setDeltaMovement(new Vec3(((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX() - entity.getX()), 0.2,
-					((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ() - entity.getZ())));
+			entity.setDeltaMovement(new Vec3(((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getX() - entity.getX()), 0.2, ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).getZ() - entity.getZ())));
 		}
 		LebigmaigreLightningStrikeProcedure.execute(world, entity);
 	}

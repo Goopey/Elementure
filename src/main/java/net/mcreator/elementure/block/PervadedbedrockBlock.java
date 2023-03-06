@@ -23,10 +23,7 @@ import net.mcreator.elementure.block.entity.PervadedbedrockBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class PervadedbedrockBlock extends Block
-		implements
-
-			EntityBlock {
+public class PervadedbedrockBlock extends Block implements EntityBlock {
 	public PervadedbedrockBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(-1, 3600000));
 	}

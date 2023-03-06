@@ -26,8 +26,7 @@ import net.mcreator.elementure.ElementureMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class ElementureModKeyMappings {
-	public static final KeyMapping OPENRELICINVENTORYKEY = new KeyMapping("key.elementure.openrelicinventorykey", GLFW.GLFW_KEY_0,
-			"key.categories.inventory") {
+	public static final KeyMapping OPENRELICINVENTORYKEY = new KeyMapping("key.elementure.openrelicinventorykey", GLFW.GLFW_KEY_0, "key.categories.inventory") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -40,8 +39,7 @@ public class ElementureModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping QUICK_BACKPACK_KEY = new KeyMapping("key.elementure.quick_backpack_key", GLFW.GLFW_KEY_MINUS,
-			"key.categories.misc") {
+	public static final KeyMapping QUICK_BACKPACK_KEY = new KeyMapping("key.elementure.quick_backpack_key", GLFW.GLFW_KEY_MINUS, "key.categories.misc") {
 		private boolean isDownOld = false;
 
 		@Override
@@ -103,8 +101,7 @@ public class ElementureModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping DIRECTIONAL_DODGE_KEY = new KeyMapping("key.elementure.directional_dodge_key", GLFW.GLFW_KEY_SPACE,
-			"key.categories.movement") {
+	public static final KeyMapping DIRECTIONAL_DODGE_KEY = new KeyMapping("key.elementure.directional_dodge_key", GLFW.GLFW_KEY_SPACE, "key.categories.movement") {
 		private boolean isDownOld = false;
 
 		@Override

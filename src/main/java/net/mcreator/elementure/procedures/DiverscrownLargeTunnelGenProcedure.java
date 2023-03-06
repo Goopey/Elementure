@@ -45,8 +45,7 @@ public class DiverscrownLargeTunnelGenProcedure {
 					world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), ElementureModBlocks.DIVERSSTONE.get().defaultBlockState(), 3);
 				} else if (locX * locX + (locY + 9) * (locY + 9) * 21.78 + locZ * locZ > 1369) {
 					if (Math.random() < 0.1) {
-						world.setBlock(new BlockPos(x + locX, y + locY + 2, z + locZ),
-								ElementureModBlocks.DIVERSCROWN_OMEGAN.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + locX, y + locY + 2, z + locZ), ElementureModBlocks.DIVERSCROWN_OMEGAN.get().defaultBlockState(), 3);
 						if (!world.isClientSide()) {
 							BlockPos _bp = new BlockPos(x + locX, y + locY + 2, z + locZ);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -139,20 +138,13 @@ public class DiverscrownLargeTunnelGenProcedure {
 						world.setBlock(new BlockPos(x + locX, locY, z + locZ), ElementureModBlocks.DIVERSSTONE.get().defaultBlockState(), 3);
 						if (Math.random() < 0.5) {
 							if (locX < 0 && locZ < 0) {
-								world.setBlock(new BlockPos(x + locX + Math.round(Math.random()), locY + Math.round(Math.random() * 2 - 1),
-										z + locZ + Math.round(Math.random())), ElementureModBlocks.DIVERSSTONE.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + locX + Math.round(Math.random()), locY + Math.round(Math.random() * 2 - 1), z + locZ + Math.round(Math.random())), ElementureModBlocks.DIVERSSTONE.get().defaultBlockState(), 3);
 							} else if (locX > 0 && locZ < 0) {
-								world.setBlock(new BlockPos(x + locX + Math.round(Math.random() * (-1)), locY + Math.round(Math.random() * 2 - 1),
-										z + locZ + Math.round(Math.random())), ElementureModBlocks.DIVERSSTONE.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + locX + Math.round(Math.random() * (-1)), locY + Math.round(Math.random() * 2 - 1), z + locZ + Math.round(Math.random())), ElementureModBlocks.DIVERSSTONE.get().defaultBlockState(), 3);
 							} else if (locX < 0 && locZ > 0) {
-								world.setBlock(
-										new BlockPos(x + locX + Math.round(Math.random()), locY + Math.round(Math.random() * 2 - 1),
-												z + locZ + Math.round(Math.random() * (-1))),
-										ElementureModBlocks.DIVERSSTONE.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + locX + Math.round(Math.random()), locY + Math.round(Math.random() * 2 - 1), z + locZ + Math.round(Math.random() * (-1))), ElementureModBlocks.DIVERSSTONE.get().defaultBlockState(), 3);
 							} else {
-								world.setBlock(
-										new BlockPos(x + locX + Math.round(Math.random() * (-1)), locY + Math.round(Math.random() * 2 - 1),
-												z + locZ + Math.round(Math.random() * (-1))),
+								world.setBlock(new BlockPos(x + locX + Math.round(Math.random() * (-1)), locY + Math.round(Math.random() * 2 - 1), z + locZ + Math.round(Math.random() * (-1))),
 										ElementureModBlocks.DIVERSSTONE.get().defaultBlockState(), 3);
 							}
 						}
@@ -181,34 +173,20 @@ public class DiverscrownLargeTunnelGenProcedure {
 		for (int index3 = 0; index3 < (int) (10); index3++) {
 			ElementureMod.queueServerWork((int) (repeatTimes * 5), () -> {
 				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands()
-							.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-									Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"kill @e[type=minecraft:item, distance=0..40]");
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"kill @e[type=minecraft:item, distance=0..40]");
 				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands()
-							.performPrefixedCommand(
-									new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 40), z), Vec2.ZERO, _level, 4, "",
-											Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"kill @e[type=minecraft:item, distance=0..40]");
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 40), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"kill @e[type=minecraft:item, distance=0..40]");
 				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands()
-							.performPrefixedCommand(
-									new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 80), z), Vec2.ZERO, _level, 4, "",
-											Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"kill @e[type=minecraft:item, distance=0..40]");
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 80), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"kill @e[type=minecraft:item, distance=0..40]");
 				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands()
-							.performPrefixedCommand(
-									new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 120), z), Vec2.ZERO, _level, 4, "",
-											Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"kill @e[type=minecraft:item, distance=0..40]");
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 120), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"kill @e[type=minecraft:item, distance=0..40]");
 				if (world instanceof ServerLevel _level)
-					_level.getServer().getCommands()
-							.performPrefixedCommand(
-									new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 160), z), Vec2.ZERO, _level, 4, "",
-											Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-									"kill @e[type=minecraft:item, distance=0..40]");
+					_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y - 160), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							"kill @e[type=minecraft:item, distance=0..40]");
 			});
 			repeatTimes = repeatTimes + 1;
 		}

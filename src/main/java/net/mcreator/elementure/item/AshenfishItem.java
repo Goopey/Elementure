@@ -18,10 +18,9 @@ import java.util.List;
 
 public class AshenfishItem extends Item {
 	public AshenfishItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.2f).alwaysEat()
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(4).saturationMod(0.19999999999999998f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

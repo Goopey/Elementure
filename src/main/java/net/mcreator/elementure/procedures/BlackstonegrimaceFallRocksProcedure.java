@@ -19,21 +19,17 @@ public class BlackstonegrimaceFallRocksProcedure {
 		for (int index0 = 0; index0 < (int) (Math.ceil(Math.random() * 3)); index0++) {
 			if (Math.random() < 0.5) {
 				if (world instanceof ServerLevel _level)
-					FallingBlockEntity.fall(_level, new BlockPos(x + Math.round(Math.random() * 4 - 2), y + 4, z + Math.round(Math.random() * 4 - 2)),
-							Blocks.BLACKSTONE.defaultBlockState());
+					FallingBlockEntity.fall(_level, new BlockPos(x + Math.round(Math.random() * 4 - 2), y + 4, z + Math.round(Math.random() * 4 - 2)), Blocks.BLACKSTONE.defaultBlockState());
 			} else {
 				if (world instanceof ServerLevel _level)
-					FallingBlockEntity.fall(_level, new BlockPos(x + Math.round(Math.random() * 4 - 2), y + 4, z + Math.round(Math.random() * 4 - 2)),
-							Blocks.BASALT.defaultBlockState());
+					FallingBlockEntity.fall(_level, new BlockPos(x + Math.round(Math.random() * 4 - 2), y + 4, z + Math.round(Math.random() * 4 - 2)), Blocks.BASALT.defaultBlockState());
 			}
 		}
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
-				_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.basalt.break")), SoundSource.NEUTRAL, 1, 1);
+				_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.basalt.break")), SoundSource.NEUTRAL, 1, 1);
 			} else {
-				_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-						ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.basalt.break")), SoundSource.NEUTRAL, 1, 1, false);
+				_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.basalt.break")), SoundSource.NEUTRAL, 1, 1, false);
 			}
 		}
 	}

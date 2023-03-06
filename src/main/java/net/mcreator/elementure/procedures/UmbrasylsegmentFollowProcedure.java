@@ -25,11 +25,9 @@ public class UmbrasylsegmentFollowProcedure {
 		double yaw = 0;
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(24 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(24 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if (entity.getPersistentData().getDouble("chainId") == entityiterator.getPersistentData().getDouble("chainId")
-						&& entity.getPersistentData().getDouble("chainPos") - 1 == entityiterator.getPersistentData().getDouble("chainPos")) {
+				if (entity.getPersistentData().getDouble("chainId") == entityiterator.getPersistentData().getDouble("chainId") && entity.getPersistentData().getDouble("chainPos") - 1 == entityiterator.getPersistentData().getDouble("chainPos")) {
 					isChained = true;
 					pitch = Math.cos(entityiterator.getXRot() / ((-180) / Math.PI));
 					pitch2 = Math.sin(entityiterator.getXRot() / ((-180) / Math.PI));
@@ -40,16 +38,14 @@ public class UmbrasylsegmentFollowProcedure {
 							Entity _ent = entity;
 							_ent.teleportTo((entityiterator.getX() + (-4.8) * yaw), (entityiterator.getY()), (entityiterator.getZ() + (-4.8) * yaw2));
 							if (_ent instanceof ServerPlayer _serverPlayer)
-								_serverPlayer.connection.teleport((entityiterator.getX() + (-4.8) * yaw), (entityiterator.getY()),
-										(entityiterator.getZ() + (-4.8) * yaw2), _ent.getYRot(), _ent.getXRot());
+								_serverPlayer.connection.teleport((entityiterator.getX() + (-4.8) * yaw), (entityiterator.getY()), (entityiterator.getZ() + (-4.8) * yaw2), _ent.getYRot(), _ent.getXRot());
 						}
 					} else {
 						{
 							Entity _ent = entity;
 							_ent.teleportTo((entityiterator.getX() + (-3.6) * yaw), (entityiterator.getY()), (entityiterator.getZ() + (-3.6) * yaw2));
 							if (_ent instanceof ServerPlayer _serverPlayer)
-								_serverPlayer.connection.teleport((entityiterator.getX() + (-3.6) * yaw), (entityiterator.getY()),
-										(entityiterator.getZ() + (-3.6) * yaw2), _ent.getYRot(), _ent.getXRot());
+								_serverPlayer.connection.teleport((entityiterator.getX() + (-3.6) * yaw), (entityiterator.getY()), (entityiterator.getZ() + (-3.6) * yaw2), _ent.getYRot(), _ent.getXRot());
 						}
 					}
 					alpha = 0.925;

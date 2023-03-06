@@ -30,20 +30,13 @@ public class MycenaStairwayGen2Procedure {
 				isOtherFloor = false;
 			}
 			if (isOtherFloor == false
-					&& ((world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == Blocks.STONE
-							|| (world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == Blocks.GRANITE
-							|| (world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == Blocks.DIORITE
-							|| (world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == ElementureModBlocks.ENERGYDIORITE.get()
-							|| (world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == ElementureModBlocks.LIGHTNINGANDESITE.get()
-							|| (world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == Blocks.ANDESITE
-							|| (world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == ElementureModBlocks.RUINGRANITE.get()
-							|| (world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == ElementureModBlocks.MYCENAVINE.get())
-					&& ((world.getBlockState(new BlockPos(x, (y + CoordsY) - 1, z))).getBlock() == Blocks.STONE
-							|| (world.getBlockState(new BlockPos(x, (y + CoordsY) - 1, z))).getBlock() == Blocks.GRANITE
-							|| (world.getBlockState(new BlockPos(x, (y + CoordsY) - 1, z))).getBlock() == Blocks.DIORITE
-							|| (world.getBlockState(new BlockPos(x, (y + CoordsY) - 1, z))).getBlock() == ElementureModBlocks.ENERGYDIORITE.get()
-							|| (world.getBlockState(new BlockPos(x, (y + CoordsY) - 1, z))).getBlock() == ElementureModBlocks.LIGHTNINGANDESITE.get()
-							|| (world.getBlockState(new BlockPos(x, (y + CoordsY) - 1, z))).getBlock() == Blocks.ANDESITE
+					&& ((world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == Blocks.STONE || (world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == Blocks.GRANITE
+							|| (world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == Blocks.DIORITE || (world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == ElementureModBlocks.ENERGYDIORITE.get()
+							|| (world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == ElementureModBlocks.LIGHTNINGANDESITE.get() || (world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == Blocks.ANDESITE
+							|| (world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == ElementureModBlocks.RUINGRANITE.get() || (world.getBlockState(new BlockPos(x, y + CoordsY, z))).getBlock() == ElementureModBlocks.MYCENAVINE.get())
+					&& ((world.getBlockState(new BlockPos(x, (y + CoordsY) - 1, z))).getBlock() == Blocks.STONE || (world.getBlockState(new BlockPos(x, (y + CoordsY) - 1, z))).getBlock() == Blocks.GRANITE
+							|| (world.getBlockState(new BlockPos(x, (y + CoordsY) - 1, z))).getBlock() == Blocks.DIORITE || (world.getBlockState(new BlockPos(x, (y + CoordsY) - 1, z))).getBlock() == ElementureModBlocks.ENERGYDIORITE.get()
+							|| (world.getBlockState(new BlockPos(x, (y + CoordsY) - 1, z))).getBlock() == ElementureModBlocks.LIGHTNINGANDESITE.get() || (world.getBlockState(new BlockPos(x, (y + CoordsY) - 1, z))).getBlock() == Blocks.ANDESITE
 							|| (world.getBlockState(new BlockPos(x, (y + CoordsY) - 1, z))).getBlock() == ElementureModBlocks.RUINGRANITE.get())) {
 				NumFloors = NumFloors + 1;
 				isOtherFloor = true;

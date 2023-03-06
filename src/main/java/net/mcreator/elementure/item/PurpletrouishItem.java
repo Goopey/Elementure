@@ -15,10 +15,9 @@ import java.util.List;
 
 public class PurpletrouishItem extends Item {
 	public PurpletrouishItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.4f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(2).saturationMod(0.4f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

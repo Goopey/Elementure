@@ -31,8 +31,7 @@ public class NightmareSpikeSpikeProcedure {
 			return;
 		if (entity.getPersistentData().getDouble("ageInTicks") > 15) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SHADOWPARTICLE_1.get()), (entity.getX()), (entity.getY()),
-						(entity.getZ()), 1, 0.4, 0.4, 0.4, 0);
+				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SHADOWPARTICLE_1.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 1, 0.4, 0.4, 0.4, 0);
 		}
 		if (entity.getPersistentData().getDouble("ageInTicks") > 80) {
 			if (!entity.level.isClientSide())
@@ -41,15 +40,12 @@ public class NightmareSpikeSpikeProcedure {
 			if (world.dayTime() % 10 == 0) {
 				{
 					final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true).stream()
-							.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(3 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							.collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
-						if (!(entityiterator instanceof NightmareSpikeEntity) && !(entityiterator instanceof SlumberingGeneralEntity)
-								&& !(entityiterator instanceof SlumberinGeneralOrbEntity)
-								&& !entityiterator.getType()
-										.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
-								&& !entityiterator.getType()
-										.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
+						if (!(entityiterator instanceof NightmareSpikeEntity) && !(entityiterator instanceof SlumberingGeneralEntity) && !(entityiterator instanceof SlumberinGeneralOrbEntity)
+								&& !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
+								&& !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
 							entityiterator.hurt(DamageSource.GENERIC, 1);
 						}
 					}
@@ -58,19 +54,14 @@ public class NightmareSpikeSpikeProcedure {
 		} else if (entity.getPersistentData().getDouble("ageInTicks") == 20) {
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.azalea_leaves.break")), SoundSource.HOSTILE,
-							(float) 0.25, (float) 0.4);
+					_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.azalea_leaves.break")), SoundSource.HOSTILE, (float) 0.25, (float) 0.4);
 				} else {
-					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-							ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.azalea_leaves.break")), SoundSource.HOSTILE,
-							(float) 0.25, (float) 0.4, false);
+					_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.azalea_leaves.break")), SoundSource.HOSTILE, (float) 0.25, (float) 0.4, false);
 				}
 			}
 		} else if (entity.getPersistentData().getDouble("ageInTicks") > 15) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.TELEPORTPARTICLE.get()), (entity.getX()), (entity.getY()),
-						(entity.getZ()), 5, 0.4, 0.4, 0.4, 0);
+				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.TELEPORTPARTICLE.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 5, 0.4, 0.4, 0.4, 0);
 		}
 		entity.getPersistentData().putDouble("ageInTicks", (entity.getPersistentData().getDouble("ageInTicks") + 1));
 	}

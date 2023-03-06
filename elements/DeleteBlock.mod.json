@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "procedure",
   "definition": {
     "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables/><block deletable=\"false\" id=\"##Sj[rA[1WF_*yO+v~:u\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block id=\"x^(_?-4U/)kb7ooN)%Et\" type=\"block_remove\"><value name=\"x\"><block id=\"Ko*_vzb$;8pP3#h4`/xr\" type=\"coord_x\"/></value><value name=\"y\"><block id=\"`w4et%_Si~`OJh8iI=3Y\" type=\"coord_y\"/></value><value name=\"z\"><block id=\"@zjt/6FixIFV1uYi]vx^\" type=\"coord_z\"/></value></block></next></block></xml>"

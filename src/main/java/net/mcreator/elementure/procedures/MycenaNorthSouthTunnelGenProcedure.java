@@ -24,14 +24,10 @@ public class MycenaNorthSouthTunnelGenProcedure {
 		CoordsY = -2;
 		CoordsZ = -2;
 		for (int index0 = 0; index0 < (int) (125); index0++) {
-			if (CoordsX * CoordsX + CoordsY * CoordsY <= 25 && y + CoordsY > 0 && !(CoordsX == 2) && !(CoordsY == 2) && !(CoordsX == 2)
-					&& !(CoordsY == -2) && !(CoordsX == -2) && !(CoordsY == 2) && !(CoordsX == -2) && !(CoordsY == -2)) {
-				if (CoordsX * CoordsX + CoordsY * CoordsY <= 25
-						&& (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR
-						&& world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ)).canOcclude() && Math.random() < 0.25
-						&& CoordsY > 0) {
-					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-							ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
+			if (CoordsX * CoordsX + CoordsY * CoordsY <= 25 && y + CoordsY > 0 && !(CoordsX == 2) && !(CoordsY == 2) && !(CoordsX == 2) && !(CoordsY == -2) && !(CoordsX == -2) && !(CoordsY == 2) && !(CoordsX == -2) && !(CoordsY == -2)) {
+				if (CoordsX * CoordsX + CoordsY * CoordsY <= 25 && (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR
+						&& world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY + 1, z + CoordsZ)).canOcclude() && Math.random() < 0.25 && CoordsY > 0) {
+					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
 					if (!world.isClientSide()) {
 						BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -41,13 +37,10 @@ public class MycenaNorthSouthTunnelGenProcedure {
 						if (world instanceof Level _level)
 							_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 					}
-				} else if (CoordsX * CoordsX + CoordsY * CoordsY <= 25
-						&& (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR
-						&& world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ)).canOcclude() && Math.random() < 0.4
-						&& CoordsY < 0) {
+				} else if (CoordsX * CoordsX + CoordsY * CoordsY <= 25 && (world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.AIR
+						&& world.getBlockState(new BlockPos(x + CoordsX, (y + CoordsY) - 1, z + CoordsZ)).canOcclude() && Math.random() < 0.4 && CoordsY < 0) {
 					if (Math.random() < 0.2) {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-								ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MYCENA_BIOME_OMEGAN.get().defaultBlockState(), 3);
 						if (!world.isClientSide()) {
 							BlockPos _bp = new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -59,17 +52,13 @@ public class MycenaNorthSouthTunnelGenProcedure {
 						}
 					} else {
 						if (Math.random() < 0.7) {
-							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-									ElementureModBlocks.MYCENASHROOMBLOCK.get().defaultBlockState(), 3);
+							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MYCENASHROOMBLOCK.get().defaultBlockState(), 3);
 						} else {
-							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-									ElementureModBlocks.MYCENASPROUTS.get().defaultBlockState(), 3);
+							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MYCENASPROUTS.get().defaultBlockState(), 3);
 						}
 					}
-				} else if (!((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MYCENAVINE
-						.get())
-						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-								.getBlock() == ElementureModBlocks.BIGGLOWINGMUSHROOM.get())
+				} else if (!((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MYCENAVINE.get())
+						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.BIGGLOWINGMUSHROOM.get())
 						&& !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == Blocks.MUSHROOM_STEM)) {
 					world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), Blocks.AIR.defaultBlockState(), 3);
 				}
@@ -103,9 +92,7 @@ public class MycenaNorthSouthTunnelGenProcedure {
 			}
 		}
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "",
-							Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
-							"kill @e[type=minecraft:item, distance=0.1..100]");
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"kill @e[type=minecraft:item, distance=0.1..100]");
 	}
 }

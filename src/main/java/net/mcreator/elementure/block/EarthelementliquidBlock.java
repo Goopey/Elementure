@@ -9,7 +9,6 @@ import net.mcreator.elementure.init.ElementureModFluids;
 
 public class EarthelementliquidBlock extends LiquidBlock {
 	public EarthelementliquidBlock() {
-		super(() -> ElementureModFluids.EARTHELEMENTLIQUID.get(),
-				BlockBehaviour.Properties.of(Material.WATER).strength(100f).noCollission().noLootTable());
+		super(() -> ElementureModFluids.EARTHELEMENTLIQUID.get(), BlockBehaviour.Properties.of(Material.WATER).strength(100f).noCollission().noLootTable());
 	}
 }

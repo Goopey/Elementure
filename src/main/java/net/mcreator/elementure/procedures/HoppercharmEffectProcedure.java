@@ -52,23 +52,12 @@ public class HoppercharmEffectProcedure {
 		if (entity == null)
 			return;
 		BlockState block = Blocks.AIR.defaultBlockState();
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).getItem() == ElementureModItems.HOPPERCHARM.get()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_2)
-						.getItem() == ElementureModItems.HOPPERCHARM.get()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_3)
-						.getItem() == ElementureModItems.HOPPERCHARM.get()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_4)
-						.getItem() == ElementureModItems.HOPPERCHARM.get()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_5)
-						.getItem() == ElementureModItems.HOPPERCHARM.get()
-				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_6)
-						.getItem() == ElementureModItems.HOPPERCHARM.get()) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).getItem() == ElementureModItems.HOPPERCHARM.get()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_2).getItem() == ElementureModItems.HOPPERCHARM.get()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_3).getItem() == ElementureModItems.HOPPERCHARM.get()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_4).getItem() == ElementureModItems.HOPPERCHARM.get()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_5).getItem() == ElementureModItems.HOPPERCHARM.get()
+				|| ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_6).getItem() == ElementureModItems.HOPPERCHARM.get()) {
 			if (entity instanceof LivingEntity _entity)
 				_entity.addEffect(new MobEffectInstance(MobEffects.JUMP, 120, 0, (false), (false)));
 			if (entity.isShiftKeyDown()) {
@@ -76,33 +65,24 @@ public class HoppercharmEffectProcedure {
 				if (entity.getDeltaMovement().y() > -2) {
 					entity.setDeltaMovement(new Vec3(0, (-2), 0));
 				}
-				if (entity.getDeltaMovement().y() < -0.5
-						&& (block.getBlock() instanceof LiquidBlock || block.getFluidState().isSource() || block.getBlock() == Blocks.AIR)) {
+				if (entity.getDeltaMovement().y() < -0.5 && (block.getBlock() instanceof LiquidBlock || block.getFluidState().isSource() || block.getBlock() == Blocks.AIR)) {
 					if (world instanceof ServerLevel _level)
-						_level.sendParticles(ParticleTypes.ENCHANT, (entity.getX()), (entity.getY()), (entity.getZ()),
-								(int) Math.round(Math.abs(entity.getDeltaMovement().y() * 20)), 0.6, 0.6, 0.6, 0.05);
+						_level.sendParticles(ParticleTypes.ENCHANT, (entity.getX()), (entity.getY()), (entity.getZ()), (int) Math.round(Math.abs(entity.getDeltaMovement().y() * 20)), 0.6, 0.6, 0.6, 0.05);
 					{
 						final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(5 / 2d), e -> true)
-								.stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+						List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(5 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+								.collect(Collectors.toList());
 						for (Entity entityiterator : _entfound) {
-							if (!entityiterator.getType()
-									.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
-									&& !(entityiterator == entity)) {
+							if (!entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities"))) && !(entityiterator == entity)) {
 								if (world instanceof Level _level) {
 									if (!_level.isClientSide()) {
-										_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-												ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.riptide_1")),
-												SoundSource.PLAYERS, 1, 1);
+										_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.riptide_1")), SoundSource.PLAYERS, 1, 1);
 									} else {
-										_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-												ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.riptide_1")),
-												SoundSource.PLAYERS, 1, 1, false);
+										_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.trident.riptide_1")), SoundSource.PLAYERS, 1, 1, false);
 									}
 								}
 								entityiterator.hurt(DamageSource.ANVIL, 2);
-								entityiterator.setDeltaMovement(new Vec3((entityiterator.getDeltaMovement().x() / 4),
-										(entityiterator.getDeltaMovement().y() / 4), (entityiterator.getDeltaMovement().z() / 4)));
+								entityiterator.setDeltaMovement(new Vec3((entityiterator.getDeltaMovement().x() / 4), (entityiterator.getDeltaMovement().y() / 4), (entityiterator.getDeltaMovement().z() / 4)));
 							}
 						}
 					}

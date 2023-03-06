@@ -11,10 +11,9 @@ import net.mcreator.elementure.init.ElementureModTabs;
 
 public class MagmachubItem extends Item {
 	public MagmachubItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(7).saturationMod(1.7000000000000002f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(7).saturationMod(1.7000000000000002f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

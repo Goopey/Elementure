@@ -35,8 +35,7 @@ public class MycenafumoonsporeSpecialBehaviorProcedure {
 					_level.explode(null, (entity.getX()), (entity.getY()), (entity.getZ()), 1, Explosion.BlockInteraction.BREAK);
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getY()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level,
-									4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							new CommandSourceStack(CommandSource.NULL, new Vec3((entity.getY()), (entity.getY()), (entity.getZ())), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"/effect give @e[distance=0.1..4] minecraft_worlds:mycenanspores 6 0");
 			}
 		}
@@ -45,8 +44,8 @@ public class MycenafumoonsporeSpecialBehaviorProcedure {
 				entity.getPersistentData().putDouble("healWait", 0);
 				{
 					final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream()
-							.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							.collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						if (entityiterator instanceof MycenashroomlordEntity) {
 							if (entityiterator instanceof LivingEntity _entity)

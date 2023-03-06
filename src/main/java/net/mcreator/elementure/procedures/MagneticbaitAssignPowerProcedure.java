@@ -11,8 +11,7 @@ public class MagneticbaitAssignPowerProcedure {
 			itemstack.getOrCreateTag().putDouble("fishingPower", 1);
 		}
 		if (itemstack.getOrCreateTag().getDouble("crateChance") < 4) {
-			itemstack.getOrCreateTag().putDouble("crateChance",
-					(4 + EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.MAGNETIC_ENCHANTMENT.get(), itemstack)));
+			itemstack.getOrCreateTag().putDouble("crateChance", (4 + EnchantmentHelper.getItemEnchantmentLevel(ElementureModEnchantments.MAGNETIC_ENCHANTMENT.get(), itemstack)));
 		}
 	}
 }

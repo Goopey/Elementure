@@ -125,7 +125,6 @@ public class DemonheartGUIButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(DemonheartGUIButtonMessage.class, DemonheartGUIButtonMessage::buffer, DemonheartGUIButtonMessage::new,
-				DemonheartGUIButtonMessage::handler);
+		ElementureMod.addNetworkMessage(DemonheartGUIButtonMessage.class, DemonheartGUIButtonMessage::buffer, DemonheartGUIButtonMessage::new, DemonheartGUIButtonMessage::handler);
 	}
 }

@@ -25,10 +25,7 @@ import net.mcreator.elementure.block.entity.ForgottenOmeganBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class ForgottenOmeganBlock extends Block
-		implements
-
-			EntityBlock {
+public class ForgottenOmeganBlock extends Block implements EntityBlock {
 	public ForgottenOmeganBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(-1, 3600000));
 	}
@@ -58,7 +55,6 @@ public class ForgottenOmeganBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		ForgottenOmeganGen1Procedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 5);
 	}

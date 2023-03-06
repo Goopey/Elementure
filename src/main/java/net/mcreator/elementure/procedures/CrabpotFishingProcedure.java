@@ -24,23 +24,17 @@ public class CrabpotFishingProcedure {
 				AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
 				BlockEntity _ent = world.getBlockEntity(pos);
 				if (_ent != null)
-					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-							.ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
+					_ent.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> _retval.set(capability.getStackInSlot(slotid).copy()));
 				return _retval.get();
 			}
 		}.getItemStack(world, new BlockPos(x, y, z), 0));
 		tooMuchFish = (fish).getCount() >= 64;
 		if (Math.random() < 0.33) {
-			if ((world.getBlockState(new BlockPos(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("elementure:crabpot_allow_blocks_under")))
-					&& (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.AIR
-					&& (world.getBlockState(new BlockPos(x + 1, y, z)))
-							.is(BlockTags.create(new ResourceLocation("elementure:crabpot_allowed_blocks")))
-					&& (world.getBlockState(new BlockPos(x - 1, y, z)))
-							.is(BlockTags.create(new ResourceLocation("elementure:crabpot_allowed_blocks")))
-					&& (world.getBlockState(new BlockPos(x, y, z + 1)))
-							.is(BlockTags.create(new ResourceLocation("elementure:crabpot_allowed_blocks")))
-					&& (world.getBlockState(new BlockPos(x, y, z - 1)))
-							.is(BlockTags.create(new ResourceLocation("elementure:crabpot_allowed_blocks")))) {
+			if ((world.getBlockState(new BlockPos(x, y - 1, z))).is(BlockTags.create(new ResourceLocation("elementure:crabpot_allow_blocks_under"))) && (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() == Blocks.AIR
+					&& (world.getBlockState(new BlockPos(x + 1, y, z))).is(BlockTags.create(new ResourceLocation("elementure:crabpot_allowed_blocks")))
+					&& (world.getBlockState(new BlockPos(x - 1, y, z))).is(BlockTags.create(new ResourceLocation("elementure:crabpot_allowed_blocks")))
+					&& (world.getBlockState(new BlockPos(x, y, z + 1))).is(BlockTags.create(new ResourceLocation("elementure:crabpot_allowed_blocks")))
+					&& (world.getBlockState(new BlockPos(x, y, z - 1))).is(BlockTags.create(new ResourceLocation("elementure:crabpot_allowed_blocks")))) {
 				if (fish.getItem() == (ItemStack.EMPTY).getItem()) {
 					CrabpotFishingPoolProcedure.execute(world, x, y, z);
 				} else if (!tooMuchFish) {

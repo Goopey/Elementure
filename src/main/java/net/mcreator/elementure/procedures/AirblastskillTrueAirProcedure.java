@@ -29,8 +29,7 @@ public class AirblastskillTrueAirProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.AIRBLASTSKILL
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.AIRBLASTSKILL.get()) {
 			entity.getPersistentData().putBoolean("airACTIVE", (true));
 		}
 	}

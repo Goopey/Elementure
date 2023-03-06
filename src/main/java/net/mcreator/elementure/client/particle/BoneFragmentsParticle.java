@@ -25,8 +25,7 @@ public class BoneFragmentsParticle extends TextureSheetParticle {
 			this.spriteSet = spriteSet;
 		}
 
-		public Particle createParticle(SimpleParticleType typeIn, ClientLevel worldIn, double x, double y, double z, double xSpeed, double ySpeed,
-				double zSpeed) {
+		public Particle createParticle(SimpleParticleType typeIn, ClientLevel worldIn, double x, double y, double z, double xSpeed, double ySpeed, double zSpeed) {
 			return new BoneFragmentsParticle(worldIn, x, y, z, xSpeed, ySpeed, zSpeed, this.spriteSet);
 		}
 	}
@@ -36,10 +35,10 @@ public class BoneFragmentsParticle extends TextureSheetParticle {
 	protected BoneFragmentsParticle(ClientLevel world, double x, double y, double z, double vx, double vy, double vz, SpriteSet spriteSet) {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
-		this.setSize(0.3f, 0.3f);
+		this.setSize(0.30000000000000004f, 0.30000000000000004f);
 		this.quadSize *= 1.4000000000000001f;
 		this.lifetime = (int) Math.max(1, 20 + (this.random.nextInt(8) - 4));
-		this.gravity = 0.2f;
+		this.gravity = 0.19999999999999998f;
 		this.hasPhysics = true;
 		this.xd = vx * 1;
 		this.yd = vy * 1;

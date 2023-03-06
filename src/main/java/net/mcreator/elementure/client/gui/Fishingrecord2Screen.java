@@ -1,4 +1,3 @@
-
 package net.mcreator.elementure.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -25,6 +24,9 @@ public class Fishingrecord2Screen extends AbstractContainerScreen<Fishingrecord2
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_divers_crown;
+	Button button_back;
+	Button button_next;
 
 	public Fishingrecord2Screen(Fishingrecord2Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -95,25 +97,31 @@ public class Fishingrecord2Screen extends AbstractContainerScreen<Fishingrecord2
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + -2, 85, 20, Component.literal("Diver's Crown"), e -> {
+		button_divers_crown = new Button(this.leftPos + -5, this.topPos + -2, 85, 20, Component.translatable("gui.elementure.fishingrecord_2.button_divers_crown"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord2ButtonMessage(0, x, y, z));
 				Fishingrecord2ButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + -5, this.topPos + 122, 46, 20, Component.literal("Back"), e -> {
+		});
+		guistate.put("button:button_divers_crown", button_divers_crown);
+		this.addRenderableWidget(button_divers_crown);
+		button_back = new Button(this.leftPos + -5, this.topPos + 122, 46, 20, Component.translatable("gui.elementure.fishingrecord_2.button_back"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new Fishingrecord2ButtonMessage(1, x, y, z));
 				Fishingrecord2ButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
-		}));
-		this.addRenderableWidget(new Button(this.leftPos + 117, this.topPos + 122, 46, 20, Component.literal("Next"), e -> {
+		});
+		guistate.put("button:button_back", button_back);
+		this.addRenderableWidget(button_back);
+		button_next = new Button(this.leftPos + 117, this.topPos + 122, 46, 20, Component.translatable("gui.elementure.fishingrecord_2.button_next"), e -> {
 		}) {
 			@Override
 			public void render(PoseStack ms, int gx, int gy, float ticks) {
 				if (DeactivateSlotProcedure.execute())
 					super.render(ms, gx, gy, ticks);
 			}
-		});
+		};
+		guistate.put("button:button_next", button_next);
+		this.addRenderableWidget(button_next);
 	}
 }

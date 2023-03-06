@@ -76,8 +76,7 @@ public class MycenansuperchannelerEntity extends AbstractArrow implements ItemSu
 			this.discard();
 	}
 
-	public static MycenansuperchannelerEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage,
-			int knockback) {
+	public static MycenansuperchannelerEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
 		MycenansuperchannelerEntity entityarrow = new MycenansuperchannelerEntity(ElementureModEntities.MYCENANSUPERCHANNELER.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
@@ -85,15 +84,13 @@ public class MycenansuperchannelerEntity extends AbstractArrow implements ItemSu
 		entityarrow.setBaseDamage(damage);
 		entityarrow.setKnockback(knockback);
 		world.addFreshEntity(entityarrow);
-		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(),
-				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:vengefulspiritskillsound")), SoundSource.PLAYERS, 1,
+		world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:vengefulspiritskillsound")), SoundSource.PLAYERS, 1,
 				1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
 
 	public static MycenansuperchannelerEntity shoot(LivingEntity entity, LivingEntity target) {
-		MycenansuperchannelerEntity entityarrow = new MycenansuperchannelerEntity(ElementureModEntities.MYCENANSUPERCHANNELER.get(), entity,
-				entity.level);
+		MycenansuperchannelerEntity entityarrow = new MycenansuperchannelerEntity(ElementureModEntities.MYCENANSUPERCHANNELER.get(), entity, entity.level);
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
@@ -103,8 +100,7 @@ public class MycenansuperchannelerEntity extends AbstractArrow implements ItemSu
 		entityarrow.setKnockback(0);
 		entityarrow.setCritArrow(false);
 		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(),
-				ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:vengefulspiritskillsound")), SoundSource.PLAYERS, 1,
+		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("elementure:vengefulspiritskillsound")), SoundSource.PLAYERS, 1,
 				1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}

@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.mcreator.elementure.item.CormunculusClubItem;
 
 public class CormunculusClubItemModel extends AnimatedGeoModel<CormunculusClubItem> {
+	//this was changed to use the weaponartitem animations
 	@Override
 	public ResourceLocation getAnimationResource(CormunculusClubItem animatable) {
 		return new ResourceLocation("elementure", "animations/weaponartitem.animation.json");

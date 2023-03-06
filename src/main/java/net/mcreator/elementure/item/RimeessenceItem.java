@@ -15,10 +15,9 @@ import java.util.List;
 
 public class RimeessenceItem extends Item {
 	public RimeessenceItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.7999999999999999f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.7999999999999999f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

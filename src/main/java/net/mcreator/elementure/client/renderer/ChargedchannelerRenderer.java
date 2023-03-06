@@ -25,8 +25,7 @@ public class ChargedchannelerRenderer extends EntityRenderer<ChargedchannelerEnt
 	}
 
 	@Override
-	public void render(ChargedchannelerEntity entityIn, float entityYaw, float partialTicks, PoseStack poseStack, MultiBufferSource bufferIn,
-			int packedLightIn) {
+	public void render(ChargedchannelerEntity entityIn, float entityYaw, float partialTicks, PoseStack poseStack, MultiBufferSource bufferIn, int packedLightIn) {
 		VertexConsumer vb = bufferIn.getBuffer(RenderType.entityCutout(this.getTextureLocation(entityIn)));
 		poseStack.pushPose();
 		poseStack.mulPose(Vector3f.YP.rotationDegrees(Mth.lerp(partialTicks, entityIn.yRotO, entityIn.getYRot()) - 90));

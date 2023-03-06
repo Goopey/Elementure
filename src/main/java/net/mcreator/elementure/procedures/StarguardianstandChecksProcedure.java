@@ -24,13 +24,9 @@ public class StarguardianstandChecksProcedure {
 			_level.sendParticles(ParticleTypes.WHITE_ASH, (entity.getX()), (entity.getY() + 0.7), (entity.getZ()), 3, 0.2, 0.2, 0.2, 0.05);
 		{
 			final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(32 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if ((entityiterator instanceof Player || entityiterator instanceof ServerPlayer)
-						&& (entity instanceof TamableAnimal _tamIsTamedBy && entityiterator instanceof LivingEntity _livEnt
-								? _tamIsTamedBy.isOwnedBy(_livEnt)
-								: false)) {
+				if ((entityiterator instanceof Player || entityiterator instanceof ServerPlayer) && (entity instanceof TamableAnimal _tamIsTamedBy && entityiterator instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)) {
 					isTamed = true;
 				}
 			}

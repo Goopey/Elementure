@@ -14,10 +14,8 @@ import net.mcreator.elementure.init.ElementureModFluidTypes;
 import net.mcreator.elementure.init.ElementureModBlocks;
 
 public abstract class RegensubstanceFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(
-			() -> ElementureModFluidTypes.REGENSUBSTANCE_TYPE.get(), () -> ElementureModFluids.REGENSUBSTANCE.get(),
-			() -> ElementureModFluids.FLOWING_REGENSUBSTANCE.get()).explosionResistance(100f)
-			.bucket(() -> ElementureModItems.REGENSUBSTANCE_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.REGENSUBSTANCE.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ElementureModFluidTypes.REGENSUBSTANCE_TYPE.get(), () -> ElementureModFluids.REGENSUBSTANCE.get(),
+			() -> ElementureModFluids.FLOWING_REGENSUBSTANCE.get()).explosionResistance(100f).bucket(() -> ElementureModItems.REGENSUBSTANCE_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.REGENSUBSTANCE.get());
 
 	private RegensubstanceFluid() {
 		super(PROPERTIES);

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "block",
   "definition": {
     "texture": "hpristal",
@@ -81,13 +81,7 @@
     "luminance": 1,
     "unbreakable": false,
     "breakHarvestLevel": 3,
-    "spawnParticles": true,
-    "particleToSpawn": {
-      "value": "CUSTOM:Memorycrystalparticle2"
-    },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.09999999850988389,
-    "particleAmount": 1,
+    "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

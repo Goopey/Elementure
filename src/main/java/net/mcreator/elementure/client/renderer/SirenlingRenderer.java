@@ -12,7 +12,7 @@ import net.mcreator.elementure.client.model.Modelsirenling;
 
 public class SirenlingRenderer extends MobRenderer<SirenlingEntity, Modelsirenling<SirenlingEntity>> {
 	public SirenlingRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelsirenling(context.bakeLayer(Modelsirenling.LAYER_LOCATION)), 0.2f);
+		super(context, new Modelsirenling(context.bakeLayer(Modelsirenling.LAYER_LOCATION)), 0.19999999999999998f);
 		this.addLayer(new EyesLayer<SirenlingEntity, Modelsirenling<SirenlingEntity>>(this) {
 			@Override
 			public RenderType renderType() {

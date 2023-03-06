@@ -18,38 +18,33 @@ public class AurumcrateDropsProcedure {
 		rd = Math.random() * 100;
 		if (rd < 20) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-						new ItemStack(ElementureModItems.CORRUPTEDSMITERING.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.CORRUPTEDSMITERING.get()));
 				entityToSpawn.setPickUpDelay(4);
 				_level.addFreshEntity(entityToSpawn);
 			}
 		} else if (rd < 40) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-						new ItemStack(ElementureModBlocks.AURUMBLOCK.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModBlocks.AURUMBLOCK.get()));
 				entityToSpawn.setPickUpDelay(4);
 				_level.addFreshEntity(entityToSpawn);
 			}
 		} else if (rd < 60) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-						new ItemStack(ElementureModItems.RUBEDO.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.RUBEDO.get()));
 				entityToSpawn.setPickUpDelay(4);
 				_level.addFreshEntity(entityToSpawn);
 			}
 		} else if (rd < 80) {
 			for (int index0 = 0; index0 < (int) (3); index0++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(ElementureModItems.MASTERKEY.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.MASTERKEY.get()));
 					entityToSpawn.setPickUpDelay(4);
 					_level.addFreshEntity(entityToSpawn);
 				}
 			}
 		} else {
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-						new ItemStack(ElementureModBlocks.SILVERBLOCK.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModBlocks.SILVERBLOCK.get()));
 				entityToSpawn.setPickUpDelay(4);
 				_level.addFreshEntity(entityToSpawn);
 			}

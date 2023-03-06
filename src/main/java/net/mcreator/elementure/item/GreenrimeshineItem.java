@@ -23,10 +23,9 @@ import java.util.List;
 
 public class GreenrimeshineItem extends Item {
 	public GreenrimeshineItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(1).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat()
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(1).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

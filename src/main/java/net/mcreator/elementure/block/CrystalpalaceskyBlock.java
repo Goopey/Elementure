@@ -18,8 +18,7 @@ import java.util.Collections;
 
 public class CrystalpalaceskyBlock extends Block {
 	public CrystalpalaceskyBlock() {
-		super(BlockBehaviour.Properties.of(Material.AIR).sound(SoundType.GLASS).strength(-1, 3600000).lightLevel(s -> 15)
-				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of(Material.AIR).sound(SoundType.GLASS).strength(-1, 3600000).lightLevel(s -> 15).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 	}
 
 	@Override

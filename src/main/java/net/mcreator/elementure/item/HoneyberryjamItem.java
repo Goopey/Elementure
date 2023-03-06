@@ -22,10 +22,9 @@ import java.util.List;
 
 public class HoneyberryjamItem extends Item {
 	public HoneyberryjamItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.RARE)
-				.food((new FoodProperties.Builder()).nutrition(8).saturationMod(2f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(8).saturationMod(2f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

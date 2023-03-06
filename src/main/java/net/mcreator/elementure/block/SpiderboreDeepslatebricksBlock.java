@@ -32,10 +32,7 @@ import net.mcreator.elementure.block.entity.SpiderboreDeepslatebricksBlockEntity
 import java.util.List;
 import java.util.Collections;
 
-public class SpiderboreDeepslatebricksBlock extends Block
-		implements
-
-			EntityBlock {
+public class SpiderboreDeepslatebricksBlock extends Block implements EntityBlock {
 	public SpiderboreDeepslatebricksBlock() {
 		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.SNOW).strength(24f, 40f));
 	}
@@ -65,7 +62,6 @@ public class SpiderboreDeepslatebricksBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		SpiderboreSpawnArachneelProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 8);
 	}
@@ -80,7 +76,6 @@ public class SpiderboreDeepslatebricksBlock extends Block
 		double hitY = hit.getLocation().y;
 		double hitZ = hit.getLocation().z;
 		Direction direction = hit.getDirection();
-
 		SpiderboreDestroyProcedure.execute(world, x, y, z, entity);
 		return InteractionResult.SUCCESS;
 	}

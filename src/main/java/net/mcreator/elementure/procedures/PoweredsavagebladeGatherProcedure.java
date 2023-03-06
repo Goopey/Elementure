@@ -10,8 +10,7 @@ public class PoweredsavagebladeGatherProcedure {
 			return;
 		if (Math.random() < 0.25) {
 			{
-				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).fire_essence + 7;
+				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fire_essence + 7;
 				sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.fire_essence = _setval;
 					capability.syncPlayerVariables(sourceentity);
@@ -19,8 +18,7 @@ public class PoweredsavagebladeGatherProcedure {
 			}
 			if (Math.random() < 0.5) {
 				{
-					double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new ElementureModVariables.PlayerVariables())).fire_essence + 3;
+					double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).fire_essence + 3;
 					sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 						capability.fire_essence = _setval;
 						capability.syncPlayerVariables(sourceentity);

@@ -68,7 +68,7 @@ public class GreendemonItem extends Item {
 					}
 				}
 				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					GreendemonEntity entityarrow = GreendemonEntity.shoot(world, entity, world.getRandom(), 1f, 0.3, 0);
+					GreendemonEntity entityarrow = GreendemonEntity.shoot(world, entity, world.getRandom(), 1f, 0.30000000000000004, 0);
 					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;

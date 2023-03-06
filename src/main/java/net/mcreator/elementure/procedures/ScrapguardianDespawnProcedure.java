@@ -13,10 +13,8 @@ public class ScrapguardianDespawnProcedure {
 		if (entity == null)
 			return;
 		if (Math.random() < 0.00025) {
-			if (!(!world.getEntitiesOfClass(ScrapguardianEntity.class,
-					AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 24, 24, 24), e -> true).isEmpty())
-					&& !(!world.getEntitiesOfClass(DeadscrapguardianEntity.class,
-							AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 24, 24, 24), e -> true).isEmpty())) {
+			if (!(!world.getEntitiesOfClass(ScrapguardianEntity.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 24, 24, 24), e -> true).isEmpty())
+					&& !(!world.getEntitiesOfClass(DeadscrapguardianEntity.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 24, 24, 24), e -> true).isEmpty())) {
 				if (!entity.level.isClientSide())
 					entity.discard();
 			}

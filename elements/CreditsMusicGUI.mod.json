@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -15,7 +15,6 @@
         "data": {
           "image": "credits.png",
           "use1Xscale": true,
-          "name": "credits.png",
           "x": 89,
           "y": 34
         }
@@ -23,12 +22,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Thanks for the music and art :",
+          "name": "label_thanks_for_the_music_and_art",
+          "text": {
+            "fixedValue": "Thanks for the music and art :"
+          },
           "color": {
             "value": -35328,
             "falpha": 0.0
           },
-          "name": "Thanks for the music and art :",
           "x": 93,
           "y": 69
         }
@@ -36,12 +37,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Mudeth - Super chill guy. Cool music",
+          "name": "label_mudeth_super_chill_guy_cool_m",
+          "text": {
+            "fixedValue": "Mudeth - Super chill guy. Cool music"
+          },
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "Mudeth - Super chill guy. Cool music",
           "x": 96,
           "y": 78
         }
@@ -49,12 +52,14 @@
       {
         "type": "label",
         "data": {
-          "text": "C418 - For being based",
+          "name": "label_c418_for_being_based",
+          "text": {
+            "fixedValue": "C418 - For being based"
+          },
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "C418 - For being based",
           "x": 96,
           "y": 88
         }
@@ -62,12 +67,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Mattia Cupelli - Nice dark choir",
+          "name": "label_mattia_cupelli_nice_dark_choir",
+          "text": {
+            "fixedValue": "Mattia Cupelli - Nice dark choir"
+          },
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "Mattia Cupelli - Nice dark choir",
           "x": 96,
           "y": 98
         }
@@ -75,12 +82,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Cryosyncopy - Has Pog stuff",
+          "name": "label_cryosyncopy_has_pog_stuff",
+          "text": {
+            "fixedValue": "Cryosyncopy - Has Pog stuff"
+          },
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "Cryosyncopy - Has Pog stuff",
           "x": 96,
           "y": 108
         }
@@ -88,12 +97,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Red&Green - Purple and Yellow",
+          "name": "label_redgreen_purple_and_yellow",
+          "text": {
+            "fixedValue": "Red&Green - Purple and Yellow"
+          },
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "Red&Green - Purple and Yellow",
           "x": 96,
           "y": 119
         }
@@ -101,12 +112,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Search them up! They're all really cool people.",
+          "name": "label_search_them_up_theyre_all_real",
+          "text": {
+            "fixedValue": "Search them up! They're all really cool people."
+          },
           "color": {
             "value": -35328,
             "falpha": 0.0
           },
-          "name": "Search them up! They're all really cool people.",
           "x": 91,
           "y": 194
         }
@@ -114,12 +127,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Lena Raine - Great soundtracks all around",
+          "name": "label_lena_raine_great_soundtracks_a",
+          "text": {
+            "fixedValue": "Lena Raine - Great soundtracks all around"
+          },
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "Lena Raine - Great soundtracks all around",
           "x": 96,
           "y": 130
         }
@@ -127,12 +142,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Repulsive - The scary stuff is amazing",
+          "name": "label_repulsive_the_scary_stuff_is_a",
+          "text": {
+            "fixedValue": "Repulsive - The scary stuff is amazing"
+          },
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "Repulsive - The scary stuff is amazing",
           "x": 96,
           "y": 141
         }
@@ -140,12 +157,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Lui37 - Bumpin' soundtrack",
+          "name": "label_lui37_bumpin_soundtrack",
+          "text": {
+            "fixedValue": "Lui37 - Bumpin' soundtrack"
+          },
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "Lui37 - Bumpin' soundtrack",
           "x": 96,
           "y": 152
         }
@@ -153,12 +172,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Fred#4322 - For sharing a few great textures",
+          "name": "label_fred4322_for_sharing_a_few_gr",
+          "text": {
+            "fixedValue": "Fred#4322 - For sharing a few great textures"
+          },
           "color": {
             "value": -16777216,
             "falpha": 0.0
           },
-          "name": "Fred#4322 - For sharing a few great textures",
           "x": 96,
           "y": 163
         }
@@ -166,13 +187,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_next_page",
           "text": "Next Page",
           "onClick": {
             "name": "Credits2open"
           },
           "width": 72,
           "height": 20,
-          "name": "Next Page",
           "x": 259,
           "y": 173
         }

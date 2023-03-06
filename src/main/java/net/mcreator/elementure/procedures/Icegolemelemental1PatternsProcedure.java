@@ -36,33 +36,28 @@ public class Icegolemelemental1PatternsProcedure {
 		}
 		if (Math.random() > 0.9993) {
 			for (int index1 = 0; index1 < (int) (7); index1++) {
-				if ((world.getBlockState(new BlockPos(x, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_5.get()
-						|| (world.getBlockState(new BlockPos(x, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_2.get()
-						|| (world.getBlockState(new BlockPos(x, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_4.get()
-						|| (world.getBlockState(new BlockPos(x, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_3.get()
+				if ((world.getBlockState(new BlockPos(x, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_5.get() || (world.getBlockState(new BlockPos(x, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_2.get()
+						|| (world.getBlockState(new BlockPos(x, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_4.get() || (world.getBlockState(new BlockPos(x, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_3.get()
 						|| (world.getBlockState(new BlockPos(x, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE.get()) {
 					world.setBlock(new BlockPos(x, y + localY, z), ElementureModBlocks.CRACKINGICE.get().defaultBlockState(), 3);
-				} else if ((world.getBlockState(new BlockPos(x, y + localY, z))).getBlock() == Blocks.AIR
-						&& ((world.getBlockState(new BlockPos(x, y + localY, z - 1))).getBlock() == ElementureModBlocks.CRACKINGICE_5.get()
-								|| (world.getBlockState(new BlockPos(x, y + localY, z + 1))).getBlock() == ElementureModBlocks.CRACKINGICE_5.get()
-								|| (world.getBlockState(new BlockPos(x + 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_5.get()
-								|| (world.getBlockState(new BlockPos(x - 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_5.get()
-								|| (world.getBlockState(new BlockPos(x, y + localY, z - 1))).getBlock() == ElementureModBlocks.CRACKINGICE_2.get()
-								|| (world.getBlockState(new BlockPos(x, y + localY, z + 1))).getBlock() == ElementureModBlocks.CRACKINGICE_2.get()
-								|| (world.getBlockState(new BlockPos(x + 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_2.get()
-								|| (world.getBlockState(new BlockPos(x - 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_2.get()
-								|| (world.getBlockState(new BlockPos(x, y + localY, z - 1))).getBlock() == ElementureModBlocks.CRACKINGICE.get()
-								|| (world.getBlockState(new BlockPos(x, y + localY, z + 1))).getBlock() == ElementureModBlocks.CRACKINGICE.get()
-								|| (world.getBlockState(new BlockPos(x + 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE.get()
-								|| (world.getBlockState(new BlockPos(x - 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE.get()
-								|| (world.getBlockState(new BlockPos(x, y + localY, z - 1))).getBlock() == ElementureModBlocks.CRACKINGICE_4.get()
-								|| (world.getBlockState(new BlockPos(x, y + localY, z + 1))).getBlock() == ElementureModBlocks.CRACKINGICE_4.get()
-								|| (world.getBlockState(new BlockPos(x + 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_4.get()
-								|| (world.getBlockState(new BlockPos(x - 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_4.get()
-								|| (world.getBlockState(new BlockPos(x, y + localY, z - 1))).getBlock() == ElementureModBlocks.CRACKINGICE_3.get()
-								|| (world.getBlockState(new BlockPos(x, y + localY, z + 1))).getBlock() == ElementureModBlocks.CRACKINGICE_3.get()
-								|| (world.getBlockState(new BlockPos(x + 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_3.get()
-								|| (world.getBlockState(new BlockPos(x - 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_3.get())) {
+				} else if ((world.getBlockState(new BlockPos(x, y + localY, z))).getBlock() == Blocks.AIR && ((world.getBlockState(new BlockPos(x, y + localY, z - 1))).getBlock() == ElementureModBlocks.CRACKINGICE_5.get()
+						|| (world.getBlockState(new BlockPos(x, y + localY, z + 1))).getBlock() == ElementureModBlocks.CRACKINGICE_5.get()
+						|| (world.getBlockState(new BlockPos(x + 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_5.get()
+						|| (world.getBlockState(new BlockPos(x - 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_5.get()
+						|| (world.getBlockState(new BlockPos(x, y + localY, z - 1))).getBlock() == ElementureModBlocks.CRACKINGICE_2.get()
+						|| (world.getBlockState(new BlockPos(x, y + localY, z + 1))).getBlock() == ElementureModBlocks.CRACKINGICE_2.get()
+						|| (world.getBlockState(new BlockPos(x + 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_2.get()
+						|| (world.getBlockState(new BlockPos(x - 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_2.get()
+						|| (world.getBlockState(new BlockPos(x, y + localY, z - 1))).getBlock() == ElementureModBlocks.CRACKINGICE.get() || (world.getBlockState(new BlockPos(x, y + localY, z + 1))).getBlock() == ElementureModBlocks.CRACKINGICE.get()
+						|| (world.getBlockState(new BlockPos(x + 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE.get() || (world.getBlockState(new BlockPos(x - 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE.get()
+						|| (world.getBlockState(new BlockPos(x, y + localY, z - 1))).getBlock() == ElementureModBlocks.CRACKINGICE_4.get()
+						|| (world.getBlockState(new BlockPos(x, y + localY, z + 1))).getBlock() == ElementureModBlocks.CRACKINGICE_4.get()
+						|| (world.getBlockState(new BlockPos(x + 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_4.get()
+						|| (world.getBlockState(new BlockPos(x - 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_4.get()
+						|| (world.getBlockState(new BlockPos(x, y + localY, z - 1))).getBlock() == ElementureModBlocks.CRACKINGICE_3.get()
+						|| (world.getBlockState(new BlockPos(x, y + localY, z + 1))).getBlock() == ElementureModBlocks.CRACKINGICE_3.get()
+						|| (world.getBlockState(new BlockPos(x + 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_3.get()
+						|| (world.getBlockState(new BlockPos(x - 1, y + localY, z))).getBlock() == ElementureModBlocks.CRACKINGICE_3.get())) {
 					world.setBlock(new BlockPos(x, y + localY, z), ElementureModBlocks.CRACKINGICE.get().defaultBlockState(), 3);
 				} else {
 					localY = localY - 1;

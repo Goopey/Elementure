@@ -87,20 +87,10 @@ public abstract class KnightmasterarmorItem extends ArmorItem {
 				@Override
 				@OnlyIn(Dist.CLIENT)
 				public HumanoidModel getHumanoidArmorModel(LivingEntity living, ItemStack stack, EquipmentSlot slot, HumanoidModel defaultModel) {
-					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(),
-							Map.of("body",
-									new Modelsword_temple_armor(
-											Minecraft.getInstance().getEntityModels().bakeLayer(Modelsword_temple_armor.LAYER_LOCATION)).body,
-									"left_arm",
-									new Modelsword_temple_armor(
-											Minecraft.getInstance().getEntityModels().bakeLayer(Modelsword_temple_armor.LAYER_LOCATION)).left_arm,
-									"right_arm",
-									new Modelsword_temple_armor(
-											Minecraft.getInstance().getEntityModels().bakeLayer(Modelsword_temple_armor.LAYER_LOCATION)).right_arm,
-									"head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg",
-									new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
+					HumanoidModel armorModel = new HumanoidModel(new ModelPart(Collections.emptyList(), Map.of("body", new Modelsword_temple_armor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsword_temple_armor.LAYER_LOCATION)).body,
+							"left_arm", new Modelsword_temple_armor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsword_temple_armor.LAYER_LOCATION)).left_arm, "right_arm",
+							new Modelsword_temple_armor(Minecraft.getInstance().getEntityModels().bakeLayer(Modelsword_temple_armor.LAYER_LOCATION)).right_arm, "head", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "hat",
+							new ModelPart(Collections.emptyList(), Collections.emptyMap()), "right_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()), "left_leg", new ModelPart(Collections.emptyList(), Collections.emptyMap()))));
 					armorModel.crouching = living.isShiftKeyDown();
 					armorModel.riding = defaultModel.riding;
 					armorModel.young = living.isBaby();

@@ -19,10 +19,9 @@ import java.util.List;
 
 public class GreengillItem extends Item {
 	public GreengillItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(3).saturationMod(0.5f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(3).saturationMod(0.5f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

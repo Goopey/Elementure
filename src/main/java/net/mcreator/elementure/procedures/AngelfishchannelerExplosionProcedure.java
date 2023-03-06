@@ -50,26 +50,20 @@ public class AngelfishchannelerExplosionProcedure {
 			for (int index1 = 0; index1 < (int) (mPhi - 1); index1++) {
 				phi = (2 * Math.PI * ind2) / mPhi;
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.ANGELSTARPARTICLE.get()),
-							(immediatesourceentity.getX() + radius * Math.sin(teta) * Math.cos(phi)),
-							(immediatesourceentity.getY() + radius * Math.sin(teta) * Math.sin(phi)),
-							(immediatesourceentity.getZ() + radius * Math.cos(teta)), 1, 0, 0, 0, 0);
+					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.ANGELSTARPARTICLE.get()), (immediatesourceentity.getX() + radius * Math.sin(teta) * Math.cos(phi)),
+							(immediatesourceentity.getY() + radius * Math.sin(teta) * Math.sin(phi)), (immediatesourceentity.getZ() + radius * Math.cos(teta)), 1, 0, 0, 0, 0);
 				ind2 = ind2 + 1;
 				nPoints = nPoints + 1;
 			}
 		}
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.ANGELSTARPARTICLE.get()), (immediatesourceentity.getX()),
-					(immediatesourceentity.getY()), (immediatesourceentity.getZ()), 20, 0.8, 0.8, 0.8, 0);
+			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.ANGELSTARPARTICLE.get()), (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), 20, 0.8, 0.8, 0.8, 0);
 		{
 			final Vec3 _center = new Vec3((immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()));
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
-				if (!(entityiterator == entity)
-						&& !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
-						&& !entityiterator.getType()
-								.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
+				if (!(entityiterator == entity) && !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:protectedentities")))
+						&& !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))) {
 					entityiterator.hurt(DamageSource.MAGIC, 3);
 				}
 			}

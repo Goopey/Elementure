@@ -15,8 +15,7 @@ public class RelicinventoryupdateProcedure {
 		if (entity == null)
 			return;
 		{
-			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).copy());
+			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).copy());
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.relic_inventory_familiar = _setval;
 				capability.syncPlayerVariables(entity);
@@ -25,8 +24,7 @@ public class RelicinventoryupdateProcedure {
 		{
 			double _setval = new Object() {
 				public int getAmount(int sltid) {
-					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-							&& _current.get() instanceof Map _slots) {
+					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 						if (stack != null)
 							return stack.getCount();
@@ -40,8 +38,7 @@ public class RelicinventoryupdateProcedure {
 			});
 		}
 		{
-			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).copy());
+			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(2)).getItem() : ItemStack.EMPTY).copy());
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.relic_inventory_relic_1 = _setval;
 				capability.syncPlayerVariables(entity);
@@ -50,8 +47,7 @@ public class RelicinventoryupdateProcedure {
 		{
 			double _setval = new Object() {
 				public int getAmount(int sltid) {
-					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-							&& _current.get() instanceof Map _slots) {
+					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 						if (stack != null)
 							return stack.getCount();
@@ -65,8 +61,7 @@ public class RelicinventoryupdateProcedure {
 			});
 		}
 		{
-			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY).copy());
+			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(3)).getItem() : ItemStack.EMPTY).copy());
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.relic_inventory_relic_2 = _setval;
 				capability.syncPlayerVariables(entity);
@@ -75,8 +70,7 @@ public class RelicinventoryupdateProcedure {
 		{
 			double _setval = new Object() {
 				public int getAmount(int sltid) {
-					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-							&& _current.get() instanceof Map _slots) {
+					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 						if (stack != null)
 							return stack.getCount();
@@ -90,8 +84,7 @@ public class RelicinventoryupdateProcedure {
 			});
 		}
 		{
-			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(4)).getItem() : ItemStack.EMPTY).copy());
+			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(4)).getItem() : ItemStack.EMPTY).copy());
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.relic_inventory_relic_3 = _setval;
 				capability.syncPlayerVariables(entity);
@@ -100,8 +93,7 @@ public class RelicinventoryupdateProcedure {
 		{
 			double _setval = new Object() {
 				public int getAmount(int sltid) {
-					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-							&& _current.get() instanceof Map _slots) {
+					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 						if (stack != null)
 							return stack.getCount();
@@ -115,8 +107,7 @@ public class RelicinventoryupdateProcedure {
 			});
 		}
 		{
-			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY).copy());
+			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(5)).getItem() : ItemStack.EMPTY).copy());
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.relic_inventory_relic_4 = _setval;
 				capability.syncPlayerVariables(entity);
@@ -125,8 +116,7 @@ public class RelicinventoryupdateProcedure {
 		{
 			double _setval = new Object() {
 				public int getAmount(int sltid) {
-					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-							&& _current.get() instanceof Map _slots) {
+					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 						if (stack != null)
 							return stack.getCount();
@@ -140,8 +130,7 @@ public class RelicinventoryupdateProcedure {
 			});
 		}
 		{
-			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(6)).getItem() : ItemStack.EMPTY).copy());
+			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(6)).getItem() : ItemStack.EMPTY).copy());
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.relic_inventory_relic_5 = _setval;
 				capability.syncPlayerVariables(entity);
@@ -150,8 +139,7 @@ public class RelicinventoryupdateProcedure {
 		{
 			double _setval = new Object() {
 				public int getAmount(int sltid) {
-					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-							&& _current.get() instanceof Map _slots) {
+					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 						if (stack != null)
 							return stack.getCount();
@@ -165,8 +153,7 @@ public class RelicinventoryupdateProcedure {
 			});
 		}
 		{
-			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(7)).getItem() : ItemStack.EMPTY).copy());
+			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(7)).getItem() : ItemStack.EMPTY).copy());
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.relic_inventory_relic_6 = _setval;
 				capability.syncPlayerVariables(entity);
@@ -175,8 +162,7 @@ public class RelicinventoryupdateProcedure {
 		{
 			double _setval = new Object() {
 				public int getAmount(int sltid) {
-					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-							&& _current.get() instanceof Map _slots) {
+					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 						if (stack != null)
 							return stack.getCount();
@@ -190,8 +176,7 @@ public class RelicinventoryupdateProcedure {
 			});
 		}
 		{
-			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(8)).getItem() : ItemStack.EMPTY).copy());
+			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(8)).getItem() : ItemStack.EMPTY).copy());
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.relic_inventory_artifact_1 = _setval;
 				capability.syncPlayerVariables(entity);
@@ -200,8 +185,7 @@ public class RelicinventoryupdateProcedure {
 		{
 			double _setval = new Object() {
 				public int getAmount(int sltid) {
-					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-							&& _current.get() instanceof Map _slots) {
+					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 						if (stack != null)
 							return stack.getCount();
@@ -215,8 +199,7 @@ public class RelicinventoryupdateProcedure {
 			});
 		}
 		{
-			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(9)).getItem() : ItemStack.EMPTY).copy());
+			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(9)).getItem() : ItemStack.EMPTY).copy());
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.relic_inventory_artifact_2 = _setval;
 				capability.syncPlayerVariables(entity);
@@ -225,8 +208,7 @@ public class RelicinventoryupdateProcedure {
 		{
 			double _setval = new Object() {
 				public int getAmount(int sltid) {
-					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-							&& _current.get() instanceof Map _slots) {
+					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 						if (stack != null)
 							return stack.getCount();
@@ -240,8 +222,7 @@ public class RelicinventoryupdateProcedure {
 			});
 		}
 		{
-			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(10)).getItem() : ItemStack.EMPTY).copy());
+			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(10)).getItem() : ItemStack.EMPTY).copy());
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.relic_inventory_blood = _setval;
 				capability.syncPlayerVariables(entity);
@@ -250,8 +231,7 @@ public class RelicinventoryupdateProcedure {
 		{
 			double _setval = new Object() {
 				public int getAmount(int sltid) {
-					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-							&& _current.get() instanceof Map _slots) {
+					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 						if (stack != null)
 							return stack.getCount();
@@ -265,8 +245,7 @@ public class RelicinventoryupdateProcedure {
 			});
 		}
 		{
-			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(11)).getItem() : ItemStack.EMPTY).copy());
+			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(11)).getItem() : ItemStack.EMPTY).copy());
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.relic_inventory_bag = _setval;
 				capability.syncPlayerVariables(entity);
@@ -275,8 +254,7 @@ public class RelicinventoryupdateProcedure {
 		{
 			double _setval = new Object() {
 				public int getAmount(int sltid) {
-					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-							&& _current.get() instanceof Map _slots) {
+					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 						if (stack != null)
 							return stack.getCount();
@@ -290,8 +268,7 @@ public class RelicinventoryupdateProcedure {
 			});
 		}
 		{
-			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-					&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get(12)).getItem() : ItemStack.EMPTY).copy());
+			ItemStack _setval = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(12)).getItem() : ItemStack.EMPTY).copy());
 			entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 				capability.relic_inventory_core = _setval;
 				capability.syncPlayerVariables(entity);
@@ -300,8 +277,7 @@ public class RelicinventoryupdateProcedure {
 		{
 			double _setval = new Object() {
 				public int getAmount(int sltid) {
-					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-							&& _current.get() instanceof Map _slots) {
+					if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 						ItemStack stack = ((Slot) _slots.get(sltid)).getItem();
 						if (stack != null)
 							return stack.getCount();
@@ -314,8 +290,7 @@ public class RelicinventoryupdateProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).getItem() == (ItemStack.EMPTY).getItem()) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).getItem() == (ItemStack.EMPTY).getItem()) {
 			{
 				boolean _setval = true;
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

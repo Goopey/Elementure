@@ -18,8 +18,7 @@ public class TarwormSpawningProcedure {
 					return blockEntity.getPersistentData().getBoolean(tag);
 				return false;
 			}
-		}.getValue(world, new BlockPos(x, -64, z), "diverscrowncenterUsed")
-				&& !(!world.getEntitiesOfClass(TarwormEntity.class, AABB.ofSize(new Vec3(x, y, z), 48, 48, 48), e -> true).isEmpty())) {
+		}.getValue(world, new BlockPos(x, -64, z), "diverscrowncenterUsed") && !(!world.getEntitiesOfClass(TarwormEntity.class, AABB.ofSize(new Vec3(x, y, z), 48, 48, 48), e -> true).isEmpty())) {
 			return true;
 		}
 		return false;

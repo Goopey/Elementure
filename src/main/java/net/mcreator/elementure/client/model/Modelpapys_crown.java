@@ -38,12 +38,10 @@ public class Modelpapys_crown<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition bone = partdefinition.addOrReplaceChild("bone", CubeListBuilder.create(), PartPose.offset(0.0F, 15.0F, 0.0F));
-		PartDefinition main_body_bone = bone.addOrReplaceChild("main_body_bone",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, -4.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)),
+		PartDefinition main_body_bone = bone.addOrReplaceChild("main_body_bone", CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, -4.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, -7.0F, 0.0F, 0.7854F, 0.3927F, 0.0F));
 		PartDefinition crown = bone.addOrReplaceChild("crown", CubeListBuilder.create(), PartPose.offset(6.0F, -13.0F, 0.0F));
-		PartDefinition crownbone = crown.addOrReplaceChild("crownbone",
-				CubeListBuilder.create().texOffs(0, 51).addBox(-11.0F, -6.5F, -3.5F, 10.0F, 3.0F, 10.0F, new CubeDeformation(0.0F)),
+		PartDefinition crownbone = crown.addOrReplaceChild("crownbone", CubeListBuilder.create().texOffs(0, 51).addBox(-11.0F, -6.5F, -3.5F, 10.0F, 3.0F, 10.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(-0.5F, 4.5F, 0.0F, 0.0F, -0.2618F, 0.1309F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
@@ -60,8 +58,7 @@ public class Modelpapys_crown<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		bone.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

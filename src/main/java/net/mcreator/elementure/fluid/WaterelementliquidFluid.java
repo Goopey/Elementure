@@ -14,10 +14,8 @@ import net.mcreator.elementure.init.ElementureModFluidTypes;
 import net.mcreator.elementure.init.ElementureModBlocks;
 
 public abstract class WaterelementliquidFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(
-			() -> ElementureModFluidTypes.WATERELEMENTLIQUID_TYPE.get(), () -> ElementureModFluids.WATERELEMENTLIQUID.get(),
-			() -> ElementureModFluids.FLOWING_WATERELEMENTLIQUID.get()).explosionResistance(100f)
-			.bucket(() -> ElementureModItems.WATERELEMENTLIQUID_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.WATERELEMENTLIQUID.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ElementureModFluidTypes.WATERELEMENTLIQUID_TYPE.get(), () -> ElementureModFluids.WATERELEMENTLIQUID.get(),
+			() -> ElementureModFluids.FLOWING_WATERELEMENTLIQUID.get()).explosionResistance(100f).bucket(() -> ElementureModItems.WATERELEMENTLIQUID_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.WATERELEMENTLIQUID.get());
 
 	private WaterelementliquidFluid() {
 		super(PROPERTIES);

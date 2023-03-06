@@ -14,15 +14,12 @@ public class Netherstarflare2FlareProcedure {
 			return;
 		if (Math.random() < 0.008) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles(ParticleTypes.END_ROD, (entity.getX() + Math.random() * 10 - 5), (entity.getY() + Math.random() * 10 - 5),
-						(entity.getZ() + Math.random() * 10 - 5), 10, 0.1, 0.1, 0.1, 0.05);
+				_level.sendParticles(ParticleTypes.END_ROD, (entity.getX() + Math.random() * 10 - 5), (entity.getY() + Math.random() * 10 - 5), (entity.getZ() + Math.random() * 10 - 5), 10, 0.1, 0.1, 0.1, 0.05);
 		}
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.NETHERSTARDUST_1.get()), (entity.getX()), (entity.getY()),
-					(entity.getZ()), 10, 0.2, 0.2, 0.2, 0);
+			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.NETHERSTARDUST_1.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 10, 0.2, 0.2, 0.2, 0);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.NETHERSTARDUST_1.get()), (entity.getX()), (entity.getY()),
-					(entity.getZ()), 10, 0.2, 0.2, 0.2, 0.01);
+			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.NETHERSTARDUST_1.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 10, 0.2, 0.2, 0.2, 0.01);
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles(ParticleTypes.END_ROD, (entity.getX()), (entity.getY()), (entity.getZ()), 6, 0.1, 0.1, 0.1, 0);
 		if (Math.random() < 0.004) {

@@ -15,10 +15,9 @@ import java.util.List;
 
 public class CookedcrabItem extends Item {
 	public CookedcrabItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(6).saturationMod(2.4f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(2.4f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

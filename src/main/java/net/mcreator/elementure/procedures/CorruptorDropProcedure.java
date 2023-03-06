@@ -11,10 +11,8 @@ public class CorruptorDropProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {
 		if (entity == null)
 			return;
-		if (Math.random() < 0.4 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.MOB_LOOTING,
-				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) / 10) {
-			if ((EnchantmentHelper.getItemEnchantmentLevel(Enchantments.MOB_LOOTING,
-					(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) - 2) / 10 < Math.random()) {
+		if (Math.random() < 0.4 + EnchantmentHelper.getItemEnchantmentLevel(Enchantments.MOB_LOOTING, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) / 10) {
+			if ((EnchantmentHelper.getItemEnchantmentLevel(Enchantments.MOB_LOOTING, (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)) - 2) / 10 < Math.random()) {
 				AbyssallootbagLootProcedureProcedure.execute(world, x, y, z, entity);
 				AbyssallootbagLootProcedureProcedure.execute(world, x, y, z, entity);
 			} else {

@@ -43,17 +43,13 @@ public class AbyssalheartItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal(
-				"The heart of the abyss. As long as you have it, you are it's rather ultimate bearer and carry all of it's dark energy and corruption inside of you..."));
+		list.add(Component.literal("The heart of the abyss. As long as you have it, you are it's rather ultimate bearer and carry all of it's dark energy and corruption inside of you..."));
 		list.add(Component.literal("How to use :"));
 		list.add(Component.literal("When you sneak"));
-		list.add(Component.literal(
-				"you extinguish yourself if you are on fire due to the corruption being slightly freed and devouring it all each time you sneak and you are unable to take fall damage due to dark energy swirling around you..."));
+		list.add(Component.literal("you extinguish yourself if you are on fire due to the corruption being slightly freed and devouring it all each time you sneak and you are unable to take fall damage due to dark energy swirling around you..."));
 		list.add(Component.literal("When you're sprinting"));
-		list.add(Component.literal(
-				"it allows you to fly through the air by propulsing you using powerful dark energy and softens your fall using that same energy..."));
-		list.add(Component.literal(
-				"All the dark energy and the corruption also provide you other nice effects since they'd protect you as their new ruler... Also!"));
+		list.add(Component.literal("it allows you to fly through the air by propulsing you using powerful dark energy and softens your fall using that same energy..."));
+		list.add(Component.literal("All the dark energy and the corruption also provide you other nice effects since they'd protect you as their new ruler... Also!"));
 		list.add(Component.literal("it allows you to control the abyssal corruption by right-clicking since... you are it's new ruler..."));
 	}
 

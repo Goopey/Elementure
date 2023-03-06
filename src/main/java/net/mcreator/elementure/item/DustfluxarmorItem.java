@@ -75,8 +75,7 @@ public abstract class DustfluxarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component
-					.literal("Full armor effect : taking damage gives you a chance to dodge the next time you'd take damage within the next minute"));
+			list.add(Component.literal("Full armor effect : taking damage gives you a chance to dodge the next time you'd take damage within the next minute"));
 		}
 
 		@Override
@@ -93,8 +92,7 @@ public abstract class DustfluxarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component
-					.literal("Full armor effect : taking damage gives you a chance to dodge the next time you'd take damage within the next minute"));
+			list.add(Component.literal("Full armor effect : taking damage gives you a chance to dodge the next time you'd take damage within the next minute"));
 		}
 
 		@Override
@@ -116,8 +114,7 @@ public abstract class DustfluxarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component
-					.literal("Full armor effect : taking damage gives you a chance to dodge the next time you'd take damage within the next minute"));
+			list.add(Component.literal("Full armor effect : taking damage gives you a chance to dodge the next time you'd take damage within the next minute"));
 		}
 
 		@Override
@@ -134,8 +131,7 @@ public abstract class DustfluxarmorItem extends ArmorItem {
 		@Override
 		public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 			super.appendHoverText(itemstack, world, list, flag);
-			list.add(Component
-					.literal("Full armor effect : taking damage gives you a chance to dodge the next time you'd take damage within the next minute"));
+			list.add(Component.literal("Full armor effect : taking damage gives you a chance to dodge the next time you'd take damage within the next minute"));
 		}
 
 		@Override

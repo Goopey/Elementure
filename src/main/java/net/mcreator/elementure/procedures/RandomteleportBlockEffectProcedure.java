@@ -17,34 +17,28 @@ public class RandomteleportBlockEffectProcedure {
 				Entity _ent = entity;
 				_ent.teleportTo((x + 50), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + 50), (int) z)), z);
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport((x + 50), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + 50), (int) z)),
-							z, _ent.getYRot(), _ent.getXRot());
+					_serverPlayer.connection.teleport((x + 50), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x + 50), (int) z)), z, _ent.getYRot(), _ent.getXRot());
 			}
-		} else if (entity.getX() > x
-				&& !((world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == ElementureModBlocks.RANDOMTELEPORT_BLOCK.get())) {
+		} else if (entity.getX() > x && !((world.getBlockState(new BlockPos(x + 1, y, z))).getBlock() == ElementureModBlocks.RANDOMTELEPORT_BLOCK.get())) {
 			{
 				Entity _ent = entity;
 				_ent.teleportTo((x + 50), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x - 50), (int) z)), z);
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport((x + 50), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x - 50), (int) z)),
-							z, _ent.getYRot(), _ent.getXRot());
+					_serverPlayer.connection.teleport((x + 50), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (x - 50), (int) z)), z, _ent.getYRot(), _ent.getXRot());
 			}
-		} else if (entity.getZ() < z
-				&& !((world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == ElementureModBlocks.RANDOMTELEPORT_BLOCK.get())) {
+		} else if (entity.getZ() < z && !((world.getBlockState(new BlockPos(x, y, z - 1))).getBlock() == ElementureModBlocks.RANDOMTELEPORT_BLOCK.get())) {
 			{
 				Entity _ent = entity;
 				_ent.teleportTo(x, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) (z + 50))), (z + 50));
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(x, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) (z + 50))),
-							(z + 50), _ent.getYRot(), _ent.getXRot());
+					_serverPlayer.connection.teleport(x, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) (z + 50))), (z + 50), _ent.getYRot(), _ent.getXRot());
 			}
 		} else {
 			{
 				Entity _ent = entity;
 				_ent.teleportTo(x, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) (z - 50))), (z - 50));
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport(x, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) (z - 50))),
-							(z - 50), _ent.getYRot(), _ent.getXRot());
+					_serverPlayer.connection.teleport(x, (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) (z - 50))), (z - 50), _ent.getYRot(), _ent.getXRot());
 			}
 		}
 	}

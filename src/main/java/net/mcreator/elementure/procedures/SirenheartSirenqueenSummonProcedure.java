@@ -27,22 +27,19 @@ public class SirenheartSirenqueenSummonProcedure {
 		if (entity == null)
 			return;
 		world.setBlock(new BlockPos(x, y, z), ElementureModBlocks.TRIGGEREDSIRENHEART.get().defaultBlockState(), 3);
-		if ((world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == Blocks.WATER
-				|| (world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == Blocks.WATER
-				|| (world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == ElementureModBlocks.DIVINGVINE.get()
-				|| (world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == ElementureModBlocks.DIVINGVINE_BEARING.get()) {
+		if ((world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == Blocks.WATER || (world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == Blocks.WATER
+				|| (world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == ElementureModBlocks.DIVINGVINE.get() || (world.getBlockState(new BlockPos(x, y + 2, z))).getBlock() == ElementureModBlocks.DIVINGVINE_BEARING.get()) {
 			if (world instanceof ServerLevel _level) {
 				Entity entityToSpawn = new SirenqueenEntity(ElementureModEntities.SIRENQUEEN.get(), _level);
 				entityToSpawn.moveTo(x, (y + 2), z, world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
-							null);
+					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				world.addFreshEntity(entityToSpawn);
 			}
 			{
 				final Vec3 _center = new Vec3(x, y, z);
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(256 / 2d), e -> true).stream()
-						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(256 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+						.collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof Player || entityiterator instanceof ServerPlayer) {
 						StandatmithrillhallPlayProcedure.execute(entityiterator);
@@ -51,8 +48,8 @@ public class SirenheartSirenqueenSummonProcedure {
 			}
 			{
 				final Vec3 _center = new Vec3(x, y, z);
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(64 / 2d), e -> true).stream()
-						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(64 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+						.collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof SirenlingEntity) {
 						if (!entityiterator.level.isClientSide())

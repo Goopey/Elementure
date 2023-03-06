@@ -11,9 +11,7 @@ public class AgedrosaryUpdateProcedure {
 		if (entity == null)
 			return;
 		if (!((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.AGEDROSARY.get())
-				&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.AGEDROSARY
-						.get())
-				&& itemstack.getOrCreateTag().getDouble("wait") > -1) {
+				&& !((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.AGEDROSARY.get()) && itemstack.getOrCreateTag().getDouble("wait") > -1) {
 			itemstack.getOrCreateTag().putDouble("wait", (itemstack.getOrCreateTag().getDouble("wait") - 1));
 		}
 	}

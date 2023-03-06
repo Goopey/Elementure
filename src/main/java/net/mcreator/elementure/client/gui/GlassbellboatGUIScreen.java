@@ -1,4 +1,3 @@
-
 package net.mcreator.elementure.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,7 @@ public class GlassbellboatGUIScreen extends AbstractContainerScreen<Glassbellboa
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_pick_up;
 
 	public GlassbellboatGUIScreen(GlassbellboatGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -83,11 +83,13 @@ public class GlassbellboatGUIScreen extends AbstractContainerScreen<Glassbellboa
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 5, this.topPos + 6, 61, 20, Component.literal("Pick up"), e -> {
+		button_pick_up = new Button(this.leftPos + 5, this.topPos + 6, 61, 20, Component.translatable("gui.elementure.glassbellboat_gui.button_pick_up"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new GlassbellboatGUIButtonMessage(0, x, y, z));
 				GlassbellboatGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_pick_up", button_pick_up);
+		this.addRenderableWidget(button_pick_up);
 	}
 }

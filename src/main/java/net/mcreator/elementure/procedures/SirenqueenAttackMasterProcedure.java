@@ -41,21 +41,17 @@ public class SirenqueenAttackMasterProcedure {
 			entity.getPersistentData().putDouble("attackCooldown", (entity.getPersistentData().getDouble("attackCooldown") - 1));
 		}
 		if (!entity.getPersistentData().getBoolean("sirenqueenWillMelee")) {
-			entity.setDeltaMovement(
-					new Vec3((entity.getDeltaMovement().x() * 0.7), (entity.getDeltaMovement().y() * 0.7), (entity.getDeltaMovement().z() * 0.7)));
+			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x() * 0.7), (entity.getDeltaMovement().y() * 0.7), (entity.getDeltaMovement().z() * 0.7)));
 		}
 		if (world.dayTime() % 200 == 0) {
-			if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 256, 256, 256),
-					e -> true).isEmpty()
-					|| !world.getEntitiesOfClass(ServerPlayer.class,
-							AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 256, 256, 256), e -> true).isEmpty()) {
+			if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 256, 256, 256), e -> true).isEmpty()
+					|| !world.getEntitiesOfClass(ServerPlayer.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 256, 256, 256), e -> true).isEmpty()) {
 				{
 					final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(256 / 2d), e -> true).stream()
-							.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(256 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							.collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
-						if (!((entityiterator.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-								.orElse(new ElementureModVariables.PlayerVariables())).musicName).equals("sirenqueen")
+						if (!((entityiterator.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).musicName).equals("sirenqueen")
 								&& (entityiterator instanceof Player || entityiterator instanceof ServerPlayer)) {
 							{
 								String _setval = "sirenqueen";

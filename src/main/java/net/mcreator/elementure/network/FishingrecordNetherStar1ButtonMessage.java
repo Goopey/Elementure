@@ -70,7 +70,6 @@ public class FishingrecordNetherStar1ButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(FishingrecordNetherStar1ButtonMessage.class, FishingrecordNetherStar1ButtonMessage::buffer,
-				FishingrecordNetherStar1ButtonMessage::new, FishingrecordNetherStar1ButtonMessage::handler);
+		ElementureMod.addNetworkMessage(FishingrecordNetherStar1ButtonMessage.class, FishingrecordNetherStar1ButtonMessage::buffer, FishingrecordNetherStar1ButtonMessage::new, FishingrecordNetherStar1ButtonMessage::handler);
 	}
 }

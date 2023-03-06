@@ -15,17 +15,13 @@ public class MycenansporessplashSplashesProcedure {
 		LocX = -4;
 		LocZ = -4;
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands()
-					.performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""),
-									_level.getServer(), null).withSuppressedOutput(),
-							"effect give @e[distance=0.1..2] minecraft_worlds:mycenanspores 20 0");
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, y, z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+					"effect give @e[distance=0.1..2] minecraft_worlds:mycenanspores 20 0");
 		for (int index0 = 0; index0 < (int) (81); index0++) {
 			if (LocX * LocX + LocZ * LocZ <= 16 && Math.random() < 0.5) {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, new Vec3((x + LocX / 4), y, (z + LocZ / 4)), Vec2.ZERO, _level, 4, "",
-									Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							new CommandSourceStack(CommandSource.NULL, new Vec3((x + LocX / 4), y, (z + LocZ / 4)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"particle minecraft:entity_effect ~ ~ ~ 0 1 0 1 0 normal");
 			}
 			LocX = LocX + 1;
@@ -44,8 +40,7 @@ public class MycenansporessplashSplashesProcedure {
 			if (LocX * LocX + LocZ * LocZ <= 16 && Math.random() < 0.5) {
 				if (world instanceof ServerLevel _level)
 					_level.getServer().getCommands().performPrefixedCommand(
-							new CommandSourceStack(CommandSource.NULL, new Vec3((x + LocX / 8), y, (z + LocZ / 8)), Vec2.ZERO, _level, 4, "",
-									Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
+							new CommandSourceStack(CommandSource.NULL, new Vec3((x + LocX / 8), y, (z + LocZ / 8)), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 							"particle minecraft:entity_effect ~ ~ ~ 0 1 0 1 0 normal");
 			}
 			LocX = LocX + 1;

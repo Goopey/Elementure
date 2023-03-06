@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "fluid",
   "definition": {
     "name": "Silver fluid",
@@ -38,9 +38,6 @@
     "tickRate": 10,
     "flammability": 0,
     "fireSpreadSpeed": 0,
-    "colorOnMap": "IRON",
-    "frequencyOnChunks": 5,
-    "spawnWorldTypes": [],
-    "restrictionBiomes": []
+    "colorOnMap": "IRON"
   }
 }

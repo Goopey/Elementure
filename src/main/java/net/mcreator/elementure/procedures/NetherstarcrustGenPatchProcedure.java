@@ -10,8 +10,7 @@ public class NetherstarcrustGenPatchProcedure {
 		double CoordsZ = 0;
 		double CoordsX = 0;
 		double CoordsY = 0;
-		if (!(world.isEmptyBlock(new BlockPos(x, y + 1, z)) && world.isEmptyBlock(new BlockPos(x, y - 1, z))
-				&& world.isEmptyBlock(new BlockPos(x + 1, y, z)) && world.isEmptyBlock(new BlockPos(x - 1, y, z))
+		if (!(world.isEmptyBlock(new BlockPos(x, y + 1, z)) && world.isEmptyBlock(new BlockPos(x, y - 1, z)) && world.isEmptyBlock(new BlockPos(x + 1, y, z)) && world.isEmptyBlock(new BlockPos(x - 1, y, z))
 				&& world.isEmptyBlock(new BlockPos(x, y, z + 1)) && world.isEmptyBlock(new BlockPos(x, y, z - 1)))) {
 			if (Math.random() < 0.01) {
 				world.setBlock(new BlockPos(x, y, z), ElementureModBlocks.NETHERSTARCRUSTPATCHSHINY.get().defaultBlockState(), 3);
@@ -24,23 +23,17 @@ public class NetherstarcrustGenPatchProcedure {
 		CoordsZ = -3;
 		for (int index0 = 0; index0 < (int) (343); index0++) {
 			if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 9) {
-				if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERSTARCRUST
-						.get()) {
+				if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERSTARCRUST.get()) {
 					if (Math.random() < 0.01) {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-								ElementureModBlocks.NETHERSTARCRUSTPATCHSHINY.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTARCRUSTPATCHSHINY.get().defaultBlockState(), 3);
 					} else {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-								ElementureModBlocks.NETHERSTARCRUSTPATCH.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTARCRUSTPATCH.get().defaultBlockState(), 3);
 					}
-				} else if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERUM.get()
-						&& Math.random() < 0.33) {
+				} else if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERUM.get() && Math.random() < 0.33) {
 					if (Math.random() < 0.01) {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-								ElementureModBlocks.NETHERSTARCRUSTPATCHSHINY.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTARCRUSTPATCHSHINY.get().defaultBlockState(), 3);
 					} else {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-								ElementureModBlocks.NETHERSTARCRUSTPATCH.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NETHERSTARCRUSTPATCH.get().defaultBlockState(), 3);
 					}
 				}
 			}

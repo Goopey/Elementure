@@ -19,8 +19,7 @@ public class TenslotbackpacksOpenProcedure {
 			return;
 		double inventorySlots = 0;
 		for (int index0 = 0; index0 < (int) (10); index0++) {
-			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current
-					&& _current.get() instanceof Map _slots) {
+			if (entity instanceof ServerPlayer _player && _player.containerMenu instanceof Supplier _current && _current.get() instanceof Map _slots) {
 				ItemStack _setstack = (new Object() {
 					public ItemStack getItemStack(int sltid, ItemStack _isc) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -29,8 +28,7 @@ public class TenslotbackpacksOpenProcedure {
 						});
 						return _retval.get();
 					}
-				}.getItemStack((int) inventorySlots, ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag)));
+				}.getItemStack((int) inventorySlots, ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag)));
 				_setstack.setCount(((new Object() {
 					public ItemStack getItemStack(int sltid, ItemStack _isc) {
 						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -39,8 +37,7 @@ public class TenslotbackpacksOpenProcedure {
 						});
 						return _retval.get();
 					}
-				}.getItemStack((int) inventorySlots, ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag)))).getCount());
+				}.getItemStack((int) inventorySlots, ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag)))).getCount());
 				((Slot) _slots.get((int) inventorySlots)).set(_setstack);
 				_player.containerMenu.broadcastChanges();
 			}

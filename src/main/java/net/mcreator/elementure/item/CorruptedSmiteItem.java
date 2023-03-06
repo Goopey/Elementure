@@ -21,8 +21,7 @@ public class CorruptedSmiteItem extends Item {
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
 		list.add(Component.literal("\u00A76Boss trophy"));
-		list.add(Component.literal(
-				"Artifact : smites are typically made to destroy your enemies. This one is made to destroy your enemies \u00A7lunder any circumstance.\u00A7l Failure will not be allowed again."));
+		list.add(Component.literal("Artifact : smites are typically made to destroy your enemies. This one is made to destroy your enemies \u00A7lunder any circumstance.\u00A7l Failure will not be allowed again."));
 		list.add(Component.literal("-Stores up damage over a period of time and releases it all at once on your next melee attack."));
 		list.add(Component.literal("-More effective against bosses."));
 		list.add(Component.literal("-Increases damage against boss enemies."));

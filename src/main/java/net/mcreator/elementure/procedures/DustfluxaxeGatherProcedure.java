@@ -10,8 +10,7 @@ public class DustfluxaxeGatherProcedure {
 			return;
 		if (Math.random() < 0.12) {
 			{
-				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).void_essence + 3;
+				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).void_essence + 3;
 				sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.void_essence = _setval;
 					capability.syncPlayerVariables(sourceentity);

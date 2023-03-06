@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "biome",
   "definition": {
     "name": "Familiar 1 2",
@@ -40,12 +40,29 @@
     "particlesProbability": 0.5,
     "rainingPossibility": 0.0,
     "temperature": 0.5,
-    "baseHeight": -1.0,
-    "heightVariation": 0.0,
     "spawnBiome": false,
-    "spawnBiomeNether": false,
     "spawnInCaves": false,
-    "biomeWeight": 6,
+    "spawnBiomeNether": false,
+    "genTemperature": {
+      "min": -0.12,
+      "max": 0.12
+    },
+    "genHumidity": {
+      "min": -1.12,
+      "max": -0.88
+    },
+    "genContinentalness": {
+      "min": 0.28,
+      "max": 0.52
+    },
+    "genErosion": {
+      "min": 0.88,
+      "max": 1.12
+    },
+    "genWeirdness": {
+      "min": -0.21194414571159814,
+      "max": 0.02805585428840185
+    },
     "grassPerChunk": 256,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,

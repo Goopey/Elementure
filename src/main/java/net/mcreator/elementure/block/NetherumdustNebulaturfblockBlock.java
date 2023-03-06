@@ -37,8 +37,7 @@ public class NetherumdustNebulaturfblockBlock extends FallingBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public NetherumdustNebulaturfblockBlock() {
-		super(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(1f, 10f).lightLevel(s -> 6)
-				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(1f, 10f).lightLevel(s -> 6).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -86,7 +85,6 @@ public class NetherumdustNebulaturfblockBlock extends FallingBlock {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		NebulaturfspreadProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 30);
 	}

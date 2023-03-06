@@ -51,15 +51,11 @@ import java.util.Collections;
 
 import io.netty.buffer.Unpooled;
 
-public class SoulforgeBlock extends Block
-		implements
-
-			EntityBlock {
+public class SoulforgeBlock extends Block implements EntityBlock {
 	public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
 
 	public SoulforgeBlock() {
-		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLUE).sound(SoundType.METAL).strength(-1, 3600000).lightLevel(s -> 9)
-				.hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
+		super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLUE).sound(SoundType.METAL).strength(-1, 3600000).lightLevel(s -> 9).hasPostProcess((bs, br, bp) -> true).emissiveRendering((bs, br, bp) -> true));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -121,7 +117,6 @@ public class SoulforgeBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		SoulforgeSmeltProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 10);
 	}

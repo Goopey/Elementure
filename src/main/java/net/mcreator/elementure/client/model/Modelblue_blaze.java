@@ -46,101 +46,63 @@ public class Modelblue_blaze<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition rods = partdefinition.addOrReplaceChild("rods", CubeListBuilder.create(), PartPose.offset(0.0F, 8.0F, 0.0F));
-		PartDefinition big_rods = rods.addOrReplaceChild("big_rods",
-				CubeListBuilder.create().texOffs(0, 50).addBox(-1.5F, -8.0F, -1.5F, 3.0F, 11.0F, 3.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 3.0F, 0.0F));
-		PartDefinition big_rod_under_bob = big_rods.addOrReplaceChild("big_rod_under_bob",
-				CubeListBuilder.create().texOffs(52, 56).addBox(-1.5F, -2.0F, -1.5F, 3.0F, 5.0F, 3.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 6.0F, 0.0F));
+		PartDefinition big_rods = rods.addOrReplaceChild("big_rods", CubeListBuilder.create().texOffs(0, 50).addBox(-1.5F, -8.0F, -1.5F, 3.0F, 11.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 3.0F, 0.0F));
+		PartDefinition big_rod_under_bob = big_rods.addOrReplaceChild("big_rod_under_bob", CubeListBuilder.create().texOffs(52, 56).addBox(-1.5F, -2.0F, -1.5F, 3.0F, 5.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 6.0F, 0.0F));
 		PartDefinition top_rods = rods.addOrReplaceChild("top_rods", CubeListBuilder.create(), PartPose.offset(0.0F, -6.0F, 0.0F));
-		PartDefinition top_rods_a = top_rods.addOrReplaceChild("top_rods_a",
-				CubeListBuilder.create().texOffs(56, 18).addBox(6.0F, -3.0F, -1.0F, 2.0F, 9.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 0.0F, 0.0F));
-		PartDefinition rod_a7_r1 = top_rods_a.addOrReplaceChild("rod_a7_r1",
-				CubeListBuilder.create().texOffs(12, 0).addBox(6.0F, -2.0F, -1.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition top_rods_a = top_rods.addOrReplaceChild("top_rods_a", CubeListBuilder.create().texOffs(56, 18).addBox(6.0F, -3.0F, -1.0F, 2.0F, 9.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+		PartDefinition rod_a7_r1 = top_rods_a.addOrReplaceChild("rod_a7_r1", CubeListBuilder.create().texOffs(12, 0).addBox(6.0F, -2.0F, -1.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 1.5708F, 0.0F));
-		PartDefinition rod_a4_r1 = top_rods_a.addOrReplaceChild("rod_a4_r1",
-				CubeListBuilder.create().texOffs(12, 0).addBox(6.0F, -2.0F, -1.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_a4_r1 = top_rods_a.addOrReplaceChild("rod_a4_r1", CubeListBuilder.create().texOffs(12, 0).addBox(6.0F, -2.0F, -1.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -2.3562F, 0.0F));
-		PartDefinition rod_a2_r1 = top_rods_a.addOrReplaceChild("rod_a2_r1",
-				CubeListBuilder.create().texOffs(12, 0).addBox(6.0F, -2.0F, -1.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_a2_r1 = top_rods_a.addOrReplaceChild("rod_a2_r1", CubeListBuilder.create().texOffs(12, 0).addBox(6.0F, -2.0F, -1.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.7854F, 0.0F));
-		PartDefinition rod_b8_r1 = top_rods_a.addOrReplaceChild("rod_b8_r1",
-				CubeListBuilder.create().texOffs(44, 18).addBox(6.0F, 4.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_b8_r1 = top_rods_a.addOrReplaceChild("rod_b8_r1", CubeListBuilder.create().texOffs(44, 18).addBox(6.0F, 4.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.7854F, 0.0F));
-		PartDefinition rod_b6_r1 = top_rods_a.addOrReplaceChild("rod_b6_r1",
-				CubeListBuilder.create().texOffs(24, 0).addBox(6.0F, 7.0F, -1.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_b6_r1 = top_rods_a.addOrReplaceChild("rod_b6_r1", CubeListBuilder.create().texOffs(24, 0).addBox(6.0F, 7.0F, -1.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 2.3562F, 0.0F));
-		PartDefinition rod_b5_r1 = top_rods_a.addOrReplaceChild("rod_b5_r1",
-				CubeListBuilder.create().texOffs(24, 0).addBox(6.0F, 7.0F, -1.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_b5_r1 = top_rods_a.addOrReplaceChild("rod_b5_r1", CubeListBuilder.create().texOffs(24, 0).addBox(6.0F, 7.0F, -1.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 3.1416F, 0.0F));
-		PartDefinition rod_b3_r1 = top_rods_a.addOrReplaceChild("rod_b3_r1",
-				CubeListBuilder.create().texOffs(24, 0).addBox(6.0F, 7.0F, -1.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_b3_r1 = top_rods_a.addOrReplaceChild("rod_b3_r1", CubeListBuilder.create().texOffs(24, 0).addBox(6.0F, 7.0F, -1.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -1.5708F, 0.0F));
-		PartDefinition top_rods_b = top_rods.addOrReplaceChild("top_rods_b",
-				CubeListBuilder.create().texOffs(24, 0).addBox(6.0F, 7.0F, -1.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 0.0F, 0.0F));
-		PartDefinition rod_b7_r1 = top_rods_b.addOrReplaceChild("rod_b7_r1",
-				CubeListBuilder.create().texOffs(44, 18).addBox(6.0F, 4.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition top_rods_b = top_rods.addOrReplaceChild("top_rods_b", CubeListBuilder.create().texOffs(24, 0).addBox(6.0F, 7.0F, -1.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+		PartDefinition rod_b7_r1 = top_rods_b.addOrReplaceChild("rod_b7_r1", CubeListBuilder.create().texOffs(44, 18).addBox(6.0F, 4.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 1.5708F, 0.0F));
-		PartDefinition rod_b4_r1 = top_rods_b.addOrReplaceChild("rod_b4_r1",
-				CubeListBuilder.create().texOffs(44, 18).addBox(6.0F, 4.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_b4_r1 = top_rods_b.addOrReplaceChild("rod_b4_r1", CubeListBuilder.create().texOffs(44, 18).addBox(6.0F, 4.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -2.3562F, 0.0F));
-		PartDefinition rod_b2_r1 = top_rods_b.addOrReplaceChild("rod_b2_r1",
-				CubeListBuilder.create().texOffs(44, 18).addBox(6.0F, 4.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_b2_r1 = top_rods_b.addOrReplaceChild("rod_b2_r1", CubeListBuilder.create().texOffs(44, 18).addBox(6.0F, 4.0F, -1.0F, 2.0F, 8.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -0.7854F, 0.0F));
-		PartDefinition rod_a8_r1 = top_rods_b.addOrReplaceChild("rod_a8_r1",
-				CubeListBuilder.create().texOffs(12, 0).addBox(6.0F, -2.0F, -1.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_a8_r1 = top_rods_b.addOrReplaceChild("rod_a8_r1", CubeListBuilder.create().texOffs(12, 0).addBox(6.0F, -2.0F, -1.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 0.7854F, 0.0F));
-		PartDefinition rod_a6_r1 = top_rods_b.addOrReplaceChild("rod_a6_r1",
-				CubeListBuilder.create().texOffs(56, 18).addBox(6.0F, -3.0F, -1.0F, 2.0F, 9.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_a6_r1 = top_rods_b.addOrReplaceChild("rod_a6_r1", CubeListBuilder.create().texOffs(56, 18).addBox(6.0F, -3.0F, -1.0F, 2.0F, 9.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 2.3562F, 0.0F));
-		PartDefinition rod_a5_r1 = top_rods_b.addOrReplaceChild("rod_a5_r1",
-				CubeListBuilder.create().texOffs(56, 18).addBox(6.0F, -3.0F, -1.0F, 2.0F, 9.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_a5_r1 = top_rods_b.addOrReplaceChild("rod_a5_r1", CubeListBuilder.create().texOffs(56, 18).addBox(6.0F, -3.0F, -1.0F, 2.0F, 9.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 3.1416F, 0.0F));
-		PartDefinition rod_a3_r1 = top_rods_b.addOrReplaceChild("rod_a3_r1",
-				CubeListBuilder.create().texOffs(56, 18).addBox(6.0F, -3.0F, -1.0F, 2.0F, 9.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_a3_r1 = top_rods_b.addOrReplaceChild("rod_a3_r1", CubeListBuilder.create().texOffs(56, 18).addBox(6.0F, -3.0F, -1.0F, 2.0F, 9.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -1.5708F, 0.0F));
 		PartDefinition bottom_rods = rods.addOrReplaceChild("bottom_rods", CubeListBuilder.create(), PartPose.offset(0.0F, 16.0F, 0.0F));
-		PartDefinition bottom_rods_c = bottom_rods.addOrReplaceChild("bottom_rods_c",
-				CubeListBuilder.create().texOffs(0, 10).addBox(-1.0F, 0.0F, 3.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, -6.0F, 0.0F));
-		PartDefinition rod_d3_r1 = bottom_rods_c.addOrReplaceChild("rod_d3_r1",
-				CubeListBuilder.create().texOffs(0, 10).addBox(-1.0F, 0.0F, 3.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition bottom_rods_c = bottom_rods.addOrReplaceChild("bottom_rods_c", CubeListBuilder.create().texOffs(0, 10).addBox(-1.0F, 0.0F, 3.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -6.0F, 0.0F));
+		PartDefinition rod_d3_r1 = bottom_rods_c.addOrReplaceChild("rod_d3_r1", CubeListBuilder.create().texOffs(0, 10).addBox(-1.0F, 0.0F, 3.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -2.0944F, 0.0F));
-		PartDefinition rod_d4_r1 = bottom_rods_c.addOrReplaceChild("rod_d4_r1",
-				CubeListBuilder.create().texOffs(12, 11).addBox(-1.0F, 1.0F, 3.0F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_d4_r1 = bottom_rods_c.addOrReplaceChild("rod_d4_r1", CubeListBuilder.create().texOffs(12, 11).addBox(-1.0F, 1.0F, 3.0F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 3.1416F, 0.0F));
-		PartDefinition rod_c6_r1 = bottom_rods_c.addOrReplaceChild("rod_c6_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -5.0F, 3.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_c6_r1 = bottom_rods_c.addOrReplaceChild("rod_c6_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -5.0F, 3.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 1.0472F, 0.0F));
-		PartDefinition rod_c5_r1 = bottom_rods_c.addOrReplaceChild("rod_c5_r1",
-				CubeListBuilder.create().texOffs(24, 10).addBox(-1.0F, -4.0F, 3.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_c5_r1 = bottom_rods_c.addOrReplaceChild("rod_c5_r1", CubeListBuilder.create().texOffs(24, 10).addBox(-1.0F, -4.0F, 3.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 2.0944F, 0.0F));
-		PartDefinition rod_c2_r1 = bottom_rods_c.addOrReplaceChild("rod_c2_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -5.0F, 3.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_c2_r1 = bottom_rods_c.addOrReplaceChild("rod_c2_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -5.0F, 3.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -1.0472F, 0.0F));
-		PartDefinition bottom_rods_d = bottom_rods.addOrReplaceChild("bottom_rods_d",
-				CubeListBuilder.create().texOffs(24, 10).addBox(-1.0F, -4.0F, 3.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, -6.0F, 0.0F));
-		PartDefinition rod_d6_r1 = bottom_rods_d.addOrReplaceChild("rod_d6_r1",
-				CubeListBuilder.create().texOffs(12, 11).addBox(-1.0F, 1.0F, 3.0F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition bottom_rods_d = bottom_rods.addOrReplaceChild("bottom_rods_d", CubeListBuilder.create().texOffs(24, 10).addBox(-1.0F, -4.0F, 3.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -6.0F, 0.0F));
+		PartDefinition rod_d6_r1 = bottom_rods_d.addOrReplaceChild("rod_d6_r1", CubeListBuilder.create().texOffs(12, 11).addBox(-1.0F, 1.0F, 3.0F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 1.0472F, 0.0F));
-		PartDefinition rod_d5_r1 = bottom_rods_d.addOrReplaceChild("rod_d5_r1",
-				CubeListBuilder.create().texOffs(0, 10).addBox(-1.0F, 0.0F, 3.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_d5_r1 = bottom_rods_d.addOrReplaceChild("rod_d5_r1", CubeListBuilder.create().texOffs(0, 10).addBox(-1.0F, 0.0F, 3.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 2.0944F, 0.0F));
-		PartDefinition rod_d2_r1 = bottom_rods_d.addOrReplaceChild("rod_d2_r1",
-				CubeListBuilder.create().texOffs(12, 11).addBox(-1.0F, 1.0F, 3.0F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_d2_r1 = bottom_rods_d.addOrReplaceChild("rod_d2_r1", CubeListBuilder.create().texOffs(12, 11).addBox(-1.0F, 1.0F, 3.0F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -1.0472F, 0.0F));
-		PartDefinition rod_c4_r1 = bottom_rods_d.addOrReplaceChild("rod_c4_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -5.0F, 3.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_c4_r1 = bottom_rods_d.addOrReplaceChild("rod_c4_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-1.0F, -5.0F, 3.0F, 2.0F, 5.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, 3.1416F, 0.0F));
-		PartDefinition rod_c3_r1 = bottom_rods_d.addOrReplaceChild("rod_c3_r1",
-				CubeListBuilder.create().texOffs(24, 10).addBox(-1.0F, -4.0F, 3.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)),
+		PartDefinition rod_c3_r1 = bottom_rods_d.addOrReplaceChild("rod_c3_r1", CubeListBuilder.create().texOffs(24, 10).addBox(-1.0F, -4.0F, 3.0F, 2.0F, 3.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0F, -2.0944F, 0.0F));
-		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(32, 0).addBox(-4.0F, -32.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 24.0F, 0.0F));
+		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main", CubeListBuilder.create().texOffs(32, 0).addBox(-4.0F, -32.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
 
@@ -161,8 +123,7 @@ public class Modelblue_blaze<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		rods.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		bb_main.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}

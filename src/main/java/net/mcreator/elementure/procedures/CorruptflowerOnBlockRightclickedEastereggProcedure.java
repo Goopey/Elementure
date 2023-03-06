@@ -17,8 +17,7 @@ public class CorruptflowerOnBlockRightclickedEastereggProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == Items.GOLD_INGOT) {
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(Items.GOLD_INGOT);
-				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-						_player.inventoryMenu.getCraftSlots());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 			world.setBlock(new BlockPos(x, y, z), ElementureModBlocks.CORRUPTFLOWEREASTEREGG.get().defaultBlockState(), 3);
 		}

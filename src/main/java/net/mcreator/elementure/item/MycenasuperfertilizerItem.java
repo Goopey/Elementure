@@ -29,15 +29,13 @@ public class MycenasuperfertilizerItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal(
-				"Boss item : It's a mushroom surrounded with so much bone-meal, it's sure to grow to huge proportions as soon as you plant it."));
+		list.add(Component.literal("Boss item : It's a mushroom surrounded with so much bone-meal, it's sure to grow to huge proportions as soon as you plant it."));
 	}
 
 	@Override
 	public InteractionResult useOn(UseOnContext context) {
 		super.useOn(context);
-		MycenasuperfertilizerSummonMycenaShroomlordProcedure.execute(context.getLevel(), context.getClickedPos().getX(),
-				context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getItemInHand());
+		MycenasuperfertilizerSummonMycenaShroomlordProcedure.execute(context.getLevel(), context.getClickedPos().getX(), context.getClickedPos().getY(), context.getClickedPos().getZ(), context.getItemInHand());
 		return InteractionResult.SUCCESS;
 	}
 }

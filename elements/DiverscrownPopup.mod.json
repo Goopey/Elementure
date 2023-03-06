@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGHEST",
@@ -7,12 +7,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Diver's Crown",
+          "name": "label_divers_crown",
+          "text": {
+            "fixedValue": "Diver's Crown"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "Diver's Crown",
           "x": 181,
           "y": 28
         }

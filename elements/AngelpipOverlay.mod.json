@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -9,7 +9,6 @@
         "data": {
           "image": "angel_fish.png",
           "use1Xscale": true,
-          "name": "angel_fish.png",
           "x": 216,
           "y": 58
         }

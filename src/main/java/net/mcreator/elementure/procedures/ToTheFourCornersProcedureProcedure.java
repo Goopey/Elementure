@@ -37,23 +37,12 @@ public class ToTheFourCornersProcedureProcedure {
 		if (entity == null)
 			return;
 		if (!(entity instanceof ServerPlayer _plr && _plr.level instanceof ServerLevel
-				? _plr.getAdvancements()
-						.getOrStartProgress(
-								_plr.server.getAdvancements().getAdvancement(new ResourceLocation("elementure:elementure_fishingadvancement")))
-						.isDone()
+				? _plr.getAdvancements().getOrStartProgress(_plr.server.getAdvancements().getAdvancement(new ResourceLocation("elementure:elementure_fishingadvancement"))).isDone()
 				: false)) {
-			if ((entity instanceof Player _playerHasItem
-					? _playerHasItem.getInventory().contains(new ItemStack(ElementureModItems.TRAHIRA.get()))
-					: false)
-					&& (entity instanceof Player _playerHasItem
-							? _playerHasItem.getInventory().contains(new ItemStack(ElementureModItems.HIGHTRAHIRA.get()))
-							: false)
-					&& (entity instanceof Player _playerHasItem
-							? _playerHasItem.getInventory().contains(new ItemStack(ElementureModItems.SUPREME_TRAHIRA.get()))
-							: false)
-					&& (entity instanceof Player _playerHasItem
-							? _playerHasItem.getInventory().contains(new ItemStack(ElementureModItems.MAXTRAHIRA.get()))
-							: false)) {
+			if ((entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(ElementureModItems.TRAHIRA.get())) : false)
+					&& (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(ElementureModItems.HIGHTRAHIRA.get())) : false)
+					&& (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(ElementureModItems.SUPREME_TRAHIRA.get())) : false)
+					&& (entity instanceof Player _playerHasItem ? _playerHasItem.getInventory().contains(new ItemStack(ElementureModItems.MAXTRAHIRA.get())) : false)) {
 				if (entity instanceof ServerPlayer _player) {
 					Advancement _adv = _player.server.getAdvancements().getAdvancement(new ResourceLocation("elementure:to_the_four_corners"));
 					AdvancementProgress _ap = _player.getAdvancements().getOrStartProgress(_adv);

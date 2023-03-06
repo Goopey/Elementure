@@ -20,20 +20,16 @@ public class ScrapguardianRegenProcedure {
 				Entity entityToSpawn = new ScrapguardianEntity(ElementureModEntities.SCRAPGUARDIAN.get(), _level);
 				entityToSpawn.moveTo((entity.getX()), (entity.getY()), (entity.getZ()), world.getRandom().nextFloat() * 360F, 0);
 				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
-							null);
+					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				world.addFreshEntity(entityToSpawn);
 			}
 		} else {
-			entity.getPersistentData().putDouble("scrapGuardianComeBackTime",
-					(entity.getPersistentData().getDouble("scrapGuardianComeBackTime") + 1));
+			entity.getPersistentData().putDouble("scrapGuardianComeBackTime", (entity.getPersistentData().getDouble("scrapGuardianComeBackTime") + 1));
 			if (Math.random() < 0.22) {
 				if (Math.random() < 0.35) {
-					entity.getPersistentData().putDouble("scrapGuardianComeBackTime",
-							(entity.getPersistentData().getDouble("scrapGuardianComeBackTime") - 0.33));
+					entity.getPersistentData().putDouble("scrapGuardianComeBackTime", (entity.getPersistentData().getDouble("scrapGuardianComeBackTime") - 0.33));
 				} else {
-					entity.getPersistentData().putDouble("scrapGuardianComeBackTime",
-							(entity.getPersistentData().getDouble("scrapGuardianComeBackTime") + 0.24));
+					entity.getPersistentData().putDouble("scrapGuardianComeBackTime", (entity.getPersistentData().getDouble("scrapGuardianComeBackTime") + 0.24));
 				}
 			}
 		}

@@ -12,10 +12,8 @@ public class BrightCandleParticlesProcedure {
 		if (entity == null)
 			return;
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.BRIGHTPARTICLE_1.get()), (entity.getX()), (entity.getY()),
-					(entity.getZ()), 1, 0.25, 0.25, 0.25, 0.01);
+			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.BRIGHTPARTICLE_1.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 1, 0.25, 0.25, 0.25, 0.01);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.BRIGHTPARTICLE_2.get()), (entity.getX()), (entity.getY()),
-					(entity.getZ()), 2, 0.25, 0.25, 0.25, 0.01);
+			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.BRIGHTPARTICLE_2.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 2, 0.25, 0.25, 0.25, 0.01);
 	}
 }

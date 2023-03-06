@@ -16,12 +16,9 @@ public class SlatedPoolsDungeonBaseProcedure {
 		double locY = 0;
 		ElementureMod.queueServerWork(12, () -> {
 			if (world instanceof ServerLevel _serverworld) {
-				StructureTemplate template = _serverworld.getStructureManager()
-						.getOrCreate(new ResourceLocation("elementure", "slatedpools_toproom"));
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "slatedpools_toproom"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 5, y, z - 3), new BlockPos(x - 5, y, z - 3),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-							_serverworld.random, 3);
+					template.placeInWorld(_serverworld, new BlockPos(x - 5, y, z - 3), new BlockPos(x - 5, y, z - 3), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 		});
@@ -30,10 +27,8 @@ public class SlatedPoolsDungeonBaseProcedure {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "slatedpools_tunnel"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x - 1, (y - 2) - locY * 3, z - 1),
-							new BlockPos(x - 1, (y - 2) - locY * 3, z - 1),
-							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-							_serverworld.random, 3);
+					template.placeInWorld(_serverworld, new BlockPos(x - 1, (y - 2) - locY * 3, z - 1), new BlockPos(x - 1, (y - 2) - locY * 3, z - 1),
+							new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 			locY = locY + 1;

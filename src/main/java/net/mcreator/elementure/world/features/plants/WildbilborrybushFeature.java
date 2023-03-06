@@ -33,10 +33,9 @@ public class WildbilborrybushFeature extends RandomPatchFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new WildbilborrybushFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("elementure:wildbilborrybush", FEATURE, FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK,
-				new SimpleBlockConfiguration(BlockStateProvider.simple(ElementureModBlocks.WILDBILBORRYBUSH.get())), List.of(), 64));
-		PLACED_FEATURE = PlacementUtils.register("elementure:wildbilborrybush", CONFIGURED_FEATURE, List.of(CountPlacement.of(1),
-				RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("elementure:wildbilborrybush", FEATURE,
+				FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(ElementureModBlocks.WILDBILBORRYBUSH.get())), List.of(), 64));
+		PLACED_FEATURE = PlacementUtils.register("elementure:wildbilborrybush", CONFIGURED_FEATURE, List.of(CountPlacement.of(1), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome()));
 		return FEATURE;
 	}
 

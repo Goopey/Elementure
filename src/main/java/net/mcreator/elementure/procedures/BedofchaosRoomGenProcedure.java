@@ -22,8 +22,7 @@ public class BedofchaosRoomGenProcedure {
 		BEDROCK_LEVEL = -64;
 		for (int index0 = 0; index0 < (int) (16641); index0++) {
 			if (Math.pow(Math.abs(locX / 2), 4.0) + Math.pow(Math.abs(locZ / 2), 4.0) <= 1048576) {
-				if (!((world.getBlockState(new BlockPos(x + locX, BEDROCK_LEVEL, z + locZ))).getBlock() == ElementureModBlocks.PERVADEDBEDROCK
-						.get())) {
+				if (!((world.getBlockState(new BlockPos(x + locX, BEDROCK_LEVEL, z + locZ))).getBlock() == ElementureModBlocks.PERVADEDBEDROCK.get())) {
 					world.setBlock(new BlockPos(x + locX, BEDROCK_LEVEL, z + locZ), ElementureModBlocks.PERVADEDBEDROCK.get().defaultBlockState(), 3);
 					if (!world.isClientSide()) {
 						BlockPos _bp = new BlockPos(x + locX, BEDROCK_LEVEL, z + locZ);
@@ -66,8 +65,7 @@ public class BedofchaosRoomGenProcedure {
 					if (Math.pow(Math.abs(locX / 2), 4.0) + Math.pow((Math.abs(locY) - 40), 4.0) + Math.pow(Math.abs(locZ / 2), 4.0) >= 1679616) {
 						world.setBlock(new BlockPos(x + locX, locY, z + locZ), ElementureModBlocks.TARBLOCK.get().defaultBlockState(), 3);
 						if (Math.random() < 0.00105) {
-							if (Math.pow(Math.abs(locX / 2), 4.0) + Math.pow((Math.abs(locY) - 40), 4.0)
-									+ Math.pow(Math.abs(locZ / 2), 4.0) <= 2085136) {
+							if (Math.pow(Math.abs(locX / 2), 4.0) + Math.pow((Math.abs(locY) - 40), 4.0) + Math.pow(Math.abs(locZ / 2), 4.0) <= 2085136) {
 								if (locY >= -9) {
 									BedofchaosDarkspireTopGenProcedure.execute(world, (x + locX), (locY - 4), (z + locZ));
 								} else if (Math.abs(locX) >= Math.abs(locZ)) {
@@ -90,8 +88,7 @@ public class BedofchaosRoomGenProcedure {
 							world.setBlock(new BlockPos(x + locX, locY, z + locZ), ElementureModBlocks.TARBLOCK.get().defaultBlockState(), 3);
 						} else if (locY < -58) {
 							if (Math.random() < 0.0175) {
-								world.setBlock(new BlockPos(x + locX, locY, z + locZ),
-										ElementureModBlocks.DIVERSCROWN_OMEGAN.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + locX, locY, z + locZ), ElementureModBlocks.DIVERSCROWN_OMEGAN.get().defaultBlockState(), 3);
 								if (!world.isClientSide()) {
 									BlockPos _bp = new BlockPos(x + locX, locY, z + locZ);
 									BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -108,8 +105,7 @@ public class BedofchaosRoomGenProcedure {
 							world.setBlock(new BlockPos(x + locX, locY, z + locZ), ElementureModBlocks.DEEPBRINE.get().defaultBlockState(), 3);
 						} else {
 							if (locY < -12 && Math.random() < 0.0001) {
-								world.setBlock(new BlockPos(x + locX, locY, z + locZ),
-										ElementureModBlocks.DIVERSCROWN_OMEGAN.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + locX, locY, z + locZ), ElementureModBlocks.DIVERSCROWN_OMEGAN.get().defaultBlockState(), 3);
 								if (!world.isClientSide()) {
 									BlockPos _bp = new BlockPos(x + locX, locY, z + locZ);
 									BlockEntity _blockEntity = world.getBlockEntity(_bp);

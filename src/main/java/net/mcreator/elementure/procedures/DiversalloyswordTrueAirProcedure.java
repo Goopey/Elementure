@@ -10,8 +10,7 @@ public class DiversalloyswordTrueAirProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.DIVERSALLOYSWORD
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.DIVERSALLOYSWORD.get()) {
 			entity.getPersistentData().putBoolean("airACTIVE", (true));
 		}
 	}

@@ -9,8 +9,6 @@ import net.mcreator.elementure.network.ElementureModVariables;
 
 public class MinoskullHalloweenProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		return ElementureModVariables.MapVariables.get(world).isHalloween
-				&& (world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == (Level.OVERWORLD)
-				|| (world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.SPAWNER;
+		return ElementureModVariables.MapVariables.get(world).isHalloween && (world instanceof Level _lvl ? _lvl.dimension() : Level.OVERWORLD) == (Level.OVERWORLD) || (world.getBlockState(new BlockPos(x, y, z))).getBlock() == Blocks.SPAWNER;
 	}
 }

@@ -31,8 +31,7 @@ public class XpvestIncreaseXpProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)
-				.getItem() == ElementureModItems.XPVEST_CHESTPLATE.get()) {
+		if ((entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY).getItem() == ElementureModItems.XPVEST_CHESTPLATE.get()) {
 			if (entity instanceof Player _player)
 				_player.giveExperiencePoints(1);
 		}

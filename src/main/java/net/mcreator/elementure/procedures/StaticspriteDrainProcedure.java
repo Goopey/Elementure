@@ -21,12 +21,10 @@ public class StaticspriteDrainProcedure {
 				entity.discard();
 			{
 				final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getDeltaMovement().z()));
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream()
-						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+						.collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
-					if (!(entity instanceof TamableAnimal _tamIsTamedBy && entityiterator instanceof LivingEntity _livEnt
-							? _tamIsTamedBy.isOwnedBy(_livEnt)
-							: false)) {
+					if (!(entity instanceof TamableAnimal _tamIsTamedBy && entityiterator instanceof LivingEntity _livEnt ? _tamIsTamedBy.isOwnedBy(_livEnt) : false)) {
 						entityiterator.hurt(DamageSource.GENERIC, 3);
 						entity.hurt(DamageSource.GENERIC, 5);
 					}

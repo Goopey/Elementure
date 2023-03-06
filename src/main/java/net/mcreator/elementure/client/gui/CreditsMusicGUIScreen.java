@@ -1,4 +1,3 @@
-
 package net.mcreator.elementure.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -24,6 +23,7 @@ public class CreditsMusicGUIScreen extends AbstractContainerScreen<CreditsMusicG
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_next_page;
 
 	public CreditsMusicGUIScreen(CreditsMusicGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -75,17 +75,17 @@ public class CreditsMusicGUIScreen extends AbstractContainerScreen<CreditsMusicG
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
-		this.font.draw(poseStack, "Thanks for the music and art :", 3, 37, -35328);
-		this.font.draw(poseStack, "Mudeth - Super chill guy. Cool music", 6, 46, -16777216);
-		this.font.draw(poseStack, "C418 - For being based", 6, 56, -16777216);
-		this.font.draw(poseStack, "Mattia Cupelli - Nice dark choir", 6, 66, -16777216);
-		this.font.draw(poseStack, "Cryosyncopy - Has Pog stuff", 6, 76, -16777216);
-		this.font.draw(poseStack, "Red&Green - Purple and Yellow", 6, 87, -16777216);
-		this.font.draw(poseStack, "Search them up! They're all really cool people.", 1, 162, -35328);
-		this.font.draw(poseStack, "Lena Raine - Great soundtracks all around", 6, 98, -16777216);
-		this.font.draw(poseStack, "Repulsive - The scary stuff is amazing", 6, 109, -16777216);
-		this.font.draw(poseStack, "Lui37 - Bumpin' soundtrack", 6, 120, -16777216);
-		this.font.draw(poseStack, "Fred#4322 - For sharing a few great textures", 6, 131, -16777216);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.credits_music_gui.label_thanks_for_the_music_and_art"), 3, 37, -35328);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.credits_music_gui.label_mudeth_super_chill_guy_cool_m"), 6, 46, -16777216);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.credits_music_gui.label_c418_for_being_based"), 6, 56, -16777216);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.credits_music_gui.label_mattia_cupelli_nice_dark_choir"), 6, 66, -16777216);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.credits_music_gui.label_cryosyncopy_has_pog_stuff"), 6, 76, -16777216);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.credits_music_gui.label_redgreen_purple_and_yellow"), 6, 87, -16777216);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.credits_music_gui.label_search_them_up_theyre_all_real"), 1, 162, -35328);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.credits_music_gui.label_lena_raine_great_soundtracks_a"), 6, 98, -16777216);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.credits_music_gui.label_repulsive_the_scary_stuff_is_a"), 6, 109, -16777216);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.credits_music_gui.label_lui37_bumpin_soundtrack"), 6, 120, -16777216);
+		this.font.draw(poseStack, Component.translatable("gui.elementure.credits_music_gui.label_fred4322_for_sharing_a_few_gr"), 6, 131, -16777216);
 	}
 
 	@Override
@@ -98,11 +98,13 @@ public class CreditsMusicGUIScreen extends AbstractContainerScreen<CreditsMusicG
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 169, this.topPos + 141, 72, 20, Component.literal("Next Page"), e -> {
+		button_next_page = new Button(this.leftPos + 169, this.topPos + 141, 72, 20, Component.translatable("gui.elementure.credits_music_gui.button_next_page"), e -> {
 			if (true) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new CreditsMusicGUIButtonMessage(0, x, y, z));
 				CreditsMusicGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
-		}));
+		});
+		guistate.put("button:button_next_page", button_next_page);
+		this.addRenderableWidget(button_next_page);
 	}
 }

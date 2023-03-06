@@ -18,14 +18,12 @@ public class SeafoambubbleSpawnProcedure {
 		if (!(!world.getEntitiesOfClass(FoamfishEntity.class, AABB.ofSize(new Vec3(x, y, z), 18, 18, 18), e -> true).isEmpty())) {
 			if (Math.random() < 0.07) {
 				if (world instanceof ServerLevel _level)
-					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.JELLYBUBBLE.get()), x, (y + 1.2), z, 20, 0.2, 0.2, 0.2,
-							0.02);
+					_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.JELLYBUBBLE.get()), x, (y + 1.2), z, 20, 0.2, 0.2, 0.2, 0.02);
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new FoamfishEntity(ElementureModEntities.FOAMFISH.get(), _level);
 					entityToSpawn.moveTo(x, (y + 1.5), z, world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-								null, null);
+						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 					world.addFreshEntity(entityToSpawn);
 				}
 			}

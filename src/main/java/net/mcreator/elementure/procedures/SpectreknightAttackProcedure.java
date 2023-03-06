@@ -23,8 +23,7 @@ public class SpectreknightAttackProcedure {
 		double playX = 0;
 		double playZ = 0;
 		double playY = 0;
-		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null)
-				&& (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).isAlive()) {
+		if (!((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null) && (entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null).isAlive()) {
 			if (entity.getPersistentData().getDouble("attackCooldown") == 88) {
 				attackChoice = Math.random();
 				if (attackChoice >= 0.5) {
@@ -57,8 +56,7 @@ public class SpectreknightAttackProcedure {
 									}
 								}.getArrow(projectileLevel, entity, 3, 0);
 								_entityToSpawn.setPos(_shootFrom.getX(), _shootFrom.getEyeY() - 0.1, _shootFrom.getZ());
-								_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z,
-										(float) 0.5, 0);
+								_entityToSpawn.shoot(_shootFrom.getLookAngle().x, _shootFrom.getLookAngle().y, _shootFrom.getLookAngle().z, (float) 0.5, 0);
 								projectileLevel.addFreshEntity(_entityToSpawn);
 							}
 						}

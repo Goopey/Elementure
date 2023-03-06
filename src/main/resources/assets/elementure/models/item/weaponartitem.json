@@ -1,5 +1,5 @@
 {
-  "parent": "elementure:custom/weaponartitem",
+  "parent": "elementure:displaysettings/weaponartitem",
   "textures": {
     "layer0": "elementure:items/weaponartitemtexturemap"
   }

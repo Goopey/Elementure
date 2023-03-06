@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGH",
@@ -9,7 +9,6 @@
         "data": {
           "image": "playerinfinity.png",
           "use1Xscale": false,
-          "name": "playerinfinity.png",
           "x": 384,
           "y": 206
         }
@@ -17,12 +16,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:integer:infinity_essence>",
+          "name": "label_varintegerinfinity_essence",
+          "text": {
+            "fixedValue": "<VAR:integer:infinity_essence>"
+          },
           "color": {
             "value": -256,
             "falpha": 0.0
           },
-          "name": "<VAR:integer:infinity_essence>",
           "x": 393,
           "y": 197
         }

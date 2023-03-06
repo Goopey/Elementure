@@ -23,16 +23,14 @@ public class DiversalloyswordHarvestProcedure {
 		double hasWeakness = 0;
 		if (Math.random() < 0.6) {
 			{
-				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).air_essence + 4;
+				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).air_essence + 4;
 				sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.air_essence = _setval;
 					capability.syncPlayerVariables(sourceentity);
 				});
 			}
 		}
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMobType() == MobType.WATER : false)
-				|| entity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:water_mobs")))) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMobType() == MobType.WATER : false) || entity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:water_mobs")))) {
 			if (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) != 0) {
 				hasSharpness = 1;
 			} else {
@@ -49,16 +47,10 @@ public class DiversalloyswordHarvestProcedure {
 				hasWeakness = 0;
 			}
 			entity.hurt(DamageSource.GENERIC,
-					(float) (((7 + 3 * ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_BOOST)
-							? _livEnt.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier()
-							: 0) + hasStrength))
-							- 4 * ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WEAKNESS)
-									? _livEnt.getEffect(MobEffects.WEAKNESS).getAmplifier()
-									: 0) + hasWeakness)
+					(float) (((7 + 3 * ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.DAMAGE_BOOST) ? _livEnt.getEffect(MobEffects.DAMAGE_BOOST).getAmplifier() : 0) + hasStrength))
+							- 4 * ((sourceentity instanceof LivingEntity _livEnt && _livEnt.hasEffect(MobEffects.WEAKNESS) ? _livEnt.getEffect(MobEffects.WEAKNESS).getAmplifier() : 0) + hasWeakness)
 							+ 2 * (EnchantmentHelper.getItemEnchantmentLevel(Enchantments.SHARPNESS, itemstack) + hasSharpness))
-							/ (1 + (entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) != 0
-									? 1 + (entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0)
-									: 1)));
+							/ (1 + (entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) != 0 ? 1 + (entity instanceof LivingEntity _livEnt ? _livEnt.getArmorValue() : 0) : 1)));
 		}
 	}
 }

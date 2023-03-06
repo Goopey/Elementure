@@ -23,19 +23,14 @@ public class StarryplainsFloorGen3Procedure {
 						return blockEntity.getPersistentData().getBoolean(tag);
 					return false;
 				}
-			}.getValue(world, new BlockPos(x + CoordsX, 0, z + CoordsZ), "netherstarUsed")) && CoordsX * CoordsX + CoordsZ * CoordsZ > 2916
-					&& CoordsX * CoordsX + CoordsZ * CoordsZ <= 12544
-					&& !((world.getBlockState(new BlockPos(x + CoordsX, 130, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN
-							.get())
-					&& !((world.getBlockState(new BlockPos(x + CoordsX, 130, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERSTAR_BIOME_OMEGAN
-							.get())
+			}.getValue(world, new BlockPos(x + CoordsX, 0, z + CoordsZ), "netherstarUsed")) && CoordsX * CoordsX + CoordsZ * CoordsZ > 2916 && CoordsX * CoordsX + CoordsZ * CoordsZ <= 12544
+					&& !((world.getBlockState(new BlockPos(x + CoordsX, 130, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get())
+					&& !((world.getBlockState(new BlockPos(x + CoordsX, 130, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERSTAR_BIOME_OMEGAN.get())
 					&& !((world.getBlockState(new BlockPos(x + CoordsX, 130, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERLOG.get())
-					&& !((world.getBlockState(new BlockPos(x + CoordsX, 130, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERUM.get())
-					&& !((world.getBlockState(new BlockPos(x + CoordsX, 130, z + CoordsZ))).getBlock() == Blocks.OBSIDIAN)
+					&& !((world.getBlockState(new BlockPos(x + CoordsX, 130, z + CoordsZ))).getBlock() == ElementureModBlocks.NETHERUM.get()) && !((world.getBlockState(new BlockPos(x + CoordsX, 130, z + CoordsZ))).getBlock() == Blocks.OBSIDIAN)
 					&& !((world.getBlockState(new BlockPos(x + CoordsX, 130, z + CoordsZ))).getBlock() == Blocks.NETHER_PORTAL)) {
 				if (Math.random() < 0.002) {
-					world.setBlock(new BlockPos(x + CoordsX, 130, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(),
-							3);
+					world.setBlock(new BlockPos(x + CoordsX, 130, z + CoordsZ), ElementureModBlocks.NETHERSTAR_BIOME_ALPHAN.get().defaultBlockState(), 3);
 					if (!world.isClientSide()) {
 						BlockPos _bp = new BlockPos(x + CoordsX, 130, z + CoordsZ);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);
@@ -47,8 +42,7 @@ public class StarryplainsFloorGen3Procedure {
 					}
 				} else {
 					if (Math.random() < 0.01) {
-						world.setBlock(new BlockPos(x + CoordsX, 130, z + CoordsZ), ElementureModBlocks.NETHERUMCARPETSHINY.get().defaultBlockState(),
-								3);
+						world.setBlock(new BlockPos(x + CoordsX, 130, z + CoordsZ), ElementureModBlocks.NETHERUMCARPETSHINY.get().defaultBlockState(), 3);
 					} else {
 						world.setBlock(new BlockPos(x + CoordsX, 130, z + CoordsZ), ElementureModBlocks.NETHERUMCARPET.get().defaultBlockState(), 3);
 					}

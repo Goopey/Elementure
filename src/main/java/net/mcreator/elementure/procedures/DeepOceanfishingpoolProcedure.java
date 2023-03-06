@@ -49,9 +49,8 @@ public class DeepOceanfishingpoolProcedure {
 						});
 					}
 				}
-			} else if (Math.random() < 0.67
-					&& (world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("deep_lukewarm_ocean"))
-							|| world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("warm_ocean")))) {
+			} else if (Math.random() < 0.67 && (world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("deep_lukewarm_ocean"))
+					|| world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("warm_ocean")))) {
 				{
 					String _setval = "warm";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -118,9 +117,8 @@ public class DeepOceanfishingpoolProcedure {
 				}
 			}
 		} else {
-			if (Math.random() < 0.73
-					&& (world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("deep_lukewarm_ocean"))
-							|| world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("warm_ocean")))) {
+			if (Math.random() < 0.73 && (world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("deep_lukewarm_ocean"))
+					|| world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("warm_ocean")))) {
 				{
 					String _setval = "warm";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

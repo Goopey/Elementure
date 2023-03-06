@@ -29,8 +29,7 @@ public class VengefulspiritskillTrueSoulProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.VENGEFULSPIRITSKILL
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.VENGEFULSPIRITSKILL.get()) {
 			entity.getPersistentData().putBoolean("soulACTIVE", (true));
 		}
 	}

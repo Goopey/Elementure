@@ -10,8 +10,7 @@ public class PoweredsavagebladeTrueFireProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.POWEREDSAVAGEBLADE
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.POWEREDSAVAGEBLADE.get()) {
 			entity.getPersistentData().putBoolean("fireACTIVE", (true));
 		}
 	}

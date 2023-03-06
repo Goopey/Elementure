@@ -14,10 +14,8 @@ import net.mcreator.elementure.init.ElementureModFluidTypes;
 import net.mcreator.elementure.init.ElementureModBlocks;
 
 public abstract class AirelementliquidFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(
-			() -> ElementureModFluidTypes.AIRELEMENTLIQUID_TYPE.get(), () -> ElementureModFluids.AIRELEMENTLIQUID.get(),
-			() -> ElementureModFluids.FLOWING_AIRELEMENTLIQUID.get()).explosionResistance(100f)
-			.bucket(() -> ElementureModItems.AIRELEMENTLIQUID_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.AIRELEMENTLIQUID.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ElementureModFluidTypes.AIRELEMENTLIQUID_TYPE.get(), () -> ElementureModFluids.AIRELEMENTLIQUID.get(),
+			() -> ElementureModFluids.FLOWING_AIRELEMENTLIQUID.get()).explosionResistance(100f).bucket(() -> ElementureModItems.AIRELEMENTLIQUID_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.AIRELEMENTLIQUID.get());
 
 	private AirelementliquidFluid() {
 		super(PROPERTIES);

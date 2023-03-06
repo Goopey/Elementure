@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "LOW",
@@ -9,7 +9,6 @@
         "data": {
           "image": "mutated_halimut.png",
           "use1Xscale": false,
-          "name": "mutated_halimut.png",
           "x": 165,
           "y": 147
         }

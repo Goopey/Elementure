@@ -12,7 +12,7 @@ import net.mcreator.elementure.client.model.Modelmycena_sporeling;
 
 public class MycenasporelingRenderer extends MobRenderer<MycenasporelingEntity, Modelmycena_sporeling<MycenasporelingEntity>> {
 	public MycenasporelingRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelmycena_sporeling(context.bakeLayer(Modelmycena_sporeling.LAYER_LOCATION)), 0.2f);
+		super(context, new Modelmycena_sporeling(context.bakeLayer(Modelmycena_sporeling.LAYER_LOCATION)), 0.19999999999999998f);
 		this.addLayer(new EyesLayer<MycenasporelingEntity, Modelmycena_sporeling<MycenasporelingEntity>>(this) {
 			@Override
 			public RenderType renderType() {

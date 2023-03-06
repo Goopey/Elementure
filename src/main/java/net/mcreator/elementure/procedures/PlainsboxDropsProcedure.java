@@ -17,8 +17,7 @@ public class PlainsboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index0 = 0; index0 < (int) (Math.ceil(Math.random() * 4)); index0++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.ACACIA_SAPLING));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.ACACIA_SAPLING));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -27,8 +26,7 @@ public class PlainsboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index1 = 0; index1 < (int) (Math.ceil(Math.random() * 8)); index1++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.ACACIA_LOG));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.ACACIA_LOG));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -37,8 +35,7 @@ public class PlainsboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index2 = 0; index2 < (int) (Math.ceil(Math.random() * 4)); index2++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.SUNFLOWER));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.SUNFLOWER));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -47,8 +44,7 @@ public class PlainsboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index3 = 0; index3 < (int) (Math.ceil(Math.random() * 4)); index3++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.GRASS_BLOCK));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.GRASS_BLOCK));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -66,8 +62,7 @@ public class PlainsboxDropsProcedure {
 		if (Math.random() < 0.1) {
 			for (int index5 = 0; index5 < (int) (Math.ceil(Math.random() * 4)); index5++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Items.MELON_SLICE));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Items.MELON_SLICE));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -77,8 +72,7 @@ public class PlainsboxDropsProcedure {
 			if (Math.random() < 0.1) {
 				for (int index6 = 0; index6 < (int) (Math.ceil(Math.random() * 4)); index6++) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-								new ItemStack(Items.HONEYCOMB));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Items.HONEYCOMB));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -86,8 +80,7 @@ public class PlainsboxDropsProcedure {
 			} else {
 				for (int index7 = 0; index7 < (int) (Math.ceil(Math.random() * 2)); index7++) {
 					if (world instanceof Level _level && !_level.isClientSide()) {
-						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-								new ItemStack(Items.HONEY_BOTTLE));
+						ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Items.HONEY_BOTTLE));
 						entityToSpawn.setPickUpDelay(10);
 						_level.addFreshEntity(entityToSpawn);
 					}
@@ -97,8 +90,7 @@ public class PlainsboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index8 = 0; index8 < (int) (Math.ceil(Math.random() * 4)); index8++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(ElementureModItems.BEESTINGBERRY.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.BEESTINGBERRY.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -107,8 +99,7 @@ public class PlainsboxDropsProcedure {
 		if (Math.random() < 0.1) {
 			for (int index9 = 0; index9 < (int) (Math.ceil(Math.random() * 4)); index9++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(ElementureModItems.BILBORRY.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.BILBORRY.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}

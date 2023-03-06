@@ -21,9 +21,8 @@ public class OceanfishingpoolProcedure {
 			});
 		}
 		if (world.getLevelData().isRaining() || world.getLevelData().isThundering()) {
-			if (Math.random() < 0.3
-					&& (world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("lukewarm_ocean"))
-							|| world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("warm_ocean")))) {
+			if (Math.random() < 0.3 && (world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("lukewarm_ocean"))
+					|| world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("warm_ocean")))) {
 				{
 					String _setval = "warm";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
@@ -88,9 +87,8 @@ public class OceanfishingpoolProcedure {
 				}
 			}
 		} else {
-			if (Math.random() < 0.3
-					&& (world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("lukewarm_ocean"))
-							|| world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("warm_ocean")))) {
+			if (Math.random() < 0.3 && (world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("lukewarm_ocean"))
+					|| world.getBiome(new BlockPos(entity.getX(), entity.getY(), entity.getZ())).is(new ResourceLocation("warm_ocean")))) {
 				{
 					String _setval = "warm";
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

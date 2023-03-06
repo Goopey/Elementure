@@ -15,8 +15,7 @@ public class MycenashroomlordLongAttackBehavior1Procedure {
 			return;
 		double locZ = 0;
 		double locX = 0;
-		if (entity.getPersistentData().getDouble("attackongoingtime") == 80 || entity.getPersistentData().getDouble("attackongoingtime") == 160
-				|| entity.getPersistentData().getDouble("attackongoingtime") == 240) {
+		if (entity.getPersistentData().getDouble("attackongoingtime") == 80 || entity.getPersistentData().getDouble("attackongoingtime") == 160 || entity.getPersistentData().getDouble("attackongoingtime") == 240) {
 			for (int index0 = 0; index0 < (int) (2); index0++) {
 				locX = Math.random() * 16 - 8;
 				locZ = Math.random() * 16 - 8;
@@ -29,11 +28,9 @@ public class MycenashroomlordLongAttackBehavior1Procedure {
 				}
 				if (world instanceof ServerLevel _level) {
 					Entity entityToSpawn = new MycenashroomalEntity(ElementureModEntities.MYCENASHROOMAL.get(), _level);
-					entityToSpawn.moveTo((entity.getX() + locX), (entity.getY() + 2), (entity.getZ() + locZ), world.getRandom().nextFloat() * 360F,
-							0);
+					entityToSpawn.moveTo((entity.getX() + locX), (entity.getY() + 2), (entity.getZ() + locZ), world.getRandom().nextFloat() * 360F, 0);
 					if (entityToSpawn instanceof Mob _mobToSpawn)
-						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-								null, null);
+						_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 					world.addFreshEntity(entityToSpawn);
 				}
 				MycenashroomcloudProcedure.execute(world, (entity.getX() + locX), (entity.getY() + 2), (entity.getZ() + locZ));

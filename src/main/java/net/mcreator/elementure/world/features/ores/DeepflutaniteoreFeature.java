@@ -34,15 +34,10 @@ public class DeepflutaniteoreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new DeepflutaniteoreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("elementure:deepflutaniteore", FEATURE,
-				new OreConfiguration(List.of(
-						OreConfiguration.target(new BlockStateMatchTest(Blocks.DEEPSLATE.defaultBlockState()),
-								ElementureModBlocks.DEEPFLUTANITEORE.get().defaultBlockState()),
-						OreConfiguration.target(new BlockStateMatchTest(Blocks.TUFF.defaultBlockState()),
-								ElementureModBlocks.DEEPFLUTANITEORE.get().defaultBlockState())),
-						4));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.DEEPSLATE.defaultBlockState()), ElementureModBlocks.DEEPFLUTANITEORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.TUFF.defaultBlockState()), ElementureModBlocks.DEEPFLUTANITEORE.get().defaultBlockState())), 4));
 		PLACED_FEATURE = PlacementUtils.register("elementure:deepflutaniteore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(2), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(0)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(2), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(0)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

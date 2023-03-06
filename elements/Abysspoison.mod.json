@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "procedure",
   "definition": {
     "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"http://www.w3.org/1999/xhtml\"><variables/><block deletable=\"false\" id=\"2U9]OsVBYIMl$T:beL~W\" type=\"event_trigger\" x=\"69\" y=\"43\"><field name=\"trigger\">no_ext_trigger</field><next><block id=\"Qiwy0)T[?%TRn@dE7[8M\" type=\"entity_add_potion\"><field name=\"potion\">POISON</field><value name=\"level\"><block id=\".Y2uqmNyqrgZ)`m~[YiD\" type=\"math_number\"><field name=\"NUM\">0</field></block></value><value name=\"duration\"><block id=\"6wFz*trm1cKfg/3Z!CdG\" type=\"math_number\"><field name=\"NUM\">200</field></block></value><next><block id=\"R,|)5?{DI+|U+T7}+XV7\" type=\"entity_add_potion\"><field name=\"potion\">HUNGER</field><value name=\"level\"><block id=\"lmpqU|P1?TLtOc:)=x$X\" type=\"math_number\"><field name=\"NUM\">0</field></block></value><value name=\"duration\"><block id=\"yB]I:{sp_!v`qb%H9Qwt\" type=\"math_number\"><field name=\"NUM\">200</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></next><value name=\"entity\"><block type=\"entity_from_deps\"/></value></block></next></block></xml>"

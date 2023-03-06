@@ -9,8 +9,7 @@ public class MagmacarpDisplayProcedure {
 		if (entity == null)
 			return false;
 		boolean isCurrentFish = false;
-		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("magmaCarp")) {
+		if (((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).chosenFish).equals("magmaCarp")) {
 			isCurrentFish = true;
 		} else {
 			isCurrentFish = false;

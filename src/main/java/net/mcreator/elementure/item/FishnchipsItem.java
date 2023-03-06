@@ -15,10 +15,9 @@ import java.util.List;
 
 public class FishnchipsItem extends Item {
 	public FishnchipsItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(12).saturationMod(2f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(12).saturationMod(2f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

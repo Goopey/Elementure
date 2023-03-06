@@ -28,26 +28,21 @@ public class ObleckExplodeProcedure {
 			return;
 		if (entity.getPersistentData().getBoolean("isBomb")) {
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SOULFLAME.get()), (entity.getX()), (entity.getY()),
-						(entity.getZ()), 30, 1, 1, 1, (-0.1));
+				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.SOULFLAME.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 30, 1, 1, 1, (-0.1));
 			entity.getPersistentData().putDouble("bombWait", (entity.getPersistentData().getDouble("bombWait") + 1));
 			if (entity.getPersistentData().getDouble("bombWait") >= 40) {
 				{
 					final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream()
-							.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+					List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+							.collect(Collectors.toList());
 					for (Entity entityiterator : _entfound) {
 						if (entityiterator instanceof Player || entityiterator instanceof ServerPlayer) {
 							entityiterator.hurt(DamageSource.STARVE, 5);
 							if (world instanceof Level _level) {
 								if (!_level.isClientSide()) {
-									_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()),
-											ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.snow.fall")), SoundSource.NEUTRAL, 1,
-											(float) 0.2);
+									_level.playSound(null, new BlockPos(entity.getX(), entity.getY(), entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.snow.fall")), SoundSource.NEUTRAL, 1, (float) 0.2);
 								} else {
-									_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()),
-											ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.snow.fall")), SoundSource.NEUTRAL, 1,
-											(float) 0.2, false);
+									_level.playLocalSound((entity.getX()), (entity.getY()), (entity.getZ()), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.snow.fall")), SoundSource.NEUTRAL, 1, (float) 0.2, false);
 								}
 							}
 						}

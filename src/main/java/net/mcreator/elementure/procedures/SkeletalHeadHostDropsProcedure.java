@@ -37,18 +37,15 @@ public class SkeletalHeadHostDropsProcedure {
 		}
 		if (Math.random() < 0.1) {
 			if (world instanceof Level _level && !_level.isClientSide()) {
-				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-						new ItemStack(ElementureModItems.ARACHNEELFANG.get()));
+				ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModItems.ARACHNEELFANG.get()));
 				entityToSpawn.setPickUpDelay(10);
 				_level.addFreshEntity(entityToSpawn);
 			}
 		}
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.BONE_FRAGMENTS.get()), (entity.getX()), (entity.getY() + 1),
-					(entity.getZ()), 7, 0.5, 0.5, 0.5, 0);
+			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.BONE_FRAGMENTS.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 7, 0.5, 0.5, 0.5, 0);
 		if (world instanceof ServerLevel _level)
-			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.WEB_PARTICLES.get()), (entity.getX()), (entity.getY() + 1),
-					(entity.getZ()), 7, 0.5, 0.5, 0.5, 0);
+			_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.WEB_PARTICLES.get()), (entity.getX()), (entity.getY() + 1), (entity.getZ()), 7, 0.5, 0.5, 0.5, 0);
 		if (world instanceof ServerLevel _level)
 			_level.sendParticles(ParticleTypes.SMOKE, (entity.getX()), (entity.getY() + 1), (entity.getZ()), 3, 0.5, 0.5, 0.5, 0.05);
 		if (Math.random() < 0.2) {
@@ -58,8 +55,7 @@ public class SkeletalHeadHostDropsProcedure {
 				entityToSpawn.setYBodyRot(entity.getYRot());
 				entityToSpawn.setYHeadRot(entity.getYRot());
 				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
-							null);
+					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				world.addFreshEntity(entityToSpawn);
 			}
 		} else if (Math.random() < 0.5) {
@@ -69,14 +65,13 @@ public class SkeletalHeadHostDropsProcedure {
 				entityToSpawn.setYBodyRot(entity.getYRot());
 				entityToSpawn.setYHeadRot(entity.getYRot());
 				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
-							null);
+					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				world.addFreshEntity(entityToSpawn);
 			}
 			{
 				final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream()
-						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(2 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+						.collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof DiscardedSkeletonEntity) {
 						entityiterator.getPersistentData().putBoolean("host", (true));
@@ -90,8 +85,7 @@ public class SkeletalHeadHostDropsProcedure {
 				entityToSpawn.setYBodyRot(entity.getYRot());
 				entityToSpawn.setYHeadRot(entity.getYRot());
 				if (entityToSpawn instanceof Mob _mobToSpawn)
-					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null,
-							null);
+					_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 				world.addFreshEntity(entityToSpawn);
 			}
 		}

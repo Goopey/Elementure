@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGHEST",
@@ -9,7 +9,6 @@
         "data": {
           "image": "cursedeye_7.png",
           "use1Xscale": true,
-          "name": "cursedeye_7.png",
           "x": 86,
           "y": 58
         }

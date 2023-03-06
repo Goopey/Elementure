@@ -31,11 +31,9 @@ public class Modelcthulhupet<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition body = partdefinition
-				.addOrReplaceChild("body",
-						CubeListBuilder.create().texOffs(0, 0).addBox(-3.0F, -15.0F, -3.0F, 6.0F, 9.0F, 6.0F, new CubeDeformation(0.0F))
-								.texOffs(0, 15).addBox(-2.5F, -6.5F, -2.5F, 5.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)),
-						PartPose.offset(0.0F, 24.0F, 0.0F));
+		PartDefinition body = partdefinition.addOrReplaceChild("body",
+				CubeListBuilder.create().texOffs(0, 0).addBox(-3.0F, -15.0F, -3.0F, 6.0F, 9.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(0, 15).addBox(-2.5F, -6.5F, -2.5F, 5.0F, 4.0F, 5.0F, new CubeDeformation(0.0F)),
+				PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 64, 64);
 	}
 
@@ -45,8 +43,7 @@ public class Modelcthulhupet<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

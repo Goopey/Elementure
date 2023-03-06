@@ -10,8 +10,7 @@ public class OldnailhealcharmTrueSoulProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.OLDNAILHEALCHARM
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.OLDNAILHEALCHARM.get()) {
 			entity.getPersistentData().putBoolean("soulACTIVE", (true));
 		}
 	}

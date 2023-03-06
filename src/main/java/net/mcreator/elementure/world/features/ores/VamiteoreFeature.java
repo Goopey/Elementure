@@ -33,10 +33,10 @@ public class VamiteoreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new VamiteoreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("elementure:vamiteore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ElementureModBlocks.VAMITEORE.get().defaultBlockState())), 7));
-		PLACED_FEATURE = PlacementUtils.register("elementure:vamiteore", CONFIGURED_FEATURE, List.of(CountPlacement.of(3), InSquarePlacement.spread(),
-				HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(20)), BiomeFilter.biome()));
+		CONFIGURED_FEATURE = FeatureUtils.register("elementure:vamiteore", FEATURE,
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ElementureModBlocks.VAMITEORE.get().defaultBlockState())), 7));
+		PLACED_FEATURE = PlacementUtils.register("elementure:vamiteore", CONFIGURED_FEATURE,
+				List.of(CountPlacement.of(3), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(20)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

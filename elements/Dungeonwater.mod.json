@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "fluid",
   "definition": {
     "name": "Dungeon water",
@@ -39,9 +39,6 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "colorOnMap": "DEFAULT",
-    "frequencyOnChunks": 0,
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
     "onTickUpdate": {
       "name": "DungeonwaterEffects"
     }

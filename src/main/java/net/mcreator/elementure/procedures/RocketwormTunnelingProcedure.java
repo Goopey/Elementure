@@ -20,8 +20,7 @@ public class RocketwormTunnelingProcedure {
 		if (entity == null)
 			return;
 		if (!((world.getBlockState(new BlockPos(entity.getX(), entity.getY(), entity.getZ()))).getBlock() == Blocks.AIR)) {
-			entity.setDeltaMovement(
-					new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y() - 0.01), (entity.getDeltaMovement().z())));
+			entity.setDeltaMovement(new Vec3((entity.getDeltaMovement().x()), (entity.getDeltaMovement().y() - 0.01), (entity.getDeltaMovement().z())));
 		}
 		if ((entity instanceof Mob _mobEnt ? (Entity) _mobEnt.getTarget() : null) == null) {
 			entity.setDeltaMovement(new Vec3(0, 0, 0));
@@ -29,8 +28,8 @@ public class RocketwormTunnelingProcedure {
 		if (!entity.getPersistentData().getBoolean("cannotSpawn")) {
 			{
 				final Vec3 _center = new Vec3((entity.getX()), (entity.getY()), (entity.getZ()));
-				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(64 / 2d), e -> true).stream()
-						.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+				List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(64 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center)))
+						.collect(Collectors.toList());
 				for (Entity entityiterator : _entfound) {
 					if (entityiterator instanceof Player || entityiterator instanceof ServerPlayer) {
 						if (!(entityiterator instanceof Player _plr ? _plr.getAbilities().instabuild : false)) {

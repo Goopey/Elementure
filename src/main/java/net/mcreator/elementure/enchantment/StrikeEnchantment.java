@@ -22,7 +22,6 @@ public class StrikeEnchantment extends Enchantment {
 
 	@Override
 	protected boolean checkCompatibility(Enchantment ench) {
-		return List.of(Enchantments.BANE_OF_ARTHROPODS, Enchantments.SMITE, Enchantments.SHARPNESS, ElementureModEnchantments.STRIKE.get())
-				.contains(ench);
+		return List.of(Enchantments.BANE_OF_ARTHROPODS, Enchantments.SMITE, Enchantments.SHARPNESS, ElementureModEnchantments.STRIKE.get()).contains(ench);
 	}
 }

@@ -29,8 +29,7 @@ public class TwistedbladeTrueDarkProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.TWISTED_BLADE
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.TWISTED_BLADE.get()) {
 			entity.getPersistentData().putBoolean("darkACTIVE", (true));
 		}
 	}

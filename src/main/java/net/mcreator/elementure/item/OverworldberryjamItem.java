@@ -12,10 +12,9 @@ import net.mcreator.elementure.init.ElementureModTabs;
 
 public class OverworldberryjamItem extends Item {
 	public OverworldberryjamItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(6).saturationMod(1f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(1f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

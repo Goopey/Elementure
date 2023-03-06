@@ -28,8 +28,7 @@ public class StartertownProcedure {
 				}
 			} else if (Math.abs(locX) <= 1 && Math.abs(locZ) <= 1) {
 				StartertownPlaceAirProcedure.execute(world, (x + locX), (y + 5), (z + locZ));
-			} else if (Math.abs(locX) == 99 || Math.abs(locZ) == 99 || Math.abs(locX) == 98 || Math.abs(locZ) == 98 || Math.abs(locX) == 97
-					|| Math.abs(locZ) == 97) {
+			} else if (Math.abs(locX) == 99 || Math.abs(locZ) == 99 || Math.abs(locX) == 98 || Math.abs(locZ) == 98 || Math.abs(locX) == 97 || Math.abs(locZ) == 97) {
 				if (!(Math.abs(locX) <= 1 || Math.abs(locZ) <= 1)) {
 					StartertownPlaceAirProcedure.execute(world, (x + locX), (y + 7), (z + locZ));
 					world.setBlock(new BlockPos(x + locX, y + 6, z + locZ), ElementureModBlocks.OLDBRICKS.get().defaultBlockState(), 3);

@@ -20,13 +20,13 @@ public class FiveslotbackpacksSaveProcedure {
 		double inventorySlots = 0;
 		for (int index0 = 0; index0 < (int) (5); index0++) {
 			{
-				ItemStack _isc = ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag);
-				final ItemStack _setstack = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-						&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get((int) inventorySlots)).getItem() : ItemStack.EMPTY).copy());
+				ItemStack _isc = ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_bag);
+				final ItemStack _setstack = ((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt
+						? ((Slot) _slt.get((int) inventorySlots)).getItem()
+						: ItemStack.EMPTY).copy());
 				final int _sltid = (int) inventorySlots;
-				_setstack.setCount(((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr
-						&& _splr.get() instanceof Map _slt ? ((Slot) _slt.get((int) inventorySlots)).getItem() : ItemStack.EMPTY)).getCount());
+				_setstack.setCount(
+						((entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get((int) inventorySlots)).getItem() : ItemStack.EMPTY)).getCount());
 				_isc.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
 					if (capability instanceof IItemHandlerModifiable) {
 						((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _setstack);

@@ -43,78 +43,40 @@ public class Modelcandle_knight<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition legs = partdefinition.addOrReplaceChild("legs", CubeListBuilder.create(), PartPose.offset(2.0F, 12.0F, 0.0F));
-		PartDefinition legs_r1 = legs.addOrReplaceChild("legs_r1",
-				CubeListBuilder.create().texOffs(67, 16).addBox(-4.5F, 0.0F, -2.0F, 9.0F, 13.0F, 4.0F, new CubeDeformation(0.0F)),
+		PartDefinition legs_r1 = legs.addOrReplaceChild("legs_r1", CubeListBuilder.create().texOffs(67, 16).addBox(-4.5F, 0.0F, -2.0F, 9.0F, 13.0F, 4.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(-2.0F, -3.0F, 0.0F, 0.1309F, 0.0F, 0.0F));
 		PartDefinition candles = partdefinition.addOrReplaceChild("candles", CubeListBuilder.create(), PartPose.offset(0.0F, 24.0F, 0.0F));
-		PartDefinition candle_1 = candles.addOrReplaceChild("candle_1",
-				CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2).mirror()
-						.addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).mirror(false),
-				PartPose.offset(-7.0F, -7.0F, 6.0F));
-		PartDefinition candle_5 = candles.addOrReplaceChild("candle_5",
-				CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2)
-						.addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(12.0F, -20.0F, -11.0F));
-		PartDefinition candle_6 = candles.addOrReplaceChild("candle_6",
-				CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2)
-						.addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(-1.0F, -14.0F, -8.0F));
-		PartDefinition candle_7 = candles.addOrReplaceChild("candle_7",
-				CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2)
-						.addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(3.0F, -26.0F, 13.0F));
-		PartDefinition candle_8 = candles.addOrReplaceChild("candle_8",
-				CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2)
-						.addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(7.0F, -9.0F, 4.0F));
-		PartDefinition candle_9 = candles.addOrReplaceChild("candle_9",
-				CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2)
-						.addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(-7.0F, -20.0F, -9.0F));
-		PartDefinition right_arm = partdefinition.addOrReplaceChild("right_arm",
-				CubeListBuilder.create().texOffs(48, 16).addBox(-4.0F, 0.0F, -2.0F, 4.0F, 13.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 59)
-						.addBox(-4.01F, -0.5F, -2.01F, 1.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(64, 54)
-						.addBox(-4.51F, -2.5F, -2.51F, 5.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(-5.0F, 0.0F, 0.0F));
-		PartDefinition left_arm = partdefinition.addOrReplaceChild("left_arm",
-				CubeListBuilder.create().texOffs(48, 16).mirror().addBox(0.0F, 0.0F, -2.0F, 4.0F, 13.0F, 4.0F, new CubeDeformation(0.0F))
-						.mirror(false).texOffs(0, 59).mirror().addBox(3.01F, -0.5F, -2.01F, 1.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false)
-						.texOffs(64, 54).mirror().addBox(-0.5F, -2.5F, -2.5F, 5.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)).mirror(false),
+		PartDefinition candle_1 = candles.addOrReplaceChild("candle_1", CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
+				.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2).mirror().addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-7.0F, -7.0F, 6.0F));
+		PartDefinition candle_5 = candles.addOrReplaceChild("candle_5", CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
+				.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2).addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(12.0F, -20.0F, -11.0F));
+		PartDefinition candle_6 = candles.addOrReplaceChild("candle_6", CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
+				.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2).addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(-1.0F, -14.0F, -8.0F));
+		PartDefinition candle_7 = candles.addOrReplaceChild("candle_7", CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
+				.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2).addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(3.0F, -26.0F, 13.0F));
+		PartDefinition candle_8 = candles.addOrReplaceChild("candle_8", CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
+				.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2).addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(7.0F, -9.0F, 4.0F));
+		PartDefinition candle_9 = candles.addOrReplaceChild("candle_9", CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
+				.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2).addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(-7.0F, -20.0F, -9.0F));
+		PartDefinition right_arm = partdefinition.addOrReplaceChild("right_arm", CubeListBuilder.create().texOffs(48, 16).addBox(-4.0F, 0.0F, -2.0F, 4.0F, 13.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 59)
+				.addBox(-4.01F, -0.5F, -2.01F, 1.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(64, 54).addBox(-4.51F, -2.5F, -2.51F, 5.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)), PartPose.offset(-5.0F, 0.0F, 0.0F));
+		PartDefinition left_arm = partdefinition.addOrReplaceChild(
+				"left_arm", CubeListBuilder.create().texOffs(48, 16).mirror().addBox(0.0F, 0.0F, -2.0F, 4.0F, 13.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false).texOffs(0, 59).mirror()
+						.addBox(3.01F, -0.5F, -2.01F, 1.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).mirror(false).texOffs(64, 54).mirror().addBox(-0.5F, -2.5F, -2.5F, 5.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)).mirror(false),
 				PartPose.offset(5.0F, 0.0F, 0.0F));
-		PartDefinition sword_r1 = left_arm.addOrReplaceChild("sword_r1",
-				CubeListBuilder.create().texOffs(96, 32).addBox(0.0F, -10.0F, -10.0F, 0.0F, 16.0F, 16.0F, new CubeDeformation(0.0F)),
+		PartDefinition sword_r1 = left_arm.addOrReplaceChild("sword_r1", CubeListBuilder.create().texOffs(96, 32).addBox(0.0F, -10.0F, -10.0F, 0.0F, 16.0F, 16.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(2.0F, 13.2426F, -5.6569F, 2.3562F, 0.0F, -3.1416F));
-		PartDefinition head = partdefinition.addOrReplaceChild("head",
-				CubeListBuilder.create().texOffs(24, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(28, 46)
-						.addBox(-4.5F, -8.5F, -4.5F, 9.0F, 9.0F, 9.0F, new CubeDeformation(0.0F)).texOffs(88, 23)
-						.addBox(-5.0F, -10.0F, -5.0F, 10.0F, 10.0F, 10.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 0.0F, 0.0F));
-		PartDefinition candle_2 = head.addOrReplaceChild("candle_2",
-				CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2).mirror()
-						.addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).mirror(false),
-				PartPose.offset(4.0F, -7.0F, 2.0F));
-		PartDefinition candle_3 = head.addOrReplaceChild("candle_3",
-				CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2)
-						.addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(-3.0F, -6.0F, -2.0F));
-		PartDefinition candle_4 = head.addOrReplaceChild("candle_4",
-				CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2)
-						.addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(2.0F, -6.0F, -6.0F));
+		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create().texOffs(24, 0).addBox(-4.0F, -8.0F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)).texOffs(28, 46)
+				.addBox(-4.5F, -8.5F, -4.5F, 9.0F, 9.0F, 9.0F, new CubeDeformation(0.0F)).texOffs(88, 23).addBox(-5.0F, -10.0F, -5.0F, 10.0F, 10.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+		PartDefinition candle_2 = head.addOrReplaceChild("candle_2", CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
+				.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2).mirror().addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(4.0F, -7.0F, 2.0F));
+		PartDefinition candle_3 = head.addOrReplaceChild("candle_3", CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
+				.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2).addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(-3.0F, -6.0F, -2.0F));
+		PartDefinition candle_4 = head.addOrReplaceChild("candle_4", CubeListBuilder.create().texOffs(48, 0).addBox(-2.0F, -4.0F, 0.0F, 2.0F, 4.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
+				.addBox(-1.0F, -6.0F, 0.0F, 0.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(56, 2).addBox(-2.0F, -6.0F, 1.0F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(2.0F, -6.0F, -6.0F));
 		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-4.5F, -19.0F, -2.0F, 9.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 12)
-						.addBox(-5.0F, -24.0F, -2.0F, 10.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 49)
-						.addBox(-4.0F, -24.0F, -2.5F, 8.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(0, 35)
-						.addBox(-3.0F, -19.0F, -2.5F, 6.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(2, 23)
+				CubeListBuilder.create().texOffs(0, 0).addBox(-4.5F, -19.0F, -2.0F, 9.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 12).addBox(-5.0F, -24.0F, -2.0F, 10.0F, 5.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(0, 49)
+						.addBox(-4.0F, -24.0F, -2.5F, 8.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(0, 35).addBox(-3.0F, -19.0F, -2.5F, 6.0F, 5.0F, 5.0F, new CubeDeformation(0.0F)).texOffs(2, 23)
 						.addBox(-2.0F, -14.0F, -2.5F, 4.0F, 1.0F, 5.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 128, 64);
@@ -131,8 +93,7 @@ public class Modelcandle_knight<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		legs.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		candles.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		right_arm.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);

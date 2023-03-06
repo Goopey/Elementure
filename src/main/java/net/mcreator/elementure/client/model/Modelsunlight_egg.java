@@ -43,26 +43,15 @@ public class Modelsunlight_egg<T extends Entity> extends EntityModel<T> {
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition main_body = partdefinition.addOrReplaceChild("main_body", CubeListBuilder.create(), PartPose.offset(0.0F, 16.0F, 0.0F));
 		PartDefinition egg_body = main_body.addOrReplaceChild("egg_body",
-				CubeListBuilder.create().texOffs(0, 7).addBox(-1.5F, 3.0F, -1.5F, 3.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-2.0F, 0.25F, -2.0F, 4.0F, 3.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(16, 0)
-						.addBox(-1.5F, -1.25F, -1.5F, 3.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(0, 11)
-						.addBox(-1.99F, -0.25F, -1.01F, 4.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 14)
-						.addBox(-0.99F, -0.25F, -2.01F, 2.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(18, 8)
-						.addBox(-1.0F, -1.75F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)),
+				CubeListBuilder.create().texOffs(0, 7).addBox(-1.5F, 3.0F, -1.5F, 3.0F, 1.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-2.0F, 0.25F, -2.0F, 4.0F, 3.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(16, 0)
+						.addBox(-1.5F, -1.25F, -1.5F, 3.0F, 2.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(0, 11).addBox(-1.99F, -0.25F, -1.01F, 4.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(0, 14)
+						.addBox(-0.99F, -0.25F, -2.01F, 2.0F, 1.0F, 4.0F, new CubeDeformation(0.0F)).texOffs(18, 8).addBox(-1.0F, -1.75F, -1.0F, 2.0F, 1.0F, 2.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, -1.0F, 0.0F));
-		PartDefinition light_crown = egg_body.addOrReplaceChild("light_crown",
-				CubeListBuilder.create().texOffs(104, 116).addBox(-6.0F, -5.0F, 4.0F, 12.0F, 12.0F, 0.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 0.0F, 0.0F));
-		PartDefinition sunlight_crown = main_body.addOrReplaceChild("sunlight_crown",
-				CubeListBuilder.create().texOffs(0, 112).addBox(-8.0F, 0.0F, -8.0F, 16.0F, 0.0F, 16.0F, new CubeDeformation(0.0F)).texOffs(0, 68)
-						.addBox(-8.0F, 0.0F, 0.0F, 16.0F, 17.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(96, 0)
-						.addBox(0.0F, 0.0F, -8.0F, 0.0F, 17.0F, 16.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, -20.0F, 0.0F));
-		PartDefinition sunlight_crown_mid = sunlight_crown.addOrReplaceChild("sunlight_crown_mid",
-				CubeListBuilder.create().texOffs(88, 95).addBox(-5.0F, 0.0F, -5.0F, 10.0F, 6.0F, 10.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(0.0F, 0.0F, 0.0F));
-		PartDefinition sunlight_crown_bottom = sunlight_crown.addOrReplaceChild("sunlight_crown_bottom",
-				CubeListBuilder.create().texOffs(104, 64).addBox(-3.0F, 0.0F, -3.0F, 6.0F, 15.0F, 6.0F, new CubeDeformation(0.0F)),
+		PartDefinition light_crown = egg_body.addOrReplaceChild("light_crown", CubeListBuilder.create().texOffs(104, 116).addBox(-6.0F, -5.0F, 4.0F, 12.0F, 12.0F, 0.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+		PartDefinition sunlight_crown = main_body.addOrReplaceChild("sunlight_crown", CubeListBuilder.create().texOffs(0, 112).addBox(-8.0F, 0.0F, -8.0F, 16.0F, 0.0F, 16.0F, new CubeDeformation(0.0F)).texOffs(0, 68)
+				.addBox(-8.0F, 0.0F, 0.0F, 16.0F, 17.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(96, 0).addBox(0.0F, 0.0F, -8.0F, 0.0F, 17.0F, 16.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, -20.0F, 0.0F));
+		PartDefinition sunlight_crown_mid = sunlight_crown.addOrReplaceChild("sunlight_crown_mid", CubeListBuilder.create().texOffs(88, 95).addBox(-5.0F, 0.0F, -5.0F, 10.0F, 6.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
+		PartDefinition sunlight_crown_bottom = sunlight_crown.addOrReplaceChild("sunlight_crown_bottom", CubeListBuilder.create().texOffs(104, 64).addBox(-3.0F, 0.0F, -3.0F, 6.0F, 15.0F, 6.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 0.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 128, 128);
 	}
@@ -77,8 +66,7 @@ public class Modelsunlight_egg<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		main_body.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

@@ -59,7 +59,6 @@ public class FrostyicealphanBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		FrostyicealphanSpawnIceGolemProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 300);
 	}

@@ -10,8 +10,7 @@ public class EnhancedtarspiritstaffTrueDarkProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-				.getItem() == ElementureModItems.ENHANCEDTARSPIRITSTAFF.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.ENHANCEDTARSPIRITSTAFF.get()) {
 			entity.getPersistentData().putBoolean("darkACTIVE", (true));
 		}
 	}

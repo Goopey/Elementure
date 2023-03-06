@@ -57,16 +57,14 @@ public class UmbrasylFireBallSpreadAttackProcedure {
 				}
 			}
 			if (entity.getPersistentData().getBoolean("umbrasylPhase2")) {
-				if (entity.getPersistentData().getDouble("attackCooldown") % 75 > 0 && !(!world.getEntitiesOfClass(TarspiritEntity.class,
-						AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 64, 64, 64), e -> true).isEmpty())) {
+				if (entity.getPersistentData().getDouble("attackCooldown") % 75 > 0 && !(!world.getEntitiesOfClass(TarspiritEntity.class, AABB.ofSize(new Vec3((entity.getX()), (entity.getY()), (entity.getZ())), 64, 64, 64), e -> true).isEmpty())) {
 					if (world instanceof ServerLevel _level) {
 						Entity entityToSpawn = new TarspiritEntity(ElementureModEntities.TARSPIRIT.get(), _level);
 						entityToSpawn.moveTo((entity.getX() - 1), (entity.getY() + 10), (entity.getZ()), 0, 0);
 						entityToSpawn.setYBodyRot(0);
 						entityToSpawn.setYHeadRot(0);
 						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-									null, null);
+							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						world.addFreshEntity(entityToSpawn);
 					}
 					if (world instanceof ServerLevel _level) {
@@ -75,8 +73,7 @@ public class UmbrasylFireBallSpreadAttackProcedure {
 						entityToSpawn.setYBodyRot(0);
 						entityToSpawn.setYHeadRot(0);
 						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-									null, null);
+							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						world.addFreshEntity(entityToSpawn);
 					}
 					if (world instanceof ServerLevel _level) {
@@ -85,8 +82,7 @@ public class UmbrasylFireBallSpreadAttackProcedure {
 						entityToSpawn.setYBodyRot(0);
 						entityToSpawn.setYHeadRot(0);
 						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-									null, null);
+							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						world.addFreshEntity(entityToSpawn);
 					}
 					if (world instanceof ServerLevel _level) {
@@ -95,8 +91,7 @@ public class UmbrasylFireBallSpreadAttackProcedure {
 						entityToSpawn.setYBodyRot(0);
 						entityToSpawn.setYHeadRot(0);
 						if (entityToSpawn instanceof Mob _mobToSpawn)
-							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED,
-									null, null);
+							_mobToSpawn.finalizeSpawn(_level, world.getCurrentDifficultyAt(entityToSpawn.blockPosition()), MobSpawnType.MOB_SUMMONED, null, null);
 						world.addFreshEntity(entityToSpawn);
 					}
 				}

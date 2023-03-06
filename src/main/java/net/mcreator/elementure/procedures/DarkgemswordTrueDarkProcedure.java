@@ -10,8 +10,7 @@ public class DarkgemswordTrueDarkProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.DARKGEMSWORD
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.DARKGEMSWORD.get()) {
 			entity.getPersistentData().putBoolean("darkACTIVE", (true));
 		}
 	}

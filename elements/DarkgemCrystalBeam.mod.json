@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "block",
   "definition": {
     "texture": "darkgemcrystalbeam",
@@ -99,13 +99,7 @@
     "luminance": 0,
     "unbreakable": true,
     "breakHarvestLevel": 1,
-    "spawnParticles": false,
-    "particleToSpawn": {
-      "value": "CUSTOM:Shadowparticle2"
-    },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.05,
-    "particleAmount": 15,
+    "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

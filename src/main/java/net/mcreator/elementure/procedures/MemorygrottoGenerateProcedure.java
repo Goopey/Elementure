@@ -35,23 +35,17 @@ public class MemorygrottoGenerateProcedure {
 								GeneratememorycrystalchunkProcedure.execute(world, (x + CoordsX), (y + CoordsY), (z + CoordsZ));
 							}
 						} else {
-							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-									ElementureModBlocks.MEMORYCRYSTALSHELL.get().defaultBlockState(), 3);
+							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MEMORYCRYSTALSHELL.get().defaultBlockState(), 3);
 						}
-					} else if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ < 112
-							&& CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ >= 92) {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-								ElementureModBlocks.MEMORYCRYSTAL.get().defaultBlockState(), 3);
-					} else if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 92
-							&& CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ >= 84) {
+					} else if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ < 112 && CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ >= 92) {
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MEMORYCRYSTAL.get().defaultBlockState(), 3);
+					} else if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 92 && CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ >= 84) {
 						if (CoordsY < 0 && Math.random() < 0.02) {
 							if (Math.random() < 0.4) {
-								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-										ElementureModBlocks.MEMORYCRYSTAL.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MEMORYCRYSTAL.get().defaultBlockState(), 3);
 								GeneratememoryspiresProcedure.execute(world, (x + CoordsX), (y + CoordsY), (z + CoordsZ));
 							} else if (Math.random() > 0.6) {
-								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-										ElementureModBlocks.MEMORYCRYSTAL.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MEMORYCRYSTAL.get().defaultBlockState(), 3);
 								GeneratelongmemoryspiresProcedure.execute(world, (x + CoordsX), (y + CoordsY), (z + CoordsZ));
 							} else {
 								if (Math.random() < 0.5) {
@@ -62,12 +56,10 @@ public class MemorygrottoGenerateProcedure {
 							}
 						} else if (CoordsY >= 0 && Math.random() < 0.02) {
 							if (Math.random() < 0.4) {
-								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-										ElementureModBlocks.MEMORYCRYSTAL.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MEMORYCRYSTAL.get().defaultBlockState(), 3);
 								GeneratememoryspiresProcedure.execute(world, (x + CoordsX), ((y + CoordsY) - 4), (z + CoordsZ));
 							} else if (Math.random() > 0.6) {
-								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-										ElementureModBlocks.MEMORYCRYSTAL.get().defaultBlockState(), 3);
+								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.MEMORYCRYSTAL.get().defaultBlockState(), 3);
 								GeneratelongmemoryspiresProcedure.execute(world, (x + CoordsX), ((y + CoordsY) - 4), (z + CoordsZ));
 							} else {
 								if (Math.random() < 0.5) {
@@ -77,18 +69,14 @@ public class MemorygrottoGenerateProcedure {
 								}
 							}
 						} else {
-							if (!((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-									.getBlock() == ElementureModBlocks.MEMORYCRYSTALSHELL.get())
-									|| !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-											.getBlock() == ElementureModBlocks.MEMORYCRYSTAL.get())) {
+							if (!((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MEMORYCRYSTALSHELL.get())
+									|| !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MEMORYCRYSTAL.get())) {
 								world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), Blocks.AIR.defaultBlockState(), 3);
 							}
 						}
 					} else {
-						if (!((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-								.getBlock() == ElementureModBlocks.MEMORYCRYSTALSHELL.get())
-								|| !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-										.getBlock() == ElementureModBlocks.MEMORYCRYSTAL.get())) {
+						if (!((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MEMORYCRYSTALSHELL.get())
+								|| !((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).getBlock() == ElementureModBlocks.MEMORYCRYSTAL.get())) {
 							world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), Blocks.AIR.defaultBlockState(), 3);
 						}
 					}

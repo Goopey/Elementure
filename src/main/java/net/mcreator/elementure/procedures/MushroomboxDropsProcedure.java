@@ -17,8 +17,7 @@ public class MushroomboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index0 = 0; index0 < (int) (Math.ceil(Math.random() * 4)); index0++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.MYCELIUM));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.MYCELIUM));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -36,8 +35,7 @@ public class MushroomboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index2 = 0; index2 < (int) (Math.ceil(Math.random() * 8)); index2++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.BROWN_MUSHROOM));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.BROWN_MUSHROOM));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -46,8 +44,7 @@ public class MushroomboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index3 = 0; index3 < (int) (Math.ceil(Math.random() * 8)); index3++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.RED_MUSHROOM));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.RED_MUSHROOM));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -56,8 +53,7 @@ public class MushroomboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index4 = 0; index4 < (int) (Math.ceil(Math.random() * 4)); index4++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(ElementureModBlocks.PURPLEMUSHROOMS.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModBlocks.PURPLEMUSHROOMS.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -66,8 +62,7 @@ public class MushroomboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index5 = 0; index5 < (int) (Math.ceil(Math.random() * 8)); index5++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(ElementureModBlocks.PURPLEMUSHROOMBLOCK.get()));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(ElementureModBlocks.PURPLEMUSHROOMBLOCK.get()));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -76,8 +71,7 @@ public class MushroomboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index6 = 0; index6 < (int) (Math.ceil(Math.random() * 8)); index6++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.RED_MUSHROOM_BLOCK));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.RED_MUSHROOM_BLOCK));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -86,8 +80,7 @@ public class MushroomboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index7 = 0; index7 < (int) (Math.ceil(Math.random() * 8)); index7++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.BROWN_MUSHROOM_BLOCK));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.BROWN_MUSHROOM_BLOCK));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -96,8 +89,7 @@ public class MushroomboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index8 = 0; index8 < (int) (Math.ceil(Math.random() * 8)); index8++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Blocks.MUSHROOM_STEM));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Blocks.MUSHROOM_STEM));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -106,8 +98,7 @@ public class MushroomboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index9 = 0; index9 < (int) (Math.ceil(Math.random() * 3)); index9++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Items.MUSHROOM_STEW));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Items.MUSHROOM_STEW));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}
@@ -116,8 +107,7 @@ public class MushroomboxDropsProcedure {
 		if (Math.random() < 0.5) {
 			for (int index10 = 0; index10 < (int) (Math.ceil(Math.random() * 3)); index10++) {
 				if (world instanceof Level _level && !_level.isClientSide()) {
-					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()),
-							new ItemStack(Items.SUSPICIOUS_STEW));
+					ItemEntity entityToSpawn = new ItemEntity(_level, (entity.getX()), (entity.getY()), (entity.getZ()), new ItemStack(Items.SUSPICIOUS_STEW));
 					entityToSpawn.setPickUpDelay(10);
 					_level.addFreshEntity(entityToSpawn);
 				}

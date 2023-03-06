@@ -8,6 +8,7 @@ import net.mcreator.elementure.ElementureMod;
 public class CormunculusClubSwingProcedure {
 	public static void execute(ItemStack itemstack) {
 		ElementureMod.LOGGER.info(itemstack.getItem().getClass());
-		((CormunculusClubItem) itemstack.getItem()).animationprocedure = "animation.weaponartitem.side_bash";
+		if (itemstack.getItem() instanceof CormunculusClubItem)
+			itemstack.getOrCreateTag().putString("geckoAnim", "animation.weaponartitem.side_bash");
 	}
 }

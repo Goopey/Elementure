@@ -17,8 +17,7 @@ public class GranitelementalsBiomespawningProcedure {
 		CoordsZ = -1;
 		for (int index0 = 0; index0 < (int) (27); index0++) {
 			if (!(world.getDifficulty() == Difficulty.PEACEFUL)) {
-				if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-						.is(BlockTags.create(new ResourceLocation("elementure:ruingranitebiomeblocks"))) && !RuinGraniteNear) {
+				if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).is(BlockTags.create(new ResourceLocation("elementure:ruingranitebiomeblocks"))) && !RuinGraniteNear) {
 					RuinGraniteNear = true;
 				}
 			}

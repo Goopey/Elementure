@@ -19,8 +19,7 @@ public class JellyfloatbiomeGreenPatchProcedure {
 		locZ = -8;
 		for (int index0 = 0; index0 < (int) (4913); index0++) {
 			if (locX * locX + locZ * locZ < 64) {
-				if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.GRAVEL
-						&& !world.getBlockState(new BlockPos(x + locX, y + locY + 1, z + locZ)).canOcclude()
+				if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.GRAVEL && !world.getBlockState(new BlockPos(x + locX, y + locY + 1, z + locZ)).canOcclude()
 						&& !((world.getBlockState(new BlockPos(x + locX, -64, z + locZ))).getBlock() == ElementureModBlocks.PERVADEDBEDROCK.get())) {
 					world.setBlock(new BlockPos(x + locX, -64, z + locZ), ElementureModBlocks.PERVADEDBEDROCK.get().defaultBlockState(), 3);
 					if (!world.isClientSide()) {

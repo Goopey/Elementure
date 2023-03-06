@@ -17,10 +17,8 @@ public class NetherstarCrustSetFireProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if (!entity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:netherstarfireimmune")))
-				&& !entity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))
-				&& !(entity instanceof ItemEntity) && !(entity instanceof ItemFrame)
-				&& !(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(ElementureModMobEffects.HEATRESISTANCE.get()) : false)) {
+		if (!entity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:netherstarfireimmune"))) && !entity.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))
+				&& !(entity instanceof ItemEntity) && !(entity instanceof ItemFrame) && !(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(ElementureModMobEffects.HEATRESISTANCE.get()) : false)) {
 			if (!(entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.FIRE_RESISTANCE) : false)) {
 				entity.setSecondsOnFire(15);
 			} else {

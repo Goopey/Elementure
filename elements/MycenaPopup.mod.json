@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGHEST",
@@ -7,12 +7,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Mycenan Grottos",
+          "name": "label_mycenan_grottos",
+          "text": {
+            "fixedValue": "Mycenan Grottos"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "Mycenan Grottos",
           "x": 174,
           "y": 26
         }

@@ -15,41 +15,32 @@ public class AbyssalspotterGenerateProcedure {
 			if (Math.random() < 0.5) {
 				if (Math.random() < 0.25) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "mediumadiagonalarm"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mediumadiagonalarm"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-									_serverworld.random, 3);
+							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 						}
 					}
 				} else if (Math.random() < 0.5 && Math.random() > 0.25) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "mediumadiagonalarm"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mediumadiagonalarm"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x + 13, y + 1, z - 13), new BlockPos(x + 13, y + 1, z - 13),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x + 13, y + 1, z - 13), new BlockPos(x + 13, y + 1, z - 13), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}
 				} else if (Math.random() < 0.75 && Math.random() > 0.5) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "mediumbdiagonalarm"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mediumbdiagonalarm"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x + 13, y + 1, z), new BlockPos(x + 13, y + 1, z),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x + 13, y + 1, z), new BlockPos(x + 13, y + 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}
 				} else {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "mediumbdiagonalarm"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mediumbdiagonalarm"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z - 13), new BlockPos(x, y + 1, z - 13),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z - 13), new BlockPos(x, y + 1, z - 13), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}
@@ -57,41 +48,31 @@ public class AbyssalspotterGenerateProcedure {
 			} else {
 				if (Math.random() < 0.25) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "mediumfrontarm"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mediumfrontarm"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-									_serverworld.random, 3);
+							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 						}
 					}
 				} else if (Math.random() < 0.5 && Math.random() > 0.25) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "mediumfrontarm"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mediumfrontarm"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x - 13, y + 1, z), new BlockPos(x - 13, y + 1, z),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x - 13, y + 1, z), new BlockPos(x - 13, y + 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}
 				} else if (Math.random() < 0.75 && Math.random() > 0.5) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "mediumsidearm"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mediumsidearm"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-									_serverworld.random, 3);
+							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 						}
 					}
 				} else {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "mediumsidearm"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mediumsidearm"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z - 13), new BlockPos(x, y + 1, z - 13),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z - 13), new BlockPos(x, y + 1, z - 13), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}
@@ -101,41 +82,32 @@ public class AbyssalspotterGenerateProcedure {
 			if (Math.random() < 0.5) {
 				if (Math.random() < 0.25) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "smalladiagonalarm"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "smalladiagonalarm"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-									_serverworld.random, 3);
+							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 						}
 					}
 				} else if (Math.random() < 0.5 && Math.random() > 0.25) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "smalladiagonalarm"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "smalladiagonalarm"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x + 13, y + 1, z - 13), new BlockPos(x + 13, y + 1, z - 13),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x + 13, y + 1, z - 13), new BlockPos(x + 13, y + 1, z - 13), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}
 				} else if (Math.random() < 0.75 && Math.random() > 0.5) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "smallbdiagonalarm"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "smallbdiagonalarm"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x + 13, y + 1, z), new BlockPos(x + 13, y + 1, z),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x + 13, y + 1, z), new BlockPos(x + 13, y + 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}
 				} else {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "smallbdiagonalarm"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "smallbdiagonalarm"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z - 13), new BlockPos(x, y + 1, z - 13),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z - 13), new BlockPos(x, y + 1, z - 13), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}
@@ -143,41 +115,31 @@ public class AbyssalspotterGenerateProcedure {
 			} else {
 				if (Math.random() < 0.25) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "smallfrontarm"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "smallfrontarm"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-									_serverworld.random, 3);
+							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 						}
 					}
 				} else if (Math.random() < 0.5 && Math.random() > 0.25) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "smallfrontarm"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "smallfrontarm"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x - 13, y + 1, z), new BlockPos(x - 13, y + 1, z),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x - 13, y + 1, z), new BlockPos(x - 13, y + 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}
 				} else if (Math.random() < 0.75 && Math.random() > 0.5) {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "smallsidearm"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "smallsidearm"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-									_serverworld.random, 3);
+							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 						}
 					}
 				} else {
 					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager()
-								.getOrCreate(new ResourceLocation("elementure", "smallsidearm"));
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "smallsidearm"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z - 13), new BlockPos(x, y + 1, z - 13),
-									new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+							template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z - 13), new BlockPos(x, y + 1, z - 13), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
 									_serverworld.random, 3);
 						}
 					}
@@ -188,27 +150,21 @@ public class AbyssalspotterGenerateProcedure {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "smallspire"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z),
-								new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-								_serverworld.random, 3);
+						template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 					}
 				}
 			} else if (Math.random() < 0.8 && Math.random() > 0.45) {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "mediumspire"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z),
-								new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-								_serverworld.random, 3);
+						template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 					}
 				}
 			} else {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "bigspire"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z),
-								new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
-								_serverworld.random, 3);
+						template.placeInWorld(_serverworld, new BlockPos(x, y + 1, z), new BlockPos(x, y + 1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 					}
 				}
 			}

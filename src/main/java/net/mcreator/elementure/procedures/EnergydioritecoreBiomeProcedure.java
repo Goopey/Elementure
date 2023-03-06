@@ -20,23 +20,17 @@ public class EnergydioritecoreBiomeProcedure {
 		CoordsZ = -16;
 		for (int index0 = 0; index0 < (int) (35937); index0++) {
 			if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 256) {
-				if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-						.is(BlockTags.create(new ResourceLocation("elementure:elementureundergroundbiomestone_replaceable")))) {
+				if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).is(BlockTags.create(new ResourceLocation("elementure:elementureundergroundbiomestone_replaceable")))) {
 					if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ <= 48) {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-								ElementureModBlocks.CHISELEDENERGYDIORITE.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.CHISELEDENERGYDIORITE.get().defaultBlockState(), 3);
 					} else if (CoordsX * CoordsX + CoordsY * CoordsY + CoordsZ * CoordsZ >= 128) {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-								ElementureModBlocks.POLISHEDENERGYDIORITE.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.POLISHEDENERGYDIORITE.get().defaultBlockState(), 3);
 					} else {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ),
-								ElementureModBlocks.ENERGYDIORITE.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.ENERGYDIORITE.get().defaultBlockState(), 3);
 					}
-				} else if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ)))
-						.is(BlockTags.create(new ResourceLocation("elementure:elementureundergroundbiomeore_replaceable")))) {
+				} else if ((world.getBlockState(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ))).is(BlockTags.create(new ResourceLocation("elementure:elementureundergroundbiomeore_replaceable")))) {
 					if (Math.random() < 0.33) {
-						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NEONBLOCK.get().defaultBlockState(),
-								3);
+						world.setBlock(new BlockPos(x + CoordsX, y + CoordsY, z + CoordsZ), ElementureModBlocks.NEONBLOCK.get().defaultBlockState(), 3);
 					}
 				}
 			}

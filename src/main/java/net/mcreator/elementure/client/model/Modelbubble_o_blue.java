@@ -39,23 +39,14 @@ public class Modelbubble_o_blue<T extends Entity> extends EntityModel<T> {
 	public static LayerDefinition createBodyLayer() {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
-		PartDefinition leg1 = partdefinition.addOrReplaceChild("leg1", CubeListBuilder.create().texOffs(12, 41).mirror()
-				.addBox(-1.5F, -0.99F, -1.5F, 3.0F, 20.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-6.5F, 26.0F, 6.5F));
-		PartDefinition leg2 = partdefinition.addOrReplaceChild("leg2",
-				CubeListBuilder.create().texOffs(0, 41).addBox(-1.5F, -0.99F, -1.5F, 3.0F, 20.0F, 3.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(-6.5F, 26.0F, -6.5F));
-		PartDefinition leg3 = partdefinition.addOrReplaceChild("leg3", CubeListBuilder.create().texOffs(0, 41).mirror()
-				.addBox(-1.5F, -0.99F, -1.5F, 3.0F, 20.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(6.5F, 26.0F, -6.5F));
-		PartDefinition leg4 = partdefinition.addOrReplaceChild("leg4",
-				CubeListBuilder.create().texOffs(12, 41).addBox(-1.5F, -0.99F, -1.5F, 3.0F, 20.0F, 3.0F, new CubeDeformation(0.0F)),
-				PartPose.offset(6.5F, 26.0F, 6.5F));
+		PartDefinition leg1 = partdefinition.addOrReplaceChild("leg1", CubeListBuilder.create().texOffs(12, 41).mirror().addBox(-1.5F, -0.99F, -1.5F, 3.0F, 20.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(-6.5F, 26.0F, 6.5F));
+		PartDefinition leg2 = partdefinition.addOrReplaceChild("leg2", CubeListBuilder.create().texOffs(0, 41).addBox(-1.5F, -0.99F, -1.5F, 3.0F, 20.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(-6.5F, 26.0F, -6.5F));
+		PartDefinition leg3 = partdefinition.addOrReplaceChild("leg3", CubeListBuilder.create().texOffs(0, 41).mirror().addBox(-1.5F, -0.99F, -1.5F, 3.0F, 20.0F, 3.0F, new CubeDeformation(0.0F)).mirror(false), PartPose.offset(6.5F, 26.0F, -6.5F));
+		PartDefinition leg4 = partdefinition.addOrReplaceChild("leg4", CubeListBuilder.create().texOffs(12, 41).addBox(-1.5F, -0.99F, -1.5F, 3.0F, 20.0F, 3.0F, new CubeDeformation(0.0F)), PartPose.offset(6.5F, 26.0F, 6.5F));
 		PartDefinition bb_main = partdefinition.addOrReplaceChild("bb_main",
-				CubeListBuilder.create().texOffs(64, 46).addBox(-8.0F, -21.99F, -8.0F, 16.0F, 2.0F, 16.0F, new CubeDeformation(0.0F)).texOffs(56, 0)
-						.addBox(-9.0F, -20.0F, -9.0F, 18.0F, 17.0F, 18.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-8.0F, -3.0F, -8.0F, 16.0F, 2.0F, 16.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-7.0F, -1.0F, -7.0F, 14.0F, 2.0F, 14.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
-						.addBox(-6.0F, 1.0F, -6.0F, 12.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)).texOffs(37, 36)
-						.addBox(-5.0F, 4.0F, -5.0F, 10.0F, 3.0F, 10.0F, new CubeDeformation(0.0F)).texOffs(0, 18)
+				CubeListBuilder.create().texOffs(64, 46).addBox(-8.0F, -21.99F, -8.0F, 16.0F, 2.0F, 16.0F, new CubeDeformation(0.0F)).texOffs(56, 0).addBox(-9.0F, -20.0F, -9.0F, 18.0F, 17.0F, 18.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
+						.addBox(-8.0F, -3.0F, -8.0F, 16.0F, 2.0F, 16.0F, new CubeDeformation(0.0F)).texOffs(0, 0).addBox(-7.0F, -1.0F, -7.0F, 14.0F, 2.0F, 14.0F, new CubeDeformation(0.0F)).texOffs(0, 0)
+						.addBox(-6.0F, 1.0F, -6.0F, 12.0F, 3.0F, 12.0F, new CubeDeformation(0.0F)).texOffs(37, 36).addBox(-5.0F, 4.0F, -5.0F, 10.0F, 3.0F, 10.0F, new CubeDeformation(0.0F)).texOffs(0, 18)
 						.addBox(-5.0F, -16.0F, -5.0F, 10.0F, 10.0F, 10.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 128, 64);
@@ -74,8 +65,7 @@ public class Modelbubble_o_blue<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		leg1.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		leg2.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 		leg3.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);

@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.EntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.item.TieredItem;
+import net.minecraft.world.item.PickaxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.MenuProvider;
@@ -25,10 +25,7 @@ import net.mcreator.elementure.block.entity.MycenaBiomeAlphanBlockEntity;
 import java.util.List;
 import java.util.Collections;
 
-public class MycenaBiomeAlphanBlock extends Block
-		implements
-
-			EntityBlock {
+public class MycenaBiomeAlphanBlock extends Block implements EntityBlock {
 	public MycenaBiomeAlphanBlock() {
 		super(BlockBehaviour.Properties.of(Material.GRASS).sound(SoundType.GRAVEL).strength(-1, 3600000).requiresCorrectToolForDrops());
 	}
@@ -40,7 +37,7 @@ public class MycenaBiomeAlphanBlock extends Block
 
 	@Override
 	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
+		if (player.getInventory().getSelected().getItem() instanceof PickaxeItem tieredItem)
 			return tieredItem.getTier().getLevel() >= 20;
 		return false;
 	}
@@ -65,7 +62,6 @@ public class MycenaBiomeAlphanBlock extends Block
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		MycenaBiomeAlphanGenProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 6);
 	}

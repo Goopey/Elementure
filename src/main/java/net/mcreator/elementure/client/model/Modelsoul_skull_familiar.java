@@ -21,8 +21,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 public class Modelsoul_skull_familiar<T extends Entity> extends EntityModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in
 	// the entity renderer and passed into this model's constructor
-	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("elementure", "modelsoul_skull_familiar"),
-			"main");
+	public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation("elementure", "modelsoul_skull_familiar"), "main");
 	public final ModelPart main_skull;
 	public final ModelPart skull_r1;
 	public final ModelPart flames;
@@ -37,17 +36,13 @@ public class Modelsoul_skull_familiar<T extends Entity> extends EntityModel<T> {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 		PartDefinition main_skull = partdefinition.addOrReplaceChild("main_skull", CubeListBuilder.create(), PartPose.offset(0.0F, 14.0F, 0.0F));
-		PartDefinition skull_r1 = main_skull.addOrReplaceChild("skull_r1",
-				CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, -3.75F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)),
+		PartDefinition skull_r1 = main_skull.addOrReplaceChild("skull_r1", CubeListBuilder.create().texOffs(0, 0).addBox(-4.0F, -3.75F, -4.0F, 8.0F, 8.0F, 8.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 0.0F, 0.0F, 0.0873F, 0.0F, 0.0F));
 		PartDefinition flames = main_skull.addOrReplaceChild("flames",
-				CubeListBuilder.create().texOffs(6, 24).addBox(-1.5F, -1.5F, -0.75F, 3.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(6, 28)
-						.addBox(-1.5F, -1.5F, 1.75F, 3.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(0, 25)
-						.addBox(1.25F, -1.5F, -1.0F, 0.0F, 4.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(0, 21).addBox(-1.25F, -1.5F, -1.0F, 0.0F,
-								4.0F, 3.0F, new CubeDeformation(0.0F)),
+				CubeListBuilder.create().texOffs(6, 24).addBox(-1.5F, -1.5F, -0.75F, 3.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(6, 28).addBox(-1.5F, -1.5F, 1.75F, 3.0F, 4.0F, 0.0F, new CubeDeformation(0.0F)).texOffs(0, 25)
+						.addBox(1.25F, -1.5F, -1.0F, 0.0F, 4.0F, 3.0F, new CubeDeformation(0.0F)).texOffs(0, 21).addBox(-1.25F, -1.5F, -1.0F, 0.0F, 4.0F, 3.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, 4.0F, 0.25F, 0.7418F, 0.0F, 0.0F));
-		PartDefinition soul_r1 = flames.addOrReplaceChild("soul_r1",
-				CubeListBuilder.create().texOffs(16, 24).addBox(-2.0F, -2.0F, -0.6F, 4.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)),
+		PartDefinition soul_r1 = flames.addOrReplaceChild("soul_r1", CubeListBuilder.create().texOffs(16, 24).addBox(-2.0F, -2.0F, -0.6F, 4.0F, 4.0F, 4.0F, new CubeDeformation(0.0F)),
 				PartPose.offsetAndRotation(0.0F, -3.0F, 0.0F, -0.4363F, 0.0F, 0.0F));
 		return LayerDefinition.create(meshdefinition, 32, 32);
 	}
@@ -61,8 +56,7 @@ public class Modelsoul_skull_familiar<T extends Entity> extends EntityModel<T> {
 	}
 
 	@Override
-	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green,
-			float blue, float alpha) {
+	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		main_skull.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 }

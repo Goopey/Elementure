@@ -29,8 +29,7 @@ public class FireblastskillTrueFireProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.FIREBLASTSKILL
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.FIREBLASTSKILL.get()) {
 			entity.getPersistentData().putBoolean("fireACTIVE", (true));
 		}
 	}

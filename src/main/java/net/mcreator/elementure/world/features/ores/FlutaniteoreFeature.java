@@ -34,11 +34,10 @@ public class FlutaniteoreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new FlutaniteoreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("elementure:flutaniteore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ElementureModBlocks.FLUTANITEORE.get().defaultBlockState())), 9));
+		CONFIGURED_FEATURE = FeatureUtils.register("elementure:flutaniteore", FEATURE,
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ElementureModBlocks.FLUTANITEORE.get().defaultBlockState())), 9));
 		PLACED_FEATURE = PlacementUtils.register("elementure:flutaniteore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(4), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(96), VerticalAnchor.absolute(256)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(4), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(96), VerticalAnchor.absolute(256)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

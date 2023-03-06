@@ -16,10 +16,9 @@ import java.util.List;
 
 public class EvildonutItem extends Item {
 	public EvildonutItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.UNCOMMON)
-				.food((new FoodProperties.Builder()).nutrition(10).saturationMod(2f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.UNCOMMON).food((new FoodProperties.Builder()).nutrition(10).saturationMod(2f)
 
-						.build()));
+				.build()));
 	}
 
 	@Override

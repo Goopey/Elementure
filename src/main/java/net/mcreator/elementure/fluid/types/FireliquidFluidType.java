@@ -12,16 +12,14 @@ import java.util.function.Consumer;
 
 public class FireliquidFluidType extends FluidType {
 	public FireliquidFluidType() {
-		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).lightLevel(8)
-				.density(997).viscosity(890).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).lightLevel(8).density(997).viscosity(890).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
 				.sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY).sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));
 	}
 
 	@Override
 	public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
 		consumer.accept(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("elementure:blocks/fireelement_liquid"),
-					FLOWING_TEXTURE = new ResourceLocation("elementure:blocks/fireelement_liquid");
+			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("elementure:blocks/fireelement_liquid"), FLOWING_TEXTURE = new ResourceLocation("elementure:blocks/fireelement_liquid");
 
 			@Override
 			public ResourceLocation getStillTexture() {

@@ -17,9 +17,8 @@ import net.mcreator.elementure.init.ElementureModFluidTypes;
 import net.mcreator.elementure.init.ElementureModBlocks;
 
 public abstract class DarkwaterFluid extends ForgeFlowingFluid {
-	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ElementureModFluidTypes.DARKWATER_TYPE.get(),
-			() -> ElementureModFluids.DARKWATER.get(), () -> ElementureModFluids.FLOWING_DARKWATER.get()).explosionResistance(100f)
-			.bucket(() -> ElementureModItems.DARKWATER_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.DARKWATER.get());
+	public static final ForgeFlowingFluid.Properties PROPERTIES = new ForgeFlowingFluid.Properties(() -> ElementureModFluidTypes.DARKWATER_TYPE.get(), () -> ElementureModFluids.DARKWATER.get(), () -> ElementureModFluids.FLOWING_DARKWATER.get())
+			.explosionResistance(100f).bucket(() -> ElementureModItems.DARKWATER_BUCKET.get()).block(() -> (LiquidBlock) ElementureModBlocks.DARKWATER.get());
 
 	private DarkwaterFluid() {
 		super(PROPERTIES);

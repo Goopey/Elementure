@@ -10,8 +10,7 @@ public class LightningbladeTrueLightningProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.LIGHTNINGBLADE
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.LIGHTNINGBLADE.get()) {
 			entity.getPersistentData().putBoolean("lightningACTIVE", (true));
 		}
 	}

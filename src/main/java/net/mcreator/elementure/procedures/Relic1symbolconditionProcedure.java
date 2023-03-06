@@ -10,7 +10,6 @@ public class Relic1symbolconditionProcedure {
 		if (entity == null)
 			return false;
 		boolean shouldRender = false;
-		return ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-				.orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).getItem() == (ItemStack.EMPTY).getItem();
+		return ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).relic_inventory_relic_1).getItem() == (ItemStack.EMPTY).getItem();
 	}
 }

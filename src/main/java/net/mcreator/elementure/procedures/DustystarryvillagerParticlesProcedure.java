@@ -19,10 +19,8 @@ public class DustystarryvillagerParticlesProcedure {
 		yaw = Math.sin(entity.getYRot() / ((-180) / Math.PI));
 		yaw2 = Math.cos(entity.getYRot() / ((-180) / Math.PI));
 		for (int index0 = 0; index0 < (int) (8); index0++) {
-			world.addParticle((SimpleParticleType) (ElementureModParticleTypes.SOULFLAME.get()), (entity.getX() + 0.2 * yaw * pitch),
-					(entity.getY() + 1.633 + 0.2 * pitch2), (entity.getZ() + 0.2 * yaw2 * pitch),
-					(((yaw * pitch) / (-4) + (Math.random() - 0.5) / 2) / 16), ((pitch2 / (-4) + (Math.random() - 0.5) / 2) / 16),
-					(((yaw2 * pitch) / (-4) + (Math.random() - 0.5) / 2) / 16));
+			world.addParticle((SimpleParticleType) (ElementureModParticleTypes.SOULFLAME.get()), (entity.getX() + 0.2 * yaw * pitch), (entity.getY() + 1.633 + 0.2 * pitch2), (entity.getZ() + 0.2 * yaw2 * pitch),
+					(((yaw * pitch) / (-4) + (Math.random() - 0.5) / 2) / 16), ((pitch2 / (-4) + (Math.random() - 0.5) / 2) / 16), (((yaw2 * pitch) / (-4) + (Math.random() - 0.5) / 2) / 16));
 		}
 	}
 }

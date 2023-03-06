@@ -16,10 +16,9 @@ import java.util.List;
 
 public class CookedmelshItem extends Item {
 	public CookedmelshItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.6f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(6).saturationMod(0.6f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

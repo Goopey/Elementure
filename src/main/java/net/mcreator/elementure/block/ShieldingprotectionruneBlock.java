@@ -49,7 +49,6 @@ public class ShieldingprotectionruneBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-
 		ShieldingprotectionruneDisableBuildingProcedure.execute(world, x, y, z);
 		world.scheduleTick(pos, this, 5);
 	}

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGH",
@@ -9,7 +9,6 @@
         "data": {
           "image": "playerenergy.png",
           "use1Xscale": true,
-          "name": "playerenergy.png",
           "x": 384,
           "y": 206
         }
@@ -17,12 +16,14 @@
       {
         "type": "label",
         "data": {
-          "text": "<VAR:integer:energy_essence>",
+          "name": "label_varintegerenergy_essence",
+          "text": {
+            "fixedValue": "<VAR:integer:energy_essence>"
+          },
           "color": {
             "value": -6684673,
             "falpha": 0.0
           },
-          "name": "<VAR:integer:energy_essence>",
           "x": 393,
           "y": 197
         }

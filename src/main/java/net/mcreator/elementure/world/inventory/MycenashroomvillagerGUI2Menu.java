@@ -84,12 +84,12 @@ public class MycenashroomvillagerGUI2Menu extends AbstractContainerMenu implemen
 		}
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 61, 8) {
 			@Override
-			public boolean mayPickup(Player player) {
+			public boolean mayPickup(Player entity) {
 				return false;
 			}
 
 			@Override
-			public boolean mayPlace(ItemStack stack) {
+			public boolean mayPlace(ItemStack itemstack) {
 				return false;
 			}
 		}));
@@ -126,23 +126,23 @@ public class MycenashroomvillagerGUI2Menu extends AbstractContainerMenu implemen
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 151, 8) {
 			@Override
-			public boolean mayPickup(Player player) {
+			public boolean mayPickup(Player entity) {
 				return false;
 			}
 
 			@Override
-			public boolean mayPlace(ItemStack stack) {
+			public boolean mayPlace(ItemStack itemstack) {
 				return false;
 			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 61, 35) {
 			@Override
-			public boolean mayPickup(Player player) {
+			public boolean mayPickup(Player entity) {
 				return false;
 			}
 
 			@Override
-			public boolean mayPlace(ItemStack stack) {
+			public boolean mayPlace(ItemStack itemstack) {
 				return false;
 			}
 		}));
@@ -179,23 +179,23 @@ public class MycenashroomvillagerGUI2Menu extends AbstractContainerMenu implemen
 		}));
 		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 151, 35) {
 			@Override
-			public boolean mayPickup(Player player) {
+			public boolean mayPickup(Player entity) {
 				return false;
 			}
 
 			@Override
-			public boolean mayPlace(ItemStack stack) {
+			public boolean mayPlace(ItemStack itemstack) {
 				return false;
 			}
 		}));
 		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 61, 62) {
 			@Override
-			public boolean mayPickup(Player player) {
+			public boolean mayPickup(Player entity) {
 				return false;
 			}
 
 			@Override
-			public boolean mayPlace(ItemStack stack) {
+			public boolean mayPlace(ItemStack itemstack) {
 				return false;
 			}
 		}));
@@ -232,12 +232,12 @@ public class MycenashroomvillagerGUI2Menu extends AbstractContainerMenu implemen
 		}));
 		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 151, 62) {
 			@Override
-			public boolean mayPickup(Player player) {
+			public boolean mayPickup(Player entity) {
 				return false;
 			}
 
 			@Override
-			public boolean mayPlace(ItemStack stack) {
+			public boolean mayPlace(ItemStack itemstack) {
 				return false;
 			}
 		}));

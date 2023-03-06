@@ -10,7 +10,7 @@ import net.mcreator.elementure.client.model.Modeltinyclayman;
 
 public class TinyclaymanfamiliarRenderer extends MobRenderer<TinyclaymanfamiliarEntity, Modeltinyclayman<TinyclaymanfamiliarEntity>> {
 	public TinyclaymanfamiliarRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modeltinyclayman(context.bakeLayer(Modeltinyclayman.LAYER_LOCATION)), 0.3f);
+		super(context, new Modeltinyclayman(context.bakeLayer(Modeltinyclayman.LAYER_LOCATION)), 0.30000000000000004f);
 	}
 
 	@Override

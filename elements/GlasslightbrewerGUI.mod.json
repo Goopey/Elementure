@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -16,10 +16,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 0,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #0",
           "x": 132,
           "y": 62
         }
@@ -29,11 +33,15 @@
         "data": {
           "inputLimit": {
             "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
           },
           "id": 1,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #1",
           "x": 132,
           "y": 80
         }
@@ -44,10 +52,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 2,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #2",
           "x": 186,
           "y": 62
         }
@@ -58,10 +70,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 3,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #3",
           "x": 186,
           "y": 80
         }
@@ -72,10 +88,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 4,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #4",
           "x": 150,
           "y": 71
         }
@@ -86,10 +106,14 @@
           "inputLimit": {
             "value": ""
           },
+          "disablePlacement": {
+            "fixedValue": false
+          },
           "id": 5,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #5",
           "x": 168,
           "y": 71
         }
@@ -98,9 +122,10 @@
         "type": "outputslot",
         "data": {
           "id": 6,
-          "disableStackInteraction": false,
+          "disablePickup": {
+            "fixedValue": false
+          },
           "dropItemsWhenNotBound": true,
-          "name": "Slot #6",
           "x": 258,
           "y": 71
         }
@@ -110,7 +135,6 @@
         "data": {
           "image": "inventory_slot_small_texture.png",
           "use1Xscale": false,
-          "name": "inventory_slot_small_texture.png",
           "x": 255,
           "y": 68
         }
@@ -120,7 +144,6 @@
         "data": {
           "image": "jar.png",
           "use1Xscale": false,
-          "name": "jar.png",
           "x": 151,
           "y": 72
         }
@@ -130,7 +153,6 @@
         "data": {
           "image": "rime_essence_symbol.png",
           "use1Xscale": false,
-          "name": "rime_essence_symbol.png",
           "x": 169,
           "y": 72
         }
@@ -140,7 +162,6 @@
         "data": {
           "image": "diverscrown_meter_empty.png",
           "use1Xscale": false,
-          "name": "diverscrown_meter_empty.png",
           "x": 207,
           "y": 71
         }
@@ -153,7 +174,6 @@
           "displayCondition": {
             "name": "GlasslightbrewerGUINode1Condition"
           },
-          "name": "diverscrown_meter_1.png",
           "x": 207,
           "y": 71
         }
@@ -166,7 +186,6 @@
           "displayCondition": {
             "name": "GlasslightbrewerGUINode2Conditon"
           },
-          "name": "diverscrown_meter_2.png",
           "x": 207,
           "y": 71
         }
@@ -179,7 +198,6 @@
           "displayCondition": {
             "name": "GlasslightbrewerGUINode3Condition"
           },
-          "name": "diverscrown_meter_3.png",
           "x": 207,
           "y": 71
         }
@@ -192,7 +210,6 @@
           "displayCondition": {
             "name": "GlasslightbrewerGUINode4Condition"
           },
-          "name": "diverscrown_meter_4.png",
           "x": 207,
           "y": 71
         }
@@ -205,7 +222,6 @@
           "displayCondition": {
             "name": "GlasslightbrewerGUINode5Condition"
           },
-          "name": "diverscrown_meter_5.png",
           "x": 207,
           "y": 71
         }
@@ -218,7 +234,6 @@
           "displayCondition": {
             "name": "GlasslightbrewerGUINode6Condition"
           },
-          "name": "diverscrown_meter_6.png",
           "x": 207,
           "y": 71
         }
@@ -231,7 +246,6 @@
           "displayCondition": {
             "name": "GlasslightbrewerGUINode7Condition"
           },
-          "name": "diverscrown_meter_7.png",
           "x": 207,
           "y": 71
         }
@@ -244,7 +258,6 @@
           "displayCondition": {
             "name": "GlasslightbrewerGUINode8Condition"
           },
-          "name": "diverscrown_meter_full.png",
           "x": 207,
           "y": 71
         }

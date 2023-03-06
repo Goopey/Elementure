@@ -10,7 +10,7 @@ import net.mcreator.elementure.client.model.Modelfoamfish;
 
 public class FoamfishRenderer extends MobRenderer<FoamfishEntity, Modelfoamfish<FoamfishEntity>> {
 	public FoamfishRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelfoamfish(context.bakeLayer(Modelfoamfish.LAYER_LOCATION)), 0.2f);
+		super(context, new Modelfoamfish(context.bakeLayer(Modelfoamfish.LAYER_LOCATION)), 0.19999999999999998f);
 	}
 
 	@Override

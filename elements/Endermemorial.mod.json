@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "block",
   "definition": {
     "texture": "ender_memorial",
@@ -83,13 +83,7 @@
     "luminance": 3,
     "unbreakable": false,
     "breakHarvestLevel": 2,
-    "spawnParticles": true,
-    "particleToSpawn": {
-      "value": "END_ROD"
-    },
-    "particleSpawningShape": "Spread",
-    "particleSpawningRadious": 0.09999999850988389,
-    "particleAmount": 2,
+    "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "<NONE>",
     "openGUIOnRightClick": false,

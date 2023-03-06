@@ -10,8 +10,7 @@ public class DustfluxaxeTrueVoidProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.DUSTFLUXAXE
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.DUSTFLUXAXE.get()) {
 			entity.getPersistentData().putBoolean("voidACTIVE", (true));
 		}
 	}

@@ -20,8 +20,7 @@ public class SkyjadepickaxeMiningProcedure {
 					_entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 240, 0));
 			}
 			if (world instanceof ServerLevel _level)
-				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.WORTASHMOSS.get()), (entity.getX()), (entity.getY()),
-						(entity.getZ()), 3, 0.2, 0.2, 0.2, 0.01);
+				_level.sendParticles((SimpleParticleType) (ElementureModParticleTypes.WORTASHMOSS.get()), (entity.getX()), (entity.getY()), (entity.getZ()), 3, 0.2, 0.2, 0.2, 0.01);
 		}
 	}
 }

@@ -10,8 +10,7 @@ public class GraniteheavyaxeGatherProcedure {
 			return;
 		if (Math.random() < 0.2) {
 			{
-				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-						.orElse(new ElementureModVariables.PlayerVariables())).void_essence + 2;
+				double _setval = (sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).void_essence + 2;
 				sourceentity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.void_essence = _setval;
 					capability.syncPlayerVariables(sourceentity);

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "HIGHEST",
@@ -7,12 +7,14 @@
       {
         "type": "label",
         "data": {
-          "text": "Nether Star",
+          "name": "label_nether_star",
+          "text": {
+            "fixedValue": "Nether Star"
+          },
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "Nether Star",
           "x": 186,
           "y": 26
         }

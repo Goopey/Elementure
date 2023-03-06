@@ -1,4 +1,3 @@
-
 package net.mcreator.elementure.client.gui;
 
 import net.minecraft.world.level.Level;
@@ -30,6 +29,7 @@ public class FishingrecordLava1Screen extends AbstractContainerScreen<Fishingrec
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_next_page;
 
 	public FishingrecordLava1Screen(FishingrecordLava1Menu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -232,7 +232,7 @@ public class FishingrecordLava1Screen extends AbstractContainerScreen<Fishingrec
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
-		this.addRenderableWidget(new Button(this.leftPos + 127, this.topPos + 140, 70, 20, Component.literal("Next Page"), e -> {
+		button_next_page = new Button(this.leftPos + 127, this.topPos + 140, 70, 20, Component.translatable("gui.elementure.fishingrecord_lava_1.button_next_page"), e -> {
 			if (DeactivateSlotProcedure.execute()) {
 				ElementureMod.PACKET_HANDLER.sendToServer(new FishingrecordLava1ButtonMessage(0, x, y, z));
 				FishingrecordLava1ButtonMessage.handleButtonAction(entity, 0, x, y, z);
@@ -243,6 +243,8 @@ public class FishingrecordLava1Screen extends AbstractContainerScreen<Fishingrec
 				if (DeactivateSlotProcedure.execute())
 					super.render(ms, gx, gy, ticks);
 			}
-		});
+		};
+		guistate.put("button:button_next_page", button_next_page);
+		this.addRenderableWidget(button_next_page);
 	}
 }

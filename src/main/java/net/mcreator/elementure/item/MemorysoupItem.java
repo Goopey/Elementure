@@ -21,10 +21,9 @@ import java.util.List;
 
 public class MemorysoupItem extends Item {
 	public MemorysoupItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(4).rarity(Rarity.EPIC)
-				.food((new FoodProperties.Builder()).nutrition(8).saturationMod(1.4f).alwaysEat()
+		super(new Item.Properties().tab(ElementureModTabs.TAB_TABMODDDEDFOOD).stacksTo(4).rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(8).saturationMod(1.4f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

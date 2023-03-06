@@ -41,8 +41,7 @@ public class ChargedchannelerItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(
-				Component.literal("Allows you to cast an electrifying lightning bolt on your enemies which electrocutes them and zaps around more."));
+		list.add(Component.literal("Allows you to cast an electrifying lightning bolt on your enemies which electrocutes them and zaps around more."));
 	}
 
 	@Override

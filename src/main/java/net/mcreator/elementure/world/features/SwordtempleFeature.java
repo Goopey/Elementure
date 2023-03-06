@@ -69,10 +69,8 @@ public class SwordtempleFeature extends Feature<NoneFeatureConfiguration> {
 				int z = spawnTo.getZ();
 				if (!SwordtempleIsBlockSolidProcedure.execute(world, x, y, z))
 					continue;
-				if (template.placeInWorld(
-						context.level(), spawnTo, spawnTo, new StructurePlaceSettings().setMirror(Mirror.NONE).setRotation(Rotation.NONE)
-								.setRandom(context.random()).addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK).setIgnoreEntities(false),
-						context.random(), 2)) {
+				if (template.placeInWorld(context.level(), spawnTo, spawnTo,
+						new StructurePlaceSettings().setMirror(Mirror.NONE).setRotation(Rotation.NONE).setRandom(context.random()).addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK).setIgnoreEntities(false), context.random(), 2)) {
 					SwordtempleassignNBTProcedure.execute(world, x, y, z);
 					anyPlaced = true;
 				}

@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -15,7 +15,6 @@
         "data": {
           "image": "book_fishing.png",
           "use1Xscale": false,
-          "name": "book_fishing.png",
           "x": 92,
           "y": 35
         }
@@ -25,7 +24,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 45
         }
@@ -35,7 +33,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 67
         }
@@ -45,7 +42,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 89
         }
@@ -55,7 +51,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 111
         }
@@ -65,7 +60,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 133
         }
@@ -75,7 +69,6 @@
         "data": {
           "image": "inventory_slot_texture.png",
           "use1Xscale": true,
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 155
         }
@@ -88,7 +81,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 102,
           "y": 177
         }
@@ -101,7 +93,6 @@
           "displayCondition": {
             "name": "Mossfishconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 48
         }
@@ -111,7 +102,6 @@
         "data": {
           "image": "moss_fish.png",
           "use1Xscale": false,
-          "name": "moss_fish.png",
           "x": 121,
           "y": 46
         }
@@ -124,7 +114,6 @@
           "displayCondition": {
             "name": "Mossfishxlconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 70
         }
@@ -134,7 +123,6 @@
         "data": {
           "image": "moss_fish_xl_gui.png",
           "use1Xscale": false,
-          "name": "moss_fish_xl_gui.png",
           "x": 121,
           "y": 68
         }
@@ -147,7 +135,6 @@
           "displayCondition": {
             "name": "Greengillconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 92
         }
@@ -157,7 +144,6 @@
         "data": {
           "image": "green_gill.png",
           "use1Xscale": false,
-          "name": "green_gill.png",
           "x": 121,
           "y": 90
         }
@@ -170,7 +156,6 @@
           "displayCondition": {
             "name": "Mycofishconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 114
         }
@@ -180,7 +165,6 @@
         "data": {
           "image": "myco_fish.png",
           "use1Xscale": false,
-          "name": "myco_fish.png",
           "x": 121,
           "y": 112
         }
@@ -193,7 +177,6 @@
           "displayCondition": {
             "name": "Halimutconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 136
         }
@@ -203,7 +186,6 @@
         "data": {
           "image": "halimut.png",
           "use1Xscale": false,
-          "name": "halimut.png",
           "x": 121,
           "y": 134
         }
@@ -216,7 +198,6 @@
           "displayCondition": {
             "name": "Mutatedhalimutconfirm"
           },
-          "name": "green_checkmark.png",
           "x": 105,
           "y": 158
         }
@@ -226,7 +207,6 @@
         "data": {
           "image": "mutated_halimut.png",
           "use1Xscale": false,
-          "name": "mutated_halimut.png",
           "x": 121,
           "y": 156
         }
@@ -239,7 +219,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 45
         }
@@ -252,7 +231,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 67
         }
@@ -265,7 +243,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 89
         }
@@ -278,7 +255,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 111
         }
@@ -291,7 +267,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 133
         }
@@ -304,7 +279,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 155
         }
@@ -317,7 +291,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 154,
           "y": 177
         }
@@ -330,7 +303,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 45
         }
@@ -343,7 +315,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 67
         }
@@ -356,7 +327,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 89
         }
@@ -369,7 +339,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 111
         }
@@ -382,7 +351,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 133
         }
@@ -395,7 +363,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 210,
           "y": 155
         }
@@ -408,7 +375,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 45
         }
@@ -421,7 +387,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 67
         }
@@ -434,7 +399,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 89
         }
@@ -447,7 +411,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 111
         }
@@ -460,7 +423,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 133
         }
@@ -473,7 +435,6 @@
           "displayCondition": {
             "name": "DeactivateSlot"
           },
-          "name": "inventory_slot_texture.png",
           "x": 263,
           "y": 155
         }
@@ -481,6 +442,7 @@
       {
         "type": "button",
         "data": {
+          "name": "button_next_page",
           "text": "Next Page",
           "onClick": {
             "name": "Openregularfish2"
@@ -490,7 +452,6 @@
           },
           "width": 70,
           "height": 20,
-          "name": "Next Page",
           "x": 253,
           "y": 175
         }

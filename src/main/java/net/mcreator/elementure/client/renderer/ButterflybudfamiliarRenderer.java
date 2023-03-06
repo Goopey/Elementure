@@ -10,7 +10,7 @@ import net.mcreator.elementure.client.model.Modelbutterfly_bud;
 
 public class ButterflybudfamiliarRenderer extends MobRenderer<ButterflybudfamiliarEntity, Modelbutterfly_bud<ButterflybudfamiliarEntity>> {
 	public ButterflybudfamiliarRenderer(EntityRendererProvider.Context context) {
-		super(context, new Modelbutterfly_bud(context.bakeLayer(Modelbutterfly_bud.LAYER_LOCATION)), 0.3f);
+		super(context, new Modelbutterfly_bud(context.bakeLayer(Modelbutterfly_bud.LAYER_LOCATION)), 0.30000000000000004f);
 	}
 
 	@Override

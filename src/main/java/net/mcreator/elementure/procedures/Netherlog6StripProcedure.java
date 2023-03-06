@@ -37,8 +37,7 @@ public class Netherlog6StripProcedure {
 				return Direction.NORTH;
 			}
 		}.getDirection(new BlockPos(x, y, z));
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem
-				&& (world.getBlockState(new BlockPos(x, y, z))).getBlock() == ElementureModBlocks.NETHERLOG_6.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() instanceof AxeItem && (world.getBlockState(new BlockPos(x, y, z))).getBlock() == ElementureModBlocks.NETHERLOG_6.get()) {
 			world.setBlock(new BlockPos(x, y, z), ElementureModBlocks.SHAVEDNETHERLOG_6.get().defaultBlockState(), 3);
 			{
 				Direction _dir = dir;
@@ -62,11 +61,9 @@ public class Netherlog6StripProcedure {
 			}
 			if (world instanceof Level _level) {
 				if (!_level.isClientSide()) {
-					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
-							SoundSource.NEUTRAL, 1, 1);
+					_level.playSound(null, new BlockPos(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")), SoundSource.NEUTRAL, 1, 1);
 				} else {
-					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")), SoundSource.NEUTRAL,
-							1, 1, false);
+					_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")), SoundSource.NEUTRAL, 1, 1, false);
 				}
 			}
 		}

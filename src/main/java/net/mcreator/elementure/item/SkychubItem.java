@@ -15,10 +15,9 @@ import java.util.List;
 
 public class SkychubItem extends Item {
 	public SkychubItem() {
-		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(5).saturationMod(0.5f)
+		super(new Item.Properties().tab(ElementureModTabs.TAB_FISHINGTAB).stacksTo(64).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(5).saturationMod(0.5f)
 
-						.meat().build()));
+				.meat().build()));
 	}
 
 	@Override

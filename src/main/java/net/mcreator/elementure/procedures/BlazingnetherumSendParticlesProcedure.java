@@ -27,17 +27,12 @@ public class BlazingnetherumSendParticlesProcedure {
 			_level.sendParticles(ParticleTypes.FLAME, x, y, z, 2, 1.1, 1.1, 1.1, 0.017);
 		{
 			final Vec3 _center = new Vec3(x, y, z);
-			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(12 / 2d), e -> true).stream()
-					.sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
+			List<Entity> _entfound = world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(12 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).collect(Collectors.toList());
 			for (Entity entityiterator : _entfound) {
 				if (!(entityiterator instanceof LivingEntity _livEnt ? _livEnt.hasEffect(MobEffects.FIRE_RESISTANCE) : false)
-						&& !(entityiterator instanceof LivingEntity _livEnt
-								? _livEnt.hasEffect(ElementureModMobEffects.HEATRESISTANCE.get())
-								: false)) {
+						&& !(entityiterator instanceof LivingEntity _livEnt ? _livEnt.hasEffect(ElementureModMobEffects.HEATRESISTANCE.get()) : false)) {
 					if (!entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:netherstarfireimmune")))
-							&& !entityiterator.getType()
-									.is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities")))
-							&& !(entityiterator instanceof ItemEntity) && !(entityiterator instanceof ItemFrame)) {
+							&& !entityiterator.getType().is(TagKey.create(Registry.ENTITY_TYPE_REGISTRY, new ResourceLocation("forge:familiarentities"))) && !(entityiterator instanceof ItemEntity) && !(entityiterator instanceof ItemFrame)) {
 						if (Math.random() < 0.7) {
 							entityiterator.hurt(DamageSource.IN_FIRE, 1);
 						}

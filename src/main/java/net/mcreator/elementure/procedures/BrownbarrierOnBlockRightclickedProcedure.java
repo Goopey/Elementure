@@ -20,12 +20,10 @@ public class BrownbarrierOnBlockRightclickedProcedure {
 		if (entity == null)
 			return;
 		Direction direction = Direction.NORTH;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.BROWNBARRIERKEY
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.BROWNBARRIERKEY.get()) {
 			if (entity instanceof Player _player) {
 				ItemStack _stktoremove = new ItemStack(ElementureModItems.BROWNBARRIERKEY.get());
-				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1,
-						_player.inventoryMenu.getCraftSlots());
+				_player.getInventory().clearOrCountMatchingItems(p -> _stktoremove.getItem() == p.getItem(), 1, _player.inventoryMenu.getCraftSlots());
 			}
 			direction = new Object() {
 				public Direction getDirection(BlockPos pos) {

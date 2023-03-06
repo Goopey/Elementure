@@ -13,16 +13,14 @@ import java.util.function.Consumer;
 
 public class SilvershoresliquidFluidType extends FluidType {
 	public SilvershoresliquidFluidType() {
-		super(FluidType.Properties.create().canSwim(false).canDrown(false).pathType(BlockPathTypes.LAVA).adjacentPathType(null).motionScale(0.007D)
-				.lightLevel(1).canConvertToSource(true).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+		super(FluidType.Properties.create().canSwim(false).canDrown(false).pathType(BlockPathTypes.LAVA).adjacentPathType(null).motionScale(0.007D).lightLevel(1).canConvertToSource(true).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
 				.sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY).sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));
 	}
 
 	@Override
 	public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
 		consumer.accept(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("elementure:blocks/silvershoresfluid"),
-					FLOWING_TEXTURE = new ResourceLocation("elementure:blocks/silvershoresfluid");
+			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("elementure:blocks/silvershoresfluid"), FLOWING_TEXTURE = new ResourceLocation("elementure:blocks/silvershoresfluid");
 
 			@Override
 			public ResourceLocation getStillTexture() {

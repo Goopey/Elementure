@@ -16,8 +16,7 @@ public class NetherstarOutskirtsSpawningProcedure {
 		locY = -2;
 		locZ = -2;
 		for (int index0 = 0; index0 < (int) (125); index0++) {
-			if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ)))
-					.is(BlockTags.create(new ResourceLocation("elementure:netherstarblocks")))) {
+			if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).is(BlockTags.create(new ResourceLocation("elementure:netherstarblocks")))) {
 				if (!(new Object() {
 					public boolean getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);

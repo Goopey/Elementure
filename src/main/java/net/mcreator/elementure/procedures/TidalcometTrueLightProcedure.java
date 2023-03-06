@@ -33,8 +33,7 @@ public class TidalcometTrueLightProcedure {
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.TIDALCOMET.get()) {
 			entity.getPersistentData().putBoolean("lightACTIVE", (true));
 			if (world.dayTime() % 100 <= 0) {
-				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("hasCometLight",
-						(true));
+				(entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getOrCreateTag().putBoolean("hasCometLight", (true));
 			}
 		}
 	}

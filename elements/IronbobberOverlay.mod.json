@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "overlay",
   "definition": {
     "priority": "NORMAL",
@@ -9,7 +9,6 @@
         "data": {
           "image": "iron_bobber.png",
           "use1Xscale": false,
-          "name": "iron_bobber.png",
           "x": 225,
           "y": 112
         }

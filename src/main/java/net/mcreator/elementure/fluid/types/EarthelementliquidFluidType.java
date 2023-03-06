@@ -12,16 +12,14 @@ import java.util.function.Consumer;
 
 public class EarthelementliquidFluidType extends FluidType {
 	public EarthelementliquidFluidType() {
-		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).lightLevel(8)
-				.density(780).viscosity(980).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
+		super(FluidType.Properties.create().fallDistanceModifier(0F).canExtinguish(true).supportsBoating(true).canHydrate(true).lightLevel(8).density(780).viscosity(980).sound(SoundActions.BUCKET_FILL, SoundEvents.BUCKET_FILL)
 				.sound(SoundActions.BUCKET_EMPTY, SoundEvents.BUCKET_EMPTY).sound(SoundActions.FLUID_VAPORIZE, SoundEvents.FIRE_EXTINGUISH));
 	}
 
 	@Override
 	public void initializeClient(Consumer<IClientFluidTypeExtensions> consumer) {
 		consumer.accept(new IClientFluidTypeExtensions() {
-			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("elementure:blocks/earthelementliquid"),
-					FLOWING_TEXTURE = new ResourceLocation("elementure:blocks/earthelementliquid");
+			private static final ResourceLocation STILL_TEXTURE = new ResourceLocation("elementure:blocks/earthelementliquid"), FLOWING_TEXTURE = new ResourceLocation("elementure:blocks/earthelementliquid");
 
 			@Override
 			public ResourceLocation getStillTexture() {

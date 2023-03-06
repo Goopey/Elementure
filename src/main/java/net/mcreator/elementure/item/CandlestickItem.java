@@ -73,8 +73,7 @@ public class CandlestickItem extends SwordItem {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component.literal(
-				"Sprays a fire cloud when enough fire essence has been collected. Consumes all your essence, but casts a bigger cloud whenever sneaking."));
+		list.add(Component.literal("Sprays a fire cloud when enough fire essence has been collected. Consumes all your essence, but casts a bigger cloud whenever sneaking."));
 	}
 
 	@Override

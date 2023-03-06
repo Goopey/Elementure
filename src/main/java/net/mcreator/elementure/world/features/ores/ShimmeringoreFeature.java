@@ -33,11 +33,10 @@ public class ShimmeringoreFeature extends OreFeature {
 
 	public static Feature<?> feature() {
 		FEATURE = new ShimmeringoreFeature();
-		CONFIGURED_FEATURE = FeatureUtils.register("elementure:shimmeringore", FEATURE, new OreConfiguration(List.of(OreConfiguration
-				.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ElementureModBlocks.SHIMMERINGORE.get().defaultBlockState())), 3));
+		CONFIGURED_FEATURE = FeatureUtils.register("elementure:shimmeringore", FEATURE,
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), ElementureModBlocks.SHIMMERINGORE.get().defaultBlockState())), 3));
 		PLACED_FEATURE = PlacementUtils.register("elementure:shimmeringore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(4), InSquarePlacement.spread(),
-						HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(21)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(4), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(21)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

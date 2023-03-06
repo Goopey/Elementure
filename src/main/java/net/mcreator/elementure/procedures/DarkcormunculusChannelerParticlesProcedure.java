@@ -10,7 +10,6 @@ public class DarkcormunculusChannelerParticlesProcedure {
 	public static void execute(LevelAccessor world, Entity immediatesourceentity) {
 		if (immediatesourceentity == null)
 			return;
-		world.addParticle((SimpleParticleType) (ElementureModParticleTypes.SHADOWPARTICLE_1.get()), (immediatesourceentity.getX()),
-				(immediatesourceentity.getY()), (immediatesourceentity.getZ()), 0, 0, 0);
+		world.addParticle((SimpleParticleType) (ElementureModParticleTypes.SHADOWPARTICLE_1.get()), (immediatesourceentity.getX()), (immediatesourceentity.getY()), (immediatesourceentity.getZ()), 0, 0, 0);
 	}
 }

@@ -70,7 +70,6 @@ public class MycenashroomvillagerGUI2ButtonMessage {
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		ElementureMod.addNetworkMessage(MycenashroomvillagerGUI2ButtonMessage.class, MycenashroomvillagerGUI2ButtonMessage::buffer,
-				MycenashroomvillagerGUI2ButtonMessage::new, MycenashroomvillagerGUI2ButtonMessage::handler);
+		ElementureMod.addNetworkMessage(MycenashroomvillagerGUI2ButtonMessage.class, MycenashroomvillagerGUI2ButtonMessage::buffer, MycenashroomvillagerGUI2ButtonMessage::new, MycenashroomvillagerGUI2ButtonMessage::handler);
 	}
 }

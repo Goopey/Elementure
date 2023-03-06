@@ -1,5 +1,5 @@
 {
-  "_fv": 34,
+  "_fv": 39,
   "_type": "gui",
   "definition": {
     "type": 0,
@@ -13,13 +13,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_credits",
           "text": "Credits",
           "onClick": {
             "name": "Creditsopen"
           },
           "width": 60,
           "height": 20,
-          "name": "Credits",
           "x": 184,
           "y": 180
         }
@@ -27,13 +27,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_next",
           "text": "Next",
           "displayCondition": {
             "name": "DeactivateSlot"
           },
           "width": 45,
           "height": 20,
-          "name": "Next",
           "x": 268,
           "y": 180
         }
@@ -41,13 +41,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_back",
           "text": "Back",
           "onClick": {
             "name": "Musicplayer2Open"
           },
           "width": 45,
           "height": 20,
-          "name": "Back",
           "x": 113,
           "y": 180
         }
@@ -55,13 +55,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_stop_music",
           "text": "STOP MUSIC",
           "onClick": {
             "name": "MusicStopMusic"
           },
           "width": 77,
           "height": 20,
-          "name": "STOP MUSIC",
           "x": 175,
           "y": 40
         }
@@ -69,13 +69,13 @@
       {
         "type": "button",
         "data": {
+          "name": "button_stand_at_mithrill_hall_demon_s",
           "text": "Stand At Mithrill Hall - Demon Stone",
           "onClick": {
             "name": "StandatmithrillhallPlay"
           },
           "width": 202,
           "height": 20,
-          "name": "Stand At Mithrill Hall - Demon Stone",
           "x": 112,
           "y": 64
         }

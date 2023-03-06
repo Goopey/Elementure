@@ -29,8 +29,7 @@ public class PsyblastskillTrueMindProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.PSYBLASTSKILL
-				.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.PSYBLASTSKILL.get()) {
 			entity.getPersistentData().putBoolean("mindACTIVE", (true));
 		}
 	}

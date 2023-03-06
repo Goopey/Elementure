@@ -19,21 +19,16 @@ import net.mcreator.elementure.init.ElementureModBlocks;
 public class IvorytowerGenProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
 		if (world instanceof ServerLevel _serverworld) {
-			StructureTemplate template = _serverworld.getStructureManager()
-					.getOrCreate(new ResourceLocation("elementure", "windyshores_ivorytower_1"));
+			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "windyshores_ivorytower_1"));
 			if (template != null) {
-				template.placeInWorld(_serverworld, new BlockPos(x - 6, y - 32, z - 6), new BlockPos(x - 6, y - 32, z - 6),
-						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
+				template.placeInWorld(_serverworld, new BlockPos(x - 6, y - 32, z - 6), new BlockPos(x - 6, y - 32, z - 6), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
 						3);
 			}
 		}
 		if (world instanceof ServerLevel _serverworld) {
-			StructureTemplate template = _serverworld.getStructureManager()
-					.getOrCreate(new ResourceLocation("elementure", "windyshores_ivorytower_2"));
+			StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "windyshores_ivorytower_2"));
 			if (template != null) {
-				template.placeInWorld(_serverworld, new BlockPos(x - 6, y, z - 6), new BlockPos(x - 6, y, z - 6),
-						new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
-						3);
+				template.placeInWorld(_serverworld, new BlockPos(x - 6, y, z - 6), new BlockPos(x - 6, y, z - 6), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 			}
 		}
 		world.setBlock(new BlockPos(x, y + 28, z), ElementureModBlocks.IVORYSPAWNER.get().defaultBlockState(), 3);
@@ -42,9 +37,7 @@ public class IvorytowerGenProcedure {
 		world.setBlock(new BlockPos(x, y + 13, z), ElementureModBlocks.IVORYSPAWNER.get().defaultBlockState(), 3);
 		world.setBlock(new BlockPos(x, y + 8, z), ElementureModBlocks.IVORYSPAWNER.get().defaultBlockState(), 3);
 		if (world instanceof ServerLevel _level)
-			_level.getServer().getCommands().performPrefixedCommand(
-					new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y + 6), z), Vec2.ZERO, _level, 4, "", Component.literal(""),
-							_level.getServer(), null).withSuppressedOutput(),
+			_level.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, new Vec3(x, (y + 6), z), Vec2.ZERO, _level, 4, "", Component.literal(""), _level.getServer(), null).withSuppressedOutput(),
 					"setblock ~ ~ ~ minecraft:chest{LootTable:\"elementure:chests/ivorytower_loot\"}");
 	}
 }

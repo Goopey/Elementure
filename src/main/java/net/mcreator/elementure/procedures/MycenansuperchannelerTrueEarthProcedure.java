@@ -29,8 +29,7 @@ public class MycenansuperchannelerTrueEarthProcedure {
 	private static void execute(@Nullable Event event, Entity entity) {
 		if (entity == null)
 			return;
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-				.getItem() == ElementureModItems.MYCENANSUPERCHANNELER.get()) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.MYCENANSUPERCHANNELER.get()) {
 			entity.getPersistentData().putBoolean("earthACTIVE", (true));
 		}
 	}

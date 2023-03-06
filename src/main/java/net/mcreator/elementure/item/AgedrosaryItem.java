@@ -57,8 +57,7 @@ public class AgedrosaryItem extends Item {
 	@Override
 	public void appendHoverText(ItemStack itemstack, Level world, List<Component> list, TooltipFlag flag) {
 		super.appendHoverText(itemstack, world, list, flag);
-		list.add(Component
-				.literal("Artifact : An aged rosary. Its strength may be diminished and its purity soiled, but it still vibrates with holy power."));
+		list.add(Component.literal("Artifact : An aged rosary. Its strength may be diminished and its purity soiled, but it still vibrates with holy power."));
 	}
 
 	@Override
@@ -107,8 +106,7 @@ public class AgedrosaryItem extends Item {
 	public CompoundTag getShareTag(ItemStack stack) {
 		CompoundTag nbt = super.getShareTag(stack);
 		if (nbt != null)
-			stack.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-					.ifPresent(capability -> nbt.put("Inventory", ((ItemStackHandler) capability).serializeNBT()));
+			stack.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> nbt.put("Inventory", ((ItemStackHandler) capability).serializeNBT()));
 		return nbt;
 	}
 
@@ -116,7 +114,6 @@ public class AgedrosaryItem extends Item {
 	public void readShareTag(ItemStack stack, @Nullable CompoundTag nbt) {
 		super.readShareTag(stack, nbt);
 		if (nbt != null)
-			stack.getCapability(ForgeCapabilities.ITEM_HANDLER, null)
-					.ifPresent(capability -> ((ItemStackHandler) capability).deserializeNBT((CompoundTag) nbt.get("Inventory")));
+			stack.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> ((ItemStackHandler) capability).deserializeNBT((CompoundTag) nbt.get("Inventory")));
 	}
 }

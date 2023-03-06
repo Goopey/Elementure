@@ -15,10 +15,9 @@ import net.mcreator.elementure.procedures.MycenansporesbottleEffectProcedure;
 
 public class MycenansporesbottleItem extends Item {
 	public MycenansporesbottleItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_BREWING).stacksTo(1).rarity(Rarity.COMMON)
-				.food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat()
+		super(new Item.Properties().tab(CreativeModeTab.TAB_BREWING).stacksTo(1).rarity(Rarity.COMMON).food((new FoodProperties.Builder()).nutrition(0).saturationMod(0f).alwaysEat()
 
-						.build()));
+				.build()));
 	}
 
 	@Override

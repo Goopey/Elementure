@@ -11,23 +11,23 @@
 						"vector": [-10, 0, 0]
 					},
 					"position": {
-						"vector": [-2.5, 4, -2]
+						"vector": [-1, 2.5, -2]
 					}
 				},
 				"LeftArm": {
 					"rotation": {
-						"vector": [65, 0, 0]
+						"vector": [180, 0, 0]
 					},
 					"position": {
-						"vector": [15, 1, 7]
+						"vector": [13, -1, 7]
 					}
 				},
 				"RightArm": {
 					"rotation": {
-						"vector": [65, -7.5, 0]
+						"vector": [60, -7.5, 0]
 					},
 					"position": {
-						"vector": [2, 1, 7]
+						"vector": [4, -1, 7]
 					}
 				}
 			}

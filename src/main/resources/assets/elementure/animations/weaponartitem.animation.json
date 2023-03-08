@@ -1,19 +1,33 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.weaponartitem.idle": {
+		"animation.weaponartitem.club_idle": {
 			"loop": true,
 			"animation_length": 1,
 			"anim_time_update": "0",
 			"bones": {
 				"stick": {
 					"rotation": {
-						"0.0": {
-							"vector": [0, 0, 0]
-						},
-						"1.0": {
-							"vector": [0, 0, 0]
-						}
+						"vector": [-10, 0, 0]
+					},
+					"position": {
+						"vector": [-2.5, 4, -2]
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"vector": [65, 0, 0]
+					},
+					"position": {
+						"vector": [15, 1, 7]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"vector": [65, -7.5, 0]
+					},
+					"position": {
+						"vector": [2, 1, 7]
 					}
 				}
 			}
@@ -21,15 +35,14 @@
 		"animation.weaponartitem.bash": {
 			"animation_length": 0.83333,
 			"bones": {
-				"stick": {
+				"LeftArm": {
 					"rotation": {
 						"0.0": {
 							"vector": [0, 0, 0]
 						},
 						"0.1667": {
 							"vector": [-30, 0, 0],
-							"easing": "easeOutElastic",
-							"easingArgs": [1]
+							"easing": "easeOutElastic"
 						},
 						"0.25": {
 							"vector": [110, 0, 0],
@@ -49,7 +62,6 @@
 		"animation.weaponartitem.side_bash": {
 			"animation_length": 1.58333,
 			"anim_time_update": "0",
-			"start_delay": "0",
 			"bones": {
 				"stick": {
 					"rotation": {

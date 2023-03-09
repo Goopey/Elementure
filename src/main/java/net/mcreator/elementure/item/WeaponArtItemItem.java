@@ -99,7 +99,7 @@ public class WeaponArtItemItem extends Item implements IAnimatable {
 	private <P extends Item & IAnimatable> PlayState idlePredicate(AnimationEvent<P> event) {
 		if (this.transformType != null ? true : false) {
 			if (this.animationprocedure.equals("empty")) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.weaponartitem.club_idle", EDefaultLoopTypes.LOOP));
+				event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.weaponartitem.hands", EDefaultLoopTypes.LOOP));
 				return PlayState.CONTINUE;
 			}
 		}

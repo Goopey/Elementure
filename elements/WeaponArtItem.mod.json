@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "weaponartitemtexturemap",
     "name": "Weapon Art Item",
-    "idle": "animation.weaponartitem.club_idle",
+    "idle": "animation.weaponartitem.hands",
     "rarity": "COMMON",
     "displaySettings": "weaponartitem.json",
     "leftArm": "LeftArm",

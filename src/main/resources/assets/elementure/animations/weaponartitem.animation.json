@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.weaponartitem.club_idle": {
+		"animation.weaponartitem.hands": {
 			"loop": true,
 			"animation_length": 1,
 			"anim_time_update": "0",
@@ -11,7 +11,69 @@
 						"vector": [-10, 0, 0]
 					},
 					"position": {
-						"vector": [-1, 2.5, -2]
+						"vector": [-1, -17.5, -2]
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"vector": [86, 45, 118]
+					},
+					"position": {
+						"vector": [10.75, -1.5, 4]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"vector": [86, -45, 242]
+					},
+					"position": {
+						"vector": [7.25, -1.5, 4]
+					}
+				}
+			}
+		},
+		"animation.weaponartitem.base_anim_hands": {
+			"loop": true,
+			"animation_length": 1,
+			"anim_time_update": "0",
+			"bones": {
+				"stick": {
+					"rotation": {
+						"vector": [-10, 0, 0]
+					},
+					"position": {
+						"vector": [-1, 0.5, -2]
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"vector": [60, 0, 0]
+					},
+					"position": {
+						"vector": [13, -1, 7]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"vector": [60, -7.5, 0]
+					},
+					"position": {
+						"vector": [4, -1, 7]
+					}
+				}
+			}
+		},
+		"animation.weaponartitem.base_anim": {
+			"loop": true,
+			"animation_length": 1,
+			"anim_time_update": "0",
+			"bones": {
+				"stick": {
+					"rotation": {
+						"vector": [-7.5, 0, 0]
+					},
+					"position": {
+						"vector": [-1, 0.5, -2]
 					}
 				},
 				"LeftArm": {
@@ -24,7 +86,69 @@
 				},
 				"RightArm": {
 					"rotation": {
-						"vector": [60, -7.5, 0]
+						"vector": [180, 0, 0]
+					},
+					"position": {
+						"vector": [4, -1, 7]
+					}
+				}
+			}
+		},
+		"animation.weaponartitem.club_idle_hands": {
+			"loop": true,
+			"animation_length": 1,
+			"anim_time_update": "0",
+			"bones": {
+				"stick": {
+					"rotation": {
+						"vector": [-10, 0, 0]
+					},
+					"position": {
+						"vector": [-3, 4.5, -4]
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"vector": [180, 0, 0]
+					},
+					"position": {
+						"vector": [13, -1, 7]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"vector": [93, -41, 242]
+					},
+					"position": {
+						"vector": [6, -1, 5]
+					}
+				}
+			}
+		},
+		"animation.weaponartitem.club_idle": {
+			"loop": true,
+			"animation_length": 1,
+			"anim_time_update": "0",
+			"bones": {
+				"stick": {
+					"rotation": {
+						"vector": [-7.5, 0, 0]
+					},
+					"position": {
+						"vector": [-1, 0.5, -2]
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"vector": [180, 0, 0]
+					},
+					"position": {
+						"vector": [13, -1, 7]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"vector": [180, 0, 0]
 					},
 					"position": {
 						"vector": [4, -1, 7]
@@ -42,15 +166,15 @@
 						},
 						"0.1667": {
 							"vector": [-30, 0, 0],
-							"easing": "easeOutElastic"
+							"easing": "easeInOutQuad"
 						},
 						"0.25": {
 							"vector": [110, 0, 0],
-							"easing": "easeInExpo"
+							"easing": "easeInBack"
 						},
 						"0.6667": {
 							"vector": [0, 0, 0],
-							"easing": "easeInOutBack"
+							"easing": "easeOutSine"
 						},
 						"0.8333": {
 							"vector": [0, 0, 0]
@@ -69,15 +193,15 @@
 							"vector": [0, 0, 0]
 						},
 						"0.5": {
-							"vector": [-60, 0, -90]
+							"vector": [-60, 0, -90],
+							"easing": "easeInOutQuad"
 						},
 						"1.0": {
 							"vector": [90, 0, -90],
 							"easing": "easeInBack"
 						},
 						"1.5833": {
-							"vector": [0, 0, 0],
-							"easing": "easeInExpo"
+							"vector": [0, 0, 0]
 						}
 					}
 				}

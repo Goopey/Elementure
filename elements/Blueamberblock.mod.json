@@ -2,15 +2,15 @@
   "_fv": 39,
   "_type": "block",
   "definition": {
-    "texture": "flufflog_stripped_side",
-    "textureTop": "flufflog_stripped_side",
-    "textureLeft": "flufflog_stripped_side",
-    "textureFront": "flufflog_stripped_side",
-    "textureRight": "flufflog_stripped_side",
-    "textureBack": "flufflog_stripped_side",
+    "texture": "blue_amber_block",
+    "textureTop": "blue_amber_block",
+    "textureLeft": "blue_amber_block",
+    "textureFront": "blue_amber_block",
+    "textureRight": "blue_amber_block",
+    "textureBack": "blue_amber_block",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 5,
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -33,30 +33,30 @@
         "subtract": false
       }
     ],
-    "name": "Stripped fluff log",
+    "name": "Blue Amber Block",
     "specialInfo": [],
-    "hardness": 1.6,
-    "resistance": 8.0,
+    "hardness": 8.0,
+    "resistance": 26.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Tabmoddedblocks"
     },
-    "destroyTool": "axe",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
-    "requiresCorrectTool": false,
+    "requiresCorrectTool": true,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "WOOD"
+      "value": "ROCK"
     },
-    "tickRate": 10,
+    "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -69,7 +69,7 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 5,
+    "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "ANCIENT_DEBRIS"
     },
     "breakSound": {
       "value": ""
@@ -96,9 +96,9 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 15,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 2,
     "isBonemealable": false,
     "hasInventory": false,
     "guiBoundTo": "<NONE>",

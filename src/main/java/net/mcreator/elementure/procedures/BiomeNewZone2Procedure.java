@@ -94,6 +94,13 @@ public class BiomeNewZone2Procedure {
 					capability.syncPlayerVariables(entity);
 				});
 			}
+			{
+				double _setval = 0;
+				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.newzonetime = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
 		}
 	}
 }

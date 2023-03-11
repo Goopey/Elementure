@@ -39,7 +39,7 @@ public class JellybladeReach2Procedure {
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
 					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "attribute @s forge:reach_distance modifier add 29b23646-7e33-4a6d-9150-3217d940607f jellybladeReach 12 add");
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "attribute @s forge:attack_range modifier add 29b23646-7e33-4a6d-9150-3217d940607f jellybladeReach 12 add");
 				}
 			}
 		} else {
@@ -47,7 +47,7 @@ public class JellybladeReach2Procedure {
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
 					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "attribute @s forge:reach_distance modifier remove 29b23646-7e33-4a6d-9150-3217d940607f");
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "attribute @s forge:attack_range modifier remove 29b23646-7e33-4a6d-9150-3217d940607f");
 				}
 			}
 		}

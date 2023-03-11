@@ -2330,6 +2330,9 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> COOKEDREDSNAPPER = REGISTRY.register("cookedredsnapper", () -> new CookedredsnapperItem());
 	public static final RegistryObject<Item> CORMUNCULUS_CLUB = REGISTRY.register("cormunculus_club", () -> new CormunculusClubItem());
 	public static final RegistryObject<Item> WEAPONARTITEM = REGISTRY.register("weaponartitem", () -> new WeaponArtItemItem());
+	public static final RegistryObject<Item> OSTREELOG = block(ElementureModBlocks.OSTREELOG, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> OSTREELOG_FULL = block(ElementureModBlocks.OSTREELOG_FULL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> BLUEAMBERBLOCK = block(ElementureModBlocks.BLUEAMBERBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

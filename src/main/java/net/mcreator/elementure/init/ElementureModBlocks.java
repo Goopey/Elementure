@@ -177,6 +177,8 @@ import net.mcreator.elementure.block.PinkbarrierclosingBlock;
 import net.mcreator.elementure.block.PinkbarrierBlock;
 import net.mcreator.elementure.block.PervadedbedrockBlock;
 import net.mcreator.elementure.block.PerryberrybushBlock;
+import net.mcreator.elementure.block.OstreelogFullBlock;
+import net.mcreator.elementure.block.OstreelogBlock;
 import net.mcreator.elementure.block.OrangerimevineBlock;
 import net.mcreator.elementure.block.OrangerimemossBlock;
 import net.mcreator.elementure.block.OrangerimefanBlock;
@@ -606,6 +608,7 @@ import net.mcreator.elementure.block.BluedoorBlock;
 import net.mcreator.elementure.block.BlueberrybushBlock;
 import net.mcreator.elementure.block.BluebarrierclosingBlock;
 import net.mcreator.elementure.block.BluebarrierBlock;
+import net.mcreator.elementure.block.BlueamberblockBlock;
 import net.mcreator.elementure.block.BlazingnetherumshinyBlock;
 import net.mcreator.elementure.block.BlazingnetherumBlock;
 import net.mcreator.elementure.block.BlackrimevineBlock;
@@ -1284,4 +1287,7 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> BOARDINGSCHOOL_WHITEBRICK_BLOCKS = REGISTRY.register("boardingschool_whitebrick_blocks", () -> new BoardingschoolWhitebrickBlocksBlock());
 	public static final RegistryObject<Block> BOARDINGSCHOOL_WHITE_BRICK_STAIRS = REGISTRY.register("boardingschool_white_brick_stairs", () -> new BoardingschoolWhiteBrickStairsBlock());
 	public static final RegistryObject<Block> BOARDINGSCHOOL_WHITE_BRICK_SLABS = REGISTRY.register("boardingschool_white_brick_slabs", () -> new BoardingschoolWhiteBrickSlabsBlock());
+	public static final RegistryObject<Block> OSTREELOG = REGISTRY.register("ostreelog", () -> new OstreelogBlock());
+	public static final RegistryObject<Block> OSTREELOG_FULL = REGISTRY.register("ostreelog_full", () -> new OstreelogFullBlock());
+	public static final RegistryObject<Block> BLUEAMBERBLOCK = REGISTRY.register("blueamberblock", () -> new BlueamberblockBlock());
 }

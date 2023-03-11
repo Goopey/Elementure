@@ -8,5 +8,6 @@
     "south": "elementure:blocks/flufflog_side",
     "west": "elementure:blocks/flufflog_side",
     "particle": "elementure:blocks/flufflog_top"
-  }
+  },
+  "render_type": "solid"
 }

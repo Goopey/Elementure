@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/blue_amber_block",
+    "up": "elementure:blocks/blue_amber_block",
+    "north": "elementure:blocks/blue_amber_block",
+    "east": "elementure:blocks/blue_amber_block",
+    "south": "elementure:blocks/blue_amber_block",
+    "west": "elementure:blocks/blue_amber_block",
+    "particle": "elementure:blocks/blue_amber_block"
+  },
+  "render_type": "solid"
+}

@@ -37,7 +37,7 @@ public class ArachneelspearReachProcedure {
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
 					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "attribute @s forge:reach_distance modifier add 8b744cf8-60f8-4f66-bb5c-ae9474268f57 arachneelspearReach 12 add");
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "attribute @s forge:attack_range modifier add 8b744cf8-60f8-4f66-bb5c-ae9474268f57 arachneelspearReach 12 add");
 				}
 			}
 		} else {
@@ -45,9 +45,9 @@ public class ArachneelspearReachProcedure {
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
 					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "attribute @s forge:reach_distance modifier remove 8b744cf8-60f8-4f66-bb5c-ae9474268f57");
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "attribute @s forge:attack_range modifier remove 8b744cf8-60f8-4f66-bb5c-ae9474268f57");
 				}
 			}
-		}
+		} //8b744cf8-60f8-4f66-bb5c-ae9474268f57
 	}
 }

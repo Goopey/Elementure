@@ -30677,7 +30677,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler"
+      "path": "~/Core/MusicHandler"
     },
     {
       "name": "OblecklordeldritchRevert",
@@ -35326,7 +35326,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler"
+      "path": "~/Core/MusicHandler"
     },
     {
       "name": "BiomethemeDecider",
@@ -35362,7 +35362,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler"
+      "path": "~/Core/MusicHandler"
     },
     {
       "name": "Music1",
@@ -35386,7 +35386,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler"
+      "path": "~/Core/MusicHandler"
     },
     {
       "name": "Musicjoining",
@@ -35422,7 +35422,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler"
+      "path": "~/Core/MusicHandler"
     },
     {
       "name": "ScrapsaplingGrow",
@@ -53495,7 +53495,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/MarbleforestPopupOverlay.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "CorallabyrinthpopupConfirm",
@@ -53516,7 +53516,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "IntroPopup",
@@ -53530,7 +53530,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/IntroPopupOverlay.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "Corallabyrinthpopup",
@@ -53544,7 +53544,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/CorallabyrinthpopupOverlay.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "Musicpopupanim",
@@ -53558,7 +53558,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/MusicpopupanimOverlay.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm",
@@ -53579,7 +53579,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "IntrothemepopupConfirm",
@@ -53600,7 +53600,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MarbleforestpopupConfirm",
@@ -53621,7 +53621,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm1",
@@ -53642,7 +53642,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm2",
@@ -53663,7 +53663,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm3",
@@ -53684,7 +53684,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm4",
@@ -53705,7 +53705,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm5",
@@ -53726,7 +53726,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm6",
@@ -53747,7 +53747,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm7",
@@ -53768,7 +53768,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm8",
@@ -53789,7 +53789,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm9",
@@ -53810,7 +53810,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm10",
@@ -53831,7 +53831,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm11",
@@ -53852,7 +53852,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm12",
@@ -53873,7 +53873,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm13",
@@ -53894,7 +53894,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm14",
@@ -53915,7 +53915,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm15",
@@ -53936,7 +53936,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm16",
@@ -53957,7 +53957,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm17",
@@ -53978,7 +53978,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm18",
@@ -53999,7 +53999,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm19",
@@ -54020,7 +54020,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm20",
@@ -54041,7 +54041,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicpopupanimConfirm21",
@@ -54062,7 +54062,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "Musicplayer",
@@ -54076,7 +54076,7 @@
           "src/main/java/net/mcreator/elementure/network/MusicplayerMessage.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicplayerGUI",
@@ -54092,7 +54092,7 @@
           "src/main/java/net/mcreator/elementure/client/gui/MusicplayerGUIScreen.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicplayerGUI2",
@@ -54108,7 +54108,7 @@
           "src/main/java/net/mcreator/elementure/world/inventory/MusicplayerGUI2Menu.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicStopMusic",
@@ -54128,7 +54128,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler"
+      "path": "~/Core/MusicHandler"
     },
     {
       "name": "DarkchoirPopup",
@@ -54142,7 +54142,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/DarkchoirPopupOverlay.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "DarkchoirpopupConfirm",
@@ -54163,7 +54163,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "CreditsMusicGUI",
@@ -54179,7 +54179,7 @@
           "src/main/java/net/mcreator/elementure/world/inventory/CreditsMusicGUIMenu.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MarbleforestPlay",
@@ -54199,7 +54199,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "IntroPlay",
@@ -54219,7 +54219,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "CorallabyrinthPlay",
@@ -54239,7 +54239,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "DarkchoirPlay",
@@ -54259,7 +54259,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "Creditsopen",
@@ -54283,7 +54283,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "MusicplayerOpen",
@@ -54307,7 +54307,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "DragonewtScales",
@@ -57077,7 +57077,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "RepulsiveForgottenpopupCondition",
@@ -57098,7 +57098,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "RepulsiveForgottenPopup",
@@ -57112,7 +57112,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/RepulsiveForgottenPopupOverlay.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "Oldlog",
@@ -64838,7 +64838,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NewzonePopup1Overlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "Newzonepopup1Display",
@@ -64859,7 +64859,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NewzonePopup2",
@@ -64873,7 +64873,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NewzonePopup2Overlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "Newzonepopup2Display",
@@ -64894,7 +64894,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NewzonePopup3",
@@ -64908,7 +64908,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NewzonePopup3Overlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "Newzonepopup3Display",
@@ -64929,7 +64929,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NewzonePopup4",
@@ -64943,7 +64943,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NewzonePopup4Overlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NewzonePopup4Display",
@@ -64964,7 +64964,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NewzonePopup5",
@@ -64978,7 +64978,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NewzonePopup5Overlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "Newzonepopup5Display",
@@ -64999,7 +64999,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NewzonePopup6",
@@ -65013,7 +65013,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NewzonePopup6Overlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "Newzoneoopup6Display",
@@ -65034,7 +65034,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NewzonePopup7",
@@ -65048,7 +65048,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NewzonePopup7Overlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "Newzonepopup7Display",
@@ -65069,7 +65069,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NewzonePopup8",
@@ -65083,7 +65083,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NewzonePopup8Overlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "Newzonepopup8Display",
@@ -65104,7 +65104,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NewzonePopup9",
@@ -65118,7 +65118,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NewzonePopup9Overlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "Newzonepopup9Display",
@@ -65139,7 +65139,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "Newzonepopup10Display",
@@ -65160,7 +65160,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NewzonePopup10",
@@ -65174,7 +65174,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NewzonePopup10Overlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NewzonePopup11",
@@ -65188,7 +65188,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NewzonePopup11Overlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "Newzonepopup11Display",
@@ -65209,7 +65209,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NewzonePopup12",
@@ -65223,7 +65223,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NewzonePopup12Overlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "Newzonepopup12Display",
@@ -65244,7 +65244,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NewzonePopup13",
@@ -65258,7 +65258,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NewzonePopup13Overlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "Newzonepopup13Display",
@@ -65279,7 +65279,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NewzonePopupHandle",
@@ -65315,7 +65315,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "BiomeNewZone",
@@ -65351,7 +65351,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NewzoneLingering",
@@ -65387,7 +65387,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "MycenaPopup",
@@ -65401,7 +65401,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/MycenaPopupOverlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "MycenaPopupDisplay",
@@ -65422,7 +65422,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "DryseafoamRecipe",
@@ -65450,7 +65450,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/MycenadepthsPopupOverlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "MycenadepthsPopupDisplay",
@@ -65471,7 +65471,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "Seafoambubble",
@@ -65641,7 +65641,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NetherstarsurfacepopupDisplay",
@@ -65662,7 +65662,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NetherstarprismaticbedpopupDisplay",
@@ -65683,7 +65683,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NetherstaroutsidepopupDisplay",
@@ -65704,7 +65704,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "JellyfloatpopupDisplay",
@@ -65725,7 +65725,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NetherstarPopup",
@@ -65739,7 +65739,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NetherstarPopupOverlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NetherstarsurfacePopup",
@@ -65753,7 +65753,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NetherstarsurfacePopupOverlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NetherstarprismaticbedPopup",
@@ -65767,7 +65767,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NetherstarprismaticbedPopupOverlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "NetherstaroutsidePopup",
@@ -65781,7 +65781,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NetherstaroutsidePopupOverlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "JellypoolsPopup",
@@ -65795,7 +65795,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/JellypoolsPopupOverlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "SeafoamIngot",
@@ -67176,7 +67176,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "GrayskullLakePopup",
@@ -67190,7 +67190,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/GrayskullLakePopupOverlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "GrayskullPlace",
@@ -69256,7 +69256,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "WindyshoresDisplay",
@@ -69277,7 +69277,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "WindyshoresPopup",
@@ -69291,7 +69291,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/WindyshoresPopupOverlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "Music2",
@@ -69315,7 +69315,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler"
+      "path": "~/Core/MusicHandler"
     },
     {
       "name": "OnemoredayPlay",
@@ -69335,7 +69335,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "StandtallPlay",
@@ -69355,7 +69355,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "Musicplayer2Open",
@@ -69379,7 +69379,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "OnemoredayPopup",
@@ -69393,7 +69393,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/OnemoredayPopupOverlay.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "StandtallPopup",
@@ -69407,7 +69407,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/StandtallPopupOverlay.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "OnemoredaypopupConfirm",
@@ -69428,7 +69428,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "StandtallpopupConfirm",
@@ -69449,7 +69449,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "CloudsSlow",
@@ -69561,6 +69561,14 @@
       "compiles": true,
       "locked_code": true,
       "registry_name": "flufflog",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/block/FlufflogBlock.java",
+          "src/main/resources/assets/elementure/blockstates/flufflog.json",
+          "src/main/resources/assets/elementure/models/item/flufflog.json",
+          "src/main/resources/assets/elementure/models/block/flufflog.json"
+        ]
+      },
       "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresTree"
     },
     {
@@ -69568,8 +69576,16 @@
       "type": "block",
       "sortid": 321,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "stripped_flufflog",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/elementure/models/item/stripped_flufflog.json",
+          "src/main/java/net/mcreator/elementure/block/StrippedFlufflogBlock.java",
+          "src/main/resources/assets/elementure/blockstates/stripped_flufflog.json",
+          "src/main/resources/assets/elementure/models/block/stripped_flufflog.json"
+        ]
+      },
       "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresTree"
     },
     {
@@ -69615,6 +69631,14 @@
       "compiles": true,
       "locked_code": true,
       "registry_name": "flufflogfull",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/elementure/models/item/flufflogfull.json",
+          "src/main/resources/assets/elementure/blockstates/flufflogfull.json",
+          "src/main/resources/assets/elementure/models/block/flufflogfull.json",
+          "src/main/java/net/mcreator/elementure/block/FlufflogfullBlock.java"
+        ]
+      },
       "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresTree"
     },
     {
@@ -69622,8 +69646,16 @@
       "type": "block",
       "sortid": 323,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "stripped_flufflogfull",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/elementure/models/item/stripped_flufflogfull.json",
+          "src/main/java/net/mcreator/elementure/block/StrippedFlufflogfullBlock.java",
+          "src/main/resources/assets/elementure/blockstates/stripped_flufflogfull.json",
+          "src/main/resources/assets/elementure/models/block/stripped_flufflogfull.json"
+        ]
+      },
       "path": "~/ProtoBiomes/Overworld/WindyShores/WindyshoresTree"
     },
     {
@@ -73251,7 +73283,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "HydrothermalhollowPopup",
@@ -73265,7 +73297,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/HydrothermalhollowPopupOverlay.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "HydrothermalhollowPlay",
@@ -73285,7 +73317,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "Diversstone",
@@ -73445,7 +73477,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "NetherstarConfirm",
@@ -73466,7 +73498,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "NetherstarthemePopup",
@@ -73480,7 +73512,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/NetherstarthemePopupOverlay.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "DiverscrownlilypadDecorate",
@@ -75705,7 +75737,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "BedofchaosDisplay",
@@ -75726,7 +75758,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "DiverscrownPopup",
@@ -75740,7 +75772,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/DiverscrownPopupOverlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "BedofchaosPopup",
@@ -75754,7 +75786,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/BedofchaosPopupOverlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "Tar",
@@ -81864,7 +81896,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler"
+      "path": "~/Core/MusicHandler"
     },
     {
       "name": "CreditsMusicGUI2",
@@ -81880,7 +81912,7 @@
           "src/main/java/net/mcreator/elementure/client/gui/CreditsMusicGUI2Screen.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "Credits2open",
@@ -81904,7 +81936,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "UmbrasylConfirm",
@@ -81925,7 +81957,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "BlackironpactPopup",
@@ -81939,7 +81971,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/BlackironpactPopupOverlay.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "BlackironpactPlay",
@@ -81959,7 +81991,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "GrapplerCrab",
@@ -83336,7 +83368,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "StandatmithrillhallConfirm",
@@ -83357,7 +83389,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "StandatmithrillhallPopup",
@@ -83371,7 +83403,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/StandatmithrillhallPopupOverlay.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "FishingrecordShellfish",
@@ -85027,7 +85059,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "FungalpitPopup",
@@ -85041,7 +85073,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/FungalpitPopupOverlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "Crabpot",
@@ -86439,7 +86471,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "StarryislandDisplay",
@@ -86460,7 +86492,7 @@
           }
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "StarryislandPopup",
@@ -86474,7 +86506,7 @@
           "src/main/java/net/mcreator/elementure/client/screens/StarryislandPopupOverlay.java"
         ]
       },
-      "path": "~/NewZoneHandler"
+      "path": "~/Core/NewZoneHandler"
     },
     {
       "name": "PumpkinjellyRecipe",
@@ -86989,7 +87021,7 @@
           "src/main/java/net/mcreator/elementure/world/inventory/MusicplayerGUI3Menu.java"
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "Musicplayer3Open",
@@ -87013,7 +87045,7 @@
           }
         ]
       },
-      "path": "~/MusicHandler/MusicThanks"
+      "path": "~/Core/MusicHandler/MusicThanks"
     },
     {
       "name": "LilypadplanksDoor",
@@ -96408,6 +96440,9 @@
       "locked_code": false,
       "registry_name": "weapon_art_item_swing",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/WeaponArtItemSwingProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "itemstack",
@@ -96416,6 +96451,71 @@
         ]
       },
       "path": "~/Core/CombatMechanics/WeaponArts"
+    },
+    {
+      "name": "JellypoolSpreadableBlocks",
+      "type": "tag",
+      "sortid": 4979,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jellypool_spreadable_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/forge/tags/blocks/jellypool_spreadable_blocks.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/JellyfloatPools"
+    },
+    {
+      "name": "Ostreelog",
+      "type": "block",
+      "sortid": 4980,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostreelog",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/elementure/models/block/ostreelog.json",
+          "src/main/java/net/mcreator/elementure/block/OstreelogBlock.java",
+          "src/main/resources/assets/elementure/blockstates/ostreelog.json",
+          "src/main/resources/assets/elementure/models/item/ostreelog.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "OstreelogFull",
+      "type": "block",
+      "sortid": 4981,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostreelog_full",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/elementure/models/block/ostreelog_full.json",
+          "src/main/resources/assets/elementure/models/item/ostreelog_full.json",
+          "src/main/resources/assets/elementure/blockstates/ostreelog_full.json",
+          "src/main/java/net/mcreator/elementure/block/OstreelogFullBlock.java"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "Blueamberblock",
+      "type": "block",
+      "sortid": 4982,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueamberblock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/block/BlueamberblockBlock.java",
+          "src/main/resources/assets/elementure/models/item/blueamberblock.json",
+          "src/main/resources/assets/elementure/models/block/blueamberblock.json",
+          "src/main/resources/assets/elementure/blockstates/blueamberblock.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
     }
   ],
   "variable_elements": [
@@ -97377,8 +97477,8 @@
       "tile.noobiumblock.name": "Noobium block",
       "item.minecraft_worlds.adamantitehoe": "Adamantite hoe",
       "block.elementure.shimmeringore": "Shimmering ore",
-      "item.minecraft_worlds.pinkbarrierkey": "Pink barrier key",
       "item.minecraft_worlds.weakandesiteelemental_spawn_egg": "Small andesite elemental Spawn Egg",
+      "item.minecraft_worlds.pinkbarrierkey": "Pink barrier key",
       "subtitles.corallabyrinth": "",
       "item.elementure.maskshard": "Mask shard [Soul]",
       "item.vanadiumpickaxe.name": "Vanadium pickaxe",
@@ -97496,6 +97596,7 @@
       "item.allgem.name": "All gem",
       "item.minecraft_worlds.fireblastskill": "Fire blast skill",
       "item.elementure.diversalloy_armor_boots": "Diver\u0027s alloy Boots",
+      "block.elementure.blueamberblock": "Blue Amber Block",
       "item.elementure.swampbox": "Swamp box",
       "item.minecraft.tipped_arrow.effect.frozeneffect_potion_item": "Arrow of Freezing",
       "block.minecraft_worlds.voidruneblock": "Void rune block",
@@ -99697,6 +99798,7 @@
       "effect.mycenansporegrowths": "Mycenan spore growths",
       "tile.waterruneblock.name": "Water rune block",
       "item.elementure.rainbowhoe": "Rainbow hoe",
+      "block.elementure.ostreelog": "Ostree Log",
       "item.minecraft_worlds.smallgraniteelemental_spawn_egg": "Small granite elemental Spawn Egg",
       "fluid.minecraft_worlds.waterelementliquid": "Waterelementliquid",
       "block.elementure.minoskulltrophy": "Minoskull trophy",
@@ -100663,6 +100765,7 @@
       "tile.mycenabiomeomegan.name": "Mycena Biome omegan",
       "item.minecraft_worlds.silverpickaxe": "Silver pickaxe",
       "block.minecraft_worlds.waterruneblock": "Water rune block",
+      "block.elementure.ostreelog_full": "Ostree Log",
       "entity.elementure.mycenashroomal": "Mycena shroomal",
       "block.elementure.pooltile_walls": "Pool tile walls",
       "item.barrierkey.name": "Barrier key",
@@ -101536,15 +101639,6 @@
         "children": []
       },
       {
-        "name": "MusicHandler",
-        "children": [
-          {
-            "name": "MusicThanks",
-            "children": []
-          }
-        ]
-      },
-      {
         "name": "Relics",
         "children": [
           {
@@ -101742,10 +101836,6 @@
         "children": []
       },
       {
-        "name": "NewZoneHandler",
-        "children": []
-      },
-      {
         "name": "DontAsk",
         "children": []
       },
@@ -101772,6 +101862,19 @@
                 "children": []
               }
             ]
+          },
+          {
+            "name": "MusicHandler",
+            "children": [
+              {
+                "name": "MusicThanks",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "NewZoneHandler",
+            "children": []
           }
         ]
       },

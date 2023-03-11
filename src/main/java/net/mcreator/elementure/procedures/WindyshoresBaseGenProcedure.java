@@ -76,18 +76,20 @@ public class WindyshoresBaseGenProcedure {
 		}
 		locY = 0;
 		for (int index2 = 0; index2 < (int) (8); index2++) {
-			WindyshoresgeysersmallPlaceProcedure.execute(world, (x - 60 + Math.random() * 120), (HEIGHT_GEN + locY * 27 + Math.random() * 3), (z - 60 + Math.random() * 120));
+			for (int index3 = 0; index3 < (int) (2 + Math.round(Math.random())); index3++) {
+				WindyshoresgeysersmallPlaceProcedure.execute(world, (x - 60 + Math.random() * 120), (HEIGHT_GEN + locY * 27 + Math.random() * 3), (z - 60 + Math.random() * 120));
+			}
 			locY = locY + 1;
 		}
 		WORLD_MID = 204;
-		for (int index3 = 0; index3 < (int) (1 + Math.round(Math.random() * 2)); index3++) {
+		for (int index4 = 0; index4 < (int) (1 + Math.round(Math.random() * 2)); index4++) {
 			ElementureMod.queueServerWork(20, () -> {
 				IvorytowerGenProcedure.execute(world, (x - 60 + Math.random() * 120), (204 + Math.random() * 96 - 48), (z - 60 + Math.random() * 120));
 			});
 		}
 		ElementureMod.queueServerWork(40, () -> {
 			if (world instanceof ServerLevel _serverworld) {
-				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "abandonned_farm"));
+				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("elementure", "windyshores_starry_beach"));
 				if (template != null) {
 					template.placeInWorld(_serverworld, new BlockPos(x - 8, 270, z - 8), new BlockPos(x - 8, 270, z - 8), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
 							3);

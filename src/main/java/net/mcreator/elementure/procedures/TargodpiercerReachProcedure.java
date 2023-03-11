@@ -39,7 +39,7 @@ public class TargodpiercerReachProcedure {
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
 					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "attribute @s forge:reach_distance modifier add 1e32c5ba-7571-4036-a6e1-02df4175f281 targodpiercerReach 1.2 multiply");
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "attribute @s forge:attack_range modifier add 1e32c5ba-7571-4036-a6e1-02df4175f281 targodpiercerReach 1.2 multiply");
 				}
 			}
 		} else {
@@ -47,7 +47,7 @@ public class TargodpiercerReachProcedure {
 				Entity _ent = entity;
 				if (!_ent.level.isClientSide() && _ent.getServer() != null) {
 					_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(CommandSource.NULL, _ent.position(), _ent.getRotationVector(), _ent.level instanceof ServerLevel ? (ServerLevel) _ent.level : null, 4,
-							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "attribute @s forge:reach_distance modifier remove 1e32c5ba-7571-4036-a6e1-02df4175f281");
+							_ent.getName().getString(), _ent.getDisplayName(), _ent.level.getServer(), _ent), "attribute @s forge:attack_range modifier remove 1e32c5ba-7571-4036-a6e1-02df4175f281");
 				}
 			}
 		}

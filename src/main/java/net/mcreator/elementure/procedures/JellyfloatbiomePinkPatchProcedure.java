@@ -2,9 +2,10 @@ package net.mcreator.elementure.procedures;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.elementure.init.ElementureModBlocks;
@@ -19,7 +20,7 @@ public class JellyfloatbiomePinkPatchProcedure {
 		locZ = -8;
 		for (int index0 = 0; index0 < (int) (4913); index0++) {
 			if (locX * locX + locZ * locZ < 64) {
-				if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.GRAVEL && !world.getBlockState(new BlockPos(x + locX, y + locY + 1, z + locZ)).canOcclude()
+				if ((world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).is(BlockTags.create(new ResourceLocation("forge:jellypool_spreadable_blocks"))) && !world.getBlockState(new BlockPos(x + locX, y + locY + 1, z + locZ)).canOcclude()
 						&& !((world.getBlockState(new BlockPos(x + locX, -64, z + locZ))).getBlock() == ElementureModBlocks.PERVADEDBEDROCK.get())) {
 					world.setBlock(new BlockPos(x + locX, -64, z + locZ), ElementureModBlocks.PERVADEDBEDROCK.get().defaultBlockState(), 3);
 					if (!world.isClientSide()) {

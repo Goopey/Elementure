@@ -2,17 +2,17 @@
   "_fv": 39,
   "_type": "block",
   "definition": {
-    "texture": "flufflog_stripped_side",
-    "textureTop": "flufflog_stripped_side",
-    "textureLeft": "flufflog_stripped_side",
-    "textureFront": "flufflog_stripped_side",
-    "textureRight": "flufflog_stripped_side",
-    "textureBack": "flufflog_stripped_side",
+    "texture": "ostree_log",
+    "textureTop": "ostree_log",
+    "textureLeft": "ostree_log",
+    "textureFront": "ostree_log",
+    "textureRight": "ostree_log",
+    "textureBack": "ostree_log",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 5,
+    "rotationMode": 0,
     "enablePitch": false,
-    "emissiveRendering": false,
+    "emissiveRendering": true,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
@@ -33,10 +33,10 @@
         "subtract": false
       }
     ],
-    "name": "Stripped fluff log",
+    "name": "Ostree Log",
     "specialInfo": [],
-    "hardness": 1.6,
-    "resistance": 8.0,
+    "hardness": 2.5999999999999996,
+    "resistance": 24.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -56,7 +56,7 @@
     "material": {
       "value": "WOOD"
     },
-    "tickRate": 10,
+    "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -69,7 +69,7 @@
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 5,
+    "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
     "slipperiness": 0.6,
@@ -96,7 +96,7 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 0,
+    "luminance": 15,
     "unbreakable": false,
     "breakHarvestLevel": 0,
     "isBonemealable": false,

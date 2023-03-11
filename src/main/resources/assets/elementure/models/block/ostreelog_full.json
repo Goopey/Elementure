@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/ostree_log",
+    "up": "elementure:blocks/ostree_log",
+    "north": "elementure:blocks/ostree_log",
+    "east": "elementure:blocks/ostree_log",
+    "south": "elementure:blocks/ostree_log",
+    "west": "elementure:blocks/ostree_log",
+    "particle": "elementure:blocks/ostree_log"
+  },
+  "render_type": "solid"
+}

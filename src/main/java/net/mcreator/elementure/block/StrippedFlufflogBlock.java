@@ -13,9 +13,7 @@ import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.item.TieredItem;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -41,11 +39,16 @@ public class StrippedFlufflogBlock extends Block {
 	}
 
 	@Override
+	public BlockState getStateForPlacement(BlockPlaceContext context) {
+		return this.defaultBlockState().setValue(AXIS, context.getClickedFace().getAxis());
+	}
+
+	@Override
 	public BlockState rotate(BlockState state, Rotation rot) {
 		if (rot == Rotation.CLOCKWISE_90 || rot == Rotation.COUNTERCLOCKWISE_90) {
-			if ((Direction.Axis) state.getValue(AXIS) == Direction.Axis.X) {
+			if (state.getValue(AXIS) == Direction.Axis.X) {
 				return state.setValue(AXIS, Direction.Axis.Z);
-			} else if ((Direction.Axis) state.getValue(AXIS) == Direction.Axis.Z) {
+			} else if (state.getValue(AXIS) == Direction.Axis.Z) {
 				return state.setValue(AXIS, Direction.Axis.X);
 			}
 		}
@@ -53,21 +56,8 @@ public class StrippedFlufflogBlock extends Block {
 	}
 
 	@Override
-	public BlockState getStateForPlacement(BlockPlaceContext context) {
-		Direction.Axis axis = context.getClickedFace().getAxis();;
-		return this.defaultBlockState().setValue(AXIS, axis);
-	}
-
-	@Override
 	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
 		return 5;
-	}
-
-	@Override
-	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof TieredItem tieredItem)
-			return tieredItem.getTier().getLevel() >= 0;
-		return false;
 	}
 
 	@Override

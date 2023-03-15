@@ -11,7 +11,6 @@ import net.minecraft.client.renderer.ItemInHandRenderer;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.elementure.item.WeaponArtItemItem;
-import net.mcreator.elementure.item.CormunculusClubItem;
 
 import java.lang.reflect.Field;
 
@@ -47,11 +46,6 @@ public class ItemAnimationFactory {
 			if (!event.player.getMainHandItem().getOrCreateTag().getString("geckoAnim").equals("") && !(event.player.getMainHandItem().getItem() instanceof GeoArmorItem)) {
 				animation = event.player.getMainHandItem().getOrCreateTag().getString("geckoAnim");
 				event.player.getMainHandItem().getOrCreateTag().putString("geckoAnim", "");
-				if (event.player.getMainHandItem().getItem() instanceof CormunculusClubItem animatable)
-					if (event.player.level.isClientSide()) {
-						animatable.animationprocedure = animation;
-						disableUseAnim();
-					}
 				if (event.player.getMainHandItem().getItem() instanceof WeaponArtItemItem animatable)
 					if (event.player.level.isClientSide()) {
 						animatable.animationprocedure = animation;
@@ -61,11 +55,6 @@ public class ItemAnimationFactory {
 			if (!event.player.getOffhandItem().getOrCreateTag().getString("geckoAnim").equals("") && !(event.player.getOffhandItem().getItem() instanceof GeoArmorItem)) {
 				animation = event.player.getOffhandItem().getOrCreateTag().getString("geckoAnim");
 				event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
-				if (event.player.getOffhandItem().getItem() instanceof CormunculusClubItem animatable)
-					if (event.player.level.isClientSide()) {
-						animatable.animationprocedure = animation;
-						disableUseAnim();
-					}
 				if (event.player.getOffhandItem().getItem() instanceof WeaponArtItemItem animatable)
 					if (event.player.level.isClientSide()) {
 						animatable.animationprocedure = animation;

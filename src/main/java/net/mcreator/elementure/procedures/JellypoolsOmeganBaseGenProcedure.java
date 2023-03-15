@@ -2,9 +2,10 @@ package net.mcreator.elementure.procedures;
 
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.Level;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.elementure.init.ElementureModBlocks;
@@ -18,7 +19,8 @@ public class JellypoolsOmeganBaseGenProcedure {
 		CoordsZ = -8;
 		CoordsY = -12;
 		for (int index0 = 0; index0 < (int) (7225); index0++) {
-			if ((world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11))).getBlock() == Blocks.GRAVEL && !world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY + 1, z + CoordsZ * 11)).canOcclude()) {
+			if ((world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11))).is(BlockTags.create(new ResourceLocation("forge:jellypool_spreadable_blocks")))
+					&& !world.getBlockState(new BlockPos(x + CoordsX * 11, y + CoordsY + 1, z + CoordsZ * 11)).canOcclude()) {
 				world.setBlock(new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11), ElementureModBlocks.JELLYFLOAT_ALPHAN.get().defaultBlockState(), 3);
 				if (!world.isClientSide()) {
 					BlockPos _bp = new BlockPos(x + CoordsX * 11, y + CoordsY, z + CoordsZ * 11);

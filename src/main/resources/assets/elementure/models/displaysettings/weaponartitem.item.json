@@ -5,49 +5,35 @@
     "thirdperson_righthand": {
       "translation": [
         0,
-        -4,
+        -2.25,
         0
       ]
     },
     "thirdperson_lefthand": {
       "translation": [
         0,
-        -4,
-        0
-      ]
-    },
-    "firstperson_righthand": {
-      "translation": [
-        0,
-        -4,
-        0
-      ]
-    },
-    "firstperson_lefthand": {
-      "translation": [
-        0,
-        -4,
+        -2.25,
         0
       ]
     },
     "ground": {
       "translation": [
         0,
-        -4,
+        -2.25,
         0
       ]
     },
     "gui": {
       "translation": [
         0,
-        -8,
+        -6.5,
         0
       ]
     },
     "fixed": {
       "translation": [
         0,
-        -8,
+        -6.5,
         0
       ]
     }

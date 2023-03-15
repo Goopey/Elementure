@@ -97,9 +97,9 @@ public class WeaponArtItemItem extends Item implements IAnimatable {
 	}
 
 	private <P extends Item & IAnimatable> PlayState idlePredicate(AnimationEvent<P> event) {
-		if (this.transformType != null ? true : false) {
+		if (this.transformType != null ? this.transformType.firstPerson() : false) {
 			if (this.animationprocedure.equals("empty")) {
-				event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.weaponartitem.hands", EDefaultLoopTypes.LOOP));
+				event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.weaponartitem.club_idle", EDefaultLoopTypes.LOOP));
 				return PlayState.CONTINUE;
 			}
 		}
@@ -107,7 +107,7 @@ public class WeaponArtItemItem extends Item implements IAnimatable {
 	}
 
 	private <P extends Item & IAnimatable> PlayState procedurePredicate(AnimationEvent<P> event) {
-		if (this.transformType != null ? true : false) {
+		if (this.transformType != null ? this.transformType.firstPerson() : false) {
 			if (!(this.animationprocedure.equals("empty")) && event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
 				event.getController().setAnimation(new AnimationBuilder().addAnimation(this.animationprocedure, EDefaultLoopTypes.PLAY_ONCE));
 				if (event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {

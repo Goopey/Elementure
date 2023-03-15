@@ -600,7 +600,6 @@ import net.mcreator.elementure.item.CorruptdewItem;
 import net.mcreator.elementure.item.CormunculustunerItem;
 import net.mcreator.elementure.item.CormunculusSwimmingcharmItem;
 import net.mcreator.elementure.item.CormunculusJellyItem;
-import net.mcreator.elementure.item.CormunculusClubItem;
 import net.mcreator.elementure.item.CormunculusCleansingtorchItem;
 import net.mcreator.elementure.item.CormunculusChannelerItem;
 import net.mcreator.elementure.item.CorememoryseedsItem;
@@ -2328,7 +2327,6 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> COOKEDDAGGERLOACH = REGISTRY.register("cookeddaggerloach", () -> new CookeddaggerloachItem());
 	public static final RegistryObject<Item> COOKEDRAREDAGGERLOACH = REGISTRY.register("cookedraredaggerloach", () -> new CookedraredaggerloachItem());
 	public static final RegistryObject<Item> COOKEDREDSNAPPER = REGISTRY.register("cookedredsnapper", () -> new CookedredsnapperItem());
-	public static final RegistryObject<Item> CORMUNCULUS_CLUB = REGISTRY.register("cormunculus_club", () -> new CormunculusClubItem());
 	public static final RegistryObject<Item> WEAPONARTITEM = REGISTRY.register("weaponartitem", () -> new WeaponArtItemItem());
 	public static final RegistryObject<Item> OSTREELOG = block(ElementureModBlocks.OSTREELOG, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> OSTREELOG_FULL = block(ElementureModBlocks.OSTREELOG_FULL, ElementureModTabs.TAB_TABMODDEDBLOCKS);

@@ -52,7 +52,7 @@ public class WeaponArtsKeyMessage {
 			return;
 		if (type == 0) {
 
-			WeaponArtsAnimationManagerProcedure.execute();
+			WeaponArtsAnimationManagerProcedure.execute(entity);
 		}
 	}
 

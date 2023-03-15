@@ -33,7 +33,6 @@ public class ArachneelShivReachProcedure {
 		if (entity == null)
 			return;
 		ItemStack spear = ItemStack.EMPTY;
-		double amount = 0;
 		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == ElementureModItems.ARACHNEEL_SHIV.get()) {
 			{
 				Entity _ent = entity;

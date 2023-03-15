@@ -29,4 +29,10 @@ Something has appeared in the Warm Ocean! Explore the new Ostree as it looms ove
     versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
+[[dependencies.elementure]]
+    modId="playeranimator"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 

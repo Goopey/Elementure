@@ -10,11 +10,11 @@
     "displaySettings": "weaponartitem.item.json",
     "leftArm": "LeftArm",
     "rightArm": "RightArm",
-    "perspective": "First Person",
+    "perspective": "All Perspectives",
     "creativeTab": {
       "value": "No creative tab entry"
     },
-    "firstPersonArms": true,
+    "firstPersonArms": false,
     "stackSize": 1,
     "enchantability": 0,
     "useDuration": 0,

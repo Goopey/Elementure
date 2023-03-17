@@ -5,14 +5,11 @@ import software.bernie.geckolib3.util.GeckoLibUtil;
 import software.bernie.geckolib3.core.manager.AnimationFactory;
 import software.bernie.geckolib3.core.manager.AnimationData;
 import software.bernie.geckolib3.core.event.predicate.AnimationEvent;
-import software.bernie.geckolib3.core.event.CustomInstructionKeyframeEvent;
 import software.bernie.geckolib3.core.controller.AnimationController;
 import software.bernie.geckolib3.core.builder.ILoopType.EDefaultLoopTypes;
 import software.bernie.geckolib3.core.builder.AnimationBuilder;
 import software.bernie.geckolib3.core.PlayState;
 import software.bernie.geckolib3.core.IAnimatable;
-
-import org.checkerframework.checker.units.qual.s;
 
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 
@@ -26,10 +23,8 @@ import net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer;
 import net.mcreator.elementure.procedures.WeaponArtItemSwingProcedure;
 import net.mcreator.elementure.item.renderer.WeaponArtItemItemRenderer;
 
-import java.util.stream.Collectors;
 import java.util.function.Consumer;
 import java.util.List;
-import java.util.Arrays;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 
@@ -59,18 +54,6 @@ public class WeaponArtItemItem extends Item implements IAnimatable {
 		this.transformType = type;
 	}
 
-	protected <P extends IAnimatable> void customInstructionListener(CustomInstructionKeyframeEvent<P> event) {
-		List<String> instructions = Arrays.stream(event.instructions.split(";")).filter(s -> s.length() > 0).collect(Collectors.toList());
-		List<List<String>> instructionTokens = instructions.stream().map(s -> Arrays.asList(s.split(" ")).stream().filter(tk -> tk.length() > 0).collect(Collectors.toList())).filter(tks -> !tks.isEmpty()).collect(Collectors.toList());
-		if (instructionTokens.isEmpty())
-			return;
-		BlockEntityWithoutLevelRenderer ister = new WeaponArtItemItemRenderer();
-		if (!(ister instanceof WeaponArtItemItemRenderer))
-			return;
-		WeaponArtItemItemRenderer renderer = (WeaponArtItemItemRenderer) ister;
-		instructionTokens.stream().filter(tks -> !tks.isEmpty()).forEach(tks -> this.interpretFirstPersonInstructions(tks, renderer));
-	}
-
 	protected void interpretFirstPersonInstructions(List<String> tokens, WeaponArtItemItemRenderer renderer) {
 		String firstTok = tokens.get(0);
 		if (tokens.size() < 2)
@@ -97,7 +80,7 @@ public class WeaponArtItemItem extends Item implements IAnimatable {
 	}
 
 	private <P extends Item & IAnimatable> PlayState idlePredicate(AnimationEvent<P> event) {
-		if (this.transformType != null ? this.transformType.firstPerson() : false) {
+		if (this.transformType != null ? true : false) {
 			if (this.animationprocedure.equals("empty")) {
 				event.getController().setAnimation(new AnimationBuilder().addAnimation("animation.weaponartitem.club_idle", EDefaultLoopTypes.LOOP));
 				return PlayState.CONTINUE;
@@ -107,7 +90,7 @@ public class WeaponArtItemItem extends Item implements IAnimatable {
 	}
 
 	private <P extends Item & IAnimatable> PlayState procedurePredicate(AnimationEvent<P> event) {
-		if (this.transformType != null ? this.transformType.firstPerson() : false) {
+		if (this.transformType != null ? true : false) {
 			if (!(this.animationprocedure.equals("empty")) && event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {
 				event.getController().setAnimation(new AnimationBuilder().addAnimation(this.animationprocedure, EDefaultLoopTypes.PLAY_ONCE));
 				if (event.getController().getAnimationState().equals(software.bernie.geckolib3.core.AnimationState.Stopped)) {

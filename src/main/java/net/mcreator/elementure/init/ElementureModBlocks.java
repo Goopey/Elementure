@@ -37,6 +37,7 @@ import net.mcreator.elementure.block.WhiteprismaticcrystalblockBlock;
 import net.mcreator.elementure.block.WhitebarrierclosingBlock;
 import net.mcreator.elementure.block.WhitebarrierBlock;
 import net.mcreator.elementure.block.WeaponaltarBlock;
+import net.mcreator.elementure.block.WeaponForgeBlock;
 import net.mcreator.elementure.block.WaterstarBlock;
 import net.mcreator.elementure.block.WaterruneblockBlock;
 import net.mcreator.elementure.block.WaterelementliquidBlock;
@@ -1290,4 +1291,5 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> OSTREELOG = REGISTRY.register("ostreelog", () -> new OstreelogBlock());
 	public static final RegistryObject<Block> OSTREELOG_FULL = REGISTRY.register("ostreelog_full", () -> new OstreelogFullBlock());
 	public static final RegistryObject<Block> BLUEAMBERBLOCK = REGISTRY.register("blueamberblock", () -> new BlueamberblockBlock());
+	public static final RegistryObject<Block> WEAPON_FORGE = REGISTRY.register("weapon_forge", () -> new WeaponForgeBlock());
 }

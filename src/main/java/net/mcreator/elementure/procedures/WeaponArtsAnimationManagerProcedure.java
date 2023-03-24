@@ -18,7 +18,7 @@ public class WeaponArtsAnimationManagerProcedure {
 		String weaponArtAnimation = "";
 		mainHandItem = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
 		if (mainHandItem.is(ItemTags.create(new ResourceLocation("elementure:weaponartitems")))) {
-			weaponArtAnimation = mainHandItem.getOrCreateTag().getString("weaponArtAnimation");
+			weaponArtAnimation = mainHandItem.getOrCreateTag().getString("weaponArtName");
 			mainHandItem.getOrCreateTag().putString("geckoAnim", "animation.weaponartitem." + weaponArtAnimation);
 			if (entity instanceof Player) {
 				var animation = SetupAnimationsProcedure.animationData.get((Player) entity);

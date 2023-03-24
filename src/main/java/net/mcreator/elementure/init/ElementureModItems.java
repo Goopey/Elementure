@@ -23,6 +23,7 @@ import net.mcreator.elementure.item.XpvestItem;
 import net.mcreator.elementure.item.WhiterimeshineItem;
 import net.mcreator.elementure.item.WhitebarrierkeyItem;
 import net.mcreator.elementure.item.WeaponArtItemItem;
+import net.mcreator.elementure.item.WaxedPaperItem;
 import net.mcreator.elementure.item.WatersoulItem;
 import net.mcreator.elementure.item.WaterelementliquidItem;
 import net.mcreator.elementure.item.WaterblastskillItem;
@@ -604,6 +605,7 @@ import net.mcreator.elementure.item.CormunculusCleansingtorchItem;
 import net.mcreator.elementure.item.CormunculusChannelerItem;
 import net.mcreator.elementure.item.CorememoryseedsItem;
 import net.mcreator.elementure.item.CorememoryfragmentItem;
+import net.mcreator.elementure.item.CopperScrollItem;
 import net.mcreator.elementure.item.CookedsmallbrumItem;
 import net.mcreator.elementure.item.CookedredsnapperItem;
 import net.mcreator.elementure.item.CookedraredaggerloachItem;
@@ -2331,6 +2333,9 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> OSTREELOG = block(ElementureModBlocks.OSTREELOG, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> OSTREELOG_FULL = block(ElementureModBlocks.OSTREELOG_FULL, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> BLUEAMBERBLOCK = block(ElementureModBlocks.BLUEAMBERBLOCK, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> WAXED_PAPER = REGISTRY.register("waxed_paper", () -> new WaxedPaperItem());
+	public static final RegistryObject<Item> COPPER_SCROLL = REGISTRY.register("copper_scroll", () -> new CopperScrollItem());
+	public static final RegistryObject<Item> WEAPON_FORGE = block(ElementureModBlocks.WEAPON_FORGE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

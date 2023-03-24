@@ -1,0 +1,9 @@
+{
+  "parent": "elementure:custom/weaponforge",
+  "textures": {
+    "all": "elementure:blocks/weaponforge",
+    "particle": "elementure:blocks/weaponforge",
+    "main": "elementure:blocks/weaponforge"
+  },
+  "render_type": "cutout_mipped"
+}

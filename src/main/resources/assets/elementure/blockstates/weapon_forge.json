@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "elementure:block/weapon_forge"
+    },
+    "facing=east": {
+      "model": "elementure:block/weapon_forge",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "elementure:block/weapon_forge",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "elementure:block/weapon_forge",
+      "y": 270
+    }
+  }
+}

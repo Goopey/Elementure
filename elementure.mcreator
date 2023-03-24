@@ -96533,6 +96533,124 @@
         ]
       },
       "path": "~/Core/CombatMechanics/WeaponArts"
+    },
+    {
+      "name": "WaxedPaper",
+      "type": "item",
+      "sortid": 4986,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_paper",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/item/WaxedPaperItem.java",
+          "src/main/resources/assets/elementure/models/item/waxed_paper.json"
+        ]
+      },
+      "path": "~/Combat/WeaponArtStuff"
+    },
+    {
+      "name": "WaxedPaperRecipe",
+      "type": "recipe",
+      "sortid": 4987,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "waxed_paper_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/elementure/recipes/waxed_paper_recipe.json"
+        ]
+      },
+      "path": "~/Combat/WeaponArtStuff"
+    },
+    {
+      "name": "CopperScroll",
+      "type": "item",
+      "sortid": 4988,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "copper_scroll",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/elementure/models/item/copper_scroll.json",
+          "src/main/java/net/mcreator/elementure/item/CopperScrollItem.java"
+        ]
+      },
+      "path": "~/Combat/WeaponArtStuff"
+    },
+    {
+      "name": "CopperScrollRecipe",
+      "type": "recipe",
+      "sortid": 4989,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "copper_scroll_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/elementure/recipes/copper_scroll_recipe.json"
+        ]
+      },
+      "path": "~/Combat/WeaponArtStuff"
+    },
+    {
+      "name": "WeaponArtDescriptionReturn",
+      "type": "procedure",
+      "sortid": 4990,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_art_description_return",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/WeaponArtDescriptionReturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Combat/WeaponArtStuff"
+    },
+    {
+      "name": "WeaponArtScrollShine",
+      "type": "procedure",
+      "sortid": 4991,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_art_scroll_shine",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/WeaponArtScrollShineProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Combat/WeaponArtStuff"
+    },
+    {
+      "name": "WeaponForge",
+      "type": "block",
+      "sortid": 4992,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_forge",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/block/entity/WeaponForgeBlockEntity.java",
+          "src/main/resources/assets/elementure/models/item/weapon_forge.json",
+          "src/main/resources/assets/elementure/models/block/weapon_forge.json",
+          "src/main/resources/assets/elementure/blockstates/weapon_forge.json",
+          "src/main/java/net/mcreator/elementure/block/WeaponForgeBlock.java"
+        ]
+      },
+      "path": "~/Combat/WeaponArtStuff"
     }
   ],
   "variable_elements": [
@@ -98110,6 +98228,7 @@
       "gui.elementure.onemoreday_popup.label_one_more_day": "One More Day",
       "fluid.elementure.fireliquid": "Fireliquid",
       "tile.thebeginningofeverything.name": "World generator",
+      "item.elementure.waxed_paper": "Waxed Paper",
       "block.elementure.endermemorial": "Ender memorial",
       "gui.elementure.wateroverlay.label_varintegerwater_essence": "\u003cVAR:integer:water_essence\u003e",
       "block.minecraft_worlds.saturationstar": "Demon star",
@@ -99367,6 +99486,7 @@
       "block.elementure.netherfruitplant_1": "Nether fruit plant",
       "block.minecraft_worlds.skypillar": "Sky pillar",
       "item.minecraft_worlds.mycenafumoonshroomling_spawn_egg": "Fumoon shroomling Spawn Egg",
+      "item.elementure.copper_scroll": "Copper Scroll",
       "block.elementure.seafoambubble": "Seafoam bubble",
       "item.tinstaff.name": "Tin staff",
       "item.elementure.lignitenode": "Lignite node",
@@ -99880,6 +100000,7 @@
       "entity.jerk.name": "Jerk",
       "tile.tinore.name": "Tin ore",
       "item.elementure.mycenafumoonshroomling_spawn_egg": "Fumoon shroomling Spawn Egg",
+      "block.elementure.weapon_forge": "Weapon Forge",
       "item.minecraft_worlds.negative": "Negative",
       "item.elementure.cookedgreatbrum": "Cooked greatbrum",
       "item.minecraft_worlds.mycenashroomvillagerblacksmith_spawn_egg": "Blacksmith Spawn Egg",
@@ -102457,6 +102578,10 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "WeaponArtStuff",
+            "children": []
           }
         ]
       },

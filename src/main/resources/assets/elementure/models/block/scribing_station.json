@@ -1,0 +1,9 @@
+{
+  "parent": "elementure:custom/scribingstation",
+  "textures": {
+    "all": "elementure:blocks/scribingstation_texturemap",
+    "particle": "elementure:blocks/scribingstation_texturemap",
+    "0": "elementure:blocks/scribingstation_texturemap"
+  },
+  "render_type": "cutout_mipped"
+}

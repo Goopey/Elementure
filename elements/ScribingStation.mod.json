@@ -2,19 +2,19 @@
   "_fv": 39,
   "_type": "block",
   "definition": {
-    "texture": "weaponforge",
+    "texture": "scribingstation_texturemap",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "weaponforge:default",
+    "customModelName": "scribingstation:default",
     "rotationMode": 1,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "weaponforge_item",
+    "itemTexture": "scribingstation_item",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
@@ -24,21 +24,21 @@
     "disableOffset": false,
     "boundingBoxes": [
       {
-        "mx": -2.0,
+        "mx": 0.0,
         "my": 0.0,
-        "mz": -1.0,
-        "Mx": 18.0,
-        "My": 32.0,
-        "Mz": 17.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
         "subtract": false
       }
     ],
-    "name": "Weapon Forge",
+    "name": "Scribing Station",
     "specialInfo": [],
-    "hardness": 8.0,
-    "resistance": 14.0,
+    "hardness": 4.05,
+    "resistance": 21.5,
     "hasGravity": false,
-    "isWaterloggable": true,
+    "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:Tabmoddedblocks"
     },
@@ -56,7 +56,7 @@
     "material": {
       "value": "ROCK"
     },
-    "tickRate": 5,
+    "tickRate": 10,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "METAL"
+      "value": "STONE"
     },
     "breakSound": {
       "value": ""
@@ -96,9 +96,9 @@
     "stepSound": {
       "value": ""
     },
-    "luminance": 15,
+    "luminance": 8,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "isBonemealable": false,
     "hasInventory": true,
     "guiBoundTo": "<NONE>",

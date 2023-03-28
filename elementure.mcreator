@@ -96651,6 +96651,38 @@
         ]
       },
       "path": "~/Combat/WeaponArtStuff"
+    },
+    {
+      "name": "WeaponforgeRecipe",
+      "type": "recipe",
+      "sortid": 4993,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weaponforge_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/elementure/recipes/weaponforge_recipe.json"
+        ]
+      },
+      "path": "~/Combat/WeaponArtStuff"
+    },
+    {
+      "name": "ScribingStation",
+      "type": "block",
+      "sortid": 4994,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scribing_station",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/block/entity/ScribingStationBlockEntity.java",
+          "src/main/resources/assets/elementure/blockstates/scribing_station.json",
+          "src/main/resources/assets/elementure/models/block/scribing_station.json",
+          "src/main/resources/assets/elementure/models/item/scribing_station.json",
+          "src/main/java/net/mcreator/elementure/block/ScribingStationBlock.java"
+        ]
+      },
+      "path": "~/Combat/WeaponArtStuff"
     }
   ],
   "variable_elements": [
@@ -97552,6 +97584,7 @@
       "item.elementure.theabyss": "Armageddon",
       "effect.elementure.parry_fatigue": "Parry Fatigue",
       "gui.elementure.jellypools_popup.label_jelly_pools": "Jelly Pools",
+      "block.elementure.scribing_station": "Scribing Station",
       "entity.core.name": "Core",
       "block.minecraft_worlds.polishedenergydiorite": "Polished energy diorite",
       "item.minecraft_worlds.mycenanchanneler": "Mycenan channeler [Earth]",

@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:bricks"
+    },
+    "1": {
+      "item": "minecraft:bricks"
+    },
+    "2": {
+      "item": "minecraft:bricks"
+    },
+    "3": {
+      "item": "minecraft:bricks"
+    },
+    "4": {
+      "item": "minecraft:blast_furnace"
+    },
+    "5": {
+      "item": "minecraft:bricks"
+    },
+    "6": {
+      "item": "minecraft:smithing_table"
+    },
+    "7": {
+      "tag": "minecraft:anvil"
+    },
+    "8": {
+      "item": "minecraft:smithing_table"
+    }
+  },
+  "result": {
+    "item": "elementure:weapon_forge",
+    "count": 1
+  }
+}

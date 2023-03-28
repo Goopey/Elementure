@@ -105,6 +105,7 @@ import net.mcreator.elementure.block.ShardlessmaelstromlogBlock;
 import net.mcreator.elementure.block.ShardedglasspaneBlock;
 import net.mcreator.elementure.block.ShardedglassBlock;
 import net.mcreator.elementure.block.SeafoambubbleBlock;
+import net.mcreator.elementure.block.ScribingStationBlock;
 import net.mcreator.elementure.block.ScrapsaplingBlock;
 import net.mcreator.elementure.block.ScrapleavesBlock;
 import net.mcreator.elementure.block.SavannamemorialBlock;
@@ -1292,4 +1293,5 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> OSTREELOG_FULL = REGISTRY.register("ostreelog_full", () -> new OstreelogFullBlock());
 	public static final RegistryObject<Block> BLUEAMBERBLOCK = REGISTRY.register("blueamberblock", () -> new BlueamberblockBlock());
 	public static final RegistryObject<Block> WEAPON_FORGE = REGISTRY.register("weapon_forge", () -> new WeaponForgeBlock());
+	public static final RegistryObject<Block> SCRIBING_STATION = REGISTRY.register("scribing_station", () -> new ScribingStationBlock());
 }

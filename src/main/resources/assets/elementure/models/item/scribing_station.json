@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "elementure:items/weaponforge_item"
+    "layer0": "elementure:items/scribingstation_item"
   },
   "render_type": "translucent"
 }

@@ -2336,6 +2336,7 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> WAXED_PAPER = REGISTRY.register("waxed_paper", () -> new WaxedPaperItem());
 	public static final RegistryObject<Item> COPPER_SCROLL = REGISTRY.register("copper_scroll", () -> new CopperScrollItem());
 	public static final RegistryObject<Item> WEAPON_FORGE = block(ElementureModBlocks.WEAPON_FORGE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> SCRIBING_STATION = block(ElementureModBlocks.SCRIBING_STATION, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

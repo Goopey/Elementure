@@ -6,6 +6,9 @@
     "items": [
       {
         "value": "CUSTOM:WeaponArtItem"
+      },
+      {
+        "value": "CUSTOM:CopperScroll"
       }
     ],
     "blocks": [],

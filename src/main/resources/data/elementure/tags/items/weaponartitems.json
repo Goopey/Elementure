@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "elementure:weaponartitem"
+    "elementure:weaponartitem",
+    "elementure:copper_scroll"
   ]
 }

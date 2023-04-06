@@ -14,6 +14,7 @@ import net.minecraft.client.gui.screens.MenuScreens;
 import net.mcreator.elementure.client.gui.WeaponaltarGUIScreen;
 import net.mcreator.elementure.client.gui.SuitcaseGUIScreen;
 import net.mcreator.elementure.client.gui.SoulforgeGUIScreen;
+import net.mcreator.elementure.client.gui.ScribingStationGUIScreen;
 import net.mcreator.elementure.client.gui.RelicinventoryScreen;
 import net.mcreator.elementure.client.gui.PouchGUIScreen;
 import net.mcreator.elementure.client.gui.NanoshrimpGUIScreen;
@@ -91,6 +92,7 @@ public class ElementureModScreens {
 			MenuScreens.register(ElementureModMenus.FISHINGRECORD_WINDYSHORES.get(), FishingrecordWindyshoresScreen::new);
 			MenuScreens.register(ElementureModMenus.FISHINGRECORD_2.get(), Fishingrecord2Screen::new);
 			MenuScreens.register(ElementureModMenus.FISHINGRECORD_DIVERSCROWN.get(), FishingrecordDiverscrownScreen::new);
+			MenuScreens.register(ElementureModMenus.SCRIBING_STATION_GUI.get(), ScribingStationGUIScreen::new);
 		});
 	}
 }

@@ -14,6 +14,7 @@ import net.minecraft.world.inventory.MenuType;
 import net.mcreator.elementure.world.inventory.WeaponaltarGUIMenu;
 import net.mcreator.elementure.world.inventory.SuitcaseGUIMenu;
 import net.mcreator.elementure.world.inventory.SoulforgeGUIMenu;
+import net.mcreator.elementure.world.inventory.ScribingStationGUIMenu;
 import net.mcreator.elementure.world.inventory.RelicinventoryMenu;
 import net.mcreator.elementure.world.inventory.PouchGUIMenu;
 import net.mcreator.elementure.world.inventory.NanoshrimpGUIMenu;
@@ -89,4 +90,5 @@ public class ElementureModMenus {
 	public static final RegistryObject<MenuType<FishingrecordWindyshoresMenu>> FISHINGRECORD_WINDYSHORES = REGISTRY.register("fishingrecord_windyshores", () -> IForgeMenuType.create(FishingrecordWindyshoresMenu::new));
 	public static final RegistryObject<MenuType<Fishingrecord2Menu>> FISHINGRECORD_2 = REGISTRY.register("fishingrecord_2", () -> IForgeMenuType.create(Fishingrecord2Menu::new));
 	public static final RegistryObject<MenuType<FishingrecordDiverscrownMenu>> FISHINGRECORD_DIVERSCROWN = REGISTRY.register("fishingrecord_diverscrown", () -> IForgeMenuType.create(FishingrecordDiverscrownMenu::new));
+	public static final RegistryObject<MenuType<ScribingStationGUIMenu>> SCRIBING_STATION_GUI = REGISTRY.register("scribing_station_gui", () -> IForgeMenuType.create(ScribingStationGUIMenu::new));
 }

@@ -144,6 +144,10 @@ public class ElementureModVariables {
 				clone.newzonetime = original.newzonetime;
 				clone.fishBiome = original.fishBiome;
 				clone.dodgeCooldown = original.dodgeCooldown;
+				clone.hitbox_type = original.hitbox_type;
+				clone.hitbox_delay = original.hitbox_delay;
+				clone.hitbox_size = original.hitbox_size;
+				clone.hitbox_distance = original.hitbox_distance;
 			}
 		}
 
@@ -459,6 +463,10 @@ public class ElementureModVariables {
 		public String fishBiome = "\"\"";
 		public boolean isInsane = false;
 		public double dodgeCooldown = 0;
+		public String hitbox_type = "\"\"";
+		public double hitbox_delay = 0;
+		public double hitbox_size = 0;
+		public double hitbox_distance = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -537,6 +545,10 @@ public class ElementureModVariables {
 			nbt.putString("fishBiome", fishBiome);
 			nbt.putBoolean("isInsane", isInsane);
 			nbt.putDouble("dodgeCooldown", dodgeCooldown);
+			nbt.putString("hitbox_type", hitbox_type);
+			nbt.putDouble("hitbox_delay", hitbox_delay);
+			nbt.putDouble("hitbox_size", hitbox_size);
+			nbt.putDouble("hitbox_distance", hitbox_distance);
 			return nbt;
 		}
 
@@ -612,6 +624,10 @@ public class ElementureModVariables {
 			fishBiome = nbt.getString("fishBiome");
 			isInsane = nbt.getBoolean("isInsane");
 			dodgeCooldown = nbt.getDouble("dodgeCooldown");
+			hitbox_type = nbt.getString("hitbox_type");
+			hitbox_delay = nbt.getDouble("hitbox_delay");
+			hitbox_size = nbt.getDouble("hitbox_size");
+			hitbox_distance = nbt.getDouble("hitbox_distance");
 		}
 	}
 
@@ -706,6 +722,10 @@ public class ElementureModVariables {
 					variables.fishBiome = message.data.fishBiome;
 					variables.isInsane = message.data.isInsane;
 					variables.dodgeCooldown = message.data.dodgeCooldown;
+					variables.hitbox_type = message.data.hitbox_type;
+					variables.hitbox_delay = message.data.hitbox_delay;
+					variables.hitbox_size = message.data.hitbox_size;
+					variables.hitbox_distance = message.data.hitbox_distance;
 				}
 			});
 			context.setPacketHandled(true);

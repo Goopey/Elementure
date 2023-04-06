@@ -1,17 +1,26 @@
 package net.mcreator.elementure.procedures;
 
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.items.ItemHandlerHelper;
 
-import net.mcreator.elementure.ElementureMod;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.Entity;
+
+import net.mcreator.elementure.init.ElementureModItems;
 
 public class StructureitemtesterRightClickedOnBlockProcedure {
-	public static void execute(LevelAccessor world, double x, double y, double z) {
+	public static void execute(Entity entity) {
+		if (entity == null)
+			return;
 		double LocalX = 0;
 		double LocalZ = 0;
 		ItemStack book = ItemStack.EMPTY;
-		ElementureMod.queueServerWork(10, () -> {
-			AngelfishChannelerBallProcedure.execute(world, (x - 3), y, z);
-		});
+		book = new ItemStack(ElementureModItems.COPPER_SCROLL.get());
+		book.getOrCreateTag().putString("weaponArtName", "chop");
+		if (entity instanceof Player _player) {
+			ItemStack _setstack = book;
+			_setstack.setCount(1);
+			ItemHandlerHelper.giveItemToPlayer(_player, _setstack);
+		}
 	}
 }

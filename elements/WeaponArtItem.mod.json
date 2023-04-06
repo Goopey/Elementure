@@ -10,7 +10,7 @@
     "displaySettings": "weaponartitem.item.json",
     "leftArm": "LeftArm",
     "rightArm": "RightArm",
-    "perspective": "All Perspectives",
+    "perspective": "First Person",
     "creativeTab": {
       "value": "No creative tab entry"
     },

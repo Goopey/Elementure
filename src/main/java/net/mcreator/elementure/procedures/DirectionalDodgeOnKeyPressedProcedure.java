@@ -48,6 +48,8 @@ public class DirectionalDodgeOnKeyPressedProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
+			} else {
+				((LivingEntity) entity).setJumping(false);
 			}
 		}
 	}

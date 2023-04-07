@@ -96816,18 +96816,13 @@
       "locked_code": false,
       "registry_name": "weapon_replace_attack",
       "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/WeaponReplaceAttackProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "sourceentity",
-            "type": "entity"
-          },
-          {
-            "name": "amount",
-            "type": "number"
           },
           {
             "name": "world",
@@ -96836,6 +96831,95 @@
         ]
       },
       "path": "~/Core/CombatMechanics/WeaponArts"
+    },
+    {
+      "name": "WeaponArtIsDelayed",
+      "type": "procedure",
+      "sortid": 5002,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_art_is_delayed",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/WeaponArtIsDelayedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Core/CombatMechanics/WeaponArts"
+    },
+    {
+      "name": "WeaponArtStatsMaster1",
+      "type": "procedure",
+      "sortid": 5003,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_art_stats_master_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/WeaponArtStatsMaster1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Combat/WeaponArts"
+    },
+    {
+      "name": "WeaponArtHitboxMaster",
+      "type": "procedure",
+      "sortid": 5004,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_art_hitbox_master",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/WeaponArtHitboxMasterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Combat/WeaponArts"
+    },
+    {
+      "name": "WeaponArtSpecialMaster",
+      "type": "procedure",
+      "sortid": 5005,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_art_special_master",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/WeaponArtSpecialMasterProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Combat/WeaponArts"
     }
   ],
   "variable_elements": [
@@ -97437,7 +97521,7 @@
       "name": "hitbox_delay",
       "type": "number",
       "scope": "player_lifetime",
-      "value": "0"
+      "value": "-1.0"
     },
     {
       "name": "hitbox_size",
@@ -97447,6 +97531,18 @@
     },
     {
       "name": "hitbox_distance",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "hitbox_item",
+      "type": "itemstack",
+      "scope": "player_lifetime",
+      "value": "ItemStack.EMPTY"
+    },
+    {
+      "name": "hitbox_damage",
       "type": "number",
       "scope": "player_lifetime",
       "value": "0"

@@ -148,6 +148,8 @@ public class ElementureModVariables {
 				clone.hitbox_delay = original.hitbox_delay;
 				clone.hitbox_size = original.hitbox_size;
 				clone.hitbox_distance = original.hitbox_distance;
+				clone.hitbox_item = original.hitbox_item;
+				clone.hitbox_damage = original.hitbox_damage;
 			}
 		}
 
@@ -464,9 +466,11 @@ public class ElementureModVariables {
 		public boolean isInsane = false;
 		public double dodgeCooldown = 0;
 		public String hitbox_type = "\"\"";
-		public double hitbox_delay = 0;
+		public double hitbox_delay = -1.0;
 		public double hitbox_size = 0;
 		public double hitbox_distance = 0;
+		public ItemStack hitbox_item = ItemStack.EMPTY;
+		public double hitbox_damage = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -549,6 +553,8 @@ public class ElementureModVariables {
 			nbt.putDouble("hitbox_delay", hitbox_delay);
 			nbt.putDouble("hitbox_size", hitbox_size);
 			nbt.putDouble("hitbox_distance", hitbox_distance);
+			nbt.put("hitbox_item", hitbox_item.save(new CompoundTag()));
+			nbt.putDouble("hitbox_damage", hitbox_damage);
 			return nbt;
 		}
 
@@ -628,6 +634,8 @@ public class ElementureModVariables {
 			hitbox_delay = nbt.getDouble("hitbox_delay");
 			hitbox_size = nbt.getDouble("hitbox_size");
 			hitbox_distance = nbt.getDouble("hitbox_distance");
+			hitbox_item = ItemStack.of(nbt.getCompound("hitbox_item"));
+			hitbox_damage = nbt.getDouble("hitbox_damage");
 		}
 	}
 
@@ -726,6 +734,8 @@ public class ElementureModVariables {
 					variables.hitbox_delay = message.data.hitbox_delay;
 					variables.hitbox_size = message.data.hitbox_size;
 					variables.hitbox_distance = message.data.hitbox_distance;
+					variables.hitbox_item = message.data.hitbox_item;
+					variables.hitbox_damage = message.data.hitbox_damage;
 				}
 			});
 			context.setPacketHandled(true);

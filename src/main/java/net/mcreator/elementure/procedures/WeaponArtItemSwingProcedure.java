@@ -1,7 +1,5 @@
 package net.mcreator.elementure.procedures;
 
-import net.minecraft.world.phys.HitResult;
-import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Entity;
@@ -17,7 +15,7 @@ public class WeaponArtItemSwingProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {
 		if (entity == null)
 			return;
-		if (!(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(4)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getType() == HitResult.Type.BLOCK)) {
+		if (WeaponArtIsDelayedProcedure.execute(entity)) {
 			if (itemstack.getItem() instanceof WeaponArtItemItem)
 				itemstack.getOrCreateTag().putString("geckoAnim", "animation.weaponartitem.bash");
 			if (entity instanceof Player) {
@@ -27,6 +25,13 @@ public class WeaponArtItemSwingProcedure {
 				}
 			}
 			{
+				ItemStack _setval = itemstack;
+				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.hitbox_item = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
 				String _setval = "bash";
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.hitbox_type = _setval;
@@ -34,7 +39,7 @@ public class WeaponArtItemSwingProcedure {
 				});
 			}
 			{
-				double _setval = 3;
+				double _setval = 4;
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.hitbox_delay = _setval;
 					capability.syncPlayerVariables(entity);
@@ -51,6 +56,13 @@ public class WeaponArtItemSwingProcedure {
 				double _setval = 1;
 				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 					capability.hitbox_distance = _setval;
+					capability.syncPlayerVariables(entity);
+				});
+			}
+			{
+				double _setval = 1;
+				entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.hitbox_damage = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}

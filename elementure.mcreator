@@ -96920,6 +96920,55 @@
         ]
       },
       "path": "~/Combat/WeaponArts"
+    },
+    {
+      "name": "DirectionnalDodgeCanDodge",
+      "type": "procedure",
+      "sortid": 5006,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "directionnal_dodge_can_dodge",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/DirectionnalDodgeCanDodgeProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Core/CombatMechanics/Dodging"
+    },
+    {
+      "name": "DirectionnalDodgeDisableJumping",
+      "type": "procedure",
+      "sortid": 5007,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "directionnal_dodge_disable_jumping",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/DirectionnalDodgeDisableJumpingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Core/CombatMechanics/Dodging"
     }
   ],
   "variable_elements": [

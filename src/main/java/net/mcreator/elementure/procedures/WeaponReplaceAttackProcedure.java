@@ -45,7 +45,7 @@ public class WeaponReplaceAttackProcedure {
 					});
 				}
 				WeaponArtHitboxMasterProcedure.execute(world, entity);
-			} else {
+			} else if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).hitbox_delay > 0) {
 				{
 					double _setval = (entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).hitbox_delay - 1;
 					entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

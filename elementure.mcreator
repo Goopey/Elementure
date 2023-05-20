@@ -6405,20 +6405,6 @@
       }
     },
     {
-      "name": "Rustysword",
-      "type": "tool",
-      "sortid": 681,
-      "compiles": true,
-      "locked_code": false,
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/elementure/models/item/rustysword.json",
-          "src/main/java/net/mcreator/elementure/item/RustyswordItem.java"
-        ]
-      },
-      "path": "~/Combat/Weapons/Others/RustySword"
-    },
-    {
       "name": "Tier1harvestedfireelement",
       "type": "block",
       "sortid": 80,
@@ -20523,6 +20509,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -91176,21 +91166,6 @@
       "path": "~/Relics"
     },
     {
-      "name": "ArachneelSpear",
-      "type": "tool",
-      "sortid": 750,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "arachneel_spear",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/elementure/models/item/arachneel_spear.json",
-          "src/main/java/net/mcreator/elementure/item/ArachneelSpearItem.java"
-        ]
-      },
-      "path": "~/Combat/Weapons/Others/ArachneelSpear"
-    },
-    {
       "name": "ArachneelspearReach",
       "type": "procedure",
       "sortid": 4761,
@@ -96729,7 +96704,7 @@
       "type": "gui",
       "sortid": 4997,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "scribing_station_gui",
       "metadata": {
         "files": [
@@ -96800,6 +96775,10 @@
           "src/main/java/net/mcreator/elementure/procedures/WeaponDisableAttackProcedure.java"
         ],
         "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
           {
             "name": "sourceentity",
             "type": "entity"
@@ -96969,6 +96948,754 @@
         ]
       },
       "path": "~/Core/CombatMechanics/Dodging"
+    },
+    {
+      "name": "BashHitbox",
+      "type": "procedure",
+      "sortid": 5008,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bash_hitbox",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/BashHitboxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Combat/WeaponArts"
+    },
+    {
+      "name": "ChopSpecial",
+      "type": "procedure",
+      "sortid": 5009,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chop_special",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/ChopSpecialProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Combat/WeaponArts"
+    },
+    {
+      "name": "ChopStats",
+      "type": "procedure",
+      "sortid": 5010,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chop_stats",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/ChopStatsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Combat/WeaponArts"
+    },
+    {
+      "name": "ChopHitbox",
+      "type": "procedure",
+      "sortid": 5011,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "chop_hitbox",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/ChopHitboxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Combat/WeaponArts"
+    },
+    {
+      "name": "RustyswordSwing",
+      "type": "procedure",
+      "sortid": 5013,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rustysword_swing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/RustyswordSwingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Combat/Weapons/Others/RustySword"
+    },
+    {
+      "name": "Weaponartscrollitems",
+      "type": "tag",
+      "sortid": 5014,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weaponartscrollitems",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/elementure/tags/items/weaponartscrollitems.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "Rustysword",
+      "type": "animateditem",
+      "sortid": 5015,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rustysword",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/elementure/models/item/rustysword.json",
+          "src/main/java/net/mcreator/elementure/item/renderer/RustyswordItemRenderer.java",
+          "src/main/java/net/mcreator/elementure/item/RustyswordItem.java",
+          "src/main/java/net/mcreator/elementure/item/model/RustyswordItemModel.java"
+        ]
+      },
+      "path": "~/Combat/Weapons/Others/RustySword"
+    },
+    {
+      "name": "WeaponCanScribe",
+      "type": "procedure",
+      "sortid": 5016,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_can_scribe",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/WeaponCanScribeProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/Combat/WeaponArtStations"
+    },
+    {
+      "name": "SpearWeapons",
+      "type": "tag",
+      "sortid": 5017,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spear_weapons",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/elementure/tags/items/spear_weapons.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "BroadswordWeapons",
+      "type": "tag",
+      "sortid": 5018,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "broadsword_weapons",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/elementure/tags/items/broadsword_weapons.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "ArachneelSpear",
+      "type": "animateditem",
+      "sortid": 5020,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arachneel_spear",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/elementure/models/item/arachneel_spear.json",
+          "src/main/java/net/mcreator/elementure/item/ArachneelSpearItem.java",
+          "src/main/java/net/mcreator/elementure/item/renderer/ArachneelSpearItemRenderer.java",
+          "src/main/java/net/mcreator/elementure/item/model/ArachneelSpearItemModel.java"
+        ]
+      },
+      "path": "~/Combat/Weapons/Others/ArachneelSpear"
+    },
+    {
+      "name": "ArachneelSpearSwing",
+      "type": "procedure",
+      "sortid": 5021,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "arachneel_spear_swing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/ArachneelSpearSwingProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/Combat/Weapons/Others/ArachneelSpear"
+    },
+    {
+      "name": "PierceHitbox",
+      "type": "procedure",
+      "sortid": 5022,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pierce_hitbox",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/PierceHitboxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Combat/WeaponArts"
+    },
+    {
+      "name": "SpearStabHitbox",
+      "type": "procedure",
+      "sortid": 5023,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "spear_stab_hitbox",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/SpearStabHitboxProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Combat/WeaponArts"
+    },
+    {
+      "name": "WeaponArtIsWeaponForWeaponArt",
+      "type": "procedure",
+      "sortid": 5024,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "weapon_art_is_weapon_for_weapon_art",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/WeaponArtIsWeaponForWeaponArtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Core/CombatMechanics/WeaponArts"
+    },
+    {
+      "name": "Ostreeomegan",
+      "type": "block",
+      "sortid": 5025,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostreeomegan",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/elementure/models/block/ostreeomegan.json",
+          "src/main/java/net/mcreator/elementure/block/entity/OstreeomeganBlockEntity.java",
+          "src/main/resources/assets/elementure/models/item/ostreeomegan.json",
+          "src/main/java/net/mcreator/elementure/block/OstreeomeganBlock.java",
+          "src/main/resources/assets/elementure/blockstates/ostreeomegan.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeGeneration"
+    },
+    {
+      "name": "BoardingschoolDimension",
+      "type": "dimension",
+      "sortid": 5026,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boardingschool_dimension",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/elementure/dimension_type/boardingschool_dimension.json",
+          "src/main/resources/data/elementure/dimension/boardingschool_dimension.json",
+          "src/main/java/net/mcreator/elementure/world/dimension/BoardingschoolDimensionDimension.java"
+        ]
+      },
+      "path": "~/Dungeons/BlueKey/BoardingSchool"
+    },
+    {
+      "name": "BlueOstreeLeaves",
+      "type": "block",
+      "sortid": 5027,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_ostree_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/elementure/models/item/blue_ostree_leaves.json",
+          "src/main/resources/assets/elementure/blockstates/blue_ostree_leaves.json",
+          "src/main/java/net/mcreator/elementure/block/BlueOstreeLeavesBlock.java",
+          "src/main/resources/assets/elementure/models/block/blue_ostree_leaves.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "LightBlueOstreeLeaves",
+      "type": "block",
+      "sortid": 5028,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "light_blue_ostree_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/elementure/blockstates/light_blue_ostree_leaves.json",
+          "src/main/resources/assets/elementure/models/block/light_blue_ostree_leaves.json",
+          "src/main/resources/assets/elementure/models/item/light_blue_ostree_leaves.json",
+          "src/main/java/net/mcreator/elementure/block/LightBlueOstreeLeavesBlock.java"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "OstreeLeaves",
+      "type": "block",
+      "sortid": 5029,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostree_leaves",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/block/OstreeLeavesBlock.java",
+          "src/main/resources/assets/elementure/models/item/ostree_leaves.json",
+          "src/main/resources/assets/elementure/blockstates/ostree_leaves.json",
+          "src/main/resources/assets/elementure/models/block/ostree_leaves.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "RedOstreeLeaves",
+      "type": "block",
+      "sortid": 5030,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "red_ostree_leaves",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/block/RedOstreeLeavesBlock.java",
+          "src/main/resources/assets/elementure/models/item/red_ostree_leaves.json",
+          "src/main/resources/assets/elementure/blockstates/red_ostree_leaves.json",
+          "src/main/resources/assets/elementure/models/block/red_ostree_leaves.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "OrangeOstreeLeaves",
+      "type": "block",
+      "sortid": 5031,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "orange_ostree_leaves",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/block/OrangeOstreeLeavesBlock.java",
+          "src/main/resources/assets/elementure/blockstates/orange_ostree_leaves.json",
+          "src/main/resources/assets/elementure/models/item/orange_ostree_leaves.json",
+          "src/main/resources/assets/elementure/models/block/orange_ostree_leaves.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "Ostreelog2",
+      "type": "block",
+      "sortid": 5032,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostreelog_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/block/Ostreelog2Block.java",
+          "src/main/resources/assets/elementure/blockstates/ostreelog_2.json",
+          "src/main/resources/assets/elementure/models/block/ostreelog_2.json",
+          "src/main/resources/assets/elementure/models/item/ostreelog_2.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "Ostreelog3",
+      "type": "block",
+      "sortid": 5033,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostreelog_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/elementure/blockstates/ostreelog_3.json",
+          "src/main/resources/assets/elementure/models/block/ostreelog_3.json",
+          "src/main/java/net/mcreator/elementure/block/Ostreelog3Block.java",
+          "src/main/resources/assets/elementure/models/item/ostreelog_3.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "Ostreelog4",
+      "type": "block",
+      "sortid": 5034,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostreelog_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/elementure/models/block/ostreelog_4.json",
+          "src/main/java/net/mcreator/elementure/block/Ostreelog4Block.java",
+          "src/main/resources/assets/elementure/models/item/ostreelog_4.json",
+          "src/main/resources/assets/elementure/blockstates/ostreelog_4.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "Ostreelog5",
+      "type": "block",
+      "sortid": 5035,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostreelog_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/block/Ostreelog5Block.java",
+          "src/main/resources/assets/elementure/models/block/ostreelog_5.json",
+          "src/main/resources/assets/elementure/models/item/ostreelog_5.json",
+          "src/main/resources/assets/elementure/blockstates/ostreelog_5.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "OstreelogFull2",
+      "type": "block",
+      "sortid": 5036,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostreelog_full_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/block/OstreelogFull2Block.java",
+          "src/main/resources/assets/elementure/models/item/ostreelog_full_2.json",
+          "src/main/resources/assets/elementure/blockstates/ostreelog_full_2.json",
+          "src/main/resources/assets/elementure/models/block/ostreelog_full_2.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "OstreelogFull3",
+      "type": "block",
+      "sortid": 5037,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostreelog_full_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/block/OstreelogFull3Block.java",
+          "src/main/resources/assets/elementure/models/item/ostreelog_full_3.json",
+          "src/main/resources/assets/elementure/models/block/ostreelog_full_3.json",
+          "src/main/resources/assets/elementure/blockstates/ostreelog_full_3.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "OstreelogFull4",
+      "type": "block",
+      "sortid": 5038,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostreelog_full_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/elementure/blockstates/ostreelog_full_4.json",
+          "src/main/resources/assets/elementure/models/block/ostreelog_full_4.json",
+          "src/main/java/net/mcreator/elementure/block/OstreelogFull4Block.java",
+          "src/main/resources/assets/elementure/models/item/ostreelog_full_4.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "OstreelogFull5",
+      "type": "block",
+      "sortid": 5039,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostreelog_full_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/elementure/models/block/ostreelog_full_5.json",
+          "src/main/java/net/mcreator/elementure/block/OstreelogFull5Block.java",
+          "src/main/resources/assets/elementure/models/item/ostreelog_full_5.json",
+          "src/main/resources/assets/elementure/blockstates/ostreelog_full_5.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "OstreeOmeganProcedures",
+      "type": "procedure",
+      "sortid": 5040,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostree_omegan_procedures",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/OstreeOmeganProceduresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeGeneration"
+    },
+    {
+      "name": "OstreeLogRandomizer",
+      "type": "procedure",
+      "sortid": 5041,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostree_log_randomizer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/OstreeLogRandomizerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "OstreeFullLogRandomizer",
+      "type": "procedure",
+      "sortid": 5042,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostree_full_log_randomizer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/OstreeFullLogRandomizerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree"
+    },
+    {
+      "name": "OstreeGenTrunk",
+      "type": "procedure",
+      "sortid": 5043,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostree_gen_trunk",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/OstreeGenTrunkProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeGeneration"
+    },
+    {
+      "name": "OstreeGenTrunkBottom",
+      "type": "procedure",
+      "sortid": 5044,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostree_gen_trunk_bottom",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/OstreeGenTrunkBottomProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeGeneration"
+    },
+    {
+      "name": "OstreeGenLeaves",
+      "type": "procedure",
+      "sortid": 5045,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ostree_gen_leaves",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/OstreeGenLeavesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeGeneration"
     }
   ],
   "variable_elements": [
@@ -98018,6 +98745,7 @@
       "entity.biglightningandesiteelemental.name": "High andesite elemental [Lightning]",
       "entity.testenvironmentmod.enderpillar.name": "Ender pillar",
       "biome.elementure.abyssalplains": "Abyssalplains",
+      "block.elementure.ostree_leaves": "Ostree Leaves",
       "item.minecraft_worlds.mindobleckslime": "Mind obleck slime",
       "itemGroup.tabforgotten_items_tab": "Forgotten Items",
       "block.elementure.recallaltar": "Recall altar",
@@ -98232,6 +98960,7 @@
       "gui.elementure.forceoverlay.label_varintegerforce_essence": "\u003cVAR:integer:force_essence\u003e",
       "block.elementure.purplerimebush": "Purple rimebush",
       "advancements.prismaticpipobtained.title": "Prismatic Pip!",
+      "item.elementure.boardingschool_dimension": "Boardingschool Dimension Portal Igniter",
       "block.elementure.limerimemoss": "Lime rimemoss",
       "item.adamantiumsuit_body.name": "Adamantite Body",
       "item.minecraft_worlds.abysseye": "Abyssal eye",
@@ -98285,7 +99014,7 @@
       "item.elementure.claydoll": "Clay doll",
       "entity.lavaspawner.name": "Lava spawner",
       "block.minecraft_worlds.lightgraybarrier": "Light gray barrier",
-      "item.elementure.rustysword": "Rusty iron sword",
+      "item.elementure.rustysword": "Rusty sword",
       "entity.elementure.greedyknight": "Greedy knight",
       "potion.effect.slowtimeeffect": "Time is now slower.",
       "item.elementure.rubedo": "Rubedo",
@@ -98735,6 +99464,7 @@
       "item.elementure.airsword": "Air sword [Air]",
       "item.elementure.pouch": "Pouch",
       "tile.mycenashroomblock.name": "Mycena mushroom",
+      "block.elementure.red_ostree_leaves": "Red Ostree Leaves",
       "tile.bossspawner.name": "Summoner table",
       "tile.plastic.name": "Plastic",
       "block.minecraft_worlds.pitstone": "Pitstone",
@@ -98902,7 +99632,11 @@
       "tile.fireblock2.name": "Fire block",
       "item.antiwateressence.name": "Anti-water",
       "item.elementure.candle_knight_spawn_egg": "Candle Knight Spawn Egg",
+      "block.elementure.ostreelog_3": "Ostree Log",
       "item.elementure.cursedforgottenfragment": "Cursed forgotten fragment",
+      "block.elementure.ostreelog_2": "Ostree Log",
+      "block.elementure.ostreelog_5": "Ostree Log",
+      "block.elementure.ostreelog_4": "Ostree Log",
       "item.elementure.spectreknight_spawn_egg": "Spectre knight Spawn Egg",
       "item.curserhoe.name": "Curser hoe",
       "item.silverarmorbody.name": "Silver Body",
@@ -99566,8 +100300,12 @@
       "item.minecraft_worlds.armageddonmiddleupperpiece": "Armageddon piece",
       "block.minecraft_worlds.neoningotblock": "Neon block",
       "block.elementure.oldbrickstairs": "Old brick stairs",
+      "block.elementure.ostreelog_full_3": "Ostree Log",
       "tile.petrol.name": "Petrol",
+      "block.elementure.ostreelog_full_2": "Ostree Log",
       "gui.elementure.fishingrecord_1.button_regular_fish": "Regular Fish",
+      "block.elementure.ostreelog_full_5": "Ostree Log",
+      "block.elementure.ostreelog_full_4": "Ostree Log",
       "item.lightningprop.name": "Lightning bolt prop",
       "gui.elementure.fishingrecord_void_1.button_next_page": "Next Page",
       "item.earthingot.name": "Earth ingot",
@@ -99875,6 +100613,7 @@
       "item.biginfinityessence.name": "Infinity cluster",
       "item.minecraft_worlds.vanadiumarmor_helmet": "Vanadium Helmet",
       "item.vengefulspiritskill.name": "Vengeful spirit skill [Soul]",
+      "block.elementure.orange_ostree_leaves": "Orange Ostree Leaves",
       "gui.elementure.marbleforest_popup.label_marble_forest": "Marble Forest",
       "block.elementure.checkingblockalphan": "Checking alphan",
       "entity.elementure.bigkassem": "Kassem",
@@ -99917,6 +100656,7 @@
       "item.minecraft_worlds.mycenatruffloon_spawn_egg": "Mycena truffloon Spawn Egg",
       "item.elementure.dazzlingcrate": "Dazzling crate",
       "block.elementure.wildblueberry": "Wild Wys berry bush",
+      "block.elementure.light_blue_ostree_leaves": "Light Blue Ostree Leaves",
       "tile.towervoidblock1.name": "Void block",
       "tile.icyslime.name": "Icy slime block",
       "block.elementure.jellyfloatslime": "Jellyfloat",
@@ -100672,6 +101412,7 @@
       "item.solarbow.name": "Solar bow [Light]",
       "item.stansletteropener.name": "Satan\u0027s letter opener",
       "item.elementure.neonchanneler": "Neon channeler [Energy]",
+      "block.elementure.ostreeomegan": "Ostree omegan",
       "item.elementure.obleckrelic": "Obleck relic",
       "block.elementure.boardingschool_yellow_wall_stairs": "Yellow Wall Stairs",
       "block.elementure.boardingschool_white_wall_slabs": "White Wall Slabs",
@@ -101010,6 +101751,7 @@
       "block.minecraft_worlds.energydiorite": "Energised diorite",
       "tile.bismuthblock.name": "Bismuth block",
       "block.elementure.bluedoor_portal": "Blue door Portal",
+      "block.elementure.blue_ostree_leaves": "Blue Ostree Leaves",
       "item.creeperarmorlegs.name": "Infested creeper hide Leggings",
       "item.elementure.cometfish": "Comet fish",
       "item.essenceearth.name": "Earth drop",
@@ -102118,7 +102860,12 @@
               },
               {
                 "name": "Ostree",
-                "children": []
+                "children": [
+                  {
+                    "name": "OstreeGeneration",
+                    "children": []
+                  }
+                ]
               },
               {
                 "name": "TorrentialTunnels",
@@ -102979,5 +103726,5 @@
     "modElementsPackage": "net.mcreator.elementure",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202300109612
+  "mcreatorVersion": 202300110610
 }

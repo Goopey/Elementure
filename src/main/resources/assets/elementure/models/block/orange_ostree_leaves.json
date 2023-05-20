@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/ostree_leaves_orange",
+    "up": "elementure:blocks/ostree_leaves_orange",
+    "north": "elementure:blocks/ostree_leaves_orange",
+    "east": "elementure:blocks/ostree_leaves_orange",
+    "south": "elementure:blocks/ostree_leaves_orange",
+    "west": "elementure:blocks/ostree_leaves_orange",
+    "particle": "elementure:blocks/ostree_leaves_orange"
+  },
+  "render_type": "cutout_mipped"
+}

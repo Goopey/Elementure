@@ -1,5 +1,5 @@
 {
-  "parent": "item/handheld",
+  "parent": "elementure:displaysettings/sworditem",
   "textures": {
     "layer0": "elementure:items/rustyironsword"
   }

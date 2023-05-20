@@ -10,8 +10,6 @@ import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.resources.ResourceLocation;
 
 import javax.annotation.Nullable;
 
@@ -33,7 +31,7 @@ public class WeaponArtItemDisableSwingProcedure {
 			return;
 		ItemStack weaponArtitem = ItemStack.EMPTY;
 		weaponArtitem = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-		if (weaponArtitem.is(ItemTags.create(new ResourceLocation("elementure:weaponartitems")))
+		if (WeaponArtIsWeaponForWeaponArtProcedure.execute(entity)
 				&& !(entity.level.clip(new ClipContext(entity.getEyePosition(1f), entity.getEyePosition(1f).add(entity.getViewVector(1f).scale(4)), ClipContext.Block.COLLIDER, ClipContext.Fluid.NONE, entity)).getType() == HitResult.Type.BLOCK)) {
 			((LivingEntity) entity).swinging = false;
 		}

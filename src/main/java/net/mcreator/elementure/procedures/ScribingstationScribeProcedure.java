@@ -29,7 +29,7 @@ public class ScribingstationScribeProcedure {
 				.getString("weaponArtName");
 		weaponArt2 = (entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getOrCreateTag()
 				.getString("weaponArtName");
-		if (!(weaponArt1).isEmpty()) {
+		if (!(weaponArt1).isEmpty() && WeaponCanScribeProcedure.execute()) {
 			(entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(0)).getItem() : ItemStack.EMPTY).getOrCreateTag().putString("weaponArtName",
 					weaponArt2);
 			(entity instanceof ServerPlayer _plrSlotItem && _plrSlotItem.containerMenu instanceof Supplier _splr && _splr.get() instanceof Map _slt ? ((Slot) _slt.get(1)).getItem() : ItemStack.EMPTY).getOrCreateTag().putString("weaponArtName",

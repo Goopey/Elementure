@@ -35,6 +35,7 @@ import net.mcreator.elementure.block.entity.Rarememoryplant2BlockEntity;
 import net.mcreator.elementure.block.entity.Rarememoryplant1BlockEntity;
 import net.mcreator.elementure.block.entity.PlainsmemorialBlockEntity;
 import net.mcreator.elementure.block.entity.PervadedbedrockBlockEntity;
+import net.mcreator.elementure.block.entity.OstreeomeganBlockEntity;
 import net.mcreator.elementure.block.entity.OmegancenterBlockEntity;
 import net.mcreator.elementure.block.entity.OceanmemorialBlockEntity;
 import net.mcreator.elementure.block.entity.NightmareShamanBlockEntity;
@@ -147,6 +148,7 @@ public class ElementureModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> DARKGEM_CRYSTAL_BEAM = register("darkgem_crystal_beam", ElementureModBlocks.DARKGEM_CRYSTAL_BEAM, DarkgemCrystalBeamBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> INVISIBLEOMEGAN = register("invisibleomegan", ElementureModBlocks.INVISIBLEOMEGAN, InvisibleomeganBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> WEAPON_FORGE = register("weapon_forge", ElementureModBlocks.WEAPON_FORGE, WeaponForgeBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> OSTREEOMEGAN = register("ostreeomegan", ElementureModBlocks.OSTREEOMEGAN, OstreeomeganBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

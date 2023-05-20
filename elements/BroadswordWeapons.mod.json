@@ -1,0 +1,21 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:Rustysword"
+      },
+      {
+        "value": "CUSTOM:WeaponArtItem"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "broadsword_weapons",
+    "namespace": "mod"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "parent": "item/handheld",
+  "parent": "elementure:displaysettings/spearitem",
   "textures": {
     "layer0": "elementure:items/arachneel_spear"
   }

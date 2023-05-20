@@ -26,6 +26,11 @@
     "elementure:rimesap",
     "elementure:cormunculusblock",
     "elementure:lilypadsapling",
-    "elementure:pumpkincore"
+    "elementure:pumpkincore",
+    "elementure:blue_ostree_leaves",
+    "elementure:light_blue_ostree_leaves",
+    "elementure:ostree_leaves",
+    "elementure:red_ostree_leaves",
+    "elementure:orange_ostree_leaves"
   ]
 }

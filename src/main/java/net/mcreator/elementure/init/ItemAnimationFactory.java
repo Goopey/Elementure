@@ -11,6 +11,8 @@ import net.minecraft.client.renderer.ItemInHandRenderer;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.elementure.item.WeaponArtItemItem;
+import net.mcreator.elementure.item.RustyswordItem;
+import net.mcreator.elementure.item.ArachneelSpearItem;
 
 import java.lang.reflect.Field;
 
@@ -51,11 +53,31 @@ public class ItemAnimationFactory {
 						animatable.animationprocedure = animation;
 						disableUseAnim();
 					}
+				if (event.player.getMainHandItem().getItem() instanceof RustyswordItem animatable)
+					if (event.player.level.isClientSide()) {
+						animatable.animationprocedure = animation;
+						disableUseAnim();
+					}
+				if (event.player.getMainHandItem().getItem() instanceof ArachneelSpearItem animatable)
+					if (event.player.level.isClientSide()) {
+						animatable.animationprocedure = animation;
+						disableUseAnim();
+					}
 			}
 			if (!event.player.getOffhandItem().getOrCreateTag().getString("geckoAnim").equals("") && !(event.player.getOffhandItem().getItem() instanceof GeoArmorItem)) {
 				animation = event.player.getOffhandItem().getOrCreateTag().getString("geckoAnim");
 				event.player.getOffhandItem().getOrCreateTag().putString("geckoAnim", "");
 				if (event.player.getOffhandItem().getItem() instanceof WeaponArtItemItem animatable)
+					if (event.player.level.isClientSide()) {
+						animatable.animationprocedure = animation;
+						disableUseAnim();
+					}
+				if (event.player.getOffhandItem().getItem() instanceof RustyswordItem animatable)
+					if (event.player.level.isClientSide()) {
+						animatable.animationprocedure = animation;
+						disableUseAnim();
+					}
+				if (event.player.getOffhandItem().getItem() instanceof ArachneelSpearItem animatable)
 					if (event.player.level.isClientSide()) {
 						animatable.animationprocedure = animation;
 						disableUseAnim();

@@ -9,6 +9,8 @@
     "minecraft:dirt",
     "minecraft:grass_block",
     "minecraft:red_sand",
-    "elementure:silvershoressand"
+    "elementure:silvershoressand",
+    "elementure:dark",
+    "elementure:darkwater"
   ]
 }

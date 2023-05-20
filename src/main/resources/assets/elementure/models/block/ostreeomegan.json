@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/sandblock",
+    "up": "elementure:blocks/sandblock",
+    "north": "elementure:blocks/sandblock",
+    "east": "elementure:blocks/sandblock",
+    "south": "elementure:blocks/sandblock",
+    "west": "elementure:blocks/sandblock",
+    "particle": "elementure:blocks/sandblock"
+  },
+  "render_type": "solid"
+}

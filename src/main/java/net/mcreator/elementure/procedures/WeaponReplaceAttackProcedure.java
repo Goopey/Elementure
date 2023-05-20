@@ -9,8 +9,6 @@ import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.resources.ResourceLocation;
 
 import net.mcreator.elementure.network.ElementureModVariables;
 
@@ -34,7 +32,7 @@ public class WeaponReplaceAttackProcedure {
 			return;
 		ItemStack weaponArtitem = ItemStack.EMPTY;
 		weaponArtitem = (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY);
-		if (weaponArtitem.is(ItemTags.create(new ResourceLocation("elementure:weaponartitems")))
+		if (WeaponArtIsWeaponForWeaponArtProcedure.execute(entity)
 				&& weaponArtitem.getItem() == ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).hitbox_item).getItem()) {
 			if ((entity.getCapability(ElementureModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new ElementureModVariables.PlayerVariables())).hitbox_delay == 0) {
 				{

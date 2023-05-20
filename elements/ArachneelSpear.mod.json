@@ -1,36 +1,56 @@
 {
   "_fv": 39,
-  "_type": "tool",
+  "_type": "animateditem",
   "definition": {
     "renderType": 0,
     "texture": "arachneel_spear",
-    "customModelName": "Normal",
     "name": "Arachneel Spear [N-E]",
-    "specialInfo": [
-      "The spear has a slightly hooked end which helps to poison attacked creatures."
-    ],
+    "idle": "animation.weaponartitem.spear_idle",
+    "rarity": "COMMON",
+    "displaySettings": "spearitem.json",
+    "leftArm": "",
+    "rightArm": "",
+    "perspective": "First Person",
     "creativeTab": {
       "value": "CUSTOM:Tabmoddedswords"
     },
-    "toolType": "Sword",
-    "harvestLevel": 0,
-    "efficiency": 5.0,
-    "attackSpeed": 1.2,
-    "enchantability": 7,
-    "damageVsEntity": 4.5,
-    "usageCount": 502,
-    "blocksAffected": [],
-    "hasGlow": false,
-    "repairItems": [
-      {
-        "value": "CUSTOM:Arachneelfang"
-      }
-    ],
+    "firstPersonArms": false,
+    "stackSize": 1,
+    "enchantability": 11,
+    "useDuration": 0,
+    "toolType": 1.6,
+    "damageCount": 502,
+    "recipeRemainder": {
+      "value": ""
+    },
+    "destroyAnyBlock": false,
     "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 7.0,
+    "specialInfo": [
+      "The spear has a slightly hooked end which helps to poison attacked creatures."
+    ],
+    "hasGlow": false,
+    "guiBoundTo": "<NONE>",
+    "inventorySize": 9,
+    "inventoryStackSize": 64,
     "onEntityHitWith": {
       "name": "ArachneelSpearPoison"
-    }
+    },
+    "onEntitySwing": {
+      "name": "ArachneelSpearSwing"
+    },
+    "isFood": false,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatResultItem": {
+      "value": ""
+    },
+    "isMeat": false,
+    "isAlwaysEdible": false,
+    "animation": "none",
+    "normal": "sworditem.geo.json"
   }
 }

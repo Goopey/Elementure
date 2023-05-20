@@ -80,13 +80,13 @@ public class ScribingStationGUIMenu extends AbstractContainerMenu implements Sup
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 16, 12) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(new ResourceLocation("elementure:weaponartitems")));
+				return stack.is(ItemTags.create(new ResourceLocation("elementure:weaponartitems"))) || stack.is(ItemTags.create(new ResourceLocation("elementure:weaponartscrollitems")));
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 70, 12) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
-				return stack.is(ItemTags.create(new ResourceLocation("elementure:weaponartitems")));
+				return stack.is(ItemTags.create(new ResourceLocation("elementure:weaponartitems"))) || stack.is(ItemTags.create(new ResourceLocation("elementure:weaponartscrollitems")));
 			}
 		}));
 		for (int si = 0; si < 3; ++si)

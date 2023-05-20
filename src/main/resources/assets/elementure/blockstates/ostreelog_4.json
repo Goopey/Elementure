@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "elementure:block/ostreelog_4",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "elementure:block/ostreelog_4"
+    },
+    "axis=z": {
+      "model": "elementure:block/ostreelog_4",
+      "x": 90
+    }
+  }
+}

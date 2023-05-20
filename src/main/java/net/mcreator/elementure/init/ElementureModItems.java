@@ -1414,7 +1414,6 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> LIGNITESPEAR = REGISTRY.register("lignitespear", () -> new LignitespearItem());
 	public static final RegistryObject<Item> NEONSCEPTER = REGISTRY.register("neonscepter", () -> new NeonscepterItem());
 	public static final RegistryObject<Item> ICEBLADE = REGISTRY.register("iceblade", () -> new IcebladeItem());
-	public static final RegistryObject<Item> RUSTYSWORD = REGISTRY.register("rustysword", () -> new RustyswordItem());
 	public static final RegistryObject<Item> GUARDBLADE = REGISTRY.register("guardblade", () -> new GuardbladeItem());
 	public static final RegistryObject<Item> KNIGHTSBLADE = REGISTRY.register("knightsblade", () -> new KnightsbladeItem());
 	public static final RegistryObject<Item> CURSEDBLADE = REGISTRY.register("cursedblade", () -> new CursedbladeItem());
@@ -1483,7 +1482,6 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> SIRENQUEENFIST = REGISTRY.register("sirenqueenfist", () -> new SirenqueenfistItem());
 	public static final RegistryObject<Item> ARACHNEELBOW = REGISTRY.register("arachneelbow", () -> new ArachneelbowItem());
 	public static final RegistryObject<Item> TIDALCOMET = REGISTRY.register("tidalcomet", () -> new TidalcometItem());
-	public static final RegistryObject<Item> ARACHNEEL_SPEAR = REGISTRY.register("arachneel_spear", () -> new ArachneelSpearItem());
 	public static final RegistryObject<Item> ARACHNEEL_SHIV = REGISTRY.register("arachneel_shiv", () -> new ArachneelShivItem());
 	public static final RegistryObject<Item> UNDEAD_DELIGHT = REGISTRY.register("undead_delight", () -> new UndeadDelightItem());
 	public static final RegistryObject<Item> SHURIFANG = REGISTRY.register("shurifang", () -> new ShurifangItem());
@@ -2337,6 +2335,22 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> COPPER_SCROLL = REGISTRY.register("copper_scroll", () -> new CopperScrollItem());
 	public static final RegistryObject<Item> WEAPON_FORGE = block(ElementureModBlocks.WEAPON_FORGE, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> SCRIBING_STATION = block(ElementureModBlocks.SCRIBING_STATION, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> RUSTYSWORD = REGISTRY.register("rustysword", () -> new RustyswordItem());
+	public static final RegistryObject<Item> ARACHNEEL_SPEAR = REGISTRY.register("arachneel_spear", () -> new ArachneelSpearItem());
+	public static final RegistryObject<Item> OSTREEOMEGAN = block(ElementureModBlocks.OSTREEOMEGAN, null);
+	public static final RegistryObject<Item> BLUE_OSTREE_LEAVES = block(ElementureModBlocks.BLUE_OSTREE_LEAVES, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> LIGHT_BLUE_OSTREE_LEAVES = block(ElementureModBlocks.LIGHT_BLUE_OSTREE_LEAVES, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> OSTREE_LEAVES = block(ElementureModBlocks.OSTREE_LEAVES, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> RED_OSTREE_LEAVES = block(ElementureModBlocks.RED_OSTREE_LEAVES, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> ORANGE_OSTREE_LEAVES = block(ElementureModBlocks.ORANGE_OSTREE_LEAVES, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> OSTREELOG_2 = block(ElementureModBlocks.OSTREELOG_2, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> OSTREELOG_3 = block(ElementureModBlocks.OSTREELOG_3, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> OSTREELOG_4 = block(ElementureModBlocks.OSTREELOG_4, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> OSTREELOG_5 = block(ElementureModBlocks.OSTREELOG_5, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> OSTREELOG_FULL_2 = block(ElementureModBlocks.OSTREELOG_FULL_2, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> OSTREELOG_FULL_3 = block(ElementureModBlocks.OSTREELOG_FULL_3, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> OSTREELOG_FULL_4 = block(ElementureModBlocks.OSTREELOG_FULL_4, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> OSTREELOG_FULL_5 = block(ElementureModBlocks.OSTREELOG_FULL_5, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

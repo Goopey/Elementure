@@ -19,12 +19,15 @@ public class OstreeGenTrunkProcedure {
 		double rad = 0;
 		double locY = 0;
 		double locYRing = 0;
+		double internalRad = 0;
+		double distance2 = 0;
 		locX = -56;
 		locYMax = 180;
 		locZ = -56;
 		repeatTimes = (locX * (-2) + 1) * (locZ * (-2) + 1) * 2;
 		rad = locX * locX;
-		rad2 = (locX + 4) * (locX + 4);
+		rad2 = (locX + 14) * (locX + 14);
+		internalRad = 4 * 4;
 		for (int index0 = 0; index0 < (int) (repeatTimes); index0++) {
 			locY = new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
@@ -35,8 +38,9 @@ public class OstreeGenTrunkProcedure {
 				}
 			}.getValue(world, new BlockPos(x, y, z), "ostreeLocY");
 			locYRing = Math.min(locY - 16, 8) / 6;
-			distance = locX * locX + locY * 5 + locYRing * locYRing * locYRing * locYRing * locYRing * 4 + locZ * locZ;
-			if (distance < rad) {
+			distance = 2.1 * locX * locX + Math.pow(locY, 1.1) * 5 + locYRing * locYRing * locYRing * locYRing * locYRing * 34 + 2.1 * locZ * locZ;
+			distance2 = locX * locX + locZ * locZ;
+			if (distance < rad && distance2 >= internalRad) {
 				if (locX != 0 || locZ != 0 || new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);

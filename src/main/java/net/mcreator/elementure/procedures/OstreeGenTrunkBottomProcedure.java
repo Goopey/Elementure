@@ -17,7 +17,7 @@ public class OstreeGenTrunkBottomProcedure {
 		locZ = -56;
 		repeatTimes = (locX * (-2) + 1) * (locZ * (-2) + 1);
 		rad = locX * locX;
-		rad2 = (locX + 4) * (locX + 4);
+		rad2 = (locX + 14) * (locX + 14);
 		for (int index0 = 0; index0 < (int) (repeatTimes); index0++) {
 			distance = (locX * locX) / 1.175 + (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {

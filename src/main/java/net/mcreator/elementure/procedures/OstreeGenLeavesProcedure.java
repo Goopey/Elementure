@@ -37,7 +37,7 @@ public class OstreeGenLeavesProcedure {
 					return -1;
 				}
 			}.getValue(world, new BlockPos(x, y, z), "ostreeLocY")) - 30;
-			locYLeafOffset = locY * 0.5 + 1;
+			locYLeafOffset = locY * 0.5 + 3;
 			verticalExpander = 0.04;
 			distance = locX * locX + verticalExpander * locY * locY * locY * locY + locZ * locZ;
 			leafBottomGenerationPower = 0.6 * Math.abs(locX) * Math.abs(locYLeafOffset) * Math.abs(locZ);

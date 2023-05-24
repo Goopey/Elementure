@@ -19,7 +19,7 @@ public class OstreeGenTrunkBottomProcedure {
 		rad = locX * locX;
 		rad2 = (locX + 14) * (locX + 14);
 		for (int index0 = 0; index0 < (int) (repeatTimes); index0++) {
-			distance = (locX * locX) / 1.175 + (new Object() {
+			distance = locX * locX + (new Object() {
 				public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 					BlockEntity blockEntity = world.getBlockEntity(pos);
 					if (blockEntity != null)
@@ -33,9 +33,9 @@ public class OstreeGenTrunkBottomProcedure {
 						return blockEntity.getPersistentData().getDouble(tag);
 					return -1;
 				}
-			}.getValue(world, new BlockPos(x, y, z), "ostreeLocY")) * 4 + (locZ * locZ) / 1.175;
+			}.getValue(world, new BlockPos(x, y, z), "ostreeLocY")) * 4 + locZ * locZ;
 			if (distance < rad) {
-				if (locX != 0 || locZ != 0 || 61 - (new Object() {
+				if (locX != 0 || locZ != 0 || 58 - (new Object() {
 					public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 						BlockEntity blockEntity = world.getBlockEntity(pos);
 						if (blockEntity != null)
@@ -44,7 +44,7 @@ public class OstreeGenTrunkBottomProcedure {
 					}
 				}.getValue(world, new BlockPos(x, y, z), "ostreeLocY")) != y) {
 					if (distance >= rad2) {
-						OstreeFullLogRandomizerProcedure.execute(world, (x + locX), (61 - (new Object() {
+						OstreeFullLogRandomizerProcedure.execute(world, (x + locX), (58 - (new Object() {
 							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
@@ -53,7 +53,7 @@ public class OstreeGenTrunkBottomProcedure {
 							}
 						}.getValue(world, new BlockPos(x, y, z), "ostreeLocY"))), (z + locZ));
 					} else {
-						OstreeLogRandomizerProcedure.execute(world, (x + locX), (61 - (new Object() {
+						OstreeLogRandomizerProcedure.execute(world, (x + locX), (58 - (new Object() {
 							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)

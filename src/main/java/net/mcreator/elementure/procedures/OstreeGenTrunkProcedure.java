@@ -38,7 +38,7 @@ public class OstreeGenTrunkProcedure {
 				}
 			}.getValue(world, new BlockPos(x, y, z), "ostreeLocY");
 			locYRing = Math.min(locY - 16, 8) / 6;
-			distance = 2.1 * locX * locX + Math.pow(locY, 1.1) * 5 + locYRing * locYRing * locYRing * locYRing * locYRing * 34 + 2.1 * locZ * locZ;
+			distance = 2.1 * locX * locX + Math.pow(locY, 1.1) * 3 + locYRing * locYRing * locYRing * locYRing * locYRing * 24 + 2.1 * locZ * locZ;
 			distance2 = locX * locX + locZ * locZ;
 			if (distance < rad && distance2 >= internalRad) {
 				if (locX != 0 || locZ != 0 || new Object() {
@@ -48,9 +48,9 @@ public class OstreeGenTrunkProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "ostreeLocY") + 62 != y) {
+				}.getValue(world, new BlockPos(x, y, z), "ostreeLocY") + 59 != y) {
 					if (distance >= rad2) {
-						OstreeFullLogRandomizerProcedure.execute(world, (x + locX), (62 + new Object() {
+						OstreeFullLogRandomizerProcedure.execute(world, (x + locX), (59 + new Object() {
 							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
@@ -59,7 +59,7 @@ public class OstreeGenTrunkProcedure {
 							}
 						}.getValue(world, new BlockPos(x, y, z), "ostreeLocY")), (z + locZ));
 					} else {
-						OstreeLogRandomizerProcedure.execute(world, (x + locX), (62 + new Object() {
+						OstreeLogRandomizerProcedure.execute(world, (x + locX), (59 + new Object() {
 							public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 								BlockEntity blockEntity = world.getBlockEntity(pos);
 								if (blockEntity != null)
@@ -114,9 +114,9 @@ public class OstreeGenTrunkProcedure {
 						}
 						locZ = -56;
 						OstreeLogRandomizerProcedure.execute(world, x, y, z);
-						world.setBlock(new BlockPos(x, 243, z), ElementureModBlocks.OSTREEOMEGAN.get().defaultBlockState(), 3);
+						world.setBlock(new BlockPos(x, 240, z), ElementureModBlocks.OSTREEOMEGAN.get().defaultBlockState(), 3);
 						if (!world.isClientSide()) {
-							BlockPos _bp = new BlockPos(x, 243, z);
+							BlockPos _bp = new BlockPos(x, 240, z);
 							BlockEntity _blockEntity = world.getBlockEntity(_bp);
 							BlockState _bs = world.getBlockState(_bp);
 							if (_blockEntity != null)

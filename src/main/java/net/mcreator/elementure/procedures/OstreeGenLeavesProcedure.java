@@ -8,6 +8,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.elementure.init.ElementureModBlocks;
+import net.mcreator.elementure.ElementureMod;
 
 public class OstreeGenLeavesProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
@@ -18,8 +19,11 @@ public class OstreeGenLeavesProcedure {
 		double locY = 0;
 		double rad = 0;
 		double distance = 0;
+		double leafBottomGenerationPower = 0;
+		double locYLeafOffset = 0;
+		double sideExpander = 0;
+		double verticalExpander = 0;
 		locX = -180;
-		locY = -30;
 		locZ = -180;
 		repeatTimes = (locX * (-2) + 1) * (locZ * (-2) + 1);
 		rad = locX * locX;
@@ -33,18 +37,17 @@ public class OstreeGenLeavesProcedure {
 					return -1;
 				}
 			}.getValue(world, new BlockPos(x, y, z), "ostreeLocY")) - 30;
-			distance = locX * locX + 36 * locY * locY + locZ * locZ;
+			locYLeafOffset = locY * 0.5 + 1;
+			verticalExpander = 0.04;
+			distance = locX * locX + verticalExpander * locY * locY * locY * locY + locZ * locZ;
+			leafBottomGenerationPower = 0.6 * Math.abs(locX) * Math.abs(locYLeafOffset) * Math.abs(locZ);
 			if (distance < rad && (locY != 0 || locX != 0 || locZ != 0)) {
-				if (distance >= rad2) {
-					if (locY < -6) {
-						if (locX * locX + locZ * locZ > 86 * 86 && 1.6 * locX * locX + 16 * (locY - 2) * (locY - 2) + 1.6 * locZ * locZ > rad && distance > 100 * 100) {
-							world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), ElementureModBlocks.BLUE_OSTREE_LEAVES.get().defaultBlockState(), 3);
-						}
-					} else if (locY < -2) {
+				if (distance >= rad2 && locY >= -6) {
+					if (locY < -2) {
 						if (distance > 120 * 120) {
 							world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), ElementureModBlocks.LIGHT_BLUE_OSTREE_LEAVES.get().defaultBlockState(), 3);
 						}
-					} else if (locY < 2) {
+					} else if (locY >= -2 && locY < 2) {
 						if (distance > 140 * 140) {
 							world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), ElementureModBlocks.OSTREE_LEAVES.get().defaultBlockState(), 3);
 						}
@@ -53,7 +56,9 @@ public class OstreeGenLeavesProcedure {
 					} else if (locY >= 6) {
 						world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), ElementureModBlocks.RED_OSTREE_LEAVES.get().defaultBlockState(), 3);
 					}
-				} else if (locY > 3 - (Math.sqrt(Math.abs(locX)) + Math.sqrt(Math.abs(locZ))) && (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.AIR) {
+				} else if (locY >= -4) {
+					world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), ElementureModBlocks.BLUE_OSTREE_LEAVES.get().defaultBlockState(), 3);
+				} else if (0.00003 * (locX * locX * locX * locX + locZ * locZ * locZ * locZ) + leafBottomGenerationPower <= rad && (world.getBlockState(new BlockPos(x + locX, y + locY, z + locZ))).getBlock() == Blocks.AIR) {
 					world.setBlock(new BlockPos(x + locX, y + locY, z + locZ), ElementureModBlocks.BLUE_OSTREE_LEAVES.get().defaultBlockState(), 3);
 				}
 			}
@@ -64,6 +69,7 @@ public class OstreeGenLeavesProcedure {
 				if (locZ > 180) {
 					locX = -180;
 					locZ = -180;
+					ElementureMod.LOGGER.info(locY);
 					if (!world.isClientSide()) {
 						BlockPos _bp = new BlockPos(x, y, z);
 						BlockEntity _blockEntity = world.getBlockEntity(_bp);

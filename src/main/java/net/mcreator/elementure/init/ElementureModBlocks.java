@@ -191,6 +191,7 @@ import net.mcreator.elementure.block.Ostreelog5Block;
 import net.mcreator.elementure.block.Ostreelog4Block;
 import net.mcreator.elementure.block.Ostreelog3Block;
 import net.mcreator.elementure.block.Ostreelog2Block;
+import net.mcreator.elementure.block.OstreeRootsBlock;
 import net.mcreator.elementure.block.OstreeLeavesBlock;
 import net.mcreator.elementure.block.OrangerimevineBlock;
 import net.mcreator.elementure.block.OrangerimemossBlock;
@@ -625,6 +626,7 @@ import net.mcreator.elementure.block.BluebarrierclosingBlock;
 import net.mcreator.elementure.block.BluebarrierBlock;
 import net.mcreator.elementure.block.BlueamberblockBlock;
 import net.mcreator.elementure.block.BlueOstreeLeavesBlock;
+import net.mcreator.elementure.block.BlueAmberElevatorBlock;
 import net.mcreator.elementure.block.BlazingnetherumshinyBlock;
 import net.mcreator.elementure.block.BlazingnetherumBlock;
 import net.mcreator.elementure.block.BlackrimevineBlock;
@@ -1322,4 +1324,6 @@ public class ElementureModBlocks {
 	public static final RegistryObject<Block> OSTREELOG_FULL_3 = REGISTRY.register("ostreelog_full_3", () -> new OstreelogFull3Block());
 	public static final RegistryObject<Block> OSTREELOG_FULL_4 = REGISTRY.register("ostreelog_full_4", () -> new OstreelogFull4Block());
 	public static final RegistryObject<Block> OSTREELOG_FULL_5 = REGISTRY.register("ostreelog_full_5", () -> new OstreelogFull5Block());
+	public static final RegistryObject<Block> OSTREE_ROOTS = REGISTRY.register("ostree_roots", () -> new OstreeRootsBlock());
+	public static final RegistryObject<Block> BLUE_AMBER_ELEVATOR = REGISTRY.register("blue_amber_elevator", () -> new BlueAmberElevatorBlock());
 }

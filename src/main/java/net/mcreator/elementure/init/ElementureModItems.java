@@ -2351,6 +2351,8 @@ public class ElementureModItems {
 	public static final RegistryObject<Item> OSTREELOG_FULL_3 = block(ElementureModBlocks.OSTREELOG_FULL_3, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> OSTREELOG_FULL_4 = block(ElementureModBlocks.OSTREELOG_FULL_4, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 	public static final RegistryObject<Item> OSTREELOG_FULL_5 = block(ElementureModBlocks.OSTREELOG_FULL_5, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> OSTREE_ROOTS = block(ElementureModBlocks.OSTREE_ROOTS, ElementureModTabs.TAB_TABMODDEDBLOCKS);
+	public static final RegistryObject<Item> BLUE_AMBER_ELEVATOR = block(ElementureModBlocks.BLUE_AMBER_ELEVATOR, ElementureModTabs.TAB_TABMODDEDBLOCKS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

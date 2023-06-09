@@ -44,6 +44,6 @@ public class StructureitemtesterItem extends Item {
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
 		if (selected)
-			StructureitemtesterItemInHandTickProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ());
+			StructureitemtesterItemInHandTickProcedure.execute(entity);
 	}
 }

@@ -194,6 +194,7 @@ import net.mcreator.elementure.client.renderer.BrontiumchannelerRenderer;
 import net.mcreator.elementure.client.renderer.BrightcandleRenderer;
 import net.mcreator.elementure.client.renderer.BluejellyfloatRenderer;
 import net.mcreator.elementure.client.renderer.BlueblazeRenderer;
+import net.mcreator.elementure.client.renderer.BlueAmberElevatorEntityRenderer;
 import net.mcreator.elementure.client.renderer.BlackstoneGrimaceRenderer;
 import net.mcreator.elementure.client.renderer.BigkassemRenderer;
 import net.mcreator.elementure.client.renderer.BiggranitelementalRenderer;
@@ -437,5 +438,6 @@ public class ElementureModEntityRenderers {
 		event.registerEntityRenderer(ElementureModEntities.MAGTUNA_BUSTER_FIRESTORM_BALL.get(), MagtunaBusterFirestormBallRenderer::new);
 		event.registerEntityRenderer(ElementureModEntities.NIGHTMARE_SPIKE.get(), NightmareSpikeRenderer::new);
 		event.registerEntityRenderer(ElementureModEntities.OCEANANGEL.get(), OceanangelRenderer::new);
+		event.registerEntityRenderer(ElementureModEntities.BLUE_AMBER_ELEVATOR_ENTITY.get(), BlueAmberElevatorEntityRenderer::new);
 	}
 }

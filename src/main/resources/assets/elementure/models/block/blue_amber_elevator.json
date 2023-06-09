@@ -1,0 +1,9 @@
+{
+  "parent": "elementure:custom/blue_amber_elevator_block",
+  "textures": {
+    "all": "elementure:blocks/blue_amber_elevator_texturemap",
+    "particle": "elementure:blocks/blue_amber_elevator_texturemap",
+    "1": "elementure:blocks/blue_amber_elevator_texturemap"
+  },
+  "render_type": "cutout_mipped"
+}

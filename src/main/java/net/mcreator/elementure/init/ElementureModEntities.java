@@ -225,6 +225,7 @@ import net.mcreator.elementure.entity.BrontiumchannelerEntity;
 import net.mcreator.elementure.entity.BrightcandleEntity;
 import net.mcreator.elementure.entity.BluejellyfloatEntity;
 import net.mcreator.elementure.entity.BlueblazeEntity;
+import net.mcreator.elementure.entity.BlueAmberElevatorEntityEntity;
 import net.mcreator.elementure.entity.BlackstoneGrimaceEntity;
 import net.mcreator.elementure.entity.BigkassemEntity;
 import net.mcreator.elementure.entity.BiggranitelementalEntity;
@@ -900,6 +901,9 @@ public class ElementureModEntities {
 			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(NightmareSpikeEntity::new).fireImmune().sized(0.6f, 0.6f));
 	public static final RegistryObject<EntityType<OceanangelEntity>> OCEANANGEL = register("oceanangel", EntityType.Builder.<OceanangelEntity>of(OceanangelEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64)
 			.setUpdateInterval(3).setCustomClientFactory(OceanangelEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<BlueAmberElevatorEntityEntity>> BLUE_AMBER_ELEVATOR_ENTITY = register("blue_amber_elevator_entity",
+			EntityType.Builder.<BlueAmberElevatorEntityEntity>of(BlueAmberElevatorEntityEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(128).setUpdateInterval(3)
+					.setCustomClientFactory(BlueAmberElevatorEntityEntity::new).fireImmune().sized(1f, 1f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -1073,6 +1077,7 @@ public class ElementureModEntities {
 			MagtunaBusterFirestormBallEntity.init();
 			NightmareSpikeEntity.init();
 			OceanangelEntity.init();
+			BlueAmberElevatorEntityEntity.init();
 		});
 	}
 
@@ -1243,5 +1248,6 @@ public class ElementureModEntities {
 		event.put(MAGTUNA_BUSTER_FIRESTORM_BALL.get(), MagtunaBusterFirestormBallEntity.createAttributes().build());
 		event.put(NIGHTMARE_SPIKE.get(), NightmareSpikeEntity.createAttributes().build());
 		event.put(OCEANANGEL.get(), OceanangelEntity.createAttributes().build());
+		event.put(BLUE_AMBER_ELEVATOR_ENTITY.get(), BlueAmberElevatorEntityEntity.createAttributes().build());
 	}
 }

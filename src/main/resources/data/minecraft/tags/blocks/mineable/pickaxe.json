@@ -326,6 +326,8 @@
     "elementure:blueamberblock",
     "elementure:weapon_forge",
     "elementure:scribing_station",
-    "elementure:blue_amber_elevator"
+    "elementure:blue_amber_elevator",
+    "elementure:blue_amber_elevator_2",
+    "elementure:blue_amber_elevator_controller_neutral"
   ]
 }

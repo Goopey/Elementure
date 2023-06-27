@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "elementure:blocks/blue_amber_elevator_controller",
+    "up": "elementure:blocks/blue_amber_elevator_controller",
+    "north": "elementure:blocks/blue_amber_elevator_controller",
+    "east": "elementure:blocks/blue_amber_elevator_controller",
+    "south": "elementure:blocks/blue_amber_elevator_controller",
+    "west": "elementure:blocks/blue_amber_elevator_controller",
+    "particle": "elementure:blocks/blue_amber_elevator_controller"
+  },
+  "render_type": "translucent"
+}

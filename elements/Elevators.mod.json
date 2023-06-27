@@ -1,0 +1,21 @@
+{
+  "_fv": 39,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:BlueAmberElevator"
+      },
+      {
+        "value": "CUSTOM:BlueAmberElevator2"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "elevators",
+    "namespace": "mod"
+  }
+}

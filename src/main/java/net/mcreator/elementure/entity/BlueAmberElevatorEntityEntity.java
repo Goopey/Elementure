@@ -32,7 +32,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.elementure.procedures.BlueAmberElevatorElevateProcedure;
+import net.mcreator.elementure.procedures.ElevatorElevateProcedure;
 import net.mcreator.elementure.init.ElementureModEntities;
 
 import java.util.EnumSet;
@@ -163,7 +163,7 @@ public class BlueAmberElevatorEntityEntity extends PathfinderMob {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		BlueAmberElevatorElevateProcedure.execute(this.level, this);
+		ElevatorElevateProcedure.execute(this.level, this);
 	}
 
 	@Override

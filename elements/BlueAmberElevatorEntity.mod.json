@@ -96,7 +96,7 @@
       "value": ""
     },
     "onMobTickUpdate": {
-      "name": "BlueAmberElevatorElevate"
+      "name": "ElevatorElevate"
     },
     "hasAI": true,
     "aiBase": "(none)",

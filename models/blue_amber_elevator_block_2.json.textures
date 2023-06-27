@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "blue_amber_elevator_2_texturemap"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -73,6 +73,10 @@ import net.mcreator.elementure.block.entity.DarkgemCrystalBeamBlockEntity;
 import net.mcreator.elementure.block.entity.CrimsonforestmemorialBlockEntity;
 import net.mcreator.elementure.block.entity.CrabpotBlockEntity;
 import net.mcreator.elementure.block.entity.BluethornleavesBlockEntity;
+import net.mcreator.elementure.block.entity.BlueAmberElevatorControllerNeutralBlockEntity;
+import net.mcreator.elementure.block.entity.BlueAmberElevatorControllerDirectionnalBlockEntity;
+import net.mcreator.elementure.block.entity.BlueAmberElevatorBlockEntity;
+import net.mcreator.elementure.block.entity.BlueAmberElevator2BlockEntity;
 import net.mcreator.elementure.block.entity.BirthingmoduleBlockEntity;
 import net.mcreator.elementure.block.entity.BigglowingmushroomBlockEntity;
 import net.mcreator.elementure.block.entity.BasaltdeltamemorialBlockEntity;
@@ -149,6 +153,12 @@ public class ElementureModBlockEntities {
 	public static final RegistryObject<BlockEntityType<?>> INVISIBLEOMEGAN = register("invisibleomegan", ElementureModBlocks.INVISIBLEOMEGAN, InvisibleomeganBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> WEAPON_FORGE = register("weapon_forge", ElementureModBlocks.WEAPON_FORGE, WeaponForgeBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> OSTREEOMEGAN = register("ostreeomegan", ElementureModBlocks.OSTREEOMEGAN, OstreeomeganBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BLUE_AMBER_ELEVATOR = register("blue_amber_elevator", ElementureModBlocks.BLUE_AMBER_ELEVATOR, BlueAmberElevatorBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BLUE_AMBER_ELEVATOR_2 = register("blue_amber_elevator_2", ElementureModBlocks.BLUE_AMBER_ELEVATOR_2, BlueAmberElevator2BlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BLUE_AMBER_ELEVATOR_CONTROLLER_NEUTRAL = register("blue_amber_elevator_controller_neutral", ElementureModBlocks.BLUE_AMBER_ELEVATOR_CONTROLLER_NEUTRAL,
+			BlueAmberElevatorControllerNeutralBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> BLUE_AMBER_ELEVATOR_CONTROLLER_DIRECTIONNAL = register("blue_amber_elevator_controller_directionnal", ElementureModBlocks.BLUE_AMBER_ELEVATOR_CONTROLLER_DIRECTIONNAL,
+			BlueAmberElevatorControllerDirectionnalBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

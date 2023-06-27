@@ -97711,6 +97711,7 @@
       "registry_name": "blue_amber_elevator",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/elementure/block/entity/BlueAmberElevatorBlockEntity.java",
           "src/main/resources/assets/elementure/models/item/blue_amber_elevator.json",
           "src/main/resources/assets/elementure/blockstates/blue_amber_elevator.json",
           "src/main/resources/assets/elementure/models/block/blue_amber_elevator.json",
@@ -97730,30 +97731,6 @@
         "files": [
           "src/main/java/net/mcreator/elementure/client/renderer/BlueAmberElevatorEntityRenderer.java",
           "src/main/java/net/mcreator/elementure/entity/BlueAmberElevatorEntityEntity.java"
-        ]
-      },
-      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeSpecialBlocks"
-    },
-    {
-      "name": "BlueAmberElevatorElevate",
-      "type": "procedure",
-      "sortid": 5049,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blue_amber_elevator_elevate",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/elementure/procedures/BlueAmberElevatorElevateProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/ProtoBiomes/Overworld/Ostree/OstreeSpecialBlocks"
@@ -97781,6 +97758,361 @@
           {
             "name": "z",
             "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeSpecialBlocks"
+    },
+    {
+      "name": "BlueAmberElevator2",
+      "type": "block",
+      "sortid": 5052,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_amber_elevator_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/block/entity/BlueAmberElevator2BlockEntity.java",
+          "src/main/resources/assets/elementure/blockstates/blue_amber_elevator_2.json",
+          "src/main/resources/assets/elementure/models/block/blue_amber_elevator_2.json",
+          "src/main/resources/assets/elementure/models/item/blue_amber_elevator_2.json",
+          "src/main/java/net/mcreator/elementure/block/BlueAmberElevator2Block.java"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeSpecialBlocks"
+    },
+    {
+      "name": "BlueAmberElevatorEntity2",
+      "type": "livingentity",
+      "sortid": 5053,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_amber_elevator_entity_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/entity/BlueAmberElevatorEntity2Entity.java",
+          "src/main/java/net/mcreator/elementure/client/renderer/BlueAmberElevatorEntity2Renderer.java"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeSpecialBlocks"
+    },
+    {
+      "name": "BlueamberelevatorActivate2",
+      "type": "procedure",
+      "sortid": 5054,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blueamberelevator_activate_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/BlueamberelevatorActivate2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeSpecialBlocks"
+    },
+    {
+      "name": "BlueAmberElevatorControllerNeutral",
+      "type": "block",
+      "sortid": 5055,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_amber_elevator_controller_neutral",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/block/BlueAmberElevatorControllerNeutralBlock.java",
+          "src/main/java/net/mcreator/elementure/block/entity/BlueAmberElevatorControllerNeutralBlockEntity.java",
+          "src/main/resources/assets/elementure/models/block/blue_amber_elevator_controller_neutral.json",
+          "src/main/resources/assets/elementure/models/item/blue_amber_elevator_controller_neutral.json",
+          "src/main/resources/assets/elementure/blockstates/blue_amber_elevator_controller_neutral.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeSpecialBlocks"
+    },
+    {
+      "name": "BlueAmberElevatorControllerDirectionnal",
+      "type": "block",
+      "sortid": 5058,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blue_amber_elevator_controller_directionnal",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/block/entity/BlueAmberElevatorControllerDirectionnalBlockEntity.java",
+          "src/main/resources/assets/elementure/models/block/blue_amber_elevator_controller_directionnal.json",
+          "src/main/java/net/mcreator/elementure/block/BlueAmberElevatorControllerDirectionnalBlock.java",
+          "src/main/resources/assets/elementure/models/item/blue_amber_elevator_controller_directionnal.json",
+          "src/main/resources/assets/elementure/blockstates/blue_amber_elevator_controller_directionnal.json"
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeSpecialBlocks"
+    },
+    {
+      "name": "NeutralElevatorControllers",
+      "type": "tag",
+      "sortid": 5059,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "neutral_elevator_controllers",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/elementure/tags/blocks/neutral_elevator_controllers.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "DirectionnalElevatorControllers",
+      "type": "tag",
+      "sortid": 5060,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "directionnal_elevator_controllers",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/elementure/tags/blocks/directionnal_elevator_controllers.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "ElevatorControllerNeutralGetNextStop",
+      "type": "procedure",
+      "sortid": 5064,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_controller_neutral_get_next_stop",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/ElevatorControllerNeutralGetNextStopProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeSpecialBlocks"
+    },
+    {
+      "name": "ElevatorControllerDirectionnalGetNextStop",
+      "type": "procedure",
+      "sortid": 5066,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_controller_directionnal_get_next_stop",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/ElevatorControllerDirectionnalGetNextStopProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeSpecialBlocks"
+    },
+    {
+      "name": "Elevators",
+      "type": "tag",
+      "sortid": 5067,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevators",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/elementure/tags/blocks/elevators.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "ElevatorControllerDirectionnalSendElevator",
+      "type": "procedure",
+      "sortid": 5068,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_controller_directionnal_send_elevator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/ElevatorControllerDirectionnalSendElevatorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeSpecialBlocks"
+    },
+    {
+      "name": "ElevatorControllerNeutralSendElevator",
+      "type": "procedure",
+      "sortid": 5069,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_controller_neutral_send_elevator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/ElevatorControllerNeutralSendElevatorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeSpecialBlocks"
+    },
+    {
+      "name": "ElevatorDirectionnalControllerTurn",
+      "type": "procedure",
+      "sortid": 5070,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_directionnal_controller_turn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/ElevatorDirectionnalControllerTurnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/ProtoBiomes/Overworld/Ostree/OstreeSpecialBlocks"
+    },
+    {
+      "name": "ElevatorEntities",
+      "type": "tag",
+      "sortid": 5071,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_entities",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/elementure/tags/entity_types/elevator_entities.json"
+        ]
+      },
+      "path": "~/Tags"
+    },
+    {
+      "name": "ElevatorElevate",
+      "type": "procedure",
+      "sortid": 5072,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "elevator_elevate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/elementure/procedures/ElevatorElevateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
           },
           {
             "name": "world",
@@ -98673,6 +99005,7 @@
       "effect.elementure.mycenanspores": "Fungal burns",
       "gui.elementure.mycenashroomvillager_gui_2.button_back": "Back",
       "item.elementure.energydiscus": "Energy discus",
+      "entity.elementure.blue_amber_elevator_entity_2": "Blue Amber Elevator",
       "item.infinityblastskill.name": "Infinity blast",
       "item.tinbow.name": "Tin bow",
       "block.elementure.wildbeestingberrybush": "Wild Aky berry bush",
@@ -99150,8 +99483,8 @@
       "item.minecraft_worlds.lightningsilverflask": "Silver flask LIGHTNING",
       "item.maelstromfighterstick.name": "Maelstrom fighter stick",
       "tile.annimatedstatueblock.name": "Villager statue",
-      "block.elementure.boardingschool_dirt": "Boarding school Dirt",
       "block.elementure.blackrimemoss": "Black rimemoss",
+      "block.elementure.boardingschool_dirt": "Boarding school Dirt",
       "effect.parry_fatigue": "Parry Fatigue",
       "item.elementure.merthiumhoe": "Merthium hoe",
       "item.energysoul.name": "Energy soul",
@@ -99268,6 +99601,7 @@
       "item.elementure.starguardianstand_spawn_egg": "Star guardian stand Spawn Egg",
       "block.elementure.lightningandesitebricks": "Lightning andesite bricks",
       "item.elementure.darkwater_bucket": "Dark water Bucket",
+      "item.elementure.blue_amber_elevator_entity_2_spawn_egg": "Blue Amber Elevator Spawn Egg",
       "effect.elementure.mycenansporegrowths": "Mycenan spore growths",
       "potion.effect.frozeneffect": "Freezing",
       "item.minecraft_worlds.mycenasporeslingeringcloud": "Mycenasporeslingeringcloud Spawn Egg",
@@ -99586,6 +99920,7 @@
       "tile.voidunderblock.name": "Void block",
       "entity.elementure.sirenqueen": "Siren queen",
       "block.elementure.tar_darkstone": "Tar Darkstone",
+      "block.elementure.blue_amber_elevator_controller_directionnal": "Blue Amber Elevator Controller",
       "item.elementure.abysseye": "Abyssal eye",
       "item.swordcast.name": "Sword cast",
       "tile.disapearedblock.name": "Disapeared block",
@@ -101918,6 +102253,7 @@
       "item.pinkbarrierkey.name": "Pink barrier key",
       "block.elementure.bigglowingmushroom": "Mycena block",
       "item.garnet.name": "Garnet",
+      "block.elementure.blue_amber_elevator_2": "Blue Amber Elevator",
       "item.elementure.ivoryarmor_boots": "Ivory Boots",
       "item.elementure.nanoshrimp": "Nano shrimps",
       "item.elementure.bubble_spawn_egg": "Bubble Spawn Egg",
@@ -102538,6 +102874,7 @@
       "tile.vanishingblock.name": "Vanishing block",
       "item.minecraft_worlds.dirtysword": "Dirty sword",
       "gui.elementure.voidoverlay.label_varintegervoid_essence": "\u003cVAR:integer:void_essence\u003e",
+      "block.elementure.blue_amber_elevator_controller_neutral": "Blue Amber Elevator Controller",
       "item.crystal.name": "Crystalite",
       "item.minecraft_worlds.creepershovel": "Creeperfied shovel",
       "block.elementure.lilypadplanks_fence": "Lily pad planks Fence",

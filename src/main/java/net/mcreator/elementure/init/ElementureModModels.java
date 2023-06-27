@@ -177,6 +177,7 @@ import net.mcreator.elementure.client.model.Modelbright_candle;
 import net.mcreator.elementure.client.model.Modelbluejelly;
 import net.mcreator.elementure.client.model.Modelblue_blaze;
 import net.mcreator.elementure.client.model.Modelblue_amber_elevator_entity;
+import net.mcreator.elementure.client.model.Modelblue_amber_elevator_2_entity;
 import net.mcreator.elementure.client.model.Modelblackstone_grimace;
 import net.mcreator.elementure.client.model.Modelbigligniteelemental;
 import net.mcreator.elementure.client.model.Modelbiggraniteelemental;
@@ -352,6 +353,7 @@ public class ElementureModModels {
 		event.registerLayerDefinition(Modeldragonewt.LAYER_LOCATION, Modeldragonewt::createBodyLayer);
 		event.registerLayerDefinition(Modelmycena_shroom_guard.LAYER_LOCATION, Modelmycena_shroom_guard::createBodyLayer);
 		event.registerLayerDefinition(Modelsmallgraniteelemental.LAYER_LOCATION, Modelsmallgraniteelemental::createBodyLayer);
+		event.registerLayerDefinition(Modelblue_amber_elevator_2_entity.LAYER_LOCATION, Modelblue_amber_elevator_2_entity::createBodyLayer);
 		event.registerLayerDefinition(ModelskeletalHost.LAYER_LOCATION, ModelskeletalHost::createBodyLayer);
 		event.registerLayerDefinition(Modelglassbellboat.LAYER_LOCATION, Modelglassbellboat::createBodyLayer);
 		event.registerLayerDefinition(Modelbig_kassem.LAYER_LOCATION, Modelbig_kassem::createBodyLayer);
